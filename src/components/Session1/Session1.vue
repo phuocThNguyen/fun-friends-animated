@@ -12,7 +12,7 @@
         </g>
       </svg>
       <component :is="pages[page]"/>
-      <svg v-visible="page < 11" @click="next" class="arrow" id="right-arrow" version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
+      <svg v-visible="page < 20" @click="next" class="arrow" id="right-arrow" version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
         <title>Next</title>
         <g id="object">
           <g id="&lt;Group&gt;">
@@ -36,6 +36,7 @@ import Session1Page7 from "@/components/Session1/Session1Page7";
 import Session1Page8 from "@/components/Session1/Session1Page8";
 import Session1Page9 from "@/components/Session1/Session1Page9";
 import Session1Page10 from "@/components/Session1/Session1Page10";
+import Session1Page11 from "@/components/Session1/Session1Page11";
 
 export default {
   name: "Session1",
@@ -49,7 +50,8 @@ export default {
     Session1Page7,
     Session1Page8,
     Session1Page9,
-    Session1Page10
+    Session1Page10,
+    Session1Page11
   },
   data() {
     return {
@@ -74,7 +76,7 @@ export default {
       this.page = this.page > 1 ? this.page - 1 : this.page;
     },
     next() {
-      this.page = this.page < 10 ? this.page + 1 : this.page;
+      this.page = this.page < 20 ? this.page + 1 : this.page;
     }
   },
   mounted() {
