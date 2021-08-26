@@ -2695,6 +2695,11 @@ core-js-compat@^3.14.0, core-js-compat@^3.16.0, core-js-compat@^3.6.5:
     browserslist "^4.16.7"
     semver "7.0.0"
 
+core-js@^3.11.0:
+  version "3.16.3"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.16.3.tgz#1f2d43c51a9ed014cc6c83440af14697ae4b75f2"
+  integrity sha512-lM3GftxzHNtPNUJg0v4pC2RC6puwMd6VZA7vXUczi+SKmCWSf4JwO89VJGMqbzmB7jlK7B5hr3S64PqwFL49cA==
+
 core-js@^3.6.5:
   version "3.16.1"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.16.1.tgz#f4485ce5c9f3c6a7cb18fa80488e08d362097249"
@@ -5954,6 +5959,13 @@ p-try@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/p-try/-/p-try-2.2.0.tgz#cb2868540e313d61de58fafbe35ce9004d5540e6"
   integrity sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==
+
+painterro@^1.2.59:
+  version "1.2.59"
+  resolved "https://registry.yarnpkg.com/painterro/-/painterro-1.2.59.tgz#8a2c94aedf26c974057b20f403b500bd6f7bca43"
+  integrity sha512-TrAIkiafOVNkXD4YaPTD7XCyPo+JtJOITSVQi2TicdALZrGb4+YjJDJ3QgW+JNn5JhGm53uUj+HGWl4XgGlvyw==
+  dependencies:
+    core-js "^3.11.0"
 
 pako@~1.0.5:
   version "1.0.11"

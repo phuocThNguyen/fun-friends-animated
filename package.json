@@ -12,6 +12,7 @@
     "animejs": "^3.2.1",
     "core-js": "^3.6.5",
     "letterizejs": "^2.0.1",
+    "painterro": "^1.2.59",
     "vue": "^2.6.11",
     "vue-router": "^3.5.2"
   },

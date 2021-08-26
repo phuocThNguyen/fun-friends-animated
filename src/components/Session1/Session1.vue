@@ -40,6 +40,7 @@ import Session1Page11 from "@/components/Session1/Session1Page11";
 import Session1Page12 from "@/components/Session1/Session1Page12";
 import Session1Page13 from "@/components/Session1/Session1Page13";
 import Session1Page14 from "@/components/Session1/Session1Page14";
+import Session1Page15 from "@/components/Session1/Session1Page15";
 
 export default {
   name: "Session1",
@@ -60,7 +61,8 @@ export default {
     Session1Page11,
     Session1Page12,
     Session1Page13,
-    Session1Page14
+    Session1Page14,
+    Session1Page15,
   },
   data() {
     return {
