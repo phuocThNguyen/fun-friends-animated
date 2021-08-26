@@ -1,8 +1,8 @@
 <template>
   <div class="interactive-container">
-    <img class="session-background" src="../../assets/images/session1/129493-ORFK4F-127-resized.jpg" alt="mia">
+    <img class="session-background" src="../../assets/images/session1/476-resized.jpg" alt="family-enjoy-picnic">
     <div class="text-box">
-      <p class="mt-2 mb-0">Mia loves climbing trees.</p>
+      <p>This family enjoys sharing picnics.</p>
     </div>
   </div>
 </template>
@@ -11,7 +11,7 @@
 import anime from "animejs";
 
 export default {
-  name: "Session1Page9",
+  name: "Session1Page12",
   mounted() {
     anime({
       targets: ".text-box",
@@ -27,17 +27,19 @@ export default {
 <style scoped>
 .text-box {
   height: 40px;
-  width: 210px;
+  width: 600px;
   background-color: #00ce7c;
   position: absolute;
-  top: 20px;
-  left: 20px;
+  bottom: 20px;
+  left: 80px;
   opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .text-box p {
   color: #ffffff;
   font-weight: bold;
-  display: flex;
-  margin-left: 15px;
+  margin-bottom: 0;
 }
 </style>

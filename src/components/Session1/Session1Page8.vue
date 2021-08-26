@@ -4,7 +4,7 @@
     <div class="text-box">
       <p class="mt-3 mb-0">Josh is climbing on the rainbow</p>
       <p class="mb-0">tyres. He loves walking barefoot</p>
-      <p>on the grass</p>
+      <p>on the grass.</p>
     </div>
   </div>
 </template>

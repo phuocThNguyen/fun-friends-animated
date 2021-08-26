@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <img class="session-background" src="../../assets/images/session1/2749-resized.jpg" alt="annie">
     <div class="text-box">
-      <p class="mt-2 mb-3">Annie loves playing on the swing</p>
+      <p class="mt-2 mb-3">Annie loves playing on the swing.</p>
 
       <p class="mb-0">What do you like playing with</p>
       <p>when you are outside?</p>

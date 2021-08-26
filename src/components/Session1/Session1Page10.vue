@@ -70,7 +70,7 @@
       <g id="BACKGROUND">
         <path id="&lt;Path&gt;" class="shp0" d="M1553 1188.21L53.04 1188.21L53.04 188.21L1553 188.21L1553 1188.21Z" />
       </g>
-      <g id="OBJECTS">
+      <g id="Landscape">
         <g id="&lt;Group&gt;">
           <g id="&lt;Clip Group&gt;">
             <path id="&lt;Path&gt;" class="shp-cloud" ref="cloud1" d="M731.66 487.24C717.98 487.24 704.94 490 693.07 494.99C683.15 477.52 664.41 465.72 642.89 465.68C643.39 462.48 643.65 459.2 643.65 455.85C643.65 423.59 619.63 396.95 588.5 392.8C583.91 348.64 546.58 314.21 501.2 314.21C458.51 314.21 422.95 344.69 415.07 385.07C390.15 389.56 369.88 407.36 361.86 430.85L337.12 431.31C337.16 430.21 337.21 429.11 337.21 428.01C337.21 377.3 296.11 336.2 245.4 336.2C194.7 336.2 153.6 377.3 153.6 428.01C153.6 436.77 154.86 445.23 157.15 453.26C156.59 453.25 156.03 453.22 155.47 453.22C131.47 453.22 110.71 467.09 100.76 487.26C45.98 487.6 1.67 532.11 1.67 586.98C1.67 642.06 46.32 686.71 101.41 686.71L731.66 686.71C786.75 686.71 831.4 642.06 831.4 586.98C831.4 531.89 786.75 487.24 731.66 487.24Z" />
@@ -463,7 +463,9 @@
         </g>
       </g>
     </svg>
-
+    <a class="button" target="_blank" href="https://jspaint.app/">
+      <img class="brush" src="../../assets/images/session1/brush.png" alt="brush">
+    </a>
     <!--  Flowers' Kingdom  -->
     <!--  Yellow Flowers  -->
     <svg class="yellow-flower" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 47" width="47" height="47">
@@ -864,7 +866,7 @@ export default {
     anime({
       targets: this.$refs.cloud1,
       translateX: 1500,
-      duration: 4000,
+      duration: 7000,
       loop: true,
       easing: 'linear',
       direction: 'alternate'
@@ -1018,7 +1020,7 @@ tspan { white-space:pre }
 
 .main-content {
   position: absolute;
-  left: 200px;
+  left: 180px;
   top: 50px;
   width: 400px;
   z-index: 50;
@@ -1027,7 +1029,6 @@ tspan { white-space:pre }
   background-color: #000000;
   color: #ffffff;
   font-size: 24px;
-  display: block;
   width: 100%;
   height: 50px;
   display: flex;
@@ -1038,7 +1039,6 @@ tspan { white-space:pre }
 }
 .text-box {
   background-color: #ffffff;
-  opacity: 0.90;
   border-radius: 10px;
   padding: 15px 5px 0 15px;
   height: 400px;
@@ -1050,5 +1050,24 @@ tspan { white-space:pre }
 .text-box p:first-child,
 .text-box p:last-child {
   font-weight: bold;
+}
+.button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-left: 3px dashed #000000;
+  border-top: 3px dashed #000000;
+  background-color: #ffffff;
+  width: 60px;
+  height: 60px;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+.brush {
+  width: 40px;
+  height: 40px;
 }
 </style>

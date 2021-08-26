@@ -6,7 +6,7 @@
       <p class="mb-4" id="para-1">Meet Tom!</p>
       <p class="mb-4" id="para-2">It is Tom's birthday today.</p>
       <p class="mb-0" id="para-3">He is adopting Chilli and Pepper,</p>
-      <p class="mb-4" id="para-4">the recuse dogs for his birthday.</p>
+      <p class="mb-4" id="para-4">the rescue dogs for his birthday.</p>
       <p class="mb-0" id="para-5">Tom wants to give Chilli and</p>
       <p class="mb-5" id="para-6">Pepper a loving home.</p>
       <p class="mb-0" id="para-7">Would you like to adopt a rescue</p>

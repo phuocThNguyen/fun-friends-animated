@@ -1,6 +1,7 @@
 <template>
   <div class="interactive-container">
     <img class="session-background" id="page-11" src="../../assets/images/session1/18722-resized.jpg" alt="our-families">
+
     <div class="left-bar">
       <h1 class="mt-3 mb-4">Our families</h1>
       <p id="para-1">Talk about your family and what you like to do.</p>
@@ -23,23 +24,32 @@ export default {
     let animation = anime.timeline();
     animation
       .add({
+        targets: ".left-bar",
+        opacity: 0.90,
+        delay: 500,
+        duration: 1000,
+        easing: 'linear'
+      })
+      .add({
         targets: "#para-1",
         color: "#000",
         delay: 1000,
-        duration: 500
+        duration: 1000
       })
       .add({
         targets: "#para-2",
         color: "#000",
-        duration: 500
+        duration: 1000
       })
       .add({
         targets: "#para-3",
         color: "#000",
-        duration: 500
+        duration: 1000
       })
       .add({
-        targets: ""
+        targets: ".text-box",
+        opacity: 1,
+        duration: 1000,
       })
   }
 }
@@ -52,10 +62,9 @@ export default {
   width: 200px;
   padding: 10px 10px 10px 10px;
   height: 100%;
+  opacity: 0;
 }
-#page-11 {
-  left: 200px;
-}
+
 .left-bar h1 {
   font-size: 24px;
   font-weight: bolder;
@@ -72,6 +81,7 @@ export default {
   justify-content: center;
   align-items: center;
   width: 180px;
+  opacity: 0;
 }
 .text-box p {
   color: #ffffff;

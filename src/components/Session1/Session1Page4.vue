@@ -11,7 +11,7 @@
 
       <div class="text-box">
         <p class="mb-0" id="para-6">It is fun playing with</p>
-        <p class="mb-0" id="para-7">our animal friends</p>
+        <p class="mb-0" id="para-7">our animal friends.</p>
       </div>
     </div>
   </div>

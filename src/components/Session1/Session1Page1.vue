@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container cloud-background">
-    <svg class="cloud1" ref="cloud1" version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 223 103" width="223" height="103">
+    <svg class="cloud1" ref="cloud1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 223 103" width="223" height="103">
       <title>Cloud</title>
       <g id="Cloud">
         <g id="&lt;Group&gt;">
@@ -13,7 +13,7 @@
       <path d="M 0 0 C 220 -40 450 -150 660 -120 C 900 -90 920 -40 1050 0" stroke="#FF0000" stroke-width="0.0" fill="none"/>
     </svg>
 
-    <svg class="sun" ref="sun" version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 269 265" width="150" height="150">
+    <svg class="sun" ref="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 269 265" width="150" height="150">
       <title>Sun</title>
       <g id="Sun">
         <g id="&lt;Group&gt;">
@@ -62,7 +62,7 @@
       </g>
     </svg>
 
-    <svg class="cloud2" ref="cloud2" version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 91" width="230" height="71">
+    <svg class="cloud2" ref="cloud2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 91" width="230" height="71">
       <title>Cloud</title>
       <g id="Layer 2">
         <g id="&lt;Group&gt;">
@@ -70,7 +70,7 @@
         </g>
       </g>
     </svg>
-    <svg class="long-cloud" version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 517 87" width="800" height="120">
+    <svg class="long-cloud" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 517 87" width="800" height="120">
       <title>Cloud</title>
       <g id="Cloud">
         <g id="&lt;Group&gt;">
@@ -78,7 +78,7 @@
         </g>
       </g>
     </svg>
-    <svg class="small-cloud" version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93 62" width="93" height="62">
+    <svg class="small-cloud" ref="smallCloud" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93 62" width="93" height="62">
       <title>Small Cloud</title>
       <g id="Small Cloud">
         <g id="&lt;Group&gt;">
@@ -86,7 +86,7 @@
         </g>
       </g>
     </svg>
-    <svg class="twitter-bird bird-1" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    <svg class="twitter-bird bird-1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
          viewBox="0 -10 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
       <g transform="rotate(30, 250, 250)">
         <path id="body" fill="#F3560A" d="M142.9,364.1c-1.6,1-3,1.7-4,2.3c-3,1.5-7.9,3.8-14.9,6.9c-7,3.1-14.7,5.7-23.1,7.9
@@ -140,7 +140,7 @@
       </g>
 
 </svg>
-    <svg class="twitter-bird bird-2" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    <svg class="twitter-bird bird-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
          viewBox="-450 250 520 500" enable-background="new 0 0 500 500" xml:space="preserve">
       <g transform="scale(-1,1) rotate(30, -250, 250)">
         <path id="body" fill="#0011ff" d="M142.9,364.1c-1.6,1-3,1.7-4,2.3c-3,1.5-7.9,3.8-14.9,6.9c-7,3.1-14.7,5.7-23.1,7.9
@@ -194,7 +194,7 @@
       </g>
 </svg>
 
-    <svg class="big-cloud" version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 91" width="800" height="350">
+    <svg class="big-cloud" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 91" width="800" height="350">
       <title>Cloud</title>
       <g id="Cloud">
         <g id="&lt;Group&gt;">
@@ -232,9 +232,9 @@ export default {
       easing: 'linear'
     })
     anime({
-      targets: '.small-cloud',
+      targets: this.$refs.smallCloud,
       translateX: -800,
-      duration: 10000,
+      duration: 40000,
       direction: 'alternate',
       loop: true,
       easing: 'linear'
@@ -254,7 +254,7 @@ export default {
       translateX: path('x'),
       translateY: path('y'),
       easing: 'linear',
-      duration: 5000,
+      duration: 10000,
       loop: true
     });
 
@@ -262,7 +262,7 @@ export default {
       targets: '.bird-2',
       translateX: -950,
       easing: 'linear',
-      duration: 2500,
+      duration: 10000,
       delay: 2000,
       loop: true
     })

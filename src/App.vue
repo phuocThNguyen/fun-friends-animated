@@ -1,6 +1,9 @@
 <template>
   <div class="container-fluid">
     <ul class="nav justify-content-center">
+      <li @click="setSession(0)" class="nav-item">
+        <a href="#" class="nav-link">Introduction</a>
+      </li>
       <li @click="setSession(1)" class="nav-item">
         <a href="#" class="nav-link">Session 1</a>
       </li>
@@ -38,7 +41,7 @@
         <a href="#" class="nav-link">Session 12</a>
       </li>
     </ul>
-    <component :is="sessions[session]"/>
+    <component :is="sessions[session]" v-on:nextSession="nextSession" :isNext="isNext"/>
 <!--    <SessionTesting />-->
 <!--    <Session1 />-->
 <!--    <SessionIntroduction />-->
@@ -84,34 +87,49 @@ export default {
       sessions: {0: 'SessionIntroduction',1: 'Session1', 2: 'Session2', 3: 'Session3', 4: 'Session4',
                   5: 'Session5', 6: 'Session6', 7: 'Session7', 8: 'Session8',
                   9: 'Session9', 10: 'Session10', 11: 'Session11', 12: 'Session12'},
-      session: 0
+      session: 0,
+      pageIndex: 1,
+      isNext: true,
     }
   },
   methods: {
     setSession(number) {
       this.session = number;
+    },
+    nextSession(sessionNumber, isNext) {
+      this.setSession(sessionNumber);
+      this.isNext = isNext;
     }
   }
 };
 </script>
 
 <style>
+.shp-background { fill: #00ce7c }
+.shp-arrow { fill: #ffffff }
 .session-container {
   margin: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .interactive-container {
   background-color: #ffffff;
   position: relative;
   width: 768px;
   height: 543px;
-  margin: auto;
   overflow: hidden;
 }
 .session-background {
   position: absolute;
+}
+.arrow {
+  height: 80px;
+  margin: 0 10px 0;
+  cursor: pointer;
+}
+#left-arrow {
+  transform: rotate(180deg);
 }
 </style>
