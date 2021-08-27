@@ -41,6 +41,15 @@ import Session1Page12 from "@/components/Session1/Session1Page12";
 import Session1Page13 from "@/components/Session1/Session1Page13";
 import Session1Page14 from "@/components/Session1/Session1Page14";
 import Session1Page15 from "@/components/Session1/Session1Page15";
+import Session1Page16 from "@/components/Session1/Session1Page16";
+import Session1Page17 from "@/components/Session1/Session1Page17";
+import Session1Page18 from "@/components/Session1/Session1Page18";
+import Session1Page19 from "@/components/Session1/Session1Page19";
+import Session1Page20 from "@/components/Session1/Session1Page20";
+import Session1Page21 from "@/components/Session1/Session1Page21";
+import Session1Page22 from "@/components/Session1/Session1Page22";
+import Session1Page23 from "@/components/Session1/Session1Page23";
+import Session1Page24 from "@/components/Session1/Session1Page24";
 
 export default {
   name: "Session1",
@@ -48,21 +57,11 @@ export default {
     isNext: Boolean,
   },
   components: {
-    Session1Page1,
-    Session1Page2,
-    Session1Page3,
-    Session1Page4,
-    Session1Page5,
-    Session1Page6,
-    Session1Page7,
-    Session1Page8,
-    Session1Page9,
-    Session1Page10,
-    Session1Page11,
-    Session1Page12,
-    Session1Page13,
-    Session1Page14,
-    Session1Page15,
+    Session1Page1, Session1Page2, Session1Page3, Session1Page4, Session1Page5,
+    Session1Page6, Session1Page7, Session1Page8, Session1Page9, Session1Page10,
+    Session1Page11, Session1Page12, Session1Page13, Session1Page14, Session1Page15,
+    Session1Page16, Session1Page17, Session1Page18, Session1Page19, Session1Page20,
+    Session1Page21, Session1Page22, Session1Page23, Session1Page24
   },
   data() {
     return {
@@ -71,7 +70,8 @@ export default {
         6: "Session1Page6", 7: "Session1Page7", 8: "Session1Page8", 9: "Session1Page9", 10: "Session1Page10",
         11: "Session1Page11", 12: "Session1Page12", 13: "Session1Page13", 14: "Session1Page14", 15: "Session1Page15",
         16: "Session1Page16", 17: "Session1Page17", 18: "Session1Page18", 19: "Session1Page19", 20: "Session1Page20",
-        21: "Session1Page21",
+        21: "Session1Page21", 22: "Session1Page22", 23: "Session1Page23", 24: "Session1Page24", 25: "Session1Page25",
+        26: "Session1Page26", 27: "Session1Page27", 28: "Session1Page28", 29: "Session1Page29", 30: "Session1Page30",
       }  ,
       page: 1,
       lastPage:50,
@@ -91,7 +91,7 @@ export default {
       }
     },
     next() {
-      if (this.page < 15) {
+      if (this.page < 24) {
         this.page++;
       } else {
         this.$emit('nextSession', 2, true);
@@ -112,12 +112,5 @@ export default {
 </script>
 
 <style>
-tspan { white-space:pre }
-/*.arrow {*/
-/*  height: 80px;*/
-/*  cursor: pointer;*/
-/*}*/
-/*#left-arrow {*/
-/*  transform: rotate(180deg);*/
-/*}*/
+
 </style>

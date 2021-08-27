@@ -13,7 +13,6 @@
       together by lines of belonging and love.</p>
     </div>
 
-
     <!--  airplane  -->
     <div class="airplane">
       <div class="head"></div>
@@ -49,12 +48,18 @@ export default {
     this.$nextTick(() => {
       this.painterro = Painterro({
         id: "painterro",
+        activeFillColor: '#ffffff',
+        defaultLineWidth: '20',
+        defaultEraserWidth: '40',
         backplateImgUrl: require('../../assets/images/session1/World-Map-ai.jpg'),
+        defaultTool: 'brush',
+        hiddenTools: ['pixelize','select','crop','line','text','rotate','resize',
+        'open','save','close','settings','redo','zoomin','zoomout'],
         colorScheme: {
-          main: "#f8f8f8",
+          main: "'#f8f8f8'",
           control: "#ffffff",
-          controlContent: "#000000",
-          backgroundColor: "#DEEDF3"
+          controlContent: '#434649',
+          backgroundColor: "#DEEDF3",
         },
         saveHandler: (image, done) => {
           const type = "image/png";
@@ -64,7 +69,7 @@ export default {
           this.add_file(file);
           done(true); //done and hide painterro
         },
-      });
+      })
       this.painterro.show();
     });
     let animation = anime.timeline();
@@ -80,11 +85,11 @@ export default {
         color: "#000",
         duration: 1000,
       })
-    .add({
-      targets: "#third",
-      color: "#000",
-      duration: 1000,
-    })
+      .add({
+        targets: "#third",
+        color: "#000",
+        duration: 1000,
+      })
   }
 }
 </script>
