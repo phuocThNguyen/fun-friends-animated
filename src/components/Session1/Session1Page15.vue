@@ -5,12 +5,12 @@
     <div class="text">
       <h1 id="first">Where do you live?</h1>
       <h1 id="second">Where do you want to visit?</h1>
-      <p id="third">Search for friends that want to visit different places.
-      With you friend, mark the country that you live in.
-      Mark on your map where they want to visit and where you
-      want to visit, connect the places. We may be in different
-      places and want different things, but we are all joined
-      together by lines of belonging and love.</p>
+      <div class="para">
+        <p> - Mark the country that you live in.</p>
+        <p> - Mark on your map where you and your friends want to visit and connect these places.</p>
+        <p><strong>We may be in different places and want different things,</strong></p>
+        <p><strong>but we are all joined together by lines of belonging and love.</strong></p>
+      </div>
     </div>
 
     <!--  airplane  -->
@@ -72,23 +72,37 @@ export default {
       })
       this.painterro.show();
     });
-    let animation = anime.timeline();
+    let para = document.getElementsByClassName('para')[0].children;
+    console.log(para);
+    let animation = anime.timeline({
+      delay: 1000,
+      duration: 1000,
+    });
     animation
       .add({
         targets: "#first",
         color: "#000",
-        delay: 1000,
-        duration: 1000,
+        delay: 2000,
       })
       .add({
         targets: "#second",
         color: "#000",
-        duration: 1000,
       })
       .add({
-        targets: "#third",
+        targets: para[0],
         color: "#000",
-        duration: 1000,
+      })
+      .add({
+        targets: para[1],
+        color: "#000",
+      })
+      .add({
+        targets: para[2],
+        color: "#000",
+      })
+      .add({
+        targets: para[3],
+        color: "#000",
       })
   }
 }
@@ -112,21 +126,24 @@ export default {
   font-size: 20px;
   color: #DEEDF3;
 }
-.text p {
-  font-size: 15px;
-  display: block;
+.para {
   background-color: #DEEDF3;
   padding-right: 25px;
   padding-left: 25px;
   width: 90%;
+}
+.para p {
+  font-size: 15px;
   color: #DEEDF3;
+  margin-bottom: 0;
+  text-align: center;
 }
 #painterro {
   position: absolute;
   top: 130px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0;
   z-index: 10;
 }
 .airplane {
@@ -134,9 +151,9 @@ export default {
   left: 50px;
   top: 250px;
   z-index: 20;
-  -webkit-animation: plane-fly 10s linear infinite;
-  -o-animation: plane-fly 10s linear infinite;
-  animation: plane-fly 10s linear infinite;
+  -webkit-animation: plane-fly 20s linear infinite;
+  -o-animation: plane-fly 20s linear infinite;
+  animation: plane-fly 20s linear infinite;
 }
 .airplane div {
   background: #f9fbfc;
@@ -180,7 +197,7 @@ div.rwing {
   width: 35px;
   border-radius: 5px;
   z-index: 1;
-  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 0.16);
   -webkit-transform: skew(-49deg, 0deg);
   -ms-transform: skew(-49deg, 0deg);
   -o-transform: skew(-49deg, 0deg);
@@ -245,7 +262,6 @@ div.window:nth-child(2):after {
     transform: scale(1);
   }
   51% {
-    -webkit-transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     -ms-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);

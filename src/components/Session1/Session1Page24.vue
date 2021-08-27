@@ -802,6 +802,9 @@
       <p id="para-4">What 5 things would you want in your house?</p>
       <p id="para-5">Share your ideas with a friend, family member or teacher.</p>
     </div>
+    <a class="button" target="_blank" href="https://jspaint.app/">
+      <img class="brush" src="../../assets/images/session1/brush.png" alt="brush">
+    </a>
   </div>
 </template>
 
@@ -841,48 +844,36 @@ export default {
       delay: 100
     })
 
-    let textAnimation = anime.timeline();
+    let textAnimation = anime.timeline({
+      delay: 1000,
+      duration: 500,
+      easing: 'linear'
+    });
     textAnimation
       .add({
         targets: '.text-box',
         delay: 1000,
         duration: 1000,
         opacity: 0.9,
-        easing: 'linear'
       })
       .add({
         targets: '#para-1',
-        delay: 500,
-        duration: 1000,
-        easing: 'linear',
         color: '#000'
       })
       .add({
         targets: '#para-2',
-        delay: 500,
-        duration: 1000,
-        easing: 'linear',
         color: '#000'
       })
       .add({
         targets: '#para-3',
-        delay: 500,
-        duration: 1000,
-        easing: 'linear',
         color: '#000'
       })
       .add({
         targets: '#para-4',
-        delay: 500,
-        duration: 1000,
-        easing: 'linear',
         color: '#000'
       })
       .add({
         targets: '#para-5',
-        delay: 500,
-        duration: 1000,
-        easing: 'linear',
         color: '#000'
       })
   }
@@ -1000,4 +991,23 @@ tspan { white-space:pre }
 .shp77 { fill: none;stroke: #4b5b37;stroke-linecap:round;stroke-width: 4.579 }
 .shp78 { opacity: 0.2;fill: url(#grd31) }
 .shp79 { fill: #284321 }
+.button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-left: 3px dashed #000000;
+  border-top: 3px dashed #000000;
+  background-color: #ffffff;
+  width: 60px;
+  height: 60px;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+.brush {
+  width: 40px;
+  height: 40px;
+}
 </style>
