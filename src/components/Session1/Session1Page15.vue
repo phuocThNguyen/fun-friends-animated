@@ -73,7 +73,6 @@ export default {
       this.painterro.show();
     });
     let para = document.getElementsByClassName('para')[0].children;
-    console.log(para);
     let animation = anime.timeline({
       delay: 1000,
       duration: 1000,
