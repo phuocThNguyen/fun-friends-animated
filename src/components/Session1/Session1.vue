@@ -177,7 +177,7 @@ export default {
         38: "Session1Page38",
         39: "Session1Page39",
       },
-      page: 30,
+      page: 1,
       lastPage: 50,
     };
   },
