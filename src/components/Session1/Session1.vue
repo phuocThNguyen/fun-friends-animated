@@ -95,6 +95,7 @@ import Session1Page28 from "@/components/Session1/Session1Page28";
 import Session1Page29 from "@/components/Session1/Session1Page29";
 import Session1Page30 from "@/components/Session1/Session1Page30";
 import Session1Page31 from "@/components/Session1/Session1Page31";
+import Session1Page32 from "@/components/Session1/Session1Page32";
 
 export default {
   name: "Session1",
@@ -133,6 +134,7 @@ export default {
     Session1Page29,
     Session1Page30,
     Session1Page31,
+    Session1Page32,
   },
   data() {
     return {
@@ -177,7 +179,7 @@ export default {
         38: "Session1Page38",
         39: "Session1Page39",
       },
-      page: 1,
+      page: 30,
       lastPage: 50,
     };
   },

@@ -1136,7 +1136,7 @@
     <div class="main-content">
       <h1 class="requires">Let's create a song or draw a picture!</h1>
       <div class="text-box">
-        <p id="q1"> - You can write a song and sing the song out load or draw a picture.</p>
+        <p id="q1"> - You can write a song and sing the song out loud or draw a picture.</p>
         <p id="q2"> - Talk about your favourite food and what it tastes like.</p>
         <p id="q3"> - Share a happy time, a sad time and what made you feel better!</p>
         <p id="q4"> - What is similar or different between many friends?</p>
@@ -1145,7 +1145,7 @@
     </div>
     
     <textarea class="song-writer" placeholder="Compose your wonderful song here!" name="song-lyrics" 
-    id="song-writer" cols="80" rows="5"/>
+    id="song-writer" rows="5"/>
 
     <a class="button" target="_blank" href="https://jspaint.app/">
       <img class="brush" src="../../assets/images/session1/brush.png" alt="brush">
@@ -1284,6 +1284,7 @@ tspan { white-space:pre }
 }
 .song-writer {
   position: absolute;
+  width: 600px;
   top: 360px;
   left: 100px;
   border: none;
