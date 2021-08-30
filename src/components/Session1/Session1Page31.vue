@@ -1223,7 +1223,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .landscape {
   position: relative;
   top: 10px;
