@@ -7,7 +7,7 @@
       <p class="text-3"><span id="letter-i">I</span> can try</p>
       <p class="text-4"><span id="letter-e">E</span>xplore</p>
       <p class="text-5"><span id="letter-n">N</span>ice work</p>
-      <p class="text-6"><span id="letter-d">D</span>on't forget</p>
+      <p class="text-6"><span id="letter-d">D</span>o it again</p>
       <p class="text-7"><span id="letter-s">S</span>tay brave</p>
     </div>
   </div>
