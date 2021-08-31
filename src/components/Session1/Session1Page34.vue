@@ -808,7 +808,7 @@ export default {
     })
     anime({
       targets: '.crab-eye',
-      translateX: -10,
+      translateX: -20,
       duration: 1000,
       direction: 'alternate',
       easing: 'linear',
