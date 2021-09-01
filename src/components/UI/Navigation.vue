@@ -3,18 +3,18 @@
     <div class="collapse" id="navbarToggleExternalContent">
       <div class="p-1 collapse-container">
         <button @click="setSession(0)" type="button" class="btn btn-session">Introduction</button>
-        <button type="button" class="btn btn-session">Session 1</button>
-        <button type="button" class="btn btn-session">Session 2</button>
-        <button type="button" class="btn btn-session">Session 3</button>
-        <button type="button" class="btn btn-session">Session 4</button>
-        <button type="button" class="btn btn-session">Session 5</button>
-        <button type="button" class="btn btn-session">Session 6</button>
-        <button type="button" class="btn btn-session">Session 7</button>
-        <button type="button" class="btn btn-session">Session 8</button>
-        <button type="button" class="btn btn-session">Session 9</button>
-        <button type="button" class="btn btn-session">Session 10</button>
-        <button type="button" class="btn btn-session">Session 11</button>
-        <button type="button" class="btn btn-session">Session 12</button>
+        <button @click="setSession(1)" type="button" class="btn btn-session">Session 1</button>
+        <button @click="setSession(2)" type="button" class="btn btn-session">Session 2</button>
+        <button @click="setSession(3)" type="button" class="btn btn-session">Session 3</button>
+        <button @click="setSession(4)" type="button" class="btn btn-session">Session 4</button>
+        <button @click="setSession(5)" type="button" class="btn btn-session">Session 5</button>
+        <button @click="setSession(6)" type="button" class="btn btn-session">Session 6</button>
+        <button @click="setSession(7)" type="button" class="btn btn-session">Session 7</button>
+        <button @click="setSession(8)" type="button" class="btn btn-session">Session 8</button>
+        <button @click="setSession(9)" type="button" class="btn btn-session">Session 9</button>
+        <button @click="setSession(10)" type="button" class="btn btn-session">Session 10</button>
+        <button @click="setSession(11)" type="button" class="btn btn-session">Session 11</button>
+        <button @click="setSession(12)" type="button" class="btn btn-session">Session 12</button>
       </div>
     </div>
     <nav class="navbar navbar-light navbar-style">
@@ -34,7 +34,7 @@ export default {
   methods: {
     setSession(sessionNumber) {
       console.log(sessionNumber);
-      this.$emit()
+      this.$emit('setSession', sessionNumber)
     }
   }
 }
