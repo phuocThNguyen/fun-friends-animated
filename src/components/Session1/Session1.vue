@@ -1,15 +1,10 @@
 <template>
   <div>
-    <h3 class="text-center mt-2">
-      Session 1 - Hip Hip Hooray! It’s FUN FRIENDS today!
-    </h3>
     <div class="session-container">
       <svg
         @click="previous"
         class="arrow"
         id="left-arrow"
-        version="1.2"
-        baseProfile="tiny-ps"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 183 183"
         width="183"
@@ -36,8 +31,6 @@
         @click="next"
         class="arrow"
         id="right-arrow"
-        version="1.2"
-        baseProfile="tiny-ps"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 183 183"
         width="183"
@@ -126,7 +119,7 @@ export default {
         31: "Session1Page31", 32: "Session1Page32", 33: "Session1Page33", 34: "Session1Page34", 35: "Session1Page35",
         36: "Session1Page36", 37: "Session1Page37", 38: "Session1Page38", 39: "Session1Page39",
       },
-      page: 30,
+      page: 1,
       lastPage: 50,
     };
   },
@@ -141,6 +134,7 @@ export default {
         this.page--;
       } else {
         this.$emit("nextSession", 0, false);
+        this.$store.commit("setCurrentSession", 0);
       }
     },
     next() {

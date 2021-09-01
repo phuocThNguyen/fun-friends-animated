@@ -1,5 +1,5 @@
 <template>
-  <div class="pos-f-t">
+  <div class="pos-f-t w-100">
     <div class="collapse" id="navbarToggleExternalContent">
       <div class="p-1 collapse-container">
         <button @click="setSession(0)" type="button" class="btn btn-session">Introduction</button>
@@ -17,35 +17,88 @@
         <button @click="setSession(12)" type="button" class="btn btn-session">Session 12</button>
       </div>
     </div>
-    <nav class="navbar navbar-light navbar-style">
+    <nav class="navbar-dark navbar-style">
       <button class="navbar-toggler toggler-button" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
               aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <h1 class="session-title">{{title}}</h1>
+      <div></div>
     </nav>
   </div>
-
-
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 export default {
   name: "Navigation",
+  props: {
+    title: String,
+  },
+  data() {
+    return {
+      isActive: false,
+    }
+  },
   methods: {
     setSession(sessionNumber) {
-      console.log(sessionNumber);
-      this.$emit('setSession', sessionNumber)
+      // this.$emit('setSession', sessionNumber);
+      let buttons = document.getElementsByClassName('btn');
+      if (sessionNumber != this.currentSession) {
+        this.changeActiveStyle(buttons[sessionNumber]);
+        this.resetStyle(buttons[this.currentSession]);
+        this.$store.commit("setCurrentSession", sessionNumber);
+      }
+    },
+    resetStyle(btn) {
+      btn.style.color = '#00ce7c';
+      btn.style.backgroundColor = '#fff';
+    },
+    changeActiveStyle(btn) {
+      btn.style.color = '#fff';
+      btn.style.backgroundColor = '#00ce7c';
     }
+  },
+  watch: {
+    // currentSession() {
+    //   return this.$store.state.currentSession;
+    // },
+    // currentSession: mapState(['currentSession']),
+    // mapState(['currentSession']): function() {
+
+    // }
+  },
+  computed: {
+    ...mapGetters({
+      currentSession: 'getCurrentSession'
+    })
+  },
+  mounted() {
+    let buttons = document.getElementsByClassName('btn')
+    console.log(this.currentSession);
+
+    this.changeActiveStyle(buttons[this.currentSession]);
+
   }
-}
+  }
 </script>
 
 <style scoped>
 .navbar-style {
   background-color: #00ce7c;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.session-title {
+  text-align: center;
+  margin: 0;
+  color: #ffffff;
 }
 .toggler-button {
-  border: 1px solid #000000;
+  border: 1px solid #ffffff;
+  border-radius: 13px;
   outline: none;
 }
 .collapse-container {
@@ -58,6 +111,9 @@ export default {
   color: #00ce7c;
   font-weight: bold;
   margin: 5px;
-  cursor: pointer;
+  border: 2px solid #ffffff;
+}
+.btn-session:focus {
+  box-shadow: none;
 }
 </style>

@@ -1,13 +1,11 @@
 <template>
   <div>
-    <Navigation v-on:setSession="setSession"/>
+    <Navigation v-on:setSession="setSession" :title="sessions[session][1]"/>
+    <component :is="sessions[session][0]" v-on:nextSession="nextSession" :isNext="isNext"/>
 
-    <div class="container-fluid">
-      <component :is="sessions[session]" v-on:nextSession="nextSession" :isNext="isNext"/>
-      <!--    <SessionTesting />-->
-      <!--    <Session1 />-->
-      <!--    <SessionIntroduction />-->
-    </div>
+    <!--    <SessionTesting />-->
+    <!--    <Session1 />-->
+    <!--    <SessionIntroduction />-->
   </div>
 </template>
 
@@ -49,9 +47,20 @@ export default {
   },
   data() {
     return {
-      sessions: {0: 'SessionIntroduction',1: 'Session1', 2: 'Session2', 3: 'Session3', 4: 'Session4',
-                  5: 'Session5', 6: 'Session6', 7: 'Session7', 8: 'Session8',
-                  9: 'Session9', 10: 'Session10', 11: 'Session11', 12: 'Session12'},
+      sessions: {
+        0: ['SessionIntroduction', 'Introduction'],
+        1: ['Session1', 'Session 1: Hip hip'],
+        2: ['Session2'],
+        3: ['Session3'],
+        4: ['Session4'],
+        5: ['Session5'],
+        6: ['Session6'],
+        7: ['Session7'],
+        8: ['Session8'],
+        9: ['Session9'],
+        10: ['Session10'],
+        11: ['Session11'],
+        12: ['Session12']},
       session: 0,
       pageIndex: 1,
       isNext: true,
@@ -64,14 +73,14 @@ export default {
     nextSession(sessionNumber, isNext) {
       this.setSession(sessionNumber);
       this.isNext = isNext;
-    }
+    },
   }
 };
 </script>
 
 <style>
-.shp-background { fill: #00ce7c }
-.shp-arrow { fill: #ffffff }
+.shp-background { fill: #00ce7c; opacity: 0.8 }
+.shp-arrow { fill: #ffffff; opacity: 0.8 }
 .session-container {
   margin: auto;
   display: flex;
@@ -82,20 +91,31 @@ export default {
 .interactive-container {
   background-color: #ffffff;
   position: relative;
-  width: 768px;
-  height: 543px;
+  width: 1024px;
+  height: 700px;
   overflow: hidden;
 }
 .session-background {
   position: absolute;
 }
 .arrow {
-  height: 80px;
-  margin: 0 10px 0;
+  width: 70px;
+  height: auto;
+  border: 3px solid rgba(255,255,255, 0.9);
+  border-radius: 13px;
   cursor: pointer;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  opacity: 0.9;
+}
+.arrow:active {
+  opacity: 1;
 }
 #left-arrow {
   transform: rotate(180deg);
+  right: 0;
+  left: 5px;
 }
 
 </style>
