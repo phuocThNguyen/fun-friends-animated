@@ -1,15 +1,18 @@
 <template>
   <div class="interactive-container">
     <div class="images">
-      <img src="../../assets/images/session1/938-resized.jpg" alt="house" />
-      <img src="../../assets/images/session1/1200-resized.jpg" alt="house" />
-      <img src="../../assets/images/session1/189-resized.jpg" alt="house" />
-      <img src="../../assets/images/session1/6796-resized.jpg" alt="house" />
+      <img src="../../assets/images/session1/3748-resized.jpg" alt="house" />
+      <img src="../../assets/images/session1/71023-resized.jpg" alt="house" />
+      <img src="../../assets/images/session1/1114-resized.jpg" alt="house" />
+      <img src="../../assets/images/session1/333-resized.jpg" alt="house" />
     </div>
     <div class="text-box">
       <p class="text">
         <span>
-          Trying different foods is fun
+          Our food may be different,
+        </span>
+        <span>
+          but it is all yummy.
         </span>
       </p>
     </div>
@@ -34,6 +37,12 @@ export default {
       })
       .add({
         targets: texts.children[0],
+        color: "#fff",
+        duration: 1000,
+        delay: 500,
+      })
+      .add({
+        targets: texts.children[1],
         color: "#fff",
         duration: 1000,
         delay: 500,
@@ -68,7 +77,7 @@ export default {
   background-color: #00ce7c;
   width: 650px;
   height: 60px;
-  padding: 15px 190px 15px 190px;
+  padding: 15px 110px 15px 110px;
   opacity: 0;
 }
 .text {

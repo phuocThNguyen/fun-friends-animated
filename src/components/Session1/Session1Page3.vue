@@ -21,7 +21,6 @@ export default {
   name: "Session1Page3",
   mounted() {
     let para = document.getElementsByClassName('left-bar')[0].children;
-    console.log(para);
     let initAnimation = anime.timeline({
       easing: 'linear'
     });

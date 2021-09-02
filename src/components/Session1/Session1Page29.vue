@@ -1,89 +1,80 @@
 <template>
   <div class="interactive-container">
-    <div class="images">
-      <img src="../../assets/images/session1/40364-resized.jpg" alt="house" />
-      <img src="../../assets/images/session1/1745-resized.jpg" alt="house" />
-      <img src="../../assets/images/session1/9221-resized.jpg" alt="house" />
-      <img src="../../assets/images/session1/3229-resized.jpg" alt="house" />
-    </div>
+    <img src="../../assets/images/session1/14643-resized.jpg" alt="house-1" />
+    <img
+      src="../../assets/images/session1/stockvault-carefree115845-resized.jpg"
+      alt="house-2"
+    />
+    <img src="../../assets/images/session1/13151-resized.jpg" alt="house-3" />
     <div class="text-box">
-      <p class="text">
-        <span>
-          Our clothes may be different,
-        </span>
-        <span>
-          but it is all so cool.
-        </span>
-      </p>
+      <h1>Our clothes</h1>
+      <p>Talk about your clothes.</p>
+      <p>Ask your friends about their clothes.</p>
     </div>
   </div>
 </template>
 
 <script>
 import anime from "animejs";
-
 export default {
   name: "Session1Page29",
   mounted() {
-    let texts = document.getElementsByClassName("text")[0];
+    let texts = document.getElementsByClassName("text-box")[0];
     let animation = anime.timeline();
     animation
       .add({
-        targets: ".text-box",
-        opacity: 0.95,
-        duration: 1000,
-        delay: 1000,
-        easing: "linear",
-      })
-      .add({
         targets: texts.children[0],
-        color: "#fff",
-        duration: 1000,
-        delay: 500,
+        color: "#000",
+        delay: 1000,
+        duration: 500,
       })
       .add({
         targets: texts.children[1],
-        color: "#fff",
-        duration: 1000,
-        delay: 500,
+        color: "#000",
+        delay: 1000,
+        duration: 500,
+      })
+      .add({
+        targets: texts.children[2],
+        color: "#000",
+        delay: 1000,
+        duration: 500,
       });
   },
 };
 </script>
 
 <style scoped>
-.images {
+.interactive-container img {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  display: grid;
-  grid-template-columns: auto auto;
-  column-gap: 10px;
-  row-gap: 10px;
 }
-.images img {
-  width: 370px;
+.interactive-container img:nth-child(1) {
+  left: 0;
+  bottom: 0;
+  width: 400px;
+  height: 400px;
+}
+.interactive-container img:nth-child(2) {
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 280px;
+}
+.interactive-container img:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 350px;
   height: 250px;
-  opacity: 1;
-  align-self: center;
-  justify-self: center;
 }
 .text-box {
-  position: absolute;
-  left: 65px;
-  bottom: 40px;
-  z-index: 20;
-  background-color: #00ce7c;
-  width: 650px;
-  height: 60px;
-  padding: 15px 90px 15px 90px;
-  opacity: 0;
+  margin-left: 20px;
+  margin-top: 20px;
+  color: #ffffff;
 }
-.text {
-  font-weight: bold;
-  color: #00ce7c;
-  font-size: 19px;
-  margin-bottom: 0;
+.text-box h1 {
+  font-size: 25px;
+}
+.text-box p {
+  margin-bottom: 5px;
 }
 </style>

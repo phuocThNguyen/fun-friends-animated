@@ -1,77 +1,98 @@
 <template>
-  <div class="interactive-container">
-    <img src="../../assets/images/session1/112-resized.jpg" alt="house-1">
-    <img src="../../assets/images/session1/225-resized.jpg" alt="house-2">
-    <img src="../../assets/images/session1/773-resized.jpg" alt="house-3">
+  <div class="interactive-container green-background">
+    <div class="images">
+      <img src="../../assets/images/session1/213-resized.jpg" alt="bears">
+      <img src="../../assets/images/session1/3877-resized.jpg" alt="giraffe">
+      <img src="../../assets/images/session1/15-resized.jpg" alt="elephants">
+      <img src="../../assets/images/session1/336-resized.jpg" alt="koalas">
+    </div>
     <div class="text-box">
-      <h1>Our homes</h1>
-      <p>Talk about your home.</p>
-      <p>Ask your friends about their homes.</p>
+      <p class="text">
+        <span>
+          We have families.
+        </span>
+        <span>
+          We all love our families and we all share the same feelings.
+        </span>
+      </p>
     </div>
   </div>
 </template>
 
 <script>
 import anime from "animejs";
+
 export default {
   name: "Session1Page21",
   mounted() {
-    let texts = document.getElementsByClassName('text-box')[0];
-    let animation = anime.timeline();
+    let vh = window.innerHeight;
+    let images = document.getElementsByClassName('images')[0];
+    let texts = document.getElementsByClassName('text')[0];
+    let animation = anime.timeline({
+      delay: 500,
+      duration: 1000
+    });
     animation
       .add({
+        targets: images.children[0],
+        translateY: -0.1*vh,
+        opacity: 1,
+      })
+      .add({
+        targets: images.children[1],
+        translateY: -0.1*vh,
+        opacity: 1,
+      })
+      .add({
+        targets: images.children[2],
+        translateY: -0.1*vh,
+        opacity: 1,
+      })
+      .add({
+        targets: images.children[3],
+        translateY: -0.1*vh,
+        opacity: 1,
+      })
+      .add({
         targets: texts.children[0],
-        color: '#000',
-        delay: 1000,
-        duration: 500
+        color: '#fff',
       })
       .add({
         targets: texts.children[1],
-        color: '#000',
-        delay: 1000,
-        duration: 500
-      })
-      .add({
-        targets: texts.children[2],
-        color: '#000',
-        delay: 1000,
-        duration: 500
+        color: '#fff',
       })
   }
 }
 </script>
 
 <style scoped>
-.interactive-container img {
+.green-background {
+  background-color: #00ce7c;
+}
+.images {
   position: absolute;
+  top: 10vh;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: auto auto;
 }
-.interactive-container img:nth-child(1) {
-  left: 0;
-  bottom: 0;
-  width: 400px;
-  height: 400px;
-}
-.interactive-container img:nth-child(2) {
-  top: 0;
-  right: 0;
-  width: 350px;
-  height: 280px;
-}
-.interactive-container img:nth-child(3) {
-  bottom: 0;
-  right: 0;
-  width: 350px;
-  height: 250px;
+.images img {
+  width: 45vw;
+  height: 41vh;
+  margin: 2vw;
+  opacity: 0;
 }
 .text-box {
-  margin-left: 20px;
-  margin-top: 20px;
-  color: #ffffff;
+  position: absolute;
+  left: 12vw;
+  top: 48%;
+  z-index: 20;
 }
-.text-box h1 {
-  font-size: 25px;
-}
-.text-box p {
-  margin-bottom: 5px;
+.text {
+  font-weight: bold;
+  color: #00ce7c;
+  font-size: 2vw;
 }
 </style>

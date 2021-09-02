@@ -1,30 +1,223 @@
 <template>
-  <div class="interactive-container cloud-background">
+  <div class="interactive-container">
+    <svg class="landscape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1637 1000" width="1637" height="1000">
+      <title>Landscape</title>
+      <defs>
+        <radialGradient id="grd1" gradientUnits="userSpaceOnUse"  cx="872.999" cy="310.009" r="628.037">
+          <stop offset="0" stop-color="#b0e7f8"  />
+          <stop offset="1" stop-color="#9be1f6"  />
+        </radialGradient>
+        <linearGradient id="grd2" gradientUnits="userSpaceOnUse"  x1="1161.409" y1="88.269" x2="1161.409" y2="620.8">
+          <stop offset="0" stop-color="#66d1f2"  />
+          <stop offset="1" stop-color="#9be1f6"  />
+        </linearGradient>
+        <linearGradient id="grd3" gradientUnits="userSpaceOnUse"  x1="1636.72" y1="301.764" x2="1636.72" y2="635.24">
+          <stop offset="0" stop-color="#4fc0e4"  />
+          <stop offset="1" stop-color="#66d1f2"  />
+        </linearGradient>
+        <linearGradient id="grd4" gradientUnits="userSpaceOnUse"  x1="80" y1="1006.11" x2="80" y2="696.954">
+          <stop offset="0" stop-color="#52a049"  />
+          <stop offset="1" stop-color="#5aaf54"  />
+        </linearGradient>
+        <linearGradient id="grd5" gradientUnits="userSpaceOnUse"  x1="1640.72" y1="492.029" x2="1640.72" y2="656.239">
+          <stop offset="0" stop-color="#52a049"  />
+          <stop offset="1" stop-color="#5aaf54"  />
+        </linearGradient>
+      </defs>
+      <g id="BACKGROUND">
+        <path id="&lt;Path&gt;" class="shp0" d="M1584 1000L84 1000L84 0L1584 0L1584 1000Z" />
+      </g>
+      <g id="Landscape">
+        <g id="&lt;Clip Group&gt;">
+          <path id="&lt;Path&gt;" class="shp1" d="M84 518.11C280.48 370.11 400.05 282.11 442.72 254.11C506.72 212.11 541.84 196.49 600.72 244.11C661.58 293.34 763.19 381.51 789.63 386.11C816.06 390.71 840.44 354.11 872.58 354.11C894.01 354.11 988.95 402.74 1157.41 500L1157.41 698.28L84 698.28L84 518.11Z" />
+          <path id="&lt;Path&gt;" class="shp2" d="M338.72 546.11C418.72 512.63 487.39 497.26 544.72 500C630.72 504.11 772.36 556.11 858.54 546.11C944.72 536.11 1252.72 388.11 1354.72 402.11C1456.72 416.11 1588.72 479.86 1610.72 485.99C1625.39 490.07 1632.72 494.74 1632.72 500L1632.72 698.28L338.72 698.28L338.72 546.11Z" />
+          <path id="&lt;Path&gt;" class="shp3" d="M1584 698.28L84 698.28L84 1000L1584 1000L1584 698.28Z" />
+          <path id="&lt;Path&gt;" class="shp4" d="M1304.72 719.86C1241.39 728.85 1189.39 731.44 1148.72 727.6C1087.72 721.86 1042.72 721.2 1028.72 729.03C1019.39 734.25 981.42 742.19 914.82 752.86C970.75 754.19 1014.05 751.52 1044.72 744.86C1090.72 734.86 1263.72 754.86 1286.72 748.86C1302.05 744.86 1308.05 735.19 1304.72 719.86Z" />
+          <path id="&lt;Path&gt;" class="shp4" d="M424.05 786.78C442.72 775.67 455.61 772.11 462.72 776.11C473.39 782.11 486.72 792.81 512.05 780.79C537.39 768.78 552.05 765.5 567.39 774.81C582.72 784.11 594.05 792.11 613.39 786.78C632.72 781.44 639.39 788.78 675.39 792.78C711.39 796.78 786.11 798.78 780.75 802.78C775.39 806.78 662.72 816.78 640.72 809.44C618.72 802.11 553.39 798.78 522.72 802.78C502.28 805.44 469.39 805.44 424.05 802.78L424.05 786.78Z" />
+          <path id="&lt;Path&gt;" class="shp4" d="M1293.51 769.43C1256.18 783.4 1206.85 790.5 1145.51 790.75C1053.51 791.11 1038.07 797.11 971.79 803.11C905.51 809.11 882.51 798.11 842.51 808.11C802.51 818.11 757.82 816.11 766.17 825.11C774.51 834.11 932.07 815.11 971.79 821.11C1011.51 827.11 1114.51 828.04 1169.51 827.57C1206.18 827.26 1246.25 824.45 1289.72 819.13L1293.51 769.43Z" />
+          <path id="&lt;Path&gt;" class="shp4" d="M1157.41 698.28C1038.91 704.94 952.18 712.58 897.19 721.19C814.72 734.11 666.36 702.27 602.54 721.19C538.72 740.11 390.72 749.27 338.72 745.69C304.05 743.3 262.72 743.56 214.72 746.45L84 769.43L84 698.28L1157.41 698.28Z" />
+          <path id="&lt;Path&gt;" class="shp4" d="M441.22 882.28C528.13 890.28 584.83 890.93 611.33 884.22C651.08 874.17 670.14 876.29 685.38 885.07C700.62 893.86 736.78 876.52 770.65 882.81C804.53 889.1 837.78 892.79 854.97 883.54C872.16 874.3 898.13 874.18 907.36 882.15C916.59 890.12 973.11 871.19 989.35 879.97C1005.59 888.76 1023.35 871.13 1031.29 872.99C1036.59 874.24 1102.23 876.06 1228.23 878.45L1198.28 906.09C1100.07 903.74 1039.91 900.52 1017.8 896.44C984.62 890.32 965.68 899.82 930.29 900.76C894.89 901.7 852.65 897.82 826.91 905.51C801.17 913.19 762.88 929.1 742.93 918.19C722.98 907.27 700.88 903.85 680.13 913.41C659.38 922.96 632.19 917.68 620.97 908.98C609.76 900.27 592.32 921.74 573.14 915.25C560.35 910.92 512.93 908.04 430.86 906.61L441.22 882.28Z" />
+          <path id="&lt;Path&gt;" class="shp5" d="M0.72 576.11C134.05 513.44 218.72 483.44 254.72 486.11C308.72 490.11 591.19 628.11 736.95 624.11C882.72 620.11 954.72 580.11 1014.72 586.11C1074.72 592.11 1219.72 656.11 1322.72 640.11C1391.39 629.44 1496.05 595.44 1636.72 538.11L1636.72 698.28L0.72 698.28L0.72 576.11Z" />
+          <path id="&lt;Path&gt;" class="shp6" d="M114.05 653.44C107.83 627.22 101.83 617.11 96.05 623.11C90.28 629.11 86.28 635.67 84.05 642.78L84.05 698.28L114.05 698.28L114.05 653.44Z" />
+          <path id="&lt;Path&gt;" class="shp6" d="M1020.72 698.28C1029.82 697.06 1037.04 692.89 1042.38 685.78C1050.39 675.11 1052.72 663.78 1059.72 667.11C1066.72 670.44 1066.05 685.78 1071.05 683.78C1076.05 681.78 1079.39 665.11 1085.39 664.44C1091.39 663.78 1092.39 682.95 1099.72 681.36C1107.05 679.78 1114.05 652.44 1122.72 654.11C1131.39 655.78 1133.05 686.11 1143.05 680.11C1153.05 674.11 1157.05 634.44 1165.05 633.78C1173.05 633.11 1178.05 689.44 1186.05 683.44C1194.05 677.44 1199.39 668.61 1204.72 666.03C1210.05 663.44 1213.72 688.44 1220.39 683.78C1227.05 679.11 1230.05 652.11 1237.39 652.44C1244.72 652.78 1249.72 686.44 1256.39 683.78C1263.05 681.11 1266.05 640.44 1277.39 638.78C1288.72 637.11 1291.72 683.44 1303.39 684.78C1315.05 686.11 1381.72 662.43 1391.72 649.11C1401.72 635.79 1412.72 629.11 1419.72 647.11C1426.72 665.11 1439.72 609.11 1461.72 614.11C1476.39 617.44 1476.39 645.5 1461.72 698.28L1020.72 698.28Z" />
+          <path id="&lt;Path&gt;" class="shp6" d="M225.72 674.11C233.05 640.11 239.89 623.11 246.22 623.11C255.72 623.11 260.22 668.11 266.72 668.11C273.22 668.11 272.12 652.44 284.22 653.61C296.32 654.78 296.22 687.61 306.22 685.11C316.22 682.61 324.22 632.61 332.72 629.61C341.22 626.61 348.22 682.38 360.22 685.25C372.22 688.11 394.72 686.88 400.22 685.25C405.72 683.61 424.72 639.11 438.72 639.61C452.72 640.11 455.72 683.61 462.72 683.61C469.72 683.61 472.72 655.96 479.72 655.04C486.72 654.11 486.22 682.11 498.72 684.61C511.22 687.11 513.22 661.61 519.22 662.11C525.22 662.61 526.22 683.11 535.72 684.61C545.22 686.11 557.22 656.61 566.22 652.61C575.22 648.61 578.22 685.61 590.72 683.61C603.22 681.61 613.19 632.11 620.7 631.11C628.22 630.11 635.22 683.11 642.72 679.61C650.22 676.11 651.72 664.11 657.22 664.61C662.72 665.11 665.22 686.11 674.22 684.11C683.22 682.11 684.72 667.11 692.72 668.11C700.72 669.11 700.22 687.82 708.22 686.96C716.22 686.11 721.72 675.11 725.72 674.11C729.72 673.11 733.49 685.37 741.36 686.99C749.22 688.61 754.98 678.1 761.35 681.61C765.6 683.94 775.32 689.5 790.53 698.28L225.72 698.28L225.72 674.11Z" />
+          <path id="&lt;Path&gt;" class="shp-cloud" d="M480.26 127.61C478.04 116.03 467.86 107.28 455.64 107.28C451.41 107.28 447.43 108.33 443.94 110.18C433.91 92.24 414.73 80.11 392.72 80.11C372.06 80.11 353.9 90.8 343.45 106.95C338.06 103.37 331.59 101.28 324.64 101.28C308.48 101.28 294.99 112.53 291.47 127.61L480.26 127.61Z" />
+          <path id="&lt;Path&gt;" class="shp-cloud" d="M838.26 271.61C836.04 260.03 825.86 251.28 813.64 251.28C809.41 251.28 805.43 252.33 801.94 254.18C791.91 236.24 772.73 224.11 750.72 224.11C730.06 224.11 711.9 234.8 701.45 250.95C696.06 247.37 689.59 245.28 682.64 245.28C666.48 245.28 652.99 256.53 649.47 271.61L838.26 271.61Z" />
+          <path id="&lt;Path&gt;" class="shp-cloud" d="M514.69 386.11C508.29 363.42 487.46 346.78 462.72 346.78C451.5 346.78 441.07 350.2 432.44 356.06C416.84 332.78 390.29 317.44 360.16 317.44C327.7 317.44 299.42 335.24 284.48 361.6C278.79 357.23 271.7 354.61 263.97 354.61C249.18 354.61 236.64 364.14 232.08 377.39C228.82 372.69 223.4 369.61 217.25 369.61C207.81 369.61 200.08 376.87 199.3 386.11L514.69 386.11Z" />
+          <path id="&lt;Path&gt;" class="shp-cloud" d="M1345.07 143.44C1343.12 129.88 1331.49 119.44 1317.39 119.44C1311.46 119.44 1305.97 121.3 1301.45 124.44C1289.48 106.18 1268.85 94.11 1245.39 94.11C1221.88 94.11 1201.21 106.23 1189.25 124.55C1182.86 117.73 1173.8 113.44 1163.72 113.44C1149.52 113.44 1137.32 121.92 1131.83 134.07C1127.86 129.21 1121.82 126.11 1115.05 126.11C1104.57 126.11 1095.83 133.55 1093.82 143.44L1345.07 143.44Z" />
+          <path id="&lt;Path&gt;" class="shp-cloud" d="M1549.57 314.11C1548.06 297.85 1534.38 285.11 1517.72 285.11C1509.2 285.11 1501.48 288.46 1495.75 293.89C1481.43 249.35 1439.68 217.11 1390.39 217.11C1348.83 217.11 1312.63 240.03 1293.72 273.92C1271.33 251.78 1240.56 238.11 1206.6 238.11C1163.11 238.11 1124.89 260.52 1102.77 294.4C1095.12 288.58 1085.58 285.11 1075.22 285.11C1055.91 285.11 1039.43 297.14 1032.82 314.11L1549.57 314.11Z" />
+          <path id="&lt;Path&gt;" class="shp8" d="M188.72 146.36C188.72 148.43 187.04 150.11 184.97 150.11C182.9 150.11 181.22 148.43 181.22 146.36C181.22 144.29 182.9 142.61 184.97 142.61C187.04 142.61 188.72 144.29 188.72 146.36Z" />
+          <path id="&lt;Path&gt;" class="shp8" d="M310.72 238.11C310.72 239.77 309.38 241.11 307.72 241.11C306.06 241.11 304.72 239.77 304.72 238.11C304.72 236.45 306.06 235.11 307.72 235.11C309.38 235.11 310.72 236.45 310.72 238.11Z" />
+          <path id="&lt;Path&gt;" class="shp8" d="M1257.88 572.29C1257.88 573.94 1256.54 575.29 1254.88 575.29C1253.22 575.29 1251.88 573.94 1251.88 572.29C1251.88 570.63 1253.22 569.29 1254.88 569.29C1256.54 569.29 1257.88 570.63 1257.88 572.29Z" />
+          <path id="&lt;Path&gt;" class="shp8" d="M503.72 155.11C503.72 157.5 501.78 159.44 499.39 159.44C496.99 159.44 495.05 157.5 495.05 155.11C495.05 152.72 496.99 150.78 499.39 150.78C501.78 150.78 503.72 152.72 503.72 155.11Z" />
+          <path id="&lt;Path&gt;" class="shp8" d="M650.72 169.44C650.72 172.02 648.63 174.11 646.05 174.11C643.48 174.11 641.39 172.02 641.39 169.44C641.39 166.87 643.48 164.78 646.05 164.78C648.63 164.78 650.72 166.87 650.72 169.44Z" />
+          <path id="&lt;Path&gt;" class="shp4" d="M630.04 742.69C630.04 745.27 627.95 747.36 625.37 747.36C622.79 747.36 620.7 745.27 620.7 742.69C620.7 740.11 622.79 738.02 625.37 738.02C627.95 738.02 630.04 740.11 630.04 742.69Z" />
+          <path id="&lt;Path&gt;" class="shp4" d="M1005.54 958.11C1005.54 960.69 1003.45 962.78 1000.87 962.78C998.29 962.78 996.21 960.69 996.21 958.11C996.21 955.53 998.29 953.44 1000.87 953.44C1003.45 953.44 1005.54 955.53 1005.54 958.11Z" />
+          <path id="&lt;Path&gt;" class="shp4" d="M463.72 827.68C463.72 830.25 461.63 832.34 459.05 832.34C456.48 832.34 454.39 830.25 454.39 827.68C454.39 825.1 456.48 823.01 459.05 823.01C461.63 823.01 463.72 825.1 463.72 827.68Z" />
+          <path id="&lt;Path&gt;" class="shp4" d="M1186.72 853.81C1186.72 856.38 1184.63 858.47 1182.05 858.47C1179.48 858.47 1177.39 856.38 1177.39 853.81C1177.39 851.23 1179.48 849.14 1182.05 849.14C1184.63 849.14 1186.72 851.23 1186.72 853.81Z" />
+          <path id="&lt;Path&gt;" class="shp4" d="M563.39 953.44C563.39 956.02 561.3 958.11 558.72 958.11C556.14 958.11 554.05 956.02 554.05 953.44C554.05 950.87 556.14 948.78 558.72 948.78C561.3 948.78 563.39 950.87 563.39 953.44Z" />
+          <path id="&lt;Path&gt;" class="shp8" d="M871.39 90.11C871.39 92.32 869.6 94.11 867.39 94.11C865.18 94.11 863.39 92.32 863.39 90.11C863.39 87.9 865.18 86.11 867.39 86.11C869.6 86.11 871.39 87.9 871.39 90.11Z" />
+          <path id="&lt;Path&gt;" class="shp8" d="M1003.64 217.44C1003.64 220.16 1001.44 222.36 998.72 222.36C996 222.36 993.8 220.16 993.8 217.44C993.8 214.73 996 212.53 998.72 212.53C1001.44 212.53 1003.64 214.73 1003.64 217.44Z" />
+          <path id="&lt;Path&gt;" class="shp8" d="M600.55 436.11C600.55 438.83 598.35 441.03 595.64 441.03C592.92 441.03 590.72 438.83 590.72 436.11C590.72 433.39 592.92 431.19 595.64 431.19C598.35 431.19 600.55 433.39 600.55 436.11Z" />
+          <path id="&lt;Path&gt;" class="shp8" d="M1066.72 399.78C1066.72 401.8 1065.08 403.44 1063.05 403.44C1061.03 403.44 1059.39 401.8 1059.39 399.78C1059.39 397.75 1061.03 396.11 1063.05 396.11C1065.08 396.11 1066.72 397.75 1066.72 399.78Z" />
+          <path id="&lt;Path&gt;" class="shp4" d="M706.72 759.27C706.72 761.3 705.08 762.94 703.05 762.94C701.03 762.94 699.39 761.3 699.39 759.27C699.39 757.25 701.03 755.61 703.05 755.61C705.08 755.61 706.72 757.25 706.72 759.27Z" />
+          <path id="&lt;Path&gt;" class="shp4" d="M466.39 755.61C466.39 757.63 464.74 759.27 462.72 759.27C460.69 759.27 459.05 757.63 459.05 755.61C459.05 753.58 460.69 751.94 462.72 751.94C464.74 751.94 466.39 753.58 466.39 755.61Z" />
+          <path id="&lt;Path&gt;" class="shp4" d="M489.72 853.81C489.72 855.83 488.08 857.47 486.05 857.47C484.03 857.47 482.39 855.83 482.39 853.81C482.39 851.78 484.03 850.14 486.05 850.14C488.08 850.14 489.72 851.78 489.72 853.81Z" />
+          <path id="&lt;Path&gt;" class="shp4" d="M624.37 974.44C624.37 976.47 622.73 978.11 620.7 978.11C618.68 978.11 617.04 976.47 617.04 974.44C617.04 972.42 618.68 970.78 620.7 970.78C622.73 970.78 624.37 972.42 624.37 974.44Z" />
+          <path id="&lt;Path&gt;" class="shp4" d="M1232.22 711.64C1232.22 713.66 1230.58 715.31 1228.55 715.31C1226.53 715.31 1224.89 713.66 1224.89 711.64C1224.89 709.61 1226.53 707.97 1228.55 707.97C1230.58 707.97 1232.22 709.61 1232.22 711.64Z" />
+          <path id="&lt;Path&gt;" class="shp4" d="M1113.66 858.47C1113.66 860.5 1112.02 862.14 1110 862.14C1107.97 862.14 1106.33 860.5 1106.33 858.47C1106.33 856.45 1107.97 854.81 1110 854.81C1112.02 854.81 1113.66 856.45 1113.66 858.47Z" />
+          <path id="&lt;Path&gt;" class="shp4" d="M1080.72 939.86C1080.72 941.89 1079.08 943.53 1077.05 943.53C1075.03 943.53 1073.39 941.89 1073.39 939.86C1073.39 937.84 1075.03 936.2 1077.05 936.2C1079.08 936.2 1080.72 937.84 1080.72 939.86Z" />
+          <path id="&lt;Path&gt;" class="shp4" d="M1084.39 762.94C1084.39 764.96 1082.74 766.61 1080.72 766.61C1078.69 766.61 1077.05 764.96 1077.05 762.94C1077.05 760.91 1078.69 759.27 1080.72 759.27C1082.74 759.27 1084.39 760.91 1084.39 762.94Z" />
+          <path id="&lt;Path&gt;" class="shp4" d="M1185.72 721.19C1185.72 723.22 1184.08 724.86 1182.05 724.86C1180.03 724.86 1178.39 723.22 1178.39 721.19C1178.39 719.17 1180.03 717.52 1182.05 717.52C1184.08 717.52 1185.72 719.17 1185.72 721.19Z" />
+          <path id="&lt;Path&gt;" class="shp8" d="M1227.44 197.44C1227.44 199.65 1225.65 201.44 1223.44 201.44C1221.24 201.44 1219.44 199.65 1219.44 197.44C1219.44 195.23 1221.24 193.44 1223.44 193.44C1225.65 193.44 1227.44 195.23 1227.44 197.44Z" />
+          <path id="&lt;Path&gt;" class="shp8" d="M256.72 560.11C256.72 562.32 254.93 564.11 252.72 564.11C250.51 564.11 248.72 562.32 248.72 560.11C248.72 557.9 250.51 556.11 252.72 556.11C254.93 556.11 256.72 557.9 256.72 560.11Z" />
+          <path id="&lt;Path&gt;" class="shp8" d="M1450.72 496C1450.72 498.21 1448.93 500 1446.72 500C1444.51 500 1442.72 498.21 1442.72 496C1442.72 493.79 1444.51 492 1446.72 492C1448.93 492 1450.72 493.79 1450.72 496Z" />
+          <path id="&lt;Path&gt;" class="shp8" d="M1523.39 146.78C1523.39 148.62 1521.89 150.11 1520.05 150.11C1518.21 150.11 1516.72 148.62 1516.72 146.78C1516.72 144.94 1518.21 143.44 1520.05 143.44C1521.89 143.44 1523.39 144.94 1523.39 146.78Z" />
+          <path id="&lt;Path&gt;" class="shp8" d="M1447.05 355.78C1447.05 357.07 1446.01 358.11 1444.72 358.11C1443.43 358.11 1442.39 357.07 1442.39 355.78C1442.39 354.49 1443.43 353.44 1444.72 353.44C1446.01 353.44 1447.05 354.49 1447.05 355.78Z" />
+          <path id="&lt;Path&gt;" class="shp6" d="M1046.22 689.11C987.89 692.11 940.39 693.94 903.72 694.61C867.05 695.28 821.83 693.44 768.05 689.11L766.22 698.28L1046.22 698.28L1046.22 689.11Z" />
+          <path id="&lt;Path&gt;" class="shp8" d="M581.72 823.11C581.72 824.77 580.38 826.11 578.72 826.11C577.06 826.11 575.72 824.77 575.72 823.11C575.72 821.45 577.06 820.11 578.72 820.11C580.38 820.11 581.72 821.45 581.72 823.11Z" />
+          <path id="&lt;Path&gt;" class="shp8" d="M1200.88 761.28C1200.88 762.93 1199.54 764.28 1197.88 764.28C1196.23 764.28 1194.88 762.93 1194.88 761.28C1194.88 759.62 1196.23 758.28 1197.88 758.28C1199.54 758.28 1200.88 759.62 1200.88 761.28Z" />
+          <path id="&lt;Path&gt;" class="shp8" d="M393.92 749.28C393.92 750.94 392.58 752.28 390.92 752.28C389.27 752.28 387.92 750.94 387.92 749.28C387.92 747.62 389.27 746.28 390.92 746.28C392.58 746.28 393.92 747.62 393.92 749.28Z" />
+          <path id="&lt;Path&gt;" class="shp8" d="M1020.89 539.29C1020.89 540.95 1019.55 542.29 1017.89 542.29C1016.23 542.29 1014.89 540.95 1014.89 539.29C1014.89 537.63 1016.23 536.29 1017.89 536.29C1019.55 536.29 1020.89 537.63 1020.89 539.29Z" />
+          <path id="&lt;Path&gt;" class="shp8" d="M1515.87 671.28C1514.21 671.28 1512.87 672.63 1512.87 674.28C1512.87 675.94 1514.21 677.28 1515.87 677.28C1517.52 677.28 1518.87 675.94 1518.87 674.28C1518.87 672.63 1517.52 671.28 1515.87 671.28Z" />
+          <path id="&lt;Path&gt;" class="shp8" d="M1299.72 907.78C1299.72 909.43 1298.38 910.78 1296.72 910.78C1295.06 910.78 1293.72 909.43 1293.72 907.78C1293.72 906.12 1295.06 904.78 1296.72 904.78C1298.38 904.78 1299.72 906.12 1299.72 907.78Z" />
+          <path id="&lt;Path&gt;" class="shp8" d="M212.93 893.27C212.93 895.48 211.14 897.27 208.93 897.27C206.72 897.27 204.93 895.48 204.93 893.27C204.93 891.06 206.72 889.27 208.93 889.27C211.14 889.27 212.93 891.06 212.93 893.27Z" />
+        </g>
+      </g>
+    </svg>
+
+    <!--  Bushes  -->
+    <svg class="bush" id="bush-left-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 404 246" width="404" height="246">
+      <title>Bush</title>
+      <defs>
+        <linearGradient id="grd-bush-bottom" gradientUnits="userSpaceOnUse"  x1="470.962" y1="100.461" x2="330.539" y2="368.7">
+          <stop offset="0" stop-color="#213c26"  />
+          <stop offset="1" stop-color="#2b5534"  />
+        </linearGradient>
+      </defs>
+      <g id="Bush">
+        <g id="&lt;Clip Group&gt;">
+          <path id="&lt;Path&gt;" class="shp-bush-bottom" d="M47.71 9.05C59.11 9.05 69.57 13.07 77.75 19.76C91.81 7.85 109.99 0.66 129.85 0.66C162.05 0.66 189.84 19.53 202.78 46.81C208.34 44.53 214.42 43.27 220.79 43.27C240.31 43.27 257.08 55.05 264.38 71.89C265.67 71.82 266.97 71.78 268.29 71.78C304.65 71.78 334.84 98.13 340.86 132.78C342.93 132.55 345.03 132.42 347.16 132.42C378.41 132.42 403.74 157.75 403.74 189C403.74 220.25 378.41 245.58 347.16 245.58L0.22 245.58L0.22 56.54C0.22 30.31 21.48 9.05 47.71 9.05Z" />
+        </g>
+      </g>
+    </svg>
+    <svg class="bush" id="bush-left-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499 291" width="499" height="291">
+      <title>Bush</title>
+      <defs>
+        <linearGradient id="grd-bush-top" gradientUnits="userSpaceOnUse"  x1="602.642" y1="123.39" x2="396.952" y2="412.519">
+          <stop offset="0" stop-color="#213c26"  />
+          <stop offset="1" stop-color="#2b5534"  />
+        </linearGradient>
+      </defs>
+      <g id="Bush">
+        <g id="&lt;Clip Group&gt;">
+          <path id="&lt;Path&gt;" class="shp-bush-top" d="M434.97 163.61C434.55 163.61 434.14 163.63 433.72 163.64C433.72 163.63 433.72 163.62 433.72 163.61C433.72 129.09 405.74 101.11 371.22 101.11C362.43 101.11 354.06 102.93 346.47 106.21C346.63 104.53 346.72 102.83 346.72 101.11C346.72 71.29 322.54 47.11 292.72 47.11C279.95 47.11 268.23 51.55 258.98 58.96C245.8 24.87 212.73 0.69 173.99 0.69C149.06 0.69 126.48 10.71 110.02 26.93C99.19 11.33 81.15 1.11 60.72 1.11C27.58 1.11 0.72 27.97 0.72 61.11L0.72 291.11L434.97 291.11C470.18 291.11 498.72 262.57 498.72 227.36C498.72 192.15 470.18 163.61 434.97 163.61Z" />
+        </g>
+      </g>
+    </svg>
+    <svg class="bush" id="bush-right-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499 292" width="499" height="292">
+      <title>Bush</title>
+      <defs>
+        <linearGradient id="grd-bush-bottom" gradientUnits="userSpaceOnUse"  x1="405.404" y1="-133.551" x2="561.853" y2="124.378">
+          <stop offset="0" stop-color="#213c26"  />
+          <stop offset="1" stop-color="#2b5534"  />
+        </linearGradient>
+      </defs>
+      <g id="Bush">
+        <g id="&lt;Clip Group&gt;">
+          <path id="&lt;Path&gt;" class="shp-bush-bottom" d="M64.47 163.64C64.89 163.64 65.3 163.67 65.72 163.68C65.72 163.66 65.72 163.65 65.72 163.64C65.72 129.13 93.7 101.14 128.22 101.14C137.01 101.14 145.38 102.97 152.97 106.24C152.81 104.56 152.72 102.86 152.72 101.14C152.72 71.32 176.9 47.14 206.72 47.14C219.49 47.14 231.21 51.59 240.46 58.99C253.64 24.91 286.71 0.72 325.45 0.72C350.38 0.72 372.96 10.74 389.42 26.96C400.25 11.36 418.29 1.14 438.72 1.14C471.86 1.14 498.72 28.01 498.72 61.14L498.72 291.14L64.47 291.14C29.26 291.14 0.72 262.6 0.72 227.39C0.72 192.19 29.26 163.64 64.47 163.64Z" />
+        </g>
+      </g>
+    </svg>
+    <svg class="bush" id="bush-right-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 315" width="520" height="315">
+      <title>Bush</title>
+      <defs>
+        <linearGradient id="grd-bush-top" gradientUnits="userSpaceOnUse"  x1="416.891" y1="-134.471" x2="596.882" y2="156.514">
+          <stop offset="0" stop-color="#213c26"  />
+          <stop offset="1" stop-color="#2b5534"  />
+        </linearGradient>
+      </defs>
+      <g id="Bush">
+        <g id="&lt;Clip Group&gt;">
+          <path id="&lt;Path&gt;" class="shp-bush-top" d="M458 10.98C443.35 10.98 429.9 16.14 419.38 24.75C401.3 9.44 377.93 0.19 352.39 0.19C310.98 0.19 275.25 24.45 258.61 59.53C251.47 56.6 243.65 54.98 235.45 54.98C210.35 54.98 188.8 70.13 179.41 91.78C177.75 91.69 176.07 91.64 174.39 91.64C127.63 91.64 88.81 125.52 81.07 170.07C78.41 169.77 75.71 169.61 72.97 169.61C32.79 169.61 0.22 202.18 0.22 242.36C0.22 282.54 32.79 315.11 72.97 315.11L519.07 315.11L519.07 72.04C519.07 38.32 491.73 10.98 458 10.98Z" />
+        </g>
+      </g>
+    </svg>
+
+    <!--  Trees  -->
+    <svg class="tree" id="tree-left-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 208 329" width="208" height="329">
+      <title>Tree</title>
+      <defs>
+        <linearGradient id="grd-tree" gradientUnits="userSpaceOnUse"  x1="-3.947" y1="328.153" x2="-3.947" y2="111.067">
+          <stop offset="0" stop-color="#2b5534"  />
+          <stop offset="1" stop-color="#276831"  />
+        </linearGradient>
+      </defs>
+      <g id="Tree">
+        <g id="&lt;Clip Group&gt;">
+          <path id="&lt;Path&gt;" class="shp-tree" d="M0.05 309.44C74.5 113.22 116.72 10.44 126.72 1.11C136.72 -8.22 163.72 101.11 207.72 329.11L0.05 309.44Z" />
+        </g>
+      </g>
+    </svg>
+    <svg class="tree" id="tree-left-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 206 334" width="206" height="334">
+      <title>Tree</title>
+      <defs>
+        <linearGradient id="grd-tree" gradientUnits="userSpaceOnUse"  x1="-3.28" y1="254.273" x2="-3.28" y2="55.661">
+          <stop offset="0" stop-color="#2b5534"  />
+          <stop offset="1" stop-color="#276831"  />
+        </linearGradient>
+      </defs>
+      <g id="Tree">
+        <g id="&lt;Clip Group&gt;">
+          <path id="&lt;Path&gt;" class="shp-tree" d="M0.72 243.14C70.72 81.12 111.94 0.11 124.39 0.11C136.83 0.11 163.94 111.36 205.72 333.86L0.72 243.14Z" />
+        </g>
+      </g>
+    </svg>
+    <svg class="tree" id="tree-right-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215 328" width="215" height="328">
+      <title>Tree</title>
+      <defs>
+        <linearGradient id="grd-tree" gradientUnits="userSpaceOnUse"  x1="-3.447" y1="247.276" x2="-3.447" y2="42.458">
+          <stop offset="0" stop-color="#2b5534"  />
+          <stop offset="1" stop-color="#276831"  />
+        </linearGradient>
+      </defs>
+      <g id="Tree">
+        <g id="&lt;Clip Group&gt;">
+          <path id="&lt;Path&gt;" class="shp-tree" d="M0.55 323.11C65.95 107.69 110.23 -0.03 133.39 -0.03C159.92 -0.03 186.92 109.31 214.39 327.97L0.55 323.11Z" />
+        </g>
+      </g>
+    </svg>
+    <svg class="tree" id="tree-right-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215 328" width="215" height="328">
+      <title>Tree</title>
+      <defs>
+        <linearGradient id="grd-tree" gradientUnits="userSpaceOnUse"  x1="-3.28" y1="295.279" x2="-3.28" y2="23.631">
+          <stop offset="0" stop-color="#2b5534"  />
+          <stop offset="1" stop-color="#276831"  />
+        </linearGradient>
+      </defs>
+      <g id="Tree">
+        <g id="&lt;Clip Group&gt;">
+          <path id="&lt;Path&gt;" class="shp-tree" d="M0.72 323.11C66.12 107.69 110.4 -0.03 133.55 -0.03C160.08 -0.03 187.08 109.31 214.55 327.97L0.72 323.11Z" />
+        </g>
+      </g>
+    </svg>
+
+    <!--  Main content  -->
+    <div class="main-content">
+      <h1 class="requires">Draw a picture of your family here. Put in those who live
+        with you and those who don't. Put in the animals and plants you love yoo.</h1>
+      <div class="text-box">
+        <p>Talk with your friends about your picture.</p>
+
+        <p id="q1"> - Tell them about the people in your family
+        and what you like to do together.</p>
+        <p id="q2"> - Remember to talk about the happy times.</p>
+        <p id="q3"> - Be kind and listen carefully when it's their turn to talk.</p>
+        <p id="q4"> - What does your family look like?</p>
+        <p id="q5"> - Talk about a different family and how you can make friends.</p>
+      </div>
+    </div>
     <div id="painterro"></div>
-
-    <div class="text">
-      <h1 id="first">Where do you live?</h1>
-      <h1 id="second">Where do you want to visit?</h1>
-      <div class="para">
-        <p> - Mark the country that you live in.</p>
-        <p> - Mark on your map where you and your friends want to visit and connect these places.</p>
-        <p><strong>We may be in different places and want different things,</strong></p>
-        <p><strong>but we are all joined together by lines of belonging and love.</strong></p>
-      </div>
-    </div>
-
-    <!--  airplane  -->
-    <div class="airplane">
-      <div class="head"></div>
-      <div class="body">
-        <div class="window"></div>
-        <div class="window"></div>
-        <div class="window"></div>
-      </div>
-      <div class="lwing"></div>
-      <div class="rwing"></div>
-      <div class="tale"></div>
-    </div>
   </div>
 </template>
 
@@ -34,244 +227,230 @@ import Painterro from "painterro";
 
 export default {
   name: "Session1Page15",
-  data() {
-    return {
-      painterro: null,
-    }
-  },
-  methods: {
-    add_file(file) {
-      console.log(file);
-    },
-  },
   mounted() {
     this.$nextTick(() => {
       this.painterro = Painterro({
         id: "painterro",
+        activeColor: '#000000',
         activeFillColor: '#ffffff',
-        defaultLineWidth: '20',
+        defaultLineWidth: '5',
+        defaultPrimitiveShadowOn: 'true',
         defaultEraserWidth: '40',
-        backplateImgUrl: require('../../assets/images/session1/World-Map-ai.jpg'),
         defaultTool: 'brush',
-        hiddenTools: ['pixelize','select','crop','line','text','rotate','resize',
-        'open','save','close','settings','redo','zoomin','zoomout'],
+        toolbarPosition: 'bottom',
+        availableLineWidths: [1,4,8,12,16,20],
+        availableEraserWidths: [1,4,8,12,16,20],
+        hiddenTools: ['pixelize','select','crop','text','rotate','resize',
+          'open','save','close','settings','redo','zoomin','zoomout'],
         colorScheme: {
-          main: "'#f8f8f8'",
+          main: '#cfcfcf',
           control: "#ffffff",
           controlContent: '#434649',
-          backgroundColor: "#DEEDF3",
-        },
-        saveHandler: (image, done) => {
-          const type = "image/png";
-          const file = new File([image.asBlob(type)], "file.png", {
-            type: type,
-          });
-          this.add_file(file);
-          done(true); //done and hide painterro
+          controlShadow: '0px 0px 0px 0.5px #000',
         },
       })
       this.painterro.show();
+      let info = document.querySelector('.ptro-info');
+      info.style.visibility = 'hidden';
     });
-    let para = document.getElementsByClassName('para')[0].children;
-    let animation = anime.timeline({
-      delay: 1000,
-      duration: 1000,
+    const clouds = document.getElementsByClassName('shp-cloud');
+    clouds.forEach(cloud => {
+      let plusOrMinus = Math.random() < 0.5 ? -1 : 1;
+      anime({
+        targets: cloud,
+        translateX: (Math.floor(Math.random() * 500) + 200) * plusOrMinus,
+        duration: (Math.floor(Math.random() * 1000) + 5000),
+        loop: true,
+        direction: 'alternate',
+        easing: 'linear'
+      })
+    })
+
+    let treeGrowAnimation = anime.timeline()
+    treeGrowAnimation
+        .add({
+          targets: "#bush-left-bottom",
+          scale: 50,
+          duration: 1000,
+          delay: 1000,
+        })
+        .add({
+          targets: "#bush-left-top",
+          scale: 60,
+          duration: 1000,
+        })
+        .add({
+          targets: "#bush-right-bottom",
+          scale: 50,
+          duration: 1000,
+        })
+        .add({
+          targets: "#bush-right-top",
+          scale: 60,
+          duration: 1000,
+        })
+        .add({
+          targets: "#tree-left-left",
+          scale: 100,
+          duration: 1000,
+        })
+        .add({
+          targets: "#tree-left-right",
+          scale: 100,
+          duration: 1000,
+        })
+        .add({
+          targets: "#tree-right-right",
+          scale: 100,
+          duration: 1000,
+        })
+        .add({
+          targets: "#tree-right-left",
+          scale: 100,
+          duration: 1000,
+        })
+
+    let mainContentAnimation = anime.timeline({
+      easing: 'linear'
     });
-    animation
-      .add({
-        targets: "#first",
-        color: "#000",
-        delay: 2000,
-      })
-      .add({
-        targets: "#second",
-        color: "#000",
-      })
-      .add({
-        targets: para[0],
-        color: "#000",
-      })
-      .add({
-        targets: para[1],
-        color: "#000",
-      })
-      .add({
-        targets: para[2],
-        color: "#000",
-      })
-      .add({
-        targets: para[3],
-        color: "#000",
-      })
+    mainContentAnimation
+        .add({
+          targets: '.requires',
+          opacity: 1,
+          duration: 2000,
+          delay: 1000,
+        })
+        .add({
+          targets: '.text-box',
+          opacity: 0.90,
+          duration: 2000,
+        })
+        .add({
+          targets: '#painterro',
+          opacity: 0.92
+        })
   }
 }
 </script>
 
 <style scoped>
-.cloud-background {
-  background-color: #DEEDF3;
-}
-.text {
+.landscape {
   position: absolute;
-  z-index: 30;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 10px;
-}
-.text h1 {
-  font-size: 20px;
-  color: #DEEDF3;
-}
-.para {
-  background-color: #DEEDF3;
-  padding-right: 25px;
-  padding-left: 25px;
-  width: 90%;
-}
-.para p {
-  font-size: 15px;
-  color: #DEEDF3;
-  margin-bottom: 0;
-  text-align: center;
+  width: 120vw;
+  height: auto;
+  left: -12vw;
 }
 #painterro {
   position: absolute;
-  top: 130px;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  top: 5vh;
+  left: 33vw;
+  right: 1vw;
+  bottom: 10vh;
+  opacity: 0;
+  z-index: 100;
+}
+tspan { white-space:pre }
+.shp-bush-top { fill: url(#grd-bush-top) }
+.shp-bush-bottom { fill: #488742 }
+.shp-tree { fill: url(#grd-tree) }
+.shp0 { fill: url(#grd1) }
+.shp1 { fill: url(#grd2) }
+.shp2 { fill: url(#grd3) }
+.shp3 { fill: url(#grd4) }
+.shp4 { opacity: 0.2;fill: #3d5539 }
+.shp5 { fill: url(#grd5) }
+.shp6 { fill: #3d5539 }
+.shp-cloud { fill: #ecf0f1 }
+.shp8 { opacity: 0.2;fill: #ecf0f1 }
+
+.bush {
+  position: absolute;
+}
+#bush-left-bottom {
+  bottom: 6vh;
+  left: 10vw;
+  width: 0.5vw;
+  height: auto;
+  z-index: 20;
+}
+#bush-left-top {
+  bottom: 9vh;
+  left: 10vw;
+  width: 0.5vw;
+  height: auto;
   z-index: 10;
 }
-.airplane {
-  position: absolute;
-  left: 50px;
-  top: 250px;
+#bush-right-bottom {
+  bottom: 5vh;
+  right: 10vw;
+  width: 0.5vw;
+  height: auto;
   z-index: 20;
-  -webkit-animation: plane-fly 20s linear infinite;
-  -o-animation: plane-fly 20s linear infinite;
-  animation: plane-fly 20s linear infinite;
 }
-.airplane div {
-  background: #f9fbfc;
-  border-radius: 100%;
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  z-index: 1;
+#bush-right-top {
+  bottom: 8vh;
+  right: 10vw;
+  width: 0.5vw;
+  height: auto;
+  z-index: 10;
 }
-div.head {
-  top: 21px;
-  left: 83px;
-  width: 60px;
-  height: 25px;
-  border-radius: 100%;
-}
-div.body {
-  top: 20px;
-  left: 0;
-  width: 130px;
-  height: 26px;
-  border-radius: 40% 30% 20% 50%;
-  z-index: 1;
-}
-div.lwing {
-  top: 7px;
-  left: 60px;
-  height: 21px;
-  width: 30px;
-  border-radius: 5px;
-  z-index: 0;
-  -webkit-transform: skew(51deg, 0deg);
-  -ms-transform: skew(51deg, 0deg);
-  -o-transform: skew(51deg, 0deg);
-  transform: skew(51deg, 0deg);
-}
-div.rwing {
-  top: 34px;
-  left: 57px;
-  height: 27px;
-  width: 35px;
-  border-radius: 5px;
-  z-index: 1;
-  box-shadow: 0 6px 4px rgba(0, 0, 0, 0.16);
-  -webkit-transform: skew(-49deg, 0deg);
-  -ms-transform: skew(-49deg, 0deg);
-  -o-transform: skew(-49deg, 0deg);
-  transform: skew(-49deg, 0deg);
-}
-div.tale {
-  top: 15px;
-  left: 10px;
-  width: 16px;
-  height: 16px;
-  border-radius: 2px;
-  -webkit-transform: skew(35deg, -9deg);
-  -ms-transform: skew(35deg, -9deg);
-  -o-transform: skew(35deg, -9deg);
-  transform: skew(35deg, -9deg);
-  background: linear-gradient(0deg, #fff, #bbdeff);
-}
-div.window,
-div.window:before,
-div.window:after {
-  content: "";
-  top: 6px;
-  left: 48px;
-  width: 4px;
-  height: 4px;
-  border-radius: 30%;
-  background: #9ad0f5;
-  border: 1px solid #5093d1;
+
+.tree {
   position: absolute;
 }
-div.window:before {
-  left: -12px;
-  top: -1px;
+#tree-left-left {
+  width: 0.5vh;
+  height: auto;
+  bottom: 18vh;
+  left: 3vw;
 }
-div.window:after {
-  left: 10px;
-  top: -1px;
+#tree-left-right {
+  width: 0.5vh;
+  height: auto;
+  bottom: -11vh;
+  left: 15vw;
+  z-index: 9;
 }
-div.window:nth-child(1) {
-  left: 81px;
+#tree-right-right {
+  width: 0.5vh;
+  height: auto;
+  bottom: 18vh;
+  right: 3vw;
 }
-div.window:nth-child(2) {
-  left: 115px;
+#tree-right-left {
+  width: 0.5vh;
+  height: auto;
+  bottom: -8vh;
+  right: 17vw;
+  z-index: 9;
 }
-div.window:nth-child(2):after {
-  border-top-right-radius: 8px;
-  width: 6px;
+
+.main-content {
+  position: absolute;
+  left: 1vw;
+  top: 10vh;
+  width: 30vw;
+  z-index: 50;
 }
-@-webkit-keyframes plane-fly {
-  0% {
-    left: -10%;
-    -webkit-transform: scale(0.4);
-    -ms-transform: scale(0.4);
-    -o-transform: scale(0.4);
-    transform: scale(0.4);
-  }
-  50% {
-    left: 110%;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
-  }
-  51% {
-    -webkit-transform: rotateY(180deg);
-    -ms-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-  }
-  100% {
-    left: -10%;
-    -webkit-transform: scale(1.4) rotateY(180deg);
-    -ms-transform: scale(1.4) rotateY(180deg);
-    -o-transform: scale(1.4) rotateY(180deg);
-    transform: scale(1.4) rotateY(180deg);
-  }
+.main-content h1 {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 2vh;
+  width: 100%;
+  height: auto;
+  padding: 1.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+.text-box {
+  background-color: #ffffff;
+  padding: 2.5vh;
+  height: auto;
+  opacity: 0;
+}
+.text-box p:first-child {
+  font-weight: bold;
 }
 </style>

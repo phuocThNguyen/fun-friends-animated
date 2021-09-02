@@ -1,15 +1,18 @@
 <template>
   <div class="interactive-container">
     <div class="images">
-      <img src="../../assets/images/session1/30164-resized.jpg" alt="house" />
-      <img src="../../assets/images/session1/13202-resized.jpg" alt="house" />
-      <img src="../../assets/images/session1/172-resized.jpg" alt="house" />
-      <img src="../../assets/images/session1/1217-resized.jpg" alt="house" />
+      <img src="../../assets/images/session1/40364-resized.jpg" alt="house" />
+      <img src="../../assets/images/session1/1745-resized.jpg" alt="house" />
+      <img src="../../assets/images/session1/9221-resized.jpg" alt="house" />
+      <img src="../../assets/images/session1/3229-resized.jpg" alt="house" />
     </div>
     <div class="text-box">
       <p class="text">
         <span>
-          Different is fun!
+          Our clothes may be different,
+        </span>
+        <span>
+          but it is all so cool.
         </span>
       </p>
     </div>
@@ -34,6 +37,12 @@ export default {
       })
       .add({
         targets: texts.children[0],
+        color: "#fff",
+        duration: 1000,
+        delay: 500,
+      })
+      .add({
+        targets: texts.children[1],
         color: "#fff",
         duration: 1000,
         delay: 500,
@@ -68,7 +77,7 @@ export default {
   background-color: #00ce7c;
   width: 650px;
   height: 60px;
-  padding: 15px 250px 15px 250px;
+  padding: 15px 90px 15px 90px;
   opacity: 0;
 }
 .text {

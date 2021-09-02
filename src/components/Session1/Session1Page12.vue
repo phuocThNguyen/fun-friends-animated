@@ -1,8 +1,16 @@
 <template>
   <div class="interactive-container">
-    <img class="session-background" src="../../assets/images/session1/476-resized.jpg" alt="family-enjoy-picnic">
-    <div class="text-box">
-      <p>This family enjoys sharing picnics.</p>
+    <img class="session-background" id="page-11" src="../../assets/images/session1/18722-resized.jpg" alt="our-families">
+
+    <div class="left-bar">
+      <h1 class="mb-4">Our families</h1>
+      <p id="para-1">Talk about your family and what you like to do.</p>
+      <p id="para-2">What games do you like to play?</p>
+      <p id="para-3">What do you enjoy doing with your family?</p>
+
+      <div class="text-box">
+        <p>We love going to the park</p>
+      </div>
     </div>
   </div>
 </template>
@@ -13,33 +21,75 @@ import anime from "animejs";
 export default {
   name: "Session1Page12",
   mounted() {
-    anime({
-      targets: ".text-box",
-      opacity: 1,
-      delay: 500,
-      duration: 1000,
-      easing: 'linear',
-    })
+    let animation = anime.timeline();
+    animation
+      .add({
+        targets: ".left-bar",
+        opacity: 0.90,
+        delay: 500,
+        duration: 1000,
+        easing: 'linear'
+      })
+      .add({
+        targets: "#para-1",
+        color: "#000",
+        delay: 1000,
+        duration: 1000
+      })
+      .add({
+        targets: "#para-2",
+        color: "#000",
+        duration: 1000
+      })
+      .add({
+        targets: "#para-3",
+        color: "#000",
+        duration: 1000
+      })
+      .add({
+        targets: ".text-box",
+        opacity: 1,
+        duration: 1000,
+      })
   }
 }
 </script>
 
 <style scoped>
-.text-box {
-  height: 40px;
-  width: 600px;
-  background-color: #00ce7c;
+.left-bar {
   position: absolute;
-  bottom: 20px;
-  left: 80px;
+  width: 26vw;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 10;
   opacity: 0;
+  padding: 3vh;
+}
+.left-bar h1 {
+  font-size: 5vh;
+}
+.left-bar p {
+  color: #ffffff;
+  font-size: 1.9vw;
+}
+.text-box {
+  height: auto;
+  width: 70%;
+  padding: 1.5vh;
+  background-color: #00ce7c;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 11vh;
+  left: 3vw;
+  opacity: 0;
 }
 .text-box p {
   color: #ffffff;
   font-weight: bold;
   margin-bottom: 0;
+  text-align: center;
 }
 </style>

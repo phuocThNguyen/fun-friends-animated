@@ -1,18 +1,33 @@
 <template>
-  <div class="interactive-container green-background">
-    <div class="images">
-      <img src="../../assets/images/session1/18-resized.jpg" alt="bears">
-      <img src="../../assets/images/session1/30402-cropped-resized.jpg" alt="giraffe">
-      <img src="../../assets/images/session1/215-resized.jpg" alt="elephants">
-      <img src="../../assets/images/session1/168-resized.jpg" alt="koalas">
-    </div>
+  <div class="interactive-container">
+    <img class="session-background" src="../../assets/images/session1/84428-resized.jpg" alt="family-enjoy-water">
     <div class="text-box">
       <p class="text">
         <span>
-          We have different bodies and different languages,
+          Talk about your family and the places they come from.
         </span>
         <span>
-          but we all love the same way.
+          Listen carefully when it is their turn to talk.
+        </span>
+        <span>
+          There are differences in the way we look,
+        </span>
+        <span>
+          what we eat,
+        </span>
+        <span>
+          where we live,
+        </span>
+        <span>
+          the clothes we wear
+        </span>
+        <span>
+          or the language we speak,
+        </span>
+        <span>
+          <strong>
+            but we all love, smile, and cry in the same way.
+          </strong>
         </span>
       </p>
     </div>
@@ -25,80 +40,86 @@ import anime from "animejs";
 export default {
   name: "Session1Page19",
   mounted() {
-    let images = document.getElementsByClassName('images')[0];
-    let texts = document.getElementsByClassName('text')[0];
+    let paraArray = document.getElementsByClassName('text')[0];
     let animation = anime.timeline({
-      delay: 500,
+      delay: 700,
     });
     animation
       .add({
-        targets: images.children[0],
-        translateY: -100,
-        opacity: 1,
-        duration: 2000
-      })
-      .add({
-        targets: images.children[1],
-        translateY: -100,
-        opacity: 1,
-        duration: 2000
-      })
-      .add({
-        targets: images.children[2],
-        translateY: -100,
-        opacity: 1,
-        duration: 2000
-      })
-      .add({
-        targets: images.children[3],
-        translateY: -100,
-        opacity: 1,
-        duration: 2000
-      })
-      .add({
-        targets: texts.children[0],
-        color: '#fff',
-        delay: 500,
+        targets: ".text-box",
+        opacity: 0.95,
         duration: 1000,
+        easing: 'linear'
       })
       .add({
-        targets: texts.children[1],
-        color: '#fff',
-        delay: 500,
+        targets: paraArray.children[0],
+        color: '#000',
         duration: 1000,
+        easing: 'linear',
+      })
+      .add({
+        targets: paraArray.children[1],
+        color: '#000',
+        duration: 1000,
+        easing: 'linear',
+      })
+      .add({
+        targets: paraArray.children[2],
+        color: '#000',
+        duration: 1000,
+        easing: 'linear',
+      })
+      .add({
+        targets: paraArray.children[3],
+        color: '#000',
+        duration: 1000,
+        easing: 'linear',
+      })
+      .add({
+        targets: paraArray.children[4],
+        color: '#000',
+        duration: 1000,
+        easing: 'linear',
+      })
+      .add({
+        targets: paraArray.children[5],
+        color: '#000',
+        duration: 1000,
+        easing: 'linear',
+      })
+      .add({
+        targets: paraArray.children[6],
+        color: '#000',
+        duration: 1000,
+        easing: 'linear',
+      })
+      .add({
+        targets: paraArray.children[7],
+        color: '#000',
+        duration: 1000,
+        easing: 'linear',
       })
   }
 }
 </script>
 
 <style scoped>
-.green-background {
-  background-color: #00ce7c;
-}
-.images {
-  position: absolute;
-  top: 100px;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  display: grid;
-  grid-template-columns: auto auto;
-}
-.images img {
-  width: 320px;
-  height: 220px;
-  margin: 30px;
-  opacity: 0;
-}
 .text-box {
+  height: auto;
+  width: 80vw;
+  padding: 2vh;
+  background-color: #ffffff;
   position: absolute;
-  left: 25px;
-  top: 266px;
-  z-index: 20;
+  top: 4vh;
+  left: 10vw;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
-.text {
-  font-weight: bold;
-  color: #00ce7c;
-  font-size: 19px;
+.text-box p {
+  color: #ffffff;
+  font-size: 1.9vw;
+  margin-bottom: 0;
 }
 </style>

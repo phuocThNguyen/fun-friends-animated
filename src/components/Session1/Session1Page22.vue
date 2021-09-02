@@ -1,89 +1,78 @@
 <template>
   <div class="interactive-container">
-    <div class="images">
-      <img src="../../assets/images/session1/3051-resized.jpg" alt="house">
-      <img src="../../assets/images/session1/13204-resized.jpg" alt="house">
-      <img src="../../assets/images/session1/11185-resized.jpg" alt="house">
-      <img src="../../assets/images/session1/290-resized.jpg" alt="house">
-    </div>
+    <img src="../../assets/images/session1/112-resized.jpg" alt="house-1">
+    <img src="../../assets/images/session1/225-resized.jpg" alt="house-2">
+    <img src="../../assets/images/session1/773-resized.jpg" alt="house-3">
     <div class="text-box">
-      <p class="text">
-        <span>
-          We may live in different homes,
-        </span>
-        <span>
-          but inside we all have families.
-        </span>
-      </p>
+      <h1>Our homes</h1>
+      <p>Talk about your home.</p>
+      <p>Ask your friends about their homes.</p>
     </div>
   </div>
 </template>
 
 <script>
 import anime from "animejs";
-
 export default {
   name: "Session1Page22",
   mounted() {
-    let texts = document.getElementsByClassName('text')[0];
+    let texts = document.getElementsByClassName('text-box')[0];
     let animation = anime.timeline();
     animation
       .add({
-        targets: ".text-box",
-        opacity: 0.95,
-        duration: 1000,
-        delay: 1000,
-        easing: 'linear',
-      })
-      .add({
         targets: texts.children[0],
-        color: '#fff',
-        duration: 1000,
-        delay: 500,
+        color: '#000',
+        delay: 1000,
+        duration: 500
       })
       .add({
         targets: texts.children[1],
-        color: '#fff',
-        duration: 1000,
-        delay: 500,
+        color: '#000',
+        delay: 1000,
+        duration: 500
+      })
+      .add({
+        targets: texts.children[2],
+        color: '#000',
+        delay: 1000,
+        duration: 500
       })
   }
 }
 </script>
 
 <style scoped>
-.images {
+.interactive-container img {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  display: grid;
-  grid-template-columns: auto auto;
-  column-gap: 10px;
-  row-gap: 10px;
 }
-.images img {
-  width: 370px;
-  height: 250px;
-  opacity: 1;
-  align-self: center;
-  justify-self: center;
+.interactive-container img:nth-child(1) {
+  left: 0;
+  bottom: 0;
+  width: 50vw;
+  height: 70vh;
+}
+.interactive-container img:nth-child(2) {
+  top: 0;
+  right: 0;
+  width: 48vw;
+  height: 44vh;
+}
+.interactive-container img:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 48vw;
+  height: 45vh;;
 }
 .text-box {
-  position: absolute;
-  left: 65px;
-  top: 66px;
-  z-index: 20;
-  background-color: #00CE7C;
-  width: 650px;
-  height: 60px;
-  padding: 15px 40px 15px 40px;
-  opacity: 0;
+  color: #ffffff;
+  padding: 2vw;
 }
-.text {
-  font-weight: bold;
-  color: #00ce7c;
-  font-size: 19px;
-  margin-bottom: 0;
+.text-box h1 {
+  font-size: 3.5vw;
+  margin-bottom: 1vh;
+}
+.text-box p {
+  font-size: 1.8vw;
+  margin-bottom: 1vh;
 }
 </style>

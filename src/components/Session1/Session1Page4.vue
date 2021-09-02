@@ -87,8 +87,9 @@ export default {
   font-size: 1.9vw;
 }
 .text-box {
-  height: 15vh;
-  width: 20vw;
+  height: auto;
+  width: auto;
+  padding: 2vh;
   background-color: #00ce7c;
   display: flex;
   flex-direction: column;
@@ -102,6 +103,6 @@ export default {
 .text-box p {
   color: #ffffff;
   font-weight: bold;
-  margin-left: 0;
+  margin-botton: 0;
 }
 </style>
