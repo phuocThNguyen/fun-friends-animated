@@ -9,10 +9,6 @@
       </g>
     </svg>
 
-    <svg class="bird-path" xmlns="http://www.w3.org/2000/svg" viewBox="0 -120 1050 120">
-      <path d="M 0 0 C 220 -40 450 -150 660 -120 C 900 -90 920 -40 1050 0" stroke="#FF0000" stroke-width="0.0" fill="none"/>
-    </svg>
-
     <svg class="sun" ref="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 269 265" width="150" height="150">
       <title>Sun</title>
       <g id="Sun">
@@ -87,7 +83,7 @@
       </g>
     </svg>
     <svg class="twitter-bird bird-1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-         viewBox="0 -10 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+         viewBox="0 -10 500 500"  xml:space="preserve">
       <g transform="rotate(30, 250, 250)">
         <path id="body" fill="#F3560A" d="M142.9,364.1c-1.6,1-3,1.7-4,2.3c-3,1.5-7.9,3.8-14.9,6.9c-7,3.1-14.7,5.7-23.1,7.9
 	c-8.4,2.2-15.6,3.8-21.8,4.7c-6.2,0.9-12.2,1.5-18.1,1.8s-11.4,0.3-16.7,0c-5.2-0.3-8.5-0.5-9.6-0.6l-1.8-0.2l-0.4-0.1l-0.4-0.1v0.8
@@ -141,7 +137,7 @@
 
 </svg>
     <svg class="twitter-bird bird-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-         viewBox="-450 250 520 500" enable-background="new 0 0 500 500" xml:space="preserve">
+         viewBox="-450 250 520 500" xml:space="preserve">
       <g transform="scale(-1,1) rotate(30, -250, 250)">
         <path id="body" fill="#0011ff" d="M142.9,364.1c-1.6,1-3,1.7-4,2.3c-3,1.5-7.9,3.8-14.9,6.9c-7,3.1-14.7,5.7-23.1,7.9
 	c-8.4,2.2-15.6,3.8-21.8,4.7c-6.2,0.9-12.2,1.5-18.1,1.8s-11.4,0.3-16.7,0c-5.2-0.3-8.5-0.5-9.6-0.6l-1.8-0.2l-0.4-0.1l-0.4-0.1v0.8
@@ -224,16 +220,18 @@ import Letterize from 'letterizejs';
 export default {
   name: "Session1Page1",
   mounted() {
+    let vw = window.innerWidth;
+
     anime({
       targets: this.$refs.cloud1,
-      translateX: 800,
+      translateX: vw + 0.4*vw,
       duration: 50000,
       loop: true,
       easing: 'linear'
     })
     anime({
       targets: this.$refs.smallCloud,
-      translateX: -800,
+      translateX: -(vw + 0.4*vw),
       duration: 40000,
       direction: 'alternate',
       loop: true,
@@ -247,12 +245,9 @@ export default {
       loop: true,
     })
 
-    // Bird flying path and animation
-    const path = anime.path('.bird-path path');
     anime({
       targets: '.bird-1',
-      translateX: path('x'),
-      translateY: path('y'),
+      translateX: vw + 0.2*vw,
       easing: 'linear',
       duration: 10000,
       loop: true
@@ -260,7 +255,7 @@ export default {
 
     anime({
       targets: '.bird-2',
-      translateX: -950,
+      translateX: -(vw + 0.2*vw),
       easing: 'linear',
       duration: 10000,
       delay: 2000,
@@ -331,21 +326,18 @@ tspan { white-space:pre }
 }
 .twitter-bird {
   position: absolute;
+  width: 11vw;
+  height: auto;
 }
 .bird-1 {
-  top: 100px;
-  left: -50px;
-  height: 100px;
+  top: 20vh;
+  left: -5vw;
   z-index: 20;
 }
 .bird-2 {
-  bottom: 5px;
-  right: -150px;
-  height: 100px;
-  z-index: 20;
-}
-.bird-path {
-  position: absolute;
+  bottom: 2vh;
+  right: -11vw;
+  z-index: 70;
 }
 #wing1{
   transform-origin:center;
@@ -362,50 +354,64 @@ tspan { white-space:pre }
 }
 .cloud1 {
   position: absolute;
-  top: 20px;
-  left: -223px;
+  width: 25vw;
+  height: auto;
+  top: 10vh;
+  left: -35vw;
 }
 .cloud2 {
   position: absolute;
-  top: 100px;
-  right: 20px;
+  width: 30vh;
+  height: auto;
+  top: 14vh;
+  right: 1vw;
 }
 .big-cloud {
   position: absolute;
-  top: 150px;
+  width: 90vw;
+  height: auto;
+  top: 20vh;
+  left: 5vw;
 }
 .long-cloud {
+  width: 130vw;
+  height: auto;
   position: absolute;
-  bottom: -50px;
+  bottom: -7vh;
+  left: -12vw;
   z-index: 50;
 }
 .small-cloud {
   position: absolute;
-  top: 20px;
-  right: -20px;
+  width: 15vh;
+  height: auto;
+  top: 5vh;
+  right: -25vw;
 }
 .sun {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 3vh;
+  right: 3vw;
+  width: 15vw;
+  height: auto;
 }
 .question {
   text-align: center;
-  font-size: 28px;
+  font-size: 4vh;
   position: absolute;
   color: #fff;
   width: auto;
 }
 .question-1 {
-  top: 250px;
-  left: 100px;
+  top: 35vh;
+  left: 18vw;
 }
 .question-2 {
-  top: 300px;
-  left: 50px;
+  top: 43vh;
+  left: 14vw;
 }
 .question-3 {
-  top: 375px;
-  left: 150px;
+  top: 51vh;
+  left: 26vw;
 }
 </style>

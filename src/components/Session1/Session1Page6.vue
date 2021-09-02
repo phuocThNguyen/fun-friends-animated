@@ -2,9 +2,8 @@
   <div class="interactive-container">
     <img class="session-background" src="../../assets/images/session1/4082-resized.jpg" alt="zoe-and-dad">
     <div class="text-box">
-      <p class="mt-4 mb-0">Zoe's dad also plays with her on</p>
-      <p class="mb-3">the swing.</p>
-
+      <p class="mb-0">Zoe's dad also plays with her</p>
+      <p class="mb-1">on the swing.</p>
       <p class="mb-0">It is so much fun!</p>
     </div>
   </div>
@@ -29,18 +28,19 @@ export default {
 
 <style scoped>
 .text-box {
-  height: 130px;
-  width: 300px;
+  height: auto;
+  width: auto;
   background-color: #00ce7c;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 5vh;
+  right: 3vw;
   opacity: 0;
+  padding: 2vh
 }
 .text-box p {
   color: #ffffff;
   font-weight: bold;
   display: flex;
-  margin-left: 20px;
+  font-size: 2.45vh;
 }
 </style>

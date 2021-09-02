@@ -91,12 +91,14 @@ export default {
 .interactive-container {
   background-color: #ffffff;
   position: relative;
-  width: 1024px;
-  height: 700px;
+  width: 100vw;
+  height: calc(100vh - 68px);
   overflow: hidden;
 }
 .session-background {
   position: absolute;
+  width: 100vw;
+  height: calc(100vh - 68px);
 }
 .arrow {
   width: 70px;
@@ -108,6 +110,7 @@ export default {
   bottom: 5px;
   right: 5px;
   opacity: 0.9;
+  z-index: 500;
 }
 .arrow:active {
   opacity: 1;

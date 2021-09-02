@@ -463,9 +463,7 @@
         </g>
       </g>
     </svg>
-    <a class="button" target="_blank" href="https://jspaint.app/">
-      <img class="brush" src="../../assets/images/session1/brush.png" alt="brush">
-    </a>
+
     <!--  Flowers' Kingdom  -->
     <!--  Yellow Flowers  -->
     <svg class="yellow-flower" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 47" width="47" height="47">
@@ -823,49 +821,80 @@
         <p>Talk to those you're with about your
         picture. Tell them:</p>
 
-        <p id="q1"> - What fruit do you like to eat?</p>
-        <p id="q2"> - What vegetable do you like to eat</p>
-        <p id="q3"> - What are your favourite toys?</p>
-        <p id="q4"> - What makes you happy?</p>
-        <p id="q5"> - What do you find scary?</p>
+        <p> - What fruit do you like to eat?</p>
+        <p> - What vegetable do you like to eat</p>
+        <p> - What are your favourite toys?</p>
+        <p> - What makes you happy?</p>
+        <p> - What do you find scary?</p>
 
-        <p  id="q6">Choose your favourite answer, act it out
+        <p>Choose your favourite answer, act it out
         or sound it out with a friend. When it's their turn,
         make sure to listen to their answers.</p>
 
-        <p id="q7">Express yourself!</p>
+        <p class="mb-0">Express yourself!</p>
       </div>
+
+
     </div>
+    <div id="painterro"></div>
   </div>
 </template>
 
 <script>
 import anime from "animejs";
+import Painterro from "painterro";
 export default {
   name: "Session1Page10",
   mounted() {
+    this.$nextTick(() => {
+      this.painterro = Painterro({
+        id: "painterro",
+        activeColor: '#000000',
+        activeFillColor: '#ffffff',
+        defaultLineWidth: '5',
+        defaultPrimitiveShadowOn: 'true',
+        defaultEraserWidth: '40',
+        defaultTool: 'brush',
+        toolbarPosition: 'bottom',
+        availableLineWidths: [1,4,8,12,16,20],
+        availableEraserWidths: [1,4,8,12,16,20],
+        hiddenTools: ['pixelize','select','crop','text','rotate','resize',
+          'open','save','close','settings','redo','zoomin','zoomout'],
+        colorScheme: {
+          main: '#cfcfcf',
+          control: "#ffffff",
+          controlContent: '#434649',
+          controlShadow: '0px 0px 0px 0.5px #000',
+        },
+      })
+      this.painterro.show();
+      let info = document.querySelector('.ptro-info');
+      info.style.visibility = 'hidden';
+    });
+    let vw = window.innerWidth;
+    // let vh = window.innerHeight;
     const yellowFlowers = document.getElementsByClassName('yellow-flower');
     yellowFlowers.forEach(flower => {
-      flower.style.bottom = Math.floor(Math.random() * 150).toString() + 'px';
-      flower.style.left = Math.floor(Math.random() * 750).toString() + 'px';
+      flower.style.bottom = (Math.floor(Math.random() * 10) + 2).toString() + 'vh';
+      flower.style.left = (Math.floor(Math.random() * 95) + 2).toString() + 'vw';
     })
 
     const blueFlowers = document.getElementsByClassName('blue-flower');
     blueFlowers.forEach(flower => {
-      flower.style.bottom = (Math.floor(Math.random() * 150) + 50).toString() + 'px';
-      flower.style.left = Math.floor(Math.random() * 550).toString() + 'px';
-      flower.style.height = (Math.floor(Math.random() * 21) + 45).toString() + 'px';
+      flower.style.bottom = (Math.floor(Math.random() * 10) + 7).toString() + 'vh';
+      flower.style.left = Math.floor(Math.random() * 100).toString() + 'vw';
+      flower.style.height = (Math.floor(Math.random() * 5) + 5).toString() + 'vh';
     })
 
     const greenFlowers = document.getElementsByClassName('green-flower');
     greenFlowers.forEach(flower => {
-      flower.style.bottom = Math.floor(Math.random() * 150).toString() + 'px';
-      flower.style.left = Math.floor(Math.random() * 550).toString() + 'px';
+      flower.style.bottom = Math.floor(Math.random() * 15).toString() + 'vh';
+      flower.style.left = Math.floor(Math.random() * 100).toString() + 'vw';
     })
 
     anime({
       targets: this.$refs.cloud1,
-      translateX: 1500,
+      translateX: vw,
       duration: 7000,
       loop: true,
       easing: 'linear',
@@ -873,7 +902,7 @@ export default {
     });
     anime({
       targets: this.$refs.cloud2,
-      translateX: -1200,
+      translateX: -vw,
       duration: 6000,
       loop: true,
       easing: 'linear',
@@ -901,55 +930,24 @@ export default {
       easing: 'easeInOutSine',
       loop: true
     })
-    let mainContentAnimation = anime.timeline();
+    let mainContentAnimation = anime.timeline({
+      easing: 'linear'
+    });
     mainContentAnimation
       .add({
         targets: '.draw',
         opacity: 1,
         duration: 2000,
         delay: 1000,
-        easing: 'linear'
       })
       .add({
         targets: '.text-box',
         opacity: 0.90,
         duration: 2000,
-        easing: 'linear'
       })
       .add({
-        targets: '#q1',
-        color: '#000',
-        duration: 1000
-      })
-      .add({
-        targets: '#q2',
-        color: '#000',
-        duration: 1000
-      })
-      .add({
-        targets: '#q3',
-        color: '#000',
-        duration: 1000
-      })
-      .add({
-        targets: '#q4',
-        color: '#000',
-        duration: 1000
-      })
-      .add({
-        targets: '#q5',
-        color: '#000',
-        duration: 1000
-      })
-      .add({
-        targets: '#q6',
-        color: '#000',
-        duration: 1000
-       })
-      .add({
-        targets: '#q7',
-        color: '#000',
-        duration: 1000
+        targets: '#painterro',
+        opacity: 0.92
       })
   }
 }
@@ -958,10 +956,19 @@ export default {
 <style scoped>
 .landscape {
   position: absolute;
-  width: 968px;
-  height: 703px;
-  top: -105px;
-  left: -75px;
+  width: 120vw;
+  left: -4vw;
+  top: -18vh;
+  height: auto;
+}
+#painterro {
+  position: absolute;
+  top: 5vh;
+  left: 33vw;
+  right: 1vw;
+  bottom: 10vh;
+  opacity: 0;
+  z-index: 100;
 }
 tspan { white-space:pre }
 .shp-pistil { fill: #ffffff }
@@ -1005,8 +1012,8 @@ tspan { white-space:pre }
 
 .yellow-flower {
   position: absolute;
-  height: 1px;
-  width: 1px;
+  width: 0.1vw;
+  height: auto;
   z-index: 10;
 }
 .blue-flower {
@@ -1020,54 +1027,31 @@ tspan { white-space:pre }
 
 .main-content {
   position: absolute;
-  left: 180px;
-  top: 50px;
-  width: 400px;
+  left: 1vw;
+  top: 10vh;
+  width: 30vw;
   z-index: 50;
 }
 .main-content h1 {
   background-color: #000000;
   color: #ffffff;
-  font-size: 24px;
+  font-size: 2.5vh;
   width: 100%;
-  height: 50px;
+  height: auto;
+  padding: 1.2vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
   opacity: 0;
 }
 .text-box {
   background-color: #ffffff;
-  border-radius: 10px;
-  padding: 15px 5px 0 15px;
-  height: 400px;
+  padding: 2.5vh;
+  height: auto;
   opacity: 0;
-}
-.text-box p:not(:first-child) {
-  color: #ffffff;
 }
 .text-box p:first-child,
 .text-box p:last-child {
   font-weight: bold;
-}
-.button {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  border-left: 3px dashed #000000;
-  border-top: 3px dashed #000000;
-  background-color: #ffffff;
-  width: 60px;
-  height: 60px;
-  opacity: 0.9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 50;
-}
-.brush {
-  width: 40px;
-  height: 40px;
 }
 </style>

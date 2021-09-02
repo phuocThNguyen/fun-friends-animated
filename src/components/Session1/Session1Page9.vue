@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <img class="session-background" src="../../assets/images/session1/129493-ORFK4F-127-resized.jpg" alt="mia">
     <div class="text-box">
-      <p class="mt-2 mb-0">Mia loves climbing trees.</p>
+      <p class="mb-0">Mia loves climbing trees.</p>
     </div>
   </div>
 </template>
@@ -26,18 +26,19 @@ export default {
 
 <style scoped>
 .text-box {
-  height: 40px;
-  width: 210px;
+  height: auto;
+  width: auto;
   background-color: #00ce7c;
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 5vh;
+  left: 3vw;
   opacity: 0;
+  padding: 1.5vh;
 }
 .text-box p {
   color: #ffffff;
   font-weight: bold;
   display: flex;
-  margin-left: 15px;
+  font-size: 2.45vh;
 }
 </style>

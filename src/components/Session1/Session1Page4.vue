@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <img class="session-background" src="../../assets/images/session1/282-resized.jpg" alt="josh-and-poppy">
     <div class="left-bar">
-      <p class="mt-5 mb-0" id="para-1">Josh and Poppy the dog</p>
+      <p class="mb-0" id="para-1">Josh and Poppy the dog</p>
       <p class="mb-0" id="para-2">love playing ball in the</p>
       <p class="mb-3" id="para-3">park.</p>
 
@@ -20,7 +20,6 @@
 <script>
 import anime from "animejs";
 import Letterize from "letterizejs";
-
 export default {
   name: "Session1Page4",
   mounted() {
@@ -34,7 +33,7 @@ export default {
     animation
       .add({
         targets: ".left-bar",
-        opacity: 0.95,
+        opacity: 0.97,
         delay: 500,
         easing: 'linear',
         duration: 500,
@@ -76,27 +75,28 @@ export default {
 <style scoped>
 .left-bar {
   position: absolute;
-  width: 220px;
+  width: 26vw;
   height: 100%;
   background-color: #ffffff;
   z-index: 10;
   opacity: 0;
+  padding: 4vh
 }
 .left-bar p {
-  margin-left: 20px;
   color: #ffffff;
+  font-size: 1.9vw;
 }
 .text-box {
-  height: 100px;
-  width: 200px;
+  height: 15vh;
+  width: 20vw;
   background-color: #00ce7c;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 20px;
-  left: 10px;
+  bottom: 11vh;
+  left: 3vw;
   opacity: 0;
 }
 .text-box p {

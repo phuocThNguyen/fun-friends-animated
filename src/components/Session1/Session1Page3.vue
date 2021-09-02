@@ -17,77 +17,80 @@
 
 <script>
 import anime from "animejs";
-import Letterize from "letterizejs";
 export default {
   name: "Session1Page3",
   mounted() {
-    let init_animation = anime.timeline();
-    init_animation
+    let para = document.getElementsByClassName('left-bar')[0].children;
+    console.log(para);
+    let initAnimation = anime.timeline({
+      easing: 'linear'
+    });
+    initAnimation
       .add({
         targets: ".left-bar",
         opacity: 1,
-        easing: "linear",
         delay: 1000,
         duration: 1000,
       })
       .add({
         targets: "#pic",
         translateX: 150,
-        easing: "linear",
         duration: 1000
-      }, 1000);
-
-    let para1 = new Letterize({targets: "#para-1"});
-    let para2 = new Letterize({targets: "#para-2"});
-    let para3 = new Letterize({targets: "#para-3"});
-    let para4 = new Letterize({targets: "#para-4"});
-    let para5 = new Letterize({targets: "#para-5"});
-    let para6 = new Letterize({targets: "#para-6"});
-    let para7 = new Letterize({targets: "#para-7"});
-    let para8 = new Letterize({targets: "#para-8"});
-
-    let para_animation = anime.timeline();
-    para_animation
+      },1000)
       .add({
-        targets: para1.listAll,
+        targets: para[0],
         color: '#000',
-        delay: anime.stagger(50, {start: 2000})
+        duration: 500,
+        delay: 1000,
       })
       .add({
-        targets: para2.listAll,
+        targets: para[1],
         color: '#000',
-        delay: anime.stagger(50)
+        duration: 500,
+        delay: 500,
       })
       .add({
-        targets: para3.listAll,
+        targets: para[2],
         color: '#000',
-        delay: anime.stagger(50)
+        duration: 500,
+        delay: 1000,
       })
       .add({
-        targets: para4.listAll,
+        targets: para[3],
         color: '#000',
-        delay: anime.stagger(50)
+        duration: 500,
+        delay: 1000,
+      })
+      .add({
+        targets: para[4],
+        color: '#000',
+        duration: 500,
+        delay: 1000,
       }, '-=700')
       .add({
-        targets: para5.listAll,
+        targets: para[5],
         color: '#000',
-        delay: anime.stagger(50)
+        duration: 500,
+        delay: 1000,
       })
       .add({
-        targets: para6.listAll,
+        targets: para[6],
         color: '#000',
-        delay: anime.stagger(50)
-      },'-=700')
+        duration: 500,
+        delay: 1000,
+      }, '-=700')
       .add({
-        targets: para7.listAll,
+        targets: para[7],
         color: '#000',
-        delay: anime.stagger(50)
+        duration: 500,
+        delay: 1000,
       })
       .add({
-        targets: para8.listAll,
+        targets: para[8],
         color: '#000',
-        delay: anime.stagger(50)
-      },'-=700')
+        duration: 500,
+        delay: 1000,
+      }, '-=700')
   }
 }
 </script>
@@ -95,13 +98,21 @@ export default {
 <style scoped>
 .left-bar {
   position: absolute;
-  width: 250px;
+  width: 28vw;
   height: 100%;
   background-color: #ffffff;
   z-index: 10;
   opacity: 0;
+  padding: 2vh;
+}
+.left-bar p,
+.left-bar h2 {
+  color: #ffffff;
 }
 .left-bar p {
-  color: #ffffff;
+  font-size: 1.8vw;
+}
+.left-bar h2 {
+  font-size: 4vw;
 }
 </style>

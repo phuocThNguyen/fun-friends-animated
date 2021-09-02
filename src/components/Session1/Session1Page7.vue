@@ -2,8 +2,8 @@
   <div class="interactive-container">
     <img class="session-background" src="../../assets/images/session1/811-resized.jpg" alt="lucy">
     <div class="text-box">
-      <p class="mt-3 mb-0">Lucy loves playing with the old</p>
-      <p class="mb-3">wheelbarrow in the garden.</p>
+      <p class="mb-0">Lucy loves playing with the old</p>
+      <p class="mb-0">wheelbarrow in the garden.</p>
     </div>
   </div>
 </template>
@@ -27,18 +27,19 @@ export default {
 
 <style scoped>
 .text-box {
-  height: 80px;
-  width: 270px;
+  height: auto;
+  width: auto;
   background-color: #00ce7c;
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 5vh;
+  left: 3vw;
   opacity: 0;
+  padding: 2vh;
 }
 .text-box p {
   color: #ffffff;
   font-weight: bold;
   display: flex;
-  margin-left: 20px;
+  font-size: 2.45vh;
 }
 </style>

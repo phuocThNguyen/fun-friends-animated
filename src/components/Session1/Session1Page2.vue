@@ -18,56 +18,52 @@ import anime from "animejs";
 export default {
   name: "Session1Page2",
   mounted() {
-    let animations = anime.timeline();
+    let vw = window.innerWidth;
+    let animations = anime.timeline({
+      duration: 1000
+    });
     animations
       .add({
         targets: ".left-bar",
-        translateX: 300,
+        translateX: 0.29*vw,
         duration: 500,
         delay: 1000,
       })
       .add({
         targets: ".text-1",
-        duration: 1000,
         color: '#fff',
-        webkitTextStroke: '1px black',
+        webkitTextStroke: '0.1vw black',
         delay: 1000
       })
       .add({
         targets: ".text-2",
-        duration: 1000,
         color: '#fff',
-        webkitTextStroke: '1px black',
+        webkitTextStroke: '0.1vw black',
       })
       .add({
         targets: ".text-3",
-        duration: 1000,
         color: '#fff',
-        webkitTextStroke: '1px black',
+        webkitTextStroke: '0.1vw black',
       })
       .add({
         targets: ".text-4",
-        duration: 1000,
         color: '#fff',
-        webkitTextStroke: '1px black',
+        webkitTextStroke: '0.1vw black',
       })
       .add({
         targets: ".text-5",
-        duration: 1000,
         color: '#fff',
-        webkitTextStroke: '1px black',
+        webkitTextStroke: '0.1vw black',
       })
       .add({
         targets: ".text-6",
-        duration: 1000,
         color: '#fff',
-        webkitTextStroke: '1px black',
+        webkitTextStroke: '0.1vw black',
       })
       .add({
         targets: ".text-7",
-        duration: 1000,
         color: '#fff',
-        webkitTextStroke: '1px black',
+        webkitTextStroke: '0.1vw black',
       });
   }
 }
@@ -78,48 +74,49 @@ export default {
 .left-bar {
   font-family: 'Sigmar One', cursive;
   position: absolute;
-  left: -300px;
-  width: 300px;
+  left: -29vw;
+  width: 29vw;
   height: 100%;
-  background-color: #74CC80;
+  background-color: #00ce7c;
   z-index: 10;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: baseline;
+  padding-bottom: 7vh;
 }
 .left-bar p {
-  margin-left: 5px;
   text-transform: uppercase;
-  color: #74CC80;
-  font-size: 34px;
+  color: #00ce7c;
+  font-size: 3.4vw;
+  margin: 1.8vh;
 }
 #letter-f {
   color: #A3C042;
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 0.1vw black;
 }
 #letter-r {
   color: #C95288;
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 0.1vw black;
 }
 #letter-i {
   color: #D89022;
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 0.1vw black;
 }
 #letter-e {
   color: #F9E836;
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 0.1vw black;
 }
 #letter-n {
   color: #A9D3EB;
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 0.1vw black;
 }
 #letter-d {
   color: #A3C042;
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 0.1vw black;
 }
 #letter-s {
   color: #C95288;
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 0.1vw black;
 }
 </style>

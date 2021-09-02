@@ -77,8 +77,8 @@ export default {
 tspan { white-space:pre }
 
 .image-introduction {
-  width: 1024px;
-  height: 700px;
+  width: 100vw;
+  height: calc(100vh - 68px);
 }
 
 </style>
