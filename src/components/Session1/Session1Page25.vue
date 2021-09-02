@@ -802,23 +802,49 @@
       <p id="para-4">What 5 things would you want in your house?</p>
       <p id="para-5">Share your ideas with a friend, family member or teacher.</p>
     </div>
-    <a class="button" target="_blank" href="https://jspaint.app/">
-      <img class="brush" src="../../assets/images/session1/brush.png" alt="brush">
-    </a>
+    <div id="painterro"></div>
   </div>
 </template>
 
 <script>
 import anime from "animejs";
+import Painterro from "painterro";
 export default {
   name: "Session1Page25",
   mounted() {
+    this.$nextTick(() => {
+      this.painterro = Painterro({
+        id: "painterro",
+        activeColor: '#000000',
+        activeFillColor: '#ffffff',
+        defaultLineWidth: '5',
+        defaultPrimitiveShadowOn: 'true',
+        defaultEraserWidth: '40',
+        defaultTool: 'brush',
+        toolbarPosition: 'bottom',
+        availableLineWidths: [1,4,8,12,16,20],
+        availableEraserWidths: [1,4,8,12,16,20],
+        hiddenTools: ['pixelize','select','crop','text','rotate','resize',
+          'open','save','close','settings','redo','zoomin','zoomout'],
+        colorScheme: {
+          main: '#cfcfcf',
+          control: "#ffffff",
+          controlContent: '#434649',
+          controlShadow: '0px 0px 0px 0.5px #000',
+        },
+      })
+      this.painterro.show();
+      let info = document.querySelector('.ptro-info');
+      info.style.visibility = 'hidden';
+    });
+    let vw = window.innerWidth;
+    let vh = window.innerHeight;
     let clouds = document.getElementsByClassName('clouds')[0].children;
     clouds.forEach(cloud => {
       let plusOrMinus = Math.random() < 0.5 ? -1 : 1;
       anime({
         targets: cloud,
-        translateX: (Math.floor(Math.random() * 300) + 200) * plusOrMinus,
+        translateX: (Math.floor(Math.random() * 0.3 * vw) + 0.2*vw) * plusOrMinus,
         duration: (Math.floor(Math.random() * 1000) + 5000),
         loop: true,
         direction: 'alternate',
@@ -828,7 +854,7 @@ export default {
 
     anime({
       targets: "#smoke-1",
-      translateY: -400,
+      translateY: -0.4*vh,
       opacity: 0.1,
       duration: 2000,
       easing: 'linear',
@@ -836,12 +862,20 @@ export default {
     })
     anime({
       targets: "#smoke-2",
-      translateY: -200,
+      translateY: -0.2*vh,
       opacity: 0.1,
       duration: 2000,
       easing: 'linear',
       loop: true,
       delay: 100
+    })
+
+    anime({
+      targets: '#painterro',
+      opacity: 0.95,
+      duration: 2000,
+      delay: 2000,
+      easing: 'linear'
     })
 
     let textAnimation = anime.timeline({
@@ -883,31 +917,39 @@ export default {
 <style scoped>
 .landscape {
   position: absolute;
-  width: 1068px;
-  height: 603px;
-  left: -150px;
-  top: -10px;
+  width: 126vw;
+  height: auto;
+  left: -12vw;
+  top: -2vh;
+}
+#painterro {
+  position: absolute;
+  top: 5vh;
+  left: 33vw;
+  right: 1vw;
+  bottom: 10vh;
+  opacity: 0;
+  z-index: 100;
 }
 .smoke {
   position: absolute;
-  height: 30px;
-  left: 50px;
-  top: 275px;
-}
-#smoke-2 {
-  left: 75px;
+  height: 6vh;
+  width: auto;
+  left: 13vw;
+  top: 45vh;
 }
 .text-box {
   position: absolute;
-  border-radius: 20px;
+  border-radius: 10px;
   border: 2px solid #00CE7C;
-  top: 100px;
-  left: 90px;
-  width: 600px;
-  padding: 50px;
+  top: 10vh;
+  left: 1vw;
+  width: 30vw;
+  padding: 2vw;
   background-color: #ffffff;
   color: #fff;
   opacity: 0;
+  font-size: 1.8vw;
 }
 tspan { white-space:pre }
 .shp-smoke { fill: #ffffff }
@@ -991,23 +1033,4 @@ tspan { white-space:pre }
 .shp77 { fill: none;stroke: #4b5b37;stroke-linecap:round;stroke-width: 4.579 }
 .shp78 { opacity: 0.2;fill: url(#grd31) }
 .shp79 { fill: #284321 }
-.button {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  border-left: 3px dashed #000000;
-  border-top: 3px dashed #000000;
-  background-color: #ffffff;
-  width: 60px;
-  height: 60px;
-  opacity: 0.9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 50;
-}
-.brush {
-  width: 40px;
-  height: 40px;
-}
 </style>
