@@ -30,7 +30,7 @@ export default {
     animation
       .add({
         targets: ".text-box",
-        opacity: 0.95,
+        opacity: 0.98,
         duration: 1000,
         delay: 1000,
         easing: "linear",
@@ -59,31 +59,29 @@ export default {
   z-index: 10;
   display: grid;
   grid-template-columns: auto auto;
-  column-gap: 10px;
-  row-gap: 10px;
 }
 .images img {
-  width: 370px;
-  height: 250px;
+  width: 49vw;
+  height: 43vh;
   opacity: 1;
   align-self: center;
   justify-self: center;
 }
 .text-box {
   position: absolute;
-  left: 65px;
-  bottom: 40px;
+  left: 25vw;
+  bottom: 10vh;
   z-index: 20;
-  background-color: #00ce7c;
-  width: 650px;
-  height: 60px;
-  padding: 15px 110px 15px 110px;
+  background-color: #00CE7C;
+  width: auto;
+  height: auto;
+  padding: 2vh 4vw 2vh 4vw;
   opacity: 0;
 }
 .text {
   font-weight: bold;
   color: #00ce7c;
-  font-size: 19px;
+  font-size: 2vw;
   margin-bottom: 0;
 }
 </style>

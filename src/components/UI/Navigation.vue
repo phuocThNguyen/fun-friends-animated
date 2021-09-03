@@ -15,6 +15,7 @@
         <button @click="setSession(10)" type="button" class="btn btn-session">Session 10</button>
         <button @click="setSession(11)" type="button" class="btn btn-session">Session 11</button>
         <button @click="setSession(12)" type="button" class="btn btn-session">Session 12</button>
+        <button @click="setSession(13)" type="button" class="btn btn-session">Appendixes</button>
       </div>
     </div>
     <nav class="navbar-dark navbar-style">
@@ -42,7 +43,8 @@ export default {
   },
   methods: {
     setSession(sessionNumber) {
-      // this.$emit('setSession', sessionNumber);
+      this.$emit('setSession', sessionNumber);
+      // console.log(sessionNumber)
       let buttons = document.getElementsByClassName('btn');
       if (sessionNumber != this.currentSession) {
         this.changeActiveStyle(buttons[sessionNumber]);
@@ -75,7 +77,7 @@ export default {
   },
   mounted() {
     let buttons = document.getElementsByClassName('btn')
-    console.log(this.currentSession);
+    // console.log(this.currentSession);
 
     this.changeActiveStyle(buttons[this.currentSession]);
 
@@ -93,8 +95,9 @@ export default {
 }
 .session-title {
   text-align: center;
-  margin: 0;
+  margin: 5px 0 0 0;
   color: #ffffff;
+  font-size: 25px;
 }
 .toggler-button {
   border: 1px solid #ffffff;

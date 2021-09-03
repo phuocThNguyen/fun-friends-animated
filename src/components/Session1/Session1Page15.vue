@@ -227,6 +227,11 @@ import Painterro from "painterro";
 
 export default {
   name: "Session1Page15",
+  data() {
+    return {
+      painterro: null
+    }
+  },
   mounted() {
     this.$nextTick(() => {
       this.painterro = Painterro({
@@ -253,12 +258,13 @@ export default {
       let info = document.querySelector('.ptro-info');
       info.style.visibility = 'hidden';
     });
+    let vw = window.innerWidth;
     const clouds = document.getElementsByClassName('shp-cloud');
     clouds.forEach(cloud => {
       let plusOrMinus = Math.random() < 0.5 ? -1 : 1;
       anime({
         targets: cloud,
-        translateX: (Math.floor(Math.random() * 500) + 200) * plusOrMinus,
+        translateX: (Math.floor(Math.random() * 0.5 * vw) + 0.2 * vw) * plusOrMinus,
         duration: (Math.floor(Math.random() * 1000) + 5000),
         loop: true,
         direction: 'alternate',

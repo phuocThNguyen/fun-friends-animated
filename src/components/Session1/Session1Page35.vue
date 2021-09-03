@@ -764,6 +764,39 @@
         </g>
       </g>
     </svg>
+
+    <!--  Main content  -->
+    <div class="main-content">
+      <div class="text-box">
+        <p>Playing on the sand and the ocean is so much fun!</p>
+      </div>
+      <div class="para-box">
+        <h1>Do everyday so that your body can grow healthy and happy</h1>
+
+        <h2>Play outside</h2>
+        <p>Play outside, run, ride your scooter, ride your bike, climb trees, swim, play ball,
+          play jump rope, play hide and seek or any other fun and active games that you
+         and your family can invent. These things will keep your body feeling healthy, strong
+         and will make you happy each day.</p>
+
+        <h2>Have plenty of sleep</h2>
+        <p>Sleep is healthy for your body and mind. When you got to sleep at your bedtime
+         and rest well each night, your body grows, heals itself and helps you feel calm, happy and strong.</p>
+
+        <h2>Drink and eat healthy food</h2>
+        <p>When you drink plenty of water each day and eat many different healthy natural foods
+         like fruit, vegetables and wholegrain, it helps your body feel stronger and happier.</p>
+
+        <h2>Practise relaxing everyday for 5 minutes without TV or electronics</h2>
+        <p>Relaxing without input like TV and video games, gives your eyes and brain a break
+         and helps you notice other wonderful things in the world around you. Relaxing is
+         healthy for your body, mind and helps you feel calm and peaceful</p>
+
+        <h2>Pay attention to happy things and what you can see, hear, smell, taste and feel</h2>
+        <p>Noticing things around you makes you great at finding beautiful things, and if you
+         practise this everyday you will get better and better at it!</p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -772,12 +805,13 @@ import anime from 'animejs';
 export default {
   name: "Session1Page35",
   mounted() {
+    let vw = window.innerWidth;
     let smallClouds = document.getElementsByClassName('shp-cloud-small')
     smallClouds.forEach(smallCloud => {
       let plusOrMinus = Math.random() < 0.5 ? -1 : 1;
       anime({
         targets: smallCloud,
-        translateX: (Math.floor(Math.random() * 500) + 200) * plusOrMinus,
+        translateX: (Math.floor(Math.random() * 0.5 * vw) + 0.2 * vw) * plusOrMinus,
         duration: (Math.floor(Math.random() * 1000) + 8000),
         loop: true,
         direction: 'alternate',
@@ -790,7 +824,7 @@ export default {
       let plusOrMinus = Math.random() < 0.5 ? -1 : 1;
       anime({
         targets: bigCloud,
-        translateX: (Math.floor(Math.random() * 200) + 200) * plusOrMinus,
+        translateX: (Math.floor(Math.random() * 0.2 * vw) + 0.2 * vw) * plusOrMinus,
         duration: (Math.floor(Math.random() * 5000) + 18000),
         loop: true,
         direction: 'alternate',
@@ -808,13 +842,29 @@ export default {
     })
     anime({
       targets: '.crab-eye',
-      translateX: -20,
+      translateX: -0.02 * vw,
       duration: 1000,
       direction: 'alternate',
       easing: 'linear',
       loop: true,
       delay: 1000
     })
+
+    let animation = anime.timeline({
+      easing: 'linear',
+      duration: 1000
+    })
+    animation
+      .add({
+        targets: '.text-box',
+        opacity: 0.95,
+        delay: 1500
+      })
+      .add({
+        targets: '.para-box',
+        opacity: 0.95,
+        delay: 1500
+      })
   }
 }
 </script>
@@ -822,23 +872,60 @@ export default {
 <style scoped>
 .landscape {
   position: absolute;
-  width: 1090px;
+  width: 141vw;
   height: auto;
-  left: -70px;
+  left: -9vw;
 }
 .crab {
   position: absolute;
-  width: 50px;
+  width: 10vw;
   height: auto;
-  left: 20px;
-  bottom: 100px;
+  left: 2vw;
+  bottom: 25vh;
 }
 .crab-shell {
   position: absolute;
-  width: 50px;
+  width: 10vw;
   height: auto;
-  right: 10px;
-  bottom: 150px;
+  right: 2vw;
+  bottom: 20vh;
+}
+.main-content {
+  position: absolute;
+  width: 90vw;
+  left: 5vw;
+  top: 4vh
+}
+.main-content p,
+.main-content h1,
+.main-content h2 {
+  margin-bottom: 0;
+}
+.text-box {
+  background-color: #00ce7c;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.2vw;
+  padding: 1vh;
+  opacity: 0;
+}
+.para-box {
+  background-color: #ffffff;
+  margin-top: 2vh;
+  padding: 1.5vh;
+  opacity: 0;
+}
+.para-box h1 {
+  font-size: 2.5vw;
+  margin-bottom: 2vh;
+}
+.para-box h2 {
+  font-size: 2vw;
+}
+.para-box p {
+  font-size: 1.5vw;
+  margin-bottom: 2vh;
 }
 tspan { white-space:pre }
 .shp0-crab { fill: #f37422 }

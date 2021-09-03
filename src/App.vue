@@ -49,18 +49,21 @@ export default {
     return {
       sessions: {
         0: ['SessionIntroduction', 'Introduction'],
-        1: ['Session1', 'Session 1: Hip hip'],
-        2: ['Session2'],
-        3: ['Session3'],
-        4: ['Session4'],
-        5: ['Session5'],
-        6: ['Session6'],
-        7: ['Session7'],
-        8: ['Session8'],
-        9: ['Session9'],
-        10: ['Session10'],
-        11: ['Session11'],
-        12: ['Session12']},
+        1: ['Session1', 'Session 1: Hip Hip Hooray! It\'s FUN FRIENDS today!'],
+        2: ['Session2', 'Session 2: Feelings: Understanding feelings in ourselves'],
+        3: ['Session3', 'Session 3: Understanding feelings in other people'],
+        4: ['Session4', 'Session 4: Understanding body clues and five senses'],
+        5: ['Session5', 'Session 5: Talking about \'Red\' (unhelpful) and \'Green\' (helpful) thoughts'],
+        6: ['Session6', 'Session 6: Talking more about \'Red\' (unhelpful) and \'Green\' (helpful) thoughts'],
+        7: ['Session7', 'Session 7: Talking about setting goals and trying to do new things'],
+        8: ['Session8', 'Session 8: Talking about how to be a kind friend'],
+        9: ['Session9', 'Session 9: Talking about rewarding ourselves'],
+        10: ['Session10', 'Session 10: Talking about someone to look up to in our lives'],
+        11: ['Session11', 'Session 11: Talking about support teams'],
+        12: ['Session12', 'Session 12: Talking about being happy with our efforts!'],
+        13: ['Appendix1', 'Appendix 1:', '\'Green\' thoughts to Enjoy'],
+        14: ['Appendix2', 'Appendix 2:', 'Someone Special I Know Who is Brave and Kind!!!'],
+        15: ['Appendix3', 'Appendix 3:', 'Happiness Ideas']},
       session: 0,
       pageIndex: 1,
       isNext: true,
@@ -68,6 +71,7 @@ export default {
   },
   methods: {
     setSession(number) {
+      console.log(number);
       this.session = number;
     },
     nextSession(sessionNumber, isNext) {
@@ -92,13 +96,13 @@ export default {
   background-color: #ffffff;
   position: relative;
   width: 100vw;
-  height: calc(100vh - 68px);
+  height: calc(100vh - 60px);
   overflow: hidden;
 }
 .session-background {
   position: absolute;
   width: 100vw;
-  height: calc(100vh - 68px);
+  height: calc(100vh - 60px);
 }
 .arrow {
   width: 70px;

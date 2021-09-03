@@ -845,6 +845,11 @@ import anime from "animejs";
 import Painterro from "painterro";
 export default {
   name: "Session1Page11",
+  data() {
+    return {
+      painterro: null
+    }
+  },
   mounted() {
     this.$nextTick(() => {
       this.painterro = Painterro({
@@ -872,7 +877,6 @@ export default {
       info.style.visibility = 'hidden';
     });
     let vw = window.innerWidth;
-    // let vh = window.innerHeight;
     const yellowFlowers = document.getElementsByClassName('yellow-flower');
     yellowFlowers.forEach(flower => {
       flower.style.bottom = (Math.floor(Math.random() * 10) + 2).toString() + 'vh';
@@ -949,6 +953,9 @@ export default {
         targets: '#painterro',
         opacity: 0.92
       })
+  },
+  beforeMount() {
+    this.painterro.hide()
   }
 }
 </script>
@@ -1035,7 +1042,7 @@ tspan { white-space:pre }
 .main-content h1 {
   background-color: #000000;
   color: #ffffff;
-  font-size: 2.5vh;
+  font-size: 2.2vw;
   width: 100%;
   height: auto;
   padding: 1.2vh;
@@ -1049,6 +1056,7 @@ tspan { white-space:pre }
   padding: 2.5vh;
   height: auto;
   opacity: 0;
+  font-size: 1.7vw;
 }
 .text-box p:first-child,
 .text-box p:last-child {

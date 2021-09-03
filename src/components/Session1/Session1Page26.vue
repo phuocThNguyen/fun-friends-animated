@@ -48,30 +48,31 @@ export default {
 .interactive-container img:nth-child(1) {
   left: 0;
   bottom: 0;
-  width: 400px;
-  height: 400px;
+  width: 50vw;
+  height: 70vh;
 }
 .interactive-container img:nth-child(2) {
   top: 0;
   right: 0;
-  width: 350px;
-  height: 280px;
+  width: 48vw;
+  height: 44vh;
 }
 .interactive-container img:nth-child(3) {
   bottom: 0;
   right: 0;
-  width: 350px;
-  height: 250px;
+  width: 48vw;
+  height: 45vh;;
 }
 .text-box {
-  margin-left: 20px;
-  margin-top: 20px;
   color: #ffffff;
+  padding: 2vw;
 }
 .text-box h1 {
-  font-size: 25px;
+  font-size: 3.5vw;
+  margin-bottom: 1vh;
 }
 .text-box p {
-  margin-bottom: 5px;
+  font-size: 1.8vw;
+  margin-bottom: 1vh;
 }
 </style>

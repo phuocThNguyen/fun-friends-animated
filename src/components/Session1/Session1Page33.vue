@@ -421,6 +421,7 @@ export default {
       easing: 'steps(10)',
       loop: true,
     })
+    let vh = window.innerHeight;
     let oranges = document.getElementsByClassName('orange');
     anime.timeline({
       scale: 40,
@@ -429,15 +430,15 @@ export default {
     })
       .add({
         targets: '.tree-body',
-        scale: 8,
-        translateY: -10,
+        scale: 40,
+        translateY: -0.004 * vh,
         duration: 3000,
         easing: 'linear',
       })
       .add({
         targets: '.tree-crown',
-        scale: 350,
-        translateY: -0.4,
+        scale: 110,
+        translateY: -0.0025 * vh,
         duration: 2000,
         easing: 'linear',
       }, "-=700")
@@ -523,31 +524,123 @@ export default {
 
 <style scoped>
 .cloud-background {
-  background-color: rgb(230,255,255);
+  background-color: #e6ffff;
 }
 .text-box {
   position: absolute;
-  top: 100px;
-  right: 100px;
-  width: 250px;
+  top: 15vh;
+  right: 20vw;
+  width: 25vw;
   height: auto;
   background-color: #ffffff;
   opacity: 0;
-  padding: 20px;
+  padding: 2vw;
   border-radius: 20px;
+  border: 0.2vw dashed #000;
 }
 .text-box p {
   color: #ffffff;
+  font-size: 1.9vw;
 }
 .sun {
   position: absolute;
-  top: -50px;
-  right: -50px;
+  width: 30vw;
+  height: auto;
+  top: -12vh;
+  right: -12vw;
+}
+.tree-body {
+  position: absolute;
+  bottom: 0;
+  left: 22vw;
+  width: auto;
+  height: 1vh;
+  z-index: 10;
+}
+.tree-crown {
+  position: absolute;
+  width: 0.5vw;
+  top: 65vh;
+  left: 20vw;
+  height: auto;
+}
+.grass {
+  position: absolute;
+  left: -5vw;
+  bottom: -3vh;
+  width: 110vw;
+  height: auto;
+}
+.orange {
+  position: absolute;
+  width: auto;
+  height: 0.1vh;
+  z-index: 50;
+}
+#orange-1 {
+  bottom: 28vh;
+  left: 10vw;
+}
+#orange-2 {
+  bottom: 66vh;
+  left: 35vw;
+}
+#orange-3 {
+  bottom: 41vh;
+  left: 5vw;
+}
+#orange-4 {
+  bottom: 30vh;
+  left: 15vw;
+}
+#orange-5 {
+  bottom: 50vh;
+  left: 19vw;
+}
+#orange-6 {
+  bottom: 70vh;
+  left: 20vw;
+}
+#orange-7 {
+  bottom: 60vh;
+  left: 30vw;
+}
+#orange-8 {
+  bottom: 45vh;
+  left: 35vw;
+}
+#orange-9 {
+  bottom: 40vh;
+  left: 28vw;
+}
+#orange-10 {
+  bottom: 62vh;
+  left: 12vw;
+}
+#orange-11 {
+  bottom: 80vh;
+  left: 25vw;
+}
+#orange-12 {
+  bottom: 53vh;
+  left: 8vw;
+}
+#orange-13 {
+  bottom: 57vh;
+  left: 40vw;
+}
+#orange-14 {
+  bottom: 77vh;
+  left: 10vw;
+}
+#orange-15 {
+  bottom: 37vh;
+  left: 40vw;
 }
 tspan { white-space:pre }
 .shp-sun { fill: #f6921e }
 .shp-sunlight { fill: #faaf3b }
-.shp-crown { fill: #04e762 }
+.shp-crown { fill: #00bf30 }
 .shp-tree-body { fill: #603e2a }
 .shp-grass { fill: #04e762 }
 .shp-orange-0 { fill: #ff8700 }
@@ -558,93 +651,4 @@ tspan { white-space:pre }
 .shp-orange-5 { fill: #6a7733 }
 .shp-orange-6 { opacity: 0.4;fill: #ff7b00 }
 .shp-orange-7 { fill: #849a31 }
-
-.tree-body {
-  position: absolute;
-  bottom: 0;
-  left: 180px;
-  width: 10px;
-  height: auto;
-  z-index: 10;
-}
-.tree-crown {
-  position: absolute;
-  left: 175px;
-  bottom: 170px;
-  width: 1px;
-  height: auto;
-}
-.grass {
-  position: absolute;
-  left: -65px;
-  bottom: 0;
-  width: 868px;
-  height: auto;
-}
-.orange {
-  position: absolute;
-  width: 1px;
-  height: auto;
-  z-index: 50;
-}
-#orange-1 {
-  bottom: 130px;
-  left: 100px;
-}
-#orange-2 {
-  bottom: 160px;
-  left: 240px;
-}
-#orange-3 {
-  bottom: 290px;
-  left: 30px;
-}
-#orange-4 {
-  bottom: 200px;
-  left: 100px;
-}
-#orange-5 {
-  bottom: 250px;
-  left: 70px;
-}
-#orange-6 {
-  bottom: 300px;
-  left: 200px;
-}
-#orange-7 {
-  bottom: 350px;
-  left: 150px;
-}
-#orange-8 {
-  bottom: 350px;
-  left: 300px;
-}
-#orange-9 {
-  bottom: 280px;
-  left: 280px;
-}
-#orange-10 {
-  bottom: 230px;
-  left: 230px;
-}
-#orange-11 {
-  bottom: 280px;
-  left: 150px;
-}
-#orange-12 {
-  bottom: 320px;
-  left: 80px;
-}
-#orange-13 {
-  bottom: 380px;
-  left: 230px;
-}
-#orange-14 {
-  bottom: 430px;
-  left: 180px;
-}
-#orange-15 {
-  bottom: 400px;
-  left: 120px;
-}
 </style>

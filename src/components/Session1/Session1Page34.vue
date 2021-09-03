@@ -222,12 +222,13 @@ import anime from "animejs";
 export default {
   name: "Session1Page34",
   mounted() {
+    let vw = window.innerWidth;
     const clouds = document.getElementsByClassName('shp-cloud');
     clouds.forEach(cloud => {
       let plusOrMinus = Math.random() < 0.5 ? -1 : 1;
       anime({
         targets: cloud,
-        translateX: (Math.floor(Math.random() * 500) + 200) * plusOrMinus,
+        translateX: (Math.floor(Math.random() * 0.5 * vw) + 0.2 * vw) * plusOrMinus,
         duration: (Math.floor(Math.random() * 1000) + 5000),
         loop: true,
         direction: 'alternate',
@@ -331,10 +332,33 @@ export default {
 <style scoped>
 .landscape {
   position: absolute;
-  width: 888px;
-  height: 723px;
-  top: -85px;
-  left: -75px;
+  width: 120vw;
+  height: auto;
+  left: -12vw;
+}
+.text-box {
+  position: absolute;
+  width: 70vw;
+  height: auto;
+  padding: 3vw;
+  background-color: #ffffff;
+  opacity: 0;
+  border-radius: 20px;
+  z-index: 100;
+  top: 10vh;
+  left: 15vw;
+}
+.text-box p {
+  font-size: 2vw;
+  margin-bottom: 2vh;
+  color: #ffffff;
+}
+.text-box p:first-child,
+.text-box p:nth-child(2) {
+  text-align: center;
+}
+.text-box p:nth-child(2) {
+  margin-bottom: 6vh;
 }
 tspan { white-space:pre }
 .shp-bush-top { fill: url(#grd-bush-top) }
@@ -354,83 +378,61 @@ tspan { white-space:pre }
   position: absolute;
 }
 #bush-left-bottom {
-  bottom: 40px;
-  left: 80px;
-  width: 3.3px;
-  height: 2px;
+  bottom: 6vh;
+  left: 10vw;
+  width: 0.5vw;
+  height: auto;
   z-index: 20;
 }
 #bush-left-top {
-  bottom: 40px;
-  left: 100px;
-  width: 4px;
-  height: 2.4px;
+  bottom: 9vh;
+  left: 10vw;
+  width: 0.5vw;
+  height: auto;
   z-index: 10;
 }
 #bush-right-bottom {
-  bottom: 40px;
-  right: 60px;
-  width: 3.3px;
-  height: 2px;
+  bottom: 5vh;
+  right: 10vw;
+  width: 0.5vw;
+  height: auto;
   z-index: 20;
 }
 #bush-right-top {
-  bottom: 30px;
-  right: 100px;
-  width: 4px;
-  height: 2.4px;
+  bottom: 8vh;
+  right: 10vw;
+  width: 0.5vw;
+  height: auto;
   z-index: 10;
 }
+
 .tree {
   position: absolute;
 }
 #tree-left-left {
-  width: 1.5px;
-  height: 2.7px;
-  bottom: 200px;
-  left: -10px;
+  width: 0.5vh;
+  height: auto;
+  bottom: 18vh;
+  left: 3vw;
 }
 #tree-left-right {
-  width: 1.5px;
-  height: 2.7px;
-  bottom: 120px;
-  left: 80px;
+  width: 0.5vh;
+  height: auto;
+  bottom: -11vh;
+  left: 15vw;
   z-index: 9;
 }
 #tree-right-right {
-  width: 1.5px;
-  height: 2.7px;
-  bottom: 200px;
-  right: 60px;
+  width: 0.5vh;
+  height: auto;
+  bottom: 18vh;
+  right: 3vw;
 }
 #tree-right-left {
-  width: 1.5px;
-  height: 2.7px;
-  bottom: 120px;
-  right: 150px;
-  z-index: 9;
-}
-.text-box {
-  position: absolute;
-  width: 600px;
+  width: 0.5vh;
   height: auto;
-  padding: 30px;
-  background-color: #ffffff;
-  opacity: 0;
-  border-radius: 20px;
-  z-index: 100;
-  top: 50px;
-  left: 90px;
-}
-.text-box p {
-  margin-bottom: 15px;
-  color: #ffffff;
-}
-.text-box p:first-child,
-.text-box p:nth-child(2) {
-  text-align: center;
-}
-.text-box p:nth-child(2) {
-  margin-bottom: 20px;
+  bottom: -8vh;
+  right: 17vw;
+  z-index: 9;
 }
 </style>

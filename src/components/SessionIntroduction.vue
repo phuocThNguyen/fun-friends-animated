@@ -1,6 +1,6 @@
 <template>
   <div>
-    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 123" width="124" height="123">
+    <svg class="arrow" @click="next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 123" width="124" height="123">
       <title>Right Arrow</title>
       <g id="object">
         <g id="&lt;Group&gt;">
@@ -10,7 +10,7 @@
       </g>
     </svg>
     <img :src="getImgUrl(image)" alt="book-introduction" class="image-introduction">
-    <svg class="arrow" id="left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 123" width="124" height="123">
+    <svg class="arrow" @click="previous" id="left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 123" width="124" height="123">
       <title>Right Arrow</title>
       <g id="object">
         <g id="&lt;Group&gt;">
@@ -56,9 +56,6 @@ export default {
         this.$emit('nextSession', 1, true);
       }
     },
-    onTap() {
-      console.log('tapped');
-    }
   },
   mounted() {
     window.addEventListener('keydown', (event)=> {
@@ -78,7 +75,7 @@ tspan { white-space:pre }
 
 .image-introduction {
   width: 100vw;
-  height: calc(100vh - 68px);
+  height: calc(100vh - 60px);
 }
 
 </style>

@@ -1142,29 +1142,57 @@
         <p id="q4"> - What is similar or different between many friends?</p>
         <p id="q5"><strong>Being different is beautiful!</strong></p>
       </div>
+      <textarea class="song-writer" placeholder="Compose your wonderful song here!"
+      name="song-lyrics" id="song-writer" rows="5"/>
     </div>
-    
-    <textarea class="song-writer" placeholder="Compose your wonderful song here!" name="song-lyrics" 
-    id="song-writer" rows="5"/>
 
-    <a class="button" target="_blank" href="https://jspaint.app/">
-      <img class="brush" src="../../assets/images/session1/brush.png" alt="brush">
-    </a>
+    <div id="painterro"></div>
   </div>
 </template>
 
 <script>
 import anime from "animejs";
+import Painterro from "painterro";
 export default {
   name: "Session1Page32",
+  data() {
+    return {
+      painterro: null
+    }
+  },
   mounted() {
+    this.$nextTick(() => {
+      this.painterro = Painterro({
+        id: "painterro",
+        activeColor: '#000000',
+        activeFillColor: '#ffffff',
+        defaultLineWidth: '5',
+        defaultPrimitiveShadowOn: 'true',
+        defaultEraserWidth: '40',
+        defaultTool: 'brush',
+        toolbarPosition: 'bottom',
+        availableLineWidths: [1,4,8,12,16,20],
+        availableEraserWidths: [1,4,8,12,16,20],
+        hiddenTools: ['pixelize','select','crop','text','rotate','resize',
+          'open','save','close','settings','redo','zoomin','zoomout'],
+        colorScheme: {
+          main: '#cfcfcf',
+          control: "#ffffff",
+          controlContent: '#434649',
+          controlShadow: '0px 0px 0px 0.5px #000',
+        },
+      }).show();
+      let info = document.querySelector('.ptro-info');
+      info.style.visibility = 'hidden';
+    })
+    let vh = window.innerHeight;
     let snow = document.getElementsByClassName('snow')[0].children;
     snow.forEach(element => {
-      let random_boolean = Math.random() < 0.5;
+      let random_boolean = Math.random() < 0.2;
       if (random_boolean) {
         anime({
           targets: element,
-          translateY: Math.floor(Math.random() * 100) + 200,
+          translateY: Math.floor(Math.random() * 0.1 * vh) + 0.2 * vh,
           opacity: 0,
           duration: Math.floor(Math.random() * 2000) + 1000,
           loop: true,
@@ -1173,62 +1201,67 @@ export default {
       }
     })
 
-    let mainContentAnimation = anime.timeline();
+    let mainContentAnimation = anime.timeline({
+      easing: 'linear',
+      duration: 1000,
+    });
     mainContentAnimation
-        .add({
-          targets: '.requires',
-          opacity: 0.85,
-          duration: 1000,
-          delay: 2000,
-          easing: 'linear'
-        })
-        .add({
-          targets: '.text-box',
-          opacity: 0.95,
-          duration: 2000,
-          easing: 'linear'
-        })
-        .add({
-          targets: '#q1',
-          color: '#000',
-          duration: 1000
-        })
-        .add({
-          targets: '#q2',
-          color: '#000',
-          duration: 1000
-        })
-        .add({
-          targets: '#q3',
-          color: '#000',
-          duration: 1000
-        })
-        .add({
-          targets: '#q4',
-          color: '#000',
-          duration: 1000
-        })
-        .add({
-          targets: '#q5',
-          color: '#000',
-          duration: 1000
-        })
-        .add({
-          targets: '.song-writer',
-          opacity: 0.95,
-          duration: 1000,
-          easing: 'linear'
-        })
-  }
+      .add({
+        targets: '.requires',
+        opacity: 0.85,
+        delay: 2000,
+      })
+      .add({
+        targets: '.text-box',
+        opacity: 0.95,
+        duration: 2000,
+      })
+      .add({
+        targets: '#q1',
+        color: '#000'
+      })
+      .add({
+        targets: '#q2',
+        color: '#000'
+      })
+      .add({
+        targets: '#q3',
+        color: '#000'
+      })
+      .add({
+        targets: '#q4',
+        color: '#000'
+      })
+      .add({
+        targets: '#q5',
+        color: '#000'
+      })
+      .add({
+        targets: '.song-writer',
+        opacity: 0.95,
+      })
+      .add({
+        targets: '#painterro',
+        opacity: 0.92,
+      })
+  },
 };
 </script>
 
 <style scoped>
 .landscape {
   position: relative;
-  top: 10px;
-  width: 788px;
-  height: 553px;
+  width: 105vw;
+  height: auto;
+}
+#painterro {
+  position: absolute;
+  top: 5vh;
+  left: 45vw;
+  right: 1vw;
+  bottom: 10vh;
+  opacity: 0;
+  z-index: 100;
 }
 tspan { white-space:pre }
 .shp0 { fill: #b5d2e5 } 
@@ -1249,69 +1282,48 @@ tspan { white-space:pre }
 .shp15 { fill: #abcadb } 
 .shp16 { fill: #dbdbdb } 
 .shp17 { fill: #e5e5e5 } 
-.shp18 { fill: #ffffff } 
+.shp18 { fill: #ffffff }
 
 .main-content {
   position: absolute;
-  left: 100px;
-  top: 40px;
-  width: 600px;
-  z-index: 100;
+  left: 1vw;
+  top: 5vh;
+  width: 43vw;
+  z-index: 50;
 }
 .main-content h1 {
   background-color: #000000;
   color: #ffffff;
-  font-size: 24px;
+  font-size: 2.2vw;
   width: 100%;
-  height: 50px;
+  height: auto;
+  padding: 1.5vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
   opacity: 0;
 }
 .text-box {
   background-color: #ffffff;
-  border-radius: 10px;
-  padding: 35px 5px 15px 15px;
+  padding: 1.8vw;
   height: auto;
   opacity: 0;
-}
-.text-box p {
+  font-size: 1.9vw;
   color: #ffffff;
 }
+.text-box p:last-child {
+  font-weight: bold;
+}
 .song-writer {
-  position: absolute;
-  width: 600px;
-  top: 360px;
-  left: 100px;
+  width: 100%;
+  height: 22vh;
+  margin-top: 1vh;
   border: none;
-  border-radius: 10px;
   background-color: #ffffff;
   opacity: 0;
-  padding: 15px;
+  padding: 2vh;
   resize: none;
   outline: none;
-}
-.button {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  border-left: 3px dashed #000000;
-  border-top: 3px dashed #000000;
-  background-color: #ffffff;
-  width: 60px;
-  height: 60px;
-  opacity: 0.9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 50;
-}
-.brush {
-  width: 40px;
-  height: 40px;
+  font-size: 1.9vw;
 }
 </style>

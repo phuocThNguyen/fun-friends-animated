@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="session-container">
-      <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 123" width="124" height="123">
+      <svg class="arrow" @click="next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 123" width="124" height="123">
         <title>Right Arrow</title>
         <g id="object">
           <g id="&lt;Group&gt;">
@@ -11,7 +11,7 @@
         </g>
       </svg>
       <component :is="pages[page]" />
-      <svg class="arrow" id="left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 123" width="124" height="123">
+      <svg class="arrow" @click="previous" id="left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 123" width="124" height="123">
         <title>Right Arrow</title>
         <g id="object">
           <g id="&lt;Group&gt;">
@@ -34,32 +34,35 @@ import Session1Page6 from "@/components/Session1/Session1Page6";
 import Session1Page7 from "@/components/Session1/Session1Page7";
 import Session1Page8 from "@/components/Session1/Session1Page8";
 import Session1Page9 from "@/components/Session1/Session1Page9";
-import Session1Page10 from "@/components/Session1/Session1Page11";
-import Session1Page11 from "@/components/Session1/Session1Page12";
-import Session1Page12 from "@/components/Session1/Session1Page13";
-import Session1Page13 from "@/components/Session1/Session1Page14";
-import Session1Page14 from "@/components/Session1/Session1Page15";
-import Session1Page15 from "@/components/Session1/Session1Page16";
-import Session1Page16 from "@/components/Session1/Session1Page17";
-import Session1Page17 from "@/components/Session1/Session1Page18";
-import Session1Page18 from "@/components/Session1/Session1Page19";
-import Session1Page19 from "@/components/Session1/Session1Page20";
-import Session1Page20 from "@/components/Session1/Session1Page21";
-import Session1Page21 from "@/components/Session1/Session1Page22";
-import Session1Page22 from "@/components/Session1/Session1Page23";
-import Session1Page23 from "@/components/Session1/Session1Page24";
-import Session1Page24 from "@/components/Session1/Session1Page25";
-import Session1Page25 from "@/components/Session1/Session1Page26";
-import Session1Page26 from "@/components/Session1/Session1Page27";
-import Session1Page27 from "@/components/Session1/Session1Page28";
-import Session1Page28 from "@/components/Session1/Session1Page29";
-import Session1Page29 from "@/components/Session1/Session1Page30";
-import Session1Page30 from "@/components/Session1/Session1Page31";
-import Session1Page31 from "@/components/Session1/Session1Page32";
-import Session1Page32 from "@/components/Session1/Session1Page33";
-import Session1Page33 from "@/components/Session1/Session1Page34";
-import Session1Page34 from "@/components/Session1/Session1Page35";
+import Session1Page10 from "@/components/Session1/Session1Page10";
+import Session1Page11 from "@/components/Session1/Session1Page11";
+import Session1Page12 from "@/components/Session1/Session1Page12";
+import Session1Page13 from "@/components/Session1/Session1Page13";
+import Session1Page14 from "@/components/Session1/Session1Page14";
+import Session1Page15 from "@/components/Session1/Session1Page15";
+import Session1Page16 from "@/components/Session1/Session1Page16";
+import Session1Page17 from "@/components/Session1/Session1Page17";
+import Session1Page18 from "@/components/Session1/Session1Page18";
+import Session1Page19 from "@/components/Session1/Session1Page19";
+import Session1Page20 from "@/components/Session1/Session1Page20";
+import Session1Page21 from "@/components/Session1/Session1Page21";
+import Session1Page22 from "@/components/Session1/Session1Page22";
+import Session1Page23 from "@/components/Session1/Session1Page23";
+import Session1Page24 from "@/components/Session1/Session1Page24";
+import Session1Page25 from "@/components/Session1/Session1Page25";
+import Session1Page26 from "@/components/Session1/Session1Page26";
+import Session1Page27 from "@/components/Session1/Session1Page27";
+import Session1Page28 from "@/components/Session1/Session1Page28";
+import Session1Page29 from "@/components/Session1/Session1Page29";
+import Session1Page30 from "@/components/Session1/Session1Page30";
+import Session1Page31 from "@/components/Session1/Session1Page31";
+import Session1Page32 from "@/components/Session1/Session1Page32";
+import Session1Page33 from "@/components/Session1/Session1Page33";
+import Session1Page34 from "@/components/Session1/Session1Page34";
 import Session1Page35 from "@/components/Session1/Session1Page35";
+import Session1Page36 from "@/components/Session1/Session1Page36";
+import Session1Page37 from "@/components/Session1/Session1Page37";
+import Session1Page38 from "@/components/Session1/Session1Page38";
 
 export default {
   name: "Session1",
@@ -73,7 +76,8 @@ export default {
     Session1Page16, Session1Page17, Session1Page18, Session1Page19, Session1Page20,
     Session1Page21, Session1Page22, Session1Page23, Session1Page24, Session1Page25,
     Session1Page26, Session1Page27, Session1Page28, Session1Page29, Session1Page30,
-    Session1Page31, Session1Page32, Session1Page33, Session1Page34, Session1Page35
+    Session1Page31, Session1Page32, Session1Page33, Session1Page34, Session1Page35,
+    Session1Page36, Session1Page37, Session1Page38
   },
   data() {
     return {
@@ -85,9 +89,9 @@ export default {
         21: "Session1Page21", 22: "Session1Page22", 23: "Session1Page23", 24: "Session1Page24", 25: "Session1Page25",
         26: "Session1Page26", 27: "Session1Page27", 28: "Session1Page28", 29: "Session1Page29", 30: "Session1Page30",
         31: "Session1Page31", 32: "Session1Page32", 33: "Session1Page33", 34: "Session1Page34", 35: "Session1Page35",
-        36: "Session1Page36", 37: "Session1Page37", 38: "Session1Page38", 39: "Session1Page39",
+        36: "Session1Page36", 37: "Session1Page37", 38: "Session1Page38",
       },
-      page: 1,
+      page: 30,
       lastPage: 50,
     };
   },
