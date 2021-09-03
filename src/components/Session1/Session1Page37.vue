@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1000" width="1500" height="1000">
-      <title>OBJECTS</title>
+  <div class="interactive-container">
+    <svg class="landscape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1000" width="1500" height="1000">
+      <title>Landscape</title>
       <defs>
         <linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="-4" y1="1025.561" x2="-4" y2="-228.869">
           <stop offset="0" stop-color="#46ae47"  />
@@ -412,108 +412,6 @@
           <stop offset="1" stop-color="#0d371f"  />
         </linearGradient>
       </defs>
-      <style>
-        tspan { white-space:pre }
-        .shp0 { fill: url(#grd1) }
-        .shp1 { fill: url(#grd2) }
-        .shp2 { fill: url(#grd3) }
-        .shp3 { fill: url(#grd4) }
-        .shp4 { fill: url(#grd5) }
-        .shp5 { fill: url(#grd6) }
-        .shp6 { mix-blend-mode: soft-light;fill: url(#grd7) }
-        .shp7 { fill: url(#grd8) }
-        .shp8 { fill: url(#grd9) }
-        .shp9 { fill: url(#grd10) }
-        .shp10 { fill: url(#grd11) }
-        .shp11 { fill: url(#grd12) }
-        .shp12 { fill: url(#grd13) }
-        .shp13 { fill: url(#grd14) }
-        .shp14 { fill: url(#grd15) }
-        .shp15 { fill: url(#grd16) }
-        .shp16 { fill: url(#grd17) }
-        .shp17 { fill: url(#grd18) }
-        .shp18 { fill: url(#grd19) }
-        .shp19 { fill: url(#grd20) }
-        .shp20 { fill: #212121 }
-        .shp21 { fill: url(#grd21) }
-        .shp22 { fill: url(#grd22) }
-        .shp23 { fill: url(#grd23) }
-        .shp24 { fill: url(#grd24) }
-        .shp25 { fill: url(#grd25) }
-        .shp26 { fill: url(#grd26) }
-        .shp27 { fill: url(#grd27) }
-        .shp28 { fill: url(#grd28) }
-        .shp29 { fill: url(#grd29) }
-        .shp30 { fill: url(#grd30) }
-        .shp31 { fill: url(#grd31) }
-        .shp32 { fill: url(#grd32) }
-        .shp33 { fill: url(#grd33) }
-        .shp34 { fill: url(#grd34) }
-        .shp35 { fill: url(#grd35) }
-        .shp36 { fill: url(#grd36) }
-        .shp37 { fill: url(#grd37) }
-        .shp38 { fill: url(#grd38) }
-        .shp39 { fill: url(#grd39) }
-        .shp40 { fill: url(#grd40) }
-        .shp41 { fill: #fafafa }
-        .shp42 { fill: url(#grd41) }
-        .shp43 { fill: url(#grd42) }
-        .shp44 { fill: url(#grd43) }
-        .shp45 { fill: url(#grd44) }
-        .shp46 { fill: url(#grd45) }
-        .shp47 { fill: url(#grd46) }
-        .shp48 { fill: url(#grd47) }
-        .shp49 { fill: url(#grd48) }
-        .shp50 { fill: url(#grd49) }
-        .shp51 { fill: url(#grd50) }
-        .shp52 { fill: url(#grd51) }
-        .shp53 { fill: url(#grd52) }
-        .shp54 { fill: url(#grd53) }
-        .shp55 { fill: url(#grd54) }
-        .shp56 { fill: url(#grd55) }
-        .shp57 { fill: url(#grd56) }
-        .shp58 { fill: url(#grd57) }
-        .shp59 { fill: url(#grd58) }
-        .shp60 { fill: url(#grd59) }
-        .shp61 { fill: url(#grd60) }
-        .shp62 { fill: url(#grd61) }
-        .shp63 { fill: url(#grd62) }
-        .shp64 { fill: url(#grd63) }
-        .shp65 { fill: url(#grd64) }
-        .shp66 { fill: url(#grd65) }
-        .shp67 { fill: url(#grd66) }
-        .shp68 { fill: url(#grd67) }
-        .shp69 { fill: url(#grd68) }
-        .shp70 { fill: url(#grd69) }
-        .shp71 { fill: url(#grd70) }
-        .shp72 { fill: url(#grd71) }
-        .shp73 { fill: url(#grd72) }
-        .shp74 { fill: url(#grd73) }
-        .shp75 { fill: url(#grd74) }
-        .shp76 { fill: url(#grd75) }
-        .shp77 { fill: url(#grd76) }
-        .shp78 { fill: url(#grd77) }
-        .shp79 { fill: url(#grd78) }
-        .shp80 { fill: url(#grd79) }
-        .shp81 { fill: url(#grd80) }
-        .shp82 { fill: url(#grd81) }
-        .shp83 { fill: url(#grd82) }
-        .shp84 { fill: url(#grd83) }
-        .shp85 { fill: url(#grd84) }
-        .shp86 { fill: url(#grd85) }
-        .shp87 { fill: url(#grd86) }
-        .shp88 { fill: url(#grd87) }
-        .shp89 { fill: url(#grd88) }
-        .shp90 { fill: url(#grd89) }
-        .shp91 { fill: url(#grd90) }
-        .shp92 { fill: url(#grd91) }
-        .shp93 { fill: url(#grd92) }
-        .shp94 { fill: url(#grd93) }
-        .shp95 { fill: url(#grd94) }
-        .shp96 { fill: url(#grd95) }
-        .shp97 { fill: url(#grd96) }
-        .shp98 { fill: url(#grd97) }
-      </style>
       <g id="BACKGROUND">
         <path id="&lt;Path&gt;" class="shp0" d="M1500 1000L0 1000L0 0L1500 0L1500 1000Z" />
       </g>
@@ -992,4 +890,107 @@ export default {
 </script>
 
 <style scoped>
+.landscape {
+
+}
+tspan { white-space:pre }
+.shp0 { fill: url(#grd1) }
+.shp1 { fill: url(#grd2) }
+.shp2 { fill: url(#grd3) }
+.shp3 { fill: url(#grd4) }
+.shp4 { fill: url(#grd5) }
+.shp5 { fill: url(#grd6) }
+.shp6 { mix-blend-mode: soft-light;fill: url(#grd7) }
+.shp7 { fill: url(#grd8) }
+.shp8 { fill: url(#grd9) }
+.shp9 { fill: url(#grd10) }
+.shp10 { fill: url(#grd11) }
+.shp11 { fill: url(#grd12) }
+.shp12 { fill: url(#grd13) }
+.shp13 { fill: url(#grd14) }
+.shp14 { fill: url(#grd15) }
+.shp15 { fill: url(#grd16) }
+.shp16 { fill: url(#grd17) }
+.shp17 { fill: url(#grd18) }
+.shp18 { fill: url(#grd19) }
+.shp19 { fill: url(#grd20) }
+.shp20 { fill: #212121 }
+.shp21 { fill: url(#grd21) }
+.shp22 { fill: url(#grd22) }
+.shp23 { fill: url(#grd23) }
+.shp24 { fill: url(#grd24) }
+.shp25 { fill: url(#grd25) }
+.shp26 { fill: url(#grd26) }
+.shp27 { fill: url(#grd27) }
+.shp28 { fill: url(#grd28) }
+.shp29 { fill: url(#grd29) }
+.shp30 { fill: url(#grd30) }
+.shp31 { fill: url(#grd31) }
+.shp32 { fill: url(#grd32) }
+.shp33 { fill: url(#grd33) }
+.shp34 { fill: url(#grd34) }
+.shp35 { fill: url(#grd35) }
+.shp36 { fill: url(#grd36) }
+.shp37 { fill: url(#grd37) }
+.shp38 { fill: url(#grd38) }
+.shp39 { fill: url(#grd39) }
+.shp40 { fill: url(#grd40) }
+.shp41 { fill: #fafafa }
+.shp42 { fill: url(#grd41) }
+.shp43 { fill: url(#grd42) }
+.shp44 { fill: url(#grd43) }
+.shp45 { fill: url(#grd44) }
+.shp46 { fill: url(#grd45) }
+.shp47 { fill: url(#grd46) }
+.shp48 { fill: url(#grd47) }
+.shp49 { fill: url(#grd48) }
+.shp50 { fill: url(#grd49) }
+.shp51 { fill: url(#grd50) }
+.shp52 { fill: url(#grd51) }
+.shp53 { fill: url(#grd52) }
+.shp54 { fill: url(#grd53) }
+.shp55 { fill: url(#grd54) }
+.shp56 { fill: url(#grd55) }
+.shp57 { fill: url(#grd56) }
+.shp58 { fill: url(#grd57) }
+.shp59 { fill: url(#grd58) }
+.shp60 { fill: url(#grd59) }
+.shp61 { fill: url(#grd60) }
+.shp62 { fill: url(#grd61) }
+.shp63 { fill: url(#grd62) }
+.shp64 { fill: url(#grd63) }
+.shp65 { fill: url(#grd64) }
+.shp66 { fill: url(#grd65) }
+.shp67 { fill: url(#grd66) }
+.shp68 { fill: url(#grd67) }
+.shp69 { fill: url(#grd68) }
+.shp70 { fill: url(#grd69) }
+.shp71 { fill: url(#grd70) }
+.shp72 { fill: url(#grd71) }
+.shp73 { fill: url(#grd72) }
+.shp74 { fill: url(#grd73) }
+.shp75 { fill: url(#grd74) }
+.shp76 { fill: url(#grd75) }
+.shp77 { fill: url(#grd76) }
+.shp78 { fill: url(#grd77) }
+.shp79 { fill: url(#grd78) }
+.shp80 { fill: url(#grd79) }
+.shp81 { fill: url(#grd80) }
+.shp82 { fill: url(#grd81) }
+.shp83 { fill: url(#grd82) }
+.shp84 { fill: url(#grd83) }
+.shp85 { fill: url(#grd84) }
+.shp86 { fill: url(#grd85) }
+.shp87 { fill: url(#grd86) }
+.shp88 { fill: url(#grd87) }
+.shp89 { fill: url(#grd88) }
+.shp90 { fill: url(#grd89) }
+.shp91 { fill: url(#grd90) }
+.shp92 { fill: url(#grd91) }
+.shp93 { fill: url(#grd92) }
+.shp94 { fill: url(#grd93) }
+.shp95 { fill: url(#grd94) }
+.shp96 { fill: url(#grd95) }
+.shp97 { fill: url(#grd96) }
+.shp98 { fill: url(#grd97) }
 </style>
