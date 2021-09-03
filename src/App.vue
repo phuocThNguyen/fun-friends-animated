@@ -71,7 +71,6 @@ export default {
   },
   methods: {
     setSession(number) {
-      console.log(number);
       this.session = number;
     },
     nextSession(sessionNumber, isNext) {
@@ -124,5 +123,16 @@ export default {
   right: 0;
   left: 5px;
 }
-
+/* Force landscape */
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
 </style>

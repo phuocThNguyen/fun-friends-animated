@@ -880,6 +880,18 @@
         </g>
       </g>
     </svg>
+    <div class="text-box">
+      <h1>Try Everyday</h1>
+      <p>- If you were grown up for a day, what would you do?</p>
+      <p>- Share your answer with a grown up and ask them to tell you about
+        when they were children - what they liked to do, eat and play.</p>
+      <p>- Ask them to draw the home they lived in as a child.</p>
+      <p>- Each night tell each other one happy thing about the day.</p>
+      <p>- Everyday practise being BRAVE:</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* &nbsp;Look people in the eye and smile.</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* &nbsp;Use a brave voice and make yourself big.</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* &nbsp;Try your best and give it a go.</p>
+    </div>
   </div>
 </template>
 
@@ -891,7 +903,26 @@ export default {
 
 <style scoped>
 .landscape {
-
+  position: absolute;
+  width: 106vw;
+  height: auto;
+}
+.text-box {
+  position: absolute;
+  width: 70vw;
+  left: 15vw;
+  top: 10vh;
+  background-color: #ffffff;
+  opacity: 0.90;
+  padding: 3vw;
+}
+.text-box h1 {
+  text-align: center;
+  margin-bottom: 3vh;
+  font-size: 4vw;
+}
+.text-box p {
+  font-size: 2vw;
 }
 tspan { white-space:pre }
 .shp0 { fill: url(#grd1) }

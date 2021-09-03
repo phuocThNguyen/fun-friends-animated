@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import { mapState } from 'vuex';
 export default {
   name: "Navigation",
   props: {
@@ -39,16 +39,22 @@ export default {
   data() {
     return {
       isActive: false,
+      selectedSession: 0
+    }
+  },
+  computed: mapState(['currentSession']),
+  watch: {
+    currentSession(newValue, oldValue) {
+      this.selectedSession = newValue;
+      let buttons = document.getElementsByClassName('btn');
+      this.changeActiveStyle(buttons[newValue]);
+      this.resetStyle(buttons[oldValue]);
     }
   },
   methods: {
     setSession(sessionNumber) {
-      this.$emit('setSession', sessionNumber);
-      // console.log(sessionNumber)
-      let buttons = document.getElementsByClassName('btn');
-      if (sessionNumber != this.currentSession) {
-        this.changeActiveStyle(buttons[sessionNumber]);
-        this.resetStyle(buttons[this.currentSession]);
+      if (sessionNumber !== this.selectedSession) {
+        this.$emit('setSession', sessionNumber);
         this.$store.commit("setCurrentSession", sessionNumber);
       }
     },
@@ -61,27 +67,10 @@ export default {
       btn.style.backgroundColor = '#00ce7c';
     }
   },
-  watch: {
-    // currentSession() {
-    //   return this.$store.state.currentSession;
-    // },
-    // currentSession: mapState(['currentSession']),
-    // mapState(['currentSession']): function() {
-
-    // }
-  },
-  computed: {
-    ...mapGetters({
-      currentSession: 'getCurrentSession'
-    })
-  },
   mounted() {
     let buttons = document.getElementsByClassName('btn')
-    // console.log(this.currentSession);
-
-    this.changeActiveStyle(buttons[this.currentSession]);
-
-  }
+    this.changeActiveStyle(buttons[this.selectedSession]);
+  },
   }
 </script>
 
