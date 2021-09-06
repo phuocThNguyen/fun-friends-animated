@@ -908,8 +908,31 @@
 </template>
 
 <script>
+import anime from 'animejs'
 export default {
-  name: "Session1Page38"
+  name: "Session1Page38",
+  mounted() {
+    let animation = anime.timeline({
+      easing: 'linear'
+    });
+    animation
+    .add({
+      targets: ".text-box",
+      opacity: 0.9,
+      duration: 1000,
+      delay: 500,
+    })
+    .add({
+      targets: ".star",
+      opacity: 1,
+      duration: 500
+    })
+    .add({
+      targets: ".star-text",
+      opacity: 1,
+      duration: 500
+    })
+  }
 }
 </script>
 
@@ -925,6 +948,7 @@ export default {
   height: 50vh;
   bottom: 7vh;
   right: 7vw;
+  opacity: 0;
 }
 .star-text {
   position: absolute;
@@ -933,6 +957,7 @@ export default {
   right: 15vw;
   bottom: 16vh;
   text-align: center;
+  opacity: 0;
 }
 .star-text p {
   margin-bottom: 0;
@@ -940,7 +965,7 @@ export default {
 .text-box {
   position: absolute;
   background-color: #ffffff;
-  opacity: 0.9;
+  opacity: 0;
   padding: 2vw;
   top: 5vh;
   left: 5vw

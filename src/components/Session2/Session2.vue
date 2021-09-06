@@ -25,19 +25,32 @@
 </template>
 
 <script>
+import Session2Page1 from "@/components/Session2/Session2Page1";
+import Session2Page2 from "@/components/Session2/Session2Page2";
+import Session2Page3 from "@/components/Session2/Session2Page3";
+import Session2Page4 from "@/components/Session2/Session2Page4";
+
 export default {
   name: "Session2",
   props: {
     isNext: Boolean,
   },
   components: {
-
+    Session2Page1,
+    Session2Page2,
+    Session2Page3,
+    Session2Page4
   },
   data() {
     return {
-      pages: {},
+      pages: {
+        1: "Session2Page1", 2: "Session2Page2", 3: "Session2Page3", 4: "Session2Page4", 5: "Session2Page5",
+        6: "Session2Page6", 7: "Session2Page7", 8: "Session2Page8", 9: "Session2Page9", 10: "Session2Page10",
+        11: "Session2Page11", 12: "Session2Page12", 13: "Session2Page13", 14: "Session2Page14", 15: "Session2Page15",
+        16: "Session2Page16", 17: "Session2Page17", 18: "Session2Page18", 19: "Session2Page19", 20: "Session2Page20",
+      },
       page: 1,
-      lastPage: 2,
+      lastPage: 10,
     }
   },
   created() {

@@ -896,8 +896,18 @@
 </template>
 
 <script>
+import anime from 'animejs'
 export default {
-  name: "Session1Page37"
+  name: "Session1Page37",
+  mounted() {
+    anime({
+      targets: ".text-box",
+      opacity: 0.9,
+      duration: 1000,
+      delay: 500,
+      easing: 'linear'
+    })
+  }
 }
 </script>
 
@@ -913,7 +923,7 @@ export default {
   left: 15vw;
   top: 10vh;
   background-color: #ffffff;
-  opacity: 0.90;
+  opacity: 0;
   padding: 3vw;
 }
 .text-box h1 {
