@@ -954,7 +954,7 @@ export default {
         opacity: 0.92
       })
   },
-  beforeMount() {
+  beforeUnmount() {
     this.painterro.hide()
   }
 }

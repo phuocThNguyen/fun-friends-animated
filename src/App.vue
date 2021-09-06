@@ -1,11 +1,17 @@
 <template>
   <div>
-    <Navigation v-on:setSession="setSession" :title="sessions[session][1]"/>
-    <component :is="sessions[session][0]" v-on:nextSession="nextSession" :isNext="isNext"/>
+    <div class="hide">
+      <img class="image" src="./assets/images/others/portrait-to-landscape.png" alt="portrait-to-landscape">
+      <h1 class="content">Please use Landscape mode!</h1>
+    </div>
+    <div class="show">
+      <Navigation v-on:setSession="setSession" :title="sessions[session][1]"/>
+      <component :is="sessions[session][0]" v-on:nextSession="nextSession" :isNext="isNext"/>
 
-    <!--    <SessionTesting />-->
-    <!--    <Session1 />-->
-    <!--    <SessionIntroduction />-->
+      <!--    <SessionTesting />-->
+      <!--    <Session1 />-->
+      <!--    <SessionIntroduction />-->
+    </div>
   </div>
 </template>
 
@@ -77,11 +83,27 @@ export default {
       this.setSession(sessionNumber);
       this.isNext = isNext;
     },
-  }
+  },
 };
 </script>
 
 <style>
+.image {
+  width: 100%;
+  height: auto;
+}
+.content {
+  margin-bottom: 0;
+  text-align: center;
+  margin-top: 5vh;
+  color: #ffffff;
+  font-weight: bold;
+}
+.hide {
+  background-color: #00ce7c;
+  height: 100vh;
+  padding: 15vh 10vw 0 10vw;
+}
 .shp-background { fill: #00ce7c; opacity: 0.8 }
 .shp-arrow { fill: #ffffff; opacity: 0.8 }
 .session-container {
@@ -123,16 +145,15 @@ export default {
   right: 0;
   left: 5px;
 }
-/* Force landscape */
-@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
-  html {
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    width: 100vh;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-  }
+/* WRONG ORIENTATION - SHOW MESSAGE HIDE CONTENT */
+@media only screen and (orientation:portrait) {
+  .hide { display:block; }
+  .show { display:none; }
+}
+
+/* CORRECT ORIENTATION - SHOW CONTENT HIDE MESSAGE */
+@media only screen and (orientation:landscape) {
+  .hide { display:none; }
+  .show { display:block; }
 }
 </style>

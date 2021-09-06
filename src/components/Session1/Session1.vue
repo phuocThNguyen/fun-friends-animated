@@ -92,7 +92,7 @@ export default {
         36: "Session1Page36", 37: "Session1Page37", 38: "Session1Page38",
       },
       page: 1,
-      lastPage: 50,
+      lastPage: 38,
     };
   },
   created() {
@@ -110,10 +110,11 @@ export default {
       }
     },
     next() {
-      if (this.page < 40) {
+      if (this.page < this.lastPage) {
         this.page++;
       } else {
         this.$emit("nextSession", 2, true);
+        this.$store.commit("setCurrentSession", 2);
       }
     },
   },
