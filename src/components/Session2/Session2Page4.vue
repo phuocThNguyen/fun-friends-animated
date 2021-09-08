@@ -27,8 +27,8 @@ export default {
     return {
       emotions: [ "Sad", "Angry", "Worried", "Happy" ],
       emotions2: [ {id: 1, name: "Sad"}, {id: 2, name: 'Angry'}, {id: 3, name: 'Worried'}, {id: 4, name: 'Happy'}],
-      emotionSad: [ ]
-
+      emotionSad: [ ],
+      emotionHappy: []
     }
   },
   mounted() {
