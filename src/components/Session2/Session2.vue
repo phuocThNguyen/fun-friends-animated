@@ -29,6 +29,8 @@ import Session2Page1 from "@/components/Session2/Session2Page1";
 import Session2Page2 from "@/components/Session2/Session2Page2";
 import Session2Page3 from "@/components/Session2/Session2Page3";
 import Session2Page4 from "@/components/Session2/Session2Page4";
+import Session2Page5 from "@/components/Session2/Session2Page5";
+import Session2Page6 from "@/components/Session2/Session2Page6";
 
 export default {
   name: "Session2",
@@ -39,7 +41,9 @@ export default {
     Session2Page1,
     Session2Page2,
     Session2Page3,
-    Session2Page4
+    Session2Page4,
+    Session2Page5,
+    Session2Page6
   },
   data() {
     return {

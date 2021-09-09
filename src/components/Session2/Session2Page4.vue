@@ -8,7 +8,7 @@
     </div>
 
     <div class="text-box">
-      Choose a feeling word and place them under the correct feeling faces.
+      Choose a feeling word below and place them under the correct feeling faces.
     </div>
 
     <draggable class="emotions" id="emotions-source" v-model="emotions" group="emotions">

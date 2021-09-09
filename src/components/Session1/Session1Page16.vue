@@ -33,6 +33,8 @@ export default {
         activeFillColor: '#ffffff',
         defaultLineWidth: '20',
         defaultEraserWidth: '40',
+        availableLineWidths: [1,4,8,12,16,20],
+        availableEraserWidths: [1,4,8,12,16,20],
         backplateImgUrl: require('../../assets/images/session1/World-Map-ai.jpg'),
         defaultTool: 'brush',
         hiddenTools: ['pixelize','select','crop','line','text','rotate','resize',
