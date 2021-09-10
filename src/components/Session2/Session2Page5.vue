@@ -33,8 +33,6 @@ export default {
       this.painterro = Painterro({
         id: "painterro",
         activeFillColor: '#ffffff',
-        defaultLineWidth: '10',
-        defaultEraserWidth: '40',
         availableLineWidths: [1,4,8,12,16,20],
         availableEraserWidths: [1,4,8,12,16,20],
         backplateImgUrl: require('../../assets/images/session2/5772-resized.jpg'),

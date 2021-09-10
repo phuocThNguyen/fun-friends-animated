@@ -41,6 +41,11 @@ import Session2Page13 from "@/components/Session2/Session2Page13";
 import Session2Page14 from "@/components/Session2/Session2Page14";
 import Session2Page15 from "@/components/Session2/Session2Page15";
 import Session2Page16 from "@/components/Session2/Session2Page16";
+import Session2Page17 from "@/components/Session2/Session2Page17";
+import Session2Page18 from "@/components/Session2/Session2Page18";
+import Session2Page19 from "@/components/Session2/Session2Page19";
+import Session2Page20 from "@/components/Session2/Session2Page20";
+import Session2Page21 from "@/components/Session2/Session2Page21";
 
 export default {
   name: "Session2",
@@ -48,22 +53,11 @@ export default {
     isNext: Boolean,
   },
   components: {
-    Session2Page1,
-    Session2Page2,
-    Session2Page3,
-    Session2Page4,
-    Session2Page5,
-    Session2Page6,
-    Session2Page7,
-    Session2Page8,
-    Session2Page9,
-    Session2Page10,
-    Session2Page11,
-    Session2Page12,
-    Session2Page13,
-    Session2Page14,
-    Session2Page15,
-    Session2Page16
+    Session2Page1, Session2Page2, Session2Page3, Session2Page4, Session2Page5,
+    Session2Page6, Session2Page7, Session2Page8, Session2Page9, Session2Page10,
+    Session2Page11, Session2Page12, Session2Page13, Session2Page14, Session2Page15,
+    Session2Page16, Session2Page17, Session2Page18, Session2Page19, Session2Page20,
+    Session2Page21
   },
   data() {
     return {
@@ -72,9 +66,10 @@ export default {
         6: "Session2Page6", 7: "Session2Page7", 8: "Session2Page8", 9: "Session2Page9", 10: "Session2Page10",
         11: "Session2Page11", 12: "Session2Page12", 13: "Session2Page13", 14: "Session2Page14", 15: "Session2Page15",
         16: "Session2Page16", 17: "Session2Page17", 18: "Session2Page18", 19: "Session2Page19", 20: "Session2Page20",
+        21: "Session2Page21", 22: "Session2Page12", 23: "Session2Page23", 24: "Session2Page24", 25: "Session2Page25",
       },
-      page: 10,
-      lastPage: 20,
+      page: 20,
+      lastPage: 30,
     }
   },
   created() {
@@ -181,4 +176,8 @@ tspan { white-space:pre }
 .shp3-cool { fill: #5e4939 }
 .shp4-cool { fill: #2d292a }
 .shp5-cool { fill: #414042 }
+.shp0-thumb-up { fill: #51bc4a }
+.shp1-thumb-up { fill: #ffffff }
+.shp0-thumb-down { fill: #ff3f3d }
+.shp1-thumb-down { fill: #ffffff }
 </style>

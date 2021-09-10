@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <img src="../../assets/images/session2/37-resized.jpg" alt="worried" class="session-background">
     <div class="content-container">
-      <h1>What could she be feeling?</h1>
+      <h1>What could he be feeling?</h1>
       <div class="emotes-container">
         <svg class="emotes" @click="clickedCrying" id="crying" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 171" width="172" height="171">
           <title>Crying</title>
