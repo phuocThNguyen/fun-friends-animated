@@ -31,6 +31,16 @@ import Session2Page3 from "@/components/Session2/Session2Page3";
 import Session2Page4 from "@/components/Session2/Session2Page4";
 import Session2Page5 from "@/components/Session2/Session2Page5";
 import Session2Page6 from "@/components/Session2/Session2Page6";
+import Session2Page7 from "@/components/Session2/Session2Page7";
+import Session2Page8 from "@/components/Session2/Session2Page8";
+import Session2Page9 from "@/components/Session2/Session2Page9";
+import Session2Page10 from "@/components/Session2/Session2Page10";
+import Session2Page11 from "@/components/Session2/Session2Page11";
+import Session2Page12 from "@/components/Session2/Session2Page12";
+import Session2Page13 from "@/components/Session2/Session2Page13";
+import Session2Page14 from "@/components/Session2/Session2Page14";
+import Session2Page15 from "@/components/Session2/Session2Page15";
+import Session2Page16 from "@/components/Session2/Session2Page16";
 
 export default {
   name: "Session2",
@@ -43,7 +53,17 @@ export default {
     Session2Page3,
     Session2Page4,
     Session2Page5,
-    Session2Page6
+    Session2Page6,
+    Session2Page7,
+    Session2Page8,
+    Session2Page9,
+    Session2Page10,
+    Session2Page11,
+    Session2Page12,
+    Session2Page13,
+    Session2Page14,
+    Session2Page15,
+    Session2Page16
   },
   data() {
     return {
@@ -53,8 +73,8 @@ export default {
         11: "Session2Page11", 12: "Session2Page12", 13: "Session2Page13", 14: "Session2Page14", 15: "Session2Page15",
         16: "Session2Page16", 17: "Session2Page17", 18: "Session2Page18", 19: "Session2Page19", 20: "Session2Page20",
       },
-      page: 1,
-      lastPage: 10,
+      page: 10,
+      lastPage: 20,
     }
   },
   created() {
@@ -93,5 +113,72 @@ export default {
 </script>
 
 <style>
-
+.green-tick {
+  width: 7vw;
+  height: auto;
+  opacity: 0;
+}
+.red-tick {
+  width: 7vw;
+  height: auto;
+  opacity: 0;
+}
+tspan { white-space:pre }
+.shp0-sad { fill: #ffd05d }
+.shp1-sad { fill: #fdc453 }
+.shp2-sad { fill: #ffd77f }
+.shp3-sad { fill: #5e4939 }
+.shp4-sad { fill: #303030 }
+.shp0-crying { fill: #ffd05d }
+.shp1-crying { fill: #fdc453 }
+.shp2-crying { fill: #ffd77f }
+.shp3-crying { fill: #695342 }
+.shp4-crying { fill: #f06669 }
+.shp5-crying { fill: #7cc4e8 }
+.shp6-crying { fill: #303030 }
+.shp0-worried { fill: #ffd05d }
+.shp1-worried { fill: #fdc453 }
+.shp2-worried { fill: #ffd77f }
+.shp3-worried { fill: #303030 }
+.shp4-worried { fill: #414042 }
+.shp5-worried { fill: #5e4939 }
+.shp0-happy { fill: #ffd05d }
+.shp1-happy { fill: #fdc453 }
+.shp2-happy { fill: #ffd77f }
+.shp3-happy { fill: #303030 }
+.shp4-happy { fill: #695342 }
+.shp5-happy { fill: #f06669 }
+.shp0-angry { fill: #f16d24 }
+.shp1-angry { fill: #ef6421 }
+.shp2-angry { fill: #f2824e }
+.shp3-angry { fill: #303030 }
+.shp4-angry { fill: #5e4939 }
+.shp0-red { fill: #e57373 }
+.shp1-red { fill: #d24a43 }
+.shp2-red { fill: #ffffff }
+.shp0-green { fill: #8bc34a }
+.shp1-green { fill: #74b65f }
+.shp2-green { fill: #ffffff }
+.shp0-tear { fill: #ffd05d }
+.shp1-tear { fill: #fdc453 }
+.shp2-tear { fill: #ffd77f }
+.shp3-tear { fill: #303030 }
+.shp4-tear { fill: #414042 }
+.shp5-tear { fill: #5e4939 }
+.shp6-tear { fill: #7cc4e8 }
+.shp7-tear { fill: #62bbe8 }
+.shp0-lol { fill: #ffd05d }
+.shp1-lol { fill: #fdc453 }
+.shp2-lol { fill: #ffd77f }
+.shp3-lol { fill: #303030 }
+.shp4-lol { fill: #7cc4e8 }
+.shp5-lol { fill: #62bbe8 }
+.shp6-lol { fill: #695342 }
+.shp7-lol { fill: #f06669 }
+.shp0-cool { fill: #ffd05d }
+.shp1-cool { fill: #fdc453 }
+.shp2-cool { fill: #ffd77f }
+.shp3-cool { fill: #5e4939 }
+.shp4-cool { fill: #2d292a }
+.shp5-cool { fill: #414042 }
 </style>
