@@ -7,16 +7,11 @@
     <div class="show">
       <Navigation v-on:setSession="setSession" :title="sessions[session][1]"/>
       <component :is="sessions[session][0]" v-on:nextSession="nextSession" :isNext="isNext"/>
-
-      <!--    <SessionTesting />-->
-      <!--    <Session1 />-->
-      <!--    <SessionIntroduction />-->
     </div>
   </div>
 </template>
 
 <script>
-// import SessionTesting from "@/components/SessionTesting/SessionTesting";
 import Navigation from "./views/UI/Navigation";
 import Session1 from "./views/Session1/Session1";
 import Session2 from "./views/Session2/Session2";
@@ -37,18 +32,9 @@ export default {
   components: {
     Navigation,
     SessionIntroduction,
-    Session1,
-    Session2,
-    Session3,
-    Session4,
-    Session5,
-    Session6,
-    Session7,
-    Session8,
-    Session9,
-    Session10,
-    Session11,
-    Session12,
+    Session1, Session2, Session3, Session4, Session5,
+    Session6, Session7, Session8, Session9, Session10,
+    Session11, Session12,
     // SessionTesting,
   },
   data() {
@@ -71,7 +57,6 @@ export default {
         14: ['Appendix2', 'Appendix 2:', 'Someone Special I Know Who is Brave and Kind!!!'],
         15: ['Appendix3', 'Appendix 3:', 'Happiness Ideas']},
       session: 0,
-      pageIndex: 1,
       isNext: true,
     }
   },
