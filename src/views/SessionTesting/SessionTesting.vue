@@ -9,10 +9,10 @@
 </template>
 
 <script>
-import Session1Activity1 from "@/components/SessionTesting/Session1Activity1";
-import Session1Activity2 from "@/components/SessionTesting/Session1Activity2";
-import Session1Activity3 from "@/components/SessionTesting/Sesion1Activity3";
-import Session1Activity4 from "@/components/SessionTesting/Session1Activity4";
+import Session1Activity1 from "@/views/SessionTesting/Session1Activity1";
+import Session1Activity2 from "@/views/SessionTesting/Session1Activity2";
+import Session1Activity3 from "@/views/SessionTesting/Sesion1Activity3";
+import Session1Activity4 from "@/views/SessionTesting/Session1Activity4";
 export default {
   name: "SessionTesting",
   components: {

@@ -25,27 +25,27 @@
 </template>
 
 <script>
-import Session2Page1 from "@/components/Session2/Session2Page1";
-import Session2Page2 from "@/components/Session2/Session2Page2";
-import Session2Page3 from "@/components/Session2/Session2Page3";
-import Session2Page4 from "@/components/Session2/Session2Page4";
-import Session2Page5 from "@/components/Session2/Session2Page5";
-import Session2Page6 from "@/components/Session2/Session2Page6";
-import Session2Page7 from "@/components/Session2/Session2Page7";
-import Session2Page8 from "@/components/Session2/Session2Page8";
-import Session2Page9 from "@/components/Session2/Session2Page9";
-import Session2Page10 from "@/components/Session2/Session2Page10";
-import Session2Page11 from "@/components/Session2/Session2Page11";
-import Session2Page12 from "@/components/Session2/Session2Page12";
-import Session2Page13 from "@/components/Session2/Session2Page13";
-import Session2Page14 from "@/components/Session2/Session2Page14";
-import Session2Page15 from "@/components/Session2/Session2Page15";
-import Session2Page16 from "@/components/Session2/Session2Page16";
-import Session2Page17 from "@/components/Session2/Session2Page17";
-import Session2Page18 from "@/components/Session2/Session2Page18";
-import Session2Page19 from "@/components/Session2/Session2Page19";
-import Session2Page20 from "@/components/Session2/Session2Page20";
-import Session2Page21 from "@/components/Session2/Session2Page21";
+import Session2Page1 from "@/views/Session2/Session2Page1";
+import Session2Page2 from "@/views/Session2/Session2Page2";
+import Session2Page3 from "@/views/Session2/Session2Page3";
+import Session2Page4 from "@/views/Session2/Session2Page4";
+import Session2Page5 from "@/views/Session2/Session2Page5";
+import Session2Page6 from "@/views/Session2/Session2Page6";
+import Session2Page7 from "@/views/Session2/Session2Page7";
+import Session2Page8 from "@/views/Session2/Session2Page8";
+import Session2Page9 from "@/views/Session2/Session2Page9";
+import Session2Page10 from "@/views/Session2/Session2Page10";
+import Session2Page11 from "@/views/Session2/Session2Page11";
+import Session2Page12 from "@/views/Session2/Session2Page12";
+import Session2Page13 from "@/views/Session2/Session2Page13";
+import Session2Page14 from "@/views/Session2/Session2Page14";
+import Session2Page15 from "@/views/Session2/Session2Page15";
+import Session2Page16 from "@/views/Session2/Session2Page16";
+import Session2Page17 from "@/views/Session2/Session2Page17";
+import Session2Page18 from "@/views/Session2/Session2Page18";
+import Session2Page19 from "@/views/Session2/Session2Page19";
+import Session2Page20 from "@/views/Session2/Session2Page20";
+import Session2Page21 from "@/views/Session2/Session2Page21";
 
 export default {
   name: "Session2",
@@ -66,7 +66,7 @@ export default {
         6: "Session2Page6", 7: "Session2Page7", 8: "Session2Page8", 9: "Session2Page9", 10: "Session2Page10",
         11: "Session2Page11", 12: "Session2Page12", 13: "Session2Page13", 14: "Session2Page14", 15: "Session2Page15",
         16: "Session2Page16", 17: "Session2Page17", 18: "Session2Page18", 19: "Session2Page19", 20: "Session2Page20",
-        21: "Session2Page21", 22: "Session2Page12", 23: "Session2Page23", 24: "Session2Page24", 25: "Session2Page25",
+        21: "Session2Page21", 22: "Session2Page22", 23: "Session2Page23", 24: "Session2Page24", 25: "Session2Page25",
       },
       page: 20,
       lastPage: 30,

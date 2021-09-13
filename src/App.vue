@@ -17,21 +17,21 @@
 
 <script>
 // import SessionTesting from "@/components/SessionTesting/SessionTesting";
-import Navigation from "./components/UI/Navigation";
-import Session1 from "./components/Session1/Session1";
-import Session2 from "./components/Session2/Session2";
-import Session3 from "./components/Session3/Session3";
-import Session4 from "./components/Session4/Session4";
-import Session5 from "./components/Session5/Session5";
-import Session6 from "./components/Session6/Session6";
-import Session7 from "./components/Session7/Session7";
-import Session8 from "./components/Session8/Session8";
-import Session9 from "./components/Session9/Session9";
-import Session10 from "./components/Session10/Session10";
-import Session11 from "./components/Session11/Session11";
-import Session12 from "./components/Session12/Session12";
+import Navigation from "./views/UI/Navigation";
+import Session1 from "./views/Session1/Session1";
+import Session2 from "./views/Session2/Session2";
+import Session3 from "./views/Session3/Session3";
+import Session4 from "./views/Session4/Session4";
+import Session5 from "./views/Session5/Session5";
+import Session6 from "./views/Session6/Session6";
+import Session7 from "./views/Session7/Session7";
+import Session8 from "./views/Session8/Session8";
+import Session9 from "./views/Session9/Session9";
+import Session10 from "./views/Session10/Session10";
+import Session11 from "./views/Session11/Session11";
+import Session12 from "./views/Session12/Session12";
 
-import SessionIntroduction from "./components/SessionIntroduction";
+import SessionIntroduction from "./views/SessionIntroduction";
 export default {
   name: "App",
   components: {
