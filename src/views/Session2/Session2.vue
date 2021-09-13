@@ -46,6 +46,7 @@ import Session2Page18 from "@/views/Session2/Session2Page18";
 import Session2Page19 from "@/views/Session2/Session2Page19";
 import Session2Page20 from "@/views/Session2/Session2Page20";
 import Session2Page21 from "@/views/Session2/Session2Page21";
+import Session2Page22 from "@/views/Session2/Session2Page22";
 
 export default {
   name: "Session2",
@@ -57,7 +58,7 @@ export default {
     Session2Page6, Session2Page7, Session2Page8, Session2Page9, Session2Page10,
     Session2Page11, Session2Page12, Session2Page13, Session2Page14, Session2Page15,
     Session2Page16, Session2Page17, Session2Page18, Session2Page19, Session2Page20,
-    Session2Page21
+    Session2Page21, Session2Page22
   },
   data() {
     return {
