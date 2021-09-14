@@ -27,6 +27,9 @@
 <script>
 import Session3Page1 from "@/views/Session3/Session3Page1";
 import Session3Page2 from "@/views/Session3/Session3Page2";
+import Session3Page3 from "@/views/Session3/Session3Page3";
+import Session3Page4 from "@/views/Session3/Session3Page4";
+import Session3Page5 from "@/views/Session3/Session3Page5";
 
 export default {
   name: "Session3",
@@ -34,7 +37,7 @@ export default {
     isNext: Boolean,
   },
   components: {
-    Session3Page1, Session3Page2
+    Session3Page1, Session3Page2, Session3Page3, Session3Page4, Session3Page5
   },
   data() {
     return {
