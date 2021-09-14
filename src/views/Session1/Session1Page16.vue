@@ -38,7 +38,7 @@ export default {
         hiddenTools: ['pixelize','select','crop','line','text','rotate','resize',
         'open','save','close','settings','redo','zoomin','zoomout'],
         colorScheme: {
-          main: "'#f8f8f8'",
+          main: '#f8f8f8',
           control: "#ffffff",
           controlContent: '#434649',
           backgroundColor: "#DEEDF3",

@@ -1,11 +1,11 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session3/2906714-resized.jpg" alt="grandpa-and-Tom" class="session-background">
+    <img src="../../assets/images/session3/27622-resized.jpg" alt="grandpa-and-Tom" class="session-background">
     <div class="text-box">
-      <h1>Grandpa would like some company</h1>
-      <p>Grandpa and Tom enjoy picnics in the park. Tom wants
-      to help Grandpa feel happier.</p>
-      <p>&nbsp;&nbsp;-&nbsp;How do you think Grandpa is feeling?</p>
+      <h1>Grandma loves help in the garden</h1>
+      <p>Grandma and Annie enjoy spending time together
+      gardening and laughing.</p>
+      <p>&nbsp;&nbsp;-&nbsp;How do you think Grandma is feeling?</p>
       <div class="content-container">
         <div class="emotes-container">
           <svg class="emotes" @click="clickedAngry1" id="angry-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 171 171" width="171" height="171">
@@ -98,7 +98,7 @@
           </svg>
         </div>
       </div>
-      <p>&nbsp;&nbsp;-&nbsp;How do you think Tom is feeling?</p>
+      <p>&nbsp;&nbsp;-&nbsp;How do you think Annie is feeling?</p>
       <div class="content-container">
         <div class="emotes-container">
           <svg class="emotes" @click="clickedAngry2" id="angry-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 171 171" width="171" height="171">
@@ -191,9 +191,8 @@
           </svg>
         </div>
       </div>
-      <p>&nbsp;&nbsp;-&nbsp;How can Tom help his Grandpa?</p>
+      <p>&nbsp;&nbsp;-&nbsp;How can Annie help her Grandma?</p>
     </div>
-    <div class="notice-box">Be kind and helpful</div>
   </div>
 </template>
 
@@ -201,7 +200,7 @@
 import anime from "animejs";
 
 export default {
-  name: "Session3Page7",
+  name: "Session3Page8",
   methods: {
     clickedHappy1() {
       anime({
@@ -234,13 +233,6 @@ export default {
       })
       document.querySelector('#tip-2').style.visibility = 'hidden';
       document.querySelector('#angry-2').style.visibility = 'hidden';
-      anime({
-        targets: '.notice-box',
-        duration: 500,
-        delay: 500,
-        easing: 'linear',
-        opacity: 1
-      })
     },
     clickedAngry2() {
       anime({
@@ -256,13 +248,21 @@ export default {
     },
   },
   mounted() {
-    anime({
-      targets: ".text-box",
-      opacity: 1,
+    let animation = anime.timeline({
       delay: 500,
       duration: 500,
       easing: 'linear'
-    })
+    });
+    animation
+        .add({
+          targets: ".text-box",
+          opacity: 1
+        })
+        .add({
+          targets: ".notice-box",
+          delay: 2000,
+          opacity: 1
+        })
   }
 }
 </script>
@@ -285,19 +285,6 @@ export default {
 .text-box p {
   font-size: 1.8vw;
   margin-bottom: 1.5vh;
-}
-.notice-box {
-  position: absolute;
-  bottom: 5vh;
-  width: 70vw;
-  left: 15vw;
-  text-align: center;
-  color: #ffffff;
-  background-color: rgba(0, 206, 124, 0.9);
-  font-size: 2vw;
-  font-weight: bold;
-  padding: .5vw;
-  opacity: 0;
 }
 .small-tick {
   height: auto;
