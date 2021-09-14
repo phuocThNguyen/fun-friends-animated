@@ -109,12 +109,7 @@ export default {
 </script>
 
 <style>
-.green-tick {
-  width: 7vw;
-  height: auto;
-  opacity: 0;
-}
-.red-tick {
+.big-tick {
   width: 7vw;
   height: auto;
   opacity: 0;

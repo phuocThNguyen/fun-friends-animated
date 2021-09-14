@@ -107,7 +107,7 @@
         </svg>
       </div>
       <div class="answer-container">
-        <svg class="green-tick" id="green-tick-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333 333" width="333" height="333">
+        <svg class="big-tick" id="green-tick-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333 333" width="333" height="333">
           <title>Correct</title>
           <g id="Correct">
             <g id="&lt;Group&gt;">
@@ -119,7 +119,7 @@
             </g>
           </g>
         </svg>
-        <svg class="red-tick" id="red-tick-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333 333" width="333" height="333">
+        <svg class="big-tick" id="red-tick-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333 333" width="333" height="333">
           <title>Incorrect</title>
           <g id="Incorrect">
             <g id="&lt;Group&gt;">
@@ -131,7 +131,7 @@
             </g>
           </g>
         </svg>
-        <svg class="red-tick" id="red-tick-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333 333" width="333" height="333">
+        <svg class="big-tick" id="red-tick-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333 333" width="333" height="333">
           <title>Incorrect</title>
           <g id="Incorrect">
             <g id="&lt;Group&gt;">
