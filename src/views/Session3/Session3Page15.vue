@@ -743,21 +743,21 @@ export default {
       delay: 500
     });
     animation
-        .add({
-          targets: ".text-box",
-          opacity: 0.9,
-          duration: 1000,
-        })
-        .add({
-          targets: ".star",
-          opacity: 1,
-          duration: 500,
-        })
-        .add({
-          targets: ".star-text",
-          opacity: 1,
-          duration: 500,
-        })
+      .add({
+        targets: ".text-box",
+        opacity: 0.9,
+        duration: 1000,
+      })
+      .add({
+        targets: ".star",
+        opacity: 1,
+        duration: 500,
+      })
+      .add({
+        targets: ".star-text",
+        opacity: 1,
+        duration: 500,
+      })
   }
 }
 </script>
@@ -789,7 +789,7 @@ export default {
   position: absolute;
   background-color: rgba(255,255,255,0.8);
   opacity: 0;
-  padding: 2.5vw;
+  padding: 2vw;
   top: 2vh;
   left: 2vw;
   width: 50vw;
@@ -800,6 +800,7 @@ export default {
 }
 .text-box p {
   font-size: 1.8vw;
+  padding-left: 1vw;
 }
 .landscape {
   position: absolute;

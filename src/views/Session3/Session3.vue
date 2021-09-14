@@ -56,12 +56,10 @@ export default {
       pages: {
         1: "Session3Page1", 2: "Session3Page2", 3: "Session3Page3", 4: "Session3Page4", 5: "Session3Page5",
         6: "Session3Page6", 7: "Session3Page7", 8: "Session3Page8", 9: "Session3Page9", 10: "Session3Page10",
-        11: "Session3Page11", 12: "Session3Page12", 13: "Session3Page13", 14: "Session3Page14", 15: "Session3Page15",
-        16: "Session3Page16", 17: "Session3Page17", 18: "Session3Page18", 19: "Session3Page19", 20: "Session3Page20",
-        21: "Session3Page21", 22: "Session3Page22", 23: "Session3Page23", 24: "Session3Page24", 25: "Session3Page25",
+        11: "Session3Page11", 12: "Session3Page12", 13: "Session3Page13", 14: "Session3Page14", 15: "Session3Page15"
       },
       page: 1,
-      lastPage: 30,
+      lastPage: 15,
     }
   },
   created() {
