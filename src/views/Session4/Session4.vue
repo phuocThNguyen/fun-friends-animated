@@ -37,6 +37,11 @@ import Session4Page9 from "@/views/Session4/Session4Page9";
 import Session4Page10 from "@/views/Session4/Session4Page10";
 import Session4Page11 from "@/views/Session4/Session4Page11";
 import Session4Page12 from "@/views/Session4/Session4Page12";
+import Session4Page13 from "@/views/Session4/Session4Page13";
+import Session4Page14 from "@/views/Session4/Session4Page14";
+import Session4Page15 from "@/views/Session4/Session4Page15";
+import Session4Page16 from "@/views/Session4/Session4Page16";
+import Session4Page17 from "@/views/Session4/Session4Page17";
 
 export default {
   name: "Session4",
@@ -46,17 +51,19 @@ export default {
   components: {
     Session4Page1, Session4Page2, Session4Page3, Session4Page4, Session4Page5,
     Session4Page6, Session4Page7, Session4Page8, Session4Page9, Session4Page10,
-    Session4Page11, Session4Page12
+    Session4Page11, Session4Page12, Session4Page13, Session4Page14, Session4Page15,
+    Session4Page16, Session4Page17
   },
   data() {
     return {
       pages: {
         1: "Session4Page1", 2: "Session4Page2", 3: "Session4Page3", 4: "Session4Page4", 5: "Session4Page5",
         6: "Session4Page6", 7: "Session4Page7", 8: "Session4Page8", 9: "Session4Page9", 10: "Session4Page10",
-        11: "Session4Page11", 12: "Session4Page12", 13: "Session4Page13", 14: "Session4Page14", 15: "Session4Page15"
+        11: "Session4Page11", 12: "Session4Page12", 13: "Session4Page13", 14: "Session4Page14", 15: "Session4Page15",
+        16: "Session4Page16", 17: "Session4Page17", 18: "Session4Page18", 19: "Session4Page19", 20: "Session4Page20",
       },
-      page: 1,
-      lastPage: 15,
+      page: 10,
+      lastPage: 20,
     }
   },
   created() {
