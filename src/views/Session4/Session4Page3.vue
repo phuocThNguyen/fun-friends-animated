@@ -2,16 +2,16 @@
   <div class="interactive-container">
     <img src="../../assets/images/session4/126256-resized.jpg" alt="butterflies-in-the-tummy" class="session-background">
     <div class="text-box">
-      <h1>Body Clues</h1>
-      <p>How is she feeling?</p>
-      <p>How can you tell?</p>
-      <p>Sometimes when children feel
-        nervous their heart starts beating fast,
-        there are butterflies in their tummy,
-        their legs get shaky, they get red in
-        the face or get sweaty.</p>
-      <p>My body is my friend. It tells
-        me when I need to relax.</p>
+      <h1>Butterflies in the tummy</h1>
+      <p>What happens to you when you feel nervous?</p>
+      <p>Act, dance or draw what happens in your body.</p>
+      <p>How do your friends react?</p>
+      <p>How are your reactions the same or different?</p>
+      <p>Ask your friends what they think you can do to
+       calm down. Listen and answer them too.</p>
+      <p>Remember - It is normal to be worried, what
+       you do about it can be a thumbs-up or thumbs-down
+       choice.</p>
     </div>
   </div>
 </template>
@@ -26,7 +26,7 @@ export default {
     let animation = anime.timeline({
       easing: 'linear',
       duration: 700,
-      delay: 700
+      delay: 1300
     });
     animation
         .add({
@@ -44,7 +44,14 @@ export default {
         .add({
           targets: text[4],
           opacity: 1,
-          delay: 2000
+        })
+        .add({
+          targets: text[5],
+          opacity: 1,
+        })
+        .add({
+          targets: text[6],
+          opacity: 1,
         })
   }
 }
@@ -67,18 +74,5 @@ export default {
 .text-box p {
   font-size: 1.8vw;
   opacity: 0;
-}
-.text-box p:nth-child(2) {
-  margin-bottom: 0;
-}
-.text-box p:last-child {
-  display: inline-block;
-  background-color: #00ce7c;
-  width: 90%;
-  color: #ffffff;
-  font-weight: bold;
-  padding: 1vw;
-  text-align: center;
-  margin-top: 32vh;
 }
 </style>

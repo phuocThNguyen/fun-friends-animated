@@ -1,0 +1,87 @@
+<template>
+  <div class="interactive-container">
+    <img src="../../assets/images/session4/324483-P9A8QQ-419-resized.jpg"
+         alt="lying-on-grass" class="session-background" id="adjust">
+    <div class="text-box">
+      <h1>'Bubble' Breathing</h1>
+      <p>Practise 'bubble' breathing with a straw.
+       Blow slowly out of the straw for a long time
+       .Slow and deep breathing calms you down.</p>
+      <p>After, practise ‘bubble’ breathing by
+        lying down without the straw. Imagine
+        yourself in a special space.</p>
+      <p>If you want to, you can describe or
+        draw a picture of your peaceful, quiet
+        place.</p>
+      <p>Breathing deeply and
+        slowly calms us down</p>
+    </div>
+  </div>
+</template>
+
+<script>
+import anime from "animejs";
+
+export default {
+  name: "Session4Page10",
+  mounted() {
+    let text = document.getElementsByClassName('text-box')[0].children;
+    let animation = anime.timeline({
+      easing: 'linear',
+      duration: 700,
+      delay: 2000
+    });
+    animation
+      .add({
+        targets: text[1],
+        opacity: 1,
+        delay: 500
+      })
+      .add({
+        targets: text[2],
+        opacity: 1
+      })
+      .add({
+        targets: text[3],
+        opacity: 1
+      })
+      .add({
+        targets: text[4],
+        opacity: 1,
+      })
+  }
+}
+</script>
+
+<style scoped>
+.text-box {
+  position: absolute;
+  z-index: 10;
+  background-color: #ffffff;
+  width: 35vw;
+  height: 100%;
+  padding: 2vw;
+}
+.text-box h1 {
+  font-size: 3vw;
+  font-weight: bold;
+  margin-bottom: 3vh;
+}
+.text-box p {
+  font-size: 1.8vw;
+  opacity: 0;
+}
+.text-box p:last-child {
+  display: inline-block;
+  background-color: #00ce7c;
+  width: 90%;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 1vw;
+  text-align: center;
+  margin-top: 20vh;
+}
+#adjust {
+  left: 12vw;
+}
+</style>

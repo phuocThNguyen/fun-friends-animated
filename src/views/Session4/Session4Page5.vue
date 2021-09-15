@@ -1,0 +1,60 @@
+<template>
+  <div class="interactive-container">
+    <img src="../../assets/images/session4/5183-resized.jpg" class="images" alt="riding-scooter">
+    <img src="../../assets/images/session4/2778146-resized.jpg" class="images" alt="riding-scooter2">
+    <div class="text-box">
+      <h1>Relaxing Together</h1>
+      <p>What are these children doing to relax and calm down?</p>
+    </div>
+  </div>
+</template>
+
+<script>
+import anime from "animejs";
+
+export default {
+  name: 'Session4Page5',
+  mounted() {
+    let images = document.getElementsByClassName('images');
+    let animation = anime.timeline({
+      easing: 'linear',
+      delay: 700,
+      duration: 700,
+    });
+    animation
+    .add({
+      targets: images[0],
+      opacity: 1
+    })
+    .add({
+      targets: images[1],
+      opacity: 1
+    })
+  }
+}
+</script>
+
+<style scoped>
+.text-box {
+  position: absolute;
+  padding: 2vw;
+}
+.text-box h1 {
+  font-size: 3.5vw;
+  font-weight: bold;
+  margin-bottom: 2vh;
+}
+.text-box p {
+  font-size: 2vw;
+}
+.images {
+  position: absolute;
+  width: 49.5vw;
+  height: 75vh;
+  bottom: 0;
+  opacity: 0;
+}
+.images:nth-of-type(2) {
+  right: 0;
+}
+</style>

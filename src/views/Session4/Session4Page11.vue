@@ -815,26 +815,8 @@
     </svg>
 
     <!--  Main content  -->
-    <div class="main-content">
-      <h1 class="draw">Draw a picture of yourself!</h1>
-      <div class="text-box">
-        <p>Talk to those you're with about your
-        picture. Tell them:</p>
-
-        <p> - What fruit do you like to eat?</p>
-        <p> - What vegetable do you like to eat</p>
-        <p> - What are your favourite toys?</p>
-        <p> - What makes you happy?</p>
-        <p> - What do you find scary?</p>
-
-        <p>Choose your favourite answer, act it out
-        or sound it out with a friend. When it's their turn,
-        make sure to listen to their answers.</p>
-
-        <p class="mb-0">Express yourself!</p>
-      </div>
-
-
+    <div class="text-box">
+      Draw a picture of your peaceful, quiet place.
     </div>
     <div id="painterro"></div>
   </div>
@@ -844,7 +826,7 @@
 import anime from "animejs";
 import Painterro from "painterro";
 export default {
-  name: "Session1Page11",
+  name: "Session4Page11",
   data() {
     return {
       painterro: null
@@ -933,24 +915,19 @@ export default {
       loop: true
     })
     let mainContentAnimation = anime.timeline({
-      easing: 'linear'
+      easing: 'linear',
+      delay: 700
     });
     mainContentAnimation
-      .add({
-        targets: '.draw',
-        opacity: 1,
-        duration: 2000,
-        delay: 1000,
-      })
-      .add({
-        targets: '.text-box',
-        opacity: 0.90,
-        duration: 2000,
-      })
-      .add({
-        targets: '#painterro',
-        opacity: 0.92
-      })
+        .add({
+          targets: '.text-box',
+          opacity: 0.90,
+          duration: 700,
+        })
+        .add({
+          targets: '#painterro',
+          opacity: 0.92
+        })
   },
   beforeUnmount() {
     this.painterro.hide()
@@ -959,6 +936,19 @@ export default {
 </script>
 
 <style scoped>
+.text-box {
+  position: absolute;
+  width: 40vw;
+  left: 30vw;
+  top: 5vh;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 2vw;
+  z-index: 30;
+  padding: 1vw;
+  text-align: center;
+  opacity: 0;
+}
 .landscape {
   position: absolute;
   width: 120vw;
@@ -968,12 +958,12 @@ export default {
 }
 #painterro {
   position: absolute;
-  top: 5vh;
-  left: 33vw;
-  right: 1vw;
-  bottom: 10vh;
+  top: 2vh;
+  left: 7vw;
+  right: 7vw;
+  bottom: 2vh;
   opacity: 0;
-  z-index: 100;
+  z-index: 20;
 }
 tspan { white-space:pre }
 .shp-pistil { fill: #ffffff }
@@ -1028,36 +1018,5 @@ tspan { white-space:pre }
 .green-flower {
   position: absolute;
   z-index: 5;
-}
-
-.main-content {
-  position: absolute;
-  left: 1vw;
-  top: 10vh;
-  width: 30vw;
-  z-index: 50;
-}
-.main-content h1 {
-  background-color: #000000;
-  color: #ffffff;
-  font-size: 2.2vw;
-  width: 100%;
-  height: auto;
-  padding: 1.2vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-}
-.text-box {
-  background-color: #ffffff;
-  padding: 2.5vh;
-  height: auto;
-  opacity: 0;
-  font-size: 1.7vw;
-}
-.text-box p:first-child,
-.text-box p:last-child {
-  font-weight: bold;
 }
 </style>

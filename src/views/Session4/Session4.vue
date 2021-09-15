@@ -28,6 +28,15 @@
 import Session4Page1 from "@/views/Session4/Session4Page1";
 import Session4Page2 from "@/views/Session4/Session4Page2";
 import Session4Page3 from "@/views/Session4/Session4Page3";
+import Session4Page4 from "@/views/Session4/Session4Page4";
+import Session4Page5 from "@/views/Session4/Session4Page5";
+import Session4Page6 from "@/views/Session4/Session4Page6";
+import Session4Page7 from "@/views/Session4/Session4Page7";
+import Session4Page8 from "@/views/Session4/Session4Page8";
+import Session4Page9 from "@/views/Session4/Session4Page9";
+import Session4Page10 from "@/views/Session4/Session4Page10";
+import Session4Page11 from "@/views/Session4/Session4Page11";
+import Session4Page12 from "@/views/Session4/Session4Page12";
 
 export default {
   name: "Session4",
@@ -35,7 +44,9 @@ export default {
     isNext: Boolean,
   },
   components: {
-    Session4Page1, Session4Page2, Session4Page3
+    Session4Page1, Session4Page2, Session4Page3, Session4Page4, Session4Page5,
+    Session4Page6, Session4Page7, Session4Page8, Session4Page9, Session4Page10,
+    Session4Page11, Session4Page12
   },
   data() {
     return {
