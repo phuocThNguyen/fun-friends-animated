@@ -42,6 +42,9 @@ import Session4Page14 from "@/views/Session4/Session4Page14";
 import Session4Page15 from "@/views/Session4/Session4Page15";
 import Session4Page16 from "@/views/Session4/Session4Page16";
 import Session4Page17 from "@/views/Session4/Session4Page17";
+import Session4Page18 from "@/views/Session4/Session4Page18";
+import Session4Page19 from "@/views/Session4/Session4Page19";
+import Session4Page20 from "@/views/Session4/Session4Page20";
 
 export default {
   name: "Session4",
@@ -52,7 +55,8 @@ export default {
     Session4Page1, Session4Page2, Session4Page3, Session4Page4, Session4Page5,
     Session4Page6, Session4Page7, Session4Page8, Session4Page9, Session4Page10,
     Session4Page11, Session4Page12, Session4Page13, Session4Page14, Session4Page15,
-    Session4Page16, Session4Page17
+    Session4Page16, Session4Page17, Session4Page18, Session4Page19, Session4Page20,
+
   },
   data() {
     return {
@@ -61,9 +65,10 @@ export default {
         6: "Session4Page6", 7: "Session4Page7", 8: "Session4Page8", 9: "Session4Page9", 10: "Session4Page10",
         11: "Session4Page11", 12: "Session4Page12", 13: "Session4Page13", 14: "Session4Page14", 15: "Session4Page15",
         16: "Session4Page16", 17: "Session4Page17", 18: "Session4Page18", 19: "Session4Page19", 20: "Session4Page20",
+        21: "Session4Page21", 22: "Session4Page22", 23: "Session4Page23"
       },
-      page: 10,
-      lastPage: 20,
+      page: 20,
+      lastPage: 23,
     }
   },
   created() {
