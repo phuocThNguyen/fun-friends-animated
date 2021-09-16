@@ -45,6 +45,9 @@ import Session4Page17 from "@/views/Session4/Session4Page17";
 import Session4Page18 from "@/views/Session4/Session4Page18";
 import Session4Page19 from "@/views/Session4/Session4Page19";
 import Session4Page20 from "@/views/Session4/Session4Page20";
+import Session4Page21 from "@/views/Session4/Session4Page21";
+import Session4Page22 from "@/views/Session4/Session4Page22";
+import Session4Page23 from "@/views/Session4/Session4Page23";
 
 export default {
   name: "Session4",
@@ -56,7 +59,7 @@ export default {
     Session4Page6, Session4Page7, Session4Page8, Session4Page9, Session4Page10,
     Session4Page11, Session4Page12, Session4Page13, Session4Page14, Session4Page15,
     Session4Page16, Session4Page17, Session4Page18, Session4Page19, Session4Page20,
-
+    Session4Page21, Session4Page22, Session4Page23
   },
   data() {
     return {

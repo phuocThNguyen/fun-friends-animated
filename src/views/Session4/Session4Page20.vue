@@ -392,22 +392,57 @@
        their five senses while playing in the creek. What
        do you think they can hear, see, feel, and taste?</p>
       <p><strong>What can they hear?</strong> <i>The birds singing in the trees and water running down the creek.</i>
-        What else can they hear?</p>
+        <br>What else can they hear?</p>
       <p><strong>What can they see?</strong> <i>The fish swimming down stream, and insects moving around the creek.</i>
-        What else can they see?</p>
+        <br>What else can they see?</p>
       <p><strong>What can they feel?</strong> <i>The cold water between their toes, and sand and dirt between their fingers.</i>
-        What else can they feel?</p>
+        <br>What else can they feel?</p>
       <p><strong>What can they smell?</strong> <i>The scent of the trees, wildflowers, and the natural bushland.</i>
-        What else can they smell?</p>
+        <br>What else can they smell?</p>
       <p><strong>What can they taste?</strong> <i>The taste of fresh air and fresh water they drank from the water fountain.</i>
-        What else can they taste?</p>
+        <br>What else can they taste?</p>
     </div>
   </div>
 </template>
 
 <script>
+import anime from "animejs";
+
 export default {
-  name: 'Session4Page20'
+  name: 'Session4Page20',
+  mounted() {
+    let text = document.getElementsByClassName('text-box')[0].children;
+    let animation = anime.timeline({
+      easing: 'linear',
+      delay: 2000,
+      duration: 700,
+    });
+    animation
+      .add({
+        targets: text[1],
+        opacity: 1
+      })
+      .add({
+        targets: text[2],
+        opacity: 1
+      })
+      .add({
+        targets: text[3],
+        opacity: 1
+      })
+      .add({
+        targets: text[4],
+        opacity: 1
+      })
+      .add({
+        targets: text[5],
+        opacity: 1
+      })
+      .add({
+        targets: text[6],
+        opacity: 1
+      })
+  }
 }
 </script>
 
@@ -418,7 +453,16 @@ export default {
   left: 5vw;
   top: 5vh;
   background-color: rgba(255,255,255,0.7);
-
+  padding: 1.5vw;
+}
+.text-box h1 {
+  font-size: 3vw;
+  margin-bottom: 4vh;
+}
+.text-box p {
+  font-size: 2vw;
+  margin-bottom: 3vh;
+  opacity: 0;
 }
 .landscape {
   position: absolute;
