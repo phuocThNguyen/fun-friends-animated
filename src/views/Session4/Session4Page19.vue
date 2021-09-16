@@ -159,8 +159,8 @@ export default {
   top: 23vh;
 }
 #green-tick-2 {
-  left: 40vw;
-  top: 66vh;
+  left: 42vw;
+  top: 63vh;
 }
 #green-tick-3 {
   right: 12vw;
@@ -169,6 +169,7 @@ export default {
 #ear {
   right: 25vw;
   top: 17vh;
+  height: 10.49vh;
 }
 #tail {
   left: 23vw;
@@ -177,17 +178,16 @@ export default {
 #head {
   right: 13vw;
   top: 41vh;
-  height: 6.55vh;
 }
 .answers {
   position: absolute;
-  width: 20vw;
-  height: 10.49vh;
+  width: 21vw;
+  height: 6.55vh;
   background-color: rgba(255,255,255,0.6);
   border-radius: 10px;
 }
 .clues {
-  width: 20vw;
+  width: 21vw;
 }
 .clues-sources {
   position: absolute;

@@ -63,6 +63,7 @@ export default {
   methods: {
     setSession(number) {
       this.session = number;
+      this.isNext = true;
     },
     nextSession(sessionNumber, isNext) {
       this.setSession(sessionNumber);
