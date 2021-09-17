@@ -176,4 +176,12 @@ tspan { white-space:pre }
 .shp1-thumb-up { fill: #ffffff }
 .shp0-thumb-down { fill: #ff3f3d }
 .shp1-thumb-down { fill: #ffffff }
+.cls-1-green-mark {isolation: isolate;}
+.cls-2-green-mark {fill: #fff;}
+.cls-4-green-mark {fill: #a1a1a1;mix-blend-mode: overlay;}
+.cls-5-green-mark {fill: #00c72e;}
+.cls-1-red-mark {isolation: isolate;}
+.cls-2-red-mark {fill: #fff;}
+.cls-3-red-mark {fill: #a1a1a1;mix-blend-mode: overlay;}
+.cls-4-red-mark {fill: #f52100;}
 </style>
