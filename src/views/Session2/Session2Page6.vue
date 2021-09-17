@@ -293,16 +293,16 @@ export default {
         opacity: 1,
         duration: 500
       })
-      anime({
-        targets: '.reward',
-        easing: 'linear',
-        opacity: 1,
-        duration: 500
-      })
       document.querySelector('#happy').style.visibility = 'hidden';
       document.querySelector('#angry').style.visibility = 'hidden';
       document.querySelector('#tip-1').style.visibility = 'hidden';
       document.querySelector('#tip-2').style.visibility = 'hidden';
+      document.querySelector('.reward').style.opacity = '1';
+      anime({
+        targets: '.reward',
+        scale: 20,
+        duration: 1000,
+      })
     },
   },
   mounted() {
@@ -321,9 +321,9 @@ export default {
 .reward {
   position: absolute;
   height: auto;
-  width: 20vw;
-  top: 2vh;
-  left: 40vw;
+  width: 1vw;
+  top: 20vh;
+  left: 50vw;
   opacity: 0;
 }
 .tips-container {
