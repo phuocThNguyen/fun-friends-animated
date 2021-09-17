@@ -24,8 +24,8 @@ export default {
     let text = document.getElementsByClassName('text');
     let animation = anime.timeline({
       easing: 'linear',
-      delay: 700,
-      duration: 700
+      delay: 500,
+      duration: 500
     });
     animation
       .add({

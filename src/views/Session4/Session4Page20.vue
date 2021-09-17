@@ -414,8 +414,8 @@ export default {
     let text = document.getElementsByClassName('text-box')[0].children;
     let animation = anime.timeline({
       easing: 'linear',
-      delay: 2000,
-      duration: 700,
+      delay: 1000,
+      duration: 500,
     });
     animation
       .add({

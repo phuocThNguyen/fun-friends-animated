@@ -30,7 +30,7 @@ export default {
     let text = document.getElementsByClassName('text-box')[0].children;
     let animation = anime.timeline({
       delay: 500,
-      duration: 700,
+      duration: 500,
       easing: 'linear'
     });
     animation

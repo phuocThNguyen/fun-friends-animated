@@ -23,8 +23,8 @@ export default {
   mounted() {
     let text = document.getElementsByClassName('text-box')[0].children;
     let animation = anime.timeline({
-      delay: 700,
-      duration: 700,
+      delay: 500,
+      duration: 500,
       easing: 'linear'
     });
     animation
