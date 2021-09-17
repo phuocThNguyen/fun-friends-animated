@@ -205,7 +205,7 @@
 
     <p class="text" id="line-2">All feelings are OK!</p>
 
-    <audio autoplay loop muted src="../../assets/sounds/387978__dcpoke__birds-singing-03.mp3">Your browser does not support the
+    <audio autoplay loop src="../../assets/sounds/387978__dcpoke__birds-singing-03.mp3">Your browser does not support the
       <code>audio</code> element.
     </audio>
   </div>

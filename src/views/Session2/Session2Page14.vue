@@ -107,6 +107,11 @@
           </g>
         </svg>
       </div>
+      <div class="tips-container">
+        <p id="tip-1">Angry</p>
+        <p id="tip-2">Happy</p>
+        <p id="tip-3">Sad</p>
+      </div>
       <div class="answer-container">
         <svg class="big-tick" id="red-tick-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333 333" width="333" height="333">
           <title>Incorrect</title>
@@ -188,6 +193,8 @@ export default {
       })
       document.querySelector('#happy').style.visibility = 'hidden';
       document.querySelector('#angry').style.visibility = 'hidden';
+      document.querySelector('#tip-2').style.visibility = 'hidden';
+      document.querySelector('#tip-1').style.visibility = 'hidden';
     }
   },
   mounted() {
@@ -203,6 +210,21 @@ export default {
 </script>
 
 <style scoped>
+.tips-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #ffffff;
+  font-size: 2vw;
+  font-weight: bold;
+  margin: 0 1vw;
+  text-align: center;
+}
+.tips-container p {
+  margin-bottom: 0;
+  display: inline-block;
+  width: 7vw;
+}
 .content-container {
   position: absolute;
   background-color: #00ce7c;
