@@ -2,20 +2,34 @@
   <div class="pos-f-t w-100">
     <div class="collapse" id="navbarToggleExternalContent">
       <div class="p-1 collapse-container">
-        <button @click="setSession(0)" type="button" class="btn btn-session">Introduction</button>
-        <button @click="setSession(1)" type="button" class="btn btn-session">Session 1</button>
-        <button @click="setSession(2)" type="button" class="btn btn-session">Session 2</button>
-        <button @click="setSession(3)" type="button" class="btn btn-session">Session 3</button>
-        <button @click="setSession(4)" type="button" class="btn btn-session">Session 4</button>
-        <button @click="setSession(5)" type="button" class="btn btn-session">Session 5</button>
-        <button @click="setSession(6)" type="button" class="btn btn-session">Session 6</button>
-        <button @click="setSession(7)" type="button" class="btn btn-session">Session 7</button>
-        <button @click="setSession(8)" type="button" class="btn btn-session">Session 8</button>
-        <button @click="setSession(9)" type="button" class="btn btn-session">Session 9</button>
-        <button @click="setSession(10)" type="button" class="btn btn-session">Session 10</button>
-        <button @click="setSession(11)" type="button" class="btn btn-session">Session 11</button>
-        <button @click="setSession(12)" type="button" class="btn btn-session">Session 12</button>
-        <button @click="setSession(13)" type="button" class="btn btn-session">Appendixes</button>
+        <button @click="setSession(0)" type="button" class="btn btn-session"
+                data-toggle="collapse" data-target="#navbarToggleExternalContent">Introduction</button>
+        <button @click="setSession(1)" type="button" class="btn btn-session"
+                data-toggle="collapse" data-target="#navbarToggleExternalContent">Session 1</button>
+        <button @click="setSession(2)" type="button" class="btn btn-session"
+                data-toggle="collapse" data-target="#navbarToggleExternalContent">Session 2</button>
+        <button @click="setSession(3)" type="button" class="btn btn-session"
+                data-toggle="collapse" data-target="#navbarToggleExternalContent">Session 3</button>
+        <button @click="setSession(4)" type="button" class="btn btn-session"
+                data-toggle="collapse" data-target="#navbarToggleExternalContent">Session 4</button>
+        <button @click="setSession(5)" type="button" class="btn btn-session"
+                data-toggle="collapse" data-target="#navbarToggleExternalContent">Session 5</button>
+        <button @click="setSession(6)" type="button" class="btn btn-session"
+                data-toggle="collapse" data-target="#navbarToggleExternalContent">Session 6</button>
+        <button @click="setSession(7)" type="button" class="btn btn-session"
+                data-toggle="collapse" data-target="#navbarToggleExternalContent">Session 7</button>
+        <button @click="setSession(8)" type="button" class="btn btn-session"
+                data-toggle="collapse" data-target="#navbarToggleExternalContent">Session 8</button>
+        <button @click="setSession(9)" type="button" class="btn btn-session"
+                data-toggle="collapse" data-target="#navbarToggleExternalContent">Session 9</button>
+        <button @click="setSession(10)" type="button" class="btn btn-session"
+                data-toggle="collapse" data-target="#navbarToggleExternalContent">Session 10</button>
+        <button @click="setSession(11)" type="button" class="btn btn-session"
+                data-toggle="collapse" data-target="#navbarToggleExternalContent">Session 11</button>
+        <button @click="setSession(12)" type="button" class="btn btn-session"
+                data-toggle="collapse" data-target="#navbarToggleExternalContent">Session 12</button>
+        <button @click="setSession(13)" type="button" class="btn btn-session"
+                data-toggle="collapse" data-target="#navbarToggleExternalContent">Appendixes</button>
       </div>
     </div>
     <nav class="navbar-dark navbar-style">
