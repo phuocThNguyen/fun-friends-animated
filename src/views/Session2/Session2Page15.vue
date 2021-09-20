@@ -284,7 +284,7 @@ export default {
   width: 1vw;
   left: 20vw;
   top: 20vw;
-  opacity: 1;
+  opacity: 0;
 }
 .tips-container {
   display: flex;

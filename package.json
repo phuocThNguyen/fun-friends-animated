@@ -14,6 +14,7 @@
     "letterizejs": "^2.0.1",
     "painterro": "^1.2.59",
     "register-service-worker": "^1.7.1",
+    "responsive-sketchpad": "^1.2.2",
     "vue": "^2.6.11",
     "vue-router": "^3.5.2",
     "vuedraggable": "^2.24.3",

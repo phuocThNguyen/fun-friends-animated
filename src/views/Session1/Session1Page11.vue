@@ -836,44 +836,55 @@
 
 
     </div>
-    <div id="painterro"></div>
+    <drawing-canvas class="canvas" :canvasStyle='canvasStyle'/>
+<!--    <div id="painterro"></div>-->
   </div>
 </template>
 
 <script>
 import anime from "animejs";
-import Painterro from "painterro";
+import DrawingCanvas from "@/components/drawingCanvas/DrawingCanvas";
+// import Painterro from "painterro";
+
 export default {
   name: "Session1Page11",
   data() {
     return {
-      painterro: null
+      // painterro: null
+      canvasStyle: {
+        width: 0.65,
+        height: 0.7,
+        isPicture: false,
+      }
     }
   },
+  components: {
+    DrawingCanvas
+  },
   mounted() {
-    this.$nextTick(() => {
-      this.painterro = Painterro({
-        id: "painterro",
-        activeColor: '#000000',
-        activeFillColor: '#ffffff',
-        defaultPrimitiveShadowOn: 'true',
-        defaultTool: 'brush',
-        toolbarPosition: 'bottom',
-        availableLineWidths: [1,4,8,12,16,20],
-        availableEraserWidths: [1,4,8,12,16,20],
-        hiddenTools: ['pixelize','select','crop','text','rotate','resize',
-          'open','save','close','settings','redo','zoomin','zoomout'],
-        colorScheme: {
-          main: '#cfcfcf',
-          control: "#ffffff",
-          controlContent: '#434649',
-          controlShadow: '0px 0px 0px 0.5px #000',
-        },
-      })
-      this.painterro.show();
-      let info = document.querySelector('.ptro-info');
-      info.style.visibility = 'hidden';
-    });
+    // this.$nextTick(() => {
+    //   this.painterro = Painterro({
+    //     id: "painterro",
+    //     activeColor: '#000000',
+    //     activeFillColor: '#ffffff',
+    //     defaultPrimitiveShadowOn: 'true',
+    //     defaultTool: 'brush',
+    //     toolbarPosition: 'bottom',
+    //     availableLineWidths: [1,4,8,12,16,20],
+    //     availableEraserWidths: [1,4,8,12,16,20],
+    //     hiddenTools: ['pixelize','select','crop','text','rotate','resize',
+    //       'open','save','close','settings','redo','zoomin','zoomout'],
+    //     colorScheme: {
+    //       main: '#cfcfcf',
+    //       control: "#ffffff",
+    //       controlContent: '#434649',
+    //       controlShadow: '0px 0px 0px 0.5px #000',
+    //     },
+    //   })
+    //   this.painterro.show();
+    //   let info = document.querySelector('.ptro-info');
+    //   info.style.visibility = 'hidden';
+    // });
     let vw = window.innerWidth;
     const yellowFlowers = document.getElementsByClassName('yellow-flower');
     yellowFlowers.forEach(flower => {
@@ -966,15 +977,21 @@ export default {
   top: -17.65vh;
   height: auto;
 }
-#painterro {
+.canvas {
   position: absolute;
   top: 5vh;
   left: 33vw;
-  right: 1vw;
-  bottom: 10vh;
-  opacity: 0;
   z-index: 100;
 }
+/*#painterro {*/
+/*  position: absolute;*/
+/*  top: 5vh;*/
+/*  left: 33vw;*/
+/*  right: 1vw;*/
+/*  bottom: 10vh;*/
+/*  opacity: 0;*/
+/*  z-index: 100;*/
+/*}*/
 tspan { white-space:pre }
 .shp-pistil { fill: #ffffff }
 .shp-petal { fill: #ffe464 }

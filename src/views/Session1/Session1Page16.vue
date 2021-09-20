@@ -1,6 +1,7 @@
 <template>
   <div class="interactive-container cloud-background">
-    <div id="painterro"></div>
+<!--    <div id="painterro"></div>-->
+    <drawing-canvas class="canvas" :canvasStyle='canvasStyle'/>
 
     <div class="text">
       <h1 id="first">Where do you live?</h1>
@@ -17,50 +18,60 @@
 
 <script>
 import anime from "animejs";
-import Painterro from "painterro";
+// import Painterro from "painterro";
+import DrawingCanvas from "@/components/drawingCanvas/DrawingCanvas";
 
 export default {
   name: "Session1Page16",
+  components: {DrawingCanvas},
   data() {
     return {
-      painterro: null,
+      // painterro: null,
+      canvasStyle: {
+        width: 0.9,
+        height: 0.55,
+        isPicture: true,
+        pictureUrl: "session1/World-Map-ai.jpg",
+      },
+      // canvasStyle: true
     }
   },
   mounted() {
-    this.$nextTick(() => {
-      this.painterro = Painterro({
-        id: "painterro",
-        activeFillColor: '#ffffff',
-        availableLineWidths: [1,4,8,12,16,20],
-        availableEraserWidths: [1,4,8,12,16,20],
-        backplateImgUrl: require('../../assets/images/session1/World-Map-ai.jpg'),
-        defaultTool: 'brush',
-        hiddenTools: ['pixelize','select','crop','line','text','rotate','resize',
-        'open','save','close','settings','redo','zoomin','zoomout'],
-        colorScheme: {
-          main: '#f8f8f8',
-          control: "#ffffff",
-          controlContent: '#434649',
-          backgroundColor: "#DEEDF3",
-        },
-      })
-      this.painterro.show();
-      let info = document.querySelector('.ptro-info');
-      info.style.visibility = 'hidden';
-      let controlBar = document.querySelector('#painterro-bar');
-      controlBar.style.display = 'flex';
-      controlBar.style.justifyContent = 'center';
-    });
+    // this.$nextTick(() => {
+    //   this.painterro = Painterro({
+    //     id: "painterro",
+    //     activeFillColor: '#ffffff',
+    //     availableLineWidths: [1,4,8,12,16,20],
+    //     availableEraserWidths: [1,4,8,12,16,20],
+    //     backplateImgUrl: require('../../assets/images/session1/World-Map-ai.jpg'),
+    //     defaultTool: 'brush',
+    //     hiddenTools: ['pixelize','select','crop','line','text','rotate','resize',
+    //     'open','save','close','settings','redo','zoomin','zoomout'],
+    //     colorScheme: {
+    //       main: '#f8f8f8',
+    //       control: "#ffffff",
+    //       controlContent: '#434649',
+    //       backgroundColor: "#DEEDF3",
+    //     },
+    //   })
+    //   this.painterro.show();
+    //   let info = document.querySelector('.ptro-info');
+    //   info.style.visibility = 'hidden';
+    //   let controlBar = document.querySelector('#painterro-bar');
+    //   controlBar.style.display = 'flex';
+    //   controlBar.style.justifyContent = 'center';
+    // });
+
+
     let para = document.getElementsByClassName('para')[0].children;
     let animation = anime.timeline({
-      delay: 1000,
-      duration: 1000,
+      delay: 700,
+      duration: 700,
     });
     animation
       .add({
         targets: "#first",
         color: "#000",
-        delay: 2000,
       })
       .add({
         targets: "#second",
@@ -88,7 +99,7 @@ export default {
 
 <style scoped>
 .cloud-background {
-  background-color: #DEEDF3;
+  background-color: #ffffff;
 }
 .text {
   position: absolute;
@@ -102,25 +113,30 @@ export default {
 }
 .text h1 {
   font-size: 2vw;
-  color: #DEEDF3;
+  color: #ffffff;
 }
 .para {
-  background-color: #DEEDF3;
+  background-color: #ffffff;
   opacity: 1;
   width: 100%;
 }
 .para p {
   font-size: 1.8vw;
-  color: #DEEDF3;
+  color: #ffffff;
   margin-bottom: 0;
   text-align: center;
 }
-#painterro {
+/*#painterro {*/
+/*  position: absolute;*/
+/*  top: 20vh;*/
+/*  right: 0;*/
+/*  bottom: 0;*/
+/*  left: 0;*/
+/*  z-index: 10;*/
+/*}*/
+.canvas {
   position: absolute;
-  top: 20vh;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
+  top: 25vh;
+  left: 5vw;
 }
 </style>
