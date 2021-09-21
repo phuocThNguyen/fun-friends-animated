@@ -1,7 +1,5 @@
 <template>
   <div class="interactive-container">
-    <div id="painterro"></div>
-
     <div class="text-box">
       <h1>'Feeling' faces</h1>
       <p>Sit with a friend and look at all the 'Feeling' faces.</p>
@@ -14,45 +12,26 @@
 
       <p>Nina has gifts for her family.</p>
     </div>
+    <drawing-canvas class="canvas" :canvasStyle="canvasStyle"/>
   </div>
 </template>
 
 <script>
-import Painterro from "painterro";
 import anime from 'animejs';
+import DrawingCanvas from "@/components/drawingCanvas/DrawingCanvas";
 
 export default {
   name: "Session2Page5",
+  components: {DrawingCanvas},
   data() {
     return {
-      painterro: null,
+      canvasStyle: {
+
+      }
     }
   },
   mounted() {
-    this.$nextTick(() => {
-      this.painterro = Painterro({
-        id: "painterro",
-        activeFillColor: '#ffffff',
-        availableLineWidths: [1,4,8,12,16,20],
-        availableEraserWidths: [1,4,8,12,16,20],
-        backplateImgUrl: require('../../assets/images/session2/5772-resized.jpg'),
-        defaultTool: 'brush',
-        hiddenTools: ['pixelize','select','crop','line','text','rotate','resize',
-          'open','save','close','settings','redo','zoomin','zoomout'],
-        colorScheme: {
-          main: "'#f8f8f8'",
-          control: "#ffffff",
-          controlContent: '#434649',
-          backgroundColor: "#ffffff",
-        },
-      })
-      this.painterro.show();
-      let info = document.querySelector('.ptro-info');
-      info.style.visibility = 'hidden';
-      let controlBar = document.querySelector('#painterro-bar');
-      controlBar.style.display = 'flex';
-      controlBar.style.justifyContent = 'center';
-    });
+
     let para = document.getElementsByClassName('text-box')[0].children;
     let animation = anime.timeline({
       easing: 'linear',
@@ -91,37 +70,29 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  width: 60vw;
+  width: 30vw;
   z-index: 10;
-  padding: 5vh 7vw 5vh 7vw;
+  padding: 2vw;
   color: #ffffff;
 }
 .text-box h1 {
-  font-size: 5vw;
+  font-size: 3vw;
   margin-bottom: 5vh;
 }
 .text-box p {
   font-size: 2vw;
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
 }
 .text-box p:last-child {
-  margin-top: 15vh;
+  margin-top: 5vh;
   display: inline-block;
   background-color: #00ce7c;
   color: #ffffff;
   width: auto;
   height: auto;
-  padding: 1.5vw;
-  font-size: 2.5vw;
+  padding: 1vw;
+  font-size: 2vw;
   font-weight: bold;
   opacity: 0;
-}
-#painterro {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 80vh;
-  z-index: 10;
 }
 </style>

@@ -8,7 +8,8 @@
     </div>
 
     <div class="text-box">
-      Choose a feeling word below and place them under the correct feeling faces.
+      Tap on the feelings below and drag them onto the correct feeling faces.
+       The green tick will appear when the answer is correct.
     </div>
 
     <draggable class="emotions" id="emotions-source" v-model="emotions" group="emotions">
@@ -471,7 +472,7 @@ export default {
   width: 1vw;
   left: 12vw;
   bottom: 30vh;
-  opacity: 1;
+  opacity: 0;
 }
 .text-box {
   position: absolute;
@@ -542,7 +543,7 @@ export default {
   width: 20vw;
 }
 #emotions-source {
-  top: 30vh;
+  top: 40vh;
 }
 #emotion-sad {
   left: 32vw;
