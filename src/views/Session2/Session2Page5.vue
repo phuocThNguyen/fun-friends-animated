@@ -26,12 +26,14 @@ export default {
   data() {
     return {
       canvasStyle: {
-
+        width: 0.7,
+        height: 0.8,
+        isPicture: true,
+        pictureUrl: 'session2/5772-resized.jpg'
       }
     }
   },
   mounted() {
-
     let para = document.getElementsByClassName('text-box')[0].children;
     let animation = anime.timeline({
       easing: 'linear',
@@ -63,11 +65,21 @@ export default {
         targets: para[5],
         opacity: 1
       })
+      .add({
+        targets: '.canvas',
+        opacity: 1
+      })
   }
 }
 </script>
 
 <style scoped>
+.canvas {
+  position: absolute;
+  left: 30vw;
+  top: 2vh;
+  opacity: 0;
+}
 .text-box {
   position: absolute;
   width: 30vw;
