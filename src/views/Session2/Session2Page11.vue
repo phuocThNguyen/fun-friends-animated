@@ -1,6 +1,7 @@
 <template>
   <div class="interactive-container">
     <img src="../../assets/images/session2/11382-resized.jpg" alt="worried" class="session-background">
+    <emotion-pick-instruction class="instruction"/>
     <div class="content-container">
       <h1>What could she be feeling?</h1>
       <div class="emotes-container">
@@ -278,9 +279,11 @@
 
 <script>
 import anime from "animejs";
+import EmotionPickInstruction from "@/components/emotionPickInstruction/EmotionPickInstruction";
 
 export default {
   name: "Session2Page11",
+  components: {EmotionPickInstruction},
   methods: {
     clickedHappy() {
       anime({
@@ -338,6 +341,11 @@ export default {
 </script>
 
 <style scoped>
+.instruction {
+  position: absolute;
+  top: 2vh;
+  right: 2vw;
+}
 .reward {
   position: absolute;
   height: auto;

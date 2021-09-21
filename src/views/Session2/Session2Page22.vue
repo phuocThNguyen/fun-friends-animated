@@ -1375,45 +1375,29 @@
       <p>Draw a great big happy flower. Inside each petal,
       draw a picture of something that makes you happy.</p>
     </div>
-    <div id="painterro"></div>
+    <drawing-canvas class="canvas" :canvasStyle="canvasStyle"/>
   </div>
 </template>
 
 <script>
 import anime from "animejs";
-import Painterro from "painterro";
+import DrawingCanvas from "@/components/drawingCanvas/DrawingCanvas";
+
 
 export default {
   name: "Session2Page22",
+  components: {DrawingCanvas},
   data() {
     return {
-      painterro: null
+      canvasStyle: {
+        width: 0.55,
+        height: 0.7,
+        isPicture: false
+      }
     }
   },
   mounted() {
-    this.$nextTick(() => {
-      this.painterro = Painterro({
-        id: "painterro",
-        activeColor: '#000000',
-        activeFillColor: '#ffffff',
-        defaultPrimitiveShadowOn: 'true',
-        defaultTool: 'brush',
-        toolbarPosition: 'bottom',
-        availableLineWidths: [1,4,8,12,16,20],
-        availableEraserWidths: [1,4,8,12,16,20],
-        hiddenTools: ['pixelize','select','crop','text','rotate','resize',
-          'open','save','close','settings','redo','zoomin','zoomout'],
-        colorScheme: {
-          main: '#cfcfcf',
-          control: "#ffffff",
-          controlContent: '#434649',
-          controlShadow: '0px 0px 0px 0.5px #000',
-        },
-      })
-      this.painterro.show();
-      let info = document.querySelector('.ptro-info');
-      info.style.visibility = 'hidden';
-    });
+
     let animation = anime.timeline({
       duration: 500,
       delay: 500,
@@ -1433,20 +1417,18 @@ export default {
         opacity: 1,
       }, 1000)
       .add({
-        targets: "#painterro",
-        opacity: 0.9
+        targets: ".canvas",
+        opacity: 1
       })
   }
 }
 </script>
 
 <style scoped>
-#painterro {
+.canvas {
   position: absolute;
   top: 2vh;
   left: 43vw;
-  right: 1vw;
-  bottom: 10vh;
   opacity: 0;
   z-index: 100;
 }

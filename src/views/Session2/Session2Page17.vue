@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <div id="painterro"></div>
+    <drawing-canvas class="canvas" :canvasStyle="canvasStyle"/>
     <div class="text-box">
       <h1>A Tree With 'Feelings'</h1>
       <p>Make one tree with your friends. You can do this by drawing, creating, planting,
@@ -12,52 +12,33 @@
 </template>
 
 <script>
-import Painterro from "painterro";
 
+
+import DrawingCanvas from "@/components/drawingCanvas/DrawingCanvas";
 export default {
   name: "Session2Page17",
+  components: {DrawingCanvas},
   data() {
     return {
-      painterro: null,
+      canvasStyle: {
+        width: 1,
+        height: 0.8,
+        isPicture: true,
+        pictureUrl: 'session2/feeling-tree.png'
+      }
     }
   },
   mounted() {
-    this.$nextTick(() => {
-      this.painterro = Painterro({
-        id: "painterro",
-        activeFillColor: '#ffffff',
-        availableLineWidths: [1,4,8,12,16,20],
-        availableEraserWidths: [1,4,8,12,16,20],
-        backplateImgUrl: require('../../assets/images/session2/feelings.jpg'),
-        defaultTool: 'brush',
-        hiddenTools: ['pixelize','select','crop','line','text','rotate','resize',
-          'open','save','close','settings','redo','zoomin','zoomout'],
-        colorScheme: {
-          main: "'#f8f8f8'",
-          control: "#ffffff",
-          controlContent: '#434649',
-          backgroundColor: "#ffffff",
-        },
-      })
-      this.painterro.show();
-      let info = document.querySelector('.ptro-info');
-      info.style.visibility = 'hidden';
-      let controlBar = document.querySelector('#painterro-bar');
-      controlBar.style.display = 'flex';
-      controlBar.style.justifyContent = 'center';
-    });
+
   }
 }
 </script>
 
 <style scoped>
-#painterro {
+.canvas {
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
-  z-index: 10;
 }
 .text-box {
   position: absolute;
@@ -65,8 +46,8 @@ export default {
   background-color: #ffffff;
   width: 25vw;
   padding: 2vw;
-  top: 10vh;
-  left: 10vw;
+  top: 5vh;
+  left: 5vw;
 }
 .text-box h1 {
   font-size: 4vw;
@@ -74,6 +55,9 @@ export default {
 }
 .text-box p {
   font-size: 1.8vw;
+}
+.text-box p:nth-child(3) {
+  color: #d00000;
 }
 .text-box p:last-child {
   margin-bottom: 0;

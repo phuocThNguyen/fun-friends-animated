@@ -477,7 +477,6 @@ export default {
 .text-box {
   position: absolute;
   font-size: 2.5vw;
-  font-weight: bold;
   background-color: rgba(0, 206, 124, 0.9);
   top: 1vh;
   left: 1vw;

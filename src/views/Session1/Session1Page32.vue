@@ -1199,7 +1199,7 @@ export default {
       })
       .add({
         targets: '#q1',
-        color: '#000'
+        color: '#d00000'
       })
       .add({
         targets: '#q2',

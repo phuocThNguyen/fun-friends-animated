@@ -27,7 +27,7 @@ export default {
     return {
       canvasStyle: {
         width: 0.7,
-        height: 0.8,
+        height: 0.75,
         isPicture: true,
         pictureUrl: 'session2/5772-resized.jpg'
       }
@@ -59,7 +59,7 @@ export default {
       })
       .add({
         targets: para[4],
-        color: '#000'
+        color: '#d00000'
       })
       .add({
         targets: para[5],
@@ -68,7 +68,7 @@ export default {
       .add({
         targets: '.canvas',
         opacity: 1
-      })
+      }, 5000)
   }
 }
 </script>
