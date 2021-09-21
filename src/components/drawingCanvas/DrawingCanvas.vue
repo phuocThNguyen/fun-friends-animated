@@ -2,9 +2,6 @@
   <div>
     <div id="sketchpad"></div>
     <div class="button-container">
-      <button class="btn-style" @click="undo">UNDO</button>
-      <button class="btn-style" @click="redo">REDO</button>
-      <button class="btn-style" @click="clear">CLEAR</button>
       <div class="color">
         <label for="color">Color</label>
         <input @change="setColor" type="color" id="color" name="color" value="#000000">
@@ -20,6 +17,9 @@
           <option value="20">20</option>
         </select>
       </div>
+      <button class="btn-style" @click="undo">UNDO</button>
+      <button class="btn-style" @click="redo">REDO</button>
+      <button class="btn-style" @click="clear">CLEAR</button>
     </div>
   </div>
 </template>
@@ -35,6 +35,7 @@ export default {
   data() {
     return {
       sketchPad: null,
+      instruction: false
     }
   },
   methods: {
@@ -100,6 +101,8 @@ export default {
 <style scoped>
 #sketchpad {
   background-color: rgba(255,255,255,0.8);
+  position: relative;
+  overflow: hidden;
 }
 .button-container {
   display: flex;
@@ -114,7 +117,7 @@ export default {
   background-color: #00ce7c;
   margin: 0 .5vw;
   border: none;
-  width: 7vw;
+  padding: 0 1vw;
   height: 4vh;
   border-radius: 5px;
   color: #ffffff;
@@ -151,4 +154,5 @@ label {
   align-items: center;
   margin: 0 1vw;
 }
+
 </style>

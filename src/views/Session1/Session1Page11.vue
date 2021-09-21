@@ -950,10 +950,54 @@ export default {
 }
 .canvas {
   position: absolute;
-  top: 5vh;
+  top: 2vh;
   left: 33vw;
   z-index: 100;
+  opacity: 1;
+}
+.main-content {
+  position: absolute;
+  left: 1vw;
+  top: 2vh;
+  width: 30vw;
+  z-index: 50;
+}
+.main-content h1 {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 2.2vw;
+  width: 100%;
+  height: auto;
+  padding: 1.2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   opacity: 0;
+}
+.text-box {
+  background-color: #ffffff;
+  padding: 2.5vh;
+  height: auto;
+  opacity: 0;
+  font-size: 1.7vw;
+}
+.text-box p:first-child,
+.text-box p:last-child {
+  font-weight: bold;
+}
+.yellow-flower {
+  position: absolute;
+  width: 0.1vw;
+  height: auto;
+  z-index: 10;
+}
+.blue-flower {
+  position: absolute;
+  z-index: 20;
+}
+.green-flower {
+  position: absolute;
+  z-index: 5;
 }
 tspan { white-space:pre }
 .shp-pistil { fill: #ffffff }
@@ -994,50 +1038,4 @@ tspan { white-space:pre }
 .shp29 { fill: #ffffff }
 .shp30 { opacity: 0.2;mix-blend-mode: soft-light;fill: #ffdc4a }
 .shp31 { fill: #15776e }
-
-.yellow-flower {
-  position: absolute;
-  width: 0.1vw;
-  height: auto;
-  z-index: 10;
-}
-.blue-flower {
-  position: absolute;
-  z-index: 20;
-}
-.green-flower {
-  position: absolute;
-  z-index: 5;
-}
-
-.main-content {
-  position: absolute;
-  left: 1vw;
-  top: 10vh;
-  width: 30vw;
-  z-index: 50;
-}
-.main-content h1 {
-  background-color: #000000;
-  color: #ffffff;
-  font-size: 2.2vw;
-  width: 100%;
-  height: auto;
-  padding: 1.2vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-}
-.text-box {
-  background-color: #ffffff;
-  padding: 2.5vh;
-  height: auto;
-  opacity: 0;
-  font-size: 1.7vw;
-}
-.text-box p:first-child,
-.text-box p:last-child {
-  font-weight: bold;
-}
 </style>

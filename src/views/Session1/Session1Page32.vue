@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <svg class="landscape" version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1000" width="1500" height="1000">
+    <svg class="landscape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1000" width="1500" height="1000">
 	<title>Snowy day</title>
 	<defs>
 		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
@@ -1167,7 +1167,6 @@ export default {
     }
   },
   mounted() {
-
     let vh = window.innerHeight;
     let snow = document.getElementsByClassName('snow')[0].children;
     snow.forEach(element => {
@@ -1186,18 +1185,17 @@ export default {
 
     let mainContentAnimation = anime.timeline({
       easing: 'linear',
-      duration: 1000,
+      duration: 700,
+      delay: 700
     });
     mainContentAnimation
       .add({
         targets: '.requires',
         opacity: 0.85,
-        delay: 2000,
       })
       .add({
         targets: '.text-box',
         opacity: 0.95,
-        duration: 2000,
       })
       .add({
         targets: '#q1',
@@ -1226,7 +1224,7 @@ export default {
       .add({
         targets: '.canvas',
         opacity: 0.92,
-      })
+      }, 9800)
   },
 };
 </script>

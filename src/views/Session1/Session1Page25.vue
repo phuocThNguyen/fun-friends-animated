@@ -856,16 +856,8 @@ export default {
       delay: 100
     })
 
-    anime({
-      targets: '.canvas',
-      opacity: 0.95,
-      duration: 2000,
-      delay: 2000,
-      easing: 'linear'
-    })
-
     let textAnimation = anime.timeline({
-      delay: 1000,
+      delay: 700,
       duration: 500,
       easing: 'linear'
     });
@@ -896,6 +888,10 @@ export default {
         targets: '#para-5',
         color: '#000'
       })
+      .add({
+        targets: '.canvas',
+        opacity: 1
+      })
   }
 }
 </script>
@@ -906,10 +902,11 @@ export default {
   top: 5vh;
   left: 33vw;
   z-index: 100;
+  opacity: 0;
 }
 .landscape {
   position: absolute;
-  width: 126vw;
+  width: 130vw;
   height: auto;
   left: -12vw;
   top: -2vh;
@@ -918,8 +915,8 @@ export default {
   position: absolute;
   height: 6vh;
   width: auto;
-  left: 13vw;
-  top: 45vh;
+  left: 14vw;
+  top: 47vh;
 }
 .text-box {
   position: absolute;

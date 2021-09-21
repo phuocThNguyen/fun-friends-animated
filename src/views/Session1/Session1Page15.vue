@@ -325,10 +325,39 @@ export default {
 }
 .canvas {
   position: absolute;
-  top: 5vh;
+  top: 2vh;
   left: 33vw;
   z-index: 100;
   opacity: 0;
+}
+.main-content {
+  position: absolute;
+  left: 1vw;
+  top: 2vh;
+  width: 30vw;
+  z-index: 50;
+}
+.main-content h1 {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1.8vw;
+  width: 100%;
+  height: auto;
+  padding: 1.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+.text-box {
+  background-color: #ffffff;
+  padding: 2.5vh;
+  height: auto;
+  opacity: 0;
+  font-size: 1.7vw;
+}
+.text-box p:first-child {
+  font-weight: bold;
 }
 tspan { white-space:pre }
 .shp-bush-top { fill: url(#grd-bush-top) }
@@ -343,7 +372,6 @@ tspan { white-space:pre }
 .shp6 { fill: #3d5539 }
 .shp-cloud { fill: #ecf0f1 }
 .shp8 { opacity: 0.2;fill: #ecf0f1 }
-
 .bush {
   position: absolute;
 }
@@ -375,7 +403,6 @@ tspan { white-space:pre }
   height: auto;
   z-index: 10;
 }
-
 .tree {
   position: absolute;
 }
@@ -404,34 +431,5 @@ tspan { white-space:pre }
   bottom: -8vh;
   right: 17vw;
   z-index: 9;
-}
-
-.main-content {
-  position: absolute;
-  left: 1vw;
-  top: 10vh;
-  width: 30vw;
-  z-index: 50;
-}
-.main-content h1 {
-  background-color: #000000;
-  color: #ffffff;
-  font-size: 2vh;
-  width: 100%;
-  height: auto;
-  padding: 1.5vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-}
-.text-box {
-  background-color: #ffffff;
-  padding: 2.5vh;
-  height: auto;
-  opacity: 0;
-}
-.text-box p:first-child {
-  font-weight: bold;
 }
 </style>
