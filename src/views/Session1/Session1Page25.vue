@@ -802,39 +802,27 @@
       <p id="para-4">What 5 things would you want in your house?</p>
       <p id="para-5">Share your ideas with a friend, family member or teacher.</p>
     </div>
-    <div id="painterro"></div>
+    <drawing-canvas class="canvas" :canvasStyle="canvasStyle"/>
   </div>
 </template>
 
 <script>
 import anime from "animejs";
-import Painterro from "painterro";
+import DrawingCanvas from "@/components/drawingCanvas/DrawingCanvas";
+
 export default {
   name: "Session1Page25",
+  components: {DrawingCanvas},
+  data() {
+    return {
+      canvasStyle: {
+        width: 0.65,
+        height: 0.7,
+        isPicture: false,
+      }
+    }
+  },
   mounted() {
-    this.$nextTick(() => {
-      this.painterro = Painterro({
-        id: "painterro",
-        activeColor: '#000000',
-        activeFillColor: '#ffffff',
-        defaultPrimitiveShadowOn: 'true',
-        defaultTool: 'brush',
-        toolbarPosition: 'bottom',
-        availableLineWidths: [1,4,8,12,16,20],
-        availableEraserWidths: [1,4,8,12,16,20],
-        hiddenTools: ['pixelize','select','crop','text','rotate','resize',
-          'open','save','close','settings','redo','zoomin','zoomout'],
-        colorScheme: {
-          main: '#cfcfcf',
-          control: "#ffffff",
-          controlContent: '#434649',
-          controlShadow: '0px 0px 0px 0.5px #000',
-        },
-      })
-      this.painterro.show();
-      let info = document.querySelector('.ptro-info');
-      info.style.visibility = 'hidden';
-    });
     let vw = window.innerWidth;
     let vh = window.innerHeight;
     let clouds = document.getElementsByClassName('clouds')[0].children;
@@ -869,7 +857,7 @@ export default {
     })
 
     anime({
-      targets: '#painterro',
+      targets: '.canvas',
       opacity: 0.95,
       duration: 2000,
       delay: 2000,
@@ -913,21 +901,18 @@ export default {
 </script>
 
 <style scoped>
+.canvas {
+  position: absolute;
+  top: 5vh;
+  left: 33vw;
+  z-index: 100;
+}
 .landscape {
   position: absolute;
   width: 126vw;
   height: auto;
   left: -12vw;
   top: -2vh;
-}
-#painterro {
-  position: absolute;
-  top: 5vh;
-  left: 33vw;
-  right: 1vw;
-  bottom: 10vh;
-  opacity: 0;
-  z-index: 100;
 }
 .smoke {
   position: absolute;

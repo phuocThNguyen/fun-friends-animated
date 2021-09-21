@@ -1145,44 +1145,29 @@
       <textarea class="song-writer" placeholder="Compose your wonderful song here!"
       name="song-lyrics" id="song-writer" rows="5"/>
     </div>
+    <drawing-canvas class="canvas" :canvasStyle="canvasStyle"/>
 
-    <div id="painterro"></div>
   </div>
 </template>
 
 <script>
 import anime from "animejs";
-import Painterro from "painterro";
+import DrawingCanvas from "@/components/drawingCanvas/DrawingCanvas";
+
 export default {
   name: "Session1Page32",
+  components: {DrawingCanvas},
   data() {
     return {
-      painterro: null
+      canvasStyle: {
+        width: 0.54,
+        height: 0.68,
+        isPicture: false,
+      }
     }
   },
   mounted() {
-    this.$nextTick(() => {
-      this.painterro = Painterro({
-        id: "painterro",
-        activeColor: '#000000',
-        activeFillColor: '#ffffff',
-        defaultPrimitiveShadowOn: 'true',
-        defaultTool: 'brush',
-        toolbarPosition: 'bottom',
-        availableLineWidths: [1,4,8,12,16,20],
-        availableEraserWidths: [1,4,8,12,16,20],
-        hiddenTools: ['pixelize','select','crop','text','rotate','resize',
-          'open','save','close','settings','redo','zoomin','zoomout'],
-        colorScheme: {
-          main: '#cfcfcf',
-          control: "#ffffff",
-          controlContent: '#434649',
-          controlShadow: '0px 0px 0px 0.5px #000',
-        },
-      }).show();
-      let info = document.querySelector('.ptro-info');
-      info.style.visibility = 'hidden';
-    })
+
     let vh = window.innerHeight;
     let snow = document.getElementsByClassName('snow')[0].children;
     snow.forEach(element => {
@@ -1239,7 +1224,7 @@ export default {
         opacity: 0.95,
       })
       .add({
-        targets: '#painterro',
+        targets: '.canvas',
         opacity: 0.92,
       })
   },
@@ -1252,12 +1237,10 @@ export default {
   width: 105vw;
   height: auto;
 }
-#painterro {
+.canvas {
   position: absolute;
   top: 5vh;
   left: 45vw;
-  right: 1vw;
-  bottom: 10vh;
   opacity: 0;
   z-index: 100;
 }

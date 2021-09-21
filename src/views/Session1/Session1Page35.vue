@@ -858,12 +858,12 @@ export default {
       .add({
         targets: '.text-box',
         opacity: 0.95,
-        delay: 1500
+        delay: 500
       })
       .add({
         targets: '.para-box',
         opacity: 0.95,
-        delay: 1500
+        delay: 1000
       })
   }
 }

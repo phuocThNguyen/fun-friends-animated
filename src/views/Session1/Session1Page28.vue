@@ -22,22 +22,15 @@ import anime from "animejs";
 export default {
   name: "Session1Page28",
   mounted() {
-    let texts = document.getElementsByClassName("text")[0];
     let animation = anime.timeline();
     animation
       .add({
         targets: ".text-box",
         opacity: 0.98,
-        duration: 1000,
+        duration: 500,
         delay: 1000,
         easing: "linear",
       })
-      .add({
-        targets: texts.children[0],
-        color: "#fff",
-        duration: 1000,
-        delay: 500,
-      });
   },
 };
 </script>
@@ -71,7 +64,7 @@ export default {
 }
 .text {
   font-weight: bold;
-  color: #00ce7c;
+  color: #ffffff;
   font-size: 2vw;
   margin-bottom: 0;
 }

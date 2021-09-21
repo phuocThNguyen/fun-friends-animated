@@ -26,40 +26,40 @@ export default {
   name: "Session1Page21",
   mounted() {
     let vh = window.innerHeight;
-    let images = document.getElementsByClassName('images')[0];
-    let texts = document.getElementsByClassName('text')[0];
+    let images = document.getElementsByClassName('images')[0].children;
+    let texts = document.getElementsByClassName('text')[0].children;
     let animation = anime.timeline({
       delay: 500,
       duration: 1000
     });
     animation
       .add({
-        targets: images.children[0],
+        targets: images[0],
         translateY: -0.1*vh,
         opacity: 1,
       })
       .add({
-        targets: images.children[1],
+        targets: images[1],
         translateY: -0.1*vh,
         opacity: 1,
       })
       .add({
-        targets: images.children[2],
+        targets: images[2],
         translateY: -0.1*vh,
         opacity: 1,
       })
       .add({
-        targets: images.children[3],
+        targets: images[3],
         translateY: -0.1*vh,
         opacity: 1,
       })
       .add({
-        targets: texts.children[0],
-        color: '#fff',
+        targets: texts[0],
+        opacity: 1,
       })
       .add({
-        targets: texts.children[1],
-        color: '#fff',
+        targets: texts[1],
+        opacity: 1,
       })
   }
 }
@@ -90,9 +90,10 @@ export default {
   top: 48%;
   z-index: 20;
 }
-.text {
+.text span {
   font-weight: bold;
-  color: #00ce7c;
+  color: #ffffff;
+  opacity: 0;
   font-size: 2vw;
 }
 </style>

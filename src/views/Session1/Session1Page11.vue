@@ -837,20 +837,18 @@
 
     </div>
     <drawing-canvas class="canvas" :canvasStyle='canvasStyle'/>
-<!--    <div id="painterro"></div>-->
+
   </div>
 </template>
 
 <script>
 import anime from "animejs";
 import DrawingCanvas from "@/components/drawingCanvas/DrawingCanvas";
-// import Painterro from "painterro";
 
 export default {
   name: "Session1Page11",
   data() {
     return {
-      // painterro: null
       canvasStyle: {
         width: 0.65,
         height: 0.7,
@@ -858,33 +856,8 @@ export default {
       }
     }
   },
-  components: {
-    DrawingCanvas
-  },
+  components: {DrawingCanvas},
   mounted() {
-    // this.$nextTick(() => {
-    //   this.painterro = Painterro({
-    //     id: "painterro",
-    //     activeColor: '#000000',
-    //     activeFillColor: '#ffffff',
-    //     defaultPrimitiveShadowOn: 'true',
-    //     defaultTool: 'brush',
-    //     toolbarPosition: 'bottom',
-    //     availableLineWidths: [1,4,8,12,16,20],
-    //     availableEraserWidths: [1,4,8,12,16,20],
-    //     hiddenTools: ['pixelize','select','crop','text','rotate','resize',
-    //       'open','save','close','settings','redo','zoomin','zoomout'],
-    //     colorScheme: {
-    //       main: '#cfcfcf',
-    //       control: "#ffffff",
-    //       controlContent: '#434649',
-    //       controlShadow: '0px 0px 0px 0.5px #000',
-    //     },
-    //   })
-    //   this.painterro.show();
-    //   let info = document.querySelector('.ptro-info');
-    //   info.style.visibility = 'hidden';
-    // });
     let vw = window.innerWidth;
     const yellowFlowers = document.getElementsByClassName('yellow-flower');
     yellowFlowers.forEach(flower => {
@@ -950,22 +923,20 @@ export default {
       .add({
         targets: '.draw',
         opacity: 1,
-        duration: 2000,
-        delay: 1000,
+        duration: 1000,
+        delay: 700,
       })
       .add({
         targets: '.text-box',
         opacity: 0.90,
-        duration: 2000,
+        duration: 1000,
       })
       .add({
-        targets: '#painterro',
-        opacity: 0.92
+        targets: '.canvas',
+        opacity: 1,
+        duration: 500
       })
   },
-  beforeUnmount() {
-    this.painterro.hide()
-  }
 }
 </script>
 
@@ -982,16 +953,8 @@ export default {
   top: 5vh;
   left: 33vw;
   z-index: 100;
+  opacity: 0;
 }
-/*#painterro {*/
-/*  position: absolute;*/
-/*  top: 5vh;*/
-/*  left: 33vw;*/
-/*  right: 1vw;*/
-/*  bottom: 10vh;*/
-/*  opacity: 0;*/
-/*  z-index: 100;*/
-/*}*/
 tspan { white-space:pre }
 .shp-pistil { fill: #ffffff }
 .shp-petal { fill: #ffe464 }

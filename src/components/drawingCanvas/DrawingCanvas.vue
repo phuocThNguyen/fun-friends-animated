@@ -35,16 +35,11 @@ export default {
   data() {
     return {
       sketchPad: null,
-      show: false
     }
   },
   methods: {
     getImageUrl(image) {
-      console.log(image);
       return require('../../assets/images/' + image);
-    },
-    dost() {
-      console.log('something')
     },
     undo() {
       if (this.sketchPad) {
@@ -90,7 +85,6 @@ export default {
       document.querySelector('.button-container').style.width = this.canvasStyle.width*vw;
 
       if (this.canvasStyle.isPicture) {
-        console.log('true');
         let imageUrl = this.getImageUrl(this.canvasStyle.pictureUrl);
         el.style.backgroundImage = `url(${imageUrl})`;
         el.style.backgroundColor = '#cccccc';
@@ -98,8 +92,6 @@ export default {
         el.style.backgroundRepeat = 'no-repeat';
         el.style.backgroundSize = 'cover';
       }
-
-      this.show = true;
     })
   }
 }
@@ -122,10 +114,11 @@ export default {
   background-color: #00ce7c;
   margin: 0 .5vw;
   border: none;
-  width: 8vw;
+  width: 7vw;
   height: 4vh;
   border-radius: 5px;
   color: #ffffff;
+  font-size: 1.5vw;
   font-weight: bold;
   box-shadow: 0 9px #999;
 }
@@ -144,7 +137,7 @@ label {
   height: 38px;
   line-height: 38px;
   text-align: center;
-  font-size: 2vw;
+  font-size: 1.5vw;
   text-transform: uppercase;
 }
 .color {

@@ -217,45 +217,28 @@
         <p id="q5"> - Talk about a different family and how you can make friends.</p>
       </div>
     </div>
-    <div id="painterro"></div>
+    <drawing-canvas class="canvas" :canvasStyle='canvasStyle'/>
   </div>
 </template>
 
 <script>
 import anime from "animejs";
-import Painterro from "painterro";
+import DrawingCanvas from "@/components/drawingCanvas/DrawingCanvas";
+
 
 export default {
   name: "Session1Page15",
+  components: {DrawingCanvas},
   data() {
     return {
-      painterro: null
+      canvasStyle: {
+        width: 0.65,
+        height: 0.7,
+        isPicture: false,
+      }
     }
   },
   mounted() {
-    this.$nextTick(() => {
-      this.painterro = Painterro({
-        id: "painterro",
-        activeColor: '#000000',
-        activeFillColor: '#ffffff',
-        defaultPrimitiveShadowOn: 'true',
-        defaultTool: 'brush',
-        toolbarPosition: 'bottom',
-        availableLineWidths: [1,4,8,12,16,20],
-        availableEraserWidths: [1,4,8,12,16,20],
-        hiddenTools: ['pixelize','select','crop','text','rotate','resize',
-          'open','save','close','settings','redo','zoomin','zoomout'],
-        colorScheme: {
-          main: '#cfcfcf',
-          control: "#ffffff",
-          controlContent: '#434649',
-          controlShadow: '0px 0px 0px 0.5px #000',
-        },
-      })
-      this.painterro.show();
-      let info = document.querySelector('.ptro-info');
-      info.style.visibility = 'hidden';
-    });
     let vw = window.innerWidth;
     const clouds = document.getElementsByClassName('shp-cloud');
     clouds.forEach(cloud => {
@@ -270,69 +253,65 @@ export default {
       })
     })
 
-    let treeGrowAnimation = anime.timeline()
+    let treeGrowAnimation = anime.timeline({duration: 700})
+    let treeGrowAnimation2 = anime.timeline({duration: 700})
     treeGrowAnimation
-        .add({
-          targets: "#bush-left-bottom",
-          scale: 50,
-          duration: 1000,
-          delay: 1000,
-        })
-        .add({
-          targets: "#bush-left-top",
-          scale: 60,
-          duration: 1000,
-        })
-        .add({
-          targets: "#bush-right-bottom",
-          scale: 50,
-          duration: 1000,
-        })
-        .add({
-          targets: "#bush-right-top",
-          scale: 60,
-          duration: 1000,
-        })
-        .add({
-          targets: "#tree-left-left",
-          scale: 100,
-          duration: 1000,
-        })
-        .add({
-          targets: "#tree-left-right",
-          scale: 100,
-          duration: 1000,
-        })
-        .add({
-          targets: "#tree-right-right",
-          scale: 100,
-          duration: 1000,
-        })
-        .add({
-          targets: "#tree-right-left",
-          scale: 100,
-          duration: 1000,
-        })
+      .add({
+        targets: "#bush-left-bottom",
+        scale: 50,
+        delay: 700,
+      })
+      .add({
+        targets: "#bush-left-top",
+        scale: 60,
+      })
+      .add({
+        targets: "#tree-left-left",
+        scale: 100,
+      })
+      .add({
+        targets: "#tree-left-right",
+        scale: 100,
+      })
 
-    let mainContentAnimation = anime.timeline({
-      easing: 'linear'
-    });
+    treeGrowAnimation2
+      .add({
+        targets: "#bush-right-bottom",
+        scale: 50,
+        delay: 700
+      })
+      .add({
+        targets: "#bush-right-top",
+        scale: 60,
+      })
+      .add({
+        targets: "#tree-right-right",
+        scale: 100,
+      })
+      .add({
+        targets: "#tree-right-left",
+        scale: 100,
+      })
+
+    let mainContentAnimation = anime.timeline({easing: 'linear'});
     mainContentAnimation
-        .add({
-          targets: '.requires',
-          opacity: 1,
-          duration: 2000,
-          delay: 1000,
-        })
-        .add({
-          targets: '.text-box',
-          opacity: 0.90,
-          duration: 2000,
-        })
-        .add({
-          targets: '#painterro',
-          opacity: 0.92
-        })
+      .add({
+        targets: '.requires',
+        opacity: 1,
+        duration: 700,
+        delay: 3000,
+      })
+      .add({
+        targets: '.text-box',
+        opacity: 0.90,
+        delay: 1000,
+        duration: 1000,
+      })
+      .add({
+        targets: '.canvas',
+        opacity: 1,
+        duration: 1000,
+      }, 4700)
   }
 }
 </script>
@@ -344,14 +323,12 @@ export default {
   height: auto;
   left: -12vw;
 }
-#painterro {
+.canvas {
   position: absolute;
   top: 5vh;
   left: 33vw;
-  right: 1vw;
-  bottom: 10vh;
-  opacity: 0;
   z-index: 100;
+  opacity: 0;
 }
 tspan { white-space:pre }
 .shp-bush-top { fill: url(#grd-bush-top) }

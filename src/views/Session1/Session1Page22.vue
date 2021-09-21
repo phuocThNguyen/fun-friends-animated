@@ -17,25 +17,23 @@ export default {
   name: "Session1Page22",
   mounted() {
     let texts = document.getElementsByClassName('text-box')[0];
-    let animation = anime.timeline();
+    let animation = anime.timeline({
+      easing: 'linear',
+      duration: 700,
+      delay: 500,
+    });
     animation
       .add({
         targets: texts.children[0],
         color: '#000',
-        delay: 1000,
-        duration: 500
       })
       .add({
         targets: texts.children[1],
         color: '#000',
-        delay: 1000,
-        duration: 500
       })
       .add({
         targets: texts.children[2],
         color: '#000',
-        delay: 1000,
-        duration: 500
       })
   }
 }

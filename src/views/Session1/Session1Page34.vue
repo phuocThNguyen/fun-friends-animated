@@ -236,95 +236,91 @@ export default {
       })
     })
 
-    let treeGrowAnimation = anime.timeline()
+    let treeGrowAnimation = anime.timeline({duration: 700})
+    let treeGrowAnimation2 = anime.timeline({duration: 700})
     treeGrowAnimation
         .add({
           targets: "#bush-left-bottom",
           scale: 50,
-          duration: 1000,
-          delay: 1000,
+          delay: 700,
         })
         .add({
           targets: "#bush-left-top",
           scale: 60,
-          duration: 1000,
-        })
-        .add({
-          targets: "#bush-right-bottom",
-          scale: 50,
-          duration: 1000,
-        })
-        .add({
-          targets: "#bush-right-top",
-          scale: 60,
-          duration: 1000,
         })
         .add({
           targets: "#tree-left-left",
           scale: 100,
-          duration: 1000,
         })
         .add({
           targets: "#tree-left-right",
           scale: 100,
-          duration: 1000,
+        })
+
+    treeGrowAnimation2
+        .add({
+          targets: "#bush-right-bottom",
+          scale: 50,
+          delay: 700
+        })
+        .add({
+          targets: "#bush-right-top",
+          scale: 60,
         })
         .add({
           targets: "#tree-right-right",
           scale: 100,
-          duration: 1000,
         })
         .add({
           targets: "#tree-right-left",
           scale: 100,
-          duration: 1000,
         })
 
     let text = document.getElementsByClassName('text-box')[0].children;
     let textBoxAnimation = anime.timeline({
       easing: 'linear',
-      duration: 500,
+      duration: 700,
+      delay: 700,
     });
     textBoxAnimation
       .add({
         targets: '.text-box',
         opacity: 0.9,
-        duration: 1000,
-        delay: 3000,
+        duration: 500,
+        delay: 2000,
       })
       .add({
         targets: text[0],
         color: '#000',
-        delay: 3000
-      }, '+=2000')
+      })
       .add({
         targets: text[1],
         color: '#000',
-      }, '+=2000')
+      })
       .add({
         targets: text[2],
         color: '#000',
-      }, '+=2000')
+      })
       .add({
         targets: text[3],
         color: '#000',
-      }, '+=2000')
+      })
       .add({
         targets: text[4],
         color: '#000',
-      }, '+=2000')
+      })
       .add({
         targets: text[5],
         color: '#000',
-      }, '+=2000')
+      })
       .add({
         targets: text[6],
         color: '#000',
-      }, '+=2000')
+      })
       .add({
         targets: text[7],
         color: '#000',
-      }, '+=2000')
+      })
   }
 }
 </script>
