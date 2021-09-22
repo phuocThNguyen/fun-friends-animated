@@ -19,7 +19,7 @@ export default {
 
 .image {
   position: absolute;
-  width: 49vw;
+  width: 49.7vw;
   height: calc(100vh - 60px);
 }
 #right {

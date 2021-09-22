@@ -336,7 +336,7 @@ export default {
   position: absolute;
   height: auto;
   width: 1vw;
-  left: 20vw;
+  left: 40vw;
   top: 20vh;
   opacity: 0;
 }

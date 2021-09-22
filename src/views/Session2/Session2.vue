@@ -69,7 +69,7 @@ export default {
         16: "Session2Page16", 17: "Session2Page17", 18: "Session2Page18", 19: "Session2Page19", 20: "Session2Page20",
         21: "Session2Page21", 22: "Session2Page22"
       },
-      page: 1,
+      page: 16,
       lastPage: 22,
     }
   },

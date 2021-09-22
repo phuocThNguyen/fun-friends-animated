@@ -110,7 +110,7 @@
         </svg>
       </div>
       <div class="tips-container">
-        <p id="tip-1">Crying</p>
+        <p id="tip-1">Sad</p>
         <p id="tip-2">Happy</p>
         <p id="tip-3">Worried</p>
       </div>
@@ -294,7 +294,7 @@ export default {
   width: 1vw;
   left: 20vw;
   top: 20vw;
-  opacity: 1;
+  opacity: 0;
 }
 .tips-container {
   display: flex;
