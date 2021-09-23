@@ -3,7 +3,7 @@
     <p>Instruction:</p>
     <p>- Tap on the correct feeling face.</p>
     <p>- The green tick will appear when</p>
-    <p>you choose the correct answer.
+    <p>you choose the correct answer
     <span>
       <svg class="tiny-tick" id="green-tick-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.98 92.25">
       <g class="cls-1-green-mark">
@@ -22,7 +22,7 @@
       </g>
     </svg>
     </span>
-    </p>
+    .</p>
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="content-container">
-    <h1>What could he be feeling?</h1>
+    <h1>What could {{subject}} be feeling?</h1>
     <div class="emotes-container">
       <component v-for="(emote, index) in emotes" :key="index" :is="emote" :class="ans[`${index}`]"/>
     </div>
@@ -22,6 +22,7 @@ import anime from "animejs";
 export default {
   name: "FeelingQuestion",
   props: {
+    subject: String,
     emotes: Array,
     tips: Array,
     ans: Array,
@@ -32,7 +33,6 @@ export default {
     'cool': () => import("@/components/feelingsQuestion/emotes/EmoteCool"),
     'crying': () => import("@/components/feelingsQuestion/emotes/EmoteCrying"),
     'happy': () => import("@/components/feelingsQuestion/emotes/EmoteHappy"),
-    'laugh': () => import("@/components/feelingsQuestion/emotes/EmoteLaugh"),
     'sad': () => import("@/components/feelingsQuestion/emotes/EmoteSad"),
     'tear': () => import("@/components/feelingsQuestion/emotes/EmoteTear"),
     'worried': () => import("@/components/feelingsQuestion/emotes/EmoteWorried"),
@@ -153,7 +153,7 @@ export default {
 .tips-container p {
   margin-bottom: 0;
   display: inline-block;
-  width: 7vw;
+  width: 8vw;
 }
 .content-container {
   background-color: rgba(0, 206, 124, 0.8);

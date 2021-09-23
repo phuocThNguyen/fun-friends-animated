@@ -2,12 +2,14 @@
   <div class="interactive-container">
     <img class="session-background" src="../../assets/images/session2/103718-resized.jpg" alt="sad">
     <emotion-pick-instruction class="instruction"/>
-    <feeling-question class="question"
-      :emotes="['angry','happy','sad']"
-      :tips="['Angry','Happy','Sad']"
-      :ans="['red-tick','red-tick','green-tick']"
-      :isSmall="false"
-      v-on:correctAnsChosen="handleCorrectAnswer"
+    <feeling-question
+        class="question"
+        subject="she"
+        :emotes="['angry','happy','sad']"
+        :tips="['Angry','Happy','Sad']"
+        :ans="['red-tick','red-tick','green-tick']"
+        :isSmall="false"
+        v-on:correctAnsChosen="handleCorrectAnswer"
     />
 
     <!--  Very Good  -->

@@ -4,22 +4,14 @@
     <div class="text-box">
       We are kind when we pay attention to the teacher.
     </div>
-    <feeling-question
-        class="question"
-        :emotes="['tear','happy','worried']"
-        :tips="['Sad','Happy','Worried']"
-        :ans="['red-tick','green-tick','red-tick']"
-        :isSmall="true"/>
   </div>
 </template>
 
 <script>
 import anime from "animejs";
-import FeelingQuestion from "@/components/feelingsQuestion/FeelingsQuestion";
 
 export default {
   name: "Session2Page16",
-  components: {FeelingQuestion},
   mounted() {
     anime({
       targets: ".text-box",
@@ -33,11 +25,6 @@ export default {
 </script>
 
 <style scoped>
-.question {
-  position: absolute;
-  top: 30vh;
-  left: 20vw;
-}
 .text-box {
   position: absolute;
   background-color: #00ce7c;
