@@ -2,24 +2,16 @@
   <div class="content-container">
     <h1>What could he be feeling?</h1>
     <div class="emotes-container">
-      <component :is="emotes[0]" :class="ans[0]"/>
-      <component :is="emotes[1]" :class="ans[1]"/>
-      <component :is="emotes[2]" :class="ans[2]"/>
+      <component v-for="(emote, index) in emotes" :key="index" :is="emote" :class="ans[`${index}`]"/>
     </div>
     <div class="tips-container">
-      <p id="tip-1" :class="ans[0]">{{tips[0]}}</p>
-      <p id="tip-2" :class="ans[1]">{{tips[1]}}</p>
-      <p id="tip-3" :class="ans[2]">{{tips[2]}}</p>
+      <p v-for="(answer, index) in ans" :key="index" :class="answer">{{tips[index]}}</p>
     </div>
     <div class="answer-container">
-      <component :is="ans[0]"/>
-      <component :is="ans[1]"/>
-      <component :is="ans[2]"/>
+      <component v-for="(answer, index) in ans" :key="index" :is="answer"/>
     </div>
-    <div class="masks">
-      <div @click="answerHandler"></div>
-      <div @click="answerHandler"></div>
-      <div @click="answerHandler"></div>
+    <div class="masks-container">
+      <div v-for="emote in emotes" :key="emote" @click="answerHandler"/>
     </div>
   </div>
 </template>
@@ -33,9 +25,15 @@ export default {
     emotes: Array,
     tips: Array,
     ans: Array,
+    isSmall: Boolean,
   },
   components: {
+    'angry': () => import("@/components/feelingsQuestion/emotes/EmoteAngry"),
+    'cool': () => import("@/components/feelingsQuestion/emotes/EmoteCool"),
+    'crying': () => import("@/components/feelingsQuestion/emotes/EmoteCrying"),
     'happy': () => import("@/components/feelingsQuestion/emotes/EmoteHappy"),
+    'laugh': () => import("@/components/feelingsQuestion/emotes/EmoteLaugh"),
+    'sad': () => import("@/components/feelingsQuestion/emotes/EmoteSad"),
     'tear': () => import("@/components/feelingsQuestion/emotes/EmoteTear"),
     'worried': () => import("@/components/feelingsQuestion/emotes/EmoteWorried"),
     'red-tick': () => import("@/components/feelingsQuestion/ticks/RedTick"),
@@ -72,6 +70,7 @@ export default {
       elements.forEach(element => {
         element.style.visibility = 'hidden';
       })
+      document.querySelector('.masks-container').style.visibility = 'hidden';
     },
     answerHandler(e) {
       let maskId = e.target.id;
@@ -85,7 +84,30 @@ export default {
         case 'correct':
           this.animateGreenTick(document.querySelectorAll('.green-tick')[2]);
           this.hideElements('.red-tick');
+          this.$emit('correctAnsChosen');
           break;
+      }
+    },
+    setMasksClassName() {
+      this.correctAnsId = this.ans.indexOf('green-tick');
+      let masks = document.getElementsByClassName('masks-container')[0].children;
+      let counter = 1;
+      for (let i = 0;i < 3;i++) {
+        if (i !== this.correctAnsId) {
+          masks[i].setAttribute('class','incorrect');
+          masks[i].setAttribute('id','incorrect-' + counter++);
+        } else {
+          masks[i].setAttribute('id','correct')
+        }
+      }
+    },
+    setSmallSize() {
+      if (this.isSmall) {
+        document.querySelector('.content-container').setAttribute('id','small-content');
+        document.querySelector('.emotes-container').setAttribute('id','small-emotes');
+        document.querySelector('.tips-container').setAttribute('id','small-tips');
+        document.querySelector('.answer-container').setAttribute('id','small-answers');
+        document.querySelector('.masks-container').setAttribute('id','small-masks');
       }
     },
   },
@@ -97,25 +119,14 @@ export default {
       delay: 1000,
       duration: 1000
     })
-    this.correctAnsId = this.ans.indexOf('green-tick');
-    this.$nextTick(() => {
-      let masks = document.getElementsByClassName('masks')[0].children;
-      let counter = 1;
-      for (let i = 0;i < 3;i++) {
-        if (i !== this.correctAnsId) {
-          masks[i].setAttribute('class','incorrect');
-          masks[i].setAttribute('id','incorrect-' + counter++);
-        } else {
-          masks[i].setAttribute('id','correct')
-        }
-      }
-    })
+    this.setMasksClassName();
+    this.setSmallSize();
   },
 }
 </script>
 
 <style scoped>
-.masks {
+.masks-container {
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -125,7 +136,7 @@ export default {
   padding: 0 1vw;
   top: 8.7vh;
 }
-.masks div {
+.masks-container div {
   width: 10vw;
   height: 10vw;
 }
@@ -171,5 +182,37 @@ export default {
   justify-content: space-around;
   align-items: flex-end;
   margin: 1vw;
+}
+
+/*  Small size  */
+#small-content {
+  width: 34vw;
+}
+#small-content h1 {
+  font-size: 2vw;
+}
+#small-emotes {
+  margin: 0 .5vw;
+}
+#small-emotes svg {
+  width: 5vw;
+}
+#small-tips {
+  font-size: 1.5vw;
+  margin: 0 .5vw;
+}
+#small-answers {
+  margin: 0 .5vw .5vh .5vw;
+}
+#small-answers svg {
+  width: 3vw;
+}
+#small-masks {
+  padding: 0 .5vw;
+  top: 4.9vh;
+}
+#small-masks div {
+  width: 5vw;
+  height: 5vw;
 }
 </style>

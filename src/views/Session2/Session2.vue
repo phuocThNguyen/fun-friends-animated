@@ -69,7 +69,7 @@ export default {
         16: "Session2Page16", 17: "Session2Page17", 18: "Session2Page18", 19: "Session2Page19", 20: "Session2Page20",
         21: "Session2Page21", 22: "Session2Page22"
       },
-      page: 16,
+      page: 1,
       lastPage: 22,
     }
   },
@@ -115,71 +115,20 @@ export default {
   opacity: 0;
 }
 tspan { white-space:pre }
-.shp0-sad { fill: #ffd05d }
-.shp1-sad { fill: #fdc453 }
-.shp2-sad { fill: #ffd77f }
-.shp3-sad { fill: #5e4939 }
-.shp4-sad { fill: #303030 }
-.shp0-crying { fill: #ffd05d }
-.shp1-crying { fill: #fdc453 }
-.shp2-crying { fill: #ffd77f }
-.shp3-crying { fill: #695342 }
-.shp4-crying { fill: #f06669 }
-.shp5-crying { fill: #7cc4e8 }
-.shp6-crying { fill: #303030 }
-.shp0-worried { fill: #ffd05d }
-.shp1-worried { fill: #fdc453 }
-.shp2-worried { fill: #ffd77f }
-.shp3-worried { fill: #303030 }
-.shp4-worried { fill: #414042 }
-.shp5-worried { fill: #5e4939 }
-.shp0-happy { fill: #ffd05d }
-.shp1-happy { fill: #fdc453 }
-.shp2-happy { fill: #ffd77f }
-.shp3-happy { fill: #303030 }
-.shp4-happy { fill: #695342 }
-.shp5-happy { fill: #f06669 }
-.shp0-angry { fill: #f16d24 }
-.shp1-angry { fill: #ef6421 }
-.shp2-angry { fill: #f2824e }
-.shp3-angry { fill: #303030 }
-.shp4-angry { fill: #5e4939 }
+
 .shp0-red { fill: #e57373 }
 .shp1-red { fill: #d24a43 }
 .shp2-red { fill: #ffffff }
+
 .shp0-green { fill: #8bc34a }
 .shp1-green { fill: #74b65f }
 .shp2-green { fill: #ffffff }
-.shp0-tear { fill: #ffd05d }
-.shp1-tear { fill: #fdc453 }
-.shp2-tear { fill: #ffd77f }
-.shp3-tear { fill: #303030 }
-.shp4-tear { fill: #414042 }
-.shp5-tear { fill: #5e4939 }
-.shp6-tear { fill: #7cc4e8 }
-.shp7-tear { fill: #62bbe8 }
-.shp0-lol { fill: #ffd05d }
-.shp1-lol { fill: #fdc453 }
-.shp2-lol { fill: #ffd77f }
-.shp3-lol { fill: #303030 }
-.shp4-lol { fill: #7cc4e8 }
-.shp5-lol { fill: #62bbe8 }
-.shp6-lol { fill: #695342 }
-.shp7-lol { fill: #f06669 }
-.shp0-cool { fill: #ffd05d }
-.shp1-cool { fill: #fdc453 }
-.shp2-cool { fill: #ffd77f }
-.shp3-cool { fill: #5e4939 }
-.shp4-cool { fill: #2d292a }
-.shp5-cool { fill: #414042 }
-.shp0-thumb-up { fill: #51bc4a }
-.shp1-thumb-up { fill: #ffffff }
-.shp0-thumb-down { fill: #ff3f3d }
-.shp1-thumb-down { fill: #ffffff }
+
 .cls-1-green-mark {isolation: isolate;}
 .cls-2-green-mark {fill: #fff;}
 .cls-4-green-mark {fill: #a1a1a1;mix-blend-mode: overlay;}
 .cls-5-green-mark {fill: #00c72e;}
+
 .cls-1-red-mark {isolation: isolate;}
 .cls-2-red-mark {fill: #fff;}
 .cls-3-red-mark {fill: #a1a1a1;mix-blend-mode: overlay;}

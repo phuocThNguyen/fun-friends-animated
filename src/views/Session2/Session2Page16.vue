@@ -8,7 +8,8 @@
         class="question"
         :emotes="['tear','happy','worried']"
         :tips="['Sad','Happy','Worried']"
-        :ans="['red-tick','green-tick','red-tick']"/>
+        :ans="['red-tick','green-tick','red-tick']"
+        :isSmall="true"/>
   </div>
 </template>
 

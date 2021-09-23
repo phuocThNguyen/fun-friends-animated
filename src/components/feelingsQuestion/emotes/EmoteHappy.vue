@@ -42,4 +42,11 @@ export default {
   height: auto;
   width: 10vw;
 }
+tspan { white-space:pre }
+.shp0-happy { fill: #ffd05d }
+.shp1-happy { fill: #fdc453 }
+.shp2-happy { fill: #ffd77f }
+.shp3-happy { fill: #303030 }
+.shp4-happy { fill: #695342 }
+.shp5-happy { fill: #f06669 }
 </style>

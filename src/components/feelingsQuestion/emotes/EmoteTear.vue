@@ -51,4 +51,13 @@ export default {
   height: auto;
   width: 10vw;
 }
+tspan { white-space:pre }
+.shp0-tear { fill: #ffd05d }
+.shp1-tear { fill: #fdc453 }
+.shp2-tear { fill: #ffd77f }
+.shp3-tear { fill: #303030 }
+.shp4-tear { fill: #414042 }
+.shp5-tear { fill: #5e4939 }
+.shp6-tear { fill: #7cc4e8 }
+.shp7-tear { fill: #62bbe8 }
 </style>

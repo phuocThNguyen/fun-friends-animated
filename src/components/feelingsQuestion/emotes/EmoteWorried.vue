@@ -47,4 +47,11 @@ export default {
   height: auto;
   width: 10vw;
 }
+tspan { white-space:pre }
+.shp0-worried { fill: #ffd05d }
+.shp1-worried { fill: #fdc453 }
+.shp2-worried { fill: #ffd77f }
+.shp3-worried { fill: #303030 }
+.shp4-worried { fill: #414042 }
+.shp5-worried { fill: #5e4939 }
 </style>
