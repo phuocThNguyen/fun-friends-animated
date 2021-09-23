@@ -1,13 +1,13 @@
 <template>
   <div class="content-container">
-    <h1>What could {{subject}} be feeling?</h1>
+    <h1>{{question}}</h1>
     <div class="emotes-container">
       <component v-for="(emote, index) in emotes" :key="index" :is="emote" :class="ans[`${index}`]"/>
     </div>
     <div class="tips-container">
       <p v-for="(answer, index) in ans" :key="index" :class="answer">{{tips[index]}}</p>
     </div>
-    <div class="answer-container">
+    <div class="answers-container">
       <component v-for="(answer, index) in ans" :key="index" :is="answer"/>
     </div>
     <div class="masks-container">
@@ -22,7 +22,7 @@ import anime from "animejs";
 export default {
   name: "FeelingQuestion",
   props: {
-    subject: String,
+    question: String,
     emotes: Array,
     tips: Array,
     ans: Array,
@@ -103,11 +103,12 @@ export default {
     },
     setSmallSize() {
       if (this.isSmall) {
-        document.querySelector('.content-container').setAttribute('id','small-content');
-        document.querySelector('.emotes-container').setAttribute('id','small-emotes');
-        document.querySelector('.tips-container').setAttribute('id','small-tips');
-        document.querySelector('.answer-container').setAttribute('id','small-answers');
-        document.querySelector('.masks-container').setAttribute('id','small-masks');
+        let classNames = document.querySelector('.content-container').className;
+        document.querySelector('.content-container').setAttribute('class',classNames + ' small-content');
+        document.querySelector('.emotes-container').setAttribute('class','emotes-container small-emotes');
+        document.querySelector('.tips-container').setAttribute('class','tips-container small-tips');
+        document.querySelector('.answers-container').setAttribute('class','answers-container small-answers');
+        document.querySelector('.masks-container').setAttribute('class','masks-container small-masks');
       }
     },
   },
@@ -176,7 +177,7 @@ export default {
   align-items: flex-start;
   margin: 1vw;
 }
-.answer-container {
+.answers-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -185,34 +186,34 @@ export default {
 }
 
 /*  Small size  */
-#small-content {
-  width: 34vw;
+.small-content {
+  width: 34vw !important;
 }
-#small-content h1 {
-  font-size: 2vw;
+.small-content h1 {
+  font-size: 2vw !important;
 }
-#small-emotes {
-  margin: 0 .5vw;
+.small-emotes {
+  margin: 0 .5vw !important;
 }
-#small-emotes svg {
-  width: 5vw;
+.small-emotes svg {
+  width: 5vw !important;
 }
-#small-tips {
-  font-size: 1.5vw;
-  margin: 0 .5vw;
+.small-tips {
+  font-size: 1.5vw !important;
+  margin: 0 .5vw !important;
 }
-#small-answers {
-  margin: 0 .5vw .5vh .5vw;
+.small-answers {
+  margin: 0 .5vw .5vh .5vw !important;
 }
-#small-answers svg {
-  width: 3vw;
+.small-answers svg {
+  width: 3vw !important;
 }
-#small-masks {
-  padding: 0 .5vw;
-  top: 4.9vh;
+.small-masks {
+  padding: 0 .5vw !important;
+  top: 4.9vh !important;
 }
-#small-masks div {
-  width: 5vw;
-  height: 5vw;
+.small-masks div {
+  width: 5vw !important;
+  height: 5vw !important;
 }
 </style>

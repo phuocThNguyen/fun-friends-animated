@@ -4,7 +4,7 @@
     <emotion-pick-instruction class="instruction"/>
     <feeling-question
         class="question"
-        subject="she"
+        question="What could she be feeling?"
         :emotes="['angry','happy','sad']"
         :tips="['Angry','Happy','Sad']"
         :ans="['red-tick','red-tick','green-tick']"

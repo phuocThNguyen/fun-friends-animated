@@ -953,7 +953,7 @@ export default {
   top: 2vh;
   left: 33vw;
   z-index: 100;
-  opacity: 1;
+  opacity: 0;
 }
 .main-content {
   position: absolute;

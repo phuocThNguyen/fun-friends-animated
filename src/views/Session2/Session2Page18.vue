@@ -8,116 +8,13 @@
     </div>
     <img src="../../assets/images/session2/Happy_Boy-resized.jpg" alt="happy" class="image" id="left">
     <img src="../../assets/images/session2/Worried_Girl-resized.jpg" alt="worried" class="image" id="right">
+
     <div class="content-container" id="content-left">
       <h1>What could he be feeling?</h1>
       <div class="emotes-container">
-        <!--    Tear Emote    -->
-        <svg class="emotes incorrect" @click="answerHandler" id="incorrect-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 171" width="172" height="171">
-          <title>Tear</title>
-          <g id="Object">
-            <g id="&lt;Group&gt;">
-              <g id="&lt;Group&gt;">
-                <g id="&lt;Group&gt;">
-                  <g id="&lt;Group&gt;">
-                    <path id="&lt;Path&gt;" class="shp0-tear" d="M0.55 85.22C0.55 38.14 38.71 -0.02 85.79 -0.02C132.86 -0.02 171.02 38.14 171.02 85.22C171.02 132.29 132.86 170.45 85.79 170.45C38.71 170.45 0.55 132.29 0.55 85.22Z" />
-                  </g>
-                  <g id="&lt;Group&gt;">
-                    <path id="&lt;Path&gt;" class="shp1-tear" d="M130.38 12.47C138.87 25.72 143.79 41.48 143.79 58.38C143.79 105.46 105.63 143.62 58.56 143.62C42.21 143.62 26.94 139.01 13.96 131.03C29.11 154.68 55.62 170.35 85.79 170.35C132.86 170.35 171.02 132.19 171.02 85.12C171.02 54.39 154.76 27.47 130.38 12.47Z" />
-                  </g>
-                  <g id="&lt;Group&gt;">
-                    <path id="&lt;Path&gt;" class="shp2-tear" d="M12.14 94.21C12.14 50.5 47.57 15.07 91.27 15.07C116.82 15.07 139.53 27.18 154 45.97C140.34 22.25 114.73 6.28 85.38 6.28C41.68 6.28 6.25 41.71 6.25 85.41C6.25 103.57 12.37 120.3 22.65 133.65C15.96 122.04 12.14 108.57 12.14 94.21Z" />
-                  </g>
-                </g>
-                <g id="&lt;Group&gt;">
-                  <g id="&lt;Group&gt;">
-                    <g id="&lt;Group&gt;">
-                      <path id="&lt;Path&gt;" class="shp3-tear" d="M60.67 64.54C60.67 70.39 57.85 75.12 54.39 75.12C50.92 75.12 48.11 70.39 48.11 64.54C48.11 58.69 50.92 53.95 54.39 53.95C57.85 53.95 60.67 58.69 60.67 64.54Z" />
-                    </g>
-                    <g id="&lt;Group&gt;">
-                      <path id="&lt;Path&gt;" class="shp3-tear" d="M123.47 64.54C123.47 70.39 120.66 75.12 117.19 75.12C113.72 75.12 110.91 70.39 110.91 64.54C110.91 58.69 113.72 53.95 117.19 53.95C120.66 53.95 123.47 58.69 123.47 64.54Z" />
-                    </g>
-                  </g>
-                </g>
-              </g>
-              <g id="&lt;Group&gt;">
-                <path id="&lt;Path&gt;" class="shp4-tear" d="M136.14 46.67C135.22 46.4 134.33 46.15 133.45 45.91C131.54 45.37 129.73 44.87 127.98 44.26C125.37 43.38 123.02 42.38 120.8 41.21C118.46 39.97 116.34 38.59 114.31 37C112.09 35.27 110.03 33.26 108.13 31.33C108.02 31.23 107.86 31.19 107.72 31.26C107.58 31.32 107.49 31.46 107.5 31.61C107.64 34.52 108.79 37.53 110.83 40.31C112.69 42.83 115.18 44.95 118.04 46.45C120.73 47.86 123.73 48.72 126.75 48.95C126.87 48.96 126.99 48.97 127.1 48.97C130.49 49.15 133.55 48.61 136.19 47.36C136.33 47.29 136.41 47.15 136.4 47C136.39 46.84 136.28 46.71 136.14 46.67Z" />
-                <path id="&lt;Path&gt;" class="shp4-tear" d="M35.44 46.67C36.36 46.4 37.25 46.15 38.12 45.91C40.04 45.37 41.84 44.87 43.59 44.26C46.2 43.38 48.55 42.38 50.77 41.21C53.11 39.97 55.23 38.59 57.27 37C59.49 35.27 61.55 33.26 63.44 31.33C63.55 31.23 63.72 31.19 63.86 31.26C64 31.32 64.08 31.46 64.08 31.61C63.93 34.52 62.78 37.53 60.75 40.31C58.88 42.83 56.39 44.95 53.54 46.45C50.85 47.86 47.85 48.72 44.82 48.95C44.71 48.96 44.59 48.97 44.47 48.97C41.09 49.15 38.03 48.61 35.39 47.36C35.25 47.29 35.16 47.15 35.17 47C35.19 46.84 35.29 46.71 35.44 46.67Z" />
-              </g>
-              <path id="&lt;Path&gt;" class="shp5-tear" d="M103.78 98.14C98.93 93.94 92.36 91.57 85.78 91.7C79.32 91.72 72.81 94.08 67.91 98.18C65.43 100.27 63.37 102.82 61.93 105.58C60.41 108.57 59.62 111.59 59.59 114.54C59.58 115.25 60.02 115.88 60.69 116.11C61.36 116.34 62.1 116.12 62.53 115.56C64.3 113.28 65.97 111.47 67.64 110.03C69.44 108.5 71.36 107.22 73.33 106.23C77.25 104.27 81.59 103.22 85.87 103.2C90.26 103.17 94.42 104.16 98.26 106.15C102.21 108.18 105.84 111.34 109.03 115.55C109.35 115.97 109.84 116.2 110.34 116.2C110.52 116.2 110.7 116.17 110.88 116.11C111.55 115.88 112 115.24 111.99 114.53C111.9 108.59 108.83 102.46 103.78 98.14Z" />
-              <g id="&lt;Group&gt;">
-                <path id="&lt;Path&gt;" class="shp6-tear" d="M124.7 80.62C107.87 99.87 100.39 115.01 102.26 126.05C102.26 138.45 112.31 148.5 124.7 148.5C137.1 148.5 147.15 138.45 147.15 126.05C149.02 115.01 141.54 99.87 124.7 80.62Z" />
-                <path id="&lt;Path&gt;" class="shp7-tear" d="M108.02 141.06C112.12 145.63 118.08 148.5 124.7 148.5C137.1 148.5 147.15 138.45 147.15 126.05C147.93 121.41 146.3 114.84 142.27 106.33C137.8 135.43 119.53 140.72 108.02 141.06Z" />
-              </g>
-            </g>
-          </g>
-        </svg>
-        <!--    Happy Emote    -->
-        <svg class="emotes" @click="answerHandler" id="correct-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 171" width="172" height="171">
-          <title>Happy</title>
-          <g id="Object">
-            <g id="&lt;Group&gt;">
-              <g id="&lt;Group&gt;">
-                <g id="&lt;Group&gt;">
-                  <path id="&lt;Path&gt;" class="shp0-happy" d="M0.7 85.22C0.7 38.14 38.86 -0.02 85.94 -0.02C133.01 -0.02 171.18 38.14 171.18 85.22C171.18 132.29 133.01 170.45 85.94 170.45C38.86 170.45 0.7 132.29 0.7 85.22Z" />
-                </g>
-                <g id="&lt;Group&gt;">
-                  <path id="&lt;Path&gt;" class="shp1-happy" d="M130.53 12.47C139.02 25.72 143.94 41.48 143.94 58.38C143.94 105.46 105.78 143.62 58.71 143.62C42.36 143.62 27.09 139.01 14.11 131.03C29.26 154.68 55.77 170.35 85.94 170.35C133.01 170.35 171.18 132.19 171.18 85.12C171.18 54.39 154.92 27.47 130.53 12.47Z" />
-                </g>
-                <g id="&lt;Group&gt;">
-                  <path id="&lt;Path&gt;" class="shp2-happy" d="M12.29 94.21C12.29 50.5 47.72 15.07 91.42 15.07C116.97 15.07 139.69 27.18 154.15 45.97C140.49 22.25 114.88 6.28 85.53 6.28C41.83 6.28 6.4 41.71 6.4 85.41C6.4 103.57 12.52 120.3 22.8 133.65C16.11 122.04 12.29 108.57 12.29 94.21Z" />
-                </g>
-              </g>
-              <g id="&lt;Group&gt;">
-                <g id="&lt;Group&gt;">
-                  <g id="&lt;Group&gt;">
-                    <path id="&lt;Path&gt;" class="shp3-happy" d="M60.82 64.54C60.82 70.39 58.01 75.12 54.54 75.12C51.07 75.12 48.26 70.39 48.26 64.54C48.26 58.69 51.07 53.95 54.54 53.95C58.01 53.95 60.82 58.69 60.82 64.54Z" />
-                  </g>
-                  <g id="&lt;Group&gt;">
-                    <path id="&lt;Path&gt;" class="shp3-happy" d="M123.62 64.54C123.62 70.39 120.81 75.12 117.34 75.12C113.87 75.12 111.06 70.39 111.06 64.54C111.06 58.69 113.87 53.95 117.34 53.95C120.81 53.95 123.62 58.69 123.62 64.54Z" />
-                  </g>
-                </g>
-              </g>
-              <path id="&lt;Path&gt;" class="shp4-happy" d="M28.66 93.28C31.91 122.04 56.31 144.4 85.94 144.4C115.57 144.4 139.97 122.04 143.21 93.28L28.66 93.28Z" />
-              <path id="&lt;Path&gt;" class="shp5-happy" d="M46.38 128.66C56.7 138.41 70.61 144.4 85.94 144.4C100.6 144.4 113.98 138.92 124.15 129.9L123.62 128.66C85.16 109.91 46.9 128.4 46.38 128.66Z" />
-            </g>
-          </g>
-        </svg>
-        <!--    Worried Emote    -->
-        <svg class="emotes incorrect" @click="answerHandler" id="incorrect-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 171 171" width="171" height="171">
-          <title>Worried</title>
-          <g id="Object">
-            <g id="&lt;Group&gt;">
-              <g id="&lt;Group&gt;">
-                <g id="&lt;Group&gt;">
-                  <g id="&lt;Group&gt;">
-                    <path id="&lt;Path&gt;" class="shp0-worried" d="M0.13 85.22C0.13 38.14 38.29 -0.02 85.36 -0.02C132.44 -0.02 170.6 38.14 170.6 85.22C170.6 132.29 132.44 170.45 85.36 170.45C38.29 170.45 0.13 132.29 0.13 85.22Z" />
-                  </g>
-                  <g id="&lt;Group&gt;">
-                    <path id="&lt;Path&gt;" class="shp1-worried" d="M129.96 12.47C138.45 25.72 143.37 41.48 143.37 58.38C143.37 105.46 105.21 143.62 58.13 143.62C41.78 143.62 26.51 139.01 13.54 131.03C28.69 154.68 55.19 170.35 85.36 170.35C132.44 170.35 170.6 132.19 170.6 85.12C170.6 54.39 154.34 27.47 129.96 12.47Z" />
-                  </g>
-                  <g id="&lt;Group&gt;">
-                    <path id="&lt;Path&gt;" class="shp2-worried" d="M11.71 94.21C11.71 50.5 47.14 15.07 90.85 15.07C116.4 15.07 139.11 27.18 153.58 45.97C139.91 22.25 114.3 6.28 84.96 6.28C41.25 6.28 5.82 41.71 5.82 85.41C5.82 103.57 11.94 120.3 22.23 133.65C15.54 122.04 11.71 108.57 11.71 94.21Z" />
-                  </g>
-                </g>
-                <g id="&lt;Group&gt;">
-                  <g id="&lt;Group&gt;">
-                    <g id="&lt;Group&gt;">
-                      <path id="&lt;Path&gt;" class="shp3-worried" d="M60.24 64.54C60.24 70.39 57.43 75.12 53.96 75.12C50.49 75.12 47.68 70.39 47.68 64.54C47.68 58.69 50.49 53.95 53.96 53.95C57.43 53.95 60.24 58.69 60.24 64.54Z" />
-                    </g>
-                    <g id="&lt;Group&gt;">
-                      <path id="&lt;Path&gt;" class="shp3-worried" d="M123.05 64.54C123.05 70.39 120.23 75.12 116.77 75.12C113.3 75.12 110.48 70.39 110.48 64.54C110.48 58.69 113.3 53.95 116.77 53.95C120.23 53.95 123.05 58.69 123.05 64.54Z" />
-                    </g>
-                  </g>
-                </g>
-              </g>
-              <g id="&lt;Group&gt;">
-                <path id="&lt;Path&gt;" class="shp4-worried" d="M135.71 46.67C134.79 46.4 133.9 46.15 133.03 45.91C131.12 45.37 129.31 44.87 127.56 44.26C124.95 43.38 122.6 42.38 120.38 41.21C118.04 39.97 115.92 38.59 113.88 37C111.67 35.27 109.6 33.26 107.71 31.33C107.6 31.23 107.44 31.19 107.3 31.26C107.15 31.32 107.07 31.46 107.07 31.61C107.22 34.52 108.37 37.53 110.4 40.31C112.27 42.83 114.76 44.95 117.62 46.45C120.3 47.86 123.3 48.72 126.33 48.95C126.44 48.96 126.56 48.97 126.68 48.97C130.06 49.15 133.12 48.61 135.77 47.36C135.9 47.29 135.99 47.15 135.98 47C135.96 46.84 135.86 46.71 135.71 46.67Z" />
-                <path id="&lt;Path&gt;" class="shp4-worried" d="M35.02 46.67C35.93 46.4 36.82 46.15 37.7 45.91C39.61 45.37 41.42 44.87 43.17 44.26C45.78 43.38 48.13 42.38 50.35 41.21C52.69 39.97 54.81 38.59 56.84 37C59.06 35.27 61.12 33.26 63.02 31.33C63.13 31.23 63.29 31.19 63.43 31.26C63.57 31.32 63.66 31.46 63.65 31.61C63.51 34.52 62.36 37.53 60.32 40.31C58.46 42.83 55.97 44.95 53.11 46.45C50.43 47.86 47.42 48.72 44.4 48.95C44.28 48.96 44.17 48.97 44.05 48.97C40.66 49.15 37.61 48.61 34.96 47.36C34.82 47.29 34.74 47.15 34.75 47C34.76 46.84 34.87 46.71 35.02 46.67Z" />
-              </g>
-              <path id="&lt;Path&gt;" class="shp5-worried" d="M53.13 121.9C52.24 122 51.73 120.9 51.74 120.07C51.78 116.29 52.79 112.42 54.74 108.57C56.6 105.04 59.24 101.77 62.42 99.08C68.7 93.82 77.06 90.79 85.36 90.76C93.8 90.6 102.23 93.64 108.46 99.03C114.92 104.57 118.86 112.42 118.99 120.05C119 120.92 118.41 122.04 117.44 121.87C116.64 121.73 115.99 120.64 115.4 120.15C114.49 119.39 113.55 118.68 112.58 118C110.65 116.63 108.63 115.41 106.54 114.3C98.87 110.21 90.16 108 81.44 108.76C75.89 109.24 70.5 110.91 65.55 113.44C62.57 114.97 59.76 116.79 57.11 118.82C56.1 119.58 54.45 121.65 53.21 121.89C53.19 121.89 53.16 121.89 53.13 121.9Z" />
-            </g>
-          </g>
-        </svg>
+        <emote-tear class="emotes incorrect"/>
+        <emote-happy class="emotes"/>
+        <emote-worried class="emotes incorrect"/>
       </div>
       <div class="tips-container">
         <p class="incorrect" id="tip-1-left">Sad</p>
@@ -178,116 +75,23 @@
           </g>
         </svg>
       </div>
+      <div class="masks-container">
+        <div id="incorrect-1" class="incorrect" @click="answerHandler"></div>
+        <div id="correct-1" @click="answerHandler"></div>
+        <div id="incorrect-2" class="incorrect" @click="answerHandler"></div>
+      </div>
     </div>
     <div class="content-container" id="content-right">
       <h1>What could she be feeling?</h1>
       <div class="emotes-container">
-        <!--    Worried Emote    -->
-        <svg class="emotes" @click="answerHandler" id="correct-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 171 171" width="171" height="171">
-          <title>Worried</title>
-          <g id="Object">
-            <g id="&lt;Group&gt;">
-              <g id="&lt;Group&gt;">
-                <g id="&lt;Group&gt;">
-                  <g id="&lt;Group&gt;">
-                    <path id="&lt;Path&gt;" class="shp0-worried" d="M0.13 85.22C0.13 38.14 38.29 -0.02 85.36 -0.02C132.44 -0.02 170.6 38.14 170.6 85.22C170.6 132.29 132.44 170.45 85.36 170.45C38.29 170.45 0.13 132.29 0.13 85.22Z" />
-                  </g>
-                  <g id="&lt;Group&gt;">
-                    <path id="&lt;Path&gt;" class="shp1-worried" d="M129.96 12.47C138.45 25.72 143.37 41.48 143.37 58.38C143.37 105.46 105.21 143.62 58.13 143.62C41.78 143.62 26.51 139.01 13.54 131.03C28.69 154.68 55.19 170.35 85.36 170.35C132.44 170.35 170.6 132.19 170.6 85.12C170.6 54.39 154.34 27.47 129.96 12.47Z" />
-                  </g>
-                  <g id="&lt;Group&gt;">
-                    <path id="&lt;Path&gt;" class="shp2-worried" d="M11.71 94.21C11.71 50.5 47.14 15.07 90.85 15.07C116.4 15.07 139.11 27.18 153.58 45.97C139.91 22.25 114.3 6.28 84.96 6.28C41.25 6.28 5.82 41.71 5.82 85.41C5.82 103.57 11.94 120.3 22.23 133.65C15.54 122.04 11.71 108.57 11.71 94.21Z" />
-                  </g>
-                </g>
-                <g id="&lt;Group&gt;">
-                  <g id="&lt;Group&gt;">
-                    <g id="&lt;Group&gt;">
-                      <path id="&lt;Path&gt;" class="shp3-worried" d="M60.24 64.54C60.24 70.39 57.43 75.12 53.96 75.12C50.49 75.12 47.68 70.39 47.68 64.54C47.68 58.69 50.49 53.95 53.96 53.95C57.43 53.95 60.24 58.69 60.24 64.54Z" />
-                    </g>
-                    <g id="&lt;Group&gt;">
-                      <path id="&lt;Path&gt;" class="shp3-worried" d="M123.05 64.54C123.05 70.39 120.23 75.12 116.77 75.12C113.3 75.12 110.48 70.39 110.48 64.54C110.48 58.69 113.3 53.95 116.77 53.95C120.23 53.95 123.05 58.69 123.05 64.54Z" />
-                    </g>
-                  </g>
-                </g>
-              </g>
-              <g id="&lt;Group&gt;">
-                <path id="&lt;Path&gt;" class="shp4-worried" d="M135.71 46.67C134.79 46.4 133.9 46.15 133.03 45.91C131.12 45.37 129.31 44.87 127.56 44.26C124.95 43.38 122.6 42.38 120.38 41.21C118.04 39.97 115.92 38.59 113.88 37C111.67 35.27 109.6 33.26 107.71 31.33C107.6 31.23 107.44 31.19 107.3 31.26C107.15 31.32 107.07 31.46 107.07 31.61C107.22 34.52 108.37 37.53 110.4 40.31C112.27 42.83 114.76 44.95 117.62 46.45C120.3 47.86 123.3 48.72 126.33 48.95C126.44 48.96 126.56 48.97 126.68 48.97C130.06 49.15 133.12 48.61 135.77 47.36C135.9 47.29 135.99 47.15 135.98 47C135.96 46.84 135.86 46.71 135.71 46.67Z" />
-                <path id="&lt;Path&gt;" class="shp4-worried" d="M35.02 46.67C35.93 46.4 36.82 46.15 37.7 45.91C39.61 45.37 41.42 44.87 43.17 44.26C45.78 43.38 48.13 42.38 50.35 41.21C52.69 39.97 54.81 38.59 56.84 37C59.06 35.27 61.12 33.26 63.02 31.33C63.13 31.23 63.29 31.19 63.43 31.26C63.57 31.32 63.66 31.46 63.65 31.61C63.51 34.52 62.36 37.53 60.32 40.31C58.46 42.83 55.97 44.95 53.11 46.45C50.43 47.86 47.42 48.72 44.4 48.95C44.28 48.96 44.17 48.97 44.05 48.97C40.66 49.15 37.61 48.61 34.96 47.36C34.82 47.29 34.74 47.15 34.75 47C34.76 46.84 34.87 46.71 35.02 46.67Z" />
-              </g>
-              <path id="&lt;Path&gt;" class="shp5-worried" d="M53.13 121.9C52.24 122 51.73 120.9 51.74 120.07C51.78 116.29 52.79 112.42 54.74 108.57C56.6 105.04 59.24 101.77 62.42 99.08C68.7 93.82 77.06 90.79 85.36 90.76C93.8 90.6 102.23 93.64 108.46 99.03C114.92 104.57 118.86 112.42 118.99 120.05C119 120.92 118.41 122.04 117.44 121.87C116.64 121.73 115.99 120.64 115.4 120.15C114.49 119.39 113.55 118.68 112.58 118C110.65 116.63 108.63 115.41 106.54 114.3C98.87 110.21 90.16 108 81.44 108.76C75.89 109.24 70.5 110.91 65.55 113.44C62.57 114.97 59.76 116.79 57.11 118.82C56.1 119.58 54.45 121.65 53.21 121.89C53.19 121.89 53.16 121.89 53.13 121.9Z" />
-            </g>
-          </g>
-        </svg>
-        <!--    Angry Emote    -->
-        <svg class="emotes incorrect-2" @click="answerHandler" id="incorrect-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 171 171" width="171" height="171">
-          <title>Angry</title>
-          <g id="Angry">
-            <g id="&lt;Group&gt;">
-              <g id="&lt;Group&gt;">
-                <g id="&lt;Group&gt;">
-                  <path id="&lt;Path&gt;" class="shp0-angry" d="M0.4 85.18C0.4 38.11 38.56 -0.05 85.64 -0.05C132.71 -0.05 170.87 38.11 170.87 85.18C170.87 132.26 132.71 170.42 85.64 170.42C38.56 170.42 0.4 132.26 0.4 85.18Z" />
-                </g>
-                <g id="&lt;Group&gt;">
-                  <path id="&lt;Path&gt;" class="shp1-angry" d="M130.23 12.43C138.72 25.68 143.64 41.44 143.64 58.34C143.64 105.42 105.48 143.58 58.4 143.58C42.06 143.58 26.78 138.97 13.81 130.99C28.96 154.64 55.47 170.32 85.64 170.32C132.71 170.32 170.87 132.16 170.87 85.08C170.87 54.36 154.61 27.43 130.23 12.43Z" />
-                </g>
-                <g id="&lt;Group&gt;">
-                  <path id="&lt;Path&gt;" class="shp2-angry" d="M11.99 94.17C11.99 50.47 47.42 15.04 91.12 15.04C116.67 15.04 139.38 27.15 153.85 45.93C140.19 22.21 114.57 6.24 85.23 6.24C41.53 6.24 6.09 41.67 6.09 85.38C6.09 103.54 12.22 120.26 22.5 133.62C15.81 122.01 11.99 108.54 11.99 94.17Z" />
-                </g>
-              </g>
-              <g id="&lt;Group&gt;">
-                <g id="&lt;Group&gt;">
-                  <g id="&lt;Group&gt;">
-                    <path id="&lt;Path&gt;" class="shp3-angry" d="M60.51 69.32C60.51 75.17 57.7 79.91 54.23 79.91C50.77 79.91 47.95 75.17 47.95 69.32C47.95 63.47 50.77 58.73 54.23 58.73C57.7 58.73 60.51 63.47 60.51 69.32Z" />
-                  </g>
-                  <g id="&lt;Group&gt;">
-                    <path id="&lt;Path&gt;" class="shp3-angry" d="M123.32 69.32C123.32 75.17 120.51 79.91 117.04 79.91C113.57 79.91 110.76 75.17 110.76 69.32C110.76 63.47 113.57 58.73 117.04 58.73C120.51 58.73 123.32 63.47 123.32 69.32Z" />
-                  </g>
-                </g>
-              </g>
-              <path id="&lt;Path&gt;" class="shp4-angry" d="M120.57 123.06C122.77 125.2 126.29 122.84 125.15 120C118.85 104.26 103.47 93.14 85.48 93.14C67.8 93.14 52.63 103.89 46.14 119.21C44.95 122.01 48.5 124.43 50.68 122.31C63.15 110.22 89.64 93.01 120.57 123.06Z" />
-              <g id="&lt;Group&gt;">
-                <path id="&lt;Path&gt;" class="shp3-angry" d="M71.94 54.59L66.22 60.3L47.15 41.23L52.87 35.52L71.94 54.59Z" />
-                <path id="&lt;Path&gt;" class="shp3-angry" d="M105.05 60.3L99.34 54.59L118.41 35.52L124.12 41.23L105.05 60.3Z" />
-              </g>
-            </g>
-          </g>
-        </svg>
-        <!--    Happy Emote    -->
-        <svg class="emotes incorrect-2" @click="answerHandler" id="incorrect-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172 171" width="172" height="171">
-          <title>Happy</title>
-          <g id="Object">
-            <g id="&lt;Group&gt;">
-              <g id="&lt;Group&gt;">
-                <g id="&lt;Group&gt;">
-                  <path id="&lt;Path&gt;" class="shp0-happy" d="M0.7 85.22C0.7 38.14 38.86 -0.02 85.94 -0.02C133.01 -0.02 171.18 38.14 171.18 85.22C171.18 132.29 133.01 170.45 85.94 170.45C38.86 170.45 0.7 132.29 0.7 85.22Z" />
-                </g>
-                <g id="&lt;Group&gt;">
-                  <path id="&lt;Path&gt;" class="shp1-happy" d="M130.53 12.47C139.02 25.72 143.94 41.48 143.94 58.38C143.94 105.46 105.78 143.62 58.71 143.62C42.36 143.62 27.09 139.01 14.11 131.03C29.26 154.68 55.77 170.35 85.94 170.35C133.01 170.35 171.18 132.19 171.18 85.12C171.18 54.39 154.92 27.47 130.53 12.47Z" />
-                </g>
-                <g id="&lt;Group&gt;">
-                  <path id="&lt;Path&gt;" class="shp2-happy" d="M12.29 94.21C12.29 50.5 47.72 15.07 91.42 15.07C116.97 15.07 139.69 27.18 154.15 45.97C140.49 22.25 114.88 6.28 85.53 6.28C41.83 6.28 6.4 41.71 6.4 85.41C6.4 103.57 12.52 120.3 22.8 133.65C16.11 122.04 12.29 108.57 12.29 94.21Z" />
-                </g>
-              </g>
-              <g id="&lt;Group&gt;">
-                <g id="&lt;Group&gt;">
-                  <g id="&lt;Group&gt;">
-                    <path id="&lt;Path&gt;" class="shp3-happy" d="M60.82 64.54C60.82 70.39 58.01 75.12 54.54 75.12C51.07 75.12 48.26 70.39 48.26 64.54C48.26 58.69 51.07 53.95 54.54 53.95C58.01 53.95 60.82 58.69 60.82 64.54Z" />
-                  </g>
-                  <g id="&lt;Group&gt;">
-                    <path id="&lt;Path&gt;" class="shp3-happy" d="M123.62 64.54C123.62 70.39 120.81 75.12 117.34 75.12C113.87 75.12 111.06 70.39 111.06 64.54C111.06 58.69 113.87 53.95 117.34 53.95C120.81 53.95 123.62 58.69 123.62 64.54Z" />
-                  </g>
-                </g>
-              </g>
-              <path id="&lt;Path&gt;" class="shp4-happy" d="M28.66 93.28C31.91 122.04 56.31 144.4 85.94 144.4C115.57 144.4 139.97 122.04 143.21 93.28L28.66 93.28Z" />
-              <path id="&lt;Path&gt;" class="shp5-happy" d="M46.38 128.66C56.7 138.41 70.61 144.4 85.94 144.4C100.6 144.4 113.98 138.92 124.15 129.9L123.62 128.66C85.16 109.91 46.9 128.4 46.38 128.66Z" />
-            </g>
-          </g>
-        </svg>
+        <emote-worried class="emotes"/>
+        <emote-angry class="emotes incorrect-2"/>
+        <emote-cool class="emotes incorrect-2"/>
       </div>
       <div class="tips-container">
         <p id="tip-1-right">Worried</p>
         <p class="incorrect-2" id="tip-2-right">Angry</p>
-        <p class="incorrect-2" id="tip-3-right">Happy</p>
+        <p class="incorrect-2" id="tip-3-right">Relaxing</p>
       </div>
       <div class="answer-container">
         <svg class="small-tick" id="green-tick-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.98 92.25">
@@ -342,6 +146,11 @@
             </g>
           </g>
         </svg>
+      </div>
+      <div class="masks-container">
+        <div id="correct-2" @click="answerHandler"></div>
+        <div id="incorrect-3" class="incorrect-2" @click="answerHandler"></div>
+        <div id="incorrect-4" class="incorrect-2" @click="answerHandler"></div>
       </div>
     </div>
 
@@ -447,9 +256,15 @@
 
 <script>
 import anime from "animejs";
+import EmoteTear from "@/components/feelingsQuestion/emotes/EmoteTear";
+import EmoteHappy from "@/components/feelingsQuestion/emotes/EmoteHappy";
+import EmoteWorried from "@/components/feelingsQuestion/emotes/EmoteWorried";
+import EmoteAngry from "@/components/feelingsQuestion/emotes/EmoteAngry";
+import EmoteCool from "@/components/feelingsQuestion/emotes/EmoteCool";
 
 export default {
   name: "Session2Page18",
+  components: {EmoteCool, EmoteAngry, EmoteWorried, EmoteHappy, EmoteTear},
   data() {
     return {
       correctAns: []
@@ -496,8 +311,8 @@ export default {
       }
     },
     answerHandler(e) {
-      let emoteId = e.target.farthestViewportElement.id;
-      switch (emoteId) {
+      let id = e.target.id;
+      switch (id) {
         case 'incorrect-1':
           this.animateRedTick('#red-tick-1-left');
           break;
@@ -513,12 +328,12 @@ export default {
         case 'correct-1':
           this.animateGreenTick('#green-tick-left');
           this.hideElements('.incorrect');
-          this.checkComplete(emoteId);
+          this.checkComplete(id);
           break;
         case 'correct-2':
           this.animateGreenTick('#green-tick-right');
           this.hideElements('.incorrect-2');
-          this.checkComplete(emoteId);
+          this.checkComplete(id);
           break;
       }
     },
@@ -536,14 +351,6 @@ export default {
 </script>
 
 <style scoped>
-.reward {
-  position: absolute;
-  height: auto;
-  width: 1vw;
-  left: 50vw;
-  top: 35vh;
-  opacity: 0;
-}
 .image {
   position: absolute;
   width: 49.7vw;
@@ -552,6 +359,14 @@ export default {
 }
 #right {
   right: 0
+}
+.reward {
+  position: absolute;
+  height: auto;
+  width: 1vw;
+  left: 50vw;
+  top: 35vh;
+  opacity: 0;
 }
 .text-box {
   position: absolute;
@@ -565,6 +380,20 @@ export default {
 }
 .text-box p {
   font-size: 1.8vw;
+}
+.masks-container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0 .5vw;
+  top: 4.9vh;
+}
+.masks-container div {
+  width: 5vw;
+  height: 5vw;
 }
 .tips-container {
   display: flex;
