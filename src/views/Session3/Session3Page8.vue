@@ -362,6 +362,13 @@ export default {
   align-items: flex-end;
 }
 
+.shp0-red { fill: #e57373 }
+.shp1-red { fill: #d24a43 }
+.shp2-red { fill: #ffffff }
+.shp0-green { fill: #8bc34a }
+.shp1-green { fill: #74b65f }
+.shp2-green { fill: #ffffff }
+
 .cls-1 {fill: none;}
 .cls-2 {isolation: isolate;}
 .cls-19,
