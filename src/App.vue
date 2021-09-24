@@ -25,8 +25,8 @@ import Session9 from "./views/Session9/Session9";
 import Session10 from "./views/Session10/Session10";
 import Session11 from "./views/Session11/Session11";
 import Session12 from "./views/Session12/Session12";
-
 import SessionIntroduction from "./views/SessionIntroduction";
+
 export default {
   name: "App",
   components: {
@@ -142,4 +142,14 @@ export default {
   .hide { display:none; }
   .show { display:block; }
 }
+
+tspan { white-space:pre }
+.cls-1-green-mark {isolation: isolate;}
+.cls-2-green-mark {fill: #fff;}
+.cls-4-green-mark {fill: #a1a1a1;mix-blend-mode: overlay;}
+.cls-5-green-mark {fill: #00c72e;}
+.cls-1-red-mark {isolation: isolate;}
+.cls-2-red-mark {fill: #fff;}
+.cls-3-red-mark {fill: #a1a1a1;mix-blend-mode: overlay;}
+.cls-4-red-mark {fill: #f52100;}
 </style>

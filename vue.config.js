@@ -5,7 +5,7 @@ module.exports = {
     pwa: {
         name: 'Fun Friends Skills',
         themeColor: '#00ce7c',
-        msTileColor: '#000000',
+        msTileColor: '#ffffff',
         appleMobileWebAppCapable: 'yes',
         appleMobileWebAppStatusBarStyle: 'black',
         manifestOptions: {
@@ -13,7 +13,7 @@ module.exports = {
             short_name: 'Fun Friends Skills',
             start_url: '.',
             display: 'standalone',
-            theme_color: '#00ce7c'
+            theme_color: '#00ce7c',
         },
         iconPaths: {
             favicon32: 'img/logos/favicon-32x32.png',

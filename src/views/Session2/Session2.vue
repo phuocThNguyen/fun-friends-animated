@@ -108,25 +108,4 @@ export default {
 }
 </script>
 
-<style>
-
-tspan { white-space:pre }
-
-.shp0-red { fill: #e57373 }
-.shp1-red { fill: #d24a43 }
-.shp2-red { fill: #ffffff }
-
-.shp0-green { fill: #8bc34a }
-.shp1-green { fill: #74b65f }
-.shp2-green { fill: #ffffff }
-
-.cls-1-green-mark {isolation: isolate;}
-.cls-2-green-mark {fill: #fff;}
-.cls-4-green-mark {fill: #a1a1a1;mix-blend-mode: overlay;}
-.cls-5-green-mark {fill: #00c72e;}
-
-.cls-1-red-mark {isolation: isolate;}
-.cls-2-red-mark {fill: #fff;}
-.cls-3-red-mark {fill: #a1a1a1;mix-blend-mode: overlay;}
-.cls-4-red-mark {fill: #f52100;}
-</style>
+<style scoped></style>
