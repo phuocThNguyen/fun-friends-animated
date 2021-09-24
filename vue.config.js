@@ -12,8 +12,10 @@ module.exports = {
             name: 'Fun Friends Skills',
             short_name: 'Fun Friends Skills',
             start_url: '.',
+            orientation: 'landscape',
             display: 'standalone',
             theme_color: '#00ce7c',
+            background_color: '#ffffff'
         },
         iconPaths: {
             favicon32: 'img/logos/favicon-32x32.png',
