@@ -818,44 +818,27 @@
     <div class="text-box">
       Draw a picture of your peaceful, quiet place.
     </div>
-    <div id="painterro"></div>
+    <drawing-canvas class="canvas" :canvasStyle="canvasStyle"/>
   </div>
 </template>
 
 <script>
 import anime from "animejs";
-import Painterro from "painterro";
+import DrawingCanvas from "@/components/drawingCanvas/DrawingCanvas";
+
 export default {
   name: "Session4Page11",
+  components: {DrawingCanvas},
   data() {
     return {
-      painterro: null
+      canvasStyle: {
+        width: 0.9,
+        height: 0.75,
+        isPicture: false,
+      }
     }
   },
   mounted() {
-    this.$nextTick(() => {
-      this.painterro = Painterro({
-        id: "painterro",
-        activeColor: '#000000',
-        activeFillColor: '#ffffff',
-        defaultPrimitiveShadowOn: 'true',
-        defaultTool: 'brush',
-        toolbarPosition: 'bottom',
-        availableLineWidths: [1,4,8,12,16,20],
-        availableEraserWidths: [1,4,8,12,16,20],
-        hiddenTools: ['pixelize','select','crop','text','rotate','resize',
-          'open','save','close','settings','redo','zoomin','zoomout'],
-        colorScheme: {
-          main: '#cfcfcf',
-          control: "#ffffff",
-          controlContent: '#434649',
-          controlShadow: '0px 0px 0px 0.5px #000',
-        },
-      })
-      this.painterro.show();
-      let info = document.querySelector('.ptro-info');
-      info.style.visibility = 'hidden';
-    });
     let vw = window.innerWidth;
     const yellowFlowers = document.getElementsByClassName('yellow-flower');
     yellowFlowers.forEach(flower => {
@@ -914,24 +897,7 @@ export default {
       easing: 'easeInOutSine',
       loop: true
     })
-    let mainContentAnimation = anime.timeline({
-      easing: 'linear',
-      delay: 700
-    });
-    mainContentAnimation
-        .add({
-          targets: '.text-box',
-          opacity: 0.90,
-          duration: 700,
-        })
-        .add({
-          targets: '#painterro',
-          opacity: 0.92
-        })
   },
-  beforeUnmount() {
-    this.painterro.hide()
-  }
 }
 </script>
 
@@ -940,14 +906,14 @@ export default {
   position: absolute;
   width: 40vw;
   left: 30vw;
-  top: 5vh;
+  top: 2vh;
   background-color: #000000;
   color: #ffffff;
   font-size: 2vw;
   z-index: 30;
   padding: 1vw;
   text-align: center;
-  opacity: 0;
+  opacity: 1;
 }
 .landscape {
   position: absolute;
@@ -956,13 +922,11 @@ export default {
   top: -17.65vh;
   height: auto;
 }
-#painterro {
+.canvas {
   position: absolute;
   top: 2vh;
-  left: 7vw;
-  right: 7vw;
-  bottom: 2vh;
-  opacity: 0;
+  left: 5vw;
+  opacity: 1;
   z-index: 20;
 }
 tspan { white-space:pre }

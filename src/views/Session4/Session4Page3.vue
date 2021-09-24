@@ -26,7 +26,7 @@ export default {
     let animation = anime.timeline({
       easing: 'linear',
       duration: 700,
-      delay: 1300
+      delay: 700
     });
     animation
         .add({
@@ -74,5 +74,8 @@ export default {
 .text-box p {
   font-size: 1.8vw;
   opacity: 0;
+}
+.text-box p:nth-of-type(2) {
+  color: #FF0000;
 }
 </style>

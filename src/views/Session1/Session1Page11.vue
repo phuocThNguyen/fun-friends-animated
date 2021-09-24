@@ -847,6 +847,7 @@ import DrawingCanvas from "@/components/drawingCanvas/DrawingCanvas";
 
 export default {
   name: "Session1Page11",
+  components: {DrawingCanvas},
   data() {
     return {
       canvasStyle: {
@@ -856,7 +857,6 @@ export default {
       }
     }
   },
-  components: {DrawingCanvas},
   mounted() {
     let vw = window.innerWidth;
     const yellowFlowers = document.getElementsByClassName('yellow-flower');

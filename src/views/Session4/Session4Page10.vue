@@ -5,14 +5,14 @@
     <div class="text-box">
       <h1>'Bubble' Breathing</h1>
       <p>Practise 'bubble' breathing with a straw.
-       Blow slowly out of the straw for a long time
-       .Slow and deep breathing calms you down.</p>
+        Blow slowly out of the straw for a long time.
+        Slow and deep breathing calms you down.</p>
       <p>After, practise ‘bubble’ breathing by
         lying down without the straw. Imagine
         yourself in a special space.</p>
       <p>If you want to, you can describe or
         draw a picture of your peaceful, quiet
-        place.</p>
+        place in the next page.</p>
       <p>Breathing deeply and
         slowly calms us down</p>
     </div>

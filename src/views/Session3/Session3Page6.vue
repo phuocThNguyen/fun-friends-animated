@@ -384,7 +384,7 @@ export default {
 .cls-15 {fill: #5a211e;}
 .cls-13 {clip-path: url(#clip-path-2);}
 .cls-14 {fill: #f0b000;}
-.cls-15 {font-size: 31.16px; font-family: AntipastoPro-DemiBold, AntipastoPro DemiBold; font-weight: 300;}
+.cls-15 {font-size: 31.16px; font-family: AntipastoPro-DemiBold, AntipastoPro DemiBold,serif; font-weight: 300;}
 .cls-16 {fill: #affc41;}
 .cls-17 {fill: #1dd3b0;}
 </style>

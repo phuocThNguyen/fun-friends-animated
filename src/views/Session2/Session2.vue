@@ -109,11 +109,7 @@ export default {
 </script>
 
 <style>
-.big-tick {
-  width: 7vw;
-  height: auto;
-  opacity: 0;
-}
+
 tspan { white-space:pre }
 
 .shp0-red { fill: #e57373 }

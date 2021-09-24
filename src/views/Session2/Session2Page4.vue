@@ -33,7 +33,7 @@
     </draggable>
     <div class="emotions-item mask" id="mask-happy">Happy</div>
 
-    <svg class="big-tick tick" id="green-tick-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333 333" width="333" height="333">
+    <svg class="tick" id="green-tick-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333 333" width="333" height="333">
       <title>Correct</title>
       <g id="Correct">
         <g id="&lt;Group&gt;">
@@ -45,7 +45,7 @@
         </g>
       </g>
     </svg>
-    <svg class="big-tick tick" id="green-tick-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333 333" width="333" height="333">
+    <svg class="tick" id="green-tick-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333 333" width="333" height="333">
       <title>Correct</title>
       <g id="Correct">
         <g id="&lt;Group&gt;">
@@ -57,7 +57,7 @@
         </g>
       </g>
     </svg>
-    <svg class="big-tick tick" id="green-tick-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333 333" width="333" height="333">
+    <svg class="tick" id="green-tick-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333 333" width="333" height="333">
       <title>Correct</title>
       <g id="Correct">
         <g id="&lt;Group&gt;">
@@ -69,7 +69,7 @@
         </g>
       </g>
     </svg>
-    <svg class="big-tick tick" id="green-tick-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333 333" width="333" height="333">
+    <svg class="tick" id="green-tick-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333 333" width="333" height="333">
       <title>Correct</title>
       <g id="Correct">
         <g id="&lt;Group&gt;">
@@ -82,7 +82,7 @@
       </g>
     </svg>
 
-    <svg class="big-tick tick" id="red-tick-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333 333" width="333" height="333">
+    <svg class="tick" id="red-tick-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333 333" width="333" height="333">
       <title>Incorrect</title>
       <g id="Incorrect">
         <g id="&lt;Group&gt;">
@@ -94,7 +94,7 @@
         </g>
       </g>
     </svg>
-    <svg class="big-tick tick" id="red-tick-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333 333" width="333" height="333">
+    <svg class="tick" id="red-tick-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333 333" width="333" height="333">
       <title>Incorrect</title>
       <g id="Incorrect">
         <g id="&lt;Group&gt;">
@@ -106,7 +106,7 @@
         </g>
       </g>
     </svg>
-    <svg class="big-tick tick" id="red-tick-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333 333" width="333" height="333">
+    <svg class="tick" id="red-tick-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333 333" width="333" height="333">
       <title>Incorrect</title>
       <g id="Incorrect">
         <g id="&lt;Group&gt;">
@@ -118,7 +118,7 @@
         </g>
       </g>
     </svg>
-    <svg class="big-tick tick" id="red-tick-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333 333" width="333" height="333">
+    <svg class="tick" id="red-tick-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333 333" width="333" height="333">
       <title>Incorrect</title>
       <g id="Incorrect">
         <g id="&lt;Group&gt;">
@@ -487,6 +487,9 @@ export default {
 .tick {
   position: absolute;
   z-index: 50;
+  width: 7vw;
+  height: auto;
+  opacity: 0;
 }
 #red-tick-1 {
   left: 41vw;
@@ -618,6 +621,7 @@ export default {
   align-self: center;
   justify-self: center;
 }
+
 .cls-1 {fill: none;}
 .cls-2 {isolation: isolate;}
 .cls-14,

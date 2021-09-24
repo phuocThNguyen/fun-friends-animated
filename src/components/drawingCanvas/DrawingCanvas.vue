@@ -88,10 +88,9 @@ export default {
       if (this.canvasStyle.isPicture) {
         let imageUrl = this.getImageUrl(this.canvasStyle.pictureUrl);
         el.style.backgroundImage = `url(${imageUrl})`;
-        el.style.backgroundColor = '#cccccc';
         el.style.backgroundPosition = 'center';
         el.style.backgroundRepeat = 'no-repeat';
-        el.style.backgroundSize = 'cover';
+        el.style.backgroundSize = 'contain';
       }
     })
   }
