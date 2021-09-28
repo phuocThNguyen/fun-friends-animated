@@ -12,7 +12,7 @@
       <p>Is Lucy having 'red' or 'green'
         thoughts?</p>
     </div>
-    <traffic-light correctAns="red" class="traffic-light"/>
+    <traffic-light correctAns="#red-light" class="traffic-light"/>
   </div>
 </template>
 

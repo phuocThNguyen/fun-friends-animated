@@ -1,6 +1,6 @@
 <template>
   <div class="traffic-light-container">
-    <svg @click="handleClick" class="light" id="green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 262.18 262.15">
+    <svg @click="handleClick" class="light" id="green-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 262.18 262.15">
       <g id="Layer_2" data-name="Layer 2">
         <g id="Layer_1-2" data-name="Layer 1">
           <path class="cls-1-green" d="M131.09,262.15A131.08,131.08,0,1,1,262.18,131.08,131.1,131.1,0,0,1,131.09,262.15Z" />
@@ -15,7 +15,7 @@
         </g>
       </g>
     </svg>
-    <svg @click="handleClick" class="light" id="yellow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 262.18 262.15">
+    <svg @click="handleClick" class="light" id="yellow-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 262.18 262.15">
       <g id="Layer_2" data-name="Layer 2">
         <g id="Layer_1-2" data-name="Layer 1">
           <path class="cls-1-yellow" d="M131.09,262.15A131.08,131.08,0,1,1,262.18,131.08,131.1,131.1,0,0,1,131.09,262.15Z" />
@@ -29,7 +29,7 @@
         </g>
       </g>
     </svg>
-    <svg @click="handleClick" class="light" id="red" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 262.18 262.15">
+    <svg @click="handleClick" class="light" id="red-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 262.18 262.15">
       <g id="Layer_2" data-name="Layer 2">
         <g id="Layer_1-2" data-name="Layer 1">
           <path class="cls-1-red" d="M131.09,262.15A131.08,131.08,0,1,1,262.18,131.08,131.1,131.1,0,0,1,131.09,262.15Z" />
@@ -137,19 +137,29 @@ export default {
   props: {
     correctAns: String
   },
+  data() {
+    return {
+      lightsArray: ['#green-light', '#yellow-light', '#red-light']
+    }
+  },
   methods: {
     handleClick(e) {
-      let targetLight = e.target.farthestViewportElement.id;
-      switch (targetLight) {
-        case 'green':
-          this.checkCorrectAns(document.querySelector('#green'))
-          break;
-        case 'yellow':
-          this.checkCorrectAns(document.querySelector('#yellow'))
-          break;
-        case 'red':
-          this.checkCorrectAns(document.querySelector('#red'))
-          break;
+      let targetLight;
+      // Check for the position that user click: If user did not click
+      // on a path then if is false. This if-condition is to prevent
+      // vue notify TypeError
+      if (e.target.farthestViewportElement) {
+        targetLight = `#${e.target.farthestViewportElement.id}`
+      } else {
+        targetLight = `#${e.target.id}`
+      }
+      if (targetLight !== this.correctAns) {
+        this.animateRedTick();
+        this.animateLightIncorrect(targetLight);
+      } else {
+        this.animateGreenTick();
+        this.animateLightCorrect(targetLight);
+        this.hideElements();
       }
     },
     animateRedTick() {
@@ -175,9 +185,10 @@ export default {
     animateLightIncorrect(target) {
       anime({
         targets: target,
-        opacity: 1,
-        duration: 200,
-        direction: 'alternate',
+        opacity: [
+          {value: 1, duration: 200},
+          {value: 0, duration: 200, delay: 800},
+        ],
         easing: 'linear'
       })
     },
@@ -189,15 +200,12 @@ export default {
         easing: 'linear'
       })
     },
-    checkCorrectAns(target) {
-      if (target.id === this.correctAns) {
-        this.animateGreenTick();
-        this.animateLightCorrect(target)
-      } else {
-        this.animateRedTick();
-        this.animateLightIncorrect(target)
-      }
-    }
+    hideElements() {
+      let incorrectLights = this.lightsArray.filter(light => light !== this.correctAns);
+      incorrectLights.forEach(light => {
+        document.querySelector(light).style.visibility = 'hidden';
+      })
+    },
   }
 }
 </script>
@@ -224,13 +232,13 @@ export default {
   opacity: 0;
   z-index: 10;
 }
-#green {
+#green-light {
   left: 2.75vw;
 }
-#yellow {
+#yellow-light {
   left: 15vw;
 }
-#red {
+#red-light {
   left: 27.25vw;
 }
 
