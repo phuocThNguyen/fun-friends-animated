@@ -50,7 +50,9 @@
         </g>
       </g>
     </svg>
-    <p class="bubble-text">I will fall off</p>
+    <p class="bubble-text">It's too fast.
+      <br>I'm scared.
+    </p>
     <svg class="bubble" id="right-bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 342 269" width="342" height="269">
       <title>Graphic Element</title>
       <defs>
@@ -112,7 +114,7 @@ export default {
 .bubble-text {
   position: absolute;
   font-size: 3vw;
-  top: 8vh;
+  top: 5vh;
   left: 5vw;
 }
 .bubble {

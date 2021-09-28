@@ -44,8 +44,6 @@ export default {
 <style scoped>
 .traffic-light {
   position: absolute;
-  width: auto;
-  height: auto;
   left: 30vw;
   bottom: 22vh;
   opacity: 0;

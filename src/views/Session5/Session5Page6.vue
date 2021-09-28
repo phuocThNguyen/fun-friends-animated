@@ -23,14 +23,14 @@ export default {
       delay: 200,
     })
     animation
-        .add({
-          targets: '.text-box',
-          opacity: 1
-        })
-        .add({
-          targets: '.traffic-light',
-          opacity: 1
-        })
+      .add({
+        targets: '.text-box',
+        opacity: 1
+      })
+      .add({
+        targets: '.traffic-light',
+        opacity: 1
+      })
   }
 }
 </script>
@@ -38,8 +38,6 @@ export default {
 <style scoped>
 .traffic-light {
   position: absolute;
-  width: auto;
-  height: auto;
   left: 30vw;
   bottom: 22vh;
   opacity: 0;

@@ -135,7 +135,7 @@ export default {
   name: 'TrafficLight',
   components: {RedTick, GreenTick},
   props: {
-    correctAns: String
+    correctAns: String,
   },
   data() {
     return {
