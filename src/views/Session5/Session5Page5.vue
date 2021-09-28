@@ -1,16 +1,11 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session5/447.png" alt="red" class="session-background">
+    <img src="../../assets/images/session5/86.png" alt="red" class="session-background">
     <div class="text-box">
-      <h1>Changing 'Red' to 'Green' Thoughts</h1>
-      <p><strong>Starting a new school</strong></p>
-      <p>Mum is taking Lucy to her new
-        school. In this picture, she feels
-        sad and scared. Why do you
-        think she feels sad and scared?
-        How do you think mum feels?</p>
-      <p>Is Lucy having 'red' or 'green'
-        thoughts?</p>
+      <h1>Sleeping in her own room</h1>
+      <p>Matilda is spending her first night sleeping by herself.</p>
+      <p>How is she feeling in this picture? Is Matilda having 'red'
+       or 'green' thoughts?</p>
     </div>
     <traffic-light correctAns="#red-light" class="traffic-light"/>
   </div>
@@ -20,7 +15,7 @@
 import TrafficLight from "@/components/trafficLights/TrafficLights";
 import anime from "animejs";
 export default {
-  name: 'Session5Page3',
+  name: 'Session5Page5',
   components: {TrafficLight},
   mounted() {
     let animation = anime.timeline({
@@ -29,14 +24,14 @@ export default {
       delay: 200,
     })
     animation
-      .add({
-        targets: '.text-box',
-        opacity: 1
-      })
-      .add({
-        targets: '.traffic-light',
-        opacity: 1
-      })
+        .add({
+          targets: '.text-box',
+          opacity: 1
+        })
+        .add({
+          targets: '.traffic-light',
+          opacity: 1
+        })
   }
 }
 </script>

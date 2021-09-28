@@ -1168,9 +1168,10 @@ export default {
   },
   mounted() {
     let vh = window.innerHeight;
+    let probability = 0.2;
     let snow = document.getElementsByClassName('snow')[0].children;
     snow.forEach(element => {
-      let random_boolean = Math.random() < 0.2;
+      let random_boolean = Math.random() < probability;
       if (random_boolean) {
         anime({
           targets: element,

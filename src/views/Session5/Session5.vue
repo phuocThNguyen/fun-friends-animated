@@ -29,6 +29,19 @@
 import Session5Page1 from "@/views/Session5/Session5Page1";
 import Session5Page2 from "@/views/Session5/Session5Page2";
 import Session5Page3 from "@/views/Session5/Session5Page3";
+import Session5Page4 from "@/views/Session5/Session5Page4";
+import Session5Page5 from "@/views/Session5/Session5Page5";
+import Session5Page6 from "@/views/Session5/Session5Page6";
+import Session5Page7 from "@/views/Session5/Session5Page7";
+import Session5Page8 from "@/views/Session5/Session5Page8";
+import Session5Page9 from "@/views/Session5/Session5Page9";
+import Session5Page10 from "@/views/Session5/Session5Page10";
+import Session5Page11 from "@/views/Session5/Session5Page11";
+import Session5Page12 from "@/views/Session5/Session5Page12";
+import Session5Page13 from "@/views/Session5/Session5Page13";
+import Session5Page14 from "@/views/Session5/Session5Page14";
+import Session5Page15 from "@/views/Session5/Session5Page15";
+import Session5Page16 from "@/views/Session5/Session5Page16";
 
 export default {
   name: "Session5",
@@ -36,7 +49,10 @@ export default {
     isNext: Boolean,
   },
   components: {
-    Session5Page1, Session5Page2, Session5Page3,
+    Session5Page1, Session5Page2, Session5Page3, Session5Page4, Session5Page5,
+    Session5Page6, Session5Page7, Session5Page8, Session5Page9, Session5Page10,
+    Session5Page11, Session5Page12, Session5Page13, Session5Page14, Session5Page15,
+    Session5Page16
   },
   data() {
     return {
@@ -44,11 +60,10 @@ export default {
         1: "Session5Page1", 2: "Session5Page2", 3: "Session5Page3", 4: "Session5Page4", 5: "Session5Page5",
         6: "Session5Page6", 7: "Session5Page7", 8: "Session5Page8", 9: "Session5Page9", 10: "Session5Page10",
         11: "Session5Page11", 12: "Session5Page12", 13: "Session5Page13", 14: "Session5Page14", 15: "Session5Page15",
-        16: "Session5Page16", 17: "Session5Page17", 18: "Session5Page18", 19: "Session5Page19", 20: "Session5Page20",
-        21: "Session5Page21", 22: "Session5Page22", 23: "Session5Page23"
+        16: "Session5Page16"
       },
       page: 1,
-      lastPage: 23,
+      lastPage: 16,
     }
   },
   created() {

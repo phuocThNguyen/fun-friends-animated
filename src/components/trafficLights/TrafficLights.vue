@@ -214,7 +214,7 @@ export default {
 .tick {
   position: absolute;
   top: 4vh;
-  left: 40.5vw;
+  left: 42vw;
   z-index: 20;
 }
 .traffic-light-svg {
