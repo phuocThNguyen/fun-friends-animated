@@ -134,6 +134,7 @@ export default {
   },
   methods: {
     handleClick(e) {
+      console.log(e)
       let targetLight = `#${e.target.id}-light`;
       if (targetLight !== this.correctAns) {
         this.animateRedTick();
@@ -197,7 +198,6 @@ export default {
 <style scoped>
 .mask-container {
   position: absolute;
-  background-color: rgba(255,255,255,0.4);
   width: 40vw;
   height: 13vw;
   z-index: 100;
@@ -206,7 +206,6 @@ export default {
   position: absolute;
   width: 12.5vw;
   height: 12.5vw;
-  background-color: rgba(0,0,0,0.7);
 }
 #green {
   left: 1.4vw;
