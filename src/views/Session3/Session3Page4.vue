@@ -114,7 +114,7 @@
 
 <script>
 import anime from "animejs";
-import EmotionPickInstruction from "@/components/emotionPickInstruction/EmotionPickInstruction";
+import EmotionPickInstruction from "@/components/instructions/emotionPickInstruction/EmotionPickInstruction";
 import FeelingQuestion from "@/components/feelingsQuestion/FeelingsQuestion";
 
 export default {

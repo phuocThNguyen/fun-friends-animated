@@ -45,6 +45,10 @@ import Session2Page17 from "@/views/Session2/Session2Page17";
 import Session2Page18 from "@/views/Session2/Session2Page18";
 import Session2Page19 from "@/views/Session2/Session2Page19";
 import Session2Page20 from "@/views/Session2/Session2Page20";
+import Session2Page21 from "@/views/Session2/Session2Page21";
+import Session2Page22 from "@/views/Session2/Session2Page22";
+import Session2Page23 from "@/views/Session2/Session2Page23";
+import Session2Page24 from "@/views/Session2/Session2Page24";
 import Session2Page25 from "@/views/Session2/Session2Page25";
 import Session2Page26 from "@/views/Session2/Session2Page26";
 
@@ -58,7 +62,8 @@ export default {
     Session2Page6, Session2Page7, Session2Page8, Session2Page9, Session2Page10,
     Session2Page11, Session2Page12, Session2Page13, Session2Page14, Session2Page15,
     Session2Page16, Session2Page17, Session2Page18, Session2Page19, Session2Page20,
-    Session2Page25, Session2Page26
+    Session2Page21, Session2Page22, Session2Page23, Session2Page24, Session2Page25,
+    Session2Page26
   },
   data() {
     return {

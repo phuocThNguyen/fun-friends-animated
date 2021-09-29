@@ -194,7 +194,7 @@
 <script>
 import anime from "animejs";
 import FeelingQuestion from "@/components/feelingsQuestion/FeelingsQuestion";
-import EmotionPickInstruction from "@/components/emotionPickInstruction/EmotionPickInstruction";
+import EmotionPickInstruction from "@/components/instructions/emotionPickInstruction/EmotionPickInstruction";
 
 export default {
   name: "Session3Page3",

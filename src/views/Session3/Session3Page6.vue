@@ -203,7 +203,7 @@
 import anime from "animejs";
 import EmoteCalm from "@/components/feelingsQuestion/emotes/EmoteCalm";
 import EmoteAngry from "@/components/feelingsQuestion/emotes/EmoteAngry";
-import EmotionPickInstruction from "@/components/emotionPickInstruction/EmotionPickInstruction";
+import EmotionPickInstruction from "@/components/instructions/emotionPickInstruction/EmotionPickInstruction";
 
 export default {
   name: "Session3Page6",
