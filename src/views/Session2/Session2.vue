@@ -47,10 +47,7 @@ import Session2Page19 from "@/views/Session2/Session2Page19";
 import Session2Page20 from "@/views/Session2/Session2Page20";
 import Session2Page21 from "@/views/Session2/Session2Page21";
 import Session2Page22 from "@/views/Session2/Session2Page22";
-import Session2Page23 from "@/views/Session2/Session2Page23";
-import Session2Page24 from "@/views/Session2/Session2Page24";
-import Session2Page25 from "@/views/Session2/Session2Page25";
-import Session2Page26 from "@/views/Session2/Session2Page26";
+
 
 export default {
   name: "Session2",
@@ -62,8 +59,7 @@ export default {
     Session2Page6, Session2Page7, Session2Page8, Session2Page9, Session2Page10,
     Session2Page11, Session2Page12, Session2Page13, Session2Page14, Session2Page15,
     Session2Page16, Session2Page17, Session2Page18, Session2Page19, Session2Page20,
-    Session2Page21, Session2Page22, Session2Page23, Session2Page24, Session2Page25,
-    Session2Page26
+    Session2Page21, Session2Page22,
   },
   data() {
     return {
@@ -72,8 +68,7 @@ export default {
         6: "Session2Page6", 7: "Session2Page7", 8: "Session2Page8", 9: "Session2Page9", 10: "Session2Page10",
         11: "Session2Page11", 12: "Session2Page12", 13: "Session2Page13", 14: "Session2Page14", 15: "Session2Page15",
         16: "Session2Page16", 17: "Session2Page17", 18: "Session2Page18", 19: "Session2Page19", 20: "Session2Page20",
-        21: "Session2Page21", 22: "Session2Page22", 23: "Session2Page23", 24: "Session2Page24", 25: "Session2Page25",
-        26: "Session2Page26",
+        21: "Session2Page21", 22: "Session2Page22",
       },
       page: 1,
       lastPage: 22,
