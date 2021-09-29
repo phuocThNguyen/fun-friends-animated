@@ -1,6 +1,6 @@
 <template>
   <div class="traffic-light-container">
-    <svg @click="handleClick" class="light" id="green-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 262.18 262.15">
+    <svg class="light" id="green-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 262.18 262.15">
       <g id="Layer_2" data-name="Layer 2">
         <g id="Layer_1-2" data-name="Layer 1">
           <path class="cls-1-green" d="M131.09,262.15A131.08,131.08,0,1,1,262.18,131.08,131.1,131.1,0,0,1,131.09,262.15Z" />
@@ -15,21 +15,7 @@
         </g>
       </g>
     </svg>
-    <svg @click="handleClick" class="light" id="yellow-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 262.18 262.15">
-      <g id="Layer_2" data-name="Layer 2">
-        <g id="Layer_1-2" data-name="Layer 1">
-          <path class="cls-1-yellow" d="M131.09,262.15A131.08,131.08,0,1,1,262.18,131.08,131.1,131.1,0,0,1,131.09,262.15Z" />
-          <path class="cls-2-yellow" d="M131.09,250.41a119.31,119.31,0,1,1,119.3-119.33A119.3,119.3,0,0,1,131.09,250.41Z" />
-          <path class="cls-3-yellow"
-                d="M34.84,147.67c-6.2,0-11.23-7.43-11.23-16.6s5-16.6,11.23-16.6,11.24,7.44,11.24,16.6S41,147.67,34.84,147.67Z" />
-          <path class="cls-3-yellow"
-                d="M111.71,131.1c0,46.21,12.55,88.07,32.88,118.55a119.31,119.31,0,0,0,0-237.09C124.25,43.06,111.71,84.93,111.71,131.1Z" />
-          <path class="cls-4-yellow"
-                d="M191.91,192.72c-23,0-41.71-27.58-41.71-61.64s18.66-61.66,41.71-61.66,41.75,27.63,41.75,61.66S215,192.72,191.91,192.72Z" />
-        </g>
-      </g>
-    </svg>
-    <svg @click="handleClick" class="light" id="red-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 262.18 262.15">
+    <svg class="light" id="red-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 262.18 262.15">
       <g id="Layer_2" data-name="Layer 2">
         <g id="Layer_1-2" data-name="Layer 1">
           <path class="cls-1-red" d="M131.09,262.15A131.08,131.08,0,1,1,262.18,131.08,131.1,131.1,0,0,1,131.09,262.15Z" />
@@ -121,6 +107,10 @@
         </g>
       </g>
     </svg>
+    <div class="mask-container">
+      <div class="mask" @click="handleClick" id="green"></div>
+      <div class="mask" @click="handleClick" id="red"></div>
+    </div>
     <red-tick class="tick" id="red-tick"/>
     <green-tick class="tick" id="green-tick"/>
   </div>
@@ -139,20 +129,12 @@ export default {
   },
   data() {
     return {
-      lightsArray: ['#green-light', '#yellow-light', '#red-light']
+      lightsArray: ['#green-light', '#red-light']
     }
   },
   methods: {
     handleClick(e) {
-      let targetLight;
-      // Check for the position that user click: If user did not click
-      // on a path then if is false. This if-condition is to prevent
-      // vue notify TypeError
-      if (e.target.farthestViewportElement) {
-        targetLight = `#${e.target.farthestViewportElement.id}`
-      } else {
-        targetLight = `#${e.target.id}`
-      }
+      let targetLight = `#${e.target.id}-light`;
       if (targetLight !== this.correctAns) {
         this.animateRedTick();
         this.animateLightIncorrect(targetLight);
@@ -201,16 +183,37 @@ export default {
       })
     },
     hideElements() {
-      let incorrectLights = this.lightsArray.filter(light => light !== this.correctAns);
-      incorrectLights.forEach(light => {
-        document.querySelector(light).style.visibility = 'hidden';
+      this.lightsArray.forEach(light => {
+        if (light !== this.correctAns) {
+          document.querySelector(light).style.visibility = 'hidden';
+        }
       })
+      document.querySelector('.mask-container').style.visibility = 'hidden';
     },
   }
 }
 </script>
 
 <style scoped>
+.mask-container {
+  position: absolute;
+  background-color: rgba(255,255,255,0.4);
+  width: 40vw;
+  height: 13vw;
+  z-index: 100;
+}
+.mask {
+  position: absolute;
+  width: 12.5vw;
+  height: 12.5vw;
+  background-color: rgba(0,0,0,0.7);
+}
+#green {
+  left: 1.4vw;
+}
+#red {
+  right: 1.4vw;
+}
 .tick {
   position: absolute;
   top: 4vh;
@@ -235,9 +238,6 @@ export default {
 #green-light {
   left: 2.75vw;
 }
-#yellow-light {
-  left: 15vw;
-}
 #red-light {
   left: 27.25vw;
 }
@@ -259,8 +259,4 @@ export default {
 .cls-2-red {fill: #eb1f25;}
 .cls-3-red {fill: #ed412b;}
 .cls-4-red {fill: #f37660;}
-.cls-1-yellow {fill: #f2a418;}
-.cls-2-yellow {fill: #ffc40c;}
-.cls-3-yellow {fill: #ffd33a;}
-.cls-4-yellow {fill: #ffeb67;}
 </style>

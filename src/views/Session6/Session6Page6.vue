@@ -4,15 +4,19 @@
       <h1>Choosing 'Red' and 'Green' thoughts:
         <br>Getting along
       </h1>
-      <p>Sam is getting ready for ‘Show and Tell’.</p>
-      <p>What thoughts might Sam be thinking?</p>
-      <p>What thoughts do you think could help
-        her feel better?</p>
-      <p>Share one idea with a friend!</p>
-      <p>Green thoughts help us stay calm</p>
+      <p>Annie’s brother, Tom, has knocked over Annie’s block
+        building that took her a long time to build. Think about
+        it with a friend. What could Annie be feeling?</p>
+      <p>What may be some <span class="red">‘red’</span> thoughts?</p>
+      <p>What can Annie do if she is having <span class="red">‘red’</span>
+        thoughts? As a group, can you think of some
+        <span class="green">'green'</span> thoughts
+        that could help her calm down?</p>
+
+      <p>Green thoughts help us be kind</p>
     </div>
-    <img src="../../assets/images/session5/50289.png" alt="red" class="images" id="image-top">
-    <img src="../../assets/images/session5/103011.png" alt="green" class="images" id="image-bottom">
+    <img src="../../assets/images/session5/1890.png" alt="red" class="images" id="image-top">
+    <img src="../../assets/images/session5/1892.png" alt="green" class="images" id="image-bottom">
     <svg class="traffic-light" id="top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1223 388" width="1223" height="388">
       <g id="Layer 1">
         <g id="&lt;Group&gt;">
@@ -129,38 +133,34 @@ export default {
     let text = document.getElementsByClassName('text-box')[0].children;
     let animation = anime.timeline({
       easing: 'linear',
-      delay: 500,
-      duration: 500
+      delay: 700,
+      duration: 700
     })
     animation
-        .add({
-          targets: text[1],
-          opacity: 1
-        })
-        .add({
-          targets: text[2],
-          opacity: 1
-        })
-        .add({
-          targets: text[3],
-          opacity: 1
-        })
-        .add({
-          targets: '#top',
-          opacity: 1
-        }, 2000)
-        .add({
-          targets: '#bottom',
-          opacity: 1
-        }, 2000)
-        .add({
-          targets: text[4],
-          opacity: 1
-        })
-        .add({
-          targets: text[5],
-          opacity: 1
-        })
+      .add({
+        targets: text[1],
+        opacity: 1
+      })
+      .add({
+        targets: text[2],
+        opacity: 1
+      })
+      .add({
+        targets: '#top',
+        opacity: 1
+      }, 1400)
+      .add({
+        targets: text[3],
+        opacity: 1
+      })
+      .add({
+        targets: '#bottom',
+        opacity: 1
+      }, 2800)
+      .add({
+        targets: text[4],
+        opacity: 1
+      })
   }
 }
 </script>
@@ -197,7 +197,7 @@ export default {
 .text-box p:last-child {
   padding: 2vh 0;
   font-size: 2.1vw;
-  margin-top: 15vh;
+  margin-top: 23vh;
   font-weight: bold;
   display: block;
   background-color: #00ce7c;

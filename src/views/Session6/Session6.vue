@@ -31,6 +31,11 @@ import Session6Page2 from "@/views/Session6/Session6Page2";
 import Session6Page3 from "@/views/Session6/Session6Page3";
 import Session6Page4 from "@/views/Session6/Session6Page4";
 import Session6Page5 from "@/views/Session6/Session6Page5";
+import Session6Page6 from "@/views/Session6/Session6Page6";
+import Session6Page7 from "@/views/Session6/Session6Page7";
+import Session6Page8 from "@/views/Session6/Session6Page8";
+import Session6Page9 from "@/views/Session6/Session6Page9";
+import Session6Page10 from "@/views/Session6/Session6Page10";
 
 export default {
   name: "Session6",
@@ -38,18 +43,17 @@ export default {
     isNext: Boolean,
   },
   components: {
-    Session6Page1, Session6Page2, Session6Page3, Session6Page4, Session6Page5
+    Session6Page1, Session6Page2, Session6Page3, Session6Page4, Session6Page5,
+    Session6Page6, Session6Page7, Session6Page8, Session6Page9, Session6Page10
   },
   data() {
     return {
       pages: {
         1: "Session6Page1", 2: "Session6Page2", 3: "Session6Page3", 4: "Session6Page4", 5: "Session6Page5",
         6: "Session6Page6", 7: "Session6Page7", 8: "Session6Page8", 9: "Session6Page9", 10: "Session6Page10",
-        11: "Session6Page11", 12: "Session6Page12", 13: "Session6Page13", 14: "Session6Page14", 15: "Session6Page15",
-        16: "Session6Page16"
       },
       page: 1,
-      lastPage: 16,
+      lastPage: 10,
     }
   },
   created() {
