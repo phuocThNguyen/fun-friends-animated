@@ -749,7 +749,7 @@ export default {
   width: 64vw;
   height: auto;
   left: 18vw;
-  top: 12vh;
+  top: 8vh;
   padding: 3vw;
   opacity: 0;
 }

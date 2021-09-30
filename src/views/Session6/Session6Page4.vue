@@ -132,8 +132,8 @@ export default {
     let text = document.getElementsByClassName('text-box')[0].children;
     let animation = anime.timeline({
       easing: 'linear',
-      delay: 700,
-      duration: 700
+      delay: 500,
+      duration: 500
     })
     animation
       .add({
@@ -151,7 +151,7 @@ export default {
       .add({
         targets: '#top',
         opacity: 1
-      }, 2800)
+      }, 2000)
       .add({
         targets: text[4],
         opacity: 1
@@ -159,7 +159,7 @@ export default {
       .add({
         targets: '#bottom',
         opacity: 1
-      }, 4200)
+      }, 3000)
       .add({
         targets: text[5],
         opacity: 1

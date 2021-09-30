@@ -1186,8 +1186,8 @@ export default {
 
     let mainContentAnimation = anime.timeline({
       easing: 'linear',
-      duration: 700,
-      delay: 700
+      duration: 500,
+      delay: 500
     });
     mainContentAnimation
       .add({
@@ -1225,7 +1225,7 @@ export default {
       .add({
         targets: '.canvas',
         opacity: 0.92,
-      }, 9800)
+      }, 7000)
   },
 };
 </script>
