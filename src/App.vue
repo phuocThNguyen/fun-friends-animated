@@ -69,12 +69,14 @@ export default {
       this.setSession(sessionNumber);
       this.isNext = isNext;
     },
+    // pwa related
     async accept() {
       this.showUpdateUI = false;
       await this.$workbox.messageSW({type : "SKIP_WAITING"})
     }
   },
   created() {
+    // pwa related
     if (this.$workbox) {
       this.$workbox.addEventListener('waiting', () => {
         this.showUpdateUI = true;
