@@ -342,7 +342,7 @@
           </g>
         </g>
       </svg>
-      <div class="trophy-text">Learn to ride a bike</div>
+      <div class="trophy-text">Goal: Learn to ride a bike</div>
     </div>
     <div class="wing-container" id="left-container">
       <h1>My Helper</h1>
@@ -373,7 +373,8 @@ export default {
     let plans = document.getElementsByClassName('plans');
     let bubbles = document.getElementsByClassName('bubble-container');
     let leftElements = document.getElementById('left-container').children;
-    console.log(leftElements)
+    let rightElements = document.getElementById('right-container').children;
+
     let animation = anime.timeline({
       easing: 'linear',
       duration: 500,
@@ -398,30 +399,31 @@ export default {
       .add({
         targets: leftElements[2],
         opacity: 1,
-        translateY: 0.1 * vh,
+        translateY: 0.2 * vh,
         duration: 200
-      }, 1700)
+      }, 1800)
       .add({
         targets: leftElements[3],
         opacity: 1,
-        translateY: 0.1 * vh,
+        translateY: 0.3 * vh,
         duration: 200
-      }, 1700)
+      }, 1900)
       .add({
         targets: leftElements[4],
         opacity: 1,
-        translateY: 0.1 * vh,
+        translateY: 0.4 * vh,
         duration: 200
-      }, 1700)
+      }, 2000)
       .add({
         targets: leftElements[5],
         opacity: 1,
-        translateY: 0.1 * vh,
+        translateY: 0.5 * vh,
         duration: 200
-      }, 1700)
+      }, 2100)
       .add({
         targets: plans[0],
-        opacity: 1
+        opacity: 1,
+        delay: 1000
       })
       .add({
         targets: bubbles[0],
@@ -460,9 +462,39 @@ export default {
         opacity: 1
       })
       .add({
-        targets: bubbles[4],
+        targets: rightElements[0],
         opacity: 1,
       })
+      .add({
+        targets: rightElements[1],
+        opacity: 1,
+        translateY: 0.1 * vh,
+        duration: 200
+      }, 10800)
+      .add({
+        targets: rightElements[2],
+        opacity: 1,
+        translateY: 0.2 * vh,
+        duration: 200
+      }, 10900)
+      .add({
+        targets: rightElements[3],
+        opacity: 1,
+        translateY: 0.3 * vh,
+        duration: 200
+      }, 11000)
+      .add({
+        targets: rightElements[4],
+        opacity: 1,
+        translateY: 0.4 * vh,
+        duration: 200
+      }, 11100)
+      .add({
+        targets: rightElements[5],
+        opacity: 1,
+        translateY: 0.5 * vh,
+        duration: 200
+      }, 11200)
   }
 }
 </script>
@@ -627,8 +659,8 @@ export default {
 }
 #step-1 {
   bottom: 2.5vh;
-  left: 36.5vw;
-  z-index: 1;
+  left: 37.5vw;
+  z-index: 2;
 }
 #step-2 {
   bottom: 15.5vh;
