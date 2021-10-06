@@ -38,6 +38,110 @@
       </g>
     </svg>
     <h1 class="title">Coping Step Plan</h1>
+    <div class="trophy-container">
+      <svg class="trophy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 962" width="860" height="962">
+        <g id="Layer 1">
+          <g id="&lt;Group&gt;">
+            <path id="&lt;Path&gt;" class="shp0-trophy" d="M353.6 709.23C378.49 663.96 394.44 594.29 394.44 516.15C394.44 508.93 394.3 501.79 394.04 494.73L466.08 494.73C465.82 501.79 465.68 508.93 465.68 516.15C465.68 594.29 481.63 663.96 506.52 709.23L353.6 709.23Z" />
+            <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: multiply">
+              <path id="&lt;Path&gt;" class="shp0-trophy" d="M465.68 516.15C465.68 508.93 465.82 501.79 466.08 494.73L394.04 494.73C394.3 501.79 394.44 508.93 394.44 516.15C394.44 530.08 393.93 543.74 392.95 557.04C392.95 557.04 392.96 557.04 392.96 557.04C416.07 542.9 440.81 542.9 467.17 557.04C466.2 543.74 465.68 530.08 465.68 516.15Z" />
+            </g>
+            <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: screen">
+              <path id="&lt;Path&gt;" class="shp0-trophy" d="M412.01 494.73L401.66 494.73C401.87 501.79 401.98 508.93 401.98 516.15C401.98 594.29 389.4 663.96 369.77 709.23L391.75 709.23C404.22 663.96 412.22 594.29 412.22 516.15C412.22 508.93 412.14 501.79 412.01 494.73Z" />
+            </g>
+            <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: multiply">
+              <path id="&lt;Path&gt;" class="shp0-trophy" d="M506.53 709.23L468.38 709.23C455.91 663.96 447.92 594.29 447.92 516.15C447.92 508.93 447.99 501.79 448.12 494.73L466.09 494.73C465.83 501.79 465.69 508.93 465.69 516.15C465.69 594.29 481.64 663.96 506.53 709.23Z" />
+            </g>
+            <g id="&lt;Group&gt;">
+              <g id="&lt;Group&gt;">
+                <path id="&lt;Compound Path&gt;" fill-rule="evenodd" class="shp0-trophy" d="M331.08 451.72C331.05 451.72 331.02 451.72 330.99 451.72C274.75 451.5 231.5 447.21 194.88 438.21C150.99 427.42 116.1 409.6 88.21 383.72C28.42 328.25 0.58 235.13 0.58 90.67C0.58 84.39 3.14 78.38 7.68 74.04C12.22 69.7 18.33 67.42 24.6 67.69C26.37 67.77 202.75 75.5 330.03 69.67C336.3 69.39 342.42 71.67 346.96 76.01C351.51 80.35 354.08 86.36 354.08 92.64L354.08 428.72C354.08 434.83 351.64 440.7 347.31 445.01C343 449.31 337.16 451.72 331.08 451.72ZM46.85 114.59C49.57 231.59 72.85 306.72 119.49 350C158.05 385.77 215.16 402.71 308.08 405.36L308.08 116.55C211.26 119.68 96.11 116.35 46.85 114.59Z" />
+                <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: multiply">
+                  <path id="&lt;Path&gt;" class="shp0-trophy" d="M67.75 93.38C56.02 93.01 46.3 102.64 46.84 114.37C46.84 114.44 46.85 114.51 46.85 114.59C96.53 116.35 211.76 119.66 308.08 116.55L308.08 94.64C223.12 97.38 124.04 95.15 67.75 93.38Z" />
+                </g>
+                <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: screen">
+                  <g id="&lt;Group&gt;">
+                    <path id="&lt;Path&gt;" class="shp0-trophy" d="M308.08 405.36L308.08 399.75C308.55 402.59 308.57 404.52 308.08 405.36Z" />
+                    <path id="&lt;Path&gt;" class="shp0-trophy" d="M46.84 114.37L47.36 114.6C47.19 114.6 47.02 114.59 46.85 114.59C49.57 231.59 72.85 306.72 119.49 350C158.05 385.77 215.16 402.71 308.08 405.36C303.74 412.7 289.22 414.51 264.49 410.77C97.02 408.68 24.46 309.88 46.84 114.37Z" />
+                  </g>
+                </g>
+                <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: screen">
+                  <g id="&lt;Group&gt;">
+                    <path id="&lt;Path&gt;" class="shp0-trophy" d="M353.46 432.31L353.46 96.24C353.46 89.95 350.89 83.94 346.35 79.6C341.81 75.26 335.68 72.98 329.41 73.26C202.14 79.09 25.75 71.36 23.99 71.28C17.72 71.01 11.6 73.3 7.07 77.63C3.93 80.64 1.73 84.44 0.68 88.57C1.18 83.06 3.65 77.9 7.68 74.04C12.22 69.7 18.33 67.42 24.6 67.69C26.37 67.77 202.75 75.5 330.03 69.67C336.3 69.39 342.42 71.67 346.96 76.01C351.51 80.35 354.08 86.36 354.08 92.64L354.08 428.72C354.08 430.65 353.83 432.56 353.36 434.4C353.43 433.71 353.46 433.01 353.46 432.31Z" />
+                  </g>
+                </g>
+                <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: multiply">
+                  <g id="&lt;Group&gt;">
+                    <path id="&lt;Path&gt;" class="shp0-trophy" d="M289.93 442.86C310.97 443.11 329.51 444.32 345.84 446.34C341.71 449.8 336.5 451.72 331.08 451.72C331.05 451.72 331.02 451.72 330.99 451.72C274.75 451.5 231.5 447.21 194.88 438.21C150.99 427.42 116.1 409.6 88.21 383.72C56.83 354.6 34.25 315.11 19.88 263.27C45.26 340.17 112.39 440.75 289.93 442.86Z" />
+                    <path id="&lt;Path&gt;" class="shp0-trophy" d="M4.46 176.63C4.46 176.63 4.46 176.63 4.46 176.63L4.46 176.63L4.46 176.63Z" />
+                  </g>
+                </g>
+              </g>
+              <g id="&lt;Group&gt;">
+                <path id="&lt;Compound Path&gt;" fill-rule="evenodd" class="shp0-trophy" d="M512.82 445.01C508.49 440.7 506.05 434.83 506.05 428.72L506.05 92.64C506.05 86.36 508.62 80.35 513.16 76.01C517.71 71.67 523.83 69.39 530.1 69.67C657.38 75.5 833.76 67.77 835.53 67.69C841.8 67.42 847.91 69.7 852.45 74.04C856.98 78.38 859.55 84.39 859.55 90.67C859.55 235.13 831.71 328.25 771.92 383.72C744.03 409.6 709.14 427.42 665.25 438.21C628.63 447.21 585.38 451.5 529.14 451.72C529.11 451.72 529.08 451.72 529.05 451.72C522.97 451.72 517.13 449.31 512.82 445.01ZM552.05 116.55L552.05 405.36C644.97 402.71 702.08 385.77 740.63 350C787.28 306.72 810.56 231.59 813.28 114.59C764.01 116.35 648.87 119.68 552.05 116.55Z" />
+                <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: multiply">
+                  <path id="&lt;Path&gt;" class="shp0-trophy" d="M552.05 94.64L552.05 116.55C648.37 119.66 763.6 116.35 813.28 114.59C813.28 114.51 813.29 114.44 813.29 114.37C813.82 102.64 804.11 93.01 792.37 93.38C736.09 95.15 637.01 97.38 552.05 94.64Z" />
+                </g>
+                <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: screen">
+                  <g id="&lt;Group&gt;">
+                    <path id="&lt;Path&gt;" class="shp0-trophy" d="M552.05 405.36L552.05 399.75C551.58 402.59 551.55 404.52 552.05 405.36Z" />
+                    <path id="&lt;Path&gt;" class="shp0-trophy" d="M813.29 114.37L812.77 114.6C812.94 114.6 813.11 114.59 813.28 114.59C810.56 231.59 787.28 306.72 740.63 350C702.08 385.77 644.97 402.71 552.05 405.36C556.39 412.7 570.91 414.51 595.64 410.77C763.11 408.68 835.66 309.88 813.29 114.37Z" />
+                  </g>
+                </g>
+                <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: screen">
+                  <g id="&lt;Group&gt;">
+                    <path id="&lt;Path&gt;" class="shp0-trophy" d="M506.67 432.31L506.67 96.24C506.67 89.95 509.24 83.94 513.78 79.6C518.32 75.26 524.44 72.98 530.72 73.26C657.99 79.09 834.37 71.36 836.14 71.28C842.41 71.01 848.53 73.3 853.06 77.63C856.2 80.64 858.39 84.44 859.45 88.57C858.95 83.06 856.48 77.9 852.45 74.04C847.91 69.7 841.8 67.42 835.53 67.69C833.76 67.77 657.38 75.5 530.1 69.67C523.83 69.39 517.71 71.67 513.16 76.01C508.62 80.35 506.05 86.36 506.05 92.64L506.05 428.72C506.05 430.65 506.3 432.56 506.77 434.4C506.7 433.71 506.67 433.01 506.67 432.31Z" />
+                  </g>
+                </g>
+                <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: multiply">
+                  <g id="&lt;Group&gt;">
+                    <path id="&lt;Path&gt;" class="shp0-trophy" d="M570.2 442.86C549.16 443.11 530.62 444.32 514.29 446.34C518.42 449.8 523.63 451.72 529.05 451.72C529.08 451.72 529.11 451.72 529.14 451.72C585.38 451.5 628.63 447.21 665.25 438.21C709.14 427.42 744.03 409.6 771.92 383.72C803.3 354.6 825.88 315.11 840.25 263.27C814.87 340.17 747.74 440.75 570.2 442.86Z" />
+                    <path id="&lt;Path&gt;" class="shp0-trophy" d="M855.67 176.63C855.67 176.63 855.67 176.63 855.67 176.63L855.67 176.63L855.67 176.63Z" />
+                  </g>
+                </g>
+              </g>
+              <g id="&lt;Group&gt;">
+                <path id="&lt;Path&gt;" class="shp0-trophy" d="M169.57 -0.07C163.29 35.92 159.93 73.82 159.93 112.96C159.93 347.83 280.81 538.23 429.93 538.23C579.05 538.23 699.93 347.83 699.93 112.96C699.93 73.82 696.57 35.92 690.28 -0.07L169.57 -0.07Z" />
+              </g>
+              <g id="&lt;Group&gt;">
+                <path id="&lt;Path&gt;" class="shp0-trophy" d="M169.57 -0.07C163.29 35.92 159.93 73.82 159.93 112.96C159.93 347.83 280.81 538.23 429.93 538.23C579.05 538.23 699.93 347.83 699.93 112.96C699.93 73.82 696.57 35.92 690.28 -0.07L169.57 -0.07Z" />
+              </g>
+              <g id="&lt;Group&gt;">
+                <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: multiply">
+                  <path id="&lt;Path&gt;" class="shp0-trophy" d="M690.28 -0.07L592.96 -0.07C596.9 35.92 599 73.82 599 112.96C599 347.83 523.3 538.23 429.93 538.23C579.05 538.23 699.93 347.83 699.93 112.96C699.93 73.82 696.57 35.92 690.28 -0.07Z" />
+                </g>
+              </g>
+              <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: screen">
+                <path id="&lt;Path&gt;" class="shp0-trophy" d="M260.86 112.96C260.86 73.82 262.96 35.92 266.9 -0.07L200.31 -0.07C194.77 35.92 191.81 73.82 191.81 112.96C191.81 347.83 298.42 538.23 429.93 538.23C336.55 538.23 260.86 347.83 260.86 112.96Z" />
+              </g>
+              <path id="&lt;Path&gt;" class="shp1-trophy" d="M290.19 73.47C258.84 73.47 233.43 48.05 233.43 16.7C233.43 48.05 208.02 73.47 176.67 73.47C208.02 73.47 233.43 98.88 233.43 130.23C233.43 98.88 258.84 73.47 290.19 73.47Z" />
+              <path id="&lt;Path&gt;" class="shp1-trophy" d="M312.69 130.23C300.27 130.23 290.19 120.15 290.19 107.73C290.19 120.15 280.12 130.23 267.69 130.23C280.12 130.23 290.19 140.3 290.19 152.73C290.19 140.3 300.27 130.23 312.69 130.23Z" />
+              <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: screen">
+                <path id="&lt;Path&gt;" class="shp0-trophy" d="M426.19 8.32C567.91 8.32 682.8 4.56 682.8 -0.07L169.57 -0.07C169.57 4.56 284.46 8.32 426.19 8.32Z" />
+              </g>
+            </g>
+            <path id="&lt;Path&gt;" class="shp0-trophy" d="M539.13 709.23L321 709.23C292.2 709.23 268.85 732.58 268.85 761.38L591.28 761.38C591.28 732.58 567.93 709.23 539.13 709.23Z" />
+            <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: screen">
+              <path id="&lt;Path&gt;" class="shp0-trophy" d="M321 713.14L539.13 713.14C566.61 713.14 589.12 734.41 591.12 761.38L591.28 761.38C591.28 732.58 567.93 709.23 539.13 709.23L321 709.23C292.2 709.23 268.85 732.58 268.85 761.38L269.01 761.38C271.01 734.41 293.51 713.14 321 713.14Z" />
+            </g>
+            <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: multiply">
+              <path id="&lt;Path&gt;" class="shp0-trophy" d="M591.28 761.38L532.95 761.38C532.95 732.58 518.05 709.23 499.67 709.23L539.13 709.23C567.93 709.23 591.28 732.58 591.28 761.38Z" />
+            </g>
+            <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: screen">
+              <path id="&lt;Path&gt;" class="shp0-trophy" d="M385.4 709.23L342.34 709.23C313.54 709.23 290.19 732.58 290.19 761.38L333.25 761.38C333.25 732.58 356.6 709.23 385.4 709.23Z" />
+            </g>
+            <g id="&lt;Group&gt;" style="opacity: 0.302;mix-blend-mode: multiply">
+              <g id="&lt;Group&gt;">
+                <path id="&lt;Path&gt;" class="shp2-trophy" d="M184.61 961.73L214.82 961.73C203.49 961.73 192.31 961.27 181.29 960.39C182.15 961.21 183.32 961.73 184.61 961.73Z" />
+              </g>
+            </g>
+            <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: multiply">
+              <path id="&lt;Path&gt;" class="shp0-trophy" d="M268.85 761.38L591.28 761.38C591.28 758.17 590.98 755.04 590.42 751.99L269.71 751.99C269.15 755.04 268.85 758.17 268.85 761.38Z" />
+            </g>
+          </g>
+        </g>
+      </svg>
+      <div class="trophy-text">Goal: Making new friends</div>
+    </div>
     <div class="plans" id="step-1">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
@@ -885,7 +989,7 @@
           </g>
         </svg>
         <div class="bubble-text">Green thought:
-          <br>Hooray, I did it!</div>
+          <br>Hooray, I did it.</div>
       </div>
       <svg class="koala" id="koala-sitting" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 679 687" width="679" height="687">
         <g>
@@ -1098,127 +1202,22 @@
         </g>
       </svg>
     </div>
-    <div class="trophy-container">
-      <svg class="trophy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 962" width="860" height="962">
-        <g id="Layer 1">
-          <g id="&lt;Group&gt;">
-            <path id="&lt;Path&gt;" class="shp0-trophy" d="M353.6 709.23C378.49 663.96 394.44 594.29 394.44 516.15C394.44 508.93 394.3 501.79 394.04 494.73L466.08 494.73C465.82 501.79 465.68 508.93 465.68 516.15C465.68 594.29 481.63 663.96 506.52 709.23L353.6 709.23Z" />
-            <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: multiply">
-              <path id="&lt;Path&gt;" class="shp0-trophy" d="M465.68 516.15C465.68 508.93 465.82 501.79 466.08 494.73L394.04 494.73C394.3 501.79 394.44 508.93 394.44 516.15C394.44 530.08 393.93 543.74 392.95 557.04C392.95 557.04 392.96 557.04 392.96 557.04C416.07 542.9 440.81 542.9 467.17 557.04C466.2 543.74 465.68 530.08 465.68 516.15Z" />
-            </g>
-            <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: screen">
-              <path id="&lt;Path&gt;" class="shp0-trophy" d="M412.01 494.73L401.66 494.73C401.87 501.79 401.98 508.93 401.98 516.15C401.98 594.29 389.4 663.96 369.77 709.23L391.75 709.23C404.22 663.96 412.22 594.29 412.22 516.15C412.22 508.93 412.14 501.79 412.01 494.73Z" />
-            </g>
-            <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: multiply">
-              <path id="&lt;Path&gt;" class="shp0-trophy" d="M506.53 709.23L468.38 709.23C455.91 663.96 447.92 594.29 447.92 516.15C447.92 508.93 447.99 501.79 448.12 494.73L466.09 494.73C465.83 501.79 465.69 508.93 465.69 516.15C465.69 594.29 481.64 663.96 506.53 709.23Z" />
-            </g>
-            <g id="&lt;Group&gt;">
-              <g id="&lt;Group&gt;">
-                <path id="&lt;Compound Path&gt;" fill-rule="evenodd" class="shp0-trophy" d="M331.08 451.72C331.05 451.72 331.02 451.72 330.99 451.72C274.75 451.5 231.5 447.21 194.88 438.21C150.99 427.42 116.1 409.6 88.21 383.72C28.42 328.25 0.58 235.13 0.58 90.67C0.58 84.39 3.14 78.38 7.68 74.04C12.22 69.7 18.33 67.42 24.6 67.69C26.37 67.77 202.75 75.5 330.03 69.67C336.3 69.39 342.42 71.67 346.96 76.01C351.51 80.35 354.08 86.36 354.08 92.64L354.08 428.72C354.08 434.83 351.64 440.7 347.31 445.01C343 449.31 337.16 451.72 331.08 451.72ZM46.85 114.59C49.57 231.59 72.85 306.72 119.49 350C158.05 385.77 215.16 402.71 308.08 405.36L308.08 116.55C211.26 119.68 96.11 116.35 46.85 114.59Z" />
-                <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: multiply">
-                  <path id="&lt;Path&gt;" class="shp0-trophy" d="M67.75 93.38C56.02 93.01 46.3 102.64 46.84 114.37C46.84 114.44 46.85 114.51 46.85 114.59C96.53 116.35 211.76 119.66 308.08 116.55L308.08 94.64C223.12 97.38 124.04 95.15 67.75 93.38Z" />
-                </g>
-                <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: screen">
-                  <g id="&lt;Group&gt;">
-                    <path id="&lt;Path&gt;" class="shp0-trophy" d="M308.08 405.36L308.08 399.75C308.55 402.59 308.57 404.52 308.08 405.36Z" />
-                    <path id="&lt;Path&gt;" class="shp0-trophy" d="M46.84 114.37L47.36 114.6C47.19 114.6 47.02 114.59 46.85 114.59C49.57 231.59 72.85 306.72 119.49 350C158.05 385.77 215.16 402.71 308.08 405.36C303.74 412.7 289.22 414.51 264.49 410.77C97.02 408.68 24.46 309.88 46.84 114.37Z" />
-                  </g>
-                </g>
-                <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: screen">
-                  <g id="&lt;Group&gt;">
-                    <path id="&lt;Path&gt;" class="shp0-trophy" d="M353.46 432.31L353.46 96.24C353.46 89.95 350.89 83.94 346.35 79.6C341.81 75.26 335.68 72.98 329.41 73.26C202.14 79.09 25.75 71.36 23.99 71.28C17.72 71.01 11.6 73.3 7.07 77.63C3.93 80.64 1.73 84.44 0.68 88.57C1.18 83.06 3.65 77.9 7.68 74.04C12.22 69.7 18.33 67.42 24.6 67.69C26.37 67.77 202.75 75.5 330.03 69.67C336.3 69.39 342.42 71.67 346.96 76.01C351.51 80.35 354.08 86.36 354.08 92.64L354.08 428.72C354.08 430.65 353.83 432.56 353.36 434.4C353.43 433.71 353.46 433.01 353.46 432.31Z" />
-                  </g>
-                </g>
-                <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: multiply">
-                  <g id="&lt;Group&gt;">
-                    <path id="&lt;Path&gt;" class="shp0-trophy" d="M289.93 442.86C310.97 443.11 329.51 444.32 345.84 446.34C341.71 449.8 336.5 451.72 331.08 451.72C331.05 451.72 331.02 451.72 330.99 451.72C274.75 451.5 231.5 447.21 194.88 438.21C150.99 427.42 116.1 409.6 88.21 383.72C56.83 354.6 34.25 315.11 19.88 263.27C45.26 340.17 112.39 440.75 289.93 442.86Z" />
-                    <path id="&lt;Path&gt;" class="shp0-trophy" d="M4.46 176.63C4.46 176.63 4.46 176.63 4.46 176.63L4.46 176.63L4.46 176.63Z" />
-                  </g>
-                </g>
-              </g>
-              <g id="&lt;Group&gt;">
-                <path id="&lt;Compound Path&gt;" fill-rule="evenodd" class="shp0-trophy" d="M512.82 445.01C508.49 440.7 506.05 434.83 506.05 428.72L506.05 92.64C506.05 86.36 508.62 80.35 513.16 76.01C517.71 71.67 523.83 69.39 530.1 69.67C657.38 75.5 833.76 67.77 835.53 67.69C841.8 67.42 847.91 69.7 852.45 74.04C856.98 78.38 859.55 84.39 859.55 90.67C859.55 235.13 831.71 328.25 771.92 383.72C744.03 409.6 709.14 427.42 665.25 438.21C628.63 447.21 585.38 451.5 529.14 451.72C529.11 451.72 529.08 451.72 529.05 451.72C522.97 451.72 517.13 449.31 512.82 445.01ZM552.05 116.55L552.05 405.36C644.97 402.71 702.08 385.77 740.63 350C787.28 306.72 810.56 231.59 813.28 114.59C764.01 116.35 648.87 119.68 552.05 116.55Z" />
-                <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: multiply">
-                  <path id="&lt;Path&gt;" class="shp0-trophy" d="M552.05 94.64L552.05 116.55C648.37 119.66 763.6 116.35 813.28 114.59C813.28 114.51 813.29 114.44 813.29 114.37C813.82 102.64 804.11 93.01 792.37 93.38C736.09 95.15 637.01 97.38 552.05 94.64Z" />
-                </g>
-                <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: screen">
-                  <g id="&lt;Group&gt;">
-                    <path id="&lt;Path&gt;" class="shp0-trophy" d="M552.05 405.36L552.05 399.75C551.58 402.59 551.55 404.52 552.05 405.36Z" />
-                    <path id="&lt;Path&gt;" class="shp0-trophy" d="M813.29 114.37L812.77 114.6C812.94 114.6 813.11 114.59 813.28 114.59C810.56 231.59 787.28 306.72 740.63 350C702.08 385.77 644.97 402.71 552.05 405.36C556.39 412.7 570.91 414.51 595.64 410.77C763.11 408.68 835.66 309.88 813.29 114.37Z" />
-                  </g>
-                </g>
-                <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: screen">
-                  <g id="&lt;Group&gt;">
-                    <path id="&lt;Path&gt;" class="shp0-trophy" d="M506.67 432.31L506.67 96.24C506.67 89.95 509.24 83.94 513.78 79.6C518.32 75.26 524.44 72.98 530.72 73.26C657.99 79.09 834.37 71.36 836.14 71.28C842.41 71.01 848.53 73.3 853.06 77.63C856.2 80.64 858.39 84.44 859.45 88.57C858.95 83.06 856.48 77.9 852.45 74.04C847.91 69.7 841.8 67.42 835.53 67.69C833.76 67.77 657.38 75.5 530.1 69.67C523.83 69.39 517.71 71.67 513.16 76.01C508.62 80.35 506.05 86.36 506.05 92.64L506.05 428.72C506.05 430.65 506.3 432.56 506.77 434.4C506.7 433.71 506.67 433.01 506.67 432.31Z" />
-                  </g>
-                </g>
-                <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: multiply">
-                  <g id="&lt;Group&gt;">
-                    <path id="&lt;Path&gt;" class="shp0-trophy" d="M570.2 442.86C549.16 443.11 530.62 444.32 514.29 446.34C518.42 449.8 523.63 451.72 529.05 451.72C529.08 451.72 529.11 451.72 529.14 451.72C585.38 451.5 628.63 447.21 665.25 438.21C709.14 427.42 744.03 409.6 771.92 383.72C803.3 354.6 825.88 315.11 840.25 263.27C814.87 340.17 747.74 440.75 570.2 442.86Z" />
-                    <path id="&lt;Path&gt;" class="shp0-trophy" d="M855.67 176.63C855.67 176.63 855.67 176.63 855.67 176.63L855.67 176.63L855.67 176.63Z" />
-                  </g>
-                </g>
-              </g>
-              <g id="&lt;Group&gt;">
-                <path id="&lt;Path&gt;" class="shp0-trophy" d="M169.57 -0.07C163.29 35.92 159.93 73.82 159.93 112.96C159.93 347.83 280.81 538.23 429.93 538.23C579.05 538.23 699.93 347.83 699.93 112.96C699.93 73.82 696.57 35.92 690.28 -0.07L169.57 -0.07Z" />
-              </g>
-              <g id="&lt;Group&gt;">
-                <path id="&lt;Path&gt;" class="shp0-trophy" d="M169.57 -0.07C163.29 35.92 159.93 73.82 159.93 112.96C159.93 347.83 280.81 538.23 429.93 538.23C579.05 538.23 699.93 347.83 699.93 112.96C699.93 73.82 696.57 35.92 690.28 -0.07L169.57 -0.07Z" />
-              </g>
-              <g id="&lt;Group&gt;">
-                <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: multiply">
-                  <path id="&lt;Path&gt;" class="shp0-trophy" d="M690.28 -0.07L592.96 -0.07C596.9 35.92 599 73.82 599 112.96C599 347.83 523.3 538.23 429.93 538.23C579.05 538.23 699.93 347.83 699.93 112.96C699.93 73.82 696.57 35.92 690.28 -0.07Z" />
-                </g>
-              </g>
-              <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: screen">
-                <path id="&lt;Path&gt;" class="shp0-trophy" d="M260.86 112.96C260.86 73.82 262.96 35.92 266.9 -0.07L200.31 -0.07C194.77 35.92 191.81 73.82 191.81 112.96C191.81 347.83 298.42 538.23 429.93 538.23C336.55 538.23 260.86 347.83 260.86 112.96Z" />
-              </g>
-              <path id="&lt;Path&gt;" class="shp1-trophy" d="M290.19 73.47C258.84 73.47 233.43 48.05 233.43 16.7C233.43 48.05 208.02 73.47 176.67 73.47C208.02 73.47 233.43 98.88 233.43 130.23C233.43 98.88 258.84 73.47 290.19 73.47Z" />
-              <path id="&lt;Path&gt;" class="shp1-trophy" d="M312.69 130.23C300.27 130.23 290.19 120.15 290.19 107.73C290.19 120.15 280.12 130.23 267.69 130.23C280.12 130.23 290.19 140.3 290.19 152.73C290.19 140.3 300.27 130.23 312.69 130.23Z" />
-              <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: screen">
-                <path id="&lt;Path&gt;" class="shp0-trophy" d="M426.19 8.32C567.91 8.32 682.8 4.56 682.8 -0.07L169.57 -0.07C169.57 4.56 284.46 8.32 426.19 8.32Z" />
-              </g>
-            </g>
-            <path id="&lt;Path&gt;" class="shp0-trophy" d="M539.13 709.23L321 709.23C292.2 709.23 268.85 732.58 268.85 761.38L591.28 761.38C591.28 732.58 567.93 709.23 539.13 709.23Z" />
-            <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: screen">
-              <path id="&lt;Path&gt;" class="shp0-trophy" d="M321 713.14L539.13 713.14C566.61 713.14 589.12 734.41 591.12 761.38L591.28 761.38C591.28 732.58 567.93 709.23 539.13 709.23L321 709.23C292.2 709.23 268.85 732.58 268.85 761.38L269.01 761.38C271.01 734.41 293.51 713.14 321 713.14Z" />
-            </g>
-            <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: multiply">
-              <path id="&lt;Path&gt;" class="shp0-trophy" d="M591.28 761.38L532.95 761.38C532.95 732.58 518.05 709.23 499.67 709.23L539.13 709.23C567.93 709.23 591.28 732.58 591.28 761.38Z" />
-            </g>
-            <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: screen">
-              <path id="&lt;Path&gt;" class="shp0-trophy" d="M385.4 709.23L342.34 709.23C313.54 709.23 290.19 732.58 290.19 761.38L333.25 761.38C333.25 732.58 356.6 709.23 385.4 709.23Z" />
-            </g>
-            <g id="&lt;Group&gt;" style="opacity: 0.302;mix-blend-mode: multiply">
-              <g id="&lt;Group&gt;">
-                <path id="&lt;Path&gt;" class="shp2-trophy" d="M184.61 961.73L214.82 961.73C203.49 961.73 192.31 961.27 181.29 960.39C182.15 961.21 183.32 961.73 184.61 961.73Z" />
-              </g>
-            </g>
-            <g id="&lt;Group&gt;" style="opacity: 0.502;mix-blend-mode: multiply">
-              <path id="&lt;Path&gt;" class="shp0-trophy" d="M268.85 761.38L591.28 761.38C591.28 758.17 590.98 755.04 590.42 751.99L269.71 751.99C269.15 755.04 268.85 758.17 268.85 761.38Z" />
-            </g>
-          </g>
-        </g>
-      </svg>
-      <div class="trophy-text">Goal: Making new friends</div>
-    </div>
     <div class="wing-container" id="left-container">
-      <p>My friend's parent</p>
-      <p>My siblings</p>
-      <p>My teacher</p>
-      <p>My friend</p>
       <p>A family member</p>
+      <p>My friends</p>
+      <p>My teacher</p>
+      <p>My siblings</p>
+      <p>My friend's parent</p>
       <h1>My Helper</h1>
     </div>
     <div class="wing-container" id="right-container">
-      <p>Play in the park</p>
-      <p>Fly a kite</p>
-      <p>Play a skipping rope</p>
-      <p>Go for a swim</p>
       <p>Play hide and seek</p>
+      <p>Go for a swim</p>
+      <p>Play a skipping rope</p>
+      <p>Fly a kite</p>
+      <p>Play in the park</p>
       <h1>Reward</h1>
     </div>
-
   </div>
 </template>
 
@@ -1227,82 +1226,87 @@ import anime from "animejs";
 
 export default {
   name: 'Session7Page6',
+  methods: {
+    displayInit(left, center, right) {
+      let animation = anime.timeline({
+        easing: 'linear',
+        delay: 1000,
+        duration: 300,
+      })
+      animation
+        .add({
+          targets: left,
+          opacity: 1
+        })
+        .add({
+          targets: center,
+          opacity: 1
+        }, 0)
+        .add({
+          targets: right,
+          opacity: 1
+        }, 0)
+    },
+    displaySteps(left, koala, bubble, plan, right, delay, direction, hide) {
+      let vw = window.innerWidth;
+      let vh = window.innerHeight;
+      let animation = anime.timeline({
+        easing: 'linear',
+        delay: 2000,
+        duration: 300
+      });
+      animation
+        .add({
+          targets: left,
+          opacity: 1,
+        }, delay)
+        .add({
+          targets: koala,
+          opacity: 1,
+        }, delay)
+        .add({
+          targets: bubble,
+          opacity: 1,
+        }, delay)
+        .add({
+          targets: plan,
+          opacity: 1,
+        }, delay)
+        .add({
+          targets: right,
+          opacity: 1,
+        }, delay)
+        .add({
+          targets: koala,
+          opacity: hide ? 0 : 1,
+          delay: 4000
+        })
+        .add({
+          targets: bubble,
+          scale: hide ? 0.7 : 1,
+          translateX: hide ? (direction === 'left' ? -0.17 * vw : 0.17 * vw) : 0,
+          translateY: hide ? 0.16 * vh : 0,
+        }, delay + 4300)
+    },
+  },
   mounted() {
     let plans = document.getElementsByClassName('plans');
     let bubbles = document.getElementsByClassName('bubble-container');
-    console.log(bubbles[0])
     let leftElements = document.getElementById('left-container').children;
     let rightElements = document.getElementById('right-container').children;
+    let trophy = document.querySelector('.trophy-container');
     let koalaStanding = document.querySelector('#koala-standing');
     let koalaClimbing = document.querySelectorAll('.koala-climbing');
+    let koalaSitting = document.querySelector('#koala-sitting');
+    let timeInit = 1300;
+    let timeStep = 4600;
 
-    let animation = anime.timeline({
-      easing: 'linear',
-      duration: 500,
-      delay: 500,
-    })
-    animation
-      .add({
-        targets: '.trophy-container',
-        opacity: 1
-      })
-      .add({
-        targets: leftElements[5],
-        opacity: 1
-      }, 0)
-      .add({
-        targets: rightElements[5],
-        opacity: 1
-      }, 0)
-      .add({
-        targets: plans[0],
-        opacity: 1
-      })
-      .add({
-        targets: koalaStanding,
-        opacity: 1,
-      }, 1200)
-
-      .add({
-        targets: leftElements[0],
-        opacity: 1
-      })
-      .add({
-        targets: rightElements[0],
-        opacity: 1
-      }, 2500)
-      .add({
-        targets: koalaStanding,
-        opacity: 0
-      })
-      .add({
-        targets: plans[1],
-        opacity: 1
-      })
-      .add({
-        targets: koalaClimbing[0],
-        opacity: 1,
-      }, 3700)
-      .add({
-        targets: bubbles[0],
-        opacity: 1
-      }, 4200)
-      .add({
-        targets: leftElements[1],
-        opacity: 1
-      })
-      .add({
-        targets: rightElements[1],
-        opacity: 1
-      }, 5500)
-      .add({
-        targets: koalaClimbing[0],
-        opacity: 0
-      })
-      .add({
-        targets: bubbles[0],
-        opacity: 0
-      }, 6800)
+    this.displayInit(leftElements[5], trophy, rightElements[5]);
+    this.displaySteps(leftElements[0], koalaStanding, null, plans[0], rightElements[0], timeInit, 'left', true);
+    this.displaySteps(leftElements[1], koalaClimbing[0], bubbles[0], plans[1], rightElements[1], timeInit + timeStep, 'left', true);
+    this.displaySteps(leftElements[2], koalaClimbing[1], bubbles[1], plans[2], rightElements[2], timeInit + timeStep*2, 'right', true);
+    this.displaySteps(leftElements[3], koalaClimbing[2], bubbles[2], plans[3], rightElements[3], timeInit + timeStep*3, 'left', true);
+    this.displaySteps(leftElements[4], koalaSitting, bubbles[3], plans[4], rightElements[4], timeInit + timeStep*4, 'left', false);
   }
 }
 </script>
@@ -1315,7 +1319,6 @@ export default {
 .koala {
   position: absolute;
   width: auto;
-  z-index: 10;
   opacity: 0;
 }
 #koala-standing {
@@ -1326,7 +1329,7 @@ export default {
 #koala-climbing-1 {
   transform: scaleX(-1) rotate(-90deg);
   height: 15vh;
-  left: 20vw;
+  left: 21vw;
   bottom: -1vh;
 }
 #koala-climbing-2 {
@@ -1342,10 +1345,9 @@ export default {
   bottom: -1vh;
 }
 #koala-sitting {
-  transform: scaleX(-1);
   height: 15vh;
-  left: 19vw;
-  top: -5vh;
+  left: -10vw;
+  top: -5.5vh;
 }
 .wing-container {
   position: absolute;
@@ -1354,10 +1356,10 @@ export default {
 }
 .wing-container h1 {
   position: absolute;
-  top: -5vh;
+  top: -15vh;
   background-color: rgba(0, 206, 124, 1);
   width: 100%;
-  padding: 1vh 1vw;
+  padding: 2vh 1vw;
   color: #ffffff;
   border-radius: 5px;
   font-size: 3.5vw;
@@ -1369,48 +1371,42 @@ export default {
   width: 100%;
   text-align: center;
   background-color: rgba(0, 206, 124, 1);
-  padding: 2vh .5vw;
+  padding: 1vh .5vw;
   color: #ffffff;
   border-radius: 5px;
   font-size: 2vw;
   opacity: 0;
   margin-bottom: 0;
 }
+
 .wing-container p:nth-child(1) {
-  top: 62vh;
+  top: 58vh;
 }
 .wing-container p:nth-child(2) {
-  top: 49vh;
+  top: 45.5vh;
 }
 .wing-container p:nth-child(3) {
-  top: 35vh;
+  top: 32.5vh;
 }
 .wing-container p:nth-child(4) {
-  top: 22.5vh;
+  top: 19.5vh;
 }
 .wing-container p:nth-child(5) {
-  top: 5vh;
+  top: 5.5vh;
 }
 #left-container {
-  left: 7vw;
-}
-#left-container h1 {
-  left: -6vw;
+  left: 2vw;
 }
 #right-container {
-  right: 7vw;
-}
-#right-container h1 {
-  right: -6vw;
+  right: 2vw;
 }
 .trophy-container {
   position: absolute;
-  left: 18vw;
+  left: 50vw;
   top: 10vh;
   width: 20vw;
   height: 24vh;
   opacity: 0;
-  z-index: 10;
 }
 .trophy {
   position: absolute;
@@ -1443,6 +1439,7 @@ export default {
   position: absolute;
   width: 20vw;
   height: 25vh;
+  z-index: 10;
   opacity: 0;
 }
 #step-2 .bubble-container {
@@ -1454,21 +1451,19 @@ export default {
   top: -24vh;
 }
 #step-4 .bubble-container {
-  left: 35vw;
-  top: -26vh;
+  top: -23vh;
+  left: 33vw;
 }
 #step-5 .bubble-container {
-  left: 28vw;
+  left: -2vw;
   top: -20vh;
 }
-
 #step-3 .bubble {
   transform: rotate(7deg);
 }
 #step-3 .bubble-text {
   left: 1vw;
 }
-
 #step-2 .bubble,
 #step-4 .bubble,
 #step-5 .bubble {
@@ -1479,7 +1474,6 @@ export default {
 #step-5 .bubble-text{
   left: 2vw;
 }
-
 .bubble {
   position: absolute;
   height: auto;
@@ -1532,36 +1526,36 @@ export default {
   font-size: 1.7vw;
 }
 #step-1 {
-  bottom: 2.5vh;
+  top: 77vh;
   left: 37.5vw;
   z-index: 2;
 }
 #step-2 {
-  bottom: 15.5vh;
+  top: 64vh;
   left: 37vw;
   z-index: 1;
 }
 #step-3 {
-  bottom: 28.5vh;
+  top: 51vh;
   left: 35.5vw;
   z-index: 5;
 }
 #step-4 {
-  bottom: 41.5vh;
+  top: 38vh;
   left: 34.2vw;
   z-index: 4;
 }
 #step-5 {
   top: 25vh;
   left: 34vw;
-  z-index: 1;
+  z-index: 5;
 }
-#step-2 .text,
-#step-3 .text {
-  font-size: 1.2vw;
-}
-#step-5 .text  {
+#step-5 .text {
   font-size: 1.4vw;
+}
+#step-3 .text,
+#step-2 .text {
+  font-size: 1.2vw;
 }
 .tree {
   position: absolute;
