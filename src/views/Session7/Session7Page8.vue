@@ -943,7 +943,7 @@
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
       <div class="text">5) Speak in front of the class with a brave
-        voice, look people in the eye and smile..</div>
+        voice, look people in the eye and smile.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 342 269" width="342" height="269">
           <title>Graphic Element</title>

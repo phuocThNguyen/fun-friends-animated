@@ -88,7 +88,7 @@
             </g>
           </g>
         </svg>
-        <textarea class="bubble-text">Green thought: </textarea>
+        <textarea class="bubble-text" placeholder="Green thought:"/>
       </div>
     </div>
     <div class="plans" id="step-3">
@@ -136,7 +136,7 @@
             </g>
           </g>
         </svg>
-        <textarea class="bubble-text">Green thought: </textarea>
+        <textarea class="bubble-text" placeholder="Green thought:"/>
       </div>
     </div>
     <div class="plans" id="step-4">
@@ -184,7 +184,7 @@
             </g>
           </g>
         </svg>
-        <textarea class="bubble-text">Green thought: </textarea>
+        <textarea class="bubble-text" placeholder="Green thought:"/>
       </div>
     </div>
     <div class="plans" id="step-5">
@@ -232,7 +232,7 @@
             </g>
           </g>
         </svg>
-        <textarea class="bubble-text">Green thought: </textarea>
+        <textarea class="bubble-text" placeholder="Green thought:"/>
       </div>
     </div>
     <div class="trophy-container">
@@ -337,7 +337,7 @@
           </g>
         </g>
       </svg>
-      <textarea class="trophy-text">Goal:</textarea>
+      <textarea class="trophy-text" placeholder="Goal:"></textarea>
     </div>
     <div class="wing-container" id="left-container">
       <input type="text">
@@ -355,12 +355,16 @@
       <input type="text">
       <h1>Reward</h1>
     </div>
+    <Modal text="Tap on the trophy, bubbles and
+      tiles to type your ideas!"/>
   </div>
 </template>
 
 <script>
+import Modal from "@/components/modal/Modal";
 export default {
   name: 'Session7Page10',
+  components: {Modal},
 }
 </script>
 

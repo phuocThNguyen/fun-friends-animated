@@ -837,7 +837,6 @@
 
     </div>
     <drawing-canvas class="canvas" :canvasStyle='canvasStyle'/>
-
   </div>
 </template>
 
