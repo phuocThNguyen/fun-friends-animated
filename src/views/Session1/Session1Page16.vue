@@ -28,6 +28,7 @@ export default {
         height: 0.55,
         isPicture: true,
         pictureUrl: "session1/World-Map-ai.jpg",
+        backgroundSize: 'contain'
       },
     }
   },

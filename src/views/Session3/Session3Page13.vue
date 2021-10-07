@@ -25,7 +25,8 @@ export default {
         width: 1,
         height: 0.7,
         isPicture: true,
-        pictureUrl: 'session3/bubbles-background2.jpg'
+        pictureUrl: 'session3/bubbles-background2.jpg',
+        backgroundSize: 'cover'
       }
     }
   },

@@ -90,7 +90,7 @@ export default {
         el.style.backgroundImage = `url(${imageUrl})`;
         el.style.backgroundPosition = 'center';
         el.style.backgroundRepeat = 'no-repeat';
-        el.style.backgroundSize = 'contain';
+        el.style.backgroundSize = this.canvasStyle.backgroundSize;
       }
     })
   }

@@ -132,15 +132,6 @@ export default {
       })
     }
   },
-  mounted() {
-    anime({
-      targets: '.content-container',
-      opacity: 0.95,
-      easing: 'linear',
-      delay: 1000,
-      duration: 1000
-    })
-  }
 }
 </script>
 

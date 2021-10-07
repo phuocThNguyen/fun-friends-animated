@@ -12,7 +12,52 @@
 </template>
 
 <script>
+import anime from "animejs";
+
 export default {
-  name: 'Session8Page4'
+  name: 'Session8Page4',
+  mounted() {
+    let text = document.querySelector('.text-box').children;
+    let animation = anime.timeline({
+      easing: 'linear',
+      delay: 500,
+      duration: 500
+    });
+    animation
+      .add({
+        targets: text[0],
+        opacity: 1
+      })
+      .add({
+        targets: text[1],
+        opacity: 1
+      })
+  }
 }
 </script>
+
+<style scoped>
+.text-box {
+  position: absolute;
+  padding: 4vh 2vw;
+  width: 100%;
+}
+.text-box h1 {
+  font-size: 3vw;
+  margin-bottom: 1vh;
+  opacity: 0;
+}
+.text-box p {
+  font-size: 2vw;
+  opacity: 0;
+}
+.images {
+  position: absolute;
+  height: 70vh;
+  width: 49vw;
+  bottom: 0;
+}
+.images:nth-child(2) {
+  right: 0;
+}
+</style>

@@ -435,7 +435,7 @@
       <p>&middot; Look people in the eye and smile.</p>
       <p>&middot; Use a brave voice and make yourself big.</p>
       <p>&middot; Try your best and give it a go. </p>
-      <p>&middot; Believe in yourself</p>
+      <p>&middot; Believe in yourself.</p>
     </div>
   </div>
 </template>

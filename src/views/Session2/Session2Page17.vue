@@ -24,13 +24,11 @@ export default {
         width: 1,
         height: 0.8,
         isPicture: true,
-        pictureUrl: 'session2/feeling-tree.png'
+        pictureUrl: 'session2/feeling-tree.png',
+        backgroundSize: 'cover'
       }
     }
   },
-  mounted() {
-
-  }
 }
 </script>
 
