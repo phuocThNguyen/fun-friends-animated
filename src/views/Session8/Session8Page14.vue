@@ -252,9 +252,9 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.8);
-  width: 72vw;
+  width: 76vw;
   height: auto;
-  left: 14vw;
+  left: 12vw;
   top: 15vh;
   padding: 2vh 3vw;
   opacity: 0;

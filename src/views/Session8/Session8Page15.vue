@@ -249,7 +249,7 @@ export default {
 .star-text {
   position: absolute;
   right: 14vw;
-  bottom: 18vh;
+  bottom: 18.5vh;
   text-align: center;
   opacity: 0;
   z-index: 55;
