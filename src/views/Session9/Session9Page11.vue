@@ -13,7 +13,7 @@ export default {
   data() {
     return {
       canvasStyle: {
-        width: 0.9,
+        width: 0.96,
         height: 0.8,
         isPicture: true,
         pictureUrl: "session9/drawing-canvas.png",
@@ -27,7 +27,7 @@ export default {
 <style scoped>
 .canvas {
   position: absolute;
-  left: 5vw;
+  left: 2vw;
   top: 1vh;
 }
 .text {

@@ -264,14 +264,14 @@ export default {
       delay: 500
     });
     animation
-        .add({
-          targets: ".title",
-          opacity: 1,
-        })
-        .add({
-          targets: "#line-1",
-          color: '#000',
-        })
+      .add({
+        targets: ".title",
+        opacity: 1,
+      })
+      .add({
+        targets: "#line-1",
+        color: '#000',
+      })
   }
 }
 </script>
