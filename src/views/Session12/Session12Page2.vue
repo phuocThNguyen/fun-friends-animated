@@ -1,6 +1,12 @@
 <template>
   <div class="interactive-container">
-
+    <img src="../../assets/images/session12/50044.png" alt="party" class="session-background">
+    <div class="text-box">
+      <h1>Games Party: A Celebration</h1>
+      <p>Together with your family, make up a game to practice
+      the FRIENDS skills.</p>
+      <p>Share your game with other children in the FRIENDS party.</p>
+    </div>
   </div>
 </template>
 
@@ -10,4 +16,18 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.text-box {
+  position: absolute;
+  padding: 4vh 3vw;
+}
+.text-box h1 {
+  font-size: 3vw;
+  font-weight: bold;
+  margin-bottom: 2vh;
+}
+.text-box p {
+  font-size: 2vw;
+  margin-bottom: 0;
+}
+</style>
