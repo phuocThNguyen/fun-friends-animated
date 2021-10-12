@@ -218,7 +218,6 @@ export default {
   mounted() {
     let vw = window.innerWidth;
     let text = document.getElementsByClassName('text-box')[0].children;
-    console.log(text)
 
     anime({
       targets: this.$refs.cloud1,

@@ -13,6 +13,7 @@
 
 <script>
 import Navigation from "./views/UI/Navigation";
+import SessionIntroduction from "./views/SessionIntroduction";
 import Session1 from "./views/Session1/Session1";
 import Session2 from "./views/Session2/Session2";
 import Session3 from "./views/Session3/Session3";
@@ -25,7 +26,8 @@ import Session9 from "./views/Session9/Session9";
 import Session10 from "./views/Session10/Session10";
 import Session11 from "./views/Session11/Session11";
 import Session12 from "./views/Session12/Session12";
-import SessionIntroduction from "./views/SessionIntroduction";
+import Appendix from "@/views/Appendix/Appendix";
+
 
 export default {
   name: "App",
@@ -35,7 +37,7 @@ export default {
     Session1, Session2, Session3, Session4, Session5,
     Session6, Session7, Session8, Session9, Session10,
     Session11, Session12,
-    // SessionTesting,
+    Appendix
   },
   data() {
     return {
@@ -53,9 +55,7 @@ export default {
         10: ['Session10', 'Session 10: Talking about someone to look up to in our lives'],
         11: ['Session11', 'Session 11: Talking about support teams'],
         12: ['Session12', 'Session 12: Talking about being happy with our efforts!'],
-        13: ['Appendix1', 'Appendix 1:', '\'Green\' thoughts to Enjoy'],
-        14: ['Appendix2', 'Appendix 2:', 'Someone Special I Know Who is Brave and Kind!!!'],
-        15: ['Appendix3', 'Appendix 3:', 'Happiness Ideas']},
+        13: ['Appendix', 'Appendix']},
       session: 0,
       isNext: true,
     }

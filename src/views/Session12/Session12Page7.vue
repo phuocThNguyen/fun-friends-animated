@@ -8,8 +8,7 @@
         activities.</p>
       <p>Pair up with a friend and take turns naming some of
         your favourite FRIENDS games and activities you want
-        to try again together. You can write them or draw
-        them in the balloons below.</p>
+        to try again together. You can write them in the balloons below.</p>
     </div>
   </div>
 </template>
