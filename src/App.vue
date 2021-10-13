@@ -6,7 +6,7 @@
     </div>
     <div class="show">
       <Navigation v-on:setSession="setSession" :title="sessions[session][1]"/>
-      <component :is="sessions[session][0]" v-on:nextSession="nextSession" :isNext="isNext"/>
+      <component :is="sessions[session][0]" v-on:nextSession="setSession" :isNext="isNext"/>
     </div>
   </div>
 </template>
@@ -59,12 +59,8 @@ export default {
     }
   },
   methods: {
-    setSession(number) {
+    setSession(number, isNext) {
       this.session = number;
-      this.isNext = true;
-    },
-    nextSession(sessionNumber, isNext) {
-      this.setSession(sessionNumber);
       this.isNext = isNext;
     },
     // pwa related

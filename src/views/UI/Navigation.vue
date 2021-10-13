@@ -68,7 +68,7 @@ export default {
   methods: {
     setSession(sessionNumber) {
       if (sessionNumber !== this.selectedSession) {
-        this.$emit('setSession', sessionNumber);
+        this.$emit('setSession', sessionNumber, true);
         this.$store.commit("setCurrentSession", sessionNumber);
       }
     },
