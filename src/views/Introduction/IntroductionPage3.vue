@@ -1,7 +1,7 @@
 <template>
   <div class="interactive-container">
     <div class="content-list">
-      <div class="content-line">
+      <div @click="setSession(1)" class="content-line">
         <p><strong>Session 1:</strong>
           Hip Hip Hooray! It's FUN FRIENDS today!</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
@@ -13,7 +13,7 @@
           </g>
         </svg>
       </div>
-      <div class="content-line">
+      <div @click="setSession(2)" class="content-line">
         <p><strong>Session 2:</strong>
           Feelings: Understanding feelings in ourselves</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
@@ -25,7 +25,7 @@
           </g>
         </svg>
       </div>
-      <div class="content-line">
+      <div @click="setSession(3)" class="content-line">
         <p><strong>Session 3:</strong>
           Understanding feelings in other people</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
@@ -37,7 +37,7 @@
           </g>
         </svg>
       </div>
-      <div class="content-line">
+      <div @click="setSession(4)" class="content-line">
         <p><strong>Session 4:</strong>
           Understanding body clues and five senses</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
@@ -49,7 +49,7 @@
           </g>
         </svg>
       </div>
-      <div class="content-line">
+      <div @click="setSession(5)" class="content-line">
         <p><strong>Session 5:</strong>
           Talking about 'Red' (unhelpful) and
           'Green' (helpful) thoughts</p>
@@ -62,7 +62,7 @@
           </g>
         </svg>
       </div>
-      <div class="content-line">
+      <div @click="setSession(6)" class="content-line">
         <p><strong>Session 6:</strong>
           Talking more about 'Red' (unhelpful) and
           'Green' (helpful) thoughts</p>
@@ -75,7 +75,7 @@
           </g>
         </svg>
       </div>
-      <div class="content-line">
+      <div @click="setSession(7)" class="content-line">
         <p><strong>Session 7:</strong>
           Talking about setting goals and trying to
           do new things</p>
@@ -88,7 +88,7 @@
           </g>
         </svg>
       </div>
-      <div class="content-line">
+      <div @click="setSession(8)" class="content-line">
         <p><strong>Session 8:</strong>
           Talking about how to be a kind friend</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
@@ -100,7 +100,7 @@
           </g>
         </svg>
       </div>
-      <div class="content-line">
+      <div @click="setSession(9)" class="content-line">
         <p><strong>Session 9:</strong>
           Talking about rewarding ourselves</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
@@ -112,7 +112,7 @@
           </g>
         </svg>
       </div>
-      <div class="content-line">
+      <div @click="setSession(10)" class="content-line">
         <p><strong>Session 10</strong>:
           Talking about someone to look up to in
           our lives</p>
@@ -125,7 +125,7 @@
           </g>
         </svg>
       </div>
-      <div class="content-line">
+      <div @click="setSession(11)" class="content-line">
         <p><strong>Session 11</strong>:
           Talking about support teams</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
@@ -137,7 +137,7 @@
           </g>
         </svg>
       </div>
-      <div class="content-line">
+      <div @click="setSession(12)" class="content-line">
         <p><strong>Session 12</strong>:
           Talking about being happy with our efforts!</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
@@ -149,7 +149,7 @@
           </g>
         </svg>
       </div>
-      <div class="content-line">
+      <div @click="setSession(13)" class="content-line">
         <p><strong>Appendix 1</strong>:
           'Green' thoughts to Enjoy</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
@@ -161,7 +161,7 @@
           </g>
         </svg>
       </div>
-      <div class="content-line">
+      <div @click="setSession(14)" class="content-line">
         <p><strong>Appendix 2</strong>:
           Someone Special I Know Who is Brave and Kind!!!</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
@@ -173,7 +173,7 @@
           </g>
         </svg>
       </div>
-      <div class="content-line">
+      <div @click="setSession(15)" class="content-line">
         <p><strong>Appendix 3</strong>:
           Happiness Ideas</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
@@ -191,7 +191,12 @@
 
 <script>
 export default {
-  name: 'IntroductionPage3'
+  name: 'IntroductionPage3',
+  methods: {
+    setSession(number) {
+      this.$emit('setSession', number)
+    }
+  }
 }
 </script>
 
@@ -205,6 +210,9 @@ export default {
 }
 .content-line p {
   margin-bottom: 0;
+}
+.content-line:hover {
+  cursor: pointer;
 }
 .content-arrow {
   width: auto;

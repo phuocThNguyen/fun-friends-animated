@@ -6,7 +6,7 @@
     </div>
     <div class="show">
       <Navigation v-on:setSession="setSession" :title="sessions[session][1]"/>
-      <component :is="sessions[session][0]" v-on:nextSession="setSession" :isNext="isNext"/>
+      <component :is="sessions[session][0]" v-on:nextSession="setSession" :isNext="isNext" :appendixPage="appendixPage"/>
     </div>
   </div>
 </template>
@@ -56,13 +56,20 @@ export default {
         13: ['Appendix', 'Appendix']},
       session: 0,
       isNext: true,
+      appendixPage: 0,
     }
   },
   methods: {
     setSession(number, isNext) {
-      this.session = number;
-      this.isNext = isNext;
-      this.$store.commit("setCurrentSession", number);
+      if (number !== 14 && number !== 15) {
+        this.session = number;
+        this.isNext = isNext;
+        this.$store.commit("setCurrentSession", number);
+      } else {
+        this.session = 13;
+        this.appendixPage = number - this.session;
+        this.$store.commit("setCurrentSession", this.session);
+      }
     },
     // pwa related
     async accept() {

@@ -34,31 +34,34 @@ import AppendixPage8 from "@/views/Appendix/AppendixPage8";
 import AppendixPage9 from "@/views/Appendix/AppendixPage9";
 import AppendixPage10 from "@/views/Appendix/AppendixPage10";
 import AppendixPage11 from "@/views/Appendix/AppendixPage11";
+import AppendixPage12 from "@/views/Appendix/AppendixPage12";
 
 export default {
   name: "Appendix",
   props: {
-    isNext: Boolean,
+    appendixPage: Number
   },
   components: {
     AppendixPage1, AppendixPage2, AppendixPage3, AppendixPage4, AppendixPage5,
     AppendixPage6, AppendixPage7, AppendixPage8, AppendixPage9, AppendixPage10,
-    AppendixPage11,
+    AppendixPage11, AppendixPage12
   },
   data() {
     return {
       pages: {
         1: "AppendixPage1", 2: "AppendixPage2", 3: "AppendixPage3", 4: "AppendixPage4", 5: "AppendixPage5",
         6: "AppendixPage6", 7: "AppendixPage7", 8: "AppendixPage8", 9: "AppendixPage9", 10: "AppendixPage10",
-        11: "AppendixPage11",
+        11: "AppendixPage11", 12: "AppendixPage12",
       },
       page: 1,
-      lastPage: 11,
+      lastPage: 12,
     }
   },
   created() {
-    if (!this.isNext) {
-      this.page = this.lastPage;
+    if (this.appendixPage) {
+      this.page = this.appendixPage + 1;
+    } else {
+      this.page = 1;
     }
   },
   methods: {

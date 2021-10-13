@@ -60,7 +60,6 @@ export default {
   watch: {
     currentSession(newValue, oldValue) {
       this.selectedSession = newValue;
-      console.log(newValue, oldValue);
       let buttons = document.getElementsByClassName('btn');
       this.changeActiveStyle(buttons[newValue]);
       this.resetStyle(buttons[oldValue]);
@@ -101,7 +100,7 @@ export default {
   text-align: center;
   margin: 5px 0 0 0;
   color: #ffffff;
-  font-size: 2.5vw;
+  font-size: 2vw;
 }
 .toggler-button {
   border: 1px solid #ffffff;
