@@ -197,7 +197,6 @@ export default {
 
 <style scoped>
 .content-line {
-
   display: flex;
   justify-content: space-between;
   align-items: center;

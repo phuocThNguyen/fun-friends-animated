@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="session-container">
     <svg class="arrow" @click="next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 123" width="124" height="123">
       <title>Right Arrow</title>
       <g id="object">

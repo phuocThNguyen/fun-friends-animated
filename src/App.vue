@@ -119,7 +119,7 @@ export default {
   height: calc(100vh - 60px);
 }
 .arrow {
-  width: 70px;
+  width: 5vw;
   height: auto;
   border: 3px solid rgba(255,255,255, 0.9);
   border-radius: 13px;

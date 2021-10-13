@@ -1,5 +1,5 @@
 <template>
-  <div class="pos-f-t w-100">
+  <div class="pos-f-t w-100 nav-container">
     <div class="collapse" id="navbarToggleExternalContent">
       <div class="p-1 collapse-container">
         <button @click="setSession(0)" type="button" class="btn btn-session"
@@ -60,6 +60,7 @@ export default {
   watch: {
     currentSession(newValue, oldValue) {
       this.selectedSession = newValue;
+      console.log(newValue, oldValue);
       let buttons = document.getElementsByClassName('btn');
       this.changeActiveStyle(buttons[newValue]);
       this.resetStyle(buttons[oldValue]);
@@ -100,7 +101,7 @@ export default {
   text-align: center;
   margin: 5px 0 0 0;
   color: #ffffff;
-  font-size: 25px;
+  font-size: 2.5vw;
 }
 .toggler-button {
   border: 1px solid #ffffff;
