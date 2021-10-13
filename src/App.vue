@@ -13,7 +13,7 @@
 
 <script>
 import Navigation from "./views/UI/Navigation";
-import SessionIntroduction from "./views/SessionIntroduction";
+import Introduction from "@/views/Introduction/Introduction";
 import Session1 from "./views/Session1/Session1";
 import Session2 from "./views/Session2/Session2";
 import Session3 from "./views/Session3/Session3";
@@ -32,17 +32,15 @@ import Appendix from "@/views/Appendix/Appendix";
 export default {
   name: "App",
   components: {
-    Navigation,
-    SessionIntroduction,
+    Navigation, Introduction, Appendix,
     Session1, Session2, Session3, Session4, Session5,
     Session6, Session7, Session8, Session9, Session10,
     Session11, Session12,
-    Appendix
   },
   data() {
     return {
       sessions: {
-        0: ['SessionIntroduction', 'Introduction'],
+        0: ['Introduction', 'Introduction'],
         1: ['Session1', 'Session 1: Hip Hip Hooray! It\'s FUN FRIENDS today!'],
         2: ['Session2', 'Session 2: Feelings: Understanding feelings in ourselves'],
         3: ['Session3', 'Session 3: Understanding feelings in other people'],
