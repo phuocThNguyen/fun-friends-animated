@@ -69,7 +69,6 @@ export default {
         this.page--;
       } else {
         this.$emit("nextSession", 8, false);
-        this.$store.commit("setCurrentSession", 8);
       }
     },
     next() {
@@ -77,7 +76,6 @@ export default {
         this.page++;
       } else {
         this.$emit("nextSession", 10, true);
-        this.$store.commit("setCurrentSession", 10);
       }
     },
   },

@@ -12,20 +12,20 @@
 </template>
 
 <script>
-import Navigation from "./views/UI/Navigation";
+import Navigation from "@/views/UI/Navigation";
 import Introduction from "@/views/Introduction/Introduction";
-import Session1 from "./views/Session1/Session1";
-import Session2 from "./views/Session2/Session2";
-import Session3 from "./views/Session3/Session3";
-import Session4 from "./views/Session4/Session4";
-import Session5 from "./views/Session5/Session5";
-import Session6 from "./views/Session6/Session6";
-import Session7 from "./views/Session7/Session7";
-import Session8 from "./views/Session8/Session8";
-import Session9 from "./views/Session9/Session9";
-import Session10 from "./views/Session10/Session10";
-import Session11 from "./views/Session11/Session11";
-import Session12 from "./views/Session12/Session12";
+import Session1 from "@/views/Session1/Session1";
+import Session2 from "@/views/Session2/Session2";
+import Session3 from "@/views/Session3/Session3";
+import Session4 from "@/views/Session4/Session4";
+import Session5 from "@/views/Session5/Session5";
+import Session6 from "@/views/Session6/Session6";
+import Session7 from "@/views/Session7/Session7";
+import Session8 from "@/views/Session8/Session8";
+import Session9 from "@/views/Session9/Session9";
+import Session10 from "@/views/Session10/Session10";
+import Session11 from "@/views/Session11/Session11";
+import Session12 from "@/views/Session12/Session12";
 import Appendix from "@/views/Appendix/Appendix";
 
 
@@ -62,6 +62,7 @@ export default {
     setSession(number, isNext) {
       this.session = number;
       this.isNext = isNext;
+      this.$store.commit("setCurrentSession", number);
     },
     // pwa related
     async accept() {
