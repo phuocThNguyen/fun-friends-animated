@@ -1,16 +1,17 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>Choosing 'Red' and 'Green' thoughts:
+      <h1>Choosing '<span class="red">Red</span>' and
+        '<span class="green">Green</span>' thoughts:
         <br>Getting along
       </h1>
       <p>Annie’s brother, Tom, has knocked over Annie’s block
         building that took her a long time to build. Think about
         it with a friend. What could Annie be feeling?</p>
-      <p>What may be some <span class="red">‘red’</span> thoughts?</p>
-      <p>What can Annie do if she is having <span class="red">‘red’</span>
+      <p>What may be some '<span class="red">red</span>' thoughts?</p>
+      <p>What can Annie do if she is having '<span class="red">red</span>'
         thoughts? As a group, can you think of some
-        <span class="green">'green'</span> thoughts
+        '<span class="green">green</span>' thoughts
         that could help her calm down?</p>
 
       <p>Green thoughts help us be kind</p>

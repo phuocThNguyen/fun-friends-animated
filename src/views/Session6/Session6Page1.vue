@@ -8,7 +8,6 @@
         </g>
       </g>
     </svg>
-
     <svg class="sun" ref="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 269 265" width="150" height="150">
       <title>Sun</title>
       <g id="Sun">
@@ -57,7 +56,6 @@
         </g>
       </g>
     </svg>
-
     <svg class="cloud2" ref="cloud2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 91" width="230" height="71">
       <title>Cloud</title>
       <g id="Layer 2">
@@ -199,11 +197,16 @@
     </svg>
 
     <p class="title"><span id="letter-f">I</span> can try</p>
-
-    <p class="text" id="line-1">Today we will think about how we can change ‘red’ thoughts into ‘green’
-      <br>thoughts. We will also learn that we are the boss of our thinking
-      <br>and can choose between ‘red’ and ‘green’ thoughts. Remember, all
-      <br>thoughts are OK, but choosing ‘green’ thoughts will make the day feel better.</p>
+    <p class="text" id="line-1">Today we will think about
+      how we can change '<span class="red">red</span>'
+      thoughts into '<span class="green">green</span>'
+      <br>thoughts. We will also learn that we are the boss
+      of our thinking <br>and can choose between
+      '<span class="red">red</span>' and
+      '<span class="green">green</span>' thoughts.
+      Remember, all <br>thoughts are OK, but
+      choosing '<span class="green">green</span>' thoughts
+      will make the day feel better.</p>
 
     <audio autoplay loop src="../../assets/sounds/387978__dcpoke__birds-singing-03.mp3">
       Your browser does not support the<code>audio</code> element.
@@ -271,7 +274,7 @@ export default {
       })
       .add({
         targets: "#line-1",
-        color: '#000',
+        opacity: 1
       })
   }
 }
@@ -296,7 +299,7 @@ export default {
   position: absolute;
   margin-bottom: 0;
   font-size: 2vw;
-  color: #ffffff;
+  opacity: 0;
 }
 #line-1 {
   text-align: center;
@@ -384,5 +387,11 @@ tspan { white-space:pre }
   right: 3vw;
   width: 15vw;
   height: auto;
+}
+.red {
+  color: red;
+}
+.green {
+  color: #00CE7C;
 }
 </style>

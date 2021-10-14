@@ -5,7 +5,7 @@
       <p>Let us pretend that you will meet a new teacher today.</p>
       <p>What could you be feeling?</p>
       <p>What could you be thinking?</p>
-      <p>What are some 'green' thoughts that make you feel happy
+      <p>What are some '<span class="green">green</span>' thoughts that make you feel happy
         and brave?</p>
     </div>
     <div class="bubble-container">
@@ -79,6 +79,9 @@ export default {
 </script>
 
 <style scoped>
+.green {
+  color: #00CE7C;
+}
 .text-box {
   position: absolute;
   width: 36vw;

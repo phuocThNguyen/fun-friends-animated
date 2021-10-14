@@ -19,6 +19,8 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
+  top: 0;
+  left: 0;
   padding: 4vh 3vw;
 }
 .text-box h1 {

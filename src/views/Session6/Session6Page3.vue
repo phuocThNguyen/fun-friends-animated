@@ -1,14 +1,15 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>Choosing 'Red' and 'Green' thoughts:
+      <h1>Choosing '<span class="red">Red</span>' and
+        '<span class="green">Green</span>' thoughts:
         <br>Sleeping in your own bed
       </h1>
       <p>Matilda is going to sleep in her own bed for the first
         time.</p>
       <p>Get very still, close your eyes and pretend that you
-        are Matilda. What are some <span class="red">'red'</span>
-        thoughts and <span class="green">'green'</span> thoughts
+        are Matilda. What are some '<span class="red">red</span>'
+        thoughts and '<span class="green">green</span>' thoughts
         in your head?</p>
       <p>Remember, all thoughts are OK! Whisper your thoughts
         to a friend.</p>

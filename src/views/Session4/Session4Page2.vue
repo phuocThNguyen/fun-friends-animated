@@ -56,6 +56,8 @@ export default {
 }
 .text-box {
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 10;
   background-color: #ffffff;
   width: 35vw;

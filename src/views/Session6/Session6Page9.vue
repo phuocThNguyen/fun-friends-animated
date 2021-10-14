@@ -699,8 +699,10 @@
     </svg>
     <div class="text-box">
       <h1>Try Everyday</h1>
-      <p>&nbsp;&bull; Practise understanding the ‘red’ thoughts and ‘green’
-        thoughts you and your family have over the week.</p>
+      <p>&nbsp;&bull; Practise understanding the
+        '<span class="red">red</span>' thoughts and
+        '<span class="green">green</span>' thoughts you
+        and your family have over the week.</p>
       <p>&nbsp;&bull; Practise relaxing every day for at least 10 minutes.
         No distractions such as TV!</p>
       <p>&nbsp;&bull; Continue praising your child for being BRAVE.</p>
@@ -775,6 +777,12 @@ export default {
   width: 115vw;
   left: -7.5vw;
   top: -5vh;
+}
+.red {
+  color: #ff0000;
+}
+.green {
+  color: #00ce7c;
 }
 tspan { white-space:pre }
 .shp0 { fill: #fac1b6 }

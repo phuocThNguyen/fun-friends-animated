@@ -1,20 +1,21 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>Choosing 'Red' and 'Green' thoughts:
+      <h1>Choosing '<span class="red">Red</span>' and
+        '<span class="green">Green</span>' thoughts:
         <br>Starting a new school
       </h1>
       <p>Mum is taking Lucy to her new school. She has a lot of
         thoughts in her head.</p>
-      <p><span class="red">'Red'</span> thoughts like
-        <span class="red">"I will miss my Mum"</span>, are making
+      <p>'<span class="red">Red</span>' thoughts like
+        "<span class="red">I will miss my Mum</span>", are making
         Lucy feel sad and stop her from having fun.</p>
-      <p>Her <span class="green">'green'</span> thoughts like,
-        <span class="green">"I will do some fun things at
-        school. I will be OK, I will meet new friends"</span>, help Lucy
+      <p>Her '<span class="green">green</span>' thoughts like,
+        "<span class="green">I will do some fun things at
+        school. I will be OK, I will meet new friends</span>", help Lucy
         feel happier and enjoy her school.</p>
-      <p>Share what you think about other <span class="red">'red'</span>
-        and <span class="green">'green'</span> thoughts she might have.</p>
+      <p>Share what you think about other '<span class="red">red</span>'
+        and '<span class="green">green</span>' thoughts she might have.</p>
       <p>Ask your friends, what thoughts might help her feel
         braver and happier? Listen to the ideas of your friends."</p>
     </div>

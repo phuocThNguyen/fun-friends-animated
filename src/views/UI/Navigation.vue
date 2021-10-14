@@ -1,5 +1,5 @@
 <template>
-  <div class="pos-f-t w-100 nav-container">
+  <div class="nav-container">
     <div class="collapse" id="navbarToggleExternalContent">
       <div class="p-1 collapse-container">
         <button @click="setSession(0)" type="button" class="btn btn-session"
@@ -32,10 +32,11 @@
                 data-toggle="collapse" data-target="#navbarToggleExternalContent">Appendixes</button>
       </div>
     </div>
-    <nav class="navbar-dark navbar-style">
-      <button class="navbar-toggler toggler-button" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+    <nav class="navbar-style">
+      <button class="toggler-button" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
               aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+<!--        <span class="navbar-toggler-icon"></span>-->
+        <img src="../../assets/images/others/menu-white.png" alt="menu" class="nav-icon">
       </button>
       <h1 class="session-title">{{title}}</h1>
       <div></div>
@@ -89,20 +90,42 @@ export default {
 </script>
 
 <style scoped>
+.nav-container {
+  width: 100%;
+}
+@media screen and (max-width: 950px){
+  .nav-container {
+    width: calc(1.33 * 100vh);
+  }
+}
 .navbar-style {
   background-color: #00ce7c;
-  padding: 10px;
+  height: 6vh;
+  padding: 5px 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+.navbar-style div {
+  height: 3vh;
+  width: calc(1.4 * 3vh);
 }
 .session-title {
   text-align: center;
-  margin: 5px 0 0 0;
+  margin-bottom: 0;
   color: #ffffff;
   font-size: 2vw;
 }
+.nav-icon {
+  width: auto;
+  height: 3vh;
+}
 .toggler-button {
+  padding: .25rem .75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
   border: 1px solid #ffffff;
   border-radius: 13px;
   outline: none;

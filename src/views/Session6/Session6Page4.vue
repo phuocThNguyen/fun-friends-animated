@@ -1,16 +1,17 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>Choosing 'Red' and 'Green' thoughts:
+      <h1>Choosing '<span class="red">Red</span>' and
+        '<span class="green">Green</span>' thoughts:
         <br>Meeting a new teacher
       </h1>
       <p>Tom is going to meet his new teacher. Let us pretend
         that you are Tom.</p>
       <p>Talk to those you are with about all the thoughts going
         through Tom’s head.</p>
-      <p>What are some <span class="red">'red'</span> thoughts
+      <p>What are some '<span class="red">red</span>' thoughts
         that make you feel worried and scared?</p>
-      <p>What are some <span class="green">'green'</span> thoughts
+      <p>What are some '<span class="green">green</span>' thoughts
         that would make your day happier?</p>
       <p>Green thoughts help us try our best</p>
     </div>

@@ -9,3 +9,5 @@ export default {
   name: 'IntroductionPage7'
 }
 </script>
+
+<style scoped></style>

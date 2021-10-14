@@ -1,11 +1,12 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>Additional Activity &ndash; Changing Red to Green Choices</h1>
+      <h1>Additional Activity &ndash; Changing '<span class="red">Red</span>' to
+        '<span class="green">Green</span>' Choices</h1>
       <p>Daniel and Matilda are playing on their scooters in the park.</p>
       <p>What do you think when you see the picture? Do you think that
-       they are making <span class="red">'red'</span> choices or
-      <span class="green">'green'</span> choices?</p>
+       they are making '<span class="red">red</span>' choices or
+      '<span class="green">green</span>' choices?</p>
     </div>
     <img src="../../assets/images/session6/Scooter_Girl.png" alt="scooter-girl" class="images">
     <img src="../../assets/images/session6/Best-Kick-Scooter-for-Kids.png" alt="scooters-and-kids" class="images">
@@ -373,6 +374,13 @@ export default {
 .thumb-down {
   right: .5vw;
 }
+.red {
+  color: #ff0000;
+}
+.green {
+  color: #00ce7c;
+}
+
 .shp0-thumb-up { fill: #51bc4a }
 .shp1-thumb-up { fill: #ffffff }
 .shp0-thumb-down { fill: #ff3f3d }

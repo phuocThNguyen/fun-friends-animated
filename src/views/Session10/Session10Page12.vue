@@ -35,6 +35,8 @@ export default {
 }
 .text-box {
   position: absolute;
+  top: 0;
+  left: 0;
   background-color: #ffffff;
   padding: 3vh 3vw;
 }

@@ -3,8 +3,9 @@
     <img src="../../assets/images/session5/85693.png" alt="red" class="session-background">
     <div class="text-box">
       <p>Nala is spending her first night sleeping by herself.</p>
-      <p>How is she feeling in this picture? Is Nala having 'red'
-       or 'green' thoughts?</p>
+      <p>How is she feeling in this picture? Is Nala having
+        '<span class="red">red</span>' or
+        '<span class="green">green</span>' thoughts?</p>
     </div>
     <traffic-light correctAns="#green-light" class="traffic-light"/>
   </div>
@@ -56,5 +57,11 @@ export default {
 }
 .text-box p:last-child {
   margin-bottom: 0;
+}
+.red {
+  color: red;
+}
+.green {
+  color: #00CE7C;
 }
 </style>

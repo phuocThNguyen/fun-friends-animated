@@ -1839,15 +1839,6 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
-.tip {
-  position: absolute;
-  background-color: rgba(255,255,255,0.9);
-  padding: 1vh 1vw;
-  font-size: 1.8vw;
-  width: 20vw;
-  top: 20vh;
-  left: 5vw;
-}
 #star-1 {
   top: 40vh;
   left: 5vw;

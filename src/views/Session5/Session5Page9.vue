@@ -6,8 +6,8 @@
       <p>Let us pretend that it is your turn to do
          'show and tell' today.</p>
       <p>What could you be feeling?</p>
-      <p>What are some 'green' thoughts that make you feel happy
-        and brave?</p>
+      <p>What are some '<span class="green">green</span>'
+        thoughts that make you feel happy and brave?</p>
     </div>
     <div class="bubble-container">
       <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 342 269" width="342" height="269">
@@ -80,6 +80,9 @@ export default {
 </script>
 
 <style scoped>
+.green {
+  color: #00CE7C;
+}
 .text-box {
   position: absolute;
   width: 45vw;

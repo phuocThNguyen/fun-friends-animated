@@ -9,3 +9,5 @@ export default {
   name: 'AppendixPage10'
 }
 </script>
+
+<style scoped></style>

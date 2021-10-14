@@ -101,6 +101,8 @@ export default {
 }
 .text-box {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 50vw;
   padding: 3vh 0 0 3vw;
 }

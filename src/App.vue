@@ -5,8 +5,10 @@
       <h1 class="content">Please use Landscape mode!</h1>
     </div>
     <div class="show">
-      <Navigation v-on:setSession="setSession" :title="sessions[session][1]"/>
-      <component :is="sessions[session][0]" v-on:nextSession="setSession" :isNext="isNext" :appendixPage="appendixPage"/>
+      <div class="center">
+        <Navigation v-on:setSession="setSession" :title="sessions[session][1]"/>
+        <component :is="sessions[session][0]" v-on:nextSession="setSession" :isNext="isNext" :appendixPage="appendixPage"/>
+      </div>
     </div>
   </div>
 </template>
@@ -27,7 +29,6 @@ import Session10 from "@/views/Session10/Session10";
 import Session11 from "@/views/Session11/Session11";
 import Session12 from "@/views/Session12/Session12";
 import Appendix from "@/views/Appendix/Appendix";
-
 
 export default {
   name: "App",
@@ -89,6 +90,19 @@ export default {
 </script>
 
 <style>
+@media screen and (max-width: 930px) {
+  .show {
+    background-color: #000000;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  .center {
+    width: calc(1.33 * 100vh);
+    position: relative;
+  }
+}
 .image {
   width: 100%;
   height: auto;
@@ -118,13 +132,13 @@ export default {
   background-color: #ffffff;
   position: relative;
   width: 100vw;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 6vh);
   overflow: hidden;
 }
 .session-background {
-  position: absolute;
-  width: 100vw;
-  height: calc(100vh - 60px);
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 6vh);
 }
 .arrow {
   width: 5vw;
@@ -132,9 +146,9 @@ export default {
   border: 3px solid rgba(255,255,255, 0.9);
   border-radius: 13px;
   cursor: pointer;
-  position: fixed;
-  bottom: 5px;
-  right: 5px;
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
   opacity: 0.9;
   z-index: 500;
 }
@@ -143,8 +157,7 @@ export default {
 }
 #left-arrow {
   transform: rotate(180deg);
-  right: 0;
-  left: 5px;
+  left: 1%;
 }
 /* WRONG ORIENTATION - SHOW MESSAGE HIDE CONTENT */
 @media only screen and (orientation:portrait) {
@@ -155,7 +168,7 @@ export default {
 /* CORRECT ORIENTATION - SHOW CONTENT HIDE MESSAGE */
 @media only screen and (orientation:landscape) {
   .hide { display:none; }
-  .show { display:block; }
+  .show { display:flex; }
 }
 
 tspan { white-space:pre }

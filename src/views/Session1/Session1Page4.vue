@@ -75,6 +75,8 @@ export default {
 <style scoped>
 .left-bar {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 26vw;
   height: 100%;
   background-color: #ffffff;

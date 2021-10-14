@@ -2,15 +2,16 @@
   <div class="interactive-container">
     <img src="../../assets/images/session5/447.png" alt="red" class="session-background">
     <div class="text-box">
-      <h1>Changing 'Red' to 'Green' Thoughts</h1>
+      <h1>Changing '<span class="red">Red</span>' to
+        '<span class="green">Green</span>' Thoughts</h1>
       <p><strong>Starting a new school</strong></p>
       <p>Mum is taking Lucy to her new
         school. In this picture, she feels
         sad and scared. Why do you
         think she feels sad and scared?
         How do you think mum feels?</p>
-      <p>Is Lucy having 'red' or 'green'
-        thoughts?</p>
+      <p>Is Lucy having '<span class="red">red</span>' or
+        '<span class="green">green</span>' thoughts?</p>
     </div>
     <traffic-light correctAns="#red-light" class="traffic-light"/>
   </div>
@@ -66,5 +67,11 @@ export default {
 }
 .text-box p:last-child {
   margin-bottom: 0;
+}
+.red {
+  color: red;
+}
+.green {
+  color: #00CE7C;
 }
 </style>

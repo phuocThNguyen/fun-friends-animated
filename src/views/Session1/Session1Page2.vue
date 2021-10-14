@@ -25,7 +25,7 @@ export default {
     animations
       .add({
         targets: ".left-bar",
-        translateX: 0.29*vw,
+        translateX: 0.32*vw,
         duration: 500,
         delay: 1000,
       })
@@ -74,8 +74,9 @@ export default {
 .left-bar {
   font-family: 'Sigmar One', cursive;
   position: absolute;
-  left: -29vw;
-  width: 29vw;
+  top: 0;
+  left: -32vw;
+  width: 32vw;
   height: 100%;
   background-color: #00ce7c;
   z-index: 10;

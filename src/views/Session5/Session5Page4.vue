@@ -6,7 +6,8 @@
         walking to a new school with
         Dad.</p>
       <p>What could they be feeling?</p>
-      <p>Are they having 'red' or 'green'
+      <p>Are they having '<span class="red">red</span>' or
+        '<span class="green">green</span>'
         thoughts?</p>
     </div>
     <traffic-light correctAns="#green-light" class="traffic-light"/>
@@ -59,5 +60,11 @@ export default {
 }
 .text-box p:last-child {
   margin-bottom: 0;
+}
+.red {
+  color: red;
+}
+.green {
+  color: #00CE7C;
 }
 </style>

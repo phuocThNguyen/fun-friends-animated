@@ -1,15 +1,19 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>Additional Activity &ndash; Red and Green Thoughts</h1>
+      <h1>Additional Activity &ndash; <span class="red">Red</span>
+        and <span class="green">Green</span> Thoughts</h1>
       <p>Daniel and Matilda are sledding in the snow for the first time.
-        What are some ‘red’ and ‘green’ thoughts Daniel
+        What are some '<span class="red">red</span>' and
+        '<span class="green">green</span>' thoughts Daniel
         and Matilda might be having? Share what you felt like,
         when you tried something new for the first time.</p>
-      <p>Everybody has ‘red’ thoughts when trying something new.
-        We can all try to replace our ‘red’ thoughts with
-        ‘green’ thoughts. Shout out a ‘green’ thought that
-        makes you feel brave!</p>
+      <p>Everybody has '<span class="red">red</span>'
+        thoughts when trying something new. We can all
+        try to replace our '<span class="red">red</span>'
+        thoughts with '<span class="green">green</span>'
+        thoughts. Shout out a '<span class="green">green</span>'
+        thought that makes you feel brave!</p>
     </div>
     <img src="../../assets/images/session5/1552.png" alt="afraid" class="images">
     <img src="../../assets/images/session5/1550.png" alt="afraid" class="images">
@@ -214,4 +218,10 @@ export default {
 }
 tspan { white-space:pre }
 .shp1 { fill: #ffffff }
+.red {
+  color: red;
+}
+.green {
+  color: #00CE7C;
+}
 </style>

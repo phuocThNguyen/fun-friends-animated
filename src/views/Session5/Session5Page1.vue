@@ -8,7 +8,6 @@
         </g>
       </g>
     </svg>
-
     <svg class="sun" ref="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 269 265" width="150" height="150">
       <title>Sun</title>
       <g id="Sun">
@@ -57,7 +56,6 @@
         </g>
       </g>
     </svg>
-
     <svg class="cloud2" ref="cloud2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 91" width="230" height="71">
       <title>Cloud</title>
       <g id="Layer 2">
@@ -199,12 +197,17 @@
     </svg>
 
     <p class="title"><span id="letter-f">I</span> can try</p>
-
-    <p class="text" id="line-1">Today we will think about two different kinds of thoughts – ‘green’
-      thoughts that help us feel strong inside, keep us going, and let us have fun,
-      and ‘red’ thoughts that stop us all from trying to be brave.</p>
-    <p class="text" id="line-2">How can thoughts be turned ‘red’ or ‘green’? As a group, in a circle,
-      share your ideas. Remember, there are no right or wrong answers.</p>
+    <p class="text" id="line-1">Today we will think about
+      two different kinds of thoughts –
+      '<span class="green">green</span>' thoughts that
+      help us feel strong inside, keep us going, and
+      let us have fun, and '<span class="red">red</span>'
+      thoughts that stop us all from trying to be brave.</p>
+    <p class="text" id="line-2">How can thoughts be turned
+      '<span class="red">red</span>' or
+      '<span class="green">green</span>'? As a group,
+      in a circle, share your ideas. Remember,
+      there are no right or wrong answers.</p>
 
     <audio autoplay loop src="../../assets/sounds/387978__dcpoke__birds-singing-03.mp3">
       Your browser does not support the<code>audio</code> element.
@@ -272,11 +275,11 @@ export default {
         })
         .add({
           targets: "#line-1",
-          color: '#000',
+          opacity: 1
         })
         .add({
           targets: "#line-2",
-          color: '#000'
+          opacity: 1
         })
   }
 }
@@ -301,7 +304,7 @@ export default {
   position: absolute;
   margin-bottom: 0;
   font-size: 2vw;
-  color: #ffffff;
+  opacity: 0;
 }
 #line-1 {
   text-align: center;
@@ -395,5 +398,11 @@ tspan { white-space:pre }
   right: 3vw;
   width: 15vw;
   height: auto;
+}
+.red {
+  color: red;
+}
+.green {
+  color: #00CE7C;
 }
 </style>

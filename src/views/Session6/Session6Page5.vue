@@ -1,7 +1,8 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>Choosing 'Red' and 'Green' thoughts:
+      <h1>Choosing '<span class="red">Red</span>' and
+        '<span class="green">Green</span>' thoughts:
         <br>'Show and Tell'
       </h1>
       <p>Sam is getting ready for ‘Show and Tell’.</p>
