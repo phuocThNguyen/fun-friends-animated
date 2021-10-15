@@ -1,10 +1,7 @@
 <template>
   <div class="interactive-container">
     <img src="../../assets/images/session1/14643-resized.jpg" alt="house-1" />
-    <img
-      src="../../assets/images/session1/stockvault-carefree115845-resized.jpg"
-      alt="house-2"
-    />
+    <img src="../../assets/images/session1/stockvault-carefree115845-resized.jpg" alt="cloth"/>
     <img src="../../assets/images/session1/13151-resized.jpg" alt="house-3" />
     <div class="text-box">
       <h1>Our clothes</h1>
@@ -49,31 +46,31 @@ export default {
 .interactive-container img:nth-child(1) {
   left: 0;
   bottom: 0;
-  width: 50vw;
+  width: 50%;
   height: 70vh;
 }
 .interactive-container img:nth-child(2) {
   top: 0;
   right: 0;
-  width: 48vw;
+  width: 48%;
   height: 44vh;
 }
 .interactive-container img:nth-child(3) {
   bottom: 0;
   right: 0;
-  width: 48vw;
+  width: 48%;
   height: 45vh;;
 }
 .text-box {
   color: #ffffff;
-  padding: 2vw;
+  padding: 2.6vh;
 }
 .text-box h1 {
-  font-size: 3.5vw;
+  font-size: 4.3vh;
   margin-bottom: 1vh;
 }
 .text-box p {
-  font-size: 1.8vw;
+  font-size: 2.6vh;
   margin-bottom: 1vh;
 }
 </style>

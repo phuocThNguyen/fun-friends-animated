@@ -805,7 +805,7 @@ import anime from 'animejs';
 export default {
   name: "Session1Page35",
   mounted() {
-    let vw = window.innerWidth;
+    let vw = document.querySelector('.interactive-container').clientWidth;
     let smallClouds = document.getElementsByClassName('shp-cloud-small')
     smallClouds.forEach(smallCloud => {
       let plusOrMinus = Math.random() < 0.5 ? -1 : 1;
@@ -872,28 +872,28 @@ export default {
 <style scoped>
 .landscape {
   position: absolute;
-  width: 141vw;
+  width: 141%;
   height: auto;
-  left: -9vw;
+  left: -9%;
 }
 .crab {
   position: absolute;
-  width: 10vw;
+  width: 10%;
   height: auto;
-  left: 2vw;
+  left: 2%;
   bottom: 25vh;
 }
 .crab-shell {
   position: absolute;
-  width: 10vw;
+  width: 10%;
   height: auto;
-  right: 2vw;
+  right: 2%;
   bottom: 20vh;
 }
 .main-content {
   position: absolute;
-  width: 90vw;
-  left: 5vw;
+  width: 90%;
+  left: 5%;
   top: 4vh
 }
 .main-content p,
@@ -906,7 +906,7 @@ export default {
   color: #ffffff;
   text-align: center;
   font-weight: bold;
-  font-size: 2.2vw;
+  font-size: 3vh;
   padding: 1vh;
   opacity: 0;
 }
@@ -917,14 +917,14 @@ export default {
   opacity: 0;
 }
 .para-box h1 {
-  font-size: 2.5vw;
+  font-size: 3.3vh;
   margin-bottom: 2vh;
 }
 .para-box h2 {
-  font-size: 2vw;
+  font-size: 2.8vh;
 }
 .para-box p {
-  font-size: 1.5vw;
+  font-size: 2.3vh;
   margin-bottom: 2vh;
 }
 tspan { white-space:pre }

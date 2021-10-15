@@ -222,7 +222,7 @@ import anime from "animejs";
 export default {
   name: "Session1Page34",
   mounted() {
-    let vw = window.innerWidth;
+    let vw = document.querySelector('.interactive-container').clientWidth;
     const clouds = document.getElementsByClassName('shp-cloud');
     clouds.forEach(cloud => {
       let plusOrMinus = Math.random() < 0.5 ? -1 : 1;
@@ -328,24 +328,24 @@ export default {
 <style scoped>
 .landscape {
   position: absolute;
-  width: 120vw;
+  width: 120%;
   height: auto;
-  left: -12vw;
+  left: -12%;
 }
 .text-box {
   position: absolute;
-  width: 70vw;
+  width: 74%;
   height: auto;
-  padding: 3vw;
+  padding: 3vh;
   background-color: #ffffff;
   opacity: 0;
   border-radius: 20px;
   z-index: 100;
   top: 10vh;
-  left: 15vw;
+  left: 13%;
 }
 .text-box p {
-  font-size: 2vw;
+  font-size: 2.7vh;
   margin-bottom: 2vh;
   color: #ffffff;
 }
@@ -375,29 +375,29 @@ tspan { white-space:pre }
 }
 #bush-left-bottom {
   bottom: 6vh;
-  left: 10vw;
-  width: 0.5vw;
+  left: 10%;
+  width: 0.5%;
   height: auto;
   z-index: 20;
 }
 #bush-left-top {
   bottom: 9vh;
-  left: 10vw;
-  width: 0.5vw;
+  left: 10%;
+  width: 0.5%;
   height: auto;
   z-index: 10;
 }
 #bush-right-bottom {
   bottom: 5vh;
-  right: 10vw;
-  width: 0.5vw;
+  right: 10%;
+  width: 0.5%;
   height: auto;
   z-index: 20;
 }
 #bush-right-top {
   bottom: 8vh;
-  right: 10vw;
-  width: 0.5vw;
+  right: 10%;
+  width: 0.5%;
   height: auto;
   z-index: 10;
 }
@@ -409,26 +409,26 @@ tspan { white-space:pre }
   width: 0.5vh;
   height: auto;
   bottom: 18vh;
-  left: 3vw;
+  left: 3%;
 }
 #tree-left-right {
   width: 0.5vh;
   height: auto;
   bottom: -11vh;
-  left: 15vw;
+  left: 15%;
   z-index: 9;
 }
 #tree-right-right {
   width: 0.5vh;
   height: auto;
   bottom: 18vh;
-  right: 3vw;
+  right: 3%;
 }
 #tree-right-left {
   width: 0.5vh;
   height: auto;
   bottom: -8vh;
-  right: 17vw;
+  right: 17%;
   z-index: 9;
 }
 </style>

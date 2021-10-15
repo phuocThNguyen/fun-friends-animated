@@ -823,7 +823,7 @@ export default {
     }
   },
   mounted() {
-    let vw = window.innerWidth;
+    let vw = document.querySelector('.interactive-container').clientWidth;
     let vh = window.innerHeight;
     let clouds = document.getElementsByClassName('clouds')[0].children;
     clouds.forEach(cloud => {
@@ -899,37 +899,43 @@ export default {
 <style scoped>
 .canvas {
   position: absolute;
-  top: 5vh;
-  left: 33vw;
+  top: 1vh;
+  left: 33%;
   z-index: 100;
   opacity: 0;
 }
 .landscape {
   position: absolute;
-  width: 130vw;
+  width: 130%;
   height: auto;
-  left: -12vw;
+  left: -12%;
   top: -2vh;
 }
 .smoke {
   position: absolute;
   height: 6vh;
   width: auto;
-  left: 14vw;
+  left: 14%;
   top: 47vh;
 }
 .text-box {
   position: absolute;
   border-radius: 10px;
   border: 2px solid #00CE7C;
-  top: 10vh;
-  left: 1vw;
-  width: 30vw;
-  padding: 2vw;
+  top: 1vh;
+  left: 1%;
+  width: 30%;
+  padding: 3vh;
   background-color: #ffffff;
   color: #fff;
   opacity: 0;
-  font-size: 1.8vw;
+  font-size: 2.6vh;
+}
+.text-box p {
+  margin-bottom: 1vh;
+}
+.text-box p:last-child {
+  margin-bottom: 0;
 }
 tspan { white-space:pre }
 .shp-smoke { fill: #ffffff }

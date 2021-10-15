@@ -1233,13 +1233,13 @@ export default {
 <style scoped>
 .landscape {
   position: relative;
-  width: 105vw;
+  width: 105%;
   height: auto;
 }
 .canvas {
   position: absolute;
-  top: 5vh;
-  left: 45vw;
+  top: 2vh;
+  left: 45%;
   opacity: 0;
   z-index: 100;
 }
@@ -1266,15 +1266,15 @@ tspan { white-space:pre }
 
 .main-content {
   position: absolute;
-  left: 1vw;
-  top: 5vh;
-  width: 43vw;
+  left: 1%;
+  top: 2vh;
+  width: 43%;
   z-index: 50;
 }
 .main-content h1 {
   background-color: #000000;
   color: #ffffff;
-  font-size: 2.2vw;
+  font-size: 3vh;
   width: 100%;
   height: auto;
   padding: 1.5vh;
@@ -1285,11 +1285,14 @@ tspan { white-space:pre }
 }
 .text-box {
   background-color: #ffffff;
-  padding: 1.8vw;
+  padding: 2.6vh;
   height: auto;
   opacity: 0;
-  font-size: 1.9vw;
+  font-size: 2.7vh;
   color: #ffffff;
+}
+.text-box p {
+  margin-bottom: 1vh;
 }
 .text-box p:last-child {
   font-weight: bold;
@@ -1304,6 +1307,6 @@ tspan { white-space:pre }
   padding: 2vh;
   resize: none;
   outline: none;
-  font-size: 1.9vw;
+  font-size: 2.7vh;
 }
 </style>

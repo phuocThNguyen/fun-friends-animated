@@ -45,7 +45,7 @@ export default {
   grid-template-columns: auto auto;
 }
 .images img {
-  width: 49vw;
+  width: 62vh;
   height: 43vh;
   opacity: 1;
   align-self: center;
@@ -53,19 +53,19 @@ export default {
 }
 .text-box {
   position: absolute;
-  left: 40vw;
+  left: 40%;
   top: 42vh;
   z-index: 20;
   background-color: #00CE7C;
   width: auto;
   height: auto;
-  padding: 2vh 4vw 2vh 4vw;
+  padding: 2vh 4.6vh;
   opacity: 0;
 }
 .text {
   font-weight: bold;
   color: #ffffff;
-  font-size: 2vw;
+  font-size: 2.6vh;
   margin-bottom: 0;
 }
 </style>

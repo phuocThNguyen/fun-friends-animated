@@ -408,11 +408,6 @@
 import anime from 'animejs';
 export default {
   name: "Session1Page33",
-  data() {
-    return {
-      numOranges: 20,
-    }
-  },
   mounted() {
     anime({
       targets: this.$refs.sun,
@@ -437,7 +432,8 @@ export default {
       })
       .add({
         targets: '.tree-crown',
-        scale: 110,
+        scaleX: 110,
+        scaleY: 110,
         translateY: -0.0025 * vh,
         duration: 2000,
         easing: 'linear',
@@ -523,119 +519,132 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 930px) {
+  .tree-crown {
+    width: 2.5px !important;
+    height: 2.5px !important;
+    left: 16% !important;
+    top: 56vh !important;
+  }
+  .orange {
+    width: 1px !important;
+    height: 1px !important;
+  }
+}
 .cloud-background {
   background-color: #e6ffff;
 }
 .text-box {
   position: absolute;
   top: 15vh;
-  right: 20vw;
-  width: 25vw;
+  right: 20%;
+  width: 25%;
   height: auto;
   background-color: #ffffff;
   opacity: 0;
-  padding: 2vw;
+  padding: 2.6vh;
   border-radius: 20px;
   border: 0.2vw dashed #000;
 }
 .text-box p {
   color: #ffffff;
-  font-size: 1.9vw;
+  font-size: 2.7vh;
 }
 .sun {
   position: absolute;
-  width: 30vw;
+  width: 30%;
   height: auto;
   top: -12vh;
-  right: -12vw;
+  right: -12%;
 }
 .tree-body {
   position: absolute;
-  bottom: 0;
-  left: 22vw;
+  bottom: 2vh;
+  left: 22%;
   width: auto;
   height: 1vh;
   z-index: 10;
 }
 .tree-crown {
   position: absolute;
-  width: 0.5vw;
-  top: 65vh;
-  left: 20vw;
   height: auto;
+  width: 0.5%;
+  top: 65vh;
+  left: 20%;
 }
 .grass {
   position: absolute;
-  left: -5vw;
+  left: -5%;
   bottom: -3vh;
-  width: 110vw;
+  width: 110%;
+  z-index: 20;
   height: auto;
 }
 .orange {
   position: absolute;
   width: auto;
   height: 0.1vh;
-  z-index: 50;
+  z-index: 80;
 }
 #orange-1 {
   bottom: 28vh;
-  left: 10vw;
+  left: 10%;
 }
 #orange-2 {
   bottom: 66vh;
-  left: 35vw;
+  left: 35%;
 }
 #orange-3 {
   bottom: 41vh;
-  left: 5vw;
+  left: 5%;
 }
 #orange-4 {
   bottom: 30vh;
-  left: 15vw;
+  left: 15%;
 }
 #orange-5 {
   bottom: 50vh;
-  left: 19vw;
+  left: 19%;
 }
 #orange-6 {
   bottom: 70vh;
-  left: 20vw;
+  left: 20%;
 }
 #orange-7 {
   bottom: 60vh;
-  left: 30vw;
+  left: 30%;
 }
 #orange-8 {
   bottom: 45vh;
-  left: 35vw;
+  left: 35%;
 }
 #orange-9 {
   bottom: 40vh;
-  left: 28vw;
+  left: 28%;
 }
 #orange-10 {
   bottom: 62vh;
-  left: 12vw;
+  left: 12%;
 }
 #orange-11 {
   bottom: 80vh;
-  left: 25vw;
+  left: 25%;
 }
 #orange-12 {
   bottom: 53vh;
-  left: 8vw;
+  left: 8%;
 }
 #orange-13 {
   bottom: 57vh;
-  left: 40vw;
+  left: 40%;
 }
 #orange-14 {
   bottom: 77vh;
-  left: 10vw;
+  left: 10%;
 }
 #orange-15 {
   bottom: 37vh;
-  left: 40vw;
+  left: 40%;
 }
 tspan { white-space:pre }
 .shp-sun { fill: #f6921e }

@@ -888,9 +888,9 @@
       <p>- Ask them to draw the home they lived in as a child.</p>
       <p>- Each night tell each other one happy thing about the day.</p>
       <p>- Everyday practise being BRAVE:</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* &nbsp;Look people in the eye and smile.</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* &nbsp;Use a brave voice and make yourself big.</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* &nbsp;Try your best and give it a go.</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Look people in the eye and smile.</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Use a brave voice and make yourself big.</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Try your best and give it a go.</p>
     </div>
   </div>
 </template>
@@ -914,25 +914,26 @@ export default {
 <style scoped>
 .landscape {
   position: absolute;
-  width: 106vw;
+  width: 106%;
   height: auto;
 }
 .text-box {
   position: absolute;
-  width: 70vw;
-  left: 15vw;
+  width: 70%;
+  left: 15%;
   top: 10vh;
   background-color: #ffffff;
   opacity: 0;
-  padding: 3vw;
+  padding: 3.8vh;
 }
 .text-box h1 {
   text-align: center;
   margin-bottom: 3vh;
-  font-size: 4vw;
+  font-size: 4.8vh;
 }
 .text-box p {
-  font-size: 2vw;
+  font-size: 2.8vh;
+  margin-bottom: 1vh;
 }
 tspan { white-space:pre }
 .shp0 { fill: url(#grd1) }
