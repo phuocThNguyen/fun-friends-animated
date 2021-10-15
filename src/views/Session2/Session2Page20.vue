@@ -338,23 +338,29 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 930px) {
+  .content-container {
+    border-radius: 8px !important;
+    bottom: 10vh !important;
+  }
+}
 .image {
   position: absolute;
   top: 2vh;
-  width: 40vw;
+  width: 40%;
   height: calc(70vh - 60px);
 }
 #left {
-  left: 5vw;
+  left: 5%;
 }
 #right {
-  right: 5vw;
+  right: 5%;
 }
 .reward {
   position: absolute;
   height: auto;
-  width: 1vw;
-  left: 50vw;
+  width: 1%;
+  left: 50%;
   bottom: 35vh;
   opacity: 0;
 }
@@ -365,34 +371,35 @@ export default {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  padding: 0 .5vw;
-  top: 4.9vh;
+  padding: 0 .7vh;
+  top: 5.5vh;
 }
 .masks-container div {
-  width: 5vw;
-  height: 5vw;
+  width: 7vh;
+  height: 7vh;
+  background-color: rgba(0,0,0,0.5);
 }
 .tips-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   color: #ffffff;
-  font-size: 1.5vw;
+  font-size: 2.1vh;
   font-weight: bold;
-  margin: 0 .5vw;
+  margin: 0 .7vh;
   text-align: center;
 }
 .tips-container p {
   margin-bottom: 0;
   display: inline-block;
-  width: 7vw;
+  width: 9.8vh;
 }
 .content-container {
   position: absolute;
   background-color: rgba(0, 206, 124, 0.8);
   border-radius: 30px;
   padding-top: 1vh;
-  width: 34vw;
+  width: 34%;
   bottom: 4vh;
   display: flex;
   flex-direction: column;
@@ -400,7 +407,7 @@ export default {
 }
 .content-container h1 {
   text-align: center;
-  font-size: 2vw;
+  font-size: 2.8vh;
   color: #ffffff;
 }
 .emotes-container {
@@ -408,29 +415,29 @@ export default {
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
-  margin: 0 .5vw;
+  margin: 0 .7vh;
 }
 .emotes {
   height: auto;
-  width: 5vw;
+  width: 7vh;
 }
 .answer-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-end;
-  margin: 0 .5vw .5vh .5vw;
+  margin: 0 .7vh .5vh .7vh;
 }
 .small-tick {
-  width: 3vw;
+  width: 4.2vh;
   height: auto;
   opacity: 0;
 }
 #content-left {
-  left: 8vw;
+  left: 8%;
 }
 #content-right {
-  right: 8vw;
+  right: 8%;
 }
 .cls-1 {fill: none;}
 .cls-2 {isolation: isolate;}
@@ -447,7 +454,7 @@ export default {
 .cls-15 {fill: #5a211e;}
 .cls-13 {clip-path: url(#clip-path-2);}
 .cls-14 {fill: #f0b000;}
-.cls-15 {font-size: 31.16px; font-family: AntipastoPro-DemiBold, AntipastoPro DemiBold; font-weight: 300;}
+.cls-15 {font-size: 31.16px; font-family: AntipastoPro-DemiBold, AntipastoPro DemiBold,serif; font-weight: 300;}
 .cls-16 {fill: #affc41;}
 .cls-17 {fill: #1dd3b0;}
 </style>
