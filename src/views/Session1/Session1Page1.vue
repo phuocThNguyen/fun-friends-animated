@@ -8,7 +8,6 @@
         </g>
       </g>
     </svg>
-
     <svg class="sun" ref="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 269 265" width="150" height="150">
       <title>Sun</title>
       <g id="Sun">
@@ -57,7 +56,6 @@
         </g>
       </g>
     </svg>
-
     <svg class="cloud2" ref="cloud2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 91" width="230" height="71">
       <title>Cloud</title>
       <g id="Layer 2">
@@ -189,7 +187,6 @@
         <circle style="fill: rgba(0, 0, 0, 0.76);" cx="339.879" cy="152.742" r="20.887"/>
       </g>
 </svg>
-
     <svg class="big-cloud" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 91" width="800" height="350">
       <title>Cloud</title>
       <g id="Cloud">
@@ -221,7 +218,7 @@ import Letterize from 'letterizejs';
 export default {
   name: "Session1Page1",
   mounted() {
-    let vw = window.innerWidth;
+    let vw = document.querySelector('.interactive-container').clientWidth;
 
     anime({
       targets: this.$refs.cloud1,
@@ -237,15 +234,14 @@ export default {
       direction: 'alternate',
       loop: true,
       easing: 'linear'
-    })
+    });
     anime({
       targets: this.$refs.sun,
       rotate: '360deg',
       duration: 5000,
       easing: 'steps(10)',
       loop: true,
-    })
-
+    });
     anime({
       targets: '.bird-1',
       translateX: vw + 0.2*vw,
@@ -253,7 +249,6 @@ export default {
       duration: 10000,
       loop: true
     });
-
     anime({
       targets: '.bird-2',
       translateX: -(vw + 0.2*vw),
@@ -261,7 +256,7 @@ export default {
       duration: 10000,
       delay: 2000,
       loop: true
-    })
+    });
 
     // Animating questions
     // Question 1
@@ -309,7 +304,7 @@ export default {
       targets: '.question-3',
       color: '#000',
       delay: 10000,
-    })
+    });
   }
 }
 </script>
@@ -327,17 +322,17 @@ tspan { white-space:pre }
 }
 .twitter-bird {
   position: absolute;
-  width: 11vw;
+  width: 11%;
   height: auto;
 }
 .bird-1 {
   top: 20vh;
-  left: -5vw;
+  left: -5%;
   z-index: 20;
 }
 .bird-2 {
   bottom: 2vh;
-  right: -11vw;
+  right: -11%;
   z-index: 70;
 }
 #wing1{
@@ -355,31 +350,31 @@ tspan { white-space:pre }
 }
 .cloud1 {
   position: absolute;
-  width: 25vw;
+  width: 25%;
   height: auto;
   top: 10vh;
-  left: -35vw;
+  left: -35%;
 }
 .cloud2 {
   position: absolute;
   width: 30vh;
   height: auto;
   top: 14vh;
-  right: 1vw;
+  right: 1%;
 }
 .big-cloud {
   position: absolute;
-  width: 90vw;
+  width: 90%;
   height: auto;
   top: 20vh;
-  left: 5vw;
+  left: 5%;
 }
 .long-cloud {
-  width: 130vw;
+  width: 130%;
   height: auto;
   position: absolute;
   bottom: -7vh;
-  left: -12vw;
+  left: -12%;
   z-index: 50;
 }
 .small-cloud {
@@ -387,13 +382,13 @@ tspan { white-space:pre }
   width: 15vh;
   height: auto;
   top: 5vh;
-  right: -25vw;
+  right: -25%;
 }
 .sun {
   position: absolute;
   top: 3vh;
-  right: 3vw;
-  width: 15vw;
+  right: 3%;
+  width: 15%;
   height: auto;
 }
 .question {
@@ -405,14 +400,14 @@ tspan { white-space:pre }
 }
 .question-1 {
   top: 35vh;
-  left: 18vw;
+  left: 18%;
 }
 .question-2 {
   top: 43vh;
-  left: 14vw;
+  left: 14%;
 }
 .question-3 {
   top: 51vh;
-  left: 26vw;
+  left: 26%;
 }
 </style>

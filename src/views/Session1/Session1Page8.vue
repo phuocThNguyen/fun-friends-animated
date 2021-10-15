@@ -32,7 +32,7 @@ export default {
   background-color: #00ce7c;
   position: absolute;
   top: 5vh;
-  right: 3vw;
+  right: 3%;
   opacity: 0;
   padding: 1.5vh;
 }

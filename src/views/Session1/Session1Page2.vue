@@ -18,7 +18,7 @@ import anime from "animejs";
 export default {
   name: "Session1Page2",
   mounted() {
-    let vw = window.innerWidth;
+    let vw = document.querySelector('.interactive-container').clientWidth;
     let animations = anime.timeline({
       duration: 1000
     });
@@ -75,8 +75,8 @@ export default {
   font-family: 'Sigmar One', cursive;
   position: absolute;
   top: 0;
-  left: -32vw;
-  width: 32vw;
+  left: -32%;
+  width: 32%;
   height: 100%;
   background-color: #00ce7c;
   z-index: 10;
@@ -89,8 +89,8 @@ export default {
 .left-bar p {
   text-transform: uppercase;
   color: #00ce7c;
-  font-size: 3.4vw;
-  margin: 1.8vh;
+  font-size: 4.4vh;
+  margin: 1.5vh 1vw;
 }
 #letter-f {
   color: #A3C042;

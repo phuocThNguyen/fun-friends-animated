@@ -8,7 +8,7 @@
       </div>
       <div class="select-group">
         <label for="width">Width</label>
-        <select @change="setWidth" class="form-control" id="width" name="width">
+        <select @change="setWidth" class="form-control" id="set-width" name="width">
           <option value="1">1</option>
           <option selected value="4">4</option>
           <option value="8">8</option>
@@ -81,7 +81,7 @@ export default {
   },
 
   mounted() {
-    let vw = window.innerWidth;
+    let vw = document.querySelector('.interactive-container').clientWidth;
     let vh = window.innerHeight;
     this.$nextTick(() => {
       // Initialize Sketchpad
@@ -94,7 +94,7 @@ export default {
       });
 
       this.sketchPad.setCanvasSize(this.canvasStyle.width*vw, this.canvasStyle.height*vh);
-      document.querySelector('.button-container').style.width = this.canvasStyle.width*vw;
+      document.querySelector('.button-container').style.width = `${this.canvasStyle.width*vw}`;
 
       if (this.canvasStyle.isPicture) {
         let imageUrl = this.getImageUrl(this.canvasStyle.pictureUrl);
@@ -117,7 +117,7 @@ export default {
 .button-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   margin-top: 1vh;
   background-color: rgba(255,255,255,0.8);
@@ -125,15 +125,31 @@ export default {
 }
 .btn-style {
   background-color: #00ce7c;
-  margin: 0 .5vw;
+  margin: 0 .5%;
   border: none;
-  padding: 0 1vw;
+  padding: 0 2%;
   height: 4vh;
   border-radius: 5px;
   color: #ffffff;
-  font-size: 1.5vw;
+  font-size: 2vh;
   font-weight: bold;
   box-shadow: 0 9px #999;
+}
+@media screen and (max-width: 930px) {
+  .btn-style {
+    box-shadow: 0 4px #999 !important;
+  }
+  .btn-style:active {
+    box-shadow: 0 2px #666 !important;
+    transform: translateY(2px) !important;
+  }
+  .color {
+    width: 18vh !important;
+  }
+  #set-width {
+    width: 12vh;
+    height: 5vh;
+  }
 }
 .btn-style:focus,
 .btn-style:active {
@@ -146,17 +162,19 @@ export default {
 }
 label {
   display: inline-block;
-  margin: 0 1vw;
+  margin: 0 4%;
   height: 38px;
   line-height: 38px;
   text-align: center;
-  font-size: 1.5vw;
+  font-size: 2vh;
   text-transform: uppercase;
 }
 .color {
   display: flex;
   flex-direction: row;
   align-items: center;
+  height: 4vh;
+  width: 13vh;
 }
 .select-group {
   display: flex;

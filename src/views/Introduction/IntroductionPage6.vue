@@ -20,24 +20,24 @@ export default {
 <style scoped>
 .title {
   position: absolute;
-  top: 1vh;
-  width: 100vw;
+  top: 2%;
+  width: 100%;
   text-align: center;
   color: #ffffff;
-  font-size: 2.7vw;
+  font-size: 3.7vh;
 }
 #alt-bg {
   background-color: #00CE7C;
 }
 .images {
   position: absolute;
-  width: 30vw;
-  height: 30vw;
+  width: 37vh;
+  height: 37vh;
 }
-img:nth-of-type(1) { top: 7.5vh;left: 2vw; }
-img:nth-of-type(2) { top: 7.5vh;left: 35vw; }
-img:nth-of-type(3) { top: 7.5vh;right: 2vw; }
-img:nth-of-type(4) { top: 50vh;left: 2vw; }
-img:nth-of-type(5) { top: 50vh;left: 35vw; }
-img:nth-of-type(6) { top: 50vh;right: 2vw; }
+img:nth-of-type(1) { top: 9.5%;left: 5%; }
+img:nth-of-type(2) { top: 9.5%;left: 36%; }
+img:nth-of-type(3) { top: 9.5%;right: 5%; }
+img:nth-of-type(4) { top: 52%;left: 5%; }
+img:nth-of-type(5) { top: 52%;left: 36%; }
+img:nth-of-type(6) { top: 52%;right: 5%; }
 </style>

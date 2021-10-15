@@ -27,11 +27,11 @@ export default {
 <style scoped>
 .text-box {
   height: 5vh;
-  width: 80vw;
+  width: 80%;
   background-color: #00ce7c;
   position: absolute;
   bottom: 4vh;
-  left: 10vw;
+  left: 10%;
   opacity: 0;
   display: flex;
   align-items: center;
@@ -40,6 +40,6 @@ export default {
 .text-box p {
   color: #ffffff;
   font-weight: bold;
-  font-size: 1.9vw;
+  font-size: 2.7vh;
 }
 </style>

@@ -97,11 +97,18 @@ export default {
     justify-content: center;
     align-items: center;
     width: 100vw;
+    gap: 0;
   }
   .center {
-    width: calc(1.33 * 100vh);
+    width: calc(1.33 * 100vh) !important;
     position: relative;
   }
+}
+.center {
+  width: 100%;
+}
+.show {
+  width: 100vw;
 }
 .image {
   width: 100%;
@@ -127,27 +134,28 @@ export default {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 .interactive-container {
   background-color: #ffffff;
   position: relative;
-  width: 100vw;
-  height: calc(100vh - 6vh);
+  width: 100%;
+  height: calc(100vh - 9vh);
   overflow: hidden;
 }
 .session-background {
   position: relative;
   width: 100%;
-  height: calc(100vh - 6vh);
+  height: calc(100vh - 9vh);
 }
 .arrow {
-  width: 5vw;
+  width: 10vh;
   height: auto;
-  border: 3px solid rgba(255,255,255, 0.9);
-  border-radius: 13px;
+  border: .3vw solid rgba(255,255,255, 0.9);
+  border-radius: 2vh;
   cursor: pointer;
   position: absolute;
-  bottom: 1%;
+  bottom: 1vh;
   right: 1%;
   opacity: 0.9;
   z-index: 500;

@@ -17,8 +17,8 @@ export default {
 <style scoped>
 .yt-video {
   position: absolute;
-  width: 100vw;
-  height: calc(100vh - 150px);
+  width: 100%;
+  height: 80vh;
   border: none;
 }
 .green-background {

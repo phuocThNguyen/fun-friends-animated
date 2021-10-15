@@ -31,7 +31,7 @@ export default {
   background-color: #00ce7c;
   position: absolute;
   top: 5vh;
-  left: 3vw;
+  left: 3%;
   opacity: 0;
   padding: 1.5vh;
 }

@@ -3,7 +3,7 @@
     <img class="session-background" id="page-11" src="../../assets/images/session1/18722-resized.jpg" alt="our-families">
 
     <div class="left-bar">
-      <h1 class="mb-4">Our families</h1>
+      <h1>Our families</h1>
       <p id="para-1">Talk about your family and what you like to do.</p>
       <p id="para-2">What games do you like to play?</p>
       <p id="para-3">What do you enjoy doing with your family?</p>
@@ -60,19 +60,20 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  width: 26vw;
+  width: 26%;
   height: 100%;
   background-color: #ffffff;
   z-index: 10;
   opacity: 0;
-  padding: 3vh;
+  padding: 3vh 2vh;
 }
 .left-bar h1 {
   font-size: 5vh;
+  margin-bottom: 3vh;
 }
 .left-bar p {
   color: #ffffff;
-  font-size: 1.9vw;
+  font-size: 2.8vh;
 }
 .text-box {
   height: auto;
@@ -84,8 +85,8 @@ export default {
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 11vh;
-  left: 3vw;
+  bottom: 15vh;
+  left: 15%;
   opacity: 0;
 }
 .text-box p {

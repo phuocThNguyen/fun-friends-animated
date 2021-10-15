@@ -833,8 +833,6 @@
 
         <p class="mb-0">Express yourself!</p>
       </div>
-
-
     </div>
     <drawing-canvas class="canvas" :canvasStyle='canvasStyle'/>
   </div>
@@ -857,7 +855,7 @@ export default {
     }
   },
   mounted() {
-    let vw = window.innerWidth;
+    let vw = document.querySelector('.interactive-container').clientWidth;
     const yellowFlowers = document.getElementsByClassName('yellow-flower');
     yellowFlowers.forEach(flower => {
       flower.style.bottom = (Math.floor(Math.random() * 10) + 2).toString() + 'vh';
@@ -942,29 +940,29 @@ export default {
 <style scoped>
 .landscape {
   position: absolute;
-  width: 120vw;
-  left: -4vw;
-  top: -17.65vh;
+  width: 120%;
+  left: -4%;
+  top: -20vh;
   height: auto;
 }
 .canvas {
   position: absolute;
   top: 2vh;
-  left: 33vw;
+  left: 33%;
   z-index: 100;
   opacity: 0;
 }
 .main-content {
   position: absolute;
-  left: 1vw;
+  left: 1%;
   top: 2vh;
-  width: 30vw;
+  width: 30%;
   z-index: 50;
 }
 .main-content h1 {
   background-color: #000000;
   color: #ffffff;
-  font-size: 2.2vw;
+  font-size: 2.7vh;
   width: 100%;
   height: auto;
   padding: 1.2vh;
@@ -978,7 +976,10 @@ export default {
   padding: 2.5vh;
   height: auto;
   opacity: 0;
-  font-size: 1.7vw;
+  font-size: 2.3vh;
+}
+.text-box p {
+  margin-bottom: 1vh;
 }
 .text-box p:first-child,
 .text-box p:last-child {
@@ -986,7 +987,7 @@ export default {
 }
 .yellow-flower {
   position: absolute;
-  width: 0.1vw;
+  width: 0.1%;
   height: auto;
   z-index: 10;
 }

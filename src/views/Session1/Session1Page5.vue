@@ -33,7 +33,7 @@ export default {
   background-color: #00ce7c;
   position: absolute;
   top: 6vh;
-  left: 6vw;
+  left: 6%;
   opacity: 0;
   padding: 2vh;
 }

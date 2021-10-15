@@ -77,7 +77,7 @@ export default {
   padding: 1vh 0 0 5vw;
 }
 .text h1 {
-  font-size: 2vw;
+  font-size: 2.8vh;
   color: #ffffff;
 }
 .para {
@@ -86,13 +86,13 @@ export default {
   width: 100%;
 }
 .para p {
-  font-size: 1.8vw;
+  font-size: 3vh;
   color: #ffffff;
   margin-bottom: 0;
 }
 .canvas {
   position: absolute;
   top: 25vh;
-  left: 5vw;
+  left: 5%;
 }
 </style>

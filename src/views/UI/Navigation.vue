@@ -35,7 +35,6 @@
     <nav class="navbar-style">
       <button class="toggler-button" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
               aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-<!--        <span class="navbar-toggler-icon"></span>-->
         <img src="../../assets/images/others/menu-white.png" alt="menu" class="nav-icon">
       </button>
       <h1 class="session-title">{{title}}</h1>
@@ -97,11 +96,20 @@ export default {
   .nav-container {
     width: calc(1.33 * 100vh);
   }
+  .toggler-button {
+    line-height: 0 !important;
+    padding: 4px !important;
+    border-radius: 5px !important;
+  }
+  .btn-session {
+    font-size: 2vh;
+    padding: 1px !important;
+  }
 }
 .navbar-style {
   background-color: #00ce7c;
-  height: 6vh;
-  padding: 5px 10px;
+  height: 9vh;
+  padding: 1vh 1%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -115,20 +123,22 @@ export default {
   text-align: center;
   margin-bottom: 0;
   color: #ffffff;
-  font-size: 2vw;
+  font-size: 3vh;
 }
 .nav-icon {
   width: auto;
-  height: 3vh;
+  height: 4.5vh;
 }
 .toggler-button {
   padding: .25rem .75rem;
-  font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
   border: 1px solid #ffffff;
   border-radius: 13px;
   outline: none;
+}
+.collapse {
+  width: 100% !important;
 }
 .collapse-container {
   background-color: #00ce7c;
@@ -138,6 +148,7 @@ export default {
 .btn-session {
   background-color: #ffffff;
   color: #00ce7c;
+
   font-weight: bold;
   margin: 5px;
   border: 2px solid #ffffff;

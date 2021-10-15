@@ -220,10 +220,10 @@ export default {
 }
 .content-list {
   position: absolute;
-  width: 90vw;
-  left: 5vw;
-  top: 2vh;
-  font-size: 2vw;
+  width: 90%;
+  left: 5%;
+  top: 2%;
+  font-size: 2.5vh;
 }
 tspan { white-space:pre }
 .shp0 { fill: #272525 }

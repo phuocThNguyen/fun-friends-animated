@@ -71,7 +71,7 @@ export default {
 }
 .images {
   position: absolute;
-  top: 10vh;
+  top: 8vh;
   width: 100%;
   height: 100%;
   z-index: 10;
@@ -79,21 +79,26 @@ export default {
   grid-template-columns: auto auto;
 }
 .images img {
-  width: 45vw;
+  width: 62vh;
   height: 41vh;
-  margin: 2vw;
+  margin: 2.5vh;
   opacity: 0;
 }
 .text-box {
   position: absolute;
-  left: 12vw;
-  top: 48%;
+  left: 8%;
+  top: 46%;
   z-index: 20;
+}
+@media screen and (max-width: 930px) {
+  .text-box {
+    top: 44.5% !important;
+  }
 }
 .text span {
   font-weight: bold;
   color: #ffffff;
+  font-size: 3vh;
   opacity: 0;
-  font-size: 2vw;
 }
 </style>
