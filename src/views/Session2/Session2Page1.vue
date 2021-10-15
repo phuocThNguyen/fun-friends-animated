@@ -18,12 +18,14 @@ export default {
   position: absolute;
   top: 5vh;
   background-color: #00CE7C;
-  padding: 1vh 15vw 1vh 15vw;
-  left: 12vw;
+  width: 70%;
+  text-align: center;
+  padding: 1vh;
+  left: 15%;
 }
 .text-box p {
   color: white;
-  font-size: 3vw;
+  font-size: 3.8vh;
   font-weight: bold;
   margin-bottom: 0;
 }

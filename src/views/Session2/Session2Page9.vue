@@ -137,23 +137,23 @@ export default {
 .instruction {
   position: absolute;
   top: 2vh;
-  right: 2vw;
+  right: 2%;
 }
 .reward {
   position: absolute;
   height: auto;
-  width: 1vw;
-  right: 40vw;
+  width: 1%;
+  right: 40%;
   top: 17vh;
   opacity: 0;
 }
 #alt-pos {
-  left: -10vw;
+  left: -10%;
 }
 .question {
   position: absolute;
   top: 30vh;
-  left: 38vw;
+  left: 38%;
 }
 .cls-1{fill:none;}
 .cls-2{isolation:isolate;}

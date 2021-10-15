@@ -5,7 +5,7 @@
       <p>Sit with a friend and look at all the 'Feeling' faces.</p>
       <p>What could they be feeling?</p>
       <p>Take turns and make sure to listen to your friend.
-      Remember, we all think differently.</p>
+        <br>Remember, we all think differently.</p>
     </div>
     <div class="text">Nina has gifts for her family.</div>
     <img src="../../assets/images/session2/5772.png" alt="Nina" class="image">
@@ -128,16 +128,6 @@ import FeelingQuestion from "@/components/feelingsQuestion/FeelingsQuestion";
 export default {
   name: "Session2Page5",
   components: {FeelingQuestion, EmotionPickInstruction},
-  data() {
-    return {
-      canvasStyle: {
-        width: 0.7,
-        height: 0.75,
-        isPicture: true,
-        pictureUrl: 'session2/5772-resized.jpg'
-      }
-    }
-  },
   methods: {
     handleCorrectAnswer() {
       document.querySelector('.reward').style.opacity = '1';
@@ -171,52 +161,53 @@ export default {
 .instruction {
   position: absolute;
   top: 2vh;
-  right: 2vw;
+  right: 2%;
 }
 .reward {
   position: absolute;
   height: auto;
-  width: 1vw;
+  width: 1%;
   top: 20vh;
-  left: 52vw;
+  left: 52%;
   opacity: 0;
+  z-index: 10;
 }
 .question {
   position: absolute;
   top: 40vh;
-  left: .5vw;
+  left: .5%;
 }
 .image {
   position: absolute;
-  right: -4vw;
+  right: -4%;
   height: 100vh;
   width: auto;
 }
 .text-box {
   position: absolute;
-  width: 50vw;
+  width: 55%;
   z-index: 10;
-  padding: 2vw;
+  padding: 2%;
   opacity: 0;
   color: #000000;
 }
 .text-box h1 {
-  font-size: 3vw;
+  font-size: 4.2vh;
   margin-bottom: 1vh;
 }
 .text-box p {
-  font-size: 2vw;
+  font-size: 2.8vh;
   margin-bottom: 1vh;
 }
 .text {
   position: absolute;
   bottom: 2vh;
-  right: 14vw;
+  right: 14%;
   background-color: #00ce7c;
   color: #ffffff;
   opacity: 0;
-  padding: 1vh 1.5vw;
-  font-size: 2vw;
+  padding: 1vh 2.1vh;
+  font-size: 2.8vh;
   font-weight: bold;
   z-index: 10;
 }

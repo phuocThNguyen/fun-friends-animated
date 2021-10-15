@@ -56,22 +56,22 @@ export default {
 <style scoped>
 .image {
   position: absolute;
-  width: 60vw;
+  width: 60%;
   height: 100%;
-  left: 40vw;
+  left: 40%;
 }
 .text-box {
   position: absolute;
-  padding: 3vw;
-  width: 40vw;
+  padding: 3.8vh;
+  width: 40%;
 }
 .text-box h1 {
   font-weight: bold;
-  font-size: 4vw;
+  font-size: 4.8vh;
   margin-bottom: 5vh;
 }
 .text-box p {
-  font-size: 2vw;
+  font-size: 2.8vh;
   margin-bottom: 3vh;
   color: #ffffff;
 }
@@ -80,8 +80,8 @@ export default {
   background-color: #00ce7c;
   opacity: 0;
   font-weight: bold;
-  font-size: 2.5vw !important;
-  padding: 1.5vw;
+  font-size: 3.3vh !important;
+  padding: 2.3vh;
   text-align: center;
   margin-top: 15vh;
 }

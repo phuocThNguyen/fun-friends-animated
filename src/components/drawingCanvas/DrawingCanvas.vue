@@ -117,7 +117,7 @@ export default {
 .button-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   margin-top: 1vh;
   background-color: rgba(255,255,255,0.8);

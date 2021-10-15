@@ -134,19 +134,19 @@ export default {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  padding: 0 1vw;
-  top: 8.7vh;
+  padding: 0 1.7vh;
+  top: 9vh;
 }
 .masks-container div {
-  width: 10vw;
-  height: 10vw;
+  width: 14vh;
+  height: 14vh;
 }
 .tips-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   color: #ffffff;
-  font-size: 2vw;
+  font-size: 3.2vh;
   font-weight: bold;
   margin: 0 1vw;
   text-align: center;
@@ -154,20 +154,20 @@ export default {
 .tips-container p {
   margin-bottom: 0;
   display: inline-block;
-  width: 8vw;
+  width: 11.2vh;
 }
 .content-container {
   background-color: rgba(0, 206, 124, 0.8);
   border-radius: 30px;
   padding-top: 1vh;
-  width: 60vw;
+  width: 60%;
   display: flex;
   flex-direction: column;
   opacity: 0;
 }
 .content-container h1 {
   text-align: center;
-  font-size: 3.5vw;
+  font-size: 4.9vh;
   color: #ffffff;
 }
 .emotes-container {
@@ -175,14 +175,14 @@ export default {
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
-  margin: 1vw;
+  margin: 1.4vh;
 }
 .answers-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-end;
-  margin: 1vw;
+  margin: 1.4vh;
 }
 
 /*  Small size  */

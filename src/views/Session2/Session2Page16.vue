@@ -29,10 +29,12 @@ export default {
   position: absolute;
   background-color: #00ce7c;
   color: #ffffff;
-  padding: 1.5vh 5vw 1.5vh 5vw;
-  top: 78vh;
-  left: 15vw;
-  font-size: 2.5vw;
+  padding: 1.5vh;
+  text-align: center;
+  bottom: 5vh;
+  width: 70%;
+  left: 15%;
+  font-size: 3.5vh;
   font-weight: bold;
   opacity: 1;
 }

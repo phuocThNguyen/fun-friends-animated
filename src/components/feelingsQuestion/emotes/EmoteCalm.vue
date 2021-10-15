@@ -35,7 +35,7 @@ export default {
 <style scoped>
 .emotes {
   height: auto;
-  width: 10vw;
+  width: 14vh;
 }
 tspan { white-space:pre }
 .shp0-calm { fill: #ffd05d }

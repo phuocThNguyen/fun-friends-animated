@@ -351,9 +351,14 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 930px) {
+  .content-container {
+    border-radius: 8px !important;
+  }
+}
 .image {
   position: absolute;
-  width: 49.7vw;
+  width: 49.7%;
   height: 72vh;
   bottom: 0;
 }
@@ -363,23 +368,23 @@ export default {
 .reward {
   position: absolute;
   height: auto;
-  width: 1vw;
-  left: 50vw;
+  width: 1%;
+  left: 50%;
   top: 35vh;
   opacity: 0;
 }
 .text-box {
   position: absolute;
-  width: 96vw;
-  left: 2vw;
-  padding: 3vh 2vw 2vh 2vw;
+  width: 96%;
+  left: 2%;
+  padding: 1vh 2.8vh;
 }
 .text-box h1 {
-  font-size: 3vw;
+  font-size: 4.2vh;
   margin: 1vh 0 1vh;
 }
 .text-box p {
-  font-size: 1.8vw;
+  font-size: 2.5vh;
 }
 .masks-container {
   position: absolute;
@@ -388,34 +393,34 @@ export default {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  padding: 0 .5vw;
-  top: 4.9vh;
+  padding: 0 0.7vh;
+  top: 5.4vh;
 }
 .masks-container div {
-  width: 5vw;
-  height: 5vw;
+  width: 7vh;
+  height: 7vh;
 }
 .tips-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   color: #ffffff;
-  font-size: 1.5vw;
+  font-size: 2.1vh;
   font-weight: bold;
-  margin: 0 .5vw;
+  margin: 0 .7vw;
   text-align: center;
 }
 .tips-container p {
   margin-bottom: 0;
   display: inline-block;
-  width: 7vw;
+  width: 9.8vh;
 }
 .content-container {
   position: absolute;
   background-color: rgba(0, 206, 124, 0.8);
   border-radius: 30px;
   padding-top: 1vh;
-  width: 34vw;
+  width: 34%;
   bottom: 4vh;
   display: flex;
   flex-direction: column;
@@ -423,7 +428,7 @@ export default {
 }
 .content-container h1 {
   text-align: center;
-  font-size: 2vw;
+  font-size: 2.8vh;
   color: #ffffff;
 }
 .emotes-container {
@@ -431,29 +436,29 @@ export default {
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
-  margin: 0 .5vw;
+  margin: 0 .7vw;
 }
 .emotes {
   height: auto;
-  width: 5vw;
+  width: 7vh;
 }
 .answer-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-end;
-  margin: 0 .5vw .5vh .5vw;
+  margin: 0 .7vh .5vh .7vh;
 }
 .small-tick {
-  width: 3vw;
+  width: 4.2vh;
   height: auto;
   opacity: 0;
 }
 #content-left {
-  left: 8vw;
+  left: 8%;
 }
 #content-right {
-  right: 8vw;
+  right: 8%;
 }
 .cls-1{fill:none;}
 .cls-2{isolation:isolate;}

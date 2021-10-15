@@ -137,20 +137,20 @@ export default {
 .instruction {
   position: absolute;
   bottom: 15vh;
-  left: 2vw;
+  left: 2%;
 }
 .reward {
   position: absolute;
   height: auto;
-  width: 1vw;
-  right: 10vw;
+  width: 1%;
+  right: 10%;
   top: 30vh;
   opacity: 0;
 }
 .question {
   position: absolute;
   top: 5vh;
-  left: 20vw;
+  left: 20%;
 }
 .cls-1{fill:none;}
 .cls-2{isolation:isolate;}

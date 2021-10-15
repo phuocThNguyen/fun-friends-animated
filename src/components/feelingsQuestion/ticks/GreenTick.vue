@@ -25,7 +25,7 @@ export default {
 
 <style scoped>
 .big-tick {
-  width: 7vw;
+  width: 9.8vh;
   height: auto;
   opacity: 0;
 }

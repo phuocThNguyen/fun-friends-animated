@@ -15,7 +15,6 @@
     <draggable class="emotions" id="emotions-source" v-model="emotions" group="emotions">
       <div class="emotions-item" v-for="(emotion, index) in emotions" v-bind:id="emotion" :key="index">{{emotion}}</div>
     </draggable>
-
     <draggable class="emotions" @change="updateSadEmotion" id="emotion-sad" v-model="emotionSad" group="emotions">
       <div class="emotions-item" v-for="(emotion, index) in emotionSad" v-bind:id="emotion" :key="index">{{emotion}}</div>
     </draggable>
@@ -469,64 +468,64 @@ export default {
 .reward {
   position: absolute;
   height: auto;
-  width: 1vw;
-  left: 12vw;
+  width: 1%;
+  left: 12%;
   bottom: 30vh;
   opacity: 0;
 }
 .text-box {
   position: absolute;
-  font-size: 2.5vw;
+  font-size: 3.3vh;
   background-color: rgba(0, 206, 124, 0.9);
   top: 1vh;
-  left: 1vw;
+  left: 1%;
   color: #ffffff;
-  width: 25vw;
-  padding: 2vw;
+  width: 25%;
+  padding: 2.8vh;
 }
 .tick {
   position: absolute;
   z-index: 50;
-  width: 7vw;
+  width: 7%;
   height: auto;
   opacity: 0;
 }
 #red-tick-1 {
-  left: 41vw;
+  left: 41%;
   top: 32vh;
 }
 #red-tick-2 {
-  left: 77vw;
+  left: 77%;
   top: 32vh;
 }
 #red-tick-3 {
-  left: 41vw;
+  left: 41%;
   top: 79vh;
 }
 #red-tick-4 {
-  left: 77vw;
+  left: 77%;
   top: 79vh;
 }
 
 #green-tick-1 {
-  left: 53vw;
+  left: 53%;
   top: 32vh;
 }
 #green-tick-2 {
-  left: 88vw;
+  left: 88%;
   top: 32vh;
 }
 #green-tick-3 {
-  left: 53vw;
+  left: 53%;
   top: 79vh;
 }
 #green-tick-4 {
-  left: 88vw;
+  left: 88%;
   top: 79vh;
 }
 .emotions {
   position: absolute;
-  width: 25vw;
+  width: 25%;
   height: 36vh;
   background-color: rgba(0, 0, 0, 0);
   display: flex;
@@ -536,31 +535,31 @@ export default {
   z-index: 10;
 }
 .emotions-item {
-  font-size: 2.5vw;
+  font-size: 3.3vh;
   padding: .5vh;
   text-align: center;
   color: #ffffff;
   background-color: #00ce7c;
-  margin: 0.5vw;
-  width: 20vw;
+  margin: 1.3vh;
+  width: 25vh;
 }
 #emotions-source {
-  top: 40vh;
+  top: 45vh;
 }
 #emotion-sad {
-  left: 32vw;
+  left: 32%;
   top: 2vh;
 }
 #emotion-angry {
-  left: 67vw;
+  left: 67%;
   top: 2vh;
 }
 #emotion-worried {
-  left: 32vw;
+  left: 32%;
   top: 49vh;
 }
 #emotion-happy {
-  left: 67vw;
+  left: 67%;
   top: 49vh;
 }
 #Happy {
@@ -582,40 +581,40 @@ export default {
 #mask-sad {
   background-color: #be0aff;
   top: 31vh;
-  left: 34vw;
+  left: 34%;
   visibility: hidden;
 }
 #mask-angry {
   background-color: #ff0000;
   top: 31vh;
-  left: 69vw;
+  left: 69%;
   visibility: hidden;
 }
 #mask-worried {
   background-color: #147df5;
   top: 78vh;
-  left: 34vw;
+  left: 34%;
   visibility: hidden;
 }
 #mask-happy {
   background-color: #ffd300;
   top: 78vh;
-  left: 69vw;
+  left: 69%;
   visibility: hidden;
 }
 .images {
   position: absolute;
-  left: 27vw;
+  left: 27%;
   top: -7vh;
-  width: 70vw;
+  width: 70%;
   height: 100%;
   z-index: 5;
   display: grid;
   grid-template-columns: auto auto;
-  column-gap: 1vw;
+  column-gap: 1.8vh;
 }
 .images img {
-  width: 25vw;
+  width: 36vh;
   height: 30vh;
   opacity: 1;
   align-self: center;

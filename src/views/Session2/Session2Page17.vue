@@ -42,17 +42,18 @@ export default {
   position: absolute;
   z-index: 100;
   background-color: #ffffff;
-  width: 25vw;
-  padding: 2vw;
-  top: 5vh;
-  left: 5vw;
+  width: 27%;
+  padding: 2.8vh;
+  top: 1vh;
+  left: 5%;
 }
 .text-box h1 {
-  font-size: 4vw;
-  margin-bottom: 3vh;
+  font-size: 5vh;
+  margin-bottom: 2vh;
 }
 .text-box p {
-  font-size: 1.8vw;
+  font-size: 2.6vh;
+  margin-bottom: 1vh;
 }
 .text-box p:nth-child(3) {
   color: #d00000;
