@@ -810,6 +810,7 @@ export default {
 .text-box p {
   font-size: 2.5vh;
   padding-left: 1.4vh;
+  margin-bottom: 1vh;
 }
 .landscape {
   position: absolute;
