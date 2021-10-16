@@ -771,7 +771,6 @@ export default {
   width: 50%;
   right: 2%;
   bottom: 7vh;
-  background-color: rgba(0,0,0,0.5);
   display: flex;
   justify-content: center;
   align-items: center;
