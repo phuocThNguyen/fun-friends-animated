@@ -295,50 +295,50 @@ export default {
   width: 100%;
 }
 .masks-container div {
-  width: 3vw;
-  height: 3vw;
+  width: 4.2vh;
+  height: 4.2vh;
 }
 .reward {
   position: absolute;
   height: auto;
-  width: 1vw;
+  width: 1%;
   top: 20vh;
-  right: 20vw;
+  right: 20%;
   opacity: 0;
 }
 .text-box {
   position: absolute;
   top: 5vh;
-  left: 2vw;
-  width: 35vw;
-  padding: 1vw;
+  left: 2%;
+  width: 35%;
+  padding: 1.4vh;
   background-color: rgba(255,255,255,0.8);
   opacity: 0;
 }
 .text-box h1 {
-  font-size: 2.5vw;
+  font-size: 3.5vh;
   margin-bottom: 3vh;
 }
 .text-box p {
-  font-size: 1.8vw;
+  font-size: 2.5vh;
   margin-bottom: 1.5vh;
 }
 .notice-box {
   position: absolute;
   bottom: 5vh;
-  width: 70vw;
-  left: 15vw;
+  width: 70%;
+  left: 15%;
   text-align: center;
   color: #ffffff;
   background-color: rgba(0, 206, 124, 0.9);
-  font-size: 2vw;
+  font-size: 2.8vh;
   font-weight: bold;
-  padding: .5vw;
+  padding: .7vh;
   opacity: 0;
 }
 .small-tick {
   height: auto;
-  width: 3vw;
+  width: 4.2vh;
   opacity: 0;
   margin: 1vh 0;
 }
@@ -351,7 +351,7 @@ export default {
 .tips-container p {
   color: #000000;
   font-weight: bold;
-  font-size: 1vw;
+  font-size: 1.4vh;
   margin-bottom: 0;
 }
 .content-container {
@@ -368,7 +368,7 @@ export default {
 }
 .emotes {
   height: auto;
-  width: 3vw !important;
+  width: 4.2vh !important;
 }
 .answer-container {
   display: flex;

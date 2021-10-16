@@ -61,13 +61,13 @@ export default {
 .text-box {
   width: 80%;
   background-color: #000000;
-  padding: 1vw;
+  padding: 1.4vh;
   opacity: 0;
 }
 .text-box p {
   color: #ffffff;
   text-align: center;
-  font-size: 2vw;
+  font-size: 2.8vh;
   margin-bottom: 0;
 }
 </style>

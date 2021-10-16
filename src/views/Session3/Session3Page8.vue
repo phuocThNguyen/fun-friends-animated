@@ -294,37 +294,37 @@ export default {
   width: 100%;
 }
 .masks-container div {
-  width: 3vw;
-  height: 3vw;
+  width: 4.2vh;
+  height: 4.2vh;
 }
 .reward {
   position: absolute;
   height: auto;
-  width: 1vw;
+  width: 1%;
   top: 20vh;
-  left: 50vw;
+  right: 20%;
   opacity: 0;
 }
 .text-box {
   position: absolute;
   top: 5vh;
-  left: 2vw;
-  width: 35vw;
-  padding: 1vw;
+  left: 2%;
+  width: 35%;
+  padding: 1.4vh;
   background-color: rgba(255,255,255,0.8);
   opacity: 0;
 }
 .text-box h1 {
-  font-size: 2.5vw;
+  font-size: 3.5vh;
   margin-bottom: 3vh;
 }
 .text-box p {
-  font-size: 1.8vw;
+  font-size: 2.5vh;
   margin-bottom: 1.5vh;
 }
 .small-tick {
   height: auto;
-  width: 3vw;
+  width: 4.2vh;
   opacity: 0;
   margin: 1vh 0;
 }
@@ -337,13 +337,14 @@ export default {
 .tips-container p {
   color: #000000;
   font-weight: bold;
-  font-size: 1vw;
+  font-size: 1.4vh;
   margin-bottom: 0;
 }
 .content-container {
   width: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .emotes-container {
   display: flex;
@@ -353,7 +354,7 @@ export default {
 }
 .emotes {
   height: auto;
-  width: 3vw !important;
+  width: 4.2vh !important;
 }
 .answer-container {
   display: flex;
@@ -361,7 +362,6 @@ export default {
   justify-content: space-around;
   align-items: flex-end;
 }
-
 .shp0-red { fill: #e57373 }
 .shp1-red { fill: #d24a43 }
 .shp2-red { fill: #ffffff }

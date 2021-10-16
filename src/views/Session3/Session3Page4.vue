@@ -1,4 +1,4 @@
-<template>
+%<template>
   <div class="interactive-container">
     <img src="../../assets/images/session3/23391-resized.jpg" alt="friends" class="session-background">
     <emotion-pick-instruction class="instruction"/>
@@ -137,20 +137,20 @@ export default {
 .instruction {
   position: absolute;
   top: 2vh;
-  right: 2vw;
+  right: 2%;
 }
 .reward {
   position: absolute;
   height: auto;
-  width: 1vw;
-  left: 20vw;
+  width: 1%;
+  left: 20%;
   top: 17vh;
   opacity: 0;
 }
 .question {
   position: absolute;
   bottom: 4vh;
-  left: 20vw;
+  left: 20%;
 }
 .cls-1{fill:none;}
 .cls-2{isolation:isolate;}

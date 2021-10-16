@@ -30,18 +30,21 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  padding: 2vw;
+  padding: 2.8vh;
   top: 2vh;
-  left: 2vw;
+  left: 2%;
   background-color: rgba(255,255,255,0.8);
   opacity: 0;
 }
 .text-box h1 {
-  font-size: 3vw;
+  font-size: 4.2vh;
   margin-bottom: 2vh;
 }
 .text-box p {
-  font-size: 1.8vw;
+  font-size: 2.5vh;
   margin-bottom: 1vh;
+}
+.text-box p:last-child {
+  margin-bottom: 0;
 }
 </style>

@@ -67,19 +67,19 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  width: 35vw;
+  width: 35%;
   height: 100%;
   background-color: rgba(255,255,255, 0.7);
-  padding: 2vw;
+  padding: 2.6vh;
   opacity: 0;
 }
 .text-box h1 {
-  font-size: 2.4vw;
+  font-size: 3.36vh;
   margin: 1vh 0;
   opacity: 0;
 }
 .text-box p {
-  font-size: 1.9vw;
+  font-size: 2.4vh;
   margin-bottom: 2vh;
   opacity: 0;
 }

@@ -288,26 +288,31 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 930px) {
+  .content-container {
+    border-radius: 8px !important;
+  }
+}
 .instruction {
   position: absolute;
   top: 2vh;
-  right: 2vw;
+  right: 2%;
 }
 .reward {
   position: absolute;
   height: auto;
-  width: 1vw;
-  right: 38vw;
+  width: 1%;
+  right: 38%;
   top: 12vh;
   opacity: 0;
 }
 #girl {
   top: 5vh;
-  left: 2vw;
+  left: 2%;
 }
 #dog {
   top: 45vh;
-  left: 2vw;
+  left: 2%;
 }
 .masks-container {
   position: absolute;
@@ -316,12 +321,12 @@ export default {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  padding: 0 1vw;
-  top: 8.7vh;
+  padding: 0 1.4vh;
+  top: 9.6vh;
 }
 .masks-container div {
-  width: 10vw;
-  height: 10vw;
+  width: 14vh;
+  height: 14vh;
 }
 .tips-container {
   display: flex;
@@ -332,7 +337,7 @@ export default {
 .tips-container p {
   color: #ffffff;
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 2.8vh;
   margin-bottom: 0;
 }
 .content-container {
@@ -340,14 +345,14 @@ export default {
   background-color: rgba(0, 206, 124, 0.75);
   border-radius: 30px;
   padding-top: 1vh;
-  width: 50vw;
+  width: 50%;
   display: flex;
   flex-direction: column;
   opacity: 0;
 }
 .content-container h1 {
   text-align: center;
-  font-size: 3.5vw;
+  font-size: 4.9vh;
   color: #ffffff;
 }
 .emotes-container {
@@ -355,17 +360,17 @@ export default {
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
-  margin: 1vw;
+  margin: 1.4vh;
 }
 .answer-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-end;
-  margin: 1vw;
+  margin: 1.4vh;
 }
 .big-tick {
-  width: 5vw;
+  width: 7vh;
   height: auto;
   opacity: 0;
 }

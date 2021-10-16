@@ -65,29 +65,30 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  width: 35vw;
+  width: 35%;
   height: 100%;
   background-color: rgba(255,255,255, 0.7);
-  padding: 2vw;
+  padding: 2.6vh;
   opacity: 0;
 }
 .text-box h1 {
-  font-size: 2.4vw;
+  font-size: 3.36vh;
   margin: 1vh 0;
   opacity: 0;
 }
 .text-box p {
-  font-size: 1.7vw;
-  margin-bottom: 2vh;
+  font-size: 2.38vh;
+  margin-bottom: 1vh;
   opacity: 0;
 }
 .text-box p:last-child {
   display: inline-block;
+  text-align: center;
   background-color: #00ce7c;
   width: 90%;
   color: #ffffff;
   font-weight: bold;
-  padding: 1.5vw;
+  padding: 1.5vh;
   margin-top: 2vh;
 }
 </style>

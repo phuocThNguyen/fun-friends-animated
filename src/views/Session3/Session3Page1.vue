@@ -8,7 +8,6 @@
         </g>
       </g>
     </svg>
-
     <svg class="sun" ref="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 269 265" width="150" height="150">
       <title>Sun</title>
       <g id="Sun">
@@ -57,7 +56,6 @@
         </g>
       </g>
     </svg>
-
     <svg class="cloud2" ref="cloud2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 91" width="230" height="71">
       <title>Cloud</title>
       <g id="Layer 2">
@@ -199,7 +197,6 @@
     </svg>
 
     <p class="title"><span id="letter-f">F</span>eelings</p>
-
     <p class="text" id="line-1">Today we will talk more about paying attention to others' feelings.</p>
     <p class="text" id="line-2">Together we will get better at understand each other's
     feelings and helping each other when we are sad, angry, excited, worried or scared.</p>
@@ -216,7 +213,7 @@ import anime from "animejs";
 export default {
   name: "Session3Page1",
   mounted() {
-    let vw = window.innerWidth;
+    let vw = document.querySelector('.interactive-container').clientWidth;
 
     anime({
       targets: this.$refs.cloud1,
@@ -286,10 +283,10 @@ export default {
   font-family: 'Sigmar One', cursive;
   position: absolute;
   color: white;
-  font-size: 6vw;
+  font-size: 8.4vh;
   -webkit-text-stroke: 0.1vw black;
-  left: 35vw;
-  top: 27vh;
+  left: 35%;
+  top: 30vh;
   opacity: 0;
 }
 #letter-f {
@@ -298,20 +295,19 @@ export default {
 .text {
   position: absolute;
   margin-bottom: 0;
-  font-size: 2.2vw;
+  font-size: 3vh;
   color: #ffffff;
 }
 #line-1 {
   text-align: center;
-  width: 65vw;
-  left: 17vw;
+  width: 100%;
   top: 42vh;
 }
 #line-2 {
   text-align: center;
-  width: 85vw;
+  width: 80%;
   top: 46vh;
-  left: 8vw;
+  left: 10%;
 }
 span {
   display: inline-block;
@@ -325,17 +321,17 @@ tspan { white-space:pre }
 }
 .twitter-bird {
   position: absolute;
-  width: 11vw;
+  width: 11%;
   height: auto;
 }
 .bird-1 {
   top: 20vh;
-  left: -5vw;
+  left: -5%;
   z-index: 20;
 }
 .bird-2 {
   bottom: 2vh;
-  right: -11vw;
+  right: -11%;
   z-index: 70;
 }
 #wing1{
@@ -353,31 +349,31 @@ tspan { white-space:pre }
 }
 .cloud1 {
   position: absolute;
-  width: 25vw;
+  width: 25%;
   height: auto;
   top: 10vh;
-  left: -35vw;
+  left: -35%;
 }
 .cloud2 {
   position: absolute;
   width: 30vh;
   height: auto;
   top: 14vh;
-  right: 1vw;
+  right: 1%;
 }
 .big-cloud {
   position: absolute;
-  width: 90vw;
+  width: 90%;
   height: auto;
   top: 20vh;
-  left: 5vw;
+  left: 5%;
 }
 .long-cloud {
-  width: 130vw;
+  width: 130%;
   height: auto;
   position: absolute;
   bottom: -7vh;
-  left: -12vw;
+  left: -12%;
   z-index: 50;
 }
 .small-cloud {
@@ -385,13 +381,13 @@ tspan { white-space:pre }
   width: 15vh;
   height: auto;
   top: 5vh;
-  right: -25vw;
+  right: -25%;
 }
 .sun {
   position: absolute;
   top: 3vh;
-  right: 3vw;
-  width: 15vw;
+  right: 3%;
+  width: 15%;
   height: auto;
 }
 </style>
