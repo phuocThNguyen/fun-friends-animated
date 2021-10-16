@@ -734,22 +734,22 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.8);
-  width: 74vw;
+  width: 74%;
   height: auto;
-  left: 13vw;
+  left: 13%;
   top: 12vh;
-  padding: 3vw;
+  padding: 3vh;
   opacity: 0;
 }
 .text-box h1 {
   text-align: center;
-  margin-bottom: 4vh;
-  font-size: 4vw;
+  margin-bottom: 2vh;
+  font-size: 5.6vh;
   font-weight: bold;
 }
 .text-box p {
   margin-bottom: 2vh;
-  font-size: 2vw;
+  font-size: 2.8vh;
 }
 .text-box p:nth-child(5),
 .text-box p:nth-child(6),
@@ -759,9 +759,9 @@ export default {
 }
 .landscape {
   position: absolute;
-  width: 113vw;
+  width: 113%;
   height: auto;
-  left: -7vw;
+  left: -7%;
   top: -5vh;
 }
 tspan { white-space:pre }
