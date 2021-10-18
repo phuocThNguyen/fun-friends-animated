@@ -28,13 +28,13 @@ export default {
 .text-box {
   position: absolute;
   bottom: 5vh;
-  left: 15vw;
-  width: 70vw;
-  font-size: 2vw;
+  left: 15%;
+  width: 70%;
+  font-size: 2.8vh;
   font-weight: bold;
   background-color: #00ce7c;
   color: #ffffff;
-  padding: 1vw;
+  padding: 1.4vh;
   text-align: center;
   opacity: 0;
 }

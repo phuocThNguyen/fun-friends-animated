@@ -904,30 +904,44 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  width: 40vw;
-  left: 30vw;
+  width: 50%;
+  left: 25%;
   top: 2vh;
   background-color: #000000;
   color: #ffffff;
-  font-size: 2vw;
+  font-size: 2.8vh;
   z-index: 30;
-  padding: 1vw;
+  padding: 1.4vh;
   text-align: center;
   opacity: 1;
 }
 .landscape {
   position: absolute;
-  width: 120vw;
-  left: -4vw;
+  width: 120%;
+  left: -4%;
   top: -17.65vh;
   height: auto;
 }
 .canvas {
   position: absolute;
   top: 2vh;
-  left: 5vw;
+  left: 5%;
   opacity: 1;
   z-index: 20;
+}
+.yellow-flower {
+  position: absolute;
+  width: 0.1%;
+  height: auto;
+  z-index: 10;
+}
+.blue-flower {
+  position: absolute;
+  z-index: 20;
+}
+.green-flower {
+  position: absolute;
+  z-index: 5;
 }
 tspan { white-space:pre }
 .shp-pistil { fill: #ffffff }
@@ -968,19 +982,4 @@ tspan { white-space:pre }
 .shp29 { fill: #ffffff }
 .shp30 { opacity: 0.2;mix-blend-mode: soft-light;fill: #ffdc4a }
 .shp31 { fill: #15776e }
-
-.yellow-flower {
-  position: absolute;
-  width: 0.1vw;
-  height: auto;
-  z-index: 10;
-}
-.blue-flower {
-  position: absolute;
-  z-index: 20;
-}
-.green-flower {
-  position: absolute;
-  z-index: 5;
-}
 </style>

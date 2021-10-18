@@ -86,53 +86,53 @@ export default {
 .text-circles {
   position: absolute;
   font-family: 'Kalam', cursive;
-  width: 49vw;
+  width: 49%;
   height: 100%;
   right: 0;
 }
 .text-circles p {
   position: absolute;
   display: block;
-  width: 17vw;
-  height: 17vw;
-  line-height: 17vw;
+  width: 23vh;
+  height: 23vh;
+  line-height: 23vh;
   text-align: center;
-  font-size: 4vw;
+  font-size: 5.6vh;
   border-radius: 50%;
   background-color: rgba(255,255,255,0.7);
   opacity: 0;
 }
 .text-circles p:nth-of-type(1) {
   top: 10vh;
-  right: 15vw;
+  right: 21vh;
 }
 .text-circles p:nth-of-type(2) {
   bottom: 10vh;
-  right: 5vw;
+  right: 7vh;
 }
 .text-circles p:nth-of-type(3) {
   top: 27vh;
-  left: 2vw;
+  left: 2.8vh;
 }
 .text-circles p:nth-of-type(4) {
   top: 31vh;
-  right: 3vw;
+  right: 4.2vh;
 }
 .text-circles p:nth-of-type(5) {
   bottom: 10vh;
-  left: 1vw;
+  left: 1.4vh;
 }
 .text-bars {
   position: absolute;
-  left: 4.5vw;
+  left: 6.3vh;
   top: 5vh;
 }
 .text-bars p {
   display: block;
-  padding: 1vw;
+  padding: 1.4vh;
   background-color: #ffffff;
-  width: 40vw;
-  font-size: 2vw;
+  width: 52vh;
+  font-size: 2.8vh;
   text-align: center;
   margin-bottom: 8vh;
   opacity: 0;
@@ -142,7 +142,7 @@ export default {
 }
 .images {
   position: absolute;
-  width: 49vw;
+  width: 49%;
   height: 100%;
 }
 .images:nth-of-type(2) {

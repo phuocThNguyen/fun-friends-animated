@@ -26,10 +26,10 @@ export default {
 .text-box {
   position: absolute;
   top: 5vh;
-  left: 5vw;
-  padding: 2vw;
+  left: 5%;
+  padding: 2.8vh;
   background-color: rgba(255,255,255,0.8);
-  font-size: 2vw;
+  font-size: 2.8vh;
   opacity: 0;
 }
 </style>

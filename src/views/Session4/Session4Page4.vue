@@ -74,57 +74,57 @@ export default {
 
 <style scoped>
 .title {
-  font-size: 5vw;
+  font-size: 7vh;
   color: #173368;
   top: 3vh;
-  left: 37vw;
+  left: 37%;
 }
 .text {
   color: #173368;
-  font-size: 3.5vw;
+  font-size: 4.9vh;
   margin-bottom: 0;
   opacity: 0;
 }
 .text:nth-of-type(1) {
   top: 10vh;
-  left: 2vw;
+  left: 2%;
 }
 .text:nth-of-type(2) {
   top: 20vh;
-  left: 20vw;
+  left: 20%;
 }
 .text:nth-of-type(3) {
   top: 32vh;
-  left: 5vw;
+  left: 5%;
 }
 .text:nth-of-type(4) {
   width: 15vw;
   top: 45vh;
-  left: 8vw;
+  left: 8%;
 }
 .text:nth-of-type(5) {
   top: 70vh;
-  left: 3vw;
+  left: 3%;
 }
 .text:nth-of-type(6) {
   top: 12vh;
-  right: 20vw;
+  right: 20%;
 }
 .text:nth-of-type(7) {
   top: 26vh;
-  right: 22vw;
+  right: 22%;
 }
 .text:nth-of-type(8) {
   top: 38vh;
-  right: 10vw;
+  right: 10%;
 }
 .text:nth-of-type(9) {
   top: 52vh;
-  right: 15vw;
-  width: 10vw;
+  right: 15%;
+  width: 10%;
 }
 .text:nth-of-type(10) {
   top: 72vh;
-  right: 4vw;
+  right: 4%;
 }
 </style>

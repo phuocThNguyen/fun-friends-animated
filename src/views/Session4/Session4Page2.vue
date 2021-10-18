@@ -52,7 +52,7 @@ export default {
 
 <style scoped>
 #left-pad-img {
-  left: 15vw;
+  left: 15%;
 }
 .text-box {
   position: absolute;
@@ -60,17 +60,17 @@ export default {
   left: 0;
   z-index: 10;
   background-color: #ffffff;
-  width: 35vw;
+  width: 35%;
   height: 100%;
-  padding: 2vw;
+  padding: 2.8vh;
 }
 .text-box h1 {
-  font-size: 3vw;
+  font-size: 4.2vh;
   font-weight: bold;
   margin-bottom: 3vh;
 }
 .text-box p {
-  font-size: 1.8vw;
+  font-size: 2.52vh;
   opacity: 0;
 }
 .text-box p:nth-child(2) {
@@ -79,11 +79,11 @@ export default {
 .text-box p:last-child {
   display: inline-block;
   background-color: #00ce7c;
-  width: 90%;
+  width: 96%;
   color: #ffffff;
   font-weight: bold;
-  padding: 1vw;
+  padding: 1vh;
   text-align: center;
-  margin-top: 32vh;
+  margin-top: 50%;
 }
 </style>

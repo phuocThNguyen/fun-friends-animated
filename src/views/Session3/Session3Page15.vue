@@ -786,7 +786,7 @@ export default {
   position: absolute;
   width: 100%;
   text-align: center;
-  margin-top: 13%;
+  margin-top: 14%;
   opacity: 0;
   z-index: 55;
 }

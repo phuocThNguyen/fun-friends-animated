@@ -245,74 +245,86 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 930px) {
+  .clues {
+    width: 27vh !important;
+  }
+  .clue {
+    border-radius: 4px !important;
+  }
+  .answers {
+    width: 27vh !important;
+    border-radius: 4px !important;
+  }
+}
 .reward {
   position: absolute;
   height: auto;
-  width: 1vw;
+  width: 1%;
   bottom: 40vh;
-  left: 30vw;
+  left: 30%;
   opacity: 0;
 }
 .small-tick {
   position: absolute;
-  width: 3vw !important;
+  width: 3% !important;
   z-index: 50;
 }
 #green-tick-1 {
-  right: 29vw;
+  right: 29%;
   top: 30vh;
 }
 #green-tick-2 {
-  right: 26vw;
+  right: 26%;
   top: 57vh;
 }
 #green-tick-3 {
-  right: 29vw;
+  right: 29%;
   top: 44vh;
 }
 #green-tick-4 {
-  right: 6vw;
+  right: 6%;
   top: 45vh;
 }
 #green-tick-5 {
-  right: 1vw;
+  right: 1%;
   top: 71vh;
 }
 #dizzy {
-  right: 30vw;
+  right: 30%;
   top: 27vh;
 }
 #stomach {
-  right: 27vw;
+  right: 27%;
   top: 50vh;
   height: 10.49vh;
 }
 #skin {
-  right: 30vw;
+  right: 30%;
   top: 41vh;
 }
 #heart {
-  right: 7vw;
+  right: 7%;
   top: 42vh;
 }
 #knees {
-  right: 2vw;
+  right: 2%;
   top: 68vh;
 }
 .answers {
   position: absolute;
-  width: 17vw;
+  width: 17%;
   height: 6.55vh;
   background-color: rgba(255,255,255,0.6);
   border-radius: 10px;
 }
 .clues {
-  width: 17vw;
+  width: 23.8vh;
 }
 .clues-sources {
   position: absolute;
-  top: 45vh;
-  left: 9vw;
+  top: 42vh;
+  left: 9%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -322,20 +334,20 @@ export default {
   background-color: #000000;
   color: #ffffff;
   width: 100%;
-  font-size: 2vw;
+  font-size: 2.8vh;
   border-radius: 10px;
   text-align: center;
-  padding: 1vw;
+  padding: 1.4vh;
   margin-bottom: 1vh;
 }
-h1 {font-size: 2.5vw; margin-bottom: 2vh}
-p {font-size: 1.8vw; margin-bottom: 0}
+h1 {font-size: 3.5vh; margin-bottom: 2vh}
+p {font-size: 2.52vh; margin-bottom: 0}
 .text-box {
   position: absolute;
-  width: 24vw;
-  padding: 1.5vw;
-  top: 5vh;
-  left: 5vw;
+  width: 30%;
+  padding: 2.1vh;
+  top: 2vh;
+  left: 5%;
   background-color: rgba(255,255,255,0.8);
 }
 .text-box p:nth-of-type(1) {

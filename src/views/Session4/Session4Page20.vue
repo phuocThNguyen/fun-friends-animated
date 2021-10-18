@@ -449,26 +449,29 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  width: 90vw;
-  left: 5vw;
+  width: 90%;
+  left: 5%;
   top: 5vh;
   background-color: rgba(255,255,255,0.7);
-  padding: 1.5vw;
+  padding: 2.1vh;
 }
 .text-box h1 {
-  font-size: 3vw;
-  margin-bottom: 4vh;
+  font-size: 4.2vh;
+  margin-bottom: 2vh;
 }
 .text-box p {
-  font-size: 2vw;
-  margin-bottom: 3vh;
+  font-size: 2.7vh;
+  margin-bottom: 1.5vh;
   opacity: 0;
+}
+.text-box p:last-child {
+  margin-bottom: 0;
 }
 .landscape {
   position: absolute;
   height: auto;
-  width: 106vw;
-  left: -1vw;
+  width: 106%;
+  left: -1%;
 }
 tspan { white-space:pre }
 .shp0 { fill: url(#grd1) }

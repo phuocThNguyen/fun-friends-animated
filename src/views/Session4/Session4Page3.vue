@@ -29,30 +29,30 @@ export default {
       delay: 700
     });
     animation
-        .add({
-          targets: text[1],
-          opacity: 1
-        })
-        .add({
-          targets: text[2],
-          opacity: 1
-        })
-        .add({
-          targets: text[3],
-          opacity: 1
-        })
-        .add({
-          targets: text[4],
-          opacity: 1,
-        })
-        .add({
-          targets: text[5],
-          opacity: 1,
-        })
-        .add({
-          targets: text[6],
-          opacity: 1,
-        })
+      .add({
+        targets: text[1],
+        opacity: 1
+      })
+      .add({
+        targets: text[2],
+        opacity: 1
+      })
+      .add({
+        targets: text[3],
+        opacity: 1
+      })
+      .add({
+        targets: text[4],
+        opacity: 1,
+      })
+      .add({
+        targets: text[5],
+        opacity: 1,
+      })
+      .add({
+        targets: text[6],
+        opacity: 1,
+      })
   }
 }
 </script>
@@ -64,17 +64,18 @@ export default {
   left: 0;
   z-index: 10;
   background-color: #ffffff;
-  width: 35vw;
+  width: 35%;
   height: 100%;
-  padding: 2vw;
+  padding: 2.8vh;
 }
 .text-box h1 {
-  font-size: 3vw;
+  font-size: 4.2vh;
   font-weight: bold;
   margin-bottom: 3vh;
 }
 .text-box p {
-  font-size: 1.8vw;
+  font-size: 2.52vh;
+  margin-bottom: 1.5vh;
   opacity: 0;
 }
 .text-box p:nth-of-type(2) {

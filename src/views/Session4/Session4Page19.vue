@@ -153,58 +153,73 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 930px) {
+  .clues {
+    width: 30vh !important;
+  }
+  .clue {
+    border-radius: 4px !important;
+  }
+  .answers {
+    width: 30vh !important;
+    border-radius: 4px !important;
+  }
+  #green-tick-2 {
+    left: 44% !important
+  }
+}
 .reward {
   position: absolute;
   height: auto;
-  width: 1vw;
+  width: 1%;
   top: 36vh;
-  left: 20vw;
+  left: 20%;
   opacity: 0;
 }
 .small-tick {
   position: absolute;
-  width: 3vw !important;
+  width: 4.2vh !important;
   z-index: 50;
 }
 #green-tick-1 {
-  right: 24vw;
+  right: 24%;
   top: 23vh;
 }
 #green-tick-2 {
-  left: 42vw;
+  left: 42%;
   top: 63vh;
 }
 #green-tick-3 {
-  right: 12vw;
+  right: 12%;
   top: 43vh;
 }
 #ear {
-  right: 25vw;
+  right: 25%;
   top: 17vh;
   height: 10.49vh;
 }
 #tail {
-  left: 23vw;
+  left: 23%;
   top: 60vh;
 }
 #head {
-  right: 13vw;
+  right: 13%;
   top: 41vh;
 }
 .answers {
   position: absolute;
-  width: 21vw;
+  width: 21%;
   height: 6.55vh;
   background-color: rgba(255,255,255,0.6);
   border-radius: 10px;
 }
 .clues {
-  width: 21vw;
+  width: 29.4vh;
 }
 .clues-sources {
   position: absolute;
   top: 30vh;
-  left: 2vw;
+  left: 2%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -214,20 +229,20 @@ export default {
   background-color: #000000;
   color: #ffffff;
   width: 100%;
-  font-size: 2vw;
+  font-size: 2.6vh;
   border-radius: 10px;
   text-align: center;
-  padding: 1vw;
+  padding: 1.4vh;
   margin-bottom: 1vh;
 }
-h1 {font-size: 2.5vw; margin-bottom: 2vh}
-p {font-size: 1.8vw; margin-bottom: 0}
+h1 {font-size: 3.5vh; margin-bottom: 2vh}
+p {font-size: 2.52vh; margin-bottom: 0}
 .text-box {
   position: absolute;
-  width: 80vw;
-  padding: 1.5vw;
+  width: 80%;
+  padding: 2.1vh;
   top: 5vh;
-  left: 10vw;
+  left: 10%;
   background-color: rgba(255,255,255,0.9);
   font-weight: bold;
   text-align: center;
