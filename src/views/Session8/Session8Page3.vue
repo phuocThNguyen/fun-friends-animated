@@ -33,17 +33,17 @@ export default {
 .text-box {
   position: absolute;
   top: 2vh;
-  left: 2vh;
-  width: 46vw;
+  left: 2%;
+  width: 46%;
   background-color: rgba(255,255,255,0.9);
-  padding: 2vh 2vw;
+  padding: 2vh 2.6vh;
   opacity: 0;
 }
 .text-box h1 {
-  font-size: 3vw;
+  font-size: 4vh;
 }
 .text-box p {
-  font-size: 2vw;
+  font-size: 2.6vh;
 }
 .text-box p:last-child {
   margin-bottom: 0;

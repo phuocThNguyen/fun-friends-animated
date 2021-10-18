@@ -39,22 +39,22 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  padding: 4vh 2vw;
+  padding: 4vh 2.8vh;
   width: 100%;
 }
 .text-box h1 {
-  font-size: 3vw;
+  font-size: 4vh;
   margin-bottom: 1vh;
   opacity: 0;
 }
 .text-box p {
-  font-size: 2vw;
+  font-size: 2.8vh;
   opacity: 0;
 }
 .images {
   position: absolute;
   height: 70vh;
-  width: 49vw;
+  width: 49%;
   bottom: 0;
 }
 .images:nth-child(2) {

@@ -22,7 +22,7 @@ export default {
     return {
       canvasStyle: {
         width: 1,
-        height: 0.83,
+        height: 0.8,
         isPicture: true,
         pictureUrl: "session8/275676-P61H8M-305.png",
         backgroundSize: "cover"
@@ -35,10 +35,10 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  padding: 1vh 3vw;
+  padding: 1vh 4vh;
 }
 .text-box p {
-  font-size: 2vw;
+  font-size: 2.6vh;
   margin-bottom: .5vh;
 }
 .canvas {

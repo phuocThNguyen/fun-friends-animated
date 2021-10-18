@@ -28,13 +28,13 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  width: 40vw;
+  width: 40%;
   background-color: #00ce7c;
   color: #ffffff;
-  padding: 1.5vh 3vw;
-  right: 3vw;
+  padding: 1.5vh 4vh;
+  right: 3%;
   top: 4vh;
-  font-size: 2.2vw;
+  font-size: 3vh;
   font-weight: bold;
   z-index: 10;
   text-align: center;
@@ -43,7 +43,7 @@ export default {
 .images {
   position: absolute;
   height: 100vh;
-  width: 49.5vw;
+  width: 49.5%;
 }
 .images:nth-child(2) {
   right: 0;

@@ -37,27 +37,21 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  width: 60vw;
-  left: 20vw;
-  top: 20vh;
+  width: 60%;
+  left: 20%;
+  top: 22vh;
   text-align: center;
-  padding: 4vh 3vw;
+  padding: 3.5vh;
   background-color: rgba(255,255,255,0.9);
   opacity: 0;
 }
 .text-box h1 {
-  font-size: 3vw;
+  font-size: 3.8vh;
   font-weight: bold;
-  margin-bottom: 3vh;
+  margin-bottom: 1vh;
 }
 .text-box p {
-  font-size: 2vw;
+  font-size: 2.6vh;
   margin-bottom: 0;
-}
-.landscape {
-  position: absolute;
-  height: auto;
-  width: 113vw;
-  left: -2vw;
 }
 </style>

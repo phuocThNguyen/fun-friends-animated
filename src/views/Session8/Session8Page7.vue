@@ -58,9 +58,9 @@ export default {
 <style scoped>
 .star-container {
   position: absolute;
-  right: 5vw;
+  right: 5%;
   bottom: 5vh;
-  width: 30vw;
+  width: 30%;
   height: 35vh;
   display: flex;
   justify-content: center;
@@ -77,25 +77,25 @@ export default {
   text-align: center;
 }
 .star-text p {
-  font-size: 1.9vw;
+  font-size: 2.4vh;
   margin-top: 1.5vh;
   margin-bottom: 0;
 }
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.9);
-  width: 90vw;
+  width: 90%;
   top: 5vh;
-  left: 5vw;
-  padding: 2vh 2vw;
+  left: 5%;
+  padding: 2vh 2.6vh;
   opacity: 0;
 }
 .text-box h1 {
-  font-size: 3vw;
+  font-size: 4vh;
   margin-bottom: 1.5vh;
 }
 .text-box p {
-  font-size: 2vw;
+  font-size: 2.8vh;
   margin-bottom: 0;
 }
 tspan { white-space:pre }

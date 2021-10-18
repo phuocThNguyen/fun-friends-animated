@@ -873,7 +873,7 @@ import anime from "animejs";
 export default {
   name: 'Session8Page6',
   mounted() {
-    let vw = window.innerWidth;
+    let vw = document.querySelector('.interactive-container').clientWidth;
     let clouds = document.getElementsByClassName('cloud');
     clouds.forEach(cloud => {
       anime({
@@ -893,18 +893,18 @@ export default {
 .text-box {
   background-color: rgba(255,255,255,0.9);
   position: absolute;
-  left: 20vw;
+  left: 20%;
   top: 30vh;
-  width: 60vw;
-  padding: 3vh 3vw;
+  width: 60%;
+  padding: 3vh 4vh;
   text-align: center;
-  font-size: 2.2vw;
+  font-size: 3vh;
 }
 .landscape {
   position: absolute;
   height: auto;
-  width: 112vw;
-  left: -1vw;
+  width: 112%;
+  left: -1%;
 }
 tspan { white-space:pre }
 .shp0 { fill: url(#grd1) }

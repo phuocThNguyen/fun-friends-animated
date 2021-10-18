@@ -137,6 +137,7 @@ export default {
 }
 @media screen and (max-width: 930px) {
   .btn-style {
+    border-radius: 3px !important;
     box-shadow: 0 4px #999 !important;
   }
   .btn-style:active {

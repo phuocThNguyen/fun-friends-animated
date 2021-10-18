@@ -45,9 +45,9 @@ export default {
 <style scoped>
 .star-container {
   position: absolute;
-  right: 5vw;
+  right: 5%;
   bottom: 5vh;
-  width: 30vw;
+  width: 30%;
   height: 35vh;
   display: flex;
   justify-content: center;
@@ -64,8 +64,8 @@ export default {
   text-align: center;
 }
 .star-text p {
-  font-size: 1.9vw;
-  margin-top: 5vh;
+  font-size: 2.8vh;
+  margin-top: 20%;
   margin-bottom: 0;
 }
 tspan { white-space:pre }

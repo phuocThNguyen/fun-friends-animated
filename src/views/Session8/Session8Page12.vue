@@ -228,49 +228,48 @@ export default {
 .tick {
   position: absolute;
   bottom: 1vh;
-  width: 5vw !important;
-  left: 4.5vw;
+  width: 7vh !important;
+  left: 6.3vh;
 }
 .masks-container {
   position: absolute;
   width: 100%;
-  height: 6vw;
+  height: 8.4vh;
   top: 2vh;
 }
 .mask {
   position: absolute;
   border-radius: 50%;
-  width: 6vw;
-  height: 6vw;
+  width: 8.4vh;
+  height: 8.4vh;
 }
 .mask-left {
-  left: .5vw;
+  left: .7vh;
 }
 .mask-right {
-  right: .5vw;
+  right: .7vh;
 }
 .question-container {
   position: absolute;
-
-  bottom: 8vh;
-  width: 41vw;
-  height: 14vw;
+  bottom: 12vh;
+  width: 41%;
+  height: 18vh;
 }
 .question-container:nth-of-type(1) {
-  left: 4vw;
+  left: 4%;
 }
 .question-container:nth-of-type(2) {
-  left: 55vw;
+  left: 55%;
 }
 .text {
   position: absolute;
   right: 0;
-  width: 27vw;
+  width: 36vh;
   height: 100%;
-  background-color: #00ce7c;
+  background-color: rgba(0, 206, 124, 0.8);
   color: #ffffff;
-  padding: 0 2vw;
-  font-size: 2.5vw;
+  padding: 0 3vh;
+  font-size: 3.2vh;
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -279,33 +278,33 @@ export default {
 .choices-container {
   background-color: rgba(0,0,0,0.75);
   position: absolute;
-  width: 14vw;
+  width: 19vh;
   height: 100%;
 }
 
 .thumb {
   position: absolute;
   height: auto;
-  width: 6vw;
+  width: 8.4vh;
   top: 2vh
 }
 .thumb-up {
-  left: .5vw;
+  left: .7vh;
 }
 .thumb-down {
-  right: .5vw;
+  right: .7vh;
 }
 .images {
   position: absolute;
   height: 100%;
-  width: 49vw;
+  width: 49%;
 }
 .reward {
   position: absolute;
   height: auto;
-  width: 1vw;
+  width: 1%;
   top: 40vh;
-  left: 47vw;
+  left: 47%;
   opacity: 0;
 }
 #right {

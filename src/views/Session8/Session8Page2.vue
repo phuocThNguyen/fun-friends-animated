@@ -16,21 +16,14 @@ export default {
 </script>
 
 <style scoped>
-.landscape {
-  position: absolute;
-  height: auto;
-  width: 125vw;
-  left: -23vw;
-  top: -5vh;
-}
 .text-box {
   position: absolute;
   top: 35vh;
-  left: 20vw;
-  width: 60vw;
-  padding: 3vh 2vw;
+  left: 20%;
+  width: 60%;
+  padding: 3vh 2.6vh;
   text-align: center;
-  font-size: 2.5vw;
+  font-size: 3.4vh;
   background-color: rgba(255,255,255,0.9);
 }
 </style>
