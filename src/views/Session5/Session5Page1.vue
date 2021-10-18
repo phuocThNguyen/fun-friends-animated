@@ -221,7 +221,7 @@ import anime from "animejs";
 export default {
   name: "Session5Page1",
   mounted() {
-    let vw = window.innerWidth;
+    let vw = document.querySelector('.interactive-container').clientWidth;
 
     anime({
       targets: this.$refs.cloud1,

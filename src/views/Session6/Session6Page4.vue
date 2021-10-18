@@ -174,7 +174,7 @@ export default {
   position: absolute;
   width: auto;
   height: 10vh;
-  right: 33vw;
+  right: 33%;
   transform: rotate(-90deg);
   opacity: 0;
 }
@@ -186,22 +186,23 @@ export default {
 }
 .text-box {
   position: absolute;
-  width: 48vw;
-  padding: 5vh 2vw;
+  width: 48%;
+  padding: 5vh 1.5vh;
 }
 .text-box h1 {
-  font-size: 2.5vw;
+  font-size: 3.2vh;
   font-weight: bold;
-  margin-bottom: 4vh;
+  margin-bottom: 2vh;
 }
 .text-box p {
-  font-size: 1.9vw;
+  font-size: 2.7vh;
+  margin-bottom: 2vh;
   opacity: 0;
 }
 .text-box p:last-child {
-  padding: 2vh 0;
-  font-size: 2.1vw;
-  margin-top: 15vh;
+  padding: 1vh 0;
+  font-size: 2.8vh;
+  margin-top: 20%;
   font-weight: bold;
   display: block;
   background-color: #00ce7c;
@@ -210,7 +211,7 @@ export default {
 }
 .images {
   position: absolute;
-  width: 52vw;
+  width: 52%;
   height: 46vh;
   right: 0;
 }

@@ -721,7 +721,7 @@ import anime from "animejs";
 export default {
   name: 'Session6Page9',
   mounted() {
-    let vw = window.innerWidth;
+    let vw = document.querySelector('.interactive-container').clientWidth;
     let clouds = document.getElementsByClassName('shp15');
     clouds.forEach(cloud => {
       anime({
@@ -748,34 +748,34 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.8);
-  width: 64vw;
+  width: 64%;
   height: auto;
-  left: 18vw;
+  left: 18%;
   top: 8vh;
-  padding: 3vw;
+  padding: 4vh;
   opacity: 0;
 }
 .text-box h1 {
   text-align: center;
-  margin-bottom: 4vh;
-  font-size: 4vw;
+  margin-bottom: 2vh;
+  font-size: 5.4vh;
   font-weight: bold;
 }
 .text-box p {
-  margin-bottom: 2vh;
-  font-size: 2vw;
+  margin-bottom: 1.5vh;
+  font-size: 2.8vh;
 }
 .text-box p:nth-child(6),
 .text-box p:nth-child(7),
 .text-box p:nth-child(8),
 .text-box p:nth-child(9) {
-  padding-left: 5vw;
+  padding-left: 7vh;
 }
 .landscape {
   position: absolute;
   height: auto;
-  width: 115vw;
-  left: -7.5vw;
+  width: 115%;
+  left: -7.5%;
   top: -5vh;
 }
 .red {

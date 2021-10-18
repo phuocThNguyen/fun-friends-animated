@@ -218,63 +218,63 @@ export default {
 .tick {
   position: absolute;
   bottom: 1vh;
-  width: 5vw !important;
-  left: 4.5vw;
+  width: 7vh !important;
+  left: 6.3vh;
 }
 .masks-container {
   position: absolute;
   width: 100%;
-  height: 6vw;
+  height: 8.4vh;
   top: 2vh;
 }
 .mask {
   position: absolute;
   border-radius: 50%;
-  width: 6vw;
-  height: 6vw;
+  width: 8.4vh;
+  height: 8.4vh;
 }
 .mask-left {
-  left: .5vw;
+  left: .7vh;
 }
 .mask-right {
-  right: .5vw;
+  right: .7vh;
 }
 .question-container {
   position: absolute;
   bottom: 5vh;
-  width: 14vw;
-  height: 14vw;
+  width: 19.6vh;
+  height: 19.6vh;
   background-color: rgba(0,0,0,0.75);
 }
 #question-1 {
-  left: 34vw;
+  left: 33%;
 }
 #question-2 {
-  left: 52vw;
+  left: 52%;
 }
 .thumb {
   position: absolute;
   height: auto;
-  width: 6vw;
+  width: 8.4vh;
   top: 2vh
 }
 .thumb-up {
-  left: .5vw;
+  left: .7vh;
 }
 .thumb-down {
-  right: .5vw;
+  right: .7vh;
 }
 .images {
   position: absolute;
   height: 100%;
-  width: 49vw;
+  width: 49%;
 }
 .reward {
   position: absolute;
   height: auto;
-  width: 1vw;
+  width: 1%;
   top: 40vh;
-  left: 47vw;
+  left: 47%;
   opacity: 0;
 }
 #right {

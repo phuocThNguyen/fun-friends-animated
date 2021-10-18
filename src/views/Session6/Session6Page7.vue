@@ -297,21 +297,21 @@ export default {
 .text-box {
   position: absolute;
   width: 100%;
-  padding: 2vh 2vw 1vh 2vw;
+  padding: 2vh 2.8vh;
 }
 .text-box h1 {
-  font-size: 2.5vw;
+  font-size: 3.3vh;
   font-weight: bold;
 }
 .text-box p {
-  font-size: 2vw;
+  font-size: 2.8vh;
   margin-bottom: 0;
   opacity: 0;
 }
 .images {
   position: absolute;
   bottom: 0;
-  width: 49vw;
+  width: 49%;
   height: 73vh;
 }
 .images:nth-of-type(2) {
@@ -320,59 +320,59 @@ export default {
 .reward {
   position: absolute;
   height: auto;
-  width: 1vw;
+  width: 1%;
   top: 40vh;
-  left: 45vw;
+  left: 45%;
   opacity: 0;
 }
 .tick {
   position: absolute;
   bottom: 1vh;
-  width: 5vw !important;
+  width: 7vh !important;
   left: 4.5vw;
 }
 .masks-container {
   position: absolute;
   width: 100%;
-  height: 6vw;
+  height: 8.4vh;
   top: 2vh;
 }
 .mask {
   position: absolute;
   border-radius: 50%;
-  width: 6vw;
-  height: 6vw;
+  width: 8.4vh;
+  height: 8.4vh;
 }
 .mask-left {
-  left: .5vw;
+  left: .7vh;
 }
 .mask-right {
-  right: .5vw;
+  right: .7vh;
 }
 .question-container {
   position: absolute;
   bottom: 5vh;
-  width: 14vw;
-  height: 14vw;
+  width: 19.6vh;
+  height: 19.6vh;
   background-color: rgba(0,0,0,0.75);
 }
 #question-1 {
-  left: 34vw;
+  left: 33%;
 }
 #question-2 {
-  left: 52vw;
+  left: 52%;
 }
 .thumb {
   position: absolute;
   height: auto;
-  width: 6vw;
+  width: 8.4vh;
   top: 2vh
 }
 .thumb-up {
-  left: .5vw;
+  left: .7vh;
 }
 .thumb-down {
-  right: .5vw;
+  right: .7vh;
 }
 .red {
   color: #ff0000;
