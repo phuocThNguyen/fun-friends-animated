@@ -269,18 +269,18 @@ export default {
       delay: 500
     });
     animation
-        .add({
-          targets: ".title",
-          opacity: 1,
-        })
-        .add({
-          targets: "#line-1",
-          opacity: 1
-        })
-        .add({
-          targets: "#line-2",
-          opacity: 1
-        })
+      .add({
+        targets: ".title",
+        opacity: 1,
+      })
+      .add({
+        targets: "#line-1",
+        opacity: 1
+      })
+      .add({
+        targets: "#line-2",
+        opacity: 1
+      })
   }
 }
 </script>
@@ -291,10 +291,10 @@ export default {
   font-family: 'Sigmar One', cursive;
   position: absolute;
   color: white;
-  font-size: 6vw;
+  font-size: 8.4vh;
   -webkit-text-stroke: 0.1vw black;
-  left: 35vw;
-  top: 27vh;
+  left: 35%;
+  top: 29vh;
   opacity: 0;
 }
 #letter-f {
@@ -303,20 +303,20 @@ export default {
 .text {
   position: absolute;
   margin-bottom: 0;
-  font-size: 2vw;
+  font-size: 2.8vh;
   opacity: 0;
 }
 #line-1 {
   text-align: center;
-  width: 71vw;
-  left: 15vw;
+  width: 76%;
+  left: 12%;
   top: 40vh;
 }
 #line-2 {
   text-align: center;
-  width: 64vw;
+  width: 80%;
+  left: 10%;
   top: 53vh;
-  left: 18vw;
 }
 span {
   display: inline-block;
@@ -330,17 +330,17 @@ tspan { white-space:pre }
 }
 .twitter-bird {
   position: absolute;
-  width: 11vw;
+  width: 11%;
   height: auto;
 }
 .bird-1 {
   top: 20vh;
-  left: -5vw;
+  left: -5%;
   z-index: 20;
 }
 .bird-2 {
   bottom: 2vh;
-  right: -11vw;
+  right: -11%;
   z-index: 70;
 }
 #wing1{
@@ -358,31 +358,31 @@ tspan { white-space:pre }
 }
 .cloud1 {
   position: absolute;
-  width: 25vw;
+  width: 25%;
   height: auto;
   top: 10vh;
-  left: -35vw;
+  left: -35%;
 }
 .cloud2 {
   position: absolute;
   width: 30vh;
   height: auto;
   top: 14vh;
-  right: 1vw;
+  right: 1%;
 }
 .big-cloud {
   position: absolute;
-  width: 90vw;
+  width: 90%;
   height: auto;
   top: 20vh;
-  left: 5vw;
+  left: 5%;
 }
 .long-cloud {
-  width: 130vw;
+  width: 130%;
   height: auto;
   position: absolute;
   bottom: -7vh;
-  left: -12vw;
+  left: -12%;
   z-index: 50;
 }
 .small-cloud {
@@ -390,13 +390,13 @@ tspan { white-space:pre }
   width: 15vh;
   height: auto;
   top: 5vh;
-  right: -25vw;
+  right: -25%;
 }
 .sun {
   position: absolute;
   top: 3vh;
-  right: 3vw;
-  width: 15vw;
+  right: 3%;
+  width: 15%;
   height: auto;
 }
 .red {

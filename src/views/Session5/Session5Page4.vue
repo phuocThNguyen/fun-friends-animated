@@ -42,21 +42,22 @@ export default {
 <style scoped>
 .traffic-light {
   position: absolute;
-  left: 30vw;
+  left: 30%;
   bottom: 22vh;
   opacity: 0;
 }
 .text-box {
   position: absolute;
-  width: 30vw;
-  padding: 2vh 1.5vw;
+  width: 30%;
+  padding: 2vh 2.1vh;
   top: 5vh;
-  left: 3vw;
+  left: 3%;
   background-color: rgba(255,255,255, 0.9);
   opacity: 0;
 }
 .text-box p {
-  font-size: 2vw;
+  font-size: 2.8vh;
+  margin-bottom: 2vh;
 }
 .text-box p:last-child {
   margin-bottom: 0;

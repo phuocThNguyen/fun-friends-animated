@@ -67,36 +67,41 @@ export default {
       delay: 500
     })
     animation
-        .add({
-          targets: '.text-box',
-          opacity: 1
-        })
-        .add({
-          targets: '.bubble-container',
-          opacity: 0.9
-        })
+      .add({
+        targets: '.text-box',
+        opacity: 1
+      })
+      .add({
+        targets: '.bubble-container',
+        opacity: 0.9
+      })
   }
 }
 </script>
 
 <style scoped>
+@media screen and (max-width: 930px) {
+  .bubble-text {
+    border-radius: 10px !important;
+  }
+}
 .green {
   color: #00CE7C;
 }
 .text-box {
   position: absolute;
-  padding: 2vh 1.5vw;
+  padding: 2vh 2.1vh;
   bottom: 5vh;
-  left: 10vw;
+  left: 10%;
   background-color: rgba(255,255,255, 0.85);
   opacity: 0;
 }
 .text-box h1 {
-  font-size: 2.5vw;
+  font-size: 3.5vh;
   font-weight: bold;
 }
 .text-box p {
-  font-size: 2vw;
+  font-size: 2.8vh;
   margin-bottom: .5vh;
 }
 .text-box p:last-child {
@@ -104,23 +109,23 @@ export default {
 }
 .bubble-container {
   position: absolute;
-  width: 40vw;
+  width: 40%;
   height: 45vh;
   top: 9vh;
-  left: 2vw;
+  left: 2%;
   opacity: 0;
 }
 .bubble {
   position: absolute;
   height: auto;
-  width: 40vw;
+  width: 100%;
   transform: scaleY(-1) rotate(7deg);
   opacity: 0.9;
 }
 .bubble-text {
   position: absolute;
   top: 14vh;
-  left: 3vw;
+  left: 4.2vh;
   border-radius: 50px;
   background-color: rgba(0,0,0,0);
   width: 80%;
@@ -130,7 +135,7 @@ export default {
   padding: 2vh;
   resize: none;
   outline: none;
-  font-size: 1.9vw;
+  font-size: 2.66vh;
 }
 tspan { white-space:pre }
 .shp0 { fill: #00ce7c }

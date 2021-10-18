@@ -53,13 +53,16 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  width: 23vw;
-  left: 3vw;
+  width: 23%;
+  left: 3%;
   top: 30vh;
-  padding: 1.5vh 1vw;
+  padding: 1.5vh 1.4vh;
   background-color: #ffffff;
-  font-size: 2vw;
+  font-size: 2.8vh;
   opacity: 0;
+}
+.text-box p {
+  margin-bottom: 2vh;
 }
 .text-box p:nth-child(2),
 .text-box p:last-child {
@@ -70,12 +73,12 @@ export default {
 }
 .light-box {
   position: absolute;
-  right: 6vw;
-  width: 20vw;
-  font-size: 2.5vw;
+  right: 6%;
+  width: 20%;
+  font-size: 3.5vh;
   font-weight: bold;
   color: #ffffff;
-  padding: 2.5vh 1.5vw;
+  padding: 2.5vh 2.1vh;
   text-align: center;
   opacity: 0;
 }

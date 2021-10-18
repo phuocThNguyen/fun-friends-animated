@@ -80,20 +80,25 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 930px) {
+  .bubble-text {
+    border-radius: 10px !important;
+  }
+}
 .green {
   color: #00CE7C;
 }
 .text-box {
   position: absolute;
-  width: 36vw;
-  padding: 2vh 1.5vw;
+  width: 36%;
+  padding: 2vh 2.1vh;
   top: 2vh;
-  left: 3vw;
+  left: 3%;
   background-color: rgba(255,255,255, 0.9);
   opacity: 0;
 }
 .text-box p {
-  font-size: 2vw;
+  font-size: 2.8vh;
   margin-bottom: .5vh;
 }
 .text-box p:last-child {
@@ -101,24 +106,25 @@ export default {
 }
 .bubble-container {
   position: absolute;
-  width: 40vw;
+  width: 40%;
   height: 45vh;
   top: 2vh;
-  right: 22vw;
+  right: 22%;
   opacity: 0;
 }
 .bubble {
   position: absolute;
   height: auto;
-  width: 40vw;
+  width: 100%;
   transform: scaleX(-1) rotate(7deg);
 }
 .bubble-text {
   position: absolute;
   top: 5vh;
-  left: 5vw;
+  left: 7vh;
   border-radius: 50px;
   background-color: rgba(255,255,255,0);
+
   width: 80%;
   height: 22vh;
   border: none;
@@ -126,7 +132,7 @@ export default {
   padding: 2vh;
   resize: none;
   outline: none;
-  font-size: 1.9vw;
+  font-size: 2.66vh;
 }
 tspan { white-space:pre }
 .shp0 { fill: #00ce7c }

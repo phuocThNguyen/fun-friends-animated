@@ -141,69 +141,76 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 930px) {
+  .bubble-text {
+    border-radius: 10px !important;
+  }
+  .text-box p {
+    font-size: 2.35vh !important;
+  }
+}
 .bubble-container-static {
   position: absolute;
-  width: 16vw;
+  width: 16%;
   height: 16vh;
   top: 32vh;
-  left: 5vw;
+  left: 5%;
 }
 .bubble-container-static .shp0 { fill: #ff0000 }
 .bubble-text-static {
   position: absolute;
-  font-size: 2vw;
+  font-size: 2.8vh;
   top: 4vh;
-  left: 2vw;
+  left: 2.4vh;
 }
 .bubble-static {
   position: absolute;
   height: auto;
-  width: 15vw;
+  width: 21vh;
 }
-
 .bubble-container {
   position: absolute;
-  width: 40vw;
+  width: 40%;
   height: 45vh;
   bottom: 4vh;
-  right: 21vw;
+  right: 21%;
   opacity: 1;
 }
 .bubble-container .shp0 { fill: #00ce7c }
 .bubble {
   position: absolute;
   height: auto;
-  width: 40vw;
+  width: 56vh;
   transform: scaleY(-1) rotate(7deg);
   opacity: 0.9;
 }
 .bubble-text {
   position: absolute;
   top: 14vh;
-  left: 3vw;
-  border-radius: 50px;
+  left: 4.2vh;
+  border-radius: 30px;
   background-color: rgba(0,0,0,0);
-  width: 80%;
+  width: 84%;
   height: 22vh;
   border: none;
   opacity: 1;
   padding: 2vh;
   resize: none;
   outline: none;
-  font-size: 1.9vw;
+  font-size: 2.66vh;
 }
 
 .text-box {
   position: absolute;
-  padding: 2vh 2vw;
+  padding: 2vh 2.8vh;
 }
 .text-box h1 {
-  font-size: 3vw;
+  font-size: 4.2vh;
   font-weight: bold;
-  margin-bottom: 1.5vh;
+  margin-bottom: 1vh;
 }
 .text-box p {
-  font-size: 2vw;
+  font-size: 2.6vh;
   opacity: 0;
   margin-bottom: 0;
 }
@@ -211,7 +218,7 @@ export default {
   position: absolute;
   bottom: 0;
   height: 67vh;
-  width: 50vw;
+  width: 50%;
 }
 .images:nth-of-type(2) {
   right: 0;

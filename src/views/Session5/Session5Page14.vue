@@ -106,62 +106,66 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 930px) {
+  .bubble-text {
+    border-radius: 10px !important;
+  }
+}
 .bubble-container-static {
   position: absolute;
-  width: 26vw;
+  width: 26%;
   height: 26vh;
   top: 1vh;
-  left: .5vw;
+  left: .5%;
 }
 .bubble-container-static .shp0 { fill: #ff0000 }
 .bubble-text-static {
   position: absolute;
-  font-size: 3vw;
+  font-size: 4.2vh;
   top: 4vh;
-  left: 4vw;
+  left: 5.6vh;
 }
 .bubble-static {
   position: absolute;
   height: auto;
-  width: 25vw;
+  width: 35vh;
 }
-
 .bubble-container {
   position: absolute;
-  width: 40vw;
+  width: 56vh;
   height: 45vh;
   bottom: 10vh;
-  right: 20vw;
+  right: 28vh;
   opacity: 1;
 }
 .bubble-container .shp0 { fill: #00ce7c }
 .bubble {
   position: absolute;
   height: auto;
-  width: 40vw;
+  width: 56vh;
   transform: scaleY(-1) rotate(7deg);
   opacity: 0.9;
 }
 .bubble-text {
   position: absolute;
   top: 14vh;
-  left: 3vw;
-  border-radius: 50px;
+  left: 4.2vh;
+  border-radius: 30px;
   background-color: rgba(0,0,0,0);
-  width: 80%;
+  width: 82%;
   height: 22vh;
   border: none;
   opacity: 1;
   padding: 2vh;
   resize: none;
   outline: none;
-  font-size: 1.9vw;
+  font-size: 2.66vh;
 }
 .images {
   position: absolute;
   bottom: 0;
   height: 100vh;
-  width: 50vw;
+  width: 50%;
 }
 .images:nth-of-type(2) {
   right: 0;

@@ -198,25 +198,25 @@ export default {
 <style scoped>
 .mask-container {
   position: absolute;
-  width: 40vw;
-  height: 13vw;
+  width: 56vh;
+  height: 18.2vh;
   z-index: 100;
 }
 .mask {
   position: absolute;
-  width: 12.5vw;
-  height: 12.5vw;
+  width: 17vh;
+  height: 17vh;
 }
 #green {
-  left: 1.4vw;
+  left: 1.96vh;
 }
 #red {
-  right: 1.4vw;
+  right: 1.96vh;
 }
 .tick {
   position: absolute;
   top: 4vh;
-  left: 42vw;
+  left: 58.8vh;
   z-index: 20;
 }
 .traffic-light-svg {
@@ -224,21 +224,21 @@ export default {
   top: 0;
   left: 0;
   height: auto;
-  width: 40vw;
+  width: 56vh;
 }
 .light {
   position: absolute;
   top: 1.83vh;
   height: auto;
-  width: 10vw;
+  width: 14vh;
   opacity: 0;
   z-index: 10;
 }
 #green-light {
-  left: 2.75vw;
+  left: 3.85vh;
 }
 #red-light {
-  left: 27.25vw;
+  left: 38.15vh;
 }
 
 .cls-1 {fill: #36333b;}
