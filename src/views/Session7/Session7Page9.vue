@@ -226,7 +226,6 @@
 <script>
 export default {
   name: 'Session7Page9',
-
 }
 </script>
 
@@ -234,17 +233,17 @@ export default {
 .landscape {
   position: absolute;
   height: auto;
-  width: 106vw;
-  left: -1vw;
+  width: 106%;
+  left: -1%;
 }
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255, 0.95);
-  width: 60vw;
-  padding: 3vh 2vw;
-  left: 20vw;
-  top: 30vh;
-  font-size: 2.2vw;
+  width: 62%;
+  padding: 3vh 2.8vh;
+  left: 19%;
+  top: 20vh;
+  font-size: 3.08vh;
 }
 .text-box p:last-child {
   margin-bottom: 0;

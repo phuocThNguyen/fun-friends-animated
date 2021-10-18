@@ -1217,7 +1217,6 @@
       <p>Play in the park</p>
       <h1>Reward</h1>
     </div>
-
   </div>
 </template>
 
@@ -1248,7 +1247,7 @@ export default {
         }, 0)
     },
     displaySteps(left, koala, bubble, plan, right, delay, direction, hide) {
-      let vw = window.innerWidth;
+      let vw = document.querySelector('.interactive-container').clientWidth;
       let vh = window.innerHeight;
       let animation = anime.timeline({
         easing: 'linear',
@@ -1313,6 +1312,14 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+@media screen and (max-width: 930px) {
+  .plans {
+    border-radius: 2px !important;
+  }
+  .wing-container p {
+    border-radius: 2px !important;
+  }
+}
 * {
   font-family: 'Love Ya Like A Sister', cursive;
 }
@@ -1323,35 +1330,35 @@ export default {
 }
 #koala-standing {
   top: -10vh;
-  left: -12vw;
+  left: -16.8vh;
   height: 20vh;
 }
 #koala-climbing-1 {
   transform: scaleX(-1) rotate(-90deg);
   height: 15vh;
-  left: 21vw;
+  left: 29vh;
   bottom: -1vh;
 }
 #koala-climbing-2 {
   transform: rotate(-100deg);
   height: 15vh;
-  left: -13vw;
+  left: -18vh;
   bottom: -1vh;
 }
 #koala-climbing-3 {
   transform: scaleX(-1) rotate(-100deg);
   height: 15vh;
-  left: 22vw;
+  left: 30.5vh;
   bottom: -1vh;
 }
 #koala-sitting {
   height: 15vh;
-  left: -10vw;
+  left: -14vh;
   top: -5.5vh;
 }
 .wing-container {
   position: absolute;
-  width: 20vw;
+  width: 20%;
   top: 20vh;
 }
 .wing-container h1 {
@@ -1359,10 +1366,10 @@ export default {
   top: -15vh;
   background-color: rgba(0, 206, 124, 1);
   width: 100%;
-  padding: 2vh 1vw;
+  padding: 2vh 1.4vh;
   color: #ffffff;
   border-radius: 5px;
-  font-size: 3.5vw;
+  font-size: 4.8vh;
   text-align: center;
   opacity: 0;
 }
@@ -1371,14 +1378,13 @@ export default {
   width: 100%;
   text-align: center;
   background-color: rgba(0, 206, 124, 1);
-  padding: 1vh .5vw;
+  padding: 1vh .7vh;
   color: #ffffff;
   border-radius: 5px;
-  font-size: 2vw;
+  font-size: 2.6vh;
   opacity: 0;
   margin-bottom: 0;
 }
-
 .wing-container p:nth-child(1) {
   top: 58vh;
 }
@@ -1395,16 +1401,16 @@ export default {
   top: 5.5vh;
 }
 #left-container {
-  left: 2vw;
+  left: 2%;
 }
 #right-container {
-  right: 2vw;
+  right: 2%;
 }
 .trophy-container {
   position: absolute;
-  left: 50vw;
+  left: 50%;
   top: 10vh;
-  width: 20vw;
+  width: 20%;
   height: 24vh;
   opacity: 0;
 }
@@ -1422,8 +1428,8 @@ export default {
   width: 62%;
   height: 60%;
   top: .5vh;
-  left: 4vw;
-  font-size: 2.2vw;
+  left: 5.5vh;
+  font-size: 3vh;
 }
 .title {
   position: absolute;
@@ -1431,38 +1437,38 @@ export default {
   padding: 1vh;
   border-radius: 5px;
   top: 1vh;
-  left: 30vw;
+  left: 30%;
   color: #ffffff;
-  font-size: 5vw;
+  font-size: 6.8vh;
 }
 .bubble-container {
   position: absolute;
-  width: 20vw;
+  width: 28vh;
   height: 25vh;
   z-index: 10;
   opacity: 0;
 }
 #step-2 .bubble-container {
   top: -23vh;
-  left: 33vw;
+  left: 46.2vh;
 }
 #step-3 .bubble-container {
-  left: -29vw;
+  left: -40.6vh;
   top: -24vh;
 }
 #step-4 .bubble-container {
   top: -23vh;
-  left: 33vw;
+  left: 46.2vh;
 }
 #step-5 .bubble-container {
-  left: -2vw;
+  left: -2.8vh;
   top: -20vh;
 }
 #step-3 .bubble {
   transform: rotate(7deg);
 }
 #step-3 .bubble-text {
-  left: 1vw;
+  left: 1.4vh;
 }
 #step-2 .bubble,
 #step-4 .bubble,
@@ -1472,19 +1478,19 @@ export default {
 #step-2 .bubble-text,
 #step-4 .bubble-text,
 #step-5 .bubble-text{
-  left: 2vw;
+  left: 2.8vh;
 }
 .bubble {
   position: absolute;
   height: auto;
-  width: 20vw;
+  width: 28vh;
 }
 .bubble-text {
   position: absolute;
   top: 4vh;
   width: 85%;
   height: 35%;
-  font-size: 1.9vw;
+  font-size: 2.7vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1492,7 +1498,7 @@ export default {
 }
 .plans {
   position: absolute;
-  width: 25vw;
+  width: 25%;
   height: 9vh;
   background-color: #F07309;
   border-radius: 5px;
@@ -1501,64 +1507,64 @@ export default {
 }
 .nail {
   position: absolute;
-  width: 1vw;
-  height: 1vw;
+  width: 1.4vh;
+  height: 1.4vh;
   border-radius: 50%;
   background-color: #D42D02;
   top: 3.5vh;
 }
 .first-nail {
-  left: .5vw;
+  left: .7vh;
 }
 .second-nail {
-  right: .5vw;
+  right: .7vh;
 }
 .text {
   position: absolute;
   text-align: center;
-  padding: 0 1.5vw;
+  padding: 0 2vh;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #ffffff;
-  font-size: 1.7vw;
+  font-size: 2.36vh;
 }
 #step-1 {
   top: 77vh;
-  left: 37.5vw;
+  left: 36.5%;
   z-index: 2;
 }
 #step-2 {
   top: 64vh;
-  left: 37vw;
+  left: 36%;
   z-index: 1;
 }
 #step-3 {
   top: 51vh;
-  left: 35.5vw;
+  left: 35%;
   z-index: 5;
 }
 #step-4 {
   top: 38vh;
-  left: 34.2vw;
+  left: 33%;
   z-index: 4;
 }
 #step-5 {
-  top: 25vh;
-  left: 34vw;
+  top: 23vh;
+  left: 32%;
   z-index: 5;
-}
-#step-5 .text {
-  font-size: 1.4vw;
 }
 .tree {
   position: absolute;
   width: auto;
   height: 160%;
   top: -45vh;
-  left: 8vw;
+  left: 8%;
+}
+#step-5 .text {
+  font-size: 1.96vh;
 }
 tspan { white-space:pre }
 .shp0 { fill: #b8bb1e }

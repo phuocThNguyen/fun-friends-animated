@@ -47,7 +47,7 @@ export default {
 .modal-container {
   position: absolute;
   z-index: 100;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: rgba(0,0,0,0.5);
   display: flex;
@@ -57,18 +57,18 @@ export default {
 .instruction-container {
   position: relative;
   background-color: rgba(255,255,255,0.85);
-  padding: 5vh 3vw;
-  max-width: 60vw;
-  font-size: 3vw;
+  padding: 5vh 4.2vh;
+  max-width: 84vh;
+  font-size: 4.2vh;
   text-align: center;
   margin-bottom: 0;
 }
 .btn-close {
   position: absolute;
   height: auto;
-  width: 4vw;
+  width: 5.6vh;
   top: -2vh;
-  right: -2vw;
+  right: -2.8vh;
 }
 .cls-1-red-mark {isolation: isolate;}
 .cls-2-red-mark {fill: #f52100;}

@@ -504,35 +504,38 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.8);
-  width: 70vw;
+  width: 70%;
   height: auto;
-  left: 15vw;
+  left: 15%;
   top: 5vh;
-  padding: 2vh 3vw;
+  padding: 2vh 2vh;
   opacity: 0;
 }
 .text-box h1 {
   text-align: center;
-  margin-bottom: 2vh;
-  font-size: 2.5vw;
+  margin-bottom: 1vh;
+  font-size: 3.4vh;
   font-weight: bold;
 }
 .text-box p {
   margin-bottom: 1vh;
-  font-size: 1.7vw;
+  font-size: 2.35vh;
   opacity: 0;
 }
 .text-box p:nth-of-type(6),
 .text-box p:nth-of-type(7),
 .text-box p:nth-of-type(8),
 .text-box p:nth-of-type(9) {
-  padding-left: 5vw;
+  padding-left: 7vh;
+}
+.text-box p:last-child {
+  margin-bottom: 0;
 }
 .landscape {
   position: absolute;
   height: auto;
-  width: 125vw;
-  left: -8vw;
+  width: 125%;
+  left: -8%;
 }
 tspan { white-space:pre }
 .shp0 { fill: url(#grd1) }

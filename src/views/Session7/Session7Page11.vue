@@ -844,7 +844,7 @@ export default {
     }
   },
   mounted() {
-    let vw = window.innerWidth;
+    let vw = document.querySelector('.interactive-container').clientWidth;
     const yellowFlowers = document.getElementsByClassName('yellow-flower');
     yellowFlowers.forEach(flower => {
       flower.style.bottom = (Math.floor(Math.random() * 10) + 2).toString() + 'vh';
@@ -909,33 +909,34 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  width: 80vw;
-  padding: 4vh 2.5vw;
+  width: 80%;
+  padding: 4vh 3.2vh;
   background-color: rgba(255,255,255,0.9);
   text-align: center;
-  left: 10vw;
+  left: 10%;
   top: 20vh;
   z-index: 100;
 }
 .text-box h1 {
-  font-size: 3.5vw;
+  font-size: 4.9vh;
 }
 .text-box p {
-  font-size: 2.2vw;
+  font-size: 2.9vh;
+  margin-bottom: 1vh;
 }
 .text-box p:last-child {
   margin-bottom: 0;
 }
 .landscape {
   position: absolute;
-  width: 120vw;
-  left: -4vw;
+  width: 120%;
+  left: -4%;
   top: -17.65vh;
   height: auto;
 }
 .yellow-flower {
   position: absolute;
-  width: 0.1vw;
+  width: 0.1%;
   height: auto;
   z-index: 10;
 }

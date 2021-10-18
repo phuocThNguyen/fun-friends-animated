@@ -1033,16 +1033,17 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  top: 20vh;
-  left: 15vw;
-  width: 70vw;
+  top: 16vh;
+  left: 15%;
+  width: 70%;
   background-color: rgba(255,255,255,0.8);
-  padding: 3vh 3vw;
+  padding: 3vh 4.2vh;
   opacity: 0;
 }
 .text-box p {
-  font-size: 2.2vw;
+  font-size: 2.8vh;
   opacity: 0;
+  margin-bottom: 1vh;
 }
 .text-box p:last-child {
   margin-bottom: 0;
@@ -1050,8 +1051,8 @@ export default {
 .landscape {
   position: absolute;
   height: auto;
-  width: 148vw;
-  left: -16vw;
+  width: 148%;
+  left: -16%;
 }
 tspan { white-space:pre }
 .shp0 { fill: #bfedef }
