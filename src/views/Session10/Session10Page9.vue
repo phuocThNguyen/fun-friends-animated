@@ -19,19 +19,19 @@ export default {
   mounted() {
     let animation = anime.timeline();
     animation
-    .add({
-      targets: '.kids',
-      scale: 100,
-      duration: 1000,
-      delay: 500
-    })
-    .add({
-      targets: '.text-box',
-      opacity: 1,
-      easing: 'linear',
-      duration: 500,
-      delay: 200
-    })
+      .add({
+        targets: '.kids',
+        scale: 100,
+        duration: 1000,
+        delay: 500
+      })
+      .add({
+        targets: '.text-box',
+        opacity: 1,
+        easing: 'linear',
+        duration: 500,
+        delay: 200
+      })
   }
 }
 </script>
@@ -39,19 +39,25 @@ export default {
 <style scoped>
 .kids {
   position: absolute;
-  width: 1vw;
-  bottom: 30vh;
+  width: 1%;
+  bottom: 20vh;
   left: 65vh;
 }
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.8);
-  width: 64vw;
+  width: 66%;
   text-align: center;
-  left: 18vw;
-  top: 3vh;
-  font-size: 2.4vw;
-  padding: 2vh 2vw;
+  left: 17%;
+  top: 13vh;
+  font-size: 3vh;
+  padding: 2vh;
   opacity: 0;
+}
+.text-box p {
+  margin-bottom: 1vh;
+}
+.text-box p:last-child {
+  margin-bottom: 0;
 }
 </style>

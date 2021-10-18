@@ -19,7 +19,7 @@ export default {
     return {
       canvasStyle: {
         width: 0.9,
-        height: 0.75,
+        height: 0.7,
         isPicture: false,
       }
     }
@@ -47,18 +47,18 @@ export default {
 .canvas {
   position: absolute;
   top: 3vh;
-  left: 5vw;
+  left: 5%;
   opacity: 0;
 }
 .text {
   position: absolute;
   top: 3vh;
-  left: 10vw;
-  width: 80vw;
+  left: 10%;
+  width: 80%;
   background-color: #000000;
-  padding: 1vh 2vw;
+  padding: 1vh 2.8vh;
   text-align: center;
-  font-size: 2vw;
+  font-size: 2.6vh;
   color: #ffffff;
   opacity: 0;
 }

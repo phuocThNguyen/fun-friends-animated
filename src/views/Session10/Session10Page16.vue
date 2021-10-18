@@ -351,7 +351,7 @@ export default {
         duration: 500,
       })
 
-    let vw = window.innerWidth;
+    let vw = document.querySelector('.interactive-container').clientWidth;
     let clouds = document.querySelector('#cloud').children;
     clouds.forEach(cloud => {
       anime({
@@ -378,10 +378,10 @@ export default {
 <style scoped>
 .star-container {
   position: absolute;
-  width: 47vw;
+  width: 47%;
   height: 60vh;
   bottom: 7vh;
-  right: 5vw;
+  right: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -390,7 +390,6 @@ export default {
   position: absolute;
   width: auto;
   height: 60vh;
-
   opacity: 0;
   z-index: 50;
 }
@@ -402,34 +401,38 @@ export default {
   z-index: 55;
 }
 .star-text p {
-  font-size: 2vw;
+  font-size: 2.6vh;
   margin-bottom: 0;
   text-align: center;
 }
 .star-text p:nth-of-type(1) {
-  font-size: 2.5vw;
+  font-size: 3.4vh;
 }
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.8);
   opacity: 0;
-  padding: 2vw;
+  padding: 2.8vh;
   top: 2vh;
-  left: 2vw;
-  width: 50vw;
+  left: 2%;
+  width: 50%;
 }
 .text-box h1 {
   margin-bottom: 3vh;
-  font-size: 3.5vw;
+  font-size: 4vh;
 }
 .text-box p {
-  font-size: 1.8vw;
-  padding-left: 1vw;
+  font-size: 2.7vh;
+  padding-left: 1.4vh;
+  margin-bottom: 1vh;
+}
+.text-box p:last-child {
+  margin-bottom: 0;
 }
 .landscape {
   position: absolute;
   height: auto;
-  width: 110vw;
+  width: 110%;
   top: -3vh;
 }
 tspan { white-space:pre }

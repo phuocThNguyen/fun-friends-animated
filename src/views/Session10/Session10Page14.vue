@@ -18,11 +18,11 @@ export default {
 .text-box {
   position: absolute;
   top: 3vh;
-  left: 3vh;
-  width: 40vw;
+  left: 3%;
+  width: 40%;
   background-color: #000000;
-  padding: 1vh 1vw;
-  font-size: 2vw;
+  padding: 1vh;
+  font-size: 2.8vh;
   text-align: center;
   color: #ffffff;
   font-weight: bold;

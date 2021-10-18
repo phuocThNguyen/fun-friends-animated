@@ -25,26 +25,27 @@ export default {
 .green-box {
   position: absolute;
   bottom: 8vh;
-  left: 3vw;
+  left: 3%;
   background-color: #00CE7C;
   color: #ffffff;
-  width: 25vw;
-  padding: 1vh 2vw;
+  width: 25%;
+  padding: 1vh 2.8vh;
   text-align: center;
-  font-size: 2.5vw;
+  font-size: 3vh;
 }
 .text-box {
   position: absolute;
   top: 0;
   left: 0;
   background-color: #ffffff;
-  padding: 3vh 3vw;
+  padding: 2.6vh;
 }
 .text-box h1 {
-  font-size: 3vw;
+  font-size: 4vh;
 }
 .text-box p {
-  font-size: 2vw;
+  font-size: 2.7vh;
+  margin-bottom: 0;
 }
 .session-background {
   top: 10vh;

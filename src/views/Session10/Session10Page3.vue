@@ -16,21 +16,21 @@ export default {
 .text-box {
   position: absolute;
   top: 5vh;
-  left: 5vw;
-  width: 30vw;
+  left: 5%;
+  width: 30%;
   background-color: rgba(255,255,255,0.8);
   font-weight: bold;
-  font-size: 2vw;
-  padding: 2vh 1.5vw;
+  font-size: 2.8vh;
+  padding: 2vh;
 }
 .text-box-green {
   position: absolute;
   bottom: 5vh;
-  left: 5vw;
-  padding: 1vh 2vw;
+  left: 10%;
+  padding: 1vh 2.4vh;
   background-color: #00CE7C;
   color: #ffffff;
-  font-size: 2vw;
+  font-size: 2.8vh;
   font-weight: bold;
 }
 </style>

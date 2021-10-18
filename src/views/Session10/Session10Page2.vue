@@ -208,19 +208,19 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.8);
-  width: 60vw;
-  font-size: 2vw;
+  width: 60%;
+  font-size: 2.8vh;
   font-weight: bold;
   text-align: center;
-  padding: 3vh 2vw;
+  padding: 3vh 2vh;
   top: 30vh;
-  left: 20vw;
+  left: 20%;
 }
 .landscape {
   position: absolute;
   height: auto;
-  width: 130vw;
-  left: -20vw;
+  width: 130%;
+  left: -20%;
 }
 tspan { white-space:pre }
 .shp0 { fill: url(#grd1) }

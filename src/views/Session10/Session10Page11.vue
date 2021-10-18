@@ -56,61 +56,62 @@ export default {
 
 <style scoped>
 #hand-1 {
-  right: 32vw;
+  right: 32%;
   top: 10vh;
 }
 #hand-2 {
-  right: 4vw;
+  right: 4%;
   top: 10vh;
 }
 #hand-3 {
-  left: 25vw;
+  left: 25%;
   bottom: 10vh;
 }
 #hand-4 {
-  left: 50vw;
+  left: 50%;
   bottom: 10vh;
 }
 #hand-5 {
-  right: 6vw;
+  right: 6%;
   bottom: 10vh;
 }
 #hand-5 p{
-  font-size: 2.5vw !important;
+  font-size: 3.2vh !important;
 }
 .hand-container {
   position: absolute;
-  width: 20vw;
+  width: 20%;
   height: 34vh;
 }
 .hand-container p {
   color: #ffffff;
-  width: 22vw;
-  font-size: 3vw;
+  width: 100%;
+  font-size: 4vh;
   font-weight: bold;
   position: absolute;
-  left: -.5vw;
-  bottom: 4vh;
+  left: 1vh;
+  bottom: 2vh;
   text-align: center;
   text-transform: uppercase;
 }
 .hand {
   position: absolute;
   height: auto;
-  width: 20vw;
+  width: 28vh;
 }
 .text-box {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50vw;
-  padding: 3vh 0 0 3vw;
+  width: 50%;
+  padding: 3vh 0 0 4vh;
 }
 .text-box h1 {
-  font-size: 3vw;
+  font-size: 4vh;
 }
 .text-box p {
-  font-size: 2vw;
+  font-size: 2.8vh;
+  margin-bottom: 1vh;
 }
 tspan { white-space:pre }
 .shp0-red { fill: #C32C42 }

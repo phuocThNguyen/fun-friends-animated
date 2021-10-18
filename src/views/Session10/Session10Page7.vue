@@ -15,13 +15,13 @@ export default {
 <style scoped>
 .text-box-green {
   position: absolute;
-  width: 30vw;
+  width: 34%;
   bottom: 5vh;
-  left: 5vw;
-  padding: 1vh 2vw;
+  left: 10%;
+  padding: 1vh 2vh;
   background-color: #00CE7C;
   color: #ffffff;
-  font-size: 2vw;
+  font-size: 2.8vh;
   font-weight: bold;
   text-align: center;
 }
