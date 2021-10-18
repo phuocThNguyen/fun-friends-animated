@@ -40,17 +40,18 @@ export default {
   top: 0;
   left: 0;
   background-color: #ffffff;
-  width: 40vw;
+  width: 40%;
   height: 100vh;
-  padding: 3vh 2vw;
+  padding: 3vh 2.8vh;
   opacity: 0;
 }
 .text-box h1 {
-  font-size: 3vw;
+  font-size: 4vh;
   font-weight: bold;
   margin-bottom: 2vh;
 }
 .text-box p {
-  font-size: 2vw;
+  font-size: 2.8vh;
+  margin-bottom: 1.5vh;
 }
 </style>

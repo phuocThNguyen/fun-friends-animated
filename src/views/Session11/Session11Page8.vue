@@ -1466,35 +1466,35 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.8);
-  width: 52vw;
+  width: 52%;
   height: auto;
-  left: 24vw;
-  top: 17vh;
-  padding: 2vh 2vw;
+  left: 24%;
+  top: 10vh;
+  padding: 2vh 2.8vh;
   opacity: 0;
 }
 .text-box h1 {
   text-align: center;
   margin-bottom: 2vh;
-  font-size: 2.5vw;
+  font-size: 3.2vh;
   font-weight: bold;
 }
 .text-box p {
-  margin-bottom: 1vh;
-  font-size: 1.7vw;
+  margin-bottom: .5vh;
+  font-size: 2.6vh;
   opacity: 1;
 }
 .text-box p:nth-of-type(10),
 .text-box p:nth-of-type(7),
 .text-box p:nth-of-type(8),
 .text-box p:nth-of-type(9) {
-  padding-left: 3vw;
+  padding-left: 4.2vh;
 }
 .landscape {
   position: absolute;
   height: auto;
-  width: 107vw;
-  left: -6vw;
+  width: 107%;
+  left: -6%;
 }
 tspan { white-space:pre }
 .shp0 { fill: url(#grd1) }

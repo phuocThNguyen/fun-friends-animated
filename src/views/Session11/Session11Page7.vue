@@ -24,7 +24,7 @@ export default {
 .image-container {
   position: absolute;
   height: 100vh;
-  width: 49vw;
+  width: 49%;
 }
 .images {
   width: 100%;
@@ -33,14 +33,13 @@ export default {
 .image-container p {
   background-color: #00CE7C;
   color: #ffffff;
-  font-size: 2vw;
+  font-size: 2.8vh;
   font-weight: bold;
   width: 90%;
   left: 5%;
   bottom: 10vh;
   text-align: center;
   position: absolute;
-  padding: 1vh 1vw;
-
+  padding: 1vh 1.4vh;
 }
 </style>

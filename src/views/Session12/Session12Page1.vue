@@ -291,9 +291,9 @@ export default {
   font-family: 'Sigmar One', cursive;
   position: absolute;
   color: white;
-  font-size: 6vw;
+  font-size: 8.4vh;
   -webkit-text-stroke: 0.1vw black;
-  left: 27vw;
+  left: 27%;
   top: 30vh;
   opacity: 0;
 }
@@ -302,17 +302,17 @@ export default {
 }
 .text-box {
   position: absolute;
-  width: 71vw;
-  left: 22vw;
+  text-align: center;
+  width: 100%;
   top: 42vh;
 }
 .text-box p {
   margin-bottom: 1vh;
-  font-size: 2.2vw;
+  font-size: 3.2vh;
   color: #ffffff;
 }
 .text-box p:first-child {
-  margin-left: 1vw;
+  margin-left: 1.4vh;
 }
 span {
   display: inline-block;
@@ -326,17 +326,17 @@ tspan { white-space:pre }
 }
 .twitter-bird {
   position: absolute;
-  width: 11vw;
+  width: 11%;
   height: auto;
 }
 .bird-1 {
   top: 20vh;
-  left: -5vw;
+  left: -5%;
   z-index: 20;
 }
 .bird-2 {
   bottom: 2vh;
-  right: -11vw;
+  right: -11%;
   z-index: 70;
 }
 #wing1{
@@ -354,31 +354,31 @@ tspan { white-space:pre }
 }
 .cloud1 {
   position: absolute;
-  width: 25vw;
+  width: 25%;
   height: auto;
   top: 10vh;
-  left: -35vw;
+  left: -35%;
 }
 .cloud2 {
   position: absolute;
   width: 30vh;
   height: auto;
   top: 14vh;
-  right: 1vw;
+  right: 1%;
 }
 .big-cloud {
   position: absolute;
-  width: 90vw;
+  width: 90%;
   height: auto;
   top: 20vh;
-  left: 5vw;
+  left: 5%;
 }
 .long-cloud {
-  width: 130vw;
+  width: 130%;
   height: auto;
   position: absolute;
   bottom: -7vh;
-  left: -12vw;
+  left: -12%;
   z-index: 50;
 }
 .small-cloud {
@@ -386,13 +386,13 @@ tspan { white-space:pre }
   width: 15vh;
   height: auto;
   top: 5vh;
-  right: -25vw;
+  right: -25%;
 }
 .sun {
   position: absolute;
   top: 3vh;
-  right: 3vw;
-  width: 15vw;
+  right: 3%;
+  width: 15%;
   height: auto;
 }
 </style>

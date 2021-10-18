@@ -6,8 +6,8 @@
       to each other.</p>
       <p>Talk to your friends about how to help each other.</p>
       <p>How can you help animals?</p>
-      <p>How can you look after natural places like the bush,
-       parks, beaches and rainforest?</p>
+      <p>How can you look after natural places like the bushes,
+       parks, beaches and rainforests?</p>
       <p>How does it feel to be helpful?</p>
       <p>Is there an activity you can do together to help even more?</p>
     </div>
@@ -35,14 +35,14 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.9);
-  padding: 2vh 2vw;
+  padding: 2vh 2.6vh;
   top: 30vh;
-  left: 13vw;
+  left: 13%;
   text-align: center;
   opacity: 0;
 }
 .text-box p {
-  font-size: 2vw;
+  font-size: 2.6vh;
   margin-bottom: 1vh;
 }
 .text-box p:last-child {

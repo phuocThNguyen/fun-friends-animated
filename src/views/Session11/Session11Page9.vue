@@ -1499,10 +1499,10 @@ export default {
 <style scoped>
 .star-container {
   position: absolute;
-  width: 47vw;
+  width: 47%;
   height: 60vh;
   bottom: 7vh;
-  right: 5vw;
+  right: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1516,40 +1516,45 @@ export default {
 }
 .star-text {
   position: absolute;
+  margin-top: 4%;
   text-align: center;
   opacity: 0;
   z-index: 55;
 }
 .star-text p {
-  font-size: 2vw;
+  font-size: 2.4vh;
   margin-bottom: 0;
   text-align: center;
 }
 .star-text p:nth-of-type(1) {
-  font-size: 2.5vw;
+  font-size: 3.2vh;
 }
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.8);
   opacity: 0;
-  padding: 2vw;
+  padding: 2.8vh;
   top: 2vh;
-  left: 2vw;
-  width: 50vw;
+  left: 2%;
+  width: 50%;
 }
 .text-box h1 {
   margin-bottom: 3vh;
-  font-size: 3.5vw;
+  font-size: 4.5vh;
 }
 .text-box p {
-  font-size: 1.8vw;
-  padding-left: 1vw;
+  font-size: 2.6vh;
+  padding-left: 1.4vh;
+  margin-bottom: 1vh;
+}
+.text-box p:last-child {
+  margin-bottom: 0;
 }
 .landscape {
   position: absolute;
   height: auto;
-  width: 107vw;
-  left: -6vw;
+  width: 107%;
+  left: -6%;
 }
 tspan { white-space:pre }
 .shp0-star { fill: #f3cc30 }

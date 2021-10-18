@@ -5,7 +5,7 @@
     <div class="text-box">
       <p>These children are helping are other to be strong.</p>
       <p>Look around or think about your family. What do people
-      do to help you an how do you help them?</p>
+      do to help you and how do you help them?</p>
       <p>Compare your ideas with a friends, ask them what they
       think we can do to help each other.</p>
     </div>
@@ -33,19 +33,19 @@ export default {
 .text {
   position: absolute;
   top: 3vh;
-  left: 2vw;
+  left: 2%;
   color: #ffffff;
-  font-size: 3vw;
+  font-size: 4vh;
   font-weight: bold;
 }
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.9);
-  width: 90vw;
+  width: 80%;
   bottom: 5vh;
-  left: 5vw;
-  padding: 1.5vh 2vw;
-  font-size: 2vw;
+  left: 10%;
+  padding: 1.5vh 2vh;
+  font-size: 3vh;
   opacity: 0;
 }
 .text-box p {

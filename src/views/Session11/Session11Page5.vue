@@ -46,16 +46,16 @@ export default {
 .image-container {
   position: absolute;
   bottom: 0;
-  width: 49vw;
+  width: 49%;
   height: 70vh;
 }
 .text {
   position: absolute;
   bottom: 5vh;
   background-color: #00CE7C;
-  padding: .5vh 1vw;
+  padding: .5vh 1.4vh;
   color: #ffffff;
-  font-size: 2vw;
+  font-size: 2.8vh;
   font-weight: bold;
   width: 90%;
   left: 5%;
@@ -71,14 +71,14 @@ export default {
 }
 .text-box {
   position: absolute;
-  padding: 4vh 3vw;
+  padding: 4vh;
 }
 .text-box h1 {
-  font-size: 3vw;
+  font-size: 4vh;
   margin-bottom: 2vh;
   font-weight: bold;
 }
 .text-box p {
-  font-size: 2vw;
+  font-size: 2.8vh;
 }
 </style>
