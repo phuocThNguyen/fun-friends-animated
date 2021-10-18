@@ -21,7 +21,7 @@ export default {
 .image-container {
   position: absolute;
   bottom: 0;
-  width: 49vw;
+  width: 49%;
   height: 100vh;
 }
 .image-container img {
@@ -31,14 +31,14 @@ export default {
 .image-container p {
   display: block;
   position: absolute;
-  bottom: 7vh;
-  left: 2vw;
-  width: 45vw;
+  bottom: 10vh;
+  left: 2%;
+  width: 96%;
   background-color: #00ce7c;
   color: #ffffff;
-  padding: 1vh 1vw;
+  padding: 1vh;
   text-align: center;
-  font-size: 2vw;
+  font-size: 2.5vh;
   font-weight: bold;
 }
 .image-container:nth-of-type(2) {

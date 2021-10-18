@@ -1048,36 +1048,36 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.8);
-  width: 52vw;
+  width: 52%;
   height: auto;
-  left: 24vw;
-  top: 25vh;
-  padding: 2vh 2vw;
+  left: 24%;
+  top: 20vh;
+  padding: 2vh 2.6vh;
   opacity: 0;
 }
 .text-box h1 {
   text-align: center;
   margin-bottom: 2vh;
-  font-size: 2.5vw;
+  font-size: 3.2vh;
   font-weight: bold;
 }
 .text-box p {
   margin-bottom: 1vh;
-  font-size: 1.7vw;
+  font-size: 3vh;
   opacity: 0;
 }
 .text-box p:nth-of-type(3),
 .text-box p:nth-of-type(4),
 .text-box p:nth-of-type(5),
 .text-box p:nth-of-type(6) {
-  padding-left: 5vw;
+  padding-left: 7vh;
 }
 .landscape {
   position: absolute;
   height: auto;
-  width: 125vw;
+  width: 125%;
   top: -5vh;
-  left: -12vw;
+  left: -12%;
 }
 tspan { white-space:pre }
 .shp0 { fill: #dffffd }

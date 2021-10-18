@@ -636,18 +636,18 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.85);
-  width: 54vw;
-  padding: 5vh 2.5vw;
-  left: 23vw;
+  width: 54%;
+  padding: 5vh 3.2vh;
+  left: 23%;
   top: 33vh;
-  font-size: 2.5vw;
+  font-size: 3.2vh;
   text-align: center;
 }
 .landscape {
   position: absolute;
   height: auto;
-  width: 116vw;
-  left: -5vw;
+  width: 116%;
+  left: -5%;
 }
 tspan { white-space:pre }
 .shp0 { fill: url(#grd1) }

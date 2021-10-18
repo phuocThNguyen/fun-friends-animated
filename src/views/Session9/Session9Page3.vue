@@ -22,14 +22,14 @@ export default {
 .title {
   position: absolute;
   font-weight: bold;
-  font-size: 3vw;
+  font-size: 4vh;
   top: 3vh;
-  left: 2vw;
+  left: 2%;
 }
 .image-container {
   position: absolute;
   bottom: 0;
-  width: 49vw;
+  width: 49%;
   height: 80vh;
 }
 .image-container img {
@@ -39,14 +39,14 @@ export default {
 .image-container p {
   display: block;
   position: absolute;
-  bottom: 7vh;
-  left: 4vw;
-  width: 41vw;
+  bottom: 10vh;
+  left: 5%;
+  width: 90%;
   background-color: #00ce7c;
   color: #ffffff;
-  padding: 1vh 2vw;
+  padding: 1vh;
   text-align: center;
-  font-size: 2vw;
+  font-size: 2.8vh;
   font-weight: bold;
 }
 .image-container:nth-of-type(2) {

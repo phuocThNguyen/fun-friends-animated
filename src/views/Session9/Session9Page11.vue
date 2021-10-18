@@ -14,7 +14,7 @@ export default {
     return {
       canvasStyle: {
         width: 0.96,
-        height: 0.8,
+        height: 0.75,
         isPicture: true,
         pictureUrl: "session9/drawing-canvas.png",
         backgroundSize: 'contain'
@@ -27,15 +27,15 @@ export default {
 <style scoped>
 .canvas {
   position: absolute;
-  left: 2vw;
+  left: 2%;
   top: 1vh;
 }
 .text {
   position: absolute;
   top: 1vh;
-  left: 25vw;
-  padding: 1vh 2vw;
-  font-size: 2vw;
+  left: 25%;
+  padding: 1vh 2.6vh;
+  font-size: 2.6vh;
   font-weight: bold;
   background-color: #000000;
   color: #ffffff;

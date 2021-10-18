@@ -697,7 +697,7 @@
         </g>
       </g>
     </svg>
-    <p class="text">Draw, write or act out your ideas fro rewards with a friend!
+    <p class="text">Draw, write or act out your ideas for rewards with a friend!
       <br>If it's a game, teach your friend how to play it!</p>
     <drawing-canvas class="canvas" :canvasStyle="canvasStyle"/>
   </div>
@@ -712,7 +712,7 @@ export default {
     return {
       canvasStyle: {
         width: 0.9,
-        height: 0.75,
+        height: 0.7,
         isPicture: false,
       }
     }
@@ -725,24 +725,24 @@ export default {
   display: block;
   position: absolute;
   top: 5vh;
-  left: 25vw;
+  left: 25%;
   background-color: #000000;
   color: #ffffff;
   text-align: center;
-  font-size: 2vw;
-  padding: 1vh 1vw;
+  font-size: 2.6vh;
+  padding: 1vh 1.4vh;
   z-index: 50;
 }
 .canvas {
   position: absolute;
-  left: 5vw;
+  left: 5%;
   top: 5vh;
 }
 .landscape {
   position: absolute;
   height: auto;
-  width: 134vw;
-  left: -13vw;
+  width: 134%;
+  left: -13%;
 }
 tspan { white-space:pre }
 .shp0 { fill: url(#grd1) }

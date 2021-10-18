@@ -23,22 +23,29 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (max-width: 930px) {
+  .text-box p {
+    font-size: 2.6vh !important;
+  }
+}
 .text-box {
   position: absolute;
-  padding: 1vh 2vw;
+  padding: 2vh 2.6vh;
 }
 .text-box h1 {
-  font-size: 3vw;
+  font-size: 4vh;
+  margin-bottom: 1vh;
   font-weight: bold;
 }
 .text-box p {
-  font-size: 2.2vw;
+  font-size: 2.8vh;
+  margin-bottom: 1vh ;
 }
 .image-container {
   position: absolute;
   bottom: 0;
-  width: 49vw;
-  height: 80vh;
+  width: 49%;
+  height: 78vh;
 }
 .image-container img {
   width: 100%;
@@ -47,14 +54,14 @@ export default {
 .image-container p {
   display: block;
   position: absolute;
-  bottom: 7vh;
-  left: 4vw;
-  width: 41vw;
+  bottom: 10vh;
+  left: 2%;
+  width: 96%;
   background-color: #00ce7c;
   color: #ffffff;
-  padding: 1vh 1vw;
+  padding: 1vh;
   text-align: center;
-  font-size: 2vw;
+  font-size: 2.6vh;
   font-weight: bold;
 }
 #right {

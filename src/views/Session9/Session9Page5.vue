@@ -2312,11 +2312,14 @@ export default {
 .text-box {
   position: absolute;
   top: 40vh;
-  left: 22vw;
+  left: 22%;
   background-color: rgba(255,255,255,0.85);
   text-align: center;
-  padding: 3vh 2vw;
-  font-size: 2.2vw;
+  padding: 3vh;
+  font-size: 3vh;
+}
+.text-box p {
+  margin-bottom: 1vh;
 }
 .text-box p:last-child {
   margin-bottom: 0;
@@ -2324,9 +2327,9 @@ export default {
 .landscape {
   position: absolute;
   height: auto;
-  width: 183vw;
+  width: 183%;
   top: -3vh;
-  left: -32vw;
+  left: -32%;
 }
 tspan { white-space:pre }
 .shp0 { fill: url(#grd1) }
