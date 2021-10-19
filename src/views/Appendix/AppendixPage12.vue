@@ -16,12 +16,12 @@ export default {
   position: absolute;
   color: #ffffff;
   background-color: #00CE7C;
-  width: 24vw;
+  width: 24%;
   top: 5vh;
-  left: 38vw;
+  left: 38%;
   text-align: center;
-  font-size: 5vw;
+  font-size: 6.8vh;
   font-weight: bold;
-  padding: 1.5vh 2vw;
+  padding: 1.5vh 3vh;
 }
 </style>

@@ -14,9 +14,9 @@ export default {
 <style scoped>
 .title {
   position: absolute;
-  font-size: 3vw;
+  font-size: 4vh;
   font-weight: bold;
-  width: 100vw;
+  width: 100%;
   text-align: center;
   top: 2vh;
 }

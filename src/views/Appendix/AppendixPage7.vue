@@ -695,7 +695,7 @@ export default {
 .landscape {
   position: absolute;
   height: auto;
-  width: 109vw;
+  width: 109%;
 }
 .cls-1 {
   fill: none;

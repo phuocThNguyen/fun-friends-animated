@@ -2404,55 +2404,18 @@ export default {
 </script>
 
 <style scoped>
-.cls-1, .cls-103, .cls-104, .cls-222 {
-  fill: none;
-}
-
-.cls-2 {
-  fill: #ef723c;
-}
-
-.cls-3 {
-  fill: #f05d4d;
-}
-
-.cls-4 {
-  fill: #f3787e;
-}
-
-.cls-5 {
-  fill: #ffc627;
-}
-
-.cls-6 {
-  fill: #9ed7c8;
-}
-
-.cls-7 {
-  fill: #47c1be;
-}
-
-.cls-8 {
-  isolation: isolate;
-}
-
-.cls-9 {
-  fill: #2b3990;
-}
-
-.cls-10 {
-  font-size: 23.52px;
-  letter-spacing: 0.02em;
-}
-
-.cls-10, .cls-53 {
-  fill: #fff;
-}
-
-.cls-10, .cls-221 {
-  font-family: KomikaAxis, Komika Axis;
-}
-
+.cls-1, .cls-103, .cls-104, .cls-222 {fill: none;}
+.cls-2 {fill: #ef723c;}
+.cls-3 {fill: #f05d4d;}
+.cls-4 {fill: #f3787e;}
+.cls-5 {fill: #ffc627;}
+.cls-6 {fill: #9ed7c8;}
+.cls-7 {fill: #47c1be;}
+.cls-8 {isolation: isolate;}
+.cls-9 {fill: #2b3990;}
+.cls-10 {font-size: 23.52px;letter-spacing: 0.02em;}
+.cls-10, .cls-53 {fill: #fff;}
+.cls-10, .cls-221 {font-family: KomikaAxis, Komika Axis;}
 .cls-11 {
   fill: #2b7d3e;
 }

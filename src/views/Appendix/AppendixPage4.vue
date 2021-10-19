@@ -1841,27 +1841,27 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
 #star-1 {
   top: 40vh;
-  left: 5vw;
+  left: 5%;
 }
 #star-2 {
   top: 20vh;
-  left: 35vw;
+  left: 35%;
 }
 #star-3 {
   top: 40vh;
-  right: 5vw;
+  right: 5%;
 }
 #star-4 {
   top: 2vh;
-  left: 5vw;
+  left: 5%;
 }
 #star-5 {
   top: 2vh;
-  right: 5vw;
+  right: 5%;
 }
 .star-container {
   position: absolute;
-  width: 30vw;
+  width: 30%;
   height: 38vh;
   display: flex;
   justify-content: center;
@@ -1870,17 +1870,17 @@ export default {
 .star {
   position: absolute;
   height: auto;
-  width: 30vw;
+  width: 100%;
 }
 .star-text {
   position: absolute;
   background-color: rgba(0,0,0,0);
   margin-top: 6vh;
-  font-size: 2vw;
+  font-size: 2.8vh;
   border: none;
   resize: none;
   height: 18vh;
-  width: 15vw;
+  width: 56%;
 }
 .star-text:focus {
   outline: none;
@@ -1888,8 +1888,8 @@ export default {
 .landscape {
   position: absolute;
   height: auto;
-  width: 110vw;
-  left: -5vw;
+  width: 110%;
+  left: -5%;
   top: -1vh;
 }
 .shp0-star { fill: #f3cc30 }

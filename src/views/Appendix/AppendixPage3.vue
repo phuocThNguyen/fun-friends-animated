@@ -1818,27 +1818,27 @@ export default {
 .tip {
   position: absolute;
   background-color: rgba(255,255,255,0.9);
-  padding: 1vh 1vw;
-  font-size: 1.8vw;
-  width: 20vw;
+  padding: 1vh;
+  font-size: 2.8vh;
+  width: 24%;
   top: 20vh;
-  left: 5vw;
+  left: 5%;
 }
 #star-1 {
   top: 40vh;
-  left: 5vw;
+  left: 5%;
 }
 #star-2 {
   top: 20vh;
-  left: 35vw;
+  left: 35%;
 }
 #star-3 {
   top: 40vh;
-  right: 5vw;
+  right: 5%;
 }
 .star-container {
   position: absolute;
-  width: 30vw;
+  width: 30%;
   height: 38vh;
   display: flex;
   justify-content: center;
@@ -1847,43 +1847,43 @@ export default {
 .star {
   position: absolute;
   height: auto;
-  width: 30vw;
+  width: 100%;
 }
 .star-text {
   position: absolute;
   background-color: rgba(0,0,0,0);
   margin-top: 6vh;
-  font-size: 2vw;
+  font-size: 2.8vh;
   border: none;
   resize: none;
   height: 18vh;
-  width: 15vw;
+  width: 56%;
 }
 .star-text:focus {
   outline: none;
 }
 .title {
   font-family: 'Sigmar One', cursive;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   top: 2vh;
   text-align: center;
-  font-size: 4vw;
+  font-size: 5.4vh;
   color: #ffffff;
 }
 .text {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   text-align: center;
   top: 10vh;
-  font-size: 2.5vw;
+  font-size: 3.3vh;
   color: #ffffff;
 }
 .landscape {
   position: absolute;
   height: auto;
-  width: 110vw;
-  left: -5vw;
+  width: 110%;
+  left: -5%;
   top: -1vh;
 }
 .shp0-star { fill: #f3cc30 }
