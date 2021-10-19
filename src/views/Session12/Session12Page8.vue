@@ -54,19 +54,19 @@ export default {
 </script>
 
 <style scoped>
-#balloon-1 { top: 10vh;left: 2vw; }
-#balloon-2 { top: 15vh;left: 20vw; }
-#balloon-3 { top: 38vh;left: 1vw; }
-#balloon-4 { top: 43vh;left: 19vw; }
-#balloon-5 { top: 65vh;left: 6vw; }
-#balloon-6 { top: 5vh;right: 2vw; }
-#balloon-7 { top: 9vh;right: 20vw; }
-#balloon-8 { top: 35vh;right: 3vw; }
-#balloon-9 { top: 39vh;right: 21vw; }
-#balloon-10 { top: 65vh;right: 8vw; }
+#balloon-1 { top: 10vh;left: 2%; }
+#balloon-2 { top: 15vh;left: 20%; }
+#balloon-3 { top: 38vh;left: 1%; }
+#balloon-4 { top: 43vh;left: 19%; }
+#balloon-5 { top: 65vh;left: 6%; }
+#balloon-6 { top: 5vh;right: 2%; }
+#balloon-7 { top: 9vh;right: 20%; }
+#balloon-8 { top: 35vh;right: 3%; }
+#balloon-9 { top: 39vh;right: 21%; }
+#balloon-10 { top: 65vh;right: 8%; }
 .balloon-container {
   position: absolute;
-  width: 14.5vw;
+  width: 14.5%;
   height: 25vh;
   display: flex;
   align-items: center;
@@ -79,20 +79,20 @@ export default {
 }
 .balloon-text {
   position: absolute;
-  font-size: 2vw;
+  font-size: 2.7vh;
   text-align: center;
   padding-bottom: 5vh;
-  width: 10vw;
+  width: 80%;
 }
 .balloon-input {
   position: absolute;
   top: 4vh;
   background-color: rgba(0,0,0,0);
-  width: 12vw;
+  width: 80%;
   height: 12vh;
   border: none;
   resize: none;
-  font-size: 2vw;
+  font-size: 2.7vh;
 }
 .balloon-input:focus {
   outline: none
@@ -101,8 +101,10 @@ export default {
   position: absolute;
   background-color: #00CE7C;
   color: #ffffff;
-  font-size: 1.5vw;
-  width: 30vw;
-  padding: 1.5vh 1vw;
+  font-size: 2vh;
+  width: 30%;
+  top: 0;
+  left: 0;
+  padding: 1.4vh;
 }
 </style>

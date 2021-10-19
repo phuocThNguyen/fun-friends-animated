@@ -594,18 +594,18 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  width: 90vw;
-  left: 5vw;
+  width: 90%;
+  left: 5%;
   top: 8vh;
 }
 .text-box .title {
   width: 100%;
-  padding: 1vh 1vw;
+  padding: 1vh 1.4vh;
   text-align: center;
   position: absolute;
   background-color: #000000;
   color: #ffffff;
-  font-size: 2vw;
+  font-size: 2.7vh;
   font-weight: bold;
   opacity: 0;
 }
@@ -613,12 +613,12 @@ export default {
   background-color: rgba(255,255,255,0.9);
   position: absolute;
   top: 10vh;
-  padding: 3vh 2vw;
+  padding: 3vh 2.6vh;
   opacity: 0;
 }
 .text p {
-  margin-bottom: 2vh;
-  font-size: 2vw;
+  margin-bottom: 1vh;
+  font-size: 2.7vh;
   opacity: 0;
 }
 .text p:last-child {
@@ -627,8 +627,8 @@ export default {
 .landscape {
   position: absolute;
   height: auto;
-  width: 111vw;
-  left: -5vw;
+  width: 111%;
+  left: -5%;
 }
 tspan { white-space:pre }
 .shp0 { fill: #20b7f0 }

@@ -21,15 +21,15 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 4vh 3vw;
+  padding: 4vh;
 }
 .text-box h1 {
-  font-size: 3vw;
+  font-size: 4.5vh;
   font-weight: bold;
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
 }
 .text-box p {
-  font-size: 2vw;
+  font-size: 3.5vh;
   margin-bottom: 0;
 }
 </style>

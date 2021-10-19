@@ -1034,11 +1034,11 @@ export default {
   position: absolute;
   background-color: rgba(255,255,255,0.9);
   text-align: center;
-  padding: 3vh 1vw;
-  font-size: 2vw;
+  padding: 3vh 1.4vh;
+  font-size: 3.3vh;
   font-weight: bold;
-  width: 80vw;
-  left: 10vw;
+  width: 80%;
+  left: 10%;
   top: 25vh;
   opacity: 0;
 }
@@ -1046,7 +1046,7 @@ export default {
   position: absolute;
   height: 100vh;
   width: auto;
-  left: -30vw;
+  left: -30%;
   top: -5vh;
 }
 tspan { white-space:pre }

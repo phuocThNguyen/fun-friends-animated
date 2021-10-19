@@ -46,16 +46,17 @@ export default {
 .text-box {
   position: absolute;
   top: 2vh;
-  left: 2vw;
+  left: 2%;
 }
 .text-box h1 {
-  font-size: 3vw;
+  font-size: 4vh;
   font-weight: bold;
   margin-bottom: 2vh;
   opacity: 0;
 }
 .text-box p {
-  font-size: 2vw;
+  font-size: 2.7vh;
   opacity: 0;
+  margin-bottom: 1vh;
 }
 </style>

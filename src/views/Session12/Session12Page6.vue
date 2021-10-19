@@ -15,12 +15,12 @@ export default {
 .text-box {
   position: absolute;
   bottom: 7vh;
-  width: 50vw;
-  left: 25vw;
-  padding: 1vh 1.5vw;
+  width: 50%;
+  left: 25%;
+  padding: 1vh 2vh;
   background-color: #00CE7C;
   color: #ffffff;
-  font-size: 2vw;
+  font-size: 2.6vh;
   font-weight: bold;
   text-align: center;
 }
