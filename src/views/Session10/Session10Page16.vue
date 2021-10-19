@@ -332,24 +332,38 @@ export default {
   mounted() {
     let animation = anime.timeline({
       easing: 'linear',
-      delay: 500
+      delay: 500,
+      duration: 500
     });
     animation
       .add({
         targets: ".text-box",
         opacity: 0.9,
-        duration: 1000,
+      })
+      .add({
+        targets: '.star-container',
+        opacity: 1
       })
       .add({
         targets: ".star",
-        opacity: 1,
-        duration: 500,
+        keyframes: [
+          {rotate: '-20deg'},
+          {rotate: '20deg'},
+          {rotate: '-20deg'},
+          {rotate: '0deg'},
+        ],
+        delay: 0,
       })
       .add({
         targets: ".star-text",
-        opacity: 1,
-        duration: 500,
-      })
+        keyframes: [
+          {rotate: '-20deg'},
+          {rotate: '20deg'},
+          {rotate: '-20deg'},
+          {rotate: '0deg'},
+        ],
+        delay: 0,
+      }, 2000)
 
     let vw = document.querySelector('.interactive-container').clientWidth;
     let clouds = document.querySelector('#cloud').children;
@@ -385,19 +399,18 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
 }
 .star {
   position: absolute;
   width: auto;
   height: 60vh;
-  opacity: 0;
   z-index: 50;
 }
 .star-text {
   padding-top: 7vh;
   position: absolute;
   text-align: center;
-  opacity: 0;
   z-index: 55;
 }
 .star-text p {

@@ -2516,24 +2516,38 @@ export default {
     });
     let animation = anime.timeline({
       easing: 'linear',
+      duration: 500,
       delay: 500
     });
     animation
       .add({
         targets: ".text-box",
         opacity: 0.9,
-        duration: 1000,
       })
-      .add({
-        targets: ".star",
-        opacity: 1,
-        duration: 500,
-      })
-      .add({
-        targets: ".star-text",
-        opacity: 1,
-        duration: 500,
-      })
+        .add({
+          targets: '.star-container',
+          opacity: 1
+        })
+        .add({
+          targets: ".star",
+          keyframes: [
+            {rotate: '-20deg'},
+            {rotate: '20deg'},
+            {rotate: '-20deg'},
+            {rotate: '0deg'},
+          ],
+          delay: 0,
+        })
+        .add({
+          targets: ".star-text",
+          keyframes: [
+            {rotate: '-20deg'},
+            {rotate: '20deg'},
+            {rotate: '-20deg'},
+            {rotate: '0deg'},
+          ],
+          delay: 0,
+        }, 2000)
   }
 }
 </script>
@@ -2548,19 +2562,18 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
 }
 .star {
   position: absolute;
   width: auto;
   height: 100%;
-  opacity: 0;
   z-index: 50;
 }
 .star-text {
   position: absolute;
   width: 100%;
   text-align: center;
-  opacity: 0;
   z-index: 55;
 }
 .star-text p {

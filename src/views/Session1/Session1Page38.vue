@@ -917,25 +917,39 @@ export default {
   name: "Session1Page38",
   mounted() {
     let animation = anime.timeline({
-      easing: 'linear'
+      easing: 'linear',
+      duration: 500,
+      delay: 500,
     });
     animation
     .add({
       targets: ".text-box",
       opacity: 0.9,
-      duration: 1000,
-      delay: 500,
+    })
+    .add({
+      targets: '.star-container',
+      opacity: 1
     })
     .add({
       targets: ".star",
-      opacity: 1,
-      duration: 500
+      keyframes: [
+        {rotate: '-20deg'},
+        {rotate: '20deg'},
+        {rotate: '-20deg'},
+        {rotate: '0deg'},
+      ],
+      delay: 0,
     })
     .add({
       targets: ".star-text",
-      opacity: 1,
-      duration: 500
-    })
+      keyframes: [
+        {rotate: '-20deg'},
+        {rotate: '20deg'},
+        {rotate: '-20deg'},
+        {rotate: '0deg'},
+      ],
+      delay: 0,
+    }, 2000)
   }
 }
 </script>
@@ -955,20 +969,19 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
 }
 .star {
   position: absolute;
   width: auto;
-  height: 50vh;
-  opacity: 0;
+  height: 100%;
 }
 .star-text {
   position: absolute;
-  margin-top: 5vh;
+  margin-top: 10%;
   font-size: 3.8vh;
   width: 100%;
   text-align: center;
-  opacity: 0;
 }
 .star-text p {
   margin-bottom: 0;
@@ -983,12 +996,15 @@ export default {
   left: 5%;
 }
 .text-box h1 {
-  margin-bottom: 3vh;
+  margin-bottom: 2vh;
   font-size: 4.3vh;
 }
 .text-box p {
   font-size: 2.6vh;
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
+}
+.text-box p:last-child {
+  margin-bottom: 0;
 }
 tspan { white-space:pre }
 .shp0-star { fill: #f3cc30 }

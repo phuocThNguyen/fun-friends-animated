@@ -145,7 +145,7 @@
     <div class="plans" id="step-1">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">1) Look at your friend in the eye and say
+      <div class="text">1) Look your friend in the eye and say
         hello with a brave voice and smile.</div>
       <svg class="koala" id="koala-standing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 816 975" width="816" height="975">
         <g>
@@ -582,8 +582,8 @@
     <div class="plans" id="step-3">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">3) Write an invitation card at home for an
-        invitation for a play date at the park over the
+      <div class="text">3) Write an invitation card at home for
+        a play date at the park over the
         weekend. Give it to him/her at school.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 342 269" width="342" height="269">
