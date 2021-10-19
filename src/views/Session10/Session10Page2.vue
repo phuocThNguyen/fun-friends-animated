@@ -192,8 +192,8 @@
     <div class="text-box">
       Someone you look up to will help you, care for you
       and encourage you to try new things. They give things a
-      go. How are Tom and Annie being helped in the pictures
-      below? How has somebody helped you?
+      go. How are Tom and Annie being helped in the following
+      pictures? How has somebody helped you?
     </div>
   </div>
 </template>

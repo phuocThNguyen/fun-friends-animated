@@ -8,6 +8,7 @@
       <br>If you were Annie, what could you do to play with
         other children?</p>
     </div>
+    <textarea placeholder="Type in your thoughts here..." class="input"/>
     <div class="star-container">
       <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 1258" width="1320" height="1258">
         <title>Star</title>
@@ -51,11 +52,31 @@ export default {
         targets: '.star-container',
         opacity: 1
       })
+      .add({
+        targets: '.input',
+        opacity: 1
+      })
   }
 }
 </script>
 
 <style scoped>
+.input {
+  position: absolute;
+  width: 47%;
+  height: 25%;
+  right: 2%;
+  top: 1vh;
+  padding: 2vh;
+  font-size: 2.4vh;
+  border: none;
+  resize: none;
+  background-color: rgba(255,255,255,0.9);
+  opacity: 0;
+}
+.input:focus {
+  outline: none;
+}
 .star-container {
   position: absolute;
   right: 5%;
@@ -84,18 +105,22 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.9);
-  width: 90%;
-  top: 5vh;
-  left: 5%;
-  padding: 2vh 2.6vh;
+  width: 47%;
+  height: 25%;
+  top: 1vh;
+  left: 2%;
+  padding: 0 2vh;
   opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .text-box h1 {
-  font-size: 4vh;
-  margin-bottom: 1.5vh;
+  font-size: 3vh;
+  margin-bottom: .5vh;
 }
 .text-box p {
-  font-size: 2.8vh;
+  font-size: 2.4vh;
   margin-bottom: 0;
 }
 tspan { white-space:pre }

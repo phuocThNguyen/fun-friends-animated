@@ -627,8 +627,19 @@
 </template>
 
 <script>
+import anime from "animejs";
+
 export default {
-  name: 'Session9Page2'
+  name: 'Session9Page2',
+  mounted() {
+    anime({
+      targets: '.text-box',
+      opacity: 1,
+      delay: 500,
+      duration: 500,
+      easing: 'linear'
+    })
+  }
 }
 </script>
 
@@ -642,6 +653,7 @@ export default {
   top: 33vh;
   font-size: 3.2vh;
   text-align: center;
+  opacity: 0;
 }
 .landscape {
   position: absolute;

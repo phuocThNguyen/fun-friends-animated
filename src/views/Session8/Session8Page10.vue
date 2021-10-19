@@ -15,6 +15,8 @@
 
 <script>
 import DrawingCanvas from "@/components/drawingCanvas/DrawingCanvas";
+import anime from "animejs";
+
 export default {
   name: 'Session8Page10',
   components: {DrawingCanvas},
@@ -29,6 +31,22 @@ export default {
       }
     }
   },
+  mounted() {
+    anime({
+      targets: '.canvas',
+      delay: 500,
+      duration: 500,
+      opacity: 1,
+      easing: 'linear'
+    })
+    anime({
+      targets: '.text-box',
+      delay: 500,
+      duration: 500,
+      opacity: 1,
+      easing: 'linear'
+    })
+  }
 }
 </script>
 
@@ -36,6 +54,7 @@ export default {
 .text-box {
   position: absolute;
   padding: 1vh 4vh;
+  opacity: 0;
 }
 .text-box p {
   font-size: 2.6vh;
@@ -43,5 +62,6 @@ export default {
 }
 .canvas {
   position: absolute;
+  opacity: 0;
 }
 </style>

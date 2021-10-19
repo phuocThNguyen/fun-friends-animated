@@ -17,8 +17,27 @@
 </template>
 
 <script>
+import anime from "animejs";
+
 export default {
-  name: 'Session9Page9'
+  name: 'Session9Page9',
+  mounted() {
+    let images = document.querySelectorAll('.image-container');
+    let animation = anime.timeline({
+      easing: 'linear',
+      delay: 500,
+      duration: 500
+    })
+    animation
+      .add({
+        targets: images[0],
+        opacity: 1
+      })
+      .add({
+        targets: images[1],
+        opacity: 1
+      })
+  }
 }
 </script>
 
@@ -46,6 +65,7 @@ export default {
   bottom: 0;
   width: 49%;
   height: 78vh;
+  opacity: 0;
 }
 .image-container img {
   width: 100%;

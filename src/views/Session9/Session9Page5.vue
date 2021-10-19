@@ -2299,6 +2299,7 @@
       <p>What brave things do you think Annie is trying to do?</p>
       <p>What can you try to practise being brave?</p>
     </div>
+    <textarea placeholder="Type in your thoughts here..." class="input"/>
   </div>
 </template>
 
@@ -2309,14 +2310,31 @@ export default {
 </script>
 
 <style scoped>
+.input {
+  position: absolute;
+  width: 56%;
+  height: 25%;
+  left: 22%;
+  top: 37vh;
+  padding: 2vh;
+  font-size: 2.4vh;
+  border: none;
+  resize: none;
+  background-color: rgba(255,255,255,0.9);
+  opacity: 1;
+}
+.input:focus {
+  outline: none;
+}
 .text-box {
   position: absolute;
-  top: 40vh;
+  top: 20vh;
+  width: 56%;
   left: 22%;
   background-color: rgba(255,255,255,0.85);
   text-align: center;
-  padding: 3vh;
-  font-size: 3vh;
+  padding: 2vh;
+  font-size: 2.7vh;
 }
 .text-box p {
   margin-bottom: 1vh;
