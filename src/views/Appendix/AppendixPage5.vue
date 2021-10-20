@@ -1067,15 +1067,15 @@
           <rect class="cls-9" y="0.13" width="841.89" height="595.62"/>
         </g>
         <g id="Layer_6" data-name="Layer 6">
-          <text class="cls-10" transform="translate(584.54 339.98)">green thoughts</text>
-          <text class="cls-10" transform="translate(665.6 441.5)">Step plan</text>
-          <text class="cls-10" transform="translate(605.56 290.68)">PAY ATTENTION</text>
-          <text class="cls-10" transform="translate(508.6 145.54)">ALL FEELINGS ARE OKAY</text>
-          <text class="cls-10" transform="translate(594.54 537.1)">Helping others</text>
-          <text class="cls-10" transform="translate(592.22 193.39)">bubble blowing</text>
-          <text class="cls-10" transform="translate(387.51 243.39)">SLOW breathing to calm down</text>
-          <text class="cls-10" transform="translate(590.78 488.68)">try new things</text>
-          <text class="cls-10" transform="translate(488.7 389.33)">Someone to look up to</text>
+          <text class="cls-10 text" transform="translate(584.54 339.98)">green thoughts</text>
+          <text class="cls-10 text" transform="translate(665.6 441.5)">Step plan</text>
+          <text class="cls-10 text" transform="translate(605.56 290.68)">PAY ATTENTION</text>
+          <text class="cls-10 text" transform="translate(508.6 145.54)">ALL FEELINGS ARE OKAY</text>
+          <text class="cls-10 text" transform="translate(594.54 537.1)">Helping others</text>
+          <text class="cls-10 text" transform="translate(592.22 193.39)">bubble blowing</text>
+          <text class="cls-10 text" transform="translate(387.51 243.39)">SLOW breathing to calm down</text>
+          <text class="cls-10 text" transform="translate(590.78 488.68)">try new things</text>
+          <text class="cls-10 text" transform="translate(488.7 389.33)">Someone to look up to</text>
         </g>
         <g id="Layer_5" data-name="Layer 5">
           <g>
@@ -2398,12 +2398,62 @@
 </template>
 
 <script>
+import anime from "animejs";
+
 export default {
-  name: 'AppendixPage5'
+  name: 'AppendixPage5',
+  mounted() {
+    let text = document.querySelectorAll('.text');
+    let animation = anime.timeline({
+      easing: 'linear',
+      duration: 500,
+      delay: 500,
+    })
+    animation
+      .add({
+        targets: text[3],
+        opacity: 1
+      })
+      .add({
+        targets: text[5],
+        opacity: 1
+      })
+      .add({
+        targets: text[6],
+        opacity: 1
+      })
+      .add({
+        targets: text[2],
+        opacity: 1
+      })
+      .add({
+        targets: text[0],
+        opacity: 1
+      })
+      .add({
+        targets: text[8],
+        opacity: 1
+      })
+      .add({
+        targets: text[1],
+        opacity: 1
+      })
+      .add({
+        targets: text[7],
+        opacity: 1
+      })
+      .add({
+        targets: text[4],
+        opacity: 1
+      })
+  }
 }
 </script>
 
 <style scoped>
+.text {
+  opacity: 0;
+}
 .cls-1, .cls-103, .cls-104, .cls-222 {fill: none;}
 .cls-2 {fill: #ef723c;}
 .cls-3 {fill: #f05d4d;}
@@ -2415,51 +2465,18 @@ export default {
 .cls-9 {fill: #2b3990;}
 .cls-10 {font-size: 23.52px;letter-spacing: 0.02em;}
 .cls-10, .cls-53 {fill: #fff;}
-.cls-10, .cls-221 {font-family: KomikaAxis, Komika Axis;}
-.cls-11 {
-  fill: #2b7d3e;
-}
-
-.cls-12 {
-  fill: #6eaa43;
-}
-
-.cls-13 {
-  fill: #8cc748;
-}
-
-.cls-14 {
-  fill: #1b6935;
-}
-
-.cls-15 {
-  fill: #65308f;
-}
-
-.cls-16 {
-  fill: #358888;
-}
-
-.cls-17 {
-  fill: #87c540;
-}
-
-.cls-18 {
-  fill: #99ba3c;
-}
-
-.cls-19 {
-  fill: #9b6f29;
-}
-
-.cls-20 {
-  fill: #7f5522;
-}
-
-.cls-21 {
-  fill: #6d461b;
-}
-
+.cls-10, .cls-221 {font-family: KomikaAxis, Komika Axis,serif;}
+.cls-11 {fill: #2b7d3e;}
+.cls-12 {fill: #6eaa43;}
+.cls-13 {fill: #8cc748;}
+.cls-14 {fill: #1b6935;}
+.cls-15 {fill: #65308f;}
+.cls-16 {fill: #358888;}
+.cls-17 {fill: #87c540;}
+.cls-18 {fill: #99ba3c;}
+.cls-19 {fill: #9b6f29;}
+.cls-20 {fill: #7f5522;}
+.cls-21 {fill: #6d461b;}
 .cls-22 {
   fill: #936728;
 }
