@@ -7,8 +7,19 @@
 </template>
 
 <script>
+import anime from "animejs";
+
 export default {
-  name: 'Session10Page3'
+  name: 'Session10Page3',
+  mounted() {
+    anime({
+      targets: '.text-box-green',
+      opacity: 1,
+      easing: 'linear',
+      duration: 500,
+      delay: 500
+    })
+  }
 }
 </script>
 
@@ -32,5 +43,6 @@ export default {
   color: #ffffff;
   font-size: 2.8vh;
   font-weight: bold;
+  opacity: 0;
 }
 </style>

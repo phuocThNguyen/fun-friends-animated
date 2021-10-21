@@ -49,8 +49,39 @@
 </template>
 
 <script>
+import anime from "animejs";
+
 export default {
-  name: 'Session10Page11'
+  name: 'Session10Page11',
+  mounted() {
+    let hands = document.querySelectorAll('.hand-container');
+    let animation = anime.timeline({
+      easing: 'linear',
+      duration: 500,
+      delay: 500
+    })
+    animation
+      .add({
+        targets: hands[0],
+        opacity: 1
+      })
+      .add({
+        targets: hands[1],
+        opacity: 1
+      })
+      .add({
+        targets: hands[2],
+        opacity: 1
+      })
+      .add({
+        targets: hands[3],
+        opacity: 1
+      })
+      .add({
+        targets: hands[4],
+        opacity: 1
+      })
+  }
 }
 </script>
 
@@ -82,6 +113,7 @@ export default {
   position: absolute;
   width: 20%;
   height: 34vh;
+  opacity: 0;
 }
 .hand-container p {
   color: #ffffff;

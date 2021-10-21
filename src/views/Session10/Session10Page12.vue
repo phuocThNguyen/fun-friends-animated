@@ -16,8 +16,19 @@
 </template>
 
 <script>
+import anime from "animejs";
+
 export default {
-  name: 'Session10Page12'
+  name: 'Session10Page12',
+  mounted() {
+    anime({
+      targets: '.green-box',
+      opacity: 1,
+      duration: 500,
+      delay: 500,
+      easing: 'linear'
+    })
+  }
 }
 </script>
 
@@ -32,6 +43,7 @@ export default {
   padding: 1vh 2.8vh;
   text-align: center;
   font-size: 3vh;
+  opacity: 0;
 }
 .text-box {
   position: absolute;
