@@ -1,7 +1,6 @@
 <template>
   <div class="interactive-container cloud-background">
-    <drawing-canvas class="canvas" :canvasStyle='canvasStyle'/>
-
+    <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
     <div class="text">
       <h1 id="first">Where do you live?</h1>
       <h1 id="second">Where do you want to visit?</h1>
@@ -30,6 +29,11 @@ export default {
         pictureUrl: "session1/World-Map-ai.jpg",
         backgroundSize: 'contain'
       },
+    }
+  },
+  methods: {
+    saveToDatabase(data) {
+      console.log(data)
     }
   },
   mounted() {

@@ -1142,11 +1142,9 @@
         <p id="q4"> - What is similar or different between many friends?</p>
         <p id="q5"><strong>Being different is beautiful!</strong></p>
       </div>
-      <textarea class="song-writer" placeholder="Compose your wonderful song here!"
-      name="song-lyrics" id="song-writer" rows="5"/>
+      <textarea v-model.lazy="input" class="song-writer" placeholder="Compose your wonderful song here!" id="song-writer"/>
     </div>
     <drawing-canvas class="canvas" :canvasStyle="canvasStyle"/>
-
   </div>
 </template>
 
@@ -1163,7 +1161,18 @@ export default {
         width: 0.54,
         height: 0.68,
         isPicture: false,
-      }
+      },
+      input: '',
+    }
+  },
+  methods: {
+    saveToDatabase(data) {
+      console.log(data)
+    }
+  },
+  watch: {
+    input: function() {
+      console.log(this.input)
     }
   },
   mounted() {

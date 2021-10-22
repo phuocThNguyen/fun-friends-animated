@@ -802,7 +802,7 @@
       <p id="para-4">What 5 things would you want in your house?</p>
       <p id="para-5">Share your ideas with a friend, family member or teacher.</p>
     </div>
-    <drawing-canvas class="canvas" :canvasStyle="canvasStyle"/>
+    <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
   </div>
 </template>
 
@@ -820,6 +820,11 @@ export default {
         height: 0.7,
         isPicture: false,
       }
+    }
+  },
+  methods: {
+    saveToDatabase(data) {
+      console.log(data)
     }
   },
   mounted() {

@@ -20,7 +20,7 @@
       <button class="btn-style" @click="undo">UNDO</button>
       <button class="btn-style" @click="redo">REDO</button>
       <button class="btn-style" @click="clear">CLEAR</button>
-<!--      <button class="btn-style" @click="save">SAVE</button>-->
+      <button class="btn-style" @click="save">SAVE</button>
     </div>
   </div>
 </template>
@@ -60,8 +60,7 @@ export default {
       }
     },
     save() {
-      console.log(this.sketchPad.toJSON());
-      this.data = this.sketchPad.toJSON();
+      this.$emit('saved', this.sketchPad.toJSON())
     },
     load() {
       if (this.data) {

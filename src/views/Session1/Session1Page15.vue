@@ -205,7 +205,7 @@
     <!--  Main content  -->
     <div class="main-content">
       <h1 class="requires">Draw a picture of your family here. Put in those who live
-        with you and those who don't. Put in the animals and plants you love yoo.</h1>
+        with you and those who don't. Put in the animals and plants you love too.</h1>
       <div class="text-box">
         <p>Talk with your friends about your picture.</p>
 
@@ -217,7 +217,7 @@
         <p id="q5"> - Talk about a different family and how you can make friends.</p>
       </div>
     </div>
-    <drawing-canvas class="canvas" :canvasStyle='canvasStyle'/>
+    <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
   </div>
 </template>
 
@@ -235,6 +235,11 @@ export default {
         height: 0.7,
         isPicture: false,
       }
+    }
+  },
+  methods: {
+    saveToDatabase(data) {
+      console.log(data)
     }
   },
   mounted() {

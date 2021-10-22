@@ -834,7 +834,7 @@
         <p class="mb-0">Express yourself!</p>
       </div>
     </div>
-    <drawing-canvas class="canvas" :canvasStyle='canvasStyle'/>
+    <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
   </div>
 </template>
 
@@ -849,9 +849,15 @@ export default {
     return {
       canvasStyle: {
         width: 0.65,
-        height: 0.7,
+        height: 0.68,
         isPicture: false,
-      }
+      },
+      canvasData: null,
+    }
+  },
+  methods: {
+    saveToDatabase(data) {
+      console.log(data)
     }
   },
   mounted() {
