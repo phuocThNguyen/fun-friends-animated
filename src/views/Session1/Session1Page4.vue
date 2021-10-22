@@ -12,7 +12,11 @@
         <p id="para-3">It is fun playing with
           our animal friends.</p>
       </div>
+
     </div>
+    <audio autoplay src="../../assets/sounds/session1/274471__nick121087__dog-barking.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
   </div>
 </template>
 

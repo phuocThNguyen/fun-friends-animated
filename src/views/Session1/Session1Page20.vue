@@ -16,6 +16,12 @@
         </span>
       </p>
     </div>
+    <audio id="bear" src="../../assets/sounds/session1/70333__mrbubble110__bear-roar.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
+    <audio id="elephant" src="../../assets/sounds/session1/elephant.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
   </div>
 </template>
 
@@ -32,12 +38,20 @@ export default {
     let animation = anime.timeline({
       delay: 500,
       duration: 1000,
+
     });
+     setTimeout(() => {
+       document.getElementById('bear').play();
+     }, 500);
+    setTimeout(() => {
+      document.getElementById('elephant').play();
+    }, 4000)
     animation
       .add({
         targets: images[0],
         translateY: -0.1*vh,
         opacity: 1,
+        endDelay: 500,
       })
       .add({
         targets: images[1],
@@ -48,6 +62,7 @@ export default {
         targets: images[2],
         translateY: -0.1*vh,
         opacity: 1,
+        endDelay: 1500
       })
       .add({
         targets: images[3],

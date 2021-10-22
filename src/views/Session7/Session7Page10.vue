@@ -421,16 +421,16 @@ textarea:focus {
   outline: none;
 }
 .wing-container input:nth-child(1) {
-  top: 58vh;
+  top: 53vh;
 }
 .wing-container input:nth-child(2) {
-  top: 45.5vh;
+  top: 41vh;
 }
 .wing-container input:nth-child(3) {
-  top: 32.5vh;
+  top: 29vh;
 }
 .wing-container input:nth-child(4) {
-  top: 19.5vh;
+  top: 17vh;
 }
 .wing-container input:nth-child(5) {
   top: 5.5vh;
@@ -557,27 +557,27 @@ textarea:focus {
   font-size: 2vh;
 }
 #step-1 {
-  top: 77vh;
+  top: 72vh;
   left: 36%;
   z-index: 2;
 }
 #step-2 {
-  top: 64vh;
+  top: 60vh;
   left: 35.5%;
   z-index: 1;
 }
 #step-3 {
-  top: 51vh;
+  top: 48vh;
   left: 35%;
   z-index: 5;
 }
 #step-4 {
-  top: 38vh;
+  top: 36vh;
   left: 34%;
   z-index: 4;
 }
 #step-5 {
-  top: 25vh;
+  top: 24vh;
   left: 33%;
   z-index: 1;
 }

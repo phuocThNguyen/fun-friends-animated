@@ -3,8 +3,8 @@
     <img class="session-background" src="../../assets/images/session3/4479-resized.jpg" alt="friends-playing">
     <div class="text-box">
       <h1>Our friends playing</h1>
-      <p>What are your friends feeling today?</p>
-      <p>Pay attention to each friend's face. What is each friend feeling?</p>
+      <p>How are your friends feeling today?</p>
+      <p>Pay attention to each friend's face. How is each friend feeling?</p>
       <p>How do you feel today?</p>
     </div>
   </div>

@@ -3,13 +3,13 @@
     <img src="../../assets/images/session3/23391-resized.jpg" alt="friends" class="session-background">
     <emotion-pick-instruction class="instruction"/>
     <feeling-question
-        class="question"
-        question="What is he feeling?"
-        :emotes="['happy','worried','angry']"
-        :tips="['Happy','Worried','Angry']"
-        :ans="['green-tick','red-tick','red-tick']"
-        :isSmall="false"
-        v-on:correctAnsChosen="handleCorrectAnswer"
+      class="question"
+      question="How is he feeling?"
+      :emotes="['happy','worried','angry']"
+      :tips="['Happy','Worried','Angry']"
+      :ans="['green-tick','red-tick','red-tick']"
+      :isSmall="false"
+      v-on:correctAnsChosen="handleCorrectAnswer"
     />
 
     <!--  Good Job  -->

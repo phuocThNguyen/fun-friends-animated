@@ -5,12 +5,15 @@
       <h1>Meet Tom</h1>
       <p id="para-1">Meet Tom!</p>
       <p id="para-2">It is Tom's birthday today.</p>
-      <p id="para-3">He is adopting Chilli and Pepper,the rescue dogs
-        for his birthday.</p>
+      <p id="para-3">He is adopting Chilli and Pepper,
+        the rescue dogs for his birthday.</p>
       <p id="para-4">Tom wants to give Chilli and Pepper a loving home.</p>
       <p id="para-5">Would you like to adopt a rescue animal for
         your birthday?</p>
     </div>
+    <audio autoplay src="../../assets/sounds/session1/274471__nick121087__dog-barking.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
   </div>
 </template>
 

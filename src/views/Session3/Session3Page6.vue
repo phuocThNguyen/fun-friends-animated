@@ -3,7 +3,7 @@
     <img src="../../assets/images/session3/21944-resized.jpg" alt="friends" class="session-background">
     <emotion-pick-instruction class="instruction"/>
     <div class="content-container" id="girl">
-      <h1>What is the girl feeling?</h1>
+      <h1>How is the girl feeling?</h1>
       <div class="emotes-container">
         <emote-angry class="incorrect"/>
         <emote-calm/>
@@ -54,7 +54,7 @@
       </div>
     </div>
     <div class="content-container" id="dog">
-      <h1>What is the dog feeling?</h1>
+      <h1>How is the dog feeling?</h1>
       <div class="emotes-container">
         <emote-angry class="incorrect-2"/>
         <emote-calm/>
