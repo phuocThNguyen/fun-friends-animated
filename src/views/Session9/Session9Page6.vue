@@ -7,7 +7,7 @@
       <p>What are some activities that you think are fun?
       How can you use these activities to reward yourself?</p>
     </div>
-    <textarea placeholder="Type in your thoughts here..." class="input"/>
+    <textarea v-model.lazy="input" placeholder="Type in your thoughts here..." class="input"/>
     <div class="image-container" id="left">
       <img src="../../assets/images/session9/21368.png" alt="Tom">
       <p>1. Brave Tom &ndash; Sleeping in his own bed</p>
@@ -24,6 +24,11 @@ import anime from "animejs";
 
 export default {
   name: 'Session9Page6',
+  data() {
+    return {
+      input: ''
+    }
+  },
   mounted() {
     let images = document.querySelectorAll('.image-container');
     let animation = anime.timeline({
@@ -40,7 +45,12 @@ export default {
         targets: images[1],
         opacity: 1
       })
-  }
+  },
+  watch: {
+    input: function() {
+      console.log(this.input)
+    }
+  },
 }
 </script>
 

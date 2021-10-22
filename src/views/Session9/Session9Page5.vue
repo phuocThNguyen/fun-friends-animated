@@ -2299,13 +2299,23 @@
       <p>What brave things do you think Annie is trying to do?</p>
       <p>What can you try to practise being brave?</p>
     </div>
-    <textarea placeholder="Type in your thoughts here..." class="input"/>
+    <textarea v-model.lazy="input" placeholder="Type in your thoughts here..." class="input"/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Session9Page5'
+  name: 'Session9Page5',
+  data() {
+    return {
+      input: ''
+    }
+  },
+  watch: {
+    input: function() {
+      console.log(this.input)
+    }
+  }
 }
 </script>
 

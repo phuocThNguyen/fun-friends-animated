@@ -1,7 +1,7 @@
 <template>
   <div class="interactive-container" id="alt-bg">
     <p class="text">Write or draw other rewards in the space below.</p>
-    <drawing-canvas class="canvas" :canvasStyle="canvasStyle" />
+    <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle" />
   </div>
 </template>
 
@@ -20,7 +20,12 @@ export default {
         backgroundSize: 'contain'
       }
     }
-  }
+  },
+  methods: {
+    saveToDatabase(data) {
+      console.log(data)
+    }
+  },
 }
 </script>
 

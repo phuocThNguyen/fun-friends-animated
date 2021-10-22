@@ -8,7 +8,7 @@
       <br>If you were Annie, what could you do to play with
         other children?</p>
     </div>
-    <textarea placeholder="Type in your thoughts here..." class="input"/>
+    <textarea v-model.lazy="input" placeholder="Type in your thoughts here..." class="input"/>
     <div class="star-container">
       <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 1258" width="1320" height="1258">
         <title>Star</title>
@@ -37,6 +37,11 @@ import anime from "animejs";
 
 export default {
   name: 'Session8Page7',
+  data() {
+    return {
+      input: ''
+    }
+  },
   mounted() {
     let animation = anime.timeline({
       easing: 'linear',
@@ -56,6 +61,11 @@ export default {
         targets: '.input',
         opacity: 1
       })
+  },
+  watch: {
+    input: function() {
+      console.log(this.input)
+    }
   }
 }
 </script>

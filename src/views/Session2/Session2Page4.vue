@@ -6,7 +6,6 @@
       <img src="../../assets/images/session2/27475-resized.jpg" alt="worried" />
       <img src="../../assets/images/session2/607-resized.jpg" alt="happy" />
     </div>
-
     <div class="text-box">
       Tap on the feelings below and drag them onto the correct feeling faces.
        The green tick will appear when the answer is correct.

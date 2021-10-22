@@ -8,7 +8,7 @@
     </div>
     <img src="../../assets/images/session8/135407-OSAV2U-882.png" alt="Annie" class="images">
     <img src="../../assets/images/session8/135348-OSAU2M-875.png" alt="family" class="images">
-    <textarea placeholder="Type in your thoughts here..." class="input"/>
+    <textarea v-model.lazy="input" placeholder="Type in your thoughts here..." class="input"/>
   </div>
 </template>
 
@@ -17,6 +17,11 @@ import anime from "animejs";
 
 export default {
   name: 'Session8Page4',
+  data() {
+    return {
+      input: ''
+    }
+  },
   mounted() {
     let text = document.querySelector('.text-box').children;
     let animation = anime.timeline({
@@ -37,6 +42,11 @@ export default {
         targets: '.input',
         opacity: 1
       })
+  },
+  watch: {
+    input: function() {
+      console.log(this.input)
+    }
   }
 }
 </script>

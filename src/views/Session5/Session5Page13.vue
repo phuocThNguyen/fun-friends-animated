@@ -109,7 +109,7 @@
           </g>
         </g>
       </svg>
-      <textarea class="bubble-text" placeholder="Write your thoughts here!" rows="5"/>
+      <textarea v-model.lazy="input" class="bubble-text" placeholder="Write your thoughts here!" />
     </div>
   </div>
 </template>
@@ -119,6 +119,11 @@ import anime from "animejs";
 
 export default {
   name: 'Session5Page13',
+  data() {
+    return {
+      input: ''
+    }
+  },
   mounted() {
     let text = document.getElementsByClassName('text-box')[0].children;
     let animation = anime.timeline({
@@ -136,7 +141,12 @@ export default {
         delay: 1500,
         opacity: 1
       })
-  }
+  },
+  watch: {
+    input: function() {
+      console.log(this.input)
+    }
+  },
 }
 </script>
 

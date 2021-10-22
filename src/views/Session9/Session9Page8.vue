@@ -699,7 +699,7 @@
     </svg>
     <p class="text">Draw, write or act out your ideas for rewards with a friend!
       <br>If it's a game, teach your friend how to play it!</p>
-    <drawing-canvas class="canvas" :canvasStyle="canvasStyle"/>
+    <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
   </div>
 </template>
 
@@ -716,7 +716,12 @@ export default {
         isPicture: false,
       }
     }
-  }
+  },
+  methods: {
+    saveToDatabase(data) {
+      console.log(data)
+    }
+  },
 }
 </script>
 
@@ -724,7 +729,7 @@ export default {
 .text {
   display: block;
   position: absolute;
-  top: 5vh;
+  top: 2vh;
   left: 25%;
   background-color: #000000;
   color: #ffffff;
@@ -736,7 +741,7 @@ export default {
 .canvas {
   position: absolute;
   left: 5%;
-  top: 5vh;
+  top: 2vh;
 }
 .landscape {
   position: absolute;

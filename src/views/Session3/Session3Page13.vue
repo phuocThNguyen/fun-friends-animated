@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <drawing-canvas class="canvas" :canvasStyle='canvasStyle'/>
+    <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
     <div class="white-background">
       <div class="text-box">
         <p>If you want to, say what you are blowing
@@ -28,6 +28,11 @@ export default {
         pictureUrl: 'session3/bubbles-background2.jpg',
         backgroundSize: 'cover'
       }
+    }
+  },
+  methods: {
+    saveToDatabase(data) {
+      console.log(data)
     }
   },
   mounted() {

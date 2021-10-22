@@ -4,7 +4,7 @@
     before? Who has helped you feel happy?
       <br>Write their names in the space below or give them
     a big thank you.</p>
-    <drawing-canvas class="canvas" :canvasStyle="canvasStyle" />
+    <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle" />
   </div>
 </template>
 
@@ -23,7 +23,12 @@ export default {
         backgroundSize: 'contain'
       }
     }
-  }
+  },
+  methods: {
+    saveToDatabase(data) {
+      console.log(data)
+    }
+  },
 }
 </script>
 

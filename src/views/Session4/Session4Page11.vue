@@ -818,7 +818,7 @@
     <div class="text-box">
       Draw a picture of your peaceful, quiet place.
     </div>
-    <drawing-canvas class="canvas" :canvasStyle="canvasStyle"/>
+    <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
   </div>
 </template>
 
@@ -836,6 +836,11 @@ export default {
         height: 0.75,
         isPicture: false,
       }
+    }
+  },
+  methods: {
+    saveToDatabase(data) {
+      console.log(data)
     }
   },
   mounted() {

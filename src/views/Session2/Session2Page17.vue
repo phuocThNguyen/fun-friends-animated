@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <drawing-canvas class="canvas" :canvasStyle="canvasStyle"/>
+    <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
     <div class="text-box">
       <h1>A Tree With 'Feelings'</h1>
       <p>Make one tree with your friends. You can do this by drawing, creating, planting,
@@ -27,6 +27,11 @@ export default {
         pictureUrl: 'session2/feeling-tree.png',
         backgroundSize: 'cover'
       }
+    }
+  },
+  methods: {
+    saveToDatabase(data) {
+      console.log(data)
     }
   },
 }

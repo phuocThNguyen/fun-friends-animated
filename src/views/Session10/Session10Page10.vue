@@ -1,7 +1,7 @@
 <template>
   <div class="interactive-container">
     <img src="../../assets/images/session10/1354.png" alt="background" class="session-background">
-    <drawing-canvas class="canvas" :canvasStyle="canvasStyle"/>
+    <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
     <p class="text">If you want, give yourself a superhero name.
      You can write it on our paper, share it with your classmates
      or draw a picture of your costume! Share it with your classmates.
@@ -39,7 +39,12 @@ export default {
         targets: '.text',
         opacity: 1
       }, 0)
-  }
+  },
+  methods: {
+    saveToDatabase(data) {
+      console.log(data)
+    }
+  },
 }
 </script>
 

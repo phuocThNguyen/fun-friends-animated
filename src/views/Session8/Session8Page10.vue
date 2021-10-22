@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <drawing-canvas class="canvas" :canvasStyle="canvasStyle"/>
+    <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
     <div class="text-box">
       <p>Talk to your classmates about ideas on how to make
        new friends. Together, try drawing pictures of your
@@ -29,6 +29,11 @@ export default {
         pictureUrl: "session8/275676-P61H8M-305.png",
         backgroundSize: "cover"
       }
+    }
+  },
+  methods: {
+    saveToDatabase(data) {
+      console.log(data)
     }
   },
   mounted() {

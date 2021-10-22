@@ -94,7 +94,7 @@
           </g>
         </g>
       </svg>
-      <textarea v-model.lazy="message" class="bubble-text" placeholder="Write your thoughts here!"/>
+      <textarea v-model.lazy="input" class="bubble-text" placeholder="Write your thoughts here!"/>
     </div>
   </div>
 </template>
@@ -104,12 +104,12 @@ export default {
   name: 'Session5Page14',
   data() {
     return {
-      message: '',
+      input: '',
     }
   },
   watch: {
-    message: function () {
-      console.log(this.message)
+    input: function () {
+      console.log(this.input)
     }
   }
 }
