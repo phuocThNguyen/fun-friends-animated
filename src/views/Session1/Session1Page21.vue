@@ -16,6 +16,18 @@
         </span>
       </p>
     </div>
+    <audio id="duck" src="../../assets/sounds/session1/duck-cut.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
+    <audio id="cow" src="../../assets/sounds/session1/cow-cut.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
+    <audio id="pig" src="../../assets/sounds/session1/pig-cut.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
+    <audio id="sheep" src="../../assets/sounds/session1/sheep-cut.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
   </div>
 </template>
 
@@ -29,29 +41,36 @@ export default {
     let images = document.getElementsByClassName('images')[0].children;
     let texts = document.getElementsByClassName('text')[0].children;
     let animation = anime.timeline({
-      delay: 500,
       duration: 1000
     });
+    setTimeout(() => { document.getElementById('duck').play() }, 500);
+    setTimeout(() => { document.getElementById('cow').play() }, 4500);
+    setTimeout(() => { document.getElementById('pig').play() }, 9000);
+    setTimeout(() => { document.getElementById('sheep').play() }, 14000);
     animation
       .add({
         targets: images[0],
         translateY: -0.1*vh,
         opacity: 1,
+        delay: 500
       })
       .add({
         targets: images[1],
         translateY: -0.1*vh,
         opacity: 1,
+        delay: 3500
       })
       .add({
         targets: images[2],
         translateY: -0.1*vh,
         opacity: 1,
+        delay: 3500,
       })
       .add({
         targets: images[3],
         translateY: -0.1*vh,
         opacity: 1,
+        delay: 4000,
       })
       .add({
         targets: texts[0],

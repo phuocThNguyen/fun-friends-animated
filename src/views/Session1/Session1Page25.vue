@@ -803,6 +803,9 @@
       <p id="para-5">Share your ideas with a friend, family member or teacher.</p>
     </div>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
+    <audio autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
   </div>
 </template>
 

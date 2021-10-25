@@ -1145,6 +1145,9 @@
       <textarea v-model.lazy="input" class="song-writer" placeholder="Compose your wonderful song here!" id="song-writer"/>
     </div>
     <drawing-canvas class="canvas" :canvasStyle="canvasStyle"/>
+    <audio autoplay loop src="../../assets/sounds/session1/Falling-Snow-Sound-Effect-Amplified.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
   </div>
 </template>
 

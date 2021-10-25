@@ -218,6 +218,9 @@
       </div>
     </div>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
+    <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
   </div>
 </template>
 

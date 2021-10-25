@@ -401,6 +401,9 @@
       <p id="para-2">What do you think are some things that this tree needs
         to keep it growing and healthy?</p>
     </div>
+    <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
   </div>
 </template>
 

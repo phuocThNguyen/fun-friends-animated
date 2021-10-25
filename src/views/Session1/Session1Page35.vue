@@ -797,6 +797,9 @@
          practise this everyday you will get better and better at it!</p>
       </div>
     </div>
+    <audio autoplay loop src="../../assets/sounds/session1/beach-wave-sound.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
   </div>
 </template>
 

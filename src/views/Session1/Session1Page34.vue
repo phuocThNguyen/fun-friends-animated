@@ -213,6 +213,9 @@
       <p> - Would it shrink during fall?</p>
       <p> - How would you show with your body the tree blossoming in spring?</p>
     </div>
+    <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
   </div>
 </template>
 
