@@ -77,9 +77,11 @@ export default {
       switch (maskId) {
         case 'incorrect-1':
           this.animateRedTick(document.querySelectorAll('.red-tick')[4]);
+          this.$emit('wrongAnswer');
           break;
         case 'incorrect-2':
           this.animateRedTick(document.querySelectorAll('.red-tick')[5]);
+          this.$emit('wrongAnswer');
           break;
         case 'correct':
           this.animateGreenTick(document.querySelectorAll('.green-tick')[2]);

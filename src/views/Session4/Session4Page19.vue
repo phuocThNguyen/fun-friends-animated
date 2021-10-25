@@ -196,7 +196,7 @@ export default {
 #ear {
   right: 25%;
   top: 17vh;
-  height: 10.49vh;
+  height: 10.3vh;
 }
 #tail {
   left: 23%;

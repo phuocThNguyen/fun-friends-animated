@@ -138,9 +138,11 @@ export default {
       let targetLight = `#${e.target.id}-light`;
       if (targetLight !== this.correctAns) {
         this.animateRedTick();
+        this.$emit('wrongAnswer');
         this.animateLightIncorrect(targetLight);
       } else {
         this.animateGreenTick();
+        this.$emit('correctAnswer');
         this.animateLightCorrect(targetLight);
         this.hideElements();
       }
@@ -156,6 +158,7 @@ export default {
           {value: 0, duration: 100, delay: 500},
         ]
       })
+
     },
     animateGreenTick() {
       anime({
