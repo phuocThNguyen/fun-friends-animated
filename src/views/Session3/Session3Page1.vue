@@ -201,7 +201,7 @@
     <p class="text" id="line-2">Together we will get better at understand each other's
     feelings and helping each other when we are sad, angry, excited, worried or scared.</p>
 
-    <audio autoplay loop src="../../assets/sounds/387978__dcpoke__birds-singing-03.mp3">Your browser does not support the
+    <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3">Your browser does not support the
       <code>audio</code> element.
     </audio>
   </div>

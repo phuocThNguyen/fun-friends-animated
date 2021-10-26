@@ -819,6 +819,9 @@
       Draw a picture of your peaceful, quiet place.
     </div>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
+    <audio autoplay src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
   </div>
 </template>
 

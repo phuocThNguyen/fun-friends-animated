@@ -330,6 +330,16 @@
         </g>
       </g>
     </svg>
+
+    <audio ref="wrong" src="../../assets/sounds/all/wrong-ans.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
+    <audio ref="correct" src="../../assets/sounds/all/correct-ans.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
+    <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
   </div>
 </template>
 
@@ -372,6 +382,7 @@ export default {
           {value: 0, duration: 200, delay: 1000},
         ]
       })
+      this.$refs.wrong.play()
     },
     animateCorrectAnswer(target) {
       anime({
@@ -380,6 +391,7 @@ export default {
         opacity: 1,
         duration: 500
       })
+      this.$refs.correct.play()
     },
     updateSadEmotion(args) {
       if (args.added) {
@@ -390,10 +402,10 @@ export default {
           this.animateWrongAnswer('#red-tick-1')
         }
         else {
-          this.correctAns++;
           document.querySelector('#emotion-sad').style.visibility = 'hidden';
           document.querySelector('#mask-sad').style.visibility = 'visible';
           this.animateCorrectAnswer('#green-tick-1');
+          this.correctAns++;
         }
       }
     },
@@ -406,10 +418,10 @@ export default {
           this.animateWrongAnswer('#red-tick-2')
         }
         else {
-          this.correctAns++;
           document.querySelector('#emotion-angry').style.visibility = 'hidden';
           document.querySelector('#mask-angry').style.visibility = 'visible';
           this.animateCorrectAnswer('#green-tick-2');
+          this.correctAns++;
         }
       }
     },
@@ -422,10 +434,10 @@ export default {
           this.animateWrongAnswer('#red-tick-3')
         }
         else {
-          this.correctAns++;
           document.querySelector('#emotion-worried').style.visibility = 'hidden';
           document.querySelector('#mask-worried').style.visibility = 'visible';
           this.animateCorrectAnswer('#green-tick-3');
+          this.correctAns++;
         }
       }
     },
@@ -438,10 +450,10 @@ export default {
           this.animateWrongAnswer('#red-tick-4')
         }
         else {
-          this.correctAns++;
           document.querySelector('#emotion-happy').style.visibility = 'hidden';
           document.querySelector('#mask-happy').style.visibility = 'visible';
           this.animateCorrectAnswer('#green-tick-4');
+          this.correctAns++;
         }
       }
     },
@@ -458,6 +470,7 @@ export default {
           scale: 20,
           duration: 1000,
         })
+        this.$refs.celebrate.play()
       }
     }
   }

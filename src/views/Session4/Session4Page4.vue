@@ -12,6 +12,7 @@
     <p class="position-absolute text">Red Face</p>
     <p class="position-absolute text">Knee shaking</p>
     <p class="position-absolute text">Toilet please!</p>
+    <audio ref="swoosh" src="../../assets/sounds/session4/swoosh9.mp3"></audio>
   </div>
 </template>
 
@@ -27,6 +28,9 @@ export default {
       delay: 400,
       duration: 400
     });
+    setTimeout(() => {
+      this.$refs.swoosh.play();
+    }, 300)
     animation
       .add({
         targets: text[0],

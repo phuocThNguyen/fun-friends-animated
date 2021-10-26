@@ -1774,9 +1774,6 @@
         <br>you Fun Friends
         <br>skills each week.</p>
     </div>
-    <audio autoplay loop src="../../assets/sounds/session1/beach-wave-sound.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
   </div>
 </template>
 

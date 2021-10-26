@@ -201,7 +201,7 @@
       Today we will think about how to be kind and make new friends.
     </p>
 
-    <audio autoplay loop src="../../assets/sounds/387978__dcpoke__birds-singing-03.mp3">
+    <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3">
       Your browser does not support the<code>audio</code> element.
     </audio>
   </div>

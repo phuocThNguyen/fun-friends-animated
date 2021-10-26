@@ -1381,6 +1381,9 @@
       </div>
     </div>
     <drawing-canvas class="canvas" :canvasStyle="canvasStyle"/>
+    <audio autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
   </div>
 </template>
 

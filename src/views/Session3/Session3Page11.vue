@@ -6,16 +6,19 @@
       <p>We are now going to play two games.</p>
       <h1><strong>1. Bubble breathing</strong></h1>
       <p>Take five deep slow breaths, in through
-      your nose and out through your mouth. We are
+       your nose and out through your mouth. We are
        going to blow bubbles with a straw and a cup
-      with water. Blow out all our angry, sad, and worried
-      feelings into the water. Once we stop breathing out,
+       with water. Blow out all our angry, sad, and worried
+       feelings into the water. Once we stop breathing out,
        the bubbles go away.</p>
-      <p>The same happens with our feelings. We ca blow them
+      <p>The same happens with our feelings. We can blow them
        away by doing deep slow calm breathing. Feelings come
        and go, remember all feelings are okay. It is what
-      we choose to do with our feelings that counts. Bubble
-      breathing is a 'thumbs up' choice.</p>
+       we choose to do with our feelings that counts. Bubble
+       breathing is a 'thumbs up' choice.</p>
+      <audio autoplay loop src="../../assets/sounds/session3/bubbles.mp3">
+        Your browser does not support the
+        <code>audio</code> element.</audio>
     </div>
   </div>
 </template>

@@ -206,7 +206,7 @@
       <span class="question2-part2 mr-2 d-inline">when you feel scared?</span>
     </p>
     <p class="question question-3"><strong>FUN FRIENDS can help you learn.</strong></p>
-    <audio autoplay loop src="../../assets/sounds/387978__dcpoke__birds-singing-03.mp3">
+    <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
   </div>
