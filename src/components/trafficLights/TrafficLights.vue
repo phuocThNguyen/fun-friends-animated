@@ -113,6 +113,15 @@
     </div>
     <red-tick class="tick" id="red-tick"/>
     <green-tick class="tick" id="green-tick"/>
+    <audio ref="wrong" src="../../assets/sounds/all/wrong-ans.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
+    <audio ref="correct" src="../../assets/sounds/all/correct-ans.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
+    <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
   </div>
 </template>
 
@@ -134,7 +143,6 @@ export default {
   },
   methods: {
     handleClick(e) {
-      console.log(e)
       let targetLight = `#${e.target.id}-light`;
       if (targetLight !== this.correctAns) {
         this.animateRedTick();
@@ -158,7 +166,7 @@ export default {
           {value: 0, duration: 100, delay: 500},
         ]
       })
-
+      this.$refs.wrong.play();
     },
     animateGreenTick() {
       anime({
@@ -167,6 +175,7 @@ export default {
         opacity: 1,
         duration: 500
       })
+      Math.random() < 0.5 ? this.$refs.correct.play() : this.$refs.celebrate.play()
     },
     animateLightIncorrect(target) {
       anime({

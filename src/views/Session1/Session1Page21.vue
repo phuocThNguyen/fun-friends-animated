@@ -44,9 +44,9 @@ export default {
       duration: 1000
     });
     setTimeout(() => { document.getElementById('duck').play() }, 500);
-    setTimeout(() => { document.getElementById('cow').play() }, 4500);
-    setTimeout(() => { document.getElementById('pig').play() }, 9000);
-    setTimeout(() => { document.getElementById('sheep').play() }, 14000);
+    setTimeout(() => { document.getElementById('cow').play() }, 5000);
+    setTimeout(() => { document.getElementById('pig').play() }, 9500);
+    setTimeout(() => { document.getElementById('sheep').play() }, 14500);
     animation
       .add({
         targets: images[0],

@@ -998,6 +998,7 @@
         steps can you name together? Each step brings you
         closer to doing it!</p>
     </div>
+    <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"></audio>
   </div>
 </template>
 

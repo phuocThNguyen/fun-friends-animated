@@ -1322,6 +1322,7 @@
       </svg>
       <div class="button-label">Next Step</div>
     </div>
+    <audio ref="sound" src="../../assets/sounds/session7/click-sound.mp3"></audio>
   </div>
 </template>
 
@@ -1367,19 +1368,20 @@ export default {
           duration: 500
         })
         animation
-            .add({
-              targets: plans[this.step],
-              opacity: 1
-            })
-            .add({
-              targets: helper[this.step],
-              opacity: 1
-            })
-            .add({
-              targets: reward[this.step],
-              opacity: 1
-            })
+          .add({
+            targets: plans[this.step],
+            opacity: 1
+          })
+          .add({
+            targets: helper[this.step],
+            opacity: 1
+          })
+          .add({
+            targets: reward[this.step],
+            opacity: 1
+          })
         this.step++;
+        this.$refs.sound.play();
       }
     },
     hideElement() {

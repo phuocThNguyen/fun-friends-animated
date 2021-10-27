@@ -10,6 +10,8 @@
       <p>&bull;&nbsp;&nbsp;Be BRAVE and speak with a new person.</p>
       <p>&bull;&nbsp;&nbsp;Make a happy drawing to give to your new friend.</p>
     </div>
+    <audio autoplay loop src="../../assets/sounds/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3"></audio>
+    <p class="credit">Music: Barroom Ballet - Kevin MacLeod</p>
   </div>
 </template>
 
@@ -56,6 +58,14 @@ export default {
 </script>
 
 <style scoped>
+.credit {
+  position: absolute;
+  margin-bottom: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 2vh;
+}
 .text-box {
   position: absolute;
   padding: 1vh 4vh;

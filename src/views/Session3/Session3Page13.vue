@@ -9,6 +9,8 @@
           your feelings in the bubbles below.</p>
       </div>
     </div>
+    <audio autoplay loop src="../../assets/sounds/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3"></audio>
+    <p class="credit">Music: Barroom Ballet - Kevin MacLeod</p>
   </div>
 </template>
 
@@ -48,6 +50,14 @@ export default {
 </script>
 
 <style scoped>
+.credit {
+  position: absolute;
+  margin-bottom: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 2vh;
+}
 .canvas {
   position: absolute;
   top: 10vh;

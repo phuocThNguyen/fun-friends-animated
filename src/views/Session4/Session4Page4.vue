@@ -28,9 +28,11 @@ export default {
       delay: 400,
       duration: 400
     });
-    setTimeout(() => {
-      this.$refs.swoosh.play();
-    }, 300)
+    for (let i = 0; i < 10; i++) {
+      setTimeout(() => {
+        this.$refs.swoosh.play();
+      }, 400 + i * 800)
+    }
     animation
       .add({
         targets: text[0],

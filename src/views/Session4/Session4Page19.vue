@@ -79,6 +79,13 @@
         </g>
       </g>
     </svg>
+
+    <audio ref="correct" src="../../assets/sounds/all/correct-ans.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
+    <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
   </div>
 </template>
 
@@ -112,6 +119,7 @@ export default {
             duration: 100,
             easing: 'linear'
           });
+          this.$refs.correct.play();
           this.correctAns++;
           break;
         case 'tail':
@@ -122,6 +130,7 @@ export default {
             duration: 100,
             easing: 'linear'
           });
+          this.$refs.correct.play();
           this.correctAns++;
           break;
         case 'head':
@@ -132,6 +141,7 @@ export default {
             duration: 100,
             easing: 'linear'
           });
+          this.$refs.correct.play();
           this.correctAns++;
           break;
       }
@@ -146,6 +156,7 @@ export default {
           scale: 20,
           duration: 1000,
         })
+        this.$refs.celebrate.play()
       }
     }
   }

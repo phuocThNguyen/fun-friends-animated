@@ -147,6 +147,12 @@
         </g>
       </g>
     </svg>
+    <audio ref="correct" src="../../assets/sounds/all/correct-ans.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
+    <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
   </div>
 </template>
 
@@ -184,6 +190,7 @@ export default {
             duration: 100,
             easing: 'linear'
           });
+          this.$refs.correct.play();
           this.correctAns++;
           break;
         case 'stomach':
@@ -194,6 +201,7 @@ export default {
             duration: 100,
             easing: 'linear'
           });
+          this.$refs.correct.play();
           this.correctAns++;
           break;
         case 'skin':
@@ -204,6 +212,7 @@ export default {
             duration: 100,
             easing: 'linear'
           });
+          this.$refs.correct.play();
           this.correctAns++;
           break;
         case 'heart':
@@ -214,6 +223,7 @@ export default {
             duration: 100,
             easing: 'linear'
           });
+          this.$refs.correct.play();
           this.correctAns++;
           break;
         case 'knees':
@@ -224,6 +234,7 @@ export default {
             duration: 100,
             easing: 'linear'
           });
+          this.$refs.correct.play();
           this.correctAns++;
           break;
       }
@@ -238,6 +249,7 @@ export default {
           scale: 20,
           duration: 1000,
         })
+        this.$refs.celebrate.play();
       }
     }
   }
@@ -261,7 +273,7 @@ export default {
   position: absolute;
   height: auto;
   width: 1%;
-  bottom: 40vh;
+  bottom: 30vh;
   left: 30%;
   opacity: 0;
 }

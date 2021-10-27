@@ -9,6 +9,7 @@
     <img src="../../assets/images/session8/135407-OSAV2U-882.png" alt="Annie" class="images">
     <img src="../../assets/images/session8/135348-OSAU2M-875.png" alt="family" class="images">
     <textarea v-model.lazy="input" placeholder="Type in your thoughts here..." class="input"/>
+    <audio autoplay loop src="../../assets/sounds/session1/beach-sound.mp3"></audio>
   </div>
 </template>
 

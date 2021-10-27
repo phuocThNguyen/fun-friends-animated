@@ -1324,6 +1324,7 @@
         </g>
       </svg>
       <div class="button-label">Next Step</div>
+      <audio ref="sound" src="../../assets/sounds/session7/click-sound.mp3"></audio>
     </div>
   </div>
 </template>
@@ -1346,18 +1347,18 @@ export default {
         duration: 300,
       })
       animation
-          .add({
-            targets: left,
-            opacity: 1
-          })
-          .add({
-            targets: center,
-            opacity: 1
-          }, 0)
-          .add({
-            targets: right,
-            opacity: 1
-          }, 0)
+        .add({
+          targets: left,
+          opacity: 1
+        })
+        .add({
+          targets: center,
+          opacity: 1
+        }, 0)
+        .add({
+          targets: right,
+          opacity: 1
+        }, 0)
     },
     displayStep() {
       let plans = document.querySelectorAll('.plans');
@@ -1370,19 +1371,20 @@ export default {
           duration: 500
         })
         animation
-            .add({
-              targets: plans[this.step],
-              opacity: 1
-            })
-            .add({
-              targets: helper[this.step],
-              opacity: 1
-            })
-            .add({
-              targets: reward[this.step],
-              opacity: 1
-            })
+          .add({
+            targets: plans[this.step],
+            opacity: 1
+          })
+          .add({
+            targets: helper[this.step],
+            opacity: 1
+          })
+          .add({
+            targets: reward[this.step],
+            opacity: 1
+          })
         this.step++;
+        this.$refs.sound.play();
       }
     },
     hideElement() {

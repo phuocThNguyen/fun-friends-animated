@@ -16,10 +16,10 @@
         </span>
       </p>
     </div>
-    <audio id="bear" src="../../assets/sounds/session1/bear-cut.mp3">
+    <audio ref="bear" src="../../assets/sounds/session1/bear-cut.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
-    <audio id="elephant" src="../../assets/sounds/session1/elephant.mp3">
+    <audio ref="elephant" src="../../assets/sounds/session1/elephant.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
   </div>
@@ -39,8 +39,8 @@ export default {
       delay: 500,
       duration: 1000,
     });
-     setTimeout(() => { document.getElementById('bear').play() }, 500);
-     setTimeout(() => { document.getElementById('elephant').play() }, 6000);
+     setTimeout(() => { this.$refs.bear.play() }, 500);
+     setTimeout(() => { this.$refs.elephant.play() }, 6000);
 
     animation
       .add({

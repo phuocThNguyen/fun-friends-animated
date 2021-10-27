@@ -158,6 +158,15 @@
         </g>
       </g>
     </svg>
+    <audio ref="wrong" src="../../assets/sounds/all/wrong-ans.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
+    <audio ref="correct" src="../../assets/sounds/all/correct-ans.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
+    <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
   </div>
 </template>
 
@@ -214,6 +223,7 @@ export default {
           {value: 0, duration: 200, delay: 1000},
         ]
       })
+      this.$refs.wrong.play()
     },
     animateGreenTick(target) {
       anime({
@@ -222,6 +232,7 @@ export default {
         opacity: 1,
         duration: 500
       })
+      this.$refs.correct.play()
     },
     hideElements(id) {
       if (id === 1) {
@@ -241,6 +252,7 @@ export default {
           scale: 20,
           duration: 1000,
         })
+        this.$refs.celebrate.play()
       }
     }
   }

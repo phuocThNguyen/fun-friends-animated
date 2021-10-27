@@ -54,11 +54,11 @@ export default {
         opacity: 1
       })
       .add({
-        targets: '.star-container',
+        targets: '.input',
         opacity: 1
       })
       .add({
-        targets: '.input',
+        targets: '.star-container',
         opacity: 1
       })
   },

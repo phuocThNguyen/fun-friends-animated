@@ -175,7 +175,8 @@
        the steps, make a new Step Plan.</p>
       <p>&nbsp;&bull; Notice when others are listening, helping and smiling
        and let them know you like it</p>
-      <p>&nbsp;&bull; Practise turning 'red' thoughts into 'green' thoughts.</p>
+      <p>&nbsp;&bull; Practise turning '<span class="red">red</span>' thoughts
+        into '<span class="green">green</span>' thoughts.</p>
       <p>&nbsp;&bull; Reward yourself for being BRAVE.</p>
       <p>&nbsp;&bull; Play with friends and spend time outside.</p>
       <p>&nbsp;&bull; Practise being BRAVE every day:</p>
@@ -284,6 +285,12 @@ export default {
   height: auto;
   width: 144%;
   left: -10%;
+}
+.red {
+  color: #ff0000;
+}
+.green {
+  color: #00CE7C;
 }
 tspan { white-space:pre }
 .shp0 { fill: #fbffd9 }

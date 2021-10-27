@@ -700,6 +700,8 @@
     <p class="text">Draw, write or act out your ideas for rewards with a friend!
       <br>If it's a game, teach your friend how to play it!</p>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
+    <audio autoplay loop src="../../assets/sounds/children-background-music/ukulele-beach-doug-maxwell-children-s-music-no-copyright-music.mp3"></audio>
+    <p class="credit">Music: Ukulele Beach - Doug Maxwell</p>
   </div>
 </template>
 
@@ -726,6 +728,15 @@ export default {
 </script>
 
 <style scoped>
+.credit {
+  position: absolute;
+  margin-bottom: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 2vh;
+  color: #ffffff;
+}
 .text {
   display: block;
   position: absolute;

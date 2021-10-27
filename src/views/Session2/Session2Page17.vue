@@ -8,6 +8,8 @@
       <p>Draw or write down one feeling you have had and act it out in a group.</p>
       <p>When and why did you feel the way that you did? <strong>All feelings are OK.</strong></p>
     </div>
+    <audio autoplay loop src="../../assets/sounds/children-background-music/no-copyright-music-funny-children-kids-music-by-mokka-kids.mp3"></audio>
+    <p class="credit">Music: Funny Children [Kids Music] - MOKKA</p>
   </div>
 </template>
 
@@ -38,6 +40,14 @@ export default {
 </script>
 
 <style scoped>
+.credit {
+  position: absolute;
+  margin-bottom: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 2vh;
+}
 .canvas {
   position: absolute;
   top: 0;

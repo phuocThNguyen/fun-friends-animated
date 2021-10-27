@@ -402,6 +402,7 @@
       <p><strong>What can they taste?</strong> <i>The taste of fresh air and fresh water they drank from the water fountain.</i>
         <br>What else can they taste?</p>
     </div>
+    <audio loop autoplay src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3"></audio>
   </div>
 </template>
 
@@ -451,7 +452,7 @@ export default {
   position: absolute;
   width: 90%;
   left: 5%;
-  top: 5vh;
+  top: 7vh;
   background-color: rgba(255,255,255,0.7);
   padding: 2.1vh;
 }

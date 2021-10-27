@@ -3,7 +3,7 @@
     <img src="../../assets/images/session11/46140.png" alt="children" class="session-background">
     <p class="text">Support Teams</p>
     <div class="text-box">
-      <p>These children are helping are other to be strong.</p>
+      <p>These children are helping each other to be strong.</p>
       <p>Look around or think about your family. What do people
       do to help you and how do you help them?</p>
       <p>Compare your ideas with friends, ask them what they
