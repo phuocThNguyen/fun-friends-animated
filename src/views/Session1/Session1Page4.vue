@@ -14,7 +14,7 @@
       </div>
 
     </div>
-    <audio autoplay src="../../assets/sounds/session1/274471__nick121087__dog-barking.mp3">
+    <audio autoplay src="../../assets/sounds/session1/dog.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
   </div>

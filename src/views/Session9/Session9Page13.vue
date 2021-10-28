@@ -1024,6 +1024,7 @@
         </p>
       </div>
     </div>
+    <audio autoplay loop src="../../assets/sounds/session1/Falling-Snow-Sound-Effect-Amplified.mp3"></audio>
   </div>
 </template>
 

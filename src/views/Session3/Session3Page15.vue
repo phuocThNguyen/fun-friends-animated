@@ -731,6 +731,7 @@
         can see, hear, smell, taste and feel.</p>
       <p>&bull; Say thank you for happy times.</p>
     </div>
+    <audio autoplay loop src="../../assets/sounds/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"></audio>
   </div>
 </template>
 

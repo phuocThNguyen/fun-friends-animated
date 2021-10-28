@@ -1359,6 +1359,9 @@
       <p>&nbsp;&nbsp;-&nbsp;Use a brave voice and stand up tall.</p>
       <p>&nbsp;&nbsp;-&nbsp;Try your best and give it a go.</p>
     </div>
+    <audio autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
   </div>
 </template>
 

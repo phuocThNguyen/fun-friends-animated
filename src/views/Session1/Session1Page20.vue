@@ -2,9 +2,9 @@
   <div class="interactive-container green-background">
     <div class="images">
       <img src="../../assets/images/session1/18-resized.jpg" alt="bears">
-      <img src="../../assets/images/session1/30402-cropped-resized.jpg" alt="giraffe">
+      <img src="../../assets/images/session1/monkey.jpg" alt="monkey">
       <img src="../../assets/images/session1/215-resized.jpg" alt="elephants">
-      <img src="../../assets/images/session1/168-resized.jpg" alt="koalas">
+      <img src="../../assets/images/session1/pigeon.jpg" alt="pigeon">
     </div>
     <div class="text-box">
       <p class="text">
@@ -19,7 +19,13 @@
     <audio ref="bear" src="../../assets/sounds/session1/bear-cut.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
+    <audio ref="monkey" src="../../assets/sounds/session1/monkey.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
     <audio ref="elephant" src="../../assets/sounds/session1/elephant.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
+    <audio ref="pigeon" src="../../assets/sounds/session1/pigeon.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
   </div>
@@ -40,7 +46,9 @@ export default {
       duration: 1000,
     });
      setTimeout(() => { this.$refs.bear.play() }, 500);
-     setTimeout(() => { this.$refs.elephant.play() }, 6000);
+     setTimeout(() => { this.$refs.monkey.play() }, 4500);
+     setTimeout(() => { this.$refs.elephant.play() }, 9500);
+     setTimeout(() => { this.$refs.pigeon.play() }, 12500);
 
     animation
       .add({
@@ -53,6 +61,7 @@ export default {
         targets: images[1],
         translateY: -0.1*vh,
         opacity: 1,
+        endDelay: 3500,
       })
       .add({
         targets: images[2],

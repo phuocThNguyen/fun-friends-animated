@@ -8,7 +8,8 @@
         <p class="item">2. Relaxing Forest - Sonny Fascia (BurghRecords)</p>
         <p class="item">3. Water Stream - Sonny Fascia (BurghRecords)</p>
         <p class="item">4. Birds In Sun And Snow - Sonny Fascia (BurghRecords)</p>
-        <p class="item">5. Forest Summer Roond 020 200619_0186.wav - klankbeeld (Freesound)</p>
+        <p class="item">5. Forest Summer Roond 020 200619_0186.wav - klankbeeld (Freesound)
+          <br>licensed under CCBY 3.0</p>
         <p class="item">6. Wrong.mp3 - AbdrTar (Freesound)</p>
         <p class="item">7. Training Program, Correct2.aif - timgormly (Freesound)</p>
         <p class="item">8. Bubbles 004.wav - ristooooo1 (Freesound)</p>
@@ -21,20 +22,22 @@
     <div class="right-container">
       <div class="items">
         <h1 class="heading">Animal Sounds:</h1>
-        <p class="item">1. Dog Barking - nick121087 (Freesound)</p>
+        <p class="item">1. Dog Barking - CLEREM TV (Youtube)</p>
         <p class="item">2. Voice elephant.mp3 - vataaa (Freesound)</p>
         <p class="item">3. Duck's Sound - CLEREM TV (Youtube)</p>
         <p class="item">4. Sheep's Sound - CLEREM TV (Youtube)</p>
         <p class="item">5. Pig's Sound - CLEREM TV (Youtube)</p>
         <p class="item">6. Cow Moo - Nagaty Studio - Sound Effects (Youtube)</p>
-        <p class="item">1. Bear Sound - Nagaty Studio - Sound Effects (Youtube)</p>
+        <p class="item">7. Bear Sound - Nagaty Studio - Sound Effects (Youtube)</p>
+        <p class="item">8. Monkey Sound - Nagaty Studio - Sound Effects (Youtube)</p>
+        <p class="item">9. Pigeon Sound - Nagaty Studio - Sound Effects (Youtube)</p>
       </div>
       <div class="items">
         <h1 class="heading">Music:</h1>
         <p class="item">1. Sand Castle - Quincas Moreira (Youtube)</p>
         <p class="item">2. Snack Time - The Green Orbs (Youtube)</p>
         <p class="item">3. Funny Children - MOKKA (Youtube)</p>
-        <p class="item">4. Superhero theme - humanoide9000 (Freesound)</p>
+        <p class="item">4. Superhero theme - humanoide9000 (Freesound) licensed under CCBY 3.0</p>
         <p class="item">5. Smoked Kielbasa Polka - Doug MaxWell / Jimmy F. (Youtube)</p>
         <p class="item">6. Barroom Ballet - Kevin MacLeod (Youtube)</p>
         <p class="item">7. Twinkle Twinkle Little Star - The Green Orbs (Youtube)</p>

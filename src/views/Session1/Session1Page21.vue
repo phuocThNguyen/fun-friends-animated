@@ -1,10 +1,10 @@
 <template>
   <div class="interactive-container green-background">
     <div class="images">
-      <img src="../../assets/images/session1/213-resized.jpg" alt="bears">
-      <img src="../../assets/images/session1/3877-resized.jpg" alt="giraffe">
-      <img src="../../assets/images/session1/15-resized.jpg" alt="elephants">
-      <img src="../../assets/images/session1/336-resized.jpg" alt="koalas">
+      <img src="../../assets/images/session1/213-resized.jpg" alt="duck">
+      <img src="../../assets/images/session1/3877-resized.jpg" alt="cow">
+      <img src="../../assets/images/session1/15-resized.jpg" alt="pig">
+      <img src="../../assets/images/session1/336-resized.jpg" alt="sheep">
     </div>
     <div class="text-box">
       <p class="text">

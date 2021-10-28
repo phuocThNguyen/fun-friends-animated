@@ -828,6 +828,7 @@
         </p>
       </div>
     </div>
+    <audio src="../../assets/sounds/session1/Falling-Snow-Sound-Effect-Amplified.mp3"></audio>
   </div>
 </template>
 

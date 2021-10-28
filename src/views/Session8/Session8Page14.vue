@@ -185,6 +185,7 @@
       <p>&middot; Try your best and give it a go. </p>
       <p>&middot; Believe in yourself.</p>
     </div>
+    <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"></audio>
   </div>
 </template>
 

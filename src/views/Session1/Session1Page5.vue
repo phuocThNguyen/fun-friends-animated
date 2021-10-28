@@ -5,6 +5,7 @@
       <p class="mb-3">Annie loves playing on the swing.</p>
       <p class="mb-0">What do you like playing with</p>
       <p class="mb-0">when you are outside?</p>
+      <audio autoplay src="../../assets/sounds/session1/playground.mp3"></audio>
     </div>
   </div>
 </template>
