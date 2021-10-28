@@ -113,7 +113,6 @@
       </g>
     </svg>
     <audio autoplay src="../../assets/sounds/children-background-music/polka.mp3"></audio>
-    <p class="credit">Music: Smoked Kielbasa Polka - Doug MaxWell / Jimmy F.</p>
   </div>
 </template>
 
@@ -189,14 +188,6 @@ export default {
 </script>
 
 <style scoped>
-.credit {
-  position: absolute;
-  margin-bottom: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 2vh;
-}
 .balloons {
   position: absolute;
   width: auto;

@@ -187,7 +187,6 @@
       </g>
     </svg>
     <audio autoplay src="../../assets/sounds/session10/super-hero-theme.mp3"></audio>
-    <p class="credit">Music: Superhero theme - humanoide9000</p>
   </div>
 </template>
 
@@ -260,15 +259,6 @@ export default {
 </script>
 
 <style scoped>
-.credit {
-  position: absolute;
-  margin-bottom: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 2vh;
-  color: #ffffff;
-}
 .kids {
   position: absolute;
   width: 1%;

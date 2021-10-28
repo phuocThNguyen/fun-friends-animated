@@ -45,7 +45,6 @@
       Tap the empty balloon to write your favourite
       FRIENDS games or activities.</div>
     <audio autoplay loop src="../../assets/sounds/children-background-music/sand-castle.mp3"></audio>
-    <p class="credit">Music: Sand Castle - Quincas Moreira</p>
   </div>
 </template>
 
@@ -56,15 +55,6 @@ export default {
 </script>
 
 <style scoped>
-.credit {
-  position: absolute;
-  margin-bottom: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 2vh;
-  color: #ffffff;
-}
 #balloon-1 { top: 10vh;left: 2%; }
 #balloon-2 { top: 15vh;left: 20%; }
 #balloon-3 { top: 38vh;left: 1%; }

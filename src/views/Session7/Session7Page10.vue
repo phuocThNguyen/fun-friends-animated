@@ -358,7 +358,6 @@
     <Modal text="Tap on the trophy, bubbles and
       tiles to type your ideas!"/>
     <audio autoplay loop src="../../assets/sounds/children-background-music/snack-time-the-green-orbs-children-s-music-no-copyright-music.mp3"></audio>
-    <p class="credit">Music: Snack Time - The Green Orbs</p>
   </div>
 </template>
 
@@ -390,15 +389,6 @@ textarea {
 }
 textarea:focus {
   outline: none;
-}
-.credit {
-  position: absolute;
-  margin-bottom: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 2vh;
-  color: #ffffff;
 }
 .wing-container {
   position: absolute;

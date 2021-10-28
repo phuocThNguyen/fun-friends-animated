@@ -7,7 +7,6 @@
      or draw a picture of your costume! Share it with your classmates.
     </p>
     <audio autoplay loop src="../../assets/sounds/children-background-music/snack-time-the-green-orbs-children-s-music-no-copyright-music.mp3"></audio>
-    <p class="credit">Music: Snack Time - The Green Orbs</p>
   </div>
 </template>
 
@@ -51,14 +50,6 @@ export default {
 </script>
 
 <style scoped>
-.credit {
-  position: absolute;
-  margin-bottom: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 2vh;
-}
 .canvas {
   position: absolute;
   top: 3vh;

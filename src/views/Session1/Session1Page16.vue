@@ -11,7 +11,6 @@
       </div>
     </div>
     <audio autoplay loop src="../../assets/sounds/children-background-music/sand-castle.mp3"></audio>
-    <p class="credit">Music: Sand Castle - Quincas Moreira</p>
   </div>
 </template>
 
@@ -70,14 +69,6 @@ export default {
 </script>
 
 <style scoped>
-.credit {
-  position: absolute;
-  margin-bottom: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 2vh;
-}
 .cloud-background {
   background-color: #ffffff;
 }
