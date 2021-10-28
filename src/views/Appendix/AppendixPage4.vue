@@ -1828,6 +1828,8 @@
       </svg>
       <textarea class="star-text"></textarea>
     </div>
+    <audio autoplay loop src="../../assets/sounds/children-background-music/twinkle-twinkle-little-star.mp3"></audio>
+    <p class="credit">Music: Twinkle Twinkle Little Star - The Green Orbs</p>
   </div>
 </template>
 
@@ -1883,6 +1885,15 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+.credit {
+  position: absolute;
+  margin-bottom: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 2vh;
+  color: #ffffff;
+}
 #star-1 {
   top: 40vh;
   left: 5%;

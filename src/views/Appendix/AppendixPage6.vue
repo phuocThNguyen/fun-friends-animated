@@ -3479,6 +3479,7 @@
         </g>
       </g>
     </svg>
+    <audio ref="sound" src="../../assets/sounds/session4/swoosh9.mp3"></audio>
   </div>
 </template>
 
@@ -3494,6 +3495,11 @@ export default {
       duration: 500,
       delay: 500,
     })
+    for (let i = 0; i < 7; i++) {
+      setTimeout(() => {
+        this.$refs.sound.play()
+      }, 500 + i * 1000)
+    }
     animation
     .add({
       targets: thumbs[0],

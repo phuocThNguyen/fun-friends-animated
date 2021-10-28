@@ -3340,14 +3340,16 @@ export default {
   mounted() {
     let stars = document.querySelectorAll('.shp1');
     stars.forEach(star => {
-      anime({
-        targets: star,
-        delay: Math.random() * 1000,
-        opacity: 0,
-        direction: 'alternate',
-        duration: Math.random() * 2000 + 1000,
-        loop: true
-      })
+      Math.random() < 0.3 ?
+        anime({
+          targets: star,
+          delay: Math.random() * 1000,
+          opacity: 0,
+          direction: 'alternate',
+          duration: Math.random() * 2000 + 1000,
+          loop: true
+          })
+        : console.log();
     })
   }
 }
@@ -3385,7 +3387,7 @@ export default {
   position: absolute;
   font-size: 3vh;
   z-index: 10;
-  margin-top: 10%;
+  margin-top: 3%;
 }
 #cloud-1 {
   top: 7%;
