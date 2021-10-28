@@ -1,6 +1,6 @@
 <template>
   <div class="session-container">
-    <svg class="arrow" @click="next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 123" width="124" height="123">
+    <svg class="arrow" @click="next" id="right-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 123" width="124" height="123">
       <title>Right Arrow</title>
       <g id="object">
         <g id="&lt;Group&gt;">
@@ -35,6 +35,7 @@ import AppendixPage9 from "@/views/Appendix/AppendixPage9";
 import AppendixPage10 from "@/views/Appendix/AppendixPage10";
 import AppendixPage11 from "@/views/Appendix/AppendixPage11";
 import AppendixPage12 from "@/views/Appendix/AppendixPage12";
+import AppendixPage13 from "@/views/Appendix/AppendixPage13";
 
 
 export default {
@@ -45,17 +46,17 @@ export default {
   components: {
     AppendixPage1, AppendixPage2, AppendixPage3, AppendixPage4, AppendixPage5,
     AppendixPage6, AppendixPage7, AppendixPage8, AppendixPage9, AppendixPage10,
-    AppendixPage11, AppendixPage12
+    AppendixPage11, AppendixPage12, AppendixPage13
   },
   data() {
     return {
       pages: {
         1: "AppendixPage1", 2: "AppendixPage2", 3: "AppendixPage3", 4: "AppendixPage4", 5: "AppendixPage5",
         6: "AppendixPage6", 7: "AppendixPage7", 8: "AppendixPage8", 9: "AppendixPage9", 10: "AppendixPage10",
-        11: "AppendixPage11", 12: "AppendixPage12"
+        11: "AppendixPage11", 12: "AppendixPage12", 13: "AppendixPage13"
       },
       page: 1,
-      lastPage: 12,
+      lastPage: 13
     }
   },
   created() {

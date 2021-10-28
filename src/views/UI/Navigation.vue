@@ -116,8 +116,8 @@ export default {
   align-items: center;
 }
 .navbar-style div {
-  height: 3vh;
-  width: calc(1.4 * 3vh);
+  height: calc(4.5vh + .25rem);
+  width: calc(4.5vh + 2rem);
 }
 .session-title {
   text-align: center;

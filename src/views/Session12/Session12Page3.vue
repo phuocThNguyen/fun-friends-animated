@@ -1005,8 +1005,8 @@
       What kind of parties have you had at school or home?
       Why did you have them? What do you like to do at a party?
       Try doing your favourite dance or singing your favourite
-      song for a friend!" If you are at the end of your
-      FUN FRIENDS book, reward yourself with something you like
+      song for a friend! If you are at the end of your
+      FUN FRIENDS book, reward yourself with somethings you like
       to do!
     </div>
   </div>
