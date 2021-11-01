@@ -155,7 +155,7 @@ export default {
   border-radius: 2vh;
   cursor: pointer;
   position: absolute;
-  bottom: 1vh;
+  bottom: 1%;
   right: 1%;
   opacity: 0.9;
   z-index: 500;
