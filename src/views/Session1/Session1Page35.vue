@@ -853,9 +853,11 @@ export default {
       delay: 1000
     })
 
+    let text = document.querySelector('.para-box').children;
     let animation = anime.timeline({
       easing: 'linear',
-      duration: 1000
+      duration: 500,
+      delay: 3000
     })
     animation
       .add({
@@ -866,8 +868,50 @@ export default {
       .add({
         targets: '.para-box',
         opacity: 0.95,
-        delay: 1000
+        delay: 500
       })
+      .add({
+        targets: text[1],
+        opacity: 1,
+        delay: 500
+      })
+      .add({
+        targets: text[2],
+        opacity: 1,
+        delay: 500
+      }, 2000)
+      .add({
+        targets: text[3],
+        opacity: 1,
+      })
+      .add({
+        targets: text[4],
+        opacity: 1,
+      }, 3000)
+      .add({
+        targets: text[5],
+        opacity: 1,
+      })
+      .add({
+        targets: text[6],
+        opacity: 1,
+      }, 7500)
+      .add({
+        targets: text[7],
+        opacity: 1,
+      })
+      .add({
+        targets: text[8],
+        opacity: 1,
+      }, 11000)
+      .add({
+        targets: text[9],
+        opacity: 1,
+      })
+      .add({
+        targets: text[10],
+        opacity: 1,
+      }, 14500)
   }
 }
 </script>
@@ -897,7 +941,7 @@ export default {
   position: absolute;
   width: 90%;
   left: 5%;
-  top: 4vh
+  top: 2vh
 }
 .main-content p,
 .main-content h1,
@@ -925,10 +969,12 @@ export default {
 }
 .para-box h2 {
   font-size: 2.8vh;
+  opacity: 0;
 }
 .para-box p {
   font-size: 2.3vh;
   margin-bottom: 2vh;
+  opacity: 0;
 }
 tspan { white-space:pre }
 .shp0-crab { fill: #f37422 }

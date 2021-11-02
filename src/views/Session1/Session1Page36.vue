@@ -1800,7 +1800,7 @@ export default {
       translateY: 6.4 * vh,
       duration: 5000,
       opacity: 0,
-      easing: 'steps(200)',
+      easing: 'linear',
       loop: true,
     })
     anime({

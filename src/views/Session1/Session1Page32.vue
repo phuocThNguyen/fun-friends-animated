@@ -1180,7 +1180,7 @@ export default {
   },
   mounted() {
     let vh = window.innerHeight;
-    let probability = 0.2;
+    let probability = 0.1;
     let snow = document.getElementsByClassName('snow')[0].children;
     snow.forEach(element => {
       let random_boolean = Math.random() < probability;

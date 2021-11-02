@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session1/grass-background.jpg" alt="" class="session-background">
+    <img src="../../assets/images/session1/grass-background.jpg" alt="background" class="session-background">
     <div class="star-container">
       <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 1258" width="1320" height="1258">
         <title>Star</title>
@@ -29,6 +29,13 @@
       <p>- Pay attention to happy things</p>
       <p>- Say thank you for happy things</p>
     </div>
+    <div class="image-container">
+      <img class="action-image" src="../../assets/images/session1/811-resized.jpg" alt="play-outside">
+      <img class="action-image" src="../../assets/images/session5/85693.png" alt="sleep-early">
+      <img class="action-image" src="../../assets/images/session1/4082-resized.jpg" alt="relaxing">
+      <img class="action-image" src="../../assets/images/session1/2749-resized.jpg" alt="happy-things">
+      <img class="action-image" src="../../assets/images/session1/thank-you.jpg" alt="thank-you">
+    </div>
     <audio autoplay loop src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3"></audio>
   </div>
 </template>
@@ -38,55 +45,114 @@ import anime from 'animejs'
 export default {
   name: "Session1Page38",
   mounted() {
+    let images = document.querySelectorAll('.action-image');
+    let texts = document.querySelector('.text-box').children;
     let animation = anime.timeline({
       easing: 'linear',
       duration: 500,
-      delay: 500,
+      delay: 2500,
     });
     animation
-    .add({
-      targets: ".text-box",
-      opacity: 0.9,
-    })
-    .add({
-      targets: '.star-container',
-      opacity: 1
-    })
-    .add({
-      targets: ".star",
-      keyframes: [
-        {rotate: '-20deg'},
-        {rotate: '20deg'},
-        {rotate: '-20deg'},
-        {rotate: '0deg'},
-      ],
-      delay: 0,
-    })
-    .add({
-      targets: ".star-text",
-      keyframes: [
-        {rotate: '-20deg'},
-        {rotate: '20deg'},
-        {rotate: '-20deg'},
-        {rotate: '0deg'},
-      ],
-      delay: 0,
-    }, 2000)
+      .add({
+        targets: ".text-box",
+        opacity: 0.95,
+        delay: 500
+      })
+      .add({
+        targets: texts[1],
+        opacity: 1,
+        delay: 500
+      })
+      .add({
+        targets: images[0],
+        opacity: 1,
+        delay: 500
+      }, 1000)
+      .add({
+        targets: texts[2],
+        opacity: 1,
+      })
+      .add({
+        targets: images[1],
+        opacity: 1,
+      }, 2000)
+      .add({
+        targets: texts[3],
+        opacity: 1,
+      })
+      .add({
+        targets: images[2],
+        opacity: 1,
+      }, 5000)
+      .add({
+        targets: texts[4],
+        opacity: 1,
+      })
+      .add({
+        targets: images[3],
+        opacity: 1,
+      }, 8000)
+      .add({
+        targets: texts[5],
+        opacity: 1,
+      })
+      .add({
+        targets: images[4],
+        opacity: 1,
+      }, 11000)
+      .add({
+        targets: '.star-container',
+        opacity: 1
+      })
+      .add({
+        targets: ".star",
+        keyframes: [
+          {rotate: '-20deg'},
+          {rotate: '20deg'},
+          {rotate: '-20deg'},
+          {rotate: '0deg'},
+        ],
+        delay: 0,
+      })
+      .add({
+        targets: ".star-text",
+        keyframes: [
+          {rotate: '-20deg'},
+          {rotate: '20deg'},
+          {rotate: '-20deg'},
+          {rotate: '0deg'},
+        ],
+        delay: 0,
+      }, 17000)
   }
 }
 </script>
 
 <style scoped>
+.action-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.image-container {
+  position: absolute;
+  top: 7vh;
+  right: 2%;
+  width: 44%;
+  height: 40vh;
+}
 .star-container {
   position: absolute;
   bottom: 5vh;
-  right: 10%;
+  right: 27%;
   width: 40%;
   height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
+  z-index: 10;
 }
 .star {
   position: absolute;
@@ -109,16 +175,17 @@ export default {
   background-color: #ffffff;
   opacity: 0;
   padding: 2.8vh;
-  top: 5vh;
-  left: 5%;
+  top: 2vh;
+  left: 2%;
 }
 .text-box h1 {
-  margin-bottom: 2vh;
-  font-size: 4.3vh;
+  margin-bottom: 1vh;
+  font-size: 5vh;
 }
 .text-box p {
-  font-size: 2.6vh;
+  font-size: 4vh;
   margin-bottom: 1vh;
+  opacity: 0;
 }
 .text-box p:last-child {
   margin-bottom: 0;
