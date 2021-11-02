@@ -2458,7 +2458,7 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Remember to:</h1>
+      <h1> Everyday remember to:</h1>
       <p>&bull; Be kind to all living beings.</p>
       <p>&bull; Play outside.</p>
       <p>&bull; Have plenty of sleep.</p>
@@ -2468,30 +2468,14 @@
         can see, hear, smell, taste and feel.</p>
       <p>&bull; Say thank you for happy times.</p>
     </div>
-    <div class="star-container">
-      <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 1258" width="1320" height="1258">
-        <title>Star</title>
-        <g id="Object">
-          <g id="&lt;Group&gt;">
-            <path id="&lt;Path&gt;" class="shp0-star" d="M678.99 12.07L866.54 392.07C869.62 398.32 875.59 402.66 882.48 403.66L1301.84 464.6C1319.21 467.12 1326.15 488.47 1313.58 500.73L1010.13 796.52C1005.14 801.38 1002.86 808.39 1004.04 815.26L1075.67 1232.93C1078.64 1250.23 1060.48 1263.42 1044.94 1255.26L669.86 1058.06C663.69 1054.82 656.31 1054.82 650.14 1058.06L275.06 1255.26C259.52 1263.42 241.36 1250.23 244.33 1232.93L315.96 815.26C317.14 808.39 314.86 801.38 309.87 796.52L6.42 500.73C-6.15 488.47 0.79 467.12 18.16 464.6L437.51 403.66C444.41 402.66 450.38 398.32 453.46 392.07L641.01 12.07C648.77 -3.67 671.22 -3.67 678.99 12.07Z" />
-            <g id="&lt;Group&gt;">
-              <path id="&lt;Path&gt;" class="shp1-star" d="M660 99.85L492.87 423.56C484.11 440.54 467.28 451.87 448.25 453.61L85.38 486.73L468.76 504.66C493.11 505.8 515.39 491.04 523.85 468.17L660 99.85Z" />
-            </g>
-            <path id="&lt;Path&gt;" class="shp2-star" d="M252.57 1184.87L244.33 1232.93C241.36 1250.23 259.52 1263.43 275.06 1255.25L650.14 1058.06C656.31 1054.82 663.69 1054.82 669.86 1058.06L1044.94 1255.25C1060.48 1263.43 1078.64 1250.23 1075.67 1232.93L1004.04 815.26C1002.86 808.39 1005.14 801.38 1010.13 796.51L1313.58 500.73C1326.15 488.47 1319.21 467.12 1301.84 464.6L1161.38 444.19C934.2 851.89 586.33 1066.55 252.57 1184.87Z" />
-          </g>
-        </g>
-      </svg>
-      <div class="star-text">
-        <p><strong>Bright<br>Star Idea</strong></p>
-        <p>Have a look at some dry spaghetti &ndash;
-          <br>see how hard and stiff it is. Now cook the
-          <br>spaghetti and see how floppy it is.
-          <br>To relax, practise making each
-          <br>part of your body
-          <br>tight like dry spaghetti
-          <br>and floppy like
-          <br>cooked spaghetti.</p>
-      </div>
+    <div class="image-container">
+      <img class="action-image" src="../../assets/images/introduction/Koala_Child_Hugging.jpg" alt="kind-to-animals">
+      <img class="action-image" src="../../assets/images/session1/811-resized.jpg" alt="play-outside">
+      <img class="action-image" src="../../assets/images/session5/85693.png" alt="sleep-early">
+      <img class="action-image" src="../../assets/images/session1/6796-resized.jpg" alt="eat-healthy">
+      <img class="action-image" src="../../assets/images/session1/4082-resized.jpg" alt="relaxing">
+      <img class="action-image" src="../../assets/images/session1/2749-resized.jpg" alt="happy-things">
+      <img class="action-image" src="../../assets/images/session1/thank-you.jpg" alt="thank-you">
     </div>
     <audio autoplay loop src="../../assets/sounds/session4/night-time.mp3"></audio>
   </div>
@@ -2505,7 +2489,8 @@ export default {
   mounted() {
     let stars = document.getElementsByClassName('stars')[0].children;
     stars.forEach(star => {
-      anime({
+      Math.random() < 0.2 ?
+        anime({
         targets: star,
         opacity: 0,
         direction: 'alternate',
@@ -2513,95 +2498,115 @@ export default {
         delay: Math.round(Math.random() * 500) + 200,
         easing: 'linear',
         loop: true
-      })
+      }) : console.log()
     });
+    let texts = document.querySelector('.text-box').children;
+    let images = document.querySelector('.image-container').children;
     let animation = anime.timeline({
-      easing: 'linear',
       duration: 500,
-      delay: 500
+      delay: 2500,
+      easing: 'linear'
     });
     animation
       .add({
         targets: ".text-box",
-        opacity: 0.9,
+        opacity: 1,
+        delay: 500
       })
-        .add({
-          targets: '.star-container',
-          opacity: 1
-        })
-        .add({
-          targets: ".star",
-          keyframes: [
-            {rotate: '-20deg'},
-            {rotate: '20deg'},
-            {rotate: '-20deg'},
-            {rotate: '0deg'},
-          ],
-          delay: 0,
-        })
-        .add({
-          targets: ".star-text",
-          keyframes: [
-            {rotate: '-20deg'},
-            {rotate: '20deg'},
-            {rotate: '-20deg'},
-            {rotate: '0deg'},
-          ],
-          delay: 0,
-        }, 2000)
+      .add({
+        targets: texts[1],
+        opacity: 1,
+        delay: 500
+      })
+      .add({
+        targets: images[0],
+        opacity: 1,
+        delay: 500
+      }, 1000)
+      .add({
+        targets: texts[2],
+        opacity: 1,
+      })
+      .add({
+        targets: images[1],
+        opacity: 1,
+      }, 2000)
+      .add({
+        targets: texts[3],
+        opacity: 1,
+      })
+      .add({
+        targets: images[2],
+        opacity: 1,
+      }, 5000)
+      .add({
+        targets: texts[4],
+        opacity: 1,
+      })
+      .add({
+        targets: images[3],
+        opacity: 1,
+      }, 8000)
+      .add({
+        targets: texts[5],
+        opacity: 1,
+      })
+      .add({
+        targets: images[4],
+        opacity: 1,
+      }, 11000)
+      .add({
+        targets: texts[6],
+        opacity: 1,
+      })
+      .add({
+        targets: images[5],
+        opacity: 1,
+      }, 14000)
+      .add({
+        targets: texts[7],
+        opacity: 1,
+      })
+      .add({
+        targets: images[6],
+        opacity: 1,
+      }, 17000)
   }
 }
 </script>
 
 <style scoped>
-.star-container {
-  position: absolute;
-  width: 52%;
-  height: 65vh;
-  bottom: 2vh;
-  right: 2%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-}
-.star {
-  position: absolute;
-  width: auto;
-  height: 100%;
-  z-index: 50;
-}
-.star-text {
+.action-image {
   position: absolute;
   width: 100%;
-  text-align: center;
-  z-index: 55;
+  height: 100%;
+  opacity: 0;
 }
-.star-text p {
-  font-size: 2.7vh;
-  text-align: center;
-  margin-bottom: 0;
-}
-.star-text p:nth-of-type(1) {
-  font-size: 3.5vh;
+.image-container {
+  position: absolute;
+  top: 7vh;
+  right: 2%;
+  width: 44%;
+  height: 40vh;
 }
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.8);
   opacity: 0;
-  padding: 2.8vh;
+  padding: 1.5vh;
   top: 2vh;
   left: 2%;
   width: 50%;
 }
 .text-box h1 {
-  margin-bottom: 3vh;
+  margin-bottom: 1vh;
   font-size: 4.9vh;
 }
 .text-box p {
-  font-size: 2.52vh;
+  font-size: 3.2vh;
   margin-bottom: 1vh;
   padding-left: 1.4vh;
+  opacity: 0;
 }
 .landscape {
   position: absolute;
@@ -2609,9 +2614,6 @@ export default {
   width: 106%;
 }
 tspan { white-space:pre }
-.shp0-star { fill: #f3cc30 }
-.shp1-star { fill: #f7db5e }
-.shp2-star { fill: #edbd31 }
 .shp0 { fill: url(#grd1) }
 .shp1 { mix-blend-mode: screen;fill: url(#grd2) }
 .shp2 { mix-blend-mode: screen;fill: url(#grd3) }

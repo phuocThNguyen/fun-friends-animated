@@ -10,8 +10,8 @@
         there are butterflies in their tummy,
         their legs get shaky, they get red in
         the face or get sweaty.</p>
-      <p>My body is my friend. It tells
-        me when I need to relax.</p>
+      <p>My body is my friend.
+        <br>It tells me when I need to relax.</p>
     </div>
   </div>
 </template>
@@ -44,7 +44,7 @@ export default {
       .add({
         targets: text[4],
         opacity: 1,
-        delay: 2000
+        delay: 4000
       })
   }
 }
@@ -67,10 +67,11 @@ export default {
 .text-box h1 {
   font-size: 4.2vh;
   font-weight: bold;
-  margin-bottom: 3vh;
+  margin-bottom: 2vh;
 }
 .text-box p {
-  font-size: 2.52vh;
+  font-size: 3.2vh;
+  margin-bottom: 1vh;
   opacity: 0;
 }
 .text-box p:nth-child(2) {
@@ -84,6 +85,6 @@ export default {
   font-weight: bold;
   padding: 1vh;
   text-align: center;
-  margin-top: 50%;
+  margin-top: 20%;
 }
 </style>

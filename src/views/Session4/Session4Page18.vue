@@ -240,6 +240,28 @@ export default {
       }
     }
   },
+  mounted() {
+    let animation = anime.timeline({
+      easing: 'linear',
+      duration: 500,
+    })
+    animation
+      .add({
+        targets: '.text-box',
+        opacity: 1,
+        delay: 1000
+      })
+      .add({
+        targets: '.clues-sources',
+        opacity: 1,
+        delay: 3000
+      })
+      .add({
+        targets: '.answers',
+        opacity: 1,
+        delay: 3000
+      }, 1500)
+  },
   watch: {
     correctAns: function () {
       if (this.correctAns === 5) {
@@ -329,18 +351,20 @@ export default {
   height: 6.55vh;
   background-color: rgba(255,255,255,0.6);
   border-radius: 10px;
+  opacity: 0;
 }
 .clues {
   width: 23.8vh;
 }
 .clues-sources {
   position: absolute;
-  top: 42vh;
-  left: 9%;
+  top: 30vh;
+  left: 17%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  opacity: 0;
 }
 .clue {
   background-color: #000000;
@@ -352,18 +376,19 @@ export default {
   padding: 1.4vh;
   margin-bottom: 1vh;
 }
-h1 {font-size: 3.5vh; margin-bottom: 2vh}
-p {font-size: 2.52vh; margin-bottom: 0}
+h1 { font-size: 4.5vh;margin-bottom: 0; }
+p { font-size: 3.2vh;margin-bottom: 0; }
 .text-box {
   position: absolute;
-  width: 30%;
+  width: 90%;
   padding: 2.1vh;
   top: 2vh;
   left: 5%;
   background-color: rgba(255,255,255,0.8);
+  opacity: 0;
 }
 .text-box p:nth-of-type(1) {
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
 }
 .cls-1 {fill: none;}
 .cls-2 {isolation: isolate;}

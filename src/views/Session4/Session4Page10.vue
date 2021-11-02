@@ -62,16 +62,16 @@ export default {
   background-color: #ffffff;
   width: 35%;
   height: 100%;
-  padding: 2.8vh;
+  padding: 1.5vh;
 }
 .text-box h1 {
   font-size: 4.2vh;
   font-weight: bold;
-  margin-bottom: 3vh;
+  margin-bottom: 1vh;
 }
 .text-box p {
-  font-size: 2.52vh;
-  margin-bottom: 1.5vh;
+  font-size: 3.1vh;
+  margin-bottom: 1vh;
   opacity: 0;
 }
 .text-box p:last-child {
@@ -82,7 +82,7 @@ export default {
   font-weight: bold;
   padding: 1vh;
   text-align: center;
-  margin-top: 20%;
+  margin-top: 5%;
 }
 #adjust {
   left: 12%;

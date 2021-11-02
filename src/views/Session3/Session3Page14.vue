@@ -720,13 +720,59 @@ import anime from "animejs";
 export default {
   name: "Session3Page14",
   mounted() {
-    anime({
-      targets: ".text-box",
-      opacity: 1,
-      duration: 500,
-      delay: 500,
-      easing: 'linear'
+    let vw = document.querySelector('.interactive-container').clientWidth;
+    let clouds = document.getElementsByClassName('shp15');
+    clouds.forEach(cloud => {
+      anime({
+        targets: cloud,
+        translateX: (Math.round(Math.random() * 0.4 * vw) + 200) * (Math.random() < 0.5 ? 1: -1),
+        duration: Math.round(Math.random() * 1000) + 4000,
+        direction: 'alternate',
+        loop: true,
+        easing: 'linear',
+      })
     })
+    let text = document.querySelector('.text-box').children;
+    let animation = anime.timeline({
+      easing: 'linear',
+      duration: 500,
+      delay: 1500
+    })
+    animation
+      .add({
+        targets: ".text-box",
+        opacity: 1,
+        delay: 500
+      })
+      .add({
+        targets: text[1],
+        opacity: 1,
+        delay: 500
+      })
+      .add({
+        targets: text[2],
+        opacity: 1,
+      })
+      .add({
+        targets: text[3],
+        opacity: 1,
+      })
+      .add({
+        targets: text[4],
+        opacity: 1
+      })
+      .add({
+        targets: text[5],
+        opacity: 1
+      })
+      .add({
+        targets: text[6],
+        opacity: 1
+      })
+      .add({
+        targets: text[7],
+        opacity: 1
+      })
   }
 }
 </script>
@@ -734,7 +780,7 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255,255,255,0.9);
   width: 74%;
   height: auto;
   left: 13%;
@@ -751,6 +797,7 @@ export default {
 .text-box p {
   margin-bottom: 2vh;
   font-size: 2.8vh;
+  opacity: 0;
 }
 .text-box p:nth-child(5),
 .text-box p:nth-child(6),

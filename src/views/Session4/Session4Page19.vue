@@ -147,6 +147,28 @@ export default {
       }
     }
   },
+  mounted() {
+    let animation = anime.timeline({
+      easing: 'linear',
+      duration: 500,
+    })
+    animation
+        .add({
+          targets: '.text-box',
+          opacity: 1,
+          delay: 1000
+        })
+        .add({
+          targets: '.clues-sources',
+          opacity: 1,
+          delay: 3000
+        })
+        .add({
+          targets: '.answers',
+          opacity: 1,
+          delay: 3000
+        }, 1500)
+  },
   watch: {
     correctAns: function () {
       if (this.correctAns === 3) {
@@ -223,6 +245,7 @@ export default {
   height: 6.55vh;
   background-color: rgba(255,255,255,0.6);
   border-radius: 10px;
+  opacity: 0;
 }
 .clues {
   width: 29.4vh;
@@ -235,6 +258,7 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  opacity: 0;
 }
 .clue {
   background-color: #000000;
@@ -246,17 +270,19 @@ export default {
   padding: 1.4vh;
   margin-bottom: 1vh;
 }
-h1 {font-size: 3.5vh; margin-bottom: 2vh}
-p {font-size: 2.52vh; margin-bottom: 0}
 .text-box {
   position: absolute;
-  width: 80%;
-  padding: 2.1vh;
-  top: 5vh;
-  left: 10%;
+  width: 90%;
+  padding: 1.5vh;
+  top: 2vh;
+  left: 5%;
   background-color: rgba(255,255,255,0.9);
-  font-weight: bold;
+  opacity: 0;
+}
+.text-box p {
+  font-size: 3.5vh;
   text-align: center;
+  margin-bottom: 0;
 }
 .cls-1 {isolation: isolate;}
 .cls-2,

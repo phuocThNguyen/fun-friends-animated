@@ -35,23 +35,28 @@ export default {
       })
       .add({
         targets: text[2],
-        opacity: 1
+        opacity: 1,
+        delay: 1500
       })
       .add({
         targets: text[3],
-        opacity: 1
+        opacity: 1,
+        delay: 1500
       })
       .add({
         targets: text[4],
         opacity: 1,
+        delay: 1500
       })
       .add({
         targets: text[5],
         opacity: 1,
+        delay: 1500
       })
       .add({
         targets: text[6],
         opacity: 1,
+        delay: 2500
       })
   }
 }
@@ -66,16 +71,16 @@ export default {
   background-color: #ffffff;
   width: 35%;
   height: 100%;
-  padding: 2.8vh;
+  padding: 1.5vh;
 }
 .text-box h1 {
   font-size: 4.2vh;
   font-weight: bold;
-  margin-bottom: 3vh;
+  margin-bottom: 1vh;
 }
 .text-box p {
-  font-size: 2.52vh;
-  margin-bottom: 1.5vh;
+  font-size: 3vh;
+  margin-bottom: .5vh;
   opacity: 0;
 }
 .text-box p:nth-of-type(2) {

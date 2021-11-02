@@ -46,6 +46,7 @@ import Session4Page20 from "@/views/Session4/Session4Page20";
 import Session4Page21 from "@/views/Session4/Session4Page21";
 import Session4Page22 from "@/views/Session4/Session4Page22";
 import Session4Page23 from "@/views/Session4/Session4Page23";
+import Session4Page24 from "@/views/Session4/Session4Page24";
 
 export default {
   name: "Session4",
@@ -57,7 +58,7 @@ export default {
     Session4Page6, Session4Page7, Session4Page8, Session4Page9, Session4Page10,
     Session4Page11, Session4Page12, Session4Page13, Session4Page14, Session4Page15,
     Session4Page16, Session4Page17, Session4Page18, Session4Page19, Session4Page20,
-    Session4Page21, Session4Page22, Session4Page23
+    Session4Page21, Session4Page22, Session4Page23, Session4Page24
   },
   data() {
     return {
@@ -66,10 +67,10 @@ export default {
         6: "Session4Page6", 7: "Session4Page7", 8: "Session4Page8", 9: "Session4Page9", 10: "Session4Page10",
         11: "Session4Page11", 12: "Session4Page12", 13: "Session4Page13", 14: "Session4Page14", 15: "Session4Page15",
         16: "Session4Page16", 17: "Session4Page17", 18: "Session4Page18", 19: "Session4Page19", 20: "Session4Page20",
-        21: "Session4Page21", 22: "Session4Page22", 23: "Session4Page23"
+        21: "Session4Page21", 22: "Session4Page22", 23: "Session4Page23", 24: "Session4Page24"
       },
       page: 1,
-      lastPage: 23,
+      lastPage: 24,
     }
   },
   created() {

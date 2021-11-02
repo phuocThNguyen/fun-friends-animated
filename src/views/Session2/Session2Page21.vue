@@ -1371,13 +1371,44 @@ import anime from "animejs";
 export default {
   name: "Session2Page21",
   mounted() {
-    anime({
-      targets: ".text-box",
-      opacity: 1,
+    let text = document.querySelector('.text-box').children;
+    let animation = anime.timeline({
+      easing: 'linear',
       duration: 500,
-      delay: 500,
-      easing: 'linear'
+      delay: 1500
     })
+    animation
+      .add({
+        targets: ".text-box",
+        opacity: 1,
+        delay: 500
+      })
+      .add({
+        targets: text[1],
+        opacity: 1,
+        delay: 500
+      })
+      .add({
+        targets: text[2],
+        opacity: 1,
+        delay: 3000
+      })
+      .add({
+        targets: text[3],
+        opacity: 1,
+      })
+      .add({
+        targets: text[4],
+        opacity: 1
+      })
+      .add({
+        targets: text[5],
+        opacity: 1
+      })
+      .add({
+        targets: text[6],
+        opacity: 1
+      })
   }
 }
 </script>
@@ -1401,6 +1432,7 @@ export default {
 .text-box p {
   margin-bottom: 3vh;
   font-size: 2.8vh;
+  opacity: 0;
 }
 .text-box p:nth-child(4),
 .text-box p:nth-child(5),

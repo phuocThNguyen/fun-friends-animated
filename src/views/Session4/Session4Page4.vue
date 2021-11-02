@@ -87,7 +87,7 @@ export default {
 }
 .text {
   color: #173368;
-  font-size: 4.9vh;
+  font-size: 5.2vh;
   margin-bottom: 0;
   opacity: 0;
 }
@@ -104,7 +104,7 @@ export default {
   left: 5%;
 }
 .text:nth-of-type(4) {
-  width: 15vw;
+  width: 16%;
   top: 45vh;
   left: 8%;
 }

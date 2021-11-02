@@ -7,8 +7,7 @@
       <img src="../../assets/images/session2/607-resized.jpg" alt="happy" />
     </div>
     <div class="text-box">
-      Tap on the feelings below and drag them onto the correct feeling faces.
-       The green tick will appear when the answer is correct.
+      Drag the emotions to the correct picture.
     </div>
 
     <draggable class="emotions" id="emotions-source" v-model="emotions" group="emotions">
@@ -30,6 +29,8 @@
       <div class="emotions-item" v-for="(emotion, index) in emotionHappy" v-bind:id="emotion" :key="index">{{emotion}}</div>
     </draggable>
     <div class="emotions-item mask" id="mask-happy">Happy</div>
+
+    <div class="emotions-mask"></div>
 
     <svg class="tick" id="green-tick-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 333 333" width="333" height="333">
       <title>Correct</title>
@@ -345,7 +346,7 @@
 
 <script>
 import draggable from "vuedraggable";
-import anime from 'animejs';
+import anime from "animejs";
 
 export default {
   name: "Session2Page4",
@@ -459,7 +460,14 @@ export default {
     },
   },
   mounted() {
-
+    let vh = window.innerHeight;
+    anime({
+      targets: '.emotions-mask',
+      translateY: 0.4 * vh,
+      duration: 3000,
+      delay: 500,
+      easing: 'linear'
+    })
   },
   watch: {
     correctAns: function() {
@@ -485,6 +493,7 @@ export default {
   left: 12%;
   bottom: 30vh;
   opacity: 0;
+  z-index: 20;
 }
 .text-box {
   position: absolute;
@@ -494,7 +503,7 @@ export default {
   left: 1%;
   color: #ffffff;
   width: 25%;
-  padding: 2.8vh;
+  padding: 1.5vh;
 }
 .tick {
   position: absolute;
@@ -536,6 +545,15 @@ export default {
   left: 88%;
   top: 79vh;
 }
+.emotions-mask {
+  position: absolute;
+  width: 25%;
+  height: 36vh;
+  top: 20vh;
+  left: 0.5%;
+  background-color: rgba(255,255,255,1);
+  z-index: 10;
+}
 .emotions {
   position: absolute;
   width: 25%;
@@ -557,7 +575,7 @@ export default {
   width: 25vh;
 }
 #emotions-source {
-  top: 45vh;
+  top: 20vh;
 }
 #emotion-sad {
   left: 32%;

@@ -721,7 +721,7 @@
       </div>
     </div>
     <div class="text-box">
-      <h1>Remember to:</h1>
+      <h1>Everyday remember to:</h1>
       <p>&bull; Be kind to all living beings.</p>
       <p>&bull; Play outside.</p>
       <p>&bull; Have plenty of sleep.</p>
@@ -730,6 +730,15 @@
       <p>&bull; Pay attention to happy things and what you
         can see, hear, smell, taste and feel.</p>
       <p>&bull; Say thank you for happy times.</p>
+    </div>
+    <div class="image-container">
+      <img class="action-image" src="../../assets/images/introduction/Koala_Child_Hugging.jpg" alt="kind-to-animals">
+      <img class="action-image" src="../../assets/images/session1/811-resized.jpg" alt="play-outside">
+      <img class="action-image" src="../../assets/images/session5/85693.png" alt="sleep-early">
+      <img class="action-image" src="../../assets/images/session1/6796-resized.jpg" alt="eat-healthy">
+      <img class="action-image" src="../../assets/images/session1/4082-resized.jpg" alt="relaxing">
+      <img class="action-image" src="../../assets/images/session1/2749-resized.jpg" alt="happy-things">
+      <img class="action-image" src="../../assets/images/session1/thank-you.jpg" alt="thank-you">
     </div>
     <audio autoplay loop src="../../assets/sounds/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"></audio>
   </div>
@@ -741,16 +750,89 @@ import anime from "animejs";
 export default {
   name: "Session3Page15",
   mounted() {
+    let vw = document.querySelector('.interactive-container').clientWidth;
+    let clouds = document.getElementsByClassName('shp15');
+    clouds.forEach(cloud => {
+      anime({
+        targets: cloud,
+        translateX: (Math.round(Math.random() * 0.4 * vw) + 200) * (Math.random() < 0.5 ? 1: -1),
+        duration: Math.round(Math.random() * 1000) + 4000,
+        direction: 'alternate',
+        loop: true,
+        easing: 'linear',
+      })
+    })
+    let texts = document.querySelector('.text-box').children;
+    let images = document.querySelector('.image-container').children;
     let animation = anime.timeline({
-      easing: 'linear',
       duration: 500,
-      delay: 500
+      delay: 2500,
+      easing: 'linear'
     });
     animation
       .add({
         targets: ".text-box",
-        opacity: 0.9,
+        opacity: 1,
+        delay: 500
       })
+      .add({
+        targets: texts[1],
+        opacity: 1,
+        delay: 500
+      })
+      .add({
+        targets: images[0],
+        opacity: 1,
+        delay: 500
+      }, 1000)
+      .add({
+        targets: texts[2],
+        opacity: 1,
+      })
+      .add({
+        targets: images[1],
+        opacity: 1,
+      }, 2000)
+      .add({
+        targets: texts[3],
+        opacity: 1,
+      })
+      .add({
+        targets: images[2],
+        opacity: 1,
+      }, 5000)
+      .add({
+        targets: texts[4],
+        opacity: 1,
+      })
+      .add({
+        targets: images[3],
+        opacity: 1,
+      }, 8000)
+      .add({
+        targets: texts[5],
+        opacity: 1,
+      })
+      .add({
+        targets: images[4],
+        opacity: 1,
+      }, 11000)
+      .add({
+        targets: texts[6],
+        opacity: 1,
+      })
+      .add({
+        targets: images[5],
+        opacity: 1,
+      }, 14000)
+      .add({
+        targets: texts[7],
+        opacity: 1,
+      })
+      .add({
+        targets: images[6],
+        opacity: 1,
+      }, 17000)
       .add({
         targets: '.star-container',
         opacity: 1
@@ -774,22 +856,36 @@ export default {
           {rotate: '0deg'},
         ],
         delay: 0,
-      }, 2000)
+      }, 23000)
   }
 }
 </script>
 
 <style scoped>
+.action-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.image-container {
+  position: absolute;
+  top: 7vh;
+  right: 2%;
+  width: 44%;
+  height: 40vh;
+}
 .star-container {
   position: absolute;
   height: 65vh;
   width: 50%;
-  right: 2%;
+  right: 23%;
   bottom: 7vh;
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0;
+  z-index: 10;
 }
 .star {
   position: absolute;
@@ -819,12 +915,13 @@ export default {
 }
 .text-box h1 {
   margin-bottom: 1vh;
-  font-size: 4.9vh;
+  font-size: 5vh;
 }
 .text-box p {
-  font-size: 2.5vh;
+  font-size: 3.2vh;
   padding-left: 1.4vh;
   margin-bottom: 1vh;
+  opacity: 0;
 }
 .text-box p:last-child {
   margin-bottom: 0;

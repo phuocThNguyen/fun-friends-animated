@@ -415,13 +415,19 @@ export default {
     let text = document.getElementsByClassName('text-box')[0].children;
     let animation = anime.timeline({
       easing: 'linear',
-      delay: 1000,
+      delay: 2000,
       duration: 500,
     });
     animation
       .add({
+        targets: '.text-box',
+        opacity: 1,
+        delay: 1000
+      })
+      .add({
         targets: text[1],
-        opacity: 1
+        opacity: 1,
+        delay: 1000
       })
       .add({
         targets: text[2],
@@ -455,6 +461,7 @@ export default {
   top: 7vh;
   background-color: rgba(255,255,255,0.7);
   padding: 2.1vh;
+  opacity: 0;
 }
 .text-box h1 {
   font-size: 4.2vh;

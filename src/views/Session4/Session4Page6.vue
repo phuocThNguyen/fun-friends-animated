@@ -27,9 +27,9 @@ export default {
   position: absolute;
   top: 5vh;
   left: 5%;
-  padding: 2.8vh;
-  background-color: rgba(255,255,255,0.8);
-  font-size: 2.8vh;
+  padding: 2vh;
+  background-color: rgba(255,255,255,0.9);
+  font-size: 4vh;
   opacity: 0;
 }
 </style>

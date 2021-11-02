@@ -37,15 +37,15 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  padding: 2.8vh;
+  padding: 1.5vh;
 }
 .text-box h1 {
   font-size: 4.9vh;
   font-weight: bold;
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
 }
 .text-box p {
-  font-size: 2.8vh;
+  font-size: 3.5vh;
 }
 .images {
   position: absolute;
