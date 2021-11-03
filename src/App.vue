@@ -85,6 +85,7 @@ export default {
         this.showUpdateUI = true;
       })
     }
+    Cache.delete();
   }
 };
 </script>
