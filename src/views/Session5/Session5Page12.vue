@@ -1,138 +1,73 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session5/1892.png" alt="classroom" class="session-background">
+    <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
     <div class="text-box">
       <p>Talk about the feelings Annie and her brother are showing.</p>
-      <p>How are they the same? How are they different?</p>
       <p>What are some feelings you would be having?</p>
       <p>What are some '<span class="green">green</span>'
         thoughts that can help them play happily together?</p>
-    </div>
-    <div class="bubble-container">
-      <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 342 269" width="342" height="269">
-        <title>Graphic Element</title>
-        <defs>
-          <image width="29" height="29" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAAAAXNSR0IArs4c6QAAAsBJREFUSEvNV0F2EkEQrSLz1J14ggyPHsJOcgLDCQInEE9gOIF6ApMTiCfI5ASJJ3DYwUzxJDcguwgdylekIdDTMJ2oT3sFdFf/6u7/6xdYU4oBABDg25DoSD5vGwdKnTDAZ3u+BNAcEF3til3iLLDWvnxKiT7uCqzX6+Fc6x/WmuuUKNwVJ3MHSl0xwJsVKDOfZaPRSVGgzNeq1RYgngLAPgD0GbGTZVlSFBuGYfl5EMQCjEWL/8b8VlA5EZZK+7i3dzEYDMa+4FEUNZD5GAGSIdGFKy4HKtfwLAguAaCxCmBup6NRXATsIFqcErXtuByok6HM43Q0qjyBZOBidg60ppSc6NgGSIl2vn9dqaM5gNyQPXKq8DspQD8lerhux87mWeTtX65PM+KhzW5n9tZprxmx5SOLKIo6yCxyWgAjQHdIJN83xtYrk0IAWodFlcbeUE78Iggat1on4/F44mSvUNznFOvBkpDWel9r3d+28TbSydsvy2Ay1brps4HF7gkjdrMs6xXJaaHf+fwcEMOH2ov4Nc2yzq5gI/zv1prJVOtKUcI1pYRkUjofCr6Py9SUEkP4YCf2Oy5zkRK1dp3UFPtze81U61ceJxVS3bPaWNtNKQgaPjXWLh7bZGEntp4wirZms1lclOkGe++rzxEjxo9hvrCetW79P9ZmCPMeAMoMcDXTuu1zE4bdX4xDTYD5ncud8gX/vjPYIIsAZ0TNIi2uy2K5thQEFZsredAo6gHz2z/lMi6iuazNpcWblKj8FD8FRwOQAzUdnzRaK4vylkXei52W6GSvAe5InYT5PPZpVZa3sKjNiNInJT+17rkI+G8kEyl1WUKMh1l2VsROmTeykPobAnMyvbvr+shpEVutngLi65XL+LybaUmkw18nVZISHRYlLICIKNp/nMuYdkTEvzFcfVCu9pr/TPL7L7E3gSplX/5mAAAAAElFTkSuQmCC"/>
-          <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
-            <path d="M283.29 222.25C290.01 223.18 296.94 224.18 302.75 227.67C308.57 231.17 313.02 237.86 311.77 244.53C310.75 249.98 306.3 254.12 301.67 257.18C287.97 266.24 271.06 269.25 254.63 269.32C242.16 269.38 229.27 267.72 218.57 261.33C216.03 259.82 213.58 257.97 212.12 255.41C209.65 251.05 210.6 245.4 213.21 241.12C215.82 236.84 219.83 233.64 223.76 230.53C170.97 249.06 69.77 243.73 44.51 182.19C32.3 152.42 41.87 116.07 62.32 91.74C82.76 67.42 112.25 53.57 142.06 45.71C164.18 39.88 186.96 36.95 209.73 37.02C248.88 37.14 289.69 47.11 318.81 74.71C328.93 84.31 337.51 96.05 342.14 109.6C349.44 130.96 346.13 155.65 335.24 175.31C324.35 194.97 303.24 213.72 283.29 222.25Z" />
-          </clipPath>
-          <clipPath clipPathUnits="userSpaceOnUse" id="cp2">
-            <path d="M337.41 260.9C329.54 260.81 321.71 262.94 314.75 267.64C311.56 269.8 308.44 272.98 308.64 276.82C308.86 280.92 312.75 283.8 316.47 285.54C328.88 291.33 343.91 291.15 356.18 285.07C359.38 283.48 362.66 281.14 363.36 277.64C365.99 264.36 346.52 261 337.41 260.9Z" />
-          </clipPath>
-        </defs>
-        <g id="Graphic Element">
-          <g id="&lt;Group&gt;">
-            <g id="&lt;Group&gt;">
-              <g id="&lt;Group&gt;">
-                <g clip-path="url(#cp1)">
-                  <use id="&lt;Path&gt;" href="#img1" transform="matrix(0.973,0,0,0.973,-799,-447)"/>
-                </g>
-              </g>
-              <g id="&lt;Group&gt;">
-                <g clip-path="url(#cp2)">
-                  <use id="&lt;Path&gt;" href="#img1" transform="matrix(0.973,0,0,0.973,-799,-447)"/>
-                </g>
-              </g>
-            </g>
-            <g id="&lt;Group&gt;">
-              <g id="&lt;Group&gt;">
-                <g id="&lt;Group&gt;">
-                  <path id="&lt;Path&gt;" class="shp1" d="M248.74 187.69C255.46 188.62 262.39 189.62 268.2 193.12C274.01 196.62 278.46 203.31 277.21 209.98C276.19 215.43 271.74 219.57 267.11 222.63C253.41 231.68 236.5 234.7 220.08 234.77C207.61 234.82 194.72 233.17 184.01 226.77C181.48 225.26 179.02 223.42 177.57 220.85C175.09 216.5 176.04 210.84 178.65 206.56C181.26 202.29 185.28 199.08 189.21 195.98C136.41 214.51 35.21 209.18 9.96 147.63C-2.26 117.87 7.31 81.51 27.76 57.19C48.21 32.86 77.7 19.01 107.51 11.16C129.62 5.33 152.4 2.4 175.17 2.47C214.32 2.58 255.14 12.55 284.25 40.16C294.38 49.76 302.96 61.5 307.59 75.04C314.89 96.41 311.57 121.09 300.68 140.75C289.79 160.41 268.69 179.17 248.74 187.69Z" />
-                  <path id="&lt;Compound Path&gt;" fill-rule="evenodd" class="shp0" d="M308.96 130.71C303.8 143.94 295.21 155.6 285.12 165.51C276.81 173.68 267.34 180.93 256.97 186.37C262.13 187.3 267.22 188.71 271.63 191.57C277.11 195.12 281.34 201.18 281.07 207.9C280.82 214.13 276.18 219.09 271.47 222.64C266.29 226.54 260.25 229.47 254.15 231.62C241.4 236.1 227.81 237.5 214.36 237.09C207.67 236.88 200.95 236.08 194.48 234.29C188.42 232.62 181.98 230.04 177.21 225.84C172.2 221.43 171.46 215.01 173.86 209C175 206.15 176.79 203.7 178.89 201.49C178.67 201.55 178.46 201.61 178.25 201.66C159.05 206.59 139 208.29 119.23 207.63C98.73 206.95 77.94 203.55 58.81 195.98C41.09 188.97 24.37 178.09 13.56 162.08C7.28 152.8 3.18 142.14 1.65 131.04C-0.14 117.96 1.31 104.53 5.26 91.97C9.28 79.2 15.7 67.29 24.21 56.97C33.1 46.2 44.06 37.16 55.97 29.92C81.49 14.39 111.24 6.21 140.66 2.33C169.8 -1.51 200.1 -0.95 228.6 6.72C255.01 13.83 280.36 27.81 297.54 49.49C306.41 60.69 312.62 73.93 314.47 88.16C316.35 102.56 314.23 117.22 308.96 130.71ZM301.18 69.04C295.58 56.85 286.58 46.19 276.38 37.58C256.18 20.53 230.76 10.99 204.82 7.12C175.56 2.75 145.23 4.72 116.46 11.3C90.51 17.25 64.6 27.13 44.08 44.66C34.1 53.2 25.63 63.31 19.47 74.94C13.5 86.24 9.66 98.68 8.54 111.42C7.45 123.84 9.15 136.47 14.11 147.94C17.68 156.2 22.94 163.67 29.26 170.04C42.37 183.25 59.7 191.35 77.39 196.32C87.1 199.05 96.38 200.73 106.46 201.8C111.42 202.33 116.4 202.68 121.39 202.86C122.65 202.9 123.9 202.94 125.16 202.96C125.81 202.97 126.47 202.98 127.13 202.99C127.38 202.99 127.63 202.99 127.88 203C128 203 128.27 203 128.35 203C130.77 202.99 133.2 202.96 135.63 202.88C140.5 202.72 145.37 202.39 150.22 201.91C152.59 201.67 154.94 201.39 157.3 201.08C158.51 200.91 159.72 200.74 160.93 200.55C161.47 200.47 162.01 200.38 162.56 200.29C162.55 200.29 162.84 200.25 163.03 200.22C163.23 200.18 163.52 200.13 163.51 200.13C167.88 199.38 172.23 198.47 176.53 197.38C178.57 196.87 180.6 196.31 182.62 195.71C183.64 195.41 184.66 195.09 185.68 194.76C186.13 194.62 186.59 194.47 187.04 194.31C187.08 194.3 187.12 194.29 187.16 194.28C187.11 194.29 187.58 194.13 187.7 194.09C189.11 193.59 191.06 193.17 192.31 194.28C193.53 195.36 192.5 196.66 191.53 197.42C186.81 201.15 181.55 205.34 180.16 211.52C179.55 214.26 179.64 217.32 181.16 219.78C182.77 222.37 185.37 224.04 187.97 225.5C198.01 231.12 209.94 232.5 221.27 232.38C232.51 232.27 243.96 230.85 254.44 226.59C262.64 223.25 275.96 216.56 273.44 205.62C270.77 193.97 257.6 191.49 247.57 190.1C246.71 190.07 245.88 189.82 245.38 189.17C245.01 188.68 244.99 188.18 245.17 187.71C245.18 187.68 245.18 187.66 245.19 187.64C245.19 187.63 245.2 187.62 245.2 187.62C245.23 187.54 245.27 187.46 245.32 187.37C245.77 186.53 246.69 185.93 247.7 185.59C253.31 183.13 258.61 180.06 263.65 176.57C274.77 168.87 284.8 159.17 292.51 148.04C300.4 136.66 305.46 123.58 307.18 109.83C308.92 95.95 307.04 81.79 301.18 69.04Z" />
-                </g>
-                <g id="&lt;Group&gt;">
-                  <path id="&lt;Path&gt;" class="shp1" d="M302.86 226.34C294.98 226.25 287.15 228.38 280.2 233.09C277.01 235.24 273.88 238.42 274.09 242.26C274.31 246.37 278.19 249.24 281.92 250.98C294.32 256.78 309.36 256.6 321.62 250.51C324.82 248.93 328.11 246.59 328.8 243.08C331.44 229.81 311.97 226.44 302.86 226.34Z" />
-                  <path id="&lt;Path&gt;" class="shp0" d="M301.11 223.02C295.36 222.99 289.66 224.09 284.4 226.45C279.85 228.49 273.74 231.79 272.5 237.08C271.8 240.04 273.24 242.91 274.59 245.46C276.04 248.18 277.73 250.63 280.28 252.4C284.58 255.39 290.11 257.01 295.23 257.87C300.81 258.81 306.56 258.73 312.1 257.64C317.27 256.62 323.05 254.82 327.2 251.44C330.52 248.74 331.54 244.63 330.32 240.59C329.49 237.8 327.99 235.07 326.36 232.68C325.38 231.24 324.2 229.95 322.81 228.91C319.67 226.55 315.77 225.22 311.99 224.35C308.43 223.52 304.76 223.07 301.11 223.02C300.9 223.02 302.36 226.29 302.49 226.54C302.9 227.32 303.33 228.1 303.83 228.82C303.99 229.05 304.3 229.65 304.61 229.66C310.52 229.74 316.78 230.7 322.18 233.18C323.55 233.81 324.88 234.56 326.08 235.48C326.62 235.89 327.14 236.33 327.61 236.81C327.78 237 327.95 237.19 328.12 237.39C328.15 237.43 328.53 237.77 328.36 237.7C328.06 237.57 327.7 236.59 327.56 236.33C327.79 236.77 326.89 235.13 326.88 234.9C326.86 234.67 326.95 235.11 326.96 235.17C327.02 235.47 327.1 235.75 327.15 236.05C327.26 236.8 327.28 237.56 327.23 238.31C327.09 240.44 326.29 242.27 324.8 243.81C321.59 247.12 316.6 248.9 312.26 250.13C307.5 251.48 302.51 252.05 297.56 251.85C292.54 251.64 287.55 250.63 282.86 248.82C280.63 247.95 278.41 246.92 276.49 245.46C275.71 244.87 275.08 244.18 274.41 243.48C277.03 246.23 276.34 248 275.98 246.27C275.94 246.05 275.91 245.82 275.89 245.59C275.84 244.93 275.88 244.28 276.03 243.63C277.21 238.4 283.44 235.08 287.9 233.08C293.16 230.73 298.86 229.62 304.61 229.66C304.82 229.66 303.36 226.39 303.23 226.15C302.82 225.36 302.38 224.59 301.88 223.86C301.73 223.64 301.41 223.03 301.11 223.02Z" />
-                </g>
-              </g>
-            </g>
-          </g>
-        </g>
-      </svg>
-      <textarea class="bubble-text" placeholder="Write your thoughts here!" rows="5"/>
     </div>
   </div>
 </template>
 
 <script>
 import anime from "animejs";
+import DrawingCanvas from "@/components/drawingCanvas/DrawingCanvas";
 
 export default {
   name: 'Session5Page12',
+  components: {DrawingCanvas},
+  data() {
+    return {
+      canvasStyle: {
+        width: 1,
+        height: 0.82,
+        isPicture: true,
+        pictureUrl: "session5/5.jpg",
+        backgroundSize: 'contain'
+      },
+    }
+  },
+  methods: {
+    saveToDatabase(data) {
+      console.log(data)
+    }
+  },
   mounted() {
-    let animation = anime.timeline({
+    anime({
+      targets: '.text-box',
+      opacity: 1,
       easing: 'linear',
       duration: 500,
       delay: 500
     })
-    animation
-      .add({
-        targets: '.text-box',
-        opacity: 1
-      })
-      .add({
-        targets: '.bubble-container',
-        opacity: 0.9
-      })
   }
 }
 </script>
 
 <style scoped>
-@media screen and (max-width: 930px) {
-  .bubble-text {
-    border-radius: 10px !important;
-  }
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .green {
   color: #00CE7C;
 }
 .text-box {
   position: absolute;
-  padding: 2vh 2.1vh;
-  top: 2vh;
-  left: 1%;
-  background-color: rgba(255,255,255, 0.85);
+  width: 80%;
+  padding: 2vh;
+  top: 0;
+  left: 10%;
+  background-color: rgba(255,255,255, 0.95);
   opacity: 0;
 }
 .text-box p {
-  font-size: 2.8vh;
+  font-size: 3vh;
   margin-bottom: .5vh;
 }
 .text-box p:last-child {
   margin-bottom: 0;
 }
-.bubble-container {
-  position: absolute;
-  width: 40%;
-  height: 45vh;
-  top: 32vh;
-  left: 1%;
-  opacity: 0;
-}
-.bubble {
-  position: absolute;
-  height: auto;
-  width: 100%;
-  transform: scaleY(-1) rotate(7deg);
-  opacity: 0.9;
-}
-.bubble-text {
-  position: absolute;
-  top: 14vh;
-  left: 4.2vh;
-  border-radius: 50px;
-  background-color: rgba(0,0,0,0);
-  width: 80%;
-  height: 22vh;
-  border: none;
-  opacity: 1;
-  padding: 2vh;
-  resize: none;
-  outline: none;
-  font-size: 2.66vh;
-}
-tspan { white-space:pre }
-.shp0 { fill: #00ce7c }
-.shp1 { fill: #ffffff }
 </style>

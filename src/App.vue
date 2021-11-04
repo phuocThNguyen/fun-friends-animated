@@ -130,31 +130,29 @@ export default {
 .shp-background { fill: #00ce7c; opacity: 0.8 }
 .shp-arrow { fill: #ffffff; opacity: 0.8 }
 .session-container {
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  position: relative;
   width: 100%;
+  height: 91vh;
 }
 .interactive-container {
   background-color: #ffffff;
   position: relative;
   width: 100%;
-  height: calc(100vh - 9vh);
+  height: 100%;
   overflow: hidden;
 }
 .session-background {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: calc(100vh - 9vh);
+  height: 100%;
 }
 .arrow {
   width: 10vh;
   height: auto;
-  border: .3vw solid rgba(255,255,255, 0.9);
+  border: .6vh solid rgba(255,255,255, 0.9);
   border-radius: 2vh;
-  cursor: pointer;
   position: absolute;
   bottom: 1%;
   right: 1%;

@@ -1812,6 +1812,7 @@ export default {
       easing: 'linear',
       loop: true,
     })
+
     let animation = anime.timeline();
     animation
     .add({

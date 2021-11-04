@@ -5,7 +5,6 @@ import store from "./store";
 import wb from './registerServiceWorker';
 
 Vue.prototype.$workbox = wb
-
 Vue.config.productionTip = false
 Vue.directive('visible', function(el, binding) {
   el.style.visibility = binding.value ? 'visible' : 'hidden';
