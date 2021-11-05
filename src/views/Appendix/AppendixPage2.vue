@@ -3340,7 +3340,7 @@ export default {
   mounted() {
     let stars = document.querySelectorAll('.shp1');
     stars.forEach(star => {
-      Math.random() < 0.3 ?
+      Math.random() < 0.1 ?
         anime({
           targets: star,
           delay: Math.random() * 1000,
@@ -3372,7 +3372,7 @@ export default {
 }
 .cloud-container {
   position: absolute;
-  width: 25%;
+  width: 34%;
   height: 30vh;
   display: flex;
   justify-content: center;
@@ -3385,25 +3385,25 @@ export default {
 }
 .cloud-text {
   position: absolute;
-  font-size: 3vh;
+  font-size: 4vh;
   z-index: 10;
   margin-top: 3%;
 }
 #cloud-1 {
-  top: 7%;
-  left: 7%;
+  top: 8%;
+  left: 4%;
 }
 #cloud-2 {
-  bottom: 7%;
-  left: 7%;
+  bottom: 8%;
+  left: 4%;
 }
 #cloud-3 {
-  top: 7%;
-  right: 7%
+  top: 8%;
+  right: 4%
 }
 #cloud-4 {
-  bottom: 7%;
-  right: 7%;
+  bottom: 8%;
+  right: 4%;
 }
 .star-container {
   position: absolute;
@@ -3415,6 +3415,7 @@ export default {
   align-items: center;
   justify-content: center;
   opacity: 1;
+  z-index: 10;
 }
 .star {
   position: absolute;
