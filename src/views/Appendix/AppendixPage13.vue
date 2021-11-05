@@ -30,7 +30,7 @@
         <p class="item">6. Cow Moo - Nagaty Studio - Sound Effects (Youtube)</p>
         <p class="item">7. Bear Sound - Nagaty Studio - Sound Effects (Youtube)</p>
         <p class="item">8. Monkey Sound - Nagaty Studio - Sound Effects (Youtube)</p>
-        <p class="item">9. Pigeon Sound - Nagaty Studio - Sound Effects (Youtube)</p>
+        <p class="item">9. Hen Sound - Nagaty Studio - Sound Effects (Youtube)</p>
       </div>
       <div class="items">
         <h1 class="heading">Music:</h1>

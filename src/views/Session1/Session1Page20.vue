@@ -2,9 +2,9 @@
   <div class="interactive-container green-background">
     <div class="images">
       <img src="../../assets/images/session1/18-resized.jpg" alt="bears">
-      <img src="../../assets/images/session1/monkey.jpg" alt="monkey">
+      <img src="../../assets/images/session1/monkey.jpeg" alt="monkey">
       <img src="../../assets/images/session1/215-resized.jpg" alt="elephants">
-      <img src="../../assets/images/session1/pigeon.jpg" alt="pigeon">
+      <img src="../../assets/images/session1/chicken.jpg" alt="chicken">
     </div>
     <div class="text-box">
       <p class="text">
@@ -25,7 +25,7 @@
     <audio ref="elephant" src="../../assets/sounds/session1/elephant.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
-    <audio ref="pigeon" src="../../assets/sounds/session1/pigeon.mp3">
+    <audio ref="pigeon" src="../../assets/sounds/session1/chicken.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
   </div>
