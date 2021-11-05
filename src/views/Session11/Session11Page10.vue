@@ -1426,21 +1426,31 @@
         </g>
       </g>
     </svg>
-    <div class="text-box">
-      <h1>Try Everyday</h1>
-      <p>&nbsp;&bull; Draw or take a picture of your family's support
-        team. Alternatively, share a story about how your family
-        gets support. You choose.</p>
-      <p>&nbsp;&bull; Carry on with your step plan.</p>
-      <p>&nbsp;&bull; Practise 'green' thoughts.</p>
-      <p>&nbsp;&bull; Relax every day.</p>
-      <p>&nbsp;&bull; Notice and reward yourself and other
-        for being BRAVE.</p>
-      <p>&nbsp;&bull; Practise being BRAVE every day:</p>
-      <p>&middot; Look people in the eye and smile.</p>
-      <p>&middot; Use a brave voice and make yourself big.</p>
-      <p>&middot; Try your best and give it a go. </p>
-      <p>&middot; Believe in yourself.</p>
+    <div class="star-container">
+      <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 1258" width="1320" height="1258">
+        <title>Star</title>
+        <g id="Object">
+          <g id="&lt;Group&gt;">
+            <path id="&lt;Path&gt;" class="shp0-star" d="M678.99 12.07L866.54 392.07C869.62 398.32 875.59 402.66 882.48 403.66L1301.84 464.6C1319.21 467.12 1326.15 488.47 1313.58 500.73L1010.13 796.52C1005.14 801.38 1002.86 808.39 1004.04 815.26L1075.67 1232.93C1078.64 1250.23 1060.48 1263.42 1044.94 1255.26L669.86 1058.06C663.69 1054.82 656.31 1054.82 650.14 1058.06L275.06 1255.26C259.52 1263.42 241.36 1250.23 244.33 1232.93L315.96 815.26C317.14 808.39 314.86 801.38 309.87 796.52L6.42 500.73C-6.15 488.47 0.79 467.12 18.16 464.6L437.51 403.66C444.41 402.66 450.38 398.32 453.46 392.07L641.01 12.07C648.77 -3.67 671.22 -3.67 678.99 12.07Z" />
+            <g id="&lt;Group&gt;">
+              <path id="&lt;Path&gt;" class="shp1-star" d="M660 99.85L492.87 423.56C484.11 440.54 467.28 451.87 448.25 453.61L85.38 486.73L468.76 504.66C493.11 505.8 515.39 491.04 523.85 468.17L660 99.85Z" />
+            </g>
+            <path id="&lt;Path&gt;" class="shp2-star" d="M252.57 1184.87L244.33 1232.93C241.36 1250.23 259.52 1263.43 275.06 1255.25L650.14 1058.06C656.31 1054.82 663.69 1054.82 669.86 1058.06L1044.94 1255.25C1060.48 1263.43 1078.64 1250.23 1075.67 1232.93L1004.04 815.26C1002.86 808.39 1005.14 801.38 1010.13 796.51L1313.58 500.73C1326.15 488.47 1319.21 467.12 1301.84 464.6L1161.38 444.19C934.2 851.89 586.33 1066.55 252.57 1184.87Z" />
+          </g>
+        </g>
+      </svg>
+      <div class="star-text">
+        <p><strong>Bright <br>Star Idea</strong></p>
+        <p>Make a 'recipe for happiness'. Write
+          <br>down all the ingredients that make
+          <br>you happy and how to put them all
+          <br>together. Remember to include
+          <br>everything you learned
+          <br>from Fun Friends. You
+          <br>could ask someone in
+          <br>your family to help you
+        </p>
+      </div>
     </div>
     <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"></audio>
   </div>
@@ -1450,100 +1460,70 @@
 import anime from "animejs";
 
 export default {
-  name: 'Session11Page8',
+  name: 'Session11Page10',
   mounted() {
-    let text = document.querySelector('.text-box').children;
     let animation = anime.timeline({
       easing: 'linear',
-      duration: 500,
-    })
+      delay: 500,
+      duration: 500
+    });
     animation
       .add({
-        targets: ".text-box",
-        opacity: 1,
-        delay: 500,
+        targets: '.star-container',
+        opacity: 1
       })
       .add({
-        targets: text[1],
-        opacity: 1,
-        delay: 500
+        targets: ".star",
+        keyframes: [
+          {rotate: '-20deg'},
+          {rotate: '20deg'},
+          {rotate: '-20deg'},
+          {rotate: '0deg'},
+        ],
+        delay: 0,
       })
       .add({
-        targets: text[2],
-        opacity: 1,
-        delay: 3500
-      })
-      .add({
-        targets: text[3],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[4],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[5],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[6],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[7],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[8],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[9],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[10],
-        opacity: 1,
-        delay: 1500
-      })
+        targets: ".star-text",
+        keyframes: [
+          {rotate: '-20deg'},
+          {rotate: '20deg'},
+          {rotate: '-20deg'},
+          {rotate: '0deg'},
+        ],
+        delay: 0,
+      }, 1000)
   }
 }
 </script>
 
 <style scoped>
-.text-box {
+.star-container {
   position: absolute;
-  background-color: rgba(255,255,255,0.8);
+  bottom: 7vh;
+  right: 19%;
   width: 62%;
-  height: auto;
-  left: 19%;
-  top: 6vh;
-  padding: 2vh 2.8vh;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   opacity: 0;
 }
-.text-box h1 {
+.star {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  z-index: 50;
+}
+.star-text {
+  position: absolute;
   text-align: center;
-  margin-bottom: 2vh;
-  font-size: 4vh;
-  font-weight: bold;
+  margin-top: 7%;
+  z-index: 55;
 }
-.text-box p {
-  margin-bottom: .5vh;
-  font-size: 3vh;
-  opacity: 1;
-}
-.text-box p:nth-of-type(10),
-.text-box p:nth-of-type(7),
-.text-box p:nth-of-type(8),
-.text-box p:nth-of-type(9) {
-  padding-left: 4.2vh;
+.star-text p {
+  font-size: 3.2vh;
+  margin-bottom: 0;
+  text-align: center;
 }
 .landscape {
   position: absolute;
@@ -1551,6 +1531,10 @@ export default {
   width: 107%;
   left: -6%;
 }
+tspan { white-space:pre }
+.shp0-star { fill: #f3cc30 }
+.shp1-star { fill: #f7db5e }
+.shp2-star { fill: #edbd31 }
 tspan { white-space:pre }
 .shp0 { fill: url(#grd1) }
 .shp1 { fill: url(#grd2) }

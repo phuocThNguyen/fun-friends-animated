@@ -61,14 +61,11 @@ export default {
   padding: 2vh;
   bottom: 10%;
   left: 10%;
-  background-color: rgba(255,255,255, 0.95);
+  background-color: rgba(255,255,255, 0.90);
   opacity: 0;
 }
 .text-box p {
-  font-size: 3vh;
-  margin-bottom: .5vh;
-}
-.text-box p:last-child {
+  font-size: 2rem;
   margin-bottom: 0;
 }
 </style>

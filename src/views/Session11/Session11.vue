@@ -32,6 +32,7 @@ import Session11Page6 from "@/views/Session11/Session11Page6";
 import Session11Page7 from "@/views/Session11/Session11Page7";
 import Session11Page8 from "@/views/Session11/Session11Page8";
 import Session11Page9 from "@/views/Session11/Session11Page9";
+import Session11Page10 from "@/views/Session11/Session11Page10";
 
 export default {
   name: "Session11",
@@ -40,16 +41,16 @@ export default {
   },
   components: {
     Session11Page1, Session11Page2, Session11Page3, Session11Page4, Session11Page5,
-    Session11Page6, Session11Page7, Session11Page8, Session11Page9,
+    Session11Page6, Session11Page7, Session11Page8, Session11Page9, Session11Page10
   },
   data() {
     return {
       pages: {
         1: "Session11Page1", 2: "Session11Page2", 3: "Session11Page3", 4: "Session11Page4", 5: "Session11Page5",
-        6: "Session11Page6", 7: "Session11Page7", 8: "Session11Page8", 9: "Session11Page9",
+        6: "Session11Page6", 7: "Session11Page7", 8: "Session11Page8", 9: "Session11Page9", 10: "Session11Page10",
       },
       page: 1,
-      lastPage: 9,
+      lastPage: 10,
     }
   },
   created() {

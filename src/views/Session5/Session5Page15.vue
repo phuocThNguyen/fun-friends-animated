@@ -810,9 +810,9 @@
       <p>&middot; Look people in the eye and smile.</p>
       <p>&middot; Use a brave voice and make yourself big.</p>
       <p>&middot; Try your best and give it a go. </p>
-      <p>&middot; Believe in yourself</p>
+      <p>&middot; Believe in yourself.</p>
     </div>
-    <audio src="../../assets/sounds/session1/Falling-Snow-Sound-Effect-Amplified.mp3"></audio>
+    <audio autoplay loop src="../../assets/sounds/session1/Falling-Snow-Sound-Effect-Amplified.mp3"></audio>
   </div>
 </template>
 
@@ -828,7 +828,7 @@ export default {
     snowGroups.forEach(snowGroup => {
       snowArray.push(...snowGroup.children)
     })
-    let probability = 0.5;
+    let probability = 0.2;
     snowArray.forEach(snowFlake => {
       if (Math.random() < probability) {
         anime({
@@ -841,13 +841,57 @@ export default {
         })
       }
     })
-    anime({
-      targets: ".text-box",
-      opacity: 1,
-      duration: 700,
-      delay: 1000,
-      easing: 'linear'
-    });
+    let text = document.querySelector('.text-box').children;
+    let animation = anime.timeline({
+      easing: 'linear',
+      duration: 500,
+    })
+    animation
+      .add({
+        targets: ".text-box",
+        opacity: 1,
+        delay: 1000,
+      })
+      .add({
+        targets: text[1],
+        opacity: 1,
+        delay: 500
+      })
+      .add({
+        targets: text[2],
+        opacity: 1,
+        delay: 2500
+      })
+      .add({
+        targets: text[3],
+        opacity: 1,
+        delay: 1500
+      })
+      .add({
+        targets: text[4],
+        opacity: 1,
+        delay: 3500
+      })
+      .add({
+        targets: text[5],
+        opacity: 1,
+        delay: 1500
+      })
+      .add({
+        targets: text[6],
+        opacity: 1,
+        delay: 1500
+      })
+      .add({
+        targets: text[7],
+        opacity: 1,
+        delay: 1500
+      })
+      .add({
+        targets: text[8],
+        opacity: 1,
+        delay: 1500
+      })
   }
 }
 </script>
@@ -872,6 +916,7 @@ export default {
 .text-box p {
   margin-bottom: 1vh;
   font-size: 2.8vh;
+  opacity: 0;
 }
 .text-box p:nth-child(6),
 .text-box p:nth-child(7),

@@ -2299,51 +2299,24 @@
       <p>What brave things do you think Annie is trying to do?</p>
       <p>What can you try to practise being brave?</p>
     </div>
-    <textarea v-model.lazy="input" placeholder="Type in your thoughts here..." class="input"/>
   </div>
 </template>
 
 <script>
 export default {
   name: 'Session9Page5',
-  data() {
-    return {
-      input: ''
-    }
-  },
-  watch: {
-    input: function() {
-      console.log(this.input)
-    }
-  }
 }
 </script>
 
 <style scoped>
-.input {
-  position: absolute;
-  width: 56%;
-  height: 25%;
-  left: 22%;
-  top: 37vh;
-  padding: 2vh;
-  font-size: 2.4vh;
-  border: none;
-  resize: none;
-  background-color: rgba(255,255,255,0.9);
-  opacity: 1;
-}
-.input:focus {
-  outline: none;
-}
 .text-box {
   position: absolute;
-  top: 20vh;
+  top: 30vh;
   width: 56%;
   left: 22%;
-  background-color: rgba(255,255,255,0.85);
+  background-color: rgba(255,255,255,0.9);
   text-align: center;
-  padding: 2vh;
+  padding: 4vh 2vh;
   font-size: 2.7vh;
 }
 .text-box p {

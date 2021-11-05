@@ -734,13 +734,57 @@ export default {
         easing: 'linear',
       })
     })
-    anime({
-      targets: ".text-box",
-      opacity: 1,
-      duration: 700,
-      delay: 1000,
-      easing: 'linear'
-    });
+    let text = document.querySelector('.text-box').children;
+    let animation = anime.timeline({
+      easing: 'linear',
+      duration: 500,
+    })
+    animation
+      .add({
+        targets: ".text-box",
+        opacity: 1,
+        delay: 1000,
+      })
+      .add({
+        targets: text[1],
+        opacity: 1,
+        delay: 500
+      })
+      .add({
+        targets: text[2],
+        opacity: 1,
+        delay: 2500
+      })
+      .add({
+        targets: text[3],
+        opacity: 1,
+        delay: 1500
+      })
+      .add({
+        targets: text[4],
+        opacity: 1,
+        delay: 3500
+      })
+      .add({
+        targets: text[5],
+        opacity: 1,
+        delay: 1500
+      })
+      .add({
+        targets: text[6],
+        opacity: 1,
+        delay: 1500
+      })
+      .add({
+        targets: text[7],
+        opacity: 1,
+        delay: 1500
+      })
+      .add({
+        targets: text[8],
+        opacity: 1,
+        delay: 1500
+      })
   }
 }
 </script>
@@ -765,6 +809,7 @@ export default {
 .text-box p {
   margin-bottom: 1.5vh;
   font-size: 2.8vh;
+  opacity: 0;
 }
 .text-box p:nth-child(6),
 .text-box p:nth-child(7),

@@ -43,7 +43,7 @@ export default {
 .images {
   position: absolute;
   height: 100vh;
-  width: 49.5%;
+  width: 50%;
 }
 .images:nth-child(2) {
   right: 0;

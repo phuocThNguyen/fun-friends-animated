@@ -198,53 +198,63 @@ export default {
     let text = document.getElementsByClassName('text-box')[0].children;
     let animation = anime.timeline({
       easing: 'linear',
-      delay: 1000,
       duration: 300
     })
     animation
       .add({
         targets: '.text-box',
         opacity: 1,
+        delay: 500
       })
       .add({
         targets: text[1],
         opacity: 1,
+        delay: 500
       })
       .add({
         targets: text[2],
         opacity: 1,
+        delay: 1500
       })
       .add({
         targets: text[3],
         opacity: 1,
+        delay: 1500
       })
       .add({
         targets: text[4],
         opacity: 1,
+        delay: 1000
       })
       .add({
         targets: text[5],
-        opacity: 1
+        opacity: 1,
+        delay: 1000
       })
       .add({
         targets: text[6],
-        opacity: 1
+        opacity: 1,
+        delay: 1000
       })
       .add({
         targets: text[7],
-        opacity: 1
+        opacity: 1,
+        delay: 1000
       })
       .add({
         targets: text[8],
-        opacity: 1
+        opacity: 1,
+        delay: 1000
       })
       .add({
         targets: text[9],
-        opacity: 1
+        opacity: 1,
+        delay: 1000
       })
       .add({
         targets: text[10],
-        opacity: 1
+        opacity: 1,
+        delay: 1000
       })
   }
 }

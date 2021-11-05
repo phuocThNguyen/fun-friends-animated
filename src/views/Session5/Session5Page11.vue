@@ -37,7 +37,7 @@ export default {
   mounted() {
     anime({
       targets: '.text-box',
-      opacity: 1,
+      opacity: 0,
       easing: 'linear',
       duration: 500,
       delay: 500
@@ -59,7 +59,7 @@ export default {
   position: absolute;
   width: 80%;
   padding: 2vh;
-  bottom: 9vh;
+  top: 0;
   left: 10%;
   background-color: rgba(255,255,255, 0.95);
   opacity: 0;

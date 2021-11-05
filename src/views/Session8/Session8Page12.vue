@@ -335,7 +335,7 @@ export default {
   right: 0;
   width: 36vh;
   height: 100%;
-  background-color: rgba(0, 206, 124, 0.8);
+  background-color: rgba(0, 206, 124, 0.9);
   color: #ffffff;
   padding: 0 3vh;
   font-size: 3.2vh;
@@ -345,7 +345,7 @@ export default {
   text-align: center;
 }
 .choices-container {
-  background-color: rgba(0,0,0,0.75);
+  background-color: rgba(0,0,0,0.8);
   position: absolute;
   width: 19vh;
   height: 100%;

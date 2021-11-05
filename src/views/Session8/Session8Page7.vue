@@ -8,7 +8,6 @@
       <br>If you were Annie, what could you do to play with
         other children?</p>
     </div>
-    <textarea v-model.lazy="input" placeholder="Type in your thoughts here..." class="input"/>
     <div class="star-container">
       <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 1258" width="1320" height="1258">
         <title>Star</title>
@@ -37,11 +36,6 @@ import anime from "animejs";
 
 export default {
   name: 'Session8Page7',
-  data() {
-    return {
-      input: ''
-    }
-  },
   mounted() {
     let animation = anime.timeline({
       easing: 'linear',
@@ -54,39 +48,14 @@ export default {
         opacity: 1
       })
       .add({
-        targets: '.input',
-        opacity: 1
-      })
-      .add({
         targets: '.star-container',
         opacity: 1
       })
   },
-  watch: {
-    input: function() {
-      console.log(this.input)
-    }
-  }
 }
 </script>
 
 <style scoped>
-.input {
-  position: absolute;
-  width: 47%;
-  height: 25%;
-  right: 2%;
-  top: 1vh;
-  padding: 2vh;
-  font-size: 2.4vh;
-  border: none;
-  resize: none;
-  background-color: rgba(255,255,255,0.9);
-  opacity: 0;
-}
-.input:focus {
-  outline: none;
-}
 .star-container {
   position: absolute;
   right: 5%;
@@ -115,11 +84,10 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.9);
-  width: 47%;
-  height: 25%;
+  width: 92%;
   top: 1vh;
-  left: 2%;
-  padding: 0 2vh;
+  left: 4%;
+  padding: 1vh 2vh 1.5vh;
   opacity: 0;
   display: flex;
   flex-direction: column;

@@ -323,13 +323,6 @@ export default {
       })
     })
     anime({
-      targets: '.text-box',
-      opacity: 1,
-      easing: 'linear',
-      delay: 500,
-      duration: 500
-    })
-    anime({
       targets: '#big-cloud',
       easing: 'linear',
       duration: 5000,
@@ -337,6 +330,62 @@ export default {
       direction: 'alternate',
       loop: true
     })
+    let text = document.querySelector('.text-box').children;
+    let animation = anime.timeline({
+      easing: 'linear',
+      duration: 500,
+    })
+    animation
+      .add({
+        targets: ".text-box",
+        opacity: 1,
+        delay: 1000,
+      })
+      .add({
+        targets: text[1],
+        opacity: 1,
+        delay: 500
+      })
+      .add({
+        targets: text[2],
+        opacity: 1,
+        delay: 2500
+      })
+      .add({
+        targets: text[3],
+        opacity: 1,
+        delay: 2500
+      })
+      .add({
+        targets: text[4],
+        opacity: 1,
+        delay: 1500
+      })
+      .add({
+        targets: text[5],
+        opacity: 1,
+        delay: 1500
+      })
+      .add({
+        targets: text[6],
+        opacity: 1,
+        delay: 1500
+      })
+      .add({
+        targets: text[7],
+        opacity: 1,
+        delay: 1500
+      })
+      .add({
+        targets: text[8],
+        opacity: 1,
+        delay: 1500
+      })
+      .add({
+        targets: text[9],
+        opacity: 1,
+        delay: 1500
+      })
   }
 }
 </script>
@@ -345,9 +394,9 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.8);
-  width: 52%;
+  width: 60%;
   height: auto;
-  left: 24%;
+  left: 20%;
   top: 12vh;
   padding: 2vh;
   opacity: 0;
@@ -360,8 +409,8 @@ export default {
 }
 .text-box p {
   margin-bottom: 1vh;
-  font-size: 2.4vh;
-  opacity: 1;
+  font-size: 3vh;
+  opacity: 0;
 }
 .text-box p:last-child {
   margin-bottom: 0;

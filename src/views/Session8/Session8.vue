@@ -38,6 +38,7 @@ import Session8Page12 from "@/views/Session8/Session8Page12";
 import Session8Page13 from "@/views/Session8/Session8Page13";
 import Session8Page14 from "@/views/Session8/Session8Page14";
 import Session8Page15 from "@/views/Session8/Session8Page15";
+import Session8Page16 from "@/views/Session8/Session8Page16";
 
 export default {
   name: "Session8",
@@ -47,7 +48,8 @@ export default {
   components: {
     Session8Page1, Session8Page2, Session8Page3, Session8Page4, Session8Page5,
     Session8Page6, Session8Page7, Session8Page8, Session8Page9, Session8Page10,
-    Session8Page11, Session8Page12, Session8Page13, Session8Page14, Session8Page15
+    Session8Page11, Session8Page12, Session8Page13, Session8Page14, Session8Page15,
+    Session8Page16
   },
   data() {
     return {
@@ -55,9 +57,10 @@ export default {
         1: "Session8Page1", 2: "Session8Page2", 3: "Session8Page3", 4: "Session8Page4", 5: "Session8Page5",
         6: "Session8Page6", 7: "Session8Page7", 8: "Session8Page8", 9: "Session8Page9", 10: "Session8Page10",
         11: "Session8Page11", 12: "Session8Page12", 13: "Session8Page13", 14: "Session8Page14", 15: "Session8Page15",
+        16: "Session8Page16",
       },
       page: 1,
-      lastPage: 15,
+      lastPage: 16,
     }
   },
   created() {
