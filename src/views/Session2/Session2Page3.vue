@@ -9,9 +9,7 @@
       guess and then guess what feeling word they are acting out!</p>
       <p>You can also use a role-play mask!</p>
 
-      <p class="extra-box">
-        All feelings are OK
-      </p>
+      <p class="extra-box">All feelings are OK</p>
     </div>
   </div>
 </template>
@@ -83,6 +81,6 @@ export default {
   font-size: 3.3vh !important;
   padding: 2.3vh;
   text-align: center;
-  margin-top: 15vh;
+  margin-top: 10vh;
 }
 </style>

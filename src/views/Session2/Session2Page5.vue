@@ -143,9 +143,6 @@
         </g>
       </g>
     </svg>
-
-
-
   </div>
 </template>
 
@@ -165,7 +162,6 @@ export default {
         scale: 20,
         duration: 1000,
       })
-
     },
     handleWrongAnswer() {
       anime({
@@ -176,7 +172,6 @@ export default {
           {value: 0, duration: 200, delay: 1000},
         ]
       })
-
     }
   },
   mounted() {
@@ -246,9 +241,9 @@ export default {
   right: 14%;
   background-color: #00ce7c;
   color: #ffffff;
-  opacity: 0;
+  opacity: 1 ;
   padding: 1vh 2.1vh;
-  font-size: 2.8vh;
+  font-size: 3.5vh;
   font-weight: bold;
   z-index: 10;
 }

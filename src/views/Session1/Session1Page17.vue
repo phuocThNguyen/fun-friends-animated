@@ -17,7 +17,7 @@ export default {
       targets: ".text-box",
       opacity: 1,
       delay: 500,
-      duration: 1000,
+      duration: 500,
       easing: 'linear',
     })
   }
@@ -26,20 +26,18 @@ export default {
 
 <style scoped>
 .text-box {
-  height: 5vh;
   width: 80%;
   background-color: #00ce7c;
   position: absolute;
-  bottom: 4vh;
+  bottom: 5vh;
   left: 10%;
   opacity: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center
+  text-align: center;
+  padding: 1vh
 }
 .text-box p {
   color: #ffffff;
   font-weight: bold;
-  font-size: 2.7vh;
+  font-size: 4vh;
 }
 </style>

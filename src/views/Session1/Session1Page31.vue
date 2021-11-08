@@ -8,9 +8,7 @@
     </div>
     <div class="text-box">
       <p class="text">
-        <span>
-          Different is fun!
-        </span>
+        <span>Different is fun!</span>
       </p>
     </div>
   </div>
@@ -27,8 +25,8 @@ export default {
       .add({
         targets: ".text-box",
         opacity: 0.98,
-        duration: 1000,
-        delay: 1000,
+        duration: 500,
+        delay: 500,
         easing: "linear",
       })
   },
@@ -53,8 +51,8 @@ export default {
 }
 .text-box {
   position: absolute;
-  left: 40%;
-  top: 42vh;
+  left: 35%;
+  top: 41vh;
   z-index: 20;
   background-color: #00CE7C;
   width: auto;
@@ -65,7 +63,7 @@ export default {
 .text {
   font-weight: bold;
   color: #ffffff;
-  font-size: 2.6vh;
+  font-size: 4vh;
   margin-bottom: 0;
 }
 </style>

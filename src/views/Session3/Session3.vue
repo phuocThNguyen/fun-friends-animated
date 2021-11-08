@@ -38,6 +38,7 @@ import Session3Page12 from "@/views/Session3/Session3Page12";
 import Session3Page13 from "@/views/Session3/Session3Page13";
 import Session3Page14 from "@/views/Session3/Session3Page14";
 import Session3Page15 from "@/views/Session3/Session3Page15";
+import Session3Page16 from "@/views/Session3/Session3Page16";
 
 export default {
   name: "Session3",
@@ -47,17 +48,19 @@ export default {
   components: {
     Session3Page1, Session3Page2, Session3Page3, Session3Page4, Session3Page5,
     Session3Page6, Session3Page7, Session3Page8, Session3Page9, Session3Page10,
-    Session3Page11, Session3Page12, Session3Page13, Session3Page14, Session3Page15
+    Session3Page11, Session3Page12, Session3Page13, Session3Page14, Session3Page15,
+    Session3Page16
   },
   data() {
     return {
       pages: {
         1: "Session3Page1", 2: "Session3Page2", 3: "Session3Page3", 4: "Session3Page4", 5: "Session3Page5",
         6: "Session3Page6", 7: "Session3Page7", 8: "Session3Page8", 9: "Session3Page9", 10: "Session3Page10",
-        11: "Session3Page11", 12: "Session3Page12", 13: "Session3Page13", 14: "Session3Page14", 15: "Session3Page15"
+        11: "Session3Page11", 12: "Session3Page12", 13: "Session3Page13", 14: "Session3Page14", 15: "Session3Page15",
+        16: "Session3Page16"
       },
       page: 1,
-      lastPage: 15,
+      lastPage: 16,
     }
   },
   created() {

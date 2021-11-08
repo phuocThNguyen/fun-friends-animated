@@ -376,8 +376,8 @@ export default {
       targets: '.content-container',
       opacity: 1,
       easing: 'linear',
-      delay: 500,
-      duration: 500
+      delay: 700,
+      duration: 700
     })
   },
 }

@@ -20,7 +20,7 @@ export default {
       targets: ".text-box",
       opacity: 1,
       delay: 500,
-      duration: 1000,
+      duration: 500,
       easing: 'linear',
     })
   }
@@ -33,8 +33,8 @@ export default {
   width: auto;
   background-color: #00ce7c;
   position: absolute;
-  top: 6vh;
-  left: 6%;
+  top: 2vh;
+  left: 2%;
   opacity: 0;
   padding: 2vh;
 }
@@ -42,6 +42,6 @@ export default {
   color: #ffffff;
   font-weight: bold;
   display: flex;
-  font-size: 2.45vh;
+  font-size: 3.5vh;
 }
 </style>

@@ -30,7 +30,7 @@ export default {
   top: 5vh;
   left: 5%;
   width: 25%;
-  font-size: 2.8vh;
+  font-size: 3.5vh;
   font-weight: bold;
   background-color: #00ce7c;
   color: #ffffff;

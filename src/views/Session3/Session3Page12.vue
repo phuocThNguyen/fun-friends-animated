@@ -17,7 +17,7 @@
       to calm down is a 'thumbs up' choice.</p>
       <p>If you want to, say what you are blowing away
       as your bubbles pop.</p>
-      <audio autoplay loop src="../../assets/sounds/session3/bubbles.mp3">
+      <audio autoplay src="../../assets/sounds/session3/bubbles.mp3">
         Your browser does not support the
         <code>audio</code> element.</audio>
     </div>

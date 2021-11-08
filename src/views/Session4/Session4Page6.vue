@@ -28,7 +28,7 @@ export default {
   top: 5vh;
   left: 5%;
   padding: 2vh;
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255,0.95);
   font-size: 4vh;
   opacity: 0;
 }

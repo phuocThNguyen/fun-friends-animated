@@ -376,8 +376,8 @@ export default {
   left: 15%;
   text-align: center;
   color: #ffffff;
-  background-color: rgba(0, 206, 124, 0.9);
-  font-size: 2.8vh;
+  background-color: rgba(0, 206, 124, 1);
+  font-size: 4vh;
   font-weight: bold;
   padding: .7vh;
   opacity: 0;

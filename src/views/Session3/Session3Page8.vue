@@ -89,6 +89,7 @@
       </div>
       <p>&nbsp;&nbsp;-&nbsp;How can Annie help her Grandma?</p>
     </div>
+    <div class="notice-box">Be kind and helpful</div>
 
     <!--  Very Good  -->
     <svg class="reward" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 178.71 248.07">
@@ -287,6 +288,11 @@ export default {
             scale: 20,
             duration: 1000,
           })
+          anime({
+            targets: '.notice-box',
+            opacity: 1,
+            duration: 1000
+          })
           this.$refs.celebrate.play();
         }
       }
@@ -403,7 +409,19 @@ export default {
   justify-content: space-around;
   align-items: flex-end;
 }
-
+.notice-box {
+  position: absolute;
+  bottom: 5vh;
+  width: 70%;
+  left: 15%;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgba(0, 206, 124, 1);
+  font-size: 4vh;
+  font-weight: bold;
+  padding: .7vh;
+  opacity: 0;
+}
 .sticker {
   position: absolute;
   width: auto;

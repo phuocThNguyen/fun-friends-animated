@@ -16,7 +16,7 @@
        and go, remember all feelings are okay. It is what
        we choose to do with our feelings that counts. Bubble
        breathing is a 'thumbs up' choice.</p>
-      <audio autoplay loop src="../../assets/sounds/session3/bubbles.mp3">
+      <audio autoplay src="../../assets/sounds/session3/bubbles.mp3">
         Your browser does not support the
         <code>audio</code> element.</audio>
     </div>

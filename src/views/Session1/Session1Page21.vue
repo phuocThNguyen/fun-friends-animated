@@ -8,12 +8,8 @@
     </div>
     <div class="text-box">
       <p class="text">
-        <span>
-          We have families.
-        </span>
-        <span>
-          We all love our families and we all share the same feelings.
-        </span>
+        <span>We have families.</span>
+        <span>We all love our families and we all share the same feelings.</span>
       </p>
     </div>
     <audio id="duck" src="../../assets/sounds/session1/duck-cut.mp3">
@@ -105,7 +101,7 @@ export default {
 }
 .text-box {
   position: absolute;
-  left: 8%;
+  left: 4%;
   top: 46%;
   z-index: 20;
 }
@@ -117,7 +113,7 @@ export default {
 .text span {
   font-weight: bold;
   color: #ffffff;
-  font-size: 3vh;
+  font-size: 3.5vh;
   opacity: 0;
 }
 </style>

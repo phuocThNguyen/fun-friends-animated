@@ -8,12 +8,8 @@
     </div>
     <div class="text-box">
       <p class="text">
-        <span>
-          Houses are different,
-        </span>
-        <span>
-          but inside we are all the same.
-        </span>
+        <span>Houses are different,</span>
+        <span> but inside we are all the same.</span>
       </p>
     </div>
   </div>
@@ -30,8 +26,8 @@ export default {
       .add({
         targets: ".text-box",
         opacity: 0.98,
-        duration: 1000,
-        delay: 1000,
+        duration: 500,
+        delay: 500,
         easing: 'linear',
       })
   }
@@ -68,7 +64,7 @@ export default {
 .text {
   font-weight: bold;
   color: #ffffff;
-  font-size: 3vh;
+  font-size: 3.5vh;
   margin-bottom: 0;
 }
 </style>

@@ -8,12 +8,8 @@
     </div>
     <div class="text-box">
       <p class="text">
-        <span>
-          Our food may be different,
-        </span>
-        <span>
-          but it is all yummy.
-        </span>
+        <span>Our food may be different,</span>
+        <span> but it is all yummy.</span>
       </p>
     </div>
   </div>
@@ -29,9 +25,9 @@ export default {
     animation
       .add({
         targets: ".text-box",
-        opacity: 0.98,
+        opacity: 1,
         duration: 500,
-        delay: 1000,
+        delay: 500,
         easing: "linear",
       })
   },
@@ -56,8 +52,8 @@ export default {
 }
 .text-box {
   position: absolute;
-  left: 25%;
-  bottom: 5vh;
+  left: 20%;
+  top: 42vh;
   z-index: 20;
   background-color: #00CE7C;
   width: auto;
@@ -68,7 +64,7 @@ export default {
 .text {
   font-weight: bold;
   color: #ffffff;
-  font-size: 2.8vh;
+  font-size: 3.5vh;
   margin-bottom: 0;
 }
 </style>

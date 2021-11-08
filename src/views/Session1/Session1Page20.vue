@@ -8,12 +8,8 @@
     </div>
     <div class="text-box">
       <p class="text">
-        <span>
-          We have different bodies and different languages,
-        </span>
-        <span>
-          but we all love the same way.
-        </span>
+        <span>We have different bodies and different languages,</span>
+        <span>but we all love the same way.</span>
       </p>
     </div>
     <audio ref="bear" src="../../assets/sounds/session1/bear-cut.mp3">
@@ -107,7 +103,7 @@ export default {
 }
 .text-box {
   position: absolute;
-  left: 8%;
+  left: 2.5%;
   top: 46%;
   z-index: 20;
 }
@@ -119,7 +115,7 @@ export default {
 .text span {
   font-weight: bold;
   color: #ffffff;
-  font-size: 3vh;
+  font-size: 3.5vh;
   opacity: 0;
 }
 </style>

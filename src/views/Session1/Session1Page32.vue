@@ -1142,7 +1142,6 @@
         <p id="q4"> - What is similar or different between many friends?</p>
         <p id="q5"><strong>Being different is beautiful!</strong></p>
       </div>
-      <textarea v-model.lazy="input" class="song-writer" placeholder="Compose your wonderful song here!" id="song-writer"/>
     </div>
     <drawing-canvas class="canvas" :canvasStyle="canvasStyle"/>
     <audio autoplay loop src="../../assets/sounds/session1/Falling-Snow-Sound-Effect-Amplified.mp3">
@@ -1164,18 +1163,12 @@ export default {
         width: 0.54,
         height: 0.68,
         isPicture: false,
-      },
-      input: '',
+      }
     }
   },
   methods: {
     saveToDatabase(data) {
       console.log(data)
-    }
-  },
-  watch: {
-    input: function() {
-      console.log(this.input)
     }
   },
   mounted() {
@@ -1243,39 +1236,6 @@ export default {
 </script>
 
 <style scoped>
-.landscape {
-  position: relative;
-  width: 105%;
-  height: auto;
-}
-.canvas {
-  position: absolute;
-  top: 2vh;
-  left: 45%;
-  opacity: 0;
-  z-index: 100;
-}
-tspan { white-space:pre }
-.shp0 { fill: #b5d2e5 } 
-.shp1 { fill: #a1c0d1 } 
-.shp2 { fill: #90b1bf } 
-.shp3 { fill: #ececec } 
-.shp4 { fill: #f6f6f6 } 
-.shp5 { fill: #84d5db } 
-.shp6 { fill: #9ebad2 } 
-.shp7 { fill: #8baac6 } 
-.shp8 { fill: #5a7e9e } 
-.shp9 { fill: #77a3ad } 
-.shp10 { fill: #648d93 } 
-.shp11 { fill: #6b8c8e } 
-.shp12 { fill: #6a8da0 } 
-.shp13 { fill: #6c9695 } 
-.shp14 { fill: #8e7f6b } 
-.shp15 { fill: #abcadb } 
-.shp16 { fill: #dbdbdb } 
-.shp17 { fill: #e5e5e5 } 
-.shp18 { fill: #ffffff }
-
 .main-content {
   position: absolute;
   left: 1%;
@@ -1309,16 +1269,36 @@ tspan { white-space:pre }
 .text-box p:last-child {
   font-weight: bold;
 }
-.song-writer {
-  width: 100%;
-  height: 22vh;
-  margin-top: 1vh;
-  border: none;
-  background-color: #ffffff;
-  opacity: 0;
-  padding: 2vh;
-  resize: none;
-  outline: none;
-  font-size: 2.7vh;
+.landscape {
+  position: relative;
+  width: 105%;
+  height: auto;
 }
+.canvas {
+  position: absolute;
+  top: 2vh;
+  left: 45%;
+  opacity: 0;
+  z-index: 100;
+}
+tspan { white-space:pre }
+.shp0 { fill: #b5d2e5 } 
+.shp1 { fill: #a1c0d1 } 
+.shp2 { fill: #90b1bf } 
+.shp3 { fill: #ececec } 
+.shp4 { fill: #f6f6f6 } 
+.shp5 { fill: #84d5db } 
+.shp6 { fill: #9ebad2 } 
+.shp7 { fill: #8baac6 } 
+.shp8 { fill: #5a7e9e } 
+.shp9 { fill: #77a3ad } 
+.shp10 { fill: #648d93 } 
+.shp11 { fill: #6b8c8e } 
+.shp12 { fill: #6a8da0 } 
+.shp13 { fill: #6c9695 } 
+.shp14 { fill: #8e7f6b } 
+.shp15 { fill: #abcadb } 
+.shp16 { fill: #dbdbdb } 
+.shp17 { fill: #e5e5e5 } 
+.shp18 { fill: #ffffff }
 </style>

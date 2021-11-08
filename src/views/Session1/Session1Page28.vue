@@ -26,9 +26,9 @@ export default {
     animation
       .add({
         targets: ".text-box",
-        opacity: 0.98,
+        opacity: 1,
         duration: 500,
-        delay: 1000,
+        delay: 500,
         easing: "linear",
       })
   },
@@ -53,8 +53,8 @@ export default {
 }
 .text-box {
   position: absolute;
-  left: 35%;
-  top: 42vh;
+  left: 30%;
+  top: 41vh;
   z-index: 20;
   background-color: #00CE7C;
   width: auto;
@@ -65,7 +65,7 @@ export default {
 .text {
   font-weight: bold;
   color: #ffffff;
-  font-size: 2.6vh;
+  font-size: 3.5vh;
   margin-bottom: 0;
 }
 </style>

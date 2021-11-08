@@ -67,14 +67,14 @@ export default {
   left: 0;
   width: 30%;
   height: 100%;
-  background-color: rgba(255,255,255,0.7);
-  padding: 2.8vh;
+  background-color: rgba(255,255,255,0.9);
+  padding: 1vh;
   opacity: 0;
 }
 .text-box h1 {
   font-size: 3.36vh;
   font-weight: bold;
-  margin: 3vh 0;
+  margin: 1vh 0;
   opacity: 0;
 }
 .text-box p {
