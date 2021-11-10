@@ -90,25 +90,17 @@ export default {
 </script>
 
 <style>
-@media screen and (max-width: 930px) {
-  .show {
-    background-color: #000000;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    gap: 0;
-  }
-  .center {
-    width: calc(1.33 * 100vh) !important;
-    position: relative;
-  }
+.show {
+  background-color: #000000;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  gap: 0;
 }
 .center {
-  width: 100%;
-}
-.show {
-  width: 100vw;
+  width: calc(1.33 * 100vh) !important;
+  position: relative;
 }
 .image {
   width: 100%;

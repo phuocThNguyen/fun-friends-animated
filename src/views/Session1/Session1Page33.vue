@@ -586,7 +586,7 @@ export default {
 .orange {
   position: absolute;
   width: auto;
-  height: 0.1vh;
+  height: 0.2vh;
   z-index: 80;
 }
 #orange-1 {
@@ -602,7 +602,7 @@ export default {
   left: 5%;
 }
 #orange-4 {
-  bottom: 30vh;
+  bottom: 35vh;
   left: 15%;
 }
 #orange-5 {
