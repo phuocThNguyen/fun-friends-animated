@@ -1216,7 +1216,7 @@
       <p>Play a skipping rope</p>
       <p>Fly a kite</p>
       <p>Play in the park</p>
-      <h1>Reward</h1>
+      <h1>Rewards</h1>
     </div>
     <div class="coordinate-container" @click="displayStep">
       <svg class="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 517 517" width="517" height="517">

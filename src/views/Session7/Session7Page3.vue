@@ -1212,7 +1212,7 @@
       <p>Play a skipping rope</p>
       <p>Fly a kite</p>
       <p>Play in the park</p>
-      <h1>Reward</h1>
+      <h1>Rewards</h1>
     </div>
 
     <div class="coordinate-container" @click="displayStep">

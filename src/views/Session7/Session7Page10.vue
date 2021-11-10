@@ -353,7 +353,7 @@
       <input type="text">
       <input type="text">
       <input type="text">
-      <h1>Reward</h1>
+      <h1>Rewards</h1>
     </div>
     <Modal text="Tap on the trophy, bubbles and
       tiles to type your ideas!"/>

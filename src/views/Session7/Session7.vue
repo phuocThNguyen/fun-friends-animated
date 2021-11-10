@@ -40,6 +40,7 @@ import Session7Page14 from "@/views/Session7/Session7Page14";
 import Session7Page15 from "@/views/Session7/Session7Page15";
 import Session7Page16 from "@/views/Session7/Session7Page16";
 import Session7Page17 from "@/views/Session7/Session7Page17";
+import Session7Page18 from "@/views/Session7/Session7Page18";
 
 export default {
   name: "Session7",
@@ -50,7 +51,7 @@ export default {
     Session7Page1, Session7Page2, Session7Page3, Session7Page4, Session7Page5,
     Session7Page6, Session7Page7, Session7Page8, Session7Page9, Session7Page10,
     Session7Page11, Session7Page12, Session7Page13, Session7Page14, Session7Page15,
-    Session7Page16, Session7Page17
+    Session7Page16, Session7Page17, Session7Page18
   },
   data() {
     return {
@@ -58,10 +59,10 @@ export default {
         1: "Session7Page1", 2: "Session7Page2", 3: "Session7Page3", 4: "Session7Page4", 5: "Session7Page5",
         6: "Session7Page6", 7: "Session7Page7", 8: "Session7Page8", 9: "Session7Page9", 10: "Session7Page10",
         11: "Session7Page11", 12: "Session7Page12", 13: "Session7Page13", 14: "Session7Page14", 15: "Session7Page15",
-        16: "Session7Page16", 17: "Session7Page17",
+        16: "Session7Page16", 17: "Session7Page17", 18: "Session7Page18",
       },
       page: 1,
-      lastPage: 17,
+      lastPage: 18,
     }
   },
   created() {

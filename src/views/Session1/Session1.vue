@@ -61,6 +61,7 @@ import Session1Page35 from "@/views/Session1/Session1Page35";
 import Session1Page36 from "@/views/Session1/Session1Page36";
 import Session1Page37 from "@/views/Session1/Session1Page37";
 import Session1Page38 from "@/views/Session1/Session1Page38";
+import Session1Page39 from "@/views/Session1/Session1Page39";
 
 export default {
   name: "Session1",
@@ -75,7 +76,7 @@ export default {
     Session1Page21, Session1Page22, Session1Page23, Session1Page24, Session1Page25,
     Session1Page26, Session1Page27, Session1Page28, Session1Page29, Session1Page30,
     Session1Page31, Session1Page32, Session1Page33, Session1Page34, Session1Page35,
-    Session1Page36, Session1Page37, Session1Page38
+    Session1Page36, Session1Page37, Session1Page38, Session1Page39
   },
   data() {
     return {
@@ -87,10 +88,10 @@ export default {
         21: "Session1Page21", 22: "Session1Page22", 23: "Session1Page23", 24: "Session1Page24", 25: "Session1Page25",
         26: "Session1Page26", 27: "Session1Page27", 28: "Session1Page28", 29: "Session1Page29", 30: "Session1Page30",
         31: "Session1Page31", 32: "Session1Page32", 33: "Session1Page33", 34: "Session1Page34", 35: "Session1Page35",
-        36: "Session1Page36", 37: "Session1Page37", 38: "Session1Page38",
+        36: "Session1Page36", 37: "Session1Page37", 38: "Session1Page38", 39: "Session1Page39",
       },
       page: 1,
-      lastPage: 38,
+      lastPage: 39,
     };
   },
   created() {
