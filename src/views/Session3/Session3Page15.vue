@@ -704,7 +704,7 @@
       <p>&bull; Play outside.</p>
       <p>&bull; Have plenty of sleep.</p>
       <p>&bull; Drink and eat foods that are healthy.</p>
-      <p>&bull; Practise relaxing every day without screens.</p>
+      <p>&bull; Practise relaxing without screens.</p>
       <p>&bull; Pay attention to happy things and what you
         can see, hear, smell, taste and feel.</p>
       <p>&bull; Say thank you for happy times.</p>

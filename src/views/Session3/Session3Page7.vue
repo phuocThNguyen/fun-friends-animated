@@ -3,8 +3,7 @@
     <img src="../../assets/images/session3/2906714-resized.jpg" alt="grandpa-and-Tom" class="session-background">
     <div class="text-box">
       <h1>Grandpa would like some company</h1>
-      <p>Grandpa and Tom enjoy picnics in the park. Tom wants
-      to help Grandpa feel happier.</p>
+      <p>Tom wants to help Grandpa feel happier.</p>
       <p>&nbsp;&nbsp;-&nbsp;How do you think Grandpa is feeling?</p>
       <div class="content-container">
         <div class="emotes-container">

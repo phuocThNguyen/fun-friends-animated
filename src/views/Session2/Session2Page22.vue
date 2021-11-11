@@ -1353,7 +1353,7 @@
       <p>&nbsp;- Play outside.</p>
       <p>&nbsp;- Have plenty of sleep.</p>
       <p>&nbsp;- Drink and eat foods that are healthy.</p>
-      <p>&nbsp;- Practise relaxing everyday without screens.</p>
+      <p>&nbsp;- Practise relaxing without screens.</p>
       <p>&nbsp;- Pay attention to happy things and what you
       can see, hear, smell, taste and feel.</p>
       <p>&nbsp;- Say thank you for happy times.</p>

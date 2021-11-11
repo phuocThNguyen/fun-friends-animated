@@ -198,8 +198,8 @@
 
     <p class="title"><span id="letter-f">D</span>on't forget</p>
     <p class="text" id="line-1">
-      This week we will think about the people who help us
-      <br>be brave and those people we help too.
+      Today we will think about the people
+      <br>who help us to be brave and also the people we help too.
     </p>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3">

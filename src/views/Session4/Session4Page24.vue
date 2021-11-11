@@ -2472,7 +2472,7 @@
       </svg>
       <div class="star-text">
         <p><strong>Bright<br>Star Idea</strong></p>
-        <p>Have a look at some dry spaghetti &ndash;
+        <p>Get some dry spaghetti &ndash;
           <br>see how hard and stiff it is. Now cook the
           <br>spaghetti and see how floppy it is.
           <br>To relax, practise making each

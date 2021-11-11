@@ -6,7 +6,7 @@
       <p>Make one tree with your friends. You can do this by drawing, creating, planting,
        or finding one outside, or using your bodies to build one!</p>
       <p>Draw or write down one feeling you have had and act it out in a group.</p>
-      <p>When and why did you feel the way that you did? <strong>All feelings are OK.</strong></p>
+      <p>When and why did you feel this way? <strong>All feelings are OK.</strong></p>
     </div>
     <audio autoplay loop src="../../assets/sounds/children-background-music/no-copyright-music-funny-children-kids-music-by-mokka-kids.mp3"></audio>
   </div>

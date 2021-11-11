@@ -1348,13 +1348,13 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try Everyday</h1>
-      <p>Play a guessing game with your family. One person can
-      act out a feeling and the other people have to guess the feeling.
-      You can also take turns making up stories to go with the feelings.</p>
-      <p>Speaking with your family about what they do to calm down, when
-       they are worried, sad or angry.</p>
-      <p>Everyday practise being BRAVE:</p>
+      <h1>Try every day</h1>
+      <p>Play a guessing game with your family.
+        One person acts out a feeling while everyone else tries to guess the feeling.
+        Take turns making up stories to go with the feelings.</p>
+      <p>Speak with your family about what they do
+        to calm down when they are worried, sad or angry.</p>
+      <p>Practise being BRAVE:</p>
       <p>&nbsp;&nbsp;-&nbsp;Look people in the eye and smile.</p>
       <p>&nbsp;&nbsp;-&nbsp;Use a brave voice and stand up tall.</p>
       <p>&nbsp;&nbsp;-&nbsp;Try your best and give it a go.</p>

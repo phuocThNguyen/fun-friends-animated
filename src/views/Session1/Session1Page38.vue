@@ -3,11 +3,11 @@
     <img src="../../assets/images/session1/grass-background.jpg" alt="background" class="session-background">
     <div class="text-box">
       <h1>Everyday remember to:</h1>
-      <p>- Play outside</p>
-      <p>- Go to bed early</p>
-      <p>- Practise relaxing everyday for 5 minutes without TV or electronics</p>
-      <p>- Pay attention to happy things</p>
-      <p>- Say thank you for happy things</p>
+      <p>- Play outside.</p>
+      <p>- Go to bed early.</p>
+      <p>- Practise relaxing for 5 minutes without TV or electronics.</p>
+      <p>- Pay attention to happy things.</p>
+      <p>- Say thank you for happy things.</p>
     </div>
     <div class="image-container">
       <img class="action-image" src="../../assets/images/session1/811-resized.jpg" alt="play-outside">

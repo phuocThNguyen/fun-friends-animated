@@ -5,19 +5,18 @@
         '<span class="green">Green</span>' thoughts:
         <br>Starting a new school
       </h1>
-      <p>Mum is taking Lucy to her new school. She has a lot of
-        thoughts in her head.</p>
+      <p>Lucy is starting a new school.</p>
       <p>'<span class="red">Red</span>' thoughts like
         "<span class="red">I will miss my Mum</span>", are making
         Lucy feel sad and stop her from having fun.</p>
-      <p>Her '<span class="green">green</span>' thoughts like,
+      <p>'<span class="green">Green</span>' thoughts like,
         "<span class="green">I will do some fun things at
         school. I will be OK, I will meet new friends</span>", help Lucy
         feel happier and enjoy her school.</p>
-      <p>Share what you think about other '<span class="red">red</span>'
-        and '<span class="green">green</span>' thoughts she might have.</p>
-      <p>Ask your friends, what thoughts might help her feel
-        braver and happier? Listen to the ideas of your friends."</p>
+      <p>What other '<span class="red">red</span>'
+        and '<span class="green">green</span>'
+        thoughts may Lucy be having?</p>
+      <p>What thoughts might help her to feel braver and happier?</p>
     </div>
     <img src="../../assets/images/session5/447.png" alt="red" class="images" id="image-top">
     <img src="../../assets/images/session5/128.png" alt="green" class="images" id="image-bottom">

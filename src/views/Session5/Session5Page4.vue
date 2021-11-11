@@ -2,9 +2,8 @@
   <div class="interactive-container">
     <img src="../../assets/images/session5/128.png" alt="green" class="session-background">
     <div class="text-box">
-      <p>In this picture, the children are
-        walking to a new school with
-        Dad.</p>
+      <p>In this picture, The children are walking
+        to a new school with their dad .</p>
       <p>What could they be feeling?</p>
       <p>Are they having '<span class="red">red</span>' or
         '<span class="green">green</span>'

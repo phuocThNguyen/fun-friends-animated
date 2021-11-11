@@ -988,7 +988,7 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try Everyday</h1>
+      <h1>Try Every day</h1>
       <p>&nbsp;&bull; Keep Practising your Step Plan with your family and friends.</p>
       <p>&nbsp;&bull; Practise being BRAVE every day:</p>
       <p>&middot; Look people in the eye and smile.</p>

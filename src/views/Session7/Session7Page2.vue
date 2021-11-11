@@ -983,20 +983,13 @@
     </svg>
     <div class="text-box">
       <p>When we break hard things down into many easier steps
-        it is called a <strong>STEP</strong> <strong>PLAN</strong>
-        or a <strong>COPING STEP PLAN</strong>. We can use a
-        <strong>COPING STEP PLAN</strong> to help us be brave
-        when doing something we are scared of, like being
-        in the dark, going to the doctor, or saying goodbye
-        when we go to kindergarten or school.</p>
-      <p>Create a <strong>COPING STEP PLAN</strong> next time
-        you are trying new things, riding your bike without
-        training wheels, trying new foods, getting ready for
-        a new activity, like going for a walk or bike ride
-        in a different park. Do a <strong>STEP PLAN</strong>
+        it is called a <strong>STEP PLAN</strong>.
+        <strong>STEP PLAN</strong> help us be brave
+        when doing something we are scared of.</p>
+      <p>Create a <strong>STEP PLAN</strong>
         with your friends. What steps would you take? How many
         steps can you name together? Each step brings you
-        closer to doing it!</p>
+        closer to facing your fears!</p>
     </div>
     <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"></audio>
   </div>
@@ -1034,10 +1027,10 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  top: 16vh;
+  top: 30vh;
   left: 15%;
   width: 70%;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255,255,255,0.9);
   padding: 3vh 4.2vh;
   opacity: 0;
 }

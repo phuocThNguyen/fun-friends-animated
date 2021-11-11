@@ -8,9 +8,9 @@
       <p>Take five deep slow breaths, in through
        your nose and out through your mouth. We are
        going to blow bubbles with a straw and a cup
-       with water. Blow out all our angry, sad, and worried
-       feelings into the water. Once we stop breathing out,
-       the bubbles go away.</p>
+       of water. Blow out any angry, sad, and worried
+       feelings into the water. Notice how once we stop
+       breathing out, the bubbles go away.</p>
       <p>The same happens with our feelings. We can blow them
        away by doing deep slow calm breathing. Feelings come
        and go, remember all feelings are okay. It is what

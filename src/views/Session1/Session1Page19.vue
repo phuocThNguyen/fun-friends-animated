@@ -3,32 +3,12 @@
     <img class="session-background" src="../../assets/images/session1/84428-resized.jpg" alt="family-enjoy-water">
     <div class="text-box">
       <p class="text">
-        <span>
-          Talk about your family and the places they come from.
-        </span>
-        <span>
-          Listen carefully when it is their turn to talk.
-        </span>
-        <span>
-          There are differences in the way we look,
-        </span>
-        <span>
-          what we eat,
-        </span>
-        <span>
-          where we live,
-        </span>
-        <span>
-          the clothes we wear
-        </span>
-        <span>
-          or the language we speak,
-        </span>
-        <span>
-          <strong>
-            but we all love, smile, and cry in the same way.
-          </strong>
-        </span>
+        <span>Talk about your family and the places they come from.</span>
+        <span>Listen carefully when those around you are talking.</span>
+        <span>There are differences in how we look,</span>
+        <span>what we eat,</span><span>where we live,</span>
+        <span>the clothes we wear</span><span>and the language we speak,</span>
+        <span><strong>but we all love, smile, and cry in the same way.</strong></span>
       </p>
     </div>
   </div>

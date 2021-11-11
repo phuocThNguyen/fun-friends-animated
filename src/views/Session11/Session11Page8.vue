@@ -1427,7 +1427,7 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try Everyday</h1>
+      <h1>Try Every day</h1>
       <p>&nbsp;&bull; Draw or take a picture of your family's support
         team. Alternatively, share a story about how your family
         gets support. You choose.</p>
@@ -1436,7 +1436,7 @@
       <p>&nbsp;&bull; Relax every day.</p>
       <p>&nbsp;&bull; Notice and reward yourself and other
         for being BRAVE.</p>
-      <p>&nbsp;&bull; Practise being BRAVE every day:</p>
+      <p>&nbsp;&bull; Practise being BRAVE:</p>
       <p>&middot; Look people in the eye and smile.</p>
       <p>&middot; Use a brave voice and make yourself big.</p>
       <p>&middot; Try your best and give it a go. </p>

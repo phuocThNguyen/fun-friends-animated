@@ -421,17 +421,15 @@
     <div class="text-box">
       <h1>Try Everyday</h1>
       <p>&nbsp;&bull; Practise the steps in your step plan - one step at a time. It doesn’t matter how long
-        you need or how many steps it takes. Stay on the step until you feel really happy and
-        can do that step easily. Share your plan with your family or friends.</p>
-      <p>&nbsp;&bull; If a step seems too hard, it is probably too big a jump – maybe you can add a smaller
-        step in between? Remember to give yourself a reward for taking each step. It is nice
-        to reward yourself by doing fun things with those we love!</p>
-      <p>&nbsp;&bull; Use the BRAVE skills from FUN FRIENDS to help achieve your goals. When you are
-        being brave and moving up to a hard step, try ‘bubble’ breathing and thinking ‘green’
-        thoughts. What are ‘green’ thoughts your family and friends have? How can you use
-        these ‘green’ thoughts to reach your goal?</p>
-      <p>&nbsp;&bull; Practise relaxing every day for at least 10 minutes. Minimise TV and computer time.</p>
-      <p>&nbsp;&bull; Keep Practising being Brave. Practise every day:</p>
+        you need or how many steps it takes. Stay on each step until you
+        can do that step easily. Share your plan your family or friends.</p>
+      <p>&nbsp;&bull; If a step seems too hard, maybe add a smaller step in between?
+        Remember to give yourself a reward for taking each step.</p>
+      <p>&nbsp;&bull; When you are being brave and moving up to a hard step,
+        try ‘bubble’ breathing and thinking ‘green’ thoughts.
+        How can you use these ‘green’ thoughts to reach your goal?</p>
+      <p>&nbsp;&bull; Practise relaxing for at least 10 minutes. Minimise TV and computer time.</p>
+      <p>&nbsp;&bull; Keep practising being BRAVE:</p>
       <p>&middot; Look people in the eye and smile.</p>
       <p>&middot; Use a brave voice and make yourself big.</p>
       <p>&middot; Try your best and give it a go. </p>

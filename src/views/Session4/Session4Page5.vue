@@ -3,8 +3,7 @@
     <img src="../../assets/images/session4/5183-resized.jpg" class="images" alt="riding-scooter">
     <img src="../../assets/images/session4/2778146-resized.jpg" class="images" alt="riding-scooter2">
     <div class="text-box">
-      <h1>Relaxing Together</h1>
-      <p>What are these children doing to relax and calm down?</p>
+      <h1>What are these children doing to relax and calm down?</h1>
     </div>
   </div>
 </template>
@@ -44,13 +43,11 @@ export default {
   font-weight: bold;
   margin-bottom: 1vh;
 }
-.text-box p {
-  font-size: 3.5vh;
-}
+
 .images {
   position: absolute;
   width: 49.5%;
-  height: 75vh;
+  height: 80vh;
   bottom: 0;
   opacity: 0;
 }

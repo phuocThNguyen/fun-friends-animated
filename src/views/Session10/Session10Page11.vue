@@ -3,9 +3,7 @@
     <img src="../../assets/images/session10/Blurred-BG.png" alt="background" class="session-background">
     <div class="text-box">
       <h1>Helpful/Kind Hands</h1>
-      <p>What are some of the positive things we look for
-      in 'someone to look up to'? What things do we like
-      about these people?</p>
+      <p>What are some of the positive things we look for in 'someone to look up to'?</p>
       <p>Some examples could be:</p>
       <p>&bull;&nbsp;&nbsp;Cares about animals, trees and living beings</p>
       <p>&bull;&nbsp;&nbsp;Choosing 'green' thoughts</p>

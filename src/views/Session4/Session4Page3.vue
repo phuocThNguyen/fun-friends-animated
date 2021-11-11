@@ -5,10 +5,8 @@
       <h1>Butterflies in the tummy</h1>
       <p>What happens to you when you feel nervous?</p>
       <p>Act, dance or draw what happens in your body.</p>
-      <p>How do your friends react?</p>
-      <p>How are your reactions the same or different?</p>
-      <p>Ask your friends what they think you can do to
-       calm down. Listen and answer them too.</p>
+      <p>How do your friends show they are nervous?</p>
+      <p>Ask your friends what helps them to calm down?</p>
       <p>Remember - It is normal to be worried, what
        you do about it can be a thumbs-up or thumbs-down
        choice.</p>

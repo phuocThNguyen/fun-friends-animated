@@ -3,9 +3,8 @@
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
     <div class="text-box">
       <p>Talk to your classmates about ideas on how to make
-       new friends. Together, try drawing pictures of your
-       ideas or writing your ideas in the balloons. Some ideas
-       could be:</p>
+        new friends. Together, draw or write your ideas in the balloons.
+        Some ideas could be:</p>
       <p>&bull;&nbsp;&nbsp;Go to play in a park, ride a bike or rollerblade.</p>
       <p>&bull;&nbsp;&nbsp;Be BRAVE and speak with a new person.</p>
       <p>&bull;&nbsp;&nbsp;Make a happy drawing to give to your new friend.</p>

@@ -4,13 +4,8 @@
     <div class="text-box">
       <h1><strong>2. Bubble blowing</strong></h1>
       <p>Another fun game to blow our worries away
-      is getting a Magic Bubble Wand. There are many
-       shapes and sizes for these bubbles, some are
-      shapes of stars, some are love hearts, and some
-      are circles. Breathe in calm, happy feelings in
-      through your nose and blow away your angry, sad
-      and worried feelings far away from you until
-      they pop and go away.</p>
+      is getting a Magic Bubble Wand. Breathe in calm, happy feelings
+      and blow away your angry, sad and worried feelings.</p>
       <p>Notice how the bubbles float away and fade,
       the same with our feelings. Feelings don't stay
       forever, feelings change. Using a Magic Bubble Wand

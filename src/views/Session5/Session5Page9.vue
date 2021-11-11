@@ -3,8 +3,7 @@
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
     <div class="text-box">
       <p><strong>Sam is preparing for a 'Show and Tell'</strong></p>
-      <p>Let us pretend that it is your turn to do
-         'show and tell' today.</p>
+      <p>Pretend that it is your turn to do 'show and tell'.</p>
       <p>What could you be feeling?</p>
       <p>What are some '<span class="green">green</span>'
         thoughts that make you feel happy and brave?</p>

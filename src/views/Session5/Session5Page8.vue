@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
     <div class="text-box">
-      <p>Let us pretend that you will meet a new teacher today.</p>
+      <p>Pretend you are meeting a new teacher.</p>
       <p>What could you be feeling? What could you be thinking?</p>
       <p>What are some '<span class="green">green</span>' thoughts that make you feel happy
         and brave?</p>

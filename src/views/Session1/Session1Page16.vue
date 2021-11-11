@@ -2,12 +2,11 @@
   <div class="interactive-container cloud-background">
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
     <div class="text">
-      <h1 id="first">Where do you live?</h1>
-      <h1 id="second">Where do you want to visit?</h1>
       <div class="para">
         <p> - Mark the country that you live in.</p>
-        <p> - Mark on your map where you and your friends want to visit and connect these places.</p>
-        <p><strong>We may be in different places and want different things, but we are all joined together by lines of belonging and love.</strong></p>
+        <p> - Mark where you and your friends want to visit and connect these places.</p>
+        <p><strong>We may be in different places and want different things,
+          but we are all joined together by lines of belonging and love.</strong></p>
       </div>
     </div>
     <audio autoplay loop src="../../assets/sounds/children-background-music/sand-castle.mp3"></audio>
@@ -80,10 +79,6 @@ export default {
   justify-content: center;
   width: 90%;
   padding: 1vh 0 0 5vw;
-}
-.text h1 {
-  font-size: 2.8vh;
-  color: #ffffff;
 }
 .para {
   background-color: #ffffff;

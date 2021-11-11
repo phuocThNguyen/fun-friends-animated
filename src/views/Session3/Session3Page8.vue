@@ -2,7 +2,6 @@
   <div class="interactive-container">
     <img src="../../assets/images/session3/27622-resized.jpg" alt="grandpa-and-Tom" class="session-background">
     <div class="text-box">
-      <h1>Grandma loves help in the garden</h1>
       <p>Grandma and Annie enjoy spending time together
       gardening and laughing.</p>
       <p>&nbsp;&nbsp;-&nbsp;How do you think Grandma is feeling?</p>
@@ -360,10 +359,6 @@ export default {
   padding: 1.4vh;
   background-color: rgba(255,255,255,0.8);
   opacity: 0;
-}
-.text-box h1 {
-  font-size: 3.5vh;
-  margin-bottom: 3vh;
 }
 .text-box p {
   font-size: 2.5vh;

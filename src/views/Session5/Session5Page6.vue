@@ -3,7 +3,7 @@
     <img src="../../assets/images/session5/85693.png" alt="red" class="session-background">
     <div class="text-box">
       <p>Nala is spending her first night sleeping by herself.</p>
-      <p>How is she feeling in this picture? Is Nala having
+      <p>How is she feeling? Is Nala having
         '<span class="red">red</span>' or
         '<span class="green">green</span>' thoughts?</p>
     </div>

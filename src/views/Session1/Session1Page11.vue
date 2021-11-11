@@ -818,18 +818,16 @@
     <div class="main-content">
       <h1 class="draw">Draw a picture of yourself!</h1>
       <div class="text-box">
-        <p>Talk to those you're with about your
-        picture. Tell them:</p>
+        <p>Share your picture with those around you. Tell them:</p>
 
-        <p> - What fruit do you like to eat?</p>
-        <p> - What vegetable do you like to eat</p>
-        <p> - What are your favourite toys?</p>
+        <p> - your favourite fruit and vegetable</p>
+        <p> - your favourite toy</p>
         <p> - What makes you happy?</p>
-        <p> - What do you find scary?</p>
+        <p> - What makes you scared?</p>
 
-        <p>Choose your favourite answer, act it out
-        or sound it out with a friend. When it's their turn,
-        make sure to listen to their answers.</p>
+        <p>Choose your favourite answer,
+          act it out or sound it out with a friend.
+          When it's their turn, make sure to listen.</p>
 
         <p class="mb-0">Express yourself!</p>
       </div>

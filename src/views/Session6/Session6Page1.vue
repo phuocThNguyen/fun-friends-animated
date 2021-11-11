@@ -197,15 +197,12 @@
     </svg>
 
     <p class="title"><span id="letter-f">I</span> can try</p>
-    <p class="text" id="line-1">Today we will think about
-      how we can change '<span class="red">red</span>'
-      thoughts into '<span class="green">green</span>'
-      <br>thoughts. We will also learn that we are the boss
-      of our thinking <br>and can choose between
-      '<span class="red">red</span>' and
-      '<span class="green">green</span>' thoughts.
-      Remember, all <br>thoughts are OK, but
-      choosing '<span class="green">green</span>' thoughts
+    <p class="text" id="line-1">Today we learn that we are
+      the boss of our thinking and that we can choose
+      between '<span class="red">red</span>'
+      and '<span class="green">green</span>' thoughts.
+      Remember, all thoughts are OK,
+      <br>but choosing '<span class="green">green</span>' thoughts
       will make the day feel better.</p>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3">

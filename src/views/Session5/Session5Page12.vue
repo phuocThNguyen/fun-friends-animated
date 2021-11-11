@@ -56,10 +56,10 @@ export default {
 }
 .text-box {
   position: absolute;
-  width: 80%;
+  width: 40%;
   padding: 2vh;
   top: 0;
-  left: 10%;
+  left: 0;
   background-color: rgba(255,255,255, 0.95);
   opacity: 0;
 }

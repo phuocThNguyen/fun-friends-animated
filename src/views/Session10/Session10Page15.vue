@@ -287,14 +287,15 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try Everyday</h1>
+      <h1>Try Every day</h1>
       <p>&nbsp;&bull; Practise the steps on your Step Plan. If you've
       done all the steps, make a new Step Plan.</p>
       <p>&nbsp;&bull; Notice when others are listening, helping and
       smiling and let them know you like it.</p>
-      <p>&nbsp;&bull; Practise turning 'red' thoughts into 'green' thoughts.</p>
+      <p>&nbsp;&bull; Practise turning '<span class="red">red</span>' thoughts into
+        '<span class="green">green</span>' thoughts.</p>
       <p>&nbsp;&bull; Reward yourself for being BRAVE.</p>
-      <p>&nbsp;&bull; Practise being BRAVE every day:</p>
+      <p>&nbsp;&bull; Practise being BRAVE:</p>
       <p>&middot; Look people in the eye and smile.</p>
       <p>&middot; Use a brave voice and make yourself big.</p>
       <p>&middot; Try your best and give it a go. </p>
@@ -427,6 +428,8 @@ export default {
   width: 110%;
   top: -3vh;
 }
+.green { color: #00CE7C }
+.red { color: #ff0000 }
 tspan { white-space:pre }
 .shp0 { fill: #dcfeff }
 .shp1 { fill: #b6ecf0 }

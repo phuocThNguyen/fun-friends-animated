@@ -212,10 +212,8 @@
       </g>
     </svg>
     <div class="text-box">
-      <p>Let's think about a time that you learnt to do something
-      step by step, until you could do it!</p>
-      <p>Imagine you were learning to ride a bike, or
-      learning to swim, or learning to read and write.</p>
+      <p>Think about a time that you learnt to do something new
+        step by step such as learning to ride a bike.</p>
       <p>Let's draw a step plan, to make it easy.</p>
       <p>Start on the bottom step, climbing slowly to the top.</p>
       <p>It can be easy when we break it into small steps.</p>

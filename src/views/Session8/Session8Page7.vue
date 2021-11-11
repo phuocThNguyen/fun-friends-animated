@@ -2,7 +2,6 @@
   <div class="interactive-container">
     <img src="../../assets/images/session8/3360.png" alt="Annie-family" class="session-background">
     <div class="text-box">
-      <h1>Annie would like to play</h1>
       <p>Annie would like to play, but she doesn't have anyone
        to play with. How do you think Annie is feeling?
       <br>If you were Annie, what could you do to play with
@@ -92,10 +91,6 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.text-box h1 {
-  font-size: 3vh;
-  margin-bottom: .5vh;
 }
 .text-box p {
   font-size: 2.4vh;

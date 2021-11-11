@@ -199,8 +199,7 @@
     <p class="title"><span id="letter-f">E</span>xplore</p>
     <p class="text" id="line-1">
       Today we will keep exploring ways to be BRAVE.
-      <br>We will think about how we can break hard
-      <br>things down into many easier steps.
+      <br>We can break hard things down into many easier steps.
     </p>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3">

@@ -199,10 +199,10 @@
     <p class="title"><span id="letter-f">I</span> can try</p>
     <p class="text" id="line-1">Today we will think about
       two different kinds of thoughts –
-      '<span class="green">green</span>' thoughts that
+      '<span class="green">green</span>' <strong>thoughts</strong> that
       help us feel strong inside, keep us going, and
       let us have fun, and '<span class="red">red</span>'
-      thoughts that stop us all from trying to be brave.</p>
+      <strong>thoughts</strong> that stop us all from trying to be brave.</p>
     <p class="text" id="line-2">How can thoughts be turned
       '<span class="red">red</span>' or
       '<span class="green">green</span>'? As a group,

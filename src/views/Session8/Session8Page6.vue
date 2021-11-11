@@ -862,7 +862,7 @@
       Sometimes others don't feel like playing and that is OK.
       There are other children who will feel like it,
       you just have to find them. Find a classmate and think
-      about a Coping Step Plan to make new friends together.
+      about a <strong>STEP PLAN</strong> to make new friends together.
     </div>
   </div>
 </template>

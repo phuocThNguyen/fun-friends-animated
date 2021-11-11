@@ -2,7 +2,6 @@
   <div class="interactive-container">
     <img src="../../assets/images/session4/22061-resized.jpg" alt="body-clues" class="session-background">
     <div class="text-box">
-      <h1>Additional Activity &ndash; Body Clues</h1>
       <p>Zoe is playing on the new playground,
        she is feeling excited but also scared.</p>
       <p>What might be her body clues? Drag the
@@ -254,12 +253,12 @@ export default {
       .add({
         targets: '.clues-sources',
         opacity: 1,
-        delay: 3000
+        delay: 2000
       })
       .add({
         targets: '.answers',
         opacity: 1,
-        delay: 3000
+        delay: 2000
       }, 1500)
   },
   watch: {
@@ -376,7 +375,6 @@ export default {
   padding: 1.4vh;
   margin-bottom: 1vh;
 }
-h1 { font-size: 4.5vh;margin-bottom: 0; }
 p { font-size: 3.2vh;margin-bottom: 0; }
 .text-box {
   position: absolute;

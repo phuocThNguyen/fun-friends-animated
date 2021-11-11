@@ -7,9 +7,9 @@
         bears all of their favourite FRIENDS games and
         activities.</p>
       <p>Pair up with a friend and take turns naming some of
-        your favourite FRIENDS games and activities you want
+        your favourite FRIENDS games and activities that you want
         to try again together. You can write them in the balloons
-        in the next page.</p>
+        on the next page.</p>
     </div>
     <div class="js-container animation-container"></div>
     <svg class="balloons" id="blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188 358" width="188" height="358">

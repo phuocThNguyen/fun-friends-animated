@@ -5,10 +5,10 @@
         '<span class="green">Green</span>' thoughts:
         <br>Getting along
       </h1>
-      <p>Annie’s brother, Tom, has knocked over Annie’s block
-        building that took her a long time to build. Think about
-        it with a friend. What could Annie be feeling?</p>
-      <p>What may be some '<span class="red">red</span>' thoughts?</p>
+      <p>Tom, has knocked over Annie’s block
+        building that took her a long time to build.
+        What could Annie be feeling?</p>
+      <p>What are some '<span class="red">red</span>' thoughts?</p>
       <p>What can Annie do if she is having '<span class="red">red</span>'
         thoughts? As a group, can you think of some
         '<span class="green">green</span>' thoughts

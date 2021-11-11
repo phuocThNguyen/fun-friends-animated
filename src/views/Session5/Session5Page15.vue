@@ -796,7 +796,7 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try Everyday</h1>
+      <h1>Try Every day</h1>
       <p>&nbsp;&bull; Talk about '<span class="red">red</span>' and
         '<span class="green">green</span>' thoughts and
         practise understanding them as much as possible.
@@ -806,7 +806,7 @@
         '<span class="green">green</span>' thoughts than
         '<span class="red">red</span>' thoughts so we can
         feel happier in life and do new things.</p>
-      <p>&nbsp;&bull; Practise being BRAVE every day:</p>
+      <p>&nbsp;&bull; Practise being BRAVE:</p>
       <p>&middot; Look people in the eye and smile.</p>
       <p>&middot; Use a brave voice and make yourself big.</p>
       <p>&middot; Try your best and give it a go. </p>

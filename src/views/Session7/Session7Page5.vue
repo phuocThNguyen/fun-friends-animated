@@ -39,7 +39,7 @@
     </svg>
     <h1 class="title">Coping Step Plan</h1>
     <div class="trophy-container">
-      Goal: Start at new school
+      Goal: Start a new school
     </div>
     <div class="plans" id="step-1">
       <div class="nail first-nail"></div>
@@ -1299,7 +1299,7 @@ export default {
 }
 #koala-sitting {
   height: 15vh;
-  left: 25vh;
+  left: 27vh;
   top: -5.5vh;
   transform: scaleX(-1);
 }

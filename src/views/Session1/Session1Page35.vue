@@ -768,29 +768,27 @@
     <!--  Main content  -->
     <div class="main-content">
       <div class="text-box">
-        <p>Playing on the sand and the ocean is so much fun!</p>
+        <p>Playing on the sand and in the ocean is so much fun!</p>
       </div>
       <div class="para-box">
-        <h1>Do everyday so that your body can grow healthy and happy</h1>
+        <h1>To be healthy and happy, every day we should:</h1>
 
         <h2>Play outside</h2>
         <p>Play outside, run, ride your scooter, ride your bike, climb trees, swim, play ball,
           play jump rope, play hide and seek or any other fun and active games that you
-         and your family can invent. These things will keep your body feeling healthy, strong
-         and will make you happy each day.</p>
+         and your family can invent. These things will keep your body feeling healthy and strong.</p>
 
         <h2>Have plenty of sleep</h2>
-        <p>Sleep is healthy for your body and mind. When you got to sleep at your bedtime
-         and rest well each night, your body grows, heals itself and helps you feel calm, happy and strong.</p>
+        <p>Sleep is healthy for your body and mind. When you go to sleep at your bedtime
+         and rest well, your body grows, heals itself and helps you feel calm, happy and strong.</p>
 
         <h2>Drink and eat healthy food</h2>
-        <p>When you drink plenty of water each day and eat many different healthy natural foods
-         like fruit, vegetables and wholegrain, it helps your body feel stronger and happier.</p>
+        <p>When you drink plenty of water each day and eat many different healthy foods
+         like fruit and vegetables, it helps your body feel stronger and happier.</p>
 
-        <h2>Practise relaxing everyday for 5 minutes without TV or electronics</h2>
-        <p>Relaxing without input like TV and video games, gives your eyes and brain a break
-         and helps you notice other wonderful things in the world around you. Relaxing is
-         healthy for your body, mind and helps you feel calm and peaceful</p>
+        <h2>Practise relaxing everyday for 5 minutes without TV and electronics</h2>
+        <p>Relaxing without TV and electronics, gives your eyes and brain a break.
+          Relaxing is healthy for your body and mind and helps you feel calm and peaceful.</p>
 
         <h2>Pay attention to happy things and what you can see, hear, smell, taste and feel</h2>
         <p>Noticing things around you makes you great at finding beautiful things, and if you

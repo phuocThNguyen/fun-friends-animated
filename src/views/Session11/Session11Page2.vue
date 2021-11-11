@@ -6,8 +6,7 @@
       <p>These children are helping each other to be strong.</p>
       <p>Look around or think about your family. What do people
       do to help you and how do you help them?</p>
-      <p>Compare your ideas with friends, ask them what they
-      think we can do to help each other.</p>
+      <p>Compare your ideas with friends.</p>
     </div>
   </div>
 </template>

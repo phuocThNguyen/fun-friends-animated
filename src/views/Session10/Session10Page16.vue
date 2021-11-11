@@ -287,12 +287,12 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Everyday remember to:</h1>
+      <h1>Every day remember to:</h1>
       <p>&bull; Be kind to all living beings.</p>
       <p>&bull; Play outside.</p>
       <p>&bull; Have plenty of sleep.</p>
       <p>&bull; Drink and eat foods that are healthy.</p>
-      <p>&bull; Practise relaxing every day without screens.</p>
+      <p>&bull; Practise relaxing without screens.</p>
       <p>&bull; Pay attention to happy things and what you
         can see, hear, smell, taste and feel.</p>
       <p>&bull; Say thank you for happy times.</p>

@@ -3,10 +3,9 @@
     <div class="text-box">
       <h1>Additional Activity &ndash; Changing '<span class="red">Red</span>' to
         '<span class="green">Green</span>' Choices</h1>
-      <p>Daniel and Matilda are playing on their scooters in the park.</p>
-      <p>What do you think when you see the picture? Do you think that
-       they are making '<span class="red">red</span>' choices or
-      '<span class="green">green</span>' choices?</p>
+      <p>Daniel and Matilda are playing on their scooters.</p>
+      <p>Do you think that they are making '<span class="red">red</span>'
+        choices or '<span class="green">green</span>' choices?</p>
     </div>
     <img src="../../assets/images/session6/Scooter_Girl.png" alt="scooter-girl" class="images">
     <img src="../../assets/images/session6/Best-Kick-Scooter-for-Kids.png" alt="scooters-and-kids" class="images">

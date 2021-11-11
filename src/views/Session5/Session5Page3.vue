@@ -2,14 +2,10 @@
   <div class="interactive-container">
     <img src="../../assets/images/session5/447.png" alt="red" class="session-background">
     <div class="text-box">
-      <h1>Changing '<span class="red">Red</span>' to
-        '<span class="green">Green</span>' Thoughts</h1>
-      <p><strong>Starting a new school</strong></p>
-      <p>Mum is taking Lucy to her new
-        school. In this picture, she feels
-        sad and scared. Why do you
-        think she feels sad and scared?
-        How do you think mum feels?</p>
+      <p>Lucy is starting a new school and she feels sad and scared.
+        Why do you think she feels sad and scared?
+        How do you think her mum feels?
+      </p>
       <p>Is Lucy having '<span class="red">red</span>' or
         '<span class="green">green</span>' thoughts?</p>
     </div>
@@ -284,10 +280,6 @@ export default {
   left: 3%;
   background-color: rgba(255,255,255, 0.9);
   opacity: 0;
-}
-.text-box h1 {
-  font-weight: bold;
-  font-size: 4.2vh;
 }
 .text-box p {
   font-size: 2.8vh;

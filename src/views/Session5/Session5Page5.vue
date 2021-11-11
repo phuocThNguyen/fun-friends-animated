@@ -2,11 +2,9 @@
   <div class="interactive-container">
     <img src="../../assets/images/session5/86.png" alt="red" class="session-background">
     <div class="text-box">
-      <h1>Sleeping in her own room</h1>
       <p>Matilda is spending her first night sleeping by herself.</p>
-      <p>How is she feeling in this picture? Is Matilda having
-        '<span class="red">red</span>' or
-        '<span class="green">green</span>' thoughts?</p>
+      <p>How is she feeling? Is Matilda having '<span class="red">red</span>'
+        or '<span class="green">green</span>' thoughts?</p>
     </div>
     <traffic-light
         correctAns="#red-light"
@@ -202,10 +200,6 @@ export default {
   left: 3%;
   background-color: rgba(255,255,255, 0.9);
   opacity: 0;
-}
-.text-box h1 {
-  font-weight: bold;
-  font-size: 4.2vh;
 }
 .text-box p {
   font-size: 2.8vh;

@@ -3,12 +3,11 @@
     <img src="../../assets/images/session3/4829-resized.jpg" alt="little-plants" class="session-background">
     <div class="text-box">
       <h1>Friends and Families</h1>
-      <p>What do you think makes kids helpful
-       and kind?</p>
+      <p>What makes kids helpful and kind?</p>
       <p>Share your ideas with a friend in your
       class. Listen to your friend's opinion.
        It is ok to be different.</p>
-      <p>We plant more trees to be kind to planet Earth</p>
+      <p>We plant trees to be kind to planet Earth</p>
     </div>
   </div>
 </template>

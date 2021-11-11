@@ -5,10 +5,8 @@
         '<span class="green">Green</span>' thoughts:
         <br>Meeting a new teacher
       </h1>
-      <p>Tom is going to meet his new teacher. Let us pretend
+      <p>Tom is going to meet his new teacher. Pretend
         that you are Tom.</p>
-      <p>Talk to those you are with about all the thoughts going
-        through Tom’s head.</p>
       <p>What are some '<span class="red">red</span>' thoughts
         that make you feel worried and scared?</p>
       <p>What are some '<span class="green">green</span>' thoughts
@@ -146,23 +144,19 @@ export default {
         opacity: 1
       })
       .add({
-        targets: text[3],
-        opacity: 1
-      })
-      .add({
         targets: '#top',
         opacity: 1
-      }, 2000)
+      }, 1000)
       .add({
-        targets: text[4],
+        targets: text[3],
         opacity: 1
       })
       .add({
         targets: '#bottom',
         opacity: 1
-      }, 3000)
+      }, 2000)
       .add({
-        targets: text[5],
+        targets: text[4],
         opacity: 1
       })
   }

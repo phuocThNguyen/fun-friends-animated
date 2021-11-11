@@ -816,8 +816,6 @@
 
     <div class="text-box">
       <h1>Additional Activity &ndash; My Step Plan</h1>
-      <p>We are about to make a STEP PLAN for climbing a tree
-       in a park together.</p>
       <p>Daniel, Matilda, and Zoe are learning to climb a tree in the park.
         They feel scared. Poppy is teaching them to do one step at a
         time, starting from the bottom step. Every time they come to the

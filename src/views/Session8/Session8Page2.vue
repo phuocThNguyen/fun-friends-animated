@@ -2,8 +2,8 @@
   <div class="interactive-container">
     <img src="../../assets/images/session8/32050.png" alt="city" class="session-background">
     <div class="text-box">
-      What makes your friends kind? Find a friend in your class
-      and show them or tell them what they do that you find kind.
+      Find a friend in your class and show them or tell them
+      what they do that you find kind.
       Maybe smiling, sharing, helping, listening or laughing?
     </div>
   </div>

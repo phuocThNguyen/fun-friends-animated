@@ -1,9 +1,7 @@
 <template>
   <div class="interactive-container green-background">
     <div class="text-box">
-      <p class="text">
-        We have families. We all love our families and we all share the same feelings.
-      </p>
+      <p class="text">We all love our families and we all share the same feelings.</p>
     </div>
     <div class="items-container">
       <div class="images-container">

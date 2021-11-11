@@ -698,15 +698,14 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try Everyday</h1>
+      <h1>Try Every day</h1>
       <p>&nbsp;&bull; Practise understanding the
         '<span class="red">red</span>' thoughts and
         '<span class="green">green</span>' thoughts you
-        and your family have over the week.</p>
+        and your family have had this week.</p>
       <p>&nbsp;&bull; Practise relaxing every day for at least 10 minutes.
         No distractions such as TV!</p>
-      <p>&nbsp;&bull; Continue praising your child for being BRAVE.</p>
-      <p>&nbsp;&bull; Practise being BRAVE every day:</p>
+      <p>&nbsp;&bull; Practise being BRAVE:</p>
       <p>&middot; Look people in the eye and smile.</p>
       <p>&middot; Use a brave voice and make yourself big.</p>
       <p>&middot; Try your best and give it a go. </p>
@@ -777,11 +776,6 @@ export default {
       })
       .add({
         targets: text[7],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[8],
         opacity: 1,
         delay: 1500
       })

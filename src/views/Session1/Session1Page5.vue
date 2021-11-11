@@ -3,8 +3,7 @@
     <img class="session-background" src="../../assets/images/session1/2749-resized.jpg" alt="annie">
     <div class="text-box">
       <p class="mb-3">Annie loves playing on the swing.</p>
-      <p class="mb-0">What do you like playing with</p>
-      <p class="mb-0">when you are outside?</p>
+      <p class="mb-0">How do you have fun when playing outside?</p>
       <audio autoplay src="../../assets/sounds/session1/playground.mp3"></audio>
     </div>
   </div>

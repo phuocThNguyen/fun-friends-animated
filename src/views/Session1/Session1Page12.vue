@@ -4,9 +4,9 @@
 
     <div class="left-bar">
       <h1>Our families</h1>
-      <p id="para-1">Talk about your family and what you like to do.</p>
-      <p id="para-2">What games do you like to play?</p>
-      <p id="para-3">What do you enjoy doing with your family?</p>
+      <p id="para-1">Talk about your family.</p>
+      <p id="para-2">What games do you like to play together?</p>
+      <p id="para-3">How do you have fun together?</p>
 
       <div class="text-box">
         <p>We love going to the park</p>

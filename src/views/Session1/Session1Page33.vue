@@ -398,8 +398,7 @@
       <p id="para-1">Here is a big shady tree. We know this tree is healthy and
       strong because it has bright green leaves and grows beautiful fruit.</p>
 
-      <p id="para-2">What do you think are some things that this tree needs
-        to keep it growing and healthy?</p>
+      <p id="para-2">What are some things that this tree needs to stay healthy?</p>
     </div>
     <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3">
       Your browser does not support the

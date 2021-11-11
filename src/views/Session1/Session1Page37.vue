@@ -2,13 +2,13 @@
   <div class="interactive-container">
     <img src="../../assets/images/session1/grass-background.jpg" alt="" class="session-background">
     <div class="text-box">
-      <h1>Try Everyday</h1>
-      <p>- If you were grown up for a day, what would you do?</p>
-      <p>- Share your answer with a grown up and ask them to tell you about
+      <h1>Try every day</h1>
+      <p>- If you were a grown up for a day, what would you do?</p>
+      <p>- Share your answer with a grown up and ask them about
         when they were children - what they liked to do, eat and play.</p>
       <p>- Ask them to draw the home they lived in as a child.</p>
-      <p>- Each night tell each other one happy thing about the day.</p>
-      <p>- Everyday practise being BRAVE:</p>
+      <p>- Each night with the love ones, a happy memory from your day.</p>
+      <p>- Practise being BRAVE:</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Look people in the eye and smile.</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Use a brave voice and make yourself big.</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Try your best and give it a go.</p>

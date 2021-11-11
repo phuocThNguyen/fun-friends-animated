@@ -198,8 +198,8 @@
 
     <p class="title"><span id="letter-f">F</span>eelings</p>
     <p class="text" id="line-1">Today we will talk more about paying attention to others' feelings.</p>
-    <p class="text" id="line-2">Together we will get better at understand each other's
-    feelings and helping each other when we are sad, angry, excited, worried or scared.</p>
+    <p class="text" id="line-2">One person acts out a feeling while everyone else tries to guess the feeling.
+      Take turns making up stories to go with the feelings.</p>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3">Your browser does not support the
       <code>audio</code> element.

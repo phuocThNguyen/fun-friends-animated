@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <img src="../../assets/images/session4/717-resized.jpg" alt="playing-sand" class="session-background">
     <div class="text-box">
-      Playing in the sand makes some kids feel calm
+      Does playing in the sand make you feel calm?
     </div>
   </div>
 </template>

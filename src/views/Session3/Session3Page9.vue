@@ -2,14 +2,10 @@
   <div class="interactive-container">
     <img src="../../assets/images/session3/12014-resized.jpg" alt="grandpa-and-grandma-and-annie" class="session-background">
     <div class="text-box">
-      <h1>Grandma and Grandpa walking home</h1>
-      <p>Grandma and Grandpa are coming home after
-      a day out and they are tired.</p>
-      <p>&nbsp;&nbsp;-&nbsp;How do you think they are feeling?</p>
+      <p>Grandma is coming home after
+      a day out and she is tired.</p>
+      <p>&nbsp;&nbsp;-&nbsp;How do you think she is feeling?</p>
       <p>&nbsp;&nbsp;-&nbsp;How can Annie help?</p>
-      <p>Talk to those you're with about how they
-      think Annie is feeling in the pictures.
-      Did you all have the same ideas?</p>
       <p>Helping others is great</p>
     </div>
   </div>
@@ -71,16 +67,12 @@ export default {
   padding: 1vh;
   opacity: 0;
 }
-.text-box h1 {
-  font-size: 3.36vh;
-  font-weight: bold;
-  margin: 1vh 0;
-  opacity: 0;
-}
 .text-box p {
   font-size: 2.66vh;
-  margin-bottom: 2vh;
   opacity: 0;
+}
+.text-box p:first-child {
+  margin-top: 2vh;
 }
 .text-box p:last-child {
   display: inline-block;

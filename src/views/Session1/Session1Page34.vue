@@ -209,9 +209,8 @@
       <p> - What does a tree need to grow big and healthy?</p>
       <p> - What do you need in order to keep growing and be healthy?</p>
       <p> - What kind of tree do you want to be?</p>
-      <p> - Can you show with your body what happens to the tree during winter?</p>
-      <p> - Would it shrink during fall?</p>
-      <p> - How would you show with your body the tree blossoming in spring?</p>
+      <p> - Show with your body what happens to trees during winter!</p>
+      <p> - Show with your body a tree blossoming in spring!</p>
     </div>
     <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3">
       Your browser does not support the

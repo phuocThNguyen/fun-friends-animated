@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <div class="text-box">
       <h1>'Feeling' faces</h1>
-      <p>Sit with a friend and look at all the 'Feeling' faces.</p>
+      <p>Sit with a friend and look at the 'Feeling' faces.</p>
       <p>What could they be feeling?</p>
       <p>Take turns and make sure to listen to your friend.
         <br>Remember, we all think differently.</p>

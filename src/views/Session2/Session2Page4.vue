@@ -7,7 +7,8 @@
       <img src="../../assets/images/session2/607-resized.jpg" alt="happy" />
     </div>
     <div class="text-box">
-      Drag the emotions to the correct picture.
+      Drag each feeling onto the correct face.
+      The green tick will appear when the answer is correct.
     </div>
 
     <draggable class="emotions" id="emotions-source" v-model="emotions" group="emotions">
@@ -549,7 +550,7 @@ export default {
   position: absolute;
   width: 25%;
   height: 36vh;
-  top: 20vh;
+  top: 30vh;
   left: 0.5%;
   background-color: rgba(255,255,255,1);
   z-index: 10;
@@ -575,7 +576,7 @@ export default {
   width: 25vh;
 }
 #emotions-source {
-  top: 20vh;
+  top: 30vh;
 }
 #emotion-sad {
   left: 32%;

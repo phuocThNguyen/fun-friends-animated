@@ -2,9 +2,8 @@
   <div class="interactive-container">
     <img src="../../assets/images/session10/1354.png" alt="background" class="session-background">
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
-    <p class="text">If you want, give yourself a superhero name.
-     You can write it on our paper, share it with your classmates
-     or draw a picture of your costume! Share it with your classmates.
+    <p class="text">Give yourself a superhero name and draw a picture of your costume.
+      Share it with your classmates
     </p>
     <audio autoplay loop src="../../assets/sounds/children-background-music/snack-time-the-green-orbs-children-s-music-no-copyright-music.mp3"></audio>
   </div>

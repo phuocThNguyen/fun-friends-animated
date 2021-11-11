@@ -4,9 +4,8 @@
     <div class="left-bar">
       <h1>Meet Tom</h1>
       <p id="para-1">Meet Tom!</p>
-      <p id="para-2">It is Tom's birthday today.</p>
-      <p id="para-3">He is adopting Chilli and Pepper,
-        the rescue dogs for his birthday.</p>
+      <p id="para-2">Today is Tom’s birthday.</p>
+      <p id="para-3">He is adopting two rescue dogs, Chilli and Pepper.</p>
       <p id="para-4">Tom wants to give Chilli and Pepper a loving home.</p>
       <p id="para-5">Would you like to adopt a rescue animal for
         your birthday?</p>

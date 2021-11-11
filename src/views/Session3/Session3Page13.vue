@@ -3,10 +3,8 @@
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
     <div class="white-background">
       <div class="text-box">
-        <p>If you want to, say what you are blowing
-          away as your bubbles pop.</p>
-        <p>If you don't want to say it out loud, draw
-          your feelings in the bubbles below.</p>
+        <p>As your bubbles pop, share what feelings you are
+          blowing away or draw your feelings below.</p>
       </div>
     </div>
     <audio autoplay loop src="../../assets/sounds/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3"></audio>
@@ -65,14 +63,14 @@ export default {
   align-items: center;
 }
 .text-box {
-  width: 80%;
+  width: 90%;
   background-color: #000000;
   padding: 1.4vh;
   opacity: 0;
+  text-align: center;
 }
 .text-box p {
   color: #ffffff;
-  text-align: center;
   font-size: 2.8vh;
   margin-bottom: 0;
 }

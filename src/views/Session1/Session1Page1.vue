@@ -197,9 +197,8 @@
     </svg>
 
     <p class="question question-1">
-      <span class="question1-part1 mr-2 d-inline">In what ways</span>
-      <span class="question1-part2 mr-2 d-inline">are your home</span>
-      <span class="question1-part3 d-inline">and family different?</span>
+      <span class="question1-part1 mr-2 d-inline">How are your home</span>
+      <span class="question1-part2 mr-2 d-inline">and family different?</span>
     </p>
     <p class="question question-2">
       <span class="question2-part1 mr-2 d-inline">How do you practice being brave</span>
@@ -262,25 +261,19 @@ export default {
     // Question 1
     const q1p1 = new Letterize({targets: ".question1-part1"});
     const q1p2 = new Letterize({targets: ".question1-part2"});
-    const q1p3 = new Letterize({targets: ".question1-part3"});
 
     const question1_animation = anime.timeline();
     question1_animation
-        .add({
-          targets: q1p1.listAll,
-          color: '#000',
-          delay: anime.stagger(70)
-        })
-        .add({
-          targets: q1p2.listAll,
-          color: '#000',
-          delay: anime.stagger(70)
-        }, '-=500')
-        .add({
-          targets: q1p3.listAll,
-          color: '#000',
-          delay: anime.stagger(70)
-        }, '-=500');
+      .add({
+        targets: q1p1.listAll,
+        color: '#000',
+        delay: anime.stagger(70)
+      })
+      .add({
+        targets: q1p2.listAll,
+        color: '#000',
+        delay: anime.stagger(70)
+      }, '-=500')
 
     // Question 2
     const q2p1 = new Letterize({targets: ".question2-part1"});
@@ -400,7 +393,7 @@ tspan { white-space:pre }
 }
 .question-1 {
   top: 35vh;
-  left: 18%;
+  left: 23%;
 }
 .question-2 {
   top: 43vh;

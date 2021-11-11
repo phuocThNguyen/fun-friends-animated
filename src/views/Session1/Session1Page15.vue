@@ -204,8 +204,8 @@
 
     <!--  Main content  -->
     <div class="main-content">
-      <h1 class="requires">Draw a picture of your family here. Put in those who live
-        with you and those who don't. Put in the animals and plants you love too.</h1>
+      <h1 class="requires">Draw a picture of your family
+        including the animals and plants you love too.</h1>
       <div class="text-box">
         <p>Talk with your friends about your picture.</p>
 

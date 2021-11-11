@@ -1040,10 +1040,9 @@
       </g>
     </svg>
     <div class="text-box">
-      <p>Here are some examples of Step Plans that other kids
+      <p>Here are some examples of <strong>STEP PLAN</strong> that other kids
         have used to be brave!</p>
       <p>What is something you want to do or create?
-        What do you need to make it real?
         Can you break this down into small easy steps?</p>
     </div>
   </div>
@@ -1086,7 +1085,7 @@ export default {
   width: 72%;
   padding: 5vh 2.6vh;
   font-size: 3.4vh;
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255,0.95);
   text-align: center;
   opacity: 0;
 }

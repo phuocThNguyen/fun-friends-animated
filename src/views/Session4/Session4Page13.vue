@@ -2,7 +2,6 @@
   <div class="interactive-container">
     <img src="../../assets/images/session4/41068-resized.jpg" alt="exploring" class="session-background">
     <div class="title">
-      <h1>Exploring the World with Five Senses</h1>
       <p>Practise exploring with your five senses, everywhere you go.</p>
     </div>
     <div class="text-box">
@@ -30,13 +29,13 @@ export default {
 </script>
 
 <style scoped>
-h1 { font-size: 4.5vh; }
-p { font-size: 3.2vh;margin-bottom: 0; }
+p {margin-bottom: 0;}
 .title {
   position: absolute;
   top: 1vh;
   left: 1%;
   padding: 1.4vh;
+  font-size: 3.8vh
 }
 .text-box {
   position: absolute;
@@ -46,5 +45,7 @@ p { font-size: 3.2vh;margin-bottom: 0; }
   bottom: 5vh;
   right: 10%;
   opacity: 0;
+  font-size: 3.2vh;
+  margin-bottom: 0;
 }
 </style>

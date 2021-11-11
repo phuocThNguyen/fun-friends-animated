@@ -713,11 +713,11 @@
       </svg>
       <div class="star-text">
         <p><strong>Bright Star Idea</strong></p>
-        <p>Play a game with someone
-          <br>in your family where you
-          <br>take turns calling out
+        <p>New family game:
+          <br>take turns to call out
           <br>things that make
-          <br>you happy.</p>
+          <br>you happy.
+        </p>
       </div>
     </div>
   </div>
