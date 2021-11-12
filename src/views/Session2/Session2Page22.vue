@@ -1348,7 +1348,7 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Remember to:</h1>
+      <h1>Everyday remember to:</h1>
       <p>&nbsp;- Be kind to all living beings.</p>
       <p>&nbsp;- Play outside.</p>
       <p>&nbsp;- Have plenty of sleep.</p>
@@ -1473,19 +1473,18 @@ export default {
   background-color: rgba(255,255,255,0.9);
   width: 47%;
   height: auto;
-  left: 2%;
-  top: 2vh;
+  left: 1%;
+  top: 1vh;
   padding: 2vh;
   opacity: 0;
 }
 .text-box h1 {
-  text-align: center;
   margin-bottom: 1vh;
-  font-size: 4.2vh;
+  font-size: 5vh;
 }
 .text-box p {
   margin-bottom: 1vh;
-  font-size: 3vh;
+  font-size: 3.8vh;
   opacity: 0;
 }
 .landscape {

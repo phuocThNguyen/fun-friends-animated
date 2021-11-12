@@ -196,8 +196,8 @@ export default {
 <style scoped>
 .instruction {
   position: absolute;
-  top: 2vh;
-  right: 2%;
+  top: 1vh;
+  right: 1%;
 }
 .reward {
   position: absolute;
@@ -210,7 +210,7 @@ export default {
 }
 .question {
   position: absolute;
-  top: 40vh;
+  top: 36vh;
   left: .5%;
 }
 .image {
@@ -221,18 +221,18 @@ export default {
 }
 .text-box {
   position: absolute;
-  width: 55%;
+  width: 65%;
   z-index: 10;
-  padding: 2%;
+  padding: 1vh 2vh;
   opacity: 0;
   color: #000000;
 }
 .text-box h1 {
-  font-size: 4.2vh;
+  font-size: 6vh;
   margin-bottom: 1vh;
 }
 .text-box p {
-  font-size: 2.8vh;
+  font-size: 4vh;
   margin-bottom: 1vh;
 }
 .text {
@@ -243,14 +243,14 @@ export default {
   color: #ffffff;
   opacity: 1 ;
   padding: 1vh 2.1vh;
-  font-size: 3.5vh;
+  font-size: 4vh;
   font-weight: bold;
   z-index: 10;
 }
 .sticker {
   position: absolute;
   width: auto;
-  height: 20vh;
+  height: 30vh;
   top: 5vh;
   left: 50%;
   z-index: 50;

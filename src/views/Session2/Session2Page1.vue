@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <img class="session-background" src="../../assets/images/session2/640-resized.jpg" alt="swimming">
     <div class="text-box">
-      <p>Swimming makes me feel happy</p>
+      <p>Swimming makes me feel happy.</p>
     </div>
   </div>
 </template>
@@ -25,7 +25,7 @@ export default {
 }
 .text-box p {
   color: white;
-  font-size: 3.8vh;
+  font-size: 6vh;
   font-weight: bold;
   margin-bottom: 0;
 }

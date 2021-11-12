@@ -160,18 +160,18 @@ export default {
   flex-direction: row;
   justify-content: space-around;
   color: #ffffff;
-  font-size: 3.2vh;
+  font-size: 5vh;
   font-weight: bold;
-  margin: 0 1vw;
+  padding: 0 1.7vh;
   text-align: center;
 }
 .tips-container p {
   margin-bottom: 0;
   display: inline-block;
-  width: 11.2vh;
+  width: 14vh;
 }
 .content-container {
-  background-color: rgba(0, 206, 124, 0.8);
+  background-color: rgba(0, 206, 124, 0.9);
   border-radius: 30px;
   padding-top: 1vh;
   width: 60%;

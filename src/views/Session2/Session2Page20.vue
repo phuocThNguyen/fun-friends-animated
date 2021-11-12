@@ -417,25 +417,24 @@ export default {
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  padding: 0 .7vh;
-  top: 5.5vh;
+  padding: 0 0.7vh;
+  top: 5.4vh;
 }
 .masks-container div {
   width: 7vh;
   height: 7vh;
-  background-color: rgba(0,0,0,0);
 }
 .tips-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   color: #ffffff;
-  font-size: 2.1vh;
-  font-weight: bold;
-  margin: 0 .7vh;
+  padding: 0 0.7vh;
   text-align: center;
 }
 .tips-container p {
+  font-size: 3vh;
+  font-weight: bold;
   margin-bottom: 0;
   display: inline-block;
   width: 9.8vh;
@@ -446,14 +445,14 @@ export default {
   border-radius: 30px;
   padding-top: 1vh;
   width: 34%;
-  bottom: 4vh;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   opacity: 0;
 }
 .content-container h1 {
   text-align: center;
-  font-size: 2.8vh;
+  font-size: 3.5vh;
   color: #ffffff;
 }
 .emotes-container {
@@ -461,7 +460,7 @@ export default {
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
-  margin: 0 .7vh;
+  margin: 0 .7vw;
 }
 .emotes {
   height: auto;
@@ -475,7 +474,7 @@ export default {
   margin: 0 .7vh .5vh .7vh;
 }
 .small-tick {
-  width: 4.2vh;
+  width: 5vh;
   height: auto;
   opacity: 0;
 }
@@ -488,9 +487,9 @@ export default {
 .sticker {
   position: absolute;
   width: auto;
-  height: 20vh;
+  height: 30vh;
   top: 19vh;
-  left: 42%;
+  left: 38%;
   z-index: 50;
   opacity: 0;
 }

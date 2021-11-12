@@ -465,7 +465,7 @@ export default {
     anime({
       targets: '.emotions-mask',
       translateY: 0.4 * vh,
-      duration: 3000,
+      duration: 2500,
       delay: 500,
       easing: 'linear'
     })
@@ -498,13 +498,13 @@ export default {
 }
 .text-box {
   position: absolute;
-  font-size: 3.3vh;
+  font-size: 4vh;
   background-color: rgba(0, 206, 124, 0.9);
   top: 1vh;
   left: 1%;
   color: #ffffff;
   width: 25%;
-  padding: 1.5vh;
+  padding: .5vh 1vh;
 }
 .tick {
   position: absolute;
@@ -549,8 +549,8 @@ export default {
 .emotions-mask {
   position: absolute;
   width: 25%;
-  height: 36vh;
-  top: 30vh;
+  height: 40vh;
+  top: 38vh;
   left: 0.5%;
   background-color: rgba(255,255,255,1);
   z-index: 10;
@@ -567,7 +567,7 @@ export default {
   z-index: 10;
 }
 .emotions-item {
-  font-size: 3.3vh;
+  font-size: 4vh;
   padding: .5vh;
   text-align: center;
   color: #ffffff;
@@ -576,7 +576,7 @@ export default {
   width: 25vh;
 }
 #emotions-source {
-  top: 30vh;
+  top: 40vh;
 }
 #emotion-sad {
   left: 32%;

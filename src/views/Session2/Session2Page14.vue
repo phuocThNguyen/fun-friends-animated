@@ -191,7 +191,7 @@ export default {
 .sticker {
   position: absolute;
   width: auto;
-  height: 20vh;
+  height: 30vh;
   top: 14vh;
   right: 2%;
   z-index: 50;

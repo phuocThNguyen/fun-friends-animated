@@ -1417,21 +1417,21 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.9);
-  width: 70%;
+  width: 90%;
   height: auto;
-  left: 15%;
-  top: 12vh;
+  left: 5%;
+  top: 2vh;
   padding: 4.2vh;
   opacity: 0;
 }
 .text-box h1 {
   text-align: center;
-  margin-bottom: 2vh;
-  font-size: 5.6vh;
+  margin-bottom: 1vh;
+  font-size: 7vh;
 }
 .text-box p {
   margin-bottom: 3vh;
-  font-size: 2.8vh;
+  font-size: 4vh;
   opacity: 0;
 }
 .text-box p:nth-child(4),

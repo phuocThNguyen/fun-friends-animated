@@ -283,10 +283,10 @@ export default {
   font-family: 'Sigmar One', cursive;
   position: absolute;
   color: white;
-  font-size: 6.8vh;
+  font-size: 12vh;
   -webkit-text-stroke: 0.1vw black;
-  left: 35%;
-  top: 29vh;
+  left: 26%;
+  top: 26vh;
   opacity: 0;
 }
 #letter-f {
@@ -295,19 +295,19 @@ export default {
 .text {
   position: absolute;
   margin-bottom: 0;
-  font-size: 3vh;
+  font-size: 5vh;
   color: #ffffff;
 }
 #line-1 {
   text-align: center;
-  width: 66%;
-  left: 16%;
-  top: 40vh;
+  width: 98%;
+  left: 1%;
+  top: 42vh;
 }
 #line-2 {
   text-align: center;
   width: 90%;
-  top: 53vh;
+  top: 58vh;
   left: 5%;
   font-weight: bold;
 }
@@ -365,10 +365,10 @@ tspan { white-space:pre }
 }
 .big-cloud {
   position: absolute;
-  width: 90%;
+  width: 110%;
   height: auto;
-  top: 20vh;
-  left: 5%;
+  top: 16vh;
+  left: -5%;
 }
 .long-cloud {
   width: 130%;

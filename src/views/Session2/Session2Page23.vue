@@ -1434,17 +1434,17 @@ export default {
 <style scoped>
 .canvas {
   position: absolute;
-  top: 2vh;
-  left: 43%;
+  top: 1vh;
+  right: 1%;
   opacity: 0;
   z-index: 100;
 }
 .star-container {
   position: absolute;
-  top: 20vh;
-  left: 1%;
-  width: 40%;
-  height: 40vh;
+  top: 10vh;
+  left: -2%;
+  width: 45%;
+  height: 57vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1457,7 +1457,7 @@ export default {
   margin-top: 18%;
 }
 .star-text p {
-  font-size: 3vh;
+  font-size: 3.5vh;
 }
 .star-text p:first-child {
   margin-bottom: 0;

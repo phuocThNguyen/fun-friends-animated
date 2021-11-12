@@ -35,15 +35,15 @@ export default {
 <style scoped>
 .instruction-container {
   background-color: #00ce7c;
-  padding: 1.6vh;
+  padding: 1vh;
 }
 .instruction-container p {
   color: #ffffff;
   margin-bottom: 0;
-  font-size: 2.3vh;
+  font-size: 3vh;
 }
 .instruction-container p:first-child {
-  font-size: 2.8vh;
+  font-size: 3.5vh;
   font-weight: bold;
 }
 .instruction-container p:nth-child(2),

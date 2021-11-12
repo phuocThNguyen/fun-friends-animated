@@ -30,9 +30,9 @@ export default {
   padding: 1.5vh;
   text-align: center;
   bottom: 5vh;
-  width: 70%;
-  left: 15%;
-  font-size: 3.5vh;
+  width: 86%;
+  left: 7%;
+  font-size: 4.5vh;
   font-weight: bold;
   opacity: 1;
 }

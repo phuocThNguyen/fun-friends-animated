@@ -48,18 +48,18 @@ export default {
   position: absolute;
   z-index: 100;
   background-color: #ffffff;
-  width: 27%;
-  padding: 2.8vh;
+  width: 32%;
+  padding: 1vh 2vh;
   top: 1vh;
-  left: 5%;
+  left: 1%;
 }
 .text-box h1 {
   font-size: 5vh;
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
 }
 .text-box p {
-  font-size: 2.6vh;
-  margin-bottom: 1vh;
+  font-size: 3.5vh;
+  margin-bottom: 0;
 }
 .text-box p:nth-child(3) {
   color: #d00000;

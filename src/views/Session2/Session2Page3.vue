@@ -60,17 +60,17 @@ export default {
 }
 .text-box {
   position: absolute;
-  padding: 3.8vh;
+  padding: .5vh 1vh;
   width: 40%;
 }
 .text-box h1 {
   font-weight: bold;
-  font-size: 4.8vh;
-  margin-bottom: 5vh;
+  font-size: 8vh;
+  margin-bottom: .5vh;
 }
 .text-box p {
-  font-size: 2.8vh;
-  margin-bottom: 3vh;
+  font-size: 4vh;
+  margin-bottom: 1vh;
   color: #ffffff;
 }
 .extra-box {
@@ -78,9 +78,9 @@ export default {
   background-color: #00ce7c;
   opacity: 0;
   font-weight: bold;
-  font-size: 3.3vh !important;
-  padding: 2.3vh;
+  font-size: 4vh !important;
+  padding: 2vh;
   text-align: center;
-  margin-top: 10vh;
+  margin-top: 2vh;
 }
 </style>
