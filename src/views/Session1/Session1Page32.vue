@@ -1140,7 +1140,7 @@
         <p id="q2"> - Talk about your favourite food and what it tastes like.</p>
         <p id="q3"> - Share a happy time, a sad time and what made you feel better!</p>
         <p id="q4"> - What is special about each of your friends?</p>
-        <p id="q5"><strong>Being different is beautiful!</strong></p>
+        <p id="q5"><strong>Being different is ok!</strong></p>
       </div>
     </div>
     <drawing-canvas class="canvas" :canvasStyle="canvasStyle"/>
@@ -1160,8 +1160,8 @@ export default {
   data() {
     return {
       canvasStyle: {
-        width: 0.54,
-        height: 0.68,
+        width: 0.555,
+        height: 0.7,
         isPicture: false,
       }
     }
@@ -1238,15 +1238,15 @@ export default {
 <style scoped>
 .main-content {
   position: absolute;
-  left: 1%;
-  top: 2vh;
+  left: .5%;
+  top: 1vh;
   width: 43%;
   z-index: 50;
 }
 .main-content h1 {
   background-color: #000000;
   color: #ffffff;
-  font-size: 3vh;
+  font-size: 4vh;
   width: 100%;
   height: auto;
   padding: 1.5vh;
@@ -1260,7 +1260,7 @@ export default {
   padding: 2.6vh;
   height: auto;
   opacity: 0;
-  font-size: 2.7vh;
+  font-size: 4vh;
   color: #ffffff;
 }
 .text-box p {
@@ -1276,8 +1276,8 @@ export default {
 }
 .canvas {
   position: absolute;
-  top: 2vh;
-  left: 45%;
+  top: 1vh;
+  right: .5%;
   opacity: 0;
   z-index: 100;
 }

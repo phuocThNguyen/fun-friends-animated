@@ -60,7 +60,7 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  width: 26%;
+  width: 50%;
   height: 100%;
   background-color: #ffffff;
   z-index: 10;
@@ -68,16 +68,16 @@ export default {
   padding: 3vh 2vh;
 }
 .left-bar h1 {
-  font-size: 5vh;
+  font-size: 7vh;
   margin-bottom: 3vh;
 }
 .left-bar p {
   color: #ffffff;
-  font-size: 2.8vh;
+  font-size: 5vh;
 }
 .text-box {
   height: auto;
-  width: 70%;
+  width: 98%;
   padding: 1.5vh;
   background-color: #00ce7c;
   display: flex;
@@ -86,7 +86,7 @@ export default {
   align-items: center;
   position: absolute;
   bottom: 15vh;
-  left: 15%;
+  left: 1%;
   opacity: 0;
 }
 .text-box p {

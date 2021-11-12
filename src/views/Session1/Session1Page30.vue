@@ -8,8 +8,7 @@
     </div>
     <div class="text-box">
       <p class="text">
-        <span>Our clothes may be different,</span>
-        <span> but it is all so cool.</span>
+        <span>It is fun that we are different.</span>
       </p>
     </div>
   </div>
@@ -52,7 +51,7 @@ export default {
 }
 .text-box {
   position: absolute;
-  left: 19%;
+  left: 16%;
   top: 42vh;
   z-index: 20;
   background-color: #00CE7C;
@@ -64,7 +63,7 @@ export default {
 .text {
   font-weight: bold;
   color: #ffffff;
-  font-size: 3.5vh;
+  font-size: 6vh;
   margin-bottom: 0;
 }
 </style>

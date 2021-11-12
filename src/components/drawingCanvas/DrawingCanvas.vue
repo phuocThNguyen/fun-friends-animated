@@ -124,13 +124,13 @@ export default {
 }
 .btn-style {
   background-color: #00ce7c;
-  margin: 0 .5%;
+  margin: 0 .5% 1% .5%;
   border: none;
-  padding: 0 2%;
-  height: 4vh;
+  padding: 0 3% 0 3%;
+  height: 5vh;
   border-radius: 5px;
   color: #ffffff;
-  font-size: 2vh;
+  font-size: 3vh;
   font-weight: bold;
   box-shadow: 0 9px #999;
 }
@@ -166,7 +166,7 @@ label {
   height: 38px;
   line-height: 38px;
   text-align: center;
-  font-size: 2vh;
+  font-size: 2.5vh;
   text-transform: uppercase;
 }
 .color {

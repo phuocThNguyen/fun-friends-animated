@@ -22,7 +22,6 @@ export default {
   name: "Session1Page3",
   mounted() {
     let para = document.getElementsByClassName('left-bar')[0].children;
-    let vw = document.querySelector('.interactive-container').clientWidth;
     let initAnimation = anime.timeline({
       easing: 'linear'
     });
@@ -34,43 +33,38 @@ export default {
         duration: 500,
       })
       .add({
-        targets: "#pic",
-        translateX: 0.1 * vw,
-        duration: 500
-      },1000)
-      .add({
         targets: para[0],
-        color: '#000',
+        opacity: 1,
         duration: 500,
         delay: 1000,
       })
       .add({
         targets: para[1],
-        color: '#000',
+        opacity: 1,
         duration: 300,
         delay: 500,
       })
       .add({
         targets: para[2],
-        color: '#000',
+        opacity: 1,
         duration: 300,
         delay: 1000,
       })
       .add({
         targets: para[3],
-        color: '#000',
+        opacity: 1,
         duration: 300,
         delay: 1000,
       })
       .add({
         targets: para[4],
-        color: '#000',
+        opacity: 1,
         duration: 300,
         delay: 1000,
       })
       .add({
         targets: para[5],
-        color: '#000',
+        opacity: 1,
         duration: 300,
         delay: 1000,
       })
@@ -83,23 +77,23 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  width: 28%;
+  width: 60%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: rgba(255,255,255,0.85);
   z-index: 10;
   opacity: 0;
-  padding: 2vh;
+  padding: 1vh;
 }
 .left-bar p,
 .left-bar h1 {
-  color: #ffffff;
+  opacity: 0;
 }
 .left-bar p {
-  font-size: 2.5vh;
-  margin-bottom: 2vh;
+  font-size: 5.5vh;
+  margin-bottom: 0;
 }
 .left-bar h1 {
-  font-size: 5vh;
-  margin: 3vh 0;
+  font-size: 8vh;
+  margin: 0;
 }
 </style>

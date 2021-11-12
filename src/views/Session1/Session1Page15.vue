@@ -213,7 +213,6 @@
         and what you like to do together.</p>
         <p id="q2"> - Remember to talk about the happy times.</p>
         <p id="q3"> - Be kind and listen carefully when it's their turn to talk.</p>
-        <p id="q4"> - What does your family look like?</p>
         <p id="q5"> - Talk about a different family and how you can make friends.</p>
       </div>
     </div>
@@ -234,7 +233,7 @@ export default {
   data() {
     return {
       canvasStyle: {
-        width: 0.65,
+        width: 0.68,
         height: 0.7,
         isPicture: false,
       }
@@ -333,13 +332,13 @@ export default {
 .canvas {
   position: absolute;
   top: 2vh;
-  left: 33%;
+  right: .5%;
   z-index: 100;
   opacity: 0;
 }
 .main-content {
   position: absolute;
-  left: 1%;
+  left: .5%;
   top: 2vh;
   width: 30%;
   z-index: 50;
@@ -347,7 +346,7 @@ export default {
 .main-content h1 {
   background-color: #000000;
   color: #ffffff;
-  font-size: 2.6vh;
+  font-size: 3.5vh;
   width: 100%;
   height: auto;
   padding: 1.5vh;
@@ -358,13 +357,13 @@ export default {
 }
 .text-box {
   background-color: #ffffff;
-  padding: 2.5vh;
+  padding: 1vh;
   height: auto;
   opacity: 0;
-  font-size: 2.5vh;
+  font-size: 3vh;
 }
 .text-box p {
-  margin-bottom: 1vh;
+  margin-bottom: 0;
 }
 .text-box p:first-child {
   font-weight: bold;

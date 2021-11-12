@@ -202,7 +202,7 @@
     </p>
     <p class="question question-2">
       <span class="question2-part1 mr-2 d-inline">How do you practice being brave</span>
-      <span class="question2-part2 mr-2 d-inline">when you feel scared?</span>
+      <br><span class="question2-part2 mr-2 d-inline">when you feel scared?</span>
     </p>
     <p class="question question-3"><strong>FUN FRIENDS can help you learn.</strong></p>
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3">
@@ -303,6 +303,7 @@ export default {
 </script>
 
 <style scoped>
+p { margin-bottom: 0 }
 span {
   display: inline-block;
 }
@@ -357,10 +358,10 @@ tspan { white-space:pre }
 }
 .big-cloud {
   position: absolute;
-  width: 90%;
+  width: 110%;
   height: auto;
-  top: 20vh;
-  left: 5%;
+  top: 16vh;
+  left: -2%;
 }
 .long-cloud {
   width: 130%;
@@ -386,21 +387,21 @@ tspan { white-space:pre }
 }
 .question {
   text-align: center;
-  font-size: 4vh;
+  font-size: 7vh;
   position: absolute;
   color: #fff;
   width: auto;
 }
 .question-1 {
-  top: 35vh;
-  left: 23%;
+  top: 30vh;
+  left: 8%;
 }
 .question-2 {
-  top: 43vh;
+  top: 40vh;
   left: 14%;
 }
 .question-3 {
-  top: 51vh;
-  left: 26%;
+  top: 60vh;
+  left: 12%;
 }
 </style>

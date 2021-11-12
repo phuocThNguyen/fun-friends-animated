@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <img class="session-background" src="../../assets/images/session1/2749-resized.jpg" alt="annie">
     <div class="text-box">
-      <p class="mb-3">Annie loves playing on the swing.</p>
+      <p class="mb-0">Annie loves playing on the swing.</p>
       <p class="mb-0">How do you have fun when playing outside?</p>
       <audio autoplay src="../../assets/sounds/session1/playground.mp3"></audio>
     </div>
@@ -30,7 +30,7 @@ export default {
 .text-box {
   height: auto;
   width: auto;
-  background-color: #00ce7c;
+  background-color: rgba(0, 206, 124, 0.95);
   position: absolute;
   top: 2vh;
   left: 2%;
@@ -41,6 +41,6 @@ export default {
   color: #ffffff;
   font-weight: bold;
   display: flex;
-  font-size: 3.5vh;
+  font-size: 6vh;
 }
 </style>

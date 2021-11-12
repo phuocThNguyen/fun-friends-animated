@@ -319,10 +319,6 @@ export default {
         targets: text[6],
         color: '#000',
       })
-      .add({
-        targets: text[7],
-        color: '#000',
-      })
   }
 }
 </script>
@@ -336,7 +332,7 @@ export default {
 }
 .text-box {
   position: absolute;
-  width: 74%;
+  width: 96%;
   height: auto;
   padding: 3vh;
   background-color: #ffffff;
@@ -344,10 +340,10 @@ export default {
   border-radius: 20px;
   z-index: 100;
   top: 10vh;
-  left: 13%;
+  left: 2%;
 }
 .text-box p {
-  font-size: 2.7vh;
+  font-size: 4vh;
   margin-bottom: 2vh;
   color: #ffffff;
 }
@@ -356,7 +352,10 @@ export default {
   text-align: center;
 }
 .text-box p:nth-child(2) {
-  margin-bottom: 6vh;
+  margin-bottom: 3vh;
+}
+.text-box p:last-child {
+  margin-bottom: 0;
 }
 tspan { white-space:pre }
 .shp-bush-top { fill: url(#grd-bush-top) }

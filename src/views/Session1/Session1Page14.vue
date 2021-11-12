@@ -26,11 +26,11 @@ export default {
 
 <style scoped>
 .text-box {
-  width: 80%;
+  width: 86%;
   background-color: #00ce7c;
   position: absolute;
   bottom: 5vh;
-  left: 10%;
+  left: 7%;
   opacity: 0;
   text-align: center;
   padding: 1vh
@@ -38,6 +38,6 @@ export default {
 .text-box p {
   color: #ffffff;
   font-weight: bold;
-  font-size: 4.5vh;
+  font-size: 6vh;
 }
 </style>

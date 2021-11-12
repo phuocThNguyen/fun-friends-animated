@@ -77,8 +77,8 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 90%;
-  padding: 1vh 0 0 5vw;
+  width: 100%;
+  padding: 1vh 0 0 1%;
 }
 .para {
   background-color: #ffffff;
@@ -86,7 +86,7 @@ export default {
   width: 100%;
 }
 .para p {
-  font-size: 3vh;
+  font-size: 4vh;
   color: #ffffff;
   margin-bottom: 0;
 }

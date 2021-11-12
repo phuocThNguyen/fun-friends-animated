@@ -9,7 +9,7 @@
     <div class="text-box">
       <p class="text">
         <span>We may live in different homes,</span>
-        <span> but inside we all have families.</span>
+        <br><span> but inside we all have families.</span>
       </p>
     </div>
   </div>
@@ -52,19 +52,20 @@ export default {
 }
 .text-box {
   position: absolute;
-  left: 10%;
-  top: 41vh;
+  left: 15%;
+  top: 35vh;
   z-index: 20;
   background-color: #00CE7C;
   width: auto;
   height: auto;
   padding: 2vh 4vh;
   opacity: 0;
+  text-align: center;
 }
 .text {
   font-weight: bold;
   color: #ffffff;
-  font-size: 3.5vh;
+  font-size: 6vh;
   margin-bottom: 0;
 }
 </style>

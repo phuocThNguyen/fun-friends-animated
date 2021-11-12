@@ -1864,8 +1864,9 @@ export default {
   width: 100%;
   position: absolute;
   font-weight: bold;
-  font-size: 3.8vh;
+  font-size: 4.8vh;
   height: auto;
+  margin: 6vh 0 0 3%;
   text-align: center;
   opacity: 0;
 }

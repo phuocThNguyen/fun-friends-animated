@@ -29,7 +29,7 @@ export default {
 .text-box {
   height: auto;
   width: auto;
-  background-color: #00ce7c;
+  background-color: rgba(0, 206, 124, 0.95);
   position: absolute;
   top: 2vh;
   right: 2%;
@@ -40,6 +40,6 @@ export default {
   color: #ffffff;
   font-weight: bold;
   display: flex;
-  font-size: 3.5vh;
+  font-size: 6vh;
 }
 </style>

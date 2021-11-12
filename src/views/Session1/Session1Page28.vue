@@ -53,8 +53,8 @@ export default {
 }
 .text-box {
   position: absolute;
-  left: 30%;
-  top: 41vh;
+  left: 18%;
+  top: 39vh;
   z-index: 20;
   background-color: #00CE7C;
   width: auto;
@@ -65,7 +65,7 @@ export default {
 .text {
   font-weight: bold;
   color: #ffffff;
-  font-size: 3.5vh;
+  font-size: 6vh;
   margin-bottom: 0;
 }
 </style>

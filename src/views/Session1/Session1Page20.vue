@@ -522,8 +522,8 @@ export default {
 .coordinate-container {
   position: absolute;
   top: 8vh;
-  left: 35%;
-  width: 30%;
+  left: 26%;
+  width: 48%;
   height: 9vh;
   display: flex;
   align-items: center;
@@ -531,22 +531,22 @@ export default {
 }
 .button {
   width: auto;
-  height: 90%;
+  height: 100%;
 }
 .button:active {
   width: auto;
   height: 70%;
 }
 .button-label {
-  font-size: 4vh;
+  font-size: 7vh;
   font-family: 'Love Ya Like A Sister', cursive;
   color: #000000;
 }
 .title {
   position: absolute;
   width: 100%;
-  font-size: 6vh;
-  top: 0;
+  font-size: 8vh;
+  top: -1%;
   left: 0;
   text-align: center;
   font-family: 'Love Ya Like A Sister', cursive;
@@ -605,16 +605,17 @@ export default {
   position: absolute;
   background-color: #00CE7C;
   padding: 1vh;
-  width: 74%;
-  left: 13%;
+  width: 90%;
+  left: 5%;
   top: 48%;
   opacity: 0;
 }
 .text {
   font-weight: bold;
   color: #ffffff;
-  font-size: 4vh;
+  font-size: 5vh;
   text-align: center;
+  margin-bottom: 0;
 }
 #image-1 { top: 0; left: 0 }
 #image-2 { top: 0; right: 0 }

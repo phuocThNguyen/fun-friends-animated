@@ -75,9 +75,9 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  width: 70%;
-  left: 15%;
-  top: 10vh;
+  width: 90%;
+  left: 5%;
+  top: 2vh;
   background-color: #ffffff;
   opacity: 0;
   padding: 2vh 3vh;
@@ -85,10 +85,10 @@ export default {
 .text-box h1 {
   text-align: center;
   margin-bottom: 1vh;
-  font-size: 4.8vh;
+  font-size: 6vh;
 }
 .text-box p {
-  font-size: 2.8vh;
+  font-size: 4vh;
   margin-bottom: 2vh;
   opacity: 0;
 }

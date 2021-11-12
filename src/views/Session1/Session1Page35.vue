@@ -937,9 +937,9 @@ export default {
 }
 .main-content {
   position: absolute;
-  width: 90%;
-  left: 5%;
-  top: 2vh
+  width: 98%;
+  left: 1%;
+  top: 1vh
 }
 .main-content p,
 .main-content h1,
@@ -951,27 +951,27 @@ export default {
   color: #ffffff;
   text-align: center;
   font-weight: bold;
-  font-size: 3vh;
+  font-size: 4vh;
   padding: 1vh;
   opacity: 0;
 }
 .para-box {
   background-color: #ffffff;
-  margin-top: 2vh;
+  margin-top: 1vh;
   padding: 1.5vh;
   opacity: 0;
 }
 .para-box h1 {
-  font-size: 3.3vh;
-  margin-bottom: 2vh;
+  font-size: 5vh;
+  margin-bottom: 1vh;
 }
 .para-box h2 {
-  font-size: 2.8vh;
+  font-size: 3.5vh;
   opacity: 0;
 }
 .para-box p {
   font-size: 2.3vh;
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
   opacity: 0;
 }
 tspan { white-space:pre }

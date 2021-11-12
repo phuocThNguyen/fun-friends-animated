@@ -67,22 +67,22 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  width: 28%;
+  width: 50%;
   height: 100%;
   background-color: #ffffff;
   z-index: 10;
   opacity: 0;
-  padding: 3vh
+  padding: 0 0 0 1vh;
 }
 .left-bar p {
   width: 100%;
   color: #ffffff;
-  font-size: 2.7vh;
+  font-size: 5vh;
 }
 .text-box {
   height: auto;
   width: 90%;
-  padding: 2vh;
+  padding: 1vh;
   background-color: #00ce7c;
   display: flex;
   flex-direction: column;
@@ -92,10 +92,13 @@ export default {
   bottom: 15vh;
   left: 5%;
   opacity: 0;
+
 }
 .text-box p {
   color: #ffffff;
   font-weight: bold;
   margin-bottom: 0;
+  font-size: 5vh;
+  text-align: center;
 }
 </style>

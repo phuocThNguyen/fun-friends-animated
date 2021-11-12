@@ -4,11 +4,11 @@
     <div class="text-box">
       <p class="text">
         <span>Talk about your family and the places they come from.</span>
-        <span>Listen carefully when those around you are talking.</span>
-        <span>There are differences in how we look,</span>
-        <span>what we eat,</span><span>where we live,</span>
-        <span>the clothes we wear</span><span>and the language we speak,</span>
-        <span><strong>but we all love, smile, and cry in the same way.</strong></span>
+        <span> Listen carefully when those around you are talking.</span>
+        <span> There are differences in how we look,</span>
+        <span> what we eat,</span><span> where we live,</span>
+        <span> the clothes we wear</span><span> and the language we speak,</span>
+        <span><strong> but we all love, smile, and cry in the same way.</strong></span>
       </p>
     </div>
   </div>
@@ -91,7 +91,7 @@ export default {
 }
 .text-box p {
   color: #ffffff;
-  font-size: 2.7vh;
+  font-size: 6vh;
   margin-bottom: 0;
 }
 </style>

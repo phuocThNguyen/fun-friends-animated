@@ -25,7 +25,7 @@ export default {
     animations
       .add({
         targets: ".left-bar",
-        translateX: 0.32*vw,
+        translateX: 0.5*vw,
         duration: 500,
         delay: 1000,
       })
@@ -75,10 +75,10 @@ export default {
   font-family: 'Sigmar One', cursive;
   position: absolute;
   top: 0;
-  left: -32%;
-  width: 32%;
+  left: -50%;
+  width: 50%;
   height: 100%;
-  background-color: #00ce7c;
+  background-color: rgba(0, 206, 124, 0.95);
   z-index: 10;
   display: flex;
   flex-direction: column;
@@ -89,8 +89,8 @@ export default {
 .left-bar p {
   text-transform: uppercase;
   color: #00ce7c;
-  font-size: 4.4vh;
-  margin: 1.5vh 1vw;
+  font-size: 7vh;
+  margin: .5vh 1vw 0;
 }
 #letter-f {
   color: #A3C042;

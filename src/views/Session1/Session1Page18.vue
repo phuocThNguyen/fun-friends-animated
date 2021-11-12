@@ -39,6 +39,6 @@ export default {
 .text-box p {
   color: #ffffff;
   font-weight: bold;
-  font-size: 4vh;
+  font-size: 6vh;
 }
 </style>

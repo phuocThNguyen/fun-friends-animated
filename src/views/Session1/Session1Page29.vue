@@ -63,14 +63,14 @@ export default {
 }
 .text-box {
   color: #ffffff;
-  padding: 2.6vh;
+  padding: 0 1vh;
 }
 .text-box h1 {
-  font-size: 4.3vh;
-  margin-bottom: 1vh;
+  font-size: 6vh;
+  margin-bottom: 0;
 }
 .text-box p {
-  font-size: 2.6vh;
-  margin-bottom: 1vh;
+  font-size: 4vh;
+  margin-bottom: 0;
 }
 </style>

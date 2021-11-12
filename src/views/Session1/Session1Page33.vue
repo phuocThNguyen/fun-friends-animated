@@ -538,19 +538,19 @@ export default {
 }
 .text-box {
   position: absolute;
-  top: 15vh;
-  right: 20%;
-  width: 25%;
+  top: 4vh;
+  right: 15%;
+  width: 35%;
   height: auto;
   background-color: #ffffff;
   opacity: 0;
-  padding: 2.6vh;
+  padding: 1vh 1.5vh;
   border-radius: 20px;
   border: 0.2vw dashed #000;
 }
 .text-box p {
   color: #ffffff;
-  font-size: 2.7vh;
+  font-size: 4.5vh;
 }
 .sun {
   position: absolute;

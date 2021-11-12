@@ -820,8 +820,8 @@
       <div class="text-box">
         <p>Share your picture with those around you. Tell them:</p>
 
-        <p> - your favourite fruit and vegetable</p>
-        <p> - your favourite toy</p>
+        <p> - Your favourite fruit and vegetable</p>
+        <p> - Your favourite toy</p>
         <p> - What makes you happy?</p>
         <p> - What makes you scared?</p>
 
@@ -849,8 +849,8 @@ export default {
   data() {
     return {
       canvasStyle: {
-        width: 0.65,
-        height: 0.68,
+        width: 0.68,
+        height: 0.7,
         isPicture: false,
       },
       canvasData: null,
@@ -932,7 +932,7 @@ export default {
       })
       .add({
         targets: '.text-box',
-        opacity: 0.90,
+        opacity: 0.95,
         duration: 1000,
       })
       .add({
@@ -955,13 +955,13 @@ export default {
 .canvas {
   position: absolute;
   top: 2vh;
-  left: 33%;
+  right: .5%;
   z-index: 100;
   opacity: 0;
 }
 .main-content {
   position: absolute;
-  left: 1%;
+  left: .5%;
   top: 2vh;
   width: 30%;
   z-index: 50;
@@ -969,21 +969,19 @@ export default {
 .main-content h1 {
   background-color: #000000;
   color: #ffffff;
-  font-size: 2.7vh;
+  font-size: 4vh;
   width: 100%;
   height: auto;
   padding: 1.2vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   opacity: 0;
+  text-align: center;
 }
 .text-box {
   background-color: #ffffff;
-  padding: 2.5vh;
+  padding: 1vh;
   height: auto;
   opacity: 0;
-  font-size: 2.3vh;
+  font-size: 3vh;
 }
 .text-box p {
   margin-bottom: 1vh;
