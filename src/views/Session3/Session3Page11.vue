@@ -2,9 +2,9 @@
   <div class="interactive-container">
     <img src="../../assets/images/session3/2206-resized.jpg" alt="boy-with-bubbles" class="session-background">
     <div class="text-box">
-      <h1>Fun Bubble Activities</h1>
+      <h1><strong>Fun Bubble Activities</strong></h1>
       <p>We are now going to play two games.</p>
-      <h1><strong>1. Bubble breathing</strong></h1>
+      <p><strong>1. Bubble breathing</strong></p>
       <p>Take five deep slow breaths, in through
        your nose and out through your mouth. We are
        going to blow bubbles with a straw and a cup
@@ -73,17 +73,17 @@ export default {
   width: 35%;
   height: 100%;
   background-color: rgba(255,255,255, 0.7);
-  padding: 2.6vh;
+  padding: 1vh;
   opacity: 0;
 }
 .text-box h1 {
   font-size: 3.36vh;
-  margin: 1vh 0;
+  margin-bottom: 1vh;
   opacity: 0;
 }
 .text-box p {
-  font-size: 2.4vh;
-  margin-bottom: 2vh;
+  font-size: 2.8vh;
+  margin-bottom: 0;
   opacity: 0;
 }
 

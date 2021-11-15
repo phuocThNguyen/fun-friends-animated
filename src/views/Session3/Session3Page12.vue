@@ -66,17 +66,17 @@ export default {
   width: 35%;
   height: 100%;
   background-color: rgba(255,255,255, 0.7);
-  padding: 2.6vh;
+  padding: 1vh;
   opacity: 0;
 }
 .text-box h1 {
-  font-size: 3.36vh;
-  margin: 1vh 0;
+  font-size: 4vh;
+  margin-bottom: 1vh;
   opacity: 0;
 }
 .text-box p {
-  font-size: 2.38vh;
-  margin-bottom: 1vh;
+  font-size: 3.3vh;
+  margin-bottom: 0;
   opacity: 0;
 }
 .text-box p:last-child {

@@ -383,7 +383,7 @@ export default {
 .tips-container p {
   color: #ffffff;
   font-weight: bold;
-  font-size: 2.8vh;
+  font-size: 3.5vh;
   margin-bottom: 0;
 }
 .content-container {

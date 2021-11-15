@@ -187,7 +187,7 @@ export default {
 }
 .question {
   position: absolute;
-  bottom: 4vh;
+  bottom: 1vh;
   left: 20%;
 }
 .sticker {

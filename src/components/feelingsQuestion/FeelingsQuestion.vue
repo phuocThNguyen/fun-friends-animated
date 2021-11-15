@@ -181,7 +181,7 @@ export default {
 }
 .content-container h1 {
   text-align: center;
-  font-size: 4.9vh;
+  font-size: 5.5vh;
   color: #ffffff;
 }
 .emotes-container {

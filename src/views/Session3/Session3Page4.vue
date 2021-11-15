@@ -1,4 +1,4 @@
-%<template>
+<template>
   <div class="interactive-container">
     <img src="../../assets/images/session3/23391-resized.jpg" alt="friends" class="session-background">
     <emotion-pick-instruction class="instruction"/>
@@ -185,7 +185,7 @@ export default {
 }
 .question {
   position: absolute;
-  bottom: 4vh;
+  bottom: 1%;
   left: 20%;
 }
 .sticker {

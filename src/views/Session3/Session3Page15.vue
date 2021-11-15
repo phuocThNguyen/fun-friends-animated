@@ -834,9 +834,9 @@ export default {
   position: absolute;
   background-color: rgba(255,255,255,0.8);
   opacity: 0;
-  padding: 2.8vh;
-  top: 2vh;
-  left: 2%;
+  padding: 1vh;
+  top: 1%;
+  left: 1%;
   width: 50%;
 }
 .text-box h1 {
@@ -844,8 +844,8 @@ export default {
   font-size: 5vh;
 }
 .text-box p {
-  font-size: 3.2vh;
-  padding-left: 1.4vh;
+  font-size: 4vh;
+  padding-left: 0vh;
   margin-bottom: 1vh;
   opacity: 0;
 }

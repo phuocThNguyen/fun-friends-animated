@@ -699,7 +699,7 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try Every day</h1>
+      <h1>Try every day</h1>
       <p>&nbsp;&bull; Try to understand feelings in
       yourself and other people.</p>
       <p>&nbsp;&bull; Think about what 'thumbs up'
@@ -781,22 +781,22 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.9);
-  width: 74%;
+  width: 86%;
   height: auto;
-  left: 13%;
-  top: 12vh;
-  padding: 3vh;
+  left: 7%;
+  top: 5vh;
+  padding: 2vh;
   opacity: 0;
 }
 .text-box h1 {
   text-align: center;
   margin-bottom: 2vh;
-  font-size: 5.6vh;
+  font-size: 6vh;
   font-weight: bold;
 }
 .text-box p {
-  margin-bottom: 2vh;
-  font-size: 2.8vh;
+  margin-bottom: 1vh;
+  font-size: 4.5vh;
   opacity: 0;
 }
 .text-box p:nth-child(5),
@@ -804,6 +804,9 @@ export default {
 .text-box p:nth-child(7),
 .text-box p:nth-child(8) {
   padding-left: 5vw;
+}
+.text-box p:last-child {
+  margin-bottom: 0;
 }
 .landscape {
   position: absolute;
