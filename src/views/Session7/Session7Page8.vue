@@ -39,7 +39,7 @@
     </svg>
     <h1 class="title">Coping Step Plan</h1>
     <div class="trophy-container">
-      Goal: Talking in front of the class
+      Goal: Talking in front <br>of the class
     </div>
     <div class="plans" id="step-1">
       <div class="nail first-nail"></div>
@@ -1355,7 +1355,7 @@ export default {
 }
 .trophy-container {
   position: absolute;
-  left: 20%;
+  left: 25%;
   top: 11vh;
   opacity: 0;
   z-index: 0;

@@ -1027,15 +1027,15 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  top: 30vh;
-  left: 15%;
-  width: 70%;
+  top: 15vh;
+  left: 10%;
+  width: 80%;
   background-color: rgba(255,255,255,0.9);
-  padding: 3vh 4.2vh;
+  padding: 2vh;
   opacity: 0;
 }
 .text-box p {
-  font-size: 2.8vh;
+  font-size: 5vh;
   opacity: 0;
   margin-bottom: 1vh;
 }

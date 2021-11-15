@@ -845,7 +845,7 @@ export default {
 }
 .text-box p {
   font-size: 4vh;
-  padding-left: 0vh;
+  padding-left: 0;
   margin-bottom: 1vh;
   opacity: 0;
 }

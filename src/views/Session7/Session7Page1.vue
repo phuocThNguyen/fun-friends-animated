@@ -262,14 +262,14 @@ export default {
       delay: 500
     });
     animation
-        .add({
-          targets: ".title",
-          opacity: 1,
-        })
-        .add({
-          targets: "#line-1",
-          color: '#000',
-        })
+      .add({
+        targets: ".title",
+        opacity: 1,
+      })
+      .add({
+        targets: "#line-1",
+        opacity: 1,
+      })
   }
 }
 </script>
@@ -280,10 +280,11 @@ export default {
   font-family: 'Sigmar One', cursive;
   position: absolute;
   color: white;
-  font-size: 8.4vh;
+  font-size: 12vh;
   -webkit-text-stroke: 0.1vw black;
-  left: 35%;
-  top: 30vh;
+  text-align: center;
+  width: 100%;
+  top: 26vh;
   opacity: 0;
 }
 #letter-f {
@@ -292,13 +293,13 @@ export default {
 .text {
   position: absolute;
   margin-bottom: 0;
-  font-size: 2.8vh;
-  color: #ffffff;
+  font-size: 5.5vh;
+  opacity: 0;
 }
 #line-1 {
   text-align: center;
   width: 100%;
-  top: 43vh;
+  top: 44vh;
 }
 span {
   display: inline-block;
@@ -354,10 +355,10 @@ tspan { white-space:pre }
 }
 .big-cloud {
   position: absolute;
-  width: 90%;
+  width: 110%;
   height: auto;
-  top: 20vh;
-  left: 5%;
+  top: 16vh;
+  left: -5%;
 }
 .long-cloud {
   width: 130%;

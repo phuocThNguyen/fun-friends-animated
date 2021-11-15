@@ -910,16 +910,16 @@ export default {
   width: 80%;
   padding: 4vh 3.2vh;
   background-color: rgba(255,255,255,0.9);
-  text-align: center;
   left: 10%;
-  top: 20vh;
+  top: 10vh;
   z-index: 100;
 }
 .text-box h1 {
-  font-size: 4.9vh;
+  text-align: center;
+  font-size: 6vh;
 }
 .text-box p {
-  font-size: 2.9vh;
+  font-size: 4vh;
   margin-bottom: 1vh;
 }
 .text-box p:last-child {

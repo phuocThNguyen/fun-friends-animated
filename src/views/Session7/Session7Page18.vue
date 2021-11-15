@@ -487,10 +487,10 @@ export default {
 <style scoped>
 .star-container {
   position: absolute;
-  bottom: 10vh;
-  right: 22%;
-  width: 56%;
-  height: 70vh;
+  bottom: 6vh;
+  right: 18%;
+  width: 64%;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -509,12 +509,9 @@ export default {
   z-index: 55;
 }
 .star-text p {
-  font-size: 4vh;
+  font-size: 5vh;
   margin-bottom: 0;
   text-align: center;
-}
-.star-text p:nth-of-type(1) {
-  font-size: 4.5vh;
 }
 .landscape {
   position: absolute;

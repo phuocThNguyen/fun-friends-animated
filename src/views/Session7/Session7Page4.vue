@@ -1080,11 +1080,11 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  left: 14%;
+  left: 11%;
   top: 30vh;
-  width: 72%;
-  padding: 5vh 2.6vh;
-  font-size: 3.4vh;
+  width: 78%;
+  padding: 2vh;
+  font-size: 5vh;
   background-color: rgba(255,255,255,0.95);
   text-align: center;
   opacity: 0;
