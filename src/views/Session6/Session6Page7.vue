@@ -342,17 +342,17 @@ export default {
 .text-box {
   position: absolute;
   width: 100%;
-  padding: 1vh 2.8vh;
+  padding: 1vh;
   top: 0;
   left: 0;
 }
 .text-box h1 {
-  font-size: 3.3vh;
+  font-size: 5vh;
   font-weight: bold;
   margin-bottom: 0;
 }
 .text-box p {
-  font-size: 2.8vh;
+  font-size: 3.8vh;
   margin-bottom: 0;
   opacity: 0;
 }
@@ -428,7 +428,6 @@ export default {
 .green {
   color: #00ce7c;
 }
-
 .sticker {
   position: absolute;
   width: auto;

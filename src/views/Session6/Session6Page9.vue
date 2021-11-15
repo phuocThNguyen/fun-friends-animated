@@ -698,7 +698,7 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try Every day</h1>
+      <h1>Try every day</h1>
       <p>&nbsp;&bull; Practise understanding the
         '<span class="red">red</span>' thoughts and
         '<span class="green">green</span>' thoughts you
@@ -787,29 +787,32 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.8);
-  width: 64%;
+  width: 80%;
   height: auto;
-  left: 18%;
-  top: 8vh;
-  padding: 4vh;
+  left: 10%;
+  top: 5vh;
+  padding: 2vh;
   opacity: 0;
 }
 .text-box h1 {
   text-align: center;
-  margin-bottom: 2vh;
-  font-size: 5.4vh;
+  margin-bottom: 1vh;
+  font-size: 6vh;
   font-weight: bold;
 }
 .text-box p {
   margin-bottom: 1.5vh;
-  font-size: 2.8vh;
+  font-size: 4vh;
   opacity: 0;
 }
+.text-box p:nth-child(5),
 .text-box p:nth-child(6),
 .text-box p:nth-child(7),
-.text-box p:nth-child(8),
-.text-box p:nth-child(9) {
+.text-box p:nth-child(8) {
   padding-left: 7vh;
+}
+.text-box p:last-child {
+  margin-bottom: 0;
 }
 .landscape {
   position: absolute;

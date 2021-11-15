@@ -728,18 +728,6 @@ import anime from "animejs";
 export default {
   name: 'Session6Page11',
   mounted() {
-    let vw = document.querySelector('.interactive-container').clientWidth;
-    let clouds = document.getElementsByClassName('shp15');
-    clouds.forEach(cloud => {
-      anime({
-        targets: cloud,
-        translateX: (Math.round(Math.random() * 0.4 * vw) + 200) * (Math.random() < 0.5 ? 1: -1),
-        duration: Math.round(Math.random() * 1000) + 4000,
-        direction: 'alternate',
-        loop: true,
-        easing: 'linear',
-      })
-    })
     let animation = anime.timeline({
       duration: 500,
       delay: 500,
@@ -777,10 +765,10 @@ export default {
 <style scoped>
 .star-container {
   position: absolute;
-  bottom: 10vh;
-  right: 22%;
-  width: 56%;
-  height: 70vh;
+  bottom: 6vh;
+  right: 18%;
+  width: 64%;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -796,15 +784,12 @@ export default {
   position: absolute;
   text-align: center;
   z-index: 55;
-  margin-top: 15%;
+  margin-top: 10%;
 }
 .star-text p {
-  font-size: 4vh;
+  font-size: 6vh;
   margin-bottom: 0;
   text-align: center;
-}
-.star-text p:nth-of-type(1) {
-  font-size: 4.5vh;
 }
 .landscape {
   position: absolute;

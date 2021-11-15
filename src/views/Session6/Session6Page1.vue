@@ -198,10 +198,10 @@
 
     <p class="title"><span id="letter-f">I</span> can try</p>
     <p class="text" id="line-1">Today we learn that we are
-      the boss of our thinking and that we can choose
+      the boss of our thinking <br>and that we can choose
       between '<span class="red">red</span>'
       and '<span class="green">green</span>' thoughts.
-      Remember, all thoughts are OK,
+      <br>Remember, all thoughts are OK,
       <br>but choosing '<span class="green">green</span>' thoughts
       will make the day feel better.</p>
 
@@ -279,19 +279,15 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
-@media screen and (max-width: 930px) {
-  .text {
-    font-size: 2.5vh !important;
-  }
-}
 .title {
   font-family: 'Sigmar One', cursive;
   position: absolute;
   color: white;
-  font-size: 8.4vh;
+  font-size: 12vh;
   -webkit-text-stroke: 0.1vw black;
-  left: 35%;
-  top: 30vh;
+  text-align: center;
+  width: 100%;
+  top: 22vh;
   opacity: 0;
 }
 #letter-f {
@@ -300,14 +296,13 @@ export default {
 .text {
   position: absolute;
   margin-bottom: 0;
-  font-size: 2.8vh;
+  font-size: 4.5vh;
   opacity: 0;
 }
 #line-1 {
   text-align: center;
-  width: 71%;
-  left: 15%;
-  top: 43vh;
+  width: 100%;
+  top: 38vh;
 }
 span {
   display: inline-block;
@@ -363,10 +358,10 @@ tspan { white-space:pre }
 }
 .big-cloud {
   position: absolute;
-  width: 90%;
+  width: 110%;
   height: auto;
-  top: 20vh;
-  left: 5%;
+  top: 16vh;
+  left: -5%;
 }
 .long-cloud {
   width: 130%;

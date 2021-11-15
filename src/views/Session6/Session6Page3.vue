@@ -189,22 +189,22 @@ export default {
 .text-box {
   position: absolute;
   width: 48%;
-  padding: 5vh 1.5vh;
+  padding: 1vh;
 }
 .text-box h1 {
-  font-size: 3.2vh;
+  font-size: 3.5vh;
   font-weight: bold;
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
 }
 .text-box p {
-  font-size: 2.7vh;
-  margin-bottom: 2vh;
+  font-size: 3.6vh;
+  margin-bottom: 1vh;
   opacity: 0;
 }
 .text-box p:last-child {
   padding: 1vh 0;
-  font-size: 2.8vh;
-  margin-top: 20%;
+  font-size: 3.6vh;
+  margin-top: 5%;
   font-weight: bold;
   display: block;
   background-color: #00ce7c;
