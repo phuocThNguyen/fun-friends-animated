@@ -2,8 +2,8 @@
   <div class="interactive-container">
     <img src="../../assets/images/session5/128.png" alt="green" class="session-background">
     <div class="text-box">
-      <p>In this picture, The children are walking
-        to a new school with their dad .</p>
+      <p>In this picture, the children are walking
+        to a new school with their dad.</p>
       <p>What could they be feeling?</p>
       <p>Are they having '<span class="red">red</span>' or
         '<span class="green">green</span>'
@@ -195,18 +195,15 @@ export default {
 }
 .text-box {
   position: absolute;
-  width: 30%;
-  padding: 2vh 2.1vh;
-  top: 5vh;
-  left: 3%;
+  width: 50%;
+  padding: 1.5vh;
+  top: 1vh;
+  left: 1%;
   background-color: rgba(255,255,255, 0.9);
   opacity: 0;
 }
 .text-box p {
-  font-size: 2.8vh;
-  margin-bottom: 2vh;
-}
-.text-box p:last-child {
+  font-size: 3.8vh;
   margin-bottom: 0;
 }
 .red {
@@ -227,7 +224,7 @@ export default {
 .sticker {
   position: absolute;
   width: auto;
-  height: 20vh;
+  height: 25vh;
   top: 5vh;
   right: 18%;
   z-index: 50;

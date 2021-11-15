@@ -194,18 +194,15 @@ export default {
 }
 .text-box {
   position: absolute;
-  width: 30%;
-  padding: 2vh 2.1vh;
-  top: 5vh;
-  left: 3%;
+  width: 80%;
+  padding: 1.5vh;
+  top: 1vh;
+  left: 10%;
   background-color: rgba(255,255,255, 0.9);
   opacity: 0;
 }
 .text-box p {
-  font-size: 2.8vh;
-  margin-bottom: 2vh;
-}
-.text-box p:last-child {
+  font-size: 3.8vh;
   margin-bottom: 0;
 }
 .red {
@@ -218,16 +215,16 @@ export default {
   position: absolute;
   height: auto;
   width: 1%;
-  top: 20vh;
-  left: 50%;
+  top: 35vh;
+  right: 15%;
   opacity: 0;
 }
 .sticker {
   position: absolute;
   width: auto;
-  height: 20vh;
-  top: 5vh;
-  left: 45%;
+  height: 25vh;
+  top: 22vh;
+  right: 7%;
   z-index: 50;
   opacity: 0;
 }

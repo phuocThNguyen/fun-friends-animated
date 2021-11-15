@@ -817,7 +817,6 @@
         </p>
       </div>
     </div>
-    <audio autoplay loop src="../../assets/sounds/session1/Falling-Snow-Sound-Effect-Amplified.mp3"></audio>
   </div>
 </template>
 
@@ -827,25 +826,6 @@ import anime from "animejs";
 export default {
   name: 'Session5Page17',
   mounted() {
-    let snowArray = [];
-    let vh = window.innerHeight;
-    let snowGroups = document.getElementsByClassName('snow');
-    snowGroups.forEach(snowGroup => {
-      snowArray.push(...snowGroup.children)
-    })
-    let probability = 0.1;
-    snowArray.forEach(snowFlake => {
-      if (Math.random() < probability) {
-        anime({
-          targets: snowFlake,
-          translateY: Math.floor(Math.random() * 0.1 * vh) + 0.2 * vh,
-          opacity: 0,
-          duration: Math.floor(Math.random() * 2000) + 1000,
-          loop: true,
-          easing: 'linear'
-        })
-      }
-    })
     let animation = anime.timeline({
       duration: 500,
       delay: 500,
@@ -883,10 +863,10 @@ export default {
 <style scoped>
 .star-container {
   position: absolute;
-  bottom: 10vh;
-  right: 22%;
-  height: 70vh;
-  width: 56%;
+  bottom: 5vh;
+  right: 18%;
+  height: 80vh;
+  width: 64%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -906,12 +886,9 @@ export default {
   margin-top: 6%;
 }
 .star-text p {
-  font-size: 3.7vh;
+  font-size: 4.7vh;
   margin-bottom: 0;
   text-align: center;
-}
-.star-text p:nth-of-type(1) {
-  font-size: 4vh;
 }
 .landscape {
   position: absolute;

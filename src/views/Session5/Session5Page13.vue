@@ -71,12 +71,12 @@ export default {
 }
 .canvas {
   position: absolute;
-  top: 22vh;
+  top: 24vh;
   left: 6%;
 }
 .text-box {
   position: absolute;
-  padding: 1vh 2vh;
+  padding: 0 1vh;
 }
 .text-box h1 {
   font-size: 4.2vh;
@@ -84,7 +84,7 @@ export default {
   margin-bottom: 0;
 }
 .text-box p {
-  font-size: 2.6vh;
+  font-size: 2.8vh;
   opacity: 0;
   margin-bottom: 0;
 }

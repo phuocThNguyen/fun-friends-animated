@@ -3,7 +3,7 @@
     <img src="../../assets/images/session5/447.png" alt="red" class="session-background">
     <div class="text-box">
       <p>Lucy is starting a new school and she feels sad and scared.
-        Why do you think she feels sad and scared?
+        <br>Why do you think she feels sad and scared?
         How do you think her mum feels?
       </p>
       <p>Is Lucy having '<span class="red">red</span>' or
@@ -274,18 +274,15 @@ export default {
 }
 .text-box {
   position: absolute;
-  width: 32%;
-  padding: 2vh 2.1vh;
-  top: 5vh;
-  left: 3%;
+  width: 96%;
+  padding: 1vh;
+  top: 1vh;
+  left: 2%;
   background-color: rgba(255,255,255, 0.9);
   opacity: 0;
 }
 .text-box p {
-  font-size: 2.8vh;
-  margin-bottom: 2vh;
-}
-.text-box p:last-child {
+  font-size: 3.8vh;
   margin-bottom: 0;
 }
 .red {
@@ -298,16 +295,16 @@ export default {
   position: absolute;
   height: auto;
   width: 1%;
-  right: 38%;
-  top: 13vh;
+  top: 35vh;
+  left: 15%;
   opacity: 0;
 }
 .sticker {
   position: absolute;
   width: auto;
-  height: 20vh;
-  top: 2vh;
-  right: 32%;
+  height: 25vh;
+  top: 22vh;
+  left: 7%;
   z-index: 50;
   opacity: 0;
 }
