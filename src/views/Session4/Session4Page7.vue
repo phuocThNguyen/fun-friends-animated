@@ -28,9 +28,9 @@ export default {
 .text-box {
   position: absolute;
   bottom: 5vh;
-  left: 15%;
-  width: 70%;
-  font-size: 3.5vh;
+  left: 13%;
+  width: 74%;
+  font-size: 4.5vh;
   font-weight: bold;
   background-color: #00ce7c;
   color: #ffffff;

@@ -198,9 +198,9 @@
 
     <p class="title"><span id="letter-f">R</span>elax</p>
     <p class="text" id="line-1">Today we will learn
-      how to pay attention to what our bodies are telling us.</p>
+      how to pay attention <br>to what our bodies are telling us.</p>
     <p class="text" id="line-2">We will talk about
-      'bubble' breathing and play some relaxing games.</p>
+      'bubble' breathing <br>and play some relaxing games.</p>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3">
       Your browser does not support the<code>audio</code> element.
@@ -284,11 +284,12 @@ export default {
   font-family: 'Sigmar One', cursive;
   position: absolute;
   color: white;
-  font-size: 8.4vh;
+  font-size: 12vh;
   -webkit-text-stroke: 0.1vw black;
-  left: 40%;
-  top: 33vh;
+  top: 21vh;
   opacity: 0;
+  width: 100%;
+  text-align: center;
 }
 #letter-f {
   color: #E8528C;
@@ -296,13 +297,14 @@ export default {
 .text {
   position: absolute;
   margin-bottom: 0;
-  font-size: 3.08vh;
+  font-size: 6vh;
   color: #ffffff;
+  line-height: 7vh;
 }
 #line-1 {
   text-align: center;
   width: 100%;
-  top: 47vh;
+  top: 36vh;
 }
 #line-2 {
   text-align: center;
@@ -363,10 +365,10 @@ tspan { white-space:pre }
 }
 .big-cloud {
   position: absolute;
-  width: 90%;
+  width: 110%;
   height: auto;
-  top: 20vh;
-  left: 5%;
+  top: 16vh;
+  left: -5%;
 }
 .long-cloud {
   width: 130%;

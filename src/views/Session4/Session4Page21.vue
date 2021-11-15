@@ -33,7 +33,7 @@ export default {
   color: #ffffff;
   background-color: #00ce7c;
   text-align: center;
-  font-size: 3.5vh;
+  font-size: 4vh;
   font-weight: bold;
   opacity: 0;
 }

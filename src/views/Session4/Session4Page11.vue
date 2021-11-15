@@ -835,7 +835,7 @@ export default {
   data() {
     return {
       canvasStyle: {
-        width: 0.9,
+        width: 0.98,
         height: 0.75,
         isPicture: false,
       }
@@ -912,16 +912,17 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  width: 50%;
-  left: 25%;
-  top: 2vh;
+  width: 98%;
+  left: 1%;
+  top: 1vh;
   background-color: #000000;
   color: #ffffff;
-  font-size: 2.8vh;
+  font-size: 5vh;
   z-index: 30;
-  padding: 1.4vh;
+  padding: 1vh;
   text-align: center;
   opacity: 1;
+  line-height: 4.5vh;
 }
 .landscape {
   position: absolute;
@@ -932,8 +933,8 @@ export default {
 }
 .canvas {
   position: absolute;
-  top: 2vh;
-  left: 5%;
+  top: 1vh;
+  left: 1%;
   opacity: 1;
   z-index: 20;
 }

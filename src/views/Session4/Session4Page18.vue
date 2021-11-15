@@ -312,7 +312,7 @@ export default {
   top: 57vh;
 }
 #green-tick-3 {
-  right: 29%;
+  right: 28%;
   top: 44vh;
 }
 #green-tick-4 {
@@ -346,7 +346,7 @@ export default {
 }
 .answers {
   position: absolute;
-  width: 17%;
+  width: 23.8vh;
   height: 6.55vh;
   background-color: rgba(255,255,255,0.6);
   border-radius: 10px;
@@ -369,24 +369,21 @@ export default {
   background-color: #000000;
   color: #ffffff;
   width: 100%;
-  font-size: 2.8vh;
+  font-size: 3.2vh;
   border-radius: 10px;
   text-align: center;
   padding: 1.4vh;
   margin-bottom: 1vh;
 }
-p { font-size: 3.2vh;margin-bottom: 0; }
+p { font-size: 3.6vh;margin-bottom: 0; }
 .text-box {
   position: absolute;
   width: 90%;
   padding: 2.1vh;
-  top: 2vh;
+  top: 1vh;
   left: 5%;
   background-color: rgba(255,255,255,0.8);
   opacity: 0;
-}
-.text-box p:nth-of-type(1) {
-  margin-bottom: 1vh;
 }
 .cls-1 {fill: none;}
 .cls-2 {isolation: isolate;}

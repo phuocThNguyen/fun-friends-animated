@@ -29,8 +29,8 @@ export default {
   position: absolute;
   top: 5vh;
   right: 5%;
-  width: 40%;
-  font-size: 3.5vh;
+  width: 45%;
+  font-size: 4.5vh;
   font-weight: bold;
   background-color: #00ce7c;
   color: #ffffff;

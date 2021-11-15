@@ -2492,19 +2492,6 @@ import anime from "animejs";
 export default {
   name: 'Session4Page24',
   mounted() {
-    let stars = document.getElementsByClassName('stars')[0].children;
-    stars.forEach(star => {
-      Math.random() < 0.2 ?
-        anime({
-          targets: star,
-          opacity: 0,
-          direction: 'alternate',
-          duration: Math.round(Math.random() * 500) + 200,
-          delay: Math.round(Math.random() * 500) + 200,
-          easing: 'linear',
-          loop: true
-        }) : console.log()
-    });
     let animation = anime.timeline({
       easing: 'linear',
       duration: 500,
@@ -2559,18 +2546,15 @@ export default {
 }
 .star-text {
   position: absolute;
-  margin-top: 5%;
+  margin-top: 3%;
   width: 100%;
   text-align: center;
   z-index: 55;
 }
 .star-text p {
-  font-size: 3.4vh;
+  font-size: 3.8vh;
   text-align: center;
   margin-bottom: 0;
-}
-.star-text p:nth-of-type(1) {
-  font-size: 3.5vh;
 }
 .landscape {
   position: absolute;

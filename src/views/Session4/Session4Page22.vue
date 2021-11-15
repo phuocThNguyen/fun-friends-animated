@@ -2458,7 +2458,7 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try Every day</h1>
+      <h1>Try every day</h1>
       <p>&nbsp;&bull; Try to understand feelings in yourself and others.</p>
       <p>&nbsp;&bull; Practise relaxing and taking deep breaths.</p>
       <p>&nbsp;&bull; Try to use relaxing strategies like ‘bubble’ breathing when
@@ -2553,32 +2553,29 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.8);
-  width: 74%;
+  width: 90%;
   height: auto;
-  left: 13%;
-  top: 7vh;
-  padding: 4.2vh;
+  left: 5%;
+  top: 5vh;
+  padding: 2vh;
   opacity: 0;
 }
 .text-box h1 {
   text-align: center;
   margin-bottom: 2vh;
-  font-size: 5.6vh;
+  font-size: 6vh;
   font-weight: bold;
 }
 .text-box p {
-  margin-bottom: 2vh;
-  font-size: 2.8vh;
+  font-size: 4.5vh;
   opacity: 0;
+  margin-bottom: 0;
 }
 .text-box p:nth-child(6),
 .text-box p:nth-child(7),
 .text-box p:nth-child(8),
 .text-box p:nth-child(9) {
   padding-left: 7vh;
-}
-.text-box p:last-child {
-  margin-bottom: 0;
 }
 .landscape {
   position: absolute;

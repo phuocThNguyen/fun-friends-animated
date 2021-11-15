@@ -60,17 +60,17 @@ export default {
   left: 0;
   z-index: 10;
   background-color: #ffffff;
-  width: 35%;
+  width: 50%;
   height: 100%;
-  padding: 2.8vh;
+  padding: 1vh;
 }
 .text-box h1 {
-  font-size: 4.2vh;
+  font-size: 6vh;
   font-weight: bold;
   margin-bottom: 2vh;
 }
 .text-box p {
-  font-size: 3.2vh;
+  font-size: 4vh;
   margin-bottom: 1vh;
   opacity: 0;
 }
@@ -85,6 +85,6 @@ export default {
   font-weight: bold;
   padding: 1vh;
   text-align: center;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 </style>

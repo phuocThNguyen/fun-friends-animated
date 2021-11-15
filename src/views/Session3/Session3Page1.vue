@@ -285,7 +285,8 @@ export default {
   color: white;
   font-size: 12vh;
   -webkit-text-stroke: 0.1vw black;
-  left: 25%;
+  width: 100%;
+  text-align: center;
   top: 26vh;
   opacity: 0;
 }

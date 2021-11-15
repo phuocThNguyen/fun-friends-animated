@@ -27,10 +27,10 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  top: 5vh;
-  left: 5%;
+  top: 2vh;
+  left: 2%;
   width: 25%;
-  font-size: 3.5vh;
+  font-size: 4.5vh;
   font-weight: bold;
   background-color: #00ce7c;
   color: #ffffff;

@@ -67,18 +67,18 @@ export default {
   left: 0;
   z-index: 10;
   background-color: #ffffff;
-  width: 35%;
+  width: 45%;
   height: 100%;
   padding: 1.5vh;
 }
 .text-box h1 {
-  font-size: 4.2vh;
+  font-size: 5vh;
   font-weight: bold;
   margin-bottom: 1vh;
 }
 .text-box p {
-  font-size: 3vh;
-  margin-bottom: .5vh;
+  font-size: 4vh;
+  margin-bottom: 0;
   opacity: 0;
 }
 .text-box p:nth-of-type(2) {

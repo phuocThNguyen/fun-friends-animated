@@ -219,7 +219,7 @@ export default {
   top: 23vh;
 }
 #green-tick-2 {
-  left: 42%;
+  left: 44%;
   top: 63vh;
 }
 #green-tick-3 {
@@ -241,7 +241,7 @@ export default {
 }
 .answers {
   position: absolute;
-  width: 21%;
+  width: 29.4vh;
   height: 6.55vh;
   background-color: rgba(255,255,255,0.6);
   border-radius: 10px;
@@ -264,7 +264,7 @@ export default {
   background-color: #000000;
   color: #ffffff;
   width: 100%;
-  font-size: 2.6vh;
+  font-size: 2.8vh;
   border-radius: 10px;
   text-align: center;
   padding: 1.4vh;
@@ -280,7 +280,7 @@ export default {
   opacity: 0;
 }
 .text-box p {
-  font-size: 3.5vh;
+  font-size: 3.8vh;
   text-align: center;
   margin-bottom: 0;
 }

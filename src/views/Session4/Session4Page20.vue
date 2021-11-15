@@ -42,19 +42,19 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  width: 90%;
-  left: 5%;
+  width: 96%;
+  left: 2%;
   top: 58vh;
   background-color: rgba(255,255,255,0.85);
   padding: 2.1vh;
   opacity: 0;
 }
 .text-box h1 {
-  font-size: 4.2vh;
-  margin-bottom: 2vh;
+  font-size: 5vh;
+  margin-bottom: 1vh;
 }
 .text-box p {
-  font-size: 3vh;
+  font-size: 4vh;
   margin-bottom: 1.5vh;
   opacity: 0;
 }

@@ -32,10 +32,10 @@ export default {
 p {margin-bottom: 0;}
 .title {
   position: absolute;
-  top: 1vh;
-  left: 1%;
-  padding: 1.4vh;
-  font-size: 3.8vh
+  top: 0;
+  left: 0;
+  padding: 1vh;
+  font-size: 5vh
 }
 .text-box {
   position: absolute;
@@ -45,7 +45,8 @@ p {margin-bottom: 0;}
   bottom: 5vh;
   right: 10%;
   opacity: 0;
-  font-size: 3.2vh;
   margin-bottom: 0;
 }
+.text-box h1 {font-size: 5vh;margin-bottom: 0;}
+.text-box p {font-size: 4vh;margin-bottom: 0;}
 </style>
