@@ -40,16 +40,16 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  padding: 1vh 2%;
+  padding: 1vh;
   width: 100%;
 }
 .text-box h1 {
-  font-size: 4vh;
-  margin-bottom: 1vh;
+  font-size: 5vh;
+  margin-bottom: 0;
   opacity: 0;
 }
 .text-box p {
-  font-size: 2.8vh;
+  font-size: 4vh;
   opacity: 0;
 }
 .images {

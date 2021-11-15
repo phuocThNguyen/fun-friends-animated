@@ -241,10 +241,10 @@ export default {
 <style scoped>
 .star-container {
   position: absolute;
-  bottom: 7vh;
-  right: 19%;
-  width: 62%;
-  height: 80vh;
+  bottom: .5vh;
+  right: 14%;
+  width: 72%;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -263,7 +263,7 @@ export default {
   z-index: 55;
 }
 .star-text p {
-  font-size: 3.5vh;
+  font-size: 4vh;
   margin-bottom: 0;
   text-align: center;
 }

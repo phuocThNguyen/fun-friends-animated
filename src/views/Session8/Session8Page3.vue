@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <img src="../../assets/images/session8/33261.png" alt="Tom" class="session-background">
     <div class="text-box">
-      <p>Tom has fallen off his bike. He has only just learnt
+      <p>Tom has fallen off his bike. <br>He has only just learnt
       to ride without training wheels.</p>
       <p>How do you think he is feeling?
         <br>What can you do to be a kind friend to Tom?
@@ -31,17 +31,15 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  top: 2vh;
-  left: 2%;
-  width: 46%;
+  top: 1vh;
+  left: 1%;
+  width: 72%;
   background-color: rgba(255,255,255,0.9);
   padding: 2vh 2.6vh;
   opacity: 0;
 }
 .text-box p {
-  font-size: 2.6vh;
-}
-.text-box p:last-child {
+  font-size: 4vh;
   margin-bottom: 0;
 }
 </style>

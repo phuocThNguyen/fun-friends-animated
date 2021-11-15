@@ -861,7 +861,7 @@
     <div class="text-box">
       Sometimes others don't feel like playing and that is OK.
       There are other children who will feel like it,
-      you just have to find them. Find a classmate and think
+      you just have to find them. <br>Find a classmate and think
       about a <strong>STEP PLAN</strong> to make new friends together.
     </div>
   </div>
@@ -893,12 +893,11 @@ export default {
 .text-box {
   background-color: rgba(255,255,255,0.9);
   position: absolute;
-  left: 20%;
-  top: 30vh;
-  width: 60%;
-  padding: 3vh 4vh;
-  text-align: center;
-  font-size: 3vh;
+  left: 9%;
+  top: 20vh;
+  width: 82%;
+  padding: 2vh 4vh;
+  font-size: 5vh;
 }
 .landscape {
   position: absolute;

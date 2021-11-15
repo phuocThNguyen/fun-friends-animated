@@ -12,7 +12,8 @@
        Play "I spy with my little eye" by paying attention
        with your five senses. Do you think Zoe, Matilda and
        Daniel are kind friends? Do you think that these are
-       'red' or 'green' actions?</p>
+       '<span class="red">red</span>' or
+       '<span class="span green">green</span>' actions?</p>
     </div>
   </div>
 </template>
@@ -37,21 +38,23 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  width: 60%;
-  left: 20%;
-  top: 22vh;
-  text-align: center;
+  width: 80%;
+  left: 10%;
+  top: 10vh;
   padding: 3.5vh;
   background-color: rgba(255,255,255,0.9);
   opacity: 0;
 }
 .text-box h1 {
-  font-size: 3.8vh;
+  text-align: center;
+  font-size: 5vh;
   font-weight: bold;
   margin-bottom: 1vh;
 }
 .text-box p {
-  font-size: 2.6vh;
+  font-size: 4vh;
   margin-bottom: 0;
 }
+.green {color: #00CE7C}
+.red {color: #ff0000}
 </style>

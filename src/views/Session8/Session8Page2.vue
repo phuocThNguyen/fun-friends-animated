@@ -4,7 +4,7 @@
     <div class="text-box">
       Find a friend in your class and show them or tell them
       what they do that you find kind.
-      Maybe smiling, sharing, helping, listening or laughing?
+      <br>Maybe smiling, sharing, helping, listening or laughing?
     </div>
   </div>
 </template>
@@ -19,11 +19,10 @@ export default {
 .text-box {
   position: absolute;
   top: 35vh;
-  left: 20%;
-  width: 60%;
-  padding: 3vh 2.6vh;
-  text-align: center;
-  font-size: 3.4vh;
-  background-color: rgba(255,255,255,0.9);
+  left: 5%;
+  width: 90%;
+  padding: 2vh;
+  font-size: 5vh;
+  background-color: rgba(255,255,255,0.95);
 }
 </style>

@@ -198,7 +198,7 @@
 
     <p class="title"><span id="letter-f">E</span>xplore</p>
     <p class="text" id="line-1">
-      Today we will think about how to be kind and make new friends.
+      Today we will think about <br>how to be kind and make new friends.
     </p>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3">
@@ -279,10 +279,11 @@ export default {
   font-family: 'Sigmar One', cursive;
   position: absolute;
   color: white;
-  font-size: 8.4vh;
+  font-size: 12vh;
   -webkit-text-stroke: 0.1vw black;
-  left: 35%;
-  top: 34vh;
+  text-align: center;
+  width: 100%;
+  top: 26vh;
   opacity: 0;
 }
 #letter-f {
@@ -291,13 +292,13 @@ export default {
 .text {
   position: absolute;
   margin-bottom: 0;
-  font-size: 3.4vh;
+  font-size: 6vh;
   color: #ffffff;
 }
 #line-1 {
   text-align: center;
   width: 100%;
-  top: 48vh;
+  top: 44vh;
 }
 span {
   display: inline-block;
@@ -353,10 +354,10 @@ tspan { white-space:pre }
 }
 .big-cloud {
   position: absolute;
-  width: 90%;
+  width: 110%;
   height: auto;
-  top: 20vh;
-  left: 5%;
+  top: 16vh;
+  left: -5%;
 }
 .long-cloud {
   width: 130%;

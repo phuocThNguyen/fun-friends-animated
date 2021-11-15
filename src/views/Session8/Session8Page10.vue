@@ -3,7 +3,7 @@
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
     <div class="text-box">
       <p>Talk to your classmates about ideas on how to make
-        new friends. Together, draw or write your ideas in the balloons.
+        new friends. <br>Together, draw or write your ideas in the balloons.
         Some ideas could be:</p>
       <p>&bull;&nbsp;&nbsp;Go to play in a park, ride a bike or rollerblade.</p>
       <p>&bull;&nbsp;&nbsp;Be BRAVE and speak with a new person.</p>
@@ -24,7 +24,7 @@ export default {
     return {
       canvasStyle: {
         width: 1,
-        height: 0.8,
+        height: 0.82,
         isPicture: true,
         pictureUrl: "session8/275676-P61H8M-305.png",
         backgroundSize: "cover"
@@ -58,11 +58,11 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  padding: 1vh 4vh;
+  padding: 1vh;
   opacity: 0;
 }
 .text-box p {
-  font-size: 2.6vh;
+  font-size: 3vh;
   margin-bottom: .5vh;
 }
 .canvas {
