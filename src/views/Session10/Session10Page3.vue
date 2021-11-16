@@ -1,7 +1,7 @@
 <template>
   <div class="interactive-container">
     <img src="../../assets/images/session10/72896.png" alt="Tom" class="session-background">
-    <div class="text-box">Tom learns from someone he looks up to.</div>
+    <div class="text-box">Tom learns from <br>someone he looks up to.</div>
     <div class="text-box-green">My dad helps me learn to cook.</div>
   </div>
 </template>
@@ -26,12 +26,11 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  top: 5vh;
-  left: 5%;
-  width: 30%;
-  background-color: rgba(255,255,255,0.8);
+  top: 1vh;
+  left: 1%;
+  background-color: rgba(255,255,255,0.95);
   font-weight: bold;
-  font-size: 2.8vh;
+  font-size: 4vh;
   padding: 2vh;
 }
 .text-box-green {
@@ -41,7 +40,7 @@ export default {
   padding: 1vh 2.4vh;
   background-color: #00CE7C;
   color: #ffffff;
-  font-size: 2.8vh;
+  font-size: 4vh;
   font-weight: bold;
   opacity: 0;
 }

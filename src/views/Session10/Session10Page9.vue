@@ -3,8 +3,8 @@
     <img src="../../assets/images/session10/1354.png" alt="background" class="session-background">
     <img src="../../assets/images/session10/superhero-kids.png" alt="kids" class="kids">
     <div class="text-box">
-      <p>Pretend you are a Superhero. Make yourself as big as you
-      can by stretching your neck, arms, legs, fingers or toes.</p>
+      <p>Pretend you are a Superhero. Make yourself as big as you can
+        <br>by stretching your neck, arms, legs, fingers or toes.</p>
       <p>What does a superhero do to help everybody?</p>
       <p>What can you do to be a superhero?</p>
     </div>
@@ -268,11 +268,11 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.8);
-  width: 66%;
   text-align: center;
-  left: 17%;
-  top: 3vh;
-  font-size: 3vh;
+  width: 84%;
+  left: 8%;
+  top: 1vh;
+  font-size: 4vh;
   padding: 2vh;
   opacity: 0;
 }

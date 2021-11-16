@@ -5,7 +5,7 @@
       <h1>Helpful/Kind Hands</h1>
       <p>What are some of the positive things we look for in 'someone to look up to'?</p>
       <p>Some examples could be:</p>
-      <p>&bull;&nbsp;&nbsp;Cares about animals, trees and living beings</p>
+      <p>&bull;&nbsp;&nbsp;Cares about animals, trees <br>and living beings</p>
       <p>&bull;&nbsp;&nbsp;Choosing 'green' thoughts</p>
       <p>&bull;&nbsp;&nbsp;Caring</p>
       <p>&bull;&nbsp;&nbsp;Helpful</p>
@@ -140,13 +140,13 @@ export default {
   top: 0;
   left: 0;
   width: 50%;
-  padding: 3vh 0 0 4vh;
+  padding: 1vh;
 }
 .text-box h1 {
-  font-size: 4vh;
+  font-size: 6vh;
 }
 .text-box p {
-  font-size: 2.8vh;
+  font-size: 3.5vh;
   margin-bottom: 1vh;
 }
 tspan { white-space:pre }

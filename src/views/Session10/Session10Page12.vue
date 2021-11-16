@@ -10,7 +10,7 @@
         the waves.</p>
     </div>
     <div class="green-box">
-      We love having fun in the ocean.
+      <strong>We love having fun <br>in the ocean.</strong>
     </div>
   </div>
 </template>
@@ -35,14 +35,14 @@ export default {
 <style scoped>
 .green-box {
   position: absolute;
-  bottom: 8vh;
-  left: 3%;
+  bottom: 1vh;
+  left: 9%;
   background-color: #00CE7C;
   color: #ffffff;
-  width: 25%;
-  padding: 1vh 2.8vh;
+  width: 40%;
+  padding: 1vh;
   text-align: center;
-  font-size: 3vh;
+  font-size: 4.5vh;
   opacity: 0;
 }
 .text-box {
@@ -50,13 +50,14 @@ export default {
   top: 0;
   left: 0;
   background-color: #ffffff;
-  padding: 2.6vh;
+  padding: 1vh;
 }
 .text-box h1 {
-  font-size: 4vh;
+  font-size: 5vh;
+  margin-bottom: 0;
 }
 .text-box p {
-  font-size: 2.7vh;
+  font-size: 3.5vh;
   margin-bottom: 0;
 }
 .session-background {

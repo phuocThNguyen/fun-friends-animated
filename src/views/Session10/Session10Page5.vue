@@ -25,12 +25,12 @@ export default {
 <style scoped>
 .text-box-green {
   position: absolute;
-  top: 5vh;
-  left: 5%;
+  top: 3vh;
+  left: 3%;
   padding: 1vh 2.8vh;
   background-color: #00CE7C;
   color: #ffffff;
-  font-size: 2.8vh;
+  font-size: 4vh;
   font-weight: bold;
   opacity: 0;
 }

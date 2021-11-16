@@ -287,9 +287,10 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try Every day</h1>
-      <p>&nbsp;&bull; Practise the steps on your Step Plan. If you've
-      done all the steps, make a new Step Plan.</p>
+      <h1>Try every day</h1>
+      <p>&nbsp;&bull; Practise the steps on your <strong>STEP PLAN</strong>.
+        If you've done all the steps,
+        make a new <strong>STEP PLAN</strong>.</p>
       <p>&nbsp;&bull; Notice when others are listening, helping and
       smiling and let them know you like it.</p>
       <p>&nbsp;&bull; Practise turning '<span class="red">red</span>' thoughts into
@@ -395,22 +396,22 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.8);
-  width: 60%;
+  width: 90%;
   height: auto;
-  left: 20%;
-  top: 12vh;
+  left: 5%;
+  top: 2vh;
   padding: 2vh;
   opacity: 0;
 }
 .text-box h1 {
   text-align: center;
   margin-bottom: 1vh;
-  font-size: 3.4vh;
+  font-size: 6vh;
   font-weight: bold;
 }
 .text-box p {
   margin-bottom: 1vh;
-  font-size: 3vh;
+  font-size: 4vh;
   opacity: 0;
 }
 .text-box p:last-child {

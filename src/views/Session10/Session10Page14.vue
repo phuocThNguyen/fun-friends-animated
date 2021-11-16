@@ -17,13 +17,12 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  top: 3vh;
-  left: 3%;
-  width: 40%;
+  top: 1vh;
+  left: 1%;
+  width: 60%;
   background-color: #000000;
   padding: 1vh;
-  font-size: 2.8vh;
-  text-align: center;
+  font-size: 4vh;
   color: #ffffff;
   font-weight: bold;
 }

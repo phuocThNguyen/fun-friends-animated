@@ -208,13 +208,12 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.8);
-  width: 60%;
-  font-size: 2.8vh;
+  width: 80%;
+  font-size: 5vh;
   font-weight: bold;
-  text-align: center;
-  padding: 3vh 2vh;
-  top: 30vh;
-  left: 20%;
+  padding: 3vh;
+  top: 20vh;
+  left: 10%;
 }
 .landscape {
   position: absolute;

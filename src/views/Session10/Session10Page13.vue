@@ -5,7 +5,7 @@
       <br>Write their names in the space below or give them
     a big thank you.</p>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle" />
-    <audio autoplay loop src="../../assets/sounds/children-background-music/no-copyright-music-funny-children-kids-music-by-mokka-kids.mp3"></audio>
+    <audio loop src="../../assets/sounds/children-background-music/no-copyright-music-funny-children-kids-music-by-mokka-kids.mp3"></audio>
   </div>
 </template>
 
@@ -17,8 +17,8 @@ export default {
   data() {
     return {
       canvasStyle: {
-        width: 0.96,
-        height: 0.78,
+        width: 0.98,
+        height: 0.8,
         isPicture: true,
         pictureUrl: "session10/drawing-canvas.png",
         backgroundSize: 'contain'
@@ -36,17 +36,16 @@ export default {
 <style scoped>
 .canvas {
   position: absolute;
-  left: 2%;
+  left: 1%;
   top: 1vh;
 }
 .text {
   position: absolute;
-  width: 90%;
+  width: 98%;
   top: 1vh;
-  left: 5%;
-  padding: .5vh 2.8vh;
-  font-size: 2.6vh;
-  font-weight: bold;
+  left: 1%;
+  padding: 0;
+  font-size: 3vh;
   text-align: center;
   background-color: #000000;
   color: #ffffff;

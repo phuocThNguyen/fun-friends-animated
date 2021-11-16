@@ -406,11 +406,11 @@ export default {
 .star-text {
   position: absolute;
   text-align: center;
-  margin-top: 15%;
+  margin-top: 13%;
   z-index: 55;
 }
 .star-text p {
-  font-size: 3.2vh;
+  font-size: 4vh;
   margin-bottom: 0;
   text-align: center;
 }
