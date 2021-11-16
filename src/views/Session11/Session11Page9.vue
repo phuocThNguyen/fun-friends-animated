@@ -1547,22 +1547,25 @@ export default {
 }
 .text-box {
   position: absolute;
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255,0.8);
   opacity: 0;
-  padding: 1.5vh;
-  top: 2vh;
-  left: 2%;
+  padding: 1vh;
+  top: 1%;
+  left: 1%;
   width: 50%;
 }
 .text-box h1 {
   margin-bottom: 1vh;
-  font-size: 4.9vh;
+  font-size: 5vh;
 }
 .text-box p {
-  font-size: 3.2vh;
+  font-size: 4vh;
+  padding-left: 0;
   margin-bottom: 1vh;
-  padding-left: 1.4vh;
   opacity: 0;
+}
+.text-box p:last-child {
+  margin-bottom: 0;
 }
 .landscape {
   position: absolute;

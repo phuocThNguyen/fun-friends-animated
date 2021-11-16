@@ -1427,13 +1427,13 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try Every day</h1>
+      <h1>Try every day</h1>
       <p>&nbsp;&bull; Draw or take a picture of your family's support
         team. Alternatively, share a story about how your family
-        gets support. You choose.</p>
-      <p>&nbsp;&bull; Carry on with your step plan.</p>
+        gets support.</p>
+      <p>&nbsp;&bull; Carry on with your <strong>STEP PLAN</strong>.</p>
       <p>&nbsp;&bull; Practise 'green' thoughts.</p>
-      <p>&nbsp;&bull; Relax every day.</p>
+      <p>&nbsp;&bull; Relax.</p>
       <p>&nbsp;&bull; Notice and reward yourself and other
         for being BRAVE.</p>
       <p>&nbsp;&bull; Practise being BRAVE:</p>
@@ -1521,22 +1521,22 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.8);
-  width: 62%;
+  width: 90%;
   height: auto;
-  left: 19%;
-  top: 6vh;
-  padding: 2vh 2.8vh;
+  left: 5%;
+  top: 2vh;
+  padding: 2vh;
   opacity: 0;
 }
 .text-box h1 {
   text-align: center;
-  margin-bottom: 2vh;
-  font-size: 4vh;
+  margin-bottom: 1vh;
+  font-size: 6vh;
   font-weight: bold;
 }
 .text-box p {
-  margin-bottom: .5vh;
-  font-size: 3vh;
+  margin-bottom: 0;
+  font-size: 4.3vh;
   opacity: 1;
 }
 .text-box p:nth-of-type(10),

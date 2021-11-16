@@ -5,13 +5,13 @@
       <p>Talk about who you think are in Annie's and Tom's
       Support Teams. Who is in your support team?</p>
       <p>They could be people from:</p>
-      <p>&bull;&nbsp;&nbsp;School/kindergarten/playgroup</p>
-      <p>&bull;&nbsp;&nbsp;Where you live</p>
-      <p>&bull;&nbsp;&nbsp;Community</p>
-      <p>&bull;&nbsp;&nbsp;Religious/spiritual group</p>
-      <p>&bull;&nbsp;&nbsp;Sporting clubs</p>
-      <p>&bull;&nbsp;&nbsp;Family</p>
-      <p>&bull;&nbsp;&nbsp;Friends</p>
+      <p>&bull;&nbsp;School/kindergarten/playgroup</p>
+      <p>&bull;&nbsp;Where you live</p>
+      <p>&bull;&nbsp;Community</p>
+      <p>&bull;&nbsp;Religious/spiritual group</p>
+      <p>&bull;&nbsp;Sporting clubs</p>
+      <p>&bull;&nbsp;Family</p>
+      <p>&bull;&nbsp;Friends</p>
     </div>
   </div>
 </template>
@@ -41,11 +41,17 @@ export default {
   background-color: #ffffff;
   width: 40%;
   height: 100vh;
-  padding: 3vh 2.8vh;
+  padding: 2vh;
   opacity: 0;
 }
 .text-box p {
-  font-size: 2.8vh;
-  margin-bottom: 1.5vh;
+  font-size: 4vh;
+  margin-bottom: 0;
+}
+.text-box p:nth-child(n+3) {
+  padding-left: 2vh;
+}
+.text-box p:nth-child(3) {
+  font-size: 3.5vh !important;
 }
 </style>

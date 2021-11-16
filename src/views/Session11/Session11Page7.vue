@@ -2,11 +2,11 @@
   <div class="interactive-container">
     <div class="image-container">
       <img src="../../assets/images/session11/rock_climbing_nature.png" alt="climbing-tree" class="images">
-      <p class="text">Mum helping Matilda rock climbing.</p>
+      <p class="text" id="para-1">Mum helping Matilda rock climbing.</p>
     </div>
     <div class="image-container" id="right">
       <img src="../../assets/images/session11/hugging_dog_child.png" alt="swinging" class="images">
-      <p class="text">Zoe giving Pepper a hug.</p>
+      <p class="text" id="para-2">Zoe giving Pepper a hug.</p>
     </div>
   </div>
 </template>
@@ -52,14 +52,15 @@ export default {
 .image-container p {
   background-color: #00CE7C;
   color: #ffffff;
-  font-size: 2.8vh;
+  font-size: 3vh;
   font-weight: bold;
-  width: 90%;
-  left: 5%;
-  bottom: 20vh;
+  width: 80%;
+  bottom: 9vh;
   text-align: center;
   position: absolute;
-  padding: 1vh 1.4vh;
+  padding: .5vh;
   opacity: 0;
 }
+#para-1 {left: 19%}
+#para-2 {right: 19%}
 </style>

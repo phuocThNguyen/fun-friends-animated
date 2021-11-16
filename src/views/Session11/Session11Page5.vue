@@ -8,11 +8,11 @@
     </div>
     <div class="image-container">
       <img src="../../assets/images/session11/surfing_child.png" alt="surfing" class="images">
-      <div class="text">Mum helping Zoe surf</div>
+      <div class="text" id="para-1">Mum helping Zoe surf</div>
     </div>
     <div class="image-container" id="right">
       <img src="../../assets/images/session11/Hugging_Lama_Girl.png" alt="hugging-lama" class="images">
-      <div class="text">Matilda giving Alpaca a hug</div>
+      <div class="text" id="para-2">Matilda giving Alpaca a hug</div>
     </div>
   </div>
 </template>
@@ -46,22 +46,22 @@ export default {
 .image-container {
   position: absolute;
   bottom: 0;
-  width: 49%;
+  width: 49.5%;
   height: 70vh;
 }
 .text {
   position: absolute;
-  bottom: 5vh;
+  bottom: 2vh;
   background-color: #00CE7C;
-  padding: .5vh 1.4vh;
+  padding: .5vh;
   color: #ffffff;
-  font-size: 2.8vh;
+  font-size: 4vh;
   font-weight: bold;
-  width: 90%;
-  left: 5%;
   text-align: center;
   opacity: 0;
 }
+#para-1 {left: 18%;font-size: 4vh;width: 79%;}
+#para-2 {right: 18%;font-size: 4vh;}
 .images {
   width: 100%;
   height: 100%;
@@ -71,14 +71,14 @@ export default {
 }
 .text-box {
   position: absolute;
-  padding: 4vh;
+  padding: 1vh;
 }
 .text-box h1 {
-  font-size: 4vh;
-  margin-bottom: 2vh;
+  font-size: 5vh;
+  margin-bottom: 0;
   font-weight: bold;
 }
 .text-box p {
-  font-size: 2.8vh;
+  font-size: 4vh;
 }
 </style>

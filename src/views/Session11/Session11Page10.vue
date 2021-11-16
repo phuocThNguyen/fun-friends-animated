@@ -1440,7 +1440,7 @@
         </g>
       </svg>
       <div class="star-text">
-        <p><strong>Bright <br>Star Idea</strong></p>
+        <p><strong>Bright Star Idea</strong></p>
         <p>Make a 'recipe for happiness'. Write
           <br>down all the ingredients that make
           <br>you happy and how to put them all
@@ -1499,10 +1499,10 @@ export default {
 <style scoped>
 .star-container {
   position: absolute;
-  bottom: 7vh;
-  right: 19%;
-  width: 62%;
-  height: 80vh;
+  bottom: .5vh;
+  right: 15%;
+  width: 70%;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1517,11 +1517,11 @@ export default {
 .star-text {
   position: absolute;
   text-align: center;
-  margin-top: 7%;
+  margin-top: 12%;
   z-index: 55;
 }
 .star-text p {
-  font-size: 3.2vh;
+  font-size: 3.8vh;
   margin-bottom: 0;
   text-align: center;
 }
