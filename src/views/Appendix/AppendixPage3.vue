@@ -43,17 +43,17 @@ export default {
   font-family: 'Sigmar One', cursive;
   width: 100%;
   position: absolute;
-  top: 2vh;
+  top: 1vh;
   text-align: center;
-  font-size: 5.4vh;
+  font-size: 6.5vh;
   color: #ffffff;
 }
 .text {
   position: absolute;
   width: 100%;
   text-align: center;
-  top: 10vh;
-  font-size: 3.3vh;
+  top: 8.5vh;
+  font-size: 5vh;
   color: #ffffff;
 }
 </style>

@@ -3271,7 +3271,7 @@
       </g>
     </svg>
     <div class="title">Appendix 2: Someone Special I Know Who is
-    Brave and Kind!!!</div>
+    Brave and Kind!</div>
     <div class="star-container">
       <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 1258" width="1320" height="1258">
         <title>Star</title>
@@ -3297,17 +3297,17 @@
           </g>
         </g>
       </svg>
-      <div class="cloud-text">In my family.</div>
+      <div class="cloud-text">In my family</div>
     </div>
     <div class="cloud-container" id="cloud-2">
-      <svg class="cloud" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 119 84" width="119" height="84">
+      <svg class="cloud" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117 70" width="117" height="70">
         <g id="Layer 2">
           <g id="&lt;Group&gt;">
-            <path id="&lt;Path&gt;" class="shp0-cloud" d="M0.13 63.49C-0.12 65.85 0.22 68.15 1.38 70.17C7.52 80.88 25.9 81.78 31.23 69.45C27.64 85.33 46.29 85.81 47.66 70.61C52.2 87.08 80.89 88.81 79.25 69.54C80.05 78.88 90.3 79.1 87.76 68.84C90.8 81.13 105.55 79.39 113.42 72.9C122.47 65.45 117.54 39.23 107.23 46.55C123.05 35.29 103.35 10.86 93.99 22.26C87.92 -19.41 42.82 10.54 51.72 21.67C44.19 12.25 34.49 17.88 33.78 28.5C16.96 16.1 7.11 40.94 20.97 48.7C11.03 43.13 1.08 54.56 0.13 63.49Z" />
+            <path id="&lt;Path&gt;" class="shp0-cloud " d="M116.26 38.58C116.26 31.17 110.25 25.16 102.83 25.16C102.47 25.16 102.12 25.18 101.76 25.21C101.76 25.19 101.77 25.18 101.77 25.16C101.77 16.21 94.51 8.96 85.57 8.96C82.2 8.96 79.08 9.99 76.48 11.75C72.81 5.13 65.76 0.65 57.65 0.65C49.76 0.65 42.86 4.91 39.11 11.25C36.61 9.8 33.7 8.96 30.59 8.96C21.27 8.96 13.71 16.43 13.55 25.71C5.71 27.7 -0.1 34.81 -0.1 43.27C-0.1 53.27 8.01 61.38 18.02 61.38C18.7 61.38 19.37 61.34 20.04 61.27C22.61 64.2 26.38 66.05 30.59 66.05C34.6 66.05 38.22 64.37 40.78 61.67C44.78 66.54 50.86 69.65 57.65 69.65C62.96 69.65 67.83 67.75 71.61 64.6C74.99 66.44 78.86 67.49 82.98 67.49C93.29 67.49 102.06 60.93 105.37 51.76C111.57 50.57 116.26 45.13 116.26 38.58Z" />
           </g>
         </g>
       </svg>
-      <div class="cloud-text">Someone who is <br>kind to everyone.</div>
+      <div class="cloud-text">Someone who is <br>kind to everyone</div>
     </div>
     <div class="cloud-container" id="cloud-3">
       <svg class="cloud" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93 62" width="93" height="62">
@@ -3317,7 +3317,7 @@
           </g>
         </g>
       </svg>
-      <div class="cloud-text">At my school <br> / preschool.</div>
+      <div class="cloud-text">At my school <br> / preschool</div>
     </div>
     <div class="cloud-container" id="cloud-4">
       <svg class="cloud" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 195 92" width="195" height="92">
@@ -3327,7 +3327,7 @@
           </g>
         </g>
       </svg>
-      <div class="cloud-text">In a book <br>or movie.</div>
+      <div class="cloud-text">In a book <br>or movie</div>
     </div>
   </div>
 </template>
@@ -3363,11 +3363,11 @@ export default {
 }
 .title {
   position: absolute;
-  font-size: 4vh;
+  font-size: 4.7vh;
   font-weight: bold;
   width: 100%;
   text-align: center;
-  top: 2vh;
+  top: 0;
   color: #ffffff;
 }
 .cloud-container {
@@ -3385,7 +3385,8 @@ export default {
 }
 .cloud-text {
   position: absolute;
-  font-size: 4vh;
+  font-size: 5.5vh;
+  line-height: 5vh;
   z-index: 10;
   margin-top: 3%;
 }
@@ -3424,8 +3425,8 @@ export default {
 }
 .star-text {
   position: absolute;
-  margin-top: 10%;
-  font-size: 3.8vh;
+  margin-top: 0;
+  font-size: 5.5vh;
   width: 100%;
   text-align: center;
 }
