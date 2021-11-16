@@ -700,7 +700,7 @@
     <p class="text">Draw, write or act out your ideas for rewards with a friend!
       <br>If it's a game, teach your friend how to play it!</p>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
-    <audio autoplay loop src="../../assets/sounds/children-background-music/ukulele-beach-doug-maxwell-children-s-music-no-copyright-music.mp3"></audio>
+    <audio loop src="../../assets/sounds/children-background-music/ukulele-beach-doug-maxwell-children-s-music-no-copyright-music.mp3"></audio>
   </div>
 </template>
 
@@ -712,8 +712,8 @@ export default {
   data() {
     return {
       canvasStyle: {
-        width: 0.9,
-        height: 0.7,
+        width: 0.98,
+        height: 0.8,
         isPicture: false,
       }
     }
@@ -730,19 +730,20 @@ export default {
 .text {
   display: block;
   position: absolute;
-  top: 2vh;
-  left: 25%;
+  top: 1vh;
+  left: 1%;
+  width: 98%;
   background-color: #000000;
   color: #ffffff;
   text-align: center;
-  font-size: 2.6vh;
+  font-size: 4vh;
   padding: 1vh 1.4vh;
   z-index: 50;
 }
 .canvas {
   position: absolute;
-  left: 5%;
-  top: 2vh;
+  left: 1%;
+  top: 1vh;
 }
 .landscape {
   position: absolute;

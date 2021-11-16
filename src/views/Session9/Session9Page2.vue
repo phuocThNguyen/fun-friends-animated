@@ -618,8 +618,8 @@
       </g>
     </svg>
     <div class="text-box">
-      Talk to your friends about your Step Plan. Think
-      of ways you can reward yourself for doing your best,
+      Talk to your friends about your <strong>STEP PLAN</strong>.
+      Think of ways you can reward yourself for doing your best,
       like going to the park, playing ball, or just sharing
       a picnic with your family.
     </div>
@@ -647,12 +647,11 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.85);
-  width: 54%;
-  padding: 5vh 3.2vh;
-  left: 23%;
-  top: 33vh;
-  font-size: 3.2vh;
-  text-align: center;
+  width: 80%;
+  padding: 2vh;
+  left: 10%;
+  top: 20vh;
+  font-size: 5.5vh;
   opacity: 0;
 }
 .landscape {

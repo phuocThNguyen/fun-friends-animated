@@ -988,9 +988,9 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try Every day</h1>
+      <h1>Try every day</h1>
       <p>&nbsp;&bull; Keep Practising your Step Plan with your family and friends.</p>
-      <p>&nbsp;&bull; Practise being BRAVE every day:</p>
+      <p>&nbsp;&bull; Practise being BRAVE:</p>
       <p>&middot; Look people in the eye and smile.</p>
       <p>&middot; Use a brave voice and make yourself big.</p>
       <p>&middot; Try your best and give it a go. </p>
@@ -1051,22 +1051,22 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.9);
-  width: 52%;
+  width: 92%;
   height: auto;
-  left: 24%;
-  top: 20vh;
-  padding: 2vh 2.6vh;
+  left: 4%;
+  top: 12vh;
+  padding: 2vh;
   opacity: 0;
 }
 .text-box h1 {
   text-align: center;
   margin-bottom: 2vh;
-  font-size: 3.2vh;
+  font-size: 5vh;
   font-weight: bold;
 }
 .text-box p {
   margin-bottom: 1vh;
-  font-size: 3vh;
+  font-size: 4.5vh;
   opacity: 0;
 }
 .text-box p:nth-of-type(3),

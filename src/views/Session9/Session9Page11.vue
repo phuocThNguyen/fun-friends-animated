@@ -2,7 +2,7 @@
   <div class="interactive-container" id="alt-bg">
     <p class="text">Write or draw other rewards in the space below.</p>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle" />
-    <audio autoplay loop src="../../assets/sounds/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3"></audio>
+    <audio loop src="../../assets/sounds/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3"></audio>
   </div>
 </template>
 
@@ -14,8 +14,8 @@ export default {
   data() {
     return {
       canvasStyle: {
-        width: 0.96,
-        height: 0.75,
+        width: 0.98,
+        height: 0.8,
         isPicture: true,
         pictureUrl: "session9/drawing-canvas.png",
         backgroundSize: 'contain'
@@ -33,7 +33,7 @@ export default {
 <style scoped>
 .canvas {
   position: absolute;
-  left: 2%;
+  left: 1%;
   top: 1vh;
 }
 .text {
@@ -41,7 +41,7 @@ export default {
   top: 1vh;
   left: 25%;
   padding: 1vh 2.6vh;
-  font-size: 2.6vh;
+  font-size: 3vh;
   font-weight: bold;
   background-color: #000000;
   color: #ffffff;

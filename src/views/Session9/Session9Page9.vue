@@ -7,11 +7,11 @@
     </div>
     <div class="image-container" id="left">
       <img src="../../assets/images/session9/Beach_Children.png" alt="beach-children">
-      <p>Spending the day having fun at the beach</p>
+      <p id="para-1">Spending the day <br>having fun at the beach</p>
     </div>
     <div class="image-container" id="right">
       <img src="../../assets/images/session9/healthy_eating_child.png" alt="healthy-eating">
-      <p>Eating your favourite healthy meal</p>
+      <p id="para-2">Eating your <br>favourite healthy meal</p>
     </div>
   </div>
 </template>
@@ -49,16 +49,17 @@ export default {
 }
 .text-box {
   position: absolute;
-  padding: 2vh 2.6vh;
+  top: -.5vh;
+  left: 0;
+  padding: .5vh;
 }
 .text-box h1 {
-  font-size: 4vh;
-  margin-bottom: 1vh;
+  font-size: 6vh;
+  margin-bottom: 0;
   font-weight: bold;
 }
 .text-box p {
-  font-size: 2.8vh;
-  margin-bottom: 1vh ;
+  font-size: 4vh;
 }
 .image-container {
   position: absolute;
@@ -74,16 +75,18 @@ export default {
 .image-container p {
   display: block;
   position: absolute;
-  bottom: 10vh;
-  left: 2%;
-  width: 96%;
+  bottom: 1vh;
+  width: 70%;
   background-color: #00ce7c;
   color: #ffffff;
   padding: 1vh;
   text-align: center;
-  font-size: 2.6vh;
+  font-size: 4vh;
   font-weight: bold;
+  margin-bottom: 0;
 }
+#para-1 {left: 18%;}
+#para-2 {right: 18%;}
 #right {
   right: 0;
 }

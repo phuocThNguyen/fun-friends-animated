@@ -2,11 +2,11 @@
   <div class="interactive-container">
     <div class="image-container">
       <img src="../../assets/images/session9/fish_feeding_pond.png" alt="feeding-fish">
-      <p>Feeding the fish</p>
+      <p id="para-1">Feeding the fish</p>
     </div>
     <div class="image-container">
       <img src="../../assets/images/session9/swimming_lake_children.png" alt="swimming">
-      <p>Swimming in the river</p>
+      <p id="para-2">Swimming in the river</p>
     </div>
   </div>
 </template>
@@ -51,16 +51,18 @@ export default {
 .image-container p {
   display: block;
   position: absolute;
-  bottom: 10vh;
-  left: 2%;
-  width: 96%;
+  bottom: 1vh;
+  width: 70%;
   background-color: #00ce7c;
   color: #ffffff;
   padding: 1vh;
   text-align: center;
-  font-size: 2.5vh;
+  font-size: 4vh;
   font-weight: bold;
+  margin-bottom: 0;
 }
+#para-1 {left: 18%}
+#para-2 {right: 18%}
 .image-container:nth-of-type(2) {
   right: 0;
 }

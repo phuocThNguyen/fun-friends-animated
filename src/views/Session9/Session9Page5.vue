@@ -2312,17 +2312,14 @@ export default {
 .text-box {
   position: absolute;
   top: 30vh;
-  width: 56%;
-  left: 22%;
+  width: 96%;
+  left: 2%;
   background-color: rgba(255,255,255,0.9);
   text-align: center;
-  padding: 4vh 2vh;
-  font-size: 2.7vh;
+  padding: 2vh;
+  font-size: 5.5vh;
 }
 .text-box p {
-  margin-bottom: 1vh;
-}
-.text-box p:last-child {
   margin-bottom: 0;
 }
 .landscape {

@@ -124,7 +124,7 @@ export default {
 }
 .btn-style {
   background-color: #00ce7c;
-  margin: 0 .5% 1% .5%;
+  margin: .5% .5% 1% .5%;
   border: none;
   padding: 0 3% 0 3%;
   height: 5vh;

@@ -2,11 +2,11 @@
   <div class="interactive-container">
     <div class="image-container">
       <img src="../../assets/images/session9/92230.png" alt="Annie">
-      <p>2. Brave Tom &ndash; Learning to garden</p>
+      <p>2. Brave Tom <br>Learning to garden</p>
     </div>
     <div class="image-container">
       <img src="../../assets/images/session9/3100.png" alt="Annie">
-      <p>Tom's Reward &ndash; Fun ride</p>
+      <p>Tom's Reward <br>Fun ride</p>
     </div>
   </div>
 </template>
@@ -51,15 +51,16 @@ export default {
 .image-container p {
   display: block;
   position: absolute;
-  bottom: 10vh;
-  left: 2%;
-  width: 96%;
+  bottom: 1vh;
+  left: 18%;
+  width: 64%;
   background-color: #00ce7c;
   color: #ffffff;
   padding: 1vh;
   text-align: center;
-  font-size: 2.5vh;
+  font-size: 4vh;
   font-weight: bold;
+  margin-bottom: 0;
 }
 .image-container:nth-of-type(2) {
   right: 0;
