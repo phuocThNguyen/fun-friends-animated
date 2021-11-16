@@ -232,19 +232,20 @@ export default {
 }
 .text-box {
   position: absolute;
-  top: 2vh;
-  left: 2%;
+  top: 1%;
+  left: 1%;
+  width: 98%;
+  padding: 1vh 2vh;
+  background-color: rgba(255,255,255,0.9);
 }
 .text-box h1 {
-  font-size: 4vh;
+  font-size: 6vh;
   font-weight: bold;
-  margin-bottom: 2vh;
-  opacity: 0;
+  margin-bottom: 0;
 }
 .text-box p {
-  font-size: 2.7vh;
-  opacity: 0;
-  margin-bottom: 1vh;
+  font-size: 4vh;
+  margin-bottom: 0;
 }
 tspan { white-space:pre }
 .shp0-pink { fill: #414042 }

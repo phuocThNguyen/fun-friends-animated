@@ -1033,13 +1033,12 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.9);
-  text-align: center;
-  padding: 3vh 1.4vh;
-  font-size: 3.3vh;
+  padding: 2vh;
+  font-size: 4.5vh;
   font-weight: bold;
-  width: 80%;
-  left: 10%;
-  top: 25vh;
+  width: 90%;
+  left: 5%;
+  top: 15vh;
   opacity: 0;
 }
 .landscape {

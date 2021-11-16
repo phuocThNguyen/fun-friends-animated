@@ -210,17 +210,19 @@ export default {
 }
 .text-box {
   position: absolute;
-  top: 0;
-  left: 0;
-  padding: 4vh;
+  top: 1%;
+  left: 1%;
+  width: 98%;
+  padding: 1vh 2vh;
+  background-color: rgba(255,255,255,0.9);
 }
 .text-box h1 {
-  font-size: 4.5vh;
+  font-size: 6vh;
   font-weight: bold;
-  margin-bottom: 1vh;
+  margin-bottom: 0
 }
 .text-box p {
-  font-size: 3.5vh;
+  font-size: 4vh;
   margin-bottom: 0;
 }
 tspan { white-space:pre }

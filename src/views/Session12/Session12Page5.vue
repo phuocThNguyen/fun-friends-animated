@@ -581,9 +581,9 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  width: 90%;
-  left: 5%;
-  top: 8vh;
+  width: 98%;
+  left: 1%;
+  top: 1vh;
 }
 .text-box .title {
   width: 100%;
@@ -592,20 +592,20 @@ export default {
   position: absolute;
   background-color: #000000;
   color: #ffffff;
-  font-size: 2.7vh;
+  font-size: 3.2vh;
   font-weight: bold;
   opacity: 1;
 }
 .text {
   background-color: rgba(255,255,255,0.9);
   position: absolute;
-  top: 10vh;
-  padding: 3vh 2.6vh;
-  opacity: 1
+  top: 8vh;
+  padding: 1vh;
+  opacity: 1;
 }
 .text p {
-  margin-bottom: 1vh;
-  font-size: 2.7vh;
+  margin-bottom: 1.5vh;
+  font-size: 3.33vh;
   opacity: 0;
 }
 .text p:last-child {
