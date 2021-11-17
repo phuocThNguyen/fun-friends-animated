@@ -296,7 +296,6 @@ export default {
 .text {
   position: absolute;
   margin-bottom: 0;
-  font-size: 5vh;
   color: #ffffff;
 }
 #line-1 {
@@ -304,6 +303,7 @@ export default {
   width: 98%;
   left: 1%;
   top: 42vh;
+  font-size: 5vh;
 }
 #line-2 {
   text-align: center;
@@ -311,6 +311,7 @@ export default {
   top: 58vh;
   left: 5%;
   font-weight: bold;
+  font-size: 6vh;
 }
 span {
   display: inline-block;

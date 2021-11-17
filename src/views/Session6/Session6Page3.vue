@@ -165,7 +165,8 @@ export default {
       })
       .add({
         targets: text[5],
-        opacity: 1
+        opacity: 1,
+        delay: 2000
       })
   }
 }

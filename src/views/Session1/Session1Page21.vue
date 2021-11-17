@@ -521,8 +521,8 @@ export default {
 .coordinate-container {
   position: absolute;
   top: 8vh;
-  left: 26%;
-  width: 48%;
+  left: 32%;
+  width: 36%;
   height: 9vh;
   display: flex;
   align-items: center;
@@ -533,11 +533,10 @@ export default {
   height: 100%;
 }
 .button:active {
-  width: auto;
-  height: 70%;
+  transform: scale(0.8);
 }
 .button-label {
-  font-size: 7vh;
+  font-size: 5vh;
   font-family: 'Love Ya Like A Sister', cursive;
   color: #000000;
 }

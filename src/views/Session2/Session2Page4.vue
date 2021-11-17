@@ -655,9 +655,9 @@ export default {
 .sticker {
   position: absolute;
   width: auto;
-  height: 15vh;
-  top: 31vh;
-  left: 25%;
+  height: 25vh;
+  top: 25vh;
+  left: 52%;
   z-index: 50;
   opacity: 0;
 }

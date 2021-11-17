@@ -25,8 +25,8 @@ export default {
       .add({
         targets: ".text-box",
         opacity: 1,
-        duration: 1000,
-        delay: 1000,
+        duration: 500,
+        delay: 500,
         easing: "linear",
       })
   },

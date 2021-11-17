@@ -197,17 +197,14 @@
     </svg>
 
     <p class="title"><span id="letter-f">I</span> can try</p>
-    <p class="text" id="line-1">Today we will think about
-      two different kinds of thoughts –
+    <p class="text" id="line-1">Today we will think about:
       '<span class="green">green</span>' <strong>thoughts</strong> that
       help us feel strong inside, keep us going, and
       let us have fun, and '<span class="red">red</span>'
       <strong>thoughts</strong> that stop us all from trying to be brave.</p>
     <p class="text" id="line-2">How can thoughts be turned
       '<span class="red">red</span>' or
-      '<span class="green">green</span>'? As a group,
-      in a circle, share your ideas. Remember,
-      there are no right or wrong answers.</p>
+      '<span class="green">green</span>'? Share your ideas!</p>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3">
       Your browser does not support the<code>audio</code> element.
@@ -304,7 +301,7 @@ export default {
 .text {
   position: absolute;
   margin-bottom: 0;
-  font-size: 4.5vh;
+  font-size: 4.8vh;
   opacity: 0;
 }
 #line-1 {
@@ -315,7 +312,7 @@ export default {
 #line-2 {
   text-align: center;
   width: 100%;
-  top: 55vh;
+  top: 57vh;
 }
 span {
   display: inline-block;

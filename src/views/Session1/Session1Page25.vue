@@ -956,6 +956,7 @@ export default {
 .text-box p {
   margin-bottom: 0;
 }
+
 .bubble-container {
   position: absolute;
   width: 30%;
@@ -986,6 +987,7 @@ export default {
 }
 .shp0-bubble { fill: #ffffff }
 .shp1-bubble { fill: #00CE7C }
+
 tspan { white-space:pre }
 .shp-smoke { fill: #ffffff }
 .shp0 { fill: url(#grd1) }

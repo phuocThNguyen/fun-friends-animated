@@ -13,9 +13,8 @@
 </template>
 
 <script>
-
-
 import DrawingCanvas from "@/components/drawingCanvas/DrawingCanvas";
+
 export default {
   name: "Session2Page17",
   components: {DrawingCanvas},
@@ -48,7 +47,7 @@ export default {
   position: absolute;
   z-index: 100;
   background-color: #ffffff;
-  width: 32%;
+  width: 33%;
   padding: 1vh 2vh;
   top: 1vh;
   left: 1%;

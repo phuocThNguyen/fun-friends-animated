@@ -9,6 +9,7 @@
         :tips="['Happy','Worried','Relaxing']"
         :ans="['red-tick','green-tick','red-tick']"
         :isSmall="false"
+        :delay="700"
         v-on:correctAnsChosen="handleCorrectAnswer"
         v-on:wrongAnswer="handleWrongAnswer"
     />

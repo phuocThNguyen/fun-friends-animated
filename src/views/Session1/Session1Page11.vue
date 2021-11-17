@@ -850,7 +850,7 @@ export default {
     return {
       canvasStyle: {
         width: 0.68,
-        height: 0.7,
+        height: 0.71,
         isPicture: false,
       },
       canvasData: null,
@@ -954,7 +954,7 @@ export default {
 }
 .canvas {
   position: absolute;
-  top: 2vh;
+  top: 1vh;
   right: .5%;
   z-index: 100;
   opacity: 0;
@@ -962,7 +962,7 @@ export default {
 .main-content {
   position: absolute;
   left: .5%;
-  top: 2vh;
+  top: 1vh;
   width: 30%;
   z-index: 50;
 }

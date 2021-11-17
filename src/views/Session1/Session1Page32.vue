@@ -1191,8 +1191,8 @@ export default {
 
     let mainContentAnimation = anime.timeline({
       easing: 'linear',
-      duration: 500,
-      delay: 500
+      duration: 700,
+      delay: 700
     });
     mainContentAnimation
       .add({

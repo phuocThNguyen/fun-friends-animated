@@ -32,7 +32,7 @@ export default {
   background-color: rgba(0, 206, 124, 0.95);
   position: absolute;
   top: 2vh;
-  right: 2%;
+  left: 2%;
   opacity: 0;
   padding: 2vh;
 }

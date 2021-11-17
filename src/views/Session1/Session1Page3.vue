@@ -3,7 +3,6 @@
     <img class="session-background" id="pic" src="../../assets/images/session1/4161-resized.jpg" alt="tom-and-mum">
     <div class="left-bar">
       <h1>Meet Tom</h1>
-      <p id="para-1">Meet Tom!</p>
       <p id="para-2">Today is Tom’s birthday.</p>
       <p id="para-3">He is adopting two rescue dogs, Chilli and Pepper.</p>
       <p id="para-4">Tom wants to give Chilli and Pepper a loving home.</p>
@@ -29,14 +28,14 @@ export default {
       .add({
         targets: ".left-bar",
         opacity: 1,
-        delay: 1000,
+        delay: 500,
         duration: 500,
       })
       .add({
         targets: para[0],
         opacity: 1,
         duration: 500,
-        delay: 1000,
+        delay: 500,
       })
       .add({
         targets: para[1],
@@ -58,12 +57,6 @@ export default {
       })
       .add({
         targets: para[4],
-        opacity: 1,
-        duration: 300,
-        delay: 1000,
-      })
-      .add({
-        targets: para[5],
         opacity: 1,
         duration: 300,
         delay: 1000,

@@ -337,14 +337,13 @@ export default {
   padding: 3vh;
   background-color: #ffffff;
   opacity: 0;
-  border-radius: 20px;
   z-index: 100;
   top: 10vh;
   left: 2%;
 }
 .text-box p {
   font-size: 4vh;
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
   color: #ffffff;
 }
 .text-box p:first-child,

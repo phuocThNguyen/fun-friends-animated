@@ -21,35 +21,31 @@ import anime from "animejs";
 export default {
   name: "Session1Page12",
   mounted() {
-    let animation = anime.timeline();
+    let animation = anime.timeline({
+      delay: 700,
+      duration: 500,
+      easing: 'linear'
+    });
     animation
       .add({
         targets: ".left-bar",
-        opacity: 0.90,
-        delay: 500,
-        duration: 1000,
-        easing: 'linear'
+        opacity: 1,
       })
       .add({
         targets: "#para-1",
-        color: "#000",
-        delay: 1000,
-        duration: 1000
+        opacity: 1,
       })
       .add({
         targets: "#para-2",
-        color: "#000",
-        duration: 1000
+        opacity: 1,
       })
       .add({
         targets: "#para-3",
-        color: "#000",
-        duration: 1000
+        opacity: 1,
       })
       .add({
         targets: ".text-box",
         opacity: 1,
-        duration: 1000,
       })
   }
 }
@@ -62,7 +58,7 @@ export default {
   left: 0;
   width: 50%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: rgba(255,255,255,0.9);
   z-index: 10;
   opacity: 0;
   padding: 3vh 2vh;
@@ -72,7 +68,7 @@ export default {
   margin-bottom: 3vh;
 }
 .left-bar p {
-  color: #ffffff;
+  opacity: 0;
   font-size: 5vh;
 }
 .text-box {
@@ -94,5 +90,6 @@ export default {
   font-weight: bold;
   margin-bottom: 0;
   text-align: center;
+  opacity: 1 !important;
 }
 </style>

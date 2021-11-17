@@ -22,37 +22,32 @@
 
 <script>
 import anime from "animejs";
-import Letterize from "letterizejs";
+
 export default {
   name: "Session1Page4",
   mounted() {
-    let para1 = new Letterize({targets: "#para-1"});
-    let para2 = new Letterize({targets: "#para-2"});
-
-    let animation = anime.timeline();
+    let animation = anime.timeline({
+      delay: 500,
+      duration: 500,
+      easing: 'linear',
+    });
     animation
       .add({
         targets: ".left-bar",
-        opacity: 0.97,
-        delay: 500,
-        easing: 'linear',
-        duration: 500,
+        opacity: 1,
       })
       .add({
-        targets: para1.listAll,
-        color: '#000',
-        delay: anime.stagger(50, {start: 500})
+        targets: '#para-1',
+        opacity: 1,
       })
       .add({
-        targets: para2.listAll,
-        color: '#000',
-        delay: anime.stagger(50)
-      },'-=700')
+        targets: '#para-2',
+        opacity: 1,
+      })
       .add({
         targets: ".text-box",
         opacity: 1,
-        duration: 1000
-      }, '+=55');
+      });
   }
 }
 </script>
@@ -69,16 +64,17 @@ export default {
   left: 0;
   width: 50%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: rgba(255,255,255,0.85);
   z-index: 10;
   opacity: 0;
   padding: 0 0 0 1vh;
 }
 .left-bar p {
   width: 100%;
-  color: #ffffff;
+  opacity: 0;
   font-size: 5vh;
 }
+#para-3 {opacity: 1 !important}
 .text-box {
   height: auto;
   width: 90%;

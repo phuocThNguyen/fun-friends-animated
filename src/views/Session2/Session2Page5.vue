@@ -16,7 +16,7 @@
         :emotes="['angry','happy','sad']"
         :tips="['Angry','Happy','Sad']"
         :ans="['red-tick','green-tick','red-tick']"
-        :isSmall="false"
+        :delay="7000"
         v-on:correctAnsChosen="handleCorrectAnswer"
         v-on:wrongAnswer="handleWrongAnswer"
     />
@@ -172,23 +172,40 @@ export default {
           {value: 0, duration: 200, delay: 1000},
         ]
       })
+    },
+    animateText() {
+      let text = document.querySelector('.text-box').children;
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 500,
+        delay: 1000
+      });
+      animation
+        .add({
+          targets: '.text-box',
+          opacity: 1
+        })
+        .add({
+          targets: text[1],
+          opacity: 1
+        })
+        .add({
+          targets: text[2],
+          opacity: 1
+        })
+        .add({
+          targets: text[3],
+          opacity: 1
+        })
+        .add({
+          targets: '.text',
+          opacity: 1,
+          delay: 0
+        }, 7000)
     }
   },
   mounted() {
-    let animation = anime.timeline({
-      easing: 'linear',
-      duration: 300,
-      delay: 300
-    });
-    animation
-      .add({
-        targets: '.text-box',
-        opacity: 1
-      })
-      .add({
-        targets: '.text',
-        opacity: 1
-      })
+    this.animateText();
   }
 }
 </script>
@@ -234,6 +251,7 @@ export default {
 .text-box p {
   font-size: 4vh;
   margin-bottom: 1vh;
+  opacity: 0;
 }
 .text {
   position: absolute;
@@ -241,7 +259,7 @@ export default {
   right: 14%;
   background-color: #00ce7c;
   color: #ffffff;
-  opacity: 1 ;
+  opacity: 0;
   padding: 1vh 2.1vh;
   font-size: 4vh;
   font-weight: bold;

@@ -35,7 +35,7 @@ export default {
     emotes: Array,
     tips: Array,
     ans: Array,
-    isSmall: Boolean,
+    delay: Number,
   },
   components: {
     'angry': () => import("@/components/feelingsQuestion/emotes/EmoteAngry"),
@@ -115,27 +115,16 @@ export default {
         }
       }
     },
-    setSmallSize() {
-      if (this.isSmall) {
-        let classNames = document.querySelector('.content-container').className;
-        document.querySelector('.content-container').setAttribute('class',classNames + ' small-content');
-        document.querySelector('.emotes-container').setAttribute('class','emotes-container small-emotes');
-        document.querySelector('.tips-container').setAttribute('class','tips-container small-tips');
-        document.querySelector('.answers-container').setAttribute('class','answers-container small-answers');
-        document.querySelector('.masks-container').setAttribute('class','masks-container small-masks');
-      }
-    },
   },
   mounted() {
     anime({
       targets: '.content-container',
       opacity: 1,
       easing: 'linear',
-      delay: 700,
+      delay: this.delay,
       duration: 700
     })
     this.setMasksClassName();
-    this.setSmallSize();
   },
 }
 </script>
@@ -197,37 +186,5 @@ export default {
   justify-content: space-around;
   align-items: flex-end;
   margin: 1.4vh;
-}
-
-/*  Small size  */
-.small-content {
-  width: 34vw !important;
-}
-.small-content h1 {
-  font-size: 2vw !important;
-}
-.small-emotes {
-  margin: 0 .5vw !important;
-}
-.small-emotes svg {
-  width: 5vw !important;
-}
-.small-tips {
-  font-size: 1.5vw !important;
-  margin: 0 .5vw !important;
-}
-.small-answers {
-  margin: 0 .5vw .5vh .5vw !important;
-}
-.small-answers svg {
-  width: 3vw !important;
-}
-.small-masks {
-  padding: 0 .5vw !important;
-  top: 4.9vh !important;
-}
-.small-masks div {
-  width: 5vw !important;
-  height: 5vw !important;
 }
 </style>
