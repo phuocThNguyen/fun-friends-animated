@@ -475,6 +475,15 @@ import anime from "animejs";
 
 export default {
   name: "Session4Page2",
+  data() {
+    return {
+      coordsArray: [
+        {id: 1, values: [27,3]},
+        {id: 2, values: [2,3]},
+        {id: 3, values: [54,4]},
+      ],
+    }
+  },
   methods: {
     animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;
@@ -601,14 +610,14 @@ export default {
       })
     },
     changeCoord(id) {
-      switch (id) {
-        case '#mask-1':
-          document.querySelector('.instruction-container').style.bottom = '2%';
-          break;
-        case '#mask-2':
-          document.querySelector('.instruction-container').style.bottom = '54%';
-          document.querySelector('.instruction-container').style.right = '4%';
-          break;
+      // Get integer id of mask
+      let maskId = parseInt(id.match(/\d/)[0]);
+      // Remove the coordination of pointer if the mask related to the pointer was clicked
+      this.coordsArray = this.coordsArray.filter(coord => coord.id !== maskId);
+      // Move pointer to the remaining coordination
+      if (this.coordsArray.length > 0) {
+        document.querySelector('.instruction-container').style.bottom = `${this.coordsArray[0].values[0]}%`;
+        document.querySelector('.instruction-container').style.right = `${this.coordsArray[0].values[1]}%`;
       }
     },
     displayClues(id) {
@@ -653,27 +662,31 @@ export default {
       document.querySelector(id).style.visibility = 'hidden';
       this.animateDroplets();
       let text = document.querySelectorAll('.text')[3];
-      let animation = anime.timeline({
+      anime({
+        targets: text,
+        color: '#000',
         duration: 700,
         easing: 'linear'
       })
-      animation
-        .add({
-          targets: text,
-          color: '#000'
-        })
-        .add({
+      this.changeCoord(id)
+    }
+  },
+  watch: {
+    coordsArray: function () {
+      if (this.coordsArray.length === 0) {
+        document.querySelector('.instruction-container').style.visibility = 'hidden';
+        anime({
           targets: '#prompt',
+          delay: 500,
+          duration: 500,
           opacity: 1,
-          delay: 700
+          easing: 'linear'
         })
-      document.querySelector('.instruction-container').style.visibility = 'hidden';
+      }
     }
   },
   mounted() {
     this.animateText();
-    // this.animateDroplets();
-    // this.animateButterfly();
     this.animatePointer();
   }
 }
