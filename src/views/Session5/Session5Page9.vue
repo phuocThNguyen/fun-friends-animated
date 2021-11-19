@@ -5,8 +5,8 @@
       <p><strong>Sam is preparing for a 'Show and Tell'</strong></p>
       <p>Pretend that it is your turn to do 'show and tell'.</p>
       <p>What could you be feeling?</p>
-      <p>What are some '<span class="green">green</span>'
-        thoughts that make you feel happy and brave?</p>
+      <p>What are some '<span class="green">green</span>' thoughts
+        that make you feel happy and brave?</p>
     </div>
   </div>
 </template>
@@ -24,7 +24,7 @@ export default {
         width: 1,
         height: 0.82,
         isPicture: true,
-        pictureUrl: "session5/2.jpg",
+        pictureUrl: "session5/Slide3.jpeg",
         backgroundSize: 'contain'
       },
     }
@@ -49,7 +49,7 @@ export default {
 <style scoped>
 .canvas {
   position: absolute;
-  top: 0;
+  top: -0.5%;
   left: 0;
 }
 .green {
@@ -57,15 +57,15 @@ export default {
 }
 .text-box {
   position: absolute;
-  width: 76%;
-  padding: 2vh;
-  bottom: 10vh;
-  left: 12%;
+  width: 38%;
+  padding: 1vh;
+  top: 1%;
+  right: 1%;
   background-color: rgba(255,255,255, 0.95);
   opacity: 0;
 }
 .text-box p {
-  font-size: 3vh;
+  font-size: 2.8vh;
   margin-bottom: .5vh;
 }
 .text-box p:last-child {

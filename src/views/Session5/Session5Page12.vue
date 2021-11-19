@@ -23,7 +23,7 @@ export default {
         width: 1,
         height: 0.82,
         isPicture: true,
-        pictureUrl: "session5/5.jpg",
+        pictureUrl: "session5/Slide6.jpeg",
         backgroundSize: 'contain'
       },
     }
@@ -48,7 +48,7 @@ export default {
 <style scoped>
 .canvas {
   position: absolute;
-  top: 0;
+  top: -0.5%;
   left: 0;
 }
 .green {
@@ -56,7 +56,7 @@ export default {
 }
 .text-box {
   position: absolute;
-  width: 40%;
+  width: 59%;
   padding: 2vh;
   top: 0;
   left: 0;

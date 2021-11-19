@@ -156,7 +156,7 @@ export default {
   -webkit-animation: bubble-movement 7s infinite ease-in -5.5s;
 }
 #bubble-6 {
-  background-color: rgba(106, 76, 147,0.9);
+  background-color: rgba(255, 202, 58,0.9);
   bottom: -11vh;
   left: 43%;
   animation: bubble-movement 7.5s infinite ease-in -6s;
@@ -170,7 +170,7 @@ export default {
   -webkit-animation: bubble-movement 8.5s infinite ease-in -3.3s;
 }
 #bubble-8 {
-  background-color: rgba(106, 76, 147,0.9);
+  background-color: rgba(255, 89, 94,0.9);
   bottom: -10vh;
   left: 88%;
   animation: bubble-movement 5s infinite ease-in -14.2s;

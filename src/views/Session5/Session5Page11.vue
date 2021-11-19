@@ -24,7 +24,7 @@ export default {
         width: 1,
         height: 0.82,
         isPicture: true,
-        pictureUrl: "session5/4.jpg",
+        pictureUrl: "session5/Slide5.jpeg",
         backgroundSize: 'contain'
       },
     }
@@ -49,7 +49,7 @@ export default {
 <style scoped>
 .canvas {
   position: absolute;
-  top: 0;
+  top: -0.5%;
   left: 0;
 }
 .green {
@@ -59,8 +59,8 @@ export default {
   position: absolute;
   width: 40%;
   padding: 2vh;
-  top: 0;
-  left: 0;
+  bottom: 11%;
+  right: 1%;
   background-color: rgba(255,255,255, 0.95);
   opacity: 0;
 }

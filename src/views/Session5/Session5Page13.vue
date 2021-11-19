@@ -29,10 +29,10 @@ export default {
   data() {
     return {
       canvasStyle: {
-        width: 0.88,
+        width: 1,
         height: 0.58,
         isPicture: true,
-        pictureUrl: "session5/merge-edited.jpg",
+        pictureUrl: "session5/Slide7.jpeg",
         backgroundSize: 'contain'
       },
     }
@@ -72,7 +72,7 @@ export default {
 .canvas {
   position: absolute;
   top: 24vh;
-  left: 6%;
+  left: 0;
 }
 .text-box {
   position: absolute;

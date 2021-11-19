@@ -4,9 +4,10 @@
     <div class="text-box">
       <p><strong>Tom meets his new teacher</strong></p>
       <p>Pretend you are Tom.</p>
-      <p>What could you be feeling? What could you be thinking?</p>
-      <p>What are some '<span class="green">green</span>' thoughts that make you feel happy
-        and brave?</p>
+      <p>What could you be feeling?
+        <br>What could you be thinking?</p>
+      <p>What are some '<span class="green">green</span>' thoughts
+        <br>that make you feel happy and brave?</p>
     </div>
   </div>
 </template>
@@ -24,7 +25,7 @@ export default {
         width: 1,
         height: 0.82,
         isPicture: true,
-        pictureUrl: "session5/1.jpg",
+        pictureUrl: "session5/Slide1.jpeg",
         backgroundSize: 'contain'
       },
     }
@@ -49,7 +50,7 @@ export default {
 <style scoped>
 .canvas {
   position: absolute;
-  top: 0;
+  top: -0.5%;
   left: 0;
 }
 .green {
@@ -57,10 +58,10 @@ export default {
 }
 .text-box {
   position: absolute;
-  width: 80%;
+  width: 40%;
   padding: 2vh;
-  bottom: 10%;
-  left: 10%;
+  top: 1%;
+  left: 1%;
   background-color: rgba(255,255,255, 0.90);
   opacity: 0;
 }
