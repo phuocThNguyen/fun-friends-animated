@@ -13,10 +13,10 @@ export default {
   data() {
     return {
       canvasStyle: {
-        width: 0.88,
+        width: 1,
         height: 0.8,
         isPicture: true,
-        pictureUrl: "session5/merge2-edited.jpg",
+        pictureUrl: "session5/Slide8.jpeg",
         backgroundSize: 'contain'
       },
     }
@@ -32,7 +32,7 @@ export default {
 <style scoped>
 .canvas {
   position: absolute;
-  top: 0;
-  left: 6%;
+  top: -.5%;
+  left: 0;
 }
 </style>
