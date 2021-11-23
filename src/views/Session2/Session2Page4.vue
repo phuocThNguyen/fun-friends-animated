@@ -459,16 +459,19 @@ export default {
         }
       }
     },
+    animateText() {
+      let vh = window.innerHeight;
+      anime({
+        targets: '.emotions-mask',
+        translateY: 0.4 * vh,
+        duration: 2500,
+        delay: 500,
+        easing: 'linear'
+      })
+    }
   },
   mounted() {
-    let vh = window.innerHeight;
-    anime({
-      targets: '.emotions-mask',
-      translateY: 0.4 * vh,
-      duration: 2500,
-      delay: 500,
-      easing: 'linear'
-    })
+    this.animateText();
   },
   watch: {
     correctAns: function() {

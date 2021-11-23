@@ -10,14 +10,19 @@ import anime from "animejs";
 
 export default {
   name: "Session2Page16",
+  methods: {
+    animateText() {
+      anime({
+        targets: ".text-box",
+        delay: 250,
+        duration: 500,
+        opacity: 1,
+        easing: 'linear'
+      })
+    }
+  },
   mounted() {
-    anime({
-      targets: ".text-box",
-      delay: 250,
-      duration: 500,
-      opacity: 1,
-      easing: 'linear'
-    })
+    this.animateText();
   }
 }
 </script>

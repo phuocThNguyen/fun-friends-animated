@@ -19,34 +19,39 @@ import anime from 'animejs';
 
 export default {
   name: "Session2Page3",
+  methods: {
+    animateText() {
+      let para = document.getElementsByClassName('text-box')[0].children;
+      let animation = anime.timeline({
+        duration: 500,
+        delay: 1000,
+        easing: 'linear'
+      });
+      animation
+        .add({
+          targets: para[1],
+          color: "#000",
+        })
+        .add({
+          targets: para[2],
+          color: "#000"
+        })
+        .add({
+          targets: para[3],
+          color: "#000"
+        })
+        .add({
+          targets: para[4],
+          color: "#000"
+        })
+        .add({
+          targets: para[5],
+          opacity: 1
+        })
+    }
+  },
   mounted() {
-    let para = document.getElementsByClassName('text-box')[0].children;
-    let animation = anime.timeline({
-      duration: 500,
-      delay: 1000,
-      easing: 'linear'
-    });
-    animation
-    .add({
-      targets: para[1],
-      color: "#000",
-    })
-    .add({
-      targets: para[2],
-      color: "#000"
-    })
-    .add({
-      targets: para[3],
-      color: "#000"
-    })
-    .add({
-      targets: para[4],
-      color: "#000"
-    })
-    .add({
-      targets: para[5],
-      opacity: 1
-    })
+    this.animateText();
   }
 }
 </script>

@@ -1359,7 +1359,7 @@
       <p>&nbsp;&nbsp;-&nbsp;Use a brave voice and stand up tall.</p>
       <p>&nbsp;&nbsp;-&nbsp;Try your best and give it a go.</p>
     </div>
-    <audio autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3">
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
   </div>
@@ -1370,45 +1370,54 @@ import anime from "animejs";
 
 export default {
   name: "Session2Page21",
+  methods: {
+    animateText() {
+      let text = document.querySelector('.text-box').children;
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 500,
+        delay: 1500
+      })
+      animation
+        .add({
+          targets: ".text-box",
+          opacity: 1,
+          delay: 500
+        })
+        .add({
+          targets: text[1],
+          opacity: 1,
+          delay: 500
+        })
+        .add({
+          targets: text[2],
+          opacity: 1,
+          delay: 3000
+        })
+        .add({
+          targets: text[3],
+          opacity: 1,
+        })
+        .add({
+          targets: text[4],
+          opacity: 1
+        })
+        .add({
+          targets: text[5],
+          opacity: 1
+        })
+        .add({
+          targets: text[6],
+          opacity: 1
+        })
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
+    }
+  },
   mounted() {
-    let text = document.querySelector('.text-box').children;
-    let animation = anime.timeline({
-      easing: 'linear',
-      duration: 500,
-      delay: 1500
-    })
-    animation
-      .add({
-        targets: ".text-box",
-        opacity: 1,
-        delay: 500
-      })
-      .add({
-        targets: text[1],
-        opacity: 1,
-        delay: 500
-      })
-      .add({
-        targets: text[2],
-        opacity: 1,
-        delay: 3000
-      })
-      .add({
-        targets: text[3],
-        opacity: 1,
-      })
-      .add({
-        targets: text[4],
-        opacity: 1
-      })
-      .add({
-        targets: text[5],
-        opacity: 1
-      })
-      .add({
-        targets: text[6],
-        opacity: 1
-      })
+    this.animateText();
+    this.setAudioVolumeLevel(0.3);
   }
 }
 </script>

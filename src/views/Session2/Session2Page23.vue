@@ -1370,7 +1370,7 @@
       </div>
     </div>
     <drawing-canvas class="canvas" :canvasStyle="canvasStyle"/>
-    <audio autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3">
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
   </div>
@@ -1392,41 +1392,50 @@ export default {
       }
     }
   },
+  methods: {
+    animateText() {
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 500,
+        delay: 1000,
+      });
+      animation
+        .add({
+          targets: '.star-container',
+          opacity: 1
+        })
+        .add({
+          targets: ".star",
+          keyframes: [
+            {rotate: '-20deg'},
+            {rotate: '20deg'},
+            {rotate: '-20deg'},
+            {rotate: '0deg'},
+          ],
+          delay: 0,
+        })
+        .add({
+          targets: ".star-text",
+          keyframes: [
+            {rotate: '-20deg'},
+            {rotate: '20deg'},
+            {rotate: '-20deg'},
+            {rotate: '0deg'},
+          ],
+          delay: 0,
+        }, 1500)
+        .add({
+          targets: ".canvas",
+          opacity: 1
+        })
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level;
+    }
+  },
   mounted() {
-    let animation = anime.timeline({
-      easing: 'linear',
-      duration: 500,
-      delay: 1000,
-    });
-    animation
-      .add({
-        targets: '.star-container',
-        opacity: 1
-      })
-      .add({
-        targets: ".star",
-        keyframes: [
-          {rotate: '-20deg'},
-          {rotate: '20deg'},
-          {rotate: '-20deg'},
-          {rotate: '0deg'},
-        ],
-        delay: 0,
-      })
-      .add({
-        targets: ".star-text",
-        keyframes: [
-          {rotate: '-20deg'},
-          {rotate: '20deg'},
-          {rotate: '-20deg'},
-          {rotate: '0deg'},
-        ],
-        delay: 0,
-      }, 1500)
-      .add({
-        targets: ".canvas",
-        opacity: 1
-      })
+    this.animateText();
+    this.setAudioVolumeLevel(0.3);
   }
 }
 </script>

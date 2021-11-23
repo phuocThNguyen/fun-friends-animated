@@ -1367,7 +1367,7 @@
       <img class="action-image" src="../../assets/images/session1/2749-resized.jpg" alt="happy-things">
       <img class="action-image" src="../../assets/images/session1/thank-you.jpg" alt="thank-you">
     </div>
-    <audio autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3">
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
   </div>
@@ -1378,78 +1378,87 @@ import anime from "animejs";
 
 export default {
   name: "Session2Page22",
+  methods: {
+    animateText() {
+      let texts = document.querySelector('.text-box').children;
+      let images = document.querySelector('.image-container').children;
+      let animation = anime.timeline({
+        duration: 500,
+        delay: 2500,
+        easing: 'linear'
+      });
+      animation
+        .add({
+          targets: ".text-box",
+          opacity: 1,
+          delay: 500
+        })
+        .add({
+          targets: texts[1],
+          opacity: 1,
+          delay: 500
+        })
+        .add({
+          targets: images[0],
+          opacity: 1,
+          delay: 500
+        }, 1000)
+        .add({
+          targets: texts[2],
+          opacity: 1,
+        })
+        .add({
+          targets: images[1],
+          opacity: 1,
+        }, 2000)
+        .add({
+          targets: texts[3],
+          opacity: 1,
+        })
+        .add({
+          targets: images[2],
+          opacity: 1,
+        }, 5000)
+        .add({
+          targets: texts[4],
+          opacity: 1,
+        })
+        .add({
+          targets: images[3],
+          opacity: 1,
+        }, 8000)
+        .add({
+          targets: texts[5],
+          opacity: 1,
+        })
+        .add({
+          targets: images[4],
+          opacity: 1,
+        }, 11000)
+        .add({
+          targets: texts[6],
+          opacity: 1,
+        })
+        .add({
+          targets: images[5],
+          opacity: 1,
+        }, 14000)
+        .add({
+          targets: texts[7],
+          opacity: 1,
+        })
+        .add({
+          targets: images[6],
+          opacity: 1,
+        }, 17000)
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level;
+    }
+  },
   mounted() {
-    let texts = document.querySelector('.text-box').children;
-    let images = document.querySelector('.image-container').children;
-    let animation = anime.timeline({
-      duration: 500,
-      delay: 2500,
-      easing: 'linear'
-    });
-    animation
-      .add({
-        targets: ".text-box",
-        opacity: 1,
-        delay: 500
-      })
-      .add({
-        targets: texts[1],
-        opacity: 1,
-        delay: 500
-      })
-      .add({
-        targets: images[0],
-        opacity: 1,
-        delay: 500
-      }, 1000)
-      .add({
-        targets: texts[2],
-        opacity: 1,
-      })
-      .add({
-        targets: images[1],
-        opacity: 1,
-      }, 2000)
-      .add({
-        targets: texts[3],
-        opacity: 1,
-      })
-      .add({
-        targets: images[2],
-        opacity: 1,
-      }, 5000)
-      .add({
-        targets: texts[4],
-        opacity: 1,
-      })
-      .add({
-        targets: images[3],
-        opacity: 1,
-      }, 8000)
-      .add({
-        targets: texts[5],
-        opacity: 1,
-      })
-      .add({
-        targets: images[4],
-        opacity: 1,
-      }, 11000)
-      .add({
-        targets: texts[6],
-        opacity: 1,
-      })
-      .add({
-        targets: images[5],
-        opacity: 1,
-      }, 14000)
-      .add({
-        targets: texts[7],
-        opacity: 1,
-      })
-      .add({
-        targets: images[6],
-        opacity: 1,
-      }, 17000)
+    this.animateText();
+    this.setAudioVolumeLevel(0.3);
   }
 }
 </script>

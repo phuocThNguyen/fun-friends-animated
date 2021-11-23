@@ -8,12 +8,13 @@
       <p>Draw or write down one feeling you have had and act it out in a group.</p>
       <p>When and why did you feel this way? <strong>All feelings are OK.</strong></p>
     </div>
-    <audio autoplay loop src="../../assets/sounds/children-background-music/no-copyright-music-funny-children-kids-music-by-mokka-kids.mp3"></audio>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/no-copyright-music-funny-children-kids-music-by-mokka-kids.mp3"></audio>
   </div>
 </template>
 
 <script>
 import DrawingCanvas from "@/components/drawingCanvas/DrawingCanvas";
+import anime from "animejs";
 
 export default {
   name: "Session2Page17",
@@ -32,8 +33,44 @@ export default {
   methods: {
     saveToDatabase(data) {
       console.log(data)
+    },
+    animateText() {
+      let text = document.querySelector('.text-box').children;
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 500,
+        delay: 1000
+      })
+      animation
+        .add({
+          targets: '.text-box',
+          opacity: 1,
+          delay: 500
+        })
+        .add({
+          targets: text[1],
+          opacity: 1,
+          delay: 500
+        })
+        .add({
+          targets: text[2],
+          opacity: 1,
+          delay: 3000
+        })
+        .add({
+          targets: text[3],
+          opacity: 1,
+          delay: 2000
+        })
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
     }
   },
+  mounted() {
+    this.animateText();
+    this.setAudioVolumeLevel(0.4)
+  }
 }
 </script>
 
@@ -51,6 +88,7 @@ export default {
   padding: 1vh 2vh;
   top: 1vh;
   left: 1%;
+  opacity: 0;
 }
 .text-box h1 {
   font-size: 5vh;
@@ -59,6 +97,7 @@ export default {
 .text-box p {
   font-size: 3.5vh;
   margin-bottom: 0;
+  opacity: 0;
 }
 .text-box p:nth-child(3) {
   color: #d00000;

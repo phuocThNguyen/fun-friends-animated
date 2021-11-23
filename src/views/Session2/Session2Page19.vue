@@ -379,15 +379,18 @@ export default {
           break;
       }
     },
+    animateText() {
+      anime({
+        targets: '.content-container',
+        opacity: 1,
+        easing: 'linear',
+        delay: 700,
+        duration: 700
+      })
+    }
   },
   mounted() {
-    anime({
-      targets: '.content-container',
-      opacity: 1,
-      easing: 'linear',
-      delay: 700,
-      duration: 700
-    })
+    this.animateText();
   },
 }
 </script>
