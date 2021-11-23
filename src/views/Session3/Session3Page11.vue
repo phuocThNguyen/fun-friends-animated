@@ -16,9 +16,6 @@
        and go, remember all feelings are okay. It is what
        we choose to do with our feelings that counts. Bubble
        breathing is a 'thumbs up' choice.</p>
-      <audio autoplay src="../../assets/sounds/session3/bubbles.mp3">
-        Your browser does not support the
-        <code>audio</code> element.</audio>
     </div>
     <div class="bubble" id="bubble-1"></div>
     <div class="bubble" id="bubble-2"></div>
@@ -30,6 +27,9 @@
     <div class="bubble" id="bubble-8"></div>
     <div class="bubble" id="bubble-9"></div>
     <div class="bubble" id="bubble-10"></div>
+    <audio ref="audio" autoplay src="../../assets/sounds/session3/bubbles.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
   </div>
 </template>
 
@@ -72,10 +72,14 @@ export default {
           opacity: 1,
           delay: 2000,
         })
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
     }
   },
   mounted() {
     this.animateText();
+    this.setAudioVolumeLevel(0.4)
   }
 }
 </script>

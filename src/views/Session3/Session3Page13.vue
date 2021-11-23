@@ -7,7 +7,7 @@
           <br>you are blowing away or draw your feelings below.</p>
       </div>
     </div>
-    <audio autoplay loop src="../../assets/sounds/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3"></audio>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3"></audio>
   </div>
 </template>
 
@@ -32,16 +32,23 @@ export default {
   methods: {
     saveToDatabase(data) {
       console.log(data)
+    },
+    animateText() {
+      anime({
+        targets: ".text-box",
+        opacity: 1,
+        duration: 1000,
+        delay: 500,
+        easing: 'linear'
+      })
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
     }
   },
   mounted() {
-    anime({
-      targets: ".text-box",
-      opacity: 1,
-      duration: 1000,
-      delay: 500,
-      easing: 'linear'
-    })
+    this.animateText();
+    this.setAudioVolumeLevel(0.4);
   }
 }
 </script>

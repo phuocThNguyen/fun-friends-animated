@@ -29,21 +29,26 @@ import anime from "animejs";
 
 export default {
   name: "Session3Page2",
+  methods: {
+    animateText() {
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 500,
+        delay: 500
+      })
+      animation
+        .add({
+          targets: ".text-box",
+          opacity: 1,
+        })
+        .add({
+          targets: '.bubble-container',
+          opacity: 0.9
+        })
+    }
+  },
   mounted() {
-    let animation = anime.timeline({
-      easing: 'linear',
-      duration: 500,
-      delay: 500
-    })
-    animation
-      .add({
-        targets: ".text-box",
-        opacity: 1,
-      })
-      .add({
-        targets: '.bubble-container',
-        opacity: 0.9
-      })
+    this.animateText();
   }
 }
 </script>
@@ -54,7 +59,7 @@ export default {
   padding: 2.8vh;
   top: 2vh;
   left: 2%;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255,255,255,0.9);
   opacity: 0;
 }
 .text-box h1 {

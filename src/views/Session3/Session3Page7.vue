@@ -32,26 +32,31 @@ import anime from "animejs";
 
 export default {
   name: "Session3Page7",
+  methods: {
+    animateText() {
+      let animation = anime.timeline({
+        delay: 500,
+        duration: 500,
+        easing: 'linear'
+      })
+      animation
+        .add({
+          targets: ".text-box",
+          opacity: 1,
+        })
+        .add({
+          targets: '.bubble-container',
+          opacity: 0.9
+        })
+        .add({
+          targets: '.notice-box',
+          opacity: 1,
+          delay: 2000
+        })
+    }
+  },
   mounted() {
-    let animation = anime.timeline({
-      delay: 500,
-      duration: 500,
-      easing: 'linear'
-    })
-    animation
-      .add({
-        targets: ".text-box",
-        opacity: 1,
-      })
-      .add({
-        targets: '.bubble-container',
-        opacity: 0.9
-      })
-      .add({
-        targets: '.notice-box',
-        opacity: 1,
-        delay: 2000
-      })
+    this.animateText()
   },
 }
 </script>

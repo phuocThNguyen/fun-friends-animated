@@ -44,32 +44,37 @@ import anime from "animejs";
 
 export default {
   name: "Session3Page10",
+  methods: {
+    animateText() {
+      let animation = anime.timeline({
+        duration: 500,
+        easing: 'linear'
+      })
+      animation
+        .add({
+          targets: ".text-box",
+          opacity: 1,
+          delay: 500,
+        })
+        .add({
+          targets: '#bubble-1',
+          opacity: 0.9,
+          delay: 1000
+        })
+        .add({
+          targets: '#bubble-2',
+          opacity: 0.9,
+          delay: 1000
+        })
+        .add({
+          targets: '.notice-box',
+          opacity: 1,
+          delay: 1000
+        })
+    }
+  },
   mounted() {
-    let animation = anime.timeline({
-      duration: 500,
-      easing: 'linear'
-    })
-    animation
-      .add({
-        targets: ".text-box",
-        opacity: 1,
-        delay: 500,
-      })
-      .add({
-        targets: '#bubble-1',
-        opacity: 0.9,
-        delay: 1000
-      })
-      .add({
-        targets: '#bubble-2',
-        opacity: 0.9,
-        delay: 2000
-      })
-      .add({
-        targets: '.notice-box',
-        opacity: 1,
-        delay: 2000
-      })
+    this.animateText()
   }
 }
 </script>

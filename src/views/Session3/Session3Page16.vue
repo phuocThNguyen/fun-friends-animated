@@ -728,37 +728,42 @@ import anime from "animejs";
 
 export default {
   name: 'Session3Page16',
+  methods: {
+    animateText() {
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 500,
+        delay: 500
+      })
+      animation
+        .add({
+          targets: '.star-container',
+          opacity: 1
+        })
+        .add({
+          targets: ".star",
+          keyframes: [
+            {rotate: '-20deg'},
+            {rotate: '20deg'},
+            {rotate: '-20deg'},
+            {rotate: '0deg'},
+          ],
+          delay: 0,
+        })
+        .add({
+          targets: ".star-text",
+          keyframes: [
+            {rotate: '-20deg'},
+            {rotate: '20deg'},
+            {rotate: '-20deg'},
+            {rotate: '0deg'},
+          ],
+          delay: 0,
+        }, 1000)
+    }
+  },
   mounted() {
-    let animation = anime.timeline({
-      easing: 'linear',
-      duration: 500,
-      delay: 500
-    })
-    animation
-      .add({
-        targets: '.star-container',
-        opacity: 1
-      })
-      .add({
-        targets: ".star",
-        keyframes: [
-          {rotate: '-20deg'},
-          {rotate: '20deg'},
-          {rotate: '-20deg'},
-          {rotate: '0deg'},
-        ],
-        delay: 0,
-      })
-      .add({
-        targets: ".star-text",
-        keyframes: [
-          {rotate: '-20deg'},
-          {rotate: '20deg'},
-          {rotate: '-20deg'},
-          {rotate: '0deg'},
-        ],
-        delay: 0,
-      }, 1000)
+    this.animateText();
   }
 }
 </script>

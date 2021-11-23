@@ -212,55 +212,55 @@ import anime from "animejs";
 
 export default {
   name: "Session3Page1",
-  mounted() {
-    let vw = document.querySelector('.interactive-container').clientWidth;
+  methods: {
+    animateSvg() {
+      let vw = document.querySelector('.interactive-container').clientWidth;
 
-    anime({
-      targets: this.$refs.cloud1,
-      translateX: vw + 0.4*vw,
-      duration: 50000,
-      loop: true,
-      easing: 'linear'
-    })
-    anime({
-      targets: this.$refs.smallCloud,
-      translateX: -(vw + 0.4*vw),
-      duration: 40000,
-      direction: 'alternate',
-      loop: true,
-      easing: 'linear'
-    })
-    anime({
-      targets: this.$refs.sun,
-      rotate: '360deg',
-      duration: 5000,
-      easing: 'steps(10)',
-      loop: true,
-    })
-
-    anime({
-      targets: '.bird-1',
-      translateX: vw + 0.2*vw,
-      easing: 'linear',
-      duration: 10000,
-      loop: true
-    });
-
-    anime({
-      targets: '.bird-2',
-      translateX: -(vw + 0.2*vw),
-      easing: 'linear',
-      duration: 10000,
-      delay: 2000,
-      loop: true
-    })
-
-    let animation = anime.timeline({
-      easing: 'linear',
-      duration: 1000,
-      delay: 500
-    });
-    animation
+      anime({
+        targets: this.$refs.cloud1,
+        translateX: vw + 0.4*vw,
+        duration: 50000,
+        loop: true,
+        easing: 'linear'
+      })
+      anime({
+        targets: this.$refs.smallCloud,
+        translateX: -(vw + 0.4*vw),
+        duration: 40000,
+        direction: 'alternate',
+        loop: true,
+        easing: 'linear'
+      })
+      anime({
+        targets: this.$refs.sun,
+        rotate: '360deg',
+        duration: 5000,
+        easing: 'steps(10)',
+        loop: true,
+      })
+      anime({
+        targets: '.bird-1',
+        translateX: vw + 0.2*vw,
+        easing: 'linear',
+        duration: 10000,
+        loop: true
+      });
+      anime({
+        targets: '.bird-2',
+        translateX: -(vw + 0.2*vw),
+        easing: 'linear',
+        duration: 10000,
+        delay: 2000,
+        loop: true
+      })
+    },
+    animateText() {
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 1000,
+        delay: 500
+      });
+      animation
         .add({
           targets: ".title",
           opacity: 1,
@@ -273,6 +273,11 @@ export default {
           targets: "#line-2",
           color: '#000'
         })
+    },
+  },
+  mounted() {
+    this.animateSvg();
+    this.animateText();
   }
 }
 </script>

@@ -710,7 +710,7 @@
       <p>&middot; Try your best and give it a go. </p>
       <p>&middot; Believe in yourself</p>
     </div>
-    <audio autoplay loop src="../../assets/sounds/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"></audio>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"></audio>
   </div>
 </template>
 
@@ -719,60 +719,72 @@ import anime from "animejs";
 
 export default {
   name: "Session3Page14",
-  mounted() {
-    let vw = document.querySelector('.interactive-container').clientWidth;
-    let clouds = document.getElementsByClassName('shp15');
-    clouds.forEach(cloud => {
-      anime({
-        targets: cloud,
-        translateX: (Math.round(Math.random() * 0.4 * vw) + 200) * (Math.random() < 0.5 ? 1: -1),
-        duration: Math.round(Math.random() * 1000) + 4000,
-        direction: 'alternate',
-        loop: true,
+  methods: {
+    animateSvg() {
+      let vw = document.querySelector('.interactive-container').clientWidth;
+      let clouds = document.getElementsByClassName('shp15');
+      clouds.forEach(cloud => {
+        anime({
+          targets: cloud,
+          translateX: (Math.round(Math.random() * 0.4 * vw) + 200) * (Math.random() < 0.5 ? 1: -1),
+          duration: Math.round(Math.random() * 1000) + 4000,
+          direction: 'alternate',
+          loop: true,
+          easing: 'linear',
+        })
+      })
+    },
+    animateText() {
+      let text = document.querySelector('.text-box').children;
+      let animation = anime.timeline({
         easing: 'linear',
+        duration: 500,
+        delay: 1500
       })
-    })
-    let text = document.querySelector('.text-box').children;
-    let animation = anime.timeline({
-      easing: 'linear',
-      duration: 500,
-      delay: 1500
-    })
-    animation
-      .add({
-        targets: ".text-box",
-        opacity: 1,
-        delay: 500
-      })
-      .add({
-        targets: text[1],
-        opacity: 1,
-        delay: 500
-      })
-      .add({
-        targets: text[2],
-        opacity: 1,
-      })
-      .add({
-        targets: text[3],
-        opacity: 1,
-      })
-      .add({
-        targets: text[4],
-        opacity: 1
-      })
-      .add({
-        targets: text[5],
-        opacity: 1
-      })
-      .add({
-        targets: text[6],
-        opacity: 1
-      })
-      .add({
-        targets: text[7],
-        opacity: 1
-      })
+      animation
+        .add({
+          targets: ".text-box",
+          opacity: 1,
+          delay: 500
+        })
+        .add({
+          targets: text[1],
+          opacity: 1,
+          delay: 500
+        })
+        .add({
+          targets: text[2],
+          opacity: 1,
+        })
+        .add({
+          targets: text[3],
+          opacity: 1,
+        })
+        .add({
+          targets: text[4],
+          opacity: 1
+        })
+        .add({
+          targets: text[5],
+          opacity: 1
+        })
+        .add({
+          targets: text[6],
+          opacity: 1
+        })
+        .add({
+          targets: text[7],
+          opacity: 1
+        })
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
+    }
+  },
+  mounted() {
+    this.animateSvg();
+    this.animateText();
+    this.setAudioVolumeLevel(0.4);
   }
 }
 </script>

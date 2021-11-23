@@ -11,9 +11,6 @@
       the same with our feelings. Feelings don't stay
       forever, feelings change. Using a Magic Bubble Wand
       to calm down is a 'thumbs up' choice.</p>
-      <audio autoplay src="../../assets/sounds/session3/bubbles.mp3">
-        Your browser does not support the
-        <code>audio</code> element.</audio>
     </div>
     <div class="bubble" id="bubble-1"></div>
     <div class="bubble" id="bubble-2"></div>
@@ -47,6 +44,9 @@
         </p>
       </div>
     </div>
+    <audio ref="audio" autoplay src="../../assets/sounds/session3/bubbles.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
   </div>
 </template>
 
@@ -55,46 +55,55 @@ import anime from "animejs";
 
 export default {
   name: "Session3Page12",
-  mounted() {
-    let text = document.getElementsByClassName('text-box')[0].children;
-    let animation = anime.timeline({
-      delay: 500,
-      duration: 500,
+  methods: {
+    animateText() {
+      let text = document.getElementsByClassName('text-box')[0].children;
+      let animation = anime.timeline({
+        delay: 500,
+        duration: 500,
 
-    });
-    animation
-      .add({
-        targets: '.text-box',
-        opacity: 1,
-        easing: 'linear'
-      })
-      .add({
-        targets: text[0],
-        opacity: 1,
-        easing: 'linear'
-      })
-      .add({
-        targets: text[1],
-        opacity: 1,
-        easing: 'linear'
-      })
-      .add({
-        targets: text[3],
-        opacity: 1,
-        delay: 3000,
-        easing: 'linear'
-      })
-      .add({
-        targets: '.star-container',
-        opacity: 1,
-        easing: 'linear'
-      }, 7000)
-      .add({
-        targets: '.star-container',
-        scale: 14,
-        delay: 0,
-        duration: 1000,
-      })
+      });
+      animation
+        .add({
+          targets: '.text-box',
+          opacity: 1,
+          easing: 'linear'
+        })
+        .add({
+          targets: text[0],
+          opacity: 1,
+          easing: 'linear'
+        })
+        .add({
+          targets: text[1],
+          opacity: 1,
+          easing: 'linear'
+        })
+        .add({
+          targets: text[3],
+          opacity: 1,
+          delay: 3000,
+          easing: 'linear'
+        })
+        .add({
+          targets: '.star-container',
+          opacity: 1,
+          easing: 'linear'
+        }, 7000)
+        .add({
+          targets: '.star-container',
+          scale: 14,
+          delay: 0,
+          duration: 1000,
+        })
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
+    }
+  },
+  mounted() {
+    this.animateText();
+    this.setAudioVolumeLevel(0.4)
   }
 }
 </script>
@@ -149,16 +158,6 @@ export default {
   font-size: 3.3vh;
   margin-bottom: 0;
   opacity: 0;
-}
-.text-box p:last-child {
-  display: inline-block;
-  text-align: center;
-  background-color: #00ce7c;
-  width: 90%;
-  color: #ffffff;
-  font-weight: bold;
-  padding: 1.5vh;
-  margin-top: 2vh;
 }
 .bubble {
   height: 1px;
