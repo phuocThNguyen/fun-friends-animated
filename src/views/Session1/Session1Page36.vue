@@ -1774,7 +1774,7 @@
         <br>you Fun Friends
         <br>skills each week.</p>
     </div>
-    <audio autoplay loop src="../../assets/sounds/session4/night-time.mp3"></audio>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session4/night-time.mp3"></audio>
   </div>
 </template>
 
@@ -1782,51 +1782,62 @@
 import anime from "animejs";
 export default {
   name: "Session1Page36",
+  methods: {
+    animateSvg() {
+      let vh = window.innerHeight;
+      let vw = document.querySelector('.interactive-container').clientWidth;
+      anime({
+        targets: ".shp325",
+        translateX: -4 * vw,
+        translateY: 3.2 * vh,
+        duration: 3200,
+        opacity: 0,
+        easing: 'linear',
+        loop: true,
+      })
+      anime({
+        targets: ".shp326",
+        translateX: -8 * vw,
+        translateY: 6.4 * vh,
+        duration: 5000,
+        opacity: 0,
+        easing: 'linear',
+        loop: true,
+      })
+      anime({
+        targets: ".shp327",
+        translateX: -8 * vw,
+        translateY: 6.4 * vh,
+        duration: 32000,
+        opacity: 0,
+        easing: 'linear',
+        loop: true,
+      })
+    },
+    animateText() {
+      let animation = anime.timeline();
+      animation
+        .add({
+          targets: ".star",
+          scale: 70,
+          duration: 1000,
+          delay: 1000,
+        })
+        .add({
+          targets: ".para",
+          opacity: 1,
+          duration: 1000,
+          easing: 'linear'
+        })
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
+    }
+  },
   mounted() {
-    let vh = window.innerHeight;
-    let vw = document.querySelector('.interactive-container').clientWidth;
-    anime({
-      targets: ".shp325",
-      translateX: -4 * vw,
-      translateY: 3.2 * vh,
-      duration: 3200,
-      opacity: 0,
-      easing: 'linear',
-      loop: true,
-    })
-    anime({
-      targets: ".shp326",
-      translateX: -8 * vw,
-      translateY: 6.4 * vh,
-      duration: 5000,
-      opacity: 0,
-      easing: 'linear',
-      loop: true,
-    })
-    anime({
-      targets: ".shp327",
-      translateX: -8 * vw,
-      translateY: 6.4 * vh,
-      duration: 32000,
-      opacity: 0,
-      easing: 'linear',
-      loop: true,
-    })
-
-    let animation = anime.timeline();
-    animation
-    .add({
-      targets: ".star",
-      scale: 70,
-      duration: 1000,
-      delay: 1000,
-    })
-    .add({
-      targets: ".para",
-      opacity: 1,
-      duration: 1000,
-      easing: 'linear'
-    })
+    this.animateSvg();
+    this.animateText();
+    this.setAudioVolumeLevel(0.4);
   }
 }
 </script>
@@ -1866,7 +1877,7 @@ export default {
   font-weight: bold;
   font-size: 4.8vh;
   height: auto;
-  margin: 6vh 0 0 3%;
+  margin-top: 3%;
   text-align: center;
   opacity: 0;
 }

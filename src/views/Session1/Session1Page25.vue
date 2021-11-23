@@ -802,9 +802,6 @@
       <p id="para-4">What 5 things would you want in your house?</p>
     </div>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
-    <audio autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
     <div class="bubble-container">
       <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
         <g id="Graphic Element">
@@ -820,6 +817,9 @@
       </svg>
       <div class="bubble-text">Share your ideas with a friend!</div>
     </div>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3">
+      Your browser does not support the
+      <code>audio</code> element.</audio>
   </div>
 </template>
 
@@ -842,78 +842,87 @@ export default {
   methods: {
     saveToDatabase(data) {
       console.log(data)
+    },
+    animateSvg() {
+      let vw = document.querySelector('.interactive-container').clientWidth;
+      let vh = window.innerHeight;
+      let clouds = document.getElementsByClassName('clouds')[0].children;
+      clouds.forEach(cloud => {
+        let plusOrMinus = Math.random() < 0.5 ? -1 : 1;
+        anime({
+          targets: cloud,
+          translateX: (Math.floor(Math.random() * 0.3 * vw) + 0.2*vw) * plusOrMinus,
+          duration: (Math.floor(Math.random() * 1000) + 5000),
+          loop: true,
+          direction: 'alternate',
+          easing: 'linear'
+        })
+      })
+
+      anime({
+        targets: "#smoke-1",
+        translateY: -0.4*vh,
+        opacity: 0.1,
+        duration: 2000,
+        easing: 'linear',
+        loop: true
+      })
+      anime({
+        targets: "#smoke-2",
+        translateY: -0.2*vh,
+        opacity: 0.1,
+        duration: 2000,
+        easing: 'linear',
+        loop: true,
+        delay: 100
+      })
+    },
+    animateText() {
+      let textAnimation = anime.timeline({
+        delay: 700,
+        duration: 500,
+        easing: 'linear'
+      });
+      textAnimation
+        .add({
+          targets: '.text-box',
+          delay: 1000,
+          duration: 1000,
+          opacity: 0.9,
+        })
+        .add({
+          targets: '#para-1',
+          color: '#000'
+        })
+        .add({
+          targets: '#para-2',
+          color: '#000'
+        })
+        .add({
+          targets: '#para-3',
+          color: '#000'
+        })
+        .add({
+          targets: '#para-4',
+          color: '#000'
+        })
+        .add({
+          targets: '.bubble-container',
+          opacity: 0.9
+        })
+        .add({
+          targets: '.canvas',
+          opacity: 1
+        })
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
     }
   },
   mounted() {
-    let vw = document.querySelector('.interactive-container').clientWidth;
-    let vh = window.innerHeight;
-    let clouds = document.getElementsByClassName('clouds')[0].children;
-    clouds.forEach(cloud => {
-      let plusOrMinus = Math.random() < 0.5 ? -1 : 1;
-      anime({
-        targets: cloud,
-        translateX: (Math.floor(Math.random() * 0.3 * vw) + 0.2*vw) * plusOrMinus,
-        duration: (Math.floor(Math.random() * 1000) + 5000),
-        loop: true,
-        direction: 'alternate',
-        easing: 'linear'
-      })
-    })
-
-    anime({
-      targets: "#smoke-1",
-      translateY: -0.4*vh,
-      opacity: 0.1,
-      duration: 2000,
-      easing: 'linear',
-      loop: true
-    })
-    anime({
-      targets: "#smoke-2",
-      translateY: -0.2*vh,
-      opacity: 0.1,
-      duration: 2000,
-      easing: 'linear',
-      loop: true,
-      delay: 100
-    })
-
-    let textAnimation = anime.timeline({
-      delay: 700,
-      duration: 500,
-      easing: 'linear'
-    });
-    textAnimation
-      .add({
-        targets: '.text-box',
-        delay: 1000,
-        duration: 1000,
-        opacity: 0.9,
-      })
-      .add({
-        targets: '#para-1',
-        color: '#000'
-      })
-      .add({
-        targets: '#para-2',
-        color: '#000'
-      })
-      .add({
-        targets: '#para-3',
-        color: '#000'
-      })
-      .add({
-        targets: '#para-4',
-        color: '#000'
-      })
-      .add({
-        targets: '.bubble-container',
-        opacity: 0.9
-      })
-      .add({
-        targets: '.canvas',
-        opacity: 1
-      })
+    this.animateSvg();
+    this.animateText();
+    this.setAudioVolumeLevel(0.5);
   }
 }
 </script>

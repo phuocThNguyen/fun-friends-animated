@@ -374,6 +374,31 @@ export default {
     }
   },
   methods: {
+    animateImages() {
+      let images = document.querySelectorAll('.images')
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 300,
+        delay: 300
+      })
+      animation
+        .add({
+          targets: images[1],
+          opacity: 1
+        })
+        .add({
+          targets: images[0],
+          opacity: 1
+        })
+        .add({
+          targets: images[3],
+          opacity: 1
+        })
+        .add({
+          targets: images[2],
+          opacity: 1
+        })
+    },
     playSoundButton() {
       switch (this.animalArray[this.animalIndex]) {
         case 'duck':
@@ -399,16 +424,19 @@ export default {
           break;
         case 'cow':
           setTimeout(() => {
+            this.$refs.duck.pause();
             this.$refs.cow.play()
           }, 600)
           break;
         case 'pig':
           setTimeout(() => {
+            this.$refs.cow.pause();
             this.$refs.pig.play()
           }, 600)
           break;
         case 'sheep':
           setTimeout(() => {
+            this.$refs.pig.pause();
             this.$refs.sheep.play()
           }, 600)
           break;
@@ -473,30 +501,7 @@ export default {
     }
   },
   mounted() {
-    let images = document.querySelectorAll('.images')
-    let animation = anime.timeline({
-      easing: 'linear',
-      duration: 300,
-      delay: 300
-    })
-    animation
-      .add({
-        targets: images[1],
-        opacity: 1
-      })
-      .add({
-        targets: images[0],
-        opacity: 1
-      })
-      .add({
-        targets: images[3],
-        opacity: 1
-      })
-      .add({
-        targets: images[2],
-        opacity: 1
-      })
-
+    this.animateImages();
     this.playSound();
   },
   watch: {

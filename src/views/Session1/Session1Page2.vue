@@ -17,54 +17,59 @@
 import anime from "animejs";
 export default {
   name: "Session1Page2",
-  mounted() {
-    let vw = document.querySelector('.interactive-container').clientWidth;
-    let animations = anime.timeline({
-      duration: 1000
-    });
-    animations
-      .add({
-        targets: ".left-bar",
-        translateX: 0.5*vw,
-        duration: 500,
-        delay: 1000,
-      })
-      .add({
-        targets: ".text-1",
-        color: '#fff',
-        webkitTextStroke: '0.1vw black',
-        delay: 1000
-      })
-      .add({
-        targets: ".text-2",
-        color: '#fff',
-        webkitTextStroke: '0.1vw black',
-      })
-      .add({
-        targets: ".text-3",
-        color: '#fff',
-        webkitTextStroke: '0.1vw black',
-      })
-      .add({
-        targets: ".text-4",
-        color: '#fff',
-        webkitTextStroke: '0.1vw black',
-      })
-      .add({
-        targets: ".text-5",
-        color: '#fff',
-        webkitTextStroke: '0.1vw black',
-      })
-      .add({
-        targets: ".text-6",
-        color: '#fff',
-        webkitTextStroke: '0.1vw black',
-      })
-      .add({
-        targets: ".text-7",
-        color: '#fff',
-        webkitTextStroke: '0.1vw black',
+  methods: {
+    animateText() {
+      let vw = document.querySelector('.interactive-container').clientWidth;
+      let animations = anime.timeline({
+        duration: 1000
       });
+      animations
+        .add({
+          targets: ".left-bar",
+          translateX: 0.5*vw,
+          duration: 500,
+          delay: 1000,
+        })
+        .add({
+          targets: ".text-1",
+          color: '#fff',
+          webkitTextStroke: '0.1vw black',
+          delay: 1000
+        })
+        .add({
+          targets: ".text-2",
+          color: '#fff',
+          webkitTextStroke: '0.1vw black',
+        })
+        .add({
+          targets: ".text-3",
+          color: '#fff',
+          webkitTextStroke: '0.1vw black',
+        })
+        .add({
+          targets: ".text-4",
+          color: '#fff',
+          webkitTextStroke: '0.1vw black',
+        })
+        .add({
+          targets: ".text-5",
+          color: '#fff',
+          webkitTextStroke: '0.1vw black',
+        })
+        .add({
+          targets: ".text-6",
+          color: '#fff',
+          webkitTextStroke: '0.1vw black',
+        })
+        .add({
+          targets: ".text-7",
+          color: '#fff',
+          webkitTextStroke: '0.1vw black',
+        });
+    }
+  },
+  mounted() {
+    this.animateText();
   }
 }
 </script>

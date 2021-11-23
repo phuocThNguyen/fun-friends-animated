@@ -9,7 +9,7 @@
           but we are all joined together by lines of belonging and love.</strong></p>
       </div>
     </div>
-    <audio autoplay loop src="../../assets/sounds/children-background-music/sand-castle.mp3"></audio>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/sand-castle.mp3"></audio>
   </div>
 </template>
 
@@ -34,35 +34,42 @@ export default {
   methods: {
     saveToDatabase(data) {
       console.log(data)
+    },
+    animateText() {
+      let para = document.getElementsByClassName('para')[0].children;
+      let animation = anime.timeline({
+        delay: 700,
+        duration: 700,
+      });
+      animation
+        .add({
+          targets: "#first",
+          color: "#000",
+        })
+        .add({
+          targets: "#second",
+          color: "#000",
+        })
+        .add({
+          targets: para[0],
+          color: "#d00000",
+        })
+        .add({
+          targets: para[1],
+          color: "#d00000",
+        })
+        .add({
+          targets: para[2],
+          color: "#000",
+        })
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
     }
   },
   mounted() {
-    let para = document.getElementsByClassName('para')[0].children;
-    let animation = anime.timeline({
-      delay: 700,
-      duration: 700,
-    });
-    animation
-      .add({
-        targets: "#first",
-        color: "#000",
-      })
-      .add({
-        targets: "#second",
-        color: "#000",
-      })
-      .add({
-        targets: para[0],
-        color: "#d00000",
-      })
-      .add({
-        targets: para[1],
-        color: "#d00000",
-      })
-      .add({
-        targets: para[2],
-        color: "#000",
-      })
+    this.animateText();
+    this.setAudioVolumeLevel(0.2)
   }
 }
 </script>

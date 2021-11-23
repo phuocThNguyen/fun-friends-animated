@@ -216,88 +216,92 @@ import anime from 'animejs';
 import Letterize from 'letterizejs';
 export default {
   name: "Session1Page1",
+  methods: {
+    animateSvg() {
+      let vw = document.querySelector('.interactive-container').clientWidth;
+      anime({
+        targets: this.$refs.cloud1,
+        translateX: vw + 0.4*vw,
+        duration: 50000,
+        loop: true,
+        easing: 'linear'
+      })
+      anime({
+        targets: this.$refs.smallCloud,
+        translateX: -(vw + 0.4*vw),
+        duration: 40000,
+        direction: 'alternate',
+        loop: true,
+        easing: 'linear'
+      });
+      anime({
+        targets: this.$refs.sun,
+        rotate: '360deg',
+        duration: 5000,
+        easing: 'steps(10)',
+        loop: true,
+      });
+      anime({
+        targets: '.bird-1',
+        translateX: vw + 0.2*vw,
+        easing: 'linear',
+        duration: 10000,
+        loop: true
+      });
+      anime({
+        targets: '.bird-2',
+        translateX: -(vw + 0.2*vw),
+        easing: 'linear',
+        duration: 10000,
+        delay: 2000,
+        loop: true
+      });
+    },
+    animateText() {
+      const q1p1 = new Letterize({targets: ".question1-part1"});
+      const q1p2 = new Letterize({targets: ".question1-part2"});
+
+      const question1_animation = anime.timeline();
+      question1_animation
+        .add({
+          targets: q1p1.listAll,
+          color: '#000',
+          delay: anime.stagger(70)
+        })
+        .add({
+          targets: q1p2.listAll,
+          color: '#000',
+          delay: anime.stagger(70)
+        }, '-=500')
+
+      // Question 2
+      const q2p1 = new Letterize({targets: ".question2-part1"});
+      const q2p2 = new Letterize({targets: ".question2-part2"});
+
+      const question2_animation = anime.timeline();
+      question2_animation
+        .add({
+          targets: q2p1.listAll,
+          color:'#000',
+          delay: anime.stagger(70, {start: 5000})
+        })
+        .add({
+          targets: q2p2.listAll,
+          color: '#000',
+          delay: anime.stagger(70)
+        }, '-=500');
+
+      // Question 3
+      anime({
+        targets: '.question-3',
+        color: '#000',
+        delay: 10000,
+      });
+    }
+  },
   mounted() {
-    let vw = document.querySelector('.interactive-container').clientWidth;
-
-    anime({
-      targets: this.$refs.cloud1,
-      translateX: vw + 0.4*vw,
-      duration: 50000,
-      loop: true,
-      easing: 'linear'
-    })
-    anime({
-      targets: this.$refs.smallCloud,
-      translateX: -(vw + 0.4*vw),
-      duration: 40000,
-      direction: 'alternate',
-      loop: true,
-      easing: 'linear'
-    });
-    anime({
-      targets: this.$refs.sun,
-      rotate: '360deg',
-      duration: 5000,
-      easing: 'steps(10)',
-      loop: true,
-    });
-    anime({
-      targets: '.bird-1',
-      translateX: vw + 0.2*vw,
-      easing: 'linear',
-      duration: 10000,
-      loop: true
-    });
-    anime({
-      targets: '.bird-2',
-      translateX: -(vw + 0.2*vw),
-      easing: 'linear',
-      duration: 10000,
-      delay: 2000,
-      loop: true
-    });
-
-    // Animating questions
-    // Question 1
-    const q1p1 = new Letterize({targets: ".question1-part1"});
-    const q1p2 = new Letterize({targets: ".question1-part2"});
-
-    const question1_animation = anime.timeline();
-    question1_animation
-      .add({
-        targets: q1p1.listAll,
-        color: '#000',
-        delay: anime.stagger(70)
-      })
-      .add({
-        targets: q1p2.listAll,
-        color: '#000',
-        delay: anime.stagger(70)
-      }, '-=500')
-
-    // Question 2
-    const q2p1 = new Letterize({targets: ".question2-part1"});
-    const q2p2 = new Letterize({targets: ".question2-part2"});
-
-    const question2_animation = anime.timeline();
-    question2_animation
-      .add({
-        targets: q2p1.listAll,
-        color:'#000',
-        delay: anime.stagger(70, {start: 5000})
-      })
-      .add({
-        targets: q2p2.listAll,
-        color: '#000',
-        delay: anime.stagger(70)
-      }, '-=500');
-
-    // Question 3
-    anime({
-      targets: '.question-3',
-      color: '#000',
-      delay: 10000,
-    });
+    this.animateSvg();
+    this.animateText();
   }
 }
 </script>

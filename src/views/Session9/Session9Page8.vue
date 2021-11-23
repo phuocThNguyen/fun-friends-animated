@@ -700,7 +700,7 @@
     <p class="text">Draw, write or act out your ideas for rewards with a friend!
       <br>If it's a game, teach your friend how to play it!</p>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
-    <audio loop src="../../assets/sounds/children-background-music/ukulele-beach-doug-maxwell-children-s-music-no-copyright-music.mp3"></audio>
+    <audio autoplay loop src="../../assets/sounds/children-background-music/ukulele-beach-doug-maxwell-children-s-music-no-copyright-music.mp3"></audio>
   </div>
 </template>
 

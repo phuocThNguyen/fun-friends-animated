@@ -4,7 +4,7 @@
     <div class="text-box">
       <p class="mb-0">Annie loves playing on the swing.</p>
       <p class="mb-0">How do you have fun when playing outside?</p>
-      <audio autoplay src="../../assets/sounds/session1/playground.mp3"></audio>
+      <audio ref="audio" autoplay src="../../assets/sounds/session1/playground.mp3"></audio>
     </div>
   </div>
 </template>
@@ -14,14 +14,23 @@ import anime from "animejs";
 
 export default {
   name: "Session1Page5",
+  methods: {
+    animateText() {
+      anime({
+        targets: ".text-box",
+        opacity: 1,
+        delay: 500,
+        duration: 500,
+        easing: 'linear',
+      })
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level;
+    }
+  },
   mounted() {
-    anime({
-      targets: ".text-box",
-      opacity: 1,
-      delay: 500,
-      duration: 500,
-      easing: 'linear',
-    })
+    this.animateText();
+    this.setAudioVolumeLevel(0.4);
   }
 }
 </script>

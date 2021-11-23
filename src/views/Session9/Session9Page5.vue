@@ -2297,6 +2297,7 @@
     </svg>
     <div class="text-box">
       <p>What brave things do you think Annie is trying to do?</p>
+      <p>What brave things you are trying to do?</p>
       <p>What can you do to practise being brave?</p>
     </div>
   </div>

@@ -48,6 +48,8 @@
         </g>
       </g>
     </svg>
+
+    <!--  Tree  -->
     <svg class="tree-body" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 66 200" width="66" height="200">
     <title>Tree Body</title>
     <g id="tree-body">
@@ -69,7 +71,6 @@
       </g>
     </g>
   </svg>
-
     <svg class="tree-crown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 347 318" width="347" height="318">
     <title>Tree Crown</title>
     <g id="tree-crown">
@@ -84,6 +85,7 @@
     </g>
   </svg>
 
+    <!--  Oranges  -->
     <svg class="orange" id="orange-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1487 1402" width="39" height="37">
       <title>orange</title>
       <g id="orange">
@@ -400,7 +402,7 @@
 
       <p id="para-2">What are some things that this tree needs to stay healthy?</p>
     </div>
-    <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3">
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
   </div>
@@ -410,112 +412,121 @@
 import anime from 'animejs';
 export default {
   name: "Session1Page33",
+  methods: {
+    animateSequence() {
+      anime({
+        targets: this.$refs.sun,
+        rotate: '360deg',
+        duration: 5000,
+        easing: 'steps(10)',
+        loop: true,
+      })
+      let vh = window.innerHeight;
+      let oranges = document.getElementsByClassName('orange');
+      anime.timeline({
+        scale: 40,
+        duration: 300,
+        easing: 'easeInCubic'
+      })
+        .add({
+          targets: '.tree-body',
+          scale: 40,
+          translateY: -0.004 * vh,
+          duration: 3000,
+          easing: 'linear',
+        })
+        .add({
+          targets: '.tree-crown',
+          scaleX: 110,
+          scaleY: 110,
+          translateY: -0.0025 * vh,
+          duration: 2000,
+          easing: 'linear',
+        }, "-=700")
+        .add({
+          targets: oranges[0],
+          scale: 40,
+        })
+        .add({
+          targets: oranges[1],
+          scale: 40,
+        })
+        .add({
+          targets: oranges[2],
+          scale: 40,
+        })
+        .add({
+          targets: oranges[3],
+          scale: 40,
+        })
+        .add({
+          targets: oranges[4],
+          scale: 40,
+        })
+        .add({
+          targets: oranges[5],
+          scale: 40,
+        })
+        .add({
+          targets: oranges[6],
+          scale: 40,
+        })
+        .add({
+          targets: oranges[7],
+          scale: 40,
+        })
+        .add({
+          targets: oranges[8],
+          scale: 40,
+        })
+        .add({
+          targets: oranges[9],
+          scale: 40,
+        })
+        .add({
+          targets: oranges[10],
+          scale: 40,
+        })
+        .add({
+          targets: oranges[11],
+          scale: 40,
+        })
+        .add({
+          targets: oranges[12],
+          scale: 40,
+        })
+        .add({
+          targets: oranges[13],
+          scale: 40,
+        })
+        .add({
+          targets: oranges[14],
+          scale: 40,
+        })
+        .add({
+          targets: ".text-box",
+          opacity: 0.8,
+          duration: 500,
+        })
+        .add({
+          targets: "#para-1",
+          color: '#000',
+          duration: 1000,
+        })
+        .add({
+          targets: "#para-2",
+          color: '#000',
+          duration: 1000,
+          delay: 2000
+        })
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
+    }
+  },
   mounted() {
-    anime({
-      targets: this.$refs.sun,
-      rotate: '360deg',
-      duration: 5000,
-      easing: 'steps(10)',
-      loop: true,
-    })
-    let vh = window.innerHeight;
-    let oranges = document.getElementsByClassName('orange');
-    anime.timeline({
-      scale: 40,
-      duration: 300,
-      easing: 'easeInCubic'
-    })
-      .add({
-        targets: '.tree-body',
-        scale: 40,
-        translateY: -0.004 * vh,
-        duration: 3000,
-        easing: 'linear',
-      })
-      .add({
-        targets: '.tree-crown',
-        scaleX: 110,
-        scaleY: 110,
-        translateY: -0.0025 * vh,
-        duration: 2000,
-        easing: 'linear',
-      }, "-=700")
-      .add({
-        targets: oranges[0],
-        scale: 40,
-      })
-      .add({
-        targets: oranges[1],
-        scale: 40,
-      })
-      .add({
-        targets: oranges[2],
-        scale: 40,
-      })
-      .add({
-        targets: oranges[3],
-        scale: 40,
-      })
-      .add({
-        targets: oranges[4],
-        scale: 40,
-      })
-      .add({
-        targets: oranges[5],
-        scale: 40,
-      })
-      .add({
-        targets: oranges[6],
-        scale: 40,
-      })
-      .add({
-        targets: oranges[7],
-        scale: 40,
-      })
-      .add({
-        targets: oranges[8],
-        scale: 40,
-      })
-      .add({
-        targets: oranges[9],
-        scale: 40,
-      })
-      .add({
-        targets: oranges[10],
-        scale: 40,
-      })
-      .add({
-        targets: oranges[11],
-        scale: 40,
-      })
-      .add({
-        targets: oranges[12],
-        scale: 40,
-      })
-      .add({
-        targets: oranges[13],
-        scale: 40,
-      })
-      .add({
-        targets: oranges[14],
-        scale: 40,
-      })
-      .add({
-        targets: ".text-box",
-        opacity: 0.8,
-        duration: 500,
-      })
-      .add({
-        targets: "#para-1",
-        color: '#000',
-        duration: 1000,
-      })
-      .add({
-        targets: "#para-2",
-        color: '#000',
-        duration: 1000,
-        delay: 2000
-      })
+    this.animateSequence();
+    this.setAudioVolumeLevel(0.3)
   }
 }
 </script>

@@ -14,7 +14,7 @@
       </div>
 
     </div>
-    <audio autoplay src="../../assets/sounds/session1/dog.mp3">
+    <audio ref="audio" autoplay src="../../assets/sounds/session1/dog.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
   </div>
@@ -25,29 +25,38 @@ import anime from "animejs";
 
 export default {
   name: "Session1Page4",
-  mounted() {
-    let animation = anime.timeline({
-      delay: 500,
-      duration: 500,
-      easing: 'linear',
-    });
-    animation
-      .add({
-        targets: ".left-bar",
-        opacity: 1,
-      })
-      .add({
-        targets: '#para-1',
-        opacity: 1,
-      })
-      .add({
-        targets: '#para-2',
-        opacity: 1,
-      })
-      .add({
-        targets: ".text-box",
-        opacity: 1,
+  methods: {
+    animateText() {
+      let animation = anime.timeline({
+        delay: 500,
+        duration: 500,
+        easing: 'linear',
       });
+      animation
+        .add({
+          targets: ".left-bar",
+          opacity: 1,
+        })
+        .add({
+          targets: '#para-1',
+          opacity: 1,
+        })
+        .add({
+          targets: '#para-2',
+          opacity: 1,
+        })
+        .add({
+          targets: ".text-box",
+          opacity: 1,
+        });
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level;
+    }
+  },
+  mounted() {
+    this.animateText();
+    this.setAudioVolumeLevel(0.2);
   }
 }
 </script>

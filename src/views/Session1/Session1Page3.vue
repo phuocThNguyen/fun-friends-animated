@@ -9,7 +9,7 @@
       <p id="para-5">Would you like to adopt a rescue animal for
         your birthday?</p>
     </div>
-    <audio autoplay src="../../assets/sounds/session1/dog.mp3">
+    <audio ref="audio" autoplay src="../../assets/sounds/session1/dog.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
   </div>
@@ -19,48 +19,57 @@
 import anime from "animejs";
 export default {
   name: "Session1Page3",
+  methods: {
+    animateText() {
+      let para = document.getElementsByClassName('left-bar')[0].children;
+      let initAnimation = anime.timeline({
+        easing: 'linear'
+      });
+      initAnimation
+        .add({
+          targets: ".left-bar",
+          opacity: 1,
+          delay: 500,
+          duration: 500,
+        })
+        .add({
+          targets: para[0],
+          opacity: 1,
+          duration: 500,
+          delay: 500,
+        })
+        .add({
+          targets: para[1],
+          opacity: 1,
+          duration: 300,
+          delay: 500,
+        })
+        .add({
+          targets: para[2],
+          opacity: 1,
+          duration: 300,
+          delay: 1000,
+        })
+        .add({
+          targets: para[3],
+          opacity: 1,
+          duration: 300,
+          delay: 1000,
+        })
+        .add({
+          targets: para[4],
+          opacity: 1,
+          duration: 300,
+          delay: 1000,
+        })
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level;
+    }
+  },
   mounted() {
-    let para = document.getElementsByClassName('left-bar')[0].children;
-    let initAnimation = anime.timeline({
-      easing: 'linear'
-    });
-    initAnimation
-      .add({
-        targets: ".left-bar",
-        opacity: 1,
-        delay: 500,
-        duration: 500,
-      })
-      .add({
-        targets: para[0],
-        opacity: 1,
-        duration: 500,
-        delay: 500,
-      })
-      .add({
-        targets: para[1],
-        opacity: 1,
-        duration: 300,
-        delay: 500,
-      })
-      .add({
-        targets: para[2],
-        opacity: 1,
-        duration: 300,
-        delay: 1000,
-      })
-      .add({
-        targets: para[3],
-        opacity: 1,
-        duration: 300,
-        delay: 1000,
-      })
-      .add({
-        targets: para[4],
-        opacity: 1,
-        duration: 300,
-        delay: 1000,
-      })
+    this.animateText();
+    this.setAudioVolumeLevel(0.2);
   }
 }
 </script>

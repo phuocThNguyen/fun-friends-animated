@@ -19,16 +19,19 @@ import anime from "animejs";
 
 export default {
   name: "Session1Page31",
-  mounted() {
-    let animation = anime.timeline();
-    animation
-      .add({
+  methods: {
+    animateText() {
+      anime({
         targets: ".text-box",
-        opacity: 0.98,
-        duration: 500,
+        opacity: 1,
         delay: 500,
-        easing: "linear",
+        duration: 500,
+        easing: 'linear',
       })
+    }
+  },
+  mounted() {
+    this.animateText();
   },
 };
 </script>

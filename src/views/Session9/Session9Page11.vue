@@ -2,7 +2,7 @@
   <div class="interactive-container" id="alt-bg">
     <p class="text">Write or draw other rewards in the space below.</p>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle" />
-    <audio loop src="../../assets/sounds/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3"></audio>
+    <audio autoplay loop src="../../assets/sounds/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3"></audio>
   </div>
 </template>
 

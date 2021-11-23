@@ -19,58 +19,63 @@ import anime from "animejs";
 
 export default {
   name: "Session1Page19",
+  methods: {
+    animateText() {
+      let paraArray = document.getElementsByClassName('text')[0];
+      let animation = anime.timeline({
+        delay: 700,
+        duration: 500
+      });
+      animation
+        .add({
+          targets: ".text-box",
+          opacity: 0.95,
+          easing: 'linear'
+        })
+        .add({
+          targets: paraArray.children[0],
+          color: '#000',
+          easing: 'linear',
+        })
+        .add({
+          targets: paraArray.children[1],
+          color: '#000',
+          easing: 'linear',
+        })
+        .add({
+          targets: paraArray.children[2],
+          color: '#000',
+          easing: 'linear',
+        })
+        .add({
+          targets: paraArray.children[3],
+          color: '#000',
+          easing: 'linear',
+        })
+        .add({
+          targets: paraArray.children[4],
+          color: '#000',
+          easing: 'linear',
+        })
+        .add({
+          targets: paraArray.children[5],
+          color: '#000',
+          easing: 'linear',
+        })
+        .add({
+          targets: paraArray.children[6],
+          color: '#000',
+          easing: 'linear',
+        })
+        .add({
+          targets: paraArray.children[7],
+          color: '#000',
+          easing: 'linear',
+        })
+    }
+  },
   mounted() {
-    let paraArray = document.getElementsByClassName('text')[0];
-    let animation = anime.timeline({
-      delay: 700,
-      duration: 500
-    });
-    animation
-      .add({
-        targets: ".text-box",
-        opacity: 0.95,
-        easing: 'linear'
-      })
-      .add({
-        targets: paraArray.children[0],
-        color: '#000',
-        easing: 'linear',
-      })
-      .add({
-        targets: paraArray.children[1],
-        color: '#000',
-        easing: 'linear',
-      })
-      .add({
-        targets: paraArray.children[2],
-        color: '#000',
-        easing: 'linear',
-      })
-      .add({
-        targets: paraArray.children[3],
-        color: '#000',
-        easing: 'linear',
-      })
-      .add({
-        targets: paraArray.children[4],
-        color: '#000',
-        easing: 'linear',
-      })
-      .add({
-        targets: paraArray.children[5],
-        color: '#000',
-        easing: 'linear',
-      })
-      .add({
-        targets: paraArray.children[6],
-        color: '#000',
-        easing: 'linear',
-      })
-      .add({
-        targets: paraArray.children[7],
-        color: '#000',
-        easing: 'linear',
-      })
+    this.animateText();
   }
 }
 </script>

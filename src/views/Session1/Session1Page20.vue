@@ -375,6 +375,31 @@ export default {
     }
   },
   methods: {
+    animateImages() {
+      let images = document.querySelectorAll('.images')
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 300,
+        delay: 300
+      })
+      animation
+        .add({
+          targets: images[1],
+          opacity: 1
+        })
+        .add({
+          targets: images[0],
+          opacity: 1
+        })
+        .add({
+          targets: images[3],
+          opacity: 1
+        })
+        .add({
+          targets: images[2],
+          opacity: 1
+        })
+    },
     playSoundButton() {
       switch (this.animalArray[this.animalIndex]) {
         case 'bear':
@@ -395,22 +420,25 @@ export default {
       switch (this.animalArray[this.animalIndex]) {
         case 'bear':
           setTimeout(() => {
-            this.$refs.bear.play()
+            this.$refs.bear.play();
           }, 600 * 4)
           break;
         case 'monkey':
           setTimeout(() => {
-            this.$refs.monkey.play()
+            this.$refs.bear.pause();
+            this.$refs.monkey.play();
           }, 600)
           break;
         case 'elephant':
           setTimeout(() => {
-            this.$refs.elephant.play()
+            this.$refs.monkey.pause();
+            this.$refs.elephant.play();
           }, 600)
           break;
         case 'chicken':
           setTimeout(() => {
-            this.$refs.chicken.play()
+            this.$refs.elephant.pause();
+            this.$refs.chicken.play();
           }, 600)
           break;
       }
@@ -474,30 +502,7 @@ export default {
     }
   },
   mounted() {
-    let images = document.querySelectorAll('.images')
-    let animation = anime.timeline({
-      easing: 'linear',
-      duration: 300,
-      delay: 300
-    })
-    animation
-      .add({
-        targets: images[1],
-        opacity: 1
-      })
-      .add({
-        targets: images[0],
-        opacity: 1
-      })
-      .add({
-        targets: images[3],
-        opacity: 1
-      })
-      .add({
-        targets: images[2],
-        opacity: 1
-      })
-
+    this.animateImages();
     this.playSound();
   },
   watch: {

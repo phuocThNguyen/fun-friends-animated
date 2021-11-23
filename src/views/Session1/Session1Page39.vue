@@ -21,7 +21,7 @@
           <br>choice</p>
       </div>
     </div>
-    <audio autoplay loop src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3"></audio>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3"></audio>
   </div>
 </template>
 
@@ -29,37 +29,46 @@
 import anime from 'animejs'
 export default {
   name: "Session1Page39",
+  methods: {
+    animateText() {
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 500,
+        delay: 500,
+      });
+      animation
+        .add({
+          targets: '.star-container',
+          opacity: 1
+        })
+        .add({
+          targets: ".star",
+          keyframes: [
+            {rotate: '-20deg'},
+            {rotate: '20deg'},
+            {rotate: '-20deg'},
+            {rotate: '0deg'},
+          ],
+          delay: 0,
+        })
+        .add({
+          targets: ".star-text",
+          keyframes: [
+            {rotate: '-20deg'},
+            {rotate: '20deg'},
+            {rotate: '-20deg'},
+            {rotate: '0deg'},
+          ],
+          delay: 0,
+        }, 1000)
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level;
+    }
+  },
   mounted() {
-    let animation = anime.timeline({
-      easing: 'linear',
-      duration: 500,
-      delay: 500,
-    });
-    animation
-      .add({
-        targets: '.star-container',
-        opacity: 1
-      })
-      .add({
-        targets: ".star",
-        keyframes: [
-          {rotate: '-20deg'},
-          {rotate: '20deg'},
-          {rotate: '-20deg'},
-          {rotate: '0deg'},
-        ],
-        delay: 0,
-      })
-      .add({
-        targets: ".star-text",
-        keyframes: [
-          {rotate: '-20deg'},
-          {rotate: '20deg'},
-          {rotate: '-20deg'},
-          {rotate: '0deg'},
-        ],
-        delay: 0,
-      }, 1000)
+    this.animateText();
+    this.setAudioVolumeLevel(0.4);
   }
 }
 </script>
@@ -84,7 +93,7 @@ export default {
 }
 .star-text {
   position: absolute;
-  margin-top: 10%;
+  margin-top: 6%;
   width: 100%;
   text-align: center;
 }

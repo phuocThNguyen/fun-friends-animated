@@ -20,33 +20,38 @@ import anime from "animejs";
 
 export default {
   name: "Session1Page12",
+  methods: {
+    animateText() {
+      let animation = anime.timeline({
+        delay: 700,
+        duration: 500,
+        easing: 'linear'
+      });
+      animation
+        .add({
+          targets: ".left-bar",
+          opacity: 1,
+        })
+        .add({
+          targets: "#para-1",
+          opacity: 1,
+        })
+        .add({
+          targets: "#para-2",
+          opacity: 1,
+        })
+        .add({
+          targets: "#para-3",
+          opacity: 1,
+        })
+        .add({
+          targets: ".text-box",
+          opacity: 1,
+        })
+    }
+  },
   mounted() {
-    let animation = anime.timeline({
-      delay: 700,
-      duration: 500,
-      easing: 'linear'
-    });
-    animation
-      .add({
-        targets: ".left-bar",
-        opacity: 1,
-      })
-      .add({
-        targets: "#para-1",
-        opacity: 1,
-      })
-      .add({
-        targets: "#para-2",
-        opacity: 1,
-      })
-      .add({
-        targets: "#para-3",
-        opacity: 1,
-      })
-      .add({
-        targets: ".text-box",
-        opacity: 1,
-      })
+    this.animateText()
   }
 }
 </script>

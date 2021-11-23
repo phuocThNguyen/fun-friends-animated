@@ -212,7 +212,7 @@
       <p> - Show with your body what happens to trees during winter!</p>
       <p> - Show with your body a tree blossoming in spring!</p>
     </div>
-    <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3">
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
   </div>
@@ -223,24 +223,25 @@ import anime from "animejs";
 
 export default {
   name: "Session1Page34",
-  mounted() {
-    let vw = document.querySelector('.interactive-container').clientWidth;
-    const clouds = document.getElementsByClassName('shp-cloud');
-    clouds.forEach(cloud => {
-      let plusOrMinus = Math.random() < 0.5 ? -1 : 1;
-      anime({
-        targets: cloud,
-        translateX: (Math.floor(Math.random() * 0.5 * vw) + 0.2 * vw) * plusOrMinus,
-        duration: (Math.floor(Math.random() * 1000) + 5000),
-        loop: true,
-        direction: 'alternate',
-        easing: 'linear'
+  methods: {
+    animateSvg() {
+      let vw = document.querySelector('.interactive-container').clientWidth;
+      const clouds = document.getElementsByClassName('shp-cloud');
+      clouds.forEach(cloud => {
+        let plusOrMinus = Math.random() < 0.5 ? -1 : 1;
+        anime({
+          targets: cloud,
+          translateX: (Math.floor(Math.random() * 0.5 * vw) + 0.2 * vw) * plusOrMinus,
+          duration: (Math.floor(Math.random() * 1000) + 5000),
+          loop: true,
+          direction: 'alternate',
+          easing: 'linear'
+        })
       })
-    })
 
-    let treeGrowAnimation = anime.timeline({duration: 700})
-    let treeGrowAnimation2 = anime.timeline({duration: 700})
-    treeGrowAnimation
+      let treeGrowAnimation = anime.timeline({duration: 700})
+      let treeGrowAnimation2 = anime.timeline({duration: 700})
+      treeGrowAnimation
         .add({
           targets: "#bush-left-bottom",
           scale: 50,
@@ -259,7 +260,7 @@ export default {
           scale: 100,
         })
 
-    treeGrowAnimation2
+      treeGrowAnimation2
         .add({
           targets: "#bush-right-bottom",
           scale: 50,
@@ -277,48 +278,58 @@ export default {
           targets: "#tree-right-left",
           scale: 100,
         })
-
-    let text = document.getElementsByClassName('text-box')[0].children;
-    let textBoxAnimation = anime.timeline({
-      easing: 'linear',
-      duration: 700,
-      delay: 700,
-    });
-    textBoxAnimation
-      .add({
-        targets: '.text-box',
-        opacity: 0.9,
-        duration: 500,
-        delay: 2000,
-      })
-      .add({
-        targets: text[0],
-        color: '#000',
-      })
-      .add({
-        targets: text[1],
-        color: '#000',
-      })
-      .add({
-        targets: text[2],
-        color: '#000',
-      })
-      .add({
-        targets: text[3],
-        color: '#000',
-      })
-      .add({
-        targets: text[4],
-        color: '#000',
-      })
-      .add({
-        targets: text[5],
-        color: '#000',
-      })
-      .add({
-        targets: text[6],
-        color: '#000',
-      })
+    },
+    animateText() {
+      let text = document.getElementsByClassName('text-box')[0].children;
+      let textBoxAnimation = anime.timeline({
+        easing: 'linear',
+        duration: 700,
+        delay: 700,
+      });
+      textBoxAnimation
+        .add({
+          targets: '.text-box',
+          opacity: 0.9,
+          duration: 500,
+          delay: 2000,
+        })
+        .add({
+          targets: text[0],
+          color: '#000',
+        })
+        .add({
+          targets: text[1],
+          color: '#000',
+        })
+        .add({
+          targets: text[2],
+          color: '#000',
+        })
+        .add({
+          targets: text[3],
+          color: '#000',
+        })
+        .add({
+          targets: text[4],
+          color: '#000',
+        })
+        .add({
+          targets: text[5],
+          color: '#000',
+        })
+        .add({
+          targets: text[6],
+          color: '#000',
+        })
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
+    }
+  },
+  mounted() {
+    this.animateSvg();
+    this.animateText();
+    this.setAudioVolumeLevel(0.3);
   }
 }
 </script>

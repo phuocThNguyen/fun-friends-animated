@@ -795,7 +795,7 @@
          practise this everyday you will get better and better at it!</p>
       </div>
     </div>
-    <audio autoplay loop src="../../assets/sounds/session1/beach-sound.mp3">
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/beach-sound.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
   </div>
@@ -805,111 +805,122 @@
 import anime from 'animejs';
 export default {
   name: "Session1Page35",
+  methods: {
+    animateSvg() {
+      let vw = document.querySelector('.interactive-container').clientWidth;
+      let smallClouds = document.getElementsByClassName('shp-cloud-small')
+      smallClouds.forEach(smallCloud => {
+        let plusOrMinus = Math.random() < 0.5 ? -1 : 1;
+        anime({
+          targets: smallCloud,
+          translateX: (Math.floor(Math.random() * 0.5 * vw) + 0.2 * vw) * plusOrMinus,
+          duration: (Math.floor(Math.random() * 1000) + 8000),
+          loop: true,
+          direction: 'alternate',
+          easing: 'linear'
+        })
+      })
+
+      let bigClouds = document.getElementsByClassName('big-clouds')
+      bigClouds.forEach(bigCloud => {
+        let plusOrMinus = Math.random() < 0.5 ? -1 : 1;
+        anime({
+          targets: bigCloud,
+          translateX: (Math.floor(Math.random() * 0.2 * vw) + 0.2 * vw) * plusOrMinus,
+          duration: (Math.floor(Math.random() * 5000) + 18000),
+          loop: true,
+          direction: 'alternate',
+          easing: 'linear'
+        })
+      })
+
+      anime({
+        targets: '.surfing-duck',
+        skewY: '1deg',
+        easing: 'linear',
+        duration: 1000,
+        direction: 'alternate',
+        loop: true
+      })
+      anime({
+        targets: '.crab-eye',
+        translateX: -0.02 * vw,
+        duration: 1000,
+        direction: 'alternate',
+        easing: 'linear',
+        loop: true,
+        delay: 1000
+      })
+    },
+    animateText() {
+      let text = document.querySelector('.para-box').children;
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 500,
+        delay: 3000
+      })
+      animation
+        .add({
+          targets: '.text-box',
+          opacity: 0.95,
+          delay: 500
+        })
+        .add({
+          targets: '.para-box',
+          opacity: 0.95,
+          delay: 500
+        })
+        .add({
+          targets: text[1],
+          opacity: 1,
+          delay: 500
+        })
+        .add({
+          targets: text[2],
+          opacity: 1,
+          delay: 500
+        }, 2000)
+        .add({
+          targets: text[3],
+          opacity: 1,
+        })
+        .add({
+          targets: text[4],
+          opacity: 1,
+        }, 3000)
+        .add({
+          targets: text[5],
+          opacity: 1,
+        })
+        .add({
+          targets: text[6],
+          opacity: 1,
+        }, 7500)
+        .add({
+          targets: text[7],
+          opacity: 1,
+        })
+        .add({
+          targets: text[8],
+          opacity: 1,
+        }, 11000)
+        .add({
+          targets: text[9],
+          opacity: 1,
+        })
+        .add({
+          targets: text[10],
+          opacity: 1,
+        }, 14500)
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level;
+    }
+  },
   mounted() {
-    let vw = document.querySelector('.interactive-container').clientWidth;
-    let smallClouds = document.getElementsByClassName('shp-cloud-small')
-    smallClouds.forEach(smallCloud => {
-      let plusOrMinus = Math.random() < 0.5 ? -1 : 1;
-      anime({
-        targets: smallCloud,
-        translateX: (Math.floor(Math.random() * 0.5 * vw) + 0.2 * vw) * plusOrMinus,
-        duration: (Math.floor(Math.random() * 1000) + 8000),
-        loop: true,
-        direction: 'alternate',
-        easing: 'linear'
-      })
-    })
-
-    let bigClouds = document.getElementsByClassName('big-clouds')
-    bigClouds.forEach(bigCloud => {
-      let plusOrMinus = Math.random() < 0.5 ? -1 : 1;
-      anime({
-        targets: bigCloud,
-        translateX: (Math.floor(Math.random() * 0.2 * vw) + 0.2 * vw) * plusOrMinus,
-        duration: (Math.floor(Math.random() * 5000) + 18000),
-        loop: true,
-        direction: 'alternate',
-        easing: 'linear'
-      })
-    })
-
-    anime({
-      targets: '.surfing-duck',
-      skewY: '1deg',
-      easing: 'linear',
-      duration: 1000,
-      direction: 'alternate',
-      loop: true
-    })
-    anime({
-      targets: '.crab-eye',
-      translateX: -0.02 * vw,
-      duration: 1000,
-      direction: 'alternate',
-      easing: 'linear',
-      loop: true,
-      delay: 1000
-    })
-
-    let text = document.querySelector('.para-box').children;
-    let animation = anime.timeline({
-      easing: 'linear',
-      duration: 500,
-      delay: 3000
-    })
-    animation
-      .add({
-        targets: '.text-box',
-        opacity: 0.95,
-        delay: 500
-      })
-      .add({
-        targets: '.para-box',
-        opacity: 0.95,
-        delay: 500
-      })
-      .add({
-        targets: text[1],
-        opacity: 1,
-        delay: 500
-      })
-      .add({
-        targets: text[2],
-        opacity: 1,
-        delay: 500
-      }, 2000)
-      .add({
-        targets: text[3],
-        opacity: 1,
-      })
-      .add({
-        targets: text[4],
-        opacity: 1,
-      }, 3000)
-      .add({
-        targets: text[5],
-        opacity: 1,
-      })
-      .add({
-        targets: text[6],
-        opacity: 1,
-      }, 7500)
-      .add({
-        targets: text[7],
-        opacity: 1,
-      })
-      .add({
-        targets: text[8],
-        opacity: 1,
-      }, 11000)
-      .add({
-        targets: text[9],
-        opacity: 1,
-      })
-      .add({
-        targets: text[10],
-        opacity: 1,
-      }, 14500)
+    this.animateSvg();
+    this.animateText();
+    this.setAudioVolumeLevel(0.5);
   }
 }
 </script>

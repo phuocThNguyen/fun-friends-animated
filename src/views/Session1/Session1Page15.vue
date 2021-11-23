@@ -217,7 +217,7 @@
       </div>
     </div>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
-    <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3">
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
   </div>
@@ -242,82 +242,91 @@ export default {
   methods: {
     saveToDatabase(data) {
       console.log(data)
+    },
+    animateSvg() {
+      let vw = document.querySelector('.interactive-container').clientWidth;
+      const clouds = document.getElementsByClassName('shp-cloud');
+      clouds.forEach(cloud => {
+        let plusOrMinus = Math.random() < 0.5 ? -1 : 1;
+        anime({
+          targets: cloud,
+          translateX: (Math.floor(Math.random() * 0.5 * vw) + 0.2 * vw) * plusOrMinus,
+          duration: (Math.floor(Math.random() * 1000) + 5000),
+          loop: true,
+          direction: 'alternate',
+          easing: 'linear'
+        })
+      })
+
+      let treeGrowAnimation = anime.timeline({duration: 700})
+      let treeGrowAnimation2 = anime.timeline({duration: 700})
+      treeGrowAnimation
+        .add({
+          targets: "#bush-left-bottom",
+          scale: 50,
+          delay: 700,
+        })
+        .add({
+          targets: "#bush-left-top",
+          scale: 60,
+        })
+        .add({
+          targets: "#tree-left-left",
+          scale: 100,
+        })
+        .add({
+          targets: "#tree-left-right",
+          scale: 100,
+        })
+
+      treeGrowAnimation2
+        .add({
+          targets: "#bush-right-bottom",
+          scale: 50,
+          delay: 700
+        })
+        .add({
+          targets: "#bush-right-top",
+          scale: 60,
+        })
+        .add({
+          targets: "#tree-right-right",
+          scale: 100,
+        })
+        .add({
+          targets: "#tree-right-left",
+          scale: 100,
+        })
+    },
+    animateText() {
+      let mainContentAnimation = anime.timeline({easing: 'linear'});
+      mainContentAnimation
+        .add({
+          targets: '.requires',
+          opacity: 1,
+          duration: 700,
+          delay: 3000,
+        })
+        .add({
+          targets: '.text-box',
+          opacity: 0.90,
+          delay: 1000,
+          duration: 1000,
+        })
+        .add({
+          targets: '.canvas',
+          opacity: 1,
+          duration: 1000,
+        }, 4700)
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
     }
   },
   mounted() {
-    let vw = document.querySelector('.interactive-container').clientWidth;
-    const clouds = document.getElementsByClassName('shp-cloud');
-    clouds.forEach(cloud => {
-      let plusOrMinus = Math.random() < 0.5 ? -1 : 1;
-      anime({
-        targets: cloud,
-        translateX: (Math.floor(Math.random() * 0.5 * vw) + 0.2 * vw) * plusOrMinus,
-        duration: (Math.floor(Math.random() * 1000) + 5000),
-        loop: true,
-        direction: 'alternate',
-        easing: 'linear'
-      })
-    })
-
-    let treeGrowAnimation = anime.timeline({duration: 700})
-    let treeGrowAnimation2 = anime.timeline({duration: 700})
-    treeGrowAnimation
-      .add({
-        targets: "#bush-left-bottom",
-        scale: 50,
-        delay: 700,
-      })
-      .add({
-        targets: "#bush-left-top",
-        scale: 60,
-      })
-      .add({
-        targets: "#tree-left-left",
-        scale: 100,
-      })
-      .add({
-        targets: "#tree-left-right",
-        scale: 100,
-      })
-
-    treeGrowAnimation2
-      .add({
-        targets: "#bush-right-bottom",
-        scale: 50,
-        delay: 700
-      })
-      .add({
-        targets: "#bush-right-top",
-        scale: 60,
-      })
-      .add({
-        targets: "#tree-right-right",
-        scale: 100,
-      })
-      .add({
-        targets: "#tree-right-left",
-        scale: 100,
-      })
-
-    let mainContentAnimation = anime.timeline({easing: 'linear'});
-    mainContentAnimation
-      .add({
-        targets: '.requires',
-        opacity: 1,
-        duration: 700,
-        delay: 3000,
-      })
-      .add({
-        targets: '.text-box',
-        opacity: 0.90,
-        delay: 1000,
-        duration: 1000,
-      })
-      .add({
-        targets: '.canvas',
-        opacity: 1,
-        duration: 1000,
-      }, 4700)
+    this.animateSvg();
+    this.animateText();
+    this.setAudioVolumeLevel(0.4);
   }
 }
 </script>

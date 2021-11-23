@@ -1144,7 +1144,7 @@
       </div>
     </div>
     <drawing-canvas class="canvas" :canvasStyle="canvasStyle"/>
-    <audio autoplay loop src="../../assets/sounds/session1/Falling-Snow-Sound-Effect-Amplified.mp3">
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Falling-Snow-Sound-Effect-Amplified.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
   </div>
@@ -1169,68 +1169,77 @@ export default {
   methods: {
     saveToDatabase(data) {
       console.log(data)
+    },
+    animateSvg() {
+      let vh = window.innerHeight;
+      let probability = 0.1;
+      let snow = document.getElementsByClassName('snow')[0].children;
+      snow.forEach(element => {
+        let random_boolean = Math.random() < probability;
+        if (random_boolean) {
+          anime({
+            targets: element,
+            translateY: Math.floor(Math.random() * 0.1 * vh) + 0.2 * vh,
+            opacity: 0,
+            duration: Math.floor(Math.random() * 2000) + 1000,
+            loop: true,
+            easing: 'linear'
+          })
+        }
+      })
+    },
+    animateText() {
+      let mainContentAnimation = anime.timeline({
+        easing: 'linear',
+        duration: 700,
+        delay: 700
+      });
+      mainContentAnimation
+        .add({
+          targets: '.requires',
+          opacity: 0.85,
+        })
+        .add({
+          targets: '.text-box',
+          opacity: 0.95,
+        })
+        .add({
+          targets: '#q1',
+          color: '#d00000'
+        })
+        .add({
+          targets: '#q2',
+          color: '#000'
+        })
+        .add({
+          targets: '#q3',
+          color: '#000'
+        })
+        .add({
+          targets: '#q4',
+          color: '#000'
+        })
+        .add({
+          targets: '#q5',
+          color: '#000'
+        })
+        .add({
+          targets: '.song-writer',
+          opacity: 0.95,
+        })
+        .add({
+          targets: '.canvas',
+          opacity: 0.92,
+        }, 7000)
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
     }
   },
   mounted() {
-    let vh = window.innerHeight;
-    let probability = 0.1;
-    let snow = document.getElementsByClassName('snow')[0].children;
-    snow.forEach(element => {
-      let random_boolean = Math.random() < probability;
-      if (random_boolean) {
-        anime({
-          targets: element,
-          translateY: Math.floor(Math.random() * 0.1 * vh) + 0.2 * vh,
-          opacity: 0,
-          duration: Math.floor(Math.random() * 2000) + 1000,
-          loop: true,
-          easing: 'linear'
-        })
-      }
-    })
-
-    let mainContentAnimation = anime.timeline({
-      easing: 'linear',
-      duration: 700,
-      delay: 700
-    });
-    mainContentAnimation
-      .add({
-        targets: '.requires',
-        opacity: 0.85,
-      })
-      .add({
-        targets: '.text-box',
-        opacity: 0.95,
-      })
-      .add({
-        targets: '#q1',
-        color: '#d00000'
-      })
-      .add({
-        targets: '#q2',
-        color: '#000'
-      })
-      .add({
-        targets: '#q3',
-        color: '#000'
-      })
-      .add({
-        targets: '#q4',
-        color: '#000'
-      })
-      .add({
-        targets: '#q5',
-        color: '#000'
-      })
-      .add({
-        targets: '.song-writer',
-        opacity: 0.95,
-      })
-      .add({
-        targets: '.canvas',
-        opacity: 0.92,
-      }, 7000)
+    this.animateSvg();
+    this.animateText();
+    this.setAudioVolumeLevel(0.6);
   },
 };
 </script>

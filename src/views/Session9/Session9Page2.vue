@@ -647,9 +647,9 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.85);
-  width: 80%;
+  width: 82%;
   padding: 2vh;
-  left: 10%;
+  left: 9%;
   top: 20vh;
   font-size: 5.5vh;
   opacity: 0;
