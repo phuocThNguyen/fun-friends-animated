@@ -1452,7 +1452,6 @@
         </p>
       </div>
     </div>
-    <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"></audio>
   </div>
 </template>
 

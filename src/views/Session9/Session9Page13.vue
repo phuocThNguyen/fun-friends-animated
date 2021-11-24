@@ -1007,7 +1007,7 @@
       <img class="action-image" src="../../assets/images/session1/2749-resized.jpg" alt="happy-things">
       <img class="action-image" src="../../assets/images/session1/thank-you.jpg" alt="thank-you">
     </div>
-    <audio autoplay loop src="../../assets/sounds/session1/Falling-Snow-Sound-Effect-Amplified.mp3"></audio>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Falling-Snow-Sound-Effect-Amplified.mp3"></audio>
   </div>
 </template>
 
@@ -1025,69 +1025,70 @@ export default {
       easing: 'linear'
     });
     animation
-        .add({
-          targets: ".text-box",
-          opacity: 1,
-          delay: 500
-        })
-        .add({
-          targets: texts[1],
-          opacity: 1,
-          delay: 500
-        })
-        .add({
-          targets: images[0],
-          opacity: 1,
-          delay: 500
-        }, 1000)
-        .add({
-          targets: texts[2],
-          opacity: 1,
-        })
-        .add({
-          targets: images[1],
-          opacity: 1,
-        }, 2000)
-        .add({
-          targets: texts[3],
-          opacity: 1,
-        })
-        .add({
-          targets: images[2],
-          opacity: 1,
-        }, 5000)
-        .add({
-          targets: texts[4],
-          opacity: 1,
-        })
-        .add({
-          targets: images[3],
-          opacity: 1,
-        }, 8000)
-        .add({
-          targets: texts[5],
-          opacity: 1,
-        })
-        .add({
-          targets: images[4],
-          opacity: 1,
-        }, 11000)
-        .add({
-          targets: texts[6],
-          opacity: 1,
-        })
-        .add({
-          targets: images[5],
-          opacity: 1,
-        }, 14000)
-        .add({
-          targets: texts[7],
-          opacity: 1,
-        })
-        .add({
-          targets: images[6],
-          opacity: 1,
-        }, 17000)
+      .add({
+        targets: ".text-box",
+        opacity: 1,
+        delay: 500
+      })
+      .add({
+        targets: texts[1],
+        opacity: 1,
+        delay: 500
+      })
+      .add({
+        targets: images[0],
+        opacity: 1,
+        delay: 500
+      }, 1000)
+      .add({
+        targets: texts[2],
+        opacity: 1,
+      })
+      .add({
+        targets: images[1],
+        opacity: 1,
+      }, 2000)
+      .add({
+        targets: texts[3],
+        opacity: 1,
+      })
+      .add({
+        targets: images[2],
+        opacity: 1,
+      }, 5000)
+      .add({
+        targets: texts[4],
+        opacity: 1,
+      })
+      .add({
+        targets: images[3],
+        opacity: 1,
+      }, 8000)
+      .add({
+        targets: texts[5],
+        opacity: 1,
+      })
+      .add({
+        targets: images[4],
+        opacity: 1,
+      }, 11000)
+      .add({
+        targets: texts[6],
+        opacity: 1,
+      })
+      .add({
+        targets: images[5],
+        opacity: 1,
+      }, 14000)
+      .add({
+        targets: texts[7],
+        opacity: 1,
+      })
+      .add({
+        targets: images[6],
+        opacity: 1,
+      }, 17000)
+    this.$refs.audio.volume = 0.4
   }
 }
 </script>

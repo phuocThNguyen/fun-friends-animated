@@ -186,7 +186,7 @@
         </g>
       </g>
     </svg>
-    <audio autoplay src="../../assets/sounds/session10/super-hero-theme.mp3"></audio>
+    <audio ref="audio" autoplay src="../../assets/sounds/session10/super-hero-theme.mp3"></audio>
   </div>
 </template>
 
@@ -196,6 +196,7 @@ import anime from "animejs";
 export default {
   name: 'Session10Page9',
   mounted() {
+    this.$refs.audio.volume = 0.3
     let vw = document.querySelector('.interactive-container').clientWidth;
     let vh = window.innerHeight;
     let animation = anime.timeline();

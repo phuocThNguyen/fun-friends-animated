@@ -9,7 +9,7 @@
       <p>&bull;&nbsp;&nbsp;Be BRAVE and speak with a new person.</p>
       <p>&bull;&nbsp;&nbsp;Make a happy drawing to give to your new friend.</p>
     </div>
-    <audio autoplay loop src="../../assets/sounds/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3"></audio>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3"></audio>
   </div>
 </template>
 
@@ -51,6 +51,7 @@ export default {
       opacity: 1,
       easing: 'linear'
     })
+    this.$refs.audio.volume = 0.2
   }
 }
 </script>

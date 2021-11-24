@@ -21,7 +21,6 @@
           <br>choice</p>
       </div>
     </div>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3"></audio>
   </div>
 </template>
 
@@ -62,13 +61,9 @@ export default {
           delay: 0,
         }, 1000)
     },
-    setAudioVolumeLevel(level) {
-      this.$refs.audio.volume = level;
-    }
   },
   mounted() {
     this.animateText();
-    this.setAudioVolumeLevel(0.4);
   }
 }
 </script>

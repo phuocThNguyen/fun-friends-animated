@@ -23,7 +23,7 @@
       </svg>
       <div class="bubble-text">Share your ideas with others!</div>
     </div>
-    <audio loop autoplay src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3"></audio>
+    <audio ref="audio" loop autoplay src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3"></audio>
   </div>
 </template>
 
@@ -55,6 +55,7 @@ export default {
         opacity: 0.9,
         delay: 1000
       })
+    this.$refs.audio.volume = 0.4
   }
 }
 </script>

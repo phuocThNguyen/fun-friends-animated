@@ -819,7 +819,7 @@
       Draw a picture of your peaceful, quiet place.
     </div>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
-    <audio autoplay src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3">
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
   </div>
@@ -844,67 +844,75 @@ export default {
   methods: {
     saveToDatabase(data) {
       console.log(data)
+    },
+    animateSvg() {
+      let vw = window.innerWidth;
+      const yellowFlowers = document.getElementsByClassName('yellow-flower');
+      yellowFlowers.forEach(flower => {
+        flower.style.bottom = (Math.floor(Math.random() * 10) + 2).toString() + 'vh';
+        flower.style.left = (Math.floor(Math.random() * 95) + 2).toString() + 'vw';
+      })
+
+      const blueFlowers = document.getElementsByClassName('blue-flower');
+      blueFlowers.forEach(flower => {
+        flower.style.bottom = (Math.floor(Math.random() * 10) + 7).toString() + 'vh';
+        flower.style.left = Math.floor(Math.random() * 100).toString() + 'vw';
+        flower.style.height = (Math.floor(Math.random() * 5) + 5).toString() + 'vh';
+      })
+
+      const greenFlowers = document.getElementsByClassName('green-flower');
+      greenFlowers.forEach(flower => {
+        flower.style.bottom = Math.floor(Math.random() * 15).toString() + 'vh';
+        flower.style.left = Math.floor(Math.random() * 100).toString() + 'vw';
+      })
+
+      anime({
+        targets: this.$refs.cloud1,
+        translateX: vw,
+        duration: 7000,
+        loop: true,
+        easing: 'linear',
+        direction: 'alternate'
+      });
+      anime({
+        targets: this.$refs.cloud2,
+        translateX: -vw,
+        duration: 6000,
+        loop: true,
+        easing: 'linear',
+        direction: 'alternate'
+      })
+      anime({
+        targets: ".yellow-flower",
+        scale: 30,
+        duration: 2000,
+        delay: 1000,
+        easing: 'linear'
+      })
+      anime({
+        targets: '.blue-flower',
+        rotate: '360deg',
+        duration: 3000,
+        easing: 'steps(10)',
+        loop: true
+      })
+      anime({
+        targets: '.green-flower',
+        rotate: '180deg',
+        duration: 6000,
+        direction: 'alternate',
+        easing: 'easeInOutSine',
+        loop: true
+      })
+    },
+    animateText() {},
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
     }
   },
   mounted() {
-    let vw = window.innerWidth;
-    const yellowFlowers = document.getElementsByClassName('yellow-flower');
-    yellowFlowers.forEach(flower => {
-      flower.style.bottom = (Math.floor(Math.random() * 10) + 2).toString() + 'vh';
-      flower.style.left = (Math.floor(Math.random() * 95) + 2).toString() + 'vw';
-    })
-
-    const blueFlowers = document.getElementsByClassName('blue-flower');
-    blueFlowers.forEach(flower => {
-      flower.style.bottom = (Math.floor(Math.random() * 10) + 7).toString() + 'vh';
-      flower.style.left = Math.floor(Math.random() * 100).toString() + 'vw';
-      flower.style.height = (Math.floor(Math.random() * 5) + 5).toString() + 'vh';
-    })
-
-    const greenFlowers = document.getElementsByClassName('green-flower');
-    greenFlowers.forEach(flower => {
-      flower.style.bottom = Math.floor(Math.random() * 15).toString() + 'vh';
-      flower.style.left = Math.floor(Math.random() * 100).toString() + 'vw';
-    })
-
-    anime({
-      targets: this.$refs.cloud1,
-      translateX: vw,
-      duration: 7000,
-      loop: true,
-      easing: 'linear',
-      direction: 'alternate'
-    });
-    anime({
-      targets: this.$refs.cloud2,
-      translateX: -vw,
-      duration: 6000,
-      loop: true,
-      easing: 'linear',
-      direction: 'alternate'
-    })
-    anime({
-      targets: ".yellow-flower",
-      scale: 30,
-      duration: 2000,
-      delay: 1000,
-      easing: 'linear'
-    })
-    anime({
-      targets: '.blue-flower',
-      rotate: '360deg',
-      duration: 3000,
-      easing: 'steps(10)',
-      loop: true
-    })
-    anime({
-      targets: '.green-flower',
-      rotate: '180deg',
-      duration: 6000,
-      direction: 'alternate',
-      easing: 'easeInOutSine',
-      loop: true
-    })
+    this.animateSvg();
+    this.setAudioVolumeLevel(0.4)
   },
 }
 </script>

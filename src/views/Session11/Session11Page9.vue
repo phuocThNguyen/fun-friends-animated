@@ -1446,7 +1446,7 @@
       <img class="action-image" src="../../assets/images/session1/2749-resized.jpg" alt="happy-things">
       <img class="action-image" src="../../assets/images/session1/thank-you.jpg" alt="thank-you">
     </div>
-    <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"></audio>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"></audio>
   </div>
 </template>
 
@@ -1456,6 +1456,7 @@ import anime from "animejs";
 export default {
   name: 'Session11Page9',
   mounted() {
+    this.$refs.audio.volume = 0.3
     let texts = document.querySelector('.text-box').children;
     let images = document.querySelector('.image-container').children;
     let animation = anime.timeline({

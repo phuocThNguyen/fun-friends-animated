@@ -700,7 +700,7 @@
     <p class="text">Draw, write or act out your ideas for rewards with a friend!
       <br>If it's a game, teach your friend how to play it!</p>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
-    <audio autoplay loop src="../../assets/sounds/children-background-music/ukulele-beach-doug-maxwell-children-s-music-no-copyright-music.mp3"></audio>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/ukulele-beach-doug-maxwell-children-s-music-no-copyright-music.mp3"></audio>
   </div>
 </template>
 
@@ -723,6 +723,9 @@ export default {
       console.log(data)
     }
   },
+  mounted() {
+    this.$refs.audio.volume = 0.2
+  }
 }
 </script>
 

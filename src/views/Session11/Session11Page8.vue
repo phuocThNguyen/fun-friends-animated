@@ -1442,7 +1442,7 @@
       <p>&middot; Try your best and give it a go. </p>
       <p>&middot; Believe in yourself.</p>
     </div>
-    <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"></audio>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"></audio>
   </div>
 </template>
 
@@ -1452,6 +1452,7 @@ import anime from "animejs";
 export default {
   name: 'Session11Page8',
   mounted() {
+    this.$refs.audio.volume = 0.3
     let text = document.querySelector('.text-box').children;
     let animation = anime.timeline({
       easing: 'linear',

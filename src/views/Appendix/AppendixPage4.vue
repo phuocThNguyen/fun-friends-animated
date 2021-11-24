@@ -1,7 +1,7 @@
 <template>
   <div class="interactive-container">
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
-    <audio autoplay loop src="../../assets/sounds/children-background-music/twinkle-twinkle-little-star.mp3"></audio>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/twinkle-twinkle-little-star.mp3"></audio>
   </div>
 </template>
 
@@ -27,6 +27,9 @@ export default {
       console.log(data)
     }
   },
+  mounted() {
+    this.$refs.audio.volume = 0.3
+  }
 }
 </script>
 

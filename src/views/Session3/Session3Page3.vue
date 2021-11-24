@@ -261,7 +261,7 @@ export default {
   width: 1%;
   left: 12%;
   bottom: 30vh;
-  opacity: 1;
+  opacity: 0;
 }
 .question {
    position: absolute;

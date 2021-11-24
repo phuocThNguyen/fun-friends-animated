@@ -21,14 +21,61 @@ import anime from "animejs";
 
 export default {
   name: 'Session11Page4',
+  methods: {
+    animateText() {
+      let text = document.querySelector('.text-box').children;
+      let animation = anime.timeline({
+        duration: 500,
+        delay: 500,
+        easing: 'linear'
+      })
+      animation
+        .add({
+          targets: '.text-box',
+          opacity: 1,
+        })
+        .add({
+          targets: text[0],
+          opacity: 1
+        })
+        .add({
+          targets: text[1],
+          opacity: 1,
+          delay: 2000
+        })
+        .add({
+          targets: text[2],
+          opacity: 1,
+          delay: 1000
+        })
+        .add({
+          targets: text[3],
+          opacity: 1
+        })
+        .add({
+          targets: text[4],
+          opacity: 1
+        })
+        .add({
+          targets: text[5],
+          opacity: 1
+        })
+        .add({
+          targets: text[6],
+          opacity: 1
+        })
+        .add({
+          targets: text[7],
+          opacity: 1
+        })
+        .add({
+          targets: text[8],
+          opacity: 1
+        })
+    }
+  },
   mounted() {
-    anime({
-      targets: '.text-box',
-      opacity: 1,
-      duration: 500,
-      delay: 500,
-      easing: 'linear'
-    })
+    this.animateText();
   }
 }
 </script>
@@ -47,6 +94,7 @@ export default {
 .text-box p {
   font-size: 4vh;
   margin-bottom: 0;
+  opacity: 0;
 }
 .text-box p:nth-child(n+3) {
   padding-left: 2vh;

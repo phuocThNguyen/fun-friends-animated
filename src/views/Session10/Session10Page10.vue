@@ -5,7 +5,7 @@
     <p class="text">Give yourself a superhero name and draw a picture of your costume.
       <br>Share it with your classmates
     </p>
-    <audio autoplay loop src="../../assets/sounds/children-background-music/snack-time-the-green-orbs-children-s-music-no-copyright-music.mp3"></audio>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/snack-time-the-green-orbs-children-s-music-no-copyright-music.mp3"></audio>
   </div>
 </template>
 
@@ -25,6 +25,7 @@ export default {
     }
   },
   mounted() {
+    this.$refs.audio.volume = 0.3
     let animation = anime.timeline({
       easing: 'linear',
       duration: 500,

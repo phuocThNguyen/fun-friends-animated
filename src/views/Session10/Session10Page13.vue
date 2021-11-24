@@ -5,7 +5,7 @@
       <br>Write their names in the space below or give them
     a big thank you.</p>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle" />
-    <audio loop src="../../assets/sounds/children-background-music/no-copyright-music-funny-children-kids-music-by-mokka-kids.mp3"></audio>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/no-copyright-music-funny-children-kids-music-by-mokka-kids.mp3"></audio>
   </div>
 </template>
 
@@ -30,6 +30,9 @@ export default {
       console.log(data)
     }
   },
+  mounted() {
+    this.$refs.audio.volume = 0.3
+  }
 }
 </script>
 

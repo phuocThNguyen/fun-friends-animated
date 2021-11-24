@@ -357,7 +357,7 @@
     </div>
     <Modal text="Tap on the trophy, bubbles and
       tiles to type your ideas!"/>
-    <audio autoplay loop src="../../assets/sounds/children-background-music/snack-time-the-green-orbs-children-s-music-no-copyright-music.mp3"></audio>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/snack-time-the-green-orbs-children-s-music-no-copyright-music.mp3"></audio>
   </div>
 </template>
 
@@ -366,6 +366,9 @@ import Modal from "@/components/modal/Modal";
 export default {
   name: 'Session7Page10',
   components: {Modal},
+  mounted() {
+    this.$refs.audio.volume = 0.2
+  }
 }
 </script>
 

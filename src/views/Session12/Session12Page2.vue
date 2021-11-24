@@ -112,7 +112,7 @@
         </g>
       </g>
     </svg>
-    <audio autoplay src="../../assets/sounds/children-background-music/polka.mp3"></audio>
+    <audio ref="audio" autoplay src="../../assets/sounds/children-background-music/polka.mp3"></audio>
   </div>
 </template>
 
@@ -122,6 +122,7 @@ import anime from "animejs";
 export default {
   name: 'Session12Page2',
   mounted() {
+    this.$refs.audio.volume = 0.3
     let vw = document.querySelector('.interactive-container').clientWidth;
     let vh = window.innerHeight;
     const Confettiful = function (el) {

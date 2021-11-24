@@ -306,7 +306,7 @@
       <img class="action-image" src="../../assets/images/session1/2749-resized.jpg" alt="happy-things">
       <img class="action-image" src="../../assets/images/session1/thank-you.jpg" alt="thank-you">
     </div>
-    <audio autoplay loop src="../../assets/sounds/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"></audio>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"></audio>
   </div>
 </template>
 
@@ -316,6 +316,7 @@ import anime from "animejs";
 export default {
   name: 'Session10Page16',
   mounted() {
+    this.$refs.audio.volume = 0.3
     let vw = document.querySelector('.interactive-container').clientWidth;
     let clouds = document.querySelector('#cloud').children;
     clouds.forEach(cloud => {

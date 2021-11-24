@@ -996,7 +996,7 @@
       <p>&middot; Try your best and give it a go. </p>
       <p>&middot; Believe in yourself.</p>
     </div>
-    <audio autoplay loop src="../../assets/sounds/session1/Falling-Snow-Sound-Effect-Amplified.mp3"></audio>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Falling-Snow-Sound-Effect-Amplified.mp3"></audio>
   </div>
 </template>
 
@@ -1043,6 +1043,7 @@ export default {
         targets: text[6],
         opacity: 1
       })
+    this.$refs.audio.volume = 0.4
   }
 }
 </script>
