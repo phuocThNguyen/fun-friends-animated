@@ -197,9 +197,9 @@
     </svg>
 
     <p class="title"><span id="letter-f">R</span>elax</p>
-    <p class="text" id="line-1">Today we will learn
+    <p class="text" id="line-1">Today, we will learn
       how to pay attention <br>to what our bodies are telling us.</p>
-    <p class="text" id="line-2">We will talk about
+    <p class="text" id="line-2">We will also talk about
       'bubble' breathing <br>and play some relaxing games.</p>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3">

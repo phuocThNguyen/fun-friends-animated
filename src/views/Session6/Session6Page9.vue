@@ -698,7 +698,7 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try every day</h1>
+      <h1>Try Everyday</h1>
       <p>&nbsp;&bull; Practise understanding the
         '<span class="red">red</span>' thoughts and
         '<span class="green">green</span>' thoughts you
@@ -709,7 +709,7 @@
       <p>&middot; Look people in the eye and smile.</p>
       <p>&middot; Use a brave voice and make yourself big.</p>
       <p>&middot; Try your best and give it a go. </p>
-      <p>&middot; Believe in yourself</p>
+      <p>&middot; Believe in yourself.</p>
     </div>
     <audio autoplay loop src="../../assets/sounds/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"></audio>
   </div>

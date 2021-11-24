@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <img src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/interactive-book/s2p82.jpg" alt="happy" class="session-background">
+    <img src="../../assets/images/session2/623182-PNWC4R-119-resized.jpg" alt="happy" class="session-background">
     <emotion-pick-instruction class="instruction"/>
     <feeling-question
         class="question"

@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <img class="session-background" src="../../assets/images/session1/289258-P6O0D3-288-resized.jpg" alt="family-enjoy-water">
     <div class="text-box">
-      <p class="mb-0">We are born in different country.&nbsp;</p>
+      <p class="mb-0">We are born in different countries.&nbsp;</p>
       <p class="mb-0">Where were you born?</p>
     </div>
   </div>

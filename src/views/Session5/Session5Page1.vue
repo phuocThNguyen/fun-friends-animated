@@ -197,7 +197,7 @@
     </svg>
 
     <p class="title"><span id="letter-f">I</span> can try</p>
-    <p class="text" id="line-1">Today we will think about:
+    <p class="text" id="line-1">Today, we will think about:
       '<span class="green">green</span>' <strong>thoughts</strong> that
       help us feel strong inside, keep us going, and
       let us have fun, and '<span class="red">red</span>'

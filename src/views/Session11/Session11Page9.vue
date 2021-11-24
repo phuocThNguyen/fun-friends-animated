@@ -1456,7 +1456,7 @@ import anime from "animejs";
 export default {
   name: 'Session11Page9',
   mounted() {
-    this.$refs.audio.volume = 0.3
+    this.$refs.audio.volume = 0.6
     let texts = document.querySelector('.text-box').children;
     let images = document.querySelector('.image-container').children;
     let animation = anime.timeline({

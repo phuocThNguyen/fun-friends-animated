@@ -1427,7 +1427,7 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try every day</h1>
+      <h1>Try Everyday</h1>
       <p>&nbsp;&bull; Draw or take a picture of your family's support
         team. Alternatively, share a story about how your family
         gets support.</p>
@@ -1452,7 +1452,7 @@ import anime from "animejs";
 export default {
   name: 'Session11Page8',
   mounted() {
-    this.$refs.audio.volume = 0.3
+    this.$refs.audio.volume = 0.6
     let text = document.querySelector('.text-box').children;
     let animation = anime.timeline({
       easing: 'linear',

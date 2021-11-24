@@ -198,7 +198,7 @@
 
     <p class="title"><span id="letter-f">E</span>xplore</p>
     <p class="text" id="line-1">
-      Today we will think about <br>how to be kind and make new friends.
+      Today, we will think about <br>how to be kind and make new friends.
     </p>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3">

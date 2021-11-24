@@ -524,7 +524,7 @@
           whole class. For two minutes after coming in from
           play time, everyone can lie down or sit in a way
           that makes them feel good. Here you can close your
-          eyes and practise slow breathing and making your
+          eyes, and practise slow breathing and making your
           body go floppy and heavy.</p>
         <p>&bull;&nbsp;&nbsp;Put on a puppet play to teach
           your school about ‘red’ and ‘green’ thoughts.

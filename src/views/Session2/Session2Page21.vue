@@ -1348,7 +1348,7 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try every day</h1>
+      <h1>Try Everyday</h1>
       <p>Play a guessing game with your family.
         One person acts out a feeling while everyone else tries to guess the feeling.
         Take turns making up stories to go with the feelings.</p>

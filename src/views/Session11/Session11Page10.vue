@@ -1448,7 +1448,7 @@
           <br>everything you learned
           <br>from Fun Friends. You
           <br>could ask someone in
-          <br>your family to help you
+          <br>your family to help you!
         </p>
       </div>
     </div>

@@ -198,7 +198,7 @@
 
     <p class="title"><span id="letter-f">D</span>on't forget</p>
     <p class="text" id="line-1">
-      Today we will think about the people
+      Today, we will think about the people
       <br>who help us to be brave and also the people we help too.
     </p>
 

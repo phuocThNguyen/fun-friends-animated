@@ -771,7 +771,7 @@
         <p>Playing on the sand and in the ocean is so much fun!</p>
       </div>
       <div class="para-box">
-        <h1>To be healthy and happy, every day we should:</h1>
+        <h1>To be healthy and happy every day, we should:</h1>
 
         <h2>Play outside</h2>
         <p>Play outside, run, ride your scooter, ride your bike, climb trees, swim, play ball,

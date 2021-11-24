@@ -197,7 +197,7 @@
     </svg>
 
     <p class="title"><span id="letter-f">I</span> can try</p>
-    <p class="text" id="line-1">Today we learn that we are
+    <p class="text" id="line-1">Today, we are going to learn that we are
       the boss of our thinking <br>and that we can choose
       between '<span class="red">red</span>'
       and '<span class="green">green</span>' thoughts.

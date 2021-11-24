@@ -198,7 +198,7 @@
 
     <p class="title"><span id="letter-f">N</span>ice work</p>
     <p class="text" id="line-1">
-      Today we will think about someone to look up to - the people we
+      Today, we will think about someone to look up to - the people we
       <br>want to be like. We will also talk about how our family, friends and
       <br>teachers help us and how we can help them.
     </p>

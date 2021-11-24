@@ -198,7 +198,7 @@
 
     <p class="title"><span id="letter-f">E</span>xplore</p>
     <p class="text" id="line-1">
-      Today we will keep exploring ways to be BRAVE.
+      Today we are going to keep exploring ways to be BRAVE.
       <br>We can break hard things down into many easier steps.
     </p>
 

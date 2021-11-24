@@ -18,7 +18,7 @@
         <p><strong>Bright Star Idea</strong></p>
         <p>Share a kind
           <br>thumbs up
-          <br>choice</p>
+          <br>choice.</p>
       </div>
     </div>
   </div>

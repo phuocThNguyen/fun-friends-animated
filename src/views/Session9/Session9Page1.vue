@@ -198,7 +198,7 @@
 
     <p class="title"><span id="letter-f">E</span>xplore</p>
     <p class="text" id="line-1">
-      Today we will think about how to be kind to ourselves
+      Today, we will think about how to be kind to ourselves
       <br>and reward ourselves for doing our best.
     </p>
 

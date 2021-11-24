@@ -287,7 +287,7 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try every day</h1>
+      <h1>Try Everyday</h1>
       <p>&nbsp;&bull; Practise the steps on your <strong>STEP PLAN</strong>.
         If you've done all the steps,
         make a new <strong>STEP PLAN</strong>.</p>

@@ -197,7 +197,7 @@
     </svg>
 
     <p class="title"><span id="letter-f">F</span>eelings</p>
-    <p class="text" id="line-1">Today we will talk more about paying attention to others' feelings.</p>
+    <p class="text" id="line-1">Today, we will talk more about paying attention to others' feelings.</p>
     <p class="text" id="line-2">One person acts out a feeling while everyone else tries to guess the feeling.
       Take turns making up stories to go with the feelings.</p>
 

@@ -15,6 +15,7 @@
        '<span class="red">red</span>' or
        '<span class="span green">green</span>' actions?</p>
     </div>
+    <audio autoplay ref="audio" src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3"></audio>
   </div>
 </template>
 
@@ -31,6 +32,7 @@ export default {
       duration: 500,
       delay: 500
     })
+    this.$refs.audio.volume = 0.6;
   }
 }
 </script>

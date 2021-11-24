@@ -200,8 +200,8 @@
     <div class="text-box">
       <p><strong>Two things for you
         to talk about and enjoy today:</strong></p>
-      <p>1. Be happy when we try something</p>
-      <p>2. Have fun with the friends we have made</p>
+      <p>1. Being happy when we try something</p>
+      <p>2. Having fun with the friends we have made</p>
     </div>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3">

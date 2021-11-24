@@ -699,7 +699,7 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try every day</h1>
+      <h1>Try Everyday</h1>
       <p>&nbsp;&bull; Try to understand feelings in
       yourself and other people.</p>
       <p>&nbsp;&bull; Think about what 'thumbs up'
@@ -707,8 +707,8 @@
       <p>&nbsp;&bull; Practise being BRAVE:</p>
       <p>&middot; Look people in the eye and smile.</p>
       <p>&middot; Use a brave voice and make yourself big.</p>
-      <p>&middot; Try your best and give it a go. </p>
-      <p>&middot; Believe in yourself</p>
+      <p>&middot; Try your best and give it a go.</p>
+      <p>&middot; Believe in yourself.</p>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"></audio>
   </div>

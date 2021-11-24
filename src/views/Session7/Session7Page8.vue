@@ -315,7 +315,7 @@
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
       <div class="text">2) Smile, look up, and speak with
-        a brave voice in front of the mirror</div>
+        a brave voice in front of the mirror.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -329,7 +329,7 @@
             </g>
           </g>
         </svg>
-        <div class="bubble-text">I try my best!</div>
+        <div class="bubble-text">I'll try my best!</div>
       </div>
       <svg class="koala koala-climbing" id="koala-climbing-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 961 649" width="961" height="649">
         <g>
@@ -481,7 +481,7 @@
             </g>
           </g>
         </svg>
-        <div class="bubble-text">I give it a go!</div>
+        <div class="bubble-text">I'll give it a go!</div>
       </div>
       <svg class="koala koala-climbing" id="koala-climbing-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 961 649" width="961" height="649">
         <g>

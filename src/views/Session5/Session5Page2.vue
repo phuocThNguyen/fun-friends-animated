@@ -3,8 +3,8 @@
     <img src="../../assets/images/session5/traffic-light-poster.png" alt="traffic-light" class="session-background">
     <div class="text-box">
       <p>We can <strong>choose</strong> our thoughts.</p>
-      <p><span id="red-text">Red</span>, unhelpful thoughts makes us feel sad and scared.</p>
-      <p><span id="green-text">Green</span> helpful thoughts makes us feel brave and calm.</p>
+      <p><span id="red-text">Red</span>, unhelpful thoughts make us feel sad and scared.</p>
+      <p><span id="green-text">Green</span> helpful thoughts make us feel brave and calm.</p>
     </div>
     <div class="light-box" id="red">Red thought</div>
     <div class="light-box" id="green">Green thought</div>

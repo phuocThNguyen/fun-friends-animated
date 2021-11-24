@@ -419,10 +419,10 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try every day</h1>
+      <h1>Try Everyday</h1>
       <p>&nbsp;&bull; Practise the steps in your step plan - one step at a time. It doesn’t matter how long
         you need or how many steps it takes. Stay on each step until you
-        can do that step easily. Share your plan your family or friends.</p>
+        can do that step easily. Share your plan with your family or friends.</p>
       <p>&nbsp;&bull; If a step seems too hard, maybe add a smaller step in between?
         Remember to give yourself a reward for taking each step.</p>
       <p>&nbsp;&bull; When you are being brave and moving up to a hard step,

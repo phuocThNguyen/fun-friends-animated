@@ -197,8 +197,8 @@
     </svg>
 
     <p class="title"><span id="letter-f">F</span>eelings</p>
-    <p class="text" id="line-1">Today we will think about our feelings and the feelings of others.
-      We will talk about how to make happy feelings GROW!</p>
+    <p class="text" id="line-1">Today, we will think about our feelings and the feelings of others.
+      We will also talk about how to make happy feelings GROW!</p>
     <p class="text" id="line-2">All feelings are OK!</p>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3">Your browser does not support the

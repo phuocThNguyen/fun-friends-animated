@@ -796,7 +796,7 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try every day</h1>
+      <h1>Try Everyday</h1>
       <p>&nbsp;&bull; Talk about '<span class="red">red</span>' and
         '<span class="green">green</span>' thoughts and
         practise understanding them as much as possible.

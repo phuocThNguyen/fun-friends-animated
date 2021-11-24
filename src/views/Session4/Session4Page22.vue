@@ -2458,7 +2458,7 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try every day</h1>
+      <h1>Try Everyday</h1>
       <p>&nbsp;&bull; Try to understand feelings in yourself and others.</p>
       <p>&nbsp;&bull; Practise relaxing and taking deep breaths.</p>
       <p>&nbsp;&bull; Try to use relaxing strategies like ‘bubble’ breathing when
@@ -2467,7 +2467,7 @@
       <p>&middot; Look people in the eye and smile.</p>
       <p>&middot; Use a brave voice and make yourself big.</p>
       <p>&middot; Try your best and give it a go. </p>
-      <p>&middot; Believe in yourself</p>
+      <p>&middot; Believe in yourself.</p>
     </div>
     <audio autoplay loop src="../../assets/sounds/session4/night-time.mp3"></audio>
   </div>

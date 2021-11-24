@@ -1002,7 +1002,7 @@
       </svg>
       <div class="star-text">
         <p><strong>Bright Star Idea</strong></p>
-        <p>Do 'pizza messages' with someone
+        <p>Do 'Pizza Massage' with someone
           <br>in your family. Pretend to make
           <br>dough and spread it on each
           <br>other's back, add lots of
