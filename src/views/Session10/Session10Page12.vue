@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session10/Dogs&People-swimming.png" alt="kids-and-dogs" class="session-background">
+    <img src="../../assets/images/session10/Dogs&People-swimming.jpg" alt="kids-and-dogs" class="session-background">
     <div class="text-box">
       <h1>Additional Activity &ndash; Someone to look up to who can help</h1>
       <p>Eliza, Josh and Lucy are learning to jump the waves

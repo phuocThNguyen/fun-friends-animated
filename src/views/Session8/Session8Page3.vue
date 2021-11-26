@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session8/33261.png" alt="Tom" class="session-background">
+    <img src="../../assets/images/session8/33261.jpg" alt="Tom" class="session-background">
     <div class="text-box">
       <p>Tom has fallen off his bike. <br>He has only just learnt
       to ride without training wheels.</p>

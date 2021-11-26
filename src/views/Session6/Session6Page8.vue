@@ -1,7 +1,7 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session6/Scooter_Boy_Angry.png" alt="angry-boy" class="images left">
-    <img src="../../assets/images/session6/Scooter_Boy_Happy.png" alt="happy-boy" class="images" id="right">
+    <img src="../../assets/images/session6/Scooter_Boy_Angry.jpg" alt="angry-boy" class="images left">
+    <img src="../../assets/images/session6/Scooter_Boy_Happy.jpg" alt="happy-boy" class="images" id="right">
     <div class="question-container" id="question-1">
       <svg class="thumb thumb-up" id="thumb-up-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1960 1978" width="1960" height="1978">
         <g id="thumb-up">

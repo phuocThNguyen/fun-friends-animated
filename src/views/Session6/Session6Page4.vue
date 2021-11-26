@@ -28,8 +28,8 @@
       </svg>
       <div class="bubble-text">Share your ideas with others!</div>
     </div>
-    <img src="../../assets/images/session5/804.png" alt="red" class="images" id="image-top">
-    <img src="../../assets/images/session5/92263.png" alt="green" class="images" id="image-bottom">
+    <img src="../../assets/images/session5/804.jpg" alt="red" class="images" id="image-top">
+    <img src="../../assets/images/session5/92263.jpg" alt="green" class="images" id="image-bottom">
     <svg class="traffic-light" id="top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1223 388" width="1223" height="388">
       <g id="Layer 1">
         <g id="&lt;Group&gt;">

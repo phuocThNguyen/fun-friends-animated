@@ -1361,7 +1361,7 @@
     <div class="image-container">
       <img class="action-image" src="../../assets/images/introduction/Koala_Child_Hugging.jpg" alt="kind-to-animals">
       <img class="action-image" src="../../assets/images/session1/811-resized.jpg" alt="play-outside">
-      <img class="action-image" src="../../assets/images/session5/85693.png" alt="sleep-early">
+      <img class="action-image" src="../../assets/images/session5/85693.jpg" alt="sleep-early">
       <img class="action-image" src="../../assets/images/session1/6796-resized.jpg" alt="eat-healthy">
       <img class="action-image" src="../../assets/images/session1/4082-resized.jpg" alt="relaxing">
       <img class="action-image" src="../../assets/images/session1/2749-resized.jpg" alt="happy-things">

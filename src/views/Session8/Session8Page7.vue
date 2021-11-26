@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session8/3360.png" alt="Annie-family" class="session-background">
+    <img src="../../assets/images/session8/3360.jpg" alt="Annie-family" class="session-background">
     <div class="text-box">
       <p>Annie would like to play, but she doesn't have anyone
        to play with. How do you think Annie is feeling?

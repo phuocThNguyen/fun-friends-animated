@@ -1,11 +1,11 @@
 <template>
   <div class="interactive-container">
     <div class="image-container">
-      <img src="../../assets/images/session9/92230.png" alt="Annie">
+      <img src="../../assets/images/session9/92230.jpg" alt="Annie">
       <p>2. Brave Tom <br>Learning to garden</p>
     </div>
     <div class="image-container">
-      <img src="../../assets/images/session9/3100.png" alt="Annie">
+      <img src="../../assets/images/session9/3100.jpg" alt="Annie">
       <p>Tom's Reward <br>Fun ride</p>
     </div>
   </div>

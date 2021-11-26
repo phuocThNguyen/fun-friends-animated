@@ -1,7 +1,7 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session8/creek_girl_and_boy.png" alt="boy-and-girl" class="images" id="left">
-    <img src="../../assets/images/session8/creek_exploring_group.png" alt="exploring-creek" class="images" id="right">
+    <img src="../../assets/images/session8/creek_girl_and_boy.jpg" alt="boy-and-girl" class="images" id="left">
+    <img src="../../assets/images/session8/creek_exploring_group.jpg" alt="exploring-creek" class="images" id="right">
     <div class="question-container">
       <div class="text">
         Helping each other cross the creak

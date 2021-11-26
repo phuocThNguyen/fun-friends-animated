@@ -215,28 +215,28 @@ export default {
   z-index: 50;
 }
 #green-tick-1 {
-  right: 24%;
-  top: 23vh;
+  right: 30%;
+  top: 31vh;
 }
 #green-tick-2 {
-  left: 44%;
-  top: 63vh;
+  left: 48%;
+  top: 61vh;
 }
 #green-tick-3 {
-  right: 12%;
-  top: 43vh;
+  right: 16%;
+  top: 45vh;
 }
 #ear {
-  right: 25%;
-  top: 17vh;
+  right: 32%;
+  top: 23vh;
   height: 10.3vh;
 }
 #tail {
-  left: 23%;
-  top: 60vh;
+  left: 27%;
+  top: 57vh;
 }
 #head {
-  right: 13%;
+  right: 18%;
   top: 41vh;
 }
 .answers {

@@ -7,11 +7,11 @@
        in the pictures below?</p>
     </div>
     <div class="image-container">
-      <img src="../../assets/images/session11/surfing_child.png" alt="surfing" class="images">
+      <img src="../../assets/images/session11/surfing_child.jpg" alt="surfing" class="images">
       <div class="text" id="para-1">Mum helping Zoe surf</div>
     </div>
     <div class="image-container" id="right">
-      <img src="../../assets/images/session11/Hugging_Lama_Girl.png" alt="hugging-lama" class="images">
+      <img src="../../assets/images/session11/Hugging_Lama_Girl.jpg" alt="hugging-lama" class="images">
       <div class="text" id="para-2">Matilda giving Alpaca a hug</div>
     </div>
   </div>

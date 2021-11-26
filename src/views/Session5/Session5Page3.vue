@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session5/447.png" alt="red" class="session-background">
+    <img src="../../assets/images/session5/447.jpg" alt="red" class="session-background">
     <div class="text-box">
       <p>Lucy is starting a new school and she feels sad and scared.
         <br>Why do you think she feels sad and scared?

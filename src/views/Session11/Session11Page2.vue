@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session11/46140.png" alt="children" class="session-background">
+    <img src="../../assets/images/session11/46140.jpg" alt="children" class="session-background">
     <div class="text-box">
       <p>These children are helping each other to be strong.</p>
       <p>Look around or think about your family.

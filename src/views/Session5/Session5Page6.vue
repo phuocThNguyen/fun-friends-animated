@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session5/85693.png" alt="red" class="session-background">
+    <img src="../../assets/images/session5/85693.jpg" alt="red" class="session-background">
     <div class="text-box">
       <p>Nala is spending her first night sleeping by herself.</p>
       <p>How is she feeling? Is Nala having

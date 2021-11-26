@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session10/1408.png" alt="background" class="session-background">
+    <img src="../../assets/images/session10/1408.jpg" alt="background" class="session-background">
     <div class="text-box">
       Who has showed you how to do something before? Who has
       helped you feel happy? Give them a big thank you!

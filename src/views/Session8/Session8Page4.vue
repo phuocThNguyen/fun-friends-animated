@@ -6,8 +6,8 @@
         What do you think Annie did on her holiday?
         What can you do or say to be happy for Annie?</p>
     </div>
-    <img src="../../assets/images/session8/135407-OSAV2U-882.png" alt="Annie" class="images">
-    <img src="../../assets/images/session8/135348-OSAU2M-875.png" alt="family" class="images">
+    <img src="../../assets/images/session8/135407-OSAV2U-882.jpg" alt="Annie" class="images">
+    <img src="../../assets/images/session8/135348-OSAU2M-875.jpg" alt="family" class="images">
     <audio autoplay loop src="../../assets/sounds/session1/beach-sound.mp3"></audio>
   </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session8/2612199.png" alt="Tom" class="session-background">
+    <img src="../../assets/images/session8/2612199.jpg" alt="Tom" class="session-background">
     <div class="star-container">
       <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 1258" width="1320" height="1258">
         <title>Star</title>

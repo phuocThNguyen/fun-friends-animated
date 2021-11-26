@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session5/128.png" alt="green" class="session-background">
+    <img src="../../assets/images/session5/128.jpg" alt="green" class="session-background">
     <div class="text-box">
       <p>In this picture, the children are walking
         to a new school with their dad.</p>

@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session12/50044.png" alt="party" class="session-background">
+    <img src="../../assets/images/session12/50044.jpg" alt="party" class="session-background">
     <div class="text-box">
       <h1>Games Party: A Celebration</h1>
       <p>Together with your family, make up a game to practice

@@ -1,13 +1,6 @@
 <template>
   <div class="interactive-container">
     <img src="../../assets/images/session4/five-senses-resized.jpg" alt="five-senses" class="images">
-    <div class="text-circles">
-      <p>Sight</p>
-      <p>Touch</p>
-      <p>Hearing</p>
-      <p>Smell</p>
-      <p>Taste</p>
-    </div>
     <div class="activity-container">
       <div class="instruction-container"><strong>Activity - </strong>Choose the correct sense</div>
       <div class="choices-container">
@@ -933,35 +926,6 @@ export default {
       this.correctAns++;
     }
   },
-  mounted() {
-    let circles = document.getElementsByClassName('text-circles')[0].children;
-    let animation = anime.timeline({
-      easing: 'linear',
-      duration: 700,
-      delay: 700,
-    });
-    animation
-      .add({
-        targets: circles[0],
-        opacity: 1,
-      })
-      .add({
-        targets: circles[1],
-        opacity: 1,
-      })
-      .add({
-        targets: circles[2],
-        opacity: 1,
-      })
-      .add({
-        targets: circles[3],
-        opacity: 1,
-      })
-      .add({
-        targets: circles[4],
-        opacity: 1,
-      })
-  },
   watch: {
     correctAns: function () {
       if (this.correctAns === 5) {
@@ -1063,45 +1027,6 @@ export default {
   width: 51%;
   height: 100%;
   right: 0;
-}
-.text-circles {
-  position: absolute;
-  font-family: 'Kalam', cursive;
-  width: 49%;
-  height: 100%;
-  left: 0;
-}
-.text-circles p {
-  position: absolute;
-  display: block;
-  width: 23vh;
-  height: 23vh;
-  line-height: 23vh;
-  text-align: center;
-  font-size: 5.6vh;
-  border-radius: 50%;
-  background-color: rgba(255,255,255,0.7);
-  opacity: 0;
-}
-.text-circles p:nth-of-type(1) {
-  top: 10vh;
-  right: 21vh;
-}
-.text-circles p:nth-of-type(2) {
-  bottom: 10vh;
-  right: 7vh;
-}
-.text-circles p:nth-of-type(3) {
-  top: 27vh;
-  left: 2.8vh;
-}
-.text-circles p:nth-of-type(4) {
-  top: 31vh;
-  right: 4.2vh;
-}
-.text-circles p:nth-of-type(5) {
-  bottom: 10vh;
-  left: 1.4vh;
 }
 .images {
   position: absolute;

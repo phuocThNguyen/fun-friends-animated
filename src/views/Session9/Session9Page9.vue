@@ -6,11 +6,11 @@
        trying our best.</p>
     </div>
     <div class="image-container" id="left">
-      <img src="../../assets/images/session9/Beach_Children.png" alt="beach-children">
+      <img src="../../assets/images/session9/Beach_Children.jpg" alt="beach-children">
       <p id="para-1">Spending the day <br>having fun at the beach</p>
     </div>
     <div class="image-container" id="right">
-      <img src="../../assets/images/session9/healthy_eating_child.png" alt="healthy-eating">
+      <img src="../../assets/images/session9/healthy_eating_child.jpg" alt="healthy-eating">
       <p id="para-2">Eating your <br>favourite healthy meal</p>
     </div>
   </div>

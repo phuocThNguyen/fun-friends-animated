@@ -7,8 +7,8 @@
       <p>Do you think that they are making '<span class="red">red</span>'
         choices or '<span class="green">green</span>' choices?</p>
     </div>
-    <img src="../../assets/images/session6/Scooter_Girl.png" alt="scooter-girl" class="images">
-    <img src="../../assets/images/session6/Best-Kick-Scooter-for-Kids.png" alt="scooters-and-kids" class="images">
+    <img src="../../assets/images/session6/Scooter_Girl.jpg" alt="scooter-girl" class="images">
+    <img src="../../assets/images/session6/Best-Kick-Scooter-for-Kids.jpg" alt="scooters-and-kids" class="images">
     <div class="question-container" id="question-1">
       <svg class="thumb thumb-up" id="thumb-up-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1960 1978" width="1960" height="1978">
         <g id="thumb-up">

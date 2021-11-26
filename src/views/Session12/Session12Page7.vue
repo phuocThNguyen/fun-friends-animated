@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session12/38541.png" alt="party" class="session-background">
+    <img src="../../assets/images/session12/38541.jpg" alt="party" class="session-background">
     <div class="text-box">
       <h1>Additional Activity &ndash; Party Time</h1>
       <p>Zoe, Daniel, and Matilda are teaching their teddy

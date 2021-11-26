@@ -1,11 +1,11 @@
 <template>
   <div class="interactive-container">
     <div class="image-container">
-      <img src="../../assets/images/session11/rock_climbing_nature.png" alt="climbing-tree" class="images">
+      <img src="../../assets/images/session11/rock_climbing_nature.jpg" alt="climbing-tree" class="images">
       <p class="text" id="para-1">Mum helping Matilda rock climbing.</p>
     </div>
     <div class="image-container" id="right">
-      <img src="../../assets/images/session11/hugging_dog_child.png" alt="swinging" class="images">
+      <img src="../../assets/images/session11/hugging_dog_child.jpg" alt="swinging" class="images">
       <p class="text" id="para-2">Zoe giving Pepper a hug.</p>
     </div>
   </div>

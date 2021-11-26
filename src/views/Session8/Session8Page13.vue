@@ -1,7 +1,7 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session8/creek_girl_alone.png" alt="girl-exploring-alone" class="images" id="left">
-    <img src="../../assets/images/session8/creek_together.png" alt="group-exploring" class="images" id="right">
+    <img src="../../assets/images/session8/creek_girl_alone.jpg" alt="girl-exploring-alone" class="images" id="left">
+    <img src="../../assets/images/session8/creek_together.jpg" alt="group-exploring" class="images" id="right">
     <div class="question-container">
       <div class="text">
         Crossing the creek by themselves

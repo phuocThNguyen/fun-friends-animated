@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session10/370.png" alt="Tom-reading-book" class="session-background">
+    <img src="../../assets/images/session10/370.jpg" alt="Tom-reading-book" class="session-background">
     <div class="text-box-green">My mum helps me be brave
       <br>when I learn to ride my bike.</div>
   </div>

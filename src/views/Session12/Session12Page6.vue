@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session12/2108.png" alt="friends" class="session-background">
+    <img src="../../assets/images/session12/2108.jpg" alt="friends" class="session-background">
     <div class="text-box">We are happy, we learnt FRIENDS skills.</div>
   </div>
 </template>

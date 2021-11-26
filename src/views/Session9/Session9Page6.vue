@@ -8,11 +8,11 @@
       How can you use these activities to reward yourself?</p>
     </div>
     <div class="image-container" id="left">
-      <img src="../../assets/images/session9/21368.png" alt="Tom">
+      <img src="../../assets/images/session9/21368.jpg" alt="Tom">
       <p id="para-1">1. Brave Tom <br>Sleeping in his own bed</p>
     </div>
     <div class="image-container" id="right">
-      <img src="../../assets/images/session9/623020-PNWBO6-422.png" alt="Tom-reward">
+      <img src="../../assets/images/session9/623020-PNWBO6-422.jpg" alt="Tom-reward">
       <p id="para-2">Tom's Reward <br>Special time with his dad</p>
     </div>
   </div>

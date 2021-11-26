@@ -3,8 +3,8 @@
     <div class="text-box">
       Share ideas for fun games you can play at the beach.
     </div>
-    <img src="../../assets/images/session8/135443-OSAV8P-846.png" alt="Annie" class="images">
-    <img src="../../assets/images/session8/135428-OSAV5N-454.png" alt="Annie" class="images">
+    <img src="../../assets/images/session8/135443-OSAV8P-846.jpg" alt="Annie" class="images">
+    <img src="../../assets/images/session8/135428-OSAV5N-454.jpg" alt="Annie" class="images">
   </div>
 </template>
 

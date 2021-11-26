@@ -1,11 +1,11 @@
 <template>
   <div class="interactive-container">
     <div class="image-container">
-      <img src="../../assets/images/session9/fish_feeding_pond.png" alt="feeding-fish">
+      <img src="../../assets/images/session9/fish_feeding_pond.jpg" alt="feeding-fish">
       <p id="para-1">Feeding the fish</p>
     </div>
     <div class="image-container">
-      <img src="../../assets/images/session9/swimming_lake_children.png" alt="swimming">
+      <img src="../../assets/images/session9/swimming_lake_children.jpg" alt="swimming">
       <p id="para-2">Swimming in the river</p>
     </div>
   </div>

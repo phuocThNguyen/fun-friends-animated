@@ -2,11 +2,11 @@
   <div class="interactive-container">
     <h1 class="title">Annie is brave and rewards herself</h1>
     <div class="image-container">
-      <img src="../../assets/images/session9/1489.png" alt="Annie">
+      <img src="../../assets/images/session9/1489.jpg" alt="Annie">
       <p>1. Brave Annie <br>Trying to roller-blade</p>
     </div>
     <div class="image-container">
-      <img src="../../assets/images/session9/1551.png" alt="Annie">
+      <img src="../../assets/images/session9/1551.jpg" alt="Annie">
       <p>Annie's Reward <br>Cooking with mum</p>
     </div>
   </div>

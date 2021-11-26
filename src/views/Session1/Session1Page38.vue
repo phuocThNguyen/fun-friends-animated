@@ -11,7 +11,7 @@
     </div>
     <div class="image-container">
       <img class="action-image" src="../../assets/images/session1/811-resized.jpg" alt="play-outside">
-      <img class="action-image" src="../../assets/images/session5/85693.png" alt="sleep-early">
+      <img class="action-image" src="../../assets/images/session5/85693.jpg" alt="sleep-early">
       <img class="action-image" src="../../assets/images/session1/4082-resized.jpg" alt="relaxing">
       <img class="action-image" src="../../assets/images/session1/2749-resized.jpg" alt="happy-things">
       <img class="action-image" src="../../assets/images/session1/thank-you.jpg" alt="thank-you">

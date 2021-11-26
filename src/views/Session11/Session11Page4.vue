@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session11/311.png" alt="kids" class="session-background">
+    <img src="../../assets/images/session11/311.jpg" alt="kids" class="session-background">
     <div class="text-box">
       <p>Talk about who you think are in Annie's and Tom's
       Support Teams. Who is in your support team?</p>

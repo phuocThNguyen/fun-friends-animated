@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session10/623178-PNWC48-947.png" alt="dad-helps-Tom" class="session-background">
+    <img src="../../assets/images/session10/623178-PNWC48-947.jpg" alt="dad-helps-Tom" class="session-background">
     <div class="text-box-green">My dad helps me write a story.</div>
   </div>
 </template>

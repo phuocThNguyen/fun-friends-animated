@@ -1,11 +1,11 @@
 <template>
   <div class="interactive-container">
     <div class="image-container">
-      <img src="../../assets/images/session9/770.png" alt="Annie">
+      <img src="../../assets/images/session9/770.jpg" alt="Annie">
       <p id="para-1">2. Brave Annie <br>Trying to read a new book</p>
     </div>
     <div class="image-container">
-      <img src="../../assets/images/session9/2338.png" alt="Annie">
+      <img src="../../assets/images/session9/2338.jpg" alt="Annie">
       <p id="para-2">Annie's Reward <br>Special time with her mom</p>
     </div>
   </div>
