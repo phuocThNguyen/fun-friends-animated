@@ -308,12 +308,12 @@ export default {
   width: 98%;
   left: 1%;
   top: 42vh;
-  font-size: 5vh;
+  font-size: 4.8vh;
 }
 #line-2 {
   text-align: center;
   width: 90%;
-  top: 58vh;
+  top: 57vh;
   left: 5%;
   font-weight: bold;
   font-size: 6vh;
