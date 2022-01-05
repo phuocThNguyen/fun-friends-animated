@@ -4,6 +4,7 @@
     <div class="text-box">
       Does playing in the sand make you feel calm?
     </div>
+    <div class="page-number" id="page-light">93</div>
   </div>
 </template>
 
@@ -27,7 +28,7 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  bottom: 5vh;
+  bottom: 6vh;
   left: 13%;
   width: 74%;
   font-size: 4.5vh;

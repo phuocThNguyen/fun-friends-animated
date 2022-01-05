@@ -21,6 +21,7 @@
       </svg>
       <div class="bubble-text">Look at your friends face!</div>
     </div>
+    <div class="page-number" id="page-dark">72</div>
   </div>
 </template>
 

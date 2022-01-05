@@ -1443,6 +1443,7 @@
       <p>&middot; Believe in yourself.</p>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"></audio>
+    <div class="page-number" id="page-light">210</div>
   </div>
 </template>
 

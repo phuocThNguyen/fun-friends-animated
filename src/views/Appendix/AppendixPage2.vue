@@ -3329,6 +3329,7 @@
       </svg>
       <div class="cloud-text">In a book <br>or movie</div>
     </div>
+    <div class="page-number" id="page-light">222</div>
   </div>
 </template>
 

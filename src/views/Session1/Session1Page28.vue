@@ -13,6 +13,7 @@
         </span>
       </p>
     </div>
+    <div class="page-number" id="page-light">36</div>
   </div>
 </template>
 

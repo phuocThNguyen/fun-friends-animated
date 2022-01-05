@@ -992,6 +992,7 @@
         closer to facing your fears!</p>
     </div>
     <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"></audio>
+    <div class="page-number" id="page-light">139</div>
   </div>
 </template>
 

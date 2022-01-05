@@ -24,6 +24,7 @@
       <div class="bubble-text">Share your ideas with others!</div>
     </div>
     <audio ref="audio" loop autoplay src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3"></audio>
+    <div class="page-number" id="page-dark">106</div>
   </div>
 </template>
 

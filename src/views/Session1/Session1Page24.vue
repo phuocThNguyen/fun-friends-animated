@@ -12,6 +12,7 @@
         <span> but inside we are all the same.</span>
       </p>
     </div>
+    <div class="page-number" id="page-light">31</div>
   </div>
 </template>
 

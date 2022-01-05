@@ -820,6 +820,7 @@
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
+    <div class="page-number" id="page-light">33</div>
   </div>
 </template>
 

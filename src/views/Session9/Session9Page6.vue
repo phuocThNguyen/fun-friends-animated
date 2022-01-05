@@ -15,6 +15,7 @@
       <img src="../../assets/images/session9/623020-PNWBO6-422.jpg" alt="Tom-reward">
       <p id="para-2">Tom's Reward <br>Special time with his dad</p>
     </div>
+    <div class="page-number" id="page-light">177</div>
   </div>
 </template>
 

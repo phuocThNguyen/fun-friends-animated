@@ -2478,6 +2478,7 @@
       <img class="action-image" src="../../assets/images/session1/thank-you.jpg" alt="thank-you">
     </div>
     <audio autoplay loop src="../../assets/sounds/session4/night-time.mp3"></audio>
+    <div class="page-number" id="page-dark">109</div>
   </div>
 </template>
 

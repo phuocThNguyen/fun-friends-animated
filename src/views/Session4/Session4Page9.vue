@@ -4,6 +4,7 @@
     <div class="text-box">
       Water makes us feel calm
     </div>
+    <div class="page-number" id="page-light">95</div>
   </div>
 </template>
 

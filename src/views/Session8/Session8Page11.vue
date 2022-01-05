@@ -16,6 +16,7 @@
        '<span class="span green">green</span>' actions?</p>
     </div>
     <audio autoplay ref="audio" src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3"></audio>
+    <div class="page-number" id="page-light">166</div>
   </div>
 </template>
 

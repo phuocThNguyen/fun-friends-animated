@@ -190,6 +190,7 @@
       <img class="action-image" src="../../assets/images/session1/thank-you.jpg" alt="thank-you">
     </div>
     <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"></audio>
+    <div class="page-number" id="page-light">170</div>
   </div>
 </template>
 

@@ -12,6 +12,7 @@
         <span> but it is all yummy.</span>
       </p>
     </div>
+    <div class="page-number" id="page-light">35</div>
   </div>
 </template>
 

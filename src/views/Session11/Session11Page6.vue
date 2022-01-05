@@ -8,6 +8,7 @@
       <img src="../../assets/images/session11/Swinging_Children.jpg" alt="swinging" class="images">
       <p class="text" id="para-2">Zoe and Daniel <br>helping Matilda swing.</p>
     </div>
+    <div class="page-number" id="page-light">208</div>
   </div>
 </template>
 

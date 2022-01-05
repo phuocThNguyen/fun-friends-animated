@@ -4,6 +4,7 @@
     <div class="text-box">
       <p class="mb-0">Mia loves climbing trees.</p>
     </div>
+    <div class="page-number" id="page-light">16</div>
   </div>
 </template>
 

@@ -3,6 +3,7 @@
     <img src="../../assets/images/session10/370.jpg" alt="Tom-reading-book" class="session-background">
     <div class="text-box-green">My mum helps me be brave
       <br>when I learn to ride my bike.</div>
+    <div class="page-number" id="page-light">193</div>
   </div>
 </template>
 

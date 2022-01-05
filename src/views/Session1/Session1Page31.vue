@@ -11,6 +11,7 @@
         <span>It is okay that our clothes are different!</span>
       </p>
     </div>
+    <div class="page-number" id="page-light">39</div>
   </div>
 </template>
 

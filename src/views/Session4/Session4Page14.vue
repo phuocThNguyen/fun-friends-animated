@@ -5,6 +5,7 @@
       <h1>2. Smelling</h1>
       <p>We smell with our nose. What can we smell?</p>
     </div>
+    <div class="page-number" id="page-dark">100</div>
   </div>
 </template>
 

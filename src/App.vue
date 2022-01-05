@@ -139,6 +139,28 @@ export default {
   width: 100%;
   height: 100%;
 }
+.page-number {
+  position: absolute;
+  left: 64vh;
+  bottom: .5vh;
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 5vh;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 500;
+}
+#page-dark {
+  background-color: #ffffff;
+  color: #00ce7c;
+}
+#page-light {
+  color: #ffffff;
+  background-color: #00ce7c;
+}
 .arrow {
   width: 10vh;
   height: auto;

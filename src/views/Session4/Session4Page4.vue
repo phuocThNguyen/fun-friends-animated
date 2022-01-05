@@ -13,6 +13,7 @@
     <p class="position-absolute text">Knee shaking</p>
     <p class="position-absolute text">Toilet please!</p>
     <audio ref="swoosh" src="../../assets/sounds/session4/swoosh9.mp3"></audio>
+    <div class="page-number" id="page-dark">90</div>
   </div>
 </template>
 

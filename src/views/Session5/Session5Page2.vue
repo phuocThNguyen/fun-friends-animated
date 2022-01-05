@@ -8,6 +8,7 @@
     </div>
     <div class="light-box" id="red">Red thought</div>
     <div class="light-box" id="green">Green thought</div>
+    <div class="page-number" id="page-dark">112</div>
   </div>
 </template>
 

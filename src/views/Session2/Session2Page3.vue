@@ -11,6 +11,7 @@
 
       <p class="extra-box">All feelings are OK</p>
     </div>
+    <div class="page-number" id="page-dark">50</div>
   </div>
 </template>
 

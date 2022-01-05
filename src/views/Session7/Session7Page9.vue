@@ -218,6 +218,7 @@
       <p>Start on the bottom step, climbing slowly to the top.</p>
       <p>It can be easy when we break it into small steps.</p>
     </div>
+    <div class="page-number" id="page-dark">146</div>
   </div>
 </template>
 

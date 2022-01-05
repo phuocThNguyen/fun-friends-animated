@@ -9,6 +9,7 @@
       <p>When and why did you feel this way? <strong>All feelings are OK.</strong></p>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/no-copyright-music-funny-children-kids-music-by-mokka-kids.mp3"></audio>
+    <div class="page-number" id="page-light">64</div>
   </div>
 </template>
 
@@ -23,7 +24,7 @@ export default {
     return {
       canvasStyle: {
         width: 1,
-        height: 0.8,
+        height: 0.77,
         isPicture: true,
         pictureUrl: 'session2/feeling-tree.png',
         backgroundSize: 'cover'
@@ -95,7 +96,7 @@ export default {
   margin-bottom: 1vh;
 }
 .text-box p {
-  font-size: 3.5vh;
+  font-size: 3.3vh;
   margin-bottom: 0;
   opacity: 0;
 }

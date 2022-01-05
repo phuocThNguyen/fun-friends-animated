@@ -8,6 +8,7 @@
       <img src="../../assets/images/session11/hugging_dog_child.jpg" alt="swinging" class="images">
       <p class="text" id="para-2">Zoe giving Pepper a hug.</p>
     </div>
+    <div class="page-number" id="page-light">209</div>
   </div>
 </template>
 
@@ -61,6 +62,6 @@ export default {
   padding: .5vh;
   opacity: 0;
 }
-#para-1 {left: 19%}
-#para-2 {right: 19%}
+#para-1 {left: 17.5%}
+#para-2 {right: 17.5%}
 </style>

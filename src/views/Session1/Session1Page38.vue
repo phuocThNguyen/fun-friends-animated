@@ -17,6 +17,7 @@
       <img class="action-image" src="../../assets/images/session1/thank-you.jpg" alt="thank-you">
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3"></audio>
+    <div class="page-number" id="page-dark">46</div>
   </div>
 </template>
 

@@ -11,6 +11,7 @@
       <p>How does it feel to be helpful?</p>
       <p>Is there an activity you can do together to help even more?</p>
     </div>
+    <div class="page-number" id="page-light">205</div>
   </div>
 </template>
 

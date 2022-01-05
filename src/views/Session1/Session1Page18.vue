@@ -5,6 +5,7 @@
       <p class="mb-0">We are born in different countries.&nbsp;</p>
       <p class="mb-0">Where were you born?</p>
     </div>
+    <div class="page-number" id="page-light">25</div>
   </div>
 </template>
 
@@ -35,7 +36,7 @@ export default {
   width: 80%;
   background-color: #00ce7c;
   position: absolute;
-  bottom: 5vh;
+  bottom: 6vh;
   left: 10%;
   opacity: 0;
   text-align: center;

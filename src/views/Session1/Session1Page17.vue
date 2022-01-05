@@ -4,6 +4,7 @@
     <div class="text-box">
       <p class="mb-0">There are many countries and different languages.</p>
     </div>
+    <div class="page-number" id="page-light">24</div>
   </div>
 </template>
 
@@ -31,11 +32,11 @@ export default {
 
 <style scoped>
 .text-box {
-  width: 86%;
+  width: 84%;
   background-color: #00ce7c;
   position: absolute;
-  bottom: 5vh;
-  left: 7%;
+  bottom: 6vh;
+  left: 8%;
   opacity: 0;
   text-align: center;
   padding: 1vh

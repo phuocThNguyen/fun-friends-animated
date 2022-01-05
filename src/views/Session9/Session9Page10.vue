@@ -8,6 +8,7 @@
       <img src="../../assets/images/session9/swimming_lake_children.jpg" alt="swimming">
       <p id="para-2">Swimming in the river</p>
     </div>
+    <div class="page-number" id="page-light">181</div>
   </div>
 </template>
 

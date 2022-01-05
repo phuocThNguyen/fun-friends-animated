@@ -3,6 +3,7 @@
     <img src="../../assets/images/session4/1143-resized.jpg" alt="cool-water" class="session-background">
     <div class="text-box">The water feels cool and
      fresh on our skin.</div>
+    <div class="page-number" id="page-dark">107</div>
   </div>
 </template>
 
@@ -26,7 +27,7 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  bottom: 5vh;
+  bottom: 6vh;
   width: 70%;
   left: 15%;
   padding: 1.4vh;

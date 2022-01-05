@@ -11,6 +11,7 @@
        you do about it can be a thumbs-up or thumbs-down
        choice.</p>
     </div>
+    <div class="page-number" id="page-dark">89</div>
   </div>
 </template>
 

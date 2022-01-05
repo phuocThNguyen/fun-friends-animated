@@ -2470,6 +2470,7 @@
       <p>&middot; Believe in yourself.</p>
     </div>
     <audio autoplay loop src="../../assets/sounds/session4/night-time.mp3"></audio>
+    <div class="page-number" id="page-dark">108</div>
   </div>
 </template>
 

@@ -215,6 +215,7 @@
         </g>
       </g>
     </svg>
+    <div class="page-number" id="page-dark">73</div>
   </div>
 </template>
 

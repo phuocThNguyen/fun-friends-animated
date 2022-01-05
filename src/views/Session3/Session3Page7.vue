@@ -24,6 +24,7 @@
       </svg>
       <div class="bubble-text">Share your ideas with a friend!</div>
     </div>
+    <div class="page-number" id="page-dark">77</div>
   </div>
 </template>
 
@@ -81,7 +82,7 @@ export default {
 }
 .notice-box {
   position: absolute;
-  bottom: 5vh;
+  bottom: 6vh;
   width: 70%;
   left: 15%;
   text-align: center;

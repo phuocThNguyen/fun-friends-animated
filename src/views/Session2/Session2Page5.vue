@@ -143,6 +143,7 @@
         </g>
       </g>
     </svg>
+    <div class="page-number" id="page-dark">52</div>
   </div>
 </template>
 
@@ -256,7 +257,7 @@ export default {
 .text {
   position: absolute;
   bottom: 2vh;
-  right: 14%;
+  right: 8%;
   background-color: #00ce7c;
   color: #ffffff;
   opacity: 0;

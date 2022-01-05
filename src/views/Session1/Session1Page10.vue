@@ -5,6 +5,7 @@
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write;
             encrypted-media; gyroscope; picture-in-picture"></iframe>
+    <div class="page-number" id="page-dark">17</div>
   </div>
 </template>
 

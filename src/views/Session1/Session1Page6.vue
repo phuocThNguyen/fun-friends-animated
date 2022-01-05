@@ -5,6 +5,7 @@
       <p class="mb-0">Zoe's dad also plays with her on the swing.</p>
       <p class="mb-0">It is so much fun!</p>
     </div>
+    <div class="page-number" id="page-light">13</div>
   </div>
 </template>
 

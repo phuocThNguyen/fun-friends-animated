@@ -2300,6 +2300,7 @@
       <p>What brave things you are trying to do?</p>
       <p>What can you do to practise being brave?</p>
     </div>
+    <div class="page-number" id="page-light">176</div>
   </div>
 </template>
 

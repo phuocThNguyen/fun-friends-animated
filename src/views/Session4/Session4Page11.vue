@@ -822,6 +822,7 @@
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
+    <div class="page-number" id="page-light">97</div>
   </div>
 </template>
 

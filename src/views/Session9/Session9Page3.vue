@@ -9,6 +9,7 @@
       <img src="../../assets/images/session9/1551.jpg" alt="Annie">
       <p>Annie's Reward <br>Cooking with mum</p>
     </div>
+    <div class="page-number" id="page-light">174</div>
   </div>
 </template>
 

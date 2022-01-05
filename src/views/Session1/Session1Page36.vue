@@ -1775,6 +1775,7 @@
         <br>skills each week.</p>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/session4/night-time.mp3"></audio>
+    <div class="page-number" id="page-light">44</div>
   </div>
 </template>
 

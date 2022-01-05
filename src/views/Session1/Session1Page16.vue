@@ -10,6 +10,7 @@
       </div>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/sand-castle.mp3"></audio>
+    <div class="page-number" id="page-light">23</div>
   </div>
 </template>
 
@@ -93,13 +94,13 @@ export default {
   width: 100%;
 }
 .para p {
-  font-size: 4vh;
+  font-size: 3.5vh;
   color: #ffffff;
   margin-bottom: 0;
 }
 .canvas {
   position: absolute;
-  top: 25vh;
+  top: 22vh;
   left: 5%;
 }
 </style>

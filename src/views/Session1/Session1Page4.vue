@@ -17,6 +17,7 @@
     <audio ref="audio" autoplay src="../../assets/sounds/session1/dog.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
+    <div class="page-number" id="page-light">11</div>
   </div>
 </template>
 

@@ -195,6 +195,7 @@
       go. How are Tom and Annie being helped in the following
       pictures? How has somebody helped you?
     </div>
+    <div class="page-number" id="page-light">187</div>
   </div>
 </template>
 

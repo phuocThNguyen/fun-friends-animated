@@ -11,6 +11,7 @@
         <span><strong> but we all love, smile, and cry in the same way.</strong></span>
       </p>
     </div>
+    <div class="page-number" id="page-light">26</div>
   </div>
 </template>
 

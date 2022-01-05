@@ -11,6 +11,7 @@
         <span>It is fun that we are different.</span>
       </p>
     </div>
+    <div class="page-number" id="page-light">38</div>
   </div>
 </template>
 

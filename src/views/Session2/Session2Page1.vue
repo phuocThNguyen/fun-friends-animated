@@ -4,6 +4,7 @@
     <div class="text-box">
       <p>Swimming makes me feel happy.</p>
     </div>
+    <div class="page-number" id="page-light">48</div>
   </div>
 </template>
 

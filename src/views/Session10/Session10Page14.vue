@@ -5,6 +5,7 @@
       Who has showed you how to do something before? Who has
       helped you feel happy? Give them a big thank you!
     </div>
+    <div class="page-number" id="page-light">199</div>
   </div>
 </template>
 

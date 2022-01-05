@@ -3480,6 +3480,7 @@
       </g>
     </svg>
     <audio ref="sound" src="../../assets/sounds/session4/swoosh9.mp3"></audio>
+    <div class="page-number" id="page-dark">226</div>
   </div>
 </template>
 

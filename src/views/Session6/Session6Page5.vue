@@ -132,6 +132,7 @@
         </g>
       </g>
     </svg>
+    <div class="page-number" id="page-light">131</div>
   </div>
 </template>
 

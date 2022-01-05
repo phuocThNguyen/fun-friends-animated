@@ -5,6 +5,7 @@
       <p class="mb-0">Josh is climbing on the rainbow tyres.</p>
       <p class="mb-0"> He loves walking barefoot on the grass.</p>
     </div>
+    <div class="page-number" id="page-light">15</div>
   </div>
 </template>
 

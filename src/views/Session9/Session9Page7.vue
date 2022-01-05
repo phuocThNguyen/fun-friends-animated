@@ -8,6 +8,7 @@
       <img src="../../assets/images/session9/3100.jpg" alt="Annie">
       <p>Tom's Reward <br>Fun ride</p>
     </div>
+    <div class="page-number" id="page-light">178</div>
   </div>
 </template>
 

@@ -12,6 +12,7 @@
     <div class="green-box">
       <strong>We love having fun <br>in the ocean.</strong>
     </div>
+    <div class="page-number" id="page-light">197</div>
   </div>
 </template>
 
@@ -39,7 +40,7 @@ export default {
   left: 9%;
   background-color: #00CE7C;
   color: #ffffff;
-  width: 40%;
+  width: 36%;
   padding: 1vh;
   text-align: center;
   font-size: 4.5vh;

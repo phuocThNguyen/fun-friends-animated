@@ -5,6 +5,7 @@
       <p class="mb-0">Lucy loves playing with the old</p>
       <p class="mb-0">wheelbarrow in the garden.</p>
     </div>
+    <div class="page-number" id="page-light">14</div>
   </div>
 </template>
 

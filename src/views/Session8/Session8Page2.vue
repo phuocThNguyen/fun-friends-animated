@@ -6,6 +6,7 @@
       what they do that you find kind.
       <br>Maybe smiling, sharing, helping, listening or laughing?
     </div>
+    <div class="page-number" id="page-light">157</div>
   </div>
 </template>
 

@@ -8,6 +8,7 @@
       <p>Talk about your home.</p>
       <p>Ask your friends about their homes.</p>
     </div>
+    <div class="page-number" id="page-light">29</div>
   </div>
 </template>
 
@@ -51,19 +52,19 @@ export default {
 .interactive-container img:nth-child(1) {
   left: 0;
   bottom: 0;
-  width: 50%;
+  width: 49%;
   height: 70vh;
 }
 .interactive-container img:nth-child(2) {
   top: 0;
   right: 0;
-  width: 48%;
+  width: 49%;
   height: 44vh;
 }
 .interactive-container img:nth-child(3) {
   bottom: 0;
   right: 0;
-  width: 48%;
+  width: 49%;
   height: 45vh;;
 }
 .text-box {

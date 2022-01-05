@@ -2,6 +2,7 @@
   <div class="interactive-container">
     <img src="../../assets/images/session2/46933-resized.jpg" alt="background" class="session-background">
     <div class="text-box">We are kind when we pay attention to the teacher.</div>
+    <div class="page-number" id="page-dark">63</div>
   </div>
 </template>
 

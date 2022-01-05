@@ -5,6 +5,7 @@
     </div>
     <img src="../../assets/images/session8/135443-OSAV8P-846.jpg" alt="Annie" class="images">
     <img src="../../assets/images/session8/135428-OSAV5N-454.jpg" alt="Annie" class="images">
+    <div class="page-number" id="page-light">160</div>
   </div>
 </template>
 

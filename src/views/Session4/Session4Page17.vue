@@ -5,6 +5,7 @@
       <h1>5. Touch</h1>
       <p>We feel with our skin. What can we feel?</p>
     </div>
+    <div class="page-number" id="page-dark">103</div>
   </div>
 </template>
 
@@ -33,7 +34,7 @@ p { font-size: 4vh;margin-bottom: 0; }
   background-color: #00ce7c;
   color: #ffffff;
   padding: 1.5vh 2vh;
-  bottom: 5vh;
+  bottom: 6vh;
   left: 10%;
   opacity: 0;
 }

@@ -8,6 +8,7 @@
       <img src="../../assets/images/session9/2338.jpg" alt="Annie">
       <p id="para-2">Annie's Reward <br>Special time with her mom</p>
     </div>
+    <div class="page-number" id="page-light">175</div>
   </div>
 </template>
 

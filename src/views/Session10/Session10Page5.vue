@@ -2,6 +2,7 @@
   <div class="interactive-container">
     <img src="../../assets/images/session10/623178-PNWC48-947.jpg" alt="dad-helps-Tom" class="session-background">
     <div class="text-box-green">My dad helps me write a story.</div>
+    <div class="page-number" id="page-light">190</div>
   </div>
 </template>
 

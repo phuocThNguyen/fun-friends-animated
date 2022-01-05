@@ -303,6 +303,7 @@
       <p>&middot; Believe in yourself.</p>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"></audio>
+    <div class="page-number" id="page-light">200</div>
   </div>
 </template>
 

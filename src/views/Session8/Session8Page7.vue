@@ -27,6 +27,7 @@
         </p>
       </div>
     </div>
+    <div class="page-number" id="page-light">162</div>
   </div>
 </template>
 

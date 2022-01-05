@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 841.89 595.84">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 841.89 595.84">
       <defs>
         <linearGradient id="linear-gradient" x1="420.94" y1="495.69" x2="420.94" y2="-2.15" gradientUnits="userSpaceOnUse">
           <stop offset="0" stop-color="#1a88c9"/>
@@ -372,6 +372,7 @@
         </g>
       </g>
     </svg>
+    <div class="page-number" id="page-dark">228</div>
   </div>
 </template>
 

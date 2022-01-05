@@ -5,6 +5,7 @@
     <div class="text-box">
       <h1>What are these children doing to relax and calm down?</h1>
     </div>
+    <div class="page-number" id="page-light">91</div>
   </div>
 </template>
 

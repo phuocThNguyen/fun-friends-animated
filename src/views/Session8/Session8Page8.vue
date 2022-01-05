@@ -20,6 +20,7 @@
           <br>the beach.</p>
       </div>
     </div>
+    <div class="page-number" id="page-light">163</div>
   </div>
 </template>
 

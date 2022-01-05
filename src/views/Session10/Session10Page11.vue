@@ -44,6 +44,7 @@
       <p>'Green' Thoughts</p>
     </div>
     <audio ref="sound" src="../../assets/sounds/session4/swoosh9.mp3"></audio>
+    <div class="page-number" id="page-light">196</div>
   </div>
 </template>
 

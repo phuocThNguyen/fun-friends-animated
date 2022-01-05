@@ -228,6 +228,7 @@
     <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
+    <div class="page-number" id="page-light">133</div>
   </div>
 </template>
 

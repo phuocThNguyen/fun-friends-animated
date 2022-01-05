@@ -13,6 +13,7 @@
       <p>&bull;&nbsp;Family</p>
       <p>&bull;&nbsp;Friends</p>
     </div>
+    <div class="page-number" id="page-light">206</div>
   </div>
 </template>
 

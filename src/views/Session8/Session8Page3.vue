@@ -8,6 +8,7 @@
         <br>What can you do to be a kind friend to Tom?
       </p>
     </div>
+    <div class="page-number" id="page-light">158</div>
   </div>
 </template>
 

@@ -307,6 +307,7 @@
       <img class="action-image" src="../../assets/images/session1/thank-you.jpg" alt="thank-you">
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"></audio>
+    <div class="page-number" id="page-light">201</div>
   </div>
 </template>
 

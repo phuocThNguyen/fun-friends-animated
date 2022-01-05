@@ -3,6 +3,7 @@
     <img src="../../assets/images/session10/72896.jpg" alt="Tom" class="session-background">
     <div class="text-box">Tom learns from <br>someone he looks up to.</div>
     <div class="text-box-green">My dad helps me learn to cook.</div>
+    <div class="page-number" id="page-light">188</div>
   </div>
 </template>
 
@@ -35,7 +36,7 @@ export default {
 }
 .text-box-green {
   position: absolute;
-  bottom: 5vh;
+  bottom: 6vh;
   left: 10%;
   padding: 1vh 2.4vh;
   background-color: #00CE7C;

@@ -1009,6 +1009,7 @@
       FUN FRIENDS book, reward yourself with something you like
       to do!
     </div>
+    <div class="page-number" id="page-light">215</div>
   </div>
 </template>
 

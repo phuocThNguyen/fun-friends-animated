@@ -6,6 +6,7 @@
       <p class="mb-0">How do you have fun when playing outside?</p>
       <audio ref="audio" autoplay src="../../assets/sounds/session1/playground.mp3"></audio>
     </div>
+    <div class="page-number" id="page-light">12</div>
   </div>
 </template>
 

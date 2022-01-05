@@ -1125,6 +1125,7 @@
       <div class="button-label">Next Step</div>
     </div>
     <audio ref="sound" src="../../assets/sounds/session7/click-sound.mp3"></audio>
+    <div class="page-number" id="page-dark" style="left: 25vh !important;">150</div>
   </div>
 </template>
 

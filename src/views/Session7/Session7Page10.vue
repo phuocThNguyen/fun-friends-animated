@@ -358,6 +358,7 @@
     <Modal text="Tap on the trophy, bubbles and
       tiles to type your ideas!"/>
     <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/snack-time-the-green-orbs-children-s-music-no-copyright-music.mp3"></audio>
+    <div class="page-number" id="page-dark">147</div>
   </div>
 </template>
 

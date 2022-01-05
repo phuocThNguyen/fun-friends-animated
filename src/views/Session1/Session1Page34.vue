@@ -215,6 +215,7 @@
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
+    <div class="page-number" id="page-dark">42</div>
   </div>
 </template>
 

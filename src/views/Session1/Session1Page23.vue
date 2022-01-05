@@ -12,6 +12,7 @@
         <br><span> but inside we all have families.</span>
       </p>
     </div>
+    <div class="page-number" id="page-light">30</div>
   </div>
 </template>
 

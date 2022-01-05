@@ -21,6 +21,7 @@
           <br>choice.</p>
       </div>
     </div>
+    <div class="page-number" id="page-dark">47</div>
   </div>
 </template>
 

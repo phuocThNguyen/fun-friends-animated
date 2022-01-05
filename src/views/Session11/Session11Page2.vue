@@ -7,6 +7,7 @@
         <br>What do people do to help you and how do you help them?</p>
       <p>Compare your ideas with friends.</p>
     </div>
+    <div class="page-number" id="page-light">204</div>
   </div>
 </template>
 

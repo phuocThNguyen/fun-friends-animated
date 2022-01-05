@@ -5,6 +5,7 @@
       <h1>4. Taste</h1>
       <p>We taste with our tongues. What can we taste?</p>
     </div>
+    <div class="page-number" id="page-dark">102</div>
   </div>
 </template>
 

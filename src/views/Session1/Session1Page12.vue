@@ -12,6 +12,7 @@
         <p>We love going to the park</p>
       </div>
     </div>
+    <div class="page-number" id="page-light">19</div>
   </div>
 </template>
 

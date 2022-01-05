@@ -8,6 +8,7 @@
       <h1>1. Hearing</h1>
       <p>We listen with our ears. What can we hear?</p>
     </div>
+    <div class="page-number" id="page-light">99</div>
   </div>
 </template>
 
@@ -42,7 +43,7 @@ p {margin-bottom: 0;}
   background-color: #00ce7c;
   color: #ffffff;
   padding: 1.5vh 2vh;
-  bottom: 5vh;
+  bottom: 6vh;
   right: 10%;
   opacity: 0;
   margin-bottom: 0;

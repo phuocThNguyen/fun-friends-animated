@@ -16,6 +16,7 @@
       <p>Breathing deeply and
         slowly calms us down</p>
     </div>
+    <div class="page-number" id="page-light">96</div>
   </div>
 </template>
 

@@ -4,6 +4,7 @@
     <div class="text-box">
       Art is relaxing
     </div>
+    <div class="page-number" id="page-light">94</div>
   </div>
 </template>
 

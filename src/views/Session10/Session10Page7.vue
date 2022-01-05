@@ -3,6 +3,7 @@
     <img src="../../assets/images/session10/1243.jpg" alt="Tom-reading-book" class="session-background">
     <div class="text-box-green">My mum helps me be brave
       <br>when I meet new people.</div>
+    <div class="page-number" id="page-light">192</div>
   </div>
 </template>
 
@@ -26,7 +27,7 @@ export default {
 <style scoped>
 .text-box-green {
   position: absolute;
-  bottom: 5vh;
+  bottom: 6vh;
   left: 10%;
   padding: 1vh 2vh;
   background-color: #00CE7C;

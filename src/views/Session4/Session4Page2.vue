@@ -467,6 +467,7 @@
       </g>
     </svg>
     <audio ref="heartBeat" src="../../assets/sounds/session4/heart-beat.mp3"></audio>
+    <div class="page-number" id="page-dark">88</div>
   </div>
 </template>
 

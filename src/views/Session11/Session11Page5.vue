@@ -14,6 +14,7 @@
       <img src="../../assets/images/session11/Hugging_Lama_Girl.jpg" alt="hugging-lama" class="images">
       <div class="text" id="para-2">Matilda giving Alpaca a hug</div>
     </div>
+    <div class="page-number" id="page-light">207</div>
   </div>
 </template>
 

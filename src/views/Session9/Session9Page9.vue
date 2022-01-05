@@ -13,6 +13,7 @@
       <img src="../../assets/images/session9/healthy_eating_child.jpg" alt="healthy-eating">
       <p id="para-2">Eating your <br>favourite healthy meal</p>
     </div>
+    <div class="page-number" id="page-light">180</div>
   </div>
 </template>
 

@@ -187,6 +187,7 @@
       </g>
     </svg>
     <audio ref="audio" autoplay src="../../assets/sounds/session10/super-hero-theme.mp3"></audio>
+    <div class="page-number" id="page-light">194</div>
   </div>
 </template>
 
