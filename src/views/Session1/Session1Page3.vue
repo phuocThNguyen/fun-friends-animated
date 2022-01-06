@@ -4,15 +4,17 @@
     <div class="left-bar">
       <h1>Meet Tom</h1>
       <p id="para-2">Today is Tom’s birthday.</p>
-      <p id="para-3">He is adopting two rescue dogs, Chilli and Pepper.</p>
-      <p id="para-4">Tom wants to give Chilli and Pepper a loving home.</p>
-      <p id="para-5">Would you like to adopt a rescue animal for
+      <p id="para-3">He is adopting two rescue dogs,</p>
+      <p id="para-4">Chilli and Pepper.</p>
+      <p id="para-5">Tom wants to give Chilli and Pepper a loving home.</p>
+      <p id="para-6">Would you like to adopt a rescue animal for
         your birthday?</p>
     </div>
     <audio ref="audio" autoplay src="../../assets/sounds/session1/dog.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
-    <div class="page-number" id="page-light">10</div>
+    <audio src="../../assets/sounds/session1/10Animated_Book_Page9.mp3" ref="voice"></audio>
+    <div class="page-number" id="page-light">9</div>
   </div>
 </template>
 
@@ -37,40 +39,44 @@ export default {
           targets: para[0],
           opacity: 1,
           duration: 500,
-          delay: 500,
-        })
+        }, 1500)
         .add({
           targets: para[1],
           opacity: 1,
           duration: 300,
-          delay: 500,
-        })
+        }, 3500)
         .add({
           targets: para[2],
           opacity: 1,
           duration: 300,
-          delay: 1000,
-        })
+        }, 7149)
         .add({
           targets: para[3],
           opacity: 1,
           duration: 300,
-          delay: 1000,
-        })
+        }, 10835)
         .add({
           targets: para[4],
           opacity: 1,
           duration: 300,
-          delay: 1000,
-        })
+        }, 13545)
+        .add({
+          targets: para[5],
+          opacity: 1,
+          duration: 300,
+        }, 18456)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 1500)
     }
   },
   mounted() {
     this.animateText();
     this.setAudioVolumeLevel(0.2);
+    this.playVoiceOver();
   }
 }
 </script>

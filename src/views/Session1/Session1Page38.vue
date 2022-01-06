@@ -16,8 +16,9 @@
       <img class="action-image" src="../../assets/images/session1/2749-resized.jpg" alt="happy-things">
       <img class="action-image" src="../../assets/images/session1/thank-you.jpg" alt="thank-you">
     </div>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3"></audio>
-    <div class="page-number" id="page-dark">46</div>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3"/>
+    <audio src="../../assets/sounds/session1/45Animated_Book_Page44.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">44</div>
   </div>
 </template>
 
@@ -32,64 +33,64 @@ export default {
       let animation = anime.timeline({
         easing: 'linear',
         duration: 500,
-        delay: 2500,
       });
       animation
         .add({
           targets: ".text-box",
           opacity: 0.95,
-          delay: 500
-        })
+        }, 500)
         .add({
           targets: texts[1],
           opacity: 1,
-          delay: 500
-        })
+        }, 2567)
         .add({
           targets: images[0],
           opacity: 1,
-          delay: 500
-        }, 1000)
+        }, 2567)
         .add({
           targets: texts[2],
           opacity: 1,
-        })
+        }, 4711)
         .add({
           targets: images[1],
           opacity: 1,
-        }, 2000)
+        }, 4711)
         .add({
           targets: texts[3],
           opacity: 1,
-        })
+        }, 6885)
         .add({
           targets: images[2],
           opacity: 1,
-        }, 5000)
+        }, 6885)
         .add({
           targets: texts[4],
           opacity: 1,
-        })
+        }, 13438)
         .add({
           targets: images[3],
           opacity: 1,
-        }, 8000)
+        }, 13438)
         .add({
           targets: texts[5],
           opacity: 1,
-        })
+        }, 15838)
         .add({
           targets: images[4],
           opacity: 1,
-        }, 11000)
+        }, 15838)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
-    }
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
     this.animateText();
     this.setAudioVolumeLevel(0.4);
+    this.playVoiceOver();
   }
 }
 </script>

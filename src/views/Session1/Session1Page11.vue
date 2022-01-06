@@ -836,7 +836,8 @@
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
-    <div class="page-number" id="page-light">18</div>
+    <audio src="../../assets/sounds/session1/18Animated_Book_Page17.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">17</div>
   </div>
 </template>
 
@@ -923,29 +924,58 @@ export default {
       })
     },
     animateText() {
+      let text = document.querySelector('.text-box').children;
       let mainContentAnimation = anime.timeline({
-        easing: 'linear'
+        easing: 'linear',
+        duration: 500
       });
       mainContentAnimation
         .add({
           targets: '.draw',
           opacity: 1,
-          duration: 1000,
-          delay: 700,
-        })
+        }, 1000)
         .add({
           targets: '.text-box',
           opacity: 0.95,
-          duration: 1000,
-        })
+        }, 3000)
+        .add({
+          targets: text[0],
+          opacity: 1
+        }, 4362)
+        .add({
+          targets: text[1],
+          opacity: 1
+        }, 9072)
+        .add({
+          targets: text[2],
+          opacity: 1
+        }, 12153)
+        .add({
+          targets: text[3],
+          opacity: 1
+        }, 14051)
+        .add({
+          targets: text[4],
+          opacity: 1
+        }, 16220)
+        .add({
+          targets: text[5],
+          opacity: 1
+        }, 18472)
+        .add({
+          targets: text[6],
+          opacity: 1
+        }, 28335)
         .add({
           targets: '.canvas',
           opacity: 1,
-          duration: 500
-        })
+        }, 30019)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 1000)
     }
   },
   mounted() {
@@ -953,6 +983,7 @@ export default {
     this.animateSvg();
     this.animateText();
     this.setAudioVolumeLevel(0.3);
+    this.playVoiceOver();
   },
 }
 </script>
@@ -998,6 +1029,7 @@ export default {
 }
 .text-box p {
   margin-bottom: 1vh;
+  opacity: 0;
 }
 .text-box p:first-child,
 .text-box p:last-child {

@@ -186,7 +186,8 @@
         </svg>
       </div>
     </div>
-    <div class="page-number" id="page-light">3</div>
+    <audio src="../../assets/sounds/introduction/3Animated_Book_Page2.mp3" ref="voice"></audio>
+    <div class="page-number" id="page-light">2</div>
   </div>
 </template>
 
@@ -196,7 +197,13 @@ export default {
   methods: {
     setSession(number) {
       this.$emit('setSession', number)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
     }
+  },
+  mounted() {
+    this.playVoiceOver();
   }
 }
 </script>

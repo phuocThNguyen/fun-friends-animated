@@ -220,7 +220,8 @@
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
-    <div class="page-number" id="page-dark">22</div>
+    <audio src="../../assets/sounds/session1/22Animated_Book_Page21.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">21</div>
   </div>
 </template>
 
@@ -300,34 +301,59 @@ export default {
         })
     },
     animateText() {
-      let mainContentAnimation = anime.timeline({easing: 'linear'});
+      let text = document.querySelector('.text-box').children;
+      let mainContentAnimation = anime.timeline({
+        easing: 'linear',
+        duration: 500,
+      });
       mainContentAnimation
         .add({
           targets: '.requires',
           opacity: 1,
-          duration: 700,
           delay: 3000,
         })
         .add({
           targets: '.text-box',
           opacity: 0.90,
-          delay: 1000,
-          duration: 1000,
+          delay: 9000,
         })
+        .add({
+          targets: text[0],
+          opacity: 1
+        }, 13708)
+        .add({
+          targets: text[1],
+          opacity: 1
+        }, 17319)
+        .add({
+          targets: text[2],
+          opacity: 1
+        }, 22915)
+        .add({
+          targets: text[3],
+          opacity: 1
+        }, 26332)
+        .add({
+          targets: text[4],
+          opacity: 1
+        }, 30651)
         .add({
           targets: '.canvas',
           opacity: 1,
-          duration: 1000,
-        }, 4700)
+        }, 32000)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 3000)
     }
   },
   mounted() {
     this.animateSvg();
     this.animateText();
     this.setAudioVolumeLevel(0.4);
+    this.playVoiceOver();
   }
 }
 </script>
@@ -374,6 +400,7 @@ export default {
 }
 .text-box p {
   margin-bottom: 0;
+  opacity: 0;
 }
 .text-box p:first-child {
   font-weight: bold;

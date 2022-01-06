@@ -5,7 +5,8 @@
       <p class="mb-0">We are born in different countries.&nbsp;</p>
       <p class="mb-0">Where were you born?</p>
     </div>
-    <div class="page-number" id="page-light">25</div>
+    <audio src="../../assets/sounds/session1/25Animated_Book_Page24.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">24</div>
   </div>
 </template>
 
@@ -16,17 +17,33 @@ export default {
   name: "Session1Page18",
   methods: {
     animateText() {
-      anime({
-        targets: ".text-box",
-        opacity: 1,
-        delay: 500,
+      let text = document.querySelector('.text-box').children;
+      let animation = anime.timeline({
         duration: 500,
-        easing: 'linear',
+        easing: 'linear'
       })
+      animation
+        .add({
+          targets: ".text-box",
+          opacity: 1,
+          delay: 500,
+        })
+        .add({
+          targets: text[0],
+          opacity: 1
+        }, 500)
+        .add({
+          targets: text[1],
+          opacity: 1
+        }, 4274)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
     }
   },
   mounted() {
     this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>
@@ -46,5 +63,6 @@ export default {
   color: #ffffff;
   font-weight: bold;
   font-size: 6vh;
+  opacity: 0;
 }
 </style>

@@ -17,7 +17,8 @@
     <audio ref="audio" autoplay src="../../assets/sounds/session1/dog.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
-    <div class="page-number" id="page-light">11</div>
+    <audio src="../../assets/sounds/session1/11Animated_Book_Page10.mp3" ref="voice"></audio>
+    <div class="page-number" id="page-light">10</div>
   </div>
 </template>
 
@@ -29,7 +30,6 @@ export default {
   methods: {
     animateText() {
       let animation = anime.timeline({
-        delay: 500,
         duration: 500,
         easing: 'linear',
       });
@@ -37,27 +37,32 @@ export default {
         .add({
           targets: ".left-bar",
           opacity: 1,
+          delay: 500,
         })
         .add({
           targets: '#para-1',
           opacity: 1,
-        })
+        }, 1500)
         .add({
           targets: '#para-2',
           opacity: 1,
-        })
+        }, 7020)
         .add({
           targets: ".text-box",
           opacity: 1,
-        });
+        }, 10253);
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 1500)
     }
   },
   mounted() {
     this.animateText();
     this.setAudioVolumeLevel(0.2);
+    this.playVoiceOver();
   }
 }
 </script>

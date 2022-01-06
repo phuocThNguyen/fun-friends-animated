@@ -4,7 +4,8 @@
     <div class="text-box">
       <p class="mb-0">This family enjoys sharing picnics.</p>
     </div>
-    <div class="page-number" id="page-light">20</div>
+    <audio src="../../assets/sounds/session1/20Animated_Book_Page19.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">19</div>
   </div>
 </template>
 
@@ -22,10 +23,14 @@ export default {
         duration: 500,
         easing: 'linear',
       })
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
     }
   },
   mounted() {
     this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>

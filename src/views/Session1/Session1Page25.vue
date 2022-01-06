@@ -820,7 +820,8 @@
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
-    <div class="page-number" id="page-light">33</div>
+    <audio src="../../assets/sounds/session1/32Animated_Book_Page31.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">31</div>
   </div>
 </template>
 
@@ -880,7 +881,6 @@ export default {
     },
     animateText() {
       let textAnimation = anime.timeline({
-        delay: 700,
         duration: 500,
         easing: 'linear'
       });
@@ -888,42 +888,47 @@ export default {
         .add({
           targets: '.text-box',
           delay: 1000,
-          duration: 1000,
+          duration: 500,
           opacity: 0.9,
         })
         .add({
           targets: '#para-1',
           color: '#000'
-        })
+        }, 2395)
         .add({
           targets: '#para-2',
           color: '#000'
-        })
+        }, 8978)
         .add({
           targets: '#para-3',
           color: '#000'
-        })
+        }, 17957)
         .add({
           targets: '#para-4',
           color: '#000'
-        })
-        .add({
-          targets: '.bubble-container',
-          opacity: 0.9
-        })
+        }, 20190)
         .add({
           targets: '.canvas',
           opacity: 1
-        })
+        }, 25234)
+        .add({
+          targets: '.bubble-container',
+          opacity: 0.9
+        }, 31287)
+
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
-    }
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 2000)
+    },
   },
   mounted() {
     this.animateSvg();
     this.animateText();
     this.setAudioVolumeLevel(0.5);
+    this.playVoiceOver();
   }
 }
 </script>

@@ -1,13 +1,22 @@
 <template>
   <div class="interactive-container" id="alt-bg">
     <img src="../../assets/images/introduction/page2.jpg" alt="page-2" class="session-background" id="fixing-image">
-    <div class="page-number" id="page-dark">2</div>
+    <audio src="../../assets/sounds/introduction/2Animated_Book_Page1.mp3" ref="voice"></audio>
+    <div class="page-number" id="page-dark">1</div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'IntroductionPage2'
+  name: 'IntroductionPage2',
+  methods: {
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    }
+  },
+  mounted() {
+    this.playVoiceOver();
+  }
 }
 </script>
 

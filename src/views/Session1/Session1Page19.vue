@@ -11,7 +11,8 @@
         <span><strong> but we all love, smile, and cry in the same way.</strong></span>
       </p>
     </div>
-    <div class="page-number" id="page-light">26</div>
+    <audio src="../../assets/sounds/session1/26Animated_Book_Page25.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">25</div>
   </div>
 </template>
 
@@ -24,59 +25,55 @@ export default {
     animateText() {
       let paraArray = document.getElementsByClassName('text')[0];
       let animation = anime.timeline({
-        delay: 700,
-        duration: 500
+        duration: 500,
+        easing:'linear'
       });
       animation
         .add({
           targets: ".text-box",
           opacity: 0.95,
-          easing: 'linear'
+          delay: 500
         })
         .add({
           targets: paraArray.children[0],
           color: '#000',
-          easing: 'linear',
-        })
+        }, 1000)
         .add({
           targets: paraArray.children[1],
           color: '#000',
-          easing: 'linear',
-        })
+        }, 6007)
         .add({
           targets: paraArray.children[2],
           color: '#000',
-          easing: 'linear',
-        })
+        }, 10680)
         .add({
           targets: paraArray.children[3],
           color: '#000',
-          easing: 'linear',
-        })
+        }, 13679)
         .add({
           targets: paraArray.children[4],
           color: '#000',
-          easing: 'linear',
-        })
+        }, 15159)
         .add({
           targets: paraArray.children[5],
           color: '#000',
-          easing: 'linear',
-        })
+        }, 16840)
         .add({
           targets: paraArray.children[6],
           color: '#000',
-          easing: 'linear',
-        })
+        }, 18349)
         .add({
           targets: paraArray.children[7],
           color: '#000',
-          easing: 'linear',
-        })
+        }, 20472)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 1000)
     }
   },
   mounted() {
     this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>

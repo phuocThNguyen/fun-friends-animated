@@ -8,7 +8,8 @@
       <p>Talk about your food.</p>
       <p>Ask your friends about their food.</p>
     </div>
-    <div class="page-number" id="page-light">34</div>
+    <audio src="../../assets/sounds/session1/33Animated_Book_Page32.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">32</div>
   </div>
 </template>
 
@@ -21,26 +22,29 @@ export default {
       let texts = document.getElementsByClassName("text-box")[0];
       let animation = anime.timeline({
         easing: 'linear',
-        duration: 700,
-        delay: 500,
+        duration: 500,
       });
       animation
         .add({
           targets: texts.children[0],
           color: '#000',
-        })
+        }, 590)
         .add({
           targets: texts.children[1],
           color: '#000',
-        })
+        }, 2008)
         .add({
           targets: texts.children[2],
           color: '#000',
-        })
-    }
+        }, 4353)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
     this.animateText();
+    this.playVoiceOver();
   },
 };
 </script>

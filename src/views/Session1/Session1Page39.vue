@@ -21,7 +21,8 @@
           <br>choice.</p>
       </div>
     </div>
-    <div class="page-number" id="page-dark">47</div>
+    <audio src="../../assets/sounds/session1/46Animated_Book_Page45.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">45</div>
   </div>
 </template>
 
@@ -62,9 +63,13 @@ export default {
           delay: 0,
         }, 1000)
     },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 1500)
+    },
   },
   mounted() {
     this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>

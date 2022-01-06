@@ -1774,8 +1774,9 @@
         <br>you Fun Friends
         <br>skills each week.</p>
     </div>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session4/night-time.mp3"></audio>
-    <div class="page-number" id="page-light">44</div>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session4/night-time.mp3"/>
+    <audio src="../../assets/sounds/session1/43Animated_Book_Page42.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">42</div>
   </div>
 </template>
 
@@ -1833,12 +1834,16 @@ export default {
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
-    }
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 2000)
+    },
   },
   mounted() {
     this.animateSvg();
     this.animateText();
     this.setAudioVolumeLevel(0.4);
+    this.playVoiceOver();
   }
 }
 </script>

@@ -9,8 +9,9 @@
           but we are all joined together by lines of belonging and love.</strong></p>
       </div>
     </div>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/sand-castle.mp3"></audio>
-    <div class="page-number" id="page-light">23</div>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/sand-castle.mp3"/>
+    <audio src="../../assets/sounds/session1/23Animated_Book_Page22.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">22</div>
   </div>
 </template>
 
@@ -39,38 +40,34 @@ export default {
     animateText() {
       let para = document.getElementsByClassName('para')[0].children;
       let animation = anime.timeline({
-        delay: 700,
-        duration: 700,
+        duration: 500,
+        easing: 'linear'
       });
       animation
         .add({
-          targets: "#first",
-          color: "#000",
-        })
-        .add({
-          targets: "#second",
-          color: "#000",
-        })
-        .add({
           targets: para[0],
           color: "#d00000",
-        })
+        }, 1000)
         .add({
           targets: para[1],
           color: "#d00000",
-        })
+        }, 4244)
         .add({
           targets: para[2],
           color: "#000",
-        })
+        }, 10248)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 1000)
     }
   },
   mounted() {
     this.animateText();
-    this.setAudioVolumeLevel(0.2)
+    this.setAudioVolumeLevel(0.2);
+    this.playVoiceOver();
   }
 }
 </script>

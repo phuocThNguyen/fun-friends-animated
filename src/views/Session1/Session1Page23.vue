@@ -12,7 +12,8 @@
         <br><span> but inside we all have families.</span>
       </p>
     </div>
-    <div class="page-number" id="page-light">30</div>
+    <audio src="../../assets/sounds/session1/30Animated_Book_Page29.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">29</div>
   </div>
 </template>
 
@@ -30,10 +31,14 @@ export default {
         delay: 500,
         easing: 'linear',
       })
-    }
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
     this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>

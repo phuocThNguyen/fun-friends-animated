@@ -10,7 +10,8 @@
       <p class="text-6"><span id="letter-d">D</span>on't forget</p>
       <p class="text-7"><span id="letter-s">S</span>tay brave</p>
     </div>
-    <div class="page-number" id="page-dark">9</div>
+    <audio src="../../assets/sounds/session1/9Animated_Book_Page8.mp3" autoplay></audio>
+    <div class="page-number" id="page-dark">8</div>
   </div>
 </template>
 
@@ -22,7 +23,7 @@ export default {
     animateText() {
       let vw = document.querySelector('.interactive-container').clientWidth;
       let animations = anime.timeline({
-        duration: 1000
+        duration: 3000
       });
       animations
         .add({

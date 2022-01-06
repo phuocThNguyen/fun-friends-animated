@@ -6,7 +6,8 @@
       <p class="mb-0">How do you have fun when playing outside?</p>
       <audio ref="audio" autoplay src="../../assets/sounds/session1/playground.mp3"></audio>
     </div>
-    <div class="page-number" id="page-light">12</div>
+    <audio src="../../assets/sounds/session1/12Animated_Book_Page11.mp3" ref="voice"></audio>
+    <div class="page-number" id="page-light">11</div>
   </div>
 </template>
 
@@ -17,21 +18,37 @@ export default {
   name: "Session1Page5",
   methods: {
     animateText() {
-      anime({
-        targets: ".text-box",
-        opacity: 1,
-        delay: 500,
+      let text = document.querySelector('.text-box').children;
+      let animation = anime.timeline({
         duration: 500,
         easing: 'linear',
       })
+      animation
+        .add({
+          targets: ".text-box",
+          opacity: 1,
+          delay: 500,
+        })
+        .add({
+          targets: text[0],
+          opacity: 1,
+        }, 1048)
+        .add({
+          targets: text[1],
+          opacity: 1
+        }, 3543)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 1000)
     }
   },
   mounted() {
     this.animateText();
     this.setAudioVolumeLevel(0.4);
+    this.playVoiceOver();
   }
 }
 </script>
@@ -52,5 +69,6 @@ export default {
   font-weight: bold;
   display: flex;
   font-size: 6vh;
+  opacity: 0;
 }
 </style>

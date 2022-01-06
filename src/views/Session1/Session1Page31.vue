@@ -11,7 +11,8 @@
         <span>It is okay that our clothes are different!</span>
       </p>
     </div>
-    <div class="page-number" id="page-light">39</div>
+    <audio src="../../assets/sounds/session1/38Animated_Book_Page37.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">37</div>
   </div>
 </template>
 
@@ -29,10 +30,14 @@ export default {
         duration: 500,
         easing: 'linear',
       })
-    }
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
     this.animateText();
+    this.playVoiceOver();
   },
 };
 </script>

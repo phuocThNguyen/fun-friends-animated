@@ -4,13 +4,22 @@
     <a class="mask" id="mask-1" href="https://apps.apple.com/au/app/the-friends-programs-game/id1104845670" target="_blank"/>
     <a class="mask" id="mask-2" href="https://apps.apple.com/au/app/thumbs-down-or-thumbs-up/id1301090858" target="_blank"/>
     <a class="mask" id="mask-3" href="https://play.google.com/store/apps/details?id=org.friendsresilience.thumbsdownup" target="_blank"/>
-    <div class="page-number" id="page-dark">5</div>
+    <audio src="../../assets/sounds/introduction/5Animated_Book_Page4.mp3" ref="voice"></audio>
+    <div class="page-number" id="page-dark">4</div>
   </div>
 </template>
 
 <script>
 export default {
   name: 'IntroductionPage4',
+  methods: {
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    }
+  },
+  mounted() {
+    this.playVoiceOver();
+  }
 }
 </script>
 

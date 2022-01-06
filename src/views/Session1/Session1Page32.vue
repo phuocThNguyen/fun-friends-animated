@@ -1147,7 +1147,8 @@
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Falling-Snow-Sound-Effect-Amplified.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
-    <div class="page-number" id="page-light">40</div>
+    <audio src="../../assets/sounds/session1/39Animated_Book_Page38.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">38</div>
   </div>
 </template>
 
@@ -1192,55 +1193,54 @@ export default {
     animateText() {
       let mainContentAnimation = anime.timeline({
         easing: 'linear',
-        duration: 700,
-        delay: 700
+        duration: 500,
       });
       mainContentAnimation
         .add({
           targets: '.requires',
           opacity: 0.85,
-        })
+        }, 598)
         .add({
           targets: '.text-box',
           opacity: 0.95,
-        })
+        }, 2800)
         .add({
           targets: '#q1',
           color: '#d00000'
-        })
+        }, 3374)
         .add({
           targets: '#q2',
           color: '#000'
-        })
+        }, 7902)
         .add({
           targets: '#q3',
           color: '#000'
-        })
+        }, 11780)
         .add({
           targets: '#q4',
           color: '#000'
-        })
+        }, 17903)
         .add({
           targets: '#q5',
           color: '#000'
-        })
-        .add({
-          targets: '.song-writer',
-          opacity: 0.95,
-        })
+        }, 22007)
         .add({
           targets: '.canvas',
           opacity: 0.92,
-        }, 7000)
+        }, 25000)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
-    }
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
     this.animateSvg();
     this.animateText();
     this.setAudioVolumeLevel(0.6);
+    this.playVoiceOver();
   },
 };
 </script>

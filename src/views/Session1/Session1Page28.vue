@@ -13,7 +13,8 @@
         </span>
       </p>
     </div>
-    <div class="page-number" id="page-light">36</div>
+    <audio src="../../assets/sounds/session1/35Animated_Book_Page34.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">34</div>
   </div>
 </template>
 
@@ -31,10 +32,14 @@ export default {
         duration: 500,
         easing: 'linear',
       })
-    }
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
     this.animateText();
+    this.playVoiceOver();
   },
 };
 </script>

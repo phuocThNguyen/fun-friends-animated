@@ -215,7 +215,8 @@
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
-    <div class="page-number" id="page-dark">42</div>
+    <audio src="../../assets/sounds/session1/41Animated_Book_Page40.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">40</div>
   </div>
 </template>
 
@@ -284,53 +285,55 @@ export default {
       let text = document.getElementsByClassName('text-box')[0].children;
       let textBoxAnimation = anime.timeline({
         easing: 'linear',
-        duration: 700,
-        delay: 700,
+        duration: 500,
       });
       textBoxAnimation
         .add({
           targets: '.text-box',
           opacity: 0.9,
-          duration: 500,
           delay: 2000,
         })
         .add({
           targets: text[0],
           color: '#000',
-        })
+        }, 3000)
         .add({
           targets: text[1],
           color: '#000',
-        })
+        }, 11745)
         .add({
           targets: text[2],
           color: '#000',
-        })
+        }, 17621)
         .add({
           targets: text[3],
           color: '#000',
-        })
+        }, 22401)
         .add({
           targets: text[4],
           color: '#000',
-        })
+        }, 27071)
         .add({
           targets: text[5],
           color: '#000',
-        })
+        }, 30168)
         .add({
           targets: text[6],
           color: '#000',
-        })
+        }, 35132)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
-    }
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 3000)
+    },
   },
   mounted() {
     this.animateSvg();
     this.animateText();
     this.setAudioVolumeLevel(0.3);
+    this.playVoiceOver();
   }
 }
 </script>

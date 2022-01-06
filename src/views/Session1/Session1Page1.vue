@@ -208,7 +208,8 @@
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
-    <div class="page-number" id="page-light">8</div>
+    <audio src="../../assets/sounds/session1/8Animated_Book_Page7.mp3" autoplay></audio>
+    <div class="page-number" id="page-light">7</div>
   </div>
 </template>
 

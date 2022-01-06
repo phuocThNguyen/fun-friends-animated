@@ -12,7 +12,8 @@
         <p>We love going to the park</p>
       </div>
     </div>
-    <div class="page-number" id="page-light">19</div>
+    <audio src="../../assets/sounds/session1/19Animated_Book_Page18.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">18</div>
   </div>
 </template>
 
@@ -23,8 +24,8 @@ export default {
   name: "Session1Page12",
   methods: {
     animateText() {
+      let text = document.querySelector('.left-bar').children;
       let animation = anime.timeline({
-        delay: 700,
         duration: 500,
         easing: 'linear'
       });
@@ -32,27 +33,36 @@ export default {
         .add({
           targets: ".left-bar",
           opacity: 1,
+          delay: 500
         })
         .add({
-          targets: "#para-1",
-          opacity: 1,
-        })
+          targets: text[0],
+          opacity: 1
+        }, 1102)
         .add({
-          targets: "#para-2",
+          targets: text[1],
           opacity: 1,
-        })
+        }, 2840)
         .add({
-          targets: "#para-3",
+          targets: text[2],
           opacity: 1,
-        })
+        }, 4766)
+        .add({
+          targets: text[3],
+          opacity: 1,
+        }, 7910)
         .add({
           targets: ".text-box",
           opacity: 1,
-        })
+        }, 10381)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 1000)
     }
   },
   mounted() {
-    this.animateText()
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>
@@ -72,6 +82,7 @@ export default {
 .left-bar h1 {
   font-size: 7vh;
   margin-bottom: 3vh;
+  opacity: 0;
 }
 .left-bar p {
   opacity: 0;

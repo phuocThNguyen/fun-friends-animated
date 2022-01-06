@@ -2,10 +2,11 @@
   <div class="interactive-container">
     <img class="session-background" src="../../assets/images/session1/811-resized.jpg" alt="lucy">
     <div class="text-box">
-      <p class="mb-0">Lucy loves playing with the old</p>
-      <p class="mb-0">wheelbarrow in the garden.</p>
+      <p class="mb-0">Lucy loves playing with the</p>
+      <p class="mb-0">old wheelbarrow in the garden.</p>
     </div>
-    <div class="page-number" id="page-light">14</div>
+    <audio src="../../assets/sounds/session1/14Animated_Book_Page13.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">13</div>
   </div>
 </template>
 
@@ -16,17 +17,33 @@ export default {
   name: "Session1Page7",
   methods: {
     animateText() {
-      anime({
-        targets: ".text-box",
-        opacity: 1,
-        delay: 500,
+      let text = document.querySelector('.text-box').children;
+      let animation = anime.timeline({
         duration: 500,
         easing: 'linear',
       })
+      animation
+        .add({
+          targets: ".text-box",
+          opacity: 1,
+          delay: 500,
+        })
+        .add({
+          targets: text[0],
+          opacity: 1,
+        }, 1217)
+        .add({
+          targets: text[1],
+          opacity: 1
+        }, 3037)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 1000)
     }
   },
   mounted() {
     this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>
@@ -47,5 +64,6 @@ export default {
   font-weight: bold;
   display: flex;
   font-size: 6vh;
+  opacity: 0;
 }
 </style>

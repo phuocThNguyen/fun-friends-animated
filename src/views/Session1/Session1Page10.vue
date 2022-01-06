@@ -5,13 +5,22 @@
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write;
             encrypted-media; gyroscope; picture-in-picture"></iframe>
-    <div class="page-number" id="page-dark">17</div>
+    <audio src="../../assets/sounds/session1/17Animated_Book_Page16.mp3" ref="voice" autoplay/>
+    <div class="page-number" id="page-dark">16</div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Session1Page10"
+  name: "Session1Page10",
+  methods: {
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    }
+  },
+  mounted() {
+    this.playVoiceOver();
+  }
 }
 </script>
 

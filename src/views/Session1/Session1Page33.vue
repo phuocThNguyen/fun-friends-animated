@@ -405,7 +405,8 @@
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
-    <div class="page-number" id="page-dark">41</div>
+    <audio src="../../assets/sounds/session1/40Animated_Book_Page39.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">39</div>
   </div>
 </template>
 
@@ -425,7 +426,6 @@ export default {
       let vh = window.innerHeight;
       let oranges = document.getElementsByClassName('orange');
       anime.timeline({
-        scale: 40,
         duration: 300,
         easing: 'easeInCubic'
       })
@@ -512,22 +512,27 @@ export default {
         .add({
           targets: "#para-1",
           color: '#000',
-          duration: 1000,
-        })
+          duration: 500,
+          easing: 'linear'
+        }, 10139)
         .add({
           targets: "#para-2",
           color: '#000',
-          duration: 1000,
-          delay: 2000
-        })
+          duration: 500,
+          easing: 'linear'
+        }, 22225)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
-    }
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 10000)
+    },
   },
   mounted() {
     this.animateSequence();
-    this.setAudioVolumeLevel(0.3)
+    this.setAudioVolumeLevel(0.3);
+    this.playVoiceOver();
   }
 }
 </script>

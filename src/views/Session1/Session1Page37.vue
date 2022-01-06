@@ -13,8 +13,9 @@
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Use a brave voice and make yourself big.</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Try your best and give it a go.</p>
     </div>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3"></audio>
-    <div class="page-number" id="page-dark">45</div>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3"/>
+    <audio src="../../assets/sounds/session1/44Animated_Book_Page43.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">43</div>
   </div>
 </template>
 
@@ -27,57 +28,57 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({
         easing: 'linear',
-        delay: 1500,
         duration: 500
       })
       animation
         .add({
           targets: ".text-box",
           opacity: 0.9,
-          delay: 500,
-          easing: 'linear'
-        })
+        }, 300)
         .add({
           targets: text[1],
           opacity: 1,
-          delay: 500
-        })
+        }, 2394)
         .add({
           targets: text[2],
           opacity: 1
-        })
+        }, 6489)
         .add({
           targets: text[3],
           opacity: 1
-        })
+        }, 16351)
         .add({
           targets: text[4],
           opacity: 1
-        })
+        }, 20770)
         .add({
           targets: text[5],
           opacity: 1
-        })
+        }, 26134)
         .add({
           targets: text[6],
           opacity: 1
-        })
+        }, 28557)
         .add({
           targets: text[7],
           opacity: 1
-        })
+        }, 31319)
         .add({
           targets: text[8],
           opacity: 1
-        })
+        }, 34703)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
-    }
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
     this.animateText();
-    this.setAudioVolumeLevel(0.4)
+    this.setAudioVolumeLevel(0.4);
+    this.playVoiceOver();
   }
 }
 </script>

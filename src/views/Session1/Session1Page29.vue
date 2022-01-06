@@ -8,7 +8,8 @@
       <p>Talk about your clothes.</p>
       <p>Ask your friends about their clothes.</p>
     </div>
-    <div class="page-number" id="page-light">37</div>
+    <audio src="../../assets/sounds/session1/36Animated_Book_Page35.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">35</div>
   </div>
 </template>
 
@@ -22,25 +23,28 @@ export default {
       let animation = anime.timeline({
         easing: 'linear',
         duration: 700,
-        delay: 500,
       });
       animation
         .add({
           targets: texts.children[0],
           color: '#000',
-        })
+        }, 771)
         .add({
           targets: texts.children[1],
           color: '#000',
-        })
+        }, 2312)
         .add({
           targets: texts.children[2],
           color: '#000',
-        })
-    }
+        }, 4500)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
     this.animateText();
+    this.playVoiceOver();
   },
 };
 </script>

@@ -8,13 +8,22 @@
     <img src="../../assets/images/introduction/Dog_hug_child.jpg" alt="dog" class="images">
     <img src="../../assets/images/introduction/child-1019147-740x493.jpg" alt="lamb" class="images">
     <img src="../../assets/images/introduction/elephant_kid.jpg" alt="ele" class="images">
-    <div class="page-number" id="page-dark">6</div>
+    <audio src="../../assets/sounds/introduction/6Animated_Book_Page5.mp3" ref="voice"></audio>
+    <div class="page-number" id="page-dark">5</div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'IntroductionPage6'
+  name: 'IntroductionPage6',
+  methods: {
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    }
+  },
+  mounted() {
+    this.playVoiceOver();
+  }
 }
 </script>
 

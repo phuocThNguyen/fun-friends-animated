@@ -11,7 +11,8 @@
         <span>It is fun that we are different.</span>
       </p>
     </div>
-    <div class="page-number" id="page-light">38</div>
+    <audio src="../../assets/sounds/session1/37Animated_Book_Page36.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">36</div>
   </div>
 </template>
 
@@ -29,10 +30,14 @@ export default {
         duration: 500,
         easing: 'linear',
       })
-    }
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
     this.animateText();
+    this.playVoiceOver();
   },
 };
 </script>

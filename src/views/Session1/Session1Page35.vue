@@ -798,7 +798,8 @@
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/beach-sound.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
-    <div class="page-number" id="page-light">43</div>
+    <audio src="../../assets/sounds/session1/42Animated_Book_Page41.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">41</div>
   </div>
 </template>
 
@@ -858,70 +859,69 @@ export default {
       let animation = anime.timeline({
         easing: 'linear',
         duration: 500,
-        delay: 3000
       })
       animation
         .add({
           targets: '.text-box',
           opacity: 0.95,
-          delay: 500
-        })
+        }, 657)
         .add({
           targets: '.para-box',
           opacity: 0.95,
-          delay: 500
-        })
+        }, 5501)
         .add({
           targets: text[1],
           opacity: 1,
-          delay: 500
-        })
+        }, 9267)
         .add({
           targets: text[2],
           opacity: 1,
-          delay: 500
-        }, 2000)
+        }, 10841)
         .add({
           targets: text[3],
           opacity: 1,
-        })
+        }, 33067)
         .add({
           targets: text[4],
           opacity: 1,
-        }, 3000)
+        }, 35640)
         .add({
           targets: text[5],
           opacity: 1,
-        })
+        }, 50476)
         .add({
           targets: text[6],
           opacity: 1,
-        }, 7500)
+        }, 54059)
         .add({
           targets: text[7],
           opacity: 1,
-        })
+        }, 65779)
         .add({
           targets: text[8],
           opacity: 1,
-        }, 11000)
+        }, 72252)
         .add({
           targets: text[9],
           opacity: 1,
-        })
+        }, 86016)
         .add({
           targets: text[10],
           opacity: 1,
-        }, 14500)
+        }, 94171)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
-    }
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
     this.animateSvg();
     this.animateText();
     this.setAudioVolumeLevel(0.5);
+    this.playVoiceOver();
   }
 }
 </script>

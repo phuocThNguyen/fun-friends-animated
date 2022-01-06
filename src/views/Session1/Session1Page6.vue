@@ -5,7 +5,8 @@
       <p class="mb-0">Zoe's dad also plays with her on the swing.</p>
       <p class="mb-0">It is so much fun!</p>
     </div>
-    <div class="page-number" id="page-light">13</div>
+    <audio src="../../assets/sounds/session1/13Animated_Book_Page12.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">12</div>
   </div>
 </template>
 
@@ -16,17 +17,33 @@ export default {
   name: "Session1Page6",
   methods: {
     animateText() {
-      anime({
-        targets: ".text-box",
-        opacity: 1,
-        delay: 500,
+      let text = document.querySelector('.text-box').children;
+      let animation = anime.timeline({
         duration: 500,
         easing: 'linear',
       })
+      animation
+        .add({
+          targets: ".text-box",
+          opacity: 1,
+          delay: 500,
+        })
+        .add({
+          targets: text[0],
+          opacity: 1,
+        }, 1233)
+        .add({
+          targets: text[1],
+          opacity: 1
+        }, 5176)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 1000)
     }
   },
   mounted() {
     this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>
@@ -47,6 +64,6 @@ export default {
   font-weight: bold;
   display: flex;
   font-size: 6vh;
-
+  opacity: 0;
 }
 </style>
