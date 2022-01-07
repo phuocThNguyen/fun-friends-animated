@@ -720,6 +720,7 @@
         </p>
       </div>
     </div>
+    <audio src="../../assets/sounds/session3/Session3_Page17.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">86</div>
   </div>
 </template>
@@ -761,10 +762,14 @@ export default {
           ],
           delay: 0,
         }, 1000)
-    }
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 1500)
+    },
   },
   mounted() {
     this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>

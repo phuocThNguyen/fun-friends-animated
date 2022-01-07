@@ -13,7 +13,7 @@
     <audio ref="audio" autoplay src="../../assets/sounds/session1/dog.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
-    <audio src="../../assets/sounds/session1/10Animated_Book_Page9.mp3" ref="voice"></audio>
+    <audio src="../../assets/sounds/session1/10Animated_Book_Page9.mp3" ref="voice"/>
     <div class="page-number" id="page-light">9</div>
   </div>
 </template>

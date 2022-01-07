@@ -8,8 +8,9 @@
       <p>Draw or write down one feeling you have had and act it out in a group.</p>
       <p>When and why did you feel this way? <strong>All feelings are OK.</strong></p>
     </div>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/no-copyright-music-funny-children-kids-music-by-mokka-kids.mp3"></audio>
-    <div class="page-number" id="page-light">64</div>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/no-copyright-music-funny-children-kids-music-by-mokka-kids.mp3"/>
+    <audio src="../../assets/sounds/session2/Session2_Page17.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">62</div>
   </div>
 </template>
 
@@ -40,37 +41,37 @@ export default {
       let animation = anime.timeline({
         easing: 'linear',
         duration: 500,
-        delay: 1000
       })
       animation
         .add({
           targets: '.text-box',
-          opacity: 1,
-          delay: 500
-        })
+          opacity: 1
+        }, 737)
         .add({
           targets: text[1],
           opacity: 1,
           delay: 500
-        })
+        }, 2647)
         .add({
           targets: text[2],
           opacity: 1,
-          delay: 3000
-        })
+        }, 14868)
         .add({
           targets: text[3],
           opacity: 1,
-          delay: 2000
-        })
+        }, 21204)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
-    }
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
     this.animateText();
-    this.setAudioVolumeLevel(0.4)
+    this.setAudioVolumeLevel(0.4);
+    this.playVoiceOver();
   }
 }
 </script>

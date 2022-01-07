@@ -1370,10 +1370,9 @@
       </div>
     </div>
     <drawing-canvas class="canvas" :canvasStyle="canvasStyle"/>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <div class="page-number" id="page-light">70</div>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
+    <audio src="../../assets/sounds/session2/Session2_Page23.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">68</div>
   </div>
 </template>
 
@@ -1432,11 +1431,15 @@ export default {
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
-    }
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 2000)
+    },
   },
   mounted() {
     this.animateText();
     this.setAudioVolumeLevel(0.3);
+    this.playVoiceOver();
   }
 }
 </script>

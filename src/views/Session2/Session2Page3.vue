@@ -11,7 +11,8 @@
 
       <p class="extra-box">All feelings are OK</p>
     </div>
-    <div class="page-number" id="page-dark">50</div>
+    <audio src="../../assets/sounds/session2/Session2_Page3.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">48</div>
   </div>
 </template>
 
@@ -25,34 +26,37 @@ export default {
       let para = document.getElementsByClassName('text-box')[0].children;
       let animation = anime.timeline({
         duration: 500,
-        delay: 1000,
         easing: 'linear'
       });
       animation
         .add({
           targets: para[1],
           color: "#000",
-        })
+        }, 1697)
         .add({
           targets: para[2],
           color: "#000"
-        })
+        }, 8180)
         .add({
           targets: para[3],
           color: "#000"
-        })
+        }, 11362)
         .add({
           targets: para[4],
           color: "#000"
-        })
+        },19211)
         .add({
           targets: para[5],
           opacity: 1
-        })
+        }, 21241)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
     }
   },
   mounted() {
     this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>

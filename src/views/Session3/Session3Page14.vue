@@ -710,8 +710,9 @@
       <p>&middot; Try your best and give it a go.</p>
       <p>&middot; Believe in yourself.</p>
     </div>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"></audio>
-    <div class="page-number" id="page-dark">84</div>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"/>
+    <audio src="../../assets/sounds/session3/Session3_Page15.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">82</div>
   </div>
 </template>
 
@@ -740,52 +741,53 @@ export default {
       let animation = anime.timeline({
         easing: 'linear',
         duration: 500,
-        delay: 1500
       })
       animation
         .add({
           targets: ".text-box",
           opacity: 1,
-          delay: 500
-        })
+        }, 500)
         .add({
           targets: text[1],
           opacity: 1,
-          delay: 500
-        })
+        }, 3033)
         .add({
           targets: text[2],
           opacity: 1,
-        })
+        }, 9388)
         .add({
           targets: text[3],
           opacity: 1,
-        })
+        }, 17234)
         .add({
           targets: text[4],
           opacity: 1
-        })
+        }, 19918)
         .add({
           targets: text[5],
           opacity: 1
-        })
+        }, 23500)
         .add({
           targets: text[6],
           opacity: 1
-        })
+        }, 27735)
         .add({
           targets: text[7],
           opacity: 1
-        })
+        }, 30836)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
-    }
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
     this.animateSvg();
     this.animateText();
     this.setAudioVolumeLevel(0.4);
+    this.playVoiceOver();
   }
 }
 </script>

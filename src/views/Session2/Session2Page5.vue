@@ -16,7 +16,7 @@
         :emotes="['angry','happy','sad']"
         :tips="['Angry','Happy','Sad']"
         :ans="['red-tick','green-tick','red-tick']"
-        :delay="7000"
+        :delay="26445"
         v-on:correctAnsChosen="handleCorrectAnswer"
         v-on:wrongAnswer="handleWrongAnswer"
     />
@@ -143,7 +143,10 @@
         </g>
       </g>
     </svg>
-    <div class="page-number" id="page-dark">52</div>
+    <audio src="../../assets/sounds/all/Good_Job.mp3" ref="goodJob"/>
+    <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
+    <audio src="../../assets/sounds/session2/Session2_Page5.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">50</div>
   </div>
 </template>
 
@@ -162,7 +165,8 @@ export default {
         targets: '.reward',
         scale: 20,
         duration: 1000,
-      })
+      });
+      setTimeout(() => {this.$refs.goodJob.play()}, 500)
     },
     handleWrongAnswer() {
       anime({
@@ -172,41 +176,49 @@ export default {
           {value: 1, duration: 200},
           {value: 0, duration: 200, delay: 1000},
         ]
-      })
+      });
+      setTimeout(() => {this.$refs.goodTry.play()}, 500)
     },
     animateText() {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({
         easing: 'linear',
         duration: 500,
-        delay: 1000
       });
       animation
         .add({
           targets: '.text-box',
           opacity: 1
-        })
+        }, 567)
         .add({
           targets: text[1],
           opacity: 1
-        })
+        }, 1976)
         .add({
           targets: text[2],
           opacity: 1
-        })
+        }, 5841)
         .add({
           targets: text[3],
           opacity: 1
-        })
+        }, 7682)
+        .add({
+          targets: '.instruction',
+          opacity: 1
+        }, 14831)
         .add({
           targets: '.text',
           opacity: 1,
           delay: 0
-        }, 7000)
-    }
+        }, 23344)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
     this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>
@@ -216,6 +228,7 @@ export default {
   position: absolute;
   top: 1vh;
   right: 1%;
+  opacity: 0;
 }
 .reward {
   position: absolute;
@@ -256,7 +269,7 @@ export default {
 }
 .text {
   position: absolute;
-  bottom: 2vh;
+  bottom: 1vh;
   right: 8%;
   background-color: #00ce7c;
   color: #ffffff;

@@ -9,7 +9,7 @@
         :tips="['Angry','Crying','Happy']"
         :ans="['red-tick','red-tick','green-tick']"
         :isSmall="false"
-        :delay="700"
+        :delay="500"
         v-on:correctAnsChosen="handleCorrectAnswer"
         v-on:wrongAnswer="handleWrongAnswer"
     />
@@ -138,7 +138,10 @@
         </g>
       </g>
     </svg>
-    <div class="page-number" id="page-dark">75</div>
+    <audio src="../../assets/sounds/all/Very_Good.mp3" ref="veryGood"/>
+    <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
+    <audio src="../../assets/sounds/session3/Session3_Page5.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">73</div>
   </div>
 </template>
 
@@ -158,6 +161,7 @@ export default {
         scale: 20,
         duration: 1000,
       })
+      setTimeout(() => {this.$refs.veryGood.play()}, 500)
     },
     handleWrongAnswer() {
       anime({
@@ -168,8 +172,15 @@ export default {
           {value: 0, duration: 200, delay: 1000},
         ]
       })
-    }
+      setTimeout(() => {this.$refs.goodTry.play()}, 500)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
+  mounted() {
+    this.playVoiceOver();
+  }
 }
 </script>
 

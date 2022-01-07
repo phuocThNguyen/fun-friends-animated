@@ -1359,10 +1359,9 @@
       <p>&nbsp;&nbsp;-&nbsp;Use a brave voice and stand up tall.</p>
       <p>&nbsp;&nbsp;-&nbsp;Try your best and give it a go.</p>
     </div>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <div class="page-number" id="page-light">68</div>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
+    <audio src="../../assets/sounds/session2/Session2_Page21.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">66</div>
   </div>
 </template>
 
@@ -1377,48 +1376,48 @@ export default {
       let animation = anime.timeline({
         easing: 'linear',
         duration: 500,
-        delay: 1500
       })
       animation
         .add({
           targets: ".text-box",
           opacity: 1,
-          delay: 500
-        })
+        }, 692)
         .add({
           targets: text[1],
           opacity: 1,
-          delay: 500
-        })
+        }, 3225)
         .add({
           targets: text[2],
           opacity: 1,
-          delay: 3000
-        })
+        }, 16250)
         .add({
           targets: text[3],
           opacity: 1,
-        })
+        }, 24873)
         .add({
           targets: text[4],
           opacity: 1
-        })
+        }, 26973)
         .add({
           targets: text[5],
           opacity: 1
-        })
+        }, 29774)
         .add({
           targets: text[6],
           opacity: 1
-        })
+        }, 33029)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
-    }
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
     this.animateText();
     this.setAudioVolumeLevel(0.3);
+    this.playVoiceOver();
   }
 }
 </script>

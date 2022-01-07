@@ -3,7 +3,7 @@
     <img src="../../assets/images/session3/4829-resized.jpg" alt="little-plants" class="session-background">
     <div class="text-box">
       <h1>Friends and Families</h1>
-      <p>What makes kids helpful and kind?</p>
+      <p id="text-box-p">What makes kids helpful and kind?</p>
     </div>
     <div class="notice-box">We plant trees to be kind to planet Earth</div>
     <div class="bubble-container" id="bubble-1">
@@ -36,7 +36,8 @@
       </svg>
       <div class="bubble-text">Listen to your friend's opinion!</div>
     </div>
-    <div class="page-number" id="page-dark">80</div>
+    <audio src="../../assets/sounds/session3/Session3_Page10.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">78</div>
   </div>
 </template>
 
@@ -55,27 +56,31 @@ export default {
         .add({
           targets: ".text-box",
           opacity: 1,
-          delay: 500,
-        })
+        }, 716)
+        .add({
+          targets: '#text-box-p',
+          opacity: 1
+        }, 2921)
         .add({
           targets: '#bubble-1',
           opacity: 0.9,
-          delay: 1000
-        })
+        }, 6840)
         .add({
           targets: '#bubble-2',
           opacity: 0.9,
-          delay: 1000
-        })
+        }, 10109)
         .add({
           targets: '.notice-box',
           opacity: 1,
-          delay: 1000
-        })
-    }
+        }, 13624)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
-    this.animateText()
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>
@@ -99,7 +104,7 @@ export default {
 .text-box p {
   font-size: 4vh;
   margin-bottom: 0;
-  opacity: 1;
+  opacity: 0;
 }
 .notice-box {
   position: absolute;

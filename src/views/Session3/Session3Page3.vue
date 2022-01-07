@@ -9,7 +9,7 @@
         :tips="['Sad','Happy','Worried']"
         :ans="['red-tick','green-tick','red-tick']"
         :isSmall="false"
-        :delay="700"
+        :delay="10134"
         v-on:correctAnsChosen="handleCorrectAnswer"
         v-on:wrongAnswer="handleWrongAnswer"
     />
@@ -215,7 +215,10 @@
         </g>
       </g>
     </svg>
-    <div class="page-number" id="page-dark">73</div>
+    <audio src="../../assets/sounds/all/Great_work.mp3" ref="greatWork"/>
+    <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
+    <audio src="../../assets/sounds/session3/Session3_Page3.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">71</div>
   </div>
 </template>
 
@@ -228,13 +231,23 @@ export default {
   name: "Session3Page3",
   components: {EmotionPickInstruction, FeelingQuestion},
   methods: {
+    animeText() {
+      anime({
+        targets: '.instruction',
+        opacity: 1,
+        delay: 602,
+        duration: 500,
+        easing: 'linear'
+      })
+    },
     handleCorrectAnswer() {
       document.querySelector('.reward').style.opacity = '1';
       anime({
         targets: '.reward',
         scale: 20,
         duration: 1000,
-      })
+      });
+      setTimeout(() => {this.$refs.greatWork.play()}, 500)
     },
     handleWrongAnswer() {
       anime({
@@ -244,9 +257,17 @@ export default {
           {value: 1, duration: 200},
           {value: 0, duration: 200, delay: 1000},
         ]
-      })
-    }
+      });
+      setTimeout(() => {this.$refs.goodTry.play()}, 500)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
+  mounted() {
+    this.animeText();
+    this.playVoiceOver();
+  }
 }
 </script>
 
@@ -255,6 +276,7 @@ export default {
   position: absolute;
   top: 2vh;
   right: 2%;
+  opacity: 0;
 }
 .reward {
   position: absolute;
@@ -268,6 +290,7 @@ export default {
    position: absolute;
    bottom: 4vh;
    left: 20%;
+  opacity: 0;
 }
 .sticker {
   position: absolute;

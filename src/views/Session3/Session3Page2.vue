@@ -21,7 +21,8 @@
       </svg>
       <div class="bubble-text">Look at your friends face!</div>
     </div>
-    <div class="page-number" id="page-dark">72</div>
+    <audio src="../../assets/sounds/session3/Session3_Page2.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">70</div>
   </div>
 </template>
 
@@ -32,24 +33,36 @@ export default {
   name: "Session3Page2",
   methods: {
     animateText() {
+      let text = document.querySelector('.text-box').children
       let animation = anime.timeline({
         easing: 'linear',
         duration: 500,
-        delay: 500
       })
       animation
         .add({
           targets: ".text-box",
           opacity: 1,
-        })
+        }, 717)
+        .add({
+          targets: text[1],
+          opacity: 1,
+        }, 3033)
+        .add({
+          targets: text[2],
+          opacity: 1,
+        }, 5798)
         .add({
           targets: '.bubble-container',
           opacity: 0.9
-        })
-    }
+        }, 8293)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
     this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>
@@ -70,6 +83,7 @@ export default {
 .text-box p {
   font-size: 4vh;
   margin-bottom: 0;
+  opacity: 0;
 }
 .bubble-container {
   position: absolute;

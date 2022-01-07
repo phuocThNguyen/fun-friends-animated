@@ -24,7 +24,10 @@
       </svg>
       <div class="bubble-text">Share your ideas with a friend!</div>
     </div>
-    <div class="page-number" id="page-dark">77</div>
+    <audio src="../../assets/sounds/all/Good_Job.mp3" ref="goodJob"/>
+    <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
+    <audio src="../../assets/sounds/session3/Session3_Page7.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">75</div>
   </div>
 </template>
 
@@ -35,8 +38,8 @@ export default {
   name: "Session3Page7",
   methods: {
     animateText() {
+      let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({
-        delay: 500,
         duration: 500,
         easing: 'linear'
       })
@@ -44,20 +47,39 @@ export default {
         .add({
           targets: ".text-box",
           opacity: 1,
-        })
+        }, 808)
+        .add({
+          targets: text[1],
+          opacity: 1
+        }, 4756)
+        .add({
+          targets: text[2],
+          opacity: 1
+        }, 8966)
+        .add({
+          targets: text[3],
+          opacity: 1
+        }, 13067)
+        .add({
+          targets: text[4],
+          opacity: 1
+        }, 17792)
         .add({
           targets: '.bubble-container',
           opacity: 0.9
-        })
+        }, 21832)
         .add({
           targets: '.notice-box',
           opacity: 1,
-          delay: 2000
-        })
-    }
+        }, 25000)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
-    this.animateText()
+    this.animateText();
+    this.playVoiceOver();
   },
 }
 </script>
@@ -79,6 +101,7 @@ export default {
 .text-box p {
   font-size: 3.5vh;
   margin-bottom: 1.5vh;
+  opacity: 0;
 }
 .notice-box {
   position: absolute;

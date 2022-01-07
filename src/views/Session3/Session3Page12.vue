@@ -44,10 +44,9 @@
         </p>
       </div>
     </div>
-    <audio ref="audio" autoplay src="../../assets/sounds/session3/bubbles.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <div class="page-number" id="page-dark">82</div>
+    <audio ref="audio" autoplay src="../../assets/sounds/session3/bubbles.mp3"/>
+    <audio src="../../assets/sounds/session3/Session3_Page13.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">80</div>
   </div>
 </template>
 
@@ -60,51 +59,49 @@ export default {
     animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;
       let animation = anime.timeline({
-        delay: 500,
         duration: 500,
-
+        easing: 'linear'
       });
       animation
         .add({
           targets: '.text-box',
           opacity: 1,
-          easing: 'linear'
-        })
+        }, 500)
         .add({
           targets: text[0],
           opacity: 1,
-          easing: 'linear'
-        })
+        }, 927)
         .add({
           targets: text[1],
           opacity: 1,
-          easing: 'linear'
-        })
+        }, 4131)
         .add({
           targets: text[3],
           opacity: 1,
-          delay: 3000,
-          easing: 'linear'
-        })
+        }, 21096)
         .add({
           targets: '.star-container',
           opacity: 1,
-          easing: 'linear'
-        }, 7000)
+          duration: 1
+        }, 40300)
         .add({
           targets: '.star-container',
           scale: 14,
           delay: 0,
           duration: 1000,
-        })
+        }, 40326)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
-    }
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
     this.animateText();
-    this.setAudioVolumeLevel(0.4)
+    this.setAudioVolumeLevel(0.4);
+    this.playVoiceOver();
   }
 }
 </script>

@@ -1367,10 +1367,9 @@
       <img class="action-image" src="../../assets/images/session1/2749-resized.jpg" alt="happy-things">
       <img class="action-image" src="../../assets/images/session1/thank-you.jpg" alt="thank-you">
     </div>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <div class="page-number" id="page-light">69</div>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
+    <audio src="../../assets/sounds/session2/Session2_Page22.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">67</div>
   </div>
 </template>
 
@@ -1385,81 +1384,81 @@ export default {
       let images = document.querySelector('.image-container').children;
       let animation = anime.timeline({
         duration: 500,
-        delay: 2500,
         easing: 'linear'
       });
       animation
         .add({
           targets: ".text-box",
           opacity: 1,
-          delay: 500
-        })
+        }, 581)
         .add({
           targets: texts[1],
           opacity: 1,
-          delay: 500
-        })
+        }, 3238)
         .add({
           targets: images[0],
           opacity: 1,
-          delay: 500
-        }, 1000)
+        }, 3238)
         .add({
           targets: texts[2],
           opacity: 1,
-        })
+        }, 6119)
         .add({
           targets: images[1],
           opacity: 1,
-        }, 2000)
+        }, 6119)
         .add({
           targets: texts[3],
           opacity: 1,
-        })
+        }, 7639)
         .add({
           targets: images[2],
           opacity: 1,
-        }, 5000)
+        }, 7639)
         .add({
           targets: texts[4],
           opacity: 1,
-        })
+        }, 10359)
         .add({
           targets: images[3],
           opacity: 1,
-        }, 8000)
+        }, 10359)
         .add({
           targets: texts[5],
           opacity: 1,
-        })
+        }, 14102)
         .add({
           targets: images[4],
           opacity: 1,
-        }, 11000)
+        }, 14102)
         .add({
           targets: texts[6],
           opacity: 1,
-        })
+        }, 17570)
         .add({
           targets: images[5],
           opacity: 1,
-        }, 14000)
+        }, 17570)
         .add({
           targets: texts[7],
           opacity: 1,
-        })
+        }, 26630)
         .add({
           targets: images[6],
           opacity: 1,
-        }, 17000)
+        }, 26630)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
-    }
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
     this.animateText();
     this.setAudioVolumeLevel(0.3);
+    this.playVoiceOver();
   }
 }
 </script>

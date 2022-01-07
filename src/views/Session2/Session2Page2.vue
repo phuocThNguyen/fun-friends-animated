@@ -201,10 +201,9 @@
       We will also talk about how to make happy feelings GROW!</p>
     <p class="text" id="line-2">All feelings are OK!</p>
 
-    <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3">Your browser does not support the
-      <code>audio</code> element.
-    </audio>
-    <div class="page-number" id="page-light">49</div>
+    <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3"/>
+    <audio src="../../assets/sounds/session2/Session2_Page2.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">47</div>
   </div>
 </template>
 
@@ -258,27 +257,30 @@ export default {
     animateText() {
       let animation = anime.timeline({
         easing: 'linear',
-        duration: 1000,
-        delay: 500
+        duration: 500,
       });
       animation
         .add({
           targets: ".title",
           opacity: 1,
-        })
+        }, 954)
         .add({
           targets: "#line-1",
           color: '#000',
-        })
+        }, 3028)
         .add({
           targets: "#line-2",
           color: '#000'
-        })
+        }, 13233)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
     }
   },
   mounted() {
     this.animateSvg();
     this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>

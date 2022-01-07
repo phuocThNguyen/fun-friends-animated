@@ -23,7 +23,8 @@
       <div class="bubble-text">Share your ideas with a friend!</div>
     </div>
     <div class="notice-box">Helping others is great</div>
-    <div class="page-number" id="page-dark">79</div>
+    <audio src="../../assets/sounds/session3/Session3_Page9.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">77</div>
   </div>
 </template>
 
@@ -34,8 +35,8 @@ export default {
   name: "Session3Page9",
   methods: {
     animateText() {
+      let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({
-        delay: 500,
         duration: 500,
         easing: 'linear'
       })
@@ -43,20 +44,35 @@ export default {
         .add({
           targets: ".text-box",
           opacity: 1,
-        })
+        }, 500)
+        .add({
+          targets: text[0],
+          opacity: 1
+        }, 702)
+        .add({
+          targets: text[1],
+          opacity: 1
+        }, 6453)
+        .add({
+          targets: text[2],
+          opacity: 1
+        }, 10830)
         .add({
           targets: '.bubble-container',
-          opacity: 0.9
-        })
+          opacity: 0.9,
+        }, 13362)
         .add({
           targets: '.notice-box',
           opacity: 1,
-          delay: 2000
-        })
-    }
+        }, 16632)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
-    this.animateText()
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>
@@ -73,10 +89,10 @@ export default {
 }
 .text-box p {
   font-size: 4vh;
-  opacity: 1;
+  opacity: 0;
 }
 .text-box p:first-child {
-  margin-top: 2vh;
+  margin-top: 1vh;
 }
 .notice-box {
   position: absolute;

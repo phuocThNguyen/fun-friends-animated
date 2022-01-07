@@ -201,10 +201,9 @@
     <p class="text" id="line-2">One person acts out a feeling while everyone else tries to guess the feeling.
       Take turns making up stories to go with the feelings.</p>
 
-    <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3">Your browser does not support the
-      <code>audio</code> element.
-    </audio>
-    <div class="page-number" id="page-light">71</div>
+    <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3"/>
+    <audio src="../../assets/sounds/session3/Session3_Page1.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">69</div>
   </div>
 </template>
 
@@ -259,26 +258,29 @@ export default {
       let animation = anime.timeline({
         easing: 'linear',
         duration: 1000,
-        delay: 500
       });
       animation
         .add({
           targets: ".title",
           opacity: 1,
-        })
+        }, 5770)
         .add({
           targets: "#line-1",
           color: '#000',
-        })
+        }, 7733)
         .add({
           targets: "#line-2",
           color: '#000'
-        })
+        }, 13382)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
     },
   },
   mounted() {
     this.animateSvg();
     this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>

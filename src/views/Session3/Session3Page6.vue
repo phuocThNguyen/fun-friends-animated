@@ -222,16 +222,13 @@
       </g>
     </svg>
 
-    <audio ref="correct" src="../../assets/sounds/all/correct-ans.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <audio ref="wrong" src="../../assets/sounds/all/wrong-ans.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <div class="page-number" id="page-dark">76</div>
+    <audio ref="correct" src="../../assets/sounds/all/correct-ans.mp3"/>
+    <audio ref="wrong" src="../../assets/sounds/all/wrong-ans.mp3"/>
+    <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3"/>
+    <audio src="../../assets/sounds/all/Awesome.mp3" ref="awesome"/>
+    <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
+    <audio src="../../assets/sounds/session3/Session3_Page6.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">74</div>
   </div>
 </template>
 
@@ -270,6 +267,7 @@ export default {
         ]
       })
       this.$refs.wrong.play();
+      setTimeout(() => {this.$refs.goodTry.play()}, 500)
     },
     animateGreenTick(target) {
       anime({
@@ -297,6 +295,7 @@ export default {
             duration: 1000,
           })
           this.$refs.celebrate.play();
+          setTimeout(() => {this.$refs.awesome.play()}, 500)
         }
       }
     },
@@ -322,17 +321,27 @@ export default {
       }
     },
     animateText() {
-      anime({
-        targets: '.content-container',
-        opacity: 1,
+      let animation = anime.timeline({
+        duration: 500,
         easing: 'linear',
-        delay: 700,
-        duration: 700
       })
-    }
+      animation
+        .add({
+          targets: '#girl',
+          opacity: 1
+        }, 659)
+        .add({
+          targets: '#dog',
+          opacity: 1
+        }, 8420)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
     this.animateText();
+    this.playVoiceOver();
   },
 }
 </script>
