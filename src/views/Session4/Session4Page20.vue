@@ -23,8 +23,9 @@
       </svg>
       <div class="bubble-text">Share your ideas with others!</div>
     </div>
-    <audio ref="audio" loop autoplay src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3"></audio>
-    <div class="page-number" id="page-dark">106</div>
+    <audio ref="audio" loop autoplay src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
+    <audio src="../../assets/sounds/session4/Session4_Page20.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">104</div>
   </div>
 </template>
 
@@ -33,30 +34,38 @@ import anime from "animejs";
 
 export default {
   name: 'Session4Page20',
+  methods: {
+    animateElements() {
+      let text = document.getElementsByClassName('text-box')[0].children;
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 500,
+      });
+      animation
+        .add({
+          targets: '.text-box',
+          opacity: 1,
+        }, 986)
+        .add({
+          targets: text[1],
+          opacity: 1,
+        }, 6370)
+        .add({
+          targets: '.bubble-container',
+          opacity: 0.9,
+        }, 20504)
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    let text = document.getElementsByClassName('text-box')[0].children;
-    let animation = anime.timeline({
-      easing: 'linear',
-      delay: 2000,
-      duration: 500,
-    });
-    animation
-      .add({
-        targets: '.text-box',
-        opacity: 1,
-        delay: 1000
-      })
-      .add({
-        targets: text[1],
-        opacity: 1,
-        delay: 1000
-      })
-      .add({
-        targets: '.bubble-container',
-        opacity: 0.9,
-        delay: 1000
-      })
-    this.$refs.audio.volume = 0.4
+    this.animateElements();
+    this.setAudioVolumeLevel(0.4);
+    this.playVoiceOver();
   }
 }
 </script>

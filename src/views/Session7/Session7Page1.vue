@@ -199,13 +199,14 @@
     <p class="title"><span id="letter-f">E</span>xplore</p>
     <p class="text" id="line-1">
       Today we are going to keep exploring ways to be BRAVE.
-      <br>We can break hard things down into many easier steps.
+    </p>
+    <p class="text" id="line-2">
+      We can break hard things down into many easier steps.
     </p>
 
-    <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3">
-      Your browser does not support the<code>audio</code> element.
-    </audio>
-    <div class="page-number" id="page-light">138</div>
+    <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3"/>
+    <audio src="../../assets/sounds/session7/Session7_Page1.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">137</div>
   </div>
 </template>
 
@@ -214,63 +215,77 @@ import anime from "animejs";
 
 export default {
   name: "Session7Page1",
+  methods: {
+    animateSvg() {
+      let vw = document.querySelector('.interactive-container').clientWidth;
+
+      anime({
+        targets: this.$refs.cloud1,
+        translateX: vw + 0.4*vw,
+        duration: 50000,
+        loop: true,
+        easing: 'linear'
+      })
+      anime({
+        targets: this.$refs.smallCloud,
+        translateX: -(vw + 0.4*vw),
+        duration: 40000,
+        direction: 'alternate',
+        loop: true,
+        easing: 'linear'
+      })
+      anime({
+        targets: this.$refs.sun,
+        rotate: '360deg',
+        duration: 5000,
+        easing: 'steps(10)',
+        loop: true,
+      })
+
+      anime({
+        targets: '.bird-1',
+        translateX: vw + 0.2*vw,
+        easing: 'linear',
+        duration: 10000,
+        loop: true
+      });
+
+      anime({
+        targets: '.bird-2',
+        translateX: -(vw + 0.2*vw),
+        easing: 'linear',
+        duration: 10000,
+        delay: 2000,
+        loop: true
+      })
+    },
+    animateText() {
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 500
+      });
+      animation
+        .add({
+          targets: ".title",
+          opacity: 1,
+        }, 7196)
+        .add({
+          targets: "#line-1",
+          opacity: 1,
+        }, 9564)
+        .add({
+          targets: "#line-2",
+          opacity: 1,
+        }, 15122)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    let vw = document.querySelector('.interactive-container').clientWidth;
-
-    anime({
-      targets: this.$refs.cloud1,
-      translateX: vw + 0.4*vw,
-      duration: 50000,
-      loop: true,
-      easing: 'linear'
-    })
-    anime({
-      targets: this.$refs.smallCloud,
-      translateX: -(vw + 0.4*vw),
-      duration: 40000,
-      direction: 'alternate',
-      loop: true,
-      easing: 'linear'
-    })
-    anime({
-      targets: this.$refs.sun,
-      rotate: '360deg',
-      duration: 5000,
-      easing: 'steps(10)',
-      loop: true,
-    })
-
-    anime({
-      targets: '.bird-1',
-      translateX: vw + 0.2*vw,
-      easing: 'linear',
-      duration: 10000,
-      loop: true
-    });
-
-    anime({
-      targets: '.bird-2',
-      translateX: -(vw + 0.2*vw),
-      easing: 'linear',
-      duration: 10000,
-      delay: 2000,
-      loop: true
-    })
-
-    let animation = anime.timeline({
-      easing: 'linear',
-      duration: 1000,
-      delay: 500
-    });
-    animation
-      .add({
-        targets: ".title",
-        opacity: 1,
-      })
-      .add({
-        targets: "#line-1",
-        opacity: 1,
-      })
+    this.animateSvg();
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>
@@ -301,6 +316,11 @@ export default {
   text-align: center;
   width: 100%;
   top: 44vh;
+}
+#line-2 {
+  text-align: center;
+  width: 100%;
+  top: 52vh;
 }
 span {
   display: inline-block;

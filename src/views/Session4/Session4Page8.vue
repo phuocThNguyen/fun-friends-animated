@@ -4,7 +4,8 @@
     <div class="text-box">
       Art is relaxing
     </div>
-    <div class="page-number" id="page-light">94</div>
+    <audio src="../../assets/sounds/session4/Session4_Page8.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">92</div>
   </div>
 </template>
 
@@ -13,14 +14,23 @@ import anime from "animejs";
 
 export default {
   name: "Session4Page8",
+  methods: {
+    animateElements() {
+      anime({
+        targets: '.text-box',
+        delay: 500,
+        duration: 500,
+        easing: 'linear',
+        opacity: 1
+      });
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    anime({
-      targets: '.text-box',
-      delay: 700,
-      duration: 700,
-      easing: 'linear',
-      opacity: 1
-    })
+    this.animateElements();
+    this.playVoiceOver();
   }
 }
 </script>

@@ -815,8 +815,9 @@
       <img class="action-image" src="../../assets/images/session1/2749-resized.jpg" alt="happy-things">
       <img class="action-image" src="../../assets/images/session1/thank-you.jpg" alt="thank-you">
     </div>
-    <audio autoplay loop src="../../assets/sounds/session1/Falling-Snow-Sound-Effect-Amplified.mp3"></audio>
-    <div class="page-number" id="page-light">126</div>
+    <audio autoplay loop src="../../assets/sounds/session1/Falling-Snow-Sound-Effect-Amplified.mp3"/>
+    <audio src="../../assets/sounds/session5/Session5_Page17.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">124</div>
   </div>
 </template>
 
@@ -825,97 +826,105 @@ import anime from "animejs";
 
 export default {
   name: 'Session5Page16',
+  methods: {
+    animateSvg() {
+      let snowArray = [];
+      let vh = window.innerHeight;
+      let snowGroups = document.getElementsByClassName('snow');
+      snowGroups.forEach(snowGroup => {
+        snowArray.push(...snowGroup.children)
+      })
+      let probability = 0.1;
+      snowArray.forEach(snowFlake => {
+        if (Math.random() < probability) {
+          anime({
+            targets: snowFlake,
+            translateY: Math.floor(Math.random() * 0.1 * vh) + 0.2 * vh,
+            opacity: 0,
+            duration: Math.floor(Math.random() * 2000) + 1000,
+            loop: true,
+            easing: 'linear'
+          })
+        }
+      })
+    },
+    animateText() {
+      let texts = document.querySelector('.text-box').children;
+      let images = document.querySelector('.image-container').children;
+      let animation = anime.timeline({
+        duration: 500,
+        easing: 'linear'
+      });
+      animation
+        .add({
+          targets: ".text-box",
+          opacity: 1,
+        }, 570)
+        .add({
+          targets: texts[1],
+          opacity: 1,
+        }, 3238)
+        .add({
+          targets: images[0],
+          opacity: 1,
+        }, 3238)
+        .add({
+          targets: texts[2],
+          opacity: 1,
+        }, 6128)
+        .add({
+          targets: images[1],
+          opacity: 1,
+        }, 6128)
+        .add({
+          targets: texts[3],
+          opacity: 1,
+        }, 7609)
+        .add({
+          targets: images[2],
+          opacity: 1,
+        }, 7609)
+        .add({
+          targets: texts[4],
+          opacity: 1,
+        }, 10307)
+        .add({
+          targets: images[3],
+          opacity: 1,
+        }, 10307)
+        .add({
+          targets: texts[5],
+          opacity: 1,
+        }, 14129)
+        .add({
+          targets: images[4],
+          opacity: 1,
+        }, 14129)
+        .add({
+          targets: texts[6],
+          opacity: 1,
+        }, 17570)
+        .add({
+          targets: images[5],
+          opacity: 1,
+        }, 17570)
+        .add({
+          targets: texts[7],
+          opacity: 1,
+        }, 26647)
+        .add({
+          targets: images[6],
+          opacity: 1,
+        }, 26647);
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    let snowArray = [];
-    let vh = window.innerHeight;
-    let snowGroups = document.getElementsByClassName('snow');
-    snowGroups.forEach(snowGroup => {
-      snowArray.push(...snowGroup.children)
-    })
-    let probability = 0.1;
-    snowArray.forEach(snowFlake => {
-      if (Math.random() < probability) {
-        anime({
-          targets: snowFlake,
-          translateY: Math.floor(Math.random() * 0.1 * vh) + 0.2 * vh,
-          opacity: 0,
-          duration: Math.floor(Math.random() * 2000) + 1000,
-          loop: true,
-          easing: 'linear'
-        })
-      }
-    })
-    let texts = document.querySelector('.text-box').children;
-    let images = document.querySelector('.image-container').children;
-    let animation = anime.timeline({
-      duration: 500,
-      delay: 2500,
-      easing: 'linear'
-    });
-    animation
-      .add({
-        targets: ".text-box",
-        opacity: 1,
-        delay: 500
-      })
-      .add({
-        targets: texts[1],
-        opacity: 1,
-        delay: 500
-      })
-      .add({
-        targets: images[0],
-        opacity: 1,
-        delay: 500
-      }, 1000)
-      .add({
-        targets: texts[2],
-        opacity: 1,
-      })
-      .add({
-        targets: images[1],
-        opacity: 1,
-      }, 2000)
-      .add({
-        targets: texts[3],
-        opacity: 1,
-      })
-      .add({
-        targets: images[2],
-        opacity: 1,
-      }, 5000)
-      .add({
-        targets: texts[4],
-        opacity: 1,
-      })
-      .add({
-        targets: images[3],
-        opacity: 1,
-      }, 8000)
-      .add({
-        targets: texts[5],
-        opacity: 1,
-      })
-      .add({
-        targets: images[4],
-        opacity: 1,
-      }, 11000)
-      .add({
-        targets: texts[6],
-        opacity: 1,
-      })
-      .add({
-        targets: images[5],
-        opacity: 1,
-      }, 14000)
-      .add({
-        targets: texts[7],
-        opacity: 1,
-      })
-      .add({
-        targets: images[6],
-        opacity: 1,
-      }, 17000)
+    this.animateSvg();
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>

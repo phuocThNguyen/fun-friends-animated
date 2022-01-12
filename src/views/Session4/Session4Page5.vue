@@ -5,7 +5,8 @@
     <div class="text-box">
       <h1>What are these children doing to relax and calm down?</h1>
     </div>
-    <div class="page-number" id="page-light">91</div>
+    <audio src="../../assets/sounds/session4/Session4_Page5.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">89</div>
   </div>
 </template>
 
@@ -14,22 +15,31 @@ import anime from "animejs";
 
 export default {
   name: 'Session4Page5',
+  methods: {
+    animateElements() {
+      let images = document.getElementsByClassName('images');
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 500,
+        delay: 500
+      });
+      animation
+        .add({
+          targets: images[0],
+          opacity: 1
+        })
+        .add({
+          targets: images[1],
+          opacity: 1
+        });
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    let images = document.getElementsByClassName('images');
-    let animation = anime.timeline({
-      easing: 'linear',
-      delay: 700,
-      duration: 700,
-    });
-    animation
-    .add({
-      targets: images[0],
-      opacity: 1
-    })
-    .add({
-      targets: images[1],
-      opacity: 1
-    })
+    this.animateElements();
+    this.playVoiceOver();
   }
 }
 </script>

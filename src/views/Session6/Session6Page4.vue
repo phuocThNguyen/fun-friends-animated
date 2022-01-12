@@ -134,7 +134,8 @@
         </g>
       </g>
     </svg>
-    <div class="page-number" id="page-light">130</div>
+    <audio src="../../assets/sounds/session6/Session6_Page4.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">129</div>
   </div>
 </template>
 
@@ -143,43 +144,50 @@ import anime from "animejs";
 
 export default {
   name: 'Session6Page4',
+  methods: {
+    animateText() {
+      let text = document.getElementsByClassName('text-box')[0].children;
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 500
+      })
+      animation
+        .add({
+          targets: text[1],
+          opacity: 1
+        }, 5541)
+        .add({
+          targets: text[2],
+          opacity: 1
+        }, 11000)
+        .add({
+          targets: '#top',
+          opacity: 1
+        }, 11500)
+        .add({
+          targets: text[3],
+          opacity: 1
+        }, 16306)
+        .add({
+          targets: '#bottom',
+          opacity: 1
+        }, 16900)
+        .add({
+          targets: '.bubble-container',
+          opacity: 0.9
+        }, 20500)
+        .add({
+          targets: text[4],
+          opacity: 1,
+        }, 23251);
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    let text = document.getElementsByClassName('text-box')[0].children;
-    let animation = anime.timeline({
-      easing: 'linear',
-      delay: 500,
-      duration: 500
-    })
-    animation
-      .add({
-        targets: text[1],
-        opacity: 1
-      })
-      .add({
-        targets: text[2],
-        opacity: 1
-      })
-      .add({
-        targets: '#top',
-        opacity: 1
-      }, 1000)
-      .add({
-        targets: text[3],
-        opacity: 1
-      })
-      .add({
-        targets: '#bottom',
-        opacity: 1
-      }, 2000)
-      .add({
-        targets: '.bubble-container',
-        opacity: 0.9
-      })
-      .add({
-        targets: text[4],
-        opacity: 1,
-        delay: 2000
-      })
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>

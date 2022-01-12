@@ -824,7 +824,8 @@
         tree. What are your step plans for climbing the tree in your park?
         Teach a friend the steps and let them teach you.</p>
     </div>
-    <div class="page-number" id="page-dark">148</div>
+    <audio src="../../assets/sounds/session7/Session7_Page11.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">147</div>
   </div>
 </template>
 
@@ -841,6 +842,12 @@ export default {
         isPicture: false,
       }
     }
+  },
+  methods: {
+    animateSvg() {},
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
     let vw = document.querySelector('.interactive-container').clientWidth;
@@ -901,6 +908,7 @@ export default {
       easing: 'easeInOutSine',
       loop: true
     })
+    this.playVoiceOver();
   },
 }
 </script>

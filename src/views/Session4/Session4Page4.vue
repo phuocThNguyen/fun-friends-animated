@@ -6,14 +6,15 @@
     <p class="position-absolute text">Head hurts</p>
     <p class="position-absolute text">Sweaty</p>
     <p class="position-absolute text">Butterflies in tummy</p>
-    <p class="position-absolute text">Breathing fast</p>
+    <p class="position-absolute text">Fast breathing</p>
     <p class="position-absolute text">Dizzy</p>
     <p class="position-absolute text">Crying</p>
     <p class="position-absolute text">Red Face</p>
     <p class="position-absolute text">Knee shaking</p>
     <p class="position-absolute text">Toilet please!</p>
-    <audio ref="swoosh" src="../../assets/sounds/session4/swoosh9.mp3"></audio>
-    <div class="page-number" id="page-dark">90</div>
+    <audio ref="swoosh" src="../../assets/sounds/session4/swoosh9.mp3"/>
+    <audio src="../../assets/sounds/session4/Session4_Page4.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">88</div>
   </div>
 </template>
 
@@ -22,59 +23,75 @@ import anime from "animejs";
 
 export default {
   name: 'Session4Page4',
+  methods: {
+    animateText() {
+      let text = document.getElementsByClassName('text');
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 400
+      });
+      animation
+        .add({
+          targets: text[0],
+          opacity: 1,
+        }, 2565)
+        .add({
+          targets: text[1],
+          opacity: 1
+        }, 4265)
+        .add({
+          targets: text[2],
+          opacity: 1
+        }, 6101)
+        .add({
+          targets: text[3],
+          opacity: 1
+        }, 7544)
+        .add({
+          targets: text[4],
+          opacity: 1
+        }, 10032)
+        .add({
+          targets: text[5],
+          opacity: 1
+        }, 12690)
+        .add({
+          targets: text[6],
+          opacity: 1
+        }, 13939)
+        .add({
+          targets: text[7],
+          opacity: 1
+        }, 15400)
+        .add({
+          targets: text[8],
+          opacity: 1
+        }, 17018)
+        .add({
+          targets: text[9],
+          opacity: 1
+        }, 18688);
+    },
+    playSoundEffect() {
+      setTimeout(() => {this.$refs.swoosh.play()}, 2565);
+      setTimeout(() => {this.$refs.swoosh.play()}, 4265);
+      setTimeout(() => {this.$refs.swoosh.play()}, 6101);
+      setTimeout(() => {this.$refs.swoosh.play()}, 7544);
+      setTimeout(() => {this.$refs.swoosh.play()}, 10032);
+      setTimeout(() => {this.$refs.swoosh.play()}, 12690);
+      setTimeout(() => {this.$refs.swoosh.play()}, 13939);
+      setTimeout(() => {this.$refs.swoosh.play()}, 15400);
+      setTimeout(() => {this.$refs.swoosh.play()}, 17018);
+      setTimeout(() => {this.$refs.swoosh.play()}, 18688);
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    let text = document.getElementsByClassName('text');
-    let animation = anime.timeline({
-      easing: 'linear',
-      delay: 400,
-      duration: 400
-    });
-    for (let i = 0; i < 10; i++) {
-      setTimeout(() => {
-        this.$refs.swoosh.play();
-      }, 400 + i * 800)
-    }
-    animation
-      .add({
-        targets: text[0],
-        opacity: 1,
-      })
-      .add({
-        targets: text[1],
-        opacity: 1
-      })
-      .add({
-        targets: text[2],
-        opacity: 1
-      })
-      .add({
-        targets: text[3],
-        opacity: 1
-      })
-      .add({
-        targets: text[4],
-        opacity: 1
-      })
-      .add({
-        targets: text[5],
-        opacity: 1
-      })
-      .add({
-        targets: text[6],
-        opacity: 1
-      })
-      .add({
-        targets: text[7],
-        opacity: 1
-      })
-      .add({
-        targets: text[8],
-        opacity: 1
-      })
-      .add({
-        targets: text[9],
-        opacity: 1
-      })
+    this.animateText();
+    this.playSoundEffect();
+    this.playVoiceOver();
   }
 }
 </script>

@@ -8,7 +8,8 @@
       <h1>1. Hearing</h1>
       <p>We listen with our ears. What can we hear?</p>
     </div>
-    <div class="page-number" id="page-light">99</div>
+    <audio src="../../assets/sounds/session4/Session4_Page13.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">97</div>
   </div>
 </template>
 
@@ -17,14 +18,23 @@ import anime from "animejs";
 
 export default {
   name: 'Session4Page13',
+  methods: {
+    animateElements() {
+      anime({
+        targets: '.text-box',
+        opacity: 1,
+        duration: 500,
+        delay: 6165,
+        easing: 'linear',
+      });
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    anime({
-      targets: '.text-box',
-      opacity: 1,
-      duration: 700,
-      delay: 700,
-      easing: 'linear'
-    })
+    this.animateElements();
+    this.playVoiceOver();
   }
 }
 </script>

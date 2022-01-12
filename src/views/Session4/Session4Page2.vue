@@ -466,8 +466,14 @@
         </g>
       </g>
     </svg>
-    <audio ref="heartBeat" src="../../assets/sounds/session4/heart-beat.mp3"></audio>
-    <div class="page-number" id="page-dark">88</div>
+    <audio ref="heartBeat" src="../../assets/sounds/session4/heart-beat.mp3"/>
+    <audio src="../../assets/sounds/session4/Session4_Page2_init.mp3" ref="voice1"/>
+    <audio src="../../assets/sounds/session4/Session4_Page2_TapHere.mp3" ref="voice2"/>
+    <audio src="../../assets/sounds/session4/Session4_Page2_heart.mp3" ref="voice3"/>
+    <audio src="../../assets/sounds/session4/Session4_Page2_butterfly.mp3" ref="voice4"/>
+    <audio src="../../assets/sounds/session4/Session4_Page2_redFace.mp3" ref="voice5"/>
+    <audio src="../../assets/sounds/session4/Session4_Page2_MyBody.mp3" ref="voice6"/>
+    <div class="page-number" id="page-dark">86</div>
   </div>
 </template>
 
@@ -488,33 +494,32 @@ export default {
   methods: {
     animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;
-      let textspan = document.querySelectorAll('.text')[0];
+      let textSpan = document.querySelectorAll('.text');
       let animation = anime.timeline({
         easing: 'linear',
-        duration: 700,
-        delay: 700
+        duration: 500,
       });
       animation
         .add({
           targets: text[1],
           opacity: 1
-        })
+        }, 2150)
         .add({
           targets: text[2],
           opacity: 1
-        })
+        }, 5192)
         .add({
           targets: text[3],
           opacity: 1
-        })
+        }, 7800)
         .add({
-          targets: textspan,
+          targets: textSpan[0],
           color: '#000'
-        }, 2800)
+        }, 7832)
         .add({
           targets: '.instruction-container',
           opacity: 1
-        })
+        }, 12000)
     },
     animateHeartBeat() {
       document.querySelector('.heart').style.opacity = '1';
@@ -645,6 +650,7 @@ export default {
         easing: 'linear'
       });
       this.$refs.heartBeat.play();
+      setTimeout(() => {this.$refs.voice3.play()}, 500)
       this.changeCoord(id)
     },
     displayButterfly(id) {
@@ -657,6 +663,7 @@ export default {
         duration: 700,
         easing: 'linear'
       });
+      setTimeout(() => {this.$refs.voice4.play()}, 500)
       this.changeCoord(id)
     },
     displayDroplet(id) {
@@ -669,26 +676,37 @@ export default {
         duration: 700,
         easing: 'linear'
       })
+      setTimeout(() => {this.$refs.voice5.play()}, 500)
       this.changeCoord(id)
-    }
+    },
+    afterFinishFunctions() {
+      document.querySelector('.instruction-container').style.visibility = 'hidden';
+      setTimeout(() => {
+        anime({
+          targets: '#prompt',
+          duration: 500,
+          opacity: 1,
+          easing: 'linear'
+        });
+        this.$refs.voice6.play()
+      }, 5000)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice1.play()}, 500)
+      setTimeout(() => {this.$refs.voice2.play()}, 12000)
+    },
   },
   watch: {
     coordsArray: function () {
       if (this.coordsArray.length === 0) {
-        document.querySelector('.instruction-container').style.visibility = 'hidden';
-        anime({
-          targets: '#prompt',
-          delay: 500,
-          duration: 500,
-          opacity: 1,
-          easing: 'linear'
-        })
+        this.afterFinishFunctions();
       }
     }
   },
   mounted() {
     this.animateText();
     this.animatePointer();
+    this.playVoiceOver();
   }
 }
 </script>

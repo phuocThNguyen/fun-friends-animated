@@ -123,7 +123,8 @@
         </g>
       </g>
     </svg>
-    <div class="page-number" id="page-light">129</div>
+    <audio src="../../assets/sounds/session6/Session6_Page3.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">128</div>
   </div>
 </template>
 
@@ -132,43 +133,50 @@ import anime from "animejs";
 
 export default {
   name: 'Session6Page3',
+  methods: {
+    animateElements() {
+      let text = document.getElementsByClassName('text-box')[0].children;
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 500,
+      })
+      animation
+        .add({
+          targets: text[1],
+          opacity: 1
+        }, 5819)
+        .add({
+          targets: text[2],
+          opacity: 1
+        }, 10900)
+        .add({
+          targets: '#top',
+          opacity: 1
+        }, 16844)
+        .add({
+          targets: '#bottom',
+          opacity: 1
+        }, 18039)
+        .add({
+          targets: text[3],
+          opacity: 1
+        }, 19678)
+        .add({
+          targets: text[4],
+          opacity: 1
+        }, 25230)
+        .add({
+          targets: text[5],
+          opacity: 1,
+        }, 31264)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    let text = document.getElementsByClassName('text-box')[0].children;
-    let animation = anime.timeline({
-      easing: 'linear',
-      delay: 500,
-      duration: 500
-    })
-    animation
-      .add({
-        targets: text[1],
-        opacity: 1
-      })
-      .add({
-        targets: text[2],
-        opacity: 1
-      })
-      .add({
-        targets: '#top',
-        opacity: 1
-    }, 500*2)
-      .add({
-        targets: '#bottom',
-        opacity: 1
-      }, 500*2)
-      .add({
-        targets: text[3],
-        opacity: 1
-      })
-      .add({
-        targets: text[4],
-        opacity: 1
-      })
-      .add({
-        targets: text[5],
-        opacity: 1,
-        delay: 2000
-      })
+    this.animateElements();
+    this.playVoiceOver();
   }
 }
 </script>

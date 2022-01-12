@@ -5,7 +5,8 @@
       <h1>4. Taste</h1>
       <p>We taste with our tongues. What can we taste?</p>
     </div>
-    <div class="page-number" id="page-dark">102</div>
+    <audio src="../../assets/sounds/session4/Session4_Page16.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">100</div>
   </div>
 </template>
 
@@ -14,14 +15,23 @@ import anime from "animejs";
 
 export default {
   name: 'Session4Page16',
+  methods: {
+    animateElements() {
+      anime({
+        targets: '.text-box',
+        opacity: 1,
+        duration: 500,
+        delay: 500,
+        easing: 'linear'
+      });
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    anime({
-      targets: '.text-box',
-      opacity: 1,
-      duration: 700,
-      delay: 700,
-      easing: 'linear'
-    })
+    this.animateElements();
+    this.playVoiceOver();
   }
 }
 </script>

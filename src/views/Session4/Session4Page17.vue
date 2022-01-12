@@ -5,7 +5,8 @@
       <h1>5. Touch</h1>
       <p>We feel with our skin. What can we feel?</p>
     </div>
-    <div class="page-number" id="page-dark">103</div>
+    <audio src="../../assets/sounds/session4/Session4_Page17.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">101</div>
   </div>
 </template>
 
@@ -14,14 +15,23 @@ import anime from "animejs";
 
 export default {
   name: 'Session4Page17',
+  methods: {
+    animateElements() {
+      anime({
+        targets: '.text-box',
+        opacity: 1,
+        duration: 500,
+        delay: 500,
+        easing: 'linear'
+      });
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    anime({
-      targets: '.text-box',
-      opacity: 1,
-      duration: 700,
-      delay: 700,
-      easing: 'linear'
-    })
+    this.animateElements();
+    this.playVoiceOver();
   }
 }
 </script>

@@ -8,7 +8,8 @@
     </div>
     <div class="light-box" id="red">Red thought</div>
     <div class="light-box" id="green">Green thought</div>
-    <div class="page-number" id="page-dark">112</div>
+    <audio src="../../assets/sounds/session5/Session5_Page2.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">110</div>
   </div>
 </template>
 
@@ -17,36 +18,42 @@ import anime from "animejs";
 
 export default {
   name: 'Session5Page2',
+  methods: {
+    animateText() {
+      let text = document.getElementsByClassName('text-box')[0].children;
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 500
+      })
+      animation
+        .add({
+          targets: '.text-box',
+          opacity: 1,
+        }, 821)
+        .add({
+          targets: text[1],
+          opacity: 1
+        }, 3621)
+        .add({
+          targets: '#red',
+          opacity: 1
+        }, 3621)
+        .add({
+          targets: text[2],
+          opacity: 1
+        }, 9631)
+        .add({
+          targets: '#green',
+          opacity: 1
+        }, 9631)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    let text = document.getElementsByClassName('text-box')[0].children;
-    let animation = anime.timeline({
-      easing: 'linear',
-      delay: 1000,
-      duration: 700
-    })
-    animation
-      .add({
-        targets: '.text-box',
-        opacity: 1,
-        delay: 700,
-        duration: 700
-      })
-      .add({
-        targets: text[1],
-        opacity: 1
-      })
-      .add({
-        targets: '#red',
-        opacity: 1
-      }, 1400)
-      .add({
-        targets: text[2],
-        opacity: 1
-      })
-      .add({
-        targets: '#green',
-        opacity: 1
-      }, 3100)
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>

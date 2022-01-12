@@ -218,13 +218,35 @@
       <p>Start on the bottom step, climbing slowly to the top.</p>
       <p>It can be easy when we break it into small steps.</p>
     </div>
-    <div class="page-number" id="page-dark">146</div>
+    <audio src="../../assets/sounds/session7/Session7_Page9.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">145</div>
   </div>
 </template>
 
 <script>
+import anime from "animejs";
+
 export default {
   name: 'Session7Page9',
+  methods: {
+    animateElements() {
+      let text = document.querySelector('.text-box').children;
+      let animation = anime.timeline({duration: 500, easing: 'linear'})
+      animation
+        .add({targets: '.text-box',opacity: 1}, 200)
+        .add({targets: text[0],opacity: 1}, 500)
+        .add({targets: text[1],opacity: 1}, 8500)
+        .add({targets: text[2],opacity: 1}, 11800)
+        .add({targets: text[3],opacity: 1}, 16500)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
+  mounted() {
+    this.animateElements();
+    this.playVoiceOver();
+  }
 }
 </script>
 
@@ -243,6 +265,10 @@ export default {
   left: 7%;
   top: 20vh;
   font-size: 5vh;
+  opacity: 0;
+}
+.text-box p {
+  opacity: 0;
 }
 .text-box p:last-child {
   margin-bottom: 0;

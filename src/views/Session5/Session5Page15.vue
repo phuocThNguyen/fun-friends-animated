@@ -812,8 +812,9 @@
       <p>&middot; Try your best and give it a go. </p>
       <p>&middot; Believe in yourself.</p>
     </div>
-    <audio autoplay loop src="../../assets/sounds/session1/Falling-Snow-Sound-Effect-Amplified.mp3"></audio>
-    <div class="page-number" id="page-light">125</div>
+    <audio autoplay loop src="../../assets/sounds/session1/Falling-Snow-Sound-Effect-Amplified.mp3"/>
+    <audio src="../../assets/sounds/session5/Session5_Page16.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">123</div>
   </div>
 </template>
 
@@ -822,77 +823,80 @@ import anime from "animejs";
 
 export default {
   name: 'Session5Page15',
+  methods: {
+    animateSvg() {
+      let snowArray = [];
+      let vh = window.innerHeight;
+      let snowGroups = document.getElementsByClassName('snow');
+      snowGroups.forEach(snowGroup => {
+        snowArray.push(...snowGroup.children)
+      })
+      let probability = 0.2;
+      snowArray.forEach(snowFlake => {
+        if (Math.random() < probability) {
+          anime({
+            targets: snowFlake,
+            translateY: Math.floor(Math.random() * 0.1 * vh) + 0.2 * vh,
+            opacity: 0,
+            duration: Math.floor(Math.random() * 2000) + 1000,
+            loop: true,
+            easing: 'linear'
+          })
+        }
+      })
+    },
+    animateText() {
+      let text = document.querySelector('.text-box').children;
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 500,
+      })
+      animation
+        .add({
+          targets: ".text-box",
+          opacity: 1,
+        }, 618)
+        .add({
+          targets: text[1],
+          opacity: 1,
+        }, 2806)
+        .add({
+          targets: text[2],
+          opacity: 1,
+        }, 11180)
+        .add({
+          targets: text[3],
+          opacity: 1,
+        }, 15553)
+        .add({
+          targets: text[4],
+          opacity: 1,
+        }, 25582)
+        .add({
+          targets: text[5],
+          opacity: 1,
+        }, 27933)
+        .add({
+          targets: text[6],
+          opacity: 1,
+        }, 31340)
+        .add({
+          targets: text[7],
+          opacity: 1,
+        }, 35146)
+        .add({
+          targets: text[8],
+          opacity: 1,
+        }, 38074)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    let snowArray = [];
-    let vh = window.innerHeight;
-    let snowGroups = document.getElementsByClassName('snow');
-    snowGroups.forEach(snowGroup => {
-      snowArray.push(...snowGroup.children)
-    })
-    let probability = 0.2;
-    snowArray.forEach(snowFlake => {
-      if (Math.random() < probability) {
-        anime({
-          targets: snowFlake,
-          translateY: Math.floor(Math.random() * 0.1 * vh) + 0.2 * vh,
-          opacity: 0,
-          duration: Math.floor(Math.random() * 2000) + 1000,
-          loop: true,
-          easing: 'linear'
-        })
-      }
-    })
-    let text = document.querySelector('.text-box').children;
-    let animation = anime.timeline({
-      easing: 'linear',
-      duration: 500,
-    })
-    animation
-      .add({
-        targets: ".text-box",
-        opacity: 1,
-        delay: 1000,
-      })
-      .add({
-        targets: text[1],
-        opacity: 1,
-        delay: 500
-      })
-      .add({
-        targets: text[2],
-        opacity: 1,
-        delay: 2500
-      })
-      .add({
-        targets: text[3],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[4],
-        opacity: 1,
-        delay: 3500
-      })
-      .add({
-        targets: text[5],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[6],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[7],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[8],
-        opacity: 1,
-        delay: 1500
-      })
+    this.animateSvg();
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>

@@ -139,7 +139,8 @@
         </g>
       </g>
     </svg>
-    <div class="page-number" id="page-light">128</div>
+    <audio src="../../assets/sounds/session6/Session6_Page2.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">127</div>
   </div>
 </template>
 
@@ -148,46 +149,54 @@ import anime from "animejs";
 
 export default {
   name: 'Session6Page2',
+  methods: {
+    animateElements() {
+      let text = document.getElementsByClassName('text-box')[0].children;
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 500
+      })
+      animation
+        .add({
+          targets: text[1],
+          opacity: 1
+        }, 5673)
+        .add({
+          targets: text[2],
+          opacity: 1
+        }, 8739)
+        .add({
+          targets: '#top',
+          opacity: 1
+        }, 8739)
+        .add({
+          targets: text[3],
+          opacity: 1
+        }, 16833)
+        .add({
+          targets: '#bottom',
+          opacity: 1
+        }, 16833)
+        .add({
+          targets: text[4],
+          opacity: 1
+        }, 29056)
+        .add({
+          targets: text[5],
+          opacity: 1
+        }, 33943)
+        .add({
+          targets: '.bubble-container',
+          opacity: 0.9
+        }, 38263)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    let text = document.getElementsByClassName('text-box')[0].children;
-    let animation = anime.timeline({
-      easing: 'linear',
-      delay: 500,
-      duration: 500
-    })
-    animation
-      .add({
-        targets: text[1],
-        opacity: 1
-      })
-      .add({
-        targets: text[2],
-        opacity: 1
-      })
-      .add({
-        targets: '#top',
-        opacity: 1
-      }, 500*2)
-      .add({
-        targets: text[3],
-        opacity: 1
-      })
-      .add({
-        targets: '#bottom',
-        opacity: 1
-      }, 500*4)
-      .add({
-        targets: text[4],
-        opacity: 1
-      })
-      .add({
-        targets: text[5],
-        opacity: 1
-      })
-      .add({
-        targets: '.bubble-container',
-        opacity: 0.9
-      })
+    this.animateElements();
+    this.playVoiceOver();
   }
 }
 </script>

@@ -2469,8 +2469,9 @@
       <p>&middot; Try your best and give it a go. </p>
       <p>&middot; Believe in yourself.</p>
     </div>
-    <audio autoplay loop src="../../assets/sounds/session4/night-time.mp3"></audio>
-    <div class="page-number" id="page-dark">108</div>
+    <audio autoplay loop src="../../assets/sounds/session4/night-time.mp3"/>
+    <audio src="../../assets/sounds/session4/Session4_Page22.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">106</div>
   </div>
 </template>
 
@@ -2479,73 +2480,74 @@ import anime from "animejs";
 
 export default {
   name: 'Session4Page22',
+  methods: {
+    animateSvg() {
+      let stars = document.getElementsByClassName('stars')[0].children;
+      stars.forEach(star => {
+        Math.random() < 0.2 ?
+          anime({
+            targets: star,
+            opacity: 0,
+            direction: 'alternate',
+            duration: Math.round(Math.random() * 500) + 200,
+            delay: Math.round(Math.random() * 500) + 200,
+            easing: 'linear',
+            loop: true
+          }) : console.log()
+      });
+    },
+    animateText() {
+      let text = document.querySelector('.text-box').children;
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 500
+      })
+      animation
+        .add({
+          targets: ".text-box",
+          opacity: 1,
+        }, 651)
+        .add({
+          targets: text[1],
+          opacity: 1,
+        }, 2573)
+        .add({
+          targets: text[2],
+          opacity: 1,
+        }, 7215)
+        .add({
+          targets: text[3],
+          opacity: 1,
+        }, 11267)
+        .add({
+          targets: text[4],
+          opacity: 1
+        }, 19815)
+        .add({
+          targets: text[5],
+          opacity: 1
+        }, 22074)
+        .add({
+          targets: text[6],
+          opacity: 1
+        }, 25568)
+        .add({
+          targets: text[7],
+          opacity: 1
+        }, 29368)
+        .add({
+          targets: text[8],
+          opacity: 1
+        }, 32000)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    let stars = document.getElementsByClassName('stars')[0].children;
-    stars.forEach(star => {
-      Math.random() < 0.2 ?
-        anime({
-          targets: star,
-          opacity: 0,
-          direction: 'alternate',
-          duration: Math.round(Math.random() * 500) + 200,
-          delay: Math.round(Math.random() * 500) + 200,
-          easing: 'linear',
-          loop: true
-        }) : console.log()
-    });
-    anime({
-      targets: ".text-box",
-      opacity: 1,
-      duration: 500,
-      delay: 500,
-      easing: 'linear'
-    });
-
-    let text = document.querySelector('.text-box').children;
-    let animation = anime.timeline({
-      easing: 'linear',
-      duration: 500,
-      delay: 1500
-    })
-    animation
-      .add({
-        targets: ".text-box",
-        opacity: 1,
-        delay: 500
-      })
-      .add({
-        targets: text[1],
-        opacity: 1,
-        delay: 500
-      })
-      .add({
-        targets: text[2],
-        opacity: 1,
-      })
-      .add({
-        targets: text[3],
-        opacity: 1,
-      })
-      .add({
-        targets: text[4],
-        opacity: 1
-      })
-      .add({
-        targets: text[5],
-        opacity: 1
-      })
-      .add({
-        targets: text[6],
-        opacity: 1
-      })
-      .add({
-        targets: text[7],
-        opacity: 1
-      })
-      .add({
-        targets: text[8],
-        opacity: 1
-      })
+    this.animateSvg();
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>

@@ -712,7 +712,8 @@
       <p>&middot; Believe in yourself.</p>
     </div>
     <audio autoplay loop src="../../assets/sounds/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"></audio>
-    <div class="page-number" id="page-dark">135</div>
+    <audio src="../../assets/sounds/session6/Session6_Page9.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">134</div>
   </div>
 </template>
 
@@ -721,65 +722,69 @@ import anime from "animejs";
 
 export default {
   name: 'Session6Page9',
-  mounted() {
-    let vw = document.querySelector('.interactive-container').clientWidth;
-    let clouds = document.getElementsByClassName('shp15');
-    clouds.forEach(cloud => {
-      anime({
-        targets: cloud,
-        translateX: (Math.round(Math.random() * 0.4 * vw) + 200) * (Math.random() < 0.5 ? 1: -1),
-        duration: Math.round(Math.random() * 1000) + 4000,
-        direction: 'alternate',
-        loop: true,
+  methods: {
+    animateSvg() {
+      let vw = document.querySelector('.interactive-container').clientWidth;
+      let clouds = document.getElementsByClassName('shp15');
+      clouds.forEach(cloud => {
+        anime({
+          targets: cloud,
+          translateX: (Math.round(Math.random() * 0.4 * vw) + 200) * (Math.random() < 0.5 ? 1: -1),
+          duration: Math.round(Math.random() * 1000) + 4000,
+          direction: 'alternate',
+          loop: true,
+          easing: 'linear',
+        })
+      })
+    },
+    animateText() {
+      let text = document.querySelector('.text-box').children;
+      let animation = anime.timeline({
         easing: 'linear',
+        duration: 500,
       })
-    })
-    let text = document.querySelector('.text-box').children;
-    let animation = anime.timeline({
-      easing: 'linear',
-      duration: 500,
-    })
-    animation
-      .add({
-        targets: ".text-box",
-        opacity: 1,
-        delay: 1000,
-      })
-      .add({
-        targets: text[1],
-        opacity: 1,
-        delay: 500
-      })
-      .add({
-        targets: text[2],
-        opacity: 1,
-        delay: 2500
-      })
-      .add({
-        targets: text[3],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[4],
-        opacity: 1,
-        delay: 3500
-      })
-      .add({
-        targets: text[5],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[6],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[7],
-        opacity: 1,
-        delay: 1500
-      })
+      animation
+        .add({
+          targets: ".text-box",
+          opacity: 1,
+        }, 763)
+        .add({
+          targets: text[1],
+          opacity: 1,
+        }, 2571)
+        .add({
+          targets: text[2],
+          opacity: 1,
+        }, 10224)
+        .add({
+          targets: text[3],
+          opacity: 1,
+        }, 18407)
+        .add({
+          targets: text[4],
+          opacity: 1,
+        }, 20536)
+        .add({
+          targets: text[5],
+          opacity: 1,
+        }, 23570)
+        .add({
+          targets: text[6],
+          opacity: 1,
+        }, 27248)
+        .add({
+          targets: text[7],
+          opacity: 1,
+        }, 30267)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
+  mounted() {
+    this.animateSvg();
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>

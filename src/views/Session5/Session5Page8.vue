@@ -7,6 +7,7 @@
         <br>What could you be thinking?</p>
       <p>What are some '<span class="green">green</span>' thoughts
         <br>that make you feel happy and brave?</p>
+      <audio src="../../assets/sounds/session5/Session5_Page8.mp3" ref="voice"/>
     </div>
   </div>
 </template>
@@ -32,16 +33,38 @@ export default {
   methods: {
     saveToDatabase(data) {
       console.log(data)
-    }
+    },
+    animateText() {
+      let text = document.querySelector('.text-box').children;
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 500,
+      });
+      animation
+        .add({
+          targets: '.text-box',
+          opacity: 1
+        }, 500)
+        .add({
+          targets: text[0],
+          opacity: 1
+        }, 653)
+        .add({
+          targets: text[1],
+          opacity: 1
+        }, 4219)
+        .add({
+          targets: text[2],
+          opacity: 1
+        }, 9000)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
-    anime({
-      targets: '.text-box',
-      opacity: 1,
-      easing: 'linear',
-      duration: 500,
-      delay: 500
-    })
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>
@@ -67,6 +90,7 @@ export default {
 .text-box p {
   font-size: 3vh;
   margin-bottom: .5vh;
+  opacity: 0;
 }
 .text-box p:last-child {
   margin-bottom: 0;

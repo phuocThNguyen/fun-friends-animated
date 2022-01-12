@@ -819,10 +819,9 @@
       Draw a picture of your peaceful, quiet place.
     </div>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <div class="page-number" id="page-light">97</div>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3"/>
+    <audio src="../../assets/sounds/session4/Session4_Page11.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">95</div>
   </div>
 </template>
 
@@ -909,11 +908,15 @@ export default {
     animateText() {},
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
-    }
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
     this.animateSvg();
-    this.setAudioVolumeLevel(0.4)
+    this.setAudioVolumeLevel(0.4);
+    this.playVoiceOver();
   },
 }
 </script>
@@ -928,7 +931,7 @@ export default {
   color: #ffffff;
   font-size: 5vh;
   z-index: 30;
-  padding: 1vh;
+  padding: 2vh;
   text-align: center;
   opacity: 1;
   line-height: 4.5vh;

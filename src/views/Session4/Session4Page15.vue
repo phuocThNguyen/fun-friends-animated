@@ -5,7 +5,8 @@
       <h1>3. Sight</h1>
       <p>We see with our eyes. What can we see?</p>
     </div>
-    <div class="page-number" id="page-dark">101</div>
+    <audio src="../../assets/sounds/session4/Session4_Page15.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">99</div>
   </div>
 </template>
 
@@ -14,14 +15,23 @@ import anime from "animejs";
 
 export default {
   name: 'Session4Page15',
+  methods: {
+    animateElements() {
+      anime({
+        targets: '.text-box',
+        opacity: 1,
+        duration: 500,
+        delay: 500,
+        easing: 'linear'
+      });
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    anime({
-      targets: '.text-box',
-      opacity: 1,
-      duration: 700,
-      delay: 700,
-      easing: 'linear'
-    })
+    this.animateElements();
+    this.playVoiceOver();
   }
 }
 </script>

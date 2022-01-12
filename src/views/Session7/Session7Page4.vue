@@ -1042,10 +1042,11 @@
     <div class="text-box">
       <p>Here are some examples of <strong>STEP PLAN</strong> that other kids
         have used to be brave!</p>
-      <p>What is something you want to do or create?
-        Can you break this down into small easy steps?</p>
+      <p>What is something you want to do or create?</p>
+      <p>Can you break this down into small easy steps?</p>
     </div>
-    <div class="page-number" id="page-dark">141</div>
+    <audio src="../../assets/sounds/session7/Session7_Page4.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">140</div>
   </div>
 </template>
 
@@ -1054,26 +1055,53 @@ import anime from "animejs";
 
 export default {
   name: 'Session7Page4',
-  mounted() {
-    let vw = document.querySelector('.interactive-container').clientWidth;
-    let clouds = document.getElementById('cloud').children;
-    clouds.forEach(cloud => {
-      anime({
-        targets: cloud,
-        translateX: (Math.round(Math.random() * 0.4 * vw) + 100) * (Math.random() < 0.5 ? 1: -1),
-        easing: 'linear',
-        loop: true,
-        direction: 'alternate',
-        duration: Math.round(Math.random() * 500) + 4000,
+  methods: {
+    animateSvg() {
+      let vw = document.querySelector('.interactive-container').clientWidth;
+      let clouds = document.getElementById('cloud').children;
+      clouds.forEach(cloud => {
+        anime({
+          targets: cloud,
+          translateX: (Math.round(Math.random() * 0.4 * vw) + 100) * (Math.random() < 0.5 ? 1: -1),
+          easing: 'linear',
+          loop: true,
+          direction: 'alternate',
+          duration: Math.round(Math.random() * 500) + 4000,
+        })
       })
-    })
-    anime({
-      targets: '.text-box',
-      opacity: 1,
-      delay: 1000,
-      duration: 500,
-      easing: 'linear'
-    })
+    },
+    animateText() {
+      let text = document.querySelector('.text-box').children;
+      let animation = anime.timeline({
+        duration: 500,
+        easing: 'linear',
+      })
+      animation
+        .add({
+          targets: '.text-box',
+          opacity: 1
+        }, 400)
+        .add({
+          targets: text[0],
+          opacity: 1
+        }, 670)
+        .add({
+          targets: text[1],
+          opacity: 1
+        }, 7199)
+        .add({
+          targets: text[2],
+          opacity: 1
+        }, 11126)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
+  mounted() {
+    this.animateSvg();
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>
@@ -1082,7 +1110,7 @@ export default {
 .text-box {
   position: absolute;
   left: 11%;
-  top: 30vh;
+  bottom: 15vh;
   width: 78%;
   padding: 2vh;
   font-size: 5vh;
@@ -1090,6 +1118,7 @@ export default {
   text-align: center;
   opacity: 0;
 }
+.text-box p { opacity: 0 }
 .text-box p:last-child {
   margin-bottom: 0;
 }

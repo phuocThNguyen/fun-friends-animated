@@ -219,16 +219,14 @@
       </g>
     </svg>
 
-    <audio ref="wrong" src="../../assets/sounds/all/wrong-ans.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <audio ref="correct" src="../../assets/sounds/all/correct-ans.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <div class="page-number" id="page-light">133</div>
+    <audio ref="wrong" src="../../assets/sounds/all/wrong-ans.mp3"/>
+    <audio ref="correct" src="../../assets/sounds/all/correct-ans.mp3"/>
+    <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3"/>
+    <audio src="../../assets/sounds/all/Very_Good.mp3" ref="veryGood"/>
+    <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
+    <audio src="../../assets/sounds/all/Correct_2.mp3" ref="correctVoice"/>
+    <audio src="../../assets/sounds/session6/Session6_Page7.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">132</div>
   </div>
 </template>
 
@@ -246,6 +244,30 @@ export default {
   },
   components: {GreenTick, RedTick},
   methods: {
+    animateElements() {
+      let text = document.getElementsByClassName('text-box')[0].children;
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 500,
+      })
+      animation
+        .add({
+          targets: text[1],
+          opacity: 1
+        }, 5735)
+        .add({
+          targets: text[2],
+          opacity: 1
+        }, 9763)
+        .add({
+          targets: '#question-1',
+          opacity: 1
+        }, 14652)
+        .add({
+          targets: '#question-2',
+          opacity: 1
+        })
+    },
     handleClick(e) {
       let targetThumb = e.target.id;
       switch (targetThumb) {
@@ -286,7 +308,8 @@ export default {
           {value: 0, duration: 200, delay: 1000},
         ]
       })
-      this.$refs.wrong.play()
+      this.$refs.wrong.play();
+      setTimeout(() => {this.$refs.goodTry.play()}, 500)
     },
     animateGreenTick(target) {
       anime({
@@ -315,26 +338,19 @@ export default {
           scale: 20,
           duration: 1000,
         })
-        this.$refs.celebrate.play()
+        this.$refs.celebrate.play();
+        setTimeout(() => {this.$refs.veryGood.play()}, 500)
+      } else {
+        setTimeout(() => {this.$refs.correctVoice.play()}, 500)
       }
-    }
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
-    let text = document.getElementsByClassName('text-box')[0].children;
-    let animation = anime.timeline({
-      easing: 'linear',
-      duration: 500,
-      delay: 700
-    })
-    animation
-      .add({
-        targets: text[1],
-        opacity: 1
-      })
-      .add({
-        targets: text[2],
-        opacity: 1
-      })
+    this.animateElements();
+    this.playVoiceOver();
   }
 }
 </script>
@@ -404,6 +420,7 @@ export default {
   width: 19.6vh;
   height: 19.6vh;
   background-color: rgba(0,0,0,0.75);
+  opacity: 0;
 }
 #question-1 {
   left: 33%;

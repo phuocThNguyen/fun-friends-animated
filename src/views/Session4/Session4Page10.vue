@@ -16,7 +16,8 @@
       <p>Breathing deeply and
         slowly calms us down</p>
     </div>
-    <div class="page-number" id="page-light">96</div>
+    <audio src="../../assets/sounds/session4/Session4_Page10.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">94</div>
   </div>
 </template>
 
@@ -25,31 +26,38 @@ import anime from "animejs";
 
 export default {
   name: "Session4Page10",
+  methods: {
+    animateElements() {
+      let text = document.getElementsByClassName('text-box')[0].children;
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 500,
+      });
+      animation
+        .add({
+          targets: text[1],
+          opacity: 1,
+        }, 2080)
+        .add({
+          targets: text[2],
+          opacity: 1
+        }, 13647)
+        .add({
+          targets: text[3],
+          opacity: 1
+        }, 22181)
+        .add({
+          targets: text[4],
+          opacity: 1,
+        }, 30603);
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    let text = document.getElementsByClassName('text-box')[0].children;
-    let animation = anime.timeline({
-      easing: 'linear',
-      duration: 700,
-      delay: 2000
-    });
-    animation
-      .add({
-        targets: text[1],
-        opacity: 1,
-        delay: 500
-      })
-      .add({
-        targets: text[2],
-        opacity: 1
-      })
-      .add({
-        targets: text[3],
-        opacity: 1
-      })
-      .add({
-        targets: text[4],
-        opacity: 1,
-      })
+    this.animateElements();
+    this.playVoiceOver();
   }
 }
 </script>

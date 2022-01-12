@@ -16,6 +16,7 @@
         thought that makes you feel brave!</p>
     </div>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
+    <audio src="../../assets/sounds/session5/Session5_Page14.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -40,25 +41,38 @@ export default {
   methods: {
     saveToDatabase(data) {
       console.log(data)
-    }
+    },
+    animateText() {
+      let text = document.querySelector('.text-box').children;
+      let animation = anime.timeline({
+        duration: 500,
+        easing: 'linear'
+      });
+      animation
+        .add({
+          targets: text[0],
+          opacity: 1
+        }, 715)
+        .add({
+          targets: text[1],
+          opacity: 1
+        }, 4967)
+        .add({
+          targets: text[2],
+          opacity: 1
+        }, 20569)
+        .add({
+          targets: '.canvas',
+          opacity: 1
+        }, 33886)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
-    let text = document.getElementsByClassName('text-box')[0].children;
-    let animation = anime.timeline({
-      easing: 'linear',
-      duration: 500
-    })
-    animation
-      .add({
-        targets: text[1],
-        delay: 500,
-        opacity: 1
-      })
-      .add({
-        targets: text[2],
-        delay: 1500,
-        opacity: 1
-      })
+    this.animateText();
+    this.playVoiceOver();
   },
 }
 </script>
@@ -73,6 +87,7 @@ export default {
   position: absolute;
   top: 24vh;
   left: 0;
+  opacity: 0;
 }
 .text-box {
   position: absolute;
@@ -82,6 +97,7 @@ export default {
   font-size: 4.2vh;
   font-weight: bold;
   margin-bottom: 0;
+  opacity: 0;
 }
 .text-box p {
   font-size: 2.8vh;

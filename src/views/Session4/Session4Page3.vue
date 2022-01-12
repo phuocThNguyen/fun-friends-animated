@@ -11,7 +11,8 @@
        you do about it can be a thumbs-up or thumbs-down
        choice.</p>
     </div>
-    <div class="page-number" id="page-dark">89</div>
+    <audio src="../../assets/sounds/session4/Session4_Page3.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">87</div>
   </div>
 </template>
 
@@ -20,43 +21,42 @@ import anime from "animejs";
 
 export default {
   name: "Session4Page3",
+  methods: {
+    animateText() {
+      let text = document.getElementsByClassName('text-box')[0].children;
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 500,
+      });
+      animation
+        .add({
+          targets: text[1],
+          opacity: 1
+        }, 3432)
+        .add({
+          targets: text[2],
+          opacity: 1,
+        }, 7049)
+        .add({
+          targets: text[3],
+          opacity: 1,
+        }, 11254)
+        .add({
+          targets: text[4],
+          opacity: 1,
+        }, 15129)
+        .add({
+          targets: text[5],
+          opacity: 1,
+        }, 18797)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 0)
+    },
+  },
   mounted() {
-    let text = document.getElementsByClassName('text-box')[0].children;
-    let animation = anime.timeline({
-      easing: 'linear',
-      duration: 700,
-      delay: 700
-    });
-    animation
-      .add({
-        targets: text[1],
-        opacity: 1
-      })
-      .add({
-        targets: text[2],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[3],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[4],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[5],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[6],
-        opacity: 1,
-        delay: 2500
-      })
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>

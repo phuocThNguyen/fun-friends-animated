@@ -982,17 +982,18 @@
       </g>
     </svg>
     <div class="text-box">
-      <p>When we break hard things down into many easier steps
-        it is called a <strong>STEP PLANS</strong>.
-        <strong>STEP PLAN</strong> help us be brave
+      <p>When we break hard things down into many easier steps,
+        it is called <strong>STEP PLANS</strong>.
+        <strong>STEP PLAN</strong> help us to be brave
         when doing something we are scared of.</p>
       <p>Create a <strong>STEP PLAN</strong>
         with your friends. What steps would you take? How many
         steps can you name together? Each step brings you
         closer to facing your fears!</p>
     </div>
-    <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"></audio>
-    <div class="page-number" id="page-light">139</div>
+    <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"/>
+    <audio src="../../assets/sounds/session7/Session7_Page2.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">138</div>
   </div>
 </template>
 
@@ -1001,26 +1002,34 @@ import anime from "animejs";
 
 export default {
   name: 'Session7Page2',
+  methods: {
+    animateText() {
+      let text = document.getElementsByClassName('text-box')[0].children;
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 500,
+      })
+      animation
+        .add({
+          targets: '.text-box',
+          opacity: 1
+        }, 500)
+        .add({
+          targets: text[0],
+          opacity: 1
+        }, 779)
+        .add({
+          targets: text[1],
+          opacity: 1
+        }, 14898);
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    let text = document.getElementsByClassName('text-box')[0].children;
-    let animation = anime.timeline({
-      easing: 'linear',
-      duration: 500,
-      delay: 500,
-    })
-    animation
-      .add({
-        targets: '.text-box',
-        opacity: 1
-      })
-      .add({
-        targets: text[0],
-        opacity: 1
-      }, 500)
-      .add({
-        targets: text[1],
-        opacity: 1
-      })
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>
