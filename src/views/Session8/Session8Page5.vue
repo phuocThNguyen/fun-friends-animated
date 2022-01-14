@@ -5,7 +5,8 @@
     </div>
     <img src="../../assets/images/session8/135443-OSAV8P-846.jpg" alt="Annie" class="images">
     <img src="../../assets/images/session8/135428-OSAV5N-454.jpg" alt="Annie" class="images">
-    <div class="page-number" id="page-light">160</div>
+    <audio src="../../assets/sounds/session8/Session8_Page5.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">159</div>
   </div>
 </template>
 
@@ -14,14 +15,23 @@ import anime from "animejs";
 
 export default {
   name: 'Session8Page5',
+  methods: {
+    animateText() {
+      anime({
+        targets: '.text-box',
+        opacity: 1,
+        easing: 'linear',
+        duration: 500,
+        delay: 500
+      })
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    anime({
-      targets: '.text-box',
-      opacity: 1,
-      easing: 'linear',
-      duration: 500,
-      delay: 500
-    })
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>

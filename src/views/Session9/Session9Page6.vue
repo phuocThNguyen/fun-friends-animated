@@ -4,8 +4,8 @@
       <h1>Tom's reward</h1>
       <p>When Tom is brave, he rewards himself by doing fun
       activities with his family and friends.</p>
-      <p>What are some activities that you think are fun?
-      How can you use these activities to reward yourself?</p>
+      <p>What are some activities that you think are fun?<p/>
+      <p>How can you use these activities to reward yourself?</p>
     </div>
     <div class="image-container" id="left">
       <img src="../../assets/images/session9/21368.jpg" alt="Tom">
@@ -15,7 +15,8 @@
       <img src="../../assets/images/session9/623020-PNWBO6-422.jpg" alt="Tom-reward">
       <p id="para-2">Tom's Reward <br>Special time with his dad</p>
     </div>
-    <div class="page-number" id="page-light">177</div>
+    <audio src="../../assets/sounds/session9/Session9_Page6.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">176</div>
   </div>
 </template>
 
@@ -24,22 +25,25 @@ import anime from "animejs";
 
 export default {
   name: 'Session9Page6',
+  methods: {
+    animateText() {
+      let text = document.querySelector('.text-box').children;
+      let images = document.querySelectorAll('.image-container');
+      let animation = anime.timeline({easing: 'linear', duration: 500})
+      animation
+        .add({targets: text[1], opacity: 1}, 2300)
+        .add({targets: text[2], opacity: 1}, 10500)
+        .add({targets: text[3], opacity: 1}, 14700)
+        .add({targets: images[0], opacity: 1}, 19500)
+        .add({targets: images[1], opacity: 1}, 23000)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    let images = document.querySelectorAll('.image-container');
-    let animation = anime.timeline({
-      easing: 'linear',
-      delay: 500,
-      duration: 500
-    })
-    animation
-      .add({
-        targets: images[0],
-        opacity: 1
-      })
-      .add({
-        targets: images[1],
-        opacity: 1
-      })
+    this.animateText();
+    this.playVoiceOver();
   },
 }
 </script>
@@ -62,6 +66,7 @@ export default {
 .text-box p {
   font-size: 3vh;
   margin-bottom: 0;
+  opacity: 0;
 }
 .image-container {
   position: absolute;

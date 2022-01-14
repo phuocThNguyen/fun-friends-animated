@@ -186,8 +186,9 @@
         </g>
       </g>
     </svg>
-    <audio ref="audio" autoplay src="../../assets/sounds/session10/super-hero-theme.mp3"></audio>
-    <div class="page-number" id="page-light">194</div>
+    <audio ref="audio" autoplay src="../../assets/sounds/session10/super-hero-theme.mp3"/>
+    <audio src="../../assets/sounds/session10/Session10_Page9.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">193</div>
   </div>
 </template>
 
@@ -196,66 +197,87 @@ import anime from "animejs";
 
 export default {
   name: 'Session10Page9',
-  mounted() {
-    this.$refs.audio.volume = 0.3
-    let vw = document.querySelector('.interactive-container').clientWidth;
-    let vh = window.innerHeight;
-    let animation = anime.timeline();
-    animation
-      .add({
-        targets: '.kids',
-        scale: 100,
-        duration: 1000,
-        delay: 500
-      })
-      .add({
-        targets: '.text-box',
-        opacity: 1,
+  methods: {
+    animateSvg() {
+      let vw = document.querySelector('.interactive-container').clientWidth;
+      let vh = window.innerHeight;
+      anime({
+        targets: '#female',
+        translateX: [
+          { value: 1.1 * vw, duration: 3000 },
+          { value: -1.1 * vw, duration: 6000 },
+        ],
+        scaleX: [
+          { value: -1, duration: 1, delay: 3000 },
+          { value: 1, duration: 1, delay: 6000 }
+        ],
+        scale: [
+          { value: 2, duration: 3000 },
+          { value: 0.5, duration: 6000 }
+        ],
+        loop: true,
         easing: 'linear',
-        duration: 500,
-        delay: 200
       })
-
-    anime({
-      targets: '#female',
-      translateX: [
-        { value: 1.1 * vw, duration: 3000 },
-        { value: -1.1 * vw, duration: 6000 },
-      ],
-      scaleX: [
-        { value: -1, duration: 1, delay: 3000 },
-        { value: 1, duration: 1, delay: 6000 }
-      ],
-      scale: [
-        { value: 2, duration: 3000 },
-        { value: 0.5, duration: 6000 }
-      ],
-      loop: true,
-      easing: 'linear',
-    })
-    anime({
-      targets: '#male',
-      translateX: [
-        { value: -0.2 * vw, duration: 2000 },
-        { value: -0.7 * vw, duration: 1},
-        { value: 0.2 * vw, duration: 4001 },
-        { value: 0.7 * vw, duration: 1},
-      ],
-      translateY: [
-        { value: -1.1 * vh, duration: 2000 },
-        { value: 1.1 * vh, duration: 4000 },
-      ],
-      scaleX: [
-        { value: -1, duration: 1, delay: 2000 },
-        { value: 1, duration: 1, delay: 4000 }
-      ],
-      scaleY: [
-        { value: -1, duration: 1, delay: 2000 },
-        { value: 1, duration: 1, delay: 4000 }
-      ],
-      loop: true,
-      easing: 'linear',
-    })
+      anime({
+        targets: '#male',
+        translateX: [
+          { value: -0.2 * vw, duration: 2000 },
+          { value: -0.7 * vw, duration: 1},
+          { value: 0.2 * vw, duration: 4001 },
+          { value: 0.7 * vw, duration: 1},
+        ],
+        translateY: [
+          { value: -1.1 * vh, duration: 2000 },
+          { value: 1.1 * vh, duration: 4000 },
+        ],
+        scaleX: [
+          { value: -1, duration: 1, delay: 2000 },
+          { value: 1, duration: 1, delay: 4000 }
+        ],
+        scaleY: [
+          { value: -1, duration: 1, delay: 2000 },
+          { value: 1, duration: 1, delay: 4000 }
+        ],
+        loop: true,
+        easing: 'linear',
+      })
+    },
+    animateText() {
+      let text = document.querySelector('.text-box').children;
+      let animation = anime.timeline({duration: 500});
+      animation
+        .add({
+          targets: '.kids',
+          opacity: 1,
+          duration: 1,
+          delay: 1000
+        })
+        .add({
+          targets: '.kids',
+          scale: 100,
+          duration: 1000,
+        }, 1000)
+        .add({
+          targets: '.text-box',
+          opacity: 1,
+          easing: 'linear',
+        }, 2500)
+        .add({targets: text[0],opacity: 1, easing: 'linear'}, 2500)
+        .add({targets: text[1],opacity: 1, easing: 'linear'}, 15300)
+        .add({targets: text[2],opacity: 1, easing: 'linear'}, 20000)
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 2500)
+    },
+  },
+  mounted() {
+    this.setAudioVolumeLevel(0.3);
+    this.animateSvg();
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>
@@ -266,6 +288,7 @@ export default {
   width: 1%;
   bottom: 20vh;
   left: 65vh;
+  opacity: 0;
 }
 .text-box {
   position: absolute;
@@ -280,6 +303,7 @@ export default {
 }
 .text-box p {
   margin-bottom: 1vh;
+  opacity: 0;
 }
 .text-box p:last-child {
   margin-bottom: 0;

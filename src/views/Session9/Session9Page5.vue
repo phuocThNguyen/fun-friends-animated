@@ -2300,13 +2300,34 @@
       <p>What brave things you are trying to do?</p>
       <p>What can you do to practise being brave?</p>
     </div>
-    <div class="page-number" id="page-light">176</div>
+    <audio src="../../assets/sounds/session9/Session9_Page5.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">175</div>
   </div>
 </template>
 
 <script>
+import anime from "animejs";
+
 export default {
   name: 'Session9Page5',
+  methods: {
+    animateText() {
+      let text = document.querySelector('.text-box').children;
+      let animation = anime.timeline({duration: 500, easing: 'linear'});
+      animation
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[0], opacity: 1}, 900)
+        .add({targets: text[1], opacity: 1}, 5500)
+        .add({targets: text[2], opacity: 1}, 8900)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
+  mounted() {
+    this.animateText();
+    this.playVoiceOver();
+  }
 }
 </script>
 
@@ -2320,9 +2341,11 @@ export default {
   text-align: center;
   padding: 2vh;
   font-size: 5.5vh;
+  opacity: 0;
 }
 .text-box p {
   margin-bottom: 0;
+  opacity: 0;
 }
 .landscape {
   position: absolute;

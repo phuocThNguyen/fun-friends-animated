@@ -302,8 +302,9 @@
       <p>&middot; Try your best and give it a go. </p>
       <p>&middot; Believe in yourself.</p>
     </div>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"></audio>
-    <div class="page-number" id="page-light">200</div>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"/>
+    <audio src="../../assets/sounds/session10/Session10_Page15.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">199</div>
   </div>
 </template>
 
@@ -312,84 +313,59 @@ import anime from "animejs";
 
 export default {
   name: 'Session10Page15',
-  mounted() {
-    this.$refs.audio.volume = 0.3
-    let vw = document.querySelector('.interactive-container').clientWidth;
-    let clouds = document.querySelector('#cloud').children;
-    clouds.forEach(cloud => {
+  methods: {
+    animateSvg() {
+      let vw = document.querySelector('.interactive-container').clientWidth;
+      let clouds = document.querySelector('#cloud').children;
+      clouds.forEach(cloud => {
+        anime({
+          targets: cloud,
+          easing: 'linear',
+          duration: Math.random() * 5000 + 15000,
+          translateX: (Math.round(Math.random() * 0.3 * vw) + 0.3*vw) * (Math.random() < 0.5 ? 1 : -1),
+          direction: 'alternate',
+          loop: true
+        })
+      })
       anime({
-        targets: cloud,
+        targets: '#big-cloud',
         easing: 'linear',
-        duration: Math.random() * 5000 + 15000,
-        translateX: (Math.round(Math.random() * 0.3 * vw) + 0.3*vw) * (Math.random() < 0.5 ? 1 : -1),
+        duration: 5000,
+        translateX: -0.1 * vw,
         direction: 'alternate',
         loop: true
       })
-    })
-    anime({
-      targets: '#big-cloud',
-      easing: 'linear',
-      duration: 5000,
-      translateX: -0.1 * vw,
-      direction: 'alternate',
-      loop: true
-    })
-    let text = document.querySelector('.text-box').children;
-    let animation = anime.timeline({
-      easing: 'linear',
-      duration: 500,
-    })
-    animation
-      .add({
-        targets: ".text-box",
-        opacity: 1,
-        delay: 1000,
+    },
+    animateText() {
+      let text = document.querySelector('.text-box').children;
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 500,
       })
-      .add({
-        targets: text[1],
-        opacity: 1,
-        delay: 500
-      })
-      .add({
-        targets: text[2],
-        opacity: 1,
-        delay: 2500
-      })
-      .add({
-        targets: text[3],
-        opacity: 1,
-        delay: 2500
-      })
-      .add({
-        targets: text[4],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[5],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[6],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[7],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[8],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[9],
-        opacity: 1,
-        delay: 1500
-      })
+      animation
+        .add({targets: ".text-box", opacity: 1}, 200)
+        .add({targets: text[1], opacity: 1}, 2700)
+        .add({targets: text[2], opacity: 1}, 10100)
+        .add({targets: text[3], opacity: 1}, 16600)
+        .add({targets: text[4], opacity: 1}, 20600)
+        .add({targets: text[5], opacity: 1}, 23600)
+        .add({targets: text[6], opacity: 1}, 25700)
+        .add({targets: text[7], opacity: 1}, 28900)
+        .add({targets: text[8], opacity: 1}, 32900)
+        .add({targets: text[9], opacity: 1}, 35700)
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
+  mounted() {
+    this.setAudioVolumeLevel(0.3);
+    this.animateSvg();
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>

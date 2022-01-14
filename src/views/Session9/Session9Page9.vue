@@ -13,7 +13,8 @@
       <img src="../../assets/images/session9/healthy_eating_child.jpg" alt="healthy-eating">
       <p id="para-2">Eating your <br>favourite healthy meal</p>
     </div>
-    <div class="page-number" id="page-light">180</div>
+    <audio src="../../assets/sounds/session9/Session9_Page9.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">179</div>
   </div>
 </template>
 
@@ -22,22 +23,23 @@ import anime from "animejs";
 
 export default {
   name: 'Session9Page9',
+  methods: {
+    animateElements() {
+      let text = document.querySelector('.text-box').children;
+      let images = document.querySelectorAll('.image-container');
+      let animation = anime.timeline({easing: 'linear', duration: 500})
+      animation
+        .add({targets: text[1],opacity: 1}, 1900)
+        .add({targets: images[0],opacity: 1}, 7700)
+        .add({targets: images[1],opacity: 1}, 11200)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    let images = document.querySelectorAll('.image-container');
-    let animation = anime.timeline({
-      easing: 'linear',
-      delay: 500,
-      duration: 500
-    })
-    animation
-      .add({
-        targets: images[0],
-        opacity: 1
-      })
-      .add({
-        targets: images[1],
-        opacity: 1
-      })
+    this.animateElements();
+    this.playVoiceOver();
   }
 }
 </script>
@@ -61,6 +63,7 @@ export default {
 }
 .text-box p {
   font-size: 4vh;
+  opacity: 0;
 }
 .image-container {
   position: absolute;

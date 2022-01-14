@@ -1002,14 +1002,15 @@
       </g>
     </svg>
     <div class="text-box">
-      What kind of parties have you had at school or home?
-      Why did you have them? What do you like to do at a party?
-      Try doing your favourite dance or singing your favourite
-      song for a friend! If you are at the end of your
+      <span>What kind of parties have you had at school or home?</span>
+      <span>Why did you have them? What do you like to do at a party?</span>
+      <span> Try doing your favourite dance or singing your favourite
+      song for a friend!</span><span> If you are at the end of your
       FUN FRIENDS book, reward yourself with something you like
-      to do!
+      to do!</span>
     </div>
-    <div class="page-number" id="page-light">215</div>
+    <audio src="../../assets/sounds/session12/Session12_Page3.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">214</div>
   </div>
 </template>
 
@@ -1018,14 +1019,24 @@ import anime from "animejs";
 
 export default {
   name: 'Session12Page3',
+  methods: {
+    animateText() {
+      let text = document.querySelector('.text-box').children;
+      let animation = anime.timeline({duration: 500, easing: 'linear'});
+      animation
+        .add({targets: '.text-box',opacity: 0.9}, 500)
+        .add({targets: text[0],color: '#000'}, 700)
+        .add({targets: text[1],color: '#000'}, 5400)
+        .add({targets: text[2],color: '#000'}, 10500)
+        .add({targets: text[3],color: '#000'}, 16000)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    anime({
-      targets: '.text-box',
-      opacity: 1,
-      duration: 500,
-      delay: 500,
-      easing: 'linear'
-    })
+    this.animateText();
+    this.playVoiceOver()
   }
 }
 </script>
@@ -1033,7 +1044,7 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255,1);
   padding: 2vh;
   font-size: 4.5vh;
   font-weight: bold;
@@ -1042,6 +1053,7 @@ export default {
   top: 15vh;
   opacity: 0;
 }
+.text-box span {color: #fff}
 .landscape {
   position: absolute;
   height: 100vh;

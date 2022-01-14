@@ -3,20 +3,20 @@
     <img src="../../assets/images/session8/67.png" alt="creek" class="session-background">
     <div class="text-box">
       <h1>Additional Activity &ndash; Being kind friends</h1>
-      <p>The creek is full of life when it rains. The birds
+      <p class="text"><span>The creek is full of life when it rains. The birds
        start singing, water trickles down the stream and
-       the trees glow bright green. Zoe, Matilda and Daniel
+       the trees glow bright green. </span><span>Zoe, Matilda and Daniel
        want to cross the creek by themselves. Poppy explained
        it is more fun to do it as a team and help each other.
-       If one of them slips in the water everyone can help.
+       </span><span>If one of them slips in the water everyone can help.
        Play "I spy with my little eye" by paying attention
-       with your five senses. Do you think Zoe, Matilda and
+       with your five senses. </span><span>Do you think Zoe, Matilda and
        Daniel are kind friends? Do you think that these are
-       '<span class="red">red</span>' or
-       '<span class="span green">green</span>' actions?</p>
+       'red' or 'green' actions?</span></p>
     </div>
-    <audio autoplay ref="audio" src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3"></audio>
-    <div class="page-number" id="page-light">166</div>
+    <audio autoplay ref="audio" src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
+    <audio src="../../assets/sounds/session8/Session8_Page11.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">165</div>
   </div>
 </template>
 
@@ -25,15 +25,28 @@ import anime from "animejs";
 
 export default {
   name: 'Session8Page11',
+  methods: {
+    animateText() {
+      let text = document.querySelector('.text').children;
+      let animation = anime.timeline({duration: 500, easing: 'linear'})
+      animation
+        .add({targets: '.text-box', opacity: 0.9}, 1000)
+        .add({targets: text[0], color: '#000'}, 5100)
+        .add({targets: text[1], color: '#000'}, 16700)
+        .add({targets: text[2], color: '#000'}, 27500)
+        .add({targets: text[3], color: '#000'}, 38400)
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    anime({
-      targets: '.text-box',
-      opacity: 1,
-      easing: 'linear',
-      duration: 500,
-      delay: 500
-    })
-    this.$refs.audio.volume = 0.6;
+    this.animateText();
+    this.setAudioVolumeLevel(0.4);
+    this.playVoiceOver();
   }
 }
 </script>
@@ -45,7 +58,7 @@ export default {
   left: 10%;
   top: 10vh;
   padding: 3.5vh;
-  background-color: rgba(255,255,255,0.9);
+  background-color: #ffffff;
   opacity: 0;
 }
 .text-box h1 {
@@ -57,6 +70,7 @@ export default {
 .text-box p {
   font-size: 4vh;
   margin-bottom: 0;
+  color: #ffffff;
 }
 .green {color: #00CE7C}
 .red {color: #ff0000}

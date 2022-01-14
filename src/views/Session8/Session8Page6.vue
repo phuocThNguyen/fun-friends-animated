@@ -859,12 +859,13 @@
       </g>
     </svg>
     <div class="text-box">
-      Sometimes others don't feel like playing and that is OK.
-      There are other children who will feel like it,
-      you just have to find them. <br>Find a classmate and think
-      about a <strong>STEP PLAN</strong> to make new friends together.
+      <span>Sometimes others don't feel like playing and that is OK.
+      </span><span>There are other children who will feel like it,
+      you just have to find them. </span><span>Find a classmate and think
+      about a <strong>STEP PLAN</strong> to make new friends together.</span>
     </div>
-    <div class="page-number" id="page-dark">161</div>
+    <audio src="../../assets/sounds/session8/Session8_Page6.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">160</div>
   </div>
 </template>
 
@@ -873,33 +874,54 @@ import anime from "animejs";
 
 export default {
   name: 'Session8Page6',
-  mounted() {
-    let vw = document.querySelector('.interactive-container').clientWidth;
-    let clouds = document.getElementsByClassName('cloud');
-    clouds.forEach(cloud => {
-      anime({
-        targets: cloud,
-        easing: 'linear',
-        direction: 'alternate',
-        loop: true,
-        translateX: (Math.round(Math.random() * 0.2 * vw) * 0.5 * vw) * (Math.random() < 0.5 ? 1 : -1),
-        duration: Math.round(Math.random() * 2000) * 6000
+  methods: {
+    animateSvg() {
+      let vw = document.querySelector('.interactive-container').clientWidth;
+      let clouds = document.getElementsByClassName('cloud');
+      clouds.forEach(cloud => {
+        anime({
+          targets: cloud,
+          easing: 'linear',
+          direction: 'alternate',
+          loop: true,
+          translateX: (Math.round(Math.random() * 0.2 * vw) * 0.5 * vw) * (Math.random() < 0.5 ? 1 : -1),
+          duration: Math.round(Math.random() * 2000 + 1000) * 6000
+        })
       })
-    })
+    },
+    animateText() {
+      let text = document.querySelector('.text-box').children;
+      let animation = anime.timeline({duration: 500, easing: 'linear'})
+      animation
+        .add({targets: '.text-box',opacity: 1}, 200)
+        .add({targets: text[0],color: '#000'}, 800)
+        .add({targets: text[1],color: '#000'}, 5800)
+        .add({targets: text[2],color: '#000'}, 11500)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
+  mounted() {
+    this.animateSvg();
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>
 
 <style scoped>
 .text-box {
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255,1);
   position: absolute;
   left: 9%;
   top: 20vh;
   width: 82%;
   padding: 2vh 4vh;
   font-size: 5vh;
+  opacity: 0;
 }
+.text-box span {color: #ffffff}
 .landscape {
   position: absolute;
   height: auto;

@@ -2,12 +2,14 @@
   <div class="interactive-container" id="alt-bg">
     <p class="text">Write or draw other rewards in the space below.</p>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle" />
-    <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3"></audio>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3"/>
+    <audio src="../../assets/sounds/session9/Session9_Page11.mp3" ref="voice"/>
   </div>
 </template>
 
 <script>
 import DrawingCanvas from "@/components/drawingCanvas/DrawingCanvas";
+import anime from "animejs";
 export default {
   name: 'Session9Page11',
   components: {DrawingCanvas},
@@ -25,10 +27,27 @@ export default {
   methods: {
     saveToDatabase(data) {
       console.log(data)
-    }
+    },
+    animateText() {
+      anime({
+        targets: '.text',
+        duration: 500,
+        delay: 500,
+        opacity: 1,
+        easing: 'linear'
+      });
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level;
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
    mounted() {
-    this.$refs.audio.volume = 0.2
+    this.animateText();
+    this.setAudioVolumeLevel(0.2);
+    this.playVoiceOver();
    }
 }
 </script>
@@ -49,6 +68,7 @@ export default {
   background-color: #000000;
   color: #ffffff;
   z-index: 100;
+  opacity: 0;
 }
 #alt-bg {
   background: rgb(22,94,176);

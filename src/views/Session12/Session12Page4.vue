@@ -545,7 +545,8 @@
           how you would feel.</p>
       </div>
     </div>
-    <div class="page-number" id="page-light">216</div>
+    <audio src="../../assets/sounds/session12/Session12_Page4.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">215</div>
   </div>
 </template>
 
@@ -554,40 +555,25 @@ import anime from "animejs";
 
 export default {
   name: 'Session12Page4',
+  methods: {
+    animateText() {
+      let text = document.querySelector('.text').children
+      let animation = anime.timeline({easing: 'linear', duration: 500})
+      animation
+        .add({targets: '.title', opacity: 1}, 900)
+        .add({targets: '.text', opacity: 1}, 6000)
+        .add({targets: text[0], opacity: 1}, 6800)
+        .add({targets: text[1], opacity: 1}, 29100)
+        .add({targets: text[2], opacity: 1}, 45700)
+        .add({targets: text[3], opacity: 1}, 54000)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    let text = document.querySelector('.text').children
-    let animation = anime.timeline({
-      easing: 'linear',
-      delay: 1500,
-      duration: 500
-    })
-    animation
-    .add({
-      targets: '.title',
-      opacity: 1,
-      delay: 500
-    })
-    .add({
-      targets: '.text',
-      opacity: 1,
-      delay: 500
-    })
-    .add({
-      targets: text[0],
-      opacity: 1
-    }, 1000)
-    .add({
-      targets: text[1],
-      opacity: 1
-    })
-    .add({
-      targets: text[2],
-      opacity: 1
-    })
-    .add({
-      targets: text[3],
-      opacity: 1
-    })
+    this.animateText();
+    this.playVoiceOver()
   }
 }
 </script>

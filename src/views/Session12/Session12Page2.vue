@@ -112,8 +112,9 @@
         </g>
       </g>
     </svg>
-    <audio ref="audio" autoplay src="../../assets/sounds/children-background-music/polka.mp3"></audio>
-    <div class="page-number" id="page-light">214</div>
+    <audio ref="audio" autoplay src="../../assets/sounds/children-background-music/polka.mp3"/>
+    <audio src="../../assets/sounds/session12/Session12_Page2.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">213</div>
   </div>
 </template>
 
@@ -122,69 +123,89 @@ import anime from "animejs";
 
 export default {
   name: 'Session12Page2',
-  mounted() {
-    this.$refs.audio.volume = 0.3
-    let vw = document.querySelector('.interactive-container').clientWidth;
-    let vh = window.innerHeight;
-    const Confettiful = function (el) {
-      this.el = el;
-      this.containerEl = null;
+  methods: {
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
+    },
+    animateSvg() {
+      let vw = document.querySelector('.interactive-container').clientWidth;
+      let vh = window.innerHeight;
+      const Confettiful = function (el) {
+        this.el = el;
+        this.containerEl = null;
 
-      this.confettiFrequency = 7;
-      this.confettiColors = ['#a864fd', '#29cdff', '#78ff44', '#ff718d' , '#fdff6a'];
-      this.confettiAnimations = ['slow', 'medium', 'fast'];
+        this.confettiFrequency = 7;
+        this.confettiColors = ['#a864fd', '#29cdff', '#78ff44', '#ff718d' , '#fdff6a'];
+        this.confettiAnimations = ['slow', 'medium', 'fast'];
 
-      this._setupElements();
-      this._renderConfetti();
-    };
-    Confettiful.prototype._setupElements = function () {
-      const containerEl = document.createElement('div');
-      const elPosition = this.el.style.position;
+        this._setupElements();
+        this._renderConfetti();
+      };
+      Confettiful.prototype._setupElements = function () {
+        const containerEl = document.createElement('div');
+        const elPosition = this.el.style.position;
 
-      if (elPosition !== 'relative' || elPosition !== 'absolute') {
-        this.el.style.position = 'absolute';
-      }
+        if (elPosition !== 'relative' || elPosition !== 'absolute') {
+          this.el.style.position = 'absolute';
+        }
 
-      containerEl.classList.add('confetti-container');
+        containerEl.classList.add('confetti-container');
 
-      this.el.appendChild(containerEl);
+        this.el.appendChild(containerEl);
 
-      this.containerEl = containerEl;
-    };
-    Confettiful.prototype._renderConfetti = function () {
-      this.confettiInterval = setInterval(() => {
-        const confettiEl = document.createElement('div');
-        const confettiSize = Math.floor(Math.random() * 3) + (0.02*vw) + 'px';
-        const confettiBackground = this.confettiColors[Math.floor(Math.random() * this.confettiColors.length)];
-        const confettiLeft = Math.floor(Math.random() * this.el.offsetWidth) + 'px';
-        const confettiAnimation = this.confettiAnimations[Math.floor(Math.random() * this.confettiAnimations.length)];
+        this.containerEl = containerEl;
+      };
+      Confettiful.prototype._renderConfetti = function () {
+        this.confettiInterval = setInterval(() => {
+          const confettiEl = document.createElement('div');
+          const confettiSize = Math.floor(Math.random() * 3) + (0.02*vw) + 'px';
+          const confettiBackground = this.confettiColors[Math.floor(Math.random() * this.confettiColors.length)];
+          const confettiLeft = Math.floor(Math.random() * this.el.offsetWidth) + 'px';
+          const confettiAnimation = this.confettiAnimations[Math.floor(Math.random() * this.confettiAnimations.length)];
 
-        confettiEl.classList.add('confetti', 'confetti--animation-' + confettiAnimation);
-        confettiEl.style.left = confettiLeft;
-        confettiEl.style.width = confettiSize;
-        confettiEl.style.height = confettiSize;
-        confettiEl.style.backgroundColor = confettiBackground;
+          confettiEl.classList.add('confetti', 'confetti--animation-' + confettiAnimation);
+          confettiEl.style.left = confettiLeft;
+          confettiEl.style.width = confettiSize;
+          confettiEl.style.height = confettiSize;
+          confettiEl.style.backgroundColor = confettiBackground;
 
-        confettiEl.removeTimeout = setTimeout(function () {
-          confettiEl.parentNode.removeChild(confettiEl);
-        }, 3000);
+          confettiEl.removeTimeout = setTimeout(function () {
+            confettiEl.parentNode.removeChild(confettiEl);
+          }, 3000);
 
-        this.containerEl.appendChild(confettiEl);
-      }, 25);
-    };
-    window.confettiful = new Confettiful(document.querySelector('.js-container'));
+          this.containerEl.appendChild(confettiEl);
+        }, 25);
+      };
+      window.confettiful = new Confettiful(document.querySelector('.js-container'));
 
-    let balloons = document.querySelectorAll('.balloons');
-    balloons.forEach(balloon => {
-      anime({
-        targets: balloon,
-        easing: 'easeInCubic',
-        translateY: -1.1 * vh,
-        duration: Math.random() * 300 + 5000,
-        delay: Math.random() * 3000 + 300,
-        loop: true
+      let balloons = document.querySelectorAll('.balloons');
+      balloons.forEach(balloon => {
+        anime({
+          targets: balloon,
+          easing: 'easeInCubic',
+          translateY: -1.1 * vh,
+          duration: Math.random() * 300 + 5000,
+          delay: Math.random() * 3000 + 300,
+          loop: true
+        })
       })
-    })
+    },
+    animateText() {
+      let text = document.querySelector('.text-box').children;
+      let animation = anime.timeline({duration: 500, opacity: 1});
+      animation
+        .add({targets: text[1],opacity: 1}, 4000)
+        .add({targets: text[2],opacity: 1}, 10000)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
+  mounted() {
+    this.setAudioVolumeLevel(0.3);
+    this.animateText();
+    this.animateSvg();
+    this.playVoiceOver()
   }
 }
 </script>
@@ -226,6 +247,7 @@ export default {
 .text-box p {
   font-size: 4vh;
   margin-bottom: 0;
+  opacity: 0;
 }
 tspan { white-space:pre }
 .shp0-pink { fill: #414042 }

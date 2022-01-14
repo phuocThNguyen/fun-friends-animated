@@ -22,7 +22,8 @@
         </p>
       </div>
     </div>
-    <div class="page-number" id="page-light">164</div>
+    <audio src="../../assets/sounds/session8/Session8_Page9.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">163</div>
   </div>
 </template>
 
@@ -31,14 +32,23 @@ import anime from "animejs";
 
 export default {
   name: 'Session8Page9',
+  methods: {
+    animateText() {
+      anime({
+        targets: '.star-container',
+        opacity: 1,
+        easing: 'linear',
+        duration: 500,
+        delay: 500
+      })
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    anime({
-      targets: '.star-container',
-      opacity: 1,
-      easing: 'linear',
-      duration: 500,
-      delay: 500
-    })
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>

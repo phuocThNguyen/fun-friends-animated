@@ -2,7 +2,8 @@
   <div class="interactive-container">
     <img src="../../assets/images/session10/623178-PNWC48-947.jpg" alt="dad-helps-Tom" class="session-background">
     <div class="text-box-green">My dad helps me write a story.</div>
-    <div class="page-number" id="page-light">190</div>
+    <audio src="../../assets/sounds/session10/Session10_Page5.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">189</div>
   </div>
 </template>
 
@@ -11,14 +12,23 @@ import anime from "animejs";
 
 export default {
   name: 'Session10Page5',
+  methods: {
+    animateText() {
+      anime({
+        targets: '.text-box-green',
+        opacity: 1,
+        easing: 'linear',
+        duration: 500,
+        delay: 500
+      });
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    anime({
-      targets: '.text-box-green',
-      opacity: 1,
-      easing: 'linear',
-      duration: 500,
-      delay: 500
-    })
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>

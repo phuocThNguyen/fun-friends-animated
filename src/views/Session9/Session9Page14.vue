@@ -1013,7 +1013,8 @@
         </p>
       </div>
     </div>
-    <div class="page-number" id="page-light">185</div>
+    <audio src="../../assets/sounds/session9/Session9_Page14.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">184</div>
   </div>
 </template>
 
@@ -1022,13 +1023,10 @@ import anime from "animejs";
 
 export default {
   name: 'Session9Page14',
-  mounted() {
-    let animation = anime.timeline({
-      easing: 'linear',
-      delay: 500,
-      duration: 500
-    });
-    animation
+  methods: {
+    animateElements() {
+      let animation = anime.timeline({easing: 'linear', duration: 500, delay: 500});
+      animation
         .add({
           targets: '.star-container',
           opacity: 1
@@ -1053,6 +1051,14 @@ export default {
           ],
           delay: 0,
         }, 1000)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 1500)
+    },
+  },
+  mounted() {
+    this.animateElements();
+    this.playVoiceOver();
   }
 }
 </script>

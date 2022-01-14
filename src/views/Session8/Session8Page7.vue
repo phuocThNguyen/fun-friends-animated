@@ -2,9 +2,9 @@
   <div class="interactive-container">
     <img src="../../assets/images/session8/3360.jpg" alt="Annie-family" class="session-background">
     <div class="text-box">
-      <p>Annie would like to play, but she doesn't have anyone
-       to play with. How do you think Annie is feeling?
-      <br>If you were Annie, what could you do to play with
+      <p>Annie would like to play, but she doesn't have anyone to play with.</p>
+      <p>How do you think Annie is feeling?</p>
+      <p>If you were Annie, what could you do to play with
         other children?</p>
     </div>
     <div class="star-container">
@@ -27,7 +27,8 @@
         </p>
       </div>
     </div>
-    <div class="page-number" id="page-light">162</div>
+    <audio src="../../assets/sounds/session8/Session8_Page7.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">161</div>
   </div>
 </template>
 
@@ -36,21 +37,27 @@ import anime from "animejs";
 
 export default {
   name: 'Session8Page7',
+  methods: {
+    animateText() {
+      let text = document.querySelector('.text-box').children;
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 500,
+      });
+      animation
+        .add({targets: '.text-box',opacity: 1}, 500)
+        .add({targets: text[0],opacity: 1}, 500)
+        .add({targets: text[1],opacity: 1}, 5700)
+        .add({targets: text[2],opacity: 1}, 8500)
+        .add({targets: '.star-container',opacity: 1}, 14300)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    let animation = anime.timeline({
-      easing: 'linear',
-      duration: 500,
-      delay: 500
-    });
-    animation
-      .add({
-        targets: '.text-box',
-        opacity: 1
-      })
-      .add({
-        targets: '.star-container',
-        opacity: 1
-      })
+    this.animateText();
+    this.playVoiceOver();
   },
 }
 </script>
@@ -78,7 +85,7 @@ export default {
 }
 .star-text p {
   font-size: 4vh;
-  margin-top: 1.5vh;
+  margin-top: 5.5vh;
   margin-bottom: 0;
 }
 .text-box {
@@ -96,6 +103,7 @@ export default {
 .text-box p {
   font-size: 4vh;
   margin-bottom: 0;
+  opacity: 0;
 }
 tspan { white-space:pre }
 .shp0-star { fill: #f3cc30 }

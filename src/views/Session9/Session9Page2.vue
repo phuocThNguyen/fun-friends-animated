@@ -618,12 +618,13 @@
       </g>
     </svg>
     <div class="text-box">
-      Talk to your friends about your <strong>STEP PLAN</strong>.
-      Think of ways you can reward yourself for doing your best,
+      <span>Talk to your friends about your <strong>STEP PLAN</strong>.</span>
+      <span>Think of ways you can reward yourself for doing your best,
       like going to the park, playing ball, or just sharing
-      a picnic with your family.
+      a picnic with your family.</span>
     </div>
-    <div class="page-number" id="page-dark">173</div>
+    <audio src="../../assets/sounds/session9/Session9_Page2.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">172</div>
   </div>
 </template>
 
@@ -632,14 +633,22 @@ import anime from "animejs";
 
 export default {
   name: 'Session9Page2',
+  methods: {
+    animateText() {
+      let text = document.querySelector('.text-box').children;
+      let animation = anime.timeline({duration: 500, easing: 'linear'})
+      animation
+        .add({targets: '.text-box', opacity: 0.9}, 200)
+        .add({targets: text[0], color: '#000'}, 500)
+        .add({targets: text[1], color: '#000'}, 4000)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    anime({
-      targets: '.text-box',
-      opacity: 1,
-      delay: 500,
-      duration: 500,
-      easing: 'linear'
-    })
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>
@@ -647,7 +656,7 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  background-color: rgba(255,255,255,0.85);
+  background-color: #ffffff;
   width: 82%;
   padding: 2vh;
   left: 9%;
@@ -655,6 +664,7 @@ export default {
   font-size: 5.5vh;
   opacity: 0;
 }
+.text-box span {color: #ffffff}
 .landscape {
   position: absolute;
   height: auto;

@@ -2,10 +2,12 @@
   <div class="interactive-container">
     <img src="../../assets/images/session10/1354.png" alt="background" class="session-background">
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
-    <p class="text">Give yourself a superhero name and draw a picture of your costume.
-      <br>Share it with your classmates
-    </p>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/snack-time-the-green-orbs-children-s-music-no-copyright-music.mp3"></audio>
+    <div class="text-box">
+      <p>Give yourself a superhero name and draw a picture of your costume.</p>
+      <p>Share it with your classmates</p>
+    </div>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/snack-time-the-green-orbs-children-s-music-no-copyright-music.mp3"/>
+    <audio src="../../assets/sounds/session10/Session10_Page10.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -24,27 +26,30 @@ export default {
       }
     }
   },
-  mounted() {
-    this.$refs.audio.volume = 0.3
-    let animation = anime.timeline({
-      easing: 'linear',
-      duration: 500,
-      delay: 500
-    })
-    animation
-      .add({
-        targets: '.canvas',
-        opacity: 1
-      })
-      .add({
-        targets: '.text',
-        opacity: 1
-      }, 0)
-  },
   methods: {
     saveToDatabase(data) {
       console.log(data)
-    }
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level;
+    },
+    animateText() {
+      let text = document.querySelector('.text-box').children;
+      let animation = anime.timeline({easing: 'linear', duration: 500})
+      animation
+        .add({targets: '.text-box',opacity: 1}, 500)
+        .add({targets: text[0],opacity: 1}, 700)
+        .add({targets: '.canvas',opacity: 1}, 3500)
+        .add({targets: text[1],opacity: 1}, 6200)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
+  mounted() {
+    this.setAudioVolumeLevel(0.3);
+    this.animateText();
+    this.playVoiceOver();
   },
 }
 </script>
@@ -56,13 +61,16 @@ export default {
   left: 1%;
   opacity: 0;
 }
-.text {
+.text-box {
   position: absolute;
   top: 1vh;
   left: 1%;
   width: 98%;
   background-color: #000000;
   padding: 0;
+  opacity: 0;
+}
+.text-box p {
   text-align: center;
   font-size: 4vh;
   color: #ffffff;

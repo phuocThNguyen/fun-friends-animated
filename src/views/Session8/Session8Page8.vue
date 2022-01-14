@@ -20,7 +20,8 @@
           <br>the beach.</p>
       </div>
     </div>
-    <div class="page-number" id="page-light">163</div>
+    <audio src="../../assets/sounds/session8/Session8_Page8.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">162</div>
   </div>
 </template>
 
@@ -29,14 +30,23 @@ import anime from "animejs";
 
 export default {
   name: 'Session8Page8',
+  methods: {
+    animateText() {
+      anime({
+        targets: '.star-container',
+        opacity: 1,
+        easing: 'linear',
+        duration: 500,
+        delay: 500
+      })
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    anime({
-      targets: '.star-container',
-      opacity: 1,
-      easing: 'linear',
-      duration: 500,
-      delay: 500
-    })
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>
@@ -64,7 +74,7 @@ export default {
 }
 .star-text p {
   font-size: 4vh;
-  margin-top: 1.5vh;
+  margin-top: 5.5vh;
   margin-bottom: 0;
 }
 tspan { white-space:pre }

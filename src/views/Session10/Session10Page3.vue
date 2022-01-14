@@ -3,7 +3,8 @@
     <img src="../../assets/images/session10/72896.jpg" alt="Tom" class="session-background">
     <div class="text-box">Tom learns from <br>someone he looks up to.</div>
     <div class="text-box-green">My dad helps me learn to cook.</div>
-    <div class="page-number" id="page-light">188</div>
+    <audio src="../../assets/sounds/session10/Session10_Page3.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">187</div>
   </div>
 </template>
 
@@ -12,14 +13,20 @@ import anime from "animejs";
 
 export default {
   name: 'Session10Page3',
+  methods: {
+    animateText() {
+      let animation = anime.timeline({duration: 500, easing: 'linear'})
+      animation
+        .add({targets: '.text-box', opacity: 1}, 700)
+        .add({targets: '.text-box-green', opacity: 1}, 4600)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    anime({
-      targets: '.text-box-green',
-      opacity: 1,
-      easing: 'linear',
-      duration: 500,
-      delay: 500
-    })
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>
@@ -33,6 +40,7 @@ export default {
   font-weight: bold;
   font-size: 4vh;
   padding: 2vh;
+  opacity: 0;
 }
 .text-box-green {
   position: absolute;

@@ -13,7 +13,8 @@
       <p>&bull;&nbsp;Family</p>
       <p>&bull;&nbsp;Friends</p>
     </div>
-    <div class="page-number" id="page-light">206</div>
+    <audio src="../../assets/sounds/session11/Session11_Page4.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">205</div>
   </div>
 </template>
 
@@ -25,58 +26,26 @@ export default {
   methods: {
     animateText() {
       let text = document.querySelector('.text-box').children;
-      let animation = anime.timeline({
-        duration: 500,
-        delay: 500,
-        easing: 'linear'
-      })
+      let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-        .add({
-          targets: '.text-box',
-          opacity: 1,
-        })
-        .add({
-          targets: text[0],
-          opacity: 1
-        })
-        .add({
-          targets: text[1],
-          opacity: 1,
-          delay: 2000
-        })
-        .add({
-          targets: text[2],
-          opacity: 1,
-          delay: 1000
-        })
-        .add({
-          targets: text[3],
-          opacity: 1
-        })
-        .add({
-          targets: text[4],
-          opacity: 1
-        })
-        .add({
-          targets: text[5],
-          opacity: 1
-        })
-        .add({
-          targets: text[6],
-          opacity: 1
-        })
-        .add({
-          targets: text[7],
-          opacity: 1
-        })
-        .add({
-          targets: text[8],
-          opacity: 1
-        })
-    }
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[0], opacity: 1}, 800)
+        .add({targets: text[1], opacity: 1}, 9800)
+        .add({targets: text[2], opacity: 1}, 11400)
+        .add({targets: text[3], opacity: 1}, 15600)
+        .add({targets: text[4], opacity: 1}, 17100)
+        .add({targets: text[5], opacity: 1}, 18600)
+        .add({targets: text[6], opacity: 1}, 21500)
+        .add({targets: text[7], opacity: 1}, 23100)
+        .add({targets: text[8], opacity: 1}, 24100)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
     this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>

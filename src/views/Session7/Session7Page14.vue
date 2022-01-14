@@ -1126,8 +1126,14 @@
       </svg>
       <div class="button-label">Next Step</div>
     </div>
-    <audio ref="sound" src="../../assets/sounds/session7/click-sound.mp3"></audio>
-    <div class="page-number" id="page-dark" style="left: 25vh !important;">151</div>
+    <audio ref="sound" src="../../assets/sounds/session7/click-sound.mp3"/>
+    <audio src="../../assets/sounds/session7/Session7_Page13-region-1.mp3" ref="step1"/>
+    <audio src="../../assets/sounds/session7/Session7_Page13-region-2.mp3" ref="step2"/>
+    <audio src="../../assets/sounds/session7/Session7_Page13-region-3.mp3" ref="step3"/>
+    <audio src="../../assets/sounds/session7/Session7_Page13-region-4.mp3" ref="step4"/>
+    <audio src="../../assets/sounds/session7/Session7_Page13-region-5.mp3" ref="step5"/>
+    <audio src="../../assets/sounds/session7/Session7_Page13.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark" style="left: 25vh !important;">150</div>
   </div>
 </template>
 
@@ -1139,34 +1145,58 @@ export default {
   data() {
     return {
       step: 0,
+      stepVoiceArray: null,
+      timingArray: [
+        [900, 6900, 9500, 12600],
+        [700, 9000, 11500, 14600],
+        [900, 5900, 8600, 11200],
+        [700, 7500, 10100, 12800],
+        [700, 7800, 10500, 14000]]
     }
   },
   methods: {
-    displayInit(left, center, right) {
+    displayInit() {
+      let leftElements = document.getElementById('left-container').children;
+      let rightElements = document.getElementById('right-container').children;
+      let trophy = document.querySelector('.trophy-container');
+
       let animation = anime.timeline({
         easing: 'linear',
-        delay: 1000,
-        duration: 300,
+        duration: 500,
       })
       animation
-        .add({
-          targets: left,
-          opacity: 1
-        })
-        .add({
-          targets: center,
-          opacity: 1
-        }, 0)
-        .add({
-          targets: right,
-          opacity: 1
-        }, 0)
-        .add({
-          targets: '.text-box',
-          opacity: 1
-        }, 0)
+          .add({
+            targets: trophy,
+            opacity: 1
+          }, 2300)
+          .add({
+            targets: leftElements[5],
+            opacity: 1
+          }, 4000)
+          .add({
+            targets: rightElements[5],
+            opacity: 1
+          }, 4000)
+          .add({
+            targets: '.text-box',
+            opacity: 1
+          }, 4000)
+          .add({
+            targets: '.coordinate-container',
+            opacity: 1
+          }, 5300)
+
+      anime({
+        targets: '.button',
+        scale: 1.1,
+        duration: 1000,
+        direction: 'alternate',
+        loop: true
+      });
     },
     displayStep() {
+      let koala = document.querySelectorAll('.koala');
+      let bubble = document.querySelectorAll('.bubble-container');
       let plans = document.querySelectorAll('.plans');
       let helper =  document.querySelector('#left-container').children;
       let reward =  document.querySelector('#right-container').children;
@@ -1177,20 +1207,32 @@ export default {
           duration: 500
         })
         animation
-          .add({
-            targets: plans[this.step],
-            opacity: 1
-          })
-          .add({
-            targets: helper[this.step],
-            opacity: 1
-          })
-          .add({
-            targets: reward[this.step],
-            opacity: 1
-          })
-        this.step++;
+            .add({
+              targets: plans[this.step],
+              opacity: 1
+            }, this.timingArray[this.step][0])
+            .add({
+              targets: helper[this.step],
+              opacity: 1
+            }, this.timingArray[this.step][1])
+            .add({
+              targets: reward[this.step],
+              opacity: 1
+            }, this.timingArray[this.step][2])
+            .add({
+              targets: bubble[this.step],
+              opacity: 1
+            }, this.timingArray[this.step][3])
+            .add({
+              targets: koala[this.step],
+              opacity: 1
+            }, this.timingArray[this.step][3])
+        this.step > 0 ? this.stepVoiceArray[this.step - 1].pause() : this.$refs.voice.pause();
         this.$refs.sound.play();
+        setTimeout(() => {
+          this.stepVoiceArray[this.step].play();
+          this.step++;
+        }, 500)
       }
     },
     hideElement() {
@@ -1211,21 +1253,24 @@ export default {
         translateY: 0.24 * vh,
         duration: 1500
       })
-    }
+    },
+    assignAudio() {
+      this.stepVoiceArray = [
+        this.$refs.step1,
+        this.$refs.step2,
+        this.$refs.step3,
+        this.$refs.step4,
+        this.$refs.step5
+      ];
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
-    let leftElements = document.getElementById('left-container').children;
-    let rightElements = document.getElementById('right-container').children;
-    let trophy = document.querySelector('.trophy-container');
-
-    this.displayInit(leftElements[5], trophy, rightElements[5]);
-    anime({
-      targets: '.button',
-      scale: 1.1,
-      duration: 1000,
-      direction: 'alternate',
-      loop: true
-    })
+    this.assignAudio();
+    this.displayInit();
+    this.playVoiceOver();
   }
 }
 </script>
@@ -1265,6 +1310,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  opacity: 0;
 }
 .button {
   width: auto;
@@ -1277,6 +1323,7 @@ export default {
 .koala {
   position: absolute;
   width: auto;
+  opacity: 0;
 }
 #koala-standing {
   top: -5vh;
@@ -1385,6 +1432,7 @@ export default {
   width: 28vh;
   height: 20vh;
   z-index: 10;
+  opacity: 0;
 }
 #step-1 .bubble-container,
 #step-2 .bubble-container,

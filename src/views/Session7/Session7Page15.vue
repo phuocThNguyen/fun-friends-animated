@@ -1009,7 +1009,7 @@
     </div>
     <div class="wing-container" id="right-container">
       <p>Play hide and seek</p>
-      <p>Go for a swim</p>
+      <p>Have a picnic</p>
       <p>Play skipping</p>
       <p>Fly a kite</p>
       <p>Play in the park</p>
@@ -1123,8 +1123,14 @@
       </svg>
       <div class="button-label">Next Step</div>
     </div>
-    <audio ref="sound" src="../../assets/sounds/session7/click-sound.mp3"></audio>
-    <div class="page-number" id="page-dark" style="left: 25vh !important;">152</div>
+    <audio ref="sound" src="../../assets/sounds/session7/click-sound.mp3"/>
+    <audio src="../../assets/sounds/session7/Session7_Page14-region-1.mp3" ref="step1"/>
+    <audio src="../../assets/sounds/session7/Session7_Page14-region-2.mp3" ref="step2"/>
+    <audio src="../../assets/sounds/session7/Session7_Page14-region-3.mp3" ref="step3"/>
+    <audio src="../../assets/sounds/session7/Session7_Page14-region-4.mp3" ref="step4"/>
+    <audio src="../../assets/sounds/session7/Session7_Page14-region-5.mp3" ref="step5"/>
+    <audio src="../../assets/sounds/session7/Session7_Page14.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark" style="left: 25vh !important;">151</div>
   </div>
 </template>
 
@@ -1136,34 +1142,58 @@ export default {
   data() {
     return {
       step: 0,
+      stepVoiceArray: null,
+      timingArray: [
+        [800, 5000, 7500, 11000],
+        [800, 6800, 9200, 11900],
+        [700, 6000, 8100, 10700],
+        [700, 5500, 7600, 10500],
+        [700, 5000, 7300, 10000]]
     }
   },
   methods: {
-    displayInit(left, center, right) {
+    displayInit() {
+      let leftElements = document.getElementById('left-container').children;
+      let rightElements = document.getElementById('right-container').children;
+      let trophy = document.querySelector('.trophy-container');
+
       let animation = anime.timeline({
         easing: 'linear',
-        delay: 1000,
-        duration: 300,
+        duration: 500,
       })
       animation
         .add({
-          targets: left,
+          targets: trophy,
           opacity: 1
-        })
+        }, 2200)
         .add({
-          targets: center,
+          targets: leftElements[5],
           opacity: 1
-        }, 0)
+        }, 4000)
         .add({
-          targets: right,
+          targets: rightElements[5],
           opacity: 1
-        }, 0)
+        }, 4000)
         .add({
           targets: '.text-box',
           opacity: 1
-        }, 0)
+        }, 4000)
+        .add({
+          targets: '.coordinate-container',
+          opacity: 1
+        }, 4500)
+
+      anime({
+        targets: '.button',
+        scale: 1.1,
+        duration: 1000,
+        direction: 'alternate',
+        loop: true
+      });
     },
     displayStep() {
+      let koala = document.querySelectorAll('.koala');
+      let bubble = document.querySelectorAll('.bubble-container');
       let plans = document.querySelectorAll('.plans');
       let helper =  document.querySelector('#left-container').children;
       let reward =  document.querySelector('#right-container').children;
@@ -1177,17 +1207,29 @@ export default {
           .add({
             targets: plans[this.step],
             opacity: 1
-          })
+          }, this.timingArray[this.step][0])
           .add({
             targets: helper[this.step],
             opacity: 1
-          })
+          }, this.timingArray[this.step][1])
           .add({
             targets: reward[this.step],
             opacity: 1
-          })
-        this.step++;
+          }, this.timingArray[this.step][2])
+          .add({
+            targets: bubble[this.step],
+            opacity: 1
+          }, this.timingArray[this.step][3])
+          .add({
+            targets: koala[this.step],
+            opacity: 1
+          }, this.timingArray[this.step][3])
+        this.step > 0 ? this.stepVoiceArray[this.step - 1].pause() : this.$refs.voice.pause();
         this.$refs.sound.play();
+        setTimeout(() => {
+          this.stepVoiceArray[this.step].play();
+          this.step++;
+        }, 500)
       }
     },
     hideElement() {
@@ -1208,21 +1250,24 @@ export default {
         translateY: 0.24 * vh,
         duration: 1500
       })
-    }
+    },
+    assignAudio() {
+      this.stepVoiceArray = [
+        this.$refs.step1,
+        this.$refs.step2,
+        this.$refs.step3,
+        this.$refs.step4,
+        this.$refs.step5
+      ];
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
-    let leftElements = document.getElementById('left-container').children;
-    let rightElements = document.getElementById('right-container').children;
-    let trophy = document.querySelector('.trophy-container');
-
-    this.displayInit(leftElements[5], trophy, rightElements[5]);
-    anime({
-      targets: '.button',
-      scale: 1.1,
-      duration: 1000,
-      direction: 'alternate',
-      loop: true
-    })
+    this.assignAudio();
+    this.displayInit();
+    this.playVoiceOver();
   }
 }
 </script>
@@ -1262,6 +1307,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  opacity: 0;
 }
 .button {
   width: auto;
@@ -1274,6 +1320,7 @@ export default {
 .koala {
   position: absolute;
   width: auto;
+  opacity: 0;
 }
 #koala-standing {
   top: -5vh;
@@ -1381,6 +1428,7 @@ export default {
   width: 28vh;
   height: 20vh;
   z-index: 10;
+  opacity: 0;
 }
 #step-1 .bubble-container,
 #step-2 .bubble-container,

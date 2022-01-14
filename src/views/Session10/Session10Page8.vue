@@ -3,7 +3,8 @@
     <img src="../../assets/images/session10/370.jpg" alt="Tom-reading-book" class="session-background">
     <div class="text-box-green">My mum helps me be brave
       <br>when I learn to ride my bike.</div>
-    <div class="page-number" id="page-light">193</div>
+    <audio src="../../assets/sounds/session10/Session10_Page8.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">192</div>
   </div>
 </template>
 
@@ -12,14 +13,23 @@ import anime from "animejs";
 
 export default {
   name: 'Session10Page8',
+  methods: {
+    animateText() {
+      anime({
+        targets: '.text-box-green',
+        opacity: 1,
+        easing: 'linear',
+        duration: 500,
+        delay: 500
+      });
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    anime({
-      targets: '.text-box-green',
-      opacity: 1,
-      easing: 'linear',
-      duration: 500,
-      delay: 500
-    })
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>

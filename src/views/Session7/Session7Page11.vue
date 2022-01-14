@@ -844,70 +844,84 @@ export default {
     }
   },
   methods: {
-    animateSvg() {},
+    animateSvg() {
+      let vw = document.querySelector('.interactive-container').clientWidth;
+      const yellowFlowers = document.getElementsByClassName('yellow-flower');
+      yellowFlowers.forEach(flower => {
+        flower.style.bottom = (Math.floor(Math.random() * 10) + 2).toString() + 'vh';
+        flower.style.left = (Math.floor(Math.random() * 95) + 2).toString() + 'vw';
+      })
+
+      const blueFlowers = document.getElementsByClassName('blue-flower');
+      blueFlowers.forEach(flower => {
+        flower.style.bottom = (Math.floor(Math.random() * 10) + 7).toString() + 'vh';
+        flower.style.left = Math.floor(Math.random() * 100).toString() + 'vw';
+        flower.style.height = (Math.floor(Math.random() * 5) + 5).toString() + 'vh';
+      })
+
+      const greenFlowers = document.getElementsByClassName('green-flower');
+      greenFlowers.forEach(flower => {
+        flower.style.bottom = Math.floor(Math.random() * 15).toString() + 'vh';
+        flower.style.left = Math.floor(Math.random() * 100).toString() + 'vw';
+      })
+
+      anime({
+        targets: this.$refs.cloud1,
+        translateX: vw,
+        duration: 7000,
+        loop: true,
+        easing: 'linear',
+        direction: 'alternate'
+      });
+      anime({
+        targets: this.$refs.cloud2,
+        translateX: -vw,
+        duration: 6000,
+        loop: true,
+        easing: 'linear',
+        direction: 'alternate'
+      })
+      anime({
+        targets: ".yellow-flower",
+        scale: 30,
+        duration: 2000,
+        delay: 1000,
+        easing: 'linear'
+      })
+      anime({
+        targets: '.blue-flower',
+        rotate: '360deg',
+        duration: 3000,
+        easing: 'steps(10)',
+        loop: true
+      })
+      anime({
+        targets: '.green-flower',
+        rotate: '180deg',
+        duration: 6000,
+        direction: 'alternate',
+        easing: 'easeInOutSine',
+        loop: true
+      })
+    },
+    animateText() {
+      let text = document.querySelector('.text-box').children;
+      let animation = anime.timeline({
+        duration: 500,
+        easing: 'linear'
+      })
+      animation
+        .add({targets: '.text-box',opacity: 1}, 500)
+        .add({targets: text[1],opacity: 1}, 3900)
+        .add({targets: text[2],opacity: 1}, 23000)
+    },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
   },
   mounted() {
-    let vw = document.querySelector('.interactive-container').clientWidth;
-    const yellowFlowers = document.getElementsByClassName('yellow-flower');
-    yellowFlowers.forEach(flower => {
-      flower.style.bottom = (Math.floor(Math.random() * 10) + 2).toString() + 'vh';
-      flower.style.left = (Math.floor(Math.random() * 95) + 2).toString() + 'vw';
-    })
-
-    const blueFlowers = document.getElementsByClassName('blue-flower');
-    blueFlowers.forEach(flower => {
-      flower.style.bottom = (Math.floor(Math.random() * 10) + 7).toString() + 'vh';
-      flower.style.left = Math.floor(Math.random() * 100).toString() + 'vw';
-      flower.style.height = (Math.floor(Math.random() * 5) + 5).toString() + 'vh';
-    })
-
-    const greenFlowers = document.getElementsByClassName('green-flower');
-    greenFlowers.forEach(flower => {
-      flower.style.bottom = Math.floor(Math.random() * 15).toString() + 'vh';
-      flower.style.left = Math.floor(Math.random() * 100).toString() + 'vw';
-    })
-
-    anime({
-      targets: this.$refs.cloud1,
-      translateX: vw,
-      duration: 7000,
-      loop: true,
-      easing: 'linear',
-      direction: 'alternate'
-    });
-    anime({
-      targets: this.$refs.cloud2,
-      translateX: -vw,
-      duration: 6000,
-      loop: true,
-      easing: 'linear',
-      direction: 'alternate'
-    })
-    anime({
-      targets: ".yellow-flower",
-      scale: 30,
-      duration: 2000,
-      delay: 1000,
-      easing: 'linear'
-    })
-    anime({
-      targets: '.blue-flower',
-      rotate: '360deg',
-      duration: 3000,
-      easing: 'steps(10)',
-      loop: true
-    })
-    anime({
-      targets: '.green-flower',
-      rotate: '180deg',
-      duration: 6000,
-      direction: 'alternate',
-      easing: 'easeInOutSine',
-      loop: true
-    })
+    this.animateSvg();
+    this.animateText();
     this.playVoiceOver();
   },
 }
@@ -922,6 +936,7 @@ export default {
   left: 10%;
   top: 10vh;
   z-index: 100;
+  opacity: 0;
 }
 .text-box h1 {
   text-align: center;
@@ -930,6 +945,7 @@ export default {
 .text-box p {
   font-size: 4vh;
   margin-bottom: 1vh;
+  opacity: 0;
 }
 .text-box p:last-child {
   margin-bottom: 0;

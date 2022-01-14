@@ -1442,8 +1442,9 @@
       <p>&middot; Try your best and give it a go. </p>
       <p>&middot; Believe in yourself.</p>
     </div>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"></audio>
-    <div class="page-number" id="page-light">210</div>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"/>
+    <audio src="../../assets/sounds/session11/Session11_Page8.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">209</div>
   </div>
 </template>
 
@@ -1452,69 +1453,34 @@ import anime from "animejs";
 
 export default {
   name: 'Session11Page8',
+  methods: {
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
+    },
+    animateText() {
+      let text = document.querySelector('.text-box').children;
+      let animation = anime.timeline({easing: 'linear', duration: 500})
+      animation
+        .add({targets: ".text-box",opacity: 1}, 500)
+        .add({targets: text[1],opacity: 1}, 2900)
+        .add({targets: text[2],opacity: 1}, 14600)
+        .add({targets: text[3],opacity: 1}, 16900)
+        .add({targets: text[4],opacity: 1}, 18900)
+        .add({targets: text[5],opacity: 1}, 20500)
+        .add({targets: text[6],opacity: 1}, 25000)
+        .add({targets: text[7],opacity: 1}, 27300)
+        .add({targets: text[8],opacity: 1}, 30700)
+        .add({targets: text[9],opacity: 1}, 35100)
+        .add({targets: text[10],opacity: 1}, 38100)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    this.$refs.audio.volume = 0.6
-    let text = document.querySelector('.text-box').children;
-    let animation = anime.timeline({
-      easing: 'linear',
-      duration: 500,
-    })
-    animation
-      .add({
-        targets: ".text-box",
-        opacity: 1,
-        delay: 500,
-      })
-      .add({
-        targets: text[1],
-        opacity: 1,
-        delay: 500
-      })
-      .add({
-        targets: text[2],
-        opacity: 1,
-        delay: 3500
-      })
-      .add({
-        targets: text[3],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[4],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[5],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[6],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[7],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[8],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[9],
-        opacity: 1,
-        delay: 1500
-      })
-      .add({
-        targets: text[10],
-        opacity: 1,
-        delay: 1500
-      })
+    this.setAudioVolumeLevel(0.6);
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>
@@ -1539,7 +1505,7 @@ export default {
 .text-box p {
   margin-bottom: 0;
   font-size: 4.3vh;
-  opacity: 1;
+  opacity: 0;
 }
 .text-box p:nth-of-type(10),
 .text-box p:nth-of-type(7),

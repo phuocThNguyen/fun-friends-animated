@@ -993,11 +993,11 @@
       <p>&nbsp;&bull; Practise being BRAVE:</p>
       <p>&middot; Look people in the eye and smile.</p>
       <p>&middot; Use a brave voice and make yourself big.</p>
-      <p>&middot; Try your best and give it a go. </p>
+      <p>&middot; Try your best and give it a go.</p>
       <p>&middot; Believe in yourself.</p>
     </div>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Falling-Snow-Sound-Effect-Amplified.mp3"></audio>
-    <div class="page-number" id="page-light">183</div>
+    <audio src="../../assets/sounds/session9/Session9_Page12.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">182</div>
   </div>
 </template>
 
@@ -1006,45 +1006,26 @@ import anime from "animejs";
 
 export default {
   name: 'Session9Page12',
+  methods: {
+    animateText() {
+      let text = document.getElementsByClassName('text-box')[0].children;
+      let animation = anime.timeline({easing: 'linear', duration: 500})
+      animation
+        .add({targets: '.text-box', opacity: 1}, 700)
+        .add({targets: text[1], opacity: 1}, 2800)
+        .add({targets: text[2], opacity: 1}, 7800)
+        .add({targets: text[3], opacity: 1}, 10200)
+        .add({targets: text[4], opacity: 1}, 13100)
+        .add({targets: text[5], opacity: 1}, 17000)
+        .add({targets: text[6], opacity: 1}, 20100)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    let text = document.getElementsByClassName('text-box')[0].children;
-    let animation = anime.timeline({
-      easing: 'linear',
-      delay: 1500,
-      duration: 500
-    })
-    animation
-      .add({
-        targets: '.text-box',
-        opacity: 1,
-        delay: 500
-      })
-      .add({
-        targets: text[1],
-        opacity: 1,
-        delay: 500
-      })
-      .add({
-        targets: text[2],
-        opacity: 1,
-      })
-      .add({
-        targets: text[3],
-        opacity: 1,
-      })
-      .add({
-        targets: text[4],
-        opacity: 1,
-      })
-      .add({
-        targets: text[5],
-        opacity: 1
-      })
-      .add({
-        targets: text[6],
-        opacity: 1
-      })
-    this.$refs.audio.volume = 0.4
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>

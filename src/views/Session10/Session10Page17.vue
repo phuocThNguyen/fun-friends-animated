@@ -286,17 +286,6 @@
         </g>
       </g>
     </svg>
-    <div class="text-box">
-      <h1>Remember to:</h1>
-      <p>&bull; Be kind to all living beings.</p>
-      <p>&bull; Play outside.</p>
-      <p>&bull; Have plenty of sleep.</p>
-      <p>&bull; Drink and eat foods that are healthy.</p>
-      <p>&bull; Practise relaxing every day without screens.</p>
-      <p>&bull; Pay attention to happy things and what you
-        can see, hear, smell, taste and feel.</p>
-      <p>&bull; Say thank you for happy times.</p>
-    </div>
     <div class="star-container">
       <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 1258" width="1320" height="1258">
         <title>Star</title>
@@ -321,7 +310,8 @@
         </p>
       </div>
     </div>
-    <div class="page-number" id="page-light">202</div>
+    <audio src="../../assets/sounds/session10/Session10_Page17.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">201</div>
   </div>
 </template>
 
@@ -330,33 +320,32 @@ import anime from "animejs";
 
 export default {
   name: 'Session10Page17',
-  mounted() {
-    let vw = document.querySelector('.interactive-container').clientWidth;
-    let clouds = document.querySelector('#cloud').children;
-    clouds.forEach(cloud => {
+  methods: {
+    animateSvg() {
+      let vw = document.querySelector('.interactive-container').clientWidth;
+      let clouds = document.querySelector('#cloud').children;
+      clouds.forEach(cloud => {
+        anime({
+          targets: cloud,
+          easing: 'linear',
+          duration: Math.random() * 5000 + 15000,
+          translateX: (Math.round(Math.random() * 0.3 * vw) + 0.3*vw) * (Math.random() < 0.5 ? 1 : -1),
+          direction: 'alternate',
+          loop: true
+        })
+      })
       anime({
-        targets: cloud,
+        targets: '#big-cloud',
         easing: 'linear',
-        duration: Math.random() * 5000 + 15000,
-        translateX: (Math.round(Math.random() * 0.3 * vw) + 0.3*vw) * (Math.random() < 0.5 ? 1 : -1),
+        duration: 5000,
+        translateX: -0.1 * vw,
         direction: 'alternate',
         loop: true
       })
-    })
-    anime({
-      targets: '#big-cloud',
-      easing: 'linear',
-      duration: 5000,
-      translateX: -0.1 * vw,
-      direction: 'alternate',
-      loop: true
-    })
-    let animation = anime.timeline({
-      easing: 'linear',
-      delay: 500,
-      duration: 500
-    });
-    animation
+    },
+    animateElements() {
+      let animation = anime.timeline({easing: 'linear', delay: 500, duration: 500});
+      animation
         .add({
           targets: '.star-container',
           opacity: 1
@@ -381,6 +370,15 @@ export default {
           ],
           delay: 0,
         }, 1000)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 1500)
+    },
+  },
+  mounted() {
+    this.animateSvg();
+    this.animateElements();
+    this.playVoiceOver();
   }
 }
 </script>

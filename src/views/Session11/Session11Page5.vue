@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <div class="text-box">
       <h1>Additional Activity &ndash; Your Support Teams</h1>
-      <p>Support teams are always there to help you. How can
+      <p id="para">Support teams are always there to help you. How can
        Zoe, Daniel and Matilda get help from their support teams
        in the pictures below?</p>
     </div>
@@ -14,7 +14,8 @@
       <img src="../../assets/images/session11/Hugging_Lama_Girl.jpg" alt="hugging-lama" class="images">
       <div class="text" id="para-2">Matilda giving Alpaca a hug</div>
     </div>
-    <div class="page-number" id="page-light">207</div>
+    <audio src="../../assets/sounds/session11/Session11_Page5.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">206</div>
   </div>
 </template>
 
@@ -23,22 +24,22 @@ import anime from "animejs";
 
 export default {
   name: 'Session11Page5',
+  methods: {
+    animateText() {
+      let text = document.getElementsByClassName('text');
+      let animation = anime.timeline({easing: 'linear', duration: 500,})
+      animation
+        .add({targets: '#para',opacity: 1}, 4200)
+        .add({targets: text[0], opacity: 1}, 15500)
+        .add({targets: text[1], opacity: 1}, 18700)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    let text = document.getElementsByClassName('text');
-    let animation = anime.timeline({
-      easing: 'linear',
-      duration: 500,
-      delay: 500
-    })
-    animation
-    .add({
-      targets: text[0],
-      opacity: 1
-    })
-    .add({
-      targets: text[1],
-      opacity: 1
-    })
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>
@@ -81,5 +82,6 @@ export default {
 }
 .text-box p {
   font-size: 4vh;
+  opacity: 0;
 }
 </style>

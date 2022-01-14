@@ -3,16 +3,17 @@
     <img src="../../assets/images/session10/Dogs&People-swimming.jpg" alt="kids-and-dogs" class="session-background">
     <div class="text-box">
       <h1>Additional Activity &ndash; Someone to look up to who can help</h1>
-      <p>Eliza, Josh and Lucy are learning to jump the waves
-        and body surf at Straddie Island. Chilli and Pepper
-        also really love playing in the water. Chilli and Pepper
-        are showing them how to have a fun and safe time, enjoying
-        the waves.</p>
+      <p class="text"><span>Eliza, Josh and Lucy are learning to jump the waves
+        and body surf at Straddie Island.</span><span> Chilli and Pepper
+        also really love playing in the water.</span><span> Chilli and
+        Pepper are showing them how to have a fun and safe time, enjoying
+        the waves.</span></p>
     </div>
     <div class="green-box">
       <strong>We love having fun <br>in the ocean.</strong>
     </div>
-    <div class="page-number" id="page-light">197</div>
+    <audio src="../../assets/sounds/session10/Session10_Page12.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">196</div>
   </div>
 </template>
 
@@ -21,14 +22,23 @@ import anime from "animejs";
 
 export default {
   name: 'Session10Page12',
+  methods: {
+    animateText() {
+      let text = document.querySelector('.text').children;
+      let animation = anime.timeline({duration: 500, easing: 'linear'});
+      animation
+        .add({targets: text[0],color: '#000'}, 8000)
+        .add({targets: text[1],color: '#000'}, 15900)
+        .add({targets: text[2],color: '#000'}, 21200)
+        .add({targets: '.green-box',opacity: 1}, 28500)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    anime({
-      targets: '.green-box',
-      opacity: 1,
-      duration: 500,
-      delay: 500,
-      easing: 'linear'
-    })
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>
@@ -60,6 +70,7 @@ export default {
 .text-box p {
   font-size: 3.5vh;
   margin-bottom: 0;
+  color: #ffffff;
 }
 .session-background {
   top: 10vh;

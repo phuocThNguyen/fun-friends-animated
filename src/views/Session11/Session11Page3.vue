@@ -11,7 +11,8 @@
       <p>How does it feel to be helpful?</p>
       <p>Is there an activity you can do together to help even more?</p>
     </div>
-    <div class="page-number" id="page-light">205</div>
+    <audio src="../../assets/sounds/session11/Session11_Page3.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">204</div>
   </div>
 </template>
 
@@ -20,14 +21,26 @@ import anime from "animejs";
 
 export default {
   name: 'Session11Page3',
+  methods: {
+    animateText() {
+      let text = document.querySelector('.text-box').children;
+      let animation = anime.timeline({duration: 500, easing: 'linear'})
+      animation
+        .add({targets: '.text-box',opacity: 1}, 500)
+        .add({targets: text[0],opacity: 1}, 500)
+        .add({targets: text[1],opacity: 1}, 6500)
+        .add({targets: text[2],opacity: 1}, 11000)
+        .add({targets: text[3],opacity: 1}, 13500)
+        .add({targets: text[4],opacity: 1}, 21500)
+        .add({targets: text[5],opacity: 1}, 25100)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    anime({
-      targets: '.text-box',
-      opacity: 1,
-      duration: 500,
-      delay: 500,
-      easing: 'linear'
-    })
+    this.animateText();
+    this.playVoiceOver();
   }
 }
 </script>
@@ -45,5 +58,6 @@ export default {
 .text-box p {
   font-size: 4vh;
   margin-bottom: 0;
+  opacity: 0;
 }
 </style>

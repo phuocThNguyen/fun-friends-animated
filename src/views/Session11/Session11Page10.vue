@@ -1452,7 +1452,8 @@
         </p>
       </div>
     </div>
-    <div class="page-number" id="page-light">212</div>
+    <audio src="../../assets/sounds/session11/Session11_Page10.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">211</div>
   </div>
 </template>
 
@@ -1461,37 +1462,46 @@ import anime from "animejs";
 
 export default {
   name: 'Session11Page10',
+  methods: {
+    animateElements() {
+      let animation = anime.timeline({
+        easing: 'linear',
+        delay: 500,
+        duration: 500
+      });
+      animation
+        .add({
+          targets: '.star-container',
+          opacity: 1
+        })
+        .add({
+          targets: ".star",
+          keyframes: [
+            {rotate: '-20deg'},
+            {rotate: '20deg'},
+            {rotate: '-20deg'},
+            {rotate: '0deg'},
+          ],
+          delay: 0,
+        })
+        .add({
+          targets: ".star-text",
+          keyframes: [
+            {rotate: '-20deg'},
+            {rotate: '20deg'},
+            {rotate: '-20deg'},
+            {rotate: '0deg'},
+          ],
+          delay: 0,
+        }, 1000)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 1500)
+    },
+  },
   mounted() {
-    let animation = anime.timeline({
-      easing: 'linear',
-      delay: 500,
-      duration: 500
-    });
-    animation
-      .add({
-        targets: '.star-container',
-        opacity: 1
-      })
-      .add({
-        targets: ".star",
-        keyframes: [
-          {rotate: '-20deg'},
-          {rotate: '20deg'},
-          {rotate: '-20deg'},
-          {rotate: '0deg'},
-        ],
-        delay: 0,
-      })
-      .add({
-        targets: ".star-text",
-        keyframes: [
-          {rotate: '-20deg'},
-          {rotate: '20deg'},
-          {rotate: '-20deg'},
-          {rotate: '0deg'},
-        ],
-        delay: 0,
-      }, 1000)
+    this.animateElements();
+    this.playVoiceOver();
   }
 }
 </script>

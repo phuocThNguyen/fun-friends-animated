@@ -435,8 +435,9 @@
       <p>&middot; Try your best and give it a go. </p>
       <p>&middot; Believe in yourself.</p>
     </div>
-    <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"></audio>
-    <div class="page-number" id="page-light">153</div>
+    <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"/>
+    <audio src="../../assets/sounds/session7/Session7_Page15.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">152</div>
   </div>
 </template>
 
@@ -445,57 +446,62 @@ import anime from "animejs";
 
 export default {
   name: 'Session7Page16',
+  methods: {
+    animateText() {
+      let text = document.getElementsByClassName('text-box')[0].children;
+      let animation = anime.timeline({
+        easing: 'linear',
+        duration: 500
+      })
+      animation
+        .add({
+          targets: '.text-box',
+          opacity: 1,
+        }, 500)
+        .add({
+          targets: text[1],
+          opacity: 1,
+        }, 2600)
+        .add({
+          targets: text[2],
+          opacity: 1,
+        }, 25700)
+        .add({
+          targets: text[3],
+          opacity: 1,
+        }, 36000)
+        .add({
+          targets: text[4],
+          opacity: 1,
+        }, 49400)
+        .add({
+          targets: text[5],
+          opacity: 1
+        }, 55700)
+        .add({
+          targets: text[6],
+          opacity: 1
+        }, 58200)
+        .add({
+          targets: text[7],
+          opacity: 1
+        }, 60500)
+        .add({
+          targets: text[8],
+          opacity: 1
+        }, 63700)
+        .add({
+          targets: text[9],
+          opacity: 1
+        }, 66000)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    let text = document.getElementsByClassName('text-box')[0].children;
-    let animation = anime.timeline({
-      easing: 'linear',
-      delay: 1000,
-      duration: 300
-    })
-    animation
-      .add({
-        targets: '.text-box',
-        opacity: 1,
-      })
-      .add({
-        targets: text[1],
-        opacity: 1,
-      })
-      .add({
-        targets: text[2],
-        opacity: 1,
-        delay: 3000
-      })
-      .add({
-        targets: text[3],
-        opacity: 1,
-        delay: 3000
-      })
-      .add({
-        targets: text[4],
-        opacity: 1,
-        delay: 3000
-      })
-      .add({
-        targets: text[5],
-        opacity: 1
-      })
-      .add({
-        targets: text[6],
-        opacity: 1
-      })
-      .add({
-        targets: text[7],
-        opacity: 1
-      })
-      .add({
-        targets: text[8],
-        opacity: 1
-      })
-      .add({
-        targets: text[9],
-        opacity: 1
-      })
+    this.animateText()
+    this.playVoiceOver();
   }
 }
 </script>
