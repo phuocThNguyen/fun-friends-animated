@@ -5,15 +5,14 @@
       <p>In this picture, the children are walking
         to a new school with their dad.</p>
       <p>What could they be feeling?</p>
-      <p>Are they having '<span class="red">red</span>' or
-        '<span class="green">green</span>'
-        thoughts?</p>
+      <p>Are they having '<span id="red-text">red</span>' or
+        <span id="green-text">green</span>' thoughts?</p>
     </div>
-    <traffic-light
-        correctAns="#green-light"
-        class="traffic-light"
-        v-on:wrongAnswer="handleWrongAnswer"
-        v-on:correctAnswer="handleCorrectAnswer"
+    <traffic-light-vertical
+      correctAns="green"
+      class="traffic-light"
+      v-on:wrongAnswer="handleWrongAnswer"
+      v-on:correctAnswer="handleCorrectAnswer"
     />
 
     <!--  Good Job  -->
@@ -114,11 +113,12 @@
 </template>
 
 <script>
-import TrafficLight from "@/components/trafficLights/TrafficLights";
 import anime from "animejs";
+import TrafficLightVertical from "@/components/trafficLights/TrafficLightsVertical";
+
 export default {
   name: 'Session5Page4',
-  components: {TrafficLight},
+  components: {TrafficLightVertical},
   methods: {
     handleWrongAnswer() {
       anime({
@@ -182,16 +182,16 @@ export default {
 <style scoped>
 .traffic-light {
   position: absolute;
-  left: 38.5vh;
-  bottom: 22vh;
+  right: 30.5vh;
+  top: 15vh;
   opacity: 0;
 }
 .text-box {
   position: absolute;
-  width: 50%;
-  padding: 1.5vh;
-  top: 1vh;
-  left: 1%;
+  width: 40%;
+  padding: 1vh;
+  top: .5vh;
+  left: .5vh;
   background-color: rgba(255,255,255, 0.9);
   opacity: 0;
 }
@@ -200,18 +200,14 @@ export default {
   margin-bottom: 0;
   opacity: 0;
 }
-.red {
-  color: red;
-}
-.green {
-  color: #00CE7C;
-}
+#red-text {color: red;}
+#green-text {color: #00CE7C;}
 .reward {
   position: absolute;
   height: auto;
   width: 1%;
-  top: 20vh;
-  right: 22%;
+  top: 16vh;
+  right: 31%;
   opacity: 0;
   z-index: 10;
 }
@@ -219,8 +215,8 @@ export default {
   position: absolute;
   width: auto;
   height: 25vh;
-  top: 5vh;
-  right: 18%;
+  top: 2vh;
+  right: 21%;
   z-index: 50;
   opacity: 0;
 }

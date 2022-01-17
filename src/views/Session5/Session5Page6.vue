@@ -4,11 +4,11 @@
     <div class="text-box">
       <p>Nala is spending her first night sleeping by herself.</p>
       <p>How is she feeling? Is Nala having
-        '<span class="red">red</span>' or
-        '<span class="green">green</span>' thoughts?</p>
+        '<span id="red-text">red</span>' or
+        '<span id="green-text">green</span>' thoughts?</p>
     </div>
-    <traffic-light
-        correctAns="#green-light"
+    <traffic-lights-vertical
+        correctAns="green"
         class="traffic-light"
         v-on:wrongAnswer="handleWrongAnswer"
         v-on:correctAnswer="handleCorrectAnswer"
@@ -79,11 +79,12 @@
 </template>
 
 <script>
-import TrafficLight from "@/components/trafficLights/TrafficLights";
+import TrafficLightsVertical from "@/components/trafficLights/TrafficLightsVertical";
 import anime from "animejs";
+
 export default {
   name: 'Session5Page6',
-  components: {TrafficLight},
+  components: {TrafficLightsVertical},
   methods: {
     handleWrongAnswer() {
       anime({
@@ -143,8 +144,8 @@ export default {
 <style scoped>
 .traffic-light {
   position: absolute;
-  left: 38.5vh;
-  bottom: 22vh;
+  left: 8.5vh;
+  top: 35vh;
   opacity: 0;
 }
 .text-box {
@@ -161,12 +162,8 @@ export default {
   margin-bottom: 0;
   opacity: 0;
 }
-.red {
-  color: red;
-}
-.green {
-  color: #00CE7C;
-}
+#red-text {color: red;}
+#green-text {color: #00CE7C;}
 .reward {
   position: absolute;
   height: auto;
@@ -179,8 +176,8 @@ export default {
   position: absolute;
   width: auto;
   height: 25vh;
-  top: 45vh;
-  left: 5%;
+  top: 55vh;
+  right: 8%;
   z-index: 50;
   opacity: 0;
 }

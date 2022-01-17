@@ -3,14 +3,14 @@
     <img src="../../assets/images/session5/86.jpg" alt="red" class="session-background">
     <div class="text-box">
       <p>Matilda is spending her first night sleeping by herself.</p>
-      <p>How is she feeling? Is Matilda having '<span class="red">red</span>'
-        or '<span class="green">green</span>' thoughts?</p>
+      <p>How is she feeling? Is Matilda having '<span id="red-text">red</span>'
+        or '<span id="green-text">green</span>' thoughts?</p>
     </div>
-    <traffic-light
-        correctAns="#red-light"
-        class="traffic-light"
-        v-on:wrongAnswer="handleWrongAnswer"
-        v-on:correctAnswer="handleCorrectAnswer"
+    <traffic-lights-vertical
+      correctAns="red"
+      class="traffic-light"
+      v-on:wrongAnswer="handleWrongAnswer"
+      v-on:correctAnswer="handleCorrectAnswer"
     />
 
     <!--  Very Good  -->
@@ -116,11 +116,11 @@
 </template>
 
 <script>
-import TrafficLight from "@/components/trafficLights/TrafficLights";
+import TrafficLightsVertical from "@/components/trafficLights/TrafficLightsVertical";
 import anime from "animejs";
 export default {
   name: 'Session5Page5',
-  components: {TrafficLight},
+  components: {TrafficLightsVertical},
   methods: {
     handleWrongAnswer() {
       anime({
@@ -180,8 +180,8 @@ export default {
 <style scoped>
 .traffic-light {
   position: absolute;
-  left: 38.5vh;
-  bottom: 22vh;
+  right: 38.5vh;
+  top: 35vh;
   opacity: 0;
 }
 .text-box {
@@ -198,26 +198,22 @@ export default {
   margin-bottom: 0;
   opacity: 0;
 }
-.red {
-  color: red;
-}
-.green {
-  color: #00CE7C;
-}
+#red-text {color: red;}
+#green-text {color: #00CE7C;}
 .reward {
   position: absolute;
   height: auto;
   width: 1%;
-  top: 35vh;
-  right: 15%;
+  top: 68vh;
+  right: 68vh;
   opacity: 0;
 }
 .sticker {
   position: absolute;
   width: auto;
   height: 25vh;
-  top: 22vh;
-  right: 7%;
+  bottom: 10vh;
+  right: 58vh;
   z-index: 50;
   opacity: 0;
 }

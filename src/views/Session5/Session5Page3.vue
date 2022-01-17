@@ -2,18 +2,18 @@
   <div class="interactive-container">
     <img src="../../assets/images/session5/447.jpg" alt="red" class="session-background">
     <div class="text-box">
-      <p>Lucy is starting a new school and she feels sad and scared.
-        <br>Why do you think she feels sad and scared?
-        How do you think her mum feels?
-      </p>
-      <p>Is Lucy having '<span class="red">red</span>' or
-        '<span class="green">green</span>' thoughts?</p>
+      <p>Lucy is starting a new school and she feels sad and scared.</p>
+      <p>Why do you think she feels sad and scared?
+        How do you think her mum feels?</p>
+      <p>Is Lucy having '<span id="red-text">red</span>' or
+        '<span id="green-text">green</span>' thoughts?</p>
     </div>
-    <traffic-light
-        correctAns="#red-light"
-        class="traffic-light"
-        v-on:wrongAnswer="handleWrongAnswer"
-        v-on:correctAnswer="handleCorrectAnswer"
+
+    <traffic-lights-vertical
+      correctAns="red"
+      class="traffic-light"
+      v-on:wrongAnswer="handleWrongAnswer"
+      v-on:correctAnswer="handleCorrectAnswer"
     />
 
     <!--  Great Work  -->
@@ -166,11 +166,12 @@
 </template>
 
 <script>
-import TrafficLight from "@/components/trafficLights/TrafficLights";
+import TrafficLightsVertical from "@/components/trafficLights/TrafficLightsVertical";
 import anime from "animejs";
+
 export default {
   name: 'Session5Page3',
-  components: {TrafficLight},
+  components: {TrafficLightsVertical},
   methods: {
     handleWrongAnswer() {
       anime({
@@ -210,6 +211,10 @@ export default {
         .add({
           targets: text[1],
           opacity: 1
+        }, 6900)
+        .add({
+          targets: text[2],
+          opacity: 1
         }, 13687)
         .add({
           targets: '.traffic-light',
@@ -230,8 +235,8 @@ export default {
 <style scoped>
 .traffic-light {
   position: absolute;
-  left: 38.5vh;
-  bottom: 22vh;
+  left: 8.5vh;
+  top: 35vh;
   opacity: 0;
 }
 .text-box {
@@ -248,26 +253,22 @@ export default {
   margin-bottom: 0;
   opacity: 0;
 }
-.red {
-  color: red;
-}
-.green {
-  color: #00CE7C;
-}
+#red-text {color: red;}
+#green-text {color: #00CE7C;}
 .reward {
   position: absolute;
   height: auto;
   width: 1%;
-  top: 35vh;
-  left: 15%;
+  top: 30vh;
+  right: 10%;
   opacity: 0;
 }
 .sticker {
   position: absolute;
   width: auto;
   height: 25vh;
-  top: 22vh;
-  left: 7%;
+  top: 60vh;
+  left: 40%;
   z-index: 50;
   opacity: 0;
 }
