@@ -7,12 +7,21 @@
     <img src="../../assets/images/appendix/78621.png" alt="children" class="images">
     <img src="../../assets/images/appendix/Playing_Lambs_01.png" alt="lamb" class="images">
     <img src="../../assets/images/appendix/70160.png" alt="drawing" class="images">
+    <audio src="../../assets/sounds/appendix/Session13_Appendix_Page8.mp3" ref="voice"/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'AppendixPage9'
+  name: 'AppendixPage9',
+  methods: {
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
+  mounted() {
+    this.playVoiceOver()
+  }
 }
 </script>
 

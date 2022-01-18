@@ -541,7 +541,8 @@
           and listening when others are talking.</p>
       </div>
     </div>
-    <div class="page-number" id="page-light">217</div>
+    <audio src="../../assets/sounds/session12/Session12_Page5.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">216</div>
   </div>
 </template>
 
@@ -550,31 +551,23 @@ import anime from "animejs";
 
 export default {
   name: 'Session12Page5',
+  methods: {
+    animationText() {
+      let text = document.querySelector('.text').children
+      let animation = anime.timeline({easing: 'linear', duration: 500})
+      animation
+        .add({targets: text[0], opacity: 1}, 1000)
+        .add({targets: text[1], opacity: 1}, 21600)
+        .add({targets: text[2], opacity: 1}, 34900)
+        .add({targets: text[3], opacity: 1}, 55000)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    let text = document.querySelector('.text').children
-    let animation = anime.timeline({
-      easing: 'linear',
-      delay: 1500,
-      duration: 500
-    })
-    animation
-    .add({
-      targets: text[0],
-      opacity: 1,
-      delay: 500
-    })
-    .add({
-      targets: text[1],
-      opacity: 1
-    })
-    .add({
-      targets: text[2],
-      opacity: 1
-    })
-    .add({
-      targets: text[3],
-      opacity: 1
-    })
+    this.animationText();
+    this.playVoiceOver();
   }
 }
 </script>
@@ -595,14 +588,12 @@ export default {
   color: #ffffff;
   font-size: 3.2vh;
   font-weight: bold;
-  opacity: 1;
 }
 .text {
   background-color: rgba(255,255,255,0.9);
   position: absolute;
   top: 8vh;
   padding: 1vh;
-  opacity: 1;
 }
 .text p {
   margin-bottom: 1.5vh;

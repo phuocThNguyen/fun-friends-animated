@@ -372,833 +372,228 @@
         </g>
       </g>
     </svg>
-    <div class="page-number" id="page-dark">228</div>
+    <audio src="../../assets/sounds/appendix/Session13_Appendix_Page7.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">227</div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'AppendixPage8'
+  name: 'AppendixPage8',
+  methods: {
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
+  mounted() {
+    this.playVoiceOver()
+  }
 }
 </script>
 
 <style scoped>
-.cls-1 {
-  fill: none;
-}
-
-.cls-2 {
-  isolation: isolate;
-}
-
-.cls-3 {
-  fill: url(#linear-gradient);
-}
-
-.cls-4 {
-  fill: #2bb673;
-}
-
-.cls-5 {
-  fill: #6f504e;
-}
-
-.cls-6 {
-  fill: #cbc2b0;
-}
-
-.cls-7 {
-  fill: #a39c8e;
-}
-
-.cls-8 {
-  fill: #fdfdfd;
-}
-
-.cls-9 {
-  fill: #e0dbd0;
-}
-
-.cls-10 {
-  fill: #5f4340;
-}
-
-.cls-11 {
-  font-size: 44px;
-  font-family: BubbleGum;
-}
-
-.cls-11, .cls-15, .cls-175, .cls-49 {
-  fill: #fff;
-}
-
-.cls-12 {
-  clip-path: url(#clip-path);
-}
-
-.cls-13 {
-  fill: #f86f57;
-}
-
-.cls-14, .cls-47 {
-  mix-blend-mode: multiply;
-}
-
-.cls-15 {
-  opacity: 0;
-}
-
-.cls-16 {
-  fill: #fcf8f8;
-}
-
-.cls-114, .cls-147, .cls-16, .cls-52, .cls-84 {
-  opacity: 0.04;
-}
-
-.cls-17 {
-  fill: #faf2f0;
-}
-
-.cls-115, .cls-148, .cls-17, .cls-53, .cls-85 {
-  opacity: 0.08;
-}
-
-.cls-18 {
-  fill: #f7ebe9;
-}
-
-.cls-116, .cls-149, .cls-18, .cls-54, .cls-86 {
-  opacity: 0.12;
-}
-
-.cls-19 {
-  fill: #f4e5e2;
-}
-
-.cls-117, .cls-150, .cls-19, .cls-55, .cls-87 {
-  opacity: 0.15;
-}
-
-.cls-20 {
-  fill: #f2deda;
-}
-
-.cls-118, .cls-151, .cls-20, .cls-56, .cls-88 {
-  opacity: 0.19;
-}
-
-.cls-21 {
-  fill: #efd7d3;
-}
-
-.cls-119, .cls-152, .cls-21, .cls-57, .cls-89 {
-  opacity: 0.23;
-}
-
-.cls-22 {
-  fill: #ecd1cc;
-}
-
-.cls-120, .cls-153, .cls-22, .cls-58, .cls-90 {
-  opacity: 0.27;
-}
-
-.cls-23 {
-  fill: #e9cac5;
-}
-
-.cls-121, .cls-154, .cls-23, .cls-59, .cls-91 {
-  opacity: 0.31;
-}
-
-.cls-24 {
-  fill: #e7c3bd;
-}
-
-.cls-122, .cls-155, .cls-24, .cls-60, .cls-92 {
-  opacity: 0.35;
-}
-
-.cls-25 {
-  fill: #e4bdb6;
-}
-
-.cls-123, .cls-156, .cls-25, .cls-61, .cls-93 {
-  opacity: 0.38;
-}
-
-.cls-26 {
-  fill: #e1b6af;
-}
-
-.cls-124, .cls-157, .cls-26, .cls-62, .cls-94 {
-  opacity: 0.42;
-}
-
-.cls-27 {
-  fill: #dfb0a7;
-}
-
-.cls-125, .cls-158, .cls-27, .cls-63, .cls-95 {
-  opacity: 0.46;
-}
-
-.cls-28 {
-  fill: #dca9a0;
-}
-
-.cls-126, .cls-159, .cls-28, .cls-64, .cls-96 {
-  opacity: 0.5;
-}
-
-.cls-29 {
-  fill: #d9a299;
-}
-
-.cls-127, .cls-160, .cls-29, .cls-65, .cls-97 {
-  opacity: 0.54;
-}
-
-.cls-30 {
-  fill: #d79c91;
-}
-
-.cls-128, .cls-161, .cls-30, .cls-66, .cls-98 {
-  opacity: 0.58;
-}
-
-.cls-31 {
-  fill: #d4958a;
-}
-
-.cls-129, .cls-162, .cls-31, .cls-67, .cls-99 {
-  opacity: 0.62;
-}
-
-.cls-32 {
-  fill: #d18f83;
-}
-
-.cls-100, .cls-130, .cls-163, .cls-32, .cls-68 {
-  opacity: 0.65;
-}
-
-.cls-33 {
-  fill: #cf887b;
-}
-
-.cls-101, .cls-131, .cls-164, .cls-33, .cls-69 {
-  opacity: 0.69;
-}
-
-.cls-34 {
-  fill: #cc8174;
-}
-
-.cls-102, .cls-132, .cls-165, .cls-34, .cls-70 {
-  opacity: 0.73;
-}
-
-.cls-35 {
-  fill: #c97b6d;
-}
-
-.cls-103, .cls-133, .cls-166, .cls-35, .cls-71 {
-  opacity: 0.77;
-}
-
-.cls-36 {
-  fill: #c67466;
-}
-
-.cls-104, .cls-134, .cls-167, .cls-36, .cls-72 {
-  opacity: 0.81;
-}
-
-.cls-37 {
-  fill: #c46d5e;
-}
-
-.cls-105, .cls-135, .cls-168, .cls-37, .cls-73 {
-  opacity: 0.85;
-}
-
-.cls-38 {
-  fill: #c16757;
-}
-
-.cls-106, .cls-136, .cls-169, .cls-38, .cls-74 {
-  opacity: 0.88;
-}
-
-.cls-39 {
-  fill: #be6050;
-}
-
-.cls-107, .cls-137, .cls-170, .cls-39, .cls-75 {
-  opacity: 0.92;
-}
-
-.cls-40 {
-  fill: #bc5a48;
-}
-
-.cls-108, .cls-138, .cls-171, .cls-40, .cls-76 {
-  opacity: 0.96;
-}
-
-.cls-41 {
-  fill: #b95341;
-}
-
-.cls-42 {
-  fill: #f4f9ec;
-}
-
-.cls-43 {
-  fill: #324057;
-}
-
-.cls-44 {
-  fill: #405270;
-}
-
-.cls-45 {
-  fill: #cdcfc2;
-}
-
-.cls-46 {
-  fill: #242e3e;
-}
-
-.cls-47 {
-  fill: #d8dacc;
-}
-
-.cls-48 {
-  fill: #edc28d;
-}
-
-.cls-50 {
-  clip-path: url(#clip-path-2);
-}
-
-.cls-51 {
-  fill: #f1be00;
-}
-
-.cls-52 {
-  fill: #fcfbf5;
-}
-
-.cls-53 {
-  fill: #f9f6eb;
-}
-
-.cls-54 {
-  fill: #f6f2e2;
-}
-
-.cls-55 {
-  fill: #f3edd8;
-}
-
-.cls-56 {
-  fill: #f0e9ce;
-}
-
-.cls-57 {
-  fill: #ede4c4;
-}
-
-.cls-58 {
-  fill: #eae0ba;
-}
-
-.cls-59 {
-  fill: #e7dbb1;
-}
-
-.cls-60 {
-  fill: #e4d7a7;
-}
-
-.cls-61 {
-  fill: #e1d29d;
-}
-
-.cls-62 {
-  fill: #dece93;
-}
-
-.cls-63 {
-  fill: #dbc989;
-}
-
-.cls-64 {
-  fill: #d8c580;
-}
-
-.cls-65 {
-  fill: #d4c176;
-}
-
-.cls-66 {
-  fill: #d1bc6c;
-}
-
-.cls-67 {
-  fill: #ceb862;
-}
-
-.cls-68 {
-  fill: #cbb358;
-}
-
-.cls-69 {
-  fill: #c8af4e;
-}
-
-.cls-70 {
-  fill: #c5aa45;
-}
-
-.cls-71 {
-  fill: #c2a63b;
-}
-
-.cls-72 {
-  fill: #bfa131;
-}
-
-.cls-73 {
-  fill: #bc9d27;
-}
-
-.cls-74 {
-  fill: #b9981d;
-}
-
-.cls-75 {
-  fill: #b69414;
-}
-
-.cls-76 {
-  fill: #b38f0a;
-}
-
-.cls-77 {
-  fill: #b08b00;
-}
-
-.cls-78 {
-  fill: #f8cb94;
-}
-
-.cls-79 {
-  fill: #f7a871;
-}
-
-.cls-80 {
-  fill: #ea9a61;
-}
-
-.cls-81 {
-  fill: #ffd69d;
-}
-
-.cls-82 {
-  clip-path: url(#clip-path-3);
-}
-
-.cls-83 {
-  fill: #ff9033;
-}
-
-.cls-84 {
-  fill: #fdf9f7;
-}
-
-.cls-85 {
-  fill: #fbf4ee;
-}
-
-.cls-86 {
-  fill: #f8eee6;
-}
-
-.cls-87 {
-  fill: #f6e9de;
-}
-
-.cls-88 {
-  fill: #f4e3d5;
-}
-
-.cls-89 {
-  fill: #f2decd;
-}
-
-.cls-90 {
-  fill: #efd8c5;
-}
-
-.cls-91 {
-  fill: #edd3bd;
-}
-
-.cls-92 {
-  fill: #ebcdb4;
-}
-
-.cls-93 {
-  fill: #e9c8ac;
-}
-
-.cls-94 {
-  fill: #e6c2a4;
-}
-
-.cls-95 {
-  fill: #e4bd9b;
-}
-
-.cls-96 {
-  fill: #e2b793;
-}
-
-.cls-97 {
-  fill: #e0b18b;
-}
-
-.cls-98 {
-  fill: #deac82;
-}
-
-.cls-99 {
-  fill: #dba67a;
-}
-
-.cls-100 {
-  fill: #d9a172;
-}
-
-.cls-101 {
-  fill: #d79b69;
-}
-
-.cls-102 {
-  fill: #d59661;
-}
-
-.cls-103 {
-  fill: #d29059;
-}
-
-.cls-104 {
-  fill: #d08b51;
-}
-
-.cls-105 {
-  fill: #ce8548;
-}
-
-.cls-106 {
-  fill: #cc8040;
-}
-
-.cls-107 {
-  fill: #c97a38;
-}
-
-.cls-108 {
-  fill: #c7752f;
-}
-
-.cls-109 {
-  fill: #c56f27;
-}
-
-.cls-110 {
-  fill: #eea26d;
-}
-
-.cls-111 {
-  fill: #e5bb89;
-}
-
-.cls-112 {
-  clip-path: url(#clip-path-4);
-}
-
-.cls-113 {
-  fill: #b93c98;
-}
-
-.cls-114 {
-  fill: #fefafa;
-}
-
-.cls-115 {
-  fill: #fcf5f4;
-}
-
-.cls-116 {
-  fill: #fbefef;
-}
-
-.cls-117 {
-  fill: #f9eaea;
-}
-
-.cls-118 {
-  fill: #f8e5e4;
-}
-
-.cls-119 {
-  fill: #f6e0df;
-}
-
-.cls-120 {
-  fill: #f5dbda;
-}
-
-.cls-121 {
-  fill: #f4d5d5;
-}
-
-.cls-122 {
-  fill: #f2d0cf;
-}
-
-.cls-123 {
-  fill: #f1cbca;
-}
-
-.cls-124 {
-  fill: #efc6c5;
-}
-
-.cls-125 {
-  fill: #eec1bf;
-}
-
-.cls-126 {
-  fill: #edbcba;
-}
-
-.cls-127 {
-  fill: #ebb6b5;
-}
-
-.cls-128 {
-  fill: #eab1af;
-}
-
-.cls-129 {
-  fill: #e8acaa;
-}
-
-.cls-130 {
-  fill: #e7a7a5;
-}
-
-.cls-131 {
-  fill: #e5a29f;
-}
-
-.cls-132 {
-  fill: #e49c9a;
-}
-
-.cls-133 {
-  fill: #e39795;
-}
-
-.cls-134 {
-  fill: #e19290;
-}
-
-.cls-135 {
-  fill: #e08d8a;
-}
-
-.cls-136 {
-  fill: #de8885;
-}
-
-.cls-137 {
-  fill: #dd8280;
-}
-
-.cls-138 {
-  fill: #db7d7a;
-}
-
-.cls-139 {
-  fill: #da7875;
-}
-
-.cls-140 {
-  fill: #7c4c48;
-}
-
-.cls-141 {
-  fill: #f08481;
-}
-
-.cls-142 {
-  fill: #ded6d1;
-}
-
-.cls-143 {
-  fill: #fff0e3;
-}
-
-.cls-144 {
-  fill: #ff9692;
-}
-
-.cls-145 {
-  clip-path: url(#clip-path-5);
-}
-
-.cls-146 {
-  fill: #2cb87c;
-}
-
-.cls-147 {
-  fill: #f6faf8;
-}
-
-.cls-148 {
-  fill: #eef5f2;
-}
-
-.cls-149 {
-  fill: #e5f0eb;
-}
-
-.cls-150 {
-  fill: #dcebe5;
-}
-
-.cls-151 {
-  fill: #d4e6de;
-}
-
-.cls-152 {
-  fill: #cbe1d8;
-}
-
-.cls-153 {
-  fill: #c2ddd1;
-}
-
-.cls-154 {
-  fill: #bad8cb;
-}
-
-.cls-155 {
-  fill: #b1d3c4;
-}
-
-.cls-156 {
-  fill: #a8cebe;
-}
-
-.cls-157 {
-  fill: #a0c9b7;
-}
-
-.cls-158 {
-  fill: #97c4b1;
-}
-
-.cls-159 {
-  fill: #8fbfaa;
-}
-
-.cls-160 {
-  fill: #86baa3;
-}
-
-.cls-161 {
-  fill: #7db59d;
-}
-
-.cls-162 {
-  fill: #75b096;
-}
-
-.cls-163 {
-  fill: #6cab90;
-}
-
-.cls-164 {
-  fill: #63a689;
-}
-
-.cls-165 {
-  fill: #5ba183;
-}
-
-.cls-166 {
-  fill: #529d7c;
-}
-
-.cls-167 {
-  fill: #499876;
-}
-
-.cls-168 {
-  fill: #41936f;
-}
-
-.cls-169 {
-  fill: #388e69;
-}
-
-.cls-170 {
-  fill: #2f8962;
-}
-
-.cls-171 {
-  fill: #27845c;
-}
-
-.cls-172 {
-  fill: #1e7f55;
-}
-
-.cls-173 {
-  fill: #dcb483;
-}
-
-.cls-174 {
-  fill: #a97c47;
-}
-
-.cls-175 {
-  font-size: 31.27px;
-  font-family: ProximaSoft-Bold, Proxima Soft;
-  font-weight: 700;
-}
-
-.cls-176 {
-  letter-spacing: -0.04em;
-}
-
-.cls-177 {
-  letter-spacing: -0.02em;
-}
-
-.cls-178 {
-  letter-spacing: -0.09em;
-}
-
-.cls-179 {
-  letter-spacing: -0.01em;
-}
+.cls-1 {fill: none;}
+.cls-2 {isolation: isolate;}
+.cls-3 {fill: url(#linear-gradient);}
+.cls-4 {fill: #2bb673;}
+.cls-5 {fill: #6f504e;}
+.cls-6 {fill: #cbc2b0;}
+.cls-7 {fill: #a39c8e;}
+.cls-8 {fill: #fdfdfd;}
+.cls-9 {fill: #e0dbd0;}
+.cls-10 {fill: #5f4340;}
+.cls-11 {font-size: 44px;font-family: BubbleGum;}
+.cls-11, .cls-15, .cls-175, .cls-49 {fill: #fff;}
+.cls-12 {clip-path: url(#clip-path);}
+.cls-13 {fill: #f86f57;}
+.cls-14, .cls-47 {mix-blend-mode: multiply;}
+.cls-15 {opacity: 0;}
+.cls-16 {fill: #fcf8f8;}
+.cls-114, .cls-147, .cls-16, .cls-52, .cls-84 {opacity: 0.04;}
+.cls-17 {fill: #faf2f0;}
+.cls-115, .cls-148, .cls-17, .cls-53, .cls-85 {opacity: 0.08;}
+.cls-18 {fill: #f7ebe9;}
+.cls-116, .cls-149, .cls-18, .cls-54, .cls-86 {opacity: 0.12;}
+.cls-19 {fill: #f4e5e2;}
+.cls-117, .cls-150, .cls-19, .cls-55, .cls-87 {opacity: 0.15;}
+.cls-20 {fill: #f2deda;}
+.cls-118, .cls-151, .cls-20, .cls-56, .cls-88 {opacity: 0.19;}
+.cls-21 {fill: #efd7d3;}
+.cls-119, .cls-152, .cls-21, .cls-57, .cls-89 {opacity: 0.23;}
+.cls-22 {fill: #ecd1cc;}
+.cls-120, .cls-153, .cls-22, .cls-58, .cls-90 {opacity: 0.27;}
+.cls-23 {fill: #e9cac5;}
+.cls-121, .cls-154, .cls-23, .cls-59, .cls-91 {opacity: 0.31;}
+.cls-24 {fill: #e7c3bd;}
+.cls-122, .cls-155, .cls-24, .cls-60, .cls-92 {opacity: 0.35;}
+.cls-25 {fill: #e4bdb6;}
+.cls-123, .cls-156, .cls-25, .cls-61, .cls-93 {opacity: 0.38;}
+.cls-26 {fill: #e1b6af;}
+.cls-124, .cls-157, .cls-26, .cls-62, .cls-94 {opacity: 0.42;}
+.cls-27 {fill: #dfb0a7;}
+.cls-125, .cls-158, .cls-27, .cls-63, .cls-95 {opacity: 0.46;}
+.cls-28 {fill: #dca9a0;}
+.cls-126, .cls-159, .cls-28, .cls-64, .cls-96 {opacity: 0.5;}
+.cls-29 {fill: #d9a299;}
+.cls-127, .cls-160, .cls-29, .cls-65, .cls-97 {opacity: 0.54;}
+.cls-30 {fill: #d79c91;}
+.cls-128, .cls-161, .cls-30, .cls-66, .cls-98 {opacity: 0.58;}
+.cls-31 {fill: #d4958a;}
+.cls-129, .cls-162, .cls-31, .cls-67, .cls-99 {opacity: 0.62;}
+.cls-32 {fill: #d18f83;}
+.cls-100, .cls-130, .cls-163, .cls-32, .cls-68 {opacity: 0.65;}
+.cls-33 {fill: #cf887b;}
+.cls-101, .cls-131, .cls-164, .cls-33, .cls-69 {opacity: 0.69;}
+.cls-34 {fill: #cc8174;}
+.cls-102, .cls-132, .cls-165, .cls-34, .cls-70 {opacity: 0.73;}
+.cls-35 {fill: #c97b6d;}
+.cls-103, .cls-133, .cls-166, .cls-35, .cls-71 {opacity: 0.77;}
+.cls-36 {fill: #c67466;}
+.cls-104, .cls-134, .cls-167, .cls-36, .cls-72 {opacity: 0.81;}
+.cls-37 {fill: #c46d5e;}
+.cls-105, .cls-135, .cls-168, .cls-37, .cls-73 {opacity: 0.85;}
+.cls-38 {fill: #c16757;}
+.cls-106, .cls-136, .cls-169, .cls-38, .cls-74 {opacity: 0.88;}
+.cls-39 {fill: #be6050;}
+.cls-107, .cls-137, .cls-170, .cls-39, .cls-75 {opacity: 0.92;}
+.cls-40 {fill: #bc5a48;}
+.cls-108, .cls-138, .cls-171, .cls-40, .cls-76 {opacity: 0.96;}
+.cls-41 {fill: #b95341;}
+.cls-42 {fill: #f4f9ec;}
+.cls-43 {fill: #324057;}
+.cls-44 {fill: #405270;}
+.cls-45 {fill: #cdcfc2;}
+.cls-46 {fill: #242e3e;}
+.cls-47 {fill: #d8dacc;}
+.cls-48 {fill: #edc28d;}
+.cls-50 {clip-path: url(#clip-path-2);}
+.cls-51 {fill: #f1be00;}
+.cls-52 {fill: #fcfbf5;}
+.cls-53 {fill: #f9f6eb;}
+.cls-54 {fill: #f6f2e2;}
+.cls-55 {fill: #f3edd8;}
+.cls-56 {fill: #f0e9ce;}
+.cls-57 {fill: #ede4c4;}
+.cls-58 {fill: #eae0ba;}
+.cls-59 {fill: #e7dbb1;}
+.cls-60 {fill: #e4d7a7;}
+.cls-61 {fill: #e1d29d;}
+.cls-62 {fill: #dece93;}
+.cls-63 {fill: #dbc989;}
+.cls-64 {fill: #d8c580;}
+.cls-65 {fill: #d4c176;}
+.cls-66 {fill: #d1bc6c;}
+.cls-67 {fill: #ceb862;}
+.cls-68 {fill: #cbb358;}
+.cls-69 {fill: #c8af4e;}
+.cls-70 {fill: #c5aa45;}
+.cls-71 {fill: #c2a63b;}
+.cls-72 {fill: #bfa131;}
+.cls-73 {fill: #bc9d27;}
+.cls-74 {fill: #b9981d;}
+.cls-75 {fill: #b69414;}
+.cls-76 {fill: #b38f0a;}
+.cls-77 {fill: #b08b00;}
+.cls-78 {fill: #f8cb94;}
+.cls-79 {fill: #f7a871;}
+.cls-80 {fill: #ea9a61;}
+.cls-81 {fill: #ffd69d;}
+.cls-82 {clip-path: url(#clip-path-3);}
+.cls-83 {fill: #ff9033;}
+.cls-84 {fill: #fdf9f7;}
+.cls-85 {fill: #fbf4ee;}
+.cls-86 {fill: #f8eee6;}
+.cls-87 {fill: #f6e9de;}
+.cls-88 {fill: #f4e3d5;}
+.cls-89 {fill: #f2decd;}
+.cls-90 {fill: #efd8c5;}
+.cls-91 {fill: #edd3bd;}
+.cls-92 {fill: #ebcdb4;}
+.cls-93 {fill: #e9c8ac;}
+.cls-94 {fill: #e6c2a4;}
+.cls-95 {fill: #e4bd9b;}
+.cls-96 {fill: #e2b793;}
+.cls-97 {fill: #e0b18b;}
+.cls-98 {fill: #deac82;}
+.cls-99 {fill: #dba67a;}
+.cls-100 {fill: #d9a172;}
+.cls-101 {fill: #d79b69;}
+.cls-102 {fill: #d59661;}
+.cls-103 {fill: #d29059;}
+.cls-104 {fill: #d08b51;}
+.cls-105 {fill: #ce8548;}
+.cls-106 {fill: #cc8040;}
+.cls-107 {fill: #c97a38;}
+.cls-108 {fill: #c7752f;}
+.cls-109 {fill: #c56f27;}
+.cls-110 {fill: #eea26d;}
+.cls-111 {fill: #e5bb89;}
+.cls-112 {clip-path: url(#clip-path-4);}
+.cls-113 {fill: #b93c98;}
+.cls-114 {fill: #fefafa;}
+.cls-115 {fill: #fcf5f4;}
+.cls-116 {fill: #fbefef;}
+.cls-117 {fill: #f9eaea;}
+.cls-118 {fill: #f8e5e4;}
+.cls-119 {fill: #f6e0df;}
+.cls-120 {fill: #f5dbda;}
+.cls-121 {fill: #f4d5d5;}
+.cls-122 {fill: #f2d0cf;}
+.cls-123 {fill: #f1cbca;}
+.cls-124 {fill: #efc6c5;}
+.cls-125 {fill: #eec1bf;}
+.cls-126 {fill: #edbcba;}
+.cls-127 {fill: #ebb6b5;}
+.cls-128 {fill: #eab1af;}
+.cls-129 {fill: #e8acaa;}
+.cls-130 {fill: #e7a7a5;}
+.cls-131 {fill: #e5a29f;}
+.cls-132 {fill: #e49c9a;}
+.cls-133 {fill: #e39795;}
+.cls-134 {fill: #e19290;}
+.cls-135 {fill: #e08d8a;}
+.cls-136 {fill: #de8885;}
+.cls-137 {fill: #dd8280;}
+.cls-138 {fill: #db7d7a;}
+.cls-139 {fill: #da7875;}
+.cls-140 {fill: #7c4c48;}
+.cls-141 {fill: #f08481;}
+.cls-142 {fill: #ded6d1;}
+.cls-143 {fill: #fff0e3;}
+.cls-144 {fill: #ff9692;}
+.cls-145 {clip-path: url(#clip-path-5);}
+.cls-146 {fill: #2cb87c;}
+.cls-147 {fill: #f6faf8;}
+.cls-148 {fill: #eef5f2;}
+.cls-149 {fill: #e5f0eb;}
+.cls-150 {fill: #dcebe5;}
+.cls-151 {fill: #d4e6de;}
+.cls-152 {fill: #cbe1d8;}
+.cls-153 {fill: #c2ddd1;}
+.cls-154 {fill: #bad8cb;}
+.cls-155 {fill: #b1d3c4;}
+.cls-156 {fill: #a8cebe;}
+.cls-157 {fill: #a0c9b7;}
+.cls-158 {fill: #97c4b1;}
+.cls-159 {fill: #8fbfaa;}
+.cls-160 {fill: #86baa3;}
+.cls-161 {fill: #7db59d;}
+.cls-162 {fill: #75b096;}
+.cls-163 {fill: #6cab90;}
+.cls-164 {fill: #63a689;}
+.cls-165 {fill: #5ba183;}
+.cls-166 {fill: #529d7c;}
+.cls-167 {fill: #499876;}
+.cls-168 {fill: #41936f;}
+.cls-169 {fill: #388e69;}
+.cls-170 {fill: #2f8962;}
+.cls-171 {fill: #27845c;}
+.cls-172 {fill: #1e7f55;}
+.cls-173 {fill: #dcb483;}
+.cls-174 {fill: #a97c47;}
+.cls-175 {font-size: 31.27px;font-family: ProximaSoft-Bold, Proxima Soft;font-weight: 70;}
+.cls-176 {letter-spacing: -0.04em;}
+.cls-177 {letter-spacing: -0.02em;}
+.cls-178 {letter-spacing: -0.09em;}
+.cls-179 {letter-spacing: -0.01em;}
 </style>

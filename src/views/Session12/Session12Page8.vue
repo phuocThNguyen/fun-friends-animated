@@ -1,7 +1,8 @@
 <template>
   <div class="interactive-container">
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/sand-castle.mp3"></audio>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/sand-castle.mp3"/>
+    <audio src="../../assets/sounds/session12/Session12_Page8.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -24,10 +25,17 @@ export default {
   methods: {
     saveToDatabase(data) {
       console.log(data)
-    }
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level;
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
   },
   mounted() {
-    this.$refs.audio.volume = 0.3
+    this.setAudioVolumeLevel(0.3);
+    this.playVoiceOver()
   }
 }
 </script>

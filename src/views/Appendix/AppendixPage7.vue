@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <svg class="landscape" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 918.19 779.59">
+    <svg class="landscape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 918.19 779.59">
       <defs>
         <clipPath id="clip-path">
           <rect class="cls-1" x="275.67" y="147.45" width="566.22" height="447.76"/>
@@ -681,13 +681,22 @@
           </g>
         </g>
       </g>
-    </svg>
+    </svg>,
+    <audio src="../../assets/sounds/appendix/Session13_Appendix_Page6.mp3" ref="voice"/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'AppendixPage7'
+  name: 'AppendixPage7',
+  methods: {
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
+  mounted() {
+    this.playVoiceOver()
+  }
 }
 </script>
 
@@ -697,199 +706,53 @@ export default {
   height: auto;
   width: 109%;
 }
-.cls-1 {
-  fill: none;
-}
-
-.cls-2 {
-  fill: #ace7d8;
-}
-
-.cls-3 {
-  clip-path: url(#clip-path);
-}
-
-.cls-4 {
-  fill: #9ab43b;
-}
-
-.cls-5 {
-  fill: #540d0f;
-}
-
-.cls-6 {
-  fill: #cb7352;
-}
-
-.cls-7 {
-  fill: #b4522e;
-}
-
-.cls-8 {
-  fill: #807a7a;
-}
-
-.cls-9 {
-  fill: #a1a1a1;
-}
-
-.cls-10 {
-  fill: #e55c5c;
-}
-
-.cls-11 {
-  fill: #e96d6d;
-}
-
-.cls-12 {
-  fill: #fff;
-}
-
-.cls-13 {
-  fill: #515151;
-}
-
-.cls-14 {
-  fill: #777;
-}
-
-.cls-15 {
-  fill: #bfbebe;
-}
-
-.cls-16 {
-  fill: #e8e8e8;
-}
-
-.cls-17 {
-  fill: #b4e7fc;
-}
-
-.cls-18 {
-  fill: #ff2727;
-}
-
-.cls-19 {
-  fill: #c12121;
-}
-
-.cls-20 {
-  fill: #d6f3f5;
-}
-
-.cls-21 {
-  fill: #eefdff;
-}
-
-.cls-22 {
-  fill: #d7f3f5;
-}
-
-.cls-23 {
-  fill: #d8f4f6;
-}
-
-.cls-24 {
-  fill: #d9f4f6;
-}
-
-.cls-25 {
-  fill: #daf5f7;
-}
-
-.cls-26 {
-  fill: #dbf5f7;
-}
-
-.cls-27 {
-  fill: #dcf5f7;
-}
-
-.cls-28 {
-  fill: #ddf6f8;
-}
-
-.cls-29 {
-  fill: #def6f8;
-}
-
-.cls-30 {
-  fill: #dff7f9;
-}
-
-.cls-31 {
-  fill: #e0f7f9;
-}
-
-.cls-32 {
-  fill: #e1f7f9;
-}
-
-.cls-33 {
-  fill: #e2f8fa;
-}
-
-.cls-34 {
-  fill: #e3f9fb;
-}
-
-.cls-35 {
-  fill: #e4f9fb;
-}
-
-.cls-36 {
-  fill: #e5f9fb;
-}
-
-.cls-37 {
-  fill: #e6fafc;
-}
-
-.cls-38 {
-  fill: #e7fafc;
-}
-
-.cls-39 {
-  fill: #e8fbfd;
-}
-
-.cls-40 {
-  fill: #e9fbfd;
-}
-
-.cls-41 {
-  fill: #eafbfd;
-}
-
-.cls-42 {
-  fill: #ebfcfe;
-}
-
-.cls-43 {
-  fill: #ecfcfe;
-}
-
-.cls-44 {
-  fill: #edfdff;
-}
-
-.cls-45 {
-  fill: #526566;
-}
-
-.cls-46 {
-  fill: #05ce7c;
-}
-
-.cls-46, .cls-47, .cls-48 {
-  fill-rule: evenodd;
-}
-
-.cls-47 {
-  fill: #079e5d;
-}
-
-.cls-48 {
-  fill: #231f20;
-}
+.cls-1 {fill: none;}
+.cls-2 {fill: #ace7d8;}
+.cls-3 {clip-path: url(#clip-path);}
+.cls-4 {fill: #9ab43b;}
+.cls-5 {fill: #540d0f;}
+.cls-6 {fill: #cb7352;}
+.cls-7 {fill: #b4522e;}
+.cls-8 {fill: #807a7a;}
+.cls-9 {fill: #a1a1a1;}
+.cls-10 {fill: #e55c5c;}
+.cls-11 {fill: #e96d6d;}
+.cls-12 {fill: #fff;}
+.cls-13 {fill: #515151;}
+.cls-14 {fill: #777;}
+.cls-15 {fill: #bfbebe;}
+.cls-16 {fill: #e8e8e8;}
+.cls-17 {fill: #b4e7fc;}
+.cls-18 {fill: #ff2727;}
+.cls-19 {fill: #c12121;}
+.cls-20 {fill: #d6f3f5;}
+.cls-21 {fill: #eefdff;}
+.cls-22 {fill: #d7f3f5;}
+.cls-23 {fill: #d8f4f6;}
+.cls-24 {fill: #d9f4f6;}
+.cls-25 {fill: #daf5f7;}
+.cls-26 {fill: #dbf5f7;}
+.cls-27 {fill: #dcf5f7;}
+.cls-28 {fill: #ddf6f8;}
+.cls-29 {fill: #def6f8;}
+.cls-30 {fill: #dff7f9;}
+.cls-31 {fill: #e0f7f9;}
+.cls-32 {fill: #e1f7f9;}
+.cls-33 {fill: #e2f8fa;}
+.cls-34 {fill: #e3f9fb;}
+.cls-35 {fill: #e4f9fb;}
+.cls-36 {fill: #e5f9fb;}
+.cls-37 {fill: #e6fafc;}
+.cls-38 {fill: #e7fafc;}
+.cls-39 {fill: #e8fbfd;}
+.cls-40 {fill: #e9fbfd;}
+.cls-41 {fill: #eafbfd;}
+.cls-42 {fill: #ebfcfe;}
+.cls-43 {fill: #ecfcfe;}
+.cls-44 {fill: #edfdff;}
+.cls-45 {fill: #526566;}
+.cls-46 {fill: #05ce7c;}
+.cls-46, .cls-47, .cls-48 {fill-rule: evenodd;}
+.cls-47 {fill: #079e5d;}
+.cls-48 {fill: #231f20;}
 </style>

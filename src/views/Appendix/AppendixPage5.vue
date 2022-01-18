@@ -2394,7 +2394,8 @@
         </g>
       </g>
     </svg>
-    <div class="page-number" id="page-dark">225</div>
+    <audio src="../../assets/sounds/appendix/Session13_Appendix_Page4.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">224</div>
   </div>
 </template>
 
@@ -2403,50 +2404,28 @@ import anime from "animejs";
 
 export default {
   name: 'AppendixPage5',
+  methods: {
+    animateText() {
+      let text = document.querySelectorAll('.text');
+      let animation = anime.timeline({duration: 200, easing: 'linear'})
+      animation
+        .add({targets: text[3], opacity: 1}, 1000)
+        .add({targets: text[5], opacity: 1})
+        .add({targets: text[6], opacity: 1})
+        .add({targets: text[2], opacity: 1})
+        .add({targets: text[0], opacity: 1})
+        .add({targets: text[8], opacity: 1})
+        .add({targets: text[1], opacity: 1})
+        .add({targets: text[7], opacity: 1})
+        .add({targets: text[4], opacity: 1})
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
   mounted() {
-    let text = document.querySelectorAll('.text');
-    let animation = anime.timeline({
-      easing: 'linear',
-      duration: 500,
-      delay: 500,
-    })
-    animation
-      .add({
-        targets: text[3],
-        opacity: 1
-      })
-      .add({
-        targets: text[5],
-        opacity: 1
-      })
-      .add({
-        targets: text[6],
-        opacity: 1
-      })
-      .add({
-        targets: text[2],
-        opacity: 1
-      })
-      .add({
-        targets: text[0],
-        opacity: 1
-      })
-      .add({
-        targets: text[8],
-        opacity: 1
-      })
-      .add({
-        targets: text[1],
-        opacity: 1
-      })
-      .add({
-        targets: text[7],
-        opacity: 1
-      })
-      .add({
-        targets: text[4],
-        opacity: 1
-      })
+    this.animateText();
+    this.playVoiceOver()
   }
 }
 </script>

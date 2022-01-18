@@ -3329,7 +3329,8 @@
       </svg>
       <div class="cloud-text">In a book <br>or movie</div>
     </div>
-    <div class="page-number" id="page-light">222</div>
+    <audio src="../../assets/sounds/appendix/Session13_Appendix_Page2.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">221</div>
   </div>
 </template>
 
@@ -3338,20 +3339,40 @@ import anime from "animejs";
 
 export default {
   name: "AppendixPage2",
-  mounted() {
-    let stars = document.querySelectorAll('.shp1');
-    stars.forEach(star => {
-      Math.random() < 0.1 ?
-        anime({
-          targets: star,
-          delay: Math.random() * 1000,
-          opacity: 0,
-          direction: 'alternate',
-          duration: Math.random() * 2000 + 1000,
-          loop: true
+  methods: {
+    animateSvg() {
+      let stars = document.querySelectorAll('.shp1');
+      stars.forEach(star => {
+        Math.random() < 0.1 ?
+          anime({
+            targets: star,
+            delay: Math.random() * 1000,
+            opacity: 0,
+            direction: 'alternate',
+            duration: Math.random() * 2000 + 1000,
+            loop: true
           })
-        : console.log();
-    })
+          : console.log();
+      });
+    },
+    // animateElements() {
+    //   let clouds = document.querySelectorAll('.cloud-container');
+    //   let animation = anime.timeline({duration: 500,easing: 'linear'});
+    //   animation
+    //     .add({targets: '.title',opacity: 1}, 600)
+    //     .add({targets: clouds[0],opacity: 1}, 6900)
+    //     .add({targets: clouds[2],opacity: 1}, 9100)
+    //     .add({targets: clouds[1],opacity: 1}, 12500)
+    //     .add({targets: clouds[3],opacity: 1}, 15800)
+    //     .add({targets: '.star-container',opacity: 1}, 18400)
+    // },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+  },
+  mounted() {
+    // this.animateElements();
+    this.playVoiceOver();
   }
 }
 </script>
@@ -3370,6 +3391,7 @@ export default {
   text-align: center;
   top: 0;
   color: #ffffff;
+  opacity: 1;
 }
 .cloud-container {
   position: absolute;
@@ -3378,6 +3400,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 1;
 }
 .cloud {
   position: absolute;
@@ -3416,8 +3439,8 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 1;
   z-index: 10;
+  opacity: 1;
 }
 .star {
   position: absolute;
