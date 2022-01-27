@@ -2,7 +2,8 @@
   <div class="interactive-container">
     <img src="../../assets/images/session5/86.jpg" alt="red" class="session-background">
     <div class="text-box">
-      <p>Matilda is spending her first night sleeping by herself.</p>
+      <p>Matilda is spending her first night sleeping by herself.
+        <br>Pay attention to her worried face!</p>
       <p>How is she feeling? Is Matilda having '<span id="red-text">red</span>'
         or '<span id="green-text">green</span>' thoughts?</p>
     </div>

@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <img src="../../assets/images/session10/1408.jpg" alt="background" class="session-background">
     <div class="text-box">
-      <span>Who has showed you how to do something before?</span>
+      <span>Who showed you how to do something before?</span>
       <span> Who has helped you feel happy?</span>
       <span> Give them a big thank you!</span>
     </div>

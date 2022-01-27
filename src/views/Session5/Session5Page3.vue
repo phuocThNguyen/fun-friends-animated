@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <img src="../../assets/images/session5/447.jpg" alt="red" class="session-background">
     <div class="text-box">
-      <p>Lucy is starting a new school and she feels sad and scared.</p>
+      <p>Lucy is starting a new school and she looks upset.</p>
       <p>Why do you think she feels sad and scared?
         How do you think her mum feels?</p>
       <p>Is Lucy having '<span id="red-text">red</span>' or
@@ -235,16 +235,16 @@ export default {
 <style scoped>
 .traffic-light {
   position: absolute;
-  left: 8.5vh;
-  top: 35vh;
+  left: 0.5vh;
+  top: 22vh;
   opacity: 0;
 }
 .text-box {
   position: absolute;
-  width: 96%;
+  width: 130vh;
   padding: 1vh;
   top: 1vh;
-  left: 2%;
+  left: 1.5vh;
   background-color: rgba(255,255,255, 0.9);
   opacity: 0;
 }
@@ -260,7 +260,7 @@ export default {
   height: auto;
   width: 1%;
   top: 30vh;
-  right: 10%;
+  right: 15vh;
   opacity: 0;
 }
 .sticker {
@@ -268,7 +268,7 @@ export default {
   width: auto;
   height: 25vh;
   top: 60vh;
-  left: 40%;
+  left: 53vh;
   z-index: 50;
   opacity: 0;
 }

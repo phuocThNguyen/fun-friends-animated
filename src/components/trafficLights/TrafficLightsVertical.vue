@@ -60,8 +60,8 @@
         </g>
       </g>
     </svg>
-    <red-tick class="tick" id="red-tick"/>
-    <green-tick class="tick" id="green-tick"/>
+    <div class="traffic-text" id="traffic-green">green</div>
+    <div class="traffic-text" id="traffic-red">red</div>
     <div class="mask-container">
       <div class="mask" @click="handleClick" id="red"/>
       <div class="mask" @click="handleClick" id="yellow"/>
@@ -75,12 +75,9 @@
 
 <script>
 import anime from "animejs";
-import GreenTick from "@/components/feelingsQuestion/ticks/GreenTick";
-import RedTick from "@/components/feelingsQuestion/ticks/RedTick";
 
 export default {
   name: 'TrafficLightVertical',
-  components: {RedTick, GreenTick},
   data() {
     return {
       audioSuccessPlayed: false,
@@ -91,26 +88,6 @@ export default {
     correctAns: String,
   },
   methods: {
-    animateRedTick() {
-      anime({
-        targets: '#red-tick',
-        easing: 'linear',
-        opacity: [
-          {value: 1, duration: 200},
-          {value: 0, duration: 100},
-          {value: 1, duration: 200},
-          {value: 0, duration: 100, delay: 500},
-        ]
-      })
-    },
-    animateGreenTick() {
-      anime({
-        targets: '#green-tick',
-        easing: 'linear',
-        opacity: 1,
-        duration: 500
-      })
-    },
     animateCorrectLight(light) {
       let lightComponents = document.querySelectorAll(`.${light}`);
       anime({
@@ -145,7 +122,6 @@ export default {
         this.animateCorrectLight(e.target.id);
         if (!this.audioSuccessPlayed) {
           this.$emit('correctAnswer');
-          this.animateGreenTick();
           Math.random() < 0.5 ? this.$refs.correct.play() : this.$refs.celebrate.play();
           this.audioSuccessPlayed = true;
           this.hideIncorrectMask(e.target.id);
@@ -153,7 +129,6 @@ export default {
       } else {
         this.animateIncorrectLight(e.target.id);
         this.$emit('wrongAnswer');
-        this.animateRedTick();
         this.$refs.wrong.play();
       }
     }
@@ -162,11 +137,15 @@ export default {
 </script>
 
 <style scoped>
-.tick {
+.traffic-text {
   position: absolute;
-  top: -11vh;
-  left: 10.25vh;
+  color: #ffffff;
+  font-size: 4vh;
+  z-index: 5;
+  text-transform: capitalize;
 }
+#traffic-red {top: 8vh;left: 12vh}
+#traffic-green {top: 42vh;left: 10vh;}
 .traffic-light-svg {
   position: absolute;
   top: 0;

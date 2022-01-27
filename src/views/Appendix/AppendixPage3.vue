@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
     <div class="title">APPENDIX 3: HAPPINESS IDEA</div>
-    <div class="text">Write in the stars thumbs up, kinds, happy choices.</div>
+    <div class="text">Write in the stars thumbs up, kind, happy choices.</div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/twinkle-twinkle-little-star.mp3"/>
     <audio src="../../assets/sounds/appendix/Session13_Appendix_Page3.mp3" ref="voice"/>
   </div>

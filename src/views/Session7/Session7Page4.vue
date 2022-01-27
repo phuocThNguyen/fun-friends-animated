@@ -1040,7 +1040,7 @@
       </g>
     </svg>
     <div class="text-box">
-      <p>Here are some examples of <strong>STEP PLAN</strong> that other kids
+      <p>Here are some examples of <strong>STEP PLANS</strong> that other kids
         have used to be brave!</p>
       <p>What is something you want to do or create?</p>
       <p>Can you break this down into small easy steps?</p>

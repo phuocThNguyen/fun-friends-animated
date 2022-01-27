@@ -3,10 +3,10 @@
     <img src="../../assets/images/session5/128.jpg" alt="green" class="session-background">
     <div class="text-box">
       <p>In this picture, the children are walking
-        to a new school with their dad.</p>
+        to a new school with their dad. Look at their happy faces!</p>
       <p>What could they be feeling?</p>
       <p>Are they having '<span id="red-text">red</span>' or
-        <span id="green-text">green</span>' thoughts?</p>
+        '<span id="green-text">green</span>' thoughts?</p>
     </div>
     <traffic-light-vertical
       correctAns="green"
@@ -183,12 +183,12 @@ export default {
 .traffic-light {
   position: absolute;
   right: 30.5vh;
-  top: 15vh;
+  top: 2vh;
   opacity: 0;
 }
 .text-box {
   position: absolute;
-  width: 40%;
+  width: 60vh;
   padding: 1vh;
   top: .5vh;
   left: .5vh;
@@ -196,7 +196,7 @@ export default {
   opacity: 0;
 }
 .text-box p {
-  font-size: 3.8vh;
+  font-size: 3.3vh;
   margin-bottom: 0;
   opacity: 0;
 }
@@ -207,7 +207,7 @@ export default {
   height: auto;
   width: 1%;
   top: 16vh;
-  right: 31%;
+  right: 42vh;
   opacity: 0;
   z-index: 10;
 }
@@ -216,7 +216,7 @@ export default {
   width: auto;
   height: 25vh;
   top: 2vh;
-  right: 21%;
+  right: 28vh;
   z-index: 50;
   opacity: 0;
 }

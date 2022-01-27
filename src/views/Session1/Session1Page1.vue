@@ -393,7 +393,7 @@ tspan { white-space:pre }
 }
 .question {
   text-align: center;
-  font-size: 7vh;
+  font-size: calc(0.05 * 133vh);
   position: absolute;
   color: #fff;
   width: auto;

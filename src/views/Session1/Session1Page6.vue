@@ -54,7 +54,7 @@ export default {
   width: auto;
   background-color: rgba(0, 206, 124, 0.95);
   position: absolute;
-  top: 2vh;
+  top: 1vh;
   left: 2%;
   opacity: 0;
   padding: 2vh;

@@ -27,9 +27,9 @@ export default {
   color: #ffffff;
   font-weight: bold;
   background-color: #00CE7C;
-  width: 90%;
+  width: 120vh;
   height: 14%;
-  left: 5%;
+  left: 6.5vh;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -37,11 +37,11 @@ export default {
 }
 #text-1 {
   top: 5vh;
-  font-size: 4rem;
+  font-size: 6.5vh;
 }
 #text-2 {
   bottom: 5vh;
-  font-size: 3rem;
+  font-size: 5vh;
   line-height: 5vh;
 }
 </style>

@@ -465,35 +465,35 @@ export default {
         .add({
           targets: text[2],
           opacity: 1,
-        }, 25700)
+        }, 21200)
         .add({
           targets: text[3],
           opacity: 1,
-        }, 36000)
+        }, 31600)
         .add({
           targets: text[4],
           opacity: 1,
-        }, 49400)
+        }, 44500)
         .add({
           targets: text[5],
           opacity: 1
-        }, 55700)
+        }, 50800)
         .add({
           targets: text[6],
           opacity: 1
-        }, 58200)
+        }, 53300)
         .add({
           targets: text[7],
           opacity: 1
-        }, 60500)
+        }, 56000)
         .add({
           targets: text[8],
           opacity: 1
-        }, 63700)
+        }, 58700)
         .add({
           targets: text[9],
           opacity: 1
-        }, 66000)
+        }, 61200)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)

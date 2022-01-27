@@ -2,7 +2,8 @@
   <div class="interactive-container">
     <img src="../../assets/images/session5/85693.jpg" alt="red" class="session-background">
     <div class="text-box">
-      <p>Nala is spending her first night sleeping by herself.</p>
+      <p>Nala is spending her first night sleeping by herself.
+        <br>Pay attention to her relaxed face!</p>
       <p>How is she feeling? Is Nala having
         '<span id="red-text">red</span>' or
         '<span id="green-text">green</span>' thoughts?</p>
@@ -144,8 +145,8 @@ export default {
 <style scoped>
 .traffic-light {
   position: absolute;
-  left: 8.5vh;
-  top: 35vh;
+  left: 0.5vh;
+  top: 23vh;
   opacity: 0;
 }
 .text-box {
@@ -168,7 +169,7 @@ export default {
   position: absolute;
   height: auto;
   width: 1%;
-  right: 16%;
+  right: 22vh;
   bottom: 30vh;
   opacity: 0;
 }
@@ -177,7 +178,7 @@ export default {
   width: auto;
   height: 25vh;
   top: 55vh;
-  right: 8%;
+  right: 12vh;
   z-index: 50;
   opacity: 0;
 }
