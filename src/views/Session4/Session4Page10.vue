@@ -14,7 +14,7 @@
         draw a picture of your peaceful, quiet
         place in the next page.</p>
       <p>Breathing deeply and
-        slowly calms us down</p>
+        slowly calms us down.</p>
     </div>
     <audio src="../../assets/sounds/session4/Session4_Page10.mp3" ref="voice"/>
     <div class="page-number" id="page-light">94</div>

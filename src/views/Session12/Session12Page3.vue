@@ -1009,6 +1009,7 @@
       FUN FRIENDS book, reward yourself with something you like
       to do!</span>
     </div>
+    <audio src="../../assets/sounds/session1/playground.mp3" ref="audio" autoplay loop/>
     <audio src="../../assets/sounds/session12/Session12_Page3.mp3" ref="voice"/>
     <div class="page-number" id="page-light">214</div>
   </div>
@@ -1033,8 +1034,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level;
+    }
   },
   mounted() {
+    this.setAudioVolumeLevel(0.4);
     this.animateText();
     this.playVoiceOver()
   }

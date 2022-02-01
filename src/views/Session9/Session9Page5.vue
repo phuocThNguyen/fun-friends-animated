@@ -2297,7 +2297,7 @@
     </svg>
     <div class="text-box">
       <p>What brave things do you think Annie is trying to do?</p>
-      <p>What brave things you are trying to do?</p>
+      <p>What brave things are you trying to do?</p>
       <p>What can you do to practise being brave?</p>
     </div>
     <audio src="../../assets/sounds/session9/Session9_Page5.mp3" ref="voice"/>

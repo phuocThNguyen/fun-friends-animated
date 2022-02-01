@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <img src="../../assets/images/session4/25203-resized.jpg" alt="playing-sand" class="session-background">
     <div class="text-box">
-      Water makes us feel calm
+      Water makes us feel calm.
     </div>
     <audio src="../../assets/sounds/session4/Session4_Page9.mp3" ref="voice"/>
     <div class="page-number" id="page-light">93</div>

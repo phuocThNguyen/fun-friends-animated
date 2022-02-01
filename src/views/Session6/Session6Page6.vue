@@ -14,7 +14,7 @@
         '<span class="green">green</span>' thoughts
         that could help her calm down?</p>
 
-      <p>Green thoughts help us be kind</p>
+      <p>Green thoughts help us be kind.</p>
     </div>
     <img src="../../assets/images/session5/1890.jpg" alt="red" class="images" id="image-top">
     <img src="../../assets/images/session5/1892.jpg" alt="green" class="images" id="image-bottom">

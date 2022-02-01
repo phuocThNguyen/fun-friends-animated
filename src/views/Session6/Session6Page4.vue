@@ -11,7 +11,7 @@
         that make you feel worried and scared?</p>
       <p>What are some '<span class="green">green</span>' thoughts
         that would make your day happier?</p>
-      <p>Green thoughts help us try our best</p>
+      <p>Green thoughts help us try our best.</p>
     </div>
     <div class="bubble-container">
       <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">

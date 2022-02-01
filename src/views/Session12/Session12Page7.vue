@@ -116,6 +116,7 @@
         </g>
       </g>
     </svg>
+    <audio src="../../assets/sounds/children-background-music/polka.mp3" autoplay loop ref="audio"/>
     <audio src="../../assets/sounds/session12/Session12_Page7.mp3" ref="voice"/>
     <div class="page-number" id="page-light">218</div>
   </div>
@@ -201,8 +202,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
+    }
   },
   mounted() {
+    this.setAudioVolumeLevel(0.4);
     this.animateSvg();
     this.animateText();
     this.playVoiceOver();

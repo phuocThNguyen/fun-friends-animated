@@ -1434,7 +1434,7 @@
       <p>&nbsp;&bull; Carry on with your <strong>STEP PLAN</strong>.</p>
       <p>&nbsp;&bull; Practise 'green' thoughts.</p>
       <p>&nbsp;&bull; Relax.</p>
-      <p>&nbsp;&bull; Notice and reward yourself and other
+      <p>&nbsp;&bull; Notice and reward yourself and others
         for being BRAVE.</p>
       <p>&nbsp;&bull; Practise being BRAVE:</p>
       <p>&middot; Look people in the eye and smile.</p>

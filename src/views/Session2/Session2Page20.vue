@@ -13,7 +13,7 @@
       <div class="tips-container">
         <p class="incorrect" id="tip-1-left">Happy</p>
         <p id="tip-2-left">Angry</p>
-        <p class="incorrect" id="tip-3-left">Relax</p>
+        <p class="incorrect" id="tip-3-left">Relaxed</p>
       </div>
       <div class="answer-container">
         <svg class="small-tick" id="red-tick-1-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.98 92.25">
@@ -71,7 +71,7 @@
       </div>
       <div class="tips-container">
         <p class="incorrect-2" id="tip-1-right">Angry</p>
-        <p class="incorrect-2" id="tip-2-right">Relaxing</p>
+        <p class="incorrect-2" id="tip-2-right">Relaxed</p>
         <p id="tip-3-right">Sad</p>
       </div>
       <div class="answer-container">

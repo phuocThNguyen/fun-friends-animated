@@ -8,7 +8,7 @@
       <p>&nbsp;&nbsp;-&nbsp;How do you think Tom is feeling?</p>
       <p>&nbsp;&nbsp;-&nbsp;How can Tom help his Grandpa?</p>
     </div>
-    <div class="notice-box">Be kind and helpful</div>
+    <div class="notice-box">Be kind and helpful!</div>
     <div class="bubble-container">
       <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
         <g id="Graphic Element">

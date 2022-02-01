@@ -4,6 +4,7 @@
     <div class="text-box">
       <p class="mb-0">This family enjoys sharing picnics.</p>
     </div>
+    <audio src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3" ref="audio" autoplay loop/>
     <audio src="../../assets/sounds/session1/20Animated_Book_Page19.mp3" ref="voice"/>
     <div class="page-number" id="page-light">19</div>
   </div>
@@ -26,9 +27,13 @@ export default {
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level;
     }
   },
   mounted() {
+    this.setAudioVolumeLevel(0.4);
     this.animateText();
     this.playVoiceOver();
   }

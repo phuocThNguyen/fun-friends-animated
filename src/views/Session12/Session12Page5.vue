@@ -535,12 +535,13 @@
           healthy choices such as eating fruit and vegetables,
           going to bed at bedtime, and riding their bikes
           to school. All classes can make a large poster
-          about being healthy</p>
+          about being healthy.</p>
         <p>&bull;&nbsp;&nbsp;Practise role playing with your
           classmates about being kind, sharing, speaking bravely,
           and listening when others are talking.</p>
       </div>
     </div>
+    <audio src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3" autoplay loop ref="audio"/>
     <audio src="../../assets/sounds/session12/Session12_Page5.mp3" ref="voice"/>
     <div class="page-number" id="page-light">216</div>
   </div>
@@ -564,8 +565,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
+    }
   },
   mounted() {
+    this.setAudioVolumeLevel(0.4);
     this.animationText();
     this.playVoiceOver();
   }

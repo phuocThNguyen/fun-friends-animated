@@ -8,11 +8,11 @@
     </div>
     <div class="image-container">
       <img src="../../assets/images/session11/surfing_child.jpg" alt="surfing" class="images">
-      <div class="text" id="para-1">Mum helping Zoe surf</div>
+      <div class="text" id="para-1">Mum helping Zoe surf.</div>
     </div>
     <div class="image-container" id="right">
       <img src="../../assets/images/session11/Hugging_Lama_Girl.jpg" alt="hugging-lama" class="images">
-      <div class="text" id="para-2">Matilda giving Alpaca a hug</div>
+      <div class="text" id="para-2">Matilda giving Alpaca a hug.</div>
     </div>
     <audio src="../../assets/sounds/session11/Session11_Page5.mp3" ref="voice"/>
     <div class="page-number" id="page-light">206</div>

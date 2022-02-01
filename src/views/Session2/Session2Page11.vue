@@ -6,7 +6,7 @@
         class="question"
         question="What could she be feeling?"
         :emotes="['happy','worried','cool']"
-        :tips="['Happy','Worried','Relaxing']"
+        :tips="['Happy','Worried','Relaxed']"
         :ans="['red-tick','green-tick','red-tick']"
         :isSmall="false"
         :delay="700"

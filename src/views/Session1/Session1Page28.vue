@@ -9,7 +9,7 @@
     <div class="text-box">
       <p class="text">
         <span>
-          Trying different foods is fun
+          Trying different foods is fun.
         </span>
       </p>
     </div>

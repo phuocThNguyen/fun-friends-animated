@@ -3329,6 +3329,7 @@
       </svg>
       <div class="cloud-text">In a book <br>or movie</div>
     </div>
+    <audio src="../../assets/sounds/session4/night-time.mp3" autoplay loop ref="audio"/>
     <audio src="../../assets/sounds/appendix/Session13_Appendix_Page2.mp3" ref="voice"/>
     <div class="page-number" id="page-light">221</div>
   </div>
@@ -3369,8 +3370,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
+    }
   },
   mounted() {
+    this.setAudioVolumeLevel(1);
     // this.animateElements();
     this.playVoiceOver();
   }

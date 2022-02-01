@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <img src="../../assets/images/session4/354870-PAPUF2-370-resized.jpg" alt="drawing" class="session-background">
     <div class="text-box">
-      Art is relaxing
+      Art is relaxing.
     </div>
     <audio src="../../assets/sounds/session4/Session4_Page8.mp3" ref="voice"/>
     <div class="page-number" id="page-light">92</div>

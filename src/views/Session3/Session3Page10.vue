@@ -5,7 +5,7 @@
       <h1>Friends and Families</h1>
       <p id="text-box-p">What makes kids helpful and kind?</p>
     </div>
-    <div class="notice-box">We plant trees to be kind to planet Earth</div>
+    <div class="notice-box">We plant trees to be kind to planet earth.</div>
     <div class="bubble-container" id="bubble-1">
       <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
         <g id="Graphic Element">

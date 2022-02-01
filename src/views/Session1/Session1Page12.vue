@@ -9,7 +9,7 @@
       <p id="para-3">How do you have fun together?</p>
 
       <div class="text-box">
-        <p>We love going to the park</p>
+        <p>We love going to the park.</p>
       </div>
     </div>
     <audio src="../../assets/sounds/session1/19Animated_Book_Page18.mp3" ref="voice"/>

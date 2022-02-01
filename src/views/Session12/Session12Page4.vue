@@ -525,7 +525,7 @@
           in common and how they differ. To play the game,
           the person who is ‘it’ asks everyone to raise
           their hands or wiggle if they like something,
-          for example, “Wiggle if you like the colour red.”</p>
+          for example, "Wiggle if you like the colour red".</p>
         <p>&bull;&nbsp;&nbsp;Have a multicultural day at
           your school where everyone wears clothes from
           the countries their families come from and brings
@@ -545,6 +545,7 @@
           how you would feel.</p>
       </div>
     </div>
+    <audio src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3" autoplay loop ref="audio"/>
     <audio src="../../assets/sounds/session12/Session12_Page4.mp3" ref="voice"/>
     <div class="page-number" id="page-light">215</div>
   </div>
@@ -570,8 +571,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
+    }
   },
   mounted() {
+    this.setAudioVolumeLevel(0.4);
     this.animateText();
     this.playVoiceOver()
   }

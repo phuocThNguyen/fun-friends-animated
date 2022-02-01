@@ -9,7 +9,7 @@
       guess and then guess what feeling they are acting out!</p>
       <p>Try using a role-play mask!</p>
 
-      <p class="extra-box">All feelings are OK</p>
+      <p class="extra-box">All feelings are OK!</p>
     </div>
     <audio src="../../assets/sounds/session2/Session2_Page3.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">48</div>

@@ -5,8 +5,8 @@
     <feeling-question
         class="question"
         question="How is each friend feeling?"
-        :emotes="['angry','crying','happy']"
-        :tips="['Angry','Crying','Happy']"
+        :emotes="['angry','sad','happy']"
+        :tips="['Angry','Sad','Happy']"
         :ans="['red-tick','red-tick','green-tick']"
         :isSmall="false"
         :delay="500"

@@ -1005,7 +1005,7 @@
         <p>Do 'Pizza Massage' with someone
           <br>in your family. Pretend to make
           <br>dough and spread it on each
-          <br>other's back, add lots of
+          <br>other's backs, add lots of
           <br>yummy toppings and
           <br>warm up your hands to
           <br>heat the pizza in the oven.

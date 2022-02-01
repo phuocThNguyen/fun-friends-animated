@@ -2,6 +2,7 @@
   <div class="interactive-container">
     <img src="../../assets/images/session12/2108.jpg" alt="friends" class="session-background">
     <div class="text-box">We are happy, we learnt FRIENDS skills.</div>
+    <audio src="../../assets/sounds/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3" autoplay loop ref="audio"/>
     <audio src="../../assets/sounds/session12/Session12_Page6.mp3" ref="voice"/>
     <div class="page-number" id="page-light">217</div>
   </div>
@@ -25,8 +26,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
+    }
   },
   mounted() {
+    this.setAudioVolumeLevel(0.4);
     this.animateText();
     this.playVoiceOver()
   }

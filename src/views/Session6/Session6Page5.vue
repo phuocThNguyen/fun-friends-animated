@@ -9,7 +9,7 @@
       <p>What thoughts might Sam be thinking?</p>
       <p>What thoughts do you think could help
         her feel better?</p>
-      <p>Green thoughts help us stay calm</p>
+      <p>Green thoughts help us stay calm.</p>
     </div>
     <div class="bubble-container">
       <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">

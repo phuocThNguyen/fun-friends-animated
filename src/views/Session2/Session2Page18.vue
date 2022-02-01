@@ -4,7 +4,7 @@
       <h1>Additional Activity - Guess The Feelings</h1>
       <p>Zoe, Daniel and Matilda feel different feelings in different situations.
         All feelings are OK. What we choose to do with our feelings is important.
-        What feelings may the children be experiencing? What make you feel this way?</p>
+        What feelings may the children be experiencing? What makes you feel this way?</p>
     </div>
     <img src="../../assets/images/session2/Happy_Boy-resized.jpg" alt="happy" class="image" id="left">
     <img src="../../assets/images/session2/Worried_Girl-resized.jpg" alt="worried" class="image" id="right">

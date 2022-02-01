@@ -3,7 +3,7 @@
     <img src="../../assets/images/session12/50044.jpg" alt="party" class="session-background">
     <div class="text-box">
       <h1>Games Party: A Celebration</h1>
-      <p>Together with your family, make up a game to practice
+      <p>Together with your family, make up a game to practise
       the FRIENDS skills.</p>
       <p>Share your game with other children in the FRIENDS party.</p>
     </div>
