@@ -3331,7 +3331,7 @@
     </div>
     <audio src="../../assets/sounds/session4/night-time.mp3" autoplay loop ref="audio"/>
     <audio src="../../assets/sounds/appendix/Session13_Appendix_Page2.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">221</div>
+    <div class="page-number" id="page-light">223</div>
   </div>
 </template>
 

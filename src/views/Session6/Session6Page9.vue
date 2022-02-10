@@ -703,6 +703,7 @@
         '<span class="red">red</span>' thoughts and
         '<span class="green">green</span>' thoughts you
         and your family have had this week.</p>
+      <p>&nbsp;&bull; Practise changing red thoughts to green thoughts.</p>
       <p>&nbsp;&bull; Practise relaxing every day for at least 10 minutes.
         No distractions such as TV!</p>
       <p>&nbsp;&bull; Practise being BRAVE:</p>
@@ -713,7 +714,7 @@
     </div>
     <audio autoplay loop src="../../assets/sounds/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"></audio>
     <audio src="../../assets/sounds/session6/Session6_Page9.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">134</div>
+    <div class="page-number" id="page-dark">136</div>
   </div>
 </template>
 
@@ -755,27 +756,31 @@ export default {
         .add({
           targets: text[2],
           opacity: 1,
-        }, 10224)
+        }, 10000)
         .add({
           targets: text[3],
           opacity: 1,
-        }, 18407)
+        }, 14224)
         .add({
           targets: text[4],
           opacity: 1,
-        }, 20536)
+        }, 22407)
         .add({
           targets: text[5],
           opacity: 1,
-        }, 23570)
+        }, 24536)
         .add({
           targets: text[6],
           opacity: 1,
-        }, 27248)
+        }, 27570)
         .add({
           targets: text[7],
           opacity: 1,
-        }, 30267)
+        }, 31248)
+        .add({
+          targets: text[8],
+          opacity: 1,
+        }, 34267)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -796,7 +801,7 @@ export default {
   width: 80%;
   height: auto;
   left: 10%;
-  top: 5vh;
+  top: 2vh;
   padding: 2vh;
   opacity: 0;
 }
@@ -811,7 +816,7 @@ export default {
   font-size: 4vh;
   opacity: 0;
 }
-.text-box p:nth-child(5),
+.text-box p:nth-child(9),
 .text-box p:nth-child(6),
 .text-box p:nth-child(7),
 .text-box p:nth-child(8) {

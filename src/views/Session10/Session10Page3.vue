@@ -4,7 +4,7 @@
     <div class="text-box">Tom learns from <br>someone he looks up to.</div>
     <div class="text-box-green">My dad helps me learn to cook.</div>
     <audio src="../../assets/sounds/session10/Session10_Page3.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">187</div>
+    <div class="page-number" id="page-light">189</div>
   </div>
 </template>
 

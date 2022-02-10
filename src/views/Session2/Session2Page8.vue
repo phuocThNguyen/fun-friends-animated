@@ -3,15 +3,15 @@
     <img src="../../assets/images/session2/623182-PNWC4R-119-resized.jpg" alt="happy" class="session-background">
     <emotion-pick-instruction class="instruction"/>
     <feeling-question
-        class="question"
-        question="What could he be feeling?"
-        :emotes="['happy','worried','sad']"
-        :tips="['Happy','Worried','Sad']"
-        :ans="['green-tick','red-tick','red-tick']"
-        :isSmall="false"
-        :delay="500"
-        v-on:correctAnsChosen="handleCorrectAnswer"
-        v-on:wrongAnswer="handleWrongAnswer"
+      class="question"
+      question="What could he be feeling?"
+      :emotes="['happy','worried','sad']"
+      :tips="['Happy','Worried','Sad']"
+      :ans="['green-tick','red-tick','red-tick']"
+      :isSmall="false"
+      :delay="500"
+      v-on:correctAnsChosen="handleCorrectAnswer"
+      v-on:wrongAnswer="handleWrongAnswer"
     />
 
     <!--  Well done  -->
@@ -74,7 +74,6 @@
     <audio src="../../assets/sounds/all/Well_Done.mp3" ref="wellDone"/>
     <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
     <audio src="../../assets/sounds/session2/Session2_Page8.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">53</div>
   </div>
 </template>
 
@@ -133,15 +132,15 @@ export default {
 }
 .question {
   position: absolute;
-  bottom: 4vh;
-  left: 20%;
+  bottom: .5vh;
+  left: calc(0.2*133vh);
 }
 .sticker {
   position: absolute;
   width: auto;
-  height: 30vh;
+  height: 25vh;
   top: 5vh;
-  left: 15%;
+  left: calc(0.09*133vh);
   z-index: 50;
   opacity: 0;
 }

@@ -1,17 +1,17 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session2/13705-resized.jpg" alt="worried" class="session-background">
+    <img src="../../assets/images/session2/13705-resized.jpg" id="bg-alt" alt="worried" class="session-background">
     <emotion-pick-instruction class="instruction"/>
     <feeling-question
-        class="question"
-        question="What could he be feeling?"
-        :emotes="['angry','worried','happy']"
-        :tips="['Angry','Worried','Happy']"
-        :ans="['red-tick','green-tick','red-tick']"
-        :isSmall="false"
-        :delay="500"
-        v-on:correctAnsChosen="handleCorrectAnswer"
-        v-on:wrongAnswer="handleWrongAnswer"
+      class="question"
+      question="What could he be feeling?"
+      :emotes="['angry','worried','happy']"
+      :tips="['Angry','Worried','Happy']"
+      :ans="['red-tick','green-tick','red-tick']"
+      :isSmall="false"
+      :delay="500"
+      v-on:correctAnsChosen="handleCorrectAnswer"
+      v-on:wrongAnswer="handleWrongAnswer"
     />
 
     <!--  Good Job  -->
@@ -139,7 +139,7 @@
     <audio src="../../assets/sounds/all/Good_Job.mp3" ref="goodJob"/>
     <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
     <audio src="../../assets/sounds/session2/Session2_Page7.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">52</div>
+    <div class="page-number" id="page-light">52</div>
   </div>
 </template>
 
@@ -183,30 +183,32 @@ export default {
 </script>
 
 <style scoped>
+#bg-alt {left:-28vh}
 .instruction {
   position: absolute;
   top: 2vh;
-  right: 2%;
+  right: .5vh;
+  opacity: 1;
 }
 .reward {
   position: absolute;
   height: auto;
   width: 1%;
-  top: 20vh;
-  left: 20%;
+  top: 17vh;
+  left: 70vh;
   opacity: 0;
 }
 .question {
   position: absolute;
-  bottom: 4vh;
-  left: 20%;
+  top: 35vh;
+  right: .5vh;
 }
 .sticker {
   position: absolute;
   width: auto;
-  height: 30vh;
-  top: 5vh;
-  left: 15%;
+  height: 25vh;
+  top: 4vh;
+  left: calc(0.43*133vh);
   z-index: 50;
   opacity: 0;
 }

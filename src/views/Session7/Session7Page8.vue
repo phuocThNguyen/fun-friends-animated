@@ -1130,7 +1130,7 @@
     <audio src="../../assets/sounds/session7/Session7_Page8-region-4.mp3" ref="step4"/>
     <audio src="../../assets/sounds/session7/Session7_Page8-region-5.mp3" ref="step5"/>
     <audio src="../../assets/sounds/session7/Session7_Page8.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark" style="left: 25vh !important;">144</div>
+    <div class="page-number" id="page-dark" style="left: 25vh !important;">146</div>
   </div>
 </template>
 

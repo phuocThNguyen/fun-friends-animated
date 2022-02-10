@@ -27,7 +27,7 @@
     <audio src="../../assets/sounds/all/Good_Job.mp3" ref="goodJob"/>
     <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
     <audio src="../../assets/sounds/session3/Session3_Page7.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">75</div>
+    <div class="page-number" id="page-dark">77</div>
   </div>
 </template>
 

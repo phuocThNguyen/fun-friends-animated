@@ -3,15 +3,15 @@
     <img src="../../assets/images/session2/13664-resized.jpg" alt="worried" class="session-background" id="alt-pos">
     <emotion-pick-instruction class="instruction"/>
     <feeling-question
-        class="question"
-        question="What could he be feeling?"
-        :emotes="['angry','sad','worried']"
-        :tips="['Angry','Sad','Worried']"
-        :ans="['green-tick','red-tick','red-tick']"
-        :isSmall="false"
-        :delay="500"
-        v-on:correctAnsChosen="handleCorrectAnswer"
-        v-on:wrongAnswer="handleWrongAnswer"
+      class="question"
+      question="What could he be feeling?"
+      :emotes="['angry','sad','worried']"
+      :tips="['Angry','Sad','Worried']"
+      :ans="['green-tick','red-tick','red-tick']"
+      :isSmall="false"
+      :delay="500"
+      v-on:correctAnsChosen="handleCorrectAnswer"
+      v-on:wrongAnswer="handleWrongAnswer"
     />
 
     <!--  Good Job  -->
@@ -175,9 +175,9 @@ export default {
 .sticker {
   position: absolute;
   width: auto;
-  height: 30vh;
-  top: 5vh;
-  left: 45%;
+  height: 25vh;
+  top: 2vh;
+  left: calc(0.43*133vh);
   z-index: 50;
   opacity: 0;
 }

@@ -196,26 +196,21 @@
       </g>
     </svg>
 
-    <p class="question question-1">
-      <span class="question1-part1 mr-2 d-inline">How are your home</span>
-      <span class="question1-part2 mr-2 d-inline">and family different?</span>
-    </p>
-    <p class="question question-2">
-      <span class="question2-part1 mr-2 d-inline">How do you practice being brave</span>
-      <br><span class="question2-part2 mr-2 d-inline">when you feel scared?</span>
-    </p>
-    <p class="question question-3"><strong>FUN FRIENDS can help you learn.</strong></p>
-    <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <audio src="../../assets/sounds/session1/8Animated_Book_Page7.mp3" autoplay></audio>
+    <div class="question">
+      <p>Talk about your family and home.</p>
+      <p>Talk about your friends.</p>
+      <p>When you feel scared, what can you do to be brave?</p>
+      <p><strong>FUN FRIENDS can help you learn.</strong></p>
+    </div>
+    <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3"/>
+    <audio src="../../assets/sounds/session1/8Animated_Book_Page7.mp3" ref="audio"></audio>
     <div class="page-number" id="page-light">7</div>
   </div>
 </template>
 
 <script>
 import anime from 'animejs';
-import Letterize from 'letterizejs';
+
 export default {
   name: "Session1Page1",
   methods: {
@@ -260,48 +255,20 @@ export default {
       });
     },
     animateText() {
-      const q1p1 = new Letterize({targets: ".question1-part1"});
-      const q1p2 = new Letterize({targets: ".question1-part2"});
-
-      const question1_animation = anime.timeline();
-      question1_animation
-        .add({
-          targets: q1p1.listAll,
-          color: '#000',
-          delay: anime.stagger(70)
-        })
-        .add({
-          targets: q1p2.listAll,
-          color: '#000',
-          delay: anime.stagger(70)
-        }, '-=500')
-
-      // Question 2
-      const q2p1 = new Letterize({targets: ".question2-part1"});
-      const q2p2 = new Letterize({targets: ".question2-part2"});
-
-      const question2_animation = anime.timeline();
-      question2_animation
-        .add({
-          targets: q2p1.listAll,
-          color:'#000',
-          delay: anime.stagger(70, {start: 5000})
-        })
-        .add({
-          targets: q2p2.listAll,
-          color: '#000',
-          delay: anime.stagger(70)
-        }, '-=500');
-
-      // Question 3
-      anime({
-        targets: '.question-3',
-        color: '#000',
-        delay: 10000,
-      });
+      let text = document.querySelector('.question').children;
+      let animation = anime.timeline({duration: 500, easing: 'linear'});
+      animation
+        .add({targets: text[0], opacity: 1}, 6600)
+        .add({targets: text[1], opacity: 1}, 10000)
+        .add({targets: text[2], opacity: 1}, 12800)
+        .add({targets: text[3], opacity: 1}, 17200)
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.audio.play()}, 500)
     }
   },
   mounted() {
+    this.playVoiceOver();
     this.animateSvg();
     this.animateText();
   }
@@ -395,19 +362,22 @@ tspan { white-space:pre }
   text-align: center;
   font-size: calc(0.05 * 133vh);
   position: absolute;
-  color: #fff;
-  width: auto;
-}
-.question-1 {
+  width: 133vh;
   top: 30vh;
-  left: 8%;
+  left: 0;
 }
-.question-2 {
-  top: 40vh;
-  left: 14%;
-}
-.question-3 {
-  top: 60vh;
-  left: 12%;
-}
+.question p {opacity: 0;}
+.question p:nth-child(3) {font-size: calc(0.042 * 133vh);}
+/*.question-1 {*/
+/*  top: 30vh;*/
+/*  left: 8%;*/
+/*}*/
+/*.question-2 {*/
+/*  top: 40vh;*/
+/*  left: 14%;*/
+/*}*/
+/*.question-3 {*/
+/*  top: 60vh;*/
+/*  left: 12%;*/
+/*}*/
 </style>

@@ -189,13 +189,13 @@
           <br>how yummy it tastes. Talk
           <br>to somebody about what
           <br>you notice &ndash; what it
-          <br>looks like, what it feels
+          <br>smells like, what it looks
           <br>like and how it tastes.
         </p>
       </div>
     </div>
     <audio src="../../assets/sounds/session8/Session8_Page16.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">170</div>
+    <div class="page-number" id="page-light">172</div>
   </div>
 </template>
 

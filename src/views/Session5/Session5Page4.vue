@@ -108,7 +108,7 @@
     <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
     <audio src="../../assets/sounds/all/Good_Job.mp3" ref="goodJob"/>
     <audio src="../../assets/sounds/session5/Session5_Page4.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">112</div>
+    <div class="page-number" id="page-dark">114</div>
   </div>
 </template>
 
@@ -158,15 +158,15 @@ export default {
         .add({
           targets: text[1],
           opacity: 1
-        }, 6355)
+        }, 9100)
         .add({
           targets: text[2],
           opacity: 1
-        }, 8500)
+        }, 11300)
         .add({
           targets: '.traffic-light',
           opacity: 1
-        }, 11827);
+        }, 14600);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500);

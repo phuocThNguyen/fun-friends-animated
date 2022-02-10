@@ -17,7 +17,7 @@
         slowly calms us down.</p>
     </div>
     <audio src="../../assets/sounds/session4/Session4_Page10.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">94</div>
+    <div class="page-number" id="page-light">96</div>
   </div>
 </template>
 

@@ -712,14 +712,14 @@
       </svg>
       <div class="star-text">
         <p><strong>Bright Star Idea</strong></p>
-        <p>Cook a healthy recipe
-          <br>with someone in
-          <br>your family.
+        <p>Cook healthy, yummy
+          <br>food with someone
+          <br>in your family.
         </p>
       </div>
     </div>
     <audio src="../../assets/sounds/session6/Session6_Page11.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">136</div>
+    <div class="page-number" id="page-dark">138</div>
   </div>
 </template>
 
@@ -794,10 +794,10 @@ export default {
   position: absolute;
   text-align: center;
   z-index: 55;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .star-text p {
-  font-size: 6vh;
+  font-size: 5.5vh;
   margin-bottom: 0;
   text-align: center;
 }

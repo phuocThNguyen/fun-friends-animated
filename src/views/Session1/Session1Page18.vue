@@ -2,7 +2,8 @@
   <div class="interactive-container">
     <img class="session-background" src="../../assets/images/session1/289258-P6O0D3-288-resized.jpg" alt="family-enjoy-water">
     <div class="text-box">
-      <p class="mb-0">We are born in different countries.&nbsp;</p>
+      <p class="mb-0">Some families are born in the same country.</p>
+      <p class="mb-0">Some families are born in different countries.</p>
       <p class="mb-0">Where were you born?</p>
     </div>
     <audio src="../../assets/sounds/session1/25Animated_Book_Page24.mp3" ref="voice"/>
@@ -18,24 +19,12 @@ export default {
   methods: {
     animateText() {
       let text = document.querySelector('.text-box').children;
-      let animation = anime.timeline({
-        duration: 500,
-        easing: 'linear'
-      })
+      let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-        .add({
-          targets: ".text-box",
-          opacity: 1,
-          delay: 500,
-        })
-        .add({
-          targets: text[0],
-          opacity: 1
-        }, 500)
-        .add({
-          targets: text[1],
-          opacity: 1
-        }, 4274)
+        .add({targets: ".text-box", opacity: 1}, 500)
+        .add({targets: text[0], opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 4000)
+        .add({targets: text[2], opacity: 1}, 8000)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -62,7 +51,7 @@ export default {
 .text-box p {
   color: #ffffff;
   font-weight: bold;
-  font-size: 6vh;
+  font-size: 5vh;
   opacity: 0;
 }
 </style>

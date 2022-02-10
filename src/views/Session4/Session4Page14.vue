@@ -6,7 +6,7 @@
       <p>We smell with our nose. What can we smell?</p>
     </div>
     <audio src="../../assets/sounds/session4/Session4_Page14.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">98</div>
+    <div class="page-number" id="page-dark">100</div>
   </div>
 </template>
 

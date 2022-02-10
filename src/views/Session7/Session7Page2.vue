@@ -993,7 +993,7 @@
     </div>
     <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"/>
     <audio src="../../assets/sounds/session7/Session7_Page2.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">138</div>
+    <div class="page-number" id="page-light">140</div>
   </div>
 </template>
 

@@ -1002,19 +1002,16 @@
       </svg>
       <div class="star-text">
         <p><strong>Bright Star Idea</strong></p>
-        <p>Do 'Pizza Massage' with someone
-          <br>in your family. Pretend to make
-          <br>dough and spread it on each
-          <br>other's backs, add lots of
-          <br>yummy toppings and
-          <br>warm up your hands to
-          <br>heat the pizza in the oven.
-          <br>Chop it up and eat the pizza!
+        <p>Plant some vegetables in
+          <br>a pot with your family. It is
+          <br>so much fun to watch
+          <br>your vegetable grow
+          <br>and then it them!
         </p>
       </div>
     </div>
     <audio src="../../assets/sounds/session9/Session9_Page14.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">184</div>
+    <div class="page-number" id="page-light">186</div>
   </div>
 </template>
 
@@ -1066,10 +1063,10 @@ export default {
 <style scoped>
 .star-container {
   position: absolute;
-  bottom: .5vh;
-  right: 14%;
-  width: 72%;
-  height: 90vh;
+  top: 10vh;
+  left: calc(0.22*133vh);
+  width: calc(0.56*133vh);
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1084,7 +1081,7 @@ export default {
 .star-text {
   position: absolute;
   text-align: center;
-  margin-top: 11%;
+  margin-top: 13%;
   z-index: 55;
 }
 .star-text p {

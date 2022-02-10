@@ -7,10 +7,10 @@
       <p>- Share your answer with a grown up and ask them about
         when they were children - what they liked to do, eat and play.</p>
       <p>- Ask them to draw the home they lived in as a child.</p>
-      <p>- Each night, share a happy memory from your day with your loved ones.</p>
+      <p>- Each night, share a happy memory from your day with your family or friends.</p>
       <p>- Practise being BRAVE:</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Look people in the eye and smile.</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Use a brave voice and make yourself big.</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Use a brave and strong voice.</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Try your best and give it a go.</p>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3"/>
@@ -54,19 +54,19 @@ export default {
         .add({
           targets: text[5],
           opacity: 1
-        }, 26134)
+        }, 27000)
         .add({
           targets: text[6],
           opacity: 1
-        }, 28557)
+        }, 29500)
         .add({
           targets: text[7],
           opacity: 1
-        }, 31319)
+        }, 32200)
         .add({
           targets: text[8],
           opacity: 1
-        }, 34703)
+        }, 35500)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;

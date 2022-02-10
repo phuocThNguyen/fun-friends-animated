@@ -4,7 +4,7 @@
 
     <div class="left-bar">
       <h1>Our families</h1>
-      <p id="para-1">Talk about your family.</p>
+      <p id="para-1">Tell us about your family.</p>
       <p id="para-2">What games do you like to play together?</p>
       <p id="para-3">How do you have fun together?</p>
 
@@ -42,19 +42,19 @@ export default {
         .add({
           targets: text[1],
           opacity: 1,
-        }, 2840)
+        }, 2400)
         .add({
           targets: text[2],
           opacity: 1,
-        }, 4766)
+        }, 5500)
         .add({
           targets: text[3],
           opacity: 1,
-        }, 7910)
+        }, 8600)
         .add({
           targets: ".text-box",
           opacity: 1,
-        }, 10381)
+        }, 11000)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1000)

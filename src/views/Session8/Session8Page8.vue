@@ -21,7 +21,7 @@
       </div>
     </div>
     <audio src="../../assets/sounds/session8/Session8_Page8.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">162</div>
+    <div class="page-number" id="page-light">164</div>
   </div>
 </template>
 

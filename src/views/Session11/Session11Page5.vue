@@ -15,7 +15,7 @@
       <div class="text" id="para-2">Matilda giving Alpaca a hug.</div>
     </div>
     <audio src="../../assets/sounds/session11/Session11_Page5.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">206</div>
+    <div class="page-number" id="page-light">208</div>
   </div>
 </template>
 

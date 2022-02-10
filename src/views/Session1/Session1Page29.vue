@@ -8,6 +8,10 @@
       <p>Talk about your clothes.</p>
       <p>Ask your friends about their clothes.</p>
     </div>
+    <div class="text">
+      <p>Different countries may use different clothes.</p>
+      <p>It is normal that we are all different!</p>
+    </div>
     <audio src="../../assets/sounds/session1/36Animated_Book_Page35.mp3" ref="voice"/>
     <div class="page-number" id="page-light">35</div>
   </div>
@@ -20,23 +24,12 @@ export default {
   methods: {
     animateText() {
       let texts = document.getElementsByClassName("text-box")[0];
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 700,
-      });
+      let animation = anime.timeline({easing: 'linear', duration: 700,});
       animation
-        .add({
-          targets: texts.children[0],
-          color: '#000',
-        }, 771)
-        .add({
-          targets: texts.children[1],
-          color: '#000',
-        }, 2312)
-        .add({
-          targets: texts.children[2],
-          color: '#000',
-        }, 4500)
+        .add({targets: texts.children[0], color: '#000'}, 771)
+        .add({targets: texts.children[1], color: '#000'}, 2312)
+        .add({targets: texts.children[2], color: '#000'}, 4500)
+        .add({targets: '.text', opacity: 1}, 7500)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -83,4 +76,18 @@ export default {
   font-size: 4vh;
   margin-bottom: 0;
 }
+.text {
+  position: absolute;
+  background-color: #00CE7C;
+  color: #fff;
+  font-size: 3vh;
+  bottom: 39vh;
+  width: auto;
+  right: 0;
+  padding: 1vh;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+}
+.text p {margin-bottom: 0}
 </style>

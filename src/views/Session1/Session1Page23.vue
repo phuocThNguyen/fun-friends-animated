@@ -9,7 +9,7 @@
     <div class="text-box">
       <p class="text">
         <span>We may live in different homes,</span>
-        <br><span> but inside we all have families.</span>
+        <br><span> but inside we all have family, friends or animal friends.</span>
       </p>
     </div>
     <audio src="../../assets/sounds/session1/30Animated_Book_Page29.mp3" ref="voice"/>
@@ -61,20 +61,20 @@ export default {
 }
 .text-box {
   position: absolute;
-  left: 15%;
-  top: 35vh;
+  left: 2.75%;
+  top: 37vh;
   z-index: 20;
   background-color: #00CE7C;
   width: auto;
   height: auto;
-  padding: 2vh 4vh;
+  padding: 1vh 4vh;
   opacity: 0;
   text-align: center;
 }
 .text {
   font-weight: bold;
   color: #ffffff;
-  font-size: 6vh;
+  font-size: 4.8vh;
   margin-bottom: 0;
 }
 </style>

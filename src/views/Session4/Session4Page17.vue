@@ -6,7 +6,7 @@
       <p>We feel with our skin. What can we feel?</p>
     </div>
     <audio src="../../assets/sounds/session4/Session4_Page17.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">101</div>
+    <div class="page-number" id="page-dark">103</div>
   </div>
 </template>
 

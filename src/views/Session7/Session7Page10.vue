@@ -262,7 +262,7 @@
       tiles to write down your ideas!"/>
     <audio ref="audio" loop src="../../assets/sounds/children-background-music/snack-time-the-green-orbs-children-s-music-no-copyright-music.mp3"/>
     <audio src="../../assets/sounds/session7/Session7_Page10.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark" style="left: 30vh !important;">146</div>
+    <div class="page-number" id="page-dark" style="left: 30vh !important;">148</div>
   </div>
 </template>
 

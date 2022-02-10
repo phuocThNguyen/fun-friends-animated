@@ -3,7 +3,7 @@
     <img src="../../assets/images/session10/623178-PNWC48-947.jpg" alt="dad-helps-Tom" class="session-background">
     <div class="text-box-green">My dad helps me write a story.</div>
     <audio src="../../assets/sounds/session10/Session10_Page5.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">189</div>
+    <div class="page-number" id="page-light">191</div>
   </div>
 </template>
 

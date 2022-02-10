@@ -543,7 +543,7 @@
     </div>
     <audio src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3" autoplay loop ref="audio"/>
     <audio src="../../assets/sounds/session12/Session12_Page5.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">216</div>
+    <div class="page-number" id="page-light">218</div>
   </div>
 </template>
 

@@ -10,7 +10,7 @@
       <p>Annie's Reward <br>Cooking with mum</p>
     </div>
     <audio src="../../assets/sounds/session9/Session9_Page3.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">173</div>
+    <div class="page-number" id="page-light">175</div>
   </div>
 </template>
 

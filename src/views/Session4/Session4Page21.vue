@@ -4,7 +4,7 @@
     <div class="text-box">The water feels cool and
      fresh on our skin.</div>
     <audio src="../../assets/sounds/session4/Session4_Page21.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">105</div>
+    <div class="page-number" id="page-dark">107</div>
   </div>
 </template>
 

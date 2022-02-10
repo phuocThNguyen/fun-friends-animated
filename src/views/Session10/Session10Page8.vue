@@ -4,7 +4,7 @@
     <div class="text-box-green">My mum helps me be brave
       <br>when I learn to ride my bike.</div>
     <audio src="../../assets/sounds/session10/Session10_Page8.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">192</div>
+    <div class="page-number" id="page-light">194</div>
   </div>
 </template>
 

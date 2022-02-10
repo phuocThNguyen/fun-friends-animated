@@ -6,7 +6,7 @@
       <p>We taste with our tongues. What can we taste?</p>
     </div>
     <audio src="../../assets/sounds/session4/Session4_Page16.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">100</div>
+    <div class="page-number" id="page-dark">102</div>
   </div>
 </template>
 

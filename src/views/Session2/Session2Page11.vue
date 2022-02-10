@@ -1,17 +1,17 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session2/11382-resized.jpg" alt="alt-pos" class="session-background">
+    <img src="../../assets/images/session2/cute-little-girl-red-dress.jpg" alt="worried" class="session-background">
     <emotion-pick-instruction class="instruction"/>
     <feeling-question
-        class="question"
-        question="What could she be feeling?"
-        :emotes="['happy','worried','cool']"
-        :tips="['Happy','Worried','Relaxed']"
-        :ans="['red-tick','green-tick','red-tick']"
-        :isSmall="false"
-        :delay="700"
-        v-on:correctAnsChosen="handleCorrectAnswer"
-        v-on:wrongAnswer="handleWrongAnswer"
+      class="question"
+      question="What could she be feeling?"
+      :emotes="['angry','happy','worried']"
+      :tips="['Angry','Happy','Worried']"
+      :ans="['red-tick','green-tick','red-tick']"
+      :isSmall="false"
+      :delay="500"
+      v-on:correctAnsChosen="handleCorrectAnswer"
+      v-on:wrongAnswer="handleWrongAnswer"
     />
 
     <!--  Good Job  -->
@@ -105,8 +105,8 @@
       </g>
     </svg>
     <audio src="../../assets/sounds/all/Good_Job.mp3" ref="goodJob"/>
-    <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
-    <audio src="../../assets/sounds/session2/Session2_Page11.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
+    <audio src="../../assets/sounds/session2/Session2_Page10+5.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">56</div>
   </div>
 </template>
@@ -154,27 +154,28 @@ export default {
 .instruction {
   position: absolute;
   top: 2vh;
-  right: 2%;
+  left: 2%;
+  opacity: 1;
 }
 .reward {
   position: absolute;
   height: auto;
   width: 1%;
-  top: 16vh;
-  left: 20%;
+  left: calc(0.43*133vh);
+  top: 18vh;
   opacity: 0;
 }
 .question {
   position: absolute;
-  bottom: 1vh;
-  left: 20%;
+  top: 33vh;
+  left: .5vh;
 }
 .sticker {
   position: absolute;
   width: auto;
-  height: 30vh;
-  top: 4vh;
-  left: 8%;
+  height: 25vh;
+  top: 3vh;
+  left: 35%;
   z-index: 50;
   opacity: 0;
 }

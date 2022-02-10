@@ -12,7 +12,7 @@
       <p>Is there an activity you can do together to help even more?</p>
     </div>
     <audio src="../../assets/sounds/session11/Session11_Page3.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">204</div>
+    <div class="page-number" id="page-light">206</div>
   </div>
 </template>
 

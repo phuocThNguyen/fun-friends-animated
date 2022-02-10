@@ -2,8 +2,8 @@
   <div class="interactive-container">
     <img src="../../assets/images/session5/85693.jpg" alt="red" class="session-background">
     <div class="text-box">
-      <p>Nala is spending her first night sleeping by herself.
-        <br>Pay attention to her relaxed face!</p>
+      <p>Nala is spending her first night sleeping by herself.</p>
+      <p>Pay attention to her relaxed face!</p>
       <p>How is she feeling? Is Nala having
         '<span id="red-text">red</span>' or
         '<span id="green-text">green</span>' thoughts?</p>
@@ -75,7 +75,7 @@
     <audio src="../../assets/sounds/all/Well_Done.mp3" ref="wellDone"/>
     <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
     <audio src="../../assets/sounds/session5/Session5_Page6.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">114</div>
+    <div class="page-number" id="page-light">116</div>
   </div>
 </template>
 
@@ -125,11 +125,15 @@ export default {
         .add({
           targets: text[1],
           opacity: 1
-        }, 5888)
+        }, 5800)
+        .add({
+          targets: text[2],
+          opacity: 1
+        }, 9200)
         .add({
           targets: '.traffic-light',
           opacity: 1
-        }, 11267);
+        }, 14600);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)

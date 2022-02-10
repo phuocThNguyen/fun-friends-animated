@@ -37,7 +37,7 @@
       <div class="bubble-text">Listen to your friend's opinion!</div>
     </div>
     <audio src="../../assets/sounds/session3/Session3_Page10.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">78</div>
+    <div class="page-number" id="page-dark">80</div>
   </div>
 </template>
 

@@ -7,7 +7,7 @@
       <span> Give them a big thank you!</span>
     </div>
     <audio src="../../assets/sounds/session10/Session10_Page14.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">198</div>
+    <div class="page-number" id="page-light">200</div>
   </div>
 </template>
 

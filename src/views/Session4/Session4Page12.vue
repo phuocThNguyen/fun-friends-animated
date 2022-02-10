@@ -851,7 +851,7 @@
     <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
     <audio src="../../assets/sounds/all/Correct_1.mp3" ref="correctVoice"/>
     <audio src="../../assets/sounds/session4/Session4_Page12.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">96</div>
+    <div class="page-number" id="page-light">98</div>
   </div>
 </template>
 

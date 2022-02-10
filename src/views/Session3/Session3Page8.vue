@@ -25,7 +25,7 @@
       <div class="bubble-text">Share your ideas with a friend!</div>
     </div>
     <audio src="../../assets/sounds/session3/Session3_Page8.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">76</div>
+    <div class="page-number" id="page-dark">78</div>
   </div>
 </template>
 

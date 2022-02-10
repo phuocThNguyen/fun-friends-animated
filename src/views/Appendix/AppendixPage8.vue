@@ -373,7 +373,7 @@
       </g>
     </svg>
     <audio src="../../assets/sounds/appendix/Session13_Appendix_Page7.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">227</div>
+    <div class="page-number" id="page-dark">229</div>
   </div>
 </template>
 

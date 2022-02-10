@@ -8,8 +8,8 @@
     </div>
     <div class="text-box">
       <p class="text">
-        <span>Houses are different,</span>
-        <span> but inside we are all the same.</span>
+        <span>Houses may be different,</span>
+        <span> but inside we all feel happiness and sadness sometimes.</span>
       </p>
     </div>
     <audio src="../../assets/sounds/session1/31Animated_Book_Page30.mp3" ref="voice"/>
@@ -61,13 +61,13 @@ export default {
 }
 .text-box {
   position: absolute;
-  left: 3%;
-  top: 41vh;
+  left: 8%;
+  width: 84%;
+  top: 37vh;
   z-index: 20;
   background-color: #00CE7C;
-  width: auto;
   height: auto;
-  padding: 2vh 4vh;
+  padding: 1vh;
   opacity: 0;
 }
 .text {
@@ -75,5 +75,6 @@ export default {
   color: #ffffff;
   font-size: 5vh;
   margin-bottom: 0;
+  text-align: center;
 }
 </style>

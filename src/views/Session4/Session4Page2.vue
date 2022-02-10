@@ -5,10 +5,11 @@
       <h1>Body Clues</h1>
       <p>How is she feeling?</p>
       <p>How can you tell?</p>
-      <p><span class="text">Sometimes when children feel nervous</span>
-        <span class="text"> their heart starts beating fast,</span>
-        <span class="text"> there are butterflies in their tummy,</span>
-        <span class="text"> they get red in the face or get sweaty.</span></p>
+      <p><span class="text">Sometimes when we feel nervous, our bodies
+        give us clues or signs to tell us what we feel.</span>
+        <span class="text"> Our heart starts beating fast,</span>
+        <span class="text"> there are butterflies in our tummy,</span>
+        <span class="text"> and we get red in the face or get sweaty.</span></p>
       <p id="prompt">My body is my friend.
         <br>It tells me when I need to relax.</p>
     </div>
@@ -473,7 +474,7 @@
     <audio src="../../assets/sounds/session4/Session4_Page2_butterfly.mp3" ref="voice4"/>
     <audio src="../../assets/sounds/session4/Session4_Page2_redFace.mp3" ref="voice5"/>
     <audio src="../../assets/sounds/session4/Session4_Page2_MyBody.mp3" ref="voice6"/>
-    <div class="page-number" id="page-dark">86</div>
+    <div class="page-number" id="page-dark">88</div>
   </div>
 </template>
 
@@ -519,7 +520,7 @@ export default {
         .add({
           targets: '.instruction-container',
           opacity: 1
-        }, 12000)
+        }, 16600)
     },
     animateHeartBeat() {
       document.querySelector('.heart').style.opacity = '1';
@@ -693,7 +694,7 @@ export default {
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice1.play()}, 500)
-      setTimeout(() => {this.$refs.voice2.play()}, 12000)
+      setTimeout(() => {this.$refs.voice2.play()}, 17000)
     },
   },
   watch: {
@@ -817,7 +818,7 @@ export default {
   font-weight: bold;
   padding: 1vh;
   text-align: center;
-  margin-top: 20%;
+  margin-top: 5%;
 }
 .shp0-pointer { fill: #000000 }
 .shp1-pointer { fill: #00CE7C }

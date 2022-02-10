@@ -1011,7 +1011,7 @@
     </div>
     <audio src="../../assets/sounds/session1/playground.mp3" ref="audio" autoplay loop/>
     <audio src="../../assets/sounds/session12/Session12_Page3.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">214</div>
+    <div class="page-number" id="page-light">216</div>
   </div>
 </template>
 

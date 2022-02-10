@@ -2483,7 +2483,7 @@
       </div>
     </div>
     <audio src="../../assets/sounds/session4/Session4_Page24.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">108</div>
+    <div class="page-number" id="page-dark">110</div>
   </div>
 </template>
 

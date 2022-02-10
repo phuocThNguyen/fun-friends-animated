@@ -6,7 +6,7 @@
     <img src="../../assets/images/session8/135443-OSAV8P-846.jpg" alt="Annie" class="images">
     <img src="../../assets/images/session8/135428-OSAV5N-454.jpg" alt="Annie" class="images">
     <audio src="../../assets/sounds/session8/Session8_Page5.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">159</div>
+    <div class="page-number" id="page-light">161</div>
   </div>
 </template>
 

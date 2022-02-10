@@ -24,7 +24,7 @@
     </div>
     <div class="notice-box">Helping others is great.</div>
     <audio src="../../assets/sounds/session3/Session3_Page9.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">77</div>
+    <div class="page-number" id="page-dark">79</div>
   </div>
 </template>
 

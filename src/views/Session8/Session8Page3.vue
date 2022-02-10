@@ -8,7 +8,7 @@
       <p>What can you do to be a kind friend to Tom?</p>
     </div>
     <audio src="../../assets/sounds/session8/Session8_Page3.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">157</div>
+    <div class="page-number" id="page-light">159</div>
   </div>
 </template>
 

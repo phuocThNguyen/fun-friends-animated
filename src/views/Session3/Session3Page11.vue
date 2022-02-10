@@ -17,19 +17,19 @@
        we choose to do with our feelings that counts. Bubble
        breathing is a 'thumbs up' choice.</p>
     </div>
-    <div class="bubble" id="bubble-1"></div>
-    <div class="bubble" id="bubble-2"></div>
-    <div class="bubble" id="bubble-3"></div>
-    <div class="bubble" id="bubble-4"></div>
-    <div class="bubble" id="bubble-5"></div>
-    <div class="bubble" id="bubble-6"></div>
-    <div class="bubble" id="bubble-7"></div>
-    <div class="bubble" id="bubble-8"></div>
-    <div class="bubble" id="bubble-9"></div>
-    <div class="bubble" id="bubble-10"></div>
+    <div class="bubble" id="bubble-1"/>
+    <div class="bubble" id="bubble-2"/>
+    <div class="bubble" id="bubble-3"/>
+    <div class="bubble" id="bubble-4"/>
+    <div class="bubble" id="bubble-5"/>
+    <div class="bubble" id="bubble-6"/>
+    <div class="bubble" id="bubble-7"/>
+    <div class="bubble" id="bubble-8"/>
+    <div class="bubble" id="bubble-9"/>
+    <div class="bubble" id="bubble-10"/>
     <audio ref="audio" autoplay src="../../assets/sounds/session3/bubbles.mp3"/>
     <audio src="../../assets/sounds/session3/Session3_Page11.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">79</div>
+    <div class="page-number" id="page-dark">81</div>
   </div>
 </template>
 

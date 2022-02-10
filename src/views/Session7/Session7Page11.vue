@@ -825,7 +825,7 @@
         Teach a friend the steps and let them teach you.</p>
     </div>
     <audio src="../../assets/sounds/session7/Session7_Page11.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">147</div>
+    <div class="page-number" id="page-dark">149</div>
   </div>
 </template>
 

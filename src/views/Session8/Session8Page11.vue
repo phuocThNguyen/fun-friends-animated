@@ -16,7 +16,7 @@
     </div>
     <audio autoplay ref="audio" src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
     <audio src="../../assets/sounds/session8/Session8_Page11.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">165</div>
+    <div class="page-number" id="page-light">167</div>
   </div>
 </template>
 

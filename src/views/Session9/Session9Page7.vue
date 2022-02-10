@@ -9,7 +9,7 @@
       <p>Tom's Reward <br>Fun ride</p>
     </div>
     <audio src="../../assets/sounds/session9/Session9_Page7.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">177</div>
+    <div class="page-number" id="page-light">179</div>
   </div>
 </template>
 

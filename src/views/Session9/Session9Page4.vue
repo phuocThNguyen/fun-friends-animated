@@ -9,7 +9,7 @@
       <p id="para-2">Annie's Reward <br>Special time with her mom</p>
     </div>
     <audio src="../../assets/sounds/session9/Session9_Page4.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">174</div>
+    <div class="page-number" id="page-light">176</div>
   </div>
 </template>
 

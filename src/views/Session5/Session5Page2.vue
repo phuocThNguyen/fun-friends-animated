@@ -9,7 +9,7 @@
     <div class="light-box" id="red">Red thought</div>
     <div class="light-box" id="green">Green thought</div>
     <audio src="../../assets/sounds/session5/Session5_Page2.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">110</div>
+    <div class="page-number" id="page-dark">112</div>
   </div>
 </template>
 

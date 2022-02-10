@@ -22,7 +22,7 @@
       <div class="bubble-text">Look at your friend's face!</div>
     </div>
     <audio src="../../assets/sounds/session3/Session3_Page2.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">70</div>
+    <div class="page-number" id="page-dark">72</div>
   </div>
 </template>
 

@@ -150,7 +150,7 @@
     <audio src="../../assets/sounds/all/Well_Done.mp3" ref="wellDone"/>
     <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
     <audio src="../../assets/sounds/all/Correct_2.mp3" ref="correctVoice"/>
-    <div class="page-number" id="page-light">133</div>
+    <div class="page-number" id="page-light">135</div>
   </div>
 </template>
 
@@ -171,20 +171,20 @@ export default {
       let targetThumb = e.target.id;
       switch (targetThumb) {
         case 'mask-left-1':
-          this.animateRedTick('#red-tick-1');
-          break;
-        case 'mask-right-1':
           this.animateGreenTick('#green-tick-1');
           this.hideElements(1);
           this.checkComplete();
           break;
+        case 'mask-right-1':
+          this.animateRedTick('#red-tick-1');
+          break;
         case 'mask-left-2':
+          this.animateRedTick('#red-tick-2');
+          break;
+        case 'mask-right-2':
           this.animateGreenTick('#green-tick-2');
           this.hideElements(2);
           this.checkComplete();
-          break;
-        case 'mask-right-2':
-          this.animateRedTick('#red-tick-2');
           break;
       }
     },
@@ -292,10 +292,10 @@ export default {
   top: 2vh
 }
 .thumb-up {
-  left: .7vh;
+  right: .7vh;
 }
 .thumb-down {
-  right: .7vh;
+  left: .7vh;
 }
 .images {
   position: absolute;

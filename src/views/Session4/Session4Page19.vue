@@ -71,7 +71,7 @@
     <audio src="../../assets/sounds/all/Correct_2.mp3" ref="correctVoice"/>
     <audio src="../../assets/sounds/all/Well_Done.mp3" ref="wellDone"/>
     <audio src="../../assets/sounds/session4/Session4_Page19.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">103</div>
+    <div class="page-number" id="page-dark">105</div>
   </div>
 </template>
 

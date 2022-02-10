@@ -9,7 +9,7 @@
       <p class="text" id="para-2">Zoe and Daniel <br>helping Matilda swing.</p>
     </div>
     <audio src="../../assets/sounds/session11/Session11_Page6.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">207</div>
+    <div class="page-number" id="page-light">209</div>
   </div>
 </template>
 

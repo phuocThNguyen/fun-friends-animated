@@ -40,15 +40,15 @@ export default {
         .add({
           targets: para[3],
           color: "#000"
-        }, 11362)
+        }, 11800)
         .add({
           targets: para[4],
           color: "#000"
-        },19211)
+        },19600)
         .add({
           targets: para[5],
           opacity: 1
-        }, 21241)
+        }, 21700)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)

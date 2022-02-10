@@ -2301,7 +2301,7 @@
       <p>What can you do to practise being brave?</p>
     </div>
     <audio src="../../assets/sounds/session9/Session9_Page5.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">175</div>
+    <div class="page-number" id="page-light">177</div>
   </div>
 </template>
 

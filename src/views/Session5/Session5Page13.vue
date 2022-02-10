@@ -3,7 +3,7 @@
     <div class="text-box">
       <h1>Additional Activity &ndash; <span class="red">Red</span>
         and <span class="green">Green</span> Thoughts</h1>
-      <p>Daniel and Matilda are sledding in the snow for the first time.
+      <p>Daniel and Matilda are playing in the snow for the first time.
         What are some '<span class="red">red</span>' and
         '<span class="green">green</span>' thoughts Daniel
         and Matilda might be having? Share what you felt like,

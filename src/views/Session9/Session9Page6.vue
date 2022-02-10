@@ -16,7 +16,7 @@
       <p id="para-2">Tom's Reward <br>Special time with his dad</p>
     </div>
     <audio src="../../assets/sounds/session9/Session9_Page6.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">176</div>
+    <div class="page-number" id="page-light">178</div>
   </div>
 </template>
 

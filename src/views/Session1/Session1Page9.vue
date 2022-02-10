@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <img class="session-background" src="../../assets/images/session1/129493-ORFK4F-127-resized.jpg" alt="mia">
     <div class="text-box">
-      <p class="mb-0">Mia loves climbing trees.</p>
+      <p class="mb-0">Mia enjoys climbing trees.</p>
     </div>
     <audio src="../../assets/sounds/session1/16Animated_Book_Page15.mp3" ref="voice"/>
     <div class="page-number" id="page-light">15</div>

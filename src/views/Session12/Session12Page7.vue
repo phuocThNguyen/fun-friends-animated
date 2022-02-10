@@ -118,7 +118,7 @@
     </svg>
     <audio src="../../assets/sounds/children-background-music/polka.mp3" autoplay loop ref="audio"/>
     <audio src="../../assets/sounds/session12/Session12_Page7.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">218</div>
+    <div class="page-number" id="page-light">220</div>
   </div>
 </template>
 

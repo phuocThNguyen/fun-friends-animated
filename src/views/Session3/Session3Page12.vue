@@ -12,16 +12,16 @@
       forever, feelings change. Using a Magic Bubble Wand
       to calm down is a 'thumbs up' choice.</p>
     </div>
-    <div class="bubble" id="bubble-1"></div>
-    <div class="bubble" id="bubble-2"></div>
-    <div class="bubble" id="bubble-3"></div>
-    <div class="bubble" id="bubble-4"></div>
-    <div class="bubble" id="bubble-5"></div>
-    <div class="bubble" id="bubble-6"></div>
-    <div class="bubble" id="bubble-7"></div>
-    <div class="bubble" id="bubble-8"></div>
-    <div class="bubble" id="bubble-9"></div>
-    <div class="bubble" id="bubble-10"></div>
+    <div class="bubble" id="bubble-1"/>
+    <div class="bubble" id="bubble-2"/>
+    <div class="bubble" id="bubble-3"/>
+    <div class="bubble" id="bubble-4"/>
+    <div class="bubble" id="bubble-5"/>
+    <div class="bubble" id="bubble-6"/>
+    <div class="bubble" id="bubble-7"/>
+    <div class="bubble" id="bubble-8"/>
+    <div class="bubble" id="bubble-9"/>
+    <div class="bubble" id="bubble-10"/>
     <div class="star-container">
       <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 1258" width="1320" height="1258">
         <title>Star</title>
@@ -46,7 +46,7 @@
     </div>
     <audio ref="audio" autoplay src="../../assets/sounds/session3/bubbles.mp3"/>
     <audio src="../../assets/sounds/session3/Session3_Page13.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">80</div>
+    <div class="page-number" id="page-light">82</div>
   </div>
 </template>
 

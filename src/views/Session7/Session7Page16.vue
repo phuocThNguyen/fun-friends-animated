@@ -437,7 +437,7 @@
     </div>
     <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"/>
     <audio src="../../assets/sounds/session7/Session7_Page15.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">152</div>
+    <div class="page-number" id="page-light">154</div>
   </div>
 </template>
 

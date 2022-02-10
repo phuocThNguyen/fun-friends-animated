@@ -301,17 +301,17 @@
       </svg>
       <div class="star-text">
         <p><strong>Bright Star Idea</strong></p>
-        <p>Write a letter or card to thank
-          <br>somebody for the things that you
-          <br>like about them. You could
-          <br>ask someone in your
-          <br>family to help
-          <br>you write it.
+        <p>Do a drawing or make a card to thank
+          <br>somebody for the things
+          <br>that you like about them.
+          <br>You could ask someone
+          <br>in your family
+          <br>to help you write it.
         </p>
       </div>
     </div>
     <audio src="../../assets/sounds/session10/Session10_Page17.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">201</div>
+    <div class="page-number" id="page-light">203</div>
   </div>
 </template>
 

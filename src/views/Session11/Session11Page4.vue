@@ -14,7 +14,7 @@
       <p>&bull;&nbsp;Friends</p>
     </div>
     <audio src="../../assets/sounds/session11/Session11_Page4.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">205</div>
+    <div class="page-number" id="page-light">207</div>
   </div>
 </template>
 

@@ -219,7 +219,7 @@
       <p>It can be easy when we break it into small steps.</p>
     </div>
     <audio src="../../assets/sounds/session7/Session7_Page9.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">145</div>
+    <div class="page-number" id="page-dark">147</div>
   </div>
 </template>
 

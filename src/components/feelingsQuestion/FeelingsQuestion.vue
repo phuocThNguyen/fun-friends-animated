@@ -13,15 +13,9 @@
     <div class="masks-container">
       <div v-for="emote in emotes" :key="emote" @click="answerHandler"/>
     </div>
-    <audio ref="correct" src="../../assets/sounds/all/correct-ans.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <audio ref="wrong" src="../../assets/sounds/all/wrong-ans.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
+    <audio ref="correct" src="../../assets/sounds/all/correct-ans.mp3"/>
+    <audio ref="wrong" src="../../assets/sounds/all/wrong-ans.mp3"/>
+    <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3"/>
   </div>
 </template>
 
@@ -157,7 +151,7 @@ export default {
 .tips-container p {
   margin-bottom: 0;
   display: inline-block;
-  width: 14vh;
+  width: 20vh;
 }
 .content-container {
   background-color: rgba(0, 206, 124, 0.9);

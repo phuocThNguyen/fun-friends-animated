@@ -5,7 +5,7 @@
       <h1>Everyday remember to:</h1>
       <p>- Play outside.</p>
       <p>- Go to bed early.</p>
-      <p>- Practise relaxing for 5 minutes without TV or electronics.</p>
+      <p>- Practise relaxing for 5 minutes in a quiet place.</p>
       <p>- Pay attention to happy things.</p>
       <p>- Say thank you for happy things.</p>
     </div>
@@ -66,19 +66,19 @@ export default {
         .add({
           targets: texts[4],
           opacity: 1,
-        }, 13438)
+        }, 12900)
         .add({
           targets: images[3],
           opacity: 1,
-        }, 13438)
+        }, 12900)
         .add({
           targets: texts[5],
           opacity: 1,
-        }, 15838)
+        }, 15300)
         .add({
           targets: images[4],
           opacity: 1,
-        }, 15838)
+        }, 15300)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;

@@ -123,7 +123,7 @@
       </g>
     </svg>
     <audio src="../../assets/sounds/session6/Session6_Page6.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">131</div>
+    <div class="page-number" id="page-light">133</div>
   </div>
 </template>
 

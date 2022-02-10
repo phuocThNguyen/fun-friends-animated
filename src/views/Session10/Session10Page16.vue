@@ -308,7 +308,7 @@
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"/>
     <audio src="../../assets/sounds/session10/Session10_Page16.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">200</div>
+    <div class="page-number" id="page-light">202</div>
   </div>
 </template>
 

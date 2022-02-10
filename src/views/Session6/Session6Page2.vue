@@ -140,7 +140,7 @@
       </g>
     </svg>
     <audio src="../../assets/sounds/session6/Session6_Page2.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">127</div>
+    <div class="page-number" id="page-light">129</div>
   </div>
 </template>
 

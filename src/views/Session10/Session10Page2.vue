@@ -197,7 +197,7 @@
       <span> How has somebody helped you?</span>
     </div>
     <audio src="../../assets/sounds/session10/Session10_Page2.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">186</div>
+    <div class="page-number" id="page-light">188</div>
   </div>
 </template>
 

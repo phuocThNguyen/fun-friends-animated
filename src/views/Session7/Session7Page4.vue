@@ -1046,7 +1046,7 @@
       <p>Can you break this down into small easy steps?</p>
     </div>
     <audio src="../../assets/sounds/session7/Session7_Page4.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">140</div>
+    <div class="page-number" id="page-dark">142</div>
   </div>
 </template>
 

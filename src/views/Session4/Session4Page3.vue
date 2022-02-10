@@ -7,12 +7,11 @@
       <p>Act, dance or draw what happens in your body.</p>
       <p>How do your friends show they are nervous?</p>
       <p>Ask your friends what helps them to calm down?</p>
-      <p>Remember - It is normal to be worried, what
-       you do about it can be a thumbs-up or thumbs-down
-       choice.</p>
+      <p>Remember – It is normal to be worried, but you
+        can choose thumbs down or thumbs up actions.</p>
     </div>
     <audio src="../../assets/sounds/session4/Session4_Page3.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">87</div>
+    <div class="page-number" id="page-dark">89</div>
   </div>
 </template>
 

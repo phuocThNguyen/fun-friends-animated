@@ -143,7 +143,7 @@ export default {
   position: absolute;
   left: 64vh;
   bottom: .5vh;
-  font-size: 2.8vh;
+  font-size: 2.5vh;
   font-weight: bold;
   width: 5vh;
   height: 5vh;

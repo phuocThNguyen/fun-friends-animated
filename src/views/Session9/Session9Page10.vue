@@ -9,7 +9,7 @@
       <p id="para-2">Swimming in the river</p>
     </div>
     <audio src="../../assets/sounds/session9/Session9_Page10.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">180</div>
+    <div class="page-number" id="page-light">182</div>
   </div>
 </template>
 

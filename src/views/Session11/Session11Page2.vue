@@ -8,7 +8,7 @@
       <p>Compare your ideas with friends.</p>
     </div>
     <audio src="../../assets/sounds/session11/Session11_Page2.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">203</div>
+    <div class="page-number" id="page-light">205</div>
   </div>
 </template>
 

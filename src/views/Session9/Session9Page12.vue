@@ -997,7 +997,7 @@
       <p>&middot; Believe in yourself.</p>
     </div>
     <audio src="../../assets/sounds/session9/Session9_Page12.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">182</div>
+    <div class="page-number" id="page-light">184</div>
   </div>
 </template>
 

@@ -14,7 +14,7 @@
       <p id="para-2">Eating your <br>favourite healthy meal</p>
     </div>
     <audio src="../../assets/sounds/session9/Session9_Page9.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">179</div>
+    <div class="page-number" id="page-light">181</div>
   </div>
 </template>
 

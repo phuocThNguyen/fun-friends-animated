@@ -4,7 +4,7 @@
     <div class="text-box-green">My mum helps me to be brave
       <br>when I meet new people.</div>
     <audio src="../../assets/sounds/session10/Session10_Page7.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">191</div>
+    <div class="page-number" id="page-light">193</div>
   </div>
 </template>
 

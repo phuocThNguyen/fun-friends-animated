@@ -7,7 +7,7 @@
       <p>Maybe smiling, sharing, helping, listening or laughing?</p>
     </div>
     <audio src="../../assets/sounds/session8/Session8_Page2.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">156</div>
+    <div class="page-number" id="page-light">158</div>
   </div>
 </template>
 

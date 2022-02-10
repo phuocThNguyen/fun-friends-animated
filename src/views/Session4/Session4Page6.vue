@@ -3,7 +3,7 @@
     <img src="../../assets/images/session4/1827-resized.jpg" alt="relaxing" class="session-background">
     <div class="text-box">What do you do to relax and calm down?</div>
     <audio src="../../assets/sounds/session4/Session4_Page6.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">90</div>
+    <div class="page-number" id="page-light">92</div>
   </div>
 </template>
 

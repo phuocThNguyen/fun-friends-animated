@@ -5,7 +5,7 @@
       Art is relaxing.
     </div>
     <audio src="../../assets/sounds/session4/Session4_Page8.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">92</div>
+    <div class="page-number" id="page-light">94</div>
   </div>
 </template>
 

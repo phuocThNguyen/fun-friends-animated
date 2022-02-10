@@ -1347,93 +1347,71 @@
         </g>
       </g>
     </svg>
-    <div class="star-container">
-      <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 1258" width="1320" height="1258">
-        <title>Star</title>
-        <g id="Object">
-          <g id="&lt;Group&gt;">
-            <path id="&lt;Path&gt;" class="shp0-star" d="M678.99 12.07L866.54 392.07C869.62 398.32 875.59 402.66 882.48 403.66L1301.84 464.6C1319.21 467.12 1326.15 488.47 1313.58 500.73L1010.13 796.52C1005.14 801.38 1002.86 808.39 1004.04 815.26L1075.67 1232.93C1078.64 1250.23 1060.48 1263.42 1044.94 1255.26L669.86 1058.06C663.69 1054.82 656.31 1054.82 650.14 1058.06L275.06 1255.26C259.52 1263.42 241.36 1250.23 244.33 1232.93L315.96 815.26C317.14 808.39 314.86 801.38 309.87 796.52L6.42 500.73C-6.15 488.47 0.79 467.12 18.16 464.6L437.51 403.66C444.41 402.66 450.38 398.32 453.46 392.07L641.01 12.07C648.77 -3.67 671.22 -3.67 678.99 12.07Z" />
-            <g id="&lt;Group&gt;">
-              <path id="&lt;Path&gt;" class="shp1-star" d="M660 99.85L492.87 423.56C484.11 440.54 467.28 451.87 448.25 453.61L85.38 486.73L468.76 504.66C493.11 505.8 515.39 491.04 523.85 468.17L660 99.85Z" />
-            </g>
-            <path id="&lt;Path&gt;" class="shp2-star" d="M252.57 1184.87L244.33 1232.93C241.36 1250.23 259.52 1263.43 275.06 1255.25L650.14 1058.06C656.31 1054.82 663.69 1054.82 669.86 1058.06L1044.94 1255.25C1060.48 1263.43 1078.64 1250.23 1075.67 1232.93L1004.04 815.26C1002.86 808.39 1005.14 801.38 1010.13 796.51L1313.58 500.73C1326.15 488.47 1319.21 467.12 1301.84 464.6L1161.38 444.19C934.2 851.89 586.33 1066.55 252.57 1184.87Z" />
-          </g>
-        </g>
-      </svg>
-      <div class="star-text">
-        <p><strong>Bright Star Idea</strong></p>
-        <p>Draw a great big happy
-          <br>flower. Inside each
-          <br>petal, draw a picture
-          <br>of something that
-          <br>makes you happy.</p>
-      </div>
+    <div class="text-box">
+      <h1>Try Everyday</h1>
+      <p>Play a guessing game with your family.
+        One person acts out a feeling while everyone else tries to guess the feeling.
+        Take turns making up stories to go with the feelings.</p>
+      <p>Speak with your family about what they do
+        to calm down when they are worried, sad or angry.</p>
+      <p>Practise being BRAVE:</p>
+      <p>&nbsp;&nbsp;-&nbsp;Look people in the eye and smile.</p>
+      <p>&nbsp;&nbsp;-&nbsp;Use a brave voice and stand up tall.</p>
+      <p>&nbsp;&nbsp;-&nbsp;Try your best and give it a go.</p>
     </div>
-    <drawing-canvas class="canvas" :canvasStyle="canvasStyle"/>
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
-    <audio src="../../assets/sounds/session2/Session2_Page23.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session2/Session2_Page21.mp3" ref="voice"/>
     <div class="page-number" id="page-light">68</div>
   </div>
 </template>
 
 <script>
-import DrawingCanvas from "@/components/drawingCanvas/DrawingCanvas";
 import anime from "animejs";
 
 export default {
-  name: 'Session2Page23',
-  components: {DrawingCanvas},
-  data() {
-    return {
-      canvasStyle: {
-        width: 0.55,
-        height: 0.7,
-        isPicture: false
-      }
-    }
-  },
+  name: "Session2Page21",
   methods: {
     animateText() {
+      let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({
         easing: 'linear',
         duration: 500,
-        delay: 1000,
-      });
+      })
       animation
         .add({
-          targets: '.star-container',
+          targets: ".text-box",
+          opacity: 1,
+        }, 692)
+        .add({
+          targets: text[1],
+          opacity: 1,
+        }, 3225)
+        .add({
+          targets: text[2],
+          opacity: 1,
+        }, 16250)
+        .add({
+          targets: text[3],
+          opacity: 1,
+        }, 24873)
+        .add({
+          targets: text[4],
           opacity: 1
-        })
+        }, 26973)
         .add({
-          targets: ".star",
-          keyframes: [
-            {rotate: '-20deg'},
-            {rotate: '20deg'},
-            {rotate: '-20deg'},
-            {rotate: '0deg'},
-          ],
-          delay: 0,
-        })
-        .add({
-          targets: ".star-text",
-          keyframes: [
-            {rotate: '-20deg'},
-            {rotate: '20deg'},
-            {rotate: '-20deg'},
-            {rotate: '0deg'},
-          ],
-          delay: 0,
-        }, 1500)
-        .add({
-          targets: ".canvas",
+          targets: text[5],
           opacity: 1
-        })
+        }, 29774)
+        .add({
+          targets: text[6],
+          opacity: 1
+        }, 33029)
     },
     setAudioVolumeLevel(level) {
-      this.$refs.audio.volume = level;
+      this.$refs.audio.volume = level
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 2000)
+      setTimeout(() => {this.$refs.voice.play()}, 500)
     },
   },
   mounted() {
@@ -1445,40 +1423,33 @@ export default {
 </script>
 
 <style scoped>
-.canvas {
+.text-box {
   position: absolute;
-  top: 1vh;
-  right: 1%;
-  opacity: 0;
-  z-index: 100;
-}
-.star-container {
-  position: absolute;
-  top: 10vh;
-  left: -2%;
-  width: 45%;
-  height: 57vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-}
-.star-text {
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  margin-top: 18%;
-}
-.star-text p {
-  font-size: 3.5vh;
-}
-.star-text p:first-child {
-  margin-bottom: 0;
-}
-.star {
-  position: absolute;
+  background-color: rgba(255,255,255,0.9);
+  width: 90%;
   height: auto;
-  width: 100%;
+  left: 5%;
+  top: 2vh;
+  padding: 4.2vh;
+  opacity: 0;
+}
+.text-box h1 {
+  text-align: center;
+  margin-bottom: 1vh;
+  font-size: 7vh;
+}
+.text-box p {
+  margin-bottom: 3vh;
+  font-size: 4vh;
+  opacity: 0;
+}
+.text-box p:nth-child(4),
+.text-box p:nth-child(5),
+.text-box p:nth-child(6) {
+  margin-bottom: 1vh;
+}
+.text-box p:last-child {
+  margin-bottom: 0;
 }
 .landscape {
   position: absolute;
@@ -1487,9 +1458,6 @@ export default {
   left: -12%;
   top: -7vh;
 }
-.shp0-star { fill: #f3cc30 }
-.shp1-star { fill: #f7db5e }
-.shp2-star { fill: #edbd31 }
 .shp0 { fill: #bfedef }
 .shp1 { fill: #def9f9 }
 .shp2 { fill: #d3f4f3 }

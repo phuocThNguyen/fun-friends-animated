@@ -121,7 +121,7 @@
     <audio src="../../assets/sounds/all/Correct_2.mp3" ref="correctVoice"/>
     <audio src="../../assets/sounds/all/Very_Good.mp3" ref="veryGood"/>
     <audio src="../../assets/sounds/session4/Session4_Page18.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">102</div>
+    <div class="page-number" id="page-dark">104</div>
   </div>
 </template>
 

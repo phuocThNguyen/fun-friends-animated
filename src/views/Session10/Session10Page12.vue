@@ -13,7 +13,7 @@
       <strong>We love having fun <br>in the ocean.</strong>
     </div>
     <audio src="../../assets/sounds/session10/Session10_Page12.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">196</div>
+    <div class="page-number" id="page-light">198</div>
   </div>
 </template>
 

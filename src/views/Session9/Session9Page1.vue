@@ -204,7 +204,7 @@
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3"/>
     <audio src="../../assets/sounds/session9/Session9_Page1.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">171</div>
+    <div class="page-number" id="page-light">173</div>
   </div>
 </template>
 

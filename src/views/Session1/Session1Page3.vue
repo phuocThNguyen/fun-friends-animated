@@ -6,7 +6,7 @@
       <p id="para-2">Today is Tom’s birthday.</p>
       <p id="para-3">He is adopting two rescue dogs,</p>
       <p id="para-4">Chilli and Pepper.</p>
-      <p id="para-5">Tom wants to give Chilli and Pepper a loving home.</p>
+      <p id="para-5">Tom wants to give Chilli and Pepper a loving home forever.</p>
       <p id="para-6">Would you like to adopt a rescue animal for
         your birthday?</p>
     </div>
@@ -25,9 +25,7 @@ export default {
   methods: {
     animateText() {
       let para = document.getElementsByClassName('left-bar')[0].children;
-      let initAnimation = anime.timeline({
-        easing: 'linear'
-      });
+      let initAnimation = anime.timeline({duration: 300, easing: 'linear'});
       initAnimation
         .add({
           targets: ".left-bar",
@@ -43,28 +41,23 @@ export default {
         .add({
           targets: para[1],
           opacity: 1,
-          duration: 300,
         }, 3500)
         .add({
           targets: para[2],
           opacity: 1,
-          duration: 300,
         }, 7149)
         .add({
           targets: para[3],
           opacity: 1,
-          duration: 300,
         }, 10835)
         .add({
           targets: para[4],
           opacity: 1,
-          duration: 300,
         }, 13545)
         .add({
           targets: para[5],
           opacity: 1,
-          duration: 300,
-        }, 18456)
+        }, 18156)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;

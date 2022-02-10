@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <img class="session-background" src="../../assets/images/session1/282-resized.jpg" alt="josh-and-poppy">
     <div class="left-bar">
-      <p id="para-1">Josh and Poppy the dog
+      <p id="para-1">Josh and Poppy the dog,
         <br>love playing ball in the park.</p>
 
       <p id="para-2">What games do you like

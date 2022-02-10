@@ -712,7 +712,7 @@
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"/>
     <audio src="../../assets/sounds/session3/Session3_Page15.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">82</div>
+    <div class="page-number" id="page-dark">84</div>
   </div>
 </template>
 

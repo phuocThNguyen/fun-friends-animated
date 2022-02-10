@@ -29,7 +29,7 @@
     <img src="../../assets/images/session5/50289.jpg" alt="red" class="images" id="image-top">
     <img src="../../assets/images/session5/103011.jpg" alt="green" class="images" id="image-bottom">
     <audio src="../../assets/sounds/session6/Session6_Page5.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">130</div>
+    <div class="page-number" id="page-light">132</div>
   </div>
 </template>
 

@@ -624,7 +624,7 @@
       a picnic with your family.</span>
     </div>
     <audio src="../../assets/sounds/session9/Session9_Page2.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">172</div>
+    <div class="page-number" id="page-dark">174</div>
   </div>
 </template>
 

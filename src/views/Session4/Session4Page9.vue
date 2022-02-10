@@ -5,7 +5,7 @@
       Water makes us feel calm.
     </div>
     <audio src="../../assets/sounds/session4/Session4_Page9.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">93</div>
+    <div class="page-number" id="page-light">95</div>
   </div>
 </template>
 
