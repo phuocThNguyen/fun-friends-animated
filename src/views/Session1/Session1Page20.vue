@@ -25,6 +25,7 @@
         <div class="mask" @click="checkAns('elephant', $event)" id="mask-4"></div>
       </div>
     </div>
+    <div class="items-container-mask"/>
     <div class="title">What is this animal?</div>
     <div class="coordinate-container" @click="playSoundButton">
       <svg class="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 517 517" width="517" height="517">
@@ -134,27 +135,13 @@
       <div class="button-label">Play Sound Again</div>
     </div>
 
-    <audio ref="bear" src="../../assets/sounds/session1/bear-cut.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <audio ref="monkey" src="../../assets/sounds/session1/monkey.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <audio ref="elephant" src="../../assets/sounds/session1/elephant.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <audio ref="chicken" src="../../assets/sounds/session1/chicken.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <audio ref="correct" src="../../assets/sounds/all/correct-ans.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <audio ref="wrong" src="../../assets/sounds/all/wrong-ans.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
+    <audio ref="bear" src="../../assets/sounds/session1/bear-cut.mp3"/>
+    <audio ref="monkey" src="../../assets/sounds/session1/monkey.mp3"/>
+    <audio ref="elephant" src="../../assets/sounds/session1/elephant.mp3"/>
+    <audio ref="chicken" src="../../assets/sounds/session1/chicken.mp3"/>
+    <audio ref="correct" src="../../assets/sounds/all/correct-ans.mp3"/>
+    <audio ref="wrong" src="../../assets/sounds/all/wrong-ans.mp3"/>
+    <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3"/>
 
     <!--  Great Work  -->
     <svg class="reward" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 208.31 204.79">
@@ -296,7 +283,7 @@
         </g>
       </g>
     </svg>
-    <audio src="../../assets/sounds/session1/27Animated_Book_Page26_Part1.mp3" ref="voice1"/>
+    <audio src="../../assets/sounds/session1/27Animated_Book_Page26_Part1.mp3" ref="voice1" @ended="hideMask"/>
     <audio src="../../assets/sounds/session1/27Animated_Book_Page26_Part2.mp3" ref="voice2"/>
     <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
     <audio src="../../assets/sounds/all/Great_work.mp3" ref="greatWork"/>
@@ -319,6 +306,9 @@ export default {
     }
   },
   methods: {
+    hideMask() {
+      document.querySelector('.items-container-mask').style.visibility = 'hidden';
+    },
     animateImages() {
       let images = document.querySelectorAll('.images')
       let animation = anime.timeline({
@@ -511,6 +501,14 @@ export default {
   left: 0;
   text-align: center;
   font-family: 'Love Ya Like A Sister', cursive;
+}
+.items-container-mask {
+  position: absolute;
+  left: 11%;
+  bottom: 2vh;
+  width: 78%;
+  height: 78%;
+  z-index: 10;
 }
 .items-container {
   position: absolute;

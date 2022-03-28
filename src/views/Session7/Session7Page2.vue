@@ -983,7 +983,7 @@
     </svg>
     <div class="text-box">
       <p>When we break hard things down into many easier steps,
-        it is called <strong>STEP PLAN</strong>.
+        it is called a <strong>STEP PLAN</strong>.
         <strong>STEP PLANS</strong> help us to be brave
         when doing something we are scared of.</p>
       <p>Create a <strong>STEP PLAN</strong>
