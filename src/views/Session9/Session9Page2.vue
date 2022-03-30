@@ -619,7 +619,7 @@
     </svg>
     <div class="text-box">
       <span>Talk to your friends about your <strong>STEP PLAN</strong>.</span>
-      <span>Think of ways you can reward yourself for doing your best,
+      <span> Think of ways you can reward yourself for doing your best,
       like going to the park, playing ball, or just sharing
       a picnic with your family.</span>
     </div>
