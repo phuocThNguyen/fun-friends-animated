@@ -2,8 +2,8 @@
   <div class="interactive-container">
     <img class="session-background" src="../../assets/images/session1/811-resized.jpg" alt="lucy">
     <div class="text-box">
-      <p class="mb-0">Lucy loves playing with the</p>
-      <p class="mb-0">old wheelbarrow in the garden.</p>
+      <p class="mb-0">Luna elsker at lege med den</p>
+      <p class="mb-0">gamle trillebør i haven.</p>
     </div>
     <audio src="../../assets/sounds/session1/14Animated_Book_Page13.mp3" ref="voice"/>
     <div class="page-number" id="page-light">13</div>

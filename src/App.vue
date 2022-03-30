@@ -41,7 +41,7 @@ export default {
   data() {
     return {
       sessions: {
-        0: ['Introduction', 'Introduction'],
+        0: ['Introduction', 'Introduktion'],
         1: ['Session1', 'Session 1: Hip Hip Hooray! It\'s FUN FRIENDS today!'],
         2: ['Session2', 'Session 2: Feelings: Understanding feelings in ourselves'],
         3: ['Session3', 'Session 3: Understanding feelings in other people'],

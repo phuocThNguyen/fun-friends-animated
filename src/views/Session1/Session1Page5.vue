@@ -2,8 +2,8 @@
   <div class="interactive-container">
     <img class="session-background" src="../../assets/images/session1/2749-resized.jpg" alt="annie">
     <div class="text-box">
-      <p class="mb-0">Annie loves playing on the swing.</p>
-      <p class="mb-0">What do you do when you play outside?</p>
+      <p class="mb-0">Pil elsker at gynge.</p>
+      <p class="mb-0">Hvad kan du li’ at lege med, når du er udenfor?</p>
       <audio ref="audio" autoplay src="../../assets/sounds/session1/playground.mp3"></audio>
     </div>
     <audio src="../../assets/sounds/session1/12Animated_Book_Page11.mp3" ref="voice"></audio>

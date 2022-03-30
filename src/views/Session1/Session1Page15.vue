@@ -204,16 +204,15 @@
 
     <!--  Main content  -->
     <div class="main-content">
-      <h1 class="requires">Draw a picture of your family
-        including the animals and plants you love too.</h1>
+      <h1 class="requires">Tegn et billede af din familie - dem du bor sammen med og dem der bor andre steder.
+        Husk også at tegne de dyr og planter du holder af!</h1>
       <div class="text-box">
-        <p>Talk with your friends about your picture.</p>
+        <p>Tal med dine venner om dit billede.</p>
 
-        <p id="q1"> - Tell them about the people in your family
-        and what you like to do together.</p>
-        <p id="q2"> - Remember to talk about the happy times.</p>
-        <p id="q3"> - Be kind and listen carefully when it's their turn to talk.</p>
-        <p id="q5"> - Talk about a different family and how you can make friends.</p>
+        <p id="q1"> - Fortæl om personerne i din familie og hvad I kan li’ at lave sammen. </p>
+        <p id="q2"> - Husk at tale om de hyggelige stunder og glade oplevelser I har haft.</p>
+        <p id="q3"> - Vær omsorgsfuld og lyt omhyggeligt efter, når det er de andres tur til at tale.</p>
+        <p id="q5"> - Fortæl om en anden familie og om hvordan I kan blive venner.</p>
       </div>
     </div>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
@@ -382,7 +381,7 @@ export default {
 .main-content h1 {
   background-color: #000000;
   color: #ffffff;
-  font-size: 3.5vh;
+  font-size: 2.5vh;
   width: 100%;
   height: auto;
   padding: 1.5vh;
@@ -396,7 +395,7 @@ export default {
   padding: 1vh;
   height: auto;
   opacity: 0;
-  font-size: 3vh;
+  font-size: 2.8vh;
 }
 .text-box p {
   margin-bottom: 0;

@@ -3,11 +3,11 @@
     <div id="sketchpad"></div>
     <div class="button-container">
       <div class="color">
-        <label for="color">Color</label>
+        <label for="color">Farve</label>
         <input @change="setColor" type="color" id="color" name="color" value="#000000">
       </div>
       <div class="select-group">
-        <label for="width">Width</label>
+        <label for="width">Bredde</label>
         <select @change="setWidth" class="form-control" id="set-width" name="width">
           <option value="1">1</option>
           <option selected value="4">4</option>
@@ -17,9 +17,9 @@
           <option value="20">20</option>
         </select>
       </div>
-      <button class="btn-style" @click="undo">UNDO</button>
+      <button class="btn-style" @click="undo">fortryde</button>
       <button class="btn-style" @click="redo">REDO</button>
-      <button class="btn-style" @click="clear">CLEAR</button>
+      <button class="btn-style" @click="clear">tydelig</button>
 <!--      <button class="btn-style" @click="save">SAVE</button>-->
     </div>
   </div>
@@ -126,13 +126,14 @@ export default {
   background-color: #00ce7c;
   margin: .5% .5% 1% .5%;
   border: none;
-  padding: 0 3% 0 3%;
+  padding: 0 2vh;
   height: 5vh;
   border-radius: 5px;
   color: #ffffff;
-  font-size: 3vh;
+  font-size: 2.5vh;
   font-weight: bold;
   box-shadow: 0 9px #999;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 930px) {
   .btn-style {

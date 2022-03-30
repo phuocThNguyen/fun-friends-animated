@@ -2,8 +2,8 @@
   <div class="interactive-container">
     <div class="content-list">
       <div @click="setSession(1)" class="content-line">
-        <p><strong>Session 1:</strong>
-          Hip Hip Hooray! It's FUN FRIENDS today!</p>
+        <p><strong>Lektion 1:</strong>
+          Hip Hip Hurra! Det er FUN FRIENDS i dag!</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
           <g id="object">
             <g id="&lt;Group&gt;">
@@ -14,8 +14,8 @@
         </svg>
       </div>
       <div @click="setSession(2)" class="content-line">
-        <p><strong>Session 2:</strong>
-          Feelings: Understanding feelings in ourselves</p>
+        <p><strong>Lektion 2:</strong>
+          Følelser: At forstå følelser i / hos os selv</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
           <g id="object">
             <g id="&lt;Group&gt;">
@@ -26,8 +26,8 @@
         </svg>
       </div>
       <div @click="setSession(3)" class="content-line">
-        <p><strong>Session 3:</strong>
-          Understanding feelings in other people</p>
+        <p><strong>Lektion 3:</strong>
+          Følelser: At forstå følelser i / hos andre mennesker</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
           <g id="object">
             <g id="&lt;Group&gt;">
@@ -38,8 +38,8 @@
         </svg>
       </div>
       <div @click="setSession(4)" class="content-line">
-        <p><strong>Session 4:</strong>
-          Understanding body clues and five senses</p>
+        <p><strong>Lektion 4:</strong>
+          At forstå kropssignaler og de fem sanser</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
           <g id="object">
             <g id="&lt;Group&gt;">
@@ -50,9 +50,8 @@
         </svg>
       </div>
       <div @click="setSession(5)" class="content-line">
-        <p><strong>Session 5:</strong>
-          Talking about 'Red' (unhelpful) and
-          'Green' (helpful) thoughts</p>
+        <p><strong>Lektion 5:</strong>
+          At tale om “Røde” (ikke-hjælpsomme) og “Grønne” (hjælpsomme) tanker</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
           <g id="object">
             <g id="&lt;Group&gt;">
@@ -63,9 +62,8 @@
         </svg>
       </div>
       <div @click="setSession(6)" class="content-line">
-        <p><strong>Session 6:</strong>
-          Talking more about 'Red' (unhelpful) and
-          'Green' (helpful) thoughts</p>
+        <p><strong>Lektion 6:</strong>
+          At tale videre om ”røde” (ikke-hjælpsomme) og ”grønne” (hjælpsomme) tanker</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
           <g id="object">
             <g id="&lt;Group&gt;">
@@ -76,9 +74,8 @@
         </svg>
       </div>
       <div @click="setSession(7)" class="content-line">
-        <p><strong>Session 7:</strong>
-          Talking about setting goals and trying to
-          do new things</p>
+        <p><strong>Lektion 7:</strong>
+          At tale om det at sætte mål og at prøve nye ting</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
           <g id="object">
             <g id="&lt;Group&gt;">
@@ -89,8 +86,8 @@
         </svg>
       </div>
       <div @click="setSession(8)" class="content-line">
-        <p><strong>Session 8:</strong>
-          Talking about how to be a kind friend</p>
+        <p><strong>Lektion 8:</strong>
+          At tale om hvordan man er en omsorgsfuld ven(inde)</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
           <g id="object">
             <g id="&lt;Group&gt;">
@@ -101,8 +98,8 @@
         </svg>
       </div>
       <div @click="setSession(9)" class="content-line">
-        <p><strong>Session 9:</strong>
-          Talking about rewarding ourselves</p>
+        <p><strong>Lektion 9:</strong>
+          At tale om det at belønne os selv</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
           <g id="object">
             <g id="&lt;Group&gt;">
@@ -113,9 +110,8 @@
         </svg>
       </div>
       <div @click="setSession(10)" class="content-line">
-        <p><strong>Session 10</strong>:
-          Talking about someone to look up to in
-          our lives</p>
+        <p><strong>Lektion 10</strong>:
+          At tale om hvem vi kan se op til, og hvad betyder det at have nogen at se op til</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
           <g id="object">
             <g id="&lt;Group&gt;">
@@ -126,8 +122,8 @@
         </svg>
       </div>
       <div @click="setSession(11)" class="content-line">
-        <p><strong>Session 11</strong>:
-          Talking about support teams</p>
+        <p><strong>Lektion 11</strong>:
+          At tale om støttehold</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
           <g id="object">
             <g id="&lt;Group&gt;">
@@ -138,8 +134,8 @@
         </svg>
       </div>
       <div @click="setSession(12)" class="content-line">
-        <p><strong>Session 12</strong>:
-          Talking about being happy with our efforts!</p>
+        <p><strong>Lektion 12</strong>:
+          At tale om det at være tilfreds med vores indsats!</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
           <g id="object">
             <g id="&lt;Group&gt;">
@@ -150,8 +146,8 @@
         </svg>
       </div>
       <div @click="setSession(13)" class="content-line">
-        <p><strong>Appendix 1</strong>:
-          'Green' thoughts to Enjoy</p>
+        <p><strong>Bilag 1</strong>:
+          "Grønne" tanker som du kan nyde</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
           <g id="object">
             <g id="&lt;Group&gt;">
@@ -162,8 +158,8 @@
         </svg>
       </div>
       <div @click="setSession(14)" class="content-line">
-        <p><strong>Appendix 2</strong>:
-          Someone Special I Know Who is Brave and Kind!!!</p>
+        <p><strong>Bilag 2</strong>:
+          En særlig person jeg kender, som er modig og omsorgsfuld!!!</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
           <g id="object">
             <g id="&lt;Group&gt;">
@@ -174,8 +170,8 @@
         </svg>
       </div>
       <div @click="setSession(15)" class="content-line">
-        <p><strong>Appendix 3</strong>:
-          Happiness Ideas</p>
+        <p><strong>Bilag 3</strong>:
+          Idéer til glæde</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
           <g id="object">
             <g id="&lt;Group&gt;">

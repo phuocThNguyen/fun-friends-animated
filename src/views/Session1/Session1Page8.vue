@@ -2,8 +2,8 @@
   <div class="interactive-container">
     <img class="session-background" src="../../assets/images/session1/3750-resized.jpg" alt="josh">
     <div class="text-box">
-      <p class="mb-0">Josh is climbing on the rainbow tyres.</p>
-      <p class="mb-0"> He loves walking barefoot on the grass.</p>
+      <p class="mb-0">Gustav balancerer henover de regnbuefarvede dæk.</p>
+      <p class="mb-0"> Han elsker at gå barfodet gennem græsset.</p>
     </div>
     <audio src="../../assets/sounds/session1/15Animated_Book_Page14.mp3" ref="voice"/>
     <div class="page-number" id="page-light">14</div>
@@ -63,7 +63,7 @@ export default {
   color: #ffffff;
   font-weight: bold;
   display: flex;
-  font-size: 6vh;
+  font-size: 5vh;
   opacity: 0;
 }
 </style>

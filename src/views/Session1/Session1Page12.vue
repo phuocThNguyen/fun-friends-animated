@@ -3,13 +3,13 @@
     <img class="session-background" id="page-11" src="../../assets/images/session1/18722-resized.jpg" alt="our-families">
 
     <div class="left-bar">
-      <h1>Our families</h1>
-      <p id="para-1">Tell us about your family.</p>
-      <p id="para-2">What games do you like to play together?</p>
-      <p id="para-3">How do you have fun together?</p>
+      <h1>Vores familier</h1>
+      <p id="para-1">Fortæl om din familie og det I kan li’ at lave.</p>
+      <p id="para-2">Hvilke spil og lege kan I li’?</p>
+      <p id="para-3">Hvad nyder du at lave sammen med din familie?</p>
 
       <div class="text-box">
-        <p>We love going to the park.</p>
+        <p>Vi elsker at tage hen i parken eller på udflugt i naturen.</p>
       </div>
     </div>
     <audio src="../../assets/sounds/session1/19Animated_Book_Page18.mp3" ref="voice"/>
@@ -80,13 +80,13 @@ export default {
   padding: 3vh 2vh;
 }
 .left-bar h1 {
-  font-size: 7vh;
-  margin-bottom: 3vh;
+  font-size: 6vh;
+  margin-bottom: 2vh;
   opacity: 0;
 }
 .left-bar p {
   opacity: 0;
-  font-size: 5vh;
+  font-size: 4.5vh;
 }
 .text-box {
   height: auto;

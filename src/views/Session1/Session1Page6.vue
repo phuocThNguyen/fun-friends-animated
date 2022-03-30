@@ -2,8 +2,8 @@
   <div class="interactive-container">
     <img class="session-background" src="../../assets/images/session1/4082-resized.jpg" alt="zoe-and-dad">
     <div class="text-box">
-      <p class="mb-0">Zoe's dad also plays with her on the swing.</p>
-      <p class="mb-0">It is so much fun!</p>
+      <p class="mb-0">Sofie og hendes far gynger sammen.</p>
+      <p class="mb-0">Det er bare så hyggeligt og sjovt!</p>
     </div>
     <audio src="../../assets/sounds/session1/13Animated_Book_Page12.mp3" ref="voice"/>
     <div class="page-number" id="page-light">12</div>

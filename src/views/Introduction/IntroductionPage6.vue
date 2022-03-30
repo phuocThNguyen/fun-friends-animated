@@ -1,7 +1,6 @@
 <template>
   <div class="interactive-container" id="alt-bg">
-    <h1 class="title">"I dedicate this book to all children
-      and their animal friends"</h1>
+    <h1 class="title">"Jeg tilegner denne bog til alle børn og deres dyrevenner"</h1>
     <img src="../../assets/images/introduction/Koala_Child_Hugging.jpg" alt="koala" class="images">
     <img src="../../assets/images/introduction/chicken-boy.jpg" alt="chicken-boy" class="images">
     <img src="../../assets/images/introduction/girl-with-cat.jpg" alt="girl-cat" class="images">

@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <img class="session-background" src="../../assets/images/session1/43-resized.jpg" alt="family-enjoy-water">
     <div class="text-box">
-      <p class="mb-0">This family has fun playing in the water.</p>
+      <p class="mb-0">Denne familie hygger og har det sjovt imens de leger i vandet.</p>
     </div>
     <audio src="../../assets/sounds/session1/beach-sound.mp3" ref="audio" autoplay loop/>
     <audio src="../../assets/sounds/session1/21Animated_Book_Page20.mp3" ref="voice"/>
@@ -54,6 +54,6 @@ export default {
 .text-box p {
   color: #ffffff;
   font-weight: bold;
-  font-size: 6vh;
+  font-size: 3.5vh;
 }
 </style>

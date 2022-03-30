@@ -2,15 +2,12 @@
   <div class="interactive-container">
     <img class="session-background" src="../../assets/images/session1/282-resized.jpg" alt="josh-and-poppy">
     <div class="left-bar">
-      <p id="para-1">Josh and Poppy the dog,
-        <br>love playing ball in the park.</p>
+      <p id="para-1">Jon og hunden Karla elsker at lege med en bold i parken.</p>
 
-      <p id="para-2">What games do you like
-        <br>playing in the park?</p>
+      <p id="para-2">Hvad kan du lide at lege i parken?</p>
 
       <div class="text-box">
-        <p id="para-3">It is fun playing with
-          our animal friends.</p>
+        <p id="para-3">Det er sjovt at lege med vores dyrevenner.</p>
       </div>
 
     </div>
