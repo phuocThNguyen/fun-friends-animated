@@ -2,13 +2,14 @@
   <div class="interactive-container">
     <img src="../../assets/images/session3/2906714-resized.jpg" alt="grandpa-and-Tom" class="session-background">
     <div class="text-box">
-      <h1>Grandpa would like some company</h1>
-      <p>Tom wants to help Grandpa feel happier.</p>
-      <p>&nbsp;&nbsp;-&nbsp;How do you think Grandpa is feeling?</p>
-      <p>&nbsp;&nbsp;-&nbsp;How do you think Tom is feeling?</p>
-      <p>&nbsp;&nbsp;-&nbsp;How can Tom help his Grandpa?</p>
+      <h1>Bedstefar kunne godt tænke sig lidt selskab</h1>
+      <p>Bedstefar og Gustav nyder at tage en tur i skoven.
+        Gustav vil gerne hjælpe Bedstefar med at føle sig mere glad.</p>
+      <p>&nbsp;&nbsp;-&nbsp;Hvordan tror du Bedstefar har det? Hvilke(n) følelse(r) oplever han?</p>
+      <p>&nbsp;&nbsp;-&nbsp;Hvordan tror du Gustav har det? Hvilke(n) følelse(r) oplever han?</p>
+      <p>&nbsp;&nbsp;-&nbsp;Hvordan kan Gustav hjælpe sin bedstefar?</p>
     </div>
-    <div class="notice-box">Be kind and helpful!</div>
+    <div class="notice-box">Vær omsorgsfuld, venlig og hjælpsom.</div>
     <div class="bubble-container">
       <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
         <g id="Graphic Element">
@@ -22,7 +23,7 @@
           </g>
         </g>
       </svg>
-      <div class="bubble-text">Share your ideas with a friend!</div>
+      <div class="bubble-text">Del dine ideer med en ven!</div>
     </div>
     <audio src="../../assets/sounds/all/Good_Job.mp3" ref="goodJob"/>
     <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
@@ -47,31 +48,31 @@ export default {
         .add({
           targets: ".text-box",
           opacity: 1,
-        }, 808)
+        }, 1)
         .add({
           targets: text[1],
           opacity: 1
-        }, 4756)
+        }, 1)
         .add({
           targets: text[2],
           opacity: 1
-        }, 8966)
+        }, 1)
         .add({
           targets: text[3],
           opacity: 1
-        }, 13067)
+        }, 1)
         .add({
           targets: text[4],
           opacity: 1
-        }, 17792)
+        }, 1)
         .add({
           targets: '.bubble-container',
           opacity: 0.9
-        }, 21832)
+        }, 1)
         .add({
           targets: '.notice-box',
           opacity: 1,
-        }, 25000)
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -88,18 +89,18 @@ export default {
 .text-box {
   position: absolute;
   top: 1vh;
-  left: 1%;
-  width: 51%;
+  left: calc(0.01*133vh);
+  width: calc(0.40*133vh);
   padding: 1.4vh;
   background-color: rgba(255,255,255,0.9);
   opacity: 0;
 }
 .text-box h1 {
-  font-size: 4.2vh;
+  font-size: 4vh;
   margin-bottom: 1vh;
 }
 .text-box p {
-  font-size: 3.5vh;
+  font-size: 3vh;
   margin-bottom: 1.5vh;
   opacity: 0;
 }
@@ -121,7 +122,7 @@ export default {
   width: 30%;
   height: 28vh;
   bottom: 12vh;
-  left: 1%;
+  right: 1%;
   opacity: 0;
 }
 .bubble {
@@ -130,7 +131,6 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  transform: scaleX(-1);
 }
 .bubble-text {
   position: absolute;

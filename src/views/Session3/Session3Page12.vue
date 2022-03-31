@@ -2,15 +2,18 @@
   <div class="interactive-container">
     <img src="../../assets/images/session3/1605-resized.jpg" alt="boy-with-bubbles" class="session-background">
     <div class="text-box">
-      <h1><strong>2. Bubble blowing</strong></h1>
-      <p>Another fun game to blow our worries away
-      is getting a Magic Bubble Wand. Breathe in calm, happy feelings
-      and blow away your angry, sad and worried feelings.</p>
+      <h1><strong>2. Boblepusteri</strong></h1>
+      <p>Endnu en sjov leg der kan bruges til at puste vores bekymringer bort er
+        at bruge en Magisk Boble Tryllestav. Disse bobler findes i mange former
+        og størrelser. Nogle er formet som stjerner, nogle som kærlighedshjerter
+        og nogle er cirkelformede. Du kan indånde rolige, glade følelser gennem
+        din næse og puste dine vrede, triste og bekymrede følelser langt væk fra dig,
+        indtil de brister og forsvinder.</p>
       <br>
-      <p>Notice how the bubbles float away and fade,
-      the same with our feelings. Feelings don't stay
-      forever, feelings change. Using a Magic Bubble Wand
-      to calm down is a 'thumbs up' choice.</p>
+      <p>Læg mærke til hvordan boblerne glider langsomt bort inden de brister med et
+        ”pop” - det er det samme der sker med vores følelser. Følelser bliver ikke
+        ved i al evighed, følelser forandrer sig. At bruge en Magisk Boble Tryllestav
+        til at falde til ro, er et “thumbs up” valg.</p>
     </div>
     <div class="bubble" id="bubble-1"/>
     <div class="bubble" id="bubble-2"/>
@@ -36,11 +39,13 @@
         </g>
       </svg>
       <div class="star-text">
-        <p><strong>Bright Star Idea</strong></p>
-        <p>Say what you
-          <br>are blowing away
-          <br>as your
-          <br>bubbles pop.
+        <p><strong>Ugens lysende
+          stjerne idé</strong></p>
+        <p>Imens dine bobler brister
+          med et "pop" kan du,
+          hvis du har lyst,
+          sige hvad det er
+          du puster bort.
         </p>
       </div>
     </div>

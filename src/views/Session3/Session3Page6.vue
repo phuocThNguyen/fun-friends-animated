@@ -3,14 +3,14 @@
     <img src="../../assets/images/session3/21944-resized.jpg" alt="friends" class="session-background">
     <emotion-pick-instruction class="instruction"/>
     <div class="content-container" id="girl">
-      <h1>How is the girl feeling?</h1>
+      <h1>Hvad tror du at hun føler?</h1>
       <div class="emotes-container">
         <emote-angry class="incorrect"/>
         <emote-calm/>
       </div>
       <div class="tips-container">
-        <p class="incorrect">Angry, Worried</p>
-        <p>Happy, Calm</p>
+        <p class="incorrect">Vred, Bekymret</p>
+        <p>Glad, Berolige</p>
       </div>
       <div class="answer-container">
         <svg class="big-tick" id="red-tick-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.98 92.25">
@@ -54,30 +54,25 @@
       </div>
     </div>
     <div class="content-container" id="dog">
-      <h1>How is the dog feeling?</h1>
+      <h1>Hvad tror du at han føler?</h1>
       <div class="emotes-container">
         <emote-angry class="incorrect-2"/>
         <emote-calm/>
       </div>
       <div class="tips-container">
-        <p class="incorrect-2">Angry, Worried</p>
-        <p>Happy, Calm</p>
+        <p class="incorrect-2">Vred, Bekymret</p>
+        <p>Glad, Berolige</p>
       </div>
       <div class="answer-container">
         <svg class="big-tick" id="red-tick-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.98 92.25">
           <g class="cls-1-red-mark">
             <g id="Layer_2" data-name="Layer 2">
               <g id="Layer_1-2" data-name="Layer 1">
-                <path class="cls-2-red-mark"
-                      d="M47.86,89.76H46.12A43.64,43.64,0,0,1,2.48,46.12h0A43.64,43.64,0,0,1,46.12,2.48h1.74A43.64,43.64,0,0,1,91.5,46.12h0A43.64,43.64,0,0,1,47.86,89.76Z" />
-                <path class="cls-2-red-mark"
-                      d="M47.86,89.76H46.12A43.64,43.64,0,0,1,2.48,46.12h0A43.64,43.64,0,0,1,46.12,2.48h1.74A43.64,43.64,0,0,1,91.5,46.12h0A43.64,43.64,0,0,1,47.86,89.76Z" />
-                <path class="cls-2-red-mark"
-                      d="M47.86,92.25H46.12A46.13,46.13,0,0,1,46.12,0h1.74a46.13,46.13,0,0,1,0,92.25ZM46.12,5a41.16,41.16,0,0,0,0,82.31h1.74A41.16,41.16,0,0,0,47.86,5Z" />
-                <path class="cls-3-red-mark"
-                      d="M47.86,13a33.17,33.17,0,0,1,0,66.34H46.12a33.17,33.17,0,0,1,0-66.34h1.74m0-1.54H46.12a34.72,34.72,0,1,0,0,69.43h1.74a34.72,34.72,0,1,0,0-69.43Z" />
-                <polygon class="cls-4-red-mark"
-                         points="53.74 47.31 65.46 35.58 58.8 28.91 47.07 40.64 35.35 28.91 28.68 35.58 40.4 47.31 28.68 59.03 35.35 65.7 47.07 53.98 58.8 65.7 65.47 59.03 53.74 47.31" />
+                <path class="cls-2-red-mark" d="M47.86,89.76H46.12A43.64,43.64,0,0,1,2.48,46.12h0A43.64,43.64,0,0,1,46.12,2.48h1.74A43.64,43.64,0,0,1,91.5,46.12h0A43.64,43.64,0,0,1,47.86,89.76Z" />
+                <path class="cls-2-red-mark" d="M47.86,89.76H46.12A43.64,43.64,0,0,1,2.48,46.12h0A43.64,43.64,0,0,1,46.12,2.48h1.74A43.64,43.64,0,0,1,91.5,46.12h0A43.64,43.64,0,0,1,47.86,89.76Z" />
+                <path class="cls-2-red-mark" d="M47.86,92.25H46.12A46.13,46.13,0,0,1,46.12,0h1.74a46.13,46.13,0,0,1,0,92.25ZM46.12,5a41.16,41.16,0,0,0,0,82.31h1.74A41.16,41.16,0,0,0,47.86,5Z" />
+                <path class="cls-3-red-mark" d="M47.86,13a33.17,33.17,0,0,1,0,66.34H46.12a33.17,33.17,0,0,1,0-66.34h1.74m0-1.54H46.12a34.72,34.72,0,1,0,0,69.43h1.74a34.72,34.72,0,1,0,0-69.43Z" />
+                <polygon class="cls-4-red-mark" points="53.74 47.31 65.46 35.58 58.8 28.91 47.07 40.64 35.35 28.91 28.68 35.58 40.4 47.31 28.68 59.03 35.35 65.7 47.07 53.98 58.8 65.7 65.47 59.03 53.74 47.31" />
               </g>
             </g>
           </g>
@@ -88,12 +83,9 @@
               <g id="Layer_1-2" data-name="Layer 1">
                 <rect class="cls-2-green-mark" x="2.48" y="2.48" width="89.01" height="87.28" rx="43.64" />
                 <rect class="cls-2-green-mark" x="2.48" y="2.48" width="89.01" height="87.28" rx="43.64" />
-                <path class="cls-2-green-mark"
-                      d="M47.86,92.25H46.12A46.13,46.13,0,0,1,46.12,0h1.74a46.13,46.13,0,0,1,0,92.25ZM46.12,5a41.16,41.16,0,0,0,0,82.31h1.74A41.16,41.16,0,0,0,47.86,5Z" />
-                <path class="cls-4-green-mark"
-                      d="M47.86,13a33.17,33.17,0,0,1,0,66.34H46.12a33.17,33.17,0,0,1,0-66.34h1.74m0-1.54H46.12a34.72,34.72,0,1,0,0,69.43h1.74a34.72,34.72,0,1,0,0-69.43Z" />
-                <polygon class="cls-5-green-mark"
-                         points="65.83 28.23 41.58 52.48 31.98 42.88 25.31 49.55 41.58 65.82 72.5 34.9 65.83 28.23" />
+                <path class="cls-2-green-mark" d="M47.86,92.25H46.12A46.13,46.13,0,0,1,46.12,0h1.74a46.13,46.13,0,0,1,0,92.25ZM46.12,5a41.16,41.16,0,0,0,0,82.31h1.74A41.16,41.16,0,0,0,47.86,5Z" />
+                <path class="cls-4-green-mark" d="M47.86,13a33.17,33.17,0,0,1,0,66.34H46.12a33.17,33.17,0,0,1,0-66.34h1.74m0-1.54H46.12a34.72,34.72,0,1,0,0,69.43h1.74a34.72,34.72,0,1,0,0-69.43Z" />
+                <polygon class="cls-5-green-mark" points="65.83 28.23 41.58 52.48 31.98 42.88 25.31 49.55 41.58 65.82 72.5 34.9 65.83 28.23" />
               </g>
             </g>
           </g>
@@ -109,12 +101,10 @@
     <svg class="reward" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 191.29 198.09">
       <defs>
         <clipPath id="clip-path">
-          <ellipse class="cls-1" cx="67.53" cy="107.56" rx="18.99" ry="19.85"
-                   transform="translate(-53.23 146.91) rotate(-75.93)" />
+          <ellipse class="cls-1" cx="67.53" cy="107.56" rx="18.99" ry="19.85" transform="translate(-53.23 146.91) rotate(-75.93)" />
         </clipPath>
         <clipPath id="clip-path-2">
-          <ellipse class="cls-1" cx="127.79" cy="107.56" rx="19.85" ry="18.99"
-                   transform="translate(-22.32 34.3) rotate(-14.07)" />
+          <ellipse class="cls-1" cx="127.79" cy="107.56" rx="19.85" ry="18.99" transform="translate(-22.32 34.3) rotate(-14.07)" />
         </clipPath>
       </defs>
       <g class="cls-2">
@@ -295,11 +285,11 @@ export default {
         .add({
           targets: '#girl',
           opacity: 1
-        }, 659)
+        }, 1)
         .add({
           targets: '#dog',
           opacity: 1
-        }, 8720)
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)

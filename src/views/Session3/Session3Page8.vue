@@ -2,13 +2,14 @@
   <div class="interactive-container">
     <img src="../../assets/images/session3/27622-resized.jpg" alt="grandpa-and-Tom" class="session-background">
     <div class="text-box">
-      <p>Grandma and Annie enjoy spending time together
-      gardening and laughing.</p>
-      <p>&nbsp;&nbsp;-&nbsp;How do you think Grandma is feeling?</p>
-      <p>&nbsp;&nbsp;-&nbsp;How do you think Annie is feeling?</p>
-      <p>&nbsp;&nbsp;-&nbsp;How can Annie help her Grandma?</p>
+      <h1>Bedstemor elsker at få hjælp til havearbejdet</h1>
+      <p>Bedstemor og Vigga nyder at tilbringe tid
+        sammen hvor de griner og hygger imens de arbejder i haven.</p>
+      <p>&nbsp;&nbsp;-&nbsp;Hvordan tror du Bedstemor har det? Hvilke(n) følelse(r) oplever hun?</p>
+      <p>&nbsp;&nbsp;-&nbsp;Hvordan tror du Vigga har det? Hvilke(n) følelse(r) oplever hun?</p>
+      <p>&nbsp;&nbsp;-&nbsp;Hvordan kan Vigga hjælpe sin bedstemor?</p>
     </div>
-    <div class="notice-box">Be kind and helpful!</div>
+    <div class="notice-box">Vær omsorgsfuld, venlig og hjælpsom.</div>
     <div class="bubble-container">
       <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
         <g id="Graphic Element">
@@ -22,7 +23,7 @@
           </g>
         </g>
       </svg>
-      <div class="bubble-text">Share your ideas with a friend!</div>
+      <div class="bubble-text">Del dine ideer med en ven!</div>
     </div>
     <audio src="../../assets/sounds/session3/Session3_Page8.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">78</div>
@@ -45,31 +46,35 @@ export default {
         .add({
           targets: ".text-box",
           opacity: 1,
-        }, 800)
+        }, 1)
         .add({
           targets: text[0],
           opacity: 1
-        }, 1224)
+        }, 1)
         .add({
           targets: text[1],
           opacity: 1
-        }, 8130)
+        }, 1)
         .add({
           targets: text[2],
           opacity: 1
-        }, 12171)
+        }, 1)
         .add({
           targets: text[3],
           opacity: 1
-        }, 16400)
+        }, 1)
+        .add({
+          targets: text[4],
+          opacity: 1
+        }, 1)
         .add({
           targets: '.bubble-container',
           opacity: 0.9
-        }, 20176)
+        }, 1)
         .add({
           targets: '.notice-box',
           opacity: 1,
-        }, 22956)
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -86,14 +91,18 @@ export default {
 .text-box {
   position: absolute;
   top: 1vh;
-  left: 1%;
-  width: 54%;
+  left: calc(0.005*133vh);
+  width: calc(0.38*133vh);
   padding: 1.4vh;
   background-color: rgba(255,255,255,0.9);
   opacity: 0;
 }
+.text-box h1 {
+  font-size: 4vh;
+  margin-bottom: 1vh;
+}
 .text-box p {
-  font-size: 3.8vh;
+  font-size: 3vh;
   margin-bottom: 1.5vh;
   opacity: 0;
 }
@@ -115,7 +124,7 @@ export default {
   width: 30%;
   height: 28vh;
   bottom: 12vh;
-  left: 1%;
+  right: 1%;
   opacity: 0;
 }
 .bubble {
@@ -124,7 +133,6 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  transform: scaleX(-1);
 }
 .bubble-text {
   position: absolute;

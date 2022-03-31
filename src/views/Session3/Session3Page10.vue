@@ -2,10 +2,12 @@
   <div class="interactive-container">
     <img src="../../assets/images/session3/4829-resized.jpg" alt="little-plants" class="session-background">
     <div class="text-box">
-      <h1>Friends and Families</h1>
+      <h1>Venner og familier</h1>
       <p id="text-box-p">What makes kids helpful and kind?</p>
+      <p id="text-box-p2">Del dine idéer med en ven(inde)fra gruppen / klassen.
+        Lyt til din ven(inde)s mening. Det er ok ikke at ligne hinanden.</p>
     </div>
-    <div class="notice-box">We plant trees to be kind to planet earth.</div>
+    <div class="notice-box">Vi planter flere træer af omsorg for planeten Jorden.</div>
     <div class="bubble-container" id="bubble-1">
       <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
         <g id="Graphic Element">
@@ -19,7 +21,7 @@
           </g>
         </g>
       </svg>
-      <div class="bubble-text">Share your ideas with a friend!</div>
+      <div class="bubble-text">Del dine ideer med en ven!</div>
     </div>
     <div class="bubble-container" id="bubble-2">
       <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
@@ -34,7 +36,7 @@
           </g>
         </g>
       </svg>
-      <div class="bubble-text">Listen to your friend's opinion!</div>
+      <div class="bubble-text">Lyt til din vens mening!</div>
     </div>
     <audio src="../../assets/sounds/session3/Session3_Page10.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">80</div>

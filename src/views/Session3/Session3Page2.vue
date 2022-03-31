@@ -2,9 +2,10 @@
   <div class="interactive-container">
     <img class="session-background" src="../../assets/images/session3/4479-resized.jpg" alt="friends-playing">
     <div class="text-box">
-      <h1>Our friends playing</h1>
-      <p>How are your friends feeling today?</p>
-      <p>How do you feel today?</p>
+      <h1>Vores venner leger</h1>
+      <p>Hvordan har dine venner det i dag - hvilke følelser oplever / mærker de?</p>
+      <p>Læg mærke til hvert af deres ansigter. Hvad føler de hver især?</p>
+      <p>Hvordan har du det i dag - hvilke følelser oplever / mærker du?</p>
     </div>
     <div class="bubble-container">
       <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
@@ -19,7 +20,7 @@
           </g>
         </g>
       </svg>
-      <div class="bubble-text">Look at your friend's face!</div>
+      <div class="bubble-text">Se på din vens ansigt!</div>
     </div>
     <audio src="../../assets/sounds/session3/Session3_Page2.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">72</div>
@@ -42,19 +43,23 @@ export default {
         .add({
           targets: ".text-box",
           opacity: 1,
-        }, 717)
+        }, 1)
         .add({
           targets: text[1],
           opacity: 1,
-        }, 3033)
+        }, 1)
         .add({
           targets: text[2],
           opacity: 1,
-        }, 5798)
+        }, 1)
+        .add({
+          targets: text[3],
+          opacity: 1,
+        }, 1)
         .add({
           targets: '.bubble-container',
           opacity: 0.9
-        }, 8293)
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -70,18 +75,18 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  padding: 2.8vh;
+  padding: 2vh;
   top: 2vh;
   left: 2%;
   background-color: rgba(255,255,255,0.9);
   opacity: 0;
 }
 .text-box h1 {
-  font-size: 6vh;
+  font-size: 4vh;
   margin-bottom: 0;
 }
 .text-box p {
-  font-size: 4vh;
+  font-size: 3vh;
   margin-bottom: 0;
   opacity: 0;
 }

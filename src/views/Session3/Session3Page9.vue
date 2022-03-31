@@ -2,10 +2,13 @@
   <div class="interactive-container">
     <img src="../../assets/images/session3/12014-resized.jpg" alt="grandpa-and-grandma-and-annie" class="session-background">
     <div class="text-box">
-      <p>Grandma is coming home after
-      a day out and she is tired.</p>
-      <p>&nbsp;&nbsp;-&nbsp;How do you think she is feeling?</p>
-      <p>&nbsp;&nbsp;-&nbsp;How can Annie help?</p>
+      <h1>Bedstefar og bedstemor går hjem</h1>
+      <p>Bedstemor og Bedstefar har været afsted hele dagen.
+        Nu er de trætte, og på vej hjem ovenpå en lang dag.</p>
+      <p>&nbsp;&nbsp;-&nbsp;Hvordan tror du de har det? Hvilke(n) følelse(r) oplever de?</p>
+      <p>&nbsp;&nbsp;-&nbsp;Hvordan kan Vigga hjælpe?</p>
+      <p>Tal med dem du er sammen med om hvordan de tror Vigga har det på billederne,
+        og hvilke følelser de tror hun oplever. Kom I alle frem til de samme idéer?</p>
     </div>
     <div class="bubble-container">
       <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
@@ -20,9 +23,9 @@
           </g>
         </g>
       </svg>
-      <div class="bubble-text">Share your ideas with a friend!</div>
+      <div class="bubble-text">Del dine ideer med en ven!</div>
     </div>
-    <div class="notice-box">Helping others is great.</div>
+    <div class="notice-box">At hjælpe andre er stort.</div>
     <audio src="../../assets/sounds/session3/Session3_Page9.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">79</div>
   </div>
@@ -44,27 +47,27 @@ export default {
         .add({
           targets: ".text-box",
           opacity: 1,
-        }, 500)
+        }, 1)
         .add({
           targets: text[0],
           opacity: 1
-        }, 702)
+        }, 1)
         .add({
           targets: text[1],
           opacity: 1
-        }, 6453)
+        }, 1)
         .add({
           targets: text[2],
           opacity: 1
-        }, 10830)
+        }, 1)
         .add({
           targets: '.bubble-container',
           opacity: 0.9,
-        }, 13362)
+        }, 1)
         .add({
           targets: '.notice-box',
           opacity: 1,
-        }, 16632)
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)

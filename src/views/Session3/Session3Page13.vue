@@ -3,8 +3,8 @@
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
     <div class="white-background">
       <div class="text-box">
-        <p>As your bubbles pop, share what feelings
-          <br>you are blowing away or draw your feelings below.</p>
+        <p>Hvis du har lyst, sig hvad det er du puster bort imens dine bobler brister med et ”pop”.
+          <br>Hvis ikke du har lyst til at sige det højt, kan du tegne dine følelser i boblerne herunder.</p>
       </div>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3"/>

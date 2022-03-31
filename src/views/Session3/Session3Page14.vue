@@ -699,16 +699,15 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try Everyday</h1>
-      <p>&nbsp;&bull; Try to understand feelings in
-      yourself and other people.</p>
-      <p>&nbsp;&bull; Think about what 'thumbs up'
-      activities you can do to make yourself feel calm.</p>
-      <p>&nbsp;&bull; Practise being BRAVE:</p>
-      <p>&middot; Look people in the eye and smile.</p>
-      <p>&middot; Use a brave voice and make yourself big.</p>
-      <p>&middot; Try your best and give it a go.</p>
-      <p>&middot; Believe in yourself.</p>
+      <h1>Prøv dagligt</h1>
+      <p>&nbsp;&bull; Prøv at forstå følelser - både i / hos dig selv og i / hos andre.</p>
+      <p>&nbsp;&bull; Tænk over hvilke ”thumbs up” aktiviteter du kan deltage i
+        for at få dig selv til at falde til ro.</p>
+      <p>&nbsp;&bull; Øv dig dagligt på at være MODIG:</p>
+      <p>&middot; Kig folk i øjnene og smil.</p>
+      <p>&middot; Brug en modig stemme og gør dig selv stor.</p>
+      <p>&middot; Prøv at gøre dit bedste og give tingene et forsøg.</p>
+      <p>&middot; Tro på dig selv.</p>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"/>
     <audio src="../../assets/sounds/session3/Session3_Page15.mp3" ref="voice"/>

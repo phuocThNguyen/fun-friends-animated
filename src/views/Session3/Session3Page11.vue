@@ -2,20 +2,17 @@
   <div class="interactive-container">
     <img src="../../assets/images/session3/2206-resized.jpg" alt="boy-with-bubbles" class="session-background">
     <div class="text-box">
-      <h1><strong>Fun Bubble Activities</strong></h1>
-      <p>We are now going to play two games.</p>
-      <p><strong>1. Bubble breathing</strong></p>
-      <p>Take five deep slow breaths, in through
-       your nose and out through your mouth. We are
-       going to blow bubbles with a straw and a cup
-       of water. Blow out any angry, sad, and worried
-       feelings into the water. Notice how once we stop
-       breathing out, the bubbles go away.</p>
-      <p>The same happens with our feelings. We can blow them
-       away by doing deep slow calm breathing. Feelings come
-       and go, remember all feelings are okay. It is what
-       we choose to do with our feelings that counts. Bubble
-       breathing is a 'thumbs up' choice.</p>
+      <h1><strong>Sjove aktiviteter med bobler</strong></h1>
+      <p>Nu skal vi i gang med to lege.</p>
+      <p><strong>1. Boblevejrtrækning</strong></p>
+      <p>Tag fem dybe og langsomme vejrtrækninger, ind gennem din næse og ud gennem din mund.
+        Vi skal puste bobler ved hjælp af et sugerør og et glas med vand.
+        Vi puster alle vores vrede, triste og bekymrede følelser ud i vandet.
+        Så snart vi holder op med at puste ud, forsvinder alle boblerne. </p>
+      <p>Det samme sker med vores følelser. Vi kan langsomt puste dem bort ved hjælp af den
+        dybe og langsomme, og rolige vejrtrækning. Følelser kommer og går - husk at alle
+        følelser er OK. Det er det vi vælger at gøre med vores følelser, der betyder noget.
+        Boblevejrtrækning er et “thumbs up” valg.</p>
     </div>
     <div class="bubble" id="bubble-1"/>
     <div class="bubble" id="bubble-2"/>

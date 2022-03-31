@@ -4,9 +4,9 @@
     <emotion-pick-instruction class="instruction"/>
     <feeling-question
       class="question"
-      question="How is he feeling?"
+      question="Hvad tror du at han føler?"
       :emotes="['happy','worried','angry']"
-      :tips="['Happy','Worried','Angry']"
+      :tips="['Glad','Bekymret','Vred']"
       :ans="['green-tick','red-tick','red-tick']"
       :isSmall="false"
       :delay="500"

@@ -196,10 +196,11 @@
       </g>
     </svg>
 
-    <p class="title"><span id="letter-f">F</span>eelings</p>
-    <p class="text" id="line-1">Today, we will talk more about paying attention to others' feelings.</p>
-    <p class="text" id="line-2">One person acts out a feeling while everyone else tries to guess the feeling.
-      Take turns making up stories to go with the feelings.</p>
+    <p class="title"><span id="letter-f">F</span>eelings (Følelser)</p>
+    <p class="text" id="line-1">I dag kommer vi til at tale mere om det at være opmærksom på andres følelser.</p>
+    <p class="text" id="line-2">Sammen bliver vi bedre til at forstå hinandens følelser og hvordan vi kan
+      hjælpe hinanden, når vi er triste / kede af det, vrede, glade, spændte, bekymrede eller bange.
+    </p>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3"/>
     <audio src="../../assets/sounds/session3/Session3_Page1.mp3" ref="voice"/>
@@ -263,15 +264,15 @@ export default {
         .add({
           targets: ".title",
           opacity: 1,
-        }, 5770)
+        }, 1)
         .add({
           targets: "#line-1",
           color: '#000',
-        }, 7733)
+        }, 1)
         .add({
           targets: "#line-2",
           color: '#000'
-        }, 13382)
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -291,11 +292,11 @@ export default {
   font-family: 'Sigmar One', cursive;
   position: absolute;
   color: white;
-  font-size: 12vh;
+  font-size: 10vh;
   -webkit-text-stroke: 0.1vw black;
   width: 100%;
   text-align: center;
-  top: 26vh;
+  top: 30vh;
   opacity: 0;
 }
 #letter-f {
@@ -310,12 +311,12 @@ export default {
 #line-1 {
   text-align: center;
   width: 100%;
-  top: 42vh;
+  top: 44vh;
 }
 #line-2 {
   text-align: center;
   width: 90%;
-  top: 49vh;
+  top: 51vh;
   left: 5%;
 }
 span {

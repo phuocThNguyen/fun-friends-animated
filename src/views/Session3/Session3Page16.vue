@@ -712,11 +712,12 @@
         </g>
       </svg>
       <div class="star-text">
-        <p><strong>Bright Star Idea</strong></p>
-        <p>New family game:
-          <br>take turns to call out
-          <br>things that make
-          <br>you happy.
+        <p><strong>Ugens lysende
+          stjerne idé</strong></p>
+        <p>Leg en leg med nogen i din familie,
+          <br>hvor I skiftes til at
+          <br>sige ting højt,
+          <br>der gør jer glade.
         </p>
       </div>
     </div>
