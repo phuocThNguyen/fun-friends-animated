@@ -8,8 +8,8 @@
     </div>
     <div class="text-box">
       <p class="text">
-        <span>Our food may be different,</span>
-        <span> but it is all yummy.</span>
+        <span>Det kan være vi spiser noget forskelligt,</span>
+        <span> men det er lækkert alt sammen.</span>
       </p>
     </div>
     <audio src="../../assets/sounds/session1/34Animated_Book_Page33.mp3" ref="voice"/>
@@ -61,19 +61,19 @@ export default {
 }
 .text-box {
   position: absolute;
-  left: 1%;
+  left: 8vh;
   top: 42vh;
   z-index: 20;
   background-color: #00CE7C;
   width: auto;
   height: auto;
-  padding: 1vh 4vh;
+  padding: 1vh;
   opacity: 0;
 }
 .text {
   font-weight: bold;
   color: #ffffff;
-  font-size: 6vh;
+  font-size: 3.5vh;
   margin-bottom: 0;
 }
 </style>

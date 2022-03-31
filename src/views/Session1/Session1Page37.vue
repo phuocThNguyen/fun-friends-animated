@@ -2,16 +2,17 @@
   <div class="interactive-container">
     <img src="../../assets/images/session1/grass-background.jpg" alt="" class="session-background">
     <div class="text-box">
-      <h1>Try Everyday</h1>
-      <p>- If you were a grown up for a day, what would you do?</p>
-      <p>- Share your answer with a grown up and ask them about
-        when they were children - what they liked to do, eat and play.</p>
-      <p>- Ask them to draw the home they lived in as a child.</p>
-      <p>- Each night, share a happy memory from your day with your family or friends.</p>
-      <p>- Practise being BRAVE:</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Look people in the eye and smile.</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Use a brave and strong voice.</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Try your best and give it a go.</p>
+      <h1>Prøv dagligt</h1>
+      <p>- Hvis du var voksen for en dag, hvad ville du gøre?</p>
+      <p>- Del dit svar med en voksen og bed ham / hende om at
+        fortælle om dengang han / hun var barn - hvad kunne
+        han / hun li’ at lave, spise og lege?</p>
+      <p>- Bed ham / hende om at tegne sit barndomshjem.</p>
+      <p>- Husk hver aften at fortælle hinanden om én ting / oplevelse der gjorde jer glad for dagen. </p>
+      <p>- Øv dig dagligt på at være MODIG:</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Kig folk i øjnene og smil.</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Brug en modig stemme og gør dig selv stor.</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Prøv at gøre dit bedste og give tingene et forsøg.</p>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3"/>
     <audio src="../../assets/sounds/session1/44Animated_Book_Page43.mp3" ref="voice"/>
@@ -34,39 +35,39 @@ export default {
         .add({
           targets: ".text-box",
           opacity: 0.9,
-        }, 300)
+        }, 1)
         .add({
           targets: text[1],
           opacity: 1,
-        }, 2394)
+        }, 1)
         .add({
           targets: text[2],
           opacity: 1
-        }, 6489)
+        }, 1)
         .add({
           targets: text[3],
           opacity: 1
-        }, 16351)
+        }, 1)
         .add({
           targets: text[4],
           opacity: 1
-        }, 20770)
+        }, 1)
         .add({
           targets: text[5],
           opacity: 1
-        }, 27000)
+        }, 1)
         .add({
           targets: text[6],
           opacity: 1
-        }, 29500)
+        }, 1)
         .add({
           targets: text[7],
           opacity: 1
-        }, 32200)
+        }, 1)
         .add({
           targets: text[8],
           opacity: 1
-        }, 35500)
+        }, 1)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
@@ -96,10 +97,10 @@ export default {
 .text-box h1 {
   text-align: center;
   margin-bottom: 1vh;
-  font-size: 6vh;
+  font-size: 5vh;
 }
 .text-box p {
-  font-size: 4vh;
+  font-size: 3.5vh;
   margin-bottom: 2vh;
   opacity: 0;
 }

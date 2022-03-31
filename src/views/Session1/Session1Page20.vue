@@ -2,7 +2,8 @@
   <div class="interactive-container green-background example-3d">
     <div class="text-box">
       <p class="text">
-        We have different bodies and different languages, <br>but we all love the same way.
+        Vores krop er forskellige og vi taler forskellige sprog,
+        <br>men den måde hvorpå vi elsker er den samme.
       </p>
     </div>
     <div class="items-container">
@@ -26,7 +27,7 @@
       </div>
     </div>
     <div class="items-container-mask"/>
-    <div class="title">What is this animal?</div>
+    <div class="title">Hvilket dyr hører du? <br>Lyt til dyrelydene og klik på det rigtige billede.</div>
     <div class="coordinate-container" @click="playSoundButton">
       <svg class="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 517 517" width="517" height="517">
         <defs>
@@ -132,7 +133,7 @@
           </g>
         </g>
       </svg>
-      <div class="button-label">Play Sound Again</div>
+      <div class="button-label">Afspil Lyden Igen</div>
     </div>
 
     <audio ref="bear" src="../../assets/sounds/session1/bear-cut.mp3"/>
@@ -473,34 +474,35 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
 .coordinate-container {
   position: absolute;
-  top: 8vh;
-  left: 32%;
-  width: 36%;
+  top: 10vh;
+  left: 42vh;
+  width: 50vh;
   height: 9vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .button {
   width: auto;
-  height: 100%;
+  height: 80%;
+  margin-right: 2vh;
 }
 .button:active {
   transform: scale(0.8);
 }
 .button-label {
-  font-size: 5vh;
+  font-size: 4vh;
   font-family: 'Love Ya Like A Sister', cursive;
   color: #000000;
 }
 .title {
   position: absolute;
   width: 100%;
-  font-size: 8vh;
-  top: -1%;
+  font-size: 5vh;
+  top: .5%;
   left: 0;
   text-align: center;
   font-family: 'Love Ya Like A Sister', cursive;
+  line-height: 5vh;
 }
 .items-container-mask {
   position: absolute;
@@ -564,15 +566,15 @@ export default {
   position: absolute;
   background-color: #00CE7C;
   padding: 1vh;
-  width: 90%;
-  left: 5%;
-  top: 48%;
+  width: 100vh;
+  left: 16.5vh;
+  top: 53%;
   opacity: 0;
 }
 .text {
   font-weight: bold;
   color: #ffffff;
-  font-size: 5vh;
+  font-size: 3vh;
   text-align: center;
   margin-bottom: 0;
 }

@@ -2,13 +2,15 @@
   <div class="interactive-container">
     <img class="session-background" id="pic" src="../../assets/images/session1/4161-resized.jpg" alt="tom-and-mum">
     <div class="left-bar">
-      <h1>Meet Tom</h1>
-      <p id="para-2">Today is Tom’s birthday.</p>
-      <p id="para-3">He is adopting two rescue dogs,</p>
-      <p id="para-4">Chilli and Pepper.</p>
-      <p id="para-5">Tom wants to give Chilli and Pepper a loving home forever.</p>
-      <p id="para-6">Would you like to adopt a rescue animal for
-        your birthday?</p>
+      <h1>Her ser du Tom</h1>
+      <p id="para-2">Her har vi Tom!</p>
+      <p id="para-3">Tom har fødselsdag i dag.</p>
+      <p id="para-4">Han fylder 5 år.</p>
+      <p id="para-5">I fødselsdagsgave har han fået lov til
+        at adoptere to hunde fra dyreinternatet: Karla og Otto.</p>
+      <p id="para-6">Tom vil gerne give Karla og Otto et kærligt hjem.</p>
+      <p id="para-7">Hvis du og din familie skulle have et dyr,
+        ville I så adoptere et dyr fra dyreinternatet?</p>
     </div>
     <audio ref="audio" autoplay src="../../assets/sounds/session1/dog.mp3">
       Your browser does not support the
@@ -37,27 +39,31 @@ export default {
           targets: para[0],
           opacity: 1,
           duration: 500,
-        }, 1500)
+        }, 500)
         .add({
           targets: para[1],
           opacity: 1,
-        }, 3500)
+        }, 500)
         .add({
           targets: para[2],
           opacity: 1,
-        }, 7149)
+        }, 500)
         .add({
           targets: para[3],
           opacity: 1,
-        }, 10835)
+        }, 500)
         .add({
           targets: para[4],
           opacity: 1,
-        }, 13545)
+        }, 500)
         .add({
           targets: para[5],
           opacity: 1,
-        }, 18156)
+        }, 500)
+        .add({
+          targets: para[6],
+          opacity: 1,
+        }, 500)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
@@ -75,15 +81,18 @@ export default {
 </script>
 
 <style scoped>
+#pic {
+  left: 25vh
+}
 .left-bar {
   position: absolute;
   top: 0;
   left: 0;
-  width: 60%;
+  width: 30%;
   height: 100%;
-  background-color: rgba(255,255,255,0.85);
+  background-color: rgba(255,255,255,1);
   z-index: 10;
-  opacity: 0;
+  opacity: 1;
   padding: 1vh;
 }
 .left-bar p,
@@ -91,11 +100,11 @@ export default {
   opacity: 0;
 }
 .left-bar p {
-  font-size: 5.5vh;
-  margin-bottom: 0;
+  font-size: 3vh;
+  margin-bottom: 2vh;
 }
 .left-bar h1 {
-  font-size: 8vh;
-  margin: 0;
+  font-size: 4vh;
+  margin-bottom: 3vh;
 }
 </style>

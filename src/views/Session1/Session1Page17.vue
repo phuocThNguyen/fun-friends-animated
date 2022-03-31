@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <img class="session-background" src="../../assets/images/session1/32267-resized.jpg" alt="family-enjoy-water">
     <div class="text-box">
-      <p class="mb-0">There are many countries and different languages.</p>
+      <p class="mb-0">Der findes mange lande og forskellige sprog.</p>
     </div>
     <audio src="../../assets/sounds/session1/24Animated_Book_Page23.mp3" ref="voice"/>
     <div class="page-number" id="page-light">23</div>
@@ -37,11 +37,11 @@ export default {
 
 <style scoped>
 .text-box {
-  width: 84%;
+  width: 100vh;
   background-color: #00ce7c;
   position: absolute;
   bottom: 6vh;
-  left: 8%;
+  left: 16vh;
   opacity: 0;
   text-align: center;
   padding: 1vh
@@ -49,6 +49,6 @@ export default {
 .text-box p {
   color: #ffffff;
   font-weight: bold;
-  font-size:4.5vh;
+  font-size: 3.5vh;
 }
 </style>

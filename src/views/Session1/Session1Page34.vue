@@ -204,13 +204,14 @@
 
     <!--  Text content  -->
     <div class="text-box">
-      <p><strong>Stand or sit and stretch out your arms, legs, neck, fingers or toes.</strong></p>
-      <p><strong>Make yourself as big as you can! You are a big tree!</strong></p>
-      <p> - What does a tree need to grow big and healthy?</p>
-      <p> - What do you need in order to keep growing and be healthy?</p>
-      <p> - What kind of tree do you want to be?</p>
-      <p> - Show with your body what happens to trees during winter!</p>
-      <p> - Show with your body a tree blossoming in spring!</p>
+      <p><strong>Stå op eller sid ned imens du strækker dine arme, ben, nakke / hals, fingre og tæer.</strong></p>
+      <p><strong>Gør dig så stor som du overhovedet kan! Du er et stort træ!</strong></p>
+      <p> - Hvad har et træ brug for til at vokse sig stort og sundt?</p>
+      <p> - Hvad har du brug for, til at kunne blive ved med at vokse og holde dig sund og rask?</p>
+      <p> - Hvilke slags træ ønsker du at være?</p>
+      <p> - Kan du vise med din krop hvad der sker med træet om vinteren?</p>
+      <p> - Ville det skrumpe ind om efteråret?</p>
+      <p> - Hvordan ville du vise med din krop at træet springer ud om foråret?</p>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3">
       Your browser does not support the
@@ -291,36 +292,40 @@ export default {
         .add({
           targets: '.text-box',
           opacity: 0.9,
-          delay: 2000,
+          delay: 1,
         })
         .add({
           targets: text[0],
           color: '#000',
-        }, 3000)
+        }, 1)
         .add({
           targets: text[1],
           color: '#000',
-        }, 11745)
+        }, 1)
         .add({
           targets: text[2],
           color: '#000',
-        }, 17621)
+        }, 1)
         .add({
           targets: text[3],
           color: '#000',
-        }, 22401)
+        }, 1)
         .add({
           targets: text[4],
           color: '#000',
-        }, 27071)
+        }, 1)
         .add({
           targets: text[5],
           color: '#000',
-        }, 30168)
+        }, 1)
         .add({
           targets: text[6],
           color: '#000',
-        }, 35132)
+        }, 1)
+        .add({
+          targets: text[7],
+          color: '#000',
+        }, 1)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
@@ -357,7 +362,7 @@ export default {
   left: 2%;
 }
 .text-box p {
-  font-size: 4vh;
+  font-size: 3vh;
   margin-bottom: 1vh;
   color: #ffffff;
 }

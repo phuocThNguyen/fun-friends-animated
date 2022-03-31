@@ -15,10 +15,11 @@
         </g>
       </svg>
       <div class="star-text big-text">
-        <p><strong>Bright Star Idea</strong></p>
-        <p>Share a kind
-          <br>thumbs up
-          <br>choice.</p>
+        <p><strong>Ugens lysende
+          stjerne idé</strong></p>
+        <p>Del en venlig /
+          <br>omsorgsfuld
+          <br>”thumbs up” valg</p>
       </div>
     </div>
     <div id="left" class="star-container small-star">
@@ -35,7 +36,7 @@
         </g>
       </svg>
       <div class="star-text small-text">
-        <p>Help</p>
+        <p>Hjælp</p>
       </div>
     </div>
     <div id="bottom" class="star-container small-star">
@@ -52,7 +53,7 @@
         </g>
       </svg>
       <div class="star-text small-text">
-        <p>Smile</p>
+        <p>Smil</p>
       </div>
     </div>
     <div id="right" class="star-container small-star">
@@ -69,7 +70,7 @@
         </g>
       </svg>
       <div class="star-text small-text">
-        <p>Share</p>
+        <p>Del</p>
       </div>
     </div>
     <audio src="../../assets/sounds/session1/46Animated_Book_Page45.mp3" ref="voice"/>
@@ -110,9 +111,9 @@ export default {
           ],
           delay: 0,
         }, 1000)
-      .add({targets: '#left',opacity: 1}, 8100)
-      .add({targets: '#bottom',opacity: 1}, 9300)
-      .add({targets: '#right',opacity: 1}, 10800)
+      .add({targets: '#left',opacity: 1}, 1)
+      .add({targets: '#bottom',opacity: 1}, 1)
+      .add({targets: '#right',opacity: 1}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1500)
@@ -157,8 +158,8 @@ export default {
   text-align: center;
 }
 .star-text p { margin-bottom: 0;}
-.big-text {font-size: 4.3vh;}
-.big-text p:first-child {font-size: 4.5vh;}
+.big-text {font-size: 4vh;}
+.big-text p:first-child {font-size: 4.2vh;}
 .small-text {font-size: 5vh;}
 #left {left:0;top:37.5vh}
 #bottom {left:47.5vh;bottom:5vh}

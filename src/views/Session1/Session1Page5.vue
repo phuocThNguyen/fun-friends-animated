@@ -32,11 +32,11 @@ export default {
         .add({
           targets: text[0],
           opacity: 1,
-        }, 1048)
+        }, 1)
         .add({
           targets: text[1],
           opacity: 1
-        }, 3543)
+        }, 1)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
@@ -68,7 +68,7 @@ export default {
   color: #ffffff;
   font-weight: bold;
   display: flex;
-  font-size: 6vh;
+  font-size: 4vh;
   opacity: 0;
 }
 </style>

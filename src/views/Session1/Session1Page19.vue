@@ -3,12 +3,12 @@
     <img class="session-background" src="../../assets/images/session1/84428-resized.jpg" alt="family-enjoy-water">
     <div class="text-box">
       <p class="text">
-        <span>Talk about your family and the places they come from.</span>
-        <span> Listen carefully when those around you are talking.</span>
-        <span> There are differences in how we look,</span>
-        <span> what we eat,</span><span> where we live,</span>
-        <span> the clothes we wear</span><span> and the language we speak,</span>
-        <span><strong> but we all love, smile, and cry in the same way.</strong></span>
+        <span>Tal om personerne i din familie og de steder de kommer fra.</span>
+        <span> Lyt omhyggeligt efter når det er de andres tur til at tale.</span>
+        <span> Det kan godt være, at vi alle sammen ser forskellig ud;</span>
+        <span> spiser forskellig slags mad;</span><span> bor forskellige steder;</span>
+        <span> går i forskelligt tøj;</span><span> eller taler forskellige sprog, men</span>
+        <span><strong> den måde vi alle elsker, smiler og græder på er den samme.</strong></span>
       </p>
     </div>
     <audio src="../../assets/sounds/session1/26Animated_Book_Page25.mp3" ref="voice"/>
@@ -37,35 +37,35 @@ export default {
         .add({
           targets: paraArray.children[0],
           color: '#000',
-        }, 1000)
+        }, 1)
         .add({
           targets: paraArray.children[1],
           color: '#000',
-        }, 6007)
+        }, 1)
         .add({
           targets: paraArray.children[2],
           color: '#000',
-        }, 10680)
+        }, 1)
         .add({
           targets: paraArray.children[3],
           color: '#000',
-        }, 13679)
+        }, 1)
         .add({
           targets: paraArray.children[4],
           color: '#000',
-        }, 15159)
+        }, 1)
         .add({
           targets: paraArray.children[5],
           color: '#000',
-        }, 16840)
+        }, 1)
         .add({
           targets: paraArray.children[6],
           color: '#000',
-        }, 18349)
+        }, 1)
         .add({
           targets: paraArray.children[7],
           color: '#000',
-        }, 20472)
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1000)
@@ -81,12 +81,12 @@ export default {
 <style scoped>
 .text-box {
   height: auto;
-  width: 80%;
+  width: 120vh;
   padding: 2vh;
   background-color: #ffffff;
   position: absolute;
-  top: 4vh;
-  left: 10%;
+  top: 1vh;
+  left: 7vh;
   opacity: 0;
   display: flex;
   align-items: center;
@@ -94,7 +94,7 @@ export default {
 }
 .text-box p {
   color: #ffffff;
-  font-size: 6vh;
+  font-size: 3vh;
   margin-bottom: 0;
 }
 </style>

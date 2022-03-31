@@ -2,12 +2,13 @@
   <div class="interactive-container">
     <img src="../../assets/images/session1/grass-background.jpg" alt="background" class="session-background">
     <div class="text-box">
-      <h1>Everyday remember to:</h1>
-      <p>- Play outside.</p>
-      <p>- Go to bed early.</p>
-      <p>- Practise relaxing for 5 minutes in a quiet place.</p>
-      <p>- Pay attention to happy things.</p>
-      <p>- Say thank you for happy things.</p>
+      <h1>Husk hver dag at:</h1>
+      <p>- kom ud og leg</p>
+      <p>- få rigeligt med søvn</p>
+      <p>-øve dig på at afspænde  / slappe af
+        i 5 minutter uden TV eller anden elektronik</p>
+      <p>- udvise opmærksomhed overfor glade oplevelser </p>
+      <p>- sige tak for glade oplevelser</p>
     </div>
     <div class="image-container">
       <img class="action-image" src="../../assets/images/session1/811-resized.jpg" alt="play-outside">
@@ -38,47 +39,47 @@ export default {
         .add({
           targets: ".text-box",
           opacity: 0.95,
-        }, 500)
+        }, 1)
         .add({
           targets: texts[1],
           opacity: 1,
-        }, 2567)
+        }, 1)
         .add({
           targets: images[0],
           opacity: 1,
-        }, 2567)
+        }, 1)
         .add({
           targets: texts[2],
           opacity: 1,
-        }, 4711)
+        }, 1)
         .add({
           targets: images[1],
           opacity: 1,
-        }, 4711)
+        }, 1)
         .add({
           targets: texts[3],
           opacity: 1,
-        }, 6885)
+        }, 1)
         .add({
           targets: images[2],
           opacity: 1,
-        }, 6885)
+        }, 1)
         .add({
           targets: texts[4],
           opacity: 1,
-        }, 12900)
+        }, 1)
         .add({
           targets: images[3],
           opacity: 1,
-        }, 12900)
+        }, 1)
         .add({
           targets: texts[5],
           opacity: 1,
-        }, 15300)
+        }, 1)
         .add({
           targets: images[4],
           opacity: 1,
-        }, 15300)
+        }, 1)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;

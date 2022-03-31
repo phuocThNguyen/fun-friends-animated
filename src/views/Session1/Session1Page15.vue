@@ -212,13 +212,12 @@
         <p id="q1"> - Fortæl om personerne i din familie og hvad I kan li’ at lave sammen. </p>
         <p id="q2"> - Husk at tale om de hyggelige stunder og glade oplevelser I har haft.</p>
         <p id="q3"> - Vær omsorgsfuld og lyt omhyggeligt efter, når det er de andres tur til at tale.</p>
+        <p id="q4"> - Hvordan ser din familie ud? Alle familier er forskellige.</p>
         <p id="q5"> - Fortæl om en anden familie og om hvordan I kan blive venner.</p>
       </div>
     </div>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"/>
     <audio src="../../assets/sounds/session1/22Animated_Book_Page21.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">21</div>
   </div>
@@ -309,37 +308,41 @@ export default {
         .add({
           targets: '.requires',
           opacity: 1,
-          delay: 3000,
+          delay: 1,
         })
         .add({
           targets: '.text-box',
           opacity: 0.90,
-          delay: 9000,
+          delay: 1,
         })
         .add({
           targets: text[0],
           opacity: 1
-        }, 13708)
+        }, 1)
         .add({
           targets: text[1],
           opacity: 1
-        }, 17319)
+        }, 1)
         .add({
           targets: text[2],
           opacity: 1
-        }, 22915)
+        }, 1)
         .add({
           targets: text[3],
           opacity: 1
-        }, 26332)
+        }, 1)
         .add({
           targets: text[4],
           opacity: 1
-        }, 30651)
+        }, 1)
+        .add({
+          targets: text[5],
+          opacity: 1
+        }, 1)
         .add({
           targets: '.canvas',
           opacity: 1,
-        }, 32000)
+        }, 1)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
@@ -395,7 +398,7 @@ export default {
   padding: 1vh;
   height: auto;
   opacity: 0;
-  font-size: 2.8vh;
+  font-size: 2.6vh;
 }
 .text-box p {
   margin-bottom: 0;

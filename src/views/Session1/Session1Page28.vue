@@ -9,7 +9,7 @@
     <div class="text-box">
       <p class="text">
         <span>
-          Trying different foods is fun.
+          At prøve at smage på forskellige retter og madvarer er sjovt.
         </span>
       </p>
     </div>
@@ -62,19 +62,19 @@ export default {
 }
 .text-box {
   position: absolute;
-  left: 18%;
-  top: 39vh;
+  left: 17vh;
+  top: 42vh;
   z-index: 20;
   background-color: #00CE7C;
   width: auto;
   height: auto;
-  padding: 2vh 4.6vh;
+  padding: 1vh;
   opacity: 0;
 }
 .text {
   font-weight: bold;
   color: #ffffff;
-  font-size: 6vh;
+  font-size: 3.5vh;
   margin-bottom: 0;
 }
 </style>

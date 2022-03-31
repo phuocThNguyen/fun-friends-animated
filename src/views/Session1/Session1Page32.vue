@@ -1134,13 +1134,14 @@
 
     <!--  Main content  -->
     <div class="main-content">
-      <h1 class="requires">Let's create a song or picture!</h1>
+      <h1 class="requires">Lad os skabe en sang eller tegne et billede.</h1>
       <div class="text-box">
-        <p id="q1"> - Write a song and sing it out loud or draw a picture.</p>
-        <p id="q2"> - Talk about your favourite food and what it tastes like.</p>
-        <p id="q3"> - Share a happy time, a sad time and what made you feel better!</p>
-        <p id="q4"> - What is special about each of your friends?</p>
-        <p id="q5"><strong>Being different is ok!</strong></p>
+        <p id="q1"> - Du kan skrive en sang,  tegne et billede, eller synge en sang højlydt.</p>
+        <p id="q2"> - Tal om din yndlingsmad og hvordan det smager.</p>
+        <p id="q3"> - Del mindet om et tidspunkt hvor du var glad og et tidspunkt hvor du var trist,
+          samt hvad der fik dig til at føle dig bedre tilpas!</p>
+        <p id="q4"> - Hvad har mange venner til fælles? Og hvilke forskelle er der mellem dem?</p>
+        <p id="q5"><strong>At være forskellige er smukt!</strong></p>
       </div>
     </div>
     <drawing-canvas class="canvas" :canvasStyle="canvasStyle"/>
@@ -1162,7 +1163,7 @@ export default {
   data() {
     return {
       canvasStyle: {
-        width: 0.555,
+        width: 0.68,
         height: 0.7,
         isPicture: false,
       }
@@ -1199,35 +1200,35 @@ export default {
         .add({
           targets: '.requires',
           opacity: 0.85,
-        }, 598)
+        }, 1)
         .add({
           targets: '.text-box',
           opacity: 0.95,
-        }, 2800)
+        }, 1)
         .add({
           targets: '#q1',
           color: '#d00000'
-        }, 3374)
+        }, 1)
         .add({
           targets: '#q2',
           color: '#000'
-        }, 7902)
+        }, 1)
         .add({
           targets: '#q3',
           color: '#000'
-        }, 11780)
+        }, 1)
         .add({
           targets: '#q4',
           color: '#000'
-        }, 17903)
+        }, 1)
         .add({
           targets: '#q5',
           color: '#000'
-        }, 22007)
+        }, 1)
         .add({
           targets: '.canvas',
           opacity: 0.92,
-        }, 25000)
+        }, 1)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
@@ -1250,13 +1251,13 @@ export default {
   position: absolute;
   left: .5%;
   top: 1vh;
-  width: 43%;
+  width: 30%;
   z-index: 50;
 }
 .main-content h1 {
   background-color: #000000;
   color: #ffffff;
-  font-size: 4vh;
+  font-size: 2.5vh;
   width: 100%;
   height: auto;
   padding: 1.5vh;
@@ -1267,10 +1268,10 @@ export default {
 }
 .text-box {
   background-color: #ffffff;
-  padding: 2.6vh;
+  padding: 1.5vh;
   height: auto;
   opacity: 0;
-  font-size: 4vh;
+  font-size: 2.5vh;
   color: #ffffff;
 }
 .text-box p {

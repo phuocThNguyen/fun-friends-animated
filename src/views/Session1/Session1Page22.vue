@@ -4,9 +4,9 @@
     <img src="../../assets/images/session1/225-resized.jpg" alt="house-2">
     <img src="../../assets/images/session1/773-resized.jpg" alt="house-3">
     <div class="text-box">
-      <h1>Our homes</h1>
-      <p>Talk about your home.</p>
-      <p>Ask your friends about their homes.</p>
+      <h1>Vores hjem</h1>
+      <p>Fortæl om dit hjem.</p>
+      <p>Spørg dine venner om deres hjem.</p>
     </div>
     <audio src="../../assets/sounds/session1/29Animated_Book_Page28.mp3" ref="voice"/>
     <div class="page-number" id="page-light">28</div>
@@ -28,15 +28,15 @@ export default {
         .add({
           targets: texts.children[0],
           color: '#000',
-        }, 500)
+        }, 1)
         .add({
           targets: texts.children[1],
           color: '#000',
-        }, 2345)
+        }, 1)
         .add({
           targets: texts.children[2],
           color: '#000',
-        }, 4109)
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -76,11 +76,11 @@ export default {
   padding: 0 1vh;
 }
 .text-box h1 {
-  font-size: 6vh;
-  margin-bottom: 0;
+  font-size: 5vh;
+  margin-bottom: 2vh;
 }
 .text-box p {
-  font-size: 4vh;
+  font-size: 3vh;
   margin-bottom: 0;
 }
 </style>

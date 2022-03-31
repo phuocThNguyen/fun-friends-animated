@@ -8,7 +8,7 @@
     </div>
     <div class="text-box">
       <p class="text">
-        <span>It is okay that our clothes are different!</span>
+        <span>Forskellighed og det at være anderledes / ikke at ligne hinanden er sjovt!</span>
       </p>
     </div>
     <audio src="../../assets/sounds/session1/38Animated_Book_Page37.mp3" ref="voice"/>
@@ -60,19 +60,19 @@ export default {
 }
 .text-box {
   position: absolute;
-  left: 7%;
-  top: 36vh;
+  left: 10%;
+  top: 42vh;
   z-index: 20;
   background-color: #00CE7C;
   width: auto;
   height: auto;
-  padding: 2vh 4.6vh;
+  padding: 1vh 2vh;
   opacity: 0;
 }
 .text {
   font-weight: bold;
   color: #ffffff;
-  font-size: 6vh;
+  font-size: 3vh;
   margin-bottom: 0;
 }
 </style>

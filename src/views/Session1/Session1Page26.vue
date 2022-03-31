@@ -4,9 +4,9 @@
     <img src="../../assets/images/session1/304-resized.jpg" alt="house-2" />
     <img src="../../assets/images/session1/440-resized.jpg" alt="house-3" />
     <div class="text-box">
-      <h1>Our food</h1>
-      <p>Talk about your food.</p>
-      <p>Ask your friends about their food.</p>
+      <h1>Vores mad</h1>
+      <p>Fortæl om hvad du spiser.</p>
+      <p>Spørg dine venner om det de spiser.</p>
     </div>
     <audio src="../../assets/sounds/session1/33Animated_Book_Page32.mp3" ref="voice"/>
     <div class="page-number" id="page-light">32</div>

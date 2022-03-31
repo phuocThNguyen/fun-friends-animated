@@ -8,8 +8,7 @@
     </div>
     <div class="text-box">
       <p class="text">
-        <span>Houses may be different,</span>
-        <span> but inside we all feel happiness and sadness sometimes.</span>
+        <span>Huse er forskellige, men indeni ligner vi hinanden.</span>
       </p>
     </div>
     <audio src="../../assets/sounds/session1/31Animated_Book_Page30.mp3" ref="voice"/>
@@ -28,7 +27,7 @@ export default {
         targets: ".text-box",
         opacity: 0.98,
         duration: 500,
-        delay: 500,
+        delay: 1,
         easing: 'linear',
       })
     },
@@ -61,9 +60,9 @@ export default {
 }
 .text-box {
   position: absolute;
-  left: 8%;
-  width: 84%;
-  top: 37vh;
+  width: 100vh;
+  left: 16.5vh;
+  top: 42vh;
   z-index: 20;
   background-color: #00CE7C;
   height: auto;
@@ -73,7 +72,7 @@ export default {
 .text {
   font-weight: bold;
   color: #ffffff;
-  font-size: 5vh;
+  font-size: 3.5vh;
   margin-bottom: 0;
   text-align: center;
 }

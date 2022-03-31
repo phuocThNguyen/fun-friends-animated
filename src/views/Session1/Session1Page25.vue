@@ -787,19 +787,19 @@
     </svg>
     <div class="text-box">
       <p id="para-1">
-        <span>If you could live in a house shaped like anything,</span>
-        <span> what would it be?</span>
+        <span>Hvis du frit kunne vælge hvordan dit hus skulle se ud,</span>
+        <span> hvordan skulle det så være?</span>
       </p>
       <p id="para-2">
-        <span>Where would you like your house to be,</span>
-        <span> in the mountains,</span>
-        <span> on the beach,</span>
-        <span> near a lake,</span>
-        <span> near a park,</span>
-        <span> or in the city?</span>
+        <span>Hvor skulle dit hus ligge:</span>
+        <span> i bjergene,</span>
+        <span> ved stranden,</span>
+        <span> tæt ved en sø,</span>
+        <span> tæt ved en park,</span>
+        <span> på landet, eller i en (stor)by?</span>
       </p>
-      <p id="para-3">What colours would it be?</p>
-      <p id="para-4">What 5 things would you want in your house?</p>
+      <p id="para-3">Hvilken farve skulle det have?</p>
+      <p id="para-4">Hvilke 5 ting ville du gerne have i dit hus?</p>
     </div>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
     <div class="bubble-container">
@@ -815,7 +815,7 @@
           </g>
         </g>
       </svg>
-      <div class="bubble-text">Share your ideas with a friend!</div>
+      <div class="bubble-text">Del dine idéer med en ven!</div>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3">
       Your browser does not support the
@@ -966,7 +966,7 @@ export default {
   background-color: #ffffff;
   color: #fff;
   opacity: 0;
-  font-size: 3.2vh;
+  font-size: 3vh;
 }
 .text-box p {
   margin-bottom: 0;

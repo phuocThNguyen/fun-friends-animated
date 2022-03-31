@@ -8,7 +8,7 @@
     </div>
     <div class="text-box">
       <p class="text">
-        <span>It is fun that we are different.</span>
+        <span>Det kan være vi går i forskelligt tøj, men det er alt sammen vildt sejt.</span>
       </p>
     </div>
     <audio src="../../assets/sounds/session1/37Animated_Book_Page36.mp3" ref="voice"/>
@@ -60,19 +60,19 @@ export default {
 }
 .text-box {
   position: absolute;
-  left: 16%;
+  left: 12vh;
   top: 42vh;
   z-index: 20;
   background-color: #00CE7C;
   width: auto;
   height: auto;
-  padding: 1vh 4.6vh;
+  padding: 1vh;
   opacity: 0;
 }
 .text {
   font-weight: bold;
   color: #ffffff;
-  font-size: 6vh;
+  font-size: 3.5vh;
   margin-bottom: 0;
 }
 </style>

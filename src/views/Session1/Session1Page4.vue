@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <img class="session-background" src="../../assets/images/session1/282-resized.jpg" alt="josh-and-poppy">
+    <img class="session-background" id="pic" src="../../assets/images/session1/282-resized.jpg" alt="josh-and-poppy">
     <div class="left-bar">
       <p id="para-1">Jon og hunden Karla elsker at lege med en bold i parken.</p>
 
@@ -39,15 +39,15 @@ export default {
         .add({
           targets: '#para-1',
           opacity: 1,
-        }, 1500)
+        }, 1)
         .add({
           targets: '#para-2',
           opacity: 1,
-        }, 7020)
+        }, 1)
         .add({
           targets: ".text-box",
           opacity: 1,
-        }, 10253);
+        }, 1);
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
@@ -70,22 +70,26 @@ export default {
     width: 30% !important;
   }
 }
+#pic {
+  left: 25vh;
+}
 .left-bar {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50%;
+  width: 30%;
   height: 100%;
-  background-color: rgba(255,255,255,0.85);
+  background-color: rgba(255,255,255,1);
   z-index: 10;
-  opacity: 0;
-  padding: 0 0 0 1vh;
+  opacity: 1;
+  padding: 0 1vh;
 }
 .left-bar p {
   width: 100%;
   opacity: 0;
-  font-size: 5vh;
+  font-size: 3vh;
 }
+.left-bar p:first-child {margin-top: 1vh}
 #para-3 {opacity: 1 !important}
 .text-box {
   height: auto;
@@ -106,7 +110,7 @@ export default {
   color: #ffffff;
   font-weight: bold;
   margin-bottom: 0;
-  font-size: 5vh;
+  font-size: 3vh;
   text-align: center;
 }
 </style>

@@ -397,14 +397,14 @@
     </svg>
 
     <div class="text-box">
-      <p id="para-1">Here is a big shady tree. We know this tree is healthy and
-      strong because it has bright green leaves and grows beautiful fruit.</p>
+      <p id="para-1">Her er et stort skyggefuldt træ.
+        Vi ved at dette træ er sundt og stærkt fordi det har friske grønne blade,
+        og fordi der vokser smukke frugter og blomster på det.</p>
 
-      <p id="para-2">What are some things that this tree needs to stay healthy?</p>
+      <p id="para-2">Hvad tror du dette træ har brug for,
+        hvis det skal blive ved med at vokse og holde sig sundt?</p>
     </div>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"/>
     <audio src="../../assets/sounds/session1/40Animated_Book_Page39.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">39</div>
   </div>
@@ -567,7 +567,7 @@ export default {
 }
 .text-box p {
   color: #ffffff;
-  font-size: 4.5vh;
+  font-size: 3.5vh;
 }
 .sun {
   position: absolute;

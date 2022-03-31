@@ -3,10 +3,12 @@
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
     <div class="text">
       <div class="para">
-        <p> - Mark the country that you live in.</p>
-        <p> - Mark where you and your friends want to visit and connect these places.</p>
-        <p><strong>We may be in different places and want different things,
-          but we are all joined together by lines of belonging and love.</strong></p>
+        <p>Hvor bor du henne?</p>
+        <p>Hvor kunne du tænke dig at tage hen på besøg?</p>
+        <p>Kig efter venner der har lyst til at besøge forskellige steder. Gå sammen med din ven(inde) og sæt kryds på
+          kortet ved det land I bor i. Sæt kryds på kortet der hvor din ven(inde) har lyst til at tage hen og der hvor
+          du har lyst til at tage hen. Det kan godt være at vi befinder os forskellige steder og ønsker forskellige ting, men vi er
+          alle forbundet med hinanden på kryds og tværs af tilhørs- og kærlighedsbånd.</p>
       </div>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/sand-castle.mp3"/>
@@ -46,16 +48,16 @@ export default {
       animation
         .add({
           targets: para[0],
-          color: "#d00000",
-        }, 1000)
+          color: "#000",
+        }, 1)
         .add({
           targets: para[1],
-          color: "#d00000",
-        }, 4244)
+          color: "#000",
+        }, 1)
         .add({
           targets: para[2],
           color: "#000",
-        }, 10248)
+        }, 1)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
@@ -91,9 +93,14 @@ export default {
   width: 100%;
 }
 .para p {
-  font-size: 3.5vh;
+  font-size: 2.5vh;
   color: #ffffff;
   margin-bottom: 0;
+}
+.para p:first-child,
+.para p:nth-child(2) {
+  text-align: center;
+  font-weight: bold;
 }
 .canvas {
   position: absolute;

@@ -38,23 +38,23 @@ export default {
         .add({
           targets: text[0],
           opacity: 1
-        }, 1102)
+        }, 1)
         .add({
           targets: text[1],
           opacity: 1,
-        }, 2400)
+        }, 1)
         .add({
           targets: text[2],
           opacity: 1,
-        }, 5500)
+        }, 1)
         .add({
           targets: text[3],
           opacity: 1,
-        }, 8600)
+        }, 1)
         .add({
           targets: ".text-box",
           opacity: 1,
-        }, 11000)
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1000)
@@ -72,26 +72,26 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50%;
+  width: 28%;
   height: 100%;
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255,1);
   z-index: 10;
   opacity: 0;
   padding: 3vh 2vh;
 }
 .left-bar h1 {
-  font-size: 6vh;
+  font-size: 4vh;
   margin-bottom: 2vh;
   opacity: 0;
 }
 .left-bar p {
   opacity: 0;
-  font-size: 4.5vh;
+  font-size: 3vh;
 }
 .text-box {
   height: auto;
   width: 98%;
-  padding: 1.5vh;
+  padding: .5vh;
   background-color: #00ce7c;
   display: flex;
   flex-direction: column;

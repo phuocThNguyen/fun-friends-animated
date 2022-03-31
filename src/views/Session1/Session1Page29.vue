@@ -4,13 +4,13 @@
     <img src="../../assets/images/session1/stockvault-carefree115845-resized.jpg" alt="cloth"/>
     <img src="../../assets/images/session1/13151-resized.jpg" alt="house-3" />
     <div class="text-box">
-      <h1>Our clothes</h1>
-      <p>Talk about your clothes.</p>
-      <p>Ask your friends about their clothes.</p>
+      <h1>Vores tøj</h1>
+      <p>Fortæl om det tøj du har på.</p>
+      <p>Spørg dine venner om det tøj de går med og hvad de kan li’ at have på.</p>
     </div>
     <div class="text">
-      <p>Different countries may use different clothes.</p>
-      <p>It is normal that we are all different!</p>
+      <p>Forskellige lande kan bruge forskelligt tøj.</p>
+      <p>Det er normalt, at vi alle er forskellige!</p>
     </div>
     <audio src="../../assets/sounds/session1/36Animated_Book_Page35.mp3" ref="voice"/>
     <div class="page-number" id="page-light">35</div>
@@ -26,9 +26,9 @@ export default {
       let texts = document.getElementsByClassName("text-box")[0];
       let animation = anime.timeline({easing: 'linear', duration: 700,});
       animation
-        .add({targets: texts.children[0], color: '#000'}, 771)
-        .add({targets: texts.children[1], color: '#000'}, 2312)
-        .add({targets: texts.children[2], color: '#000'}, 4500)
+        .add({targets: texts.children[0], color: '#000'}, 1)
+        .add({targets: texts.children[1], color: '#000'}, 1)
+        .add({targets: texts.children[2], color: '#000'}, 1)
         .add({targets: '.text', opacity: 1}, 7500)
     },
     playVoiceOver() {
@@ -67,13 +67,14 @@ export default {
 .text-box {
   color: #ffffff;
   padding: 0 1vh;
+  width: 65vh;
 }
 .text-box h1 {
-  font-size: 6vh;
-  margin-bottom: 0;
+  font-size: 4vh;
+  margin-bottom: 2vh;
 }
 .text-box p {
-  font-size: 4vh;
+  font-size: 3vh;
   margin-bottom: 0;
 }
 .text {
@@ -81,9 +82,9 @@ export default {
   background-color: #00CE7C;
   color: #fff;
   font-size: 3vh;
-  bottom: 39vh;
+  bottom: 40.5vh;
   width: auto;
-  right: 0;
+  right: 2.5vh;
   padding: 1vh;
   font-weight: bold;
   text-align: center;

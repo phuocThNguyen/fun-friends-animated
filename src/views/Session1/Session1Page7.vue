@@ -31,11 +31,11 @@ export default {
         .add({
           targets: text[0],
           opacity: 1,
-        }, 1217)
+        }, 1)
         .add({
           targets: text[1],
           opacity: 1
-        }, 3037)
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1000)
@@ -63,7 +63,7 @@ export default {
   color: #ffffff;
   font-weight: bold;
   display: flex;
-  font-size: 6vh;
+  font-size: 4vh;
   opacity: 0;
 }
 </style>

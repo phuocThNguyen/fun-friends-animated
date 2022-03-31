@@ -25,6 +25,6 @@ export default {
   background-color: #00CE7C;
 }
 #fixing-image {
-  top: -4.5vh;
+  top: -4vh;
 }
 </style>

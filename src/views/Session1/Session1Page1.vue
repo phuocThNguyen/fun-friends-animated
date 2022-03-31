@@ -197,10 +197,15 @@
     </svg>
 
     <div class="question">
-      <p>Talk about your family and home.</p>
-      <p>Talk about your friends.</p>
-      <p>When you feel scared, what can you do to be brave?</p>
-      <p><strong>FUN FRIENDS can help you learn.</strong></p>
+      <p>I dag kommer vi til at tale om hvordan familier og hjem kan ligne hinanden,
+        <br>og hvordan de kan være forskellige fra hinanden. Vi kommer også til at tale
+        <br>om tidspunkter hvor vi oplever at være glade og tidspunkter hvor vi kan blive bange.
+        <br>Vi taler også om hvordan man kan være modig når man oplever noget,
+        <br>eller ved at man kommer til at skulle noget, som gør én bange.</p>
+      <p>På hvilken måder ligner dit hjem og din familie din ven(inde)s hjem og familie? </p>
+      <p>Og hvordan er de forskellige fra hinanden?</p>
+      <p>Hvordan øver du dig på at være modig når du føler dig bange?</p>
+      <p><strong>FUN FRIENDS kan hjælpe dig med at lære hvordan man gør.</strong></p>
     </div>
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3"/>
     <audio src="../../assets/sounds/session1/8Animated_Book_Page7.mp3" ref="audio"></audio>
@@ -258,10 +263,11 @@ export default {
       let text = document.querySelector('.question').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
-        .add({targets: text[0], opacity: 1}, 6600)
-        .add({targets: text[1], opacity: 1}, 10000)
-        .add({targets: text[2], opacity: 1}, 12800)
-        .add({targets: text[3], opacity: 1}, 17200)
+        .add({targets: text[0], opacity: 1}, 1)
+        .add({targets: text[1], opacity: 1}, 2)
+        .add({targets: text[2], opacity: 1}, 3)
+        .add({targets: text[3], opacity: 1}, 4)
+        .add({targets: text[4], opacity: 1}, 5)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.audio.play()}, 500)
@@ -331,16 +337,16 @@ tspan { white-space:pre }
 }
 .big-cloud {
   position: absolute;
-  width: 110%;
+  width: 130%;
   height: auto;
-  top: 16vh;
-  left: -2%;
+  top: 12vh;
+  left: -15%;
 }
 .long-cloud {
   width: 130%;
   height: auto;
   position: absolute;
-  bottom: -7vh;
+  bottom: -9vh;
   left: -12%;
   z-index: 50;
 }
@@ -360,14 +366,16 @@ tspan { white-space:pre }
 }
 .question {
   text-align: center;
-  font-size: calc(0.05 * 133vh);
+  font-size: calc(0.025 * 133vh);
   position: absolute;
   width: 133vh;
-  top: 30vh;
+  top: 26vh;
   left: 0;
 }
 .question p {opacity: 0;}
-.question p:nth-child(3) {font-size: calc(0.042 * 133vh);}
+.question p:first-child {margin-bottom: 1vh}
+.question p:nth-child(4) {margin-bottom: 1vh}
+.question p:nth-child(5) {font-size: calc(0.025 * 133vh);}
 /*.question-1 {*/
 /*  top: 30vh;*/
 /*  left: 8%;*/

@@ -1769,10 +1769,13 @@
           </g>
         </g>
       </svg>
-      <p class="para">Look out for this
-        <br>Bright Star to give
-        <br>you Fun Friends
-        <br>skills each week.</p>
+      <p class="para">Hold udkig efter
+        <br>denne lysende
+        <br>stjerne - den
+        <br>forsyner dig med
+        <br>sjove FRIENDS
+        <br>færdigheder hver
+        <br>uge.</p>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/session4/night-time.mp3"/>
     <audio src="../../assets/sounds/session1/43Animated_Book_Page42.mp3" ref="voice"/>
@@ -1822,13 +1825,13 @@ export default {
         .add({
           targets: ".star",
           scale: 70,
-          duration: 1000,
-          delay: 1000,
+          duration: 1,
+          delay: 1,
         })
         .add({
           targets: ".para",
           opacity: 1,
-          duration: 1000,
+          duration: 1,
           easing: 'linear'
         })
     },
@@ -1881,11 +1884,12 @@ export default {
   width: 100%;
   position: absolute;
   font-weight: bold;
-  font-size: 4.8vh;
+  font-size: 3.5vh;
   height: auto;
-  margin-top: 3%;
+  margin-top: 15%;
   text-align: center;
   opacity: 0;
+  line-height: 4.5vh;
 }
 tspan { white-space:pre }
 .shp0-star { fill: #f3cc30 }

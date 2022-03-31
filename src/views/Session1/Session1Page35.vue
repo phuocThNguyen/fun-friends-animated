@@ -768,36 +768,41 @@
     <!--  Main content  -->
     <div class="main-content">
       <div class="text-box">
-        <p>Playing on the sand and in the ocean is so much fun!</p>
+        <p>At lege i sandet og havet er vildt hyggeligt og sjovt!</p>
       </div>
       <div class="para-box">
-        <h1>To be healthy and happy every day, you can:</h1>
+        <h1>Daglige gøremål så din krop kan vokse sig sund og glad: </h1>
 
-        <h2>Play outside</h2>
-        <p>Play outside, run, ride your scooter, ride your bike, climb trees, swim, play ball,
-          play jump rope, play hide and seek or any other fun and active games that you
-         and your family can invent. These things will keep your body feeling healthy and strong.</p>
+        <h2>Leg udendørs</h2>
+        <p>Leg udendørs, løb, kør på løbehjul, tag en cykeltur, klatr i træer,
+          svøm, spil bold, sjip, leg gemmeleg, dåseskjul og andre sjove og aktive lege,
+          som du og din familie kan opfinde. Disse ting vil gøre at din krop bliver ved
+          med at føle sig sund, rask og stærk, og vil gøre dig glad hver dag.</p>
 
-        <h2>Have plenty of sleep</h2>
-        <p>Sleep is healthy for your body and mind. When you go to sleep at your bedtime
-         and rest well, your body grows, heals itself and helps you feel calm, happy and strong.</p>
+        <h2>Sov en masse</h2>
+        <p>Søvn er sundt for din krop, din hjerne og dit sind.
+          Når du falder i søvn ved sengetid og hviler dig godt hver nat,
+          så vokser din krop, ligesom at den kan hele sig selv,
+          og hjælpe dig til at føle dig rolig, glad og stærk.</p>
 
-        <h2>Drink and eat healthy food</h2>
-        <p>When you drink plenty of water each day and eat many different healthy foods
-         like fruit and vegetables, it helps your body feel stronger and happier.</p>
+        <h2>Drik og spis sund mad</h2>
+        <p>Når du drikker rigeligt med vand hver dag og spiser masser af forskellige
+          sunde naturlige madvarer, såsom frugt, grøntsager og fuldkornsprodukter,
+          hjælper det din krop med at føle sig mere stærk og glad.</p>
 
-        <h2>Practise relaxing every day for 5 minutes without TV, phones, tablets or computers</h2>
-        <p>Relaxing without TV, phones, tablets or computers, gives your eyes and brain a break.
-          Relaxing is healthy for your body and mind and helps you feel calm and peaceful.</p>
+        <h2>Øv dig på at slappe af i 5 minutter uden TV eller elektroniske apparater</h2>
+        <p>At slappe af uden input fra TV, computerspil, og andre apparater,
+          giver dine øjne og din hjerne en pause og hjælper dig med at lægge mærke
+          til andre fantastiske ting i verdenen omkring dig. At slappe af er sundt for
+          din krop, din hjerne, og dit sind - det hjælper dig med at føle dig rolig og fredfyldt.</p>
 
-        <h2>Pay attention to happy things and what you can see, hear, smell, taste and feel</h2>
-        <p>Noticing things around you makes you great at finding beautiful things, and if you
-         practise this everyday you will get better and better at it!</p>
+        <h2>Læg mærke til glade oplevelser / ting og hvad du kan se, høre, lugte, smage og føle.</h2>
+        <p>At lægge mærke til det der befinder sig i dine omgivelser gør dig dygtig
+          til at finde smukke ting. Og hvis du øver dig på dette hver dag,
+          vil du blive bedre og bedre til det!</p>
       </div>
     </div>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/beach-sound.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/beach-sound.mp3"/>
     <audio src="../../assets/sounds/session1/42Animated_Book_Page41.mp3" ref="voice"/>
     <div class="page-number" id="page-light">41</div>
   </div>
@@ -864,51 +869,51 @@ export default {
         .add({
           targets: '.text-box',
           opacity: 0.95,
-        }, 657)
+        }, 1)
         .add({
           targets: '.para-box',
           opacity: 0.95,
-        }, 5501)
+        }, 1)
         .add({
           targets: text[1],
           opacity: 1,
-        }, 9267)
+        }, 1)
         .add({
           targets: text[2],
           opacity: 1,
-        }, 10841)
+        }, 1)
         .add({
           targets: text[3],
           opacity: 1,
-        }, 33067)
+        }, 1)
         .add({
           targets: text[4],
           opacity: 1,
-        }, 35640)
+        }, 1)
         .add({
           targets: text[5],
           opacity: 1,
-        }, 50476)
+        }, 1)
         .add({
           targets: text[6],
           opacity: 1,
-        }, 54059)
+        }, 1)
         .add({
           targets: text[7],
           opacity: 1,
-        }, 65779)
+        }, 1)
         .add({
           targets: text[8],
           opacity: 1,
-        }, 76200)
+        }, 1)
         .add({
           targets: text[9],
           opacity: 1,
-        }, 93700)
+        }, 1)
         .add({
           targets: text[10],
           opacity: 1,
-        }, 101800)
+        }, 1)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
@@ -963,7 +968,7 @@ export default {
   color: #ffffff;
   text-align: center;
   font-weight: bold;
-  font-size: 4vh;
+  font-size: 3.5vh;
   padding: 1vh;
   opacity: 0;
 }
@@ -974,11 +979,11 @@ export default {
   opacity: 0;
 }
 .para-box h1 {
-  font-size: 5vh;
+  font-size: 3vh;
   margin-bottom: 1vh;
 }
 .para-box h2 {
-  font-size: 3.5vh;
+  font-size: 2.8vh;
   opacity: 0;
 }
 .para-box p {

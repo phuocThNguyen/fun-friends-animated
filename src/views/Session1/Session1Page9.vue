@@ -50,6 +50,6 @@ export default {
   color: #ffffff;
   font-weight: bold;
   display: flex;
-  font-size: 6vh;
+  font-size: 4vh;
 }
 </style>

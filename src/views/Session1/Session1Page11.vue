@@ -816,20 +816,22 @@
 
     <!--  Main content  -->
     <div class="main-content">
-      <h1 class="draw">Draw a picture of yourself!</h1>
+      <h1 class="draw">Tegn et billede af dig selv overfor.</h1>
       <div class="text-box">
-        <p>Share your picture with those around you. Tell them:</p>
+        <p>Tal med dem du er sammen med om dit billede. Fortæl dem:</p>
 
-        <p> - Your favourite fruit and vegetable</p>
-        <p> - Your favourite toy</p>
-        <p> - What makes you happy?</p>
-        <p> - What makes you scared?</p>
+        <p> - Hvilke slags frugt kan du li’ at spise?</p>
+        <p> - Hvilke slags grøntsager kan du li’ at spise?</p>
+        <p> - Hvilke slags legetøj kan du bedst li’?</p>
+        <p> - Hvad gør dig glad?</p>
+        <p> - Hvad synes du er skræmmende?</p>
 
-        <p>Choose your favourite answer,
-          act it out or sound it out with a friend.
-          When it's their turn, make sure to listen.</p>
+        <p>Vælg dit yndlingssvar og lav et rollespil over det,
+          eller del det med en ven(inde).
+          Når det er de andres tur,
+          sørg for at lytte omhyggeligt til deres svar.</p>
 
-        <p class="mb-0">Express yourself!</p>
+        <p class="mb-0">Vis hvad du tænker med din krop og dine ord!</p>
       </div>
     </div>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
@@ -933,43 +935,47 @@ export default {
         .add({
           targets: '.draw',
           opacity: 1,
-        }, 1000)
+        }, 1)
         .add({
           targets: '.text-box',
           opacity: 0.95,
-        }, 3000)
+        }, 1)
         .add({
           targets: text[0],
           opacity: 1
-        }, 4362)
+        }, 1)
         .add({
           targets: text[1],
           opacity: 1
-        }, 9072)
+        }, 1)
         .add({
           targets: text[2],
           opacity: 1
-        }, 12153)
+        }, 1)
         .add({
           targets: text[3],
           opacity: 1
-        }, 14051)
+        }, 1)
         .add({
           targets: text[4],
           opacity: 1
-        }, 16220)
+        }, 1)
         .add({
           targets: text[5],
           opacity: 1
-        }, 18472)
+        }, 1)
         .add({
           targets: text[6],
           opacity: 1
-        }, 28335)
+        }, 1)
+        .add({
+          targets: text[7],
+          opacity: 1
+        }, 1)
         .add({
           targets: '.canvas',
           opacity: 1,
-        }, 30019)
+        }, 1)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
@@ -1013,10 +1019,10 @@ export default {
 .main-content h1 {
   background-color: #000000;
   color: #ffffff;
-  font-size: 4vh;
+  font-size: 2.5vh;
   width: 100%;
   height: auto;
-  padding: 1.2vh;
+  padding: 1vh;
   opacity: 0;
   text-align: center;
 }
@@ -1025,7 +1031,7 @@ export default {
   padding: 1vh;
   height: auto;
   opacity: 0;
-  font-size: 3vh;
+  font-size: 2.3vh;
 }
 .text-box p {
   margin-bottom: 1vh;
