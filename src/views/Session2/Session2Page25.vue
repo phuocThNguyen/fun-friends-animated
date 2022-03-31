@@ -1361,12 +1361,13 @@
         </g>
       </svg>
       <div class="star-text">
-        <p><strong>Bright Star Idea</strong></p>
-        <p>Draw a great big happy
-          <br>flower. Inside each
-          <br>petal, draw a picture
-          <br>of something that
-          <br>makes you happy.</p>
+        <p><strong>Ugens lysende
+          stjerne idé</strong></p>
+        <p>Tegn en kæmpe stor
+          <br>glad blomst. Tegn et
+          <br>billede af noget der gør
+          <br>dig glad i de enkelte
+          <br>blomsterblade.</p>
       </div>
     </div>
     <drawing-canvas class="canvas" :canvasStyle="canvasStyle"/>
@@ -1470,7 +1471,7 @@ export default {
   margin-top: 18%;
 }
 .star-text p {
-  font-size: 3.5vh;
+  font-size: 3vh;
 }
 .star-text p:first-child {
   margin-bottom: 0;

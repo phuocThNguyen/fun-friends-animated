@@ -2,14 +2,15 @@
   <div class="interactive-container">
     <img class="image" src="../../assets/images/session2/11-resized.jpg" alt="sad">
     <div class="text-box">
-      <h1>Feelings</h1>
-      <p>What do you do when you feel angry, worried, happy or sad?</p>
-      <p>Get into a group and act out one feeling.</p>
-      <p>Don't say what feeling you are doing, let your classmates
-      guess and then guess what feeling they are acting out!</p>
-      <p>Try using a role-play mask!</p>
+      <h1>Følelser</h1>
+      <p>Hvad gør du, når du føler dig vred, bekymret, glad eller trist?</p>
+      <p>Gå sammen i en gruppe og lav et rollespil over et følelsesord I selv har valgt.</p>
+      <p>Husk ikke at fortælle hvilket følelsesord det er I har valgt.
+        Lad jeres klassekammerater gætte og derefter vær med til at gætte hvilket
+        følelsesord de har valgt til deres rollespil.</p>
+      <p>Du kan evt. bruge en rollespilsmaske! </p>
 
-      <p class="extra-box">All feelings are OK!</p>
+      <p class="extra-box">Alle følelser er OK.</p>
     </div>
     <audio src="../../assets/sounds/session2/Session2_Page3.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">48</div>
@@ -32,23 +33,23 @@ export default {
         .add({
           targets: para[1],
           color: "#000",
-        }, 1697)
+        }, 1)
         .add({
           targets: para[2],
           color: "#000"
-        }, 8180)
+        }, 1)
         .add({
           targets: para[3],
           color: "#000"
-        }, 11800)
+        }, 1)
         .add({
           targets: para[4],
           color: "#000"
-        },19600)
+        },1)
         .add({
           targets: para[5],
           opacity: 1
-        }, 21700)
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -75,11 +76,11 @@ export default {
 }
 .text-box h1 {
   font-weight: bold;
-  font-size: 8vh;
+  font-size: 4vh;
   margin-bottom: .5vh;
 }
 .text-box p {
-  font-size: 4vh;
+  font-size: 3vh;
   margin-bottom: 1vh;
   color: #ffffff;
 }
@@ -88,9 +89,9 @@ export default {
   background-color: #00ce7c;
   opacity: 0;
   font-weight: bold;
-  font-size: 4vh !important;
+  font-size: 3vh !important;
   padding: 2vh;
   text-align: center;
-  margin-top: 2vh;
+  margin-top: 13vh;
 }
 </style>

@@ -1,25 +1,27 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>Additional Activity - Guess The Feelings</h1>
-      <p>Zoe, Daniel and Matilda feel different feelings in different situations.
-        All feelings are OK. What we choose to do with our feelings is important.
-        What feelings may the children be experiencing? What makes you feel this way?</p>
+      <h1>Ekstra aktivitet - "Gæt en følelse"</h1>
+      <p>Ella, Daniel og Mathilde oplever / mærker forskellige følelser
+        i forskellige situationer. Alle følelser er OK. Det er det vi vælger
+        at gøre med vores følelser der er det vigtige. Vi kan træffe “thumbs down”
+        valg og “thumbs up” valg. Hvilke følelser tror du børnene oplever? Hvad får
+        dig til at føle dig sådan?</p>
     </div>
     <img src="../../assets/images/session2/Happy_Boy-resized.jpg" alt="happy" class="image" id="left">
     <img src="../../assets/images/session2/Worried_Girl-resized.jpg" alt="worried" class="image" id="right">
 
     <div class="content-container" id="content-left">
-      <h1>What could he be feeling?</h1>
+      <h1>Hvad tror du at han føler?</h1>
       <div class="emotes-container">
         <emote-tear class="emotes incorrect"/>
         <emote-happy class="emotes"/>
         <emote-worried class="emotes incorrect"/>
       </div>
       <div class="tips-container">
-        <p class="incorrect" id="tip-1-left">Sad</p>
-        <p id="tip-2-left">Happy</p>
-        <p class="incorrect" id="tip-3-left">Worried</p>
+        <p class="incorrect" id="tip-1-left">Trist</p>
+        <p id="tip-2-left">Glad</p>
+        <p class="incorrect" id="tip-3-left">Bekymret</p>
       </div>
       <div class="answer-container">
         <svg class="small-tick" id="red-tick-1-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.98 92.25">
@@ -69,16 +71,16 @@
       </div>
     </div>
     <div class="content-container" id="content-right">
-      <h1>What could she be feeling?</h1>
+      <h1>Hvad tror du at hun føler?</h1>
       <div class="emotes-container">
         <emote-worried class="emotes"/>
         <emote-angry class="emotes incorrect-2"/>
         <emote-cool class="emotes incorrect-2"/>
       </div>
       <div class="tips-container">
-        <p id="tip-1-right">Worried</p>
-        <p class="incorrect-2" id="tip-2-right">Angry</p>
-        <p class="incorrect-2" id="tip-3-right">Relaxing</p>
+        <p id="tip-1-right">Bekymret</p>
+        <p class="incorrect-2" id="tip-2-right">Vred</p>
+        <p class="incorrect-2" id="tip-3-right">Afslappet</p>
       </div>
       <div class="answer-container">
         <svg class="small-tick" id="green-tick-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.98 92.25">
@@ -389,19 +391,19 @@ export default {
 }
 .text-box {
   position: absolute;
-  width: 86%;
+  width: calc(0.86*133vh);
   bottom: 8%;
-  left: 7%;
+  left: calc(0.08*133vh);
   padding: 0 1vh;
 }
 .text-box h1 {
-  font-size: 5vh;
+  font-size: 4vh;
   margin: 1vh 0 0 0;
   opacity: 0;
   text-align: center;
 }
 .text-box p {
-  font-size: 3.5vh;
+  font-size: 2.8vh;
   opacity: 0;
 }
 .masks-container {
@@ -431,7 +433,7 @@ export default {
   font-weight: bold;
   margin-bottom: 0;
   display: inline-block;
-  width: 9.8vh;
+  width: 13vh;
 }
 .content-container {
   position: absolute;

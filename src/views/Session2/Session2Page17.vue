@@ -1,7 +1,8 @@
 <template>
   <div class="interactive-container">
     <img src="../../assets/images/session2/46933-resized.jpg" alt="background" class="session-background">
-    <div class="text-box">We are kind when we pay attention to the teacher.</div>
+    <div class="text-box">Vi er omsorgsfulde når vi udviser
+      <br>opmærksomhed overfor vores lærer / pædagog.</div>
     <audio src="../../assets/sounds/session2/Session2_Page16.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">62</div>
   </div>
@@ -38,12 +39,12 @@ export default {
   position: absolute;
   background-color: #00ce7c;
   color: #ffffff;
-  padding: 1.5vh;
+  padding: 1vh;
   text-align: center;
-  bottom: 5vh;
-  width: calc(0.8*133vh);
-  left: calc(0.1*133vh);
-  font-size: 4.5vh;
+  bottom: 6vh;
+  width: calc(0.6*133vh);
+  left: calc(0.2*133vh);
+  font-size: 3.3vh;
   font-weight: bold;
   opacity: 0;
 }

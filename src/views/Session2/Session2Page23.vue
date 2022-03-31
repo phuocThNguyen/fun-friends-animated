@@ -1348,16 +1348,16 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try Everyday</h1>
-      <p>Play a guessing game with your family.
-        One person acts out a feeling while everyone else tries to guess the feeling.
-        Take turns making up stories to go with the feelings.</p>
-      <p>Speak with your family about what they do
-        to calm down when they are worried, sad or angry.</p>
-      <p>Practise being BRAVE:</p>
-      <p>&nbsp;&nbsp;-&nbsp;Look people in the eye and smile.</p>
-      <p>&nbsp;&nbsp;-&nbsp;Use a brave voice and stand up tall.</p>
-      <p>&nbsp;&nbsp;-&nbsp;Try your best and give it a go.</p>
+      <h1>Prøv dagligt</h1>
+      <p>Leg en gætteleg med din familie. Én person kan lave et lille rollespil
+        ved at vise en følelse som de andre skal gætte. I kan også skiftes til
+        at opdigte historier som passer til følelserne.</p>
+      <p>Tal med din familie om hvad de gør, som hjælper dem med at falde til ro,
+        når de er bekymrede, triste / kede af det, eller vrede.</p>
+      <p>Øv dig dagligt på at være MODIG:</p>
+      <p>&nbsp;&nbsp;-&nbsp;Kig folk i øjnene og smil.</p>
+      <p>&nbsp;&nbsp;-&nbsp;Brug en modig stemme og stå med rank ryg.</p>
+      <p>&nbsp;&nbsp;-&nbsp;Prøv at gøre dit bedste og give tingene et forsøg.</p>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
     <audio src="../../assets/sounds/session2/Session2_Page21.mp3" ref="voice"/>
@@ -1381,31 +1381,31 @@ export default {
         .add({
           targets: ".text-box",
           opacity: 1,
-        }, 692)
+        }, 1)
         .add({
           targets: text[1],
           opacity: 1,
-        }, 3225)
+        }, 1)
         .add({
           targets: text[2],
           opacity: 1,
-        }, 16250)
+        }, 1)
         .add({
           targets: text[3],
           opacity: 1,
-        }, 24873)
+        }, 1)
         .add({
           targets: text[4],
           opacity: 1
-        }, 26973)
+        }, 1)
         .add({
           targets: text[5],
           opacity: 1
-        }, 29774)
+        }, 1)
         .add({
           targets: text[6],
           opacity: 1
-        }, 33029)
+        }, 1)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
@@ -1436,11 +1436,11 @@ export default {
 .text-box h1 {
   text-align: center;
   margin-bottom: 1vh;
-  font-size: 7vh;
+  font-size: 5vh;
 }
 .text-box p {
   margin-bottom: 3vh;
-  font-size: 4vh;
+  font-size: 3.5vh;
   opacity: 0;
 }
 .text-box p:nth-child(4),

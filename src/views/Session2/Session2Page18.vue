@@ -2,11 +2,15 @@
   <div class="interactive-container">
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
     <div class="text-box">
-      <h1>A Tree With 'Feelings'</h1>
-      <p>Make one tree with your friends. You can do this by drawing, creating, planting,
-       or finding one outside, or using your bodies to build one!</p>
-      <p>Draw or write down one feeling you have had and act it out in a group.</p>
-      <p>When and why did you feel this way? <strong>All feelings are OK.</strong></p>
+      <h1>Et træ med "følelses" cirkler</h1>
+      <p>Lav et træ med dine venner. I kan gøre det ved at tegne, kreere,
+        eller plante et træ. I kan også vælge at finde et træ udenfor
+        eller bruge jeres kroppe til at danne træet!</p>
+      <p>Tegn eller tal om en følelse I hver især har haft, sæt dem fast
+        på træet, og hvis I har lyst kan I lave et lille rollespil over
+        jeres følelser for de andre i gruppen.</p>
+      <p>Hvornår har I oplevet den følelse /
+        haft det på den måde? Og hvorfor? <strong>Alle følelser er OK.</strong></p>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/no-copyright-music-funny-children-kids-music-by-mokka-kids.mp3"/>
     <audio src="../../assets/sounds/session2/Session2_Page17.mp3" ref="voice"/>
@@ -93,11 +97,11 @@ export default {
   opacity: 0;
 }
 .text-box h1 {
-  font-size: 5vh;
+  font-size: 4.5vh;
   margin-bottom: 1vh;
 }
 .text-box p {
-  font-size: 3.3vh;
+  font-size: 2.7vh;
   margin-bottom: 0;
   opacity: 0;
 }

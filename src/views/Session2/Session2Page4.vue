@@ -7,29 +7,28 @@
       <img src="../../assets/images/session2/607-resized.jpg" alt="happy" />
     </div>
     <div class="text-box">
-      Drag each feeling onto the correct face.
-      The green tick will appear when the answer is correct.
+      Placer hver følelse på det rigtige ansigt med musen eller din finger.
     </div>
 
     <draggable class="emotions" id="emotions-source" v-model="emotions" group="emotions">
-      <div class="emotions-item" v-for="(emotion, index) in emotions" v-bind:id="emotion" :key="index">{{emotion}}</div>
+      <div class="emotions-item" v-for="(emotion, index) in emotions" v-bind:id="emotion.id" :key="index">{{emotion.name}}</div>
     </draggable>
     <draggable class="emotions" @change="updateSadEmotion" id="emotion-sad" v-model="emotionSad" group="emotions">
-      <div class="emotions-item" v-for="(emotion, index) in emotionSad" v-bind:id="emotion" :key="index">{{emotion}}</div>
+      <div class="emotions-item" v-for="(emotion, index) in emotionSad" v-bind:id="emotion.id" :key="index">{{emotion.name}}</div>
     </draggable>
-    <div class="emotions-item mask" id="mask-sad">Sad</div>
+    <div class="emotions-item mask" id="mask-sad">Trist/Ked af det</div>
     <draggable class="emotions" @change="updateAngryEmotion" id="emotion-angry" v-model="emotionAngry" group="emotions">
-      <div class="emotions-item" v-for="(emotion, index) in emotionAngry" v-bind:id="emotion" :key="index">{{emotion}}</div>
+      <div class="emotions-item" v-for="(emotion, index) in emotionAngry" v-bind:id="emotion.id" :key="index">{{emotion.name}}</div>
     </draggable>
-    <div class="emotions-item mask" id="mask-angry">Angry</div>
+    <div class="emotions-item mask" id="mask-angry">Vred</div>
     <draggable class="emotions" @change="updateWorriedEmotion" id="emotion-worried" v-model="emotionWorried" group="emotions">
-      <div class="emotions-item" v-for="(emotion, index) in emotionWorried" v-bind:id="emotion" :key="index">{{emotion}}</div>
+      <div class="emotions-item" v-for="(emotion, index) in emotionWorried" v-bind:id="emotion.id" :key="index">{{emotion.name}}</div>
     </draggable>
-    <div class="emotions-item mask" id="mask-worried">Worried</div>
+    <div class="emotions-item mask" id="mask-worried">Bekymret</div>
     <draggable class="emotions" @change="updateHappyEmotion" id="emotion-happy" v-model="emotionHappy" group="emotions">
-      <div class="emotions-item" v-for="(emotion, index) in emotionHappy" v-bind:id="emotion" :key="index">{{emotion}}</div>
+      <div class="emotions-item" v-for="(emotion, index) in emotionHappy" v-bind:id="emotion.id" :key="index">{{emotion.name}}</div>
     </draggable>
-    <div class="emotions-item mask" id="mask-happy">Happy</div>
+    <div class="emotions-item mask" id="mask-happy">Glad</div>
 
     <div class="emotions-mask"></div>
 
@@ -293,7 +292,11 @@ export default {
   },
   data() {
     return {
-      emotions: [ 'Happy', 'Worried', 'Sad', 'Angry' ],
+      emotions: [
+        {name:'Glad', id:'Happy'},
+        {name:'Bekymret', id:'Worried'},
+        {name:'Trist/Ked af det', id:'Sad'},
+        {name:'Vred', id:'Angry'}],
       emotionSad: [],
       emotionHappy: [],
       emotionAngry: [],
@@ -335,8 +338,9 @@ export default {
     },
     updateSadEmotion(args) {
       if (args.added) {
-        let item = args.added.element;
-        if (item !== 'Sad') {
+        let item = JSON.parse(JSON.stringify(args.added.element));
+        let answer = {name:'Trist/Ked af det', id:'Sad'}
+        if (!this.equals(item, answer)) {
           this.emotionSad.pop();
           this.emotions.push(item);
           this.animateWrongAnswer('#red-tick-1')
@@ -351,8 +355,9 @@ export default {
     },
     updateAngryEmotion(args) {
       if (args.added) {
-        let item = args.added.element;
-        if (item !== 'Angry') {
+        let item = JSON.parse(JSON.stringify(args.added.element));
+        let answer = {name:'Vred', id:'Angry'};
+        if (!this.equals(item, answer)) {
           this.emotionAngry.pop();
           this.emotions.push(item);
           this.animateWrongAnswer('#red-tick-2')
@@ -367,8 +372,9 @@ export default {
     },
     updateWorriedEmotion(args) {
       if (args.added) {
-        let item = args.added.element;
-        if (item !== 'Worried') {
+        let item = JSON.parse(JSON.stringify(args.added.element));
+        let answer = {name:'Bekymret', id:'Worried'};
+        if (!this.equals(item, answer)) {
           this.emotionWorried.pop();
           this.emotions.push(item);
           this.animateWrongAnswer('#red-tick-3')
@@ -383,8 +389,9 @@ export default {
     },
     updateHappyEmotion(args) {
       if (args.added) {
-        let item = args.added.element;
-        if (item !== 'Happy') {
+        let item = JSON.parse(JSON.stringify(args.added.element));
+        let answer = {name:'Glad', id:'Happy'};
+        if (!this.equals(item, answer)) {
           this.emotionHappy.pop();
           this.emotions.push(item);
           this.animateWrongAnswer('#red-tick-4')
@@ -403,7 +410,7 @@ export default {
         targets: '.emotions-mask',
         translateY: 0.4 * vh,
         duration: 2500,
-        delay: 12309,
+        delay: 1,
         easing: 'linear'
       })
     },
@@ -419,7 +426,18 @@ export default {
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
-    }
+    },
+    equals (a, b) {
+      if (a === b) return true;
+      if (a instanceof Date && b instanceof Date)
+        return a.getTime() === b.getTime();
+      if (!a || !b || (typeof a !== 'object' && typeof b !== 'object'))
+        return a === b;
+      if (a.prototype !== b.prototype) return false;
+      const keys = Object.keys(a);
+      if (keys.length !== Object.keys(b).length) return false;
+      return keys.every(k => this.equals(a[k], b[k]));
+    },
   },
   mounted() {
     this.animateText();
@@ -447,13 +465,13 @@ export default {
 }
 .text-box {
   position: absolute;
-  font-size: 4vh;
+  font-size: 3vh;
   background-color: rgba(0, 206, 124, 0.9);
   top: 1vh;
   left: 1%;
   color: #ffffff;
-  width: 25%;
-  padding: .5vh 1vh;
+  width: 28%;
+  padding: 1vh;
 }
 .tick {
   position: absolute;
@@ -516,8 +534,8 @@ export default {
   z-index: 10;
 }
 .emotions-item {
-  font-size: 4vh;
-  padding: .5vh;
+  font-size: 3vh;
+  padding: 1vh;
   text-align: center;
   color: #ffffff;
   background-color: #00ce7c;

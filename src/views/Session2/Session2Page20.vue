@@ -4,16 +4,16 @@
     <img src="../../assets/images/session2/Sad_Girl-resized.jpg" alt="sad" class="image" id="right">
 
     <div class="content-container" id="content-left">
-      <h1>What could they be feeling?</h1>
+      <h1>Hvad tror du at de føler?</h1>
       <div class="emotes-container">
         <emote-crying class="emotes incorrect"/>
         <emote-happy class="emotes"/>
         <emote-worried class="emotes incorrect"/>
       </div>
       <div class="tips-container">
-        <p class="incorrect" id="tip-1-left">Sad</p>
-        <p id="tip-2-left">Happy</p>
-        <p class="incorrect" id="tip-3-left">Worried</p>
+        <p class="incorrect" id="tip-1-left">Trist</p>
+        <p id="tip-2-left">Glad</p>
+        <p class="incorrect" id="tip-3-left">Bekymret</p>
       </div>
       <div class="answer-container">
         <svg class="small-tick" id="red-tick-1-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.98 92.25">
@@ -63,16 +63,16 @@
       </div>
     </div>
     <div class="content-container" id="content-right">
-      <h1>What could she be feeling?</h1>
+      <h1>Hvad tror du at hun føler?</h1>
       <div class="emotes-container">
         <emote-angry class="emotes incorrect-2"/>
         <emote-happy class="emotes incorrect-2"/>
         <emote-worried class="emotes"/>
       </div>
       <div class="tips-container">
-        <p class="incorrect-2" id="tip-1-right">Angry</p>
-        <p class="incorrect-2" id="tip-2-right">Happy</p>
-        <p id="tip-3-right">Worried</p>
+        <p class="incorrect-2" id="tip-1-right">Vred</p>
+        <p class="incorrect-2" id="tip-2-right">Glad</p>
+        <p id="tip-3-right">Bekymret</p>
       </div>
       <div class="answer-container">
         <svg class="small-tick" id="red-tick-1-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.98 92.25">
@@ -396,7 +396,7 @@ export default {
   font-weight: bold;
   margin-bottom: 0;
   display: inline-block;
-  width: 9.8vh;
+  width: 13vh;
 }
 .content-container {
   position: absolute;

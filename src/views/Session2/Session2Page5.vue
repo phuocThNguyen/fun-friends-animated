@@ -1,26 +1,27 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>'Feeling' faces</h1>
-      <p>Sit with a friend and look at the 'Feeling' faces.</p>
-      <p>What could they be feeling?</p>
-      <p>Take turns and make sure to listen to your friend.
-        <br>Remember, we all think differently.</p>
+      <h1>"Følelses" ansigter</h1>
+      <p>Sæt dig sammen med en ven(inde) og kik på alle "Følelses"
+        ansigterne på de næste sider.</p>
+      <p>Hvad tror du at børnene føler?</p>
+      <p>Svar på skift, og sørg for at lytte til hinanden.
+        <br>Husk at vi alle tænker forskelligt.</p>
     </div>
-    <div class="text">Nina has gifts for her family.</div>
+    <div class="text">Nina har gaver med til sin familie.</div>
     <img src="../../assets/images/session2/5772.png" alt="Nina" class="image">
     <emotion-pick-instruction class="instruction"/>
     <div class="content-container" id="content-left">
-      <h1>What could she be feeling?</h1>
+      <h1>Hvad tror du at hun føler?</h1>
       <div class="emotes-container">
         <emote-angry class="emotes incorrect"/>
         <emote-happy class="emotes"/>
         <emote-sad class="emotes incorrect"/>
       </div>
       <div class="tips-container">
-        <p class="incorrect" id="tip-1-left">Angry</p>
-        <p id="tip-2-left">Happy</p>
-        <p class="incorrect" id="tip-3-left">Sad</p>
+        <p class="incorrect" id="tip-1-left">Vred</p>
+        <p id="tip-2-left">Glad</p>
+        <p class="incorrect" id="tip-3-left">Trist</p>
       </div>
       <div class="answer-container">
         <svg class="small-tick" id="red-tick-1-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.98 92.25">
@@ -259,13 +260,13 @@ export default {
         duration: 500,
       });
       animation
-        .add({targets: '.text-box', opacity: 1}, 567)
-        .add({targets: text[1], opacity: 1}, 1976)
-        .add({targets: text[2], opacity: 1}, 5841)
-        .add({targets: text[3], opacity: 1}, 7682)
-        .add({targets: '.instruction', opacity: 1}, 14831)
-        .add({targets: '.text', opacity: 1}, 23344)
-        .add({targets: '.content-container', opacity: 1}, 26344)
+        .add({targets: '.text-box', opacity: 1}, 1)
+        .add({targets: text[1], opacity: 1}, 1)
+        .add({targets: text[2], opacity: 1}, 1)
+        .add({targets: text[3], opacity: 1}, 1)
+        .add({targets: '.instruction', opacity: 1}, 1)
+        .add({targets: '.text', opacity: 1}, 1)
+        .add({targets: '.content-container', opacity: 1}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -315,23 +316,23 @@ export default {
   color: #000000;
 }
 .text-box h1 {
-  font-size: 6vh;
+  font-size: 4vh;
   margin-bottom: 1vh;
 }
 .text-box p {
-  font-size: 4vh;
+  font-size: 3vh;
   margin-bottom: 1vh;
   opacity: 0;
 }
 .text {
   position: absolute;
   bottom: 1vh;
-  right: 14vh;
+  right: 13vh;
   background-color: #00ce7c;
   color: #ffffff;
   opacity: 0;
   padding: 1vh 2.1vh;
-  font-size: 3.5vh;
+  font-size: 3vh;
   font-weight: bold;
   z-index: 10;
 }

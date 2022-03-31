@@ -1,9 +1,9 @@
 <template>
   <div class="instruction-container">
-    <p>Instruction:</p>
-    <p>- Tap on the correct feeling face.</p>
-    <p>- The green tick will appear when</p>
-    <p>you choose the correct answer
+    <p>Instruktion:</p>
+    <p>- Tryk på den rigtige følelse.</p>
+    <p>- Det grønne flueben vises når</p>
+    <p>du vælger det rigtige svar
     <span>
       <svg class="tiny-tick" id="green-tick-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.98 92.25">
       <g class="cls-1-green-mark">

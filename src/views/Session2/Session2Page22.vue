@@ -4,16 +4,16 @@
     <img src="../../assets/images/session2/514-resized.jpg" alt="angry" class="image" id="right">
 
     <div class="content-container" id="content-left">
-      <h1>What could he be feeling?</h1>
+      <h1>Hvad tror du at han føler?</h1>
       <div class="emotes-container">
         <emote-happy class="emotes incorrect"/>
         <emote-angry class="emotes"/>
         <emote-cool class="emotes incorrect"/>
       </div>
       <div class="tips-container">
-        <p class="incorrect" id="tip-1-left">Happy</p>
-        <p id="tip-2-left">Angry</p>
-        <p class="incorrect" id="tip-3-left">Relaxed</p>
+        <p class="incorrect" id="tip-1-left">Glad</p>
+        <p id="tip-2-left">Vred</p>
+        <p class="incorrect" id="tip-3-left">Afslappet</p>
       </div>
       <div class="answer-container">
         <svg class="small-tick" id="red-tick-1-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.98 92.25">
@@ -63,16 +63,16 @@
       </div>
     </div>
     <div class="content-container" id="content-right">
-      <h1>What could he be feeling?</h1>
+      <h1>Hvad tror du at han føler?</h1>
       <div class="emotes-container">
         <emote-angry class="emotes incorrect-2"/>
         <emote-cool class="emotes incorrect-2"/>
         <emote-crying class="emotes"/>
       </div>
       <div class="tips-container">
-        <p class="incorrect-2" id="tip-1-right">Angry</p>
-        <p class="incorrect-2" id="tip-2-right">Relaxed</p>
-        <p id="tip-3-right">Sad</p>
+        <p class="incorrect-2" id="tip-1-right">Vred</p>
+        <p class="incorrect-2" id="tip-2-right">Afslappet</p>
+        <p id="tip-3-right">Trist</p>
       </div>
       <div class="answer-container">
         <svg class="small-tick" id="red-tick-1-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.98 92.25">
@@ -317,11 +317,11 @@ export default {
         .add({
           targets: '#content-left',
           opacity: 1,
-        }, 544)
+        }, 1)
         .add({
           targets: '#content-right',
           opacity: 1
-        }, 7039)
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -384,7 +384,7 @@ export default {
   font-weight: bold;
   margin-bottom: 0;
   display: inline-block;
-  width: 9.8vh;
+  width: 13vh;
 }
 .content-container {
   position: absolute;

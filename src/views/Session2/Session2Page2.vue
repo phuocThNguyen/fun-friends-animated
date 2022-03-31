@@ -196,10 +196,19 @@
       </g>
     </svg>
 
-    <p class="title"><span id="letter-f">F</span>eelings</p>
-    <p class="text" id="line-1">Today, we will think about our feelings and the feelings of others.
-      We will also talk about how to make happy feelings GROW!</p>
-    <p class="text" id="line-2">All feelings are OK!</p>
+    <p class="title"><span id="letter-f">F</span>eelings (Følelser)</p>
+    <p class="text" id="line-1">I denne uge skal du lære om din egne og andres følelser.
+      <br>Vi kommer til at tale om hvordan man får de glade følelser til at VOKSE!
+    </p>
+    <p class="text" id="line-2">Alle følelser er OK. Det er det vi gør med vores følelser, der enten er
+      <br>hjælpsomt eller ikke-hjælpsomt. At slå, skrige, ødelægge ting, og at gøre andre ondt er ikke
+      <br>OK (de udgør “thumbs down” valg). At motionere, kramme, tegne, kommunikere, kreere, bruge
+      <br>en boksebold, og det at lytte, er alle OK, når man skal falde til ro (de udgør “thumbs up” valg).
+    </p>
+    <p class="text" id="line-3">Alle følelser er OK, og det er vigtigt at tænke over hvordan vi opfører os, når vi har forskellige
+      <br>følelser. For eksempel: når du føler dig vred kunne du prøve at bruge et “thumbs up” valg,
+      <br>såsom den dybe vejrtrækning, eller det at sjippe, eller slå på en boksebold. Valget er dit.
+    </p>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3"/>
     <audio src="../../assets/sounds/session2/Session2_Page2.mp3" ref="voice"/>
@@ -263,15 +272,19 @@ export default {
         .add({
           targets: ".title",
           opacity: 1,
-        }, 954)
+        }, 1)
         .add({
           targets: "#line-1",
           color: '#000',
-        }, 3028)
+        }, 1)
         .add({
           targets: "#line-2",
           color: '#000'
-        }, 13233)
+        }, 1)
+        .add({
+          targets: "#line-3",
+          color: '#000'
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -291,11 +304,11 @@ export default {
   font-family: 'Sigmar One', cursive;
   position: absolute;
   color: white;
-  font-size: 12vh;
+  font-size: 8vh;
   -webkit-text-stroke: 0.1vw black;
   width: 100%;
   text-align: center;
-  top: 26vh;
+  top: 23vh;
   opacity: 0;
 }
 #letter-f {
@@ -310,16 +323,22 @@ export default {
   text-align: center;
   width: 98%;
   left: 1%;
-  top: 42vh;
-  font-size: 4.8vh;
+  top: 33vh;
+  font-size: 2.8vh;
 }
 #line-2 {
   text-align: center;
   width: 90%;
-  top: 57vh;
+  top: 43vh;
   left: 5%;
-  font-weight: bold;
-  font-size: 6vh;
+  font-size: 2.8vh;
+}
+#line-3 {
+  text-align: center;
+  width: 90%;
+  top: 62vh;
+  left: 5%;
+  font-size: 2.8vh;
 }
 span {
   display: inline-block;
@@ -375,16 +394,16 @@ tspan { white-space:pre }
 }
 .big-cloud {
   position: absolute;
-  width: 110%;
+  width: 130%;
   height: auto;
-  top: 16vh;
-  left: -5%;
+  top: 12vh;
+  left: -15%;
 }
 .long-cloud {
   width: 130%;
   height: auto;
   position: absolute;
-  bottom: -7vh;
+  bottom: -9vh;
   left: -12%;
   z-index: 50;
 }

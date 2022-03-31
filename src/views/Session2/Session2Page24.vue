@@ -1348,16 +1348,16 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Everyday remember to:</h1>
-      <p>&nbsp;- Be kind to all living beings.</p>
-      <p>&nbsp;- Play outside.</p>
-      <p>&nbsp;- Have plenty of sleep.</p>
-      <p>&nbsp;- Drink plenty of water.</p>
-      <p>&nbsp;- Eat healthy foods.</p>
-      <p>&nbsp;- Practise relaxing without screens.</p>
-      <p>&nbsp;- Pay attention to happy things and what you
-      can see, hear, smell, taste and feel.</p>
-      <p>&nbsp;- Say thank you for happy times.</p>
+      <h1>Husk at:</h1>
+      <p>&nbsp;- være omsorgsfuld overfor alle levende væsener</p>
+      <p>&nbsp;- kom ud og leg</p>
+      <p>&nbsp;- få rigeligt med søvn</p>
+      <p>&nbsp;- drikke og spise sunde madvarer</p>
+      <p>&nbsp;- spise sund mad</p>
+      <p>&nbsp;- øve dig på at afspænde / slappe af uden skærme</p>
+      <p>&nbsp;- udvise opmærksomhed overfor det der bringer glæde,
+        og det du kan se, høre, lugte / dufte, smage og føle / mærke</p>
+      <p>&nbsp;- sige tak for de glade stunder.</p>
     </div>
     <div class="image-container">
       <img class="action-image" src="../../assets/images/introduction/Koala_Child_Hugging.jpg" alt="kind-to-animals">
@@ -1392,71 +1392,71 @@ export default {
         .add({
           targets: ".text-box",
           opacity: 1,
-        }, 581)
+        }, 1)
         .add({
           targets: texts[1],
           opacity: 1,
-        }, 3238)
+        }, 1)
         .add({
           targets: images[0],
           opacity: 1,
-        }, 3238)
+        }, 1)
         .add({
           targets: texts[2],
           opacity: 1,
-        }, 6119)
+        }, 1)
         .add({
           targets: images[1],
           opacity: 1,
-        }, 6119)
+        }, 1)
         .add({
           targets: texts[3],
           opacity: 1,
-        }, 7639)
+        }, 1)
         .add({
           targets: images[2],
           opacity: 1,
-        }, 7639)
+        }, 1)
         .add({
           targets: texts[4],
           opacity: 1,
-        }, 9700)
+        }, 1)
         .add({
           targets: images[3],
           opacity: 1,
-        }, 9700)
+        }, 1)
         .add({
           targets: texts[5],
           opacity: 1,
-        }, 11900)
+        }, 1)
         .add({
           targets: images[4],
           opacity: 1,
-        }, 11900)
+        }, 1)
         .add({
           targets: texts[6],
           opacity: 1,
-        }, 14102)
+        }, 1)
         .add({
           targets: images[5],
           opacity: 1,
-        }, 14102)
+        }, 1)
         .add({
           targets: texts[7],
           opacity: 1,
-        }, 17570)
+        }, 1)
         .add({
           targets: images[6],
           opacity: 1,
-        }, 17570)
+        }, 1)
         .add({
           targets: texts[8],
           opacity: 1,
-        }, 26630)
+        }, 1)
         .add({
           targets: images[7],
           opacity: 1,
-        }, 26630)
+        }, 1)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
@@ -1499,11 +1499,11 @@ export default {
 }
 .text-box h1 {
   margin-bottom: 1vh;
-  font-size: 5vh;
+  font-size: 4vh;
 }
 .text-box p {
   margin-bottom: 1vh;
-  font-size: 3.8vh;
+  font-size: 3vh;
   opacity: 0;
 }
 .landscape {

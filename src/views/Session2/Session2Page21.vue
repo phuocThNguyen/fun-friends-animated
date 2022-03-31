@@ -4,16 +4,16 @@
     <img src="../../assets/images/session2/smiley-little-girl-red-dress.jpg" alt="happy" class="image" id="right">
 
     <div class="content-container" id="content-left">
-      <h1>What could he be feeling?</h1>
+      <h1>Hvad tror du at han føler?</h1>
       <div class="emotes-container">
         <emote-angry class="emotes"/>
         <emote-happy class="emotes incorrect"/>
         <emote-worried class="emotes incorrect"/>
       </div>
       <div class="tips-container">
-        <p id="tip-1-left">Angry</p>
-        <p class="incorrect" id="tip-2-left">Happy</p>
-        <p class="incorrect" id="tip-3-left">Worried</p>
+        <p id="tip-1-left">Vred</p>
+        <p class="incorrect" id="tip-2-left">Glad</p>
+        <p class="incorrect" id="tip-3-left">Bekymret</p>
       </div>
       <div class="answer-container">
         <svg class="small-tick" id="green-tick-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.98 92.25">
@@ -63,16 +63,16 @@
       </div>
     </div>
     <div class="content-container" id="content-right">
-      <h1>What could she be feeling?</h1>
+      <h1>Hvad tror du at hun føler?</h1>
       <div class="emotes-container">
         <emote-worried class="emotes incorrect-2"/>
         <emote-happy class="emotes"/>
         <emote-crying class="emotes incorrect-2"/>
       </div>
       <div class="tips-container">
-        <p class="incorrect-2" id="tip-1-right">Worried</p>
-        <p id="tip-2-right">Happy</p>
-        <p class="incorrect-2" id="tip-3-right">Sad</p>
+        <p class="incorrect-2" id="tip-1-right">Bekymret</p>
+        <p id="tip-2-right">Glad</p>
+        <p class="incorrect-2" id="tip-3-right">Trist</p>
       </div>
       <div class="answer-container">
         <svg class="small-tick" id="red-tick-1-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.98 92.25">
@@ -327,11 +327,11 @@ export default {
         .add({
           targets: '#content-left',
           opacity: 1,
-        }, 500)
+        }, 1)
         .add({
           targets: '#content-right',
           opacity: 1
-        }, 6000)
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 0)
@@ -394,7 +394,7 @@ export default {
   font-weight: bold;
   margin-bottom: 0;
   display: inline-block;
-  width: 9.8vh;
+  width: 13vh;
 }
 .content-container {
   position: absolute;

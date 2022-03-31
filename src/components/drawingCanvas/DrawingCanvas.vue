@@ -7,7 +7,7 @@
         <input @change="setColor" type="color" id="color" name="color" value="#000000">
       </div>
       <div class="select-group">
-        <label for="width">Bredde</label>
+        <label for="width">Tykkelse</label>
         <select @change="setWidth" class="form-control" id="set-width" name="width">
           <option value="1">1</option>
           <option selected value="4">4</option>
@@ -17,9 +17,9 @@
           <option value="20">20</option>
         </select>
       </div>
-      <button class="btn-style" @click="undo">fortryde</button>
-      <button class="btn-style" @click="redo">REDO</button>
-      <button class="btn-style" @click="clear">tydelig</button>
+      <button class="btn-style" @click="undo">tilbage</button>
+      <button class="btn-style" @click="redo">Frem</button>
+      <button class="btn-style" @click="clear">Slet alt</button>
 <!--      <button class="btn-style" @click="save">SAVE</button>-->
     </div>
   </div>
@@ -130,7 +130,7 @@ export default {
   height: 5vh;
   border-radius: 5px;
   color: #ffffff;
-  font-size: 2.5vh;
+  font-size: 2.2vh;
   font-weight: bold;
   box-shadow: 0 9px #999;
   text-transform: uppercase;
@@ -167,7 +167,7 @@ label {
   height: 38px;
   line-height: 38px;
   text-align: center;
-  font-size: 2.5vh;
+  font-size: 2.2vh;
   text-transform: uppercase;
 }
 .color {
