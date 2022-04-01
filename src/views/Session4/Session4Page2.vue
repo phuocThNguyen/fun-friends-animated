@@ -23,7 +23,7 @@
           </g>
         </g>
       </svg>
-      <div class="instruction-text">Tap Here</div>
+      <div class="instruction-text">Tryk Her</div>
     </div>
     <div class="mask-container" id="mask-1" @click="displayClues('#mask-1')">
       <svg class="question-mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 613 999" width="613" height="999">
@@ -503,23 +503,23 @@ export default {
         .add({
           targets: text[1],
           opacity: 1
-        }, 2150)
+        }, 1)
         .add({
           targets: text[2],
           opacity: 1
-        }, 5192)
+        }, 1)
         .add({
           targets: text[3],
           opacity: 1
-        }, 7800)
+        }, 1)
         .add({
           targets: textSpan[0],
           color: '#000'
-        }, 7832)
+        }, 1)
         .add({
           targets: '.instruction-container',
           opacity: 1
-        }, 16600)
+        }, 1)
     },
     animateHeartBeat() {
       document.querySelector('.heart').style.opacity = '1';
@@ -689,7 +689,7 @@ export default {
           easing: 'linear'
         });
         this.$refs.voice6.play()
-      }, 5000)
+      }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice1.play()}, 500)
@@ -793,17 +793,17 @@ export default {
   left: 0;
   z-index: 10;
   background-color: #ffffff;
-  width: 48%;
+  width: 35%;
   height: 100%;
   padding: 1vh;
 }
 .text-box h1 {
-  font-size: 6vh;
+  font-size: 4vh;
   font-weight: bold;
   margin-bottom: 2vh;
 }
 .text-box p {
-  font-size: 4vh;
+  font-size: 3vh;
   margin-bottom: 1vh;
   opacity: 0;
 }

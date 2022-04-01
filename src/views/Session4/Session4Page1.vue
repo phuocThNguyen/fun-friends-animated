@@ -197,8 +197,12 @@
     </svg>
 
     <p class="title"><span id="letter-f">R</span>elax (Afspænd & Slap af)</p>
-    <p class="text" id="line-1">I denne uge kommer vi til at tænke over det at være opmærksom på det vores krop fortæller os.</p>
-    <p class="text" id="line-2">Vi kommer til at tale videre om ”boble”vejrtrækning og lege nogle afslappende lege.</p>
+    <p class="text" id="line-1">I denne uge kommer vi til at tænke over det at
+      <br>være opmærksom på det vores krop fortæller os.
+    </p>
+    <p class="text" id="line-2">Vi kommer til at tale videre om
+      <br>”boble”vejrtrækning og lege nogle afslappende lege.
+    </p>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3"/>
     <audio src="../../assets/sounds/session4/Session4_Page1.mp3" ref="voice"/>
@@ -264,15 +268,15 @@ export default {
         .add({
           targets: ".title",
           opacity: 1,
-        }, 6475)
+        }, 1)
         .add({
           targets: "#line-1",
           color: '#000',
-        }, 8719)
+        }, 1)
         .add({
           targets: "#line-2",
           color: '#000'
-        }, 15917)
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -292,9 +296,9 @@ export default {
   font-family: 'Sigmar One', cursive;
   position: absolute;
   color: white;
-  font-size: 12vh;
+  font-size: 7vh;
   -webkit-text-stroke: 0.1vw black;
-  top: 21vh;
+  top: 30vh;
   opacity: 0;
   width: 100%;
   text-align: center;
@@ -305,19 +309,19 @@ export default {
 .text {
   position: absolute;
   margin-bottom: 0;
-  font-size: 6vh;
+  font-size: 4vh;
   color: #ffffff;
-  line-height: 7vh;
+  line-height: 6vh;
 }
 #line-1 {
   text-align: center;
   width: 100%;
-  top: 36vh;
+  top: 40vh;
 }
 #line-2 {
   text-align: center;
   width: 100%;
-  top: 52vh;
+  top: 54vh;
 }
 span {
   display: inline-block;

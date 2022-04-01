@@ -39,11 +39,11 @@ export default {
   bottom: 6vh;
   left: 13%;
   width: 74%;
-  font-size: 4.5vh;
+  font-size: 4vh;
   font-weight: bold;
   background-color: #00ce7c;
   color: #ffffff;
-  padding: 1.4vh;
+  padding: 1vh 1.5vh;
   text-align: center;
   opacity: 0;
 }

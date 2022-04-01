@@ -47,15 +47,18 @@ export default {
 
 <style scoped>
 .text-box {
+  top: -1vh;
   position: absolute;
   padding: 1.5vh;
 }
 .text-box h1 {
-  font-size: 4.9vh;
+  font-size: 4vh;
   font-weight: bold;
-  margin-bottom: 1vh;
+  margin-bottom: .5vh;
 }
-
+.text-box p {
+  font-size: 3vh;
+}
 .images {
   position: absolute;
   width: 49.5%;

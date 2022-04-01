@@ -38,12 +38,12 @@ export default {
   position: absolute;
   top: 2vh;
   left: 2%;
-  width: 25%;
-  font-size: 4.5vh;
+  width: 36vh;
+  font-size: 4vh;
   font-weight: bold;
   background-color: #00ce7c;
   color: #ffffff;
-  padding: 1.4vh;
+  padding: 1vh 1.5vh;
   text-align: center;
   opacity: 0;
 }

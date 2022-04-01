@@ -38,9 +38,9 @@ export default {
   position: absolute;
   top: 5vh;
   left: 5%;
-  padding: 1.5vh;
+  padding: 1vh 1.5vh;
   background-color: rgba(255,255,255,0.95);
-  font-size: 5vh;
+  font-size: 4vh;
   opacity: 0;
 }
 </style>

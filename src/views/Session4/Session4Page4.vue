@@ -5,8 +5,8 @@
     <p class="position-absolute text">Bekymringerne vokser</p>
     <p class="position-absolute text">Ondt i hovedet</p>
     <p class="position-absolute text">Svedig</p>
-    <p class="position-absolute text">Sommerfugle i maven - ikke de gode</p>
-    <p class="position-absolute text">Hurtig vejrtrækning</p>
+    <p class="position-absolute text">Sommerfugle i <br>maven - ikke de <br>gode</p>
+    <p class="position-absolute text">Hurtig <br>vejrtrækning</p>
     <p class="position-absolute text">Svimmel</p>
     <p class="position-absolute text">Gråd</p>
     <p class="position-absolute text">Rød i ansigtet</p>
@@ -98,57 +98,57 @@ export default {
 
 <style scoped>
 .title {
-  font-size: 7vh;
+  font-size: 8vh;
   color: #173368;
-  top: 3vh;
+  top: 0;
   left: 37%;
 }
 .text {
   color: #173368;
-  font-size: 5.2vh;
+  font-size: 6vh;
   margin-bottom: 0;
   opacity: 0;
+  text-align: center;
 }
 .text:nth-of-type(1) {
   top: 10vh;
-  left: 2%;
+  left: 10vh;
 }
 .text:nth-of-type(2) {
   top: 20vh;
-  left: 20%;
+  left: 31vh;
 }
 .text:nth-of-type(3) {
   top: 32vh;
-  left: 5%;
+  left: 16vh;
 }
 .text:nth-of-type(4) {
-  width: 16%;
-  top: 45vh;
-  left: 8%;
+  top: 43vh;
+  left: 9vh;
+  width: 40vh;
 }
 .text:nth-of-type(5) {
-  top: 70vh;
-  left: 3%;
+  top: 72vh;
+  left: 20vh;
 }
 .text:nth-of-type(6) {
-  top: 12vh;
-  right: 20%;
+  top: 10vh;
+  right: 25vh;
 }
 .text:nth-of-type(7) {
   top: 26vh;
-  right: 22%;
+  right: 32vh;
 }
 .text:nth-of-type(8) {
-  top: 38vh;
-  right: 10%;
+  top: 42vh;
+  right: 10vh;
 }
 .text:nth-of-type(9) {
-  top: 52vh;
-  right: 15%;
-  width: 10%;
+  top: 58vh;
+  right: 8vh;
 }
 .text:nth-of-type(10) {
   top: 72vh;
-  right: 4%;
+  right: 6vh;
 }
 </style>

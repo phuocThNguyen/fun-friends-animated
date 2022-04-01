@@ -33,19 +33,19 @@ export default {
         .add({
           targets: text[1],
           opacity: 1,
-        }, 2080)
+        }, 1)
         .add({
           targets: text[2],
           opacity: 1
-        }, 13647)
+        }, 1)
         .add({
           targets: text[3],
           opacity: 1
-        }, 22181)
+        }, 1)
         .add({
           targets: text[4],
           opacity: 1,
-        }, 30603);
+        }, 1);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
