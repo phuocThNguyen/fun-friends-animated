@@ -2,16 +2,17 @@
   <div class="interactive-container">
     <img src="../../assets/images/session11/311.jpg" alt="kids" class="session-background">
     <div class="text-box">
-      <p>Talk about who you think are in Annie's and Tom's
-      Support Teams. Who is in your support team?</p>
-      <p>They could be people from:</p>
-      <p>&bull;&nbsp;School/kindergarten/playgroup</p>
-      <p>&bull;&nbsp;Where you live</p>
-      <p>&bull;&nbsp;Community</p>
-      <p>&bull;&nbsp;Religious/spiritual group</p>
-      <p>&bull;&nbsp;Sporting clubs</p>
-      <p>&bull;&nbsp;Family</p>
-      <p>&bull;&nbsp;Friends</p>
+      <h1>Anna og Niels’ støttehold</h1>
+      <p>Tal om hvem I tror der er med i Annas Støttehold og hvem der er med i
+        Niels’ Støttehold. Hvem er med  i dit støttehold?</p>
+      <p>Det kunne være nogen fra:</p>
+      <p>&bull;&nbsp;Børnehaven / Skolen / SFO</p>
+      <p>&bull;&nbsp;Der hvor du bor</p>
+      <p>&bull;&nbsp;Lokalsamfundet</p>
+      <p>&bull;&nbsp;Et gymnastik- eller sportshold</p>
+      <p>&bull;&nbsp;En forening eller et andet fællesskab</p>
+      <p>&bull;&nbsp;Familien</p>
+      <p>&bull;&nbsp;Venskabskredsen</p>
     </div>
     <audio src="../../assets/sounds/session11/Session11_Page4.mp3" ref="voice"/>
     <div class="page-number" id="page-light">207</div>

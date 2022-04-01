@@ -190,11 +190,11 @@
       </g>
     </svg>
     <div class="text-box">
-      <span>Someone you look up to will help you, care for you
-      and encourage you to try new things.</span>
-      <span> They give things ago.</span><span> How are Tom and
-      Annie being helped in the following pictures?</span>
-      <span> How has somebody helped you?</span>
+      <span>Mange af de mennesker vi ser op til vil gerne hjælpe os,
+        drage omsorg for os, og hjælpe os med at prøve nye ting.</span>
+      <span> De giver tingene et forsøg.</span><span> Hvordan bliver
+      Sofus og Sofie hjulpet på billederne herunder?</span>
+      <span> Hvordan har nogen hjulpet dig?</span>
     </div>
     <audio src="../../assets/sounds/session10/Session10_Page2.mp3" ref="voice"/>
     <div class="page-number" id="page-light">188</div>

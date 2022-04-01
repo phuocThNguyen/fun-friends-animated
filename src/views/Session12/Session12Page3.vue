@@ -1002,12 +1002,11 @@
       </g>
     </svg>
     <div class="text-box">
-      <span>What kind of parties have you had at school or home?</span>
-      <span>Why did you have them? What do you like to do at a party?</span>
-      <span> Try doing your favourite dance or singing your favourite
-      song for a friend!</span><span> If you are at the end of your
-      FUN FRIENDS book, reward yourself with something you like
-      to do!</span>
+      <span>Hvilke slags fester har du været med til i børnehaven / skolen og derhjemme?</span>
+      <span> I hvilken anledning blev de holdt? Hvad kan du li’ at lave når du er til fest?</span>
+      <span> Prøv at udføre din yndlingsdans eller synge din yndlingssang for din ven(inde)!</span>
+      <span> Hvis du er nået til slutningen af din Fun FRIENDS bog så beløn dig selv
+        med noget du kan li’ at lave / gøre!</span>
     </div>
     <audio src="../../assets/sounds/session1/playground.mp3" ref="audio" autoplay loop/>
     <audio src="../../assets/sounds/session12/Session12_Page3.mp3" ref="voice"/>

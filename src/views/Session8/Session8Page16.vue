@@ -183,14 +183,16 @@
         </g>
       </svg>
       <div class="star-text">
-        <p><strong>Bright Star Idea</strong></p>
-        <p>Eat your favourite healthy food
-          <br>really slowly and think about
-          <br>how yummy it tastes. Talk
-          <br>to somebody about what
-          <br>you notice &ndash; what it
-          <br>smells like, what it looks
-          <br>like and how it tastes.
+        <p><strong>Ugens lysende
+          stjerne idé</strong></p>
+        <p>Når du spiser det sunde mad
+          <br>du bedst kan li’, så sørg for at
+          <br>gøre det rigtig langsomt imens
+          <br>du tænker på hvor godt det
+          <br>smager. Tal med nogen om hvad
+          <br>du lægger mærke til - hvordan
+          <br>det ser ud, hvordan det føles, og
+          <br>hvordan det dufter og smager.
         </p>
       </div>
     </div>

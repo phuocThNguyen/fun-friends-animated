@@ -1,7 +1,7 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      Share ideas for fun games you can play at the beach.
+      Del idéer til sjove lege man kan lege på stranden.
     </div>
     <img src="../../assets/images/session8/135443-OSAV8P-846.jpg" alt="Annie" class="images">
     <img src="../../assets/images/session8/135428-OSAV5N-454.jpg" alt="Annie" class="images">

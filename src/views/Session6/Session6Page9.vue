@@ -698,19 +698,15 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try Everyday</h1>
-      <p>&nbsp;&bull; Practise understanding the
-        '<span class="red">red</span>' thoughts and
-        '<span class="green">green</span>' thoughts you
-        and your family have had this week.</p>
-      <p>&nbsp;&bull; Practise changing red thoughts to green thoughts.</p>
-      <p>&nbsp;&bull; Practise relaxing every day for at least 10 minutes.
-        No distractions such as TV!</p>
-      <p>&nbsp;&bull; Practise being BRAVE:</p>
-      <p>&middot; Look people in the eye and smile.</p>
-      <p>&middot; Use a brave voice and make yourself big.</p>
-      <p>&middot; Try your best and give it a go. </p>
-      <p>&middot; Believe in yourself.</p>
+      <h1>Prøv dagligt</h1>
+      <p>&nbsp;&bull; Øv dig henover ugen på at forstå de ”røde” tanker og ”grønne” tanker som du og din familier har. </p>
+      <p>&nbsp;&bull; Øv dig mindst 10 minutter om dagen på afspænding og at slappe af, uden forstyrrelser!</p>
+      <p>&nbsp;&bull; Fortsæt med at rose dit barn for at være MODIG.</p>
+      <p>&nbsp;&bull; Bliv ved med at øve dig på at være MODIG. Øv dig dagligt på at:</p>
+      <p>&middot; Kig folk i øjnene og smil.</p>
+      <p>&middot; Brug en modig stemme og gør dig selv stor.</p>
+      <p>&middot; Prøv at gøre dit bedste og give tingene et forsøg.</p>
+      <p>&middot; Tro på dig selv.</p>
     </div>
     <audio autoplay loop src="../../assets/sounds/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"></audio>
     <audio src="../../assets/sounds/session6/Session6_Page9.mp3" ref="voice"/>

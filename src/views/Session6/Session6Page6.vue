@@ -1,20 +1,17 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>Choosing '<span class="red">Red</span>' and
-        '<span class="green">Green</span>' thoughts:
-        <br>Getting along
-      </h1>
-      <p>Tom, has knocked over Annie’s block
-        building that took her a long time to build.
-        What could Annie be feeling?</p>
-      <p>What are some '<span class="red">red</span>' thoughts?</p>
-      <p>What can Annie do if she is having '<span class="red">red</span>'
-        thoughts? As a group, can you think of some
-        '<span class="green">green</span>' thoughts
-        that could help her calm down?</p>
+      <h1>At vælge ”Røde” eller ”Grønne” tanker: At kunne enes med hinanden</h1>
+      <p>Majas bror, Viktor, har væltet Majas tårn. Hun har brugt lang tid på at
+        bygge tårnet af klodser. Gå sammen med en ven(inde) og forestil jer hvordan
+        Maja har det. Hvad føler hun?</p>
+      <p>Hvad kunne nogle ”røde tanker” være?</p>
+      <p>Hvad kunne Maja gøre, hvis hun har ”røde” tanker? Gå sammen som gruppe og
+        se om I kan komme i tanke om nogle ”grønne” tanker, der vil kunne hjælpe
+        hende med at falde til ro?</p>
 
-      <p>Green thoughts help us be kind.</p>
+      <p>Grønne tanker hjælper os til
+        <br>at være omsorgsfulde og venlige.</p>
     </div>
     <img src="../../assets/images/session5/1890.jpg" alt="red" class="images" id="image-top">
     <img src="../../assets/images/session5/1892.jpg" alt="green" class="images" id="image-bottom">

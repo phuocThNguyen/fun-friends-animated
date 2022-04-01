@@ -2,12 +2,13 @@
   <div class="interactive-container">
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
     <div class="text-box">
-      <p>Talk to your classmates about ideas on how to make
-        new friends. <br>Together, draw or write your ideas in the balloons.
-        Some ideas could be:</p>
-      <p>&bull;&nbsp;&nbsp;Go to play in a park, ride a bike or rollerblade.</p>
-      <p>&bull;&nbsp;&nbsp;Be BRAVE and speak with a new person.</p>
-      <p>&bull;&nbsp;&nbsp;Make a happy drawing to give to your new friend.</p>
+      <p>Tal med dine klassekammerater om idéer til hvordan man danner nye venskaber.
+        Gå sammen og prøv at tegne billeder af jeres idéer eller skriv dine idéer
+        i ballonerne herunder. Nogle idéer kunne være, at:</p>
+      <p>&bull;&nbsp;&nbsp;tage hen et sted hvor der er mulighed for møde andre og lege,
+        cykle eller løbe på rulleskøjter sammen</p>
+      <p>&bull;&nbsp;&nbsp;være MODIG og tal med en ny person</p>
+      <p>&bull;&nbsp;&nbsp;tegne en glad tegning og gi’ det til din ny ven(inde) næste gang I ses.</p>
     </div>
     <audio src="../../assets/sounds/session8/Session8_Page10.mp3" ref="voice"/>
     <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3"></audio>

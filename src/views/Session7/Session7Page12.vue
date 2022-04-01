@@ -37,7 +37,7 @@
         </g>
       </g>
     </svg>
-    <h1 class="title">Coping Step Plan</h1>
+    <h1 class="title">TRAPPESTIGE PLAN</h1>
     <div class="plans" id="step-1">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
@@ -55,7 +55,7 @@
             </g>
           </g>
         </svg>
-        <textarea class="bubble-text" placeholder="Green thought:"/>
+        <textarea class="bubble-text" placeholder="Grøn tanke:"/>
       </div>
     </div>
     <div class="plans" id="step-2">
@@ -75,7 +75,7 @@
             </g>
           </g>
         </svg>
-        <textarea class="bubble-text" placeholder="Green thought:"/>
+        <textarea class="bubble-text" placeholder="Grøn tanke:"/>
       </div>
     </div>
     <div class="plans" id="step-3">
@@ -95,7 +95,7 @@
             </g>
           </g>
         </svg>
-        <textarea class="bubble-text" placeholder="Green thought:"/>
+        <textarea class="bubble-text" placeholder="Grøn tanke:"/>
       </div>
     </div>
     <div class="plans" id="step-4">
@@ -115,7 +115,7 @@
             </g>
           </g>
         </svg>
-        <textarea class="bubble-text" placeholder="Green thought:"/>
+        <textarea class="bubble-text" placeholder="Grøn tanke:"/>
       </div>
     </div>
     <div class="plans" id="step-5">
@@ -135,7 +135,7 @@
             </g>
           </g>
         </svg>
-        <textarea class="bubble-text" placeholder="Green thought:"/>
+        <textarea class="bubble-text" placeholder="Grøn tanke:"/>
       </div>
     </div>
     <div class="trophy-container">
@@ -240,7 +240,7 @@
           </g>
         </g>
       </svg>
-      <textarea class="trophy-text" placeholder="Goal:"></textarea>
+      <textarea class="trophy-text" placeholder="Mål:"></textarea>
     </div>
     <div class="wing-container" id="left-container">
       <input type="text">
@@ -248,7 +248,7 @@
       <input type="text">
       <input type="text">
       <input type="text">
-      <h1>My Helper</h1>
+      <h1>Min Hjælper</h1>
     </div>
     <div class="wing-container" id="right-container">
       <input type="text">
@@ -256,10 +256,9 @@
       <input type="text">
       <input type="text">
       <input type="text">
-      <h1>Rewards</h1>
+      <h1>Belønning</h1>
     </div>
-    <Modal class="modal" text="Tap on the trophy, bubbles and
-      tiles to write down your ideas!"/>
+    <Modal class="modal" text="Tryk på trofæet, tankeboblerne og felterne for at skrive dine idéer!"/>
     <audio ref="audio" loop src="../../assets/sounds/children-background-music/snack-time-the-green-orbs-children-s-music-no-copyright-music.mp3"/>
     <audio src="../../assets/sounds/session7/Session7_Page10.mp3" ref="voice"/>
     <div class="page-number" id="page-dark" style="left: 30vh !important;">150</div>

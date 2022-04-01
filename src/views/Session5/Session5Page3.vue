@@ -2,11 +2,13 @@
   <div class="interactive-container">
     <img src="../../assets/images/session5/447.jpg" alt="red" class="session-background">
     <div class="text-box">
-      <p>Lucy is starting a new school and she looks upset.</p>
-      <p>Why do you think she feels sad and scared?
-        How do you think her mum feels?</p>
-      <p>Is Lucy having '<span id="red-text">red</span>' or
-        '<span id="green-text">green</span>' thoughts?</p>
+      <h1>At ændre "Røde" tanker til "Grønne" tanker</h1>
+      <p><strong>At begynde i en ny skole</strong></p>
+      <p>Mor følger Sille hen i sin nye skole.
+        På dette billede føler hun sig trist og bange.
+        Hvorfor tror du at hun føler sig trist og bange?
+        Hvad tror du hendes mor føler (hvordan tror du hendes mor har det)?</p>
+      <p>Er Silles tanker ”røde” eller ”grønne”?</p>
     </div>
 
     <traffic-lights-vertical

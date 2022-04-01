@@ -1,17 +1,16 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>Reward Yourself</h1>
-      <p>There are many ways to reward ourselves for
-       trying our best.</p>
+      <h1>Beløn dig selv</h1>
+      <p>Der findes mange måder at belønne sig selv for at have prøvet at gøre sit bedste.</p>
     </div>
     <div class="image-container" id="left">
       <img src="../../assets/images/session9/Beach_Children.jpg" alt="beach-children">
-      <p id="para-1">Spending the day <br>having fun at the beach</p>
+      <p id="para-1">At tilbringe dagen med at have det sjovt på stranden</p>
     </div>
     <div class="image-container" id="right">
       <img src="../../assets/images/session9/healthy_eating_child.jpg" alt="healthy-eating">
-      <p id="para-2">Eating your <br>favourite healthy meal</p>
+      <p id="para-2">At spise sin yndlingsret</p>
     </div>
     <audio src="../../assets/sounds/session9/Session9_Page9.mp3" ref="voice"/>
     <div class="page-number" id="page-light">181</div>

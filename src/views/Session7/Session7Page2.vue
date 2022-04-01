@@ -982,14 +982,18 @@
       </g>
     </svg>
     <div class="text-box">
-      <p>When we break hard things down into many easier steps,
-        it is called a <strong>STEP PLAN</strong>.
-        <strong>STEP PLANS</strong> help us to be brave
-        when doing something we are scared of.</p>
-      <p>Create a <strong>STEP PLAN</strong>
-        with your friends. What steps would you take? How many
-        steps can you name together? Each step brings you
-        closer to facing your fears!</p>
+      <p>Når vi bryder svære situationer ned i mindre, nemmere og mere overskuelige
+        bidder/trin/skridt, kaldes det en TRAPPESTIGE PLAN (eller eksponeringsplan/trinplan/coping
+        step plan, hvor ”Coping” betyder det, at kunne håndtere noget nyt, svært eller udfordrende).
+        Vi kan bruge en TRAPPESTIGE PLAN når vi øver os i at være modige, når vi prøver at gør
+        noget som vi er bange for. For eksempel: når vi skal opholde os i mørke, til lægen,
+        eller sige farvel når vi skal i børnehave eller skole.</p>
+      <p>Lav en TRAPPESTIGE PLAN næste gang du skal prøve noget nyt. For eksempel: når du
+        skal cykle uden støttehjul, smage på nye madvarer & retter, eller når du skal
+        forberede dig på en ny aktivitet, såsom det at gå eller cykle en tur et andet
+        sted end du plejer. Lav en TRAPPESTIGE PLAN sammen med dine venner. Hvilke trin
+        ville I tag? Hvor mange trin kan I finde på? Hvert trin/skridt bringer jer tættere
+        på at gøre det!</p>
     </div>
     <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"/>
     <audio src="../../assets/sounds/session7/Session7_Page2.mp3" ref="voice"/>

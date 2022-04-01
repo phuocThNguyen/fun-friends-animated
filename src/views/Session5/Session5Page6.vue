@@ -2,17 +2,15 @@
   <div class="interactive-container">
     <img src="../../assets/images/session5/85693.jpg" alt="red" class="session-background">
     <div class="text-box">
-      <p>Nala is spending her first night sleeping by herself.</p>
-      <p>Pay attention to her relaxed face!</p>
-      <p>How is she feeling? Is Nala having
-        '<span id="red-text">red</span>' or
-        '<span id="green-text">green</span>' thoughts?</p>
+      <p>Det er også Nalas første nat med at sove i sin egen seng.</p>
+      <p>Hvordan har hun det / hvad føler hun på billedet?</p>
+      <p>Er Nalas tanker ”røde” eller ”grønne”?</p>
     </div>
     <traffic-lights-vertical
-        correctAns="green"
-        class="traffic-light"
-        v-on:wrongAnswer="handleWrongAnswer"
-        v-on:correctAnswer="handleCorrectAnswer"
+      correctAns="green"
+      class="traffic-light"
+      v-on:wrongAnswer="handleWrongAnswer"
+      v-on:correctAnswer="handleCorrectAnswer"
     />
 
     <!--  Well done  -->

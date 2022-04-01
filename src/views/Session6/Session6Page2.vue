@@ -1,22 +1,18 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>Choosing '<span class="red">Red</span>' and
-        '<span class="green">Green</span>' thoughts:
-        <br>Starting a new school
-      </h1>
-      <p>Lucy is starting a new school.</p>
-      <p>'<span class="red">Red</span>' thoughts like
-        "<span class="red">I will miss my Mum</span>", are making
-        Lucy feel sad and stopping her from having fun.</p>
-      <p>'<span class="green">Green</span>' thoughts like,
-        "<span class="green">I will do some fun things at
-        school. I will be OK, I will meet new friends</span>", help Lucy
-        feel happier and enjoy her school.</p>
-      <p>What other '<span class="red">red</span>'
-        and '<span class="green">green</span>'
-        thoughts may Lucy be having?</p>
-      <p>What thoughts might help her to feel braver and happier?</p>
+      <h1>At vælge ”Røde” eller ”Grønne” tanker: At begynde på en ny skole</h1>
+      <p>Mor følger Sille hen til en ny skole. Hun har en masse tanker i hovedet.</p>
+      <p>”Røde” tanker som for eksempel ”Jeg kommer til at savne min mor” får Sille
+        til at føle sig trist til mode, og forhindrer hende i at hygge sig og have det sjovt.</p>
+      <p>Silles ”grønne” tanker som for eksempel ”Jeg kommer til at lave sjove ting
+        henne i skolen. Jeg kommer til at være OK. Jeg kommer til at møde nye venner”
+        hjælper hende til at få nogle rare og glade følelser, så hun kan få mod til at
+        komme hen på den nye skole.</p>
+      <p>Kan du finde på andre ”røde” og ”grønne” tanker Sille kunne tænke?</p>
+      <p>Spørg dine venner og veninder hvilke tanker de tror ville kunne hjælpe
+        Sille med at føle sig modig og mere glad? Lyt til de idéer dine venner og
+        veninder kommer med.</p>
     </div>
     <div class="bubble-container">
       <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
@@ -31,7 +27,7 @@
           </g>
         </g>
       </svg>
-      <div class="bubble-text">Share your ideas with others!</div>
+      <div class="bubble-text">Del dine tanker med en ven!</div>
     </div>
     <img src="../../assets/images/session5/447.jpg" alt="red" class="images" id="image-top">
     <img src="../../assets/images/session5/128.jpg" alt="green" class="images" id="image-bottom">

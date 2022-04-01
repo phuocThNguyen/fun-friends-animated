@@ -1,7 +1,7 @@
 <template>
   <div class="interactive-container">
     <img src="../../assets/images/session10/623039-PNWBPK-723.jpg" alt="Tom-reading-book" class="session-background">
-    <div class="text-box-green">My dad helps me read a book.</div>
+    <div class="text-box-green">Min far hjælper mig med at læse en bog.</div>
     <audio src="../../assets/sounds/session10/Session10_Page4.mp3" ref="voice"/>
     <div class="page-number" id="page-light">190</div>
   </div>

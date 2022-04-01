@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container" id="alt-bg">
-    <p class="text">Write or draw other rewards in the space below.</p>
+    <p class="text">Skriv eller tegn andre belønninger i felterne herunder.</p>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle" />
     <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3"/>
     <audio src="../../assets/sounds/session9/Session9_Page11.mp3" ref="voice"/>

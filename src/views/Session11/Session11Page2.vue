@@ -2,10 +2,10 @@
   <div class="interactive-container">
     <img src="../../assets/images/session11/46140.jpg" alt="children" class="session-background">
     <div class="text-box">
-      <p>These children are helping each other to be strong.</p>
-      <p>Look around or think about your family.</p>
-      <p>What do people do to help you and how do you help them?</p>
-      <p>Compare your ideas with friends.</p>
+      <p>Disse børn hjælper hinanden med at være stærke.</p>
+      <p>Se dig omkring eller tænk på din familie.</p>
+      <p>Hvad gør andre for at hjælpe dig og hvad gør du for at hjælpe dem?</p>
+      <p>Sammenlign dine idéer med en ven(inde), og spørg vedkommende hvad han / hun synes vi kan gøre for at hjælpe hinanden.</p>
     </div>
     <audio src="../../assets/sounds/session11/Session11_Page2.mp3" ref="voice"/>
     <div class="page-number" id="page-light">205</div>

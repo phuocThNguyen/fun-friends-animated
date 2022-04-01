@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container" id="alt-bg">
-    <h1 class="title">We all have fun!</h1>
+    <h1 class="title">VI HYGGER OS OG HAR DET SJOVT ALLESAMMEN!</h1>
     <img src="../../assets/images/appendix/0000a8cd_medium.png" alt="dog-and-lamb" class="images">
     <img src="../../assets/images/appendix/Beach_Children.png" alt="beach&children" class="images">
     <img src="../../assets/images/appendix/Gingernut_ranger_perching_on_the_chicken_swing_in_garden.png" alt="chicken" class="images">

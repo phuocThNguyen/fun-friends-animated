@@ -2,8 +2,8 @@
   <div class="interactive-container">
     <img src="../../assets/images/session4/16503-resized.jpg" alt="exploring" class="session-background">
     <div class="text-box">
-      <h1>2. Smelling</h1>
-      <p>We smell with our nose. What can we smell?</p>
+      <h1>2. Lugtesansen</h1>
+      <p>Vi lugter med vores næse. Hvad kan vi lugte / dufte?</p>
     </div>
     <audio src="../../assets/sounds/session4/Session4_Page14.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">100</div>

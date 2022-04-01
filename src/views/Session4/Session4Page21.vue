@@ -1,8 +1,7 @@
 <template>
   <div class="interactive-container">
     <img src="../../assets/images/session4/1143-resized.jpg" alt="cool-water" class="session-background">
-    <div class="text-box">The water feels cool and
-     fresh on our skin.</div>
+    <div class="text-box">Vandet føles køligt og friskt mod huden.</div>
     <audio src="../../assets/sounds/session4/Session4_Page21.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">107</div>
   </div>

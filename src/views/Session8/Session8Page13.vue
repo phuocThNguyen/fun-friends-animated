@@ -3,9 +3,7 @@
     <img src="../../assets/images/session8/creek_girl_alone.jpg" alt="girl-exploring-alone" class="images" id="left">
     <img src="../../assets/images/session8/creek_together.jpg" alt="group-exploring" class="images" id="right">
     <div class="question-container">
-      <div class="text">
-        Crossing the creek by themselves
-      </div>
+      <div class="text">I færd med at krydse vandløbet på egen hånd</div>
       <div class="choices-container">
         <svg class="thumb thumb-up" id="thumb-up-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1960 1978" width="1960" height="1978">
           <g id="thumb-up">
@@ -50,9 +48,7 @@
       </div>
     </div>
     <div class="question-container">
-      <div class="text">
-        Staying together in the creek
-      </div>
+      <div class="text">I færd med at holde sammen i vandløbet</div>
       <div class="choices-container">
         <svg class="thumb thumb-up" id="thumb-up-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1960 1978" width="1960" height="1978">
           <g id="thumb-up">

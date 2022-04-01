@@ -196,12 +196,10 @@
       </g>
     </svg>
 
-    <p class="title"><span id="letter-f">E</span>xplore</p>
-    <p class="text" id="line-1">
-      Today we are going to keep exploring ways to be BRAVE.
-    </p>
-    <p class="text" id="line-2">
-      We can break hard things down into many easier steps.
+    <p class="title"><span id="letter-f">E</span>xplore (Vær nysgerrig og udforsk)</p>
+    <p class="text" id="line-1">I dag fortsætter vi med at udforske måder hvorpå man kan være MODIG.</p>
+    <p class="text" id="line-2">Vi kommer til at være nysgerrige og tænke på hvordan vi kan bryde svære
+      ting ned i små nemme og overskuelige trin / skridt.
     </p>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3"/>

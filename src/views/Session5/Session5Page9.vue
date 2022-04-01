@@ -2,11 +2,10 @@
   <div class="interactive-container">
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
     <div class="text-box">
-      <p><strong>Sam is preparing for a 'Show and Tell'</strong></p>
-      <p>Pretend that it is your turn to do 'show and tell'.</p>
-      <p>What could you be feeling?</p>
-      <p>What are some '<span class="green">green</span>' thoughts
-        that make you feel happy and brave?</p>
+      <p><strong>Emilie forbereder sig på at holde oplæg</strong></p>
+      <p>Lad os lege at det er din tur til at holde oplæg for klassen i dag.</p>
+      <p>Hvad mærker du i din krop og hvilke følelser oplever du?</p>
+      <p>Hvilke ”grønne” tanker kunne hjælpe dig til at føle dig glad og modig?</p>
       <audio src="../../assets/sounds/session5/Session5_Page9.mp3" ref="voice"/>
     </div>
   </div>

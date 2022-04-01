@@ -1,8 +1,8 @@
 <template>
   <div class="interactive-container">
     <img src="../../assets/images/session10/72896.jpg" alt="Tom" class="session-background">
-    <div class="text-box">Tom learns from <br>someone he looks up to.</div>
-    <div class="text-box-green">My dad helps me learn to cook.</div>
+    <div class="text-box">Sofus lærer af én som han ser op til.</div>
+    <div class="text-box-green">Min far hjælper mig med at lære at lave mad.</div>
     <audio src="../../assets/sounds/session10/Session10_Page3.mp3" ref="voice"/>
     <div class="page-number" id="page-light">189</div>
   </div>

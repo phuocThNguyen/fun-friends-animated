@@ -196,10 +196,11 @@
       </g>
     </svg>
 
-    <p class="title"><span id="letter-f">E</span>xplore</p>
+    <p class="title"><span id="letter-f">E</span>xplore (Vær Nysgerrig & Udforsk)</p>
     <p class="text" id="line-1">
-      Today, we will think about how to be kind to ourselves
-      <br>and reward ourselves for doing our best.
+      I dag kommer vi til at være nysgerrige og tænke over måder hvorpå
+      vi kan være omsorgsfulde overfor os selv og belønne os selv for
+      at have prøvet at gøre vores bedste.
     </p>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3"/>

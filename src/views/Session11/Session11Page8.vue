@@ -1427,20 +1427,19 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try Everyday</h1>
-      <p>&nbsp;&bull; Draw or take a picture of your family's support
-        team. Alternatively, share a story about how your family
-        gets support.</p>
-      <p>&nbsp;&bull; Carry on with your <strong>STEP PLAN</strong>.</p>
-      <p>&nbsp;&bull; Practise 'green' thoughts.</p>
-      <p>&nbsp;&bull; Relax.</p>
-      <p>&nbsp;&bull; Notice and reward yourself and others
-        for being BRAVE.</p>
-      <p>&nbsp;&bull; Practise being BRAVE:</p>
-      <p>&middot; Look people in the eye and smile.</p>
-      <p>&middot; Use a brave voice and make yourself big.</p>
-      <p>&middot; Try your best and give it a go. </p>
-      <p>&middot; Believe in yourself.</p>
+      <h1>Prøv dagligt</h1>
+      <p>&nbsp;&bull; Tegn en tegning eller tag et foto af din families
+        støttehold. Eller del en historie om hvordan din familie
+        får støtte. Du bestemmer.</p>
+      <p>&nbsp;&bull; Fortsæt med din Trappestige Plan.</p>
+      <p>&nbsp;&bull; Øv dig på ”grønne” tanker.</p>
+      <p>&nbsp;&bull; Slap af og lav noget afspænding hver dag.</p>
+      <p>&nbsp;&bull; Læg mærke til og beløn dig selv og andre for at være MODIG.</p>
+      <p>&nbsp;&bull; Øv dig dagligt på at være MODIG:</p>
+      <p>&middot; Kig folk i øjnene og smil.</p>
+      <p>&middot; Brug en modig stemme og gør dig selv stor.</p>
+      <p>&middot; Prøv at gøre dit bedste og give tingene et forsøg.</p>
+      <p>&middot; Tro på dig selv.</p>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"/>
     <audio src="../../assets/sounds/session11/Session11_Page8.mp3" ref="voice"/>

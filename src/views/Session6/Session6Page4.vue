@@ -1,17 +1,13 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>Choosing '<span class="red">Red</span>' and
-        '<span class="green">Green</span>' thoughts:
-        <br>Meeting a new teacher
-      </h1>
-      <p>Tom is going to meet his new teacher. Pretend
-        that you are Tom.</p>
-      <p>What are some '<span class="red">red</span>' thoughts
-        that make you feel worried and scared?</p>
-      <p>What are some '<span class="green">green</span>' thoughts
-        that would make your day happier?</p>
-      <p>Green thoughts help us try our best.</p>
+      <h1>At vælge ”Røde” eller ”Grønne” tanker: At møde en ny lærer</h1>
+      <p>Niels skal til at møde sin nye lærer. Lad os forestille os, at du er Niels.</p>
+      <p>Tal med dem du er sammen med om alle de tanker der går igennem Niels’ hoved.</p>
+      <p>Del nogle ”røde” tanker der gør dig bekymret og bange?</p>
+      <p>Del nogle ”grønne” tanker der vil kunne gøre din dag mere glad og overskuelig.</p>
+      <p>Grønne tanker hjælper os med,
+        <br>at prøve på at gøre vores bedste.</p>
     </div>
     <div class="bubble-container">
       <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
@@ -26,7 +22,7 @@
           </g>
         </g>
       </svg>
-      <div class="bubble-text">Share your ideas with others!</div>
+      <div class="bubble-text">Del dine tanker med en ven!</div>
     </div>
     <img src="../../assets/images/session5/804.jpg" alt="red" class="images" id="image-top">
     <img src="../../assets/images/session5/92263.jpg" alt="green" class="images" id="image-bottom">

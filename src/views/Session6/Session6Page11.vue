@@ -711,10 +711,11 @@
         </g>
       </svg>
       <div class="star-text">
-        <p><strong>Bright Star Idea</strong></p>
-        <p>Cook healthy, yummy
-          <br>food with someone
-          <br>in your family.
+        <p><strong>Ugens lysende
+          stjerne idé</strong></p>
+        <p>Følg en sund opskrift og
+          <br>lav mad sammen med
+          <br>din familie.
         </p>
       </div>
     </div>

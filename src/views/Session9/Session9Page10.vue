@@ -2,11 +2,11 @@
   <div class="interactive-container">
     <div class="image-container">
       <img src="../../assets/images/session9/fish_feeding_pond.jpg" alt="feeding-fish">
-      <p id="para-1">Feeding the fish</p>
+      <p id="para-1">At fodre fiskene</p>
     </div>
     <div class="image-container">
       <img src="../../assets/images/session9/swimming_lake_children.jpg" alt="swimming">
-      <p id="para-2">Swimming in the river</p>
+      <p id="para-2">At svømme i søen</p>
     </div>
     <audio src="../../assets/sounds/session9/Session9_Page10.mp3" ref="voice"/>
     <div class="page-number" id="page-light">182</div>

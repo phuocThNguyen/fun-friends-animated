@@ -37,16 +37,13 @@
         </g>
       </g>
     </svg>
-    <h1 class="title">Coping Step Plan</h1>
-    <div class="trophy-container">
-      Goal: Learn something new
-    </div>
+    <h1 class="title">TRAPPESTIGE PLAN</h1>
+    <div class="trophy-container">Mål: At lære noget nyt</div>
     <div class="plans" id="step-1">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">1) Politely ask the teacher to please explain
-        again if you didn’t understand “Excuse me
-        could you please help me”.</div>
+      <div class="text">1) Bed venligt din pædagog / lærer om at forklare tingene én gang til,
+        hvis du ikke forstod den oprindelige gennemgang: ”Undskyld, vil du være sød at hjælpe mig?”</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -60,7 +57,7 @@
             </g>
           </g>
         </svg>
-        <div class="bubble-text">This is easy!</div>
+        <div class="bubble-text">Det er nemt!</div>
       </div>
       <svg class="koala" id="koala-standing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 816 975" width="816" height="975">
         <g>
@@ -315,8 +312,8 @@
     <div class="plans" id="step-2">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">2) Ask your family to
-        please explain it to you.</div>
+      <div class="text">2) Bed din familie om
+        at forklare det for dig.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -330,7 +327,7 @@
             </g>
           </g>
         </svg>
-        <div class="bubble-text">I'll try my best.</div>
+        <div class="bubble-text">Jeg gør mit bedste!</div>
       </div>
       <svg class="koala koala-climbing" id="koala-climbing-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 961 649" width="961" height="649">
         <g>
@@ -467,8 +464,8 @@
     <div class="plans" id="step-3">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">3) Ask a sibling or friend to
-        explain it to you again.</div>
+      <div class="text">3) Bed én af dine søskende eller en ven
+        (inde) om at forklare det for dig igen.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -482,7 +479,7 @@
             </g>
           </g>
         </svg>
-        <div class="bubble-text">I'll give it a go!</div>
+        <div class="bubble-text">Jeg giver det et forsøg!</div>
       </div>
       <svg class="koala koala-climbing" id="koala-climbing-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 961 649" width="961" height="649">
         <g>
@@ -619,7 +616,7 @@
     <div class="plans" id="step-4">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">4) Try to do it yourself.</div>
+      <div class="text">4) Prøv at gøre det selv.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -633,7 +630,7 @@
             </g>
           </g>
         </svg>
-        <div class="bubble-text">I can do it!</div>
+        <div class="bubble-text">Jeg kan gøre det!</div>
       </div>
       <svg class="koala koala-climbing" id="koala-climbing-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 961 649" width="961" height="649">
         <g>
@@ -770,7 +767,7 @@
     <div class="plans" id="step-5">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">5) Practise for 5 minutes everyday.</div>
+      <div class="text">5) Øv det hver dag i 5 minutter.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -784,7 +781,7 @@
             </g>
           </g>
         </svg>
-        <div class="bubble-text">This is easy!</div>
+        <div class="bubble-text">Jeg gjorde det!</div>
       </div>
       <svg class="koala" id="koala-sitting" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 679 687" width="679" height="687">
         <g>
@@ -999,22 +996,22 @@
     </div>
 
     <div class="wing-container" id="left-container">
-      <p>A family member</p>
-      <p>My friends</p>
-      <p>My teacher</p>
-      <p>My siblings</p>
-      <p>My parents</p>
-      <h1>My Helper</h1>
+      <p>Et familiemedlem</p>
+      <p>Min ven(inde)</p>
+      <p>Min pædagog / lærer</p>
+      <p>Mine søskende</p>
+      <p>Min ven(inde)s forælder</p>
+      <h1>Min Hjælper</h1>
     </div>
     <div class="wing-container" id="right-container">
-      <p>Play hide and seek</p>
-      <p>Go for a swim</p>
-      <p>Play skipping</p>
-      <p>Fly a kite</p>
-      <p>Play in the park</p>
-      <h1>Rewards</h1>
+      <p>Leg gemmeleg</p>
+      <p>Tag ud og svømme</p>
+      <p>Sjippe</p>
+      <p>Flyv med en drage</p>
+      <p>Leg i naturen</p>
+      <h1>Belønning</h1>
     </div>
-    <div class="text-box">Green Thoughts:</div>
+    <div class="text-box">Grøn tanke: </div>
     <div class="coordinate-container" @click="displayStep">
       <svg class="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 517 517" width="517" height="517">
         <defs>
@@ -1120,7 +1117,7 @@
           </g>
         </g>
       </svg>
-      <div class="button-label">Next Step</div>
+      <div class="button-label">Næste Trin</div>
       <audio ref="sound" src="../../assets/sounds/session7/click-sound.mp3"></audio>
     </div>
     <audio src="../../assets/sounds/session7/Session7_Page7-region-1.mp3" ref="step1"/>

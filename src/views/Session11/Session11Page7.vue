@@ -2,11 +2,11 @@
   <div class="interactive-container">
     <div class="image-container">
       <img src="../../assets/images/session11/rock_climbing_nature.jpg" alt="climbing-tree" class="images">
-      <p class="text" id="para-1">Mum helping Matilda rock climbing.</p>
+      <p class="text" id="para-1">Mor hjælper Mathilde med at klatre på klipper.</p>
     </div>
     <div class="image-container" id="right">
       <img src="../../assets/images/session11/hugging_dog_child.jpg" alt="swinging" class="images">
-      <p class="text" id="para-2">Zoe giving Pepper a hug.</p>
+      <p class="text" id="para-2">Ella giver Otto et knus.</p>
     </div>
     <audio src="../../assets/sounds/session11/Session11_Page7.mp3" ref="voice"/>
     <div class="page-number" id="page-light">210</div>

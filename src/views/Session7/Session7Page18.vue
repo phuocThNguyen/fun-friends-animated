@@ -432,11 +432,13 @@
         </g>
       </svg>
       <div class="star-text">
-        <p><strong>Bright Star Idea</strong></p>
-        <p>Decorate your water
-          <br>bottle with stickers
-          <br>to remind you to
-          <br>drink lots of water.
+        <p><strong>Ugens lysende
+          stjerne idé</strong></p>
+        <p>Pynt din drikkedunk
+          <br>med klistermærker, for
+          <br>at huske dig selv på,
+          <br>at du skal drikke en
+          <br>masse vand.
         </p>
       </div>
     </div>

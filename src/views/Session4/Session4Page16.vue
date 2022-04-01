@@ -2,8 +2,8 @@
   <div class="interactive-container">
     <img src="../../assets/images/session4/120974-resized.jpg" alt="exploring" class="session-background">
     <div class="text-box">
-      <h1>4. Taste</h1>
-      <p>We taste with our tongues. What can we taste?</p>
+      <h1>4. Smagssansen</h1>
+      <p>Vi smager med vores tunge. Hvad kan vi smage?</p>
     </div>
     <audio src="../../assets/sounds/session4/Session4_Page16.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">102</div>

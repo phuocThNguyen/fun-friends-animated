@@ -1,11 +1,9 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>Additional Activity &ndash; Changing '<span class="red">Red</span>' to
-        '<span class="green">Green</span>' Choices</h1>
-      <p>Daniel and Matilda are playing on their scooters.</p>
-      <p>Do you think that they are making '<span class="red">red</span>'
-        choices or '<span class="green">green</span>' choices?</p>
+      <h1>Ekstra Aktivitet - At ændre røde valg til grønne valg</h1>
+      <p>Daniel og Ella leger med deres løbehjul i parken. Hvad tænker du når du ser billederne?</p>
+      <p>Synes du de træffer ”røde” valg eller ”grønne” valg?</p>
     </div>
     <img src="../../assets/images/session6/Scooter_Girl.jpg" alt="scooter-girl" class="images">
     <img src="../../assets/images/session6/Best-Kick-Scooter-for-Kids.jpg" alt="scooters-and-kids" class="images">

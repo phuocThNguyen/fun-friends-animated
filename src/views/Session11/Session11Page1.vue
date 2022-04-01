@@ -196,10 +196,10 @@
       </g>
     </svg>
 
-    <p class="title"><span id="letter-f">D</span>on't forget</p>
+    <p class="title"><span id="letter-f">D</span>on't forget (Husk)</p>
     <p class="text" id="line-1">
-      Today, we will think about the people
-      <br>who help us to be brave and also the people we help too.
+      I denne uge kommer vi til at tænke på både de mennesker som hjælper os med
+      <br>at være modige, og på dem vi hjælper.
     </p>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3"/>

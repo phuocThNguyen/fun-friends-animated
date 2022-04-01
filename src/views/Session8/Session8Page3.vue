@@ -2,10 +2,10 @@
   <div class="interactive-container">
     <img src="../../assets/images/session8/33261.jpg" alt="Tom" class="session-background">
     <div class="text-box">
-      <p>Tom has fallen off his bike.</p>
-      <p>He has only just learnt to ride without training wheels.</p>
-      <p>How do you think he is feeling?</p>
-      <p>What can you do to be a kind friend to Tom?</p>
+      <p>Eske falder af cyklen</p>
+      <p>Eske er faldet af sin cykel. Han har kun lige lært at cykle uden støttehjul.</p>
+      <p>Hvordan tror du han har det? hvilke følelser oplever han?</p>
+      <p>Hvad kan du gøre for at være en omsorgsfuld ven overfor Eske?</p>
     </div>
     <audio src="../../assets/sounds/session8/Session8_Page3.mp3" ref="voice"/>
     <div class="page-number" id="page-light">159</div>

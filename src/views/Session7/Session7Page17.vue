@@ -419,15 +419,16 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Every day remember to:</h1>
-      <p>&bull; Be kind to all living beings.</p>
-      <p>&bull; Play outside.</p>
-      <p>&bull; Have plenty of sleep.</p>
-      <p>&bull; Drink and eat foods that are healthy.</p>
-      <p>&bull; Practise relaxing without screens.</p>
-      <p>&bull; Pay attention to happy things and what you
-        can see, hear, smell, taste and feel.</p>
-      <p>&bull; Say thank you for happy times.</p>
+      <h1>Prøv dagligt</h1>
+      <p>&nbsp;&bull; Prøv at forstå følelser - både i / hos dig selv og i / hos andre.</p>
+      <p>&nbsp;&bull; Øv dig i at afspænde  / slappe af og udføre den dybe vejrtrækning.</p>
+      <p>&nbsp;&bull; Prøv at bruge de afspændings- / afslapningsstrategier du har lært når
+        du føler dig oprørt, bekymret eller vred, (fx ”boble” vejrtrækningen).</p>
+      <p>&nbsp;&bull; Øv dig dagligt på at være MODIG:</p>
+      <p>&middot; Kig folk i øjnene og smil.</p>
+      <p>&middot; Brug en modig stemme og gør dig selv stor.</p>
+      <p>&middot; Prøv at gøre dit bedste og give tingene et forsøg.</p>
+      <p>&middot; Tro på dig selv.</p>
     </div>
     <div class="image-container">
       <img class="action-image" src="../../assets/images/introduction/Koala_Child_Hugging.jpg" alt="kind-to-animals">

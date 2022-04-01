@@ -2,10 +2,11 @@
   <div class="interactive-container">
     <img src="../../assets/images/session5/86.jpg" alt="red" class="session-background">
     <div class="text-box">
-      <p>Matilda is spending her first night sleeping by herself.</p>
+      <p><strong>At sove på sit eget værelse</strong></p>
+      <p>Det er Mathildes første nat alene i sin egen seng.</p>
       <p>Pay attention to her worried face!</p>
-      <p>How is she feeling? Is Matilda having '<span id="red-text">red</span>'
-        or '<span id="green-text">green</span>' thoughts?</p>
+      <p>Hvordan har hun det på dette billede (hvad føler hun)?
+        Har Mathilde ”røde” eller ”grønne” tanker?</p>
     </div>
     <traffic-lights-vertical
       correctAns="red"

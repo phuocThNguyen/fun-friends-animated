@@ -37,15 +37,13 @@
         </g>
       </g>
     </svg>
-    <h1 class="title">Coping Step Plan</h1>
-    <div class="trophy-container">
-      Goal: Start a new school
-    </div>
+    <h1 class="title">TRAPPESTIGE PLAN</h1>
+    <div class="trophy-container">Mål: At begynde i en ny skole / klasse</div>
     <div class="plans" id="step-1">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">1) Visit the school before it starts,
-        walk around the school.</div>
+      <div class="text">1) Besøg skolen inden du
+        starter og gå rundt på skolen.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -59,7 +57,7 @@
             </g>
           </g>
         </svg>
-        <div class="bubble-text">This is easy!</div>
+        <div class="bubble-text">Det er nemt!</div>
       </div>
       <svg class="koala" id="koala-standing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 816 975" width="816" height="975">
         <g>
@@ -314,8 +312,8 @@
     <div class="plans" id="step-2">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">2) Try to meet other children who go
-        to the same school.</div>
+      <div class="text">2) Prøv at møde andre børn
+        som går på den samme skole.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -329,7 +327,7 @@
             </g>
           </g>
         </svg>
-        <div class="bubble-text">I'll try my best!</div>
+        <div class="bubble-text">Jeg gør mit bedste!</div>
       </div>
       <svg class="koala koala-climbing" id="koala-climbing-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 961 649" width="961" height="649">
         <g>
@@ -466,8 +464,8 @@
     <div class="plans" id="step-3">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">3) Walk or bike ride to the school with
-        your family.</div>
+      <div class="text">3) Gå eller cykle til skolen
+        sammen med din familie.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -481,7 +479,7 @@
             </g>
           </g>
         </svg>
-        <div class="bubble-text">I'll give it a go!</div>
+        <div class="bubble-text">Jeg giver det et forsøg!</div>
       </div>
       <svg class="koala koala-climbing" id="koala-climbing-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 961 649" width="961" height="649">
         <g>
@@ -618,8 +616,8 @@
     <div class="plans" id="step-4">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">4) Invite other children who go to that
-        school, for a play in the park.</div>
+      <div class="text">4) Få hjælp til at lave en legeaftale
+        med andre børn fra klassen / skolen så I kan mødes et sted udendørs og lege.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -633,7 +631,7 @@
             </g>
           </g>
         </svg>
-        <div class="bubble-text">I can do it!</div>
+        <div class="bubble-text">Jeg kan gøre det!</div>
       </div>
       <svg class="koala koala-climbing" id="koala-climbing-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 961 649" width="961" height="649">
         <g>
@@ -770,8 +768,8 @@
     <div class="plans" id="step-5">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">5) Start the first day of school with a big smile,
-        a brave voice, and look people in the eye.</div>
+      <div class="text">5) Begynd den første dag i skolen / klassen med et stort
+        smil og en modig stemme og se folk i øjnene.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -785,7 +783,7 @@
             </g>
           </g>
         </svg>
-        <div class="bubble-text">I did it!</div>
+        <div class="bubble-text">Jeg gjorde det!</div>
       </div>
       <svg class="koala" id="koala-sitting" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 679 687" width="679" height="687">
         <g>
@@ -1000,96 +998,96 @@
     </div>
 
     <div class="wing-container" id="left-container">
-      <p>A family member</p>
-      <p>My friends</p>
-      <p>My teacher</p>
-      <p>My siblings</p>
-      <p>My parents</p>
-      <h1>My Helper</h1>
+      <p>Et familiemedlem</p>
+      <p>Min ven(inde)</p>
+      <p>Min pædagog / lærer</p>
+      <p>Mine søskende</p>
+      <p>Min ven(inde)s forælder</p>
+      <h1>Min Hjælper</h1>
     </div>
     <div class="wing-container" id="right-container">
-      <p>Play hide and seek</p>
-      <p>Go for a swim</p>
-      <p>Play skipping</p>
-      <p>Fly a kite</p>
-      <p>Play in the park</p>
-      <h1>Rewards</h1>
+      <p>Leg med en dyreven</p>
+      <p>Sparke bold med nogle venner</p>
+      <p>Sjippe</p>
+      <p>Flyv med en drage</p>
+      <p>Leg i naturen</p>
+      <h1>Belønning</h1>
     </div>
-    <div class="text-box">Green Thoughts:</div>
+    <div class="text-box">Grøn tanke: </div>
     <div class="coordinate-container" @click="displayStep">
       <svg class="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 517 517" width="517" height="517">
         <defs>
           <linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="518.517" y1="200.261" x2="518.517" y2="518.086">
-            <stop offset="0" stop-color="#d9923c"  />
-            <stop offset="1" stop-color="#bd6519"  />
+            <stop offset="0" stop-color="#d9923c"/>
+            <stop offset="1" stop-color="#bd6519"/>
           </linearGradient>
           <linearGradient id="grd2" gradientUnits="userSpaceOnUse"  x1="373.399" y1="-52.623" x2="491.472" y2="173.685">
-            <stop offset="0" stop-color="#ffd37e"  />
-            <stop offset="1" stop-color="#000000"  />
+            <stop offset="0" stop-color="#ffd37e"/>
+            <stop offset="1" stop-color="#000000"/>
           </linearGradient>
           <radialGradient id="grd3" gradientUnits="userSpaceOnUse"  cx="139.994" cy="53.325" r="244.191">
-            <stop offset="0" stop-color="#ffd37e"  />
-            <stop offset="1" stop-color="#000000"  />
+            <stop offset="0" stop-color="#ffd37e"/>
+            <stop offset="1" stop-color="#000000"/>
           </radialGradient>
           <linearGradient id="grd4" gradientUnits="userSpaceOnUse"  x1="406.121" y1="-230.093" x2="553.713" y2="320.917">
-            <stop offset="0" stop-color="#ffffff"  />
-            <stop offset="1" stop-color="#bd6519"  />
+            <stop offset="0" stop-color="#ffffff"/>
+            <stop offset="1" stop-color="#bd6519"/>
           </linearGradient>
           <radialGradient id="grd5" gradientUnits="userSpaceOnUse"  cx="355.15" cy="509.876" r="247.603">
-            <stop offset="0" stop-color="#a95c19"  />
-            <stop offset="1" stop-color="#ffffff"  />
+            <stop offset="0" stop-color="#a95c19"/>
+            <stop offset="1" stop-color="#ffffff"/>
           </radialGradient>
           <linearGradient id="grd6" gradientUnits="userSpaceOnUse"  x1="493.85" y1="232.602" x2="629.605" y2="407.544">
-            <stop offset="0" stop-color="#8b4519"  />
-            <stop offset="1" stop-color="#ffffff"  />
+            <stop offset="0" stop-color="#8b4519"/>
+            <stop offset="1" stop-color="#ffffff"/>
           </linearGradient>
           <linearGradient id="grd7" gradientUnits="userSpaceOnUse"  x1="479.981" y1="237.048" x2="616.421" y2="444.332">
-            <stop offset="0" stop-color="#8b4519"  />
-            <stop offset="1" stop-color="#ffffff"  />
+            <stop offset="0" stop-color="#8b4519"/>
+            <stop offset="1" stop-color="#ffffff"/>
           </linearGradient>
           <linearGradient id="grd8" gradientUnits="userSpaceOnUse"  x1="437.868" y1="183.243" x2="477.893" y2="417.676">
-            <stop offset="0" stop-color="#32a9e5"  />
-            <stop offset="1" stop-color="#007fc3"  />
+            <stop offset="0" stop-color="#32a9e5"/>
+            <stop offset="1" stop-color="#007fc3"/>
           </linearGradient>
           <linearGradient id="grd9" gradientUnits="userSpaceOnUse"  x1="365.334" y1="84.106" x2="391.828" y2="199.718">
-            <stop offset="0" stop-color="#35b5ff"  />
-            <stop offset="1" stop-color="#000000"  />
+            <stop offset="0" stop-color="#35b5ff"/>
+            <stop offset="1" stop-color="#000000"/>
           </linearGradient>
           <linearGradient id="grd10" gradientUnits="userSpaceOnUse"  x1="105.83" y1="393.122" x2="91.399" y2="292.104">
-            <stop offset="0" stop-color="#ffffff"  />
-            <stop offset="1" stop-color="#0072b5"  />
+            <stop offset="0" stop-color="#ffffff"/>
+            <stop offset="1" stop-color="#0072b5"/>
           </linearGradient>
           <linearGradient id="grd11" gradientUnits="userSpaceOnUse"  x1="311.324" y1="-224.178" x2="425.462" y2="153.657">
-            <stop offset="0" stop-color="#ffffff"  />
-            <stop offset="1" stop-color="#0072b5"  />
+            <stop offset="0" stop-color="#ffffff"/>
+            <stop offset="1" stop-color="#0072b5"/>
           </linearGradient>
           <radialGradient id="grd12" gradientUnits="userSpaceOnUse"  cx="322.465" cy="400.132" r="258.753">
-            <stop offset="0" stop-color="#00639f"  />
-            <stop offset="1" stop-color="#ffffff"  />
+            <stop offset="0" stop-color="#00639f"/>
+            <stop offset="1" stop-color="#ffffff"/>
           </radialGradient>
           <linearGradient id="grd13" gradientUnits="userSpaceOnUse"  x1="310.967" y1="64.344" x2="370.418" y2="237.168">
-            <stop offset="0" stop-color="#ffffff"  />
-            <stop offset="1" stop-color="#0072b5"  />
+            <stop offset="0" stop-color="#ffffff"/>
+            <stop offset="1" stop-color="#0072b5"/>
           </linearGradient>
           <linearGradient id="grd14" gradientUnits="userSpaceOnUse"  x1="307.006" y1="81.142" x2="361.421" y2="239.324">
-            <stop offset="0" stop-color="#ffffff"  />
-            <stop offset="1" stop-color="#0072b5"  />
+            <stop offset="0" stop-color="#ffffff"/>
+            <stop offset="1" stop-color="#0072b5"/>
           </linearGradient>
           <linearGradient id="grd15" gradientUnits="userSpaceOnUse"  x1="302.261" y1="92.196" x2="352.758" y2="238.991">
-            <stop offset="0" stop-color="#ffffff"  />
-            <stop offset="1" stop-color="#0072b5"  />
+            <stop offset="0" stop-color="#ffffff"/>
+            <stop offset="1" stop-color="#0072b5"/>
           </linearGradient>
           <linearGradient id="grd16" gradientUnits="userSpaceOnUse"  x1="321.352" y1="172.854" x2="357.372" y2="262.285">
-            <stop offset="0" stop-color="#f9c849"  />
-            <stop offset="1" stop-color="#ed7c18"  />
+            <stop offset="0" stop-color="#f9c849"/>
+            <stop offset="1" stop-color="#ed7c18"/>
           </linearGradient>
           <linearGradient id="grd17" gradientUnits="userSpaceOnUse"  x1="151.123" y1="279.8" x2="192.282" y2="212.449">
-            <stop offset="0" stop-color="#ffea7e"  />
-            <stop offset="1" stop-color="#000000"  />
+            <stop offset="0" stop-color="#ffea7e"/>
+            <stop offset="1" stop-color="#000000"/>
           </linearGradient>
           <linearGradient id="grd18" gradientUnits="userSpaceOnUse"  x1="81.988" y1="374.3" x2="177.008" y2="163.765">
-            <stop offset="0" stop-color="#ffffff"  />
-            <stop offset="1" stop-color="#bd6f31"  />
+            <stop offset="0" stop-color="#ffffff"/>
+            <stop offset="1" stop-color="#bd6f31"/>
           </linearGradient>
         </defs>
         <g id="Element game">
@@ -1121,7 +1119,7 @@
           </g>
         </g>
       </svg>
-      <div class="button-label">Next Step</div>
+      <div class="button-label">Næste Trin</div>
     </div>
     <audio ref="sound" src="../../assets/sounds/session7/click-sound.mp3"/>
     <audio src="../../assets/sounds/session7/Session7_Page5-region-1.mp3" ref="step1"/>

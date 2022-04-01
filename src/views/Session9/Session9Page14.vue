@@ -1001,12 +1001,17 @@
         </g>
       </svg>
       <div class="star-text">
-        <p><strong>Bright Star Idea</strong></p>
-        <p>Plant some vegetables in
-          <br>a pot with your family. It is
-          <br>so much fun to watch
-          <br>your vegetable grow
-          <br>and then it them!
+        <p><strong>Ugens
+          <br>lysende
+          <br>stjerne idé</strong></p>
+        <p>Lav ”pizza massage” sammen
+          <br>med nogen i din familie. Forestil
+          <br>jer, at I ælter pizzadejen. Rul den
+          <br>ud på ryggen af hinanden, læg
+          <br>masser af lækre toppings oven
+          <br>på. Varm jeres hænder op og
+          <br>varm pizzaen ” i ovnen”. Skær
+          <br>pizzaen i stykker og spis den!
         </p>
       </div>
     </div>

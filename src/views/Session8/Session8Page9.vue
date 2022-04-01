@@ -15,10 +15,11 @@
         </g>
       </svg>
       <div class="star-text">
-        <p>Zoe and Zac
-          <br>have fun roller
-          <br>blading
-          <br>and skating.
+        <p>Sofie og Sofus
+          <br>hygger og har det
+          <br>sjovt med at løbe
+          <br>på rulleskøjter og
+          <br>stå på skateboard.
         </p>
       </div>
     </div>

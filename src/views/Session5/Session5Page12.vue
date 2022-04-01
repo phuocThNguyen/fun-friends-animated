@@ -2,10 +2,12 @@
   <div class="interactive-container">
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
     <div class="text-box">
-      <p>Talk about the feelings Annie and her brother are showing.</p>
-      <p>What are some feelings you would be having?</p>
-      <p>What are some '<span class="green">green</span>'
-        thoughts that can help them play happily together?</p>
+      <p>al om de følelser som Maja og hendes bror udstråler.
+        På hvilke måder er de ens? På hvilke måder er de forskellige?
+        Kig på billederne: hvilke tanker tror du der går gennem deres hoveder?</p>
+      <p>Hvilke(n) følelse(r) ville du opleve hvis du var i en lignende situation?
+        Hvilke(n) grønne tanke(r) ville kunne hjælpe dem til at
+        hygge sig imens de leger sammen?</p>
       <audio src="../../assets/sounds/session5/Session5_Page12.mp3" ref="voice"/>
     </div>
   </div>

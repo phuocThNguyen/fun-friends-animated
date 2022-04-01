@@ -2,14 +2,12 @@
   <div class="interactive-container">
     <img src="../../assets/images/session12/38541.jpg" alt="party" class="session-background">
     <div class="text-box">
-      <h1>Additional Activity &ndash; Party Time</h1>
-      <p>Zoe, Daniel, and Matilda are teaching their teddy
-        bears all of their favourite FRIENDS games and
-        activities.</p>
-      <p>Pair up with a friend and take turns naming some of
-        your favourite FRIENDS games and activities that you want
-        to try again together. You can write them in the balloons
-        on the next page.</p>
+      <h1>Ekstra Aktivitet - Tid til fest</h1>
+      <p>Ella, Daniel og Vigga er i gang med at lære deres bamser hvordan
+        man leger alle deres yndlings FRIENDS lege og aktiviteter.</p>
+      <p>Sammen med en ven(inde) kan I skiftes til at huske nogle af de
+        FRIENDS lege og aktiviteter, som I kunne tænke jer at prøve igen.
+        Du / I kan skrive eller tegne dem I ballonerne på næste side.</p>
     </div>
     <div class="js-container animation-container"></div>
     <svg class="balloons" id="blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188 358" width="188" height="358">

@@ -1,8 +1,8 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session4/five-senses-resized.jpg" alt="five-senses" class="images">
+    <img src="../../assets/images/session4/five-senses-danish.jpg" alt="five-senses" class="images">
     <div class="activity-container">
-      <div class="instruction-container"><strong>Activity - </strong>Choose the correct sense</div>
+      <div class="instruction-container"><strong>Aktivitet - </strong>Vælg den rigtige sans</div>
       <div class="choices-container">
         <div class="choice">
           <svg class="sense" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1023 1200" width="1023" height="1200">
@@ -862,7 +862,7 @@ export default {
   name: 'Session4Page12',
   data() {
     return {
-      options: ['Taste','Touch','Hearing','Smell','Sight'],
+      options: ['Smagssansen','Følesansen','Høresansen','Lugtesansen','Synssansen'],
       hearing: '',
       sight: '',
       touch: '',
@@ -919,35 +919,35 @@ export default {
       }
     },
     hearing: function () {
-      if (this.hearing === 'Hearing') {
+      if (this.hearing === 'Høresansen') {
         this.handleCorrectAnswer('#hearing', '#tick-hearing');
       } else {
         this.handleWrongAnswer()
       }
     },
     sight: function () {
-      if (this.sight === 'Sight') {
+      if (this.sight === 'Synssansen') {
         this.handleCorrectAnswer('#sight', '#tick-sight');
       } else {
         this.handleWrongAnswer()
       }
     },
     touch: function () {
-      if (this.touch === 'Touch') {
+      if (this.touch === 'Følesansen') {
         this.handleCorrectAnswer('#touch', '#tick-touch');
       } else {
         this.handleWrongAnswer()
       }
     },
     smell: function () {
-      if (this.smell === 'Smell') {
+      if (this.smell === 'Lugtesansen') {
         this.handleCorrectAnswer('#smell', '#tick-smell');
       } else {
         this.handleWrongAnswer()
       }
     },
     taste: function () {
-      if (this.taste === 'Taste') {
+      if (this.taste === 'Smagssansen') {
         this.handleCorrectAnswer('#taste', '#tick-taste');
       } else {
         this.handleWrongAnswer()
@@ -987,11 +987,11 @@ export default {
 }
 .choice select {
   width: 35%;
-  font-size: 4vh;
+  font-size: 3vh;
   padding: 1vh;
   font-family: 'Kalam', cursive;
   outline: none;
-  margin-right: 25%;
+  margin-right: 30%;
   text-align: center;
 }
 .choices-container {

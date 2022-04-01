@@ -809,11 +809,12 @@
         </g>
       </svg>
       <div class="star-text">
-        <p><strong>Bright Star Idea</strong></p>
-        <p>Before you go to bed,
-          <br>listen to quiet, gentle
-          <br>music or do something
-          <br>calm and relaxing.
+        <p><strong>Ugens lysende
+          <br>stjerne idé</strong></p>
+        <p>Lyt til stille, blid musik
+          <br>eller lav noget roligt
+          <br>og afslappende, inden
+          <br>du går i seng.
         </p>
       </div>
     </div>

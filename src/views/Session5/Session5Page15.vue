@@ -796,21 +796,17 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try Everyday</h1>
-      <p>&nbsp;&bull; Talk about '<span class="red">red</span>' and
-        '<span class="green">green</span>' thoughts and
-        practise understanding them as much as possible.
-        (Grown-ups too!)</p>
-      <p>&nbsp;&bull; Remember to do 10 minutes of relaxing every day.</p>
-      <p>&nbsp;&bull; All thoughts are OK, but we want to have more
-        '<span class="green">green</span>' thoughts than
-        '<span class="red">red</span>' thoughts so we can
-        feel happier in life and do new things.</p>
-      <p>&nbsp;&bull; Practise being BRAVE:</p>
-      <p>&middot; Look people in the eye and smile.</p>
-      <p>&middot; Use a brave voice and make yourself big.</p>
-      <p>&middot; Try your best and give it a go. </p>
-      <p>&middot; Believe in yourself.</p>
+      <h1>Prøv dagligt</h1>
+      <p>&nbsp;&bull; Tal om ”røde” og ”grønne” tanker og øv dig i at forstå dem
+        så godt du kan (Dette gælder også de voksne!).</p>
+      <p>&nbsp;&bull; Husk at bruge 10 minutter om dagen på at afspænde / slappe af.</p>
+      <p>&nbsp;&bull; Alle tanker er OK, men vi vil helst have flere ”grønne” tanker end ”røde” tanker,
+        så vi kan føle os mere glade og have mod på at øve os i at give nye ting et forsøg.</p>
+      <p>&nbsp;&bull; Øv dig dagligt på at være MODIG:</p>
+      <p>&middot; Kig folk i øjnene og smil.</p>
+      <p>&middot; Brug en modig stemme og gør dig selv stor.</p>
+      <p>&middot; Prøv på at gøre dit bedste og give tingene et forsøg.</p>
+      <p>&middot; Tro på dig selv.</p>
     </div>
     <audio autoplay loop src="../../assets/sounds/session1/Falling-Snow-Sound-Effect-Amplified.mp3"/>
     <audio src="../../assets/sounds/session5/Session5_Page16.mp3" ref="voice"/>

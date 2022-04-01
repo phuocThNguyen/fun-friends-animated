@@ -988,13 +988,13 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try Everyday</h1>
-      <p>&nbsp;&bull; Keep practising your Step Plan with your family and friends.</p>
-      <p>&nbsp;&bull; Practise being BRAVE:</p>
-      <p>&middot; Look people in the eye and smile.</p>
-      <p>&middot; Use a brave voice and make yourself big.</p>
-      <p>&middot; Try your best and give it a go.</p>
-      <p>&middot; Believe in yourself.</p>
+      <h1>Prøv dagligt</h1>
+      <p>&nbsp;&bull; Bliv ved med at øve din Trappestige Plan sammen med din familie og dine venner.</p>
+      <p>&nbsp;&bull; Øv dig dagligt på at være MODIG:</p>
+      <p>&middot; Kig folk i øjnene og smil.</p>
+      <p>&middot; Brug en modig stemme og gør dig selv stor.</p>
+      <p>&middot; Prøv at gøre dit bedste og give tingene et forsøg.</p>
+      <p>&middot; Tro på dig selv.</p>
     </div>
     <audio src="../../assets/sounds/session9/Session9_Page12.mp3" ref="voice"/>
     <div class="page-number" id="page-light">184</div>

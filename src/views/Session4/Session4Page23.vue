@@ -2458,15 +2458,16 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1> Every day remember to:</h1>
-      <p>&bull; Be kind to all living beings.</p>
-      <p>&bull; Play outside.</p>
-      <p>&bull; Have plenty of sleep.</p>
-      <p>&bull; Drink and eat foods that are healthy.</p>
-      <p>&bull; Practise relaxing without screens.</p>
-      <p>&bull; Pay attention to happy things and what you
-        can see, hear, smell, taste and feel.</p>
-      <p>&bull; Say thank you for happy times.</p>
+      <h1>Husk at:</h1>
+      <p>&bull; være omsorgsfuld overfor alle levende væsener</p>
+      <p>&bull; kom ud og leg</p>
+      <p>&bull; få rigeligt med søvn</p>
+      <p>&bull; drikke og spise sunde madvarer</p>
+      <p>&bull; øve dig på at afspænde / slappe af uden skærme</p>
+      <p>&bull; udvise opmærksomhed overfor oplevelser der gør dig glad,
+        og det du så, hørte, lugtede / duftede, smagte og følte / mærkede i
+        de enkelte situationer</p>
+      <p>&bull; sige tak for de glade stunder.</p>
     </div>
     <div class="image-container">
       <img class="action-image" src="../../assets/images/introduction/Koala_Child_Hugging.jpg" alt="kind-to-animals">

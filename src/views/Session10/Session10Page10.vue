@@ -3,8 +3,10 @@
     <img src="../../assets/images/session10/1354.png" alt="background" class="session-background">
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
     <div class="text-box">
-      <p>Give yourself a superhero name and draw a picture of your costume.</p>
-      <p>Share it with your classmates</p>
+      <p>Hvis du har lyst kan du give dig selv et superheltenavn. Du kan skrive det på
+        et stykke papir, dele det med dine venner / klassekammerater, eller tegne et
+        billede af dit kostume!</p>
+      <p>Del det med dine venner / klassekammerater.</p>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/snack-time-the-green-orbs-children-s-music-no-copyright-music.mp3"/>
     <audio src="../../assets/sounds/session10/Session10_Page10.mp3" ref="voice"/>

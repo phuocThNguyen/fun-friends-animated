@@ -196,11 +196,9 @@
       </g>
     </svg>
 
-    <p class="title"><span id="letter-f">R</span>elax</p>
-    <p class="text" id="line-1">Today, we will learn
-      how to pay attention <br>to what our bodies are telling us.</p>
-    <p class="text" id="line-2">We will also talk about
-      'bubble' breathing <br>and play some relaxing games.</p>
+    <p class="title"><span id="letter-f">R</span>elax (Afspænd & Slap af)</p>
+    <p class="text" id="line-1">I denne uge kommer vi til at tænke over det at være opmærksom på det vores krop fortæller os.</p>
+    <p class="text" id="line-2">Vi kommer til at tale videre om ”boble”vejrtrækning og lege nogle afslappende lege.</p>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3"/>
     <audio src="../../assets/sounds/session4/Session4_Page1.mp3" ref="voice"/>

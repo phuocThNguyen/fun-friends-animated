@@ -2,8 +2,8 @@
   <div class="interactive-container">
     <img src="../../assets/images/session4/398-resized.jpg" alt="exploring" class="session-background">
     <div class="text-box">
-      <h1>3. Sight</h1>
-      <p>We see with our eyes. What can we see?</p>
+      <h1>3. Synssansen</h1>
+      <p>Vi ser med vores øjne. Hvad kan vi se?</p>
     </div>
     <audio src="../../assets/sounds/session4/Session4_Page15.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">101</div>

@@ -15,9 +15,9 @@
         </g>
       </svg>
       <div class="star-text">
-        <p>Tom is playing with
-          <br>his friend at
-          <br>the beach.</p>
+        <p>Malthe leger
+          <br>med sin ven
+          <br>på stranden.</p>
       </div>
     </div>
     <audio src="../../assets/sounds/session8/Session8_Page8.mp3" ref="voice"/>

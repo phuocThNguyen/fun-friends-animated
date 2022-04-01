@@ -1,9 +1,7 @@
 <template>
   <div class="interactive-container">
     <img src="../../assets/images/session4/717-resized.jpg" alt="playing-sand" class="session-background">
-    <div class="text-box">
-      Does playing in the sand make you feel calm?
-    </div>
+    <div class="text-box">Nogle børn falder til ro når de leger i sandet.</div>
     <audio src="../../assets/sounds/session4/Session4_Page7.mp3" ref="voice"/>
     <div class="page-number" id="page-light">93</div>
   </div>

@@ -212,11 +212,13 @@
       </g>
     </svg>
     <div class="text-box">
-      <p>Think about a time that you learnt to do something new
-        step by step such as learning to ride a bike.</p>
-      <p>Let's draw a step plan, to make it easy.</p>
-      <p>Start on the bottom step, climbing slowly to the top.</p>
-      <p>It can be easy when we break it into small steps.</p>
+      <p>Lad os tænke på engang hvor du lærte at kunne gøre noget trin for trin,
+        indtil du lykkedes med at gøre det! Forestil dig at du var i gang med at
+        lære at cykle, eller med at lære at svømme, eller med at lære at læse og skrive.</p>
+      <p>Lad os tegne en trappestige plan for at gøre det nemmere.</p>
+      <p>Begynd med det nederste trin og klatre så langsomt op mod toppen.</p>
+      <p>Det kan føles lidt nemmere, når vi deler det op i mindre og mere
+        overskuelige bidder/trin/skridt.</p>
     </div>
     <audio src="../../assets/sounds/session7/Session7_Page9.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">147</div>

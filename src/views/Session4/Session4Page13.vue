@@ -2,11 +2,12 @@
   <div class="interactive-container">
     <img src="../../assets/images/session4/41068-resized.jpg" alt="exploring" class="session-background">
     <div class="title">
-      <p>Practise exploring with your five senses, everywhere you go.</p>
+      <h1>MINDFULNESS – At udforske Verdenen gennem De 5 Sanser</h1>
+      <p>Øv dig i at gå på opdagelse ved hjælp af dine fem sanser.</p>
     </div>
     <div class="text-box">
-      <h1>1. Hearing</h1>
-      <p>We listen with our ears. What can we hear?</p>
+      <h1>1. Høresansen</h1>
+      <p>Vi hører med vores ører. Hvad kan vi høre?</p>
     </div>
     <audio src="../../assets/sounds/session4/Session4_Page13.mp3" ref="voice"/>
     <div class="page-number" id="page-light">99</div>

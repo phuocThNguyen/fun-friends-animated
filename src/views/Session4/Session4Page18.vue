@@ -2,10 +2,9 @@
   <div class="interactive-container">
     <img src="../../assets/images/session4/22061-resized.jpg" alt="body-clues" class="session-background">
     <div class="text-box">
-      <p>Zoe is playing on the new playground,
-       she is feeling excited but also scared.</p>
-      <p>What might be her body clues? Drag the
-       clues to her body.</p>
+      <h1>Ekstra Aktivitet - Kropssignaler</h1>
+      <p>Caroline leger på den nye legeplads - hun føler sig spændt, men også bange.</p>
+      <p>Hvad kunne hendes kropssignaler være?</p>
     </div>
     <div class="clues-sources">
       <draggable class="clues" v-model="dizzy" group="dizzy">
@@ -135,15 +134,15 @@ export default {
   components: {GreenTick, draggable},
   data() {
     return {
-      dizzy: ['Dizziness'],
+      dizzy: ['Svimmelhed'],
       dizzyAns: [],
-      stomach: ['Butterflies in the stomach'],
+      stomach: ['Sommerfugle i maven'],
       stomachAns: [],
-      skin: ['Cold tingly skin'],
+      skin: ['Kuldegysninger'],
       skinAns: [],
-      heart: ['Racing heart'],
+      heart: ['Hjertebanken'],
       heartAns: [],
-      knees: ['Shaky knees'],
+      knees: ['Rystende knæ'],
       kneesAns: [],
       correctAns: 0
     }

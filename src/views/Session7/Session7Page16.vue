@@ -419,21 +419,27 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try Everyday</h1>
-      <p>&nbsp;&bull; Practise the steps in your step plan - one step at a time. It doesn’t matter how long
-        you need or how many steps it takes. Stay on each step until you
-        can do that step easily. Share your plan with your family or friends.</p>
-      <p>&nbsp;&bull; If a step seems too hard, maybe add a smaller step in between.
-        Remember to give yourself a reward for taking each step.</p>
-      <p>&nbsp;&bull; When you are being brave and moving up to a hard step,
-        try ‘bubble’ breathing and thinking ‘green’ thoughts.
-        How can you use these ‘green’ thoughts to reach your goal?</p>
-      <p>&nbsp;&bull; Practise relaxing for at least 10 minutes. Minimise TV and computer time.</p>
-      <p>&nbsp;&bull; Keep practising being BRAVE:</p>
-      <p>&middot; Look people in the eye and smile.</p>
-      <p>&middot; Use a brave voice and make yourself big.</p>
-      <p>&middot; Try your best and give it a go. </p>
-      <p>&middot; Believe in yourself.</p>
+      <h1>Prøv dagligt</h1>
+      <p>&nbsp;&bull; Øv trinene i din Trappestige Plan - et trin af gangen. Det er lige meget,
+        hvor lang tid eller hvor mange trin det tager. Bliv på det aktuelle trin indtil
+        du føler dig rigtig godt tilpas/glad og synes det er nemt at udføre trinnet.
+        Del din plan med din familie og venner/veninder.</p>
+      <p>&nbsp;&bull; Hvis et trin virker for svært er det nok for stort et skridt at tage -
+        måske kan du tilføje et mindre trin mellem dette og det foregående trin?
+        Husk at belønne dig selv for at have taget hvert enkelt skridt. Det er rart
+        at belønne sig selv ved at lave noget sammen med dem vi elsker!</p>
+      <p>&nbsp;&bull; Brug de MODIGE færdigheder fra Fun FRIENDS som en hjælp til at opnå dine mål.
+        Når du er modig og i gang med at bevæge dig videre op til et sværere trin,
+        prøv at lave ”boble” vejrtrækningen og at tænke ”grønne” tanker. Hvilke ”grønne”
+        tanker har din familie og venner? Hvordan kan du bruge de ”grønne” tanker til at
+        opnå dit mål?</p>
+      <p>&nbsp;&bull; Brug mindst 10 minutter om dagen på at øve dig på afspænding og på at slappe
+        af. Uden forstyrrelser! Begræns skærmtid.</p>
+      <p>&nbsp;&bull; Bliv ved med at øve dig på at være MODIG. Øv dig dagligt på at:</p>
+      <p>&middot; Kig folk i øjnene og smil.</p>
+      <p>&middot; Brug en modig stemme og gør dig selv stor.</p>
+      <p>&middot; Prøv at gøre dit bedste og give tingene et forsøg.</p>
+      <p>&middot; Tro på dig selv.</p>
     </div>
     <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"/>
     <audio src="../../assets/sounds/session7/Session7_Page15.mp3" ref="voice"/>

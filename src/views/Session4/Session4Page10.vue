@@ -3,18 +3,14 @@
     <img src="../../assets/images/session4/324483-P9A8QQ-419-resized.jpg"
          alt="lying-on-grass" class="session-background" id="adjust">
     <div class="text-box">
-      <h1>'Bubble' Breathing</h1>
-      <p>Practise 'bubble' breathing with a straw.
-        Blow slowly out of the straw for a long time.
-        Slow and deep breathing calms you down.</p>
-      <p>After, practise ‘bubble’ breathing by
-        lying down without the straw. Imagine
-        yourself in a special space.</p>
-      <p>If you want to, you can describe or
-        draw a picture of your peaceful, quiet
-        place in the next page.</p>
-      <p>Breathing deeply and
-        slowly calms us down.</p>
+      <h1>"Boble"vejrtrækning</h1>
+      <p>Begynd med at øve ”boble” vejrtrækningen ved hjælp af et sugerør.
+        Pust langsomt ud igennem sugerøret over længere tid.
+        Den langsomme dybe vejrtrækning får dig til at falde til ro!</p>
+      <p>Derefter øver du ”boble” vejrtrækningen uden sugerør, imens du ligger ned.
+        Forestil dig, at du er på dit fredfyldte og stille sted.</p>
+      <p>Hvis du har lyst kan du beskrive eller tænke over dit fredfyldte og stille sted.</p>
+      <p>At trække vejret dybt og langsomt får os til at falde til ro.</p>
     </div>
     <audio src="../../assets/sounds/session4/Session4_Page10.mp3" ref="voice"/>
     <div class="page-number" id="page-light">96</div>

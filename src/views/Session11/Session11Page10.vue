@@ -1440,15 +1440,18 @@
         </g>
       </svg>
       <div class="star-text">
-        <p><strong>Bright Star Idea</strong></p>
-        <p>Make a 'recipe for happiness'. Write
-          <br>down all the ingredients that make
-          <br>you happy and how to put them all
-          <br>together. Remember to include
-          <br>everything you learned
-          <br>from Fun Friends. You
-          <br>could ask someone in
-          <br>your family to help you!
+        <p><strong>Ugens
+          <br>lysende
+          <br>stjerne idé</strong></p>
+        <p>Lav en ”opskrift på hvad
+          <br>lykke er for dig”. Skriv alle
+          <br>ingredienserne ned som gør
+          <br>dig tryg og glad. Beskriv
+          <br>kort hvordan du kan blande
+          <br>ingredienserne sammen. Husk
+          <br>at bruge alt det du har lært fra
+          <br>Fun FRIENDS. Du kan også be’
+          <br>din familie om hjælp.
         </p>
       </div>
     </div>

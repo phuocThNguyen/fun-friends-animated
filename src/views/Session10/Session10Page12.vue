@@ -2,15 +2,15 @@
   <div class="interactive-container">
     <img src="../../assets/images/session10/Dogs&People-swimming.jpg" alt="kids-and-dogs" class="session-background">
     <div class="text-box">
-      <h1>Additional Activity &ndash; Someone to look up to who can help</h1>
-      <p class="text"><span>Eliza, Josh and Lucy are learning to jump the waves
-        and body surf at Straddie Island.</span><span> Chilli and Pepper
-        also really love playing in the water.</span><span> Chilli and
-        Pepper are showing them how to have a fun and safe time, enjoying
-        the waves.</span></p>
+      <h1>Ekstra aktivitet - Nogen at se op til som kan hjælpe os</h1>
+      <p class="text"><span>Luna, Jon og Gry øver sig på at hoppe over bølgerne
+        og lærer hvordan man ”body surfer” ved stranden på Orø.</span>
+        <span> Hundene Karla og Otto er også helt vilde med at lege i vandet.</span>
+        <span> Karla og Otto viser børnene hvordan man kan have det sjovt og
+          sikkert imens man nyder bølgerne.</span></p>
     </div>
     <div class="green-box">
-      <strong>We love having fun <br>in the ocean.</strong>
+      <strong>Vi elsker at<br>hoppe i bølgerne.</strong>
     </div>
     <audio src="../../assets/sounds/session10/Session10_Page12.mp3" ref="voice"/>
     <div class="page-number" id="page-light">198</div>

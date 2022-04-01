@@ -2,16 +2,15 @@
   <div class="interactive-container">
     <img id="left-pad-img" src="../../assets/images/session4/27475-resized.jpg" alt="worried" class="session-background">
     <div class="text-box">
-      <h1>Body Clues</h1>
-      <p>How is she feeling?</p>
-      <p>How can you tell?</p>
-      <p><span class="text">Sometimes when we feel nervous, our bodies
-        give us clues or signs to tell us what we feel.</span>
-        <span class="text"> Our heart starts beating fast,</span>
-        <span class="text"> there are butterflies in our tummy,</span>
-        <span class="text"> and we get red in the face or get sweaty.</span></p>
-      <p id="prompt">My body is my friend.
-        <br>It tells me when I need to relax.</p>
+      <h1>Kropssignaler</h1>
+      <p>Hvordan tror du at pigen har det, dvs. hvilken følelse oplever / mærker hun?</p>
+      <p>Hvordan ved du det?</p>
+      <p><span class="text">Nogle gange sker der det når børn føler sig nervøse,</span>
+        <span class="text"> at deres hjerte begynder at slå hurtigt,</span>
+        <span class="text"> de får sommerfugle i maven,</span>
+        <span class="text"> og de bliver røde i ansigtet eller begynder at svede.</span></p>
+      <p id="prompt">Min krop er min ven.
+        <br>Den fortæller mig, når jeg har brug for at slappe af.</p>
     </div>
     <div class="instruction-container">
       <svg class="pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 491 386" width="491" height="386">

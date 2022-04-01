@@ -859,10 +859,10 @@
       </g>
     </svg>
     <div class="text-box">
-      <span>Sometimes others don't feel like playing and that is OK.
-      </span><span>There are other children who will feel like it,
-      you just have to find them. </span><span>Find a classmate and think
-      about a <strong>STEP PLAN</strong> to make new friends together.</span>
+      <span>Nogle gange har andre ikke lyst til at lege, og det er OK. </span>
+      <span>Der er andre børn som har lyst til at lege, du skal bare finde dem. </span>
+      <span>Sammen med en fra klassen kan du finde på en Trappestige Plan I kan
+        bruge til at få nye venner sammen.</span>
     </div>
     <audio src="../../assets/sounds/session8/Session8_Page6.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">162</div>

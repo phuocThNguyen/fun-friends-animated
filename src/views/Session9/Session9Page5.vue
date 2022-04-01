@@ -2296,9 +2296,8 @@
       </g>
     </svg>
     <div class="text-box">
-      <p>What brave things do you think Annie is trying to do?</p>
-      <p>What brave things are you trying to do?</p>
-      <p>What can you do to practise being brave?</p>
+      <p>Hvilke modige ting tror du Mia prøver at gøre?</p>
+      <p>Hvordan kan du prøve at øve dig på at være modig?</p>
     </div>
     <audio src="../../assets/sounds/session9/Session9_Page5.mp3" ref="voice"/>
     <div class="page-number" id="page-light">177</div>

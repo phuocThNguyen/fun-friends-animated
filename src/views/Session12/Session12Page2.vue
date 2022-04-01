@@ -2,10 +2,10 @@
   <div class="interactive-container">
     <img src="../../assets/images/session12/50044.jpg" alt="party" class="session-background">
     <div class="text-box">
-      <h1>Games Party: A Celebration</h1>
-      <p>Together with your family, make up a game to practise
-      the FRIENDS skills.</p>
-      <p>Share your game with other children in the FRIENDS party.</p>
+      <h1>Spil & Leg Fest: Lade os fejre</h1>
+      <p>Gå sammen med din familie og find på et spil eller en leg
+        som man kan bruge til at øve sig på FRIENDS færdighederne.</p>
+      <p>Del dit spil eller din leg med andre børn til FRIENDS festen.</p>
     </div>
     <div class="js-container animation-container"></div>
     <svg class="balloons" id="blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188 358" width="188" height="358">

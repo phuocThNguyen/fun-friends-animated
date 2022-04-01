@@ -1,18 +1,17 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>Additional Activity &ndash; Your Support Teams</h1>
-      <p id="para">Support teams are always there to help you. How can
-       Zoe, Daniel and Matilda get help from their support teams
-       in the pictures below?</p>
+      <h1>Ekstra Aktivitet - Dine støttehold</h1>
+      <p id="para">Støttehold er der altid til at hjælpe dig. Se på billederne
+        herunder - hvordan kan Ella, Daniel og Mathilde søge hjælp hos deres støttehold?</p>
     </div>
     <div class="image-container">
       <img src="../../assets/images/session11/surfing_child.jpg" alt="surfing" class="images">
-      <div class="text" id="para-1">Mum helping Zoe surf.</div>
+      <div class="text" id="para-1">Mor hjælper Ella med at surfe.</div>
     </div>
     <div class="image-container" id="right">
       <img src="../../assets/images/session11/Hugging_Lama_Girl.jpg" alt="hugging-lama" class="images">
-      <div class="text" id="para-2">Matilda giving Alpaca a hug.</div>
+      <div class="text" id="para-2">Mathilde giver Alpaka et knus.</div>
     </div>
     <audio src="../../assets/sounds/session11/Session11_Page5.mp3" ref="voice"/>
     <div class="page-number" id="page-light">208</div>

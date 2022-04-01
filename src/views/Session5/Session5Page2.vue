@@ -2,12 +2,12 @@
   <div class="interactive-container">
     <img src="../../assets/images/session5/traffic-light-poster.png" alt="traffic-light" class="session-background">
     <div class="text-box">
-      <p>We can <strong>choose</strong> our thoughts.</p>
-      <p><span id="red-text">Red</span>, unhelpful thoughts make us feel sad and scared.</p>
-      <p><span id="green-text">Green</span> helpful thoughts make us feel brave and calm.</p>
+      <p>Vi kan <strong>vælge</strong> vores tanker.</p>
+      <p>Røde, ikke-hjælpsomme, tanker gør at vi føler os triste og bange.</p>
+      <p>Grønne, hjælpsomme, tanker gør vi føler os modige og rolige.</p>
     </div>
-    <div class="light-box" id="red">Red thought</div>
-    <div class="light-box" id="green">Green thought</div>
+    <div class="light-box" id="red">Rød tanke</div>
+    <div class="light-box" id="green">Grøn tanke</div>
     <audio src="../../assets/sounds/session5/Session5_Page2.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">112</div>
   </div>

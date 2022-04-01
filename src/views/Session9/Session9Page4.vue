@@ -2,11 +2,11 @@
   <div class="interactive-container">
     <div class="image-container">
       <img src="../../assets/images/session9/770.jpg" alt="Annie">
-      <p id="para-1">2. Brave Annie <br>Trying to read a new book</p>
+      <p id="para-1">2. Modige Mia <br>Prøver at læse en ny bog</p>
     </div>
     <div class="image-container">
       <img src="../../assets/images/session9/2338.jpg" alt="Annie">
-      <p id="para-2">Annie's Reward <br>Special time with her mom</p>
+      <p id="para-2">Mias belønning <br>Hyggestunder med Mor</p>
     </div>
     <audio src="../../assets/sounds/session9/Session9_Page4.mp3" ref="voice"/>
     <div class="page-number" id="page-light">176</div>

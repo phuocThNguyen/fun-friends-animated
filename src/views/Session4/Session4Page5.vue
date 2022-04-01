@@ -3,7 +3,8 @@
     <img src="../../assets/images/session4/5183-resized.jpg" class="images" alt="riding-scooter">
     <img src="../../assets/images/session4/2778146-resized.jpg" class="images" alt="riding-scooter2">
     <div class="text-box">
-      <h1>What are these children doing to relax and calm down?</h1>
+      <h1>At slappe af sammen</h1>
+      <p>What are these children doing to relax and calm down?</p>
     </div>
     <audio src="../../assets/sounds/session4/Session4_Page5.mp3" ref="voice"/>
     <div class="page-number" id="page-light">91</div>

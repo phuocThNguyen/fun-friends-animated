@@ -618,10 +618,10 @@
       </g>
     </svg>
     <div class="text-box">
-      <span>Talk to your friends about your <strong>STEP PLAN</strong>.</span>
-      <span>Think of ways you can reward yourself for doing your best,
-      like going to the park, playing ball, or just sharing
-      a picnic with your family.</span>
+      <span>Tal med dine venner om din Trappestige Plan.</span>
+      <span>Tænk over måder hvorpå du kan belønne dig selv for at
+        have gjort dit bedste, såsom at tage ud i naturen, spille bold,
+        eller at spise mad i det fri sammen med din familie.</span>
     </div>
     <audio src="../../assets/sounds/session9/Session9_Page2.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">174</div>

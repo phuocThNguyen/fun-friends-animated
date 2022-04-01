@@ -2,10 +2,11 @@
   <div class="interactive-container">
     <img src="../../assets/images/session8/3360.jpg" alt="Annie-family" class="session-background">
     <div class="text-box">
-      <p>Annie would like to play, but she doesn't have anyone to play with.</p>
-      <p>How do you think Annie is feeling?</p>
-      <p>If you were Annie, what could you do to play with
-        other children?</p>
+      <p>Josefine har lyst til at lege</p>
+      <p>Josefine har lyst til at lege, men hun har ikke nogen at lege med.
+        Hvordan tror du Josefine har det?</p>
+      <p>Hvilke følelser oplever hun? Hvis du var Josefine, hvad kunne du
+        selv gøre for at komme til at lege med andre børn?</p>
     </div>
     <div class="star-container">
       <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 1258" width="1320" height="1258">
@@ -21,9 +22,11 @@
         </g>
       </svg>
       <div class="star-text">
-        <p>Annie and Tom love
-          <br>riding their bikes
-          <br>with their family.
+        <p>Josefine
+          <br>og Frederik
+          <br>elsker at cykle
+          <br>sammen med
+          <br>deres familie.
         </p>
       </div>
     </div>

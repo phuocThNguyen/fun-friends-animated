@@ -2,11 +2,9 @@
   <div class="interactive-container">
     <img src="../../assets/images/session5/128.jpg" alt="green" class="session-background">
     <div class="text-box">
-      <p>In this picture, the children are walking
-        to a new school with their dad. Look at their happy faces!</p>
-      <p>What could they be feeling?</p>
-      <p>Are they having '<span id="red-text">red</span>' or
-        '<span id="green-text">green</span>' thoughts?</p>
+      <p>På billedet er børnene på vej til en ny skole sammen med deres far.</p>
+      <p>Hvilke følelser har de mon?</p>
+      <p>Tror du deres tanker er ”røde” eller ”grønne”?</p>
     </div>
     <traffic-light-vertical
       correctAns="green"

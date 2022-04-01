@@ -2,8 +2,8 @@
   <div class="interactive-container">
     <img src="../../assets/images/session4/4473-resized.jpg" alt="exploring" class="session-background">
     <div class="text-box">
-      <h1>5. Touch</h1>
-      <p>We feel with our skin. What can we feel?</p>
+      <h1>5. Følesansen</h1>
+      <p>Vi føler ved hjælp af huden, for eksempel på vores hænder og fødder.</p>
     </div>
     <audio src="../../assets/sounds/session4/Session4_Page17.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">103</div>

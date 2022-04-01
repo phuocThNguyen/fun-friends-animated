@@ -300,13 +300,14 @@
         </g>
       </svg>
       <div class="star-text">
-        <p><strong>Bright Star Idea</strong></p>
-        <p>Do a drawing or make a card to thank
-          <br>somebody for the things
-          <br>that you like about them.
-          <br>You could ask someone
-          <br>in your family
-          <br>to help you write it.
+        <p><strong>Ugens
+          <br>lysende
+          <br>stjerne idé</strong></p>
+        <p>Skriv et brev eller et postkort
+          <br>og tak nogen for de ting du
+          <br>kan li’ ved dem. Du kunne
+          <br>bede en i din familie om at
+          <br>hjælpe dig med at skrive det!
         </p>
       </div>
     </div>

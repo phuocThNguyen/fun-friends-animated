@@ -517,32 +517,25 @@
       </g>
     </svg>
     <div class="text-box">
-      <p class="title">Here are some great ideas for sharing FUN FRIENDS
-      with your school community:</p>
+      <p class="title">Her er nogle fantastiske idéer til hvordan I deler Fun FRIENDS
+        med andre udenfor gruppen eller i børnehaven  / på skolen:</p>
       <div class="text">
-        <p>&bull;&nbsp;&nbsp;Play the ‘Same or Different Game’
-          with your class to see what your classmates have
-          in common and how they differ. To play the game,
-          the person who is ‘it’ asks everyone to raise
-          their hands or wiggle if they like something,
-          for example, "Wiggle if you like the colour red".</p>
-        <p>&bull;&nbsp;&nbsp;Have a multicultural day at
-          your school where everyone wears clothes from
-          the countries their families come from and brings
-          stories, photos, food, toys or other things from
-          their culture to share with their classmates.</p>
-        <p>&bull;&nbsp;&nbsp;Have a ‘Show and Tell’ about
-          your ‘Happy Thing’ and listen to your classmates
-          talk about what makes them happy.</p>
-        <p>&bull;&nbsp;&nbsp;Play the ‘Feelings Corner Game’
-          with your class. Put pictures of different feelings
-          in the corners of the room (sad, happy, worried,
-          angry). Take turns saying different situations
-          out loud (“How would you feel if you were
-          getting ready for a party?” “How do you feel
-          when eating your favourite food?”) and then run,
-          skip, roll or point to the corner that shows
-          how you would feel.</p>
+        <p>&bull;&nbsp;&nbsp;Leg ”Samme eller Forskellig” med din gruppe / klasse for
+          at se hvad de andre / dine klassekammerater har til fælles og
+          hvordan de er forskellige fra hinanden. Når I leger legen skal
+          den person der ”er” bede alle om at rejse sig hver gang der nævnes
+          noget man godt kan li’, f.eks.: ”Rejs dig op hvis du kan li’ farven rød”.</p>
+        <p>&bull;&nbsp;&nbsp;Afhold en flerkulturel dag i børnehaven / på skolen hvor alle går i
+          tøj fra de lande deres familier stammer fra. Derudover kan man tage mad,
+          legetøj eller andre ting med fra éns kultur for at vise dem frem til de
+          andre i gruppen / børnehaven / klassen / på skolen.</p>
+        <p>&bull;&nbsp;&nbsp;Lad ”Ugens oplæg” handle om ”Det der gør mig glad”, og lyt til de
+          andre i gruppen / klassen imens de fortæller om hvad der gør dem glad.</p>
+        <p>&bull;&nbsp;&nbsp;Leg ”Følelseshjørner” med gruppen / klassen. Placér forskellige følelsesbilleder
+          i klasseværelsets fire hjørner (trist, glad, bekymret, vred). Sammen med de andre
+          skiftes I til at beskrive forskellige scenarier (”Hvilken følelse ville du opleve,
+          hvis du var i gang med at gøre dig klar til en fest?”) - herefter løber alle hen til
+          det hjørne som viser den følelse de ville ha’.</p>
       </div>
     </div>
     <audio src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3" autoplay loop ref="audio"/>

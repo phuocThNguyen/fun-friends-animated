@@ -2471,15 +2471,19 @@
         </g>
       </svg>
       <div class="star-text">
-        <p><strong>Bright<br>Star Idea</strong></p>
-        <p>Get some dry spaghetti &ndash;
-          <br>see how hard and stiff it is. Now cook the
-          <br>spaghetti and see how floppy it is.
-          <br>To relax, practise making each
-          <br>part of your body
-          <br>tight like dry spaghetti
-          <br>and floppy like
-          <br>cooked spaghetti.</p>
+        <p><strong>Ugens
+          <br>lysende
+          <br>stjerne idé</strong></p>
+        <p>Se på spaghetti inden det bliver kogt -
+          <br>Se hvor hårdt og stift det er.
+          <br>Nu kan du koge spaghettien og se hvor slasket det bliver.
+          <br>Når du har brug for at slappe af, kan du øve dig i at
+          <br>spænde op i hver eneste muskel i din krop, så den
+          <br>bliver hård og stiv som spaghetti inden det er
+          <br>blevet kogt. Derefter kan du øve dig i at
+          <br>give slip og slappe af i alle kroppens
+          <br>muskler igen, så kroppen slasker
+          <br>ligesom kogt spaghetti.</p>
       </div>
     </div>
     <audio src="../../assets/sounds/session4/Session4_Page24.mp3" ref="voice"/>

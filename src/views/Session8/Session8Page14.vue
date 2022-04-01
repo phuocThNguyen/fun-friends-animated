@@ -170,21 +170,18 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try Everyday</h1>
-      <p>&nbsp;&bull; Practise the steps on your <strong>STEP PLAN</strong>.
-        If you've done all the steps,
-        make a new <strong>STEP PLAN</strong>.</p>
-      <p>&nbsp;&bull; Notice when others are listening, helping and smiling
-       and let them know you like it.</p>
-      <p>&nbsp;&bull; Practise turning '<span class="red">red</span>' thoughts
-        into '<span class="green">green</span>' thoughts.</p>
-      <p>&nbsp;&bull; Reward yourself for being BRAVE.</p>
-      <p>&nbsp;&bull; Play with friends and spend time outside.</p>
-      <p>&nbsp;&bull; Practise being BRAVE:</p>
-      <p>&middot; Look people in the eye and smile.</p>
-      <p>&middot; Use a brave voice and make yourself big.</p>
-      <p>&middot; Try your best and give it a go. </p>
-      <p>&middot; Believe in yourself.</p>
+      <h1>Prøv dagligt</h1>
+      <p>&nbsp;&bull; Øv trinene i din Trappestige Plan. Hvis du har gennemført
+        samtlige trin så lav en ny Trinplan.</p>
+      <p>&nbsp;&bull; Læg mærke til når andre lytter, hjælper og smiler til dig,
+        og lad dem vide at du kan li’ det.</p>
+      <p>&nbsp;&bull; Øv dig på at ændre ”røde” tanker til ”grønne” tanker.</p>
+      <p>&nbsp;&bull; Leg med venner og tag dig tid til at være udendørs.</p>
+      <p>&nbsp;&bull; Øv dig dagligt på at være MODIG:</p>
+      <p>&middot; Kig folk i øjnene og smil.</p>
+      <p>&middot; Brug en modig stemme og gør dig selv stor.</p>
+      <p>&middot; Prøv at gøre dit bedste og give tingene et forsøg.</p>
+      <p>&middot; Tro på dig selv.</p>
     </div>
     <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"/>
     <audio src="../../assets/sounds/session8/Session8_Page14.mp3" ref="voice"/>

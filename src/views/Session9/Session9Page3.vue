@@ -1,13 +1,13 @@
 <template>
   <div class="interactive-container">
-    <h1 class="title">Annie is brave and rewards herself</h1>
+    <h1 class="title">Mia er modig og belønner sig selv</h1>
     <div class="image-container">
       <img src="../../assets/images/session9/1489.jpg" alt="Annie">
-      <p>1. Brave Annie <br>Trying to roller-blade</p>
+      <p>1. Modige Mia <br>Prøver at løbe på inlinere</p>
     </div>
     <div class="image-container">
       <img src="../../assets/images/session9/1551.jpg" alt="Annie">
-      <p>Annie's Reward <br>Cooking with mum</p>
+      <p>Mias belønning <br>At lave mad med Mor</p>
     </div>
     <audio src="../../assets/sounds/session9/Session9_Page3.mp3" ref="voice"/>
     <div class="page-number" id="page-light">175</div>

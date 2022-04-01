@@ -2,11 +2,9 @@
   <div class="interactive-container">
     <img src="../../assets/images/session4/creek_girl_and_boy.jpg" alt="creek-boys-girl" class="session-background">
     <div class="text-box">
-      <h1>Additional Activity &ndash; Paying attention
-       with five senses</h1>
-      <p>The children are paying careful attention with
-       their five senses while playing in the creek. What
-       do you think they can hear, see, feel, and taste?</p>
+      <h1>EKSTRA AKTIVITET: MINDFULNESS – AT UDVISE OPMÆRKSOMHED VED HJÆLP AF DE 5 SANSER</h1>
+      <p>Børnene leger i vandløbet og øver sig i at være opmærksomme ved hjælp af deres fem sanser.
+        Hvad tror du, de kan høre, se, føle, lugte / dufte og smage?</p>
     </div>
     <div class="bubble-container">
       <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
@@ -21,7 +19,7 @@
           </g>
         </g>
       </svg>
-      <div class="bubble-text">Share your ideas with others!</div>
+      <div class="bubble-text">Del dine tanker med en ven!</div>
     </div>
     <audio ref="audio" loop autoplay src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
     <audio src="../../assets/sounds/session4/Session4_Page20.mp3" ref="voice"/>

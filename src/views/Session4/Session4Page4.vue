@@ -1,17 +1,17 @@
 <template>
   <div class="interactive-container">
     <img src="../../assets/images/session4/background-monkey.jpg" alt="background" class="session-background">
-    <h1 class="position-absolute title">Body Clues</h1>
-    <p class="position-absolute text">Worries grow</p>
-    <p class="position-absolute text">Head hurts</p>
-    <p class="position-absolute text">Sweaty</p>
-    <p class="position-absolute text">Butterflies in tummy</p>
-    <p class="position-absolute text">Fast breathing</p>
-    <p class="position-absolute text">Dizzy</p>
-    <p class="position-absolute text">Crying</p>
-    <p class="position-absolute text">Red Face</p>
-    <p class="position-absolute text">Knee shaking</p>
-    <p class="position-absolute text">Toilet please!</p>
+    <h1 class="position-absolute title">Kropssignaler</h1>
+    <p class="position-absolute text">Bekymringerne vokser</p>
+    <p class="position-absolute text">Ondt i hovedet</p>
+    <p class="position-absolute text">Svedig</p>
+    <p class="position-absolute text">Sommerfugle i maven - ikke de gode</p>
+    <p class="position-absolute text">Hurtig vejrtrækning</p>
+    <p class="position-absolute text">Svimmel</p>
+    <p class="position-absolute text">Gråd</p>
+    <p class="position-absolute text">Rød i ansigtet</p>
+    <p class="position-absolute text">Rystende knæ</p>
+    <p class="position-absolute text">Hvor er WC’et!</p>
     <audio ref="swoosh" src="../../assets/sounds/session4/swoosh9.mp3"/>
     <audio src="../../assets/sounds/session4/Session4_Page4.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">90</div>
@@ -34,43 +34,43 @@ export default {
         .add({
           targets: text[0],
           opacity: 1,
-        }, 2565)
+        }, 1)
         .add({
           targets: text[1],
           opacity: 1
-        }, 4265)
+        }, 1)
         .add({
           targets: text[2],
           opacity: 1
-        }, 6101)
+        }, 1)
         .add({
           targets: text[3],
           opacity: 1
-        }, 7544)
+        }, 1)
         .add({
           targets: text[4],
           opacity: 1
-        }, 10032)
+        }, 1)
         .add({
           targets: text[5],
           opacity: 1
-        }, 12690)
+        }, 1)
         .add({
           targets: text[6],
           opacity: 1
-        }, 13939)
+        }, 1)
         .add({
           targets: text[7],
           opacity: 1
-        }, 15400)
+        }, 1)
         .add({
           targets: text[8],
           opacity: 1
-        }, 17018)
+        }, 1)
         .add({
           targets: text[9],
           opacity: 1
-        }, 18688);
+        }, 1);
     },
     playSoundEffect() {
       setTimeout(() => {this.$refs.swoosh.play()}, 2565);

@@ -816,7 +816,7 @@
 
     <!--  Main content  -->
     <div class="text-box">
-      Draw a picture of your peaceful, quiet place.
+      Tegn et billede af dit fredfyldte og stille sted.
     </div>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3"/>

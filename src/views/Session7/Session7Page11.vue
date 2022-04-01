@@ -815,14 +815,17 @@
     </svg>
 
     <div class="text-box">
-      <h1>Additional Activity &ndash; My Step Plan</h1>
-      <p>Daniel, Matilda, and Zoe are learning to climb a tree in the park.
-        They feel scared. Poppy is teaching them to do one step at a
-        time, starting from the bottom step. Every time they come to the
-        park, they can try climbing higher.</p>
-      <p>Sit and close your eyes or stand and pretend you are climbing a
-        tree. What are your step plans for climbing the tree in your park?
-        Teach a friend the steps and let them teach you.</p>
+      <h1>Ekstra Aktivitet - Min Trappestige Plan</h1>
+      <p>Sammen skal vi til at lave en TRAPPESTIGE PLAN, der handler om, at klatre op i et træ.</p>
+      <p>Daniel, Mathilde og Sille er ved at lære hvordan man klatrer i træer. De føler sig bange.
+        Alberte er ved at lære dem at tage et trin af gangen. De starter med det nederste trin.
+        Hver gang de besøger træet øver de sig i at prøve at klatre lidt højere op. Det kan godt
+        være at de har brug for at øve det samme trin mange gange indtil de er ok med det
+        pågældende trin. Herefter kan de bevæge sig videre til næste trin.</p>
+      <p>Sid ned og luk dine øjne eller stå op og lad som om du klatrer i et træ.
+        Hvilke idéer til trin har du?</p>
+      <p>Vis en ven(inde) de trin du har fundet på og bed ham/hende om at vise de trin
+        han/hun har fundet på.</p>
     </div>
     <audio src="../../assets/sounds/session7/Session7_Page11.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">149</div>

@@ -1,21 +1,13 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>Choosing '<span class="red">Red</span>' and
-        '<span class="green">Green</span>' thoughts:
-        <br>Sleeping in your own bed
-      </h1>
-      <p>Matilda is going to sleep in her own bed for the first time.</p>
-      <p>Close your eyes and pretend that you
-        are Matilda. What are some '<span class="red">red</span>'
-        thoughts and '<span class="green">green</span>' thoughts?</p>
-      <p>Remember, all thoughts are OK! Whisper your thoughts
-        to a friend.</p>
-      <p>Together, talk about what thoughts can help Matilda
-        sleep and rest better?</p>
-      <p>We are the boss of our thoughts.
-        <br>We can choose green thoughts.
-      </p>
+      <h1>At vælge ”Røde” eller ”Grønne” tanker: At møde en ny lærer</h1>
+      <p>Niels skal til at møde sin nye lærer. Lad os forestille os, at du er Niels.</p>
+      <p>Tal med dem du er sammen med om alle de tanker der går igennem Niels’ hoved.</p>
+      <p>Del nogle ”røde” tanker der gør dig bekymret og bange?</p>
+      <p>Del nogle ”grønne” tanker der vil kunne gøre din dag mere glad og overskuelig.</p>
+      <p>Grønne tanker hjælper os med,
+        <br>at prøve på at gøre vores bedste.</p>
     </div>
     <img src="../../assets/images/session5/86.jpg" alt="red" class="images" id="image-top">
     <img src="../../assets/images/session5/85693.jpg" alt="green" class="images" id="image-bottom">

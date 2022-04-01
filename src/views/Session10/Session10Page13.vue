@@ -1,10 +1,9 @@
 <template>
   <div class="interactive-container" id="alt-bg">
     <div class="text-box">
-      <p>Who showed you how to do something
-        before? Who has helped you feel happy?</p>
-      <p>Write their names in the space below or give them
-        a big thank you.</p>
+      <p>Hvem har tidligere vist dig hvordan man gør noget?
+        Hvem har hjulpet dig med at føle dig glad?</p>
+      <p>Skriv deres navne i felterne herunder eller giv dem en stor tak.</p>
     </div>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle" />
     <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/no-copyright-music-funny-children-kids-music-by-mokka-kids.mp3"/>

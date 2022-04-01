@@ -1,19 +1,14 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>Additional Activity &ndash; <span class="red">Red</span>
-        and <span class="green">Green</span> Thoughts</h1>
-      <p>Daniel and Matilda are playing in the snow for the first time.
-        What are some '<span class="red">red</span>' and
-        '<span class="green">green</span>' thoughts Daniel
-        and Matilda might be having? Share what you felt like,
-        when you tried something new for the first time.</p>
-      <p>Everybody has '<span class="red">red</span>'
-        thoughts when trying something new. We can all
-        try to replace our '<span class="red">red</span>'
-        thoughts with '<span class="green">green</span>'
-        thoughts. Shout out a '<span class="green">green</span>'
-        thought that makes you feel brave!</p>
+      <h1>Ekstra Aktivitet - Røde og Grønne Tanker</h1>
+      <p>Daniel og Ella kælker i sneen for første gang.
+        Hvilke ”røde” og ”grønne” tanker tror du der går gennem Daniel
+        og Ellas hoveder? Del minder om hvordan I havde det, da I prøvede
+        noget nyt for første gang. </p>
+      <p>Alle mennesker har ”røde” tanker når de skal prøve noget nyt.
+        Vi kan alle sammen prøve at udskifte vores ”røde” tanker med ”grønne” tanker. R
+        åb en ”grøn tanke” højt som får dig til at føle dig modig! </p>
     </div>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
     <audio src="../../assets/sounds/session5/Session5_Page14.mp3" ref="voice"/>

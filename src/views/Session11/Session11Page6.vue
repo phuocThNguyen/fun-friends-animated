@@ -2,11 +2,11 @@
   <div class="interactive-container">
     <div class="image-container">
       <img src="../../assets/images/session11/Climbing_Tree_Help.jpg" alt="climbing-tree" class="images">
-      <p class="text" id="para-1">Mum helping <br>Daniel climb a tree.</p>
+      <p class="text" id="para-1">Daniel får hjælp til at klatre i et træ.</p>
     </div>
     <div class="image-container" id="right">
       <img src="../../assets/images/session11/Swinging_Children.jpg" alt="swinging" class="images">
-      <p class="text" id="para-2">Zoe and Daniel <br>helping Matilda swing.</p>
+      <p class="text" id="para-2">Ella og Daniel hjælper Mathilde med at gynge.</p>
     </div>
     <audio src="../../assets/sounds/session11/Session11_Page6.mp3" ref="voice"/>
     <div class="page-number" id="page-light">209</div>

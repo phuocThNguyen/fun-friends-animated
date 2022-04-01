@@ -698,8 +698,10 @@
       </g>
     </svg>
     <div class="text-box">
-      <p>Draw, write or act out your ideas for rewards with a friend!</p>
-      <p>If it's a game, teach your friend how to play it!</p>
+      <p>Gå sammen med en ven(inde) og tegn, skriv,
+        eller lav et rollespil om jeres idéer til belønninger! </p>
+      <p>Hvis det er et spil eller en leg så lær din ven(inde)
+        hvordan det spilles eller leges!</p>
     </div>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
     <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/ukulele-beach-doug-maxwell-children-s-music-no-copyright-music.mp3"/>

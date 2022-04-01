@@ -1040,10 +1040,10 @@
       </g>
     </svg>
     <div class="text-box">
-      <p>Here are some examples of <strong>STEP PLANS</strong> that other kids
-        have used to be brave!</p>
-      <p>What is something you want to do or create?</p>
-      <p>Can you break this down into small easy steps?</p>
+      <p>Her er nogle eksempler på Trappestige Planer andre børn har brugt til at være modig.</p>
+      <p>Tænk på noget du har lyst til at gøre eller skabe - hvad går det ud på?
+        Hvad har du brug for til at gøre det til virkelighed?</p>
+      <p>Kan du bryde dette ned i nogle mindre, mere overskuelige og nemmere trin?</p>
     </div>
     <audio src="../../assets/sounds/session7/Session7_Page4.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">142</div>

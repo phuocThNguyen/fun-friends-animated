@@ -196,15 +196,14 @@
       </g>
     </svg>
 
-    <p class="title"><span id="letter-f">I</span> can try</p>
-    <p class="text" id="line-1">Today, we will think about:
-      '<span class="green">green</span>' <strong>thoughts</strong> that
-      help us feel strong inside, keep us going, and
-      let us have fun, and '<span class="red">red</span>'
-      <strong>thoughts</strong> that stop us all from trying to be brave.</p>
-    <p class="text" id="line-2">How can thoughts be turned
-      '<span class="red">red</span>' or
-      '<span class="green">green</span>'? Share your ideas!</p>
+    <p class="title"><span id="letter-f">I</span> can try (jeg kan prøve, jeg giver det et forsøg)</p>
+    <p class="text" id="line-1">I denne uge kommer vi til at tale om to forskellige slags tanker
+      - ”grønne” tanker som hjælper os med at føle os stærke indeni samtidig med at de
+      holder os i gang og gør det muligt for os at have det sjovt, og ”røde” tanker som
+      afholder os alle fra at prøve at være modig. </p>
+    <p class="text" id="line-2">Hvordan kan tanker ændres til ”røde” eller ”grønne”?
+      Gå sammen som gruppe og sæt jer i en rundkreds. Nu kan I dele jeres idéer.
+      Husk at der ikke findes rigtige eller forkerte svar.</p>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3"/>
     <audio src="../../assets/sounds/session5/Session5_Page1.mp3" ref="voice"/>

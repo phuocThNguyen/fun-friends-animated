@@ -2,11 +2,10 @@
   <div class="interactive-container">
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
     <div class="text-box">
-      <p>Pretend you are meeting a new teacher.</p>
-      <p>What could you be feeling?
-        <br>What could you be thinking?</p>
-      <p>What are some '<span class="green">green</span>' thoughts
-        <br>that make you feel happy and brave?</p>
+      <p>Lad os lege at du kommer til at møde en ny lærer i dag.</p>
+      <p>Hvad mærker du i din krop og hvilke følelser oplever du?
+        <br>Hvilke tanker kunne gå gennem dit hoved?</p>
+      <p>Hvilke ”grønne” tanker kunne hjælpe dig til at føle dig glad og modig?</p>
       <audio src="../../assets/sounds/session5/Session5_Page8.mp3" ref="voice"/>
     </div>
   </div>

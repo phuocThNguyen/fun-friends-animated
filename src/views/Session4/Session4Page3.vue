@@ -2,13 +2,13 @@
   <div class="interactive-container">
     <img src="../../assets/images/session4/126256-resized.jpg" alt="butterflies-in-the-tummy" class="session-background">
     <div class="text-box">
-      <h1>Butterflies in the tummy</h1>
-      <p>What happens to you when you feel nervous?</p>
-      <p>Act, dance or draw what happens in your body.</p>
-      <p>How do your friends show they are nervous?</p>
-      <p>Ask your friends what helps them to calm down?</p>
-      <p>Remember – It is normal to be worried, but you
-        can choose thumbs down or thumbs up actions.</p>
+      <h1>Sommerfugle i maven</h1>
+      <p>Hvad sker der med dig / hvad oplever du, når du føler dig nervøs?</p>
+      <p>Vis hvad der sker i din krop ved hjælp af rollespil, dans eller at tegne det.</p>
+      <p>Hvordan har dine venner det - hvad føler / mærker de, når de har det sådan?</p>
+      <p>Hvordan ligner jeres reaktioner hinanden? Og hvordan reagerer I eventuelt forskelligt?</p>
+      <p>Spørg dine venner hvad de tænker du kan gøre for at falde til ro. Lyt og svar, når de spørger dig.</p>
+      <p>Husk - det er helt normalt at bekymre sig, det er hvad du vælger at gøre ved det, der kan være en ”thumbs-up” eller ”thumbs-down” valg.</p>
     </div>
     <audio src="../../assets/sounds/session4/Session4_Page3.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">89</div>
@@ -31,23 +31,27 @@ export default {
         .add({
           targets: text[1],
           opacity: 1
-        }, 3432)
+        }, 1)
         .add({
           targets: text[2],
           opacity: 1,
-        }, 7049)
+        }, 1)
         .add({
           targets: text[3],
           opacity: 1,
-        }, 11254)
+        }, 1)
         .add({
           targets: text[4],
           opacity: 1,
-        }, 15129)
+        }, 1)
         .add({
           targets: text[5],
           opacity: 1,
-        }, 18797)
+        }, 1)
+        .add({
+          targets: text[6],
+          opacity: 1,
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 0)

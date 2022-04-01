@@ -2,9 +2,10 @@
   <div class="interactive-container">
     <img src="../../assets/images/session8/32050.png" alt="city" class="session-background">
     <div class="text-box">
-      <p>Find a friend in your class and show them or tell them
-      what they do that you find kind.</p>
-      <p>Maybe smiling, sharing, helping, listening or laughing?</p>
+      <p>Hvad er det der gør at dine venner er omsorgsfulde og venlige? Find en
+        klassekammerat / ven(inde) og vis eller fortæl vedkommende hvilke ting
+        hun / han gør som du synes er omsorgsfuldt og venligt.</p>
+      <p>Det kan være hun / han smiler, deler, hjælper, lytter eller griner?</p>
     </div>
     <audio src="../../assets/sounds/session8/Session8_Page2.mp3" ref="voice"/>
     <div class="page-number" id="page-light">158</div>

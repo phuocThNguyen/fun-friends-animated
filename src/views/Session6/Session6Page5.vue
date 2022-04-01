@@ -1,15 +1,11 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>Choosing '<span class="red">Red</span>' and
-        '<span class="green">Green</span>' thoughts:
-        <br>'Show and Tell'
-      </h1>
-      <p>Sam is getting ready for ‘Show and Tell’.</p>
-      <p>What thoughts might Sam be thinking?</p>
-      <p>What thoughts do you think could help
-        her feel better?</p>
-      <p>Green thoughts help us stay calm.</p>
+      <h1>At vælge ”Røde” eller ”Grønne” tanker: At holde oplæg foran klassen</h1>
+      <p>Sille er ved at gøre sig klar til at holde oplæg foran klassen.</p>
+      <p>Hvilke tanker kunne Sille tænke?</p>
+      <p>Hvilke tanker tror du vil hjælpe hende med at føle sig bedre tilpas?</p>
+      <p>Del én idé med en ven(inde)!</p>
     </div>
     <div class="bubble-container">
       <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
@@ -24,7 +20,7 @@
           </g>
         </g>
       </svg>
-      <div class="bubble-text">Share your ideas with others!</div>
+      <div class="bubble-text">Del dine tanker med en ven!</div>
     </div>
     <img src="../../assets/images/session5/50289.jpg" alt="red" class="images" id="image-top">
     <img src="../../assets/images/session5/103011.jpg" alt="green" class="images" id="image-bottom">

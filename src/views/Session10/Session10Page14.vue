@@ -2,9 +2,9 @@
   <div class="interactive-container">
     <img src="../../assets/images/session10/1408.jpg" alt="background" class="session-background">
     <div class="text-box">
-      <span>Who showed you how to do something before?</span>
-      <span> Who has helped you feel happy?</span>
-      <span> Give them a big thank you!</span>
+      <span>Hvem har tidligere vist dig hvordan man gør noget?</span>
+      <span> Hvem har hjulpet dig med at føle dig glad?</span>
+      <span> Giv dem en stor tak!</span>
     </div>
     <audio src="../../assets/sounds/session10/Session10_Page14.mp3" ref="voice"/>
     <div class="page-number" id="page-light">200</div>

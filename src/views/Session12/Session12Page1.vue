@@ -196,12 +196,11 @@
       </g>
     </svg>
 
-    <p class="title"><span id="letter-f">S</span>tay Brave</p>
+    <p class="title"><span id="letter-f">S</span>tay Brave (Forbliv Modig)</p>
     <div class="text-box">
-      <p><strong>Two things for you
-        to talk about and enjoy today:</strong></p>
-      <p>1. Being happy when we try something</p>
-      <p>2. Having fun with the friends we have made</p>
+      <p><strong>To ting du / I kan tale om og nyde i dag er, at:</strong></p>
+      <p>1. være glad når vi prøver noget  / giver tingene et forsøg</p>
+      <p>2. hygge og have det sjovt med de nye venner vi har fået</p>
     </div>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3"/>

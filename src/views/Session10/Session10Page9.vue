@@ -3,10 +3,10 @@
     <img src="../../assets/images/session10/1354.png" alt="background" class="session-background">
     <img src="../../assets/images/session10/superhero-kids.png" alt="kids" class="kids">
     <div class="text-box">
-      <p>Pretend you are a Superhero. Make yourself as big as you can
-        <br>by stretching your neck, arms, legs, fingers or toes.</p>
-      <p>What does a superhero do to help everybody?</p>
-      <p>What can you do to be a superhero?</p>
+      <p>Lad som om du er en Superhelt(inde). Gør dig selv så stor du kan ved at
+        <br>strække din nakke / hals, dine arme, ben, fingre og / eller tæer.</p>
+      <p>Hvad gør en superhelt(inde) for at hjælpe alle andre?</p>
+      <p>Hvad kan du gøre for at være en superhelt(inde)?</p>
     </div>
     <svg id="female" class="superhero" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 319 238" width="319" height="238">
       <defs>

@@ -2,11 +2,11 @@
   <div class="interactive-container">
     <div class="image-container">
       <img src="../../assets/images/session9/92230.jpg" alt="Annie">
-      <p>2. Brave Tom <br>Learning to garden</p>
+      <p>2. Modige Jakob <br>Lærer at dyrke grøntsager</p>
     </div>
     <div class="image-container">
       <img src="../../assets/images/session9/3100.jpg" alt="Annie">
-      <p>Tom's Reward <br>Fun ride</p>
+      <p>Jakobs belønning <br>En sjov køretur</p>
     </div>
     <audio src="../../assets/sounds/session9/Session9_Page7.mp3" ref="voice"/>
     <div class="page-number" id="page-light">179</div>

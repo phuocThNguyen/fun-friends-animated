@@ -2,10 +2,10 @@
   <div class="interactive-container">
     <img src="../../assets/images/session4/Shaunti_Dog-resized.jpg" alt="body-clues" class="session-background">
     <div class="text-box">
-      <p>Shaunti the dog is learning to swim in the
-       new creek, she is a bit worried.</p>
-      <p>What might be her body clues? Connect the
-       clues to her body.</p>
+      <p>Hunden Karla er ved at lære at svømme i et vandløb.
+        Hun er lidt bekymret.</p>
+      <p>Hvad kunne hendes kropssignaler være?
+        Forbind signalerne med hendes krop.</p>
     </div>
     <div class="clues-sources">
       <draggable class="clues" v-model="ear" group="ear">
@@ -85,11 +85,11 @@ export default {
   components: {GreenTick, draggable},
   data() {
     return {
-      ear: ['Ears are standing up and alert'],
+      ear: ['Ørerne står lige op i luften og er opmærksomme '],
       earAns: [],
-      tail: ['Tail between the legs'],
+      tail: ['Halen hænge mellem benene'],
       tailAns: [],
-      head: ['Head down low'],
+      head: ['Hovedet holdes nede'],
       headAns: [],
       correctAns: 0
     }

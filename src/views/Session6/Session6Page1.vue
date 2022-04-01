@@ -196,14 +196,13 @@
       </g>
     </svg>
 
-    <p class="title"><span id="letter-f">I</span> can try</p>
-    <p class="text" id="line-1">Today, we are going to learn that we are
-      the boss of our thinking <br>and that we can choose
-      between '<span class="red">red</span>'
-      and '<span class="green">green</span>' thoughts.</p>
-    <p class="text" id="line-2">Remember, all thoughts are OK,
-      <br>but choosing '<span class="green">green</span>' thoughts
-      will make the day feel better.</p>
+    <p class="title"><span id="letter-f">I</span> can try (jeg kan prøve, jeg giver det et forsøg)</p>
+    <p class="text" id="line-1">I dag kommer vi til at overveje samt øve os på hvordan
+      vi kan ændre ”røde” tanker til ”grønne” tanker.
+      Vi kommer også til at tale om at vi er herre over vores egen tankegang.
+      Vi har tanker men vi er dem ikke. Vi kan vælge mellem ”røde” og ”grønne” tanker.</p>
+    <p class="text" id="line-2">Husk, at alle tanker er OK, men at vælge ”grønne” tanker
+      vil gøre at vores dag føles lettere.</p>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3"/>
     <audio src="../../assets/sounds/session6/Session6_Page1.mp3" ref="voice"/>

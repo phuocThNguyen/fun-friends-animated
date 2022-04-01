@@ -2,17 +2,15 @@
   <div class="interactive-container">
     <img src="../../assets/images/session8/67.png" alt="creek" class="session-background">
     <div class="text-box">
-      <h1>Additional Activity &ndash; Being kind friends</h1>
-      <p class="text"><span>The creek is full of life when it rains. The birds
-       start singing, water trickles down the stream and
-       the trees glow bright green. </span><span>Zoe, Matilda and Daniel
-       want to cross the creek by themselves. Poppy explained
-       it is more fun to do it as a team and help each other.
-       </span><span>If one of them slips in the water everyone can help.
-       Play "I spy with my little eye" by paying attention
-       with your five senses. </span><span>Do you think Zoe, Matilda and
-       Daniel are kind friends? Do you think that these are
-       'red' or 'green' actions?</span></p>
+      <h1>Ekstra Aktivitet - At være en omsorgsfuld og venlig ven</h1>
+      <p class="text"><span>Vandløbet vækkes til live når det regner. Fuglene begynder at synge,
+        vandet løber langsomt og træerne står lysende grønne. </span><span>Sille, Mathilde og
+        Daniel vil gerne krydse vandløbet på egen hånd. Alberte forklarer at det er sjovere
+        at gøre det sammen som et hold hvor man hjælper hinanden. </span><span>De kan hjælpe
+        hinanden hvis én af dem snubler i vandet. Brug legen ”Skibet er ladet med ...” til
+        at udvise opmærksomhed ved hjælp af dine fem sanser. </span><span>Synes du at Sille,
+        Mathilde og Daniel opfører sig som omsorgsfulde venner? Synes du at følgende er
+        ”røde” eller ”grønne” handlinger?</span></p>
     </div>
     <audio autoplay ref="audio" src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
     <audio src="../../assets/sounds/session8/Session8_Page11.mp3" ref="voice"/>

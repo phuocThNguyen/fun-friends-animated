@@ -2458,16 +2458,16 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try Everyday</h1>
-      <p>&nbsp;&bull; Try to understand feelings in yourself and others.</p>
-      <p>&nbsp;&bull; Practise relaxing and taking deep breaths.</p>
-      <p>&nbsp;&bull; Try to use relaxing strategies like ‘bubble’ breathing when
-        you feel upset, worried or angry.</p>
-      <p>&nbsp;&bull; Practise being BRAVE:</p>
-      <p>&middot; Look people in the eye and smile.</p>
-      <p>&middot; Use a brave voice and make yourself big.</p>
-      <p>&middot; Try your best and give it a go. </p>
-      <p>&middot; Believe in yourself.</p>
+      <h1>Prøv dagligt</h1>
+      <p>&nbsp;&bull; Prøv at forstå følelser - både i / hos dig selv og i / hos andre.</p>
+      <p>&nbsp;&bull; Øv dig i at afspænde  / slappe af og udføre den dybe vejrtrækning.</p>
+      <p>&nbsp;&bull; Prøv at bruge de afspændings- / afslapningsstrategier du har lært når
+        du føler dig oprørt, bekymret eller vred, (fx ”boble” vejrtrækningen).</p>
+      <p>&nbsp;&bull; Øv dig dagligt på at være MODIG:</p>
+      <p>&middot; Kig folk i øjnene og smil.</p>
+      <p>&middot; Brug en modig stemme og gør dig selv stor.</p>
+      <p>&middot; Prøv at gøre dit bedste og give tingene et forsøg.</p>
+      <p>&middot; Tro på dig selv.</p>
     </div>
     <audio autoplay loop src="../../assets/sounds/session4/night-time.mp3"/>
     <audio src="../../assets/sounds/session4/Session4_Page22.mp3" ref="voice"/>

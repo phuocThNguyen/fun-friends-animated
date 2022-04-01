@@ -2,14 +2,13 @@
   <div class="interactive-container">
     <img src="../../assets/images/session11/palmtree.png" alt="background" class="session-background">
     <div class="text-box">
-      <p>We help each other by saying kind words and by listening
-      to each other.</p>
-      <p>Talk to your friends about how to help each other.</p>
-      <p>How can you help animals?</p>
-      <p>How can you look after natural places like the bushes,
-       parks, beaches and rainforests?</p>
-      <p>How does it feel to be helpful?</p>
-      <p>Is there an activity you can do together to help even more?</p>
+      <p>Vi hjælper hinanden ved at sige venlige / omsorgsfulde ord og ved at lytte til hinanden.</p>
+      <p>Tal med dine venner / klassekammerater om hvordan I kan hjælpe hinanden.</p>
+      <p>Hvordan kan du / I hjælpe dyr?</p>
+      <p>Hvordan kan du / I passe på naturen? For eksempel: rabatterne (langs vejkanten),
+        skoven, parken, stranden og regnskovene?</p>
+      <p>Hvordan føles det at være hjælpsom?</p>
+      <p>Er der en aktivitet I kan lave sammen for at hjælpe endnu mere til?</p>
     </div>
     <audio src="../../assets/sounds/session11/Session11_Page3.mp3" ref="voice"/>
     <div class="page-number" id="page-light">206</div>

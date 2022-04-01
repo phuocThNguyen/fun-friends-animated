@@ -1,10 +1,10 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>Annie loves the beach</h1>
-      <p>Annie is just back from holiday at the beach.</p>
-      <p>What do you think Annie did on her holiday?</p>
-      <p>What can you do or say to be happy for Annie?</p>
+      <h1>Erika er på ferie</h1>
+      <p>Erika er lige kommet hjem fra badeferie. Her er nogle billeder.</p>
+      <p>Hvad tror du Erika lavede imens hun var på ferie?</p>
+      <p>Hvad kan du gøre eller sige, for at vise at du er glad på Erikas vegne?</p>
     </div>
     <img src="../../assets/images/session8/135407-OSAV2U-882.jpg" alt="Annie" class="images">
     <img src="../../assets/images/session8/135348-OSAU2M-875.jpg" alt="family" class="images">

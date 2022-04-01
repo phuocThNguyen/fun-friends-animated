@@ -517,28 +517,22 @@
       </g>
     </svg>
     <div class="text-box">
-      <p class="title">Here are some great ideas for sharing FUN FRIENDS
-        with your school community:</p>
+      <p class="title">Her er nogle fantastiske idéer til hvordan I deler Fun FRIENDS
+        med andre udenfor gruppen eller i børnehaven  / på skolen:</p>
       <div class="text">
-        <p>&bull;&nbsp;&nbsp;Practise daily relaxing with your
-          whole class. For two minutes after coming in from
-          play time, everyone can lie down or sit in a way
-          that makes them feel good. Here you can close your
-          eyes, and practise slow breathing and making your
-          body go floppy and heavy.</p>
-        <p>&bull;&nbsp;&nbsp;Put on a puppet play to teach
-          your school about ‘red’ and ‘green’ thoughts.
-          Invite the whole school community to come and watch,
-          including teachers, families and grandparents.</p>
-        <p>&bull;&nbsp;&nbsp;Set a whole school challenge to
-          be a healthy class. Classes can score points for
-          healthy choices such as eating fruit and vegetables,
-          going to bed at bedtime, and riding their bikes
-          to school. All classes can make a large poster
-          about being healthy.</p>
-        <p>&bull;&nbsp;&nbsp;Practise role playing with your
-          classmates about being kind, sharing, speaking bravely,
-          and listening when others are talking.</p>
+        <p>&bull;&nbsp;&nbsp;Øv dig hver dag i at slappe af sammen med hele din klasse. Når I kommer
+          ind fra frikvarteret kan I alle lægge jer (gerne på et tæppe / liggeunderlag),
+          eller sidde i to minutter på en måde der gør I føler jer godt tilpas. Her kan I
+          lukke jeres øjne og øve jer på at trække vejret langsomt samtidig med at I gør
+          jeres krop slap og tung.</p>
+        <p>&bull;&nbsp;&nbsp;Lav et dukketeater for at lære jeres skole om ”røde” og ”grønne” tanker.
+          Invitér hele skolefællesskabet til at komme og kigge på, inklusiv familier og bedsteforældre.</p>
+        <p>&bull;&nbsp;&nbsp;Iværksæt en ”Sund Klasse” udfordring på tværs af stuerne i børnehaven eller
+          klasserne på skolen. Stuerne / Klasserne kan score point for at træffe sunde valg,
+          såsom at spise frugt og grønt, gå i seng til tiden, og at cykle / gå i skole.
+          Alle stuerne / klasserne kan lave en stor plakat om det, at leve sundt.</p>
+        <p>&bull;&nbsp;&nbsp;Gå sammen med din gruppe eller dine klassekammerater og lav et rollespil
+          om det, at være omsorgsfuld, dele, tale modigt, og lytte når andre taler.</p>
       </div>
     </div>
     <audio src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3" autoplay loop ref="audio"/>

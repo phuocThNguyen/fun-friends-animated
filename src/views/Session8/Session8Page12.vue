@@ -3,9 +3,7 @@
     <img src="../../assets/images/session8/creek_girl_and_boy.jpg" alt="boy-and-girl" class="images" id="left">
     <img src="../../assets/images/session8/creek_exploring_group.jpg" alt="exploring-creek" class="images" id="right">
     <div class="question-container">
-      <div class="text">
-        Helping each other cross the creek
-      </div>
+      <div class="text">I færd med at hjælpe hinanden over vandløbet</div>
       <div class="choices-container">
         <svg class="thumb thumb-up" id="thumb-up-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1960 1978" width="1960" height="1978">
           <g id="thumb-up">
@@ -50,9 +48,7 @@
       </div>
     </div>
     <div class="question-container">
-      <div class="text">
-        Exploring the creek beds
-      </div>
+      <div class="text">I færd med at udforske vandløbets bund</div>
       <div class="choices-container">
         <svg class="thumb thumb-up" id="thumb-up-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1960 1978" width="1960" height="1978">
           <g id="thumb-up">

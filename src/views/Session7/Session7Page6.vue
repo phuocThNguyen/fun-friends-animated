@@ -37,15 +37,13 @@
         </g>
       </g>
     </svg>
-    <h1 class="title">Coping Step Plan</h1>
-    <div class="trophy-container">
-      Goal: Making new friends
-    </div>
+    <h1 class="title">TRAPPESTIGE PLAN</h1>
+    <div class="trophy-container">Mål: At danne nye venskaber</div>
     <div class="plans" id="step-1">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">1) Look your friend in the eye and say
-        hello with a brave voice and smile.</div>
+      <div class="text">1) Se din ven(inde) i øjnene og sig ”hej”
+        med en modig stemme og et smil.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -59,7 +57,7 @@
             </g>
           </g>
         </svg>
-        <div class="bubble-text">This is easy!</div>
+        <div class="bubble-text">Det er nemt!</div>
       </div>
       <svg class="koala" id="koala-standing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 816 975" width="816" height="975">
         <g>
@@ -314,9 +312,8 @@
     <div class="plans" id="step-2">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">2) Ask your new friend, with a brave voice, with
-        a smile on your face, if they would like to play
-        with you e.g. hide & seek or board games.</div>
+      <div class="text">2) Spørg din ny ven(inde) med en modig stemme
+        og et smil på læben, om hun / han vil lege med dig. F.eks. gemmeleg eller brætspil.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -330,7 +327,7 @@
             </g>
           </g>
         </svg>
-        <div class="bubble-text">I'll try my best!</div>
+        <div class="bubble-text">Jeg gør mit bedste!</div>
       </div>
       <svg class="koala koala-climbing" id="koala-climbing-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 961 649" width="961" height="649">
         <g>
@@ -467,9 +464,8 @@
     <div class="plans" id="step-3">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">3) Write an invitation card at home for
-        a play date at the park over the
-        weekend. Give it to him/her at school.</div>
+      <div class="text">3) Lav en invitation og invitér på en legeaftale i
+        parken eller i haven i weekenden. Gi’ den til ham / hende når I ses i skolen.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -483,7 +479,7 @@
             </g>
           </g>
         </svg>
-        <div class="bubble-text">I'll give it a go!</div>
+        <div class="bubble-text">Jeg giver det et forsøg!</div>
       </div>
       <svg class="koala koala-climbing" id="koala-climbing-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 961 649" width="961" height="649">
         <g>
@@ -620,8 +616,8 @@
     <div class="plans" id="step-4">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">4) Invite your friend to come
-        and play in your house.</div>
+      <div class="text">4) Invitér din ven(inde) til at
+        komme og lege hjemme hos dig.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -635,7 +631,7 @@
             </g>
           </g>
         </svg>
-        <div class="bubble-text">I can do it!</div>
+        <div class="bubble-text">Jeg kan gøre det!</div>
       </div>
       <svg class="koala koala-climbing" id="koala-climbing-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 961 649" width="961" height="649">
         <g>
@@ -772,8 +768,9 @@
     <div class="plans" id="step-5">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">5) Invite your new friend for a sleepover and
-        play lots of games before going to sleep.</div>
+      <div class="text">5) Invitér din nye ven(inde) på besøg og senere til
+        eventuelt at overnatte hos dig og leg en masse forskellige lege, inden
+        I lægger jer til at sove.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -787,7 +784,7 @@
             </g>
           </g>
         </svg>
-        <div class="bubble-text">I did it!</div>
+        <div class="bubble-text">Jeg gjorde det!</div>
       </div>
       <svg class="koala" id="koala-sitting" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 679 687" width="679" height="687">
         <g>
@@ -1001,22 +998,22 @@
       </svg>
     </div>
     <div class="wing-container" id="left-container">
-      <p>A family member</p>
-      <p>My friends</p>
-      <p>My teacher</p>
-      <p>My siblings</p>
-      <p>My parents</p>
-      <h1>My Helper</h1>
+      <p>Et familiemedlem</p>
+      <p>Min ven(inde)</p>
+      <p>Min pædagog / lærer</p>
+      <p>Mine søskende</p>
+      <p>Min ven(inde)s forælder</p>
+      <h1>Min Hjælper</h1>
     </div>
     <div class="wing-container" id="right-container">
-      <p>Play hide and seek</p>
-      <p>Go for a swim</p>
-      <p>Play skipping</p>
-      <p>Fly a kite</p>
-      <p>Play in the park</p>
-      <h1>Rewards</h1>
+      <p>Leg gemmeleg</p>
+      <p>Tag ud og svømme</p>
+      <p>Sjippe</p>
+      <p>Flyv med en drage</p>
+      <p>Leg i naturen</p>
+      <h1>Belønning</h1>
     </div>
-    <div class="text-box">Green Thoughts:</div>
+    <div class="text-box">Grøn tanke: </div>
     <div class="coordinate-container" @click="displayStep">
       <svg class="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 517 517" width="517" height="517">
         <defs>
@@ -1122,7 +1119,7 @@
           </g>
         </g>
       </svg>
-      <div class="button-label">Next Step</div>
+      <div class="button-label">Næste Trin</div>
       <audio ref="sound" src="../../assets/sounds/session7/click-sound.mp3"></audio>
     </div>
     <audio ref="sound" src="../../assets/sounds/session7/click-sound.mp3"/>

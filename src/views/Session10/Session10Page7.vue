@@ -1,8 +1,8 @@
 <template>
   <div class="interactive-container">
     <img src="../../assets/images/session10/1243.jpg" alt="Tom-reading-book" class="session-background">
-    <div class="text-box-green">My mum helps me to be brave
-      <br>when I meet new people.</div>
+    <div class="text-box-green">Min mor hjælper mig med at
+      <br>være modig når jeg møder nye mennesker.</div>
     <audio src="../../assets/sounds/session10/Session10_Page7.mp3" ref="voice"/>
     <div class="page-number" id="page-light">193</div>
   </div>
