@@ -61,6 +61,14 @@ export default {
           opacity: 1
         }, 1)
         .add({
+          targets: text[3],
+          opacity: 1
+        }, 1)
+        .add({
+          targets: text[4],
+          opacity: 1
+        }, 1)
+        .add({
           targets: '.bubble-container',
           opacity: 0.9,
         }, 1)
@@ -83,19 +91,22 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  top: 1%;
-  left: 1%;
-  width: 50%;
+  top: .5%;
+  left: calc(0.005*133vh);
+  width: calc(0.99*133vh);
   background-color: rgba(255,255,255,0.9);
   padding: 1vh;
   opacity: 0;
 }
+.text-box h1 { font-size: 3vh}
 .text-box p {
-  font-size: 4vh;
+  font-size: 2.5vh;
   opacity: 0;
+  margin-bottom: 1vh;
+  line-height: 3.2vh;
 }
-.text-box p:first-child {
-  margin-top: 1vh;
+.text-box p:last-child {
+  margin-bottom: 0 !important;
 }
 .notice-box {
   position: absolute;
@@ -105,7 +116,7 @@ export default {
   text-align: center;
   color: #ffffff;
   background-color: rgba(0, 206, 124, 1);
-  font-size: 4vh;
+  font-size: 3vh;
   font-weight: bold;
   padding: .7vh;
   opacity: 0;

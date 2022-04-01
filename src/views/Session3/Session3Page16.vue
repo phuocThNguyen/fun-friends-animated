@@ -714,7 +714,8 @@
       <div class="star-text">
         <p><strong>Ugens lysende
           stjerne idé</strong></p>
-        <p>Leg en leg med nogen i din familie,
+        <p>Leg en leg med
+          <br>nogen i din familie,
           <br>hvor I skiftes til at
           <br>sige ting højt,
           <br>der gør jer glade.
@@ -799,11 +800,11 @@ export default {
   position: absolute;
   width: 100%;
   text-align: center;
-  margin-top: 14%;
+  margin-top: 14vh;
   z-index: 55;
 }
 .star-text p {
-  font-size: 4.5vh;
+  font-size: 4.2vh;
   margin-bottom: 0;
 }
 .landscape {

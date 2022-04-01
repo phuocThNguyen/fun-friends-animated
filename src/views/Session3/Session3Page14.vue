@@ -804,13 +804,12 @@ export default {
 }
 .text-box h1 {
   text-align: center;
-  margin-bottom: 2vh;
-  font-size: 6vh;
-  font-weight: bold;
+  margin-bottom: 1vh;
+  font-size: 5vh;
 }
 .text-box p {
   margin-bottom: 1vh;
-  font-size: 4.5vh;
+  font-size: 3.5vh;
   opacity: 0;
 }
 .text-box p:nth-child(5),

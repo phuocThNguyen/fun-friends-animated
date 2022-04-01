@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session3/2206-resized.jpg" alt="boy-with-bubbles" class="session-background">
+    <img src="../../assets/images/session3/2206-resized.jpg" id="bg" alt="boy-with-bubbles" class="session-background">
     <div class="text-box">
       <h1><strong>Sjove aktiviteter med bobler</strong></h1>
       <p>Nu skal vi i gang med to lege.</p>
@@ -46,27 +46,27 @@ export default {
         .add({
           targets: '.text-box',
           opacity: 1
-        }, 500)
+        }, 1)
         .add({
           targets: text[0],
           opacity: 1
-        }, 738)
+        }, 1)
         .add({
           targets: text[1],
           opacity: 1
-        }, 3376)
+        }, 1)
         .add({
           targets: text[2],
           opacity: 1
-        }, 7318)
+        }, 1)
         .add({
           targets: text[3],
           opacity: 1,
-        }, 10538)
+        }, 1)
         .add({
           targets: text[4],
           opacity: 1,
-        }, 41283)
+        }, 1)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
@@ -84,6 +84,7 @@ export default {
 </script>
 
 <style scoped>
+#bg {transform: scaleX(-1)}
 .text-box {
   position: absolute;
   top: 0;
@@ -95,12 +96,12 @@ export default {
   opacity: 0;
 }
 .text-box h1 {
-  font-size: 3.36vh;
+  font-size: 3vh;
   margin-bottom: 1vh;
   opacity: 0;
 }
 .text-box p {
-  font-size: 2.8vh;
+  font-size: 2.6vh;
   margin-bottom: 0;
   opacity: 0;
 }

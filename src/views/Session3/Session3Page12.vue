@@ -42,10 +42,10 @@
         <p><strong>Ugens lysende
           stjerne idé</strong></p>
         <p>Imens dine bobler brister
-          med et "pop" kan du,
-          hvis du har lyst,
-          sige hvad det er
-          du puster bort.
+          <br>med et "pop" kan du,
+          <br>hvis du har lyst,
+          <br>sige hvad det er
+          <br>du puster bort.
         </p>
       </div>
     </div>
@@ -71,30 +71,30 @@ export default {
         .add({
           targets: '.text-box',
           opacity: 1,
-        }, 500)
+        }, 1)
         .add({
           targets: text[0],
           opacity: 1,
-        }, 927)
+        }, 1)
         .add({
           targets: text[1],
           opacity: 1,
-        }, 4131)
+        }, 1)
         .add({
           targets: text[3],
           opacity: 1,
-        }, 21096)
+        }, 1)
         .add({
           targets: '.star-container',
           opacity: 1,
           duration: 1
-        }, 40300)
+        }, 1)
         .add({
           targets: '.star-container',
           scale: 14,
           delay: 0,
           duration: 1000,
-        }, 40326)
+        }, 1)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
@@ -139,7 +139,7 @@ export default {
   z-index: 55;
 }
 .star-text p {
-  font-size: .25vh;
+  font-size: .19vh;
   margin-bottom: 0;
 }
 .text-box {
@@ -153,12 +153,12 @@ export default {
   opacity: 0;
 }
 .text-box h1 {
-  font-size: 4vh;
+  font-size: 3vh;
   margin-bottom: 1vh;
   opacity: 0;
 }
 .text-box p {
-  font-size: 3.3vh;
+  font-size: 2.6vh;
   margin-bottom: 0;
   opacity: 0;
 }

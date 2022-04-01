@@ -9,7 +9,7 @@
     </div>
     <div class="notice-box">Vi planter flere træer af omsorg for planeten Jorden.</div>
     <div class="bubble-container" id="bubble-1">
-      <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
+      <svg class="bubble" id="bubble-reverse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
         <g id="Graphic Element">
           <g id="&lt;Group&gt;">
             <g id="&lt;Group&gt;">
@@ -58,23 +58,27 @@ export default {
         .add({
           targets: ".text-box",
           opacity: 1,
-        }, 716)
+        }, 1)
         .add({
           targets: '#text-box-p',
           opacity: 1
-        }, 2921)
+        }, 1)
+        .add({
+          targets: '#text-box-p2',
+          opacity: 1
+        }, 1)
         .add({
           targets: '#bubble-1',
           opacity: 0.9,
-        }, 6840)
+        }, 1)
         .add({
           targets: '#bubble-2',
           opacity: 0.9,
-        }, 10109)
+        }, 1)
         .add({
           targets: '.notice-box',
           opacity: 1,
-        }, 13624)
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -98,13 +102,13 @@ export default {
   opacity: 0;
 }
 .text-box h1 {
-  font-size: 6vh;
+  font-size: 4vh;
   font-weight: bold;
   margin-bottom: 0;
   opacity: 1;
 }
 .text-box p {
-  font-size: 4vh;
+  font-size: 3vh;
   margin-bottom: 0;
   opacity: 0;
 }
@@ -116,33 +120,32 @@ export default {
   text-align: center;
   color: #ffffff;
   background-color: rgba(0, 206, 124, 1);
-  font-size: 4vh;
+  font-size: 3vh;
   font-weight: bold;
   padding: .7vh;
   opacity: 0;
 }
 .bubble-container {
   position: absolute;
-  width: 30%;
-  height: 28vh;
-  left: -.5%;
+  width: calc(0.2*133vh);
+  height: 20vh;
   opacity: 0;
 }
-#bubble-1 {bottom: 36vh}
-#bubble-2 {bottom: 8vh}
+#bubble-1 {bottom: 12vh; left: 0}
+#bubble-2 {bottom: 12vh; right: 0}
 .bubble {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  transform: scaleX(-1);
 }
+#bubble-reverse {transform: scaleX(-1);}
 .bubble-text {
   position: absolute;
   left: 3%;
   top: 2%;
-  font-size: 5vh;
+  font-size: 3.5vh;
   text-align: center;
   width: 94%;
   height: 76%;

@@ -75,15 +75,21 @@ export default {
   align-items: center;
 }
 .text-box {
-  width: 70%;
+  width: 100%;
   background-color: #000000;
   padding: 1vh;
   opacity: 0;
   text-align: center;
+  position: absolute;
+  top: 0;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .text-box p {
   color: #ffffff;
-  font-size: 4vh;
+  font-size: 3vh;
   margin-bottom: 0;
 }
 </style>

@@ -855,12 +855,11 @@ export default {
 }
 .text-box h1 {
   margin-bottom: 1vh;
-  font-size: 5vh;
+  font-size: 4vh;
 }
 .text-box p {
-  font-size: 4vh;
-  padding-left: 0;
   margin-bottom: 1vh;
+  font-size: 3vh;
   opacity: 0;
 }
 .text-box p:last-child {
