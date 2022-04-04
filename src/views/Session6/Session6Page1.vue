@@ -196,13 +196,12 @@
       </g>
     </svg>
 
-    <p class="title"><span id="letter-f">I</span> can try (jeg kan prøve, jeg giver det et forsøg)</p>
-    <p class="text" id="line-1">I dag kommer vi til at overveje samt øve os på hvordan
-      vi kan ændre ”røde” tanker til ”grønne” tanker.
-      Vi kommer også til at tale om at vi er herre over vores egen tankegang.
-      Vi har tanker men vi er dem ikke. Vi kan vælge mellem ”røde” og ”grønne” tanker.</p>
+    <p class="title"><span id="letter-f">I</span> can try <br>(jeg kan prøve, <br>jeg giver det et forsøg)</p>
+    <p class="text" id="line-1">I dag kommer vi til at overveje samt øve os på hvordan vi kan ændre ”røde” tanker til ”grønne”
+      <br>tanker. Vi kommer også til at tale om at vi er herre over vores egen tankegang. Vi har tanker men
+      <br>vi er dem ikke. Vi kan vælge mellem ”røde” og ”grønne” tanker.</p>
     <p class="text" id="line-2">Husk, at alle tanker er OK, men at vælge ”grønne” tanker
-      vil gøre at vores dag føles lettere.</p>
+      <br>vil gøre at vores dag føles lettere.</p>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3"/>
     <audio src="../../assets/sounds/session6/Session6_Page1.mp3" ref="voice"/>
@@ -268,15 +267,15 @@ export default {
         .add({
           targets: ".title",
           opacity: 1,
-        }, 7529)
+        }, 1)
         .add({
           targets: "#line-1",
           opacity: 1
-        }, 10347)
+        }, 1)
         .add({
           targets: "#line-2",
           opacity: 1
-        }, 20162)
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -296,12 +295,13 @@ export default {
   font-family: 'Sigmar One', cursive;
   position: absolute;
   color: white;
-  font-size: 12vh;
+  font-size: 7vh;
   -webkit-text-stroke: 0.1vw black;
   text-align: center;
   width: 100%;
-  top: 24vh;
+  top: 23vh;
   opacity: 0;
+  line-height: 7vh;
 }
 #letter-f {
   color: #e59535;
@@ -309,18 +309,18 @@ export default {
 .text {
   position: absolute;
   margin-bottom: 0;
-  font-size: 4.5vh;
+  font-size: 3vh;
   opacity: 0;
 }
 #line-1 {
   text-align: center;
   width: 100%;
-  top: 38vh;
+  top: 46vh;
 }
 #line-2 {
   text-align: center;
   width: 100%;
-  top: 51vh;
+  top: 61vh;
 }
 span {
   display: inline-block;
@@ -376,10 +376,10 @@ tspan { white-space:pre }
 }
 .big-cloud {
   position: absolute;
-  width: 110%;
+  width: calc(1.25*133vh);
   height: auto;
-  top: 16vh;
-  left: -5%;
+  top: 13vh;
+  left: calc(-0.1*133vh);
 }
 .long-cloud {
   width: 130%;

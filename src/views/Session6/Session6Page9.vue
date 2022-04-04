@@ -744,39 +744,39 @@ export default {
         .add({
           targets: ".text-box",
           opacity: 1,
-        }, 763)
+        }, 1)
         .add({
           targets: text[1],
           opacity: 1,
-        }, 2571)
+        }, 1)
         .add({
           targets: text[2],
           opacity: 1,
-        }, 10000)
+        }, 1)
         .add({
           targets: text[3],
           opacity: 1,
-        }, 14224)
+        }, 1)
         .add({
           targets: text[4],
           opacity: 1,
-        }, 22407)
+        }, 1)
         .add({
           targets: text[5],
           opacity: 1,
-        }, 24536)
+        }, 1)
         .add({
           targets: text[6],
           opacity: 1,
-        }, 27570)
+        }, 1)
         .add({
           targets: text[7],
           opacity: 1,
-        }, 31248)
+        }, 1)
         .add({
           targets: text[8],
           opacity: 1,
-        }, 34267)
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -794,22 +794,22 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.8);
-  width: 80%;
+  width: calc(0.7*133vh);
   height: auto;
-  left: 10%;
-  top: 2vh;
+  left: calc(0.15*133vh);
+  top: 10vh;
   padding: 2vh;
   opacity: 0;
 }
 .text-box h1 {
   text-align: center;
   margin-bottom: 1vh;
-  font-size: 6vh;
+  font-size: 4vh;
   font-weight: bold;
 }
 .text-box p {
   margin-bottom: 1.5vh;
-  font-size: 4vh;
+  font-size: 3vh;
   opacity: 0;
 }
 .text-box p:nth-child(9),

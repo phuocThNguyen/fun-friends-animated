@@ -156,35 +156,35 @@ export default {
         .add({
           targets: text[1],
           opacity: 1
-        }, 5673)
+        }, 1)
         .add({
           targets: text[2],
           opacity: 1
-        }, 8739)
+        }, 1)
         .add({
           targets: '#top',
           opacity: 1
-        }, 8739)
+        }, 1)
         .add({
           targets: text[3],
           opacity: 1
-        }, 16833)
+        }, 1)
         .add({
           targets: '#bottom',
           opacity: 1
-        }, 16833)
+        }, 1)
         .add({
           targets: text[4],
           opacity: 1
-        }, 29056)
+        }, 1)
         .add({
           targets: text[5],
           opacity: 1
-        }, 33943)
+        }, 1)
         .add({
           targets: '.bubble-container',
-          opacity: 0.9
-        }, 38263)
+          opacity: 0
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -223,7 +223,7 @@ export default {
   margin-bottom: 1vh;
 }
 .text-box p {
-  font-size: 3vh;
+  font-size: 2.75vh;
   margin-bottom: 0;
   opacity: 0;
 }

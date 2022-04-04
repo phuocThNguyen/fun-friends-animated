@@ -25,7 +25,7 @@ export default {
         width: 1,
         height: 0.82,
         isPicture: true,
-        pictureUrl: "session5/Slide1.jpeg",
+        pictureUrl: "session5/Slide1-danish.jpeg",
         backgroundSize: 'contain'
       },
     }
@@ -44,23 +44,23 @@ export default {
         .add({
           targets: '.text-box',
           opacity: 1
-        }, 500)
+        }, 1)
         .add({
           targets: text[0],
           opacity: 1
-        }, 736)
+        }, 1)
         .add({
           targets: text[1],
           opacity: 1
-        }, 3265)
+        }, 1)
         .add({
           targets: text[2],
           opacity: 1
-        }, 5318)
+        }, 1)
         .add({
           targets: text[3],
           opacity: 1
-        }, 12020)
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -79,20 +79,17 @@ export default {
   top: -0.5%;
   left: 0;
 }
-.green {
-  color: #00CE7C;
-}
 .text-box {
   position: absolute;
-  width: 40%;
-  padding: 2vh;
+  width: 48%;
+  padding: 1.5vh;
   top: 1%;
   left: 1%;
   background-color: rgba(255,255,255, 0.90);
   opacity: 0;
 }
 .text-box p {
-  font-size: 2rem;
+  font-size: 2.5vh;
   margin-bottom: 0;
   opacity: 0;
 }

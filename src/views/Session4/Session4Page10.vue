@@ -70,12 +70,12 @@ export default {
   padding: 1.5vh;
 }
 .text-box h1 {
-  font-size: 5vh;
+  font-size: 4vh;
   font-weight: bold;
   margin-bottom: 1vh;
 }
 .text-box p {
-  font-size: 4vh;
+  font-size: 3vh;
   margin-bottom: 1vh;
   opacity: 0;
 }
@@ -87,7 +87,7 @@ export default {
   font-weight: bold;
   padding: 1vh;
   text-align: center;
-  margin-top: 5%;
+  margin-top: 30%;
 }
 #adjust {
   left: 12%;

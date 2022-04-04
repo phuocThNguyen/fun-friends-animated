@@ -6,8 +6,8 @@
       <p>Lad os lege at det er din tur til at holde oplæg for klassen i dag.</p>
       <p>Hvad mærker du i din krop og hvilke følelser oplever du?</p>
       <p>Hvilke ”grønne” tanker kunne hjælpe dig til at føle dig glad og modig?</p>
-      <audio src="../../assets/sounds/session5/Session5_Page9.mp3" ref="voice"/>
     </div>
+    <audio src="../../assets/sounds/session5/Session5_Page9.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -24,7 +24,7 @@ export default {
         width: 1,
         height: 0.82,
         isPicture: true,
-        pictureUrl: "session5/Slide3.jpeg",
+        pictureUrl: "session5/Slide3-danish.jpeg",
         backgroundSize: 'contain'
       },
     }
@@ -43,23 +43,23 @@ export default {
         .add({
           targets: '.text-box',
           opacity: 1,
-        }, 500)
+        }, 1)
         .add({
           targets: text[0],
           opacity: 1
-        }, 703)
+        }, 1)
         .add({
           targets: text[1],
           opacity: 1
-        }, 4114)
+        }, 1)
         .add({
           targets: text[2],
           opacity: 1
-        }, 7549)
+        }, 1)
         .add({
           targets: text[3],
           opacity: 1
-        }, 9648)
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -78,12 +78,9 @@ export default {
   top: -0.5%;
   left: 0;
 }
-.green {
-  color: #00CE7C;
-}
 .text-box {
   position: absolute;
-  width: 38%;
+  width: 38vh;
   padding: 1vh;
   top: 1%;
   right: 1%;
@@ -91,8 +88,8 @@ export default {
   opacity: 0;
 }
 .text-box p {
-  font-size: 2.8vh;
-  margin-bottom: .5vh;
+  font-size: 2.5vh;
+  margin-bottom: 1vh;
   opacity: 0;
 }
 .text-box p:last-child {

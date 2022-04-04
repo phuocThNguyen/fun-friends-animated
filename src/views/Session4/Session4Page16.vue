@@ -37,15 +37,16 @@ export default {
 </script>
 
 <style scoped>
-h1 { font-size: 5vh;margin-bottom: 0; }
-p { font-size: 4vh;margin-bottom: 0; }
+h1 { font-size: 4vh;margin-bottom: 0; }
+p { font-size: 3vh;margin-bottom: 0; }
 .text-box {
   position: absolute;
   background-color: #00ce7c;
   color: #ffffff;
   padding: 1.5vh 2vh;
   top: 2vh;
-  right: 2%;
+  right: 2vh;
   opacity: 0;
+  width: 40vh;
 }
 </style>

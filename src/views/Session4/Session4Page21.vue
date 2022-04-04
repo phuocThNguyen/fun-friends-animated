@@ -18,7 +18,7 @@ export default {
         targets: '.text-box',
         opacity: 1,
         duration: 500,
-        delay: 500,
+        delay: 1,
         easing: 'linear'
       });
     },
@@ -39,7 +39,7 @@ export default {
   bottom: 6vh;
   width: 70%;
   left: 15%;
-  padding: 1.4vh;
+  padding: 1vh;
   color: #ffffff;
   background-color: #00ce7c;
   text-align: center;

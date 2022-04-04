@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session5/traffic-light-poster.png" alt="traffic-light" class="session-background">
+    <img src="../../assets/images/session5/traffic-light-poster-danish.jpg" alt="traffic-light" class="session-background">
     <div class="text-box">
       <p>Vi kan <strong>vælge</strong> vores tanker.</p>
       <p>Røde, ikke-hjælpsomme, tanker gør at vi føler os triste og bange.</p>
@@ -9,7 +9,6 @@
     <div class="light-box" id="red">Rød tanke</div>
     <div class="light-box" id="green">Grøn tanke</div>
     <audio src="../../assets/sounds/session5/Session5_Page2.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">112</div>
   </div>
 </template>
 
@@ -29,23 +28,23 @@ export default {
         .add({
           targets: '.text-box',
           opacity: 1,
-        }, 821)
+        }, 1)
         .add({
           targets: text[1],
           opacity: 1
-        }, 3621)
+        }, 1)
         .add({
           targets: '#red',
           opacity: 1
-        }, 3621)
+        }, 1)
         .add({
           targets: text[2],
           opacity: 1
-        }, 9631)
+        }, 1)
         .add({
           targets: '#green',
           opacity: 1
-        }, 9631)
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -69,8 +68,8 @@ export default {
   opacity: 0;
 }
 .text-box p {
-  font-size: 4vh;
-  margin-bottom: 0;
+  font-size: 3.2vh;
+  margin-bottom: 4vh;
 }
 .text-box p:nth-child(2),
 .text-box p:last-child {
@@ -83,7 +82,7 @@ export default {
   position: absolute;
   right: 7%;
   width: 20%;
-  font-size: 4.5vh;
+  font-size: 4vh;
   font-weight: bold;
   color: #ffffff;
   padding: 2.5vh 2.1vh;
@@ -96,12 +95,6 @@ export default {
 }
 #green {
   background-color: #00ce7c;
-  bottom: 2vh;
-}
-#red-text {
-  color: #ff0000;
-}
-#green-text {
-  color: #00CE7C;
+  bottom: 10vh;
 }
 </style>

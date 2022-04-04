@@ -4,7 +4,25 @@
     <div class="text-box">
       <h1>EKSTRA AKTIVITET: MINDFULNESS – AT UDVISE OPMÆRKSOMHED VED HJÆLP AF DE 5 SANSER</h1>
       <p>Børnene leger i vandløbet og øver sig i at være opmærksomme ved hjælp af deres fem sanser.
-        Hvad tror du, de kan høre, se, føle, lugte / dufte og smage?</p>
+        Hvad tror du, de kan høre, se, føle, lugte / dufte og smage?
+      </p>
+      <p><strong>Hvad kan de høre? </strong><span style="font-style: italic">Fuglene, der synger i træerne og vandet, der løber i vandløbet.</span>
+        <br>Hvad kan de ellers høre?
+      </p>
+      <p><strong>Hvad kan de se? </strong><span style="font-style: italic">Fisk der svømmer og insekter der bevæger sig, i vandløbet.</span>
+        <br>Hvad kan de ellers se?
+      </p>
+      <p><strong>Hvad kan de føle? </strong>
+        <span style="font-style: italic; font-size: 2.9vh">
+          Det kolde vand mellem deres tæer samt sand og mudder mellem deres fingre.</span>
+        <br>Hvad kan de ellers føle / mærke?
+      </p>
+      <p><strong>Hvad kan de lugte? </strong><span style="font-style: italic">Duften af træerne, de vilde blomster, og det vilde buskads.</span>
+        <br>Hvad kan de ellers lugte?
+      </p>
+      <p><strong>Hvad kan de smage? </strong><span style="font-style: italic">Smagen af frisk luft og det friske vand de drak af drikkedunken.</span>
+        <br>Hvad kan de ellers smage?
+      </p>
     </div>
     <div class="bubble-container">
       <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
@@ -43,15 +61,31 @@ export default {
         .add({
           targets: '.text-box',
           opacity: 1,
-        }, 986)
+        }, 1)
         .add({
           targets: text[1],
           opacity: 1,
-        }, 6370)
+        }, 1)
         .add({
-          targets: '.bubble-container',
-          opacity: 0.9,
-        }, 20504)
+          targets: text[2],
+          opacity: 1,
+        }, 1)
+        .add({
+          targets: text[3],
+          opacity: 1,
+        }, 1)
+        .add({
+          targets: text[4],
+          opacity: 1,
+        }, 1)
+        .add({
+          targets: text[5],
+          opacity: 1,
+        }, 1)
+        .add({
+          targets: text[6],
+          opacity: 1,
+        }, 1)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
@@ -79,11 +113,11 @@ export default {
   opacity: 0;
 }
 .text-box h1 {
-  font-size: 5vh;
+  font-size: 4vh;
   margin-bottom: 1vh;
 }
 .text-box p {
-  font-size: 4vh;
+  font-size: 3vh;
   margin-bottom: 1.5vh;
   opacity: 0;
 }

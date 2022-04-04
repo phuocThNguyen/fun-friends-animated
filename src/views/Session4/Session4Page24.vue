@@ -2474,6 +2474,7 @@
         <p><strong>Ugens
           <br>lysende
           <br>stjerne idé</strong></p>
+        <p></p>
         <p>Se på spaghetti inden det bliver kogt -
           <br>Se hvor hårdt og stift det er.
           <br>Nu kan du koge spaghettien og se hvor slasket det bliver.
@@ -2543,7 +2544,7 @@ export default {
 <style scoped>
 .star-container {
   position: absolute;
-  width: 68%;
+  width: 67%;
   height: 85vh;
   bottom: 3vh;
   right: 16%;
@@ -2560,16 +2561,17 @@ export default {
 }
 .star-text {
   position: absolute;
-  margin-top: 3%;
+  margin-top: -3vh;
   width: 100%;
   text-align: center;
   z-index: 55;
 }
 .star-text p {
-  font-size: 3.8vh;
+  font-size: 2.5vh;
   text-align: center;
   margin-bottom: 0;
 }
+.star-text p:first-child { font-size: 4vh !important; }
 .landscape {
   position: absolute;
   height: auto;

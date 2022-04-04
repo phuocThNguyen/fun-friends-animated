@@ -2516,63 +2516,63 @@ export default {
         .add({
           targets: ".text-box",
           opacity: 1,
-        }, 570)
+        }, 1)
         .add({
           targets: texts[1],
           opacity: 1,
-        }, 3238)
+        }, 1)
         .add({
           targets: images[0],
           opacity: 1,
-        }, 3238)
+        }, 1)
         .add({
           targets: texts[2],
           opacity: 1,
-        }, 6128)
+        }, 1)
         .add({
           targets: images[1],
           opacity: 1,
-        }, 6128)
+        }, 1)
         .add({
           targets: texts[3],
           opacity: 1,
-        }, 7609)
+        }, 1)
         .add({
           targets: images[2],
           opacity: 1,
-        }, 7609)
+        }, 1)
         .add({
           targets: texts[4],
           opacity: 1,
-        }, 10307)
+        }, 1)
         .add({
           targets: images[3],
           opacity: 1,
-        }, 10307)
+        }, 1)
         .add({
           targets: texts[5],
           opacity: 1,
-        }, 14129)
+        }, 1)
         .add({
           targets: images[4],
           opacity: 1,
-        }, 14129)
+        }, 1)
         .add({
           targets: texts[6],
           opacity: 1,
-        }, 17570)
+        }, 1)
         .add({
           targets: images[5],
           opacity: 1,
-        }, 17570)
+        }, 1)
         .add({
           targets: texts[7],
           opacity: 1,
-        }, 26647)
+        }, 1)
         .add({
           targets: images[6],
           opacity: 1,
-        }, 26647);
+        }, 1);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -2611,10 +2611,10 @@ export default {
 }
 .text-box h1 {
   margin-bottom: 1vh;
-  font-size: 5vh;
+  font-size: 4vh;
 }
 .text-box p {
-  font-size: 4vh;
+  font-size: 3vh;
   padding-left: 0;
   margin-bottom: 1vh;
   opacity: 0;

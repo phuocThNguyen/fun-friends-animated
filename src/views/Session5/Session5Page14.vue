@@ -17,7 +17,7 @@ export default {
         width: 1,
         height: 0.8,
         isPicture: true,
-        pictureUrl: "session5/Slide8.jpeg",
+        pictureUrl: "session5/Slide8-danish.jpeg",
         backgroundSize: 'contain'
       },
     }

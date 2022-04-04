@@ -4,7 +4,6 @@
     <div class="text-box">
       <p><strong>At sove på sit eget værelse</strong></p>
       <p>Det er Mathildes første nat alene i sin egen seng.</p>
-      <p>Pay attention to her worried face!</p>
       <p>Hvordan har hun det på dette billede (hvad føler hun)?
         Har Mathilde ”røde” eller ”grønne” tanker?</p>
     </div>
@@ -154,23 +153,23 @@ export default {
         .add({
           targets: '.text-box',
           opacity: 1
-        }, 300)
+        }, 1)
         .add({
           targets: text[0],
           opacity: 1
-        }, 588)
+        }, 1)
         .add({
           targets: text[1],
           opacity: 1
-        }, 5588)
+        }, 1)
         .add({
           targets: text[2],
           opacity: 1
-        }, 8600)
+        }, 1)
         .add({
           targets: '.traffic-light',
           opacity: 1
-        }, 14500)
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -192,20 +191,18 @@ export default {
 }
 .text-box {
   position: absolute;
-  width: 80%;
+  width: calc(0.98 * 133vh);
   padding: 1.5vh;
   top: 1vh;
-  left: 10%;
+  left: calc(0.01 * 133vh);
   background-color: rgba(255,255,255, 0.9);
   opacity: 0;
 }
 .text-box p {
-  font-size: 3.8vh;
+  font-size: 3vh;
   margin-bottom: 0;
   opacity: 0;
 }
-#red-text {color: red;}
-#green-text {color: #00CE7C;}
 .reward {
   position: absolute;
   height: auto;

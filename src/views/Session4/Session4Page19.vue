@@ -108,11 +108,11 @@ export default {
         .add({
           targets: '.clues-sources',
           opacity: 1,
-        }, 12882)
+        }, 1)
         .add({
           targets: '.answers',
           opacity: 1,
-        }, 14000);
+        }, 1);
     },
     handleChange(id) {
       switch (id) {
@@ -212,11 +212,11 @@ export default {
 }
 #green-tick-1 {
   right: 30%;
-  top: 31vh;
+  top: 30vh;
 }
 #green-tick-2 {
   left: 48%;
-  top: 61vh;
+  top: 65vh;
 }
 #green-tick-3 {
   right: 16%;
@@ -224,12 +224,13 @@ export default {
 }
 #ear {
   right: 32%;
-  top: 23vh;
-  height: 10.3vh;
+  top: 18vh;
+  height: 14.25vh;
 }
 #tail {
   left: 27%;
   top: 57vh;
+  height: 10.3vh;
 }
 #head {
   right: 18%;
@@ -260,10 +261,10 @@ export default {
   background-color: #000000;
   color: #ffffff;
   width: 100%;
-  font-size: 2.8vh;
+  font-size: 2.5vh;
   border-radius: 10px;
   text-align: center;
-  padding: 1.4vh;
+  padding: 1.5vh 1.8vh;
   margin-bottom: 1vh;
 }
 .text-box {
@@ -275,11 +276,7 @@ export default {
   background-color: rgba(255,255,255,0.9);
   opacity: 0;
 }
-.text-box p {
-  font-size: 3.8vh;
-  text-align: center;
-  margin-bottom: 0;
-}
+.text-box p {font-size: 3vh;margin-bottom: 0;}
 .cls-1 {isolation: isolate;}
 .cls-2,
 .cls-7 {fill: #bcbec0;mix-blend-mode: multiply;}

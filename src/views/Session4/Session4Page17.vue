@@ -3,7 +3,7 @@
     <img src="../../assets/images/session4/4473-resized.jpg" alt="exploring" class="session-background">
     <div class="text-box">
       <h1>5. Følesansen</h1>
-      <p>Vi føler ved hjælp af huden, for eksempel på vores hænder og fødder.</p>
+      <p>Vi føler ved hjælp af huden, for <br>eksempel på vores hænder og fødder.</p>
     </div>
     <audio src="../../assets/sounds/session4/Session4_Page17.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">103</div>
@@ -37,15 +37,15 @@ export default {
 </script>
 
 <style scoped>
-h1 { font-size: 5vh;margin-bottom: 0; }
-p { font-size: 4vh;margin-bottom: 0; }
+h1 { font-size: 4vh;margin-bottom: 0; }
+p { font-size: 3vh;margin-bottom: 0; }
 .text-box {
   position: absolute;
   background-color: #00ce7c;
   color: #ffffff;
   padding: 1.5vh 2vh;
-  bottom: 6vh;
-  left: 10%;
+  bottom: 1vh;
+  left: 11.5vh;
   opacity: 0;
 }
 </style>

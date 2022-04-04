@@ -196,13 +196,13 @@
       </g>
     </svg>
 
-    <p class="title"><span id="letter-f">I</span> can try (jeg kan prøve, jeg giver det et forsøg)</p>
+    <p class="title"><span id="letter-f">I</span> can try <br>(jeg kan prøve, <br>jeg giver det et forsøg)</p>
     <p class="text" id="line-1">I denne uge kommer vi til at tale om to forskellige slags tanker
-      - ”grønne” tanker som hjælper os med at føle os stærke indeni samtidig med at de
-      holder os i gang og gør det muligt for os at have det sjovt, og ”røde” tanker som
+      - ”grønne” tanker som hjælper <br>os med at føle os stærke indeni samtidig med at de
+      holder os i gang og gør det muligt for os <br>at have det sjovt, og ”røde” tanker som
       afholder os alle fra at prøve at være modig. </p>
     <p class="text" id="line-2">Hvordan kan tanker ændres til ”røde” eller ”grønne”?
-      Gå sammen som gruppe og sæt jer i en rundkreds. Nu kan I dele jeres idéer.
+      Gå sammen som gruppe og sæt jer i <br>en rundkreds. Nu kan I dele jeres idéer.
       Husk at der ikke findes rigtige eller forkerte svar.</p>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3"/>
@@ -269,15 +269,15 @@ export default {
         .add({
           targets: ".title",
           opacity: 1,
-        }, 6400)
+        }, 1)
         .add({
           targets: "#line-1",
           opacity: 1
-        }, 8891)
+        }, 1)
         .add({
           targets: "#line-2",
           opacity: 1
-        }, 23813);
+        }, 1);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -297,12 +297,13 @@ export default {
   font-family: 'Sigmar One', cursive;
   position: absolute;
   color: white;
-  font-size: 12vh;
+  font-size: 7vh;
   -webkit-text-stroke: 0.1vw black;
   text-align: center;
   width: 100%;
-  top: 22vh;
+  top: 24vh;
   opacity: 0;
+  line-height: 7vh;
 }
 #letter-f {
   color: #e59535;
@@ -310,18 +311,18 @@ export default {
 .text {
   position: absolute;
   margin-bottom: 0;
-  font-size: 4.8vh;
+  font-size: 3vh;
   opacity: 0;
 }
 #line-1 {
   text-align: center;
   width: 100%;
-  top: 36vh;
+  top: 46vh;
 }
 #line-2 {
   text-align: center;
   width: 100%;
-  top: 57vh;
+  top: 60vh;
 }
 span {
   display: inline-block;
@@ -377,10 +378,10 @@ tspan { white-space:pre }
 }
 .big-cloud {
   position: absolute;
-  width: 110%;
+  width: calc(1.25*133vh);
   height: auto;
-  top: 16vh;
-  left: -5%;
+  top: 13vh;
+  left: calc(-0.1*133vh);
 }
 .long-cloud {
   width: 130%;

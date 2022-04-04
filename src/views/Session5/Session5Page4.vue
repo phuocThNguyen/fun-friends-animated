@@ -148,19 +148,19 @@ export default {
         .add({
           targets: '.text-box',
           opacity: 1
-        }, 500)
+        }, 1)
         .add({
           targets: text[0],
           opacity: 1
-        }, 693)
+        }, 1)
         .add({
           targets: text[1],
           opacity: 1
-        }, 9100)
+        }, 1)
         .add({
           targets: text[2],
           opacity: 1
-        }, 11300)
+        }, 1)
         .add({
           targets: '.traffic-light',
           opacity: 1
@@ -186,20 +186,19 @@ export default {
 }
 .text-box {
   position: absolute;
-  width: 60vh;
-  padding: 1vh;
+  width: 40vh;
+  padding: 1.5vh;
   top: .5vh;
   left: .5vh;
   background-color: rgba(255,255,255, 0.9);
   opacity: 0;
 }
 .text-box p {
-  font-size: 3.3vh;
-  margin-bottom: 0;
+  font-size: 3vh;
+  margin-bottom: 1vh;
   opacity: 0;
 }
-#red-text {color: red;}
-#green-text {color: #00CE7C;}
+.text-box p:last-child { margin-bottom: 0 !important }
 .reward {
   position: absolute;
   height: auto;

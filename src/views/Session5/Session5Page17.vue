@@ -895,10 +895,10 @@ export default {
   width: 100%;
   text-align: center;
   z-index: 55;
-  margin-top: 6%;
+  margin-top: 8%;
 }
 .star-text p {
-  font-size: 4.7vh;
+  font-size: 4vh;
   margin-bottom: 0;
   text-align: center;
 }

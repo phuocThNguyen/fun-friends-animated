@@ -28,7 +28,7 @@ export default {
         width: 1,
         height: 0.58,
         isPicture: true,
-        pictureUrl: "session5/Slide7.jpeg",
+        pictureUrl: "session5/Slide7-danish.jpeg",
         backgroundSize: 'contain'
       },
     }
@@ -47,19 +47,19 @@ export default {
         .add({
           targets: text[0],
           opacity: 1
-        }, 715)
+        }, 1)
         .add({
           targets: text[1],
           opacity: 1
-        }, 4967)
+        }, 1)
         .add({
           targets: text[2],
           opacity: 1
-        }, 20569)
+        }, 1)
         .add({
           targets: '.canvas',
           opacity: 1
-        }, 33886)
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -89,21 +89,15 @@ export default {
   padding: 0 1vh;
 }
 .text-box h1 {
-  font-size: 4.2vh;
+  font-size: 4vh;
   font-weight: bold;
   margin-bottom: 0;
   opacity: 0;
 }
 .text-box p {
-  font-size: 2.8vh;
+  font-size: 3vh;
   opacity: 0;
   margin-bottom: 0;
 }
 tspan { white-space:pre }
-.red {
-  color: red;
-}
-.green {
-  color: #00CE7C;
-}
 </style>

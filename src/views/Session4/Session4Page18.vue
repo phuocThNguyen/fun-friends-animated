@@ -157,15 +157,15 @@ export default {
         .add({
           targets: '.text-box',
           opacity: 1,
-        }, 500)
+        }, 1)
         .add({
           targets: '.clues-sources',
           opacity: 1,
-        }, 13500)
+        }, 1)
         .add({
           targets: '.answers',
           opacity: 1,
-        }, 15000);
+        }, 1);
     },
     handleChange(id) {
       switch (id) {
@@ -354,16 +354,17 @@ export default {
   padding: 1.4vh;
   margin-bottom: 1vh;
 }
-p { font-size: 3.6vh;margin-bottom: 0; }
 .text-box {
   position: absolute;
-  width: 90%;
+  width: calc(0.96*133vh);
   padding: 2.1vh;
   top: 1vh;
-  left: 5%;
+  left: calc(0.02*133vh);
   background-color: rgba(255,255,255,0.8);
   opacity: 0;
 }
+.text-box p { font-size: 3vh;margin-bottom: 0; }
+.text-box h1 { font-size: 4vh;margin-bottom: 0; }
 .cls-1 {fill: none;}
 .cls-2 {isolation: isolate;}
 .cls-19,

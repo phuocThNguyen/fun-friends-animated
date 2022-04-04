@@ -205,23 +205,27 @@ export default {
         .add({
           targets: '.text-box',
           opacity: 1
-        }, 500)
+        }, 1)
         .add({
           targets: text[0],
           opacity: 1
-        }, 667)
+        }, 1)
         .add({
           targets: text[1],
           opacity: 1
-        }, 6300)
+        }, 1)
         .add({
           targets: text[2],
           opacity: 1
-        }, 13000)
+        }, 1)
+        .add({
+          targets: text[3],
+          opacity: 1
+        }, 1)
         .add({
           targets: '.traffic-light',
           opacity: 1
-        }, 21000);
+        }, 1);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -237,32 +241,28 @@ export default {
 <style scoped>
 .traffic-light {
   position: absolute;
-  left: 0.5vh;
+  right: 30vh;
   top: 22vh;
   opacity: 0;
 }
 .text-box {
   position: absolute;
-  width: 130vh;
+  width: calc(0.32 * 133vh);
   padding: 1vh;
   top: 1vh;
-  left: 1.5vh;
+  left: 1vh;
   background-color: rgba(255,255,255, 0.9);
   opacity: 0;
 }
-.text-box p {
-  font-size: 3.8vh;
-  margin-bottom: 0;
-  opacity: 0;
-}
-#red-text {color: red;}
-#green-text {color: #00CE7C;}
+.text-box h1 { font-size: 4vh; margin-bottom: 2vh }
+.text-box p { font-size: 3vh;margin-bottom: 0;opacity: 0; }
+.text-box p:nth-child(3) { margin-bottom: 2vh }
 .reward {
   position: absolute;
   height: auto;
   width: 1%;
-  top: 30vh;
-  right: 15vh;
+  bottom: 17vh;
+  right: 60vh;
   opacity: 0;
 }
 .sticker {

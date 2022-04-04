@@ -713,9 +713,10 @@
       <div class="star-text">
         <p><strong>Ugens lysende
           stjerne idé</strong></p>
-        <p>Følg en sund opskrift og
-          <br>lav mad sammen med
-          <br>din familie.
+        <p>Følg en sund
+          <br>opskrift og lav
+          <br>mad sammen
+          <br>med din familie.
         </p>
       </div>
     </div>
@@ -795,10 +796,10 @@ export default {
   position: absolute;
   text-align: center;
   z-index: 55;
-  margin-top: 5%;
+  margin-top: 14%;
 }
 .star-text p {
-  font-size: 5.5vh;
+  font-size: 4.8vh;
   margin-bottom: 0;
   text-align: center;
 }

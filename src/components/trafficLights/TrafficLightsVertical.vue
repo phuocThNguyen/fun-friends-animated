@@ -60,8 +60,8 @@
         </g>
       </g>
     </svg>
-    <div class="traffic-text" id="traffic-green">green</div>
-    <div class="traffic-text" id="traffic-red">red</div>
+    <div class="traffic-text" id="traffic-green">Grøn</div>
+    <div class="traffic-text" id="traffic-red">Rød</div>
     <div class="mask-container">
       <div class="mask" @click="handleClick" id="red"/>
       <div class="mask" @click="handleClick" id="yellow"/>
@@ -145,7 +145,7 @@ export default {
   text-transform: capitalize;
 }
 #traffic-red {top: 8vh;left: 12vh}
-#traffic-green {top: 42vh;left: 10vh;}
+#traffic-green {top: 42vh;left: 11vh;}
 .traffic-light-svg {
   position: absolute;
   top: 0;

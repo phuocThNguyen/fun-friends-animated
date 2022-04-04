@@ -217,15 +217,15 @@ export default {
         .add({
           targets: text[1],
           opacity: 1
-        }, 5735)
+        }, 1)
         .add({
           targets: text[2],
           opacity: 1
-        }, 9763)
+        }, 1)
         .add({
           targets: '#question-1',
           opacity: 1
-        }, 14652)
+        }, 1)
         .add({
           targets: '#question-2',
           opacity: 1
@@ -327,12 +327,12 @@ export default {
   left: 0;
 }
 .text-box h1 {
-  font-size: 5vh;
+  font-size: 4vh;
   font-weight: bold;
   margin-bottom: 0;
 }
 .text-box p {
-  font-size: 3.8vh;
+  font-size: 3vh;
   margin-bottom: 0;
   opacity: 0;
 }

@@ -151,31 +151,35 @@ export default {
         .add({
           targets: text[1],
           opacity: 1
-        }, 5541)
+        }, 1)
         .add({
           targets: text[2],
           opacity: 1
-        }, 11000)
+        }, 1)
         .add({
           targets: '#top',
           opacity: 1
-        }, 11500)
+        }, 1)
         .add({
           targets: text[3],
           opacity: 1
-        }, 16306)
+        }, 1)
         .add({
           targets: '#bottom',
           opacity: 1
-        }, 16900)
+        }, 1)
         .add({
           targets: '.bubble-container',
-          opacity: 0.9
-        }, 20500)
+          opacity: 0
+        }, 1)
         .add({
           targets: text[4],
           opacity: 1,
-        }, 23251);
+        }, 1)
+        .add({
+          targets: text[5],
+          opacity: 1,
+        }, 1);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -209,19 +213,19 @@ export default {
   padding: 1vh;
 }
 .text-box h1 {
-  font-size: 3.5vh;
+  font-size: 4vh;
   font-weight: bold;
   margin-bottom: 1vh;
 }
 .text-box p {
-  font-size: 3.6vh;
+  font-size: 3vh;
   margin-bottom: 1vh;
   opacity: 0;
 }
 .text-box p:last-child {
   padding: 1vh 0;
-  font-size: 3.6vh;
-  margin-top: 45%;
+  font-size: 3vh;
+  margin-top: 29%;
   font-weight: bold;
   display: block;
   background-color: #00ce7c;
@@ -236,12 +240,6 @@ export default {
 }
 #image-bottom {
   bottom: 0;
-}
-.red {
-  color: #ff0000;
-}
-.green {
-  color: #00ce7c;
 }
 .bubble-container {
   position: absolute;

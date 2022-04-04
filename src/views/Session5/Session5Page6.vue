@@ -3,8 +3,7 @@
     <img src="../../assets/images/session5/85693.jpg" alt="red" class="session-background">
     <div class="text-box">
       <p>Det er også Nalas første nat med at sove i sin egen seng.</p>
-      <p>Hvordan har hun det / hvad føler hun på billedet?</p>
-      <p>Er Nalas tanker ”røde” eller ”grønne”?</p>
+      <p>Hvordan har hun det / hvad føler hun på billedet? Er Nalas tanker ”røde” eller ”grønne”?</p>
     </div>
     <traffic-lights-vertical
       correctAns="green"
@@ -115,23 +114,19 @@ export default {
         .add({
           targets: '.text-box',
           opacity: 1
-        }, 800)
+        }, 1)
         .add({
           targets: text[0],
           opacity: 1
-        }, 1109)
+        }, 1)
         .add({
           targets: text[1],
           opacity: 1
-        }, 5800)
-        .add({
-          targets: text[2],
-          opacity: 1
-        }, 9200)
+        }, 1)
         .add({
           targets: '.traffic-light',
           opacity: 1
-        }, 14600);
+        }, 1);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -153,20 +148,18 @@ export default {
 }
 .text-box {
   position: absolute;
-  width: 80%;
+  width: calc(0.98 * 133vh);
   padding: 1.5vh;
   top: 1vh;
-  left: 10%;
+  left: calc(0.01 * 133vh);
   background-color: rgba(255,255,255, 0.9);
   opacity: 0;
 }
 .text-box p {
-  font-size: 3.8vh;
+  font-size: 3vh;
   margin-bottom: 0;
   opacity: 0;
 }
-#red-text {color: red;}
-#green-text {color: #00CE7C;}
 .reward {
   position: absolute;
   height: auto;
