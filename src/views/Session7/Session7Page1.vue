@@ -196,10 +196,10 @@
       </g>
     </svg>
 
-    <p class="title"><span id="letter-f">E</span>xplore (Vær nysgerrig og udforsk)</p>
+    <p class="title"><span id="letter-f">E</span>xplore <br>(Vær nysgerrig og udforsk)</p>
     <p class="text" id="line-1">I dag fortsætter vi med at udforske måder hvorpå man kan være MODIG.</p>
     <p class="text" id="line-2">Vi kommer til at være nysgerrige og tænke på hvordan vi kan bryde svære
-      ting ned i små nemme og overskuelige trin / skridt.
+      <br>ting ned i små nemme og overskuelige trin / skridt.
     </p>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3"/>
@@ -266,15 +266,15 @@ export default {
         .add({
           targets: ".title",
           opacity: 1,
-        }, 7196)
+        }, 1)
         .add({
           targets: "#line-1",
           opacity: 1,
-        }, 9564)
+        }, 1)
         .add({
           targets: "#line-2",
           opacity: 1,
-        }, 15122)
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -294,12 +294,13 @@ export default {
   font-family: 'Sigmar One', cursive;
   position: absolute;
   color: white;
-  font-size: 12vh;
+  font-size: 6vh;
   -webkit-text-stroke: 0.1vw black;
   text-align: center;
   width: 100%;
-  top: 26vh;
+  top: 30vh;
   opacity: 0;
+  line-height: 7vh;
 }
 #letter-f {
   color: #FFE802;
@@ -307,13 +308,13 @@ export default {
 .text {
   position: absolute;
   margin-bottom: 0;
-  font-size: 5.5vh;
+  font-size: 3vh;
   opacity: 0;
 }
 #line-1 {
   text-align: center;
   width: 100%;
-  top: 44vh;
+  top: 46vh;
 }
 #line-2 {
   text-align: center;

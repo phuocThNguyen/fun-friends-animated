@@ -998,7 +998,7 @@
       <p>Min ven(inde)</p>
       <p>Min pædagog / lærer</p>
       <p>Mine søskende</p>
-      <p>Min ven(inde)s forælder</p>
+      <p style="font-size: 2.2vh">Min ven(inde)s forælder</p>
       <h1>Min Hjælper</h1>
     </div>
     <div class="wing-container" id="right-container">
@@ -1185,59 +1185,39 @@ export default {
       });
     },
     displayStep() {
+      this.step++;
+      let currentStep = this.step - 1;
       let koala = document.querySelectorAll('.koala');
       let bubble = document.querySelectorAll('.bubble-container');
       let plans = document.querySelectorAll('.plans');
       let helper = document.querySelector('#left-container').children;
       let reward = document.querySelector('#right-container').children;
-      if (this.step < 5) {
-        if (this.step !== 0) { this.hideElement(); }
-        let animation = anime.timeline({
-          easing: 'linear',
-          duration: 500
-        })
-        animation
-          .add({
-            targets: plans[this.step],
-            opacity: 1
-          }, this.timingArray[this.step][0])
-          .add({
-            targets: helper[this.step],
-            opacity: 1
-          }, this.timingArray[this.step][1])
-          .add({
-            targets: reward[this.step],
-            opacity: 1
-          }, this.timingArray[this.step][2])
-          .add({
-            targets: bubble[this.step],
-            opacity: 1
-          }, this.timingArray[this.step][3])
-          .add({
-            targets: koala[this.step],
-            opacity: 1
-          }, this.timingArray[this.step][3])
-        this.step > 0 ? this.stepVoiceArray[this.step - 1].pause() : this.$refs.voice.pause();
+      if (currentStep < 5) {
+        if (currentStep !== 0) {
+          this.hideElement();
+          bubble[currentStep - 1].style.setProperty('opacity', '1', 'important');
+          helper[currentStep - 1].style.setProperty('opacity', '1', 'important');
+          reward[currentStep - 1].style.setProperty('opacity', '1', 'important');
+          plans[currentStep - 1].style.setProperty('opacity', '1', 'important');
+        }
+        setTimeout(() => {plans[currentStep].style.opacity = "1";}, this.timingArray[currentStep][0]);
+        setTimeout(() => {helper[currentStep].style.opacity = "1";}, this.timingArray[currentStep][1]);
+        setTimeout(() => {reward[currentStep].style.opacity = "1";}, this.timingArray[currentStep][2]);
+        setTimeout(() => {bubble[currentStep].style.opacity = "1";}, this.timingArray[currentStep][3]);
+        setTimeout(() => {koala[currentStep].style.opacity = "1";}, this.timingArray[currentStep][3]);
+        currentStep > 0 ? this.stepVoiceArray[currentStep - 1].pause() : this.$refs.voice.pause();
         this.$refs.sound.play();
-        setTimeout(() => {
-          this.stepVoiceArray[this.step].play();
-          this.step++;
-        }, 500)
+        setTimeout(() => {this.stepVoiceArray[currentStep].play();}, 500)
       }
     },
     hideElement() {
-      let koala = document.querySelectorAll('.koala');
+      let currentStep = this.step - 1;
+      document.querySelectorAll('.koala')[currentStep-1].style.visibility = 'hidden';
       let bubble = document.querySelectorAll('.bubble-container');
       let vw = document.querySelector('.interactive-container').clientWidth;
       let vh = window.innerHeight;
       anime({
-        targets: koala[this.step - 1],
-        opacity: 0,
-        duration: 200,
-        easing: 'linear'
-      })
-      anime({
-        targets: bubble[this.step - 1],
+        targets: bubble[currentStep - 1],
         scale: 0.8,
         translateX: -0.12 * vw,
         translateY: 0.24 * vh,
@@ -1307,7 +1287,7 @@ export default {
   height: 90%;
 }
 .button-label {
-  font-size: 4vh;
+  font-size: 3.6vh;
   color: #ffffff;
 }
 .koala {
@@ -1357,7 +1337,7 @@ export default {
   padding: 2vh 1.4vh;
   color: #ffffff;
   border-radius: 5px;
-  font-size: 4.8vh;
+  font-size: 4vh;
   text-align: center;
   opacity: 0;
 }
@@ -1369,7 +1349,7 @@ export default {
   padding: 1vh .7vh;
   color: #ffffff;
   border-radius: 5px;
-  font-size: 3vh;
+  font-size: 2.5vh;
   opacity: 0;
   margin-bottom: 0;
 }
@@ -1412,9 +1392,9 @@ export default {
   padding: 1vh;
   border-radius: 5px;
   top: 1vh;
-  left: 30%;
+  left: calc(0.32*133vh);
   color: #ffffff;
-  font-size: 6.8vh;
+  font-size: 6vh;
 }
 .bubble-container {
   position: absolute;

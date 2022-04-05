@@ -982,17 +982,17 @@
       </g>
     </svg>
     <div class="text-box">
-      <p>Når vi bryder svære situationer ned i mindre, nemmere og mere overskuelige
-        bidder/trin/skridt, kaldes det en TRAPPESTIGE PLAN (eller eksponeringsplan/trinplan/coping
-        step plan, hvor ”Coping” betyder det, at kunne håndtere noget nyt, svært eller udfordrende).
-        Vi kan bruge en TRAPPESTIGE PLAN når vi øver os i at være modige, når vi prøver at gør
-        noget som vi er bange for. For eksempel: når vi skal opholde os i mørke, til lægen,
+      <p>Når vi bryder svære situationer ned i mindre, nemmere og mere <br>overskuelige
+        bidder/trin/skridt, kaldes det en TRAPPESTIGE PLAN (eller <br>eksponeringsplan/trinplan/coping
+        step plan, hvor ”Coping” betyder det, <br>at kunne håndtere noget nyt, svært eller udfordrende).
+        Vi kan bruge en <br>TRAPPESTIGE PLAN når vi øver os i at være modige, når vi prøver at gør
+        <br>noget som vi er bange for. For eksempel: når vi skal opholde os i mørke, <br>til lægen,
         eller sige farvel når vi skal i børnehave eller skole.</p>
-      <p>Lav en TRAPPESTIGE PLAN næste gang du skal prøve noget nyt. For eksempel: når du
-        skal cykle uden støttehjul, smage på nye madvarer & retter, eller når du skal
-        forberede dig på en ny aktivitet, såsom det at gå eller cykle en tur et andet
-        sted end du plejer. Lav en TRAPPESTIGE PLAN sammen med dine venner. Hvilke trin
-        ville I tag? Hvor mange trin kan I finde på? Hvert trin/skridt bringer jer tættere
+      <p>Lav en TRAPPESTIGE PLAN næste gang du skal prøve noget nyt. For <br>eksempel: når du
+        skal cykle uden støttehjul, smage på nye madvarer <br>& retter, eller når du skal
+        forberede dig på en ny aktivitet, såsom det at <br>gå eller cykle en tur et andet
+        sted end du plejer. Lav en TRAPPESTIGE <br>PLAN sammen med dine venner. Hvilke trin
+        ville I tag? Hvor mange trin <br>kan I finde på? Hvert trin/skridt bringer jer tættere
         på at gøre det!</p>
     </div>
     <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"/>
@@ -1017,15 +1017,15 @@ export default {
         .add({
           targets: '.text-box',
           opacity: 1
-        }, 500)
+        }, 1)
         .add({
           targets: text[0],
           opacity: 1
-        }, 779)
+        }, 1)
         .add({
           targets: text[1],
           opacity: 1
-        }, 14898);
+        }, 1);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -1042,16 +1042,17 @@ export default {
 .text-box {
   position: absolute;
   top: 15vh;
-  left: 10%;
-  width: 80%;
+  left: calc(0.13*133vh);;
+  width: calc(0.74*133vh);
   background-color: rgba(255,255,255,0.9);
   padding: 2vh;
   opacity: 0;
 }
 .text-box p {
-  font-size: 5vh;
+  font-size: 3vh;
   opacity: 0;
   margin-bottom: 1vh;
+  text-align: center;
 }
 .text-box p:last-child {
   margin-bottom: 0;
