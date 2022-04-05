@@ -37,7 +37,6 @@
       <div class="bubble-text">Listen to your friend's opinion!</div>
     </div>
     <audio src="../../assets/sounds/session3/Session3_Page10.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">80</div>
   </div>
 </template>
 
@@ -108,7 +107,7 @@ export default {
 }
 .notice-box {
   position: absolute;
-  bottom: 6vh;
+  bottom: 1vh;
   width: 70%;
   left: 15%;
   text-align: center;
@@ -121,20 +120,19 @@ export default {
 }
 .bubble-container {
   position: absolute;
-  width: 30%;
+  width: 38vh;
   height: 28vh;
-  left: -.5%;
   opacity: 0;
+  right: 0
 }
-#bubble-1 {bottom: 36vh}
-#bubble-2 {bottom: 8vh}
+#bubble-1 {bottom: 38vh}
+#bubble-2 {bottom: 10vh}
 .bubble {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  transform: scaleX(-1);
 }
 .bubble-text {
   position: absolute;

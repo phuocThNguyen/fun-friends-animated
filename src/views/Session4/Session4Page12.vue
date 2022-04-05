@@ -991,7 +991,7 @@ export default {
   padding: 1vh;
   font-family: 'Kalam', cursive;
   outline: none;
-  margin-right: 25%;
+  margin-right: 18vh;
   text-align: center;
 }
 .choices-container {
