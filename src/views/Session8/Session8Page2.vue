@@ -25,9 +25,9 @@ export default {
         easing: 'linear'
       })
       animation
-        .add({targets: '.text-box',opacity: 1}, 200)
-        .add({targets: text[0],opacity: 1}, 600)
-        .add({targets: text[1],opacity: 1}, 7500)
+        .add({targets: '.text-box',opacity: 1}, 1)
+        .add({targets: text[0],opacity: 1}, 1)
+        .add({targets: text[1],opacity: 1}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -43,11 +43,11 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  top: 35vh;
-  left: 5%;
-  width: 90%;
+  bottom: 12vh;
+  left: calc(0.05*133vh);
+  width: calc(0.9*133vh);
   padding: 2vh;
-  font-size: 5vh;
+  font-size: 4vh;
   background-color: rgba(255,255,255,0.95);
   opacity: 0;
 }

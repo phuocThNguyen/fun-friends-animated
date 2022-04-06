@@ -44,12 +44,12 @@ export default {
 }
 .text-box-green {
   position: absolute;
-  bottom: 6vh;
-  left: 10%;
+  bottom: 11.5vh;
+  left: 3%;
   padding: 1vh 2.8vh;
   background-color: #00CE7C;
   color: #ffffff;
-  font-size: 4vh;
+  font-size: 3vh;
   font-weight: bold;
   opacity: 0;
 }

@@ -729,9 +729,9 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
-        .add({targets: '.text-box',opacity: 1}, 500)
-        .add({targets: text[0],opacity: 1}, 1100)
-        .add({targets: text[1],opacity: 1}, 7200)
+        .add({targets: '.text-box',opacity: 1}, 1)
+        .add({targets: text[0],opacity: 1}, 1)
+        .add({targets: text[1],opacity: 1}, 1)
     },
     saveToDatabase(data) {
       console.log(data)
@@ -766,7 +766,7 @@ export default {
 .text-box p {
   color: #ffffff;
   text-align: center;
-  font-size: 4vh;
+  font-size: 3vh;
   opacity: 0;
 }
 .canvas {

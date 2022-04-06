@@ -10,7 +10,7 @@
     </div>
     <div class="image-container" id="right">
       <img src="../../assets/images/session9/healthy_eating_child.jpg" alt="healthy-eating">
-      <p id="para-2">At spise sin yndlingsret</p>
+      <p id="para-2">At spise <br>sin yndlingsret</p>
     </div>
     <audio src="../../assets/sounds/session9/Session9_Page9.mp3" ref="voice"/>
     <div class="page-number" id="page-light">181</div>
@@ -28,9 +28,9 @@ export default {
       let images = document.querySelectorAll('.image-container');
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({targets: text[1],opacity: 1}, 1900)
-        .add({targets: images[0],opacity: 1}, 7700)
-        .add({targets: images[1],opacity: 1}, 11200)
+        .add({targets: text[1],opacity: 1}, 1)
+        .add({targets: images[0],opacity: 1}, 1)
+        .add({targets: images[1],opacity: 1}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -51,17 +51,17 @@ export default {
 }
 .text-box {
   position: absolute;
-  top: -.5vh;
+  top: 1vh;
   left: 0;
   padding: .5vh;
 }
 .text-box h1 {
-  font-size: 6vh;
+  font-size: 4vh;
   margin-bottom: 0;
   font-weight: bold;
 }
 .text-box p {
-  font-size: 4vh;
+  font-size: 3vh;
   opacity: 0;
 }
 .image-container {
@@ -84,7 +84,7 @@ export default {
   color: #ffffff;
   padding: 1vh;
   text-align: center;
-  font-size: 4vh;
+  font-size: 3vh;
   font-weight: bold;
   margin-bottom: 0;
 }

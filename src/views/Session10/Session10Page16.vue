@@ -287,16 +287,16 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Prøv dagligt</h1>
-      <p>&nbsp;&bull; Prøv at forstå følelser - både i / hos dig selv og i / hos andre.</p>
-      <p>&nbsp;&bull; Øv dig i at afspænde  / slappe af og udføre den dybe vejrtrækning.</p>
-      <p>&nbsp;&bull; Prøv at bruge de afspændings- / afslapningsstrategier du har lært når
-        du føler dig oprørt, bekymret eller vred, (fx ”boble” vejrtrækningen).</p>
-      <p>&nbsp;&bull; Øv dig dagligt på at være MODIG:</p>
-      <p>&middot; Kig folk i øjnene og smil.</p>
-      <p>&middot; Brug en modig stemme og gør dig selv stor.</p>
-      <p>&middot; Prøv at gøre dit bedste og give tingene et forsøg.</p>
-      <p>&middot; Tro på dig selv.</p>
+      <h1>Husk at:</h1>
+      <p>&bull; være omsorgsfuld overfor alle levende væsener</p>
+      <p>&bull; kom ud og leg</p>
+      <p>&bull; få rigeligt med søvn</p>
+      <p>&bull; drikke og spise sunde madvarer</p>
+      <p>&bull; øve dig på at afspænde / slappe af uden skærme</p>
+      <p>&bull; udvise opmærksomhed overfor oplevelser der gør dig glad,
+        og det du så, hørte, lugtede / duftede, smagte og følte / mærkede i
+        de enkelte situationer</p>
+      <p>&bull; sige tak for de glade stunder.</p>
     </div>
     <div class="image-container">
       <img class="action-image" src="../../assets/images/introduction/Koala_Child_Hugging.jpg" alt="kind-to-animals">
@@ -349,21 +349,21 @@ export default {
       let images = document.querySelector('.image-container').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
-        .add({targets: ".text-box", opacity: 1}, 570)
-        .add({targets: texts[1], opacity: 1}, 3238)
-        .add({targets: images[0], opacity: 1}, 3238)
-        .add({targets: texts[2], opacity: 1}, 6128)
-        .add({targets: images[1], opacity: 1}, 6128)
-        .add({targets: texts[3], opacity: 1}, 7609)
-        .add({targets: images[2], opacity: 1}, 7609)
-        .add({targets: texts[4], opacity: 1}, 10307)
-        .add({targets: images[3], opacity: 1}, 10307)
-        .add({targets: texts[5], opacity: 1}, 14129)
-        .add({targets: images[4], opacity: 1}, 14129)
-        .add({targets: texts[6], opacity: 1}, 17570)
-        .add({targets: images[5], opacity: 1}, 17570)
-        .add({targets: texts[7], opacity: 1}, 26647)
-        .add({targets: images[6], opacity: 1}, 26647);
+        .add({targets: ".text-box", opacity: 1}, 1)
+        .add({targets: texts[1], opacity: 1}, 1)
+        .add({targets: images[0], opacity: 1}, 1)
+        .add({targets: texts[2], opacity: 1}, 1)
+        .add({targets: images[1], opacity: 1}, 1)
+        .add({targets: texts[3], opacity: 1}, 1)
+        .add({targets: images[2], opacity: 1}, 1)
+        .add({targets: texts[4], opacity: 1}, 1)
+        .add({targets: images[3], opacity: 1}, 1)
+        .add({targets: texts[5], opacity: 1}, 1)
+        .add({targets: images[4], opacity: 1}, 1)
+        .add({targets: texts[6], opacity: 1}, 1)
+        .add({targets: images[5], opacity: 1}, 1)
+        .add({targets: texts[7], opacity: 1}, 1)
+        .add({targets: images[6], opacity: 1}, 1);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -403,10 +403,10 @@ export default {
 }
 .text-box h1 {
   margin-bottom: 1vh;
-  font-size: 5vh;
+  font-size: 4vh;
 }
 .text-box p {
-  font-size: 4vh;
+  font-size: 3vh;
   padding-left: 0;
   margin-bottom: 1vh;
   opacity: 0;

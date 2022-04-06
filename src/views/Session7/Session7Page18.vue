@@ -433,7 +433,7 @@
       </svg>
       <div class="star-text">
         <p><strong>Ugens lysende
-          stjerne idé</strong></p>
+          <br>stjerne idé</strong></p>
         <p>Pynt din drikkedunk
           <br>med klistermærker, for
           <br>at huske dig selv på,
@@ -516,12 +516,12 @@ export default {
 }
 .star-text {
   position: absolute;
-  margin-top: 10%;
+  margin-top: 15%;
   text-align: center;
   z-index: 55;
 }
 .star-text p {
-  font-size: 5vh;
+  font-size: 4vh;
   margin-bottom: 0;
   text-align: center;
 }

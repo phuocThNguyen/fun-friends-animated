@@ -262,11 +262,11 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255, 0.95);
-  width: 86%;
+  width: calc(0.86*133vh);
   padding: 2vh;
-  left: 7%;
-  top: 20vh;
-  font-size: 5vh;
+  left: calc(0.07*133vh);
+  bottom: 12vh;
+  font-size: 3vh;
   opacity: 0;
 }
 .text-box p {

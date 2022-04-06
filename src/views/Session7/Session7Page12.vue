@@ -339,8 +339,9 @@ textarea:focus { outline: none; }
   padding: 2vh 1.4vh;
   color: #ffffff;
   border-radius: 5px;
-  font-size: 4.9vh;
+  font-size: 4vh;
   text-align: center;
+  opacity: 1;
 }
 .wing-container input {
   position: absolute;
@@ -406,9 +407,9 @@ textarea:focus { outline: none; }
   padding: 1vh;
   border-radius: 5px;
   top: 1vh;
-  left: 30%;
+  left: calc(0.32*133vh);
   color: #ffffff;
-  font-size: 7vh;
+  font-size: 6vh;
 }
 .bubble-container {
   position: absolute;

@@ -61,7 +61,7 @@ export default {
 .text {
   position: absolute;
   top: 1vh;
-  left: 25%;
+  left: calc(0.2*133vh);
   padding: 1vh 2.6vh;
   font-size: 3vh;
   font-weight: bold;
@@ -69,6 +69,7 @@ export default {
   color: #ffffff;
   z-index: 100;
   opacity: 0;
+  margin-bottom: 0;
 }
 #alt-bg {
   background: rgb(22,94,176);

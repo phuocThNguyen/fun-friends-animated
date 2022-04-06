@@ -49,6 +49,7 @@ export default {
   name: "Navigation",
   props: {
     title: String,
+    session: String,
   },
   data() {
     return {
@@ -79,11 +80,17 @@ export default {
     changeActiveStyle(btn) {
       btn.style.color = '#fff';
       btn.style.backgroundColor = '#00ce7c';
+    },
+    checkSession() {
+      if (this.session === 'Session6' || this.session === 'Session10') {
+        document.querySelector('.session-title').style.fontSize = "2.8vh";
+      }
     }
   },
   mounted() {
-    let buttons = document.getElementsByClassName('btn')
+    let buttons = document.getElementsByClassName('btn');
     this.changeActiveStyle(buttons[this.selectedSession]);
+    this.checkSession()
   },
   }
 </script>

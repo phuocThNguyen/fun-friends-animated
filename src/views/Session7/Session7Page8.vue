@@ -38,7 +38,7 @@
       </g>
     </svg>
     <h1 class="title">TRAPPESTIGE PLAN</h1>
-    <div class="trophy-container">Mål: At holde oplæg foran klassen</div>
+    <div class="trophy-container">Mål: At holde <br>oplæg foran klassen</div>
     <div class="plans" id="step-1">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
@@ -999,7 +999,7 @@
       <p>Min ven(inde)</p>
       <p>Min pædagog / lærer</p>
       <p>Mine søskende</p>
-      <p>Min ven(inde)s forælder</p>
+      <p style="font-size: 2.2vh">Min ven(inde)s forælder</p>
       <h1>Min Hjælper</h1>
     </div>
     <div class="wing-container" id="right-container">
@@ -1289,7 +1289,7 @@ export default {
   height: 90%;
 }
 .button-label {
-  font-size: 4vh;
+  font-size: 3.6vh;
   color: #ffffff;
 }
 .koala {
@@ -1322,7 +1322,7 @@ export default {
 }
 #koala-sitting {
   height: 15vh;
-  left: 27vh;
+  left: 30vh;
   top: -5.5vh;
   transform: scaleX(-1);
 }
@@ -1339,7 +1339,7 @@ export default {
   padding: 2vh 1.4vh;
   color: #ffffff;
   border-radius: 5px;
-  font-size: 4.8vh;
+  font-size: 4vh;
   text-align: center;
   opacity: 0;
 }
@@ -1351,7 +1351,7 @@ export default {
   padding: 1vh .7vh;
   color: #ffffff;
   border-radius: 5px;
-  font-size: 3vh;
+  font-size: 2.5vh;
   opacity: 0;
   margin-bottom: 0;
 }
@@ -1378,7 +1378,7 @@ export default {
 }
 .trophy-container {
   position: absolute;
-  left: 25%;
+  left: 30vh;
   top: 11vh;
   opacity: 0;
   z-index: 0;
@@ -1396,9 +1396,9 @@ export default {
   padding: 1vh;
   border-radius: 5px;
   top: 1vh;
-  left: 30%;
+  left: calc(0.32*133vh);
   color: #ffffff;
-  font-size: 6.8vh;
+  font-size: 6vh;
 }
 .bubble-container {
   position: absolute;
@@ -1509,9 +1509,6 @@ export default {
   top: 23vh;
   left: 24%;
   z-index: 1;
-}
-#step-5 .text {
-  font-size: 1.8vh;
 }
 .tree {
   position: absolute;

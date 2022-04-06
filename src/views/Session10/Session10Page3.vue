@@ -1,8 +1,8 @@
 <template>
   <div class="interactive-container">
     <img src="../../assets/images/session10/72896.jpg" alt="Tom" class="session-background">
-    <div class="text-box">Sofus lærer af én som han ser op til.</div>
-    <div class="text-box-green">Min far hjælper mig med at lære at lave mad.</div>
+    <div class="text-box">Sofus lærer af én <br>som han ser op til.</div>
+    <div class="text-box-green">Min far hjælper mig <br>med at lære at lave mad.</div>
     <audio src="../../assets/sounds/session10/Session10_Page3.mp3" ref="voice"/>
     <div class="page-number" id="page-light">189</div>
   </div>
@@ -17,8 +17,8 @@ export default {
     animateText() {
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-        .add({targets: '.text-box', opacity: 1}, 700)
-        .add({targets: '.text-box-green', opacity: 1}, 4600)
+        .add({targets: '.text-box', opacity: 1}, 1)
+        .add({targets: '.text-box-green', opacity: 1}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -41,6 +41,7 @@ export default {
   font-size: 4vh;
   padding: 2vh;
   opacity: 0;
+  text-align: center;
 }
 .text-box-green {
   position: absolute;
@@ -49,8 +50,9 @@ export default {
   padding: 1vh 2.4vh;
   background-color: #00CE7C;
   color: #ffffff;
-  font-size: 4vh;
+  font-size: 3vh;
   font-weight: bold;
   opacity: 0;
+  text-align: center;
 }
 </style>

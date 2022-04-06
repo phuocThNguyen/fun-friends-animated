@@ -619,9 +619,9 @@
     </svg>
     <div class="text-box">
       <span>Tal med dine venner om din Trappestige Plan.</span>
-      <span>Tænk over måder hvorpå du kan belønne dig selv for at
-        have gjort dit bedste, såsom at tage ud i naturen, spille bold,
-        eller at spise mad i det fri sammen med din familie.</span>
+      <br><span>Tænk over måder hvorpå du kan belønne dig <br>selv for at
+        have gjort dit bedste, såsom at tage <br>ud i naturen, spille bold,
+        eller at spise mad i det <br>fri sammen med din familie.</span>
     </div>
     <audio src="../../assets/sounds/session9/Session9_Page2.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">174</div>
@@ -657,12 +657,13 @@ export default {
 .text-box {
   position: absolute;
   background-color: #ffffff;
-  width: 82%;
+  width: calc(0.66*133vh);
   padding: 2vh;
-  left: 9%;
-  top: 20vh;
-  font-size: 5.5vh;
+  left: calc(0.17*133vh);
+  top: 30vh;
+  font-size: 4vh;
   opacity: 0;
+  text-align: center;
 }
 .text-box span {color: #ffffff}
 .landscape {

@@ -6,8 +6,17 @@
     </div>
     <div class="show">
       <div class="center">
-        <Navigation v-on:setSession="setSession" :title="sessions[session][1]"/>
-        <component :is="sessions[session][0]" v-on:nextSession="setSession" :isNext="isNext" :appendixPage="appendixPage"/>
+        <Navigation
+          v-on:setSession="setSession"
+          :title="sessions[session][1]"
+          :session="sessions[session][0]"
+        />
+        <component
+          :is="sessions[session][0]"
+          v-on:nextSession="setSession"
+          :isNext="isNext"
+          :appendixPage="appendixPage"
+        />
       </div>
     </div>
   </div>

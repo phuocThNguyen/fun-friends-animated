@@ -1,8 +1,6 @@
 <template>
   <div class="interactive-container">
-    <div class="text-box">
-      Del idéer til sjove lege man kan lege på stranden.
-    </div>
+    <div class="text-box">Del idéer til sjove lege man <br>kan lege på stranden.</div>
     <img src="../../assets/images/session8/135443-OSAV8P-846.jpg" alt="Annie" class="images">
     <img src="../../assets/images/session8/135428-OSAV5N-454.jpg" alt="Annie" class="images">
     <audio src="../../assets/sounds/session8/Session8_Page5.mp3" ref="voice"/>
@@ -39,13 +37,13 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  width: 48%;
+  width: calc(0.48*133vh);
   background-color: #00ce7c;
   color: #ffffff;
   padding: 1.5vh 2vh;
   right: 1%;
   top: 1vh;
-  font-size: 4.8vh;
+  font-size: 4vh;
   font-weight: bold;
   z-index: 10;
   text-align: center;

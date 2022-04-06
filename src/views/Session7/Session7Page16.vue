@@ -463,43 +463,43 @@ export default {
         .add({
           targets: '.text-box',
           opacity: 1,
-        }, 500)
+        }, 1)
         .add({
           targets: text[1],
           opacity: 1,
-        }, 2600)
+        }, 1)
         .add({
           targets: text[2],
           opacity: 1,
-        }, 21200)
+        }, 1)
         .add({
           targets: text[3],
           opacity: 1,
-        }, 31600)
+        }, 1)
         .add({
           targets: text[4],
           opacity: 1,
-        }, 44500)
+        }, 1)
         .add({
           targets: text[5],
           opacity: 1
-        }, 50800)
+        }, 1)
         .add({
           targets: text[6],
           opacity: 1
-        }, 53300)
+        }, 1)
         .add({
           targets: text[7],
           opacity: 1
-        }, 56000)
+        }, 1)
         .add({
           targets: text[8],
           opacity: 1
-        }, 58700)
+        }, 1)
         .add({
           targets: text[9],
           opacity: 1
-        }, 61200)
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -520,18 +520,19 @@ export default {
   height: auto;
   left: 2%;
   top: 2vh;
-  padding: 2vh 2vh;
+  padding: 2vh;
   opacity: 0;
 }
 .text-box h1 {
   text-align: center;
   margin-bottom: 1vh;
-  font-size: 6vh;
+  font-size: 3.5vh;
   font-weight: bold;
+
 }
 .text-box p {
-  margin-bottom: 1vh;
-  font-size: 3.4vh;
+  margin-bottom: .5vh;
+  font-size: 2.6vh;
   opacity: 0;
 }
 .text-box p:nth-of-type(6),

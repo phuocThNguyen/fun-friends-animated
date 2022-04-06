@@ -38,7 +38,7 @@
       </g>
     </svg>
     <h1 class="title">TRAPPESTIGE PLAN</h1>
-    <div class="trophy-container">Mål: At sove på sit eget værelse</div>
+    <div class="trophy-container">Mål: At sove på <br>sit eget værelse</div>
     <div class="plans" id="step-1">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
@@ -1002,7 +1002,7 @@
       <p>Min ven(inde)</p>
       <p>Min pædagog / lærer</p>
       <p>Mine søskende</p>
-      <p>Min ven(inde)s forælder</p>
+      <p style="font-size: 2.2vh">Min ven(inde)s forælder</p>
       <h1>Min Hjælper</h1>
     </div>
     <div class="wing-container" id="right-container">
@@ -1160,26 +1160,26 @@ export default {
         duration: 500,
       })
       animation
-          .add({
-            targets: trophy,
-            opacity: 1
-          }, 2300)
-          .add({
-            targets: leftElements[5],
-            opacity: 1
-          }, 4000)
-          .add({
-            targets: rightElements[5],
-            opacity: 1
-          }, 4000)
-          .add({
-            targets: '.text-box',
-            opacity: 1
-          }, 4000)
-          .add({
-            targets: '.coordinate-container',
-            opacity: 1
-          }, 5300)
+        .add({
+          targets: trophy,
+          opacity: 1
+        }, 2300)
+        .add({
+          targets: leftElements[5],
+          opacity: 1
+        }, 4000)
+        .add({
+          targets: rightElements[5],
+          opacity: 1
+        }, 4000)
+        .add({
+          targets: '.text-box',
+          opacity: 1
+        }, 4000)
+        .add({
+          targets: '.coordinate-container',
+          opacity: 1
+        }, 5300)
 
       anime({
         targets: '.button',
@@ -1292,7 +1292,7 @@ export default {
   height: 90%;
 }
 .button-label {
-  font-size: 4vh;
+  font-size: 3.6vh;
   color: #ffffff;
 }
 .koala {
@@ -1325,7 +1325,7 @@ export default {
 }
 #koala-sitting {
   height: 15vh;
-  left: 25vh;
+  left: 28vh;
   top: -5.5vh;
   transform: scaleX(-1);
 }
@@ -1342,7 +1342,7 @@ export default {
   padding: 2vh 1.4vh;
   color: #ffffff;
   border-radius: 5px;
-  font-size: 4.8vh;
+  font-size: 4vh;
   text-align: center;
   opacity: 0;
 }
@@ -1354,7 +1354,7 @@ export default {
   padding: 1vh .7vh;
   color: #ffffff;
   border-radius: 5px;
-  font-size: 3vh;
+  font-size: 2.5vh;
   opacity: 0;
   margin-bottom: 0;
 }
@@ -1381,7 +1381,7 @@ export default {
 }
 .trophy-container {
   position: absolute;
-  left: 23%;
+  left: 35vh;
   top: 11vh;
   opacity: 0;
   padding: 1vh 1.4vh;
@@ -1398,9 +1398,9 @@ export default {
   padding: 1vh;
   border-radius: 5px;
   top: 1vh;
-  left: 30%;
+  left: calc(0.32*133vh);
   color: #ffffff;
-  font-size: 6.8vh;
+  font-size: 6vh;
 }
 .bubble-container {
   position: absolute;
@@ -1512,11 +1512,10 @@ export default {
   left: 26%;
   z-index: 1;
 }
-#step-2 .text,
-#step-4 .text,
-#step-5 .text {
-  font-size: 2vh;
-}
+#step-1 .text {font-size: 1.7vh}
+#step-2 .text {font-size: 1.6vh}
+#step-4 .text {font-size: 1.8vh}
+#step-5 .text {font-size: 2vh;}
 .tree {
   position: absolute;
   width: auto;

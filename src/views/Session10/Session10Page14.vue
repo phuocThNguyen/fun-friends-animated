@@ -2,8 +2,8 @@
   <div class="interactive-container">
     <img src="../../assets/images/session10/1408.jpg" alt="background" class="session-background">
     <div class="text-box">
-      <span>Hvem har tidligere vist dig hvordan man gør noget?</span>
-      <span> Hvem har hjulpet dig med at føle dig glad?</span>
+      <span>Hvem har tidligere vist dig hvordan man <br>gør noget?</span>
+      <span> Hvem har hjulpet dig med at <br>føle dig glad?</span>
       <span> Giv dem en stor tak!</span>
     </div>
     <audio src="../../assets/sounds/session10/Session10_Page14.mp3" ref="voice"/>
@@ -21,10 +21,10 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
-        .add({targets: '.text-box',opacity: 1}, 200)
-        .add({targets: text[0],color: '#fff'}, 600)
-        .add({targets: text[1],color: '#fff'}, 4400)
-        .add({targets: text[2],color: '#fff'}, 7300)
+        .add({targets: '.text-box',opacity: 1}, 1)
+        .add({targets: text[0],color: '#fff'}, 1)
+        .add({targets: text[1],color: '#fff'}, 1)
+        .add({targets: text[2],color: '#fff'}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -42,12 +42,13 @@ export default {
   position: absolute;
   top: 1vh;
   left: 1%;
-  width: 60%;
+  width: calc(0.46*133vh);
   background-color: #000000;
   padding: 1vh;
-  font-size: 4vh;
+  font-size: 3vh;
   color: #000000;
   font-weight: bold;
   opacity: 0;
+  text-align: center;
 }
 </style>

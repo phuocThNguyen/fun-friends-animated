@@ -303,6 +303,7 @@
         <p><strong>Ugens
           <br>lysende
           <br>stjerne idé</strong></p>
+        <br>
         <p>Skriv et brev eller et postkort
           <br>og tak nogen for de ting du
           <br>kan li’ ved dem. Du kunne
@@ -351,26 +352,6 @@ export default {
           targets: '.star-container',
           opacity: 1
         })
-        .add({
-          targets: ".star",
-          keyframes: [
-            {rotate: '-20deg'},
-            {rotate: '20deg'},
-            {rotate: '-20deg'},
-            {rotate: '0deg'},
-          ],
-          delay: 0,
-        })
-        .add({
-          targets: ".star-text",
-          keyframes: [
-            {rotate: '-20deg'},
-            {rotate: '20deg'},
-            {rotate: '-20deg'},
-            {rotate: '0deg'},
-          ],
-          delay: 0,
-        }, 1000)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1500)
@@ -405,11 +386,11 @@ export default {
 .star-text {
   position: absolute;
   text-align: center;
-  margin-top: 13%;
   z-index: 55;
+  margin-top: -10%;
 }
 .star-text p {
-  font-size: 4vh;
+  font-size: 3.5vh;
   margin-bottom: 0;
   text-align: center;
 }

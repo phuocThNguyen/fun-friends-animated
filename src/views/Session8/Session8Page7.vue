@@ -68,10 +68,10 @@ export default {
 <style scoped>
 .star-container {
   position: absolute;
-  right: 7%;
+  right: calc(0.05*133vh);
   bottom: 2vh;
-  width: 40%;
-  height: 50vh;
+  width: calc(0.3*133vh);
+  height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,16 +87,16 @@ export default {
   text-align: center;
 }
 .star-text p {
-  font-size: 4vh;
-  margin-top: 5.5vh;
+  font-size: 3vh;
+  margin-top: 4.5vh;
   margin-bottom: 0;
 }
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.9);
-  width: 92%;
+  width: calc(0.98*133vh);
   top: 1vh;
-  left: 4%;
+  left: calc(0.01*133vh);
   padding: 1vh 2vh;
   opacity: 0;
   display: flex;
@@ -104,7 +104,7 @@ export default {
   justify-content: center;
 }
 .text-box p {
-  font-size: 4vh;
+  font-size: 3vh;
   margin-bottom: 0;
   opacity: 0;
 }

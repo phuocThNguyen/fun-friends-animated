@@ -3,7 +3,7 @@
     <img src="../../assets/images/session8/creek_girl_and_boy.jpg" alt="boy-and-girl" class="images" id="left">
     <img src="../../assets/images/session8/creek_exploring_group.jpg" alt="exploring-creek" class="images" id="right">
     <div class="question-container">
-      <div class="text">I færd med at hjælpe hinanden over vandløbet</div>
+      <div class="text">I færd med <br>at hjælpe hinanden <br>over vandløbet</div>
       <div class="choices-container">
         <svg class="thumb thumb-up" id="thumb-up-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1960 1978" width="1960" height="1978">
           <g id="thumb-up">
@@ -48,7 +48,7 @@
       </div>
     </div>
     <div class="question-container">
-      <div class="text">I færd med at udforske vandløbets bund</div>
+      <div class="text">I færd med <br>at udforske <br>vandløbets bund</div>
       <div class="choices-container">
         <svg class="thumb thumb-up" id="thumb-up-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1960 1978" width="1960" height="1978">
           <g id="thumb-up">
@@ -181,8 +181,8 @@ export default {
       let questions = document.querySelectorAll('.text');
       let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
-        .add({targets: questions[0], opacity: 1}, 8800)
-        .add({targets: questions[1], opacity: 1}, 12000)
+        .add({targets: questions[0], opacity: 1}, 1)
+        .add({targets: questions[1], opacity: 1}, 1)
     },
     handleClick(e) {
       let targetThumb = e.target.id;
@@ -300,38 +300,37 @@ export default {
 }
 .question-container {
   position: absolute;
-  bottom: 12vh;
-  width: 41%;
+  bottom: 2vh;
+  width: calc(0.35*133vh);
   height: 18vh;
 }
 .question-container:nth-of-type(1) {
-  left: 4%;
+  left: calc(0.1*133vh);
 }
 .question-container:nth-of-type(2) {
-  left: 55%;
+  right: calc(0.1*133vh);
 }
 .text {
   position: absolute;
   right: 0;
-  width: 36vh;
+  width: 60%;
   height: 100%;
   background-color: rgba(0, 206, 124, 0.9);
   color: #ffffff;
-  padding: 0 3vh;
-  font-size: 3.2vh;
+  font-size: 3vh;
   font-weight: bold;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
   opacity: 0;
 }
 .choices-container {
   background-color: rgba(0,0,0,0.8);
   position: absolute;
-  width: 19vh;
+  width: 40%;
   height: 100%;
 }
-
 .thumb {
   position: absolute;
   height: auto;

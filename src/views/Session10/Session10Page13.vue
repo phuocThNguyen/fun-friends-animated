@@ -1,9 +1,8 @@
 <template>
   <div class="interactive-container" id="alt-bg">
     <div class="text-box">
-      <p>Hvem har tidligere vist dig hvordan man gør noget?
-        Hvem har hjulpet dig med at føle dig glad?</p>
-      <p>Skriv deres navne i felterne herunder eller giv dem en stor tak.</p>
+      <p>Hvem har tidligere vist dig hvordan man gør noget? Hvem har hjulpet dig med at
+        <br>føle dig glad? Skriv deres navne i felterne herunder eller giv dem en stor tak.</p>
     </div>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle" />
     <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/no-copyright-music-funny-children-kids-music-by-mokka-kids.mp3"/>
@@ -36,9 +35,8 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-        .add({targets: '.text-box',opacity: 1}, 500)
-        .add({targets: text[0],opacity: 1}, 1200)
-        .add({targets: text[1],opacity: 1}, 8500)
+        .add({targets: '.text-box',opacity: 1}, 1)
+        .add({targets: text[0],opacity: 1}, 1)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
@@ -64,9 +62,9 @@ export default {
 .text-box {
   position: absolute;
   width: 98%;
-  top: 1vh;
+  top: .2vh;
   left: 1%;
-  padding: 0;
+  padding: 1vh;
   background-color: #000000;
   z-index: 100;
   opacity: 0;
@@ -76,6 +74,7 @@ export default {
   text-align: center;
   color: #ffffff;
   opacity: 0;
+  margin-bottom: 0;
 }
 #alt-bg {
   background: rgb(34,193,195);

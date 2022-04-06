@@ -196,11 +196,11 @@
       </g>
     </svg>
 
-    <p class="title"><span id="letter-f">E</span>xplore (Vær Nysgerrig & Udforsk)</p>
+    <p class="title"><span id="letter-f">E</span>xplore <br>(Vær Nysgerrig & Udforsk)</p>
     <p class="text" id="line-1">
-      I dag kommer vi til at være nysgerrige og tænke over måder hvorpå
-      vi kan være omsorgsfulde overfor os selv og belønne os selv for
-      at have prøvet at gøre vores bedste.
+      I dag kommer vi til at være nysgerrige og tænke over måder
+      <br>hvorpå vi kan være omsorgsfulde overfor os selv og belønne
+      <br>os selv for at have prøvet at gøre vores bedste.
     </p>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3"/>
@@ -261,8 +261,8 @@ export default {
     animateText() {
       let animation = anime.timeline({easing: 'linear', duration: 1000,});
       animation
-        .add({targets: ".title", opacity: 1}, 5300)
-        .add({targets: "#line-1", color: '#000'}, 7500)
+        .add({targets: ".title", opacity: 1}, 1)
+        .add({targets: "#line-1", color: '#000'}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -282,11 +282,12 @@ export default {
   font-family: 'Sigmar One', cursive;
   position: absolute;
   color: white;
-  font-size: 12vh;
+  font-size: 7vh;
+  line-height: 7vh;
   -webkit-text-stroke: 0.1vw black;
   text-align: center;
   width: 100%;
-  top: 26vh;
+  top: 28vh;
   opacity: 0;
 }
 #letter-f {
@@ -295,7 +296,7 @@ export default {
 .text {
   position: absolute;
   margin-bottom: 0;
-  font-size: 5.5vh;
+  font-size: 4vh;
   color: #ffffff;
 }
 #line-1 {

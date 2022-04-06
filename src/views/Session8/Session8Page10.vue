@@ -41,12 +41,12 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-        .add({targets: '.text-box',opacity: 1}, 500)
-        .add({targets: text[0],opacity: 1}, 800)
-        .add({targets: '.canvas',opacity: 1}, 6700)
-        .add({targets: text[1],opacity: 1}, 12200)
-        .add({targets: text[2],opacity: 1}, 17500)
-        .add({targets: text[3],opacity: 1}, 20500)
+        .add({targets: '.text-box',opacity: 1}, 1)
+        .add({targets: text[0],opacity: 1}, 1)
+        .add({targets: '.canvas',opacity: 1}, 1)
+        .add({targets: text[1],opacity: 1}, 1)
+        .add({targets: text[2],opacity: 1}, 1)
+        .add({targets: text[3],opacity: 1}, 1)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
@@ -70,7 +70,7 @@ export default {
   opacity: 0;
 }
 .text-box p {
-  font-size: 3vh;
+  font-size: 2.7vh;
   margin-bottom: .5vh;
   opacity: 0;
 }

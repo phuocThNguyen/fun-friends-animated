@@ -21,10 +21,10 @@ export default {
   methods: {
     animateElements() {
       let images = document.querySelectorAll('.image-container');
-      let animation = anime.timeline({easing: 'linear', duration: 500})
+      let animation = anime.timeline({easing: 'linear', duration: 1})
       animation
-        .add({targets: images[0], opacity: 1}, 690)
-        .add({targets: images[1], opacity: 1}, 4500)
+        .add({targets: images[0], opacity: 1}, 1)
+        .add({targets: images[1], opacity: 1}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -58,7 +58,7 @@ export default {
   color: #ffffff;
   padding: 1vh;
   text-align: center;
-  font-size: 4vh;
+  font-size: 3vh;
   font-weight: bold;
   margin-bottom: 0;
 }

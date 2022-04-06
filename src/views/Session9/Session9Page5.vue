@@ -2333,13 +2333,13 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  top: 30vh;
-  width: 96%;
-  left: 2%;
+  top: 35vh;
+  width: calc(0.7*133vh);
+  left: calc(0.15*133vh);
   background-color: rgba(255,255,255,0.9);
   text-align: center;
-  padding: 2vh;
-  font-size: 5.5vh;
+  padding: 4vh 2vh;
+  font-size: 4vh;
   opacity: 0;
 }
 .text-box p {

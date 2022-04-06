@@ -190,11 +190,11 @@
       </g>
     </svg>
     <div class="text-box">
-      <span>Mange af de mennesker vi ser op til vil gerne hjælpe os,
-        drage omsorg for os, og hjælpe os med at prøve nye ting.</span>
+      <span>Mange af de mennesker vi ser op til vil gerne hjælpe <br>os,
+        drage omsorg for os, og hjælpe os med at prøve <br>nye ting.</span>
       <span> De giver tingene et forsøg.</span><span> Hvordan bliver
-      Sofus og Sofie hjulpet på billederne herunder?</span>
-      <span> Hvordan har nogen hjulpet dig?</span>
+      <br>Sofus og Sofie hjulpet på billederne herunder?</span>
+      <span> <br>Hvordan har nogen hjulpet dig?</span>
     </div>
     <audio src="../../assets/sounds/session10/Session10_Page2.mp3" ref="voice"/>
     <div class="page-number" id="page-light">188</div>
@@ -232,13 +232,13 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,1);
-  width: 80%;
-  font-size: 5vh;
-  font-weight: bold;
+  width: calc(0.6*133vh);
+  font-size: 3vh;
   padding: 3vh;
-  top: 20vh;
-  left: 10%;
+  top: 30vh;
+  left: calc(0.2*133vh);
   opacity: 0;
+  text-align: center;
 }
 .text-box span {color: #ffffff}
 .landscape {

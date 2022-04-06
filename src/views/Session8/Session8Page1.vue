@@ -196,7 +196,7 @@
       </g>
     </svg>
 
-    <p class="title"><span id="letter-f">E</span>xplore (Vær nysgerrig og udforsk)</p>
+    <p class="title"><span id="letter-f">E</span>xplore <br>(Vær nysgerrig og udforsk)</p>
     <p class="text" id="line-1">
       I dag kommer vi til at være nysgerrige og tænke over hvordan man er
       <br>omsorgsfuld og venlig, og hvordan man danner nye venskaber.
@@ -266,11 +266,11 @@ export default {
         .add({
           targets: ".title",
           opacity: 1,
-        }, 5500)
+        }, 1)
         .add({
           targets: "#line-1",
           color: '#000',
-        }, 7300)
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -290,12 +290,13 @@ export default {
   font-family: 'Sigmar One', cursive;
   position: absolute;
   color: white;
-  font-size: 12vh;
+  font-size: 7vh;
   -webkit-text-stroke: 0.1vw black;
   text-align: center;
   width: 100%;
-  top: 26vh;
+  top: 32vh;
   opacity: 0;
+  line-height: 7vh;
 }
 #letter-f {
   color: #FFE802;
@@ -303,13 +304,13 @@ export default {
 .text {
   position: absolute;
   margin-bottom: 0;
-  font-size: 6vh;
+  font-size: 4vh;
   color: #ffffff;
 }
 #line-1 {
   text-align: center;
   width: 100%;
-  top: 44vh;
+  top: 50vh;
 }
 span {
   display: inline-block;

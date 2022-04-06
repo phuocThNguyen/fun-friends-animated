@@ -41,7 +41,7 @@ export default {
   padding: 1vh 2.8vh;
   background-color: #00CE7C;
   color: #ffffff;
-  font-size: 4vh;
+  font-size: 3vh;
   font-weight: bold;
   opacity: 0;
 }

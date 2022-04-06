@@ -859,10 +859,10 @@
       </g>
     </svg>
     <div class="text-box">
-      <span>Nogle gange har andre ikke lyst til at lege, og det er OK. </span>
-      <span>Der er andre børn som har lyst til at lege, du skal bare finde dem. </span>
-      <span>Sammen med en fra klassen kan du finde på en Trappestige Plan I kan
-        bruge til at få nye venner sammen.</span>
+      <span>Nogle gange har andre ikke lyst til at lege, og <br>det er OK. </span>
+      <span>Der er andre børn som har lyst til at <br>lege, du skal bare finde dem. </span>
+      <span>Sammen med en fra <br>klassen kan du finde på en Trappestige Plan I kan
+        <br>bruge til at få nye venner sammen.</span>
     </div>
     <audio src="../../assets/sounds/session8/Session8_Page6.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">162</div>
@@ -893,10 +893,10 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-        .add({targets: '.text-box',opacity: 1}, 200)
-        .add({targets: text[0],color: '#000'}, 800)
-        .add({targets: text[1],color: '#000'}, 5800)
-        .add({targets: text[2],color: '#000'}, 11500)
+        .add({targets: '.text-box',opacity: 1}, 1)
+        .add({targets: text[0],color: '#000'}, 1)
+        .add({targets: text[1],color: '#000'}, 1)
+        .add({targets: text[2],color: '#000'}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -914,12 +914,13 @@ export default {
 .text-box {
   background-color: rgba(255,255,255,1);
   position: absolute;
-  left: 9%;
-  top: 20vh;
-  width: 82%;
+  left: calc(0.15*133vh);
+  bottom: 30vh;
+  width: calc(0.7*133vh);
   padding: 2vh 4vh;
-  font-size: 5vh;
+  font-size: 4vh;
   opacity: 0;
+  text-align: center;
 }
 .text-box span {color: #ffffff}
 .landscape {

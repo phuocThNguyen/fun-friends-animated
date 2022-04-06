@@ -341,16 +341,16 @@ export default {
         duration: 500,
       })
       animation
-        .add({targets: ".text-box", opacity: 1}, 200)
-        .add({targets: text[1], opacity: 1}, 2700)
-        .add({targets: text[2], opacity: 1}, 10100)
-        .add({targets: text[3], opacity: 1}, 16600)
-        .add({targets: text[4], opacity: 1}, 20600)
-        .add({targets: text[5], opacity: 1}, 23600)
-        .add({targets: text[6], opacity: 1}, 25700)
-        .add({targets: text[7], opacity: 1}, 28900)
-        .add({targets: text[8], opacity: 1}, 32900)
-        .add({targets: text[9], opacity: 1}, 35700)
+        .add({targets: ".text-box", opacity: 1}, 1)
+        .add({targets: text[1], opacity: 1}, 1)
+        .add({targets: text[2], opacity: 1}, 1)
+        .add({targets: text[3], opacity: 1}, 1)
+        .add({targets: text[4], opacity: 1}, 1)
+        .add({targets: text[5], opacity: 1}, 1)
+        .add({targets: text[6], opacity: 1}, 1)
+        .add({targets: text[7], opacity: 1}, 1)
+        .add({targets: text[8], opacity: 1}, 1)
+        .add({targets: text[9], opacity: 1}, 1)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
@@ -372,22 +372,22 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.8);
-  width: 90%;
+  width: calc(0.7*133vh);
   height: auto;
-  left: 5%;
-  top: 2vh;
+  left: calc(0.15*133vh);
+  top: 12vh;
   padding: 2vh;
   opacity: 0;
 }
 .text-box h1 {
   text-align: center;
   margin-bottom: 1vh;
-  font-size: 6vh;
+  font-size: 4vh;
   font-weight: bold;
 }
 .text-box p {
   margin-bottom: 1vh;
-  font-size: 4vh;
+  font-size: 3vh;
   opacity: 0;
 }
 .text-box p:last-child {

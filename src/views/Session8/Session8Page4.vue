@@ -24,9 +24,10 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({easing: 'linear', duration: 500});
       animation
-        .add({targets: text[1], opacity: 1}, 2700)
-        .add({targets: text[2], opacity: 1}, 6500)
-        .add({targets: text[3], opacity: 1}, 9800)
+        .add({targets: text[1], opacity: 1}, 1)
+        .add({targets: text[2], opacity: 1}, 1)
+        .add({targets: text[3], opacity: 1}, 1)
+        .add({targets: text[4], opacity: 1}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -48,15 +49,16 @@ export default {
   position: absolute;
   padding: 1vh;
   width: 100%;
+  top: 1vh;
 }
 .text-box h1 {
-  font-size: 5vh;
-  margin-bottom: 0;
+  font-size: 4vh;
+  margin-bottom: 1vh;
 }
 .text-box p {
-  font-size: 4vh;
+  font-size: 3vh;
   opacity: 0;
-  margin-bottom: 0;
+  margin-bottom: .5vh;
 }
 .images {
   position: absolute;

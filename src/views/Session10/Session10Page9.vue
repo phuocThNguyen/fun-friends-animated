@@ -246,22 +246,9 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500});
       animation
-        .add({
-          targets: '.kids',
-          opacity: 1,
-          duration: 1,
-          delay: 1000
-        })
-        .add({
-          targets: '.kids',
-          scale: 100,
-          duration: 1000,
-        }, 1000)
-        .add({
-          targets: '.text-box',
-          opacity: 1,
-          easing: 'linear',
-        }, 2500)
+        .add({targets: '.kids', opacity: 1, duration: 1, delay: 1000})
+        .add({targets: '.kids', scale: 100, duration: 1000,}, 1000)
+        .add({targets: '.text-box', opacity: 1, easing: 'linear',}, 2500)
         .add({targets: text[0],opacity: 1, easing: 'linear'}, 2500)
         .add({targets: text[1],opacity: 1, easing: 'linear'}, 15300)
         .add({targets: text[2],opacity: 1, easing: 'linear'}, 20000)
@@ -294,10 +281,10 @@ export default {
   position: absolute;
   background-color: rgba(255,255,255,0.8);
   text-align: center;
-  width: 84%;
-  left: 8%;
+  width: calc(0.74*133vh);
+  left: calc(0.13*133vh);
   top: 1vh;
-  font-size: 4vh;
+  font-size: 3vh;
   padding: 2vh;
   opacity: 0;
 }

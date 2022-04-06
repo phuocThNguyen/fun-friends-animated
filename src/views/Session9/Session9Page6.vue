@@ -31,11 +31,12 @@ export default {
       let images = document.querySelectorAll('.image-container');
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({targets: text[1], opacity: 1}, 2300)
-        .add({targets: text[2], opacity: 1}, 10500)
-        .add({targets: text[3], opacity: 1}, 14700)
-        .add({targets: images[0], opacity: 1}, 19500)
-        .add({targets: images[1], opacity: 1}, 23000)
+        .add({targets: text[1], opacity: 1}, 1)
+        .add({targets: text[2], opacity: 1}, 1)
+        .add({targets: text[3], opacity: 1}, 1)
+        .add({targets: text[4], opacity: 1}, 1)
+        .add({targets: images[0], opacity: 1}, 1)
+        .add({targets: images[1], opacity: 1}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -59,12 +60,12 @@ export default {
   padding: .5vh 1vh;
 }
 .text-box h1 {
-  font-size: 5vh;
+  font-size: 4vh;
   margin-bottom: 0;
   font-weight: bold;
 }
 .text-box p {
-  font-size: 3vh;
+  font-size: 2.6vh;
   margin-bottom: 0;
   opacity: 0;
 }
@@ -88,7 +89,7 @@ export default {
   color: #ffffff;
   padding: 1vh;
   text-align: center;
-  font-size: 4vh;
+  font-size: 3vh;
   font-weight: bold;
   margin-bottom: 0;
 }

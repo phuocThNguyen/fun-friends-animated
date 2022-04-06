@@ -1033,26 +1033,6 @@ export default {
           targets: '.star-container',
           opacity: 1
         })
-        .add({
-          targets: ".star",
-          keyframes: [
-            {rotate: '-20deg'},
-            {rotate: '20deg'},
-            {rotate: '-20deg'},
-            {rotate: '0deg'},
-          ],
-          delay: 0,
-        })
-        .add({
-          targets: ".star-text",
-          keyframes: [
-            {rotate: '-20deg'},
-            {rotate: '20deg'},
-            {rotate: '-20deg'},
-            {rotate: '0deg'},
-          ],
-          delay: 0,
-        }, 1000)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1500)
@@ -1068,10 +1048,10 @@ export default {
 <style scoped>
 .star-container {
   position: absolute;
-  top: 10vh;
-  left: calc(0.22*133vh);
-  width: calc(0.56*133vh);
-  height: 70vh;
+  top: 5vh;
+  left: calc(0.18*133vh);
+  width: calc(0.64*133vh);
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1086,11 +1066,10 @@ export default {
 .star-text {
   position: absolute;
   text-align: center;
-  margin-top: 13%;
   z-index: 55;
 }
 .star-text p {
-  font-size: 3.8vh;
+  font-size: 3.2vh;
   margin-bottom: 0;
   text-align: center;
 }

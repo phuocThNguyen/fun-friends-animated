@@ -1011,13 +1011,13 @@ export default {
       let text = document.getElementsByClassName('text-box')[0].children;
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({targets: '.text-box', opacity: 1}, 700)
-        .add({targets: text[1], opacity: 1}, 2800)
-        .add({targets: text[2], opacity: 1}, 7800)
-        .add({targets: text[3], opacity: 1}, 10200)
-        .add({targets: text[4], opacity: 1}, 13100)
-        .add({targets: text[5], opacity: 1}, 17000)
-        .add({targets: text[6], opacity: 1}, 20100)
+        .add({targets: '.text-box', opacity: 1}, 1)
+        .add({targets: text[1], opacity: 1}, 1)
+        .add({targets: text[2], opacity: 1}, 1)
+        .add({targets: text[3], opacity: 1}, 1)
+        .add({targets: text[4], opacity: 1}, 1)
+        .add({targets: text[5], opacity: 1}, 1)
+        .add({targets: text[6], opacity: 1}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -1034,22 +1034,22 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.9);
-  width: 92%;
+  width: calc(0.6*133vh);
   height: auto;
-  left: 4%;
-  top: 12vh;
+  left: calc(0.2*133vh);
+  top: 20vh;
   padding: 2vh;
   opacity: 0;
 }
 .text-box h1 {
   text-align: center;
-  margin-bottom: 2vh;
-  font-size: 5vh;
+  margin-bottom: 1vh;
+  font-size: 4vh;
   font-weight: bold;
 }
 .text-box p {
   margin-bottom: 1vh;
-  font-size: 4.5vh;
+  font-size: 3vh;
   opacity: 0;
 }
 .text-box p:nth-of-type(3),
@@ -1058,6 +1058,7 @@ export default {
 .text-box p:nth-of-type(6) {
   padding-left: 7vh;
 }
+.text-box p:last-child { margin-bottom: 0 }
 .landscape {
   position: absolute;
   height: auto;

@@ -5,8 +5,7 @@
     <div class="text-box">
       <p>Hvis du har lyst kan du give dig selv et superheltenavn. Du kan skrive det på
         et stykke papir, dele det med dine venner / klassekammerater, eller tegne et
-        billede af dit kostume!</p>
-      <p>Del det med dine venner / klassekammerater.</p>
+        billede af dit kostume! Del det med dine venner / klassekammerater.</p>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/snack-time-the-green-orbs-children-s-music-no-copyright-music.mp3"/>
     <audio src="../../assets/sounds/session10/Session10_Page10.mp3" ref="voice"/>
@@ -39,10 +38,9 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({targets: '.text-box',opacity: 1}, 500)
-        .add({targets: text[0],opacity: 1}, 700)
-        .add({targets: '.canvas',opacity: 1}, 3500)
-        .add({targets: text[1],opacity: 1}, 6200)
+        .add({targets: '.text-box',opacity: 1}, 1)
+        .add({targets: text[0],opacity: 1}, 1)
+        .add({targets: '.canvas',opacity: 1}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -60,22 +58,23 @@ export default {
 .canvas {
   position: absolute;
   top: 1vh;
-  left: 1%;
+  left: calc(0.01*133vh);
   opacity: 0;
 }
 .text-box {
   position: absolute;
   top: 1vh;
-  left: 1%;
-  width: 98%;
+  left: calc(0.01*133vh);
+  width: calc(0.98*133vh);
   background-color: #000000;
-  padding: 0;
+  padding: 1.5vh 0;
   opacity: 0;
 }
 .text-box p {
   text-align: center;
-  font-size: 4vh;
+  font-size: 2.7vh;
   color: #ffffff;
   opacity: 0;
+  margin-bottom: 0;
 }
 </style>

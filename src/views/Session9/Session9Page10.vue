@@ -23,8 +23,8 @@ export default {
       let images = document.querySelectorAll('.image-container');
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({targets: images[0], opacity: 1}, 500)
-        .add({targets: images[1], opacity: 1}, 3100)
+        .add({targets: images[0], opacity: 1}, 1)
+        .add({targets: images[1], opacity: 1}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -52,18 +52,18 @@ export default {
 .image-container p {
   display: block;
   position: absolute;
-  bottom: 1vh;
+  bottom: 2vh;
   width: 70%;
   background-color: #00ce7c;
   color: #ffffff;
   padding: 1vh;
   text-align: center;
-  font-size: 4vh;
+  font-size: 3vh;
   font-weight: bold;
   margin-bottom: 0;
 }
-#para-1 {left: 18%}
-#para-2 {right: 18%}
+#para-1 {left: 19%}
+#para-2 {right: 19%}
 .image-container:nth-of-type(2) {
   right: 0;
 }

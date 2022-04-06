@@ -27,10 +27,10 @@ export default {
       let text = document.querySelector('.text').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
-        .add({targets: text[0],color: '#000'}, 8000)
-        .add({targets: text[1],color: '#000'}, 15900)
-        .add({targets: text[2],color: '#000'}, 21200)
-        .add({targets: '.green-box',opacity: 1}, 28500)
+        .add({targets: text[0],color: '#000'}, 1)
+        .add({targets: text[1],color: '#000'}, 1)
+        .add({targets: text[2],color: '#000'}, 1)
+        .add({targets: '.green-box',opacity: 1}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -47,13 +47,13 @@ export default {
 .green-box {
   position: absolute;
   bottom: 1vh;
-  left: 9%;
+  left: calc(0.1*133vh);
   background-color: #00CE7C;
   color: #ffffff;
-  width: 36%;
+  width: 34vh;
   padding: 1vh;
   text-align: center;
-  font-size: 4.5vh;
+  font-size: 3vh;
   opacity: 0;
 }
 .text-box {
@@ -64,11 +64,11 @@ export default {
   padding: 1vh;
 }
 .text-box h1 {
-  font-size: 5vh;
+  font-size: 4vh;
   margin-bottom: 0;
 }
 .text-box p {
-  font-size: 3.5vh;
+  font-size: 3vh;
   margin-bottom: 0;
   color: #ffffff;
 }

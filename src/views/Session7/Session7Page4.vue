@@ -1040,8 +1040,8 @@
       </g>
     </svg>
     <div class="text-box">
-      <p>Her er nogle eksempler på Trappestige Planer andre børn har brugt til at være modig.</p>
-      <p>Tænk på noget du har lyst til at gøre eller skabe - hvad går det ud på?
+      <p>Her er nogle eksempler på Trappestige Planer andre børn har <br>brugt til at være modig.</p>
+      <p>Tænk på noget du har lyst til at gøre eller skabe - hvad går <br>det ud på?
         Hvad har du brug for til at gøre det til virkelighed?</p>
       <p>Kan du bryde dette ned i nogle mindre, mere overskuelige og nemmere trin?</p>
     </div>
@@ -1080,19 +1080,19 @@ export default {
         .add({
           targets: '.text-box',
           opacity: 1
-        }, 400)
+        }, 1)
         .add({
           targets: text[0],
           opacity: 1
-        }, 670)
+        }, 1)
         .add({
           targets: text[1],
           opacity: 1
-        }, 7199)
+        }, 1)
         .add({
           targets: text[2],
           opacity: 1
-        }, 11126)
+        }, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -1113,7 +1113,7 @@ export default {
   bottom: 15vh;
   width: 78%;
   padding: 2vh;
-  font-size: 5vh;
+  font-size: 3vh;
   background-color: rgba(255,255,255,0.95);
   text-align: center;
   opacity: 0;

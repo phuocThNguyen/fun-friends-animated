@@ -202,17 +202,17 @@ export default {
         duration: 300
       })
       animation
-        .add({targets: '.text-box', opacity: 1}, 700)
-        .add({targets: text[1], opacity: 1}, 3000)
-        .add({targets: text[2], opacity: 1}, 10300)
-        .add({targets: text[3], opacity: 1}, 17600)
-        .add({targets: text[4], opacity: 1}, 21500)
-        .add({targets: text[5], opacity: 1}, 24700)
-        .add({targets: text[6], opacity: 1}, 28600)
-        .add({targets: text[7], opacity: 1}, 30900)
-        .add({targets: text[8], opacity: 1}, 34200)
-        .add({targets: text[9], opacity: 1}, 38300)
-        .add({targets: text[10], opacity: 1}, 41600)
+        .add({targets: '.text-box', opacity: 1}, 1)
+        .add({targets: text[1], opacity: 1}, 1)
+        .add({targets: text[2], opacity: 1}, 1)
+        .add({targets: text[3], opacity: 1}, 1)
+        .add({targets: text[4], opacity: 1}, 1)
+        .add({targets: text[5], opacity: 1}, 1)
+        .add({targets: text[6], opacity: 1}, 1)
+        .add({targets: text[7], opacity: 1}, 1)
+        .add({targets: text[8], opacity: 1}, 1)
+        .add({targets: text[9], opacity: 1}, 1)
+        .add({targets: text[10], opacity: 1}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -229,28 +229,28 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.8);
-  width: 96%;
+  width: calc(0.7*133vh);
   height: auto;
-  left: 2%;
-  top: 2vh;
+  left: calc(0.15*133vh);
+  top: 10vh;
   padding: 2vh;
   opacity: 0;
 }
 .text-box h1 {
   text-align: center;
-  margin-bottom: 2vh;
-  font-size: 6vh;
+  margin-bottom: 1vh;
+  font-size: 4vh;
   font-weight: bold;
 }
 .text-box p {
   margin-bottom: 1vh;
-  font-size: 3.6vh;
+  font-size: 3vh;
   opacity: 0;
 }
+.text-box p:nth-of-type(6),
 .text-box p:nth-of-type(7),
 .text-box p:nth-of-type(8),
-.text-box p:nth-of-type(9),
-.text-box p:nth-of-type(10) {
+.text-box p:nth-of-type(9) {
   padding-left: 7vh;
 }
 .text-box p:last-child {
@@ -261,12 +261,6 @@ export default {
   height: auto;
   width: 144%;
   left: -10%;
-}
-.red {
-  color: #ff0000;
-}
-.green {
-  color: #00CE7C;
 }
 tspan { white-space:pre }
 .shp0 { fill: #fbffd9 }

@@ -61,20 +61,20 @@ export default {
       let hands = document.querySelectorAll('.hand-container');
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({targets: text[1], opacity: 1}, 3200)
-        .add({targets: text[2], opacity: 1}, 9600)
-        .add({targets: text[3], opacity: 1}, 11800)
-        .add({targets: text[4], opacity: 1}, 16400)
-        .add({targets: hands[0], opacity: 1}, 16400)
-        .add({targets: text[5], opacity: 1}, 18600)
-        .add({targets: hands[1], opacity: 1}, 18600)
-        .add({targets: text[6], opacity: 1}, 20200)
-        .add({targets: hands[2], opacity: 1}, 20200)
-        .add({targets: text[7], opacity: 1}, 21600)
-        .add({targets: hands[3], opacity: 1}, 21600)
-        .add({targets: text[8], opacity: 1}, 23500)
-        .add({targets: hands[4], opacity: 1}, 23500)
-        .add({targets: text[9], opacity: 1}, 25000)
+        .add({targets: text[1], opacity: 1}, 1)
+        .add({targets: text[2], opacity: 1}, 1)
+        .add({targets: text[3], opacity: 1}, 1)
+        .add({targets: text[4], opacity: 1}, 1)
+        .add({targets: hands[0], opacity: 1}, 1)
+        .add({targets: text[5], opacity: 1}, 1)
+        .add({targets: hands[1], opacity: 1}, 1)
+        .add({targets: text[6], opacity: 1}, 1)
+        .add({targets: hands[2], opacity: 1}, 1)
+        .add({targets: text[7], opacity: 1}, 1)
+        .add({targets: hands[3], opacity: 1}, 1)
+        .add({targets: text[8], opacity: 1}, 1)
+        .add({targets: hands[4], opacity: 1}, 1)
+        .add({targets: text[9], opacity: 1}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -88,29 +88,12 @@ export default {
 </script>
 
 <style scoped>
-#hand-1 {
-  right: 32%;
-  top: 10vh;
-}
-#hand-2 {
-  right: 4%;
-  top: 10vh;
-}
-#hand-3 {
-  left: 25%;
-  bottom: 10vh;
-}
-#hand-4 {
-  left: 50%;
-  bottom: 10vh;
-}
-#hand-5 {
-  right: 6%;
-  bottom: 10vh;
-}
-#hand-5 p{
-  font-size: 3.2vh !important;
-}
+#hand-1 {right: 32%;top: 10vh;}
+#hand-2 {right: 4%;top: 10vh;}
+#hand-3 {left: 25%;bottom: 10vh;}
+#hand-4 {left: 50%;bottom: 10vh;}
+#hand-5 {right: 6%;bottom: 10vh;}
+#hand-2 p {font-size:2.5vh}
 .hand-container {
   position: absolute;
   width: 20%;
@@ -120,7 +103,7 @@ export default {
 .hand-container p {
   color: #ffffff;
   width: 100%;
-  font-size: 4vh;
+  font-size: 3vh;
   font-weight: bold;
   position: absolute;
   left: 1vh;
@@ -141,10 +124,10 @@ export default {
   padding: 1vh;
 }
 .text-box h1 {
-  font-size: 6vh;
+  font-size: 4vh;
 }
 .text-box p {
-  font-size: 3.5vh;
+  font-size: 3vh;
   margin-bottom: 1vh;
   opacity: 0;
 }

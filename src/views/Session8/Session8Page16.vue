@@ -183,8 +183,8 @@
         </g>
       </svg>
       <div class="star-text">
-        <p><strong>Ugens lysende
-          stjerne idé</strong></p>
+        <p style="font-size: 3.7vh"><strong>Ugens lysende
+          <br>stjerne idé</strong></p>
         <p>Når du spiser det sunde mad
           <br>du bedst kan li’, så sørg for at
           <br>gøre det rigtig langsomt imens
@@ -208,36 +208,8 @@ export default {
   name: 'Session8Page16',
   methods: {
     animateElements() {
-      let animation = anime.timeline({
-        easing: 'linear',
-        delay: 500,
-        duration: 500
-      });
-      animation
-        .add({
-          targets: '.star-container',
-          opacity: 1
-        })
-        .add({
-          targets: ".star",
-          keyframes: [
-            {rotate: '-20deg'},
-            {rotate: '20deg'},
-            {rotate: '-20deg'},
-            {rotate: '0deg'},
-          ],
-          delay: 0,
-        })
-        .add({
-          targets: ".star-text",
-          keyframes: [
-            {rotate: '-20deg'},
-            {rotate: '20deg'},
-            {rotate: '-20deg'},
-            {rotate: '0deg'},
-          ],
-          delay: 0,
-        }, 1000)
+      let animation = anime.timeline({easing: 'linear', delay: 500, duration: 500});
+      animation.add({targets: '.star-container', opacity: 1})
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1500)
@@ -271,11 +243,11 @@ export default {
 .star-text {
   position: absolute;
   text-align: center;
-  margin-top: 15%;
+  margin-top: 10%;
   z-index: 55;
 }
 .star-text p {
-  font-size: 4vh;
+  font-size: 3.2vh;
   margin-bottom: 0;
   text-align: center;
 }

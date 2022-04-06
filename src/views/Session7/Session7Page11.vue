@@ -914,9 +914,11 @@ export default {
         easing: 'linear'
       })
       animation
-        .add({targets: '.text-box',opacity: 1}, 500)
-        .add({targets: text[1],opacity: 1}, 3900)
-        .add({targets: text[2],opacity: 1}, 23000)
+        .add({targets: '.text-box',opacity: 1}, 1)
+        .add({targets: text[1],opacity: 1}, 1)
+        .add({targets: text[2],opacity: 1}, 1)
+        .add({targets: text[3],opacity: 1}, 1)
+        .add({targets: text[4],opacity: 1}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -933,20 +935,20 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  width: 80%;
-  padding: 4vh 3.2vh;
+  width: calc(0.72*133vh);
+  padding: 3vh;
   background-color: rgba(255,255,255,0.9);
-  left: 10%;
+  left: calc(0.14*133vh);
   top: 10vh;
   z-index: 100;
   opacity: 0;
 }
 .text-box h1 {
   text-align: center;
-  font-size: 6vh;
+  font-size: 4vh;
 }
 .text-box p {
-  font-size: 4vh;
+  font-size: 3vh;
   margin-bottom: 1vh;
   opacity: 0;
 }

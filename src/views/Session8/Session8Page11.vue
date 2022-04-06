@@ -28,11 +28,11 @@ export default {
       let text = document.querySelector('.text').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-        .add({targets: '.text-box', opacity: 0.9}, 1000)
-        .add({targets: text[0], color: '#000'}, 5100)
-        .add({targets: text[1], color: '#000'}, 16700)
-        .add({targets: text[2], color: '#000'}, 27500)
-        .add({targets: text[3], color: '#000'}, 38400)
+        .add({targets: '.text-box', opacity: 0.9}, 1)
+        .add({targets: text[0], color: '#000'}, 1)
+        .add({targets: text[1], color: '#000'}, 1)
+        .add({targets: text[2], color: '#000'}, 1)
+        .add({targets: text[3], color: '#000'}, 1)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
@@ -52,24 +52,22 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  width: 80%;
-  left: 10%;
-  top: 10vh;
-  padding: 3.5vh;
+  width: calc(0.9*133vh);
+  left: calc(0.05*133vh);
+  bottom: 12vh;
+  padding: 2vh 3vh;
   background-color: #ffffff;
   opacity: 0;
+  text-align: center;
 }
 .text-box h1 {
-  text-align: center;
-  font-size: 5vh;
+  font-size: 4vh;
   font-weight: bold;
   margin-bottom: 1vh;
 }
 .text-box p {
-  font-size: 4vh;
+  font-size: 3vh;
   margin-bottom: 0;
   color: #ffffff;
 }
-.green {color: #00CE7C}
-.red {color: #ff0000}
 </style>

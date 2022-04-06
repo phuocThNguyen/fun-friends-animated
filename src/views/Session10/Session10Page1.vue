@@ -196,11 +196,11 @@
       </g>
     </svg>
 
-    <p class="title"><span id="letter-f">N</span>ice work (godt arbejdet)</p>
+    <p class="title"><span id="letter-f">N</span>ice work <br>(godt arbejdet)</p>
     <p class="text" id="line-1">
       <span>I dag kommer vi til at tænke på nogen vi kan se op til - altså
-        de mennesker vi gerne vil ligne.</span><span> Vi kommer også til at
-      tale om hvordan vores familie, venner, pædagoger og lærere hjælper os,
+        <br>de mennesker vi gerne vil ligne.</span><span> Vi kommer også til at
+      tale om <br>hvordan vores familie, venner, pædagoger og lærere hjælper <br>os,
       og om hvordan vi kan hjælpe dem.</span>
     </p>
 
@@ -263,9 +263,9 @@ export default {
       let text = document.querySelector('.text').children;
       let animation = anime.timeline({easing: 'linear', duration: 500});
       animation
-        .add({targets: ".title", opacity: 1}, 6600)
-        .add({targets: text[0], color: '#000'}, 9300)
-        .add({targets: text[1], color: '#000'}, 16100)
+        .add({targets: ".title", opacity: 1}, 1)
+        .add({targets: text[0], color: '#000'}, 1)
+        .add({targets: text[1], color: '#000'}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -285,7 +285,8 @@ export default {
   font-family: 'Sigmar One', cursive;
   position: absolute;
   color: white;
-  font-size: 12vh;
+  font-size: 7vh;
+  line-height: 7vh;
   -webkit-text-stroke: 0.1vw black;
   text-align: center;
   width: 100%;
@@ -298,13 +299,13 @@ export default {
 .text {
   position: absolute;
   margin-bottom: 0;
-  font-size: 4.5vh;
+  font-size: 4vh;
   color: #ffffff;
 }
 #line-1 {
   text-align: center;
   width: 100%;
-  top: 44vh;
+  top: 42vh;
 }
 tspan { white-space:pre }
 .shp-cloud { fill: #ffffff }
