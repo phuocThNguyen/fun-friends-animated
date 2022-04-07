@@ -81,16 +81,10 @@ export default {
       btn.style.color = '#fff';
       btn.style.backgroundColor = '#00ce7c';
     },
-    checkSession() {
-      if (this.session === 'Session6' || this.session === 'Session10') {
-        document.querySelector('.session-title').style.fontSize = "2.8vh";
-      }
-    }
   },
   mounted() {
     let buttons = document.getElementsByClassName('btn');
     this.changeActiveStyle(buttons[this.selectedSession]);
-    this.checkSession()
   },
   }
 </script>
@@ -130,7 +124,7 @@ export default {
   text-align: center;
   margin-bottom: 0;
   color: #ffffff;
-  font-size: 3vh;
+  font-size: 2.8vh;
 }
 .nav-icon {
   width: auto;

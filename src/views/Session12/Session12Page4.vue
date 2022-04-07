@@ -518,7 +518,7 @@
     </svg>
     <div class="text-box">
       <p class="title">Her er nogle fantastiske idéer til hvordan I deler Fun FRIENDS
-        med andre udenfor gruppen eller i børnehaven  / på skolen:</p>
+        med andre udenfor <br>gruppen eller i børnehaven  / på skolen:</p>
       <div class="text">
         <p>&bull;&nbsp;&nbsp;Leg ”Samme eller Forskellig” med din gruppe / klasse for
           at se hvad de andre / dine klassekammerater har til fælles og
@@ -554,12 +554,12 @@ export default {
       let text = document.querySelector('.text').children
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({targets: '.title', opacity: 1}, 900)
-        .add({targets: '.text', opacity: 1}, 6000)
-        .add({targets: text[0], opacity: 1}, 6800)
-        .add({targets: text[1], opacity: 1}, 29100)
-        .add({targets: text[2], opacity: 1}, 45700)
-        .add({targets: text[3], opacity: 1}, 54000)
+        .add({targets: '.title', opacity: 1}, 1)
+        .add({targets: '.text', opacity: 1}, 1)
+        .add({targets: text[0], opacity: 1}, 1)
+        .add({targets: text[1], opacity: 1}, 1)
+        .add({targets: text[2], opacity: 1}, 1)
+        .add({targets: text[3], opacity: 1}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -590,20 +590,20 @@ export default {
   position: absolute;
   background-color: #000000;
   color: #ffffff;
-  font-size: 3.2vh;
+  font-size: 3vh;
   font-weight: bold;
   opacity: 0;
 }
 .text {
   background-color: rgba(255,255,255,0.9);
   position: absolute;
-  top: 8vh;
-  padding: 1vh;
+  top: 12vh;
+  padding: 2vh;
   opacity: 0;
 }
 .text p {
   margin-bottom: 1.5vh;
-  font-size: 3.33vh;
+  font-size: 3vh;
   opacity: 0;
 }
 .text p:last-child {

@@ -3285,7 +3285,7 @@
         </g>
       </svg>
       <div class="star-text">
-        <p><strong>I'm BRAVE <br>and KIND too!</strong></p>
+        <p><strong>Jeg er også MODIG <br>og OMSORGSFULD!</strong></p>
       </div>
     </div>
     <div class="cloud-container" id="cloud-1">
@@ -3296,7 +3296,7 @@
           </g>
         </g>
       </svg>
-      <div class="cloud-text">In my family</div>
+      <div class="cloud-text">I min familie.</div>
     </div>
     <div class="cloud-container" id="cloud-2">
       <svg class="cloud" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 117 70" width="117" height="70">
@@ -3306,7 +3306,7 @@
           </g>
         </g>
       </svg>
-      <div class="cloud-text">Someone who is <br>kind to everyone</div>
+      <div class="cloud-text">En, der er <br>omsorgsfuld <br>overfor alle.</div>
     </div>
     <div class="cloud-container" id="cloud-3">
       <svg class="cloud" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93 62" width="93" height="62">
@@ -3316,7 +3316,7 @@
           </g>
         </g>
       </svg>
-      <div class="cloud-text">At my school <br> / preschool</div>
+      <div class="cloud-text">I min børnehave <br>/ skole.</div>
     </div>
     <div class="cloud-container" id="cloud-4">
       <svg class="cloud" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 195 92" width="195" height="92">
@@ -3326,7 +3326,7 @@
           </g>
         </g>
       </svg>
-      <div class="cloud-text">In a book <br>or movie</div>
+      <div class="cloud-text">I en bog eller en film.</div>
     </div>
     <audio src="../../assets/sounds/session4/night-time.mp3" autoplay loop ref="audio"/>
     <audio src="../../assets/sounds/appendix/Session13_Appendix_Page2.mp3" ref="voice"/>
@@ -3389,7 +3389,7 @@ export default {
 }
 .title {
   position: absolute;
-  font-size: 4.7vh;
+  font-size: 4vh;
   font-weight: bold;
   width: 100%;
   text-align: center;
@@ -3413,30 +3413,31 @@ export default {
 }
 .cloud-text {
   position: absolute;
-  font-size: 5.5vh;
+  font-size: 4vh;
   line-height: 5vh;
   z-index: 10;
   margin-top: 3%;
+  text-align: center;
 }
 #cloud-1 {
   top: 8%;
-  left: 4%;
+  left: 1%;
 }
 #cloud-2 {
   bottom: 8%;
-  left: 4%;
+  left: 1%;
 }
 #cloud-3 {
   top: 8%;
-  right: 4%
+  right: 1%;
 }
 #cloud-4 {
   bottom: 8%;
-  right: 4%;
+  right: 1%;
 }
 .star-container {
   position: absolute;
-  top: 17vh;
+  top: 15vh;
   left: 25%;
   width: 50%;
   height: 60vh;
@@ -3454,7 +3455,7 @@ export default {
 .star-text {
   position: absolute;
   margin-top: 0;
-  font-size: 5.5vh;
+  font-size: 4vh;
   width: 100%;
   text-align: center;
 }

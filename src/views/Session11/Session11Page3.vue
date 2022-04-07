@@ -25,13 +25,13 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-        .add({targets: '.text-box',opacity: 1}, 500)
-        .add({targets: text[0],opacity: 1}, 500)
-        .add({targets: text[1],opacity: 1}, 6500)
-        .add({targets: text[2],opacity: 1}, 11000)
-        .add({targets: text[3],opacity: 1}, 13500)
-        .add({targets: text[4],opacity: 1}, 21500)
-        .add({targets: text[5],opacity: 1}, 25100)
+        .add({targets: '.text-box',opacity: 1}, 1)
+        .add({targets: text[0],opacity: 1}, 1)
+        .add({targets: text[1],opacity: 1}, 1)
+        .add({targets: text[2],opacity: 1}, 1)
+        .add({targets: text[3],opacity: 1}, 1)
+        .add({targets: text[4],opacity: 1}, 1)
+        .add({targets: text[5],opacity: 1}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -50,13 +50,15 @@ export default {
   background-color: rgba(255,255,255,0.9);
   padding: 2vh;
   top: 20vh;
-  width: 96%;
-  left: 2%;
+  width: calc(0.96*133vh);
+  left: calc(0.02*133vh);
   opacity: 0;
+  text-align: center;
 }
 .text-box p {
-  font-size: 4vh;
+  font-size: 3vh;
   margin-bottom: 0;
   opacity: 0;
+  line-height: 6vh;
 }
 </style>

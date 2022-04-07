@@ -29,16 +29,17 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-        .add({targets: '.text-box', opacity: 1}, 500)
-        .add({targets: text[0], opacity: 1}, 800)
-        .add({targets: text[1], opacity: 1}, 9800)
-        .add({targets: text[2], opacity: 1}, 11400)
-        .add({targets: text[3], opacity: 1}, 15600)
-        .add({targets: text[4], opacity: 1}, 17100)
-        .add({targets: text[5], opacity: 1}, 18600)
-        .add({targets: text[6], opacity: 1}, 21500)
-        .add({targets: text[7], opacity: 1}, 23100)
-        .add({targets: text[8], opacity: 1}, 24100)
+        .add({targets: '.text-box', opacity: 1}, 1)
+        .add({targets: text[0], opacity: 1}, 1)
+        .add({targets: text[1], opacity: 1}, 1)
+        .add({targets: text[2], opacity: 1}, 1)
+        .add({targets: text[3], opacity: 1}, 1)
+        .add({targets: text[4], opacity: 1}, 1)
+        .add({targets: text[5], opacity: 1}, 1)
+        .add({targets: text[6], opacity: 1}, 1)
+        .add({targets: text[7], opacity: 1}, 1)
+        .add({targets: text[8], opacity: 1}, 1)
+        .add({targets: text[9], opacity: 1}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -63,14 +64,11 @@ export default {
   opacity: 0;
 }
 .text-box p {
-  font-size: 4vh;
-  margin-bottom: 0;
+  font-size: 3vh;
+  margin-bottom: 1vh;
   opacity: 0;
 }
-.text-box p:nth-child(n+3) {
-  padding-left: 2vh;
-}
-.text-box p:nth-child(3) {
-  font-size: 3.5vh !important;
+.text-box p:nth-child(n+4) {
+  padding-left: .5vh;
 }
 </style>

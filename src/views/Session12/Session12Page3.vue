@@ -1024,11 +1024,11 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
-        .add({targets: '.text-box',opacity: 0.9}, 500)
-        .add({targets: text[0],color: '#000'}, 700)
-        .add({targets: text[1],color: '#000'}, 5400)
-        .add({targets: text[2],color: '#000'}, 10500)
-        .add({targets: text[3],color: '#000'}, 16000)
+        .add({targets: '.text-box',opacity: 0.9}, 1)
+        .add({targets: text[0],color: '#000'}, 1)
+        .add({targets: text[1],color: '#000'}, 1)
+        .add({targets: text[2],color: '#000'}, 1)
+        .add({targets: text[3],color: '#000'}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -1050,8 +1050,7 @@ export default {
   position: absolute;
   background-color: rgba(255,255,255,1);
   padding: 2vh;
-  font-size: 4.5vh;
-  font-weight: bold;
+  font-size: 3.5vh;
   width: 90%;
   left: 5%;
   top: 15vh;

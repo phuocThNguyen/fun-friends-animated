@@ -240,12 +240,12 @@ export default {
   background-color: rgba(255,255,255,0.9);
 }
 .text-box h1 {
-  font-size: 6vh;
+  font-size: 4vh;
   font-weight: bold;
   margin-bottom: 0
 }
 .text-box p {
-  font-size: 4vh;
+  font-size: 3vh;
   margin-bottom: 0;
   opacity: 0;
 }

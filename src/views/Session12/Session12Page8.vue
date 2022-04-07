@@ -17,7 +17,7 @@ export default {
         width: 0.96,
         height: 0.82,
         isPicture: true,
-        pictureUrl: "session12/balloons.jpg",
+        pictureUrl: "session12/balloons-danish.jpg",
         backgroundSize: 'contain'
       },
     }

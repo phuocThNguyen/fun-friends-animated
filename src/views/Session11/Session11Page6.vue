@@ -23,8 +23,8 @@ export default {
       let text = document.getElementsByClassName('text');
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({targets: text[0], opacity: 1}, 600)
-        .add({targets: text[1], opacity: 1}, 4200)
+        .add({targets: text[0], opacity: 1}, 1)
+        .add({targets: text[1], opacity: 1}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -62,6 +62,6 @@ export default {
   padding: 1vh;
   opacity: 0;
 }
-#para-1 {left: 18%}
-#para-2 {right: 18%}
+#para-1 {left: 25%}
+#para-2 {right: 25%}
 </style>

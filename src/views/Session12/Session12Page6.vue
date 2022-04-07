@@ -42,12 +42,12 @@ export default {
 .text-box {
   position: absolute;
   top: 1vh;
-  width: 80%;
-  left: 10%;
+  width: calc(0.8*133vh);
+  left: calc(0.1*133vh);
   padding: 1vh 2vh;
   background-color: #00CE7C;
   color: #ffffff;
-  font-size: 5.5vh;
+  font-size: 4vh;
   font-weight: bold;
   text-align: center;
   opacity: 0;

@@ -56,15 +56,15 @@ export default {
   position: absolute;
   top: 1vh;
   text-align: center;
-  font-size: 6.5vh;
+  font-size: 5vh;
   color: #ffffff;
 }
 .text {
   position: absolute;
   width: 100%;
   text-align: center;
-  top: 8.5vh;
-  font-size: 5vh;
+  top: 7.5vh;
+  font-size: 3.5vh;
   color: #ffffff;
 }
 </style>

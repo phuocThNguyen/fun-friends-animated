@@ -196,7 +196,7 @@
       </g>
     </svg>
 
-    <p class="title"><span id="letter-f">S</span>tay Brave (Forbliv Modig)</p>
+    <p class="title"><span id="letter-f">S</span>tay Brave <br>(Forbliv Modig)</p>
     <div class="text-box">
       <p><strong>To ting du / I kan tale om og nyde i dag er, at:</strong></p>
       <p>1. være glad når vi prøver noget  / giver tingene et forsøg</p>
@@ -260,10 +260,10 @@ export default {
 
       let animation = anime.timeline({easing: 'linear', duration: 500});
       animation
-        .add({targets: ".title", opacity: 1}, 5800)
-        .add({targets: text[0], color: '#000'}, 8100)
-        .add({targets: text[1], color: '#000'}, 12100)
-        .add({targets: text[2], color: '#000'}, 15700)
+        .add({targets: ".title", opacity: 1}, 1)
+        .add({targets: text[0], color: '#000'}, 1)
+        .add({targets: text[1], color: '#000'}, 1)
+        .add({targets: text[2], color: '#000'}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -283,11 +283,12 @@ export default {
   font-family: 'Sigmar One', cursive;
   position: absolute;
   color: white;
-  font-size: 12vh;
+  font-size: 7vh;
+  line-height: 7vh;
   -webkit-text-stroke: 0.1vw black;
   text-align: center;
   width: 100%;
-  top: 26vh;
+  top: 30vh;
   opacity: 0;
 }
 #letter-f {
@@ -297,11 +298,11 @@ export default {
   position: absolute;
   text-align: center;
   width: 100%;
-  top: 42vh;
+  top: 46vh;
 }
 .text-box p {
   margin-bottom: 1vh;
-  font-size: 5vh;
+  font-size: 4vh;
   color: #ffffff;
 }
 .text-box p:first-child {

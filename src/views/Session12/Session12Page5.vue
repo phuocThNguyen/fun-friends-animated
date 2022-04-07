@@ -518,7 +518,7 @@
     </svg>
     <div class="text-box">
       <p class="title">Her er nogle fantastiske idéer til hvordan I deler Fun FRIENDS
-        med andre udenfor gruppen eller i børnehaven  / på skolen:</p>
+        med andre udenfor <br>gruppen eller i børnehaven  / på skolen:</p>
       <div class="text">
         <p>&bull;&nbsp;&nbsp;Øv dig hver dag i at slappe af sammen med hele din klasse. Når I kommer
           ind fra frikvarteret kan I alle lægge jer (gerne på et tæppe / liggeunderlag),
@@ -551,10 +551,10 @@ export default {
       let text = document.querySelector('.text').children
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({targets: text[0], opacity: 1}, 1000)
-        .add({targets: text[1], opacity: 1}, 21600)
-        .add({targets: text[2], opacity: 1}, 34900)
-        .add({targets: text[3], opacity: 1}, 55000)
+        .add({targets: text[0], opacity: 1}, 1)
+        .add({targets: text[1], opacity: 1}, 1)
+        .add({targets: text[2], opacity: 1}, 1)
+        .add({targets: text[3], opacity: 1}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -585,18 +585,18 @@ export default {
   position: absolute;
   background-color: #000000;
   color: #ffffff;
-  font-size: 3.2vh;
+  font-size: 3vh;
   font-weight: bold;
 }
 .text {
   background-color: rgba(255,255,255,0.9);
   position: absolute;
-  top: 8vh;
+  top: 12vh;
   padding: 1vh;
 }
 .text p {
   margin-bottom: 1.5vh;
-  font-size: 3.33vh;
+  font-size: 3vh;
   opacity: 0;
 }
 .text p:last-child {

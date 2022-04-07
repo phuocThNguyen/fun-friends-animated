@@ -28,9 +28,9 @@ export default {
       let text = document.getElementsByClassName('text');
       let animation = anime.timeline({easing: 'linear', duration: 500,})
       animation
-        .add({targets: '#para',opacity: 1}, 4200)
-        .add({targets: text[0], opacity: 1}, 15500)
-        .add({targets: text[1], opacity: 1}, 18700)
+        .add({targets: '#para',opacity: 1}, 1)
+        .add({targets: text[0], opacity: 1}, 1)
+        .add({targets: text[1], opacity: 1}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -56,13 +56,13 @@ export default {
   background-color: #00CE7C;
   padding: .5vh;
   color: #ffffff;
-  font-size: 4vh;
+  font-size: 3vh;
   font-weight: bold;
   text-align: center;
   opacity: 0;
 }
-#para-1 {left: 18%;font-size: 4vh;width: 79%;}
-#para-2 {right: 18%;font-size: 4vh;}
+#para-1 {left: 19%;font-size: 3vh;width: 76%;}
+#para-2 {right: 19%;font-size: 3vh;width: 76%;}
 .images {
   width: 100%;
   height: 100%;
@@ -75,12 +75,12 @@ export default {
   padding: 1vh;
 }
 .text-box h1 {
-  font-size: 5vh;
-  margin-bottom: 0;
+  font-size: 4vh;
+  margin-bottom: 2vh;
   font-weight: bold;
 }
 .text-box p {
-  font-size: 4vh;
+  font-size: 3vh;
   opacity: 0;
 }
 </style>

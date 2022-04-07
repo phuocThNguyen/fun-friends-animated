@@ -198,8 +198,8 @@
 
     <p class="title"><span id="letter-f">D</span>on't forget (Husk)</p>
     <p class="text" id="line-1">
-      I denne uge kommer vi til at tænke på både de mennesker som hjælper os med
-      <br>at være modige, og på dem vi hjælper.
+      I denne uge kommer vi til at tænke på både de mennesker som <br>hjælper os med
+      at være modige, og på dem vi hjælper.
     </p>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3"/>
@@ -257,8 +257,8 @@ export default {
     animateText() {
       let animation = anime.timeline({easing: 'linear', duration: 500});
       animation
-        .add({targets: ".title",opacity: 1}, 5000)
-        .add({targets: "#line-1",color: '#000'}, 7400)
+        .add({targets: ".title",opacity: 1}, 1)
+        .add({targets: "#line-1",color: '#000'}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -278,11 +278,11 @@ export default {
   font-family: 'Sigmar One', cursive;
   position: absolute;
   color: white;
-  font-size: 12vh;
+  font-size: 9vh;
   -webkit-text-stroke: 0.1vw black;
   text-align: center;
   width: 100%;
-  top: 26vh;
+  top: 34vh;
   opacity: 0;
 }
 #letter-f {
@@ -291,13 +291,13 @@ export default {
 .text {
   position: absolute;
   margin-bottom: 0;
-  font-size: 5vh;
+  font-size: 4vh;
   color: #ffffff;
 }
 #line-1 {
   text-align: center;
   width: 100%;
-  top: 44vh;
+  top: 48vh;
 }
 span {
   display: inline-block;

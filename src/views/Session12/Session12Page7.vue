@@ -193,9 +193,9 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({targets: '.text-box',opacity: 1}, 800)
-        .add({targets: text[1],opacity: 1}, 3800)
-        .add({targets: text[2],opacity: 1}, 12800)
+        .add({targets: '.text-box',opacity: 1}, 1)
+        .add({targets: text[1],opacity: 1}, 1)
+        .add({targets: text[2],opacity: 1}, 1)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -243,12 +243,12 @@ export default {
   opacity: 0;
 }
 .text-box h1 {
-  font-size: 6vh;
+  font-size: 4vh;
   font-weight: bold;
   margin-bottom: 0;
 }
 .text-box p {
-  font-size: 4vh;
+  font-size: 3vh;
   margin-bottom: 0;
   opacity: 0;
 }
