@@ -73,7 +73,7 @@
     </svg>
     <audio src="../../assets/sounds/all/Well_Done.mp3" ref="wellDone"/>
     <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
-    <audio src="../../assets/sounds/session2/Session2_Page8.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session2/Page53.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -107,7 +107,7 @@ export default {
       setTimeout(() => {this.$refs.goodTry.play()}, 500)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

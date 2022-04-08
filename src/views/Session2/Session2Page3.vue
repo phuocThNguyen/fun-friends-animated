@@ -12,7 +12,7 @@
 
       <p class="extra-box">Alle følelser er OK.</p>
     </div>
-    <audio src="../../assets/sounds/session2/Session2_Page3.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session2/Page48.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">48</div>
   </div>
 </template>
@@ -25,34 +25,16 @@ export default {
   methods: {
     animateText() {
       let para = document.getElementsByClassName('text-box')[0].children;
-      let animation = anime.timeline({
-        duration: 500,
-        easing: 'linear'
-      });
+      let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
-        .add({
-          targets: para[1],
-          color: "#000",
-        }, 1)
-        .add({
-          targets: para[2],
-          color: "#000"
-        }, 1)
-        .add({
-          targets: para[3],
-          color: "#000"
-        }, 1)
-        .add({
-          targets: para[4],
-          color: "#000"
-        },1)
-        .add({
-          targets: para[5],
-          opacity: 1
-        }, 1)
+        .add({targets: para[1], color: "#000",}, 2000)
+        .add({targets: para[2], color: "#000"}, 7000)
+        .add({targets: para[3], color: "#000"}, 12700)
+        .add({targets: para[4], color: "#000"},24800)
+        .add({targets: para[5], opacity: 1}, 28200)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     }
   },
   mounted() {

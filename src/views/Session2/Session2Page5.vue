@@ -160,8 +160,8 @@
     <audio ref="wrong" src="../../assets/sounds/all/wrong-ans.mp3"/>
     <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3"/>
     <audio src="../../assets/sounds/all/Awesome.mp3" ref="awesome"/>
-    <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
-    <audio src="../../assets/sounds/session2/Session2_Page5.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/all/GoodTry_TryAgain.mp3" ref="goodTry"/>
+    <audio src="../../assets/sounds/session2/Page50.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">50</div>
   </div>
 </template>
@@ -255,21 +255,18 @@ export default {
     },
     animateText() {
       let text = document.querySelector('.text-box').children;
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      });
+      let animation = anime.timeline({easing: 'linear', duration: 500});
       animation
-        .add({targets: '.text-box', opacity: 1}, 1)
-        .add({targets: text[1], opacity: 1}, 1)
-        .add({targets: text[2], opacity: 1}, 1)
-        .add({targets: text[3], opacity: 1}, 1)
-        .add({targets: '.instruction', opacity: 1}, 1)
-        .add({targets: '.text', opacity: 1}, 1)
-        .add({targets: '.content-container', opacity: 1}, 1)
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 3000)
+        .add({targets: text[2], opacity: 1}, 8600)
+        .add({targets: text[3], opacity: 1}, 12000)
+        .add({targets: '.instruction', opacity: 1}, 20644)
+        .add({targets: '.text', opacity: 1}, 29200)
+        .add({targets: '.content-container', opacity: 1}, 32800)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

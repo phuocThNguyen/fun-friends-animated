@@ -104,8 +104,8 @@
       </g>
     </svg>
     <audio src="../../assets/sounds/all/Very_Good.mp3" ref="veryGood"/>
-    <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
-    <audio src="../../assets/sounds/session2/Session2_Page6.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/all/GoodTry_TryAgain.mp3" ref="goodTry"/>
+    <audio src="../../assets/sounds/session2/Page51.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">51</div>
   </div>
 </template>
@@ -140,7 +140,7 @@ export default {
       setTimeout(() => {this.$refs.goodTry.play()}, 500)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

@@ -219,7 +219,7 @@
     <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3"/>
     <audio src="../../assets/sounds/all/Very_Good.mp3" ref="veryGood"/>
     <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
-    <audio src="../../assets/sounds/session2/Session2_Page19.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session2/Page65.mp3" ref="voice"/>
     <div class="page-number" id="page-light">65</div>
   </div>
 </template>
@@ -274,9 +274,7 @@ export default {
     },
     hideElements(className) {
       let elements = document.querySelectorAll(className);
-      elements.forEach(element => {
-        element.style.visibility = 'hidden';
-      })
+      elements.forEach(element => {element.style.visibility = 'hidden';})
     },
     checkComplete(arg) {
       if (!this.correctAns.includes(arg)) {
@@ -321,19 +319,10 @@ export default {
       }
     },
     animateText() {
-      let animation = anime.timeline({
-        duration: 500,
-        easing: 'linear'
-      })
+      let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-          .add({
-            targets: '#content-left',
-            opacity: 1,
-          }, 500)
-          .add({
-            targets: '#content-right',
-            opacity: 1
-          }, 6400)
+        .add({targets: '#content-left', opacity: 1}, 500)
+        .add({targets: '#content-right', opacity: 1}, 8000)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 0)

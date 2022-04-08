@@ -274,9 +274,9 @@
     <audio ref="wrong" src="../../assets/sounds/all/wrong-ans.mp3"/>
     <audio ref="correct" src="../../assets/sounds/all/correct-ans.mp3"/>
     <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3"/>
-    <audio src="../../assets/sounds/all/Great_work.mp3" ref="greatWork"/>
+    <audio src="../../assets/sounds/all/GreatWork.mp3" ref="greatWork"/>
     <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
-    <audio src="../../assets/sounds/session2/Session2_Page4.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session2/Page49.mp3" ref="voice"/>
     <div class="page-number" id="page-light">49</div>
   </div>
 </template>
@@ -410,7 +410,7 @@ export default {
         targets: '.emotions-mask',
         translateY: 0.4 * vh,
         duration: 2500,
-        delay: 1,
+        delay: 8000,
         easing: 'linear'
       })
     },
@@ -425,7 +425,7 @@ export default {
       setTimeout(() => {this.$refs.greatWork.play()}, 500)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
     equals (a, b) {
       if (a === b) return true;

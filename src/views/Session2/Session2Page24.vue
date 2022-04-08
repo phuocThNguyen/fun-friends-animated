@@ -1370,7 +1370,7 @@
       <img class="action-image" src="../../assets/images/session1/thank-you.jpg" alt="thank-you">
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
-    <audio src="../../assets/sounds/session2/Session2_Page22.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session2/Page69.mp3" ref="voice"/>
     <div class="page-number" id="page-light">69</div>
   </div>
 </template>
@@ -1384,85 +1384,31 @@ export default {
     animateText() {
       let texts = document.querySelector('.text-box').children;
       let images = document.querySelector('.image-container').children;
-      let animation = anime.timeline({
-        duration: 500,
-        easing: 'linear'
-      });
+      let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
-        .add({
-          targets: ".text-box",
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: texts[1],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: images[0],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: texts[2],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: images[1],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: texts[3],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: images[2],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: texts[4],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: images[3],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: texts[5],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: images[4],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: texts[6],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: images[5],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: texts[7],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: images[6],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: texts[8],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: images[7],
-          opacity: 1,
-        }, 1)
+        .add({targets: ".text-box", opacity: 1}, 500)
+        .add({targets: texts[1], opacity: 1}, 1700)
+        .add({targets: images[0], opacity: 1}, 1700)
+        .add({targets: texts[2], opacity: 1}, 6000)
+        .add({targets: images[1], opacity: 1}, 6000)
+        .add({targets: texts[3], opacity: 1}, 8200)
+        .add({targets: images[2], opacity: 1}, 8200)
+        .add({targets: texts[4], opacity: 1}, 11100)
+        .add({targets: images[3], opacity: 1}, 11100)
+        .add({targets: texts[5], opacity: 1}, 13000)
+        .add({targets: images[4], opacity: 1}, 13000)
+        .add({targets: texts[6], opacity: 1}, 15500)
+        .add({targets: images[5], opacity: 1}, 15500)
+        .add({targets: texts[7], opacity: 1}, 20200)
+        .add({targets: images[6], opacity: 1}, 20200)
+        .add({targets: texts[8], opacity: 1}, 31200)
+        .add({targets: images[7], opacity: 1}, 31200)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

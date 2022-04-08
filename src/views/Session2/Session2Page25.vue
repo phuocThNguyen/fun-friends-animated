@@ -1372,7 +1372,7 @@
     </div>
     <drawing-canvas class="canvas" :canvasStyle="canvasStyle"/>
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
-    <audio src="../../assets/sounds/session2/Session2_Page23.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session2/Page70.mp3" ref="voice"/>
     <div class="page-number" id="page-light">70</div>
   </div>
 </template>

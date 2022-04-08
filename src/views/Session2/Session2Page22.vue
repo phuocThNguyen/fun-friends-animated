@@ -212,7 +212,7 @@
     <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3"/>
     <audio src="../../assets/sounds/all/Awesome.mp3" ref="awesome"/>
     <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
-    <audio src="../../assets/sounds/session2/Session2_Page20.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session2/Page67.mp3" ref="voice"/>
     <div class="page-number" id="page-light">67</div>
   </div>
 </template>
@@ -309,22 +309,13 @@ export default {
       }
     },
     animateText() {
-      let animation = anime.timeline({
-        duration: 500,
-        easing: 'linear'
-      })
+      let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-        .add({
-          targets: '#content-left',
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: '#content-right',
-          opacity: 1
-        }, 1)
+        .add({targets: '#content-left', opacity: 1,}, 500)
+        .add({targets: '#content-right', opacity: 1}, 9100)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

@@ -1360,7 +1360,7 @@
       <p>&nbsp;&nbsp;-&nbsp;Prøv at gøre dit bedste og give tingene et forsøg.</p>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
-    <audio src="../../assets/sounds/session2/Session2_Page21.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session2/Page68.mp3" ref="voice"/>
     <div class="page-number" id="page-light">68</div>
   </div>
 </template>
@@ -1373,45 +1373,21 @@ export default {
   methods: {
     animateText() {
       let text = document.querySelector('.text-box').children;
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      })
+      let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({
-          targets: ".text-box",
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[1],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[2],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[3],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[4],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[5],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[6],
-          opacity: 1
-        }, 1)
+        .add({targets: ".text-box", opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 2400)
+        .add({targets: text[2], opacity: 1}, 18200)
+        .add({targets: text[3], opacity: 1}, 28900)
+        .add({targets: text[4], opacity: 1}, 32000)
+        .add({targets: text[5], opacity: 1}, 34600)
+        .add({targets: text[6], opacity: 1}, 39200)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

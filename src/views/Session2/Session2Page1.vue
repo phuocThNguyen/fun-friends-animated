@@ -4,7 +4,7 @@
     <div class="text-box">
       <p>At svømme gør mig glad.</p>
     </div>
-    <audio src="../../assets/sounds/session2/Session2_Page1.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session2/Page46.mp3" ref="voice"/>
     <div class="page-number" id="page-light">46</div>
   </div>
 </template>
@@ -20,12 +20,12 @@ export default {
         targets: '.text-box',
         opacity: 1,
         duration: 500,
-        delay: 1,
+        delay: 500,
         easing: 'linear'
       })
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     }
   },
   mounted() {

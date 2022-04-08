@@ -13,7 +13,7 @@
         haft det på den måde? Og hvorfor? <strong>Alle følelser er OK.</strong></p>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/no-copyright-music-funny-children-kids-music-by-mokka-kids.mp3"/>
-    <audio src="../../assets/sounds/session2/Session2_Page17.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session2/Page63.mp3" ref="voice"/>
     <div class="page-number" id="page-light">63</div>
   </div>
 </template>
@@ -42,34 +42,18 @@ export default {
     },
     animateText() {
       let text = document.querySelector('.text-box').children;
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      })
+      let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({
-          targets: '.text-box',
-          opacity: 1
-        }, 737)
-        .add({
-          targets: text[1],
-          opacity: 1,
-          delay: 500
-        }, 2647)
-        .add({
-          targets: text[2],
-          opacity: 1,
-        }, 14868)
-        .add({
-          targets: text[3],
-          opacity: 1,
-        }, 21204)
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 3200)
+        .add({targets: text[2], opacity: 1}, 17500)
+        .add({targets: text[3], opacity: 1}, 30000)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

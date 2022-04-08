@@ -211,7 +211,7 @@
     </p>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3"/>
-    <audio src="../../assets/sounds/session2/Session2_Page2.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session2/Page47.mp3" ref="voice"/>
     <div class="page-number" id="page-light">47</div>
   </div>
 </template>
@@ -264,30 +264,15 @@ export default {
       })
     },
     animateText() {
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      });
+      let animation = anime.timeline({easing: 'linear', duration: 500});
       animation
-        .add({
-          targets: ".title",
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: "#line-1",
-          color: '#000',
-        }, 1)
-        .add({
-          targets: "#line-2",
-          color: '#000'
-        }, 1)
-        .add({
-          targets: "#line-3",
-          color: '#000'
-        }, 1)
+        .add({targets: ".title", opacity: 1}, 2300)
+        .add({targets: "#line-1", color: '#000'}, 9400)
+        .add({targets: "#line-2", color: '#000'}, 18900)
+        .add({targets: "#line-3", color: '#000'}, 49500)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     }
   },
   mounted() {

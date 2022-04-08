@@ -3,7 +3,7 @@
     <img src="../../assets/images/session2/46933-resized.jpg" alt="background" class="session-background">
     <div class="text-box">Vi er omsorgsfulde når vi udviser
       <br>opmærksomhed overfor vores lærer / pædagog.</div>
-    <audio src="../../assets/sounds/session2/Session2_Page16.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session2/Page62.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">62</div>
   </div>
 </template>
@@ -24,7 +24,7 @@ export default {
       })
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

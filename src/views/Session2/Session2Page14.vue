@@ -9,7 +9,7 @@
       :tips="['Trist','Glad','Bekymret']"
       :ans="['red-tick','green-tick','red-tick']"
       :isSmall="false"
-      :delay="700"
+      :delay="500"
       v-on:correctAnsChosen="handleCorrectAnswer"
       v-on:wrongAnswer="handleWrongAnswer"
     />
@@ -100,7 +100,7 @@
     </svg>
     <audio src="../../assets/sounds/all/Awesome.mp3" ref="awesome"/>
     <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
-    <audio src="../../assets/sounds/session2/Session2_Page13.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session2/Page59.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">59</div>
   </div>
 </template>
@@ -135,7 +135,7 @@ export default {
       setTimeout(() => {this.$refs.goodTry.play()}, 500);
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

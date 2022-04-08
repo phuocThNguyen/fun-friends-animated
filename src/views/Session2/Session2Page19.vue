@@ -226,7 +226,7 @@
     <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3"/>
     <audio src="../../assets/sounds/all/Good_Job.mp3" ref="goodJob"/>
     <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
-    <audio src="../../assets/sounds/session2/Session2_Page18.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session2/Page64.mp3" ref="voice"/>
     <div class="page-number" id="page-light">64</div>
   </div>
 </template>
@@ -329,35 +329,16 @@ export default {
     },
     animateText() {
       let text = document.querySelector('.text-box').children;
-      let animation = anime.timeline({
-        duration: 500,
-        easing: 'linear'
-      });
+      let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
-        .add({
-          targets: text[0],
-          opacity: 1
-        }, 611)
-        .add({
-          targets: text[1],
-          opacity: 1
-        }, 4391)
-        .add({
-          targets: text[1],
-          opacity: 0,
-          duration: 1
-        }, 25260)
-        .add({
-          targets: '#content-left',
-          opacity: 1
-        }, 25265)
-        .add({
-          targets: '#content-right',
-          opacity: 1
-        }, 31570)
+        .add({targets: text[0], opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 4400)
+        .add({targets: text[1], opacity: 0, duration: 1}, 30300)
+        .add({targets: '#content-left', opacity: 1}, 31700)
+        .add({targets: '#content-right', opacity: 1}, 40400)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {
