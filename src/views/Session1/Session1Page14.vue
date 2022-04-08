@@ -5,7 +5,7 @@
       <p class="mb-0">Denne familie hygger og har det sjovt imens de leger i vandet.</p>
     </div>
     <audio src="../../assets/sounds/session1/beach-sound.mp3" ref="audio" autoplay loop/>
-    <audio src="../../assets/sounds/session1/21Animated_Book_Page20.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session1/Page20.mp3" ref="voice"/>
     <div class="page-number" id="page-light">20</div>
   </div>
 </template>
@@ -20,13 +20,13 @@ export default {
       anime({
         targets: ".text-box",
         opacity: 1,
-        delay: 500,
+        delay: 600,
         duration: 500,
         easing: 'linear',
       })
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level

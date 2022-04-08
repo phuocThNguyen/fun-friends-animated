@@ -3,7 +3,7 @@
     <img src="../../assets/images/introduction/page8.jpg" alt="background" class="session-background">
     <div class="text" id="text-1">Min egen Fun FRIENDS Bog</div>
     <div class="text" id="text-2">Jeg kan tegne i bogen og tale <br>om den med mine venner og familie</div>
-    <audio src="../../assets/sounds/introduction/7Animated_Book_Page6.mp3" ref="voice"></audio>
+    <audio src="../../assets/sounds/introduction/Page6.mp3" ref="voice"/>
   </div>
 </template>
 

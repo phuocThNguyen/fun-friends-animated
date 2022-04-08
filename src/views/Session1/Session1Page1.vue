@@ -208,7 +208,7 @@
       <p><strong>FUN FRIENDS kan hjælpe dig med at lære hvordan man gør.</strong></p>
     </div>
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3"/>
-    <audio src="../../assets/sounds/session1/8Animated_Book_Page7.mp3" ref="audio"></audio>
+    <audio src="../../assets/sounds/session1/Page7.mp3" ref="audio"></audio>
     <div class="page-number" id="page-light">7</div>
   </div>
 </template>
@@ -263,14 +263,14 @@ export default {
       let text = document.querySelector('.question').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
-        .add({targets: text[0], opacity: 1}, 1)
-        .add({targets: text[1], opacity: 1}, 2)
-        .add({targets: text[2], opacity: 1}, 3)
-        .add({targets: text[3], opacity: 1}, 4)
-        .add({targets: text[4], opacity: 1}, 5)
+        .add({targets: text[0], opacity: 1}, 8800)
+        .add({targets: text[1], opacity: 1}, 36400)
+        .add({targets: text[2], opacity: 1}, 42800)
+        .add({targets: text[3], opacity: 1}, 46000)
+        .add({targets: text[4], opacity: 1}, 51200)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.audio.play()}, 500)
+      setTimeout(() => {this.$refs.audio.play()}, 0)
     }
   },
   mounted() {

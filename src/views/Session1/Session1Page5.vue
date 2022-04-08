@@ -4,9 +4,9 @@
     <div class="text-box">
       <p class="mb-0">Pil elsker at gynge.</p>
       <p class="mb-0">Hvad kan du li’ at lege med, når du er udenfor?</p>
-      <audio ref="audio" autoplay src="../../assets/sounds/session1/playground.mp3"></audio>
     </div>
-    <audio src="../../assets/sounds/session1/12Animated_Book_Page11.mp3" ref="voice"></audio>
+    <audio ref="audio" autoplay src="../../assets/sounds/session1/playground.mp3"/>
+    <audio src="../../assets/sounds/session1/Page11.mp3" ref="voice"/>
     <div class="page-number" id="page-light">11</div>
   </div>
 </template>
@@ -19,35 +19,22 @@ export default {
   methods: {
     animateText() {
       let text = document.querySelector('.text-box').children;
-      let animation = anime.timeline({
-        duration: 500,
-        easing: 'linear',
-      })
+      let animation = anime.timeline({duration: 500, easing: 'linear',})
       animation
-        .add({
-          targets: ".text-box",
-          opacity: 1,
-          delay: 500,
-        })
-        .add({
-          targets: text[0],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[1],
-          opacity: 1
-        }, 1)
+        .add({targets: ".text-box", opacity: 1}, 200)
+        .add({targets: text[0], opacity: 1,}, 600)
+        .add({targets: text[1], opacity: 1}, 3400)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 1000)
+      setTimeout(() => {this.$refs.voice.play()}, 0)
     }
   },
   mounted() {
     this.animateText();
-    this.setAudioVolumeLevel(0.4);
+    this.setAudioVolumeLevel(0.2);
     this.playVoiceOver();
   }
 }

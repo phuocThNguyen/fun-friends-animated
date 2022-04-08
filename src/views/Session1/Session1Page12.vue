@@ -12,7 +12,7 @@
         <p>Vi elsker at tage hen i parken eller på udflugt i naturen.</p>
       </div>
     </div>
-    <audio src="../../assets/sounds/session1/19Animated_Book_Page18.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session1/Page18.mp3" ref="voice"/>
     <div class="page-number" id="page-light">18</div>
   </div>
 </template>
@@ -25,39 +25,17 @@ export default {
   methods: {
     animateText() {
       let text = document.querySelector('.left-bar').children;
-      let animation = anime.timeline({
-        duration: 500,
-        easing: 'linear'
-      });
+      let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
-        .add({
-          targets: ".left-bar",
-          opacity: 1,
-          delay: 500
-        })
-        .add({
-          targets: text[0],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[1],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[2],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[3],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: ".text-box",
-          opacity: 1,
-        }, 1)
+        .add({targets: ".left-bar", opacity: 1}, 500)
+        .add({targets: text[0], opacity: 1},  500)
+        .add({targets: text[1], opacity: 1}, 3100)
+        .add({targets: text[2], opacity: 1}, 8000)
+        .add({targets: text[3], opacity: 1}, 11600)
+        .add({targets: ".text-box", opacity: 1}, 15600)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 1000)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     }
   },
   mounted() {

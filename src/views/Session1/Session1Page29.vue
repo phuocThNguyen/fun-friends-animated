@@ -12,7 +12,7 @@
       <p>Forskellige lande kan bruge forskelligt tøj.</p>
       <p>Det er normalt, at vi alle er forskellige!</p>
     </div>
-    <audio src="../../assets/sounds/session1/36Animated_Book_Page35.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session1/Page35.mp3" ref="voice"/>
     <div class="page-number" id="page-light">35</div>
   </div>
 </template>
@@ -24,15 +24,15 @@ export default {
   methods: {
     animateText() {
       let texts = document.getElementsByClassName("text-box")[0];
-      let animation = anime.timeline({easing: 'linear', duration: 700,});
+      let animation = anime.timeline({easing: 'linear', duration: 700});
       animation
-        .add({targets: texts.children[0], color: '#000'}, 1)
-        .add({targets: texts.children[1], color: '#000'}, 1)
-        .add({targets: texts.children[2], color: '#000'}, 1)
-        .add({targets: '.text', opacity: 1}, 7500)
+        .add({targets: texts.children[0], color: '#000'}, 500)
+        .add({targets: texts.children[1], color: '#000'}, 2200)
+        .add({targets: texts.children[2], color: '#000'}, 5400)
+        .add({targets: '.text', opacity: 1}, 10400)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

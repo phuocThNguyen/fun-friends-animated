@@ -817,10 +817,8 @@
       </svg>
       <div class="bubble-text">Del dine idéer med en ven!</div>
     </div>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <audio src="../../assets/sounds/session1/32Animated_Book_Page31.mp3" ref="voice"/>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
+    <audio src="../../assets/sounds/session1/Page31.mp3" ref="voice"/>
     <div class="page-number" id="page-light">31</div>
   </div>
 </template>
@@ -880,42 +878,15 @@ export default {
       })
     },
     animateText() {
-      let textAnimation = anime.timeline({
-        duration: 500,
-        easing: 'linear'
-      });
+      let textAnimation = anime.timeline({duration: 500, easing: 'linear'});
       textAnimation
-        .add({
-          targets: '.text-box',
-          delay: 1000,
-          duration: 500,
-          opacity: 0.9,
-        })
-        .add({
-          targets: '#para-1',
-          color: '#000'
-        }, 2395)
-        .add({
-          targets: '#para-2',
-          color: '#000'
-        }, 8978)
-        .add({
-          targets: '#para-3',
-          color: '#000'
-        }, 17957)
-        .add({
-          targets: '#para-4',
-          color: '#000'
-        }, 20190)
-        .add({
-          targets: '.canvas',
-          opacity: 1
-        }, 25234)
-        .add({
-          targets: '.bubble-container',
-          opacity: 0.9
-        }, 31287)
-
+        .add({targets: '.text-box', opacity: 0.9}, 2500)
+        .add({targets: '#para-1', color: '#000'}, 2500)
+        .add({targets: '#para-2', color: '#000'}, 7500)
+        .add({targets: '#para-3', color: '#000'}, 18000)
+        .add({targets: '#para-4', color: '#000'}, 20000)
+        .add({targets: '.canvas', opacity: 1}, 24000)
+        .add({targets: '.bubble-container', opacity: 0.9}, 31000)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level

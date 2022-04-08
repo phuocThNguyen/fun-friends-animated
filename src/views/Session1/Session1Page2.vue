@@ -17,7 +17,7 @@
       <p class="text-7"><span id="letter-s">S</span>tay brave</p>
       <p class="support-text">(FORBLIV MODIG)</p>
     </div>
-    <audio src="../../assets/sounds/session1/9Animated_Book_Page8.mp3" autoplay></audio>
+    <audio src="../../assets/sounds/session1/Page8.mp3" autoplay/>
     <div class="page-number" id="page-dark">8</div>
   </div>
 </template>
@@ -31,86 +31,24 @@ export default {
       let vw = document.querySelector('.interactive-container').clientWidth;
       let supportText = document.querySelectorAll('.support-text');
       let animations = anime.timeline({
-        duration: 3000
+        duration: 500
       });
       animations
-        .add({
-          targets: ".left-bar",
-          translateX: 0.5*vw,
-          duration: 500,
-          delay: 1000,
-        })
-        .add({
-          targets: ".text-1",
-          color: '#fff',
-          webkitTextStroke: '0.1vw black',
-          delay: 1000
-        })
-        .add({
-          targets: supportText[0],
-          color: '#fff',
-          webkitTextStroke: '0.1vh black'
-        }, 2500)
-        .add({
-          targets: ".text-2",
-          color: '#fff',
-          webkitTextStroke: '0.1vw black',
-        })
-        .add({
-          targets: supportText[1],
-          color: '#fff',
-          webkitTextStroke: '0.1vh black'
-        }, 5500)
-        .add({
-          targets: ".text-3",
-          color: '#fff',
-          webkitTextStroke: '0.1vw black',
-        })
-        .add({
-          targets: supportText[2],
-          color: '#fff',
-          webkitTextStroke: '0.1vh black'
-        }, 8500)
-        .add({
-          targets: ".text-4",
-          color: '#fff',
-          webkitTextStroke: '0.1vw black',
-        })
-        .add({
-          targets: supportText[3],
-          color: '#fff',
-          webkitTextStroke: '0.1vh black'
-        }, 11500)
-        .add({
-          targets: ".text-5",
-          color: '#fff',
-          webkitTextStroke: '0.1vw black',
-        })
-        .add({
-          targets: supportText[4],
-          color: '#fff',
-          webkitTextStroke: '0.1vh black'
-        }, 14500)
-        .add({
-          targets: ".text-6",
-          color: '#fff',
-          webkitTextStroke: '0.1vw black',
-        })
-        .add({
-          targets: supportText[5],
-          color: '#fff',
-          webkitTextStroke: '0.1vh black'
-        }, 17500)
-        .add({
-          targets: ".text-7",
-          color: '#fff',
-          webkitTextStroke: '0.1vw black',
-        })
-        .add({
-          targets: supportText[6],
-          color: '#fff',
-          webkitTextStroke: '0.1vh black'
-        }, 20500)
+        .add({targets: ".left-bar", translateX: 0.5*vw}, 500)
+        .add({targets: ".text-1", color: '#fff', webkitTextStroke: '0.1vw black'}, 1400)
+        .add({targets: supportText[0], color: '#fff', webkitTextStroke: '0.1vh black'}, 4100)
+        .add({targets: ".text-2", color: '#fff', webkitTextStroke: '0.1vw black',},5900)
+        .add({targets: supportText[1], color: '#fff', webkitTextStroke: '0.1vh black'}, 8400)
+        .add({targets: ".text-3", color: '#fff', webkitTextStroke: '0.1vw black',},11100)
+        .add({targets: supportText[2], color: '#fff', webkitTextStroke: '0.1vh black'}, 14000)
+        .add({targets: ".text-4", color: '#fff', webkitTextStroke: '0.1vw black',},17800)
+        .add({targets: supportText[3], color: '#fff', webkitTextStroke: '0.1vh black'}, 20300)
+        .add({targets: ".text-5", color: '#fff', webkitTextStroke: '0.1vw black',},23200)
+        .add({targets: supportText[4], color: '#fff', webkitTextStroke: '0.1vh black'}, 25800)
+        .add({targets: ".text-6", color: '#fff', webkitTextStroke: '0.1vw black',},28000)
+        .add({targets: supportText[5], color: '#fff', webkitTextStroke: '0.1vh black'}, 31200)
+        .add({targets: ".text-7", color: '#fff', webkitTextStroke: '0.1vw black',},32900)
+        .add({targets: supportText[6], color: '#fff', webkitTextStroke: '0.1vh black'}, 35900)
     }
   },
   mounted() {

@@ -405,7 +405,7 @@
         hvis det skal blive ved med at vokse og holde sig sundt?</p>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"/>
-    <audio src="../../assets/sounds/session1/40Animated_Book_Page39.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session1/Page39.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">39</div>
   </div>
 </template>
@@ -425,10 +425,7 @@ export default {
       })
       let vh = window.innerHeight;
       let oranges = document.getElementsByClassName('orange');
-      anime.timeline({
-        duration: 300,
-        easing: 'easeInCubic'
-      })
+      anime.timeline({duration: 300, easing: 'easeInCubic'})
         .add({
           targets: '.tree-body',
           scale: 40,
@@ -444,83 +441,24 @@ export default {
           duration: 2000,
           easing: 'linear',
         }, "-=700")
-        .add({
-          targets: oranges[0],
-          scale: 40,
-        })
-        .add({
-          targets: oranges[1],
-          scale: 40,
-        })
-        .add({
-          targets: oranges[2],
-          scale: 40,
-        })
-        .add({
-          targets: oranges[3],
-          scale: 40,
-        })
-        .add({
-          targets: oranges[4],
-          scale: 40,
-        })
-        .add({
-          targets: oranges[5],
-          scale: 40,
-        })
-        .add({
-          targets: oranges[6],
-          scale: 40,
-        })
-        .add({
-          targets: oranges[7],
-          scale: 40,
-        })
-        .add({
-          targets: oranges[8],
-          scale: 40,
-        })
-        .add({
-          targets: oranges[9],
-          scale: 40,
-        })
-        .add({
-          targets: oranges[10],
-          scale: 40,
-        })
-        .add({
-          targets: oranges[11],
-          scale: 40,
-        })
-        .add({
-          targets: oranges[12],
-          scale: 40,
-        })
-        .add({
-          targets: oranges[13],
-          scale: 40,
-        })
-        .add({
-          targets: oranges[14],
-          scale: 40,
-        })
-        .add({
-          targets: ".text-box",
-          opacity: 0.8,
-          duration: 500,
-        })
-        .add({
-          targets: "#para-1",
-          color: '#000',
-          duration: 500,
-          easing: 'linear'
-        }, 10139)
-        .add({
-          targets: "#para-2",
-          color: '#000',
-          duration: 500,
-          easing: 'linear'
-        }, 22225)
+        .add({targets: oranges[0], scale: 40})
+        .add({targets: oranges[1], scale: 40})
+        .add({targets: oranges[2], scale: 40})
+        .add({targets: oranges[3], scale: 40})
+        .add({targets: oranges[4], scale: 40})
+        .add({targets: oranges[5], scale: 40})
+        .add({targets: oranges[6], scale: 40})
+        .add({targets: oranges[7], scale: 40})
+        .add({targets: oranges[8], scale: 40})
+        .add({targets: oranges[9], scale: 40})
+        .add({targets: oranges[10], scale: 40})
+        .add({targets: oranges[11], scale: 40})
+        .add({targets: oranges[12], scale: 40})
+        .add({targets: oranges[13], scale: 40})
+        .add({targets: oranges[14], scale: 40})
+        .add({targets: ".text-box", opacity: 0.8, duration: 500, easing: 'linear'}, 10000)
+        .add({targets: "#para-1", color: '#000', duration: 500, easing: 'linear'}, 10500)
+        .add({targets: "#para-2", color: '#000', duration: 500, easing: 'linear'}, 14600)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level

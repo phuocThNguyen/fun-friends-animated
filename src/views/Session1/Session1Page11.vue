@@ -827,18 +827,16 @@
         <p> - Hvad synes du er skræmmende?</p>
 
         <p>Vælg dit yndlingssvar og lav et rollespil over det,
-          eller del det med en ven(inde).
-          Når det er de andres tur,
-          sørg for at lytte omhyggeligt til deres svar.</p>
+          eller del det med en ven(inde). Når det er de andres tur,
+          sørg for at lytte omhyggeligt til deres svar.
+        </p>
 
         <p class="mb-0">Vis hvad du tænker med din krop og dine ord!</p>
       </div>
     </div>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <audio src="../../assets/sounds/session1/18Animated_Book_Page17.mp3" ref="voice"/>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3"/>
+    <audio src="../../assets/sounds/session1/Page17.mp3" ref="voice"/>
     <div class="page-number" id="page-light">17</div>
   </div>
 </template>
@@ -932,56 +930,23 @@ export default {
         duration: 500
       });
       mainContentAnimation
-        .add({
-          targets: '.draw',
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: '.text-box',
-          opacity: 0.95,
-        }, 1)
-        .add({
-          targets: text[0],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[1],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[2],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[3],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[4],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[5],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[6],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[7],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: '.canvas',
-          opacity: 1,
-        }, 1)
+        .add({targets: '.draw', opacity: 1,}, 1500)
+        .add({targets: '.text-box', opacity: 0.95,}, 4000)
+        .add({targets: text[0], opacity: 1}, 5300)
+        .add({targets: text[1], opacity: 1}, 11300)
+        .add({targets: text[2], opacity: 1}, 15100)
+        .add({targets: text[3], opacity: 1}, 19400)
+        .add({targets: text[4], opacity: 1}, 23100)
+        .add({targets: text[5], opacity: 1}, 25900)
+        .add({targets: text[6], opacity: 1}, 30200)
+        .add({targets: text[7], opacity: 1}, 44800)
+        .add({targets: '.canvas', opacity: 1,}, 50000)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 1000)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     }
   },
   mounted() {

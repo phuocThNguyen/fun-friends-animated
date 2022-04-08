@@ -4,7 +4,7 @@
     <div class="text-box">
       <p class="mb-0">Mia elsker at klatre i træer.</p>
     </div>
-    <audio src="../../assets/sounds/session1/16Animated_Book_Page15.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session1/Page15.mp3" ref="voice"/>
     <div class="page-number" id="page-light">15</div>
   </div>
 </template>
@@ -25,7 +25,7 @@ export default {
       })
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 1000)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     }
   },
   mounted() {

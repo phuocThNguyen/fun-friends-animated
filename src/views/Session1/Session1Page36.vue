@@ -1778,7 +1778,7 @@
         <br>uge.</p>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/session4/night-time.mp3"/>
-    <audio src="../../assets/sounds/session1/43Animated_Book_Page42.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session1/Page42.mp3" ref="voice"/>
     <div class="page-number" id="page-light">42</div>
   </div>
 </template>
@@ -1826,14 +1826,14 @@ export default {
           targets: ".star",
           scale: 70,
           duration: 1,
-          delay: 1,
+          delay: 2000,
         })
         .add({
           targets: ".para",
           opacity: 1,
           duration: 1,
           easing: 'linear'
-        })
+        }, 2500)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level

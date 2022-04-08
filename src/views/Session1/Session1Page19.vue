@@ -11,7 +11,7 @@
         <span><strong> den måde vi alle elsker, smiler og græder på er den samme.</strong></span>
       </p>
     </div>
-    <audio src="../../assets/sounds/session1/26Animated_Book_Page25.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session1/Page25.mp3" ref="voice"/>
     <div class="page-number" id="page-light">25</div>
   </div>
 </template>
@@ -24,48 +24,17 @@ export default {
   methods: {
     animateText() {
       let paraArray = document.getElementsByClassName('text')[0];
-      let animation = anime.timeline({
-        duration: 500,
-        easing:'linear'
-      });
+      let animation = anime.timeline({duration: 500, easing:'linear'});
       animation
-        .add({
-          targets: ".text-box",
-          opacity: 0.95,
-          delay: 500
-        })
-        .add({
-          targets: paraArray.children[0],
-          color: '#000',
-        }, 1)
-        .add({
-          targets: paraArray.children[1],
-          color: '#000',
-        }, 1)
-        .add({
-          targets: paraArray.children[2],
-          color: '#000',
-        }, 1)
-        .add({
-          targets: paraArray.children[3],
-          color: '#000',
-        }, 1)
-        .add({
-          targets: paraArray.children[4],
-          color: '#000',
-        }, 1)
-        .add({
-          targets: paraArray.children[5],
-          color: '#000',
-        }, 1)
-        .add({
-          targets: paraArray.children[6],
-          color: '#000',
-        }, 1)
-        .add({
-          targets: paraArray.children[7],
-          color: '#000',
-        }, 1)
+        .add({targets: ".text-box", opacity: 0.95}, 1)
+        .add({targets: paraArray.children[0], color: '#000'}, 800)
+        .add({targets: paraArray.children[1], color: '#000'}, 6000)
+        .add({targets: paraArray.children[2], color: '#000'}, 11000)
+        .add({targets: paraArray.children[3], color: '#000'}, 14400)
+        .add({targets: paraArray.children[4], color: '#000'}, 16800)
+        .add({targets: paraArray.children[5], color: '#000'}, 19000)
+        .add({targets: paraArray.children[6], color: '#000'}, 20900)
+        .add({targets: paraArray.children[7], color: '#000'}, 23100)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1000)

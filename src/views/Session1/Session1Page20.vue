@@ -284,10 +284,10 @@
         </g>
       </g>
     </svg>
-    <audio src="../../assets/sounds/session1/27Animated_Book_Page26_Part1.mp3" ref="voice1" @ended="hideMask"/>
-    <audio src="../../assets/sounds/session1/27Animated_Book_Page26_Part2.mp3" ref="voice2"/>
-    <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
-    <audio src="../../assets/sounds/all/Great_work.mp3" ref="greatWork"/>
+    <audio src="../../assets/sounds/session1/Page26-whatisthisanimal.mp3" ref="voice1" @ended="hideMask"/>
+    <audio src="../../assets/sounds/session1/Page26-wehavedifferentbodies.mp3" ref="voice2"/>
+    <audio src="../../assets/sounds/all/GoodTry_TryAgain.mp3" ref="goodTry"/>
+    <audio src="../../assets/sounds/all/GreatWork.mp3" ref="greatWork"/>
     <div class="page-number" id="page-light">26</div>
   </div>
 </template>
@@ -312,28 +312,12 @@ export default {
     },
     animateImages() {
       let images = document.querySelectorAll('.images')
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 300,
-        delay: 300
-      })
+      let animation = anime.timeline({easing: 'linear', duration: 300, delay: 300})
       animation
-        .add({
-          targets: images[1],
-          opacity: 1
-        })
-        .add({
-          targets: images[0],
-          opacity: 1
-        })
-        .add({
-          targets: images[3],
-          opacity: 1
-        })
-        .add({
-          targets: images[2],
-          opacity: 1
-        })
+        .add({targets: images[1], opacity: 1})
+        .add({targets: images[0], opacity: 1})
+        .add({targets: images[3], opacity: 1})
+        .add({targets: images[2], opacity: 1})
     },
     playSoundButton() {
       switch (this.animalArray[this.animalIndex]) {
@@ -446,13 +430,10 @@ export default {
       })
       this.$refs.celebrate.play();
       setTimeout(() => {this.$refs.greatWork.play()}, 500)
-      setTimeout(() => {
-        this.animateTextBox();
-        this.$refs.voice2.play();
-      }, 2500)
+      setTimeout(() => {this.animateTextBox();this.$refs.voice2.play();}, 2500)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice1.play()}, 500)
+      setTimeout(() => {this.$refs.voice1.play()}, 1)
     }
   },
   mounted() {

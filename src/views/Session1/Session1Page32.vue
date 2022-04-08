@@ -1145,10 +1145,8 @@
       </div>
     </div>
     <drawing-canvas class="canvas" :canvasStyle="canvasStyle"/>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Falling-Snow-Sound-Effect-Amplified.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <audio src="../../assets/sounds/session1/39Animated_Book_Page38.mp3" ref="voice"/>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Falling-Snow-Sound-Effect-Amplified.mp3"/>
+    <audio src="../../assets/sounds/session1/Page38.mp3" ref="voice"/>
     <div class="page-number" id="page-light">38</div>
   </div>
 </template>
@@ -1192,49 +1190,22 @@ export default {
       })
     },
     animateText() {
-      let mainContentAnimation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      });
+      let mainContentAnimation = anime.timeline({easing: 'linear', duration: 500,});
       mainContentAnimation
-        .add({
-          targets: '.requires',
-          opacity: 0.85,
-        }, 1)
-        .add({
-          targets: '.text-box',
-          opacity: 0.95,
-        }, 1)
-        .add({
-          targets: '#q1',
-          color: '#d00000'
-        }, 1)
-        .add({
-          targets: '#q2',
-          color: '#000'
-        }, 1)
-        .add({
-          targets: '#q3',
-          color: '#000'
-        }, 1)
-        .add({
-          targets: '#q4',
-          color: '#000'
-        }, 1)
-        .add({
-          targets: '#q5',
-          color: '#000'
-        }, 1)
-        .add({
-          targets: '.canvas',
-          opacity: 0.92,
-        }, 1)
+        .add({targets: '.requires', opacity: 0.85,}, 500)
+        .add({targets: '.text-box', opacity: 0.95,}, 4000)
+        .add({targets: '#q1', color: '#d00000'}, 4800)
+        .add({targets: '#q2', color: '#000'}, 10200)
+        .add({targets: '#q3', color: '#000'}, 14000)
+        .add({targets: '#q4', color: '#000'}, 23000)
+        .add({targets: '#q5', color: '#000'}, 28200)
+        .add({targets: '.canvas', opacity: 0.92,}, 30300)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 200)
     },
   },
   mounted() {

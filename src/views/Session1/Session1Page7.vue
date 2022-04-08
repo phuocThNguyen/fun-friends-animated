@@ -2,10 +2,9 @@
   <div class="interactive-container">
     <img class="session-background" src="../../assets/images/session1/811-resized.jpg" alt="lucy">
     <div class="text-box">
-      <p class="mb-0">Luna elsker at lege med den</p>
-      <p class="mb-0">gamle trillebør i haven.</p>
+      <p class="mb-0">Luna elsker at lege med den <br>gamle trillebør i haven.</p>
     </div>
-    <audio src="../../assets/sounds/session1/14Animated_Book_Page13.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session1/Page13.mp3" ref="voice"/>
     <div class="page-number" id="page-light">13</div>
   </div>
 </template>
@@ -18,27 +17,13 @@ export default {
   methods: {
     animateText() {
       let text = document.querySelector('.text-box').children;
-      let animation = anime.timeline({
-        duration: 500,
-        easing: 'linear',
-      })
+      let animation = anime.timeline({duration: 500, easing: 'linear',})
       animation
-        .add({
-          targets: ".text-box",
-          opacity: 1,
-          delay: 500,
-        })
-        .add({
-          targets: text[0],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[1],
-          opacity: 1
-        }, 1)
+        .add({targets: ".text-box", opacity: 1}, 500)
+        .add({targets: text[0], opacity: 1}, 500)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 1000)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     }
   },
   mounted() {

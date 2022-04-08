@@ -73,7 +73,7 @@
         <p>Del</p>
       </div>
     </div>
-    <audio src="../../assets/sounds/session1/46Animated_Book_Page45.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session1/Page45.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">45</div>
   </div>
 </template>
@@ -86,11 +86,7 @@ export default {
     animateText() {
       let animation = anime.timeline({easing: 'linear', duration: 500,});
       animation
-        .add({
-          targets: '.big-star',
-          opacity: 1,
-          delay: 500
-        })
+        .add({targets: '.big-star', opacity: 1, delay: 500})
         .add({
           targets: ".star",
           keyframes: [
@@ -111,12 +107,12 @@ export default {
           ],
           delay: 0,
         }, 1000)
-      .add({targets: '#left',opacity: 1}, 1)
-      .add({targets: '#bottom',opacity: 1}, 1)
-      .add({targets: '#right',opacity: 1}, 1)
+      .add({targets: '#left',opacity: 1}, 9200)
+      .add({targets: '#bottom',opacity: 1}, 10400)
+      .add({targets: '#right',opacity: 1}, 12200)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 1500)
+      setTimeout(() => {this.$refs.voice.play()}, 1000)
     },
   },
   mounted() {

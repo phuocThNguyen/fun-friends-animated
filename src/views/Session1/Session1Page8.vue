@@ -5,7 +5,7 @@
       <p class="mb-0">Gustav balancerer henover de regnbuefarvede dæk.</p>
       <p class="mb-0"> Han elsker at gå barfodet gennem græsset.</p>
     </div>
-    <audio src="../../assets/sounds/session1/15Animated_Book_Page14.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session1/Page14.mp3" ref="voice"/>
     <div class="page-number" id="page-light">14</div>
   </div>
 </template>
@@ -18,27 +18,14 @@ export default {
   methods: {
     animateText() {
       let text = document.querySelector('.text-box').children;
-      let animation = anime.timeline({
-        duration: 500,
-        easing: 'linear',
-      })
+      let animation = anime.timeline({duration: 500, easing: 'linear',})
       animation
-        .add({
-          targets: ".text-box",
-          opacity: 1,
-          delay: 500,
-        })
-        .add({
-          targets: text[0],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[1],
-          opacity: 1
-        }, 1)
+        .add({targets: ".text-box", opacity: 1}, 600)
+        .add({targets: text[0], opacity: 1}, 600)
+        .add({targets: text[1], opacity: 1}, 5400)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 1000)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     }
   },
   mounted() {

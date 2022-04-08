@@ -11,7 +11,7 @@
         <span>Huse er forskellige, men indeni ligner vi hinanden.</span>
       </p>
     </div>
-    <audio src="../../assets/sounds/session1/31Animated_Book_Page30.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session1/Page30.mp3" ref="voice"/>
     <div class="page-number" id="page-light">30</div>
   </div>
 </template>
@@ -27,12 +27,12 @@ export default {
         targets: ".text-box",
         opacity: 0.98,
         duration: 500,
-        delay: 1,
+        delay: 500,
         easing: 'linear',
       })
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

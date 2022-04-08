@@ -11,7 +11,7 @@
         <span>Det kan være vi går i forskelligt tøj, men det er alt sammen vildt sejt.</span>
       </p>
     </div>
-    <audio src="../../assets/sounds/session1/37Animated_Book_Page36.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session1/Page36.mp3" ref="voice"/>
     <div class="page-number" id="page-light">36</div>
   </div>
 </template>
@@ -32,7 +32,7 @@ export default {
       })
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 200)
     },
   },
   mounted() {

@@ -5,7 +5,7 @@
       <p class="mb-0">Familien nyder at dele en lækker madpakke.</p>
     </div>
     <audio src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3" ref="audio" autoplay loop/>
-    <audio src="../../assets/sounds/session1/20Animated_Book_Page19.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session1/Page19.mp3" ref="voice"/>
     <div class="page-number" id="page-light">19</div>
   </div>
 </template>
@@ -26,7 +26,7 @@ export default {
       })
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;

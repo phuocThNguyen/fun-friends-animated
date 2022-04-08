@@ -11,7 +11,7 @@
         <span>Forskellighed og det at være anderledes / ikke at ligne hinanden er sjovt!</span>
       </p>
     </div>
-    <audio src="../../assets/sounds/session1/38Animated_Book_Page37.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session1/Page37.mp3" ref="voice"/>
     <div class="page-number" id="page-light">37</div>
   </div>
 </template>
@@ -32,7 +32,7 @@ export default {
       })
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

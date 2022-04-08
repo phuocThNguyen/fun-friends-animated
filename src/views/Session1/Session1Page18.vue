@@ -5,7 +5,7 @@
       <p class="mb-0">Vi blev født i forskellige lande.</p>
       <p class="mb-0">Hvor blev du født?</p>
     </div>
-    <audio src="../../assets/sounds/session1/25Animated_Book_Page24.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session1/Page24.mp3" ref="voice"/>
     <div class="page-number" id="page-light">24</div>
   </div>
 </template>
@@ -20,12 +20,12 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-        .add({targets: ".text-box", opacity: 1}, 1)
-        .add({targets: text[0], opacity: 1}, 1)
-        .add({targets: text[1], opacity: 1}, 1)
+        .add({targets: ".text-box", opacity: 1}, 600)
+        .add({targets: text[0], opacity: 1}, 600)
+        .add({targets: text[1], opacity: 1}, 3400)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     }
   },
   mounted() {

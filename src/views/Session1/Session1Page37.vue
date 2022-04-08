@@ -15,7 +15,7 @@
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Prøv at gøre dit bedste og give tingene et forsøg.</p>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3"/>
-    <audio src="../../assets/sounds/session1/44Animated_Book_Page43.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session1/Page43.mp3" ref="voice"/>
     <div class="page-number" id="page-light">43</div>
   </div>
 </template>
@@ -27,53 +27,23 @@ export default {
   methods: {
     animateText() {
       let text = document.querySelector('.text-box').children;
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500
-      })
+      let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({
-          targets: ".text-box",
-          opacity: 0.9,
-        }, 1)
-        .add({
-          targets: text[1],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[2],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[3],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[4],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[5],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[6],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[7],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[8],
-          opacity: 1
-        }, 1)
+        .add({targets: ".text-box", opacity: 0.9}, 500)
+        .add({targets: text[1], opacity: 1}, 500)
+        .add({targets: text[2], opacity: 1}, 2800)
+        .add({targets: text[3], opacity: 1}, 7100)
+        .add({targets: text[4], opacity: 1}, 20000)
+        .add({targets: text[5], opacity: 1}, 24600)
+        .add({targets: text[6], opacity: 1}, 32300)
+        .add({targets: text[7], opacity: 1}, 35000)
+        .add({targets: text[8], opacity: 1}, 41200)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

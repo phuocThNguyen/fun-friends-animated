@@ -803,7 +803,7 @@
       </div>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/beach-sound.mp3"/>
-    <audio src="../../assets/sounds/session1/42Animated_Book_Page41.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session1/Page41.mp3" ref="voice"/>
     <div class="page-number" id="page-light">41</div>
   </div>
 </template>
@@ -861,65 +861,26 @@ export default {
     },
     animateText() {
       let text = document.querySelector('.para-box').children;
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      })
+      let animation = anime.timeline({easing: 'linear', duration: 500,})
       animation
-        .add({
-          targets: '.text-box',
-          opacity: 0.95,
-        }, 1)
-        .add({
-          targets: '.para-box',
-          opacity: 0.95,
-        }, 1)
-        .add({
-          targets: text[1],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[2],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[3],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[4],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[5],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[6],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[7],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[8],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[9],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[10],
-          opacity: 1,
-        }, 1)
+        .add({targets: '.text-box', opacity: 0.95,}, 500)
+        .add({targets: '.para-box', opacity: 0.95,}, 5500)
+        .add({targets: text[1], opacity: 1,}, 10900)
+        .add({targets: text[2], opacity: 1,}, 13000)
+        .add({targets: text[3], opacity: 1,}, 38400)
+        .add({targets: text[4], opacity: 1,}, 40500)
+        .add({targets: text[5], opacity: 1,}, 56300)
+        .add({targets: text[6], opacity: 1,}, 59200)
+        .add({targets: text[7], opacity: 1,}, 74600)
+        .add({targets: text[8], opacity: 1,}, 80800)
+        .add({targets: text[9], opacity: 1,}, 103100)
+        .add({targets: text[10], opacity: 1,}, 112300)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

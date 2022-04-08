@@ -4,7 +4,7 @@
     <div class="text-box">
       <p class="mb-0">Der findes mange lande og forskellige sprog.</p>
     </div>
-    <audio src="../../assets/sounds/session1/24Animated_Book_Page23.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session1/Page23.mp3" ref="voice"/>
     <div class="page-number" id="page-light">23</div>
   </div>
 </template>
@@ -19,13 +19,13 @@ export default {
       anime({
         targets: ".text-box",
         opacity: 1,
-        delay: 500,
+        delay: 800,
         duration: 500,
         easing: 'linear',
       })
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     }
   },
   mounted() {

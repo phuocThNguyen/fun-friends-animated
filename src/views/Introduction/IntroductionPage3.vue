@@ -182,7 +182,7 @@
         </svg>
       </div>
     </div>
-    <audio src="../../assets/sounds/introduction/3Animated_Book_Page2.mp3" ref="voice"></audio>
+    <audio src="../../assets/sounds/introduction/Page2.mp3" ref="voice"></audio>
     <div class="page-number" id="page-light">2</div>
   </div>
 </template>

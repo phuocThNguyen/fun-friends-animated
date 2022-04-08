@@ -12,7 +12,7 @@
       </div>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/sand-castle.mp3"/>
-    <audio src="../../assets/sounds/session1/23Animated_Book_Page22.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session1/Page22.mp3" ref="voice"/>
     <div class="page-number" id="page-light">22</div>
   </div>
 </template>
@@ -41,29 +41,17 @@ export default {
     },
     animateText() {
       let para = document.getElementsByClassName('para')[0].children;
-      let animation = anime.timeline({
-        duration: 500,
-        easing: 'linear'
-      });
+      let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
-        .add({
-          targets: para[0],
-          color: "#000",
-        }, 1)
-        .add({
-          targets: para[1],
-          color: "#000",
-        }, 1)
-        .add({
-          targets: para[2],
-          color: "#000",
-        }, 1)
+        .add({targets: para[0], color: "#000"}, 700)
+        .add({targets: para[1], color: "#000"}, 3500)
+        .add({targets: para[2], color: "#000"}, 7400)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 1000)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     }
   },
   mounted() {

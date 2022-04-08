@@ -281,10 +281,10 @@
         </g>
       </g>
     </svg>
-    <audio src="../../assets/sounds/session1/28Animated_Book_Page27_Part1.mp3" ref="voice1" @ended="hideMask"/>
-    <audio src="../../assets/sounds/session1/28Animated_Book_Page27_Part2.mp3" ref="voice2"/>
-    <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
-    <audio src="../../assets/sounds/all/Great_work.mp3" ref="greatWork"/>
+    <audio src="../../assets/sounds/session1/Page27-hereare4more.mp3" ref="voice1" @ended="hideMask"/>
+    <audio src="../../assets/sounds/session1/Page27-weallloveourfamilies.mp3" ref="voice2"/>
+    <audio src="../../assets/sounds/all/GoodTry_TryAgain.mp3" ref="goodTry"/>
+    <audio src="../../assets/sounds/all/GreatWork.mp3" ref="greatWork"/>
     <div class="page-number" id="page-light">27</div>
   </div>
 </template>
@@ -449,7 +449,7 @@ export default {
       }, 2500)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice1.play()}, 500)
+      setTimeout(() => {this.$refs.voice1.play()}, 1)
     }
   },
   mounted() {

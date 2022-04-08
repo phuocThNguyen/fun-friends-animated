@@ -216,7 +216,7 @@
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3">
       Your browser does not support the
       <code>audio</code> element.</audio>
-    <audio src="../../assets/sounds/session1/41Animated_Book_Page40.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session1/Page40.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">40</div>
   </div>
 </template>
@@ -245,93 +245,36 @@ export default {
       let treeGrowAnimation = anime.timeline({duration: 700})
       let treeGrowAnimation2 = anime.timeline({duration: 700})
       treeGrowAnimation
-        .add({
-          targets: "#bush-left-bottom",
-          scale: 50,
-          delay: 700,
-        })
-        .add({
-          targets: "#bush-left-top",
-          scale: 60,
-        })
-        .add({
-          targets: "#tree-left-left",
-          scale: 100,
-        })
-        .add({
-          targets: "#tree-left-right",
-          scale: 100,
-        })
+        .add({targets: "#bush-left-bottom", scale: 50, delay: 700,})
+        .add({targets: "#bush-left-top", scale: 60,})
+        .add({targets: "#tree-left-left", scale: 100,})
+        .add({targets: "#tree-left-right", scale: 100,})
 
       treeGrowAnimation2
-        .add({
-          targets: "#bush-right-bottom",
-          scale: 50,
-          delay: 700
-        })
-        .add({
-          targets: "#bush-right-top",
-          scale: 60,
-        })
-        .add({
-          targets: "#tree-right-right",
-          scale: 100,
-        })
-        .add({
-          targets: "#tree-right-left",
-          scale: 100,
-        })
+        .add({targets: "#bush-right-bottom", scale: 50, delay: 700})
+        .add({targets: "#bush-right-top", scale: 60,})
+        .add({targets: "#tree-right-right", scale: 100,})
+        .add({targets: "#tree-right-left", scale: 100,})
     },
     animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;
-      let textBoxAnimation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      });
+      let textBoxAnimation = anime.timeline({easing: 'linear', duration: 500});
       textBoxAnimation
-        .add({
-          targets: '.text-box',
-          opacity: 0.9,
-          delay: 1,
-        })
-        .add({
-          targets: text[0],
-          color: '#000',
-        }, 1)
-        .add({
-          targets: text[1],
-          color: '#000',
-        }, 1)
-        .add({
-          targets: text[2],
-          color: '#000',
-        }, 1)
-        .add({
-          targets: text[3],
-          color: '#000',
-        }, 1)
-        .add({
-          targets: text[4],
-          color: '#000',
-        }, 1)
-        .add({
-          targets: text[5],
-          color: '#000',
-        }, 1)
-        .add({
-          targets: text[6],
-          color: '#000',
-        }, 1)
-        .add({
-          targets: text[7],
-          color: '#000',
-        }, 1)
+        .add({targets: '.text-box', opacity: 0.9}, 3500)
+        .add({targets: text[0], color: '#000'}, 3500)
+        .add({targets: text[1], color: '#000'}, 11300)
+        .add({targets: text[2], color: '#000'}, 16500)
+        .add({targets: text[3], color: '#000'}, 20700)
+        .add({targets: text[4], color: '#000'}, 26400)
+        .add({targets: text[5], color: '#000'}, 29000 )
+        .add({targets: text[6], color: '#000'}, 33200)
+        .add({targets: text[7], color: '#000'}, 35600)
     },
     setAudioVolumeLevel(level) {
-      this.$refs.audio.volume = level
+      this.$refs.audio.volume = level;
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 3000)
+      setTimeout(() => {this.$refs.voice.play()}, 3000);
     },
   },
   mounted() {
