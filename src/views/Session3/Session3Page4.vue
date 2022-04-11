@@ -4,7 +4,7 @@
     <emotion-pick-instruction class="instruction"/>
     <feeling-question
       class="question"
-      question="Hvad tror du at han føler?"
+      question="Hvordan har han det? Hvilken følelse oplever han?"
       :emotes="['happy','worried','angry']"
       :tips="['Glad','Bekymret','Vred']"
       :ans="['green-tick','red-tick','red-tick']"
@@ -106,7 +106,7 @@
     </svg>
     <audio src="../../assets/sounds/all/Good_Job.mp3" ref="goodJob"/>
     <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
-    <audio src="../../assets/sounds/session3/Session3_Page4.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session3/Page74.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -126,7 +126,7 @@ export default {
         scale: 20,
         duration: 1000,
       });
-      setTimeout(() => {this.$refs.goodJob.play()}, 500)
+      setTimeout(() => {this.$refs.goodJob.play()}, 1)
     },
     handleWrongAnswer() {
       anime({

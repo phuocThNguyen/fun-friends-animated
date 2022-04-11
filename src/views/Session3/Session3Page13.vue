@@ -8,7 +8,7 @@
       </div>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3"/>
-    <audio src="../../assets/sounds/session3/Session3_Page14.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session3/Page83.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -47,7 +47,7 @@ export default {
       this.$refs.audio.volume = level
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

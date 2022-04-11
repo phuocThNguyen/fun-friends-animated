@@ -4,12 +4,12 @@
     <emotion-pick-instruction class="instruction"/>
     <feeling-question
       class="question"
-      question="Hvad tror du at de føler?"
+      question="Hvordan har de enkelte venner det? Hvilke(n) følelse(r) oplever de?"
       :emotes="['sad','happy','worried']"
       :tips="['Trist','Glad','Bekymret']"
       :ans="['red-tick','green-tick','red-tick']"
       :isSmall="false"
-      :delay="10134"
+      :delay="9600"
       v-on:correctAnsChosen="handleCorrectAnswer"
       v-on:wrongAnswer="handleWrongAnswer"
     />
@@ -158,7 +158,7 @@
     </svg>
     <audio src="../../assets/sounds/all/Great_work.mp3" ref="greatWork"/>
     <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
-    <audio src="../../assets/sounds/session3/Session3_Page3.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session3/Page73.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -175,7 +175,7 @@ export default {
       anime({
         targets: '.instruction',
         opacity: 1,
-        delay: 602,
+        delay: 500,
         duration: 500,
         easing: 'linear'
       })
@@ -187,7 +187,7 @@ export default {
         scale: 20,
         duration: 1000,
       });
-      setTimeout(() => {this.$refs.greatWork.play()}, 500)
+      setTimeout(() => {this.$refs.greatWork.play()}, 1)
     },
     handleWrongAnswer() {
       anime({

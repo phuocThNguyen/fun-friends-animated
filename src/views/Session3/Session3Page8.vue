@@ -25,7 +25,7 @@
       </svg>
       <div class="bubble-text">Del dine ideer med en ven!</div>
     </div>
-    <audio src="../../assets/sounds/session3/Session3_Page8.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session3/Page78.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">78</div>
   </div>
 </template>
@@ -38,46 +38,19 @@ export default {
   methods: {
     animateText() {
       let text = document.querySelector('.text-box').children;
-      let animation = anime.timeline({
-        duration: 500,
-        easing: 'linear'
-      })
+      let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-        .add({
-          targets: ".text-box",
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[0],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[1],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[2],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[3],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[4],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: '.bubble-container',
-          opacity: 0.9
-        }, 1)
-        .add({
-          targets: '.notice-box',
-          opacity: 1,
-        }, 1)
+        .add({targets: ".text-box", opacity: 1,}, 500)
+        .add({targets: text[0], opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 4400)
+        .add({targets: text[2], opacity: 1}, 12300)
+        .add({targets: text[3], opacity: 1}, 18500)
+        .add({targets: text[4], opacity: 1}, 23900)
+        .add({targets: '.bubble-container', opacity: 0.9}, 27200)
+        .add({targets: '.notice-box', opacity: 1,}, 30200)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

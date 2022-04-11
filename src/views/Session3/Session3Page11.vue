@@ -8,7 +8,7 @@
       <p>Tag fem dybe og langsomme vejrtrækninger, ind gennem din næse og ud gennem din mund.
         Vi skal puste bobler ved hjælp af et sugerør og et glas med vand.
         Vi puster alle vores vrede, triste og bekymrede følelser ud i vandet.
-        Så snart vi holder op med at puste ud, forsvinder alle boblerne. </p>
+        Så snart vi holder op med at puste ud, forsvinder alle boblerne.</p>
       <p>Det samme sker med vores følelser. Vi kan langsomt puste dem bort ved hjælp af den
         dybe og langsomme, og rolige vejrtrækning. Følelser kommer og går - husk at alle
         følelser er OK. Det er det vi vælger at gøre med vores følelser, der betyder noget.
@@ -25,7 +25,7 @@
     <div class="bubble" id="bubble-9"/>
     <div class="bubble" id="bubble-10"/>
     <audio ref="audio" autoplay src="../../assets/sounds/session3/bubbles.mp3"/>
-    <audio src="../../assets/sounds/session3/Session3_Page11.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session3/Page81.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">81</div>
   </div>
 </template>
@@ -38,41 +38,20 @@ export default {
   methods: {
     animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;
-      let animation = anime.timeline({
-        duration: 500,
-        easing: 'linear'
-      });
+      let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
-        .add({
-          targets: '.text-box',
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[0],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[1],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[2],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[3],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[4],
-          opacity: 1,
-        }, 1)
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[0], opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 3600)
+        .add({targets: text[2], opacity: 1}, 6900)
+        .add({targets: text[3], opacity: 1}, 9100)
+        .add({targets: text[4], opacity: 1}, 34800)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

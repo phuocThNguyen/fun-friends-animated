@@ -50,7 +50,7 @@
       </div>
     </div>
     <audio ref="audio" autoplay src="../../assets/sounds/session3/bubbles.mp3"/>
-    <audio src="../../assets/sounds/session3/Session3_Page13.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session3/Page82.mp3" ref="voice"/>
     <div class="page-number" id="page-light">82</div>
   </div>
 </template>
@@ -63,44 +63,20 @@ export default {
   methods: {
     animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;
-      let animation = anime.timeline({
-        duration: 500,
-        easing: 'linear'
-      });
+      let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
-        .add({
-          targets: '.text-box',
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[0],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[1],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[3],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: '.star-container',
-          opacity: 1,
-          duration: 1
-        }, 1)
-        .add({
-          targets: '.star-container',
-          scale: 14,
-          delay: 0,
-          duration: 1000,
-        }, 1)
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[0], opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 2000)
+        .add({targets: text[3], opacity: 1}, 29200)
+        .add({targets: '.star-container', opacity: 1, duration: 1}, 46100)
+        .add({targets: '.star-container', scale: 14, delay: 0, duration: 1000}, 46100)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

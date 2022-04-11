@@ -22,7 +22,7 @@
       </svg>
       <div class="bubble-text">Se på din vens ansigt!</div>
     </div>
-    <audio src="../../assets/sounds/session3/Session3_Page2.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session3/Page72.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">72</div>
   </div>
 </template>
@@ -35,34 +35,16 @@ export default {
   methods: {
     animateText() {
       let text = document.querySelector('.text-box').children
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      })
+      let animation = anime.timeline({easing: 'linear', duration: 500,})
       animation
-        .add({
-          targets: ".text-box",
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[1],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[2],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[3],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: '.bubble-container',
-          opacity: 0.9
-        }, 1)
+        .add({targets: ".text-box", opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 2700)
+        .add({targets: text[2], opacity: 1}, 9000)
+        .add({targets: text[3], opacity: 1}, 15100)
+        .add({targets: '.bubble-container', opacity: 0.9}, 20800)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

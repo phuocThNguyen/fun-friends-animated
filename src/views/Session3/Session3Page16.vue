@@ -722,7 +722,7 @@
         </p>
       </div>
     </div>
-    <audio src="../../assets/sounds/session3/Session3_Page17.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session3/Page86.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">86</div>
   </div>
 </template>
@@ -734,11 +734,7 @@ export default {
   name: 'Session3Page16',
   methods: {
     animateText() {
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-        delay: 500
-      })
+      let animation = anime.timeline({easing: 'linear', duration: 500, delay: 500})
       animation
         .add({
           targets: '.star-container',
@@ -766,7 +762,7 @@ export default {
         }, 1000)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 1500)
+      setTimeout(() => {this.$refs.voice.play()}, 2000)
     },
   },
   mounted() {

@@ -3,7 +3,7 @@
     <img src="../../assets/images/session3/4829-resized.jpg" alt="little-plants" class="session-background">
     <div class="text-box">
       <h1>Venner og familier</h1>
-      <p id="text-box-p">What makes kids helpful and kind?</p>
+      <p id="text-box-p">Hvad tror du der gør børn hjælpsomme, omsorgsfulde og venlige?</p>
       <p id="text-box-p2">Del dine idéer med en ven(inde)fra gruppen / klassen.
         Lyt til din ven(inde)s mening. Det er ok ikke at ligne hinanden.</p>
     </div>
@@ -38,7 +38,7 @@
       </svg>
       <div class="bubble-text">Lyt til din vens mening!</div>
     </div>
-    <audio src="../../assets/sounds/session3/Session3_Page10.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session3/Page80.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">80</div>
   </div>
 </template>
@@ -50,38 +50,17 @@ export default {
   name: "Session3Page10",
   methods: {
     animateText() {
-      let animation = anime.timeline({
-        duration: 500,
-        easing: 'linear'
-      })
+      let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-        .add({
-          targets: ".text-box",
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: '#text-box-p',
-          opacity: 1
-        }, 1)
-        .add({
-          targets: '#text-box-p2',
-          opacity: 1
-        }, 1)
-        .add({
-          targets: '#bubble-1',
-          opacity: 0.9,
-        }, 1)
-        .add({
-          targets: '#bubble-2',
-          opacity: 0.9,
-        }, 1)
-        .add({
-          targets: '.notice-box',
-          opacity: 1,
-        }, 1)
+        .add({targets: ".text-box", opacity: 1}, 500)
+        .add({targets: '#text-box-p', opacity: 1}, 3000)
+        .add({targets: '#text-box-p2', opacity: 1}, 8100)
+        .add({targets: '#bubble-1', opacity: 0.9}, 19400)
+        .add({targets: '#bubble-2', opacity: 0.9}, 23000)
+        .add({targets: '.notice-box', opacity: 1}, 23000)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {
