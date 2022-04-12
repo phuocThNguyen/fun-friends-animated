@@ -19,23 +19,13 @@ export default {
   methods: {
     animateElements() {
       let images = document.getElementsByClassName('images');
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-        delay: 500
-      });
+      let animation = anime.timeline({easing: 'linear', duration: 500, delay: 500});
       animation
-        .add({
-          targets: images[0],
-          opacity: 1
-        })
-        .add({
-          targets: images[1],
-          opacity: 1
-        });
+        .add({targets: images[0], opacity: 1})
+        .add({targets: images[1], opacity: 1});
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

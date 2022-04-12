@@ -30,7 +30,7 @@ export default {
       });
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 5010)
     },
   },
   mounted() {

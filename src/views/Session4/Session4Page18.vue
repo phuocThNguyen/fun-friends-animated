@@ -149,23 +149,11 @@ export default {
   },
   methods: {
     animateElements() {
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      })
+      let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({
-          targets: '.text-box',
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: '.clues-sources',
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: '.answers',
-          opacity: 1,
-        }, 1);
+        .add({targets: '.text-box', opacity: 1}, 1)
+        .add({targets: '.clues-sources', opacity: 1}, 1)
+        .add({targets: '.answers', opacity: 1}, 1);
     },
     handleChange(id) {
       switch (id) {
@@ -237,7 +225,7 @@ export default {
       setTimeout(() => {this.$refs.veryGood.play()}, 500)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

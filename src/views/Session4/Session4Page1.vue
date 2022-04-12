@@ -260,26 +260,14 @@ export default {
       })
     },
     animateText() {
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      });
+      let animation = anime.timeline({easing: 'linear', duration: 500,});
       animation
-        .add({
-          targets: ".title",
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: "#line-1",
-          color: '#000',
-        }, 1)
-        .add({
-          targets: "#line-2",
-          color: '#000'
-        }, 1)
+        .add({targets: ".title", opacity: 1,}, 1)
+        .add({targets: "#line-1", color: '#000',}, 1)
+        .add({targets: "#line-2", color: '#000'}, 1)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

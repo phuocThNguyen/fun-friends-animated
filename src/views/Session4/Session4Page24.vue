@@ -2499,16 +2499,9 @@ export default {
   name: 'Session4Page24',
   methods: {
     animateElements() {
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-        delay: 500
-      });
+      let animation = anime.timeline({easing: 'linear', duration: 500, delay: 500});
       animation
-        .add({
-          targets: '.star-container',
-          opacity: 1
-        })
+        .add({targets: '.star-container', opacity: 1})
         .add({
           targets: ".star",
           keyframes: [

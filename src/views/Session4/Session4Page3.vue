@@ -23,38 +23,17 @@ export default {
   methods: {
     animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      });
+      let animation = anime.timeline({easing: 'linear', duration: 500,});
       animation
-        .add({
-          targets: text[1],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[2],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[3],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[4],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[5],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[6],
-          opacity: 1,
-        }, 1)
+        .add({targets: text[1], opacity: 1}, 1)
+        .add({targets: text[2], opacity: 1,}, 1)
+        .add({targets: text[3], opacity: 1,}, 1)
+        .add({targets: text[4], opacity: 1,}, 1)
+        .add({targets: text[5], opacity: 1,}, 1)
+        .add({targets: text[6], opacity: 1,}, 1)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 0)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

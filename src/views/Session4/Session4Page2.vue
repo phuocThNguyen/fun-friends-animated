@@ -495,31 +495,13 @@ export default {
     animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;
       let textSpan = document.querySelectorAll('.text');
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      });
+      let animation = anime.timeline({easing: 'linear', duration: 500,});
       animation
-        .add({
-          targets: text[1],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[2],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[3],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: textSpan[0],
-          color: '#000'
-        }, 1)
-        .add({
-          targets: '.instruction-container',
-          opacity: 1
-        }, 1)
+        .add({targets: text[1], opacity: 1}, 1)
+        .add({targets: text[2], opacity: 1}, 1)
+        .add({targets: text[3], opacity: 1}, 1)
+        .add({targets: textSpan[0], color: '#000'}, 1)
+        .add({targets: '.instruction-container', opacity: 1}, 1)
     },
     animateHeartBeat() {
       document.querySelector('.heart').style.opacity = '1';
@@ -692,7 +674,7 @@ export default {
       }, 1)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice1.play()}, 500)
+      setTimeout(() => {this.$refs.voice1.play()}, 1)
       setTimeout(() => {this.$refs.voice2.play()}, 17000)
     },
   },

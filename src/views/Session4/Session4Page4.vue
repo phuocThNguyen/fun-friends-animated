@@ -26,51 +26,18 @@ export default {
   methods: {
     animateText() {
       let text = document.getElementsByClassName('text');
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 400
-      });
+      let animation = anime.timeline({easing: 'linear', duration: 400});
       animation
-        .add({
-          targets: text[0],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[1],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[2],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[3],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[4],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[5],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[6],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[7],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[8],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[9],
-          opacity: 1
-        }, 1);
+        .add({targets: text[0], opacity: 1,}, 1)
+        .add({targets: text[1], opacity: 1}, 1)
+        .add({targets: text[2], opacity: 1}, 1)
+        .add({targets: text[3], opacity: 1}, 1)
+        .add({targets: text[4], opacity: 1}, 1)
+        .add({targets: text[5], opacity: 1}, 1)
+        .add({targets: text[6], opacity: 1}, 1)
+        .add({targets: text[7], opacity: 1}, 1)
+        .add({targets: text[8], opacity: 1}, 1)
+        .add({targets: text[9], opacity: 1}, 1);
     },
     playSoundEffect() {
       setTimeout(() => {this.$refs.swoosh.play()}, 2565);
@@ -85,7 +52,7 @@ export default {
       setTimeout(() => {this.$refs.swoosh.play()}, 18688);
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

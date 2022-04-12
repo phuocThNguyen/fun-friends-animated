@@ -906,7 +906,7 @@ export default {
       setTimeout(() => {this.$refs.veryGood.play()}, 500)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   watch: {
