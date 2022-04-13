@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <img src="../../assets/images/session4/25203-resized.jpg" alt="playing-sand" class="session-background">
     <div class="text-box">Vand kan være med til at vi finder ro.</div>
-    <audio src="../../assets/sounds/session4/Session4_Page9.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session4/Page95.mp3" ref="voice"/>
     <div class="page-number" id="page-light">95</div>
   </div>
 </template>

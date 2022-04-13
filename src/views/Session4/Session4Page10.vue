@@ -12,7 +12,7 @@
       <p>Hvis du har lyst kan du beskrive eller tænke over dit fredfyldte og stille sted.</p>
       <p>At trække vejret dybt og langsomt får os til at falde til ro.</p>
     </div>
-    <audio src="../../assets/sounds/session4/Session4_Page10.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session4/Page96.mp3" ref="voice"/>
     <div class="page-number" id="page-light">96</div>
   </div>
 </template>
@@ -25,15 +25,15 @@ export default {
   methods: {
     animateElements() {
       let text = document.getElementsByClassName('text-box')[0].children;
-      let animation = anime.timeline({easing: 'linear', duration: 500,});
+      let animation = anime.timeline({easing: 'linear', duration: 500});
       animation
-        .add({targets: text[1], opacity: 1}, 1)
-        .add({targets: text[2], opacity: 1}, 1)
-        .add({targets: text[3], opacity: 1}, 1)
-        .add({targets: text[4], opacity: 1}, 1);
+        .add({targets: text[1], opacity: 1}, 2800)
+        .add({targets: text[2], opacity: 1}, 17900)
+        .add({targets: text[3], opacity: 1}, 27700)
+        .add({targets: text[4], opacity: 1}, 33400);
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

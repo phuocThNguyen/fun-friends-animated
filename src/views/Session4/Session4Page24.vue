@@ -2487,7 +2487,7 @@
           <br>ligesom kogt spaghetti.</p>
       </div>
     </div>
-    <audio src="../../assets/sounds/session4/Session4_Page24.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session4/Page110.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">110</div>
   </div>
 </template>

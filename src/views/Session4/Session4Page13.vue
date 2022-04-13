@@ -9,7 +9,7 @@
       <h1>1. Høresansen</h1>
       <p>Vi hører med vores ører. <br>Hvad kan vi høre?</p>
     </div>
-    <audio src="../../assets/sounds/session4/Session4_Page13.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session4/Page99.mp3" ref="voice"/>
     <div class="page-number" id="page-light">99</div>
   </div>
 </template>
@@ -25,12 +25,12 @@ export default {
         targets: '.text-box',
         opacity: 1,
         duration: 500,
-        delay: 1,
+        delay: 11700,
         easing: 'linear',
       });
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 5010)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

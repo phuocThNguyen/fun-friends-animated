@@ -5,7 +5,7 @@
       <h1>2. Lugtesansen</h1>
       <p>Vi lugter med vores næse. <br>Hvad kan vi lugte / dufte?</p>
     </div>
-    <audio src="../../assets/sounds/session4/Session4_Page14.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session4/Page100.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">100</div>
   </div>
 </template>

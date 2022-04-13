@@ -40,7 +40,7 @@
       <div class="bubble-text">Del dine tanker med en ven!</div>
     </div>
     <audio ref="audio" loop autoplay src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
-    <audio src="../../assets/sounds/session4/Session4_Page20.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session4/Page106.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">106</div>
   </div>
 </template>
@@ -53,15 +53,15 @@ export default {
   methods: {
     animateElements() {
       let text = document.getElementsByClassName('text-box')[0].children;
-      let animation = anime.timeline({easing: 'linear', duration: 500,});
+      let animation = anime.timeline({easing: 'linear', duration: 500});
       animation
-        .add({targets: '.text-box', opacity: 1,}, 1)
-        .add({targets: text[1], opacity: 1,}, 1)
-        .add({targets: text[2], opacity: 1,}, 1)
-        .add({targets: text[3], opacity: 1,}, 1)
-        .add({targets: text[4], opacity: 1,}, 1)
-        .add({targets: text[5], opacity: 1,}, 1)
-        .add({targets: text[6], opacity: 1,}, 1)
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 7800)
+        .add({targets: text[2], opacity: 1}, 23400)
+        .add({targets: text[3], opacity: 1}, 32000)
+        .add({targets: text[4], opacity: 1}, 40400)
+        .add({targets: text[5], opacity: 1}, 51800)
+        .add({targets: text[6], opacity: 1}, 61100)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level

@@ -119,7 +119,7 @@
     <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3"/>
     <audio src="../../assets/sounds/all/Correct_2.mp3" ref="correctVoice"/>
     <audio src="../../assets/sounds/all/Very_Good.mp3" ref="veryGood"/>
-    <audio src="../../assets/sounds/session4/Session4_Page18.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session4/Page104.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">104</div>
   </div>
 </template>
@@ -151,9 +151,9 @@ export default {
     animateElements() {
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({targets: '.text-box', opacity: 1}, 1)
-        .add({targets: '.clues-sources', opacity: 1}, 1)
-        .add({targets: '.answers', opacity: 1}, 1);
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: '.clues-sources', opacity: 1}, 15000)
+        .add({targets: '.answers', opacity: 1}, 15000);
     },
     handleChange(id) {
       switch (id) {

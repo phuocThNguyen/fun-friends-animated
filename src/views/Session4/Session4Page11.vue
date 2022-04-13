@@ -818,7 +818,7 @@
     <div class="text-box">Tegn et billede af dit fredfyldte og stille sted.</div>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3"/>
-    <audio src="../../assets/sounds/session4/Session4_Page11.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session4/Page97.mp3" ref="voice"/>
     <div class="page-number" id="page-light">97</div>
   </div>
 </template>

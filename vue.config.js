@@ -1,6 +1,6 @@
 module.exports = {
     publicPath: process.env.NODE_ENV === 'production'
-        ? '/fun-friends-animated'
+        ? '/'
         : '/',
     pwa: {
         name: 'Fun Friends Skills',

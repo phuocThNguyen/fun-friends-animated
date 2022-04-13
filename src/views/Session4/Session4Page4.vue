@@ -13,7 +13,7 @@
     <p class="position-absolute text">Rystende knæ</p>
     <p class="position-absolute text">Hvor er WC’et!</p>
     <audio ref="swoosh" src="../../assets/sounds/session4/swoosh9.mp3"/>
-    <audio src="../../assets/sounds/session4/Session4_Page4.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session4/Page90.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">90</div>
   </div>
 </template>
@@ -28,28 +28,28 @@ export default {
       let text = document.getElementsByClassName('text');
       let animation = anime.timeline({easing: 'linear', duration: 400});
       animation
-        .add({targets: text[0], opacity: 1,}, 1)
-        .add({targets: text[1], opacity: 1}, 1)
-        .add({targets: text[2], opacity: 1}, 1)
-        .add({targets: text[3], opacity: 1}, 1)
-        .add({targets: text[4], opacity: 1}, 1)
-        .add({targets: text[5], opacity: 1}, 1)
-        .add({targets: text[6], opacity: 1}, 1)
-        .add({targets: text[7], opacity: 1}, 1)
-        .add({targets: text[8], opacity: 1}, 1)
-        .add({targets: text[9], opacity: 1}, 1);
+        .add({targets: text[0], opacity: 1}, 2600)
+        .add({targets: text[1], opacity: 1}, 4900)
+        .add({targets: text[2], opacity: 1}, 6600)
+        .add({targets: text[3], opacity: 1}, 8600)
+        .add({targets: text[4], opacity: 1}, 11400)
+        .add({targets: text[5], opacity: 1}, 14000)
+        .add({targets: text[6], opacity: 1}, 16000)
+        .add({targets: text[7], opacity: 1}, 17800)
+        .add({targets: text[8], opacity: 1}, 20600)
+        .add({targets: text[9], opacity: 1}, 23100);
     },
     playSoundEffect() {
-      setTimeout(() => {this.$refs.swoosh.play()}, 2565);
-      setTimeout(() => {this.$refs.swoosh.play()}, 4265);
-      setTimeout(() => {this.$refs.swoosh.play()}, 6101);
-      setTimeout(() => {this.$refs.swoosh.play()}, 7544);
-      setTimeout(() => {this.$refs.swoosh.play()}, 10032);
-      setTimeout(() => {this.$refs.swoosh.play()}, 12690);
-      setTimeout(() => {this.$refs.swoosh.play()}, 13939);
-      setTimeout(() => {this.$refs.swoosh.play()}, 15400);
-      setTimeout(() => {this.$refs.swoosh.play()}, 17018);
-      setTimeout(() => {this.$refs.swoosh.play()}, 18688);
+      setTimeout(() => {this.$refs.swoosh.play()}, 2600);
+      setTimeout(() => {this.$refs.swoosh.play()}, 4900);
+      setTimeout(() => {this.$refs.swoosh.play()}, 6600);
+      setTimeout(() => {this.$refs.swoosh.play()}, 8600);
+      setTimeout(() => {this.$refs.swoosh.play()}, 11400);
+      setTimeout(() => {this.$refs.swoosh.play()}, 14000);
+      setTimeout(() => {this.$refs.swoosh.play()}, 16000);
+      setTimeout(() => {this.$refs.swoosh.play()}, 17800);
+      setTimeout(() => {this.$refs.swoosh.play()}, 20600);
+      setTimeout(() => {this.$refs.swoosh.play()}, 23100);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1)

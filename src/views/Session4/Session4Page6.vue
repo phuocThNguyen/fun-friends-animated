@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <img src="../../assets/images/session4/1827-resized.jpg" alt="relaxing" class="session-background">
     <div class="text-box">Hvad laver du for at slappe af og falde til ro?</div>
-    <audio src="../../assets/sounds/session4/Session4_Page6.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session4/Page92.mp3" ref="voice"/>
     <div class="page-number" id="page-light">92</div>
   </div>
 </template>

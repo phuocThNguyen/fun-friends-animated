@@ -467,12 +467,12 @@
       </g>
     </svg>
     <audio ref="heartBeat" src="../../assets/sounds/session4/heart-beat.mp3"/>
-    <audio src="../../assets/sounds/session4/Session4_Page2_init.mp3" ref="voice1"/>
-    <audio src="../../assets/sounds/session4/Session4_Page2_TapHere.mp3" ref="voice2"/>
-    <audio src="../../assets/sounds/session4/Session4_Page2_heart.mp3" ref="voice3"/>
-    <audio src="../../assets/sounds/session4/Session4_Page2_butterfly.mp3" ref="voice4"/>
-    <audio src="../../assets/sounds/session4/Session4_Page2_redFace.mp3" ref="voice5"/>
-    <audio src="../../assets/sounds/session4/Session4_Page2_MyBody.mp3" ref="voice6"/>
+    <audio src="../../assets/sounds/session4/Page88.mp3" ref="voice1"/>
+    <audio src="../../assets/sounds/session4/Page88-TapHere.mp3" ref="voice2"/>
+    <audio src="../../assets/sounds/session4/Page88-HeartBeating.mp3" ref="voice3"/>
+    <audio src="../../assets/sounds/session4/Page88-butterfly.mp3" ref="voice4"/>
+    <audio src="../../assets/sounds/session4/Page88-RedFace.mp3" ref="voice5"/>
+    <audio src="../../assets/sounds/session4/Page88-MyBodyIsMyFriend.mp3" ref="voice6"/>
     <div class="page-number" id="page-dark">88</div>
   </div>
 </template>
@@ -495,13 +495,13 @@ export default {
     animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;
       let textSpan = document.querySelectorAll('.text');
-      let animation = anime.timeline({easing: 'linear', duration: 500,});
+      let animation = anime.timeline({easing: 'linear', duration: 500});
       animation
-        .add({targets: text[1], opacity: 1}, 1)
-        .add({targets: text[2], opacity: 1}, 1)
-        .add({targets: text[3], opacity: 1}, 1)
-        .add({targets: textSpan[0], color: '#000'}, 1)
-        .add({targets: '.instruction-container', opacity: 1}, 1)
+        .add({targets: text[1], opacity: 1}, 2300)
+        .add({targets: text[2], opacity: 1}, 8060)
+        .add({targets: text[3], opacity: 1}, 11000)
+        .add({targets: textSpan[0], color: '#000'}, 11000)
+        .add({targets: '.instruction-container', opacity: 16000}, 1)
     },
     animateHeartBeat() {
       document.querySelector('.heart').style.opacity = '1';
@@ -675,7 +675,7 @@ export default {
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice1.play()}, 1)
-      setTimeout(() => {this.$refs.voice2.play()}, 17000)
+      setTimeout(() => {this.$refs.voice2.play()}, 16000)
     },
   },
   watch: {

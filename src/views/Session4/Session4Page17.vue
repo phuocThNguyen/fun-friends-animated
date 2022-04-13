@@ -5,7 +5,7 @@
       <h1>5. Følesansen</h1>
       <p>Vi føler ved hjælp af huden, for <br>eksempel på vores hænder og fødder.</p>
     </div>
-    <audio src="../../assets/sounds/session4/Session4_Page17.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session4/Page103.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">103</div>
   </div>
 </template>

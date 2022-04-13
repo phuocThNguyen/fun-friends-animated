@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <img src="../../assets/images/session4/1143-resized.jpg" alt="cool-water" class="session-background">
     <div class="text-box">Vandet føles køligt og friskt mod huden.</div>
-    <audio src="../../assets/sounds/session4/Session4_Page21.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session4/Page107.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">107</div>
   </div>
 </template>
@@ -18,7 +18,7 @@ export default {
         targets: '.text-box',
         opacity: 1,
         duration: 500,
-        delay: 1,
+        delay: 500,
         easing: 'linear'
       });
     },

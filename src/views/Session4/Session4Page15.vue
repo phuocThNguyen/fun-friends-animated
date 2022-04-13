@@ -5,7 +5,7 @@
       <h1>3. Synssansen</h1>
       <p>Vi ser med vores øjne. <br>Hvad kan vi se?</p>
     </div>
-    <audio src="../../assets/sounds/session4/Session4_Page15.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session4/Page101.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">101</div>
   </div>
 </template>

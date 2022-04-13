@@ -10,7 +10,7 @@
       <p>Spørg dine venner hvad de tænker du kan gøre for at falde til ro. Lyt og svar, når de spørger dig.</p>
       <p>Husk - det er helt normalt at bekymre sig, det er hvad du vælger at gøre ved det, der kan være en ”thumbs-up” eller ”thumbs-down” valg.</p>
     </div>
-    <audio src="../../assets/sounds/session4/Session4_Page3.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session4/Page89.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">89</div>
   </div>
 </template>
@@ -23,14 +23,14 @@ export default {
   methods: {
     animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;
-      let animation = anime.timeline({easing: 'linear', duration: 500,});
+      let animation = anime.timeline({easing: 'linear', duration: 500});
       animation
-        .add({targets: text[1], opacity: 1}, 1)
-        .add({targets: text[2], opacity: 1,}, 1)
-        .add({targets: text[3], opacity: 1,}, 1)
-        .add({targets: text[4], opacity: 1,}, 1)
-        .add({targets: text[5], opacity: 1,}, 1)
-        .add({targets: text[6], opacity: 1,}, 1)
+        .add({targets: text[1], opacity: 1}, 3000)
+        .add({targets: text[2], opacity: 1}, 8100)
+        .add({targets: text[3], opacity: 1}, 15500)
+        .add({targets: text[4], opacity: 1}, 22200)
+        .add({targets: text[5], opacity: 1}, 30000)
+        .add({targets: text[6], opacity: 1}, 38000)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1)

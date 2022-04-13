@@ -5,7 +5,7 @@
       <h1>4. Smagssansen</h1>
       <p>Vi smager med vores tunge. Hvad kan vi smage?</p>
     </div>
-    <audio src="../../assets/sounds/session4/Session4_Page16.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session4/Page102.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">102</div>
   </div>
 </template>
