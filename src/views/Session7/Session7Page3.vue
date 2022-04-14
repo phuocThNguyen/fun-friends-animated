@@ -1150,31 +1150,13 @@ export default {
       let leftElements = document.getElementById('left-container').children;
       let rightElements = document.getElementById('right-container').children;
       let trophy = document.querySelector('.trophy-container');
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      })
+      let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({
-          targets: trophy,
-          opacity: 1
-        }, 3139)
-        .add({
-          targets: leftElements[5],
-          opacity: 1
-        }, 5000)
-        .add({
-          targets: rightElements[5],
-          opacity: 1
-        }, 5000)
-        .add({
-          targets: '.text-box',
-          opacity: 1
-        }, 5000)
-        .add({
-          targets: '.coordinate-container',
-          opacity: 1
-        }, 7000)
+        .add({targets: trophy, opacity: 1}, 3139)
+        .add({targets: leftElements[5], opacity: 1}, 5000)
+        .add({targets: rightElements[5], opacity: 1}, 5000)
+        .add({targets: '.text-box', opacity: 1}, 5000)
+        .add({targets: '.coordinate-container', opacity: 1}, 7000)
 
       anime({
         targets: '.button',
@@ -1234,7 +1216,7 @@ export default {
       ];
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

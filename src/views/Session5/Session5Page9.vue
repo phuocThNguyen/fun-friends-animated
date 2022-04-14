@@ -37,11 +37,11 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-        .add({targets: '.text-box', opacity: 1,}, 1)
-        .add({targets: text[0], opacity: 1}, 1)
-        .add({targets: text[1], opacity: 1}, 1)
-        .add({targets: text[2], opacity: 1}, 1)
-        .add({targets: text[3], opacity: 1}, 1)
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[0], opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 3900)
+        .add({targets: text[2], opacity: 1}, 9000)
+        .add({targets: text[3], opacity: 1}, 13400)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)

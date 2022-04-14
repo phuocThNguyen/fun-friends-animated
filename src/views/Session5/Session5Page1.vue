@@ -263,9 +263,9 @@ export default {
     animateText() {
       let animation = anime.timeline({easing: 'linear', duration: 1000});
       animation
-        .add({targets: ".title", opacity: 1}, 1)
-        .add({targets: "#line-1", opacity: 1}, 1)
-        .add({targets: "#line-2", opacity: 1}, 1);
+        .add({targets: ".title", opacity: 1}, 9800)
+        .add({targets: "#line-1", opacity: 1}, 16100)
+        .add({targets: "#line-2", opacity: 1}, 37200);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1)

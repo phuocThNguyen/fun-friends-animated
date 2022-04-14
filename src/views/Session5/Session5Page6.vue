@@ -108,10 +108,10 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({targets: '.text-box', opacity: 1}, 1)
-        .add({targets: text[0], opacity: 1}, 1)
-        .add({targets: text[1], opacity: 1}, 1)
-        .add({targets: '.traffic-light', opacity: 1}, 1);
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[0], opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 4900)
+        .add({targets: '.traffic-light', opacity: 1}, 8700);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1)

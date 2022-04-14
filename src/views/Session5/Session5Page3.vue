@@ -2,8 +2,7 @@
   <div class="interactive-container">
     <img src="../../assets/images/session5/447.jpg" alt="red" class="session-background">
     <div class="text-box">
-      <h1>At ændre "Røde" tanker til "Grønne" tanker</h1>
-      <p><strong>At begynde i en ny skole</strong></p>
+      <h1>At begynde i en ny skole</h1>
       <p>Mor følger Sille hen i sin nye skole.
         På dette billede føler hun sig trist og bange.
         Hvorfor tror du at hun føler sig trist og bange?
@@ -199,12 +198,11 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({targets: '.text-box', opacity: 1}, 1)
-        .add({targets: text[0], opacity: 1}, 1)
-        .add({targets: text[1], opacity: 1}, 1)
-        .add({targets: text[2], opacity: 1}, 1)
-        .add({targets: text[3], opacity: 1}, 1)
-        .add({targets: '.traffic-light', opacity: 1}, 1);
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[0], opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 3400)
+        .add({targets: text[2], opacity: 1}, 18500)
+        .add({targets: '.traffic-light', opacity: 1}, 22100);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1)

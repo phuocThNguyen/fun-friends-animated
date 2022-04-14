@@ -22,11 +22,11 @@ export default {
       let text = document.getElementsByClassName('text-box')[0].children;
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({targets: '.text-box', opacity: 1}, 1)
-        .add({targets: text[1], opacity: 1}, 1)
-        .add({targets: '#red', opacity: 1}, 1)
-        .add({targets: text[2], opacity: 1}, 1)
-        .add({targets: '#green', opacity: 1}, 1)
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 2700)
+        .add({targets: text[2], opacity: 1}, 8000)
+        .add({targets: '#red', opacity: 1}, 14800)
+        .add({targets: '#green', opacity: 1}, 19300)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1)

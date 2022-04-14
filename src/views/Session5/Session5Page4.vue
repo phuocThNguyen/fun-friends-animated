@@ -142,29 +142,14 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({
-          targets: '.text-box',
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[0],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[1],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[2],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: '.traffic-light',
-          opacity: 1
-        }, 14600);
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[0], opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 5700)
+        .add({targets: text[2], opacity: 1}, 8200)
+        .add({targets: '.traffic-light', opacity: 1}, 12600);
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500);
+      setTimeout(() => {this.$refs.voice.play()}, 1);
     },
   },
   mounted() {
