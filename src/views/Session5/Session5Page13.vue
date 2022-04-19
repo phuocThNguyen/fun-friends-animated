@@ -7,11 +7,11 @@
         og Ellas hoveder? Del minder om hvordan I havde det, da I prøvede
         noget nyt for første gang. </p>
       <p>Alle mennesker har ”røde” tanker når de skal prøve noget nyt.
-        Vi kan alle sammen prøve at udskifte vores ”røde” tanker med ”grønne” tanker. R
-        åb en ”grøn tanke” højt som får dig til at føle dig modig! </p>
+        Vi kan alle sammen prøve at udskifte vores ”røde” tanker med ”grønne” tanker.
+        Råb en ”grøn tanke” højt som får dig til at føle dig modig! </p>
     </div>
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
-    <audio src="../../assets/sounds/session5/Session5_Page14.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session5/Page123.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -41,10 +41,10 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
-        .add({targets: text[0], opacity: 1}, 1)
-        .add({targets: text[1], opacity: 1}, 1)
-        .add({targets: text[2], opacity: 1}, 1)
-        .add({targets: '.canvas', opacity: 1}, 1)
+        .add({targets: text[0], opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 4200)
+        .add({targets: text[2], opacity: 1}, 18700)
+        .add({targets: '.canvas', opacity: 1}, 33100)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1)

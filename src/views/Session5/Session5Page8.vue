@@ -7,7 +7,7 @@
         <br>Hvilke tanker kunne gå gennem dit hoved?</p>
       <p>Hvilke ”grønne” tanker kunne hjælpe dig til at føle dig glad og modig?</p>
     </div>
-    <audio src="../../assets/sounds/session5/Session5_Page8.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session5/Page118.mp3" ref="voice"/>
   </div>
 </template>
 

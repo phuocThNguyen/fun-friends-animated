@@ -809,7 +809,7 @@
       <p>&middot; Tro på dig selv.</p>
     </div>
     <audio autoplay loop src="../../assets/sounds/session1/Falling-Snow-Sound-Effect-Amplified.mp3"/>
-    <audio src="../../assets/sounds/session5/Session5_Page16.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session5/Page125.mp3" ref="voice"/>
     <div class="page-number" id="page-light">125</div>
   </div>
 </template>
@@ -845,15 +845,15 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({targets: ".text-box", opacity: 1}, 1)
-        .add({targets: text[1], opacity: 1}, 1)
-        .add({targets: text[2], opacity: 1}, 1)
-        .add({targets: text[3], opacity: 1}, 1)
-        .add({targets: text[4], opacity: 1}, 1)
-        .add({targets: text[5], opacity: 1}, 1)
-        .add({targets: text[6], opacity: 1}, 1)
-        .add({targets: text[7], opacity: 1}, 1)
-        .add({targets: text[8], opacity: 1}, 1)
+        .add({targets: ".text-box", opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 1900)
+        .add({targets: text[2], opacity: 1}, 10100)
+        .add({targets: text[3], opacity: 1}, 15400)
+        .add({targets: text[4], opacity: 1}, 28600)
+        .add({targets: text[5], opacity: 1}, 31500)
+        .add({targets: text[6], opacity: 1}, 34400)
+        .add({targets: text[7], opacity: 1}, 38200)
+        .add({targets: text[8], opacity: 1}, 42200)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1)

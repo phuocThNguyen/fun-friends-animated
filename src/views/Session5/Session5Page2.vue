@@ -8,7 +8,7 @@
     </div>
     <div class="light-box" id="red">Rød tanke</div>
     <div class="light-box" id="green">Grøn tanke</div>
-    <audio src="../../assets/sounds/session5/Session5_Page2.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session5/Page112.mp3" ref="voice"/>
   </div>
 </template>
 

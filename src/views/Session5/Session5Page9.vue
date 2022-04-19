@@ -7,7 +7,7 @@
       <p>Hvad mærker du i din krop og hvilke følelser oplever du?</p>
       <p>Hvilke ”grønne” tanker kunne hjælpe dig til at føle dig glad og modig?</p>
     </div>
-    <audio src="../../assets/sounds/session5/Session5_Page9.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session5/Page119.mp3" ref="voice"/>
   </div>
 </template>
 

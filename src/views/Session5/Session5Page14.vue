@@ -1,7 +1,7 @@
 <template>
   <div class="interactive-container">
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
-    <audio src="../../assets/sounds/session5/Session5_Page15.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session5/Page124.mp3" ref="voice"/>
   </div>
 </template>
 

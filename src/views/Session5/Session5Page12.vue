@@ -9,7 +9,7 @@
         Hvilke(n) grønne tanke(r) ville kunne hjælpe dem til at
         hygge sig imens de leger sammen?</p>
     </div>
-    <audio src="../../assets/sounds/session5/Session5_Page12.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session5/Page122.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -39,10 +39,9 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-        .add({targets: '.text-box', opacity: 1}, 1)
-        .add({targets: text[0], opacity: 1}, 1)
-        .add({targets: text[1], opacity: 1}, 1)
-        .add({targets: text[2], opacity: 1}, 1)
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[0], opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 10800)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1)

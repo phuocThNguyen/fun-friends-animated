@@ -6,7 +6,7 @@
       <p>Hvad mærker du i din krop og hvilke følelser oplever du?</p>
       <p>Hvilke ”grønne” tanker kunne hjælpe dig til at føle dig glad og modig?</p>
     </div>
-    <audio src="../../assets/sounds/session5/Session5_Page10.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session5/Page120.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -36,10 +36,10 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
-        .add({targets: '.text-box', opacity: 1}, 1)
-        .add({targets: text[0], opacity: 1}, 1)
-        .add({targets: text[1], opacity: 1}, 1)
-        .add({targets: text[2], opacity: 1}, 1)
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[0], opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 5000)
+        .add({targets: text[2], opacity: 1}, 9200)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1)

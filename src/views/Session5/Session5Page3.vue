@@ -161,7 +161,7 @@
     </svg>
     <audio src="../../assets/sounds/all/Great_work.mp3" ref="greatWork"/>
     <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
-    <audio src="../../assets/sounds/session5/Session5_Page3.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session5/Page113.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">113</div>
   </div>
 </template>

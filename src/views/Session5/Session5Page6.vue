@@ -71,7 +71,7 @@
     </svg>
     <audio src="../../assets/sounds/all/Well_Done.mp3" ref="wellDone"/>
     <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
-    <audio src="../../assets/sounds/session5/Session5_Page6.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session5/Page116.mp3" ref="voice"/>
     <div class="page-number" id="page-light">116</div>
   </div>
 </template>

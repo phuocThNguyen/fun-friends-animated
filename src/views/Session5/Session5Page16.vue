@@ -817,7 +817,7 @@
       <img class="action-image" src="../../assets/images/session1/thank-you.jpg" alt="thank-you">
     </div>
     <audio autoplay loop src="../../assets/sounds/session1/Falling-Snow-Sound-Effect-Amplified.mp3"/>
-    <audio src="../../assets/sounds/session5/Session5_Page17.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session5/Page126.mp3" ref="voice"/>
     <div class="page-number" id="page-light">126</div>
   </div>
 </template>
