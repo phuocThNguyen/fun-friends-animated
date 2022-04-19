@@ -204,7 +204,7 @@
       <br>vil gøre at vores dag føles lettere.</p>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3"/>
-    <audio src="../../assets/sounds/session6/Session6_Page1.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session6/Page128.mp3" ref="voice"/>
     <div class="page-number" id="page-light">128</div>
   </div>
 </template>
@@ -259,23 +259,11 @@ export default {
       })
     },
     animateText() {
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 1000,
-      });
+      let animation = anime.timeline({easing: 'linear', duration: 1000});
       animation
-        .add({
-          targets: ".title",
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: "#line-1",
-          opacity: 1
-        }, 1)
-        .add({
-          targets: "#line-2",
-          opacity: 1
-        }, 1)
+        .add({targets: ".title", opacity: 1}, 8600)
+        .add({targets: "#line-1", opacity: 1}, 14500)
+        .add({targets: "#line-2", opacity: 1}, 34500)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)

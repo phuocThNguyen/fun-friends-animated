@@ -119,7 +119,7 @@
         </g>
       </g>
     </svg>
-    <audio src="../../assets/sounds/session6/Session6_Page6.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session6/Page133.mp3" ref="voice"/>
     <div class="page-number" id="page-light">133</div>
   </div>
 </template>
@@ -132,35 +132,14 @@ export default {
   methods: {
     animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500
-      })
+      let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({
-          targets: text[1],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[2],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: '#top',
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[3],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: '#bottom',
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[4],
-          opacity: 1
-        }, 1);
+        .add({targets: text[1], opacity: 1}, 6700)
+        .add({targets: text[2], opacity: 1}, 21600)
+        .add({targets: '#top', opacity: 1}, 22300)
+        .add({targets: text[3], opacity: 1}, 25000)
+        .add({targets: '#bottom', opacity: 1}, 32100)
+        .add({targets: text[4], opacity: 1}, 37100);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)

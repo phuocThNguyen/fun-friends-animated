@@ -1,13 +1,18 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>At vælge ”Røde” eller ”Grønne” tanker: At møde en ny lærer</h1>
-      <p>Niels skal til at møde sin nye lærer. Lad os forestille os, at du er Niels.</p>
-      <p>Tal med dem du er sammen med om alle de tanker der går igennem Niels’ hoved.</p>
-      <p>Del nogle ”røde” tanker der gør dig bekymret og bange?</p>
-      <p>Del nogle ”grønne” tanker der vil kunne gøre din dag mere glad og overskuelig.</p>
-      <p>Grønne tanker hjælper os med,
-        <br>at prøve på at gøre vores bedste.</p>
+      <h1>At vælge ”Røde” eller ”Grønne” tanker: At sove i sin egen seng</h1>
+      <p>Mathilde skal til at sove i sin egen seng for første gang.</p>
+      <p>Prøv at falde til ro, for eksempel ved at lukke dine
+        øjne i. Forestil dig nu at du er Mathilde. Hvilke ”røde”
+        tanker og ”grønne” tanker mon der kører igennem dit
+        hoved?</p>
+      <p>Husk at alle tanker er OK! Hvisk dine tanker til en ven(inde).</p>
+      <p>Gå sammen og tal om hvilke tanker der ville kunne
+        hjælpe Mathilde til bedre at kunne finde ro og falde i
+        søvn.</p>
+      <p>Vi er herre over vores egne tanker.
+        <br>Vi kan vælge at tænke grønne tanker.</p>
     </div>
     <img src="../../assets/images/session5/86.jpg" alt="red" class="images" id="image-top">
     <img src="../../assets/images/session5/85693.jpg" alt="green" class="images" id="image-bottom">
@@ -115,7 +120,7 @@
         </g>
       </g>
     </svg>
-    <audio src="../../assets/sounds/session6/Session6_Page3.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session6/Page130.mp3" ref="voice"/>
     <div class="page-number" id="page-light">130</div>
   </div>
 </template>
@@ -128,42 +133,18 @@ export default {
   methods: {
     animateElements() {
       let text = document.getElementsByClassName('text-box')[0].children;
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      })
+      let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({
-          targets: text[1],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[2],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: '#top',
-          opacity: 1
-        }, 1)
-        .add({
-          targets: '#bottom',
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[3],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[4],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[5],
-          opacity: 1,
-        }, 1)
+        .add({targets: text[1], opacity: 1}, 5900)
+        .add({targets: text[2], opacity: 1}, 11000)
+        .add({targets: '#top', opacity: 1}, 20000)
+        .add({targets: '#bottom', opacity: 1}, 21500)
+        .add({targets: text[3], opacity: 1}, 25300)
+        .add({targets: text[4], opacity: 1}, 31900)
+        .add({targets: text[5], opacity: 1}, 40700)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

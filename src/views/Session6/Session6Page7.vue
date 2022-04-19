@@ -188,7 +188,7 @@
     <audio src="../../assets/sounds/all/Very_Good.mp3" ref="veryGood"/>
     <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
     <audio src="../../assets/sounds/all/Correct_2.mp3" ref="correctVoice"/>
-    <audio src="../../assets/sounds/session6/Session6_Page7.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session6/Page134.mp3" ref="voice"/>
     <div class="page-number" id="page-light">134</div>
   </div>
 </template>
@@ -209,27 +209,12 @@ export default {
   methods: {
     animateElements() {
       let text = document.getElementsByClassName('text-box')[0].children;
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      })
+      let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({
-          targets: text[1],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[2],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: '#question-1',
-          opacity: 1
-        }, 1)
-        .add({
-          targets: '#question-2',
-          opacity: 1
-        })
+        .add({targets: text[1], opacity: 1}, 6200)
+        .add({targets: text[2], opacity: 1}, 13700)
+        .add({targets: '#question-1', opacity: 1}, 18300)
+        .add({targets: '#question-2', opacity: 1})
     },
     handleClick(e) {
       let targetThumb = e.target.id;
@@ -308,7 +293,7 @@ export default {
       }
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

@@ -720,7 +720,7 @@
         </p>
       </div>
     </div>
-    <audio src="../../assets/sounds/session6/Session6_Page11.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session6/Page138.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">138</div>
   </div>
 </template>

@@ -709,7 +709,7 @@
       <p>&middot; Tro på dig selv.</p>
     </div>
     <audio autoplay loop src="../../assets/sounds/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"></audio>
-    <audio src="../../assets/sounds/session6/Session6_Page9.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session6/Page136.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">136</div>
   </div>
 </template>
@@ -736,50 +736,20 @@ export default {
     },
     animateText() {
       let text = document.querySelector('.text-box').children;
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      })
+      let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({
-          targets: ".text-box",
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[1],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[2],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[3],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[4],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[5],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[6],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[7],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[8],
-          opacity: 1,
-        }, 1)
+        .add({targets: ".text-box", opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 2200)
+        .add({targets: text[2], opacity: 1}, 9600)
+        .add({targets: text[3], opacity: 1}, 16400)
+        .add({targets: text[4], opacity: 1}, 20600)
+        .add({targets: text[5], opacity: 1}, 26000)
+        .add({targets: text[6], opacity: 1}, 29400)
+        .add({targets: text[7], opacity: 1}, 33700)
+        .add({targets: text[8], opacity: 1}, 38200)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {
