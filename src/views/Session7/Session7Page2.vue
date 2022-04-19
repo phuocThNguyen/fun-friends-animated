@@ -996,7 +996,7 @@
         på at gøre det!</p>
     </div>
     <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"/>
-    <audio src="../../assets/sounds/session7/Session7_Page2.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session7/Page140.mp3" ref="voice"/>
     <div class="page-number" id="page-light">140</div>
   </div>
 </template>
@@ -1011,9 +1011,9 @@ export default {
       let text = document.getElementsByClassName('text-box')[0].children;
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({targets: '.text-box', opacity: 1}, 1)
-        .add({targets: text[0], opacity: 1}, 1)
-        .add({targets: text[1], opacity: 1}, 1);
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[0], opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 29100);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1)

@@ -1123,12 +1123,12 @@
       <div class="button-label">Næste Trin</div>
     </div>
     <audio ref="sound" src="../../assets/sounds/session7/click-sound.mp3"/>
-    <audio src="../../assets/sounds/session7/Session7_Page12-region-1.mp3" ref="step1"/>
-    <audio src="../../assets/sounds/session7/Session7_Page12-region-2.mp3" ref="step2"/>
-    <audio src="../../assets/sounds/session7/Session7_Page12-region-3.mp3" ref="step3"/>
-    <audio src="../../assets/sounds/session7/Session7_Page12-region-4.mp3" ref="step4"/>
-    <audio src="../../assets/sounds/session7/Session7_Page12-region-5.mp3" ref="step5"/>
-    <audio src="../../assets/sounds/session7/Session7_Page12.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session7/Page151step1.mp3" ref="step1"/>
+    <audio src="../../assets/sounds/session7/Page151step2.mp3" ref="step2"/>
+    <audio src="../../assets/sounds/session7/Page151step3.mp3" ref="step3"/>
+    <audio src="../../assets/sounds/session7/Page151step4.mp3" ref="step4"/>
+    <audio src="../../assets/sounds/session7/Page151step5.mp3" ref="step5"/>
+    <audio src="../../assets/sounds/session7/Page151intro.mp3" ref="voice"/>
     <div class="page-number" id="page-dark" style="left: 25vh !important;">151</div>
   </div>
 </template>
@@ -1143,11 +1143,11 @@ export default {
       step: 0,
       stepVoiceArray: null,
       timingArray: [
-        [800, 7100, 9700, 13200],
-        [800, 9000, 11700, 15000],
-        [700, 7200, 9600, 12600],
-        [900, 8700, 11500, 14700],
-        [800, 5800, 8400, 12300]]
+        [1000, 9500, 12900, 16500],
+        [1000, 15500, 18700, 22500],
+        [1000, 8500, 11400, 14500],
+        [1000, 10700, 14200, 17800],
+        [1000, 7000, 10000, 13100]]
     }
   },
   methods: {
@@ -1156,31 +1156,13 @@ export default {
       let rightElements = document.getElementById('right-container').children;
       let trophy = document.querySelector('.trophy-container');
 
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      })
+      let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({
-          targets: trophy,
-          opacity: 1
-        }, 2000)
-        .add({
-          targets: leftElements[5],
-          opacity: 1
-        }, 4000)
-        .add({
-          targets: rightElements[5],
-          opacity: 1
-        }, 4000)
-        .add({
-          targets: '.text-box',
-          opacity: 1
-        }, 4000)
-        .add({
-          targets: '.coordinate-container',
-          opacity: 1
-        }, 4500)
+        .add({targets: trophy, opacity: 1}, 2400)
+        .add({targets: leftElements[5], opacity: 1}, 4000)
+        .add({targets: rightElements[5], opacity: 1}, 4000)
+        .add({targets: '.text-box', opacity: 1}, 4000)
+        .add({targets: '.coordinate-container', opacity: 1}, 5800)
 
       anime({
         targets: '.button',

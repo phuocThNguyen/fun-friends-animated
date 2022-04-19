@@ -1118,12 +1118,12 @@
       <div class="button-label">Næste Trin</div>
     </div>
     <audio ref="sound" src="../../assets/sounds/session7/click-sound.mp3"/>
-    <audio src="../../assets/sounds/session7/Session7_Page3-region-1.mp3" ref="step1"/>
-    <audio src="../../assets/sounds/session7/Session7_Page3-region-2.mp3" ref="step2"/>
-    <audio src="../../assets/sounds/session7/Session7_Page3-region-3.mp3" ref="step3"/>
-    <audio src="../../assets/sounds/session7/Session7_Page3-region-4.mp3" ref="step4"/>
-    <audio src="../../assets/sounds/session7/Session7_Page3-region-5.mp3" ref="step5"/>
-    <audio src="../../assets/sounds/session7/Session7_Page3.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session7/Page141step1.mp3" ref="step1"/>
+    <audio src="../../assets/sounds/session7/Page141step2.mp3" ref="step2"/>
+    <audio src="../../assets/sounds/session7/Page141step3.mp3" ref="step3"/>
+    <audio src="../../assets/sounds/session7/Page141step4.mp3" ref="step4"/>
+    <audio src="../../assets/sounds/session7/Page141step5.mp3" ref="step5"/>
+    <audio src="../../assets/sounds/session7/Page141intro.mp3" ref="voice"/>
     <div class="page-number" id="page-dark" style="left: 25vh !important;">141</div>
   </div>
 </template>
@@ -1138,11 +1138,11 @@ export default {
       step: 0,
       stepVoiceArray: null,
       timingArray: [
-        [935, 6363, 10183, 13322],
-        [946, 5174, 8038, 11670],
-        [1071, 7694, 10643, 13744],
-        [986, 5892, 8607, 11380],
-        [974, 5341, 8380, 11410]]
+        [1000, 5200, 8700, 12500],
+        [1000, 5400, 9300, 13500],
+        [1000, 8500, 11500, 14500],
+        [1000, 6200, 10300, 14300],
+        [1000, 5400, 8700, 12200]]
     }
   },
   methods: {
@@ -1152,11 +1152,11 @@ export default {
       let trophy = document.querySelector('.trophy-container');
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({targets: trophy, opacity: 1}, 3139)
+        .add({targets: trophy, opacity: 1}, 2800 )
         .add({targets: leftElements[5], opacity: 1}, 5000)
         .add({targets: rightElements[5], opacity: 1}, 5000)
         .add({targets: '.text-box', opacity: 1}, 5000)
-        .add({targets: '.coordinate-container', opacity: 1}, 7000)
+        .add({targets: '.coordinate-container', opacity: 1}, 6800)
 
       anime({
         targets: '.button',

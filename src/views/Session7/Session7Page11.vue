@@ -827,7 +827,7 @@
       <p>Vis en ven(inde) de trin du har fundet på og bed ham/hende om at vise de trin
         han/hun har fundet på.</p>
     </div>
-    <audio src="../../assets/sounds/session7/Session7_Page11.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session7/Page149.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">149</div>
   </div>
 </template>
@@ -909,19 +909,16 @@ export default {
     },
     animateText() {
       let text = document.querySelector('.text-box').children;
-      let animation = anime.timeline({
-        duration: 500,
-        easing: 'linear'
-      })
+      let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-        .add({targets: '.text-box',opacity: 1}, 1)
-        .add({targets: text[1],opacity: 1}, 1)
-        .add({targets: text[2],opacity: 1}, 1)
-        .add({targets: text[3],opacity: 1}, 1)
-        .add({targets: text[4],opacity: 1}, 1)
+        .add({targets: '.text-box',opacity: 1}, 500)
+        .add({targets: text[1],opacity: 1}, 4300)
+        .add({targets: text[2],opacity: 1}, 11000)
+        .add({targets: text[3],opacity: 1}, 44200)
+        .add({targets: text[4],opacity: 1}, 53600)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

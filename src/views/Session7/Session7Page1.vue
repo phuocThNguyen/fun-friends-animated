@@ -203,7 +203,7 @@
     </p>
 
     <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3"/>
-    <audio src="../../assets/sounds/session7/Session7_Page1.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session7/Page139.mp3" ref="voice"/>
     <div class="page-number" id="page-light">139</div>
   </div>
 </template>
@@ -260,9 +260,9 @@ export default {
     animateText() {
       let animation = anime.timeline({easing: 'linear', duration: 500});
       animation
-        .add({targets: ".title", opacity: 1}, 1)
-        .add({targets: "#line-1", opacity: 1}, 1)
-        .add({targets: "#line-2", opacity: 1}, 1)
+        .add({targets: ".title", opacity: 1}, 7700)
+        .add({targets: "#line-1", opacity: 1}, 13200)
+        .add({targets: "#line-2", opacity: 1}, 20000)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1)

@@ -732,11 +732,7 @@ export default {
   name: 'Session6Page11',
   methods: {
     animateElements() {
-      let animation = anime.timeline({
-        duration: 500,
-        delay: 500,
-        easing: 'linear'
-      });
+      let animation = anime.timeline({duration: 500, delay: 500, easing: 'linear'});
       animation
         .add({
           targets: '.star-container',

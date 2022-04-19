@@ -442,7 +442,7 @@
         </p>
       </div>
     </div>
-    <audio src="../../assets/sounds/session7/Session7_Page17.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session7/Page156.mp3" ref="voice"/>
     <div class="page-number" id="page-light">156</div>
   </div>
 </template>

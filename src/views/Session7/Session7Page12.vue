@@ -260,7 +260,7 @@
     </div>
     <Modal class="modal" text="Tryk på trofæet, tankeboblerne og felterne for at skrive dine idéer!"/>
     <audio ref="audio" loop src="../../assets/sounds/children-background-music/snack-time-the-green-orbs-children-s-music-no-copyright-music.mp3"/>
-    <audio src="../../assets/sounds/session7/Session7_Page10.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session7/Page150.mp3" ref="voice"/>
     <div class="page-number" id="page-dark" style="left: 30vh !important;">150</div>
   </div>
 </template>
@@ -279,22 +279,19 @@ export default {
       let bubble = document.querySelectorAll('.bubble-container');
       let plan = document.querySelectorAll('.plans');
       setTimeout(() =>{document.querySelector('.modal').style.visibility = 'hidden'}, 6000);
-      let animation = anime.timeline({
-        duration: 500,
-        easing: 'linear'
-      })
+      let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-          .add({targets: helper, opacity: 1}, 6300)
-          .add({targets: plan, opacity: 1}, 10100)
-          .add({targets: trophy, opacity: 1}, 13300)
-          .add({targets: bubble, opacity: 1}, 16800)
-          .add({targets: reward, opacity: 1}, 21500)
+        .add({targets: helper, opacity: 1}, 6600)
+        .add({targets: plan, opacity: 1}, 10700)
+        .add({targets: trophy, opacity: 1}, 15000)
+        .add({targets: bubble, opacity: 1}, 18500)
+        .add({targets: reward, opacity: 1}, 22900)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

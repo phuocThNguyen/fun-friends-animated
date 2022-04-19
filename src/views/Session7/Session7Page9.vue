@@ -220,7 +220,7 @@
       <p>Det kan føles lidt nemmere, når vi deler det op i mindre og mere
         overskuelige bidder/trin/skridt.</p>
     </div>
-    <audio src="../../assets/sounds/session7/Session7_Page9.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session7/Page147.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">147</div>
   </div>
 </template>
@@ -235,14 +235,14 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-        .add({targets: '.text-box',opacity: 1}, 200)
+        .add({targets: '.text-box',opacity: 1}, 500)
         .add({targets: text[0],opacity: 1}, 500)
-        .add({targets: text[1],opacity: 1}, 8500)
-        .add({targets: text[2],opacity: 1}, 11800)
-        .add({targets: text[3],opacity: 1}, 16500)
+        .add({targets: text[1],opacity: 1}, 17300)
+        .add({targets: text[2],opacity: 1}, 21800)
+        .add({targets: text[3],opacity: 1}, 27400)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

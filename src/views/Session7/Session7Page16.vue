@@ -442,7 +442,7 @@
       <p>&middot; Tro på dig selv.</p>
     </div>
     <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"/>
-    <audio src="../../assets/sounds/session7/Session7_Page15.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session7/Page154.mp3" ref="voice"/>
     <div class="page-number" id="page-light">154</div>
   </div>
 </template>
@@ -455,51 +455,18 @@ export default {
   methods: {
     animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500
-      })
+      let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({
-          targets: '.text-box',
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[1],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[2],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[3],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[4],
-          opacity: 1,
-        }, 1)
-        .add({
-          targets: text[5],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[6],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[7],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[8],
-          opacity: 1
-        }, 1)
-        .add({
-          targets: text[9],
-          opacity: 1
-        }, 1)
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 2300)
+        .add({targets: text[2], opacity: 1}, 24400)
+        .add({targets: text[3], opacity: 1}, 45000)
+        .add({targets: text[4], opacity: 1}, 69600)
+        .add({targets: text[5], opacity: 1}, 79300)
+        .add({targets: text[6], opacity: 1}, 83600)
+        .add({targets: text[7], opacity: 1}, 86700)
+        .add({targets: text[8], opacity: 1}, 90500)
+        .add({targets: text[9], opacity: 1}, 94400)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
