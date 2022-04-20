@@ -996,7 +996,7 @@
       <p>&middot; Prøv at gøre dit bedste og give tingene et forsøg.</p>
       <p>&middot; Tro på dig selv.</p>
     </div>
-    <audio src="../../assets/sounds/session9/Session9_Page12.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session9/Page184.mp3" ref="voice"/>
     <div class="page-number" id="page-light">184</div>
   </div>
 </template>
@@ -1011,16 +1011,16 @@ export default {
       let text = document.getElementsByClassName('text-box')[0].children;
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({targets: '.text-box', opacity: 1}, 1)
-        .add({targets: text[1], opacity: 1}, 1)
-        .add({targets: text[2], opacity: 1}, 1)
-        .add({targets: text[3], opacity: 1}, 1)
-        .add({targets: text[4], opacity: 1}, 1)
-        .add({targets: text[5], opacity: 1}, 1)
-        .add({targets: text[6], opacity: 1}, 1)
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 2100)
+        .add({targets: text[2], opacity: 1}, 8400)
+        .add({targets: text[3], opacity: 1}, 11100)
+        .add({targets: text[4], opacity: 1}, 14000)
+        .add({targets: text[5], opacity: 1}, 17700)
+        .add({targets: text[6], opacity: 1}, 21700)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

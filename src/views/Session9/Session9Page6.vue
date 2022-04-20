@@ -15,7 +15,7 @@
       <img src="../../assets/images/session9/623020-PNWBO6-422.jpg" alt="Tom-reward">
       <p id="para-2">Jakobs belønning <br>Hyggestunder med sin Far</p>
     </div>
-    <audio src="../../assets/sounds/session9/Session9_Page6.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session9/Page178.mp3" ref="voice"/>
     <div class="page-number" id="page-light">178</div>
   </div>
 </template>
@@ -31,15 +31,14 @@ export default {
       let images = document.querySelectorAll('.image-container');
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({targets: text[1], opacity: 1}, 1)
-        .add({targets: text[2], opacity: 1}, 1)
-        .add({targets: text[3], opacity: 1}, 1)
-        .add({targets: text[4], opacity: 1}, 1)
-        .add({targets: images[0], opacity: 1}, 1)
-        .add({targets: images[1], opacity: 1}, 1)
+        .add({targets: text[1], opacity: 1}, 2900)
+        .add({targets: text[2], opacity: 1}, 11000)
+        .add({targets: text[3], opacity: 1}, 15500)
+        .add({targets: images[0], opacity: 1}, 20800)
+        .add({targets: images[1], opacity: 1}, 26000)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

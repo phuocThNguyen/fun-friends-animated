@@ -8,7 +8,7 @@
       <img src="../../assets/images/session9/3100.jpg" alt="Annie">
       <p>Jakobs belønning <br>En sjov køretur</p>
     </div>
-    <audio src="../../assets/sounds/session9/Session9_Page7.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session9/Page179.mp3" ref="voice"/>
     <div class="page-number" id="page-light">179</div>
   </div>
 </template>
@@ -21,15 +21,15 @@ export default {
   methods: {
     animateText() {},
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {
     let images = document.querySelectorAll('.image-container');
     let animation = anime.timeline({easing: 'linear', duration: 500})
     animation
-      .add({targets: images[0], opacity: 1}, 800)
-      .add({targets: images[1], opacity: 1}, 4100)
+      .add({targets: images[0], opacity: 1}, 500)
+      .add({targets: images[1], opacity: 1}, 5000)
     this.playVoiceOver();
   }
 }

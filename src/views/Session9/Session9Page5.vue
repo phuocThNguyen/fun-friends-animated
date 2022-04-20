@@ -2299,7 +2299,7 @@
       <p>Hvilke modige ting tror du Mia prøver at gøre?</p>
       <p>Hvordan kan du prøve at øve dig på at være modig?</p>
     </div>
-    <audio src="../../assets/sounds/session9/Session9_Page5.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session9/Page177.mp3" ref="voice"/>
     <div class="page-number" id="page-light">177</div>
   </div>
 </template>
@@ -2316,11 +2316,10 @@ export default {
       animation
         .add({targets: '.text-box', opacity: 1}, 500)
         .add({targets: text[0], opacity: 1}, 900)
-        .add({targets: text[1], opacity: 1}, 5500)
-        .add({targets: text[2], opacity: 1}, 8900)
+        .add({targets: text[1], opacity: 1}, 5100)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

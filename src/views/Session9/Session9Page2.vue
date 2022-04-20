@@ -623,7 +623,7 @@
         have gjort dit bedste, såsom at tage <br>ud i naturen, spille bold,
         eller at spise mad i det <br>fri sammen med din familie.</span>
     </div>
-    <audio src="../../assets/sounds/session9/Session9_Page2.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session9/Page174.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">174</div>
   </div>
 </template>
@@ -638,12 +638,12 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-        .add({targets: '.text-box', opacity: 0.9}, 200)
+        .add({targets: '.text-box', opacity: 0.9}, 500)
         .add({targets: text[0], color: '#000'}, 500)
-        .add({targets: text[1], color: '#000'}, 4000)
+        .add({targets: text[1], color: '#000'}, 4800)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

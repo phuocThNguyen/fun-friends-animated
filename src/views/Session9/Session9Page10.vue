@@ -8,7 +8,7 @@
       <img src="../../assets/images/session9/swimming_lake_children.jpg" alt="swimming">
       <p id="para-2">At svømme i søen</p>
     </div>
-    <audio src="../../assets/sounds/session9/Session9_Page10.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session9/Page182.mp3" ref="voice"/>
     <div class="page-number" id="page-light">182</div>
   </div>
 </template>
@@ -23,11 +23,11 @@ export default {
       let images = document.querySelectorAll('.image-container');
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({targets: images[0], opacity: 1}, 1)
-        .add({targets: images[1], opacity: 1}, 1)
+        .add({targets: images[0], opacity: 1}, 500)
+        .add({targets: images[1], opacity: 1}, 3300)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

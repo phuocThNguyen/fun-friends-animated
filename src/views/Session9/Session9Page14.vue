@@ -1015,7 +1015,7 @@
         </p>
       </div>
     </div>
-    <audio src="../../assets/sounds/session9/Session9_Page14.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session9/Page186.mp3" ref="voice"/>
     <div class="page-number" id="page-light">186</div>
   </div>
 </template>
@@ -1035,7 +1035,7 @@ export default {
         })
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 1500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {
