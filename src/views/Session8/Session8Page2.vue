@@ -7,7 +7,7 @@
         hun / han gør som du synes er omsorgsfuldt og venligt.</p>
       <p>Det kan være hun / han smiler, deler, hjælper, lytter eller griner?</p>
     </div>
-    <audio src="../../assets/sounds/session8/Session8_Page2.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session8/Page158.mp3" ref="voice"/>
     <div class="page-number" id="page-light">158</div>
   </div>
 </template>
@@ -25,12 +25,12 @@ export default {
         easing: 'linear'
       })
       animation
-        .add({targets: '.text-box',opacity: 1}, 1)
-        .add({targets: text[0],opacity: 1}, 1)
-        .add({targets: text[1],opacity: 1}, 1)
+        .add({targets: '.text-box',opacity: 1}, 500)
+        .add({targets: text[0],opacity: 1}, 500)
+        .add({targets: text[1],opacity: 1}, 15500)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

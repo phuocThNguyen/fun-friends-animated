@@ -13,7 +13,7 @@
         ”røde” eller ”grønne” handlinger?</span></p>
     </div>
     <audio autoplay ref="audio" src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
-    <audio src="../../assets/sounds/session8/Session8_Page11.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session8/Page167.mp3" ref="voice"/>
     <div class="page-number" id="page-light">167</div>
   </div>
 </template>
@@ -28,17 +28,17 @@ export default {
       let text = document.querySelector('.text').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-        .add({targets: '.text-box', opacity: 0.9}, 1)
-        .add({targets: text[0], color: '#000'}, 1)
-        .add({targets: text[1], color: '#000'}, 1)
-        .add({targets: text[2], color: '#000'}, 1)
-        .add({targets: text[3], color: '#000'}, 1)
+        .add({targets: '.text-box', opacity: 0.9}, 500)
+        .add({targets: text[0], color: '#000'}, 6000)
+        .add({targets: text[1], color: '#000'}, 16200)
+        .add({targets: text[2], color: '#000'}, 28400)
+        .add({targets: text[3], color: '#000'}, 40600)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

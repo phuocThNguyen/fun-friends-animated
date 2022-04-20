@@ -1,7 +1,6 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>Erika er på ferie</h1>
       <p>Erika er lige kommet hjem fra badeferie. Her er nogle billeder.</p>
       <p>Hvad tror du Erika lavede imens hun var på ferie?</p>
       <p>Hvad kan du gøre eller sige, for at vise at du er glad på Erikas vegne?</p>
@@ -9,7 +8,7 @@
     <img src="../../assets/images/session8/135407-OSAV2U-882.jpg" alt="Annie" class="images">
     <img src="../../assets/images/session8/135348-OSAU2M-875.jpg" alt="family" class="images">
     <audio autoplay loop src="../../assets/sounds/session1/beach-sound.mp3" ref="audio"/>
-    <audio src="../../assets/sounds/session8/Session8_Page4.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session8/Page160.mp3" ref="voice"/>
     <div class="page-number" id="page-light">160</div>
   </div>
 </template>
@@ -24,13 +23,12 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({easing: 'linear', duration: 500});
       animation
-        .add({targets: text[1], opacity: 1}, 1)
-        .add({targets: text[2], opacity: 1}, 1)
-        .add({targets: text[3], opacity: 1}, 1)
-        .add({targets: text[4], opacity: 1}, 1)
+        .add({targets: text[0], opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 6200)
+        .add({targets: text[2], opacity: 1}, 11000)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;

@@ -864,7 +864,7 @@
       <span>Sammen med en fra <br>klassen kan du finde på en Trappestige Plan I kan
         <br>bruge til at få nye venner sammen.</span>
     </div>
-    <audio src="../../assets/sounds/session8/Session8_Page6.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session8/Page162.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">162</div>
   </div>
 </template>
@@ -893,13 +893,13 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-        .add({targets: '.text-box',opacity: 1}, 1)
-        .add({targets: text[0],color: '#000'}, 1)
-        .add({targets: text[1],color: '#000'}, 1)
-        .add({targets: text[2],color: '#000'}, 1)
+        .add({targets: '.text-box',opacity: 1}, 500)
+        .add({targets: text[0],color: '#000'}, 500)
+        .add({targets: text[1],color: '#000'}, 5600)
+        .add({targets: text[2],color: '#000'}, 10400)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

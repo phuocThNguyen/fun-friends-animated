@@ -157,7 +157,7 @@
     <audio src="../../assets/sounds/all/Correct_1.mp3" ref="correctVoice"/>
     <audio src="../../assets/sounds/all/Well_Done.mp3" ref="wellDone"/>
     <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
-    <audio src="../../assets/sounds/session8/Session8_Page13.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session8/Page169.mp3" ref="voice"/>
     <div class="page-number" id="page-light">169</div>
   </div>
 </template>
@@ -179,8 +179,8 @@ export default {
       let questions = document.querySelectorAll('.text');
       let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
-        .add({targets: questions[0], opacity: 1}, 1)
-        .add({targets: questions[1], opacity: 1}, 1)
+        .add({targets: questions[0], opacity: 1}, 7300)
+        .add({targets: questions[1], opacity: 1}, 11400)
     },
     handleClick(e) {
       let targetThumb = e.target.id;
@@ -259,7 +259,7 @@ export default {
       }
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

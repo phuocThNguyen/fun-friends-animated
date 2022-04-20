@@ -10,7 +10,7 @@
       <p>&bull;&nbsp;&nbsp;være MODIG og tal med en ny person</p>
       <p>&bull;&nbsp;&nbsp;tegne en glad tegning og gi’ det til din ny ven(inde) næste gang I ses.</p>
     </div>
-    <audio src="../../assets/sounds/session8/Session8_Page10.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session8/Page166.mp3" ref="voice"/>
     <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3"></audio>
   </div>
 </template>
@@ -41,18 +41,18 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-        .add({targets: '.text-box',opacity: 1}, 1)
-        .add({targets: text[0],opacity: 1}, 1)
-        .add({targets: '.canvas',opacity: 1}, 1)
-        .add({targets: text[1],opacity: 1}, 1)
-        .add({targets: text[2],opacity: 1}, 1)
-        .add({targets: text[3],opacity: 1}, 1)
+        .add({targets: '.text-box',opacity: 1}, 500)
+        .add({targets: text[0],opacity: 1}, 500)
+        .add({targets: '.canvas',opacity: 1}, 10000)
+        .add({targets: text[1],opacity: 1}, 16100)
+        .add({targets: text[2],opacity: 1}, 24000)
+        .add({targets: text[3],opacity: 1}, 27200)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

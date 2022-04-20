@@ -196,7 +196,7 @@
         </p>
       </div>
     </div>
-    <audio src="../../assets/sounds/session8/Session8_Page16.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session8/Page172.mp3" ref="voice"/>
     <div class="page-number" id="page-light">172</div>
   </div>
 </template>
@@ -212,7 +212,7 @@ export default {
       animation.add({targets: '.star-container', opacity: 1})
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 1500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

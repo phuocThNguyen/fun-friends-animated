@@ -2,12 +2,11 @@
   <div class="interactive-container">
     <img src="../../assets/images/session8/33261.jpg" alt="Tom" class="session-background">
     <div class="text-box">
-      <h1>Eske falder af cyklen</h1>
       <p>Eske er faldet af sin cykel. Han har kun lige lært at cykle uden støttehjul.</p>
       <p>Hvordan tror du han har det? Hvilke følelser oplever han?</p>
       <p>Hvad kan du gøre for at være en omsorgsfuld ven overfor Eske?</p>
     </div>
-    <audio src="../../assets/sounds/session8/Session8_Page3.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session8/Page159.mp3" ref="voice"/>
     <div class="page-number" id="page-light">159</div>
   </div>
 </template>
@@ -25,14 +24,13 @@ export default {
         easing: 'linear'
       })
       animation
-        .add({targets: '.text-box', opacity: 1}, 1)
-        .add({targets: text[0], opacity: 1}, 1)
-        .add({targets: text[1], opacity: 1}, 1)
-        .add({targets: text[2], opacity: 1}, 1)
-        .add({targets: text[3], opacity: 1}, 1)
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[0], opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 7100)
+        .add({targets: text[2], opacity: 1}, 12100)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

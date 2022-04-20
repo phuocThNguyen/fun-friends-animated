@@ -2,7 +2,6 @@
   <div class="interactive-container">
     <img src="../../assets/images/session8/3360.jpg" alt="Annie-family" class="session-background">
     <div class="text-box">
-      <p>Josefine har lyst til at lege</p>
       <p>Josefine har lyst til at lege, men hun har ikke nogen at lege med.
         Hvordan tror du Josefine har det?</p>
       <p>Hvilke følelser oplever hun? Hvis du var Josefine, hvad kunne du
@@ -30,7 +29,7 @@
         </p>
       </div>
     </div>
-    <audio src="../../assets/sounds/session8/Session8_Page7.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session8/Page163.mp3" ref="voice"/>
     <div class="page-number" id="page-light">163</div>
   </div>
 </template>
@@ -43,19 +42,15 @@ export default {
   methods: {
     animateText() {
       let text = document.querySelector('.text-box').children;
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      });
+      let animation = anime.timeline({easing: 'linear', duration: 500,});
       animation
         .add({targets: '.text-box',opacity: 1}, 500)
         .add({targets: text[0],opacity: 1}, 500)
-        .add({targets: text[1],opacity: 1}, 5700)
-        .add({targets: text[2],opacity: 1}, 8500)
-        .add({targets: '.star-container',opacity: 1}, 14300)
+        .add({targets: text[1],opacity: 1}, 8500)
+        .add({targets: '.star-container',opacity: 1}, 18400)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {
