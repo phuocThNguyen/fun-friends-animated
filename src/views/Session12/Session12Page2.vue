@@ -113,7 +113,7 @@
       </g>
     </svg>
     <audio ref="audio" autoplay src="../../assets/sounds/children-background-music/polka.mp3"/>
-    <audio src="../../assets/sounds/session12/Session12_Page2.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session12/Page215.mp3" ref="voice"/>
     <div class="page-number" id="page-light">215</div>
   </div>
 </template>
@@ -194,11 +194,11 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, opacity: 1});
       animation
-        .add({targets: text[1],opacity: 1}, 4000)
-        .add({targets: text[2],opacity: 1}, 10000)
+        .add({targets: text[1],opacity: 1}, 4700)
+        .add({targets: text[2],opacity: 1}, 12900)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

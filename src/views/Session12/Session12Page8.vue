@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
     <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/sand-castle.mp3"/>
-    <audio src="../../assets/sounds/session12/Session12_Page8.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session12/Page221.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -30,7 +30,7 @@ export default {
       this.$refs.audio.volume = level;
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

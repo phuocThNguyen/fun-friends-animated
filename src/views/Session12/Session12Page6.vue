@@ -3,7 +3,7 @@
     <img src="../../assets/images/session12/2108.jpg" alt="friends" class="session-background">
     <div class="text-box">Vi er glade for at have lært FRIENDS færdighederne.</div>
     <audio src="../../assets/sounds/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3" autoplay loop ref="audio"/>
-    <audio src="../../assets/sounds/session12/Session12_Page6.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session12/Page219.mp3" ref="voice"/>
     <div class="page-number" id="page-light">219</div>
   </div>
 </template>
@@ -24,7 +24,7 @@ export default {
       })
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level

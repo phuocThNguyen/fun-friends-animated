@@ -536,7 +536,7 @@
       </div>
     </div>
     <audio src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3" autoplay loop ref="audio"/>
-    <audio src="../../assets/sounds/session12/Session12_Page5.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session12/Page218.mp3" ref="voice"/>
     <div class="page-number" id="page-light">218</div>
   </div>
 </template>
@@ -551,13 +551,13 @@ export default {
       let text = document.querySelector('.text').children
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({targets: text[0], opacity: 1}, 1)
-        .add({targets: text[1], opacity: 1}, 1)
-        .add({targets: text[2], opacity: 1}, 1)
-        .add({targets: text[3], opacity: 1}, 1)
+        .add({targets: text[0], opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 26800)
+        .add({targets: text[2], opacity: 1}, 41200)
+        .add({targets: text[3], opacity: 1}, 68300)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level

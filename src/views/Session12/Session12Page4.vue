@@ -539,7 +539,7 @@
       </div>
     </div>
     <audio src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3" autoplay loop ref="audio"/>
-    <audio src="../../assets/sounds/session12/Session12_Page4.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session12/Page217.mp3" ref="voice"/>
     <div class="page-number" id="page-light">217</div>
   </div>
 </template>
@@ -554,15 +554,15 @@ export default {
       let text = document.querySelector('.text').children
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({targets: '.title', opacity: 1}, 1)
-        .add({targets: '.text', opacity: 1}, 1)
-        .add({targets: text[0], opacity: 1}, 1)
-        .add({targets: text[1], opacity: 1}, 1)
-        .add({targets: text[2], opacity: 1}, 1)
-        .add({targets: text[3], opacity: 1}, 1)
+        .add({targets: '.title', opacity: 1}, 500)
+        .add({targets: '.text', opacity: 1}, 10300)
+        .add({targets: text[0], opacity: 1}, 10300)
+        .add({targets: text[1], opacity: 1}, 34600)
+        .add({targets: text[2], opacity: 1}, 57100)
+        .add({targets: text[3], opacity: 1}, 68200)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
