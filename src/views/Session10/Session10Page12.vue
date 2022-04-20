@@ -12,7 +12,7 @@
     <div class="green-box">
       <strong>Vi elsker at<br>hoppe i bølgerne.</strong>
     </div>
-    <audio src="../../assets/sounds/session10/Session10_Page12.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session10/Page198.mp3" ref="voice"/>
     <div class="page-number" id="page-light">198</div>
   </div>
 </template>
@@ -27,13 +27,13 @@ export default {
       let text = document.querySelector('.text').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
-        .add({targets: text[0],color: '#000'}, 1)
-        .add({targets: text[1],color: '#000'}, 1)
-        .add({targets: text[2],color: '#000'}, 1)
-        .add({targets: '.green-box',opacity: 1}, 1)
+        .add({targets: text[0],color: '#000'}, 5300)
+        .add({targets: text[1],color: '#000'}, 15200)
+        .add({targets: text[2],color: '#000'}, 20700)
+        .add({targets: '.green-box',opacity: 1}, 28100)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

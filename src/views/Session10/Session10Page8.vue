@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <img src="../../assets/images/session10/370.jpg" alt="Tom-reading-book" class="session-background">
     <div class="text-box-green">Min mor hjælper mig med at være modig imens jeg lærer at cykle.</div>
-    <audio src="../../assets/sounds/session10/Session10_Page8.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session10/Page194.mp3" ref="voice"/>
     <div class="page-number" id="page-light">194</div>
   </div>
 </template>
@@ -23,7 +23,7 @@ export default {
       });
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

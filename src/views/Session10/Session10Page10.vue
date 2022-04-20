@@ -8,7 +8,7 @@
         billede af dit kostume! Del det med dine venner / klassekammerater.</p>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/snack-time-the-green-orbs-children-s-music-no-copyright-music.mp3"/>
-    <audio src="../../assets/sounds/session10/Session10_Page10.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session10/Page196.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -38,12 +38,12 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({targets: '.text-box',opacity: 1}, 1)
-        .add({targets: text[0],opacity: 1}, 1)
-        .add({targets: '.canvas',opacity: 1}, 1)
+        .add({targets: '.text-box',opacity: 1}, 500)
+        .add({targets: text[0],opacity: 1}, 500)
+        .add({targets: '.canvas',opacity: 1}, 16000)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

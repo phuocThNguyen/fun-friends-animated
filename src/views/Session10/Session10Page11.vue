@@ -3,7 +3,7 @@
     <img src="../../assets/images/session10/Blurred-BG.png" alt="background" class="session-background">
     <div class="text-box">
       <h1>Hjælpsomme / omsorgsfulde & venlige hænder</h1>
-      <p>WHvilke positive ting kan vi kigge efter hos de mennesker vi ser op til?</p>
+      <p>Hvilke positive ting kan vi kigge efter hos de mennesker vi ser op til?</p>
       <p>Hvilke ting kan vi li’ ved disse personer?</p>
       <p>Nogle eksempler kunne være, at de:</p>
       <p>&bull;&nbsp;&nbsp;holder af dyr, træer og levende væsener</p>
@@ -45,7 +45,7 @@
       <p>Deler</p>
     </div>
 
-    <audio src="../../assets/sounds/session10/Session10_Page11.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session10/Page197.mp3" ref="voice"/>
     <div class="page-number" id="page-light">197</div>
   </div>
 </template>
@@ -61,23 +61,24 @@ export default {
       let hands = document.querySelectorAll('.hand-container');
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({targets: text[1], opacity: 1}, 1)
-        .add({targets: text[2], opacity: 1}, 1)
-        .add({targets: text[3], opacity: 1}, 1)
-        .add({targets: text[4], opacity: 1}, 1)
-        .add({targets: hands[0], opacity: 1}, 1)
-        .add({targets: text[5], opacity: 1}, 1)
-        .add({targets: hands[1], opacity: 1}, 1)
-        .add({targets: text[6], opacity: 1}, 1)
-        .add({targets: hands[2], opacity: 1}, 1)
-        .add({targets: text[7], opacity: 1}, 1)
-        .add({targets: hands[3], opacity: 1}, 1)
-        .add({targets: text[8], opacity: 1}, 1)
-        .add({targets: hands[4], opacity: 1}, 1)
-        .add({targets: text[9], opacity: 1}, 1)
+        .add({targets: text[1], opacity: 1}, 4600)
+        .add({targets: text[2], opacity: 1}, 10600)
+        .add({targets: text[3], opacity: 1}, 14100)
+        .add({targets: text[4], opacity: 1}, 16400)
+        .add({targets: hands[0], opacity: 1}, 20400)
+        .add({targets: text[5], opacity: 1}, 20400)
+        .add({targets: hands[1], opacity: 1}, 22800)
+        .add({targets: text[6], opacity: 1}, 22800)
+        .add({targets: hands[2], opacity: 1}, 25000)
+        .add({targets: text[7], opacity: 1}, 25000)
+        .add({targets: hands[3], opacity: 1}, 26700)
+        .add({targets: text[8], opacity: 1}, 26700)
+        .add({targets: hands[4], opacity: 1}, 28000)
+        .add({targets: text[9], opacity: 1}, 28000)
+        .add({targets: text[10], opacity: 1}, 29600)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

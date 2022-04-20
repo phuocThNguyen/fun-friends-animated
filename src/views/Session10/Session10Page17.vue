@@ -312,7 +312,7 @@
         </p>
       </div>
     </div>
-    <audio src="../../assets/sounds/session10/Session10_Page17.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session10/Page203.mp3" ref="voice"/>
     <div class="page-number" id="page-light">203</div>
   </div>
 </template>
@@ -347,14 +347,10 @@ export default {
     },
     animateElements() {
       let animation = anime.timeline({easing: 'linear', delay: 500, duration: 500});
-      animation
-        .add({
-          targets: '.star-container',
-          opacity: 1
-        })
+      animation.add({targets: '.star-container', opacity: 1})
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 1500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

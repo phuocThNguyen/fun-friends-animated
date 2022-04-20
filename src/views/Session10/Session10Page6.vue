@@ -3,7 +3,7 @@
     <img src="../../assets/images/session10/1034.jpg" alt="Annie" class="session-background">
     <div class="text-box">Mia lærer af én som hun ser op til.</div>
     <div class="text-box-green">Min mor hjælper mig med at lære at svømme.</div>
-    <audio src="../../assets/sounds/session10/Session10_Page6.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session10/Page192.mp3" ref="voice"/>
     <div class="page-number" id="page-light">192</div>
   </div>
 </template>
@@ -17,11 +17,11 @@ export default {
     animateText() {
       let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
-        .add({targets: '.text-box',opacity: 1}, 800)
-        .add({targets: '.text-box-green',opacity: 1}, 4500);
+        .add({targets: '.text-box',opacity: 1}, 500)
+        .add({targets: '.text-box-green',opacity: 1}, 4400);
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

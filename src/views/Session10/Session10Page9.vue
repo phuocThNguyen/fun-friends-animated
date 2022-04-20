@@ -187,7 +187,7 @@
       </g>
     </svg>
     <audio ref="audio" autoplay src="../../assets/sounds/session10/super-hero-theme.mp3"/>
-    <audio src="../../assets/sounds/session10/Session10_Page9.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session10/Page195.mp3" ref="voice"/>
     <div class="page-number" id="page-light">195</div>
   </div>
 </template>
@@ -250,14 +250,14 @@ export default {
         .add({targets: '.kids', scale: 100, duration: 1000,}, 1000)
         .add({targets: '.text-box', opacity: 1, easing: 'linear',}, 2500)
         .add({targets: text[0],opacity: 1, easing: 'linear'}, 2500)
-        .add({targets: text[1],opacity: 1, easing: 'linear'}, 15300)
-        .add({targets: text[2],opacity: 1, easing: 'linear'}, 20000)
+        .add({targets: text[1],opacity: 1, easing: 'linear'}, 11600)
+        .add({targets: text[2],opacity: 1, easing: 'linear'}, 15300)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 2500)
+      setTimeout(() => {this.$refs.voice.play()}, 2000)
     },
   },
   mounted() {

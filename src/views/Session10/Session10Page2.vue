@@ -196,7 +196,7 @@
       <br>Sofus og Sofie hjulpet på billederne herunder?</span>
       <span> <br>Hvordan har nogen hjulpet dig?</span>
     </div>
-    <audio src="../../assets/sounds/session10/Session10_Page2.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session10/Page188.mp3" ref="voice"/>
     <div class="page-number" id="page-light">188</div>
   </div>
 </template>
@@ -212,13 +212,13 @@ export default {
       let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
         .add({targets: '.text-box',opacity: 0.9}, 500)
-        .add({targets: text[0], color: '#000'}, 1100)
-        .add({targets: text[1], color: '#000'}, 8800)
-        .add({targets: text[2], color: '#000'}, 11300)
-        .add({targets: text[3], color: '#000'}, 16200)
+        .add({targets: text[0], color: '#000'}, 500)
+        .add({targets: text[1], color: '#000'}, 8900)
+        .add({targets: text[2], color: '#000'}, 11400)
+        .add({targets: text[3], color: '#000'}, 15800)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 1000)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

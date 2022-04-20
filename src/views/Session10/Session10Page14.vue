@@ -6,7 +6,7 @@
       <span> Hvem har hjulpet dig med at <br>føle dig glad?</span>
       <span> Giv dem en stor tak!</span>
     </div>
-    <audio src="../../assets/sounds/session10/Session10_Page14.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session10/Page200.mp3" ref="voice"/>
     <div class="page-number" id="page-light">200</div>
   </div>
 </template>
@@ -21,13 +21,13 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
-        .add({targets: '.text-box',opacity: 1}, 1)
-        .add({targets: text[0],color: '#fff'}, 1)
-        .add({targets: text[1],color: '#fff'}, 1)
-        .add({targets: text[2],color: '#fff'}, 1)
+        .add({targets: '.text-box',opacity: 1}, 500)
+        .add({targets: text[0],color: '#fff'}, 500)
+        .add({targets: text[1],color: '#fff'}, 4800)
+        .add({targets: text[2],color: '#fff'}, 8200)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {
