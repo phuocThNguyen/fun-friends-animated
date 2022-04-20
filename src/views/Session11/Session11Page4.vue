@@ -14,7 +14,7 @@
       <p>&bull;&nbsp;Familien</p>
       <p>&bull;&nbsp;Venskabskredsen</p>
     </div>
-    <audio src="../../assets/sounds/session11/Session11_Page4.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session11/Page207.mp3" ref="voice"/>
     <div class="page-number" id="page-light">207</div>
   </div>
 </template>
@@ -29,20 +29,20 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-        .add({targets: '.text-box', opacity: 1}, 1)
-        .add({targets: text[0], opacity: 1}, 1)
-        .add({targets: text[1], opacity: 1}, 1)
-        .add({targets: text[2], opacity: 1}, 1)
-        .add({targets: text[3], opacity: 1}, 1)
-        .add({targets: text[4], opacity: 1}, 1)
-        .add({targets: text[5], opacity: 1}, 1)
-        .add({targets: text[6], opacity: 1}, 1)
-        .add({targets: text[7], opacity: 1}, 1)
-        .add({targets: text[8], opacity: 1}, 1)
-        .add({targets: text[9], opacity: 1}, 1)
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[0], opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 3100)
+        .add({targets: text[2], opacity: 1}, 12500)
+        .add({targets: text[3], opacity: 1}, 13800)
+        .add({targets: text[4], opacity: 1}, 17600)
+        .add({targets: text[5], opacity: 1}, 19600)
+        .add({targets: text[6], opacity: 1}, 21800)
+        .add({targets: text[7], opacity: 1}, 25100)
+        .add({targets: text[8], opacity: 1}, 28400)
+        .add({targets: text[9], opacity: 1}, 30000)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

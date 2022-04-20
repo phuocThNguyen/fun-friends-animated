@@ -8,7 +8,7 @@
       <img src="../../assets/images/session11/hugging_dog_child.jpg" alt="swinging" class="images">
       <p class="text" id="para-2">Ella giver <br>Otto et knus.</p>
     </div>
-    <audio src="../../assets/sounds/session11/Session11_Page7.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session11/Page210.mp3" ref="voice"/>
     <div class="page-number" id="page-light">210</div>
   </div>
 </template>
@@ -23,11 +23,11 @@ export default {
       let text = document.getElementsByClassName('text');
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({targets: text[0], opacity: 1}, 1)
-        .add({targets: text[1], opacity: 1}, 1)
+        .add({targets: text[0], opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 4900)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

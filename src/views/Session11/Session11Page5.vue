@@ -13,7 +13,7 @@
       <img src="../../assets/images/session11/Hugging_Lama_Girl.jpg" alt="hugging-lama" class="images">
       <div class="text" id="para-2">Mathilde giver Alpaka et knus.</div>
     </div>
-    <audio src="../../assets/sounds/session11/Session11_Page5.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session11/Page208.mp3" ref="voice"/>
     <div class="page-number" id="page-light">208</div>
   </div>
 </template>
@@ -28,12 +28,12 @@ export default {
       let text = document.getElementsByClassName('text');
       let animation = anime.timeline({easing: 'linear', duration: 500,})
       animation
-        .add({targets: '#para',opacity: 1}, 1)
-        .add({targets: text[0], opacity: 1}, 1)
-        .add({targets: text[1], opacity: 1}, 1)
+        .add({targets: '#para',opacity: 1}, 4200)
+        .add({targets: text[0], opacity: 1}, 18000)
+        .add({targets: text[1], opacity: 1}, 21700)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

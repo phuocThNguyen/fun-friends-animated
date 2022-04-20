@@ -1455,7 +1455,7 @@
         </p>
       </div>
     </div>
-    <audio src="../../assets/sounds/session11/Session11_Page10.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session11/Page213.mp3" ref="voice"/>
     <div class="page-number" id="page-light">213</div>
   </div>
 </template>
@@ -1467,19 +1467,11 @@ export default {
   name: 'Session11Page10',
   methods: {
     animateElements() {
-      let animation = anime.timeline({
-        easing: 'linear',
-        delay: 500,
-        duration: 500
-      });
-      animation
-        .add({
-          targets: '.star-container',
-          opacity: 1
-        })
+      let animation = anime.timeline({easing: 'linear', delay: 500, duration: 500});
+      animation.add({targets: '.star-container', opacity: 1})
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 1500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

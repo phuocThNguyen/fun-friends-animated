@@ -10,7 +10,7 @@
       <p>Hvordan føles det at være hjælpsom?</p>
       <p>Er der en aktivitet I kan lave sammen for at hjælpe endnu mere til?</p>
     </div>
-    <audio src="../../assets/sounds/session11/Session11_Page3.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session11/Page206.mp3" ref="voice"/>
     <div class="page-number" id="page-light">206</div>
   </div>
 </template>
@@ -25,16 +25,16 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-        .add({targets: '.text-box',opacity: 1}, 1)
-        .add({targets: text[0],opacity: 1}, 1)
-        .add({targets: text[1],opacity: 1}, 1)
-        .add({targets: text[2],opacity: 1}, 1)
-        .add({targets: text[3],opacity: 1}, 1)
-        .add({targets: text[4],opacity: 1}, 1)
-        .add({targets: text[5],opacity: 1}, 1)
+        .add({targets: '.text-box',opacity: 1}, 500)
+        .add({targets: text[0],opacity: 1}, 500)
+        .add({targets: text[1],opacity: 1}, 7000)
+        .add({targets: text[2],opacity: 1}, 11400)
+        .add({targets: text[3],opacity: 1}, 14300)
+        .add({targets: text[4],opacity: 1}, 26200)
+        .add({targets: text[5],opacity: 1}, 29300)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {
