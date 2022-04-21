@@ -44,21 +44,21 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({targets: '.text-box', opacity: 1}, 500)
-        .add({targets: text[1], opacity: 1}, 3200)
-        .add({targets: text[2], opacity: 1}, 17500)
-        .add({targets: text[3], opacity: 1}, 30000)
+        .add({targets: '.text-box', opacity: 1}, 1500)
+        .add({targets: text[1], opacity: 1}, 4200)
+        .add({targets: text[2], opacity: 1}, 18500)
+        .add({targets: text[3], opacity: 1}, 31000)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 1)
+      setTimeout(() => {this.$refs.voice.play()}, 1000)
     },
   },
   mounted() {
     this.animateText();
-    this.setAudioVolumeLevel(0.4);
+    this.setAudioVolumeLevel(0.3);
     this.playVoiceOver();
   }
 }

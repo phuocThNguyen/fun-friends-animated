@@ -30,6 +30,7 @@ export default {
   components: {FeelingQuestion, EmotionPickInstruction},
   methods: {
     handleCorrectAnswer() {
+      this.$refs.goodTry.pause();
       setTimeout(() => {this.$refs.veryGood.play()}, 500)
     },
     handleWrongAnswer() {
