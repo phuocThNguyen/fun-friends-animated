@@ -37,7 +37,7 @@ export default {
         .add({targets: paraArray.children[7], color: '#000'}, 23100)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 1000)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     }
   },
   mounted() {

@@ -64,11 +64,11 @@ export default {
   padding: 0 1vh;
 }
 .text-box h1 {
-  font-size: 5vh;
-  margin-bottom: 2vh;
+  font-size: 6vh;
+  margin-bottom: 0;
 }
 .text-box p {
-  font-size: 3vh;
+  font-size: 4vh;
   margin-bottom: 0;
 }
 </style>

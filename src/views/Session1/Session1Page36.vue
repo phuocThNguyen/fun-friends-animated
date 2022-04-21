@@ -1824,22 +1824,27 @@ export default {
       animation
         .add({
           targets: ".star",
-          scale: 70,
+          opacity: 1,
           duration: 1,
-          delay: 2000,
+          delay: 2000
+        })
+        .add({
+          targets: ".star",
+          scale: 70,
+          duration: 1000,
         })
         .add({
           targets: ".para",
           opacity: 1,
           duration: 1,
           easing: 'linear'
-        }, 2500)
+        }, 3000)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 2000)
+      setTimeout(() => {this.$refs.voice.play()}, 3000)
     },
   },
   mounted() {
@@ -1879,6 +1884,7 @@ export default {
   position: absolute;
   width: auto;
   height: 1vh;
+  opacity: 0;
 }
 .para {
   width: 100%;
@@ -1886,7 +1892,7 @@ export default {
   font-weight: bold;
   font-size: 3.5vh;
   height: auto;
-  margin-top: 15%;
+  margin-top: 12%;
   text-align: center;
   opacity: 0;
   line-height: 4.5vh;

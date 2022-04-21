@@ -30,13 +30,13 @@ export default {
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
         .add({targets: ".text-box", opacity: 0.9}, 500)
-        .add({targets: text[1], opacity: 1}, 500)
-        .add({targets: text[2], opacity: 1}, 2800)
-        .add({targets: text[3], opacity: 1}, 7100)
-        .add({targets: text[4], opacity: 1}, 20000)
-        .add({targets: text[5], opacity: 1}, 24600)
-        .add({targets: text[6], opacity: 1}, 32300)
-        .add({targets: text[7], opacity: 1}, 35000)
+        .add({targets: text[1], opacity: 1}, 2800)
+        .add({targets: text[2], opacity: 1}, 7100)
+        .add({targets: text[3], opacity: 1}, 20000)
+        .add({targets: text[4], opacity: 1}, 24600)
+        .add({targets: text[5], opacity: 1}, 32300)
+        .add({targets: text[6], opacity: 1}, 35000)
+        .add({targets: text[7], opacity: 1}, 37600)
         .add({targets: text[8], opacity: 1}, 41200)
     },
     setAudioVolumeLevel(level) {

@@ -5,7 +5,7 @@
       <h1>Husk hver dag at:</h1>
       <p>- kom ud og leg</p>
       <p>- få rigeligt med søvn</p>
-      <p>-øve dig på at afspænde  / slappe af
+      <p>- øve dig på at afspænde  / slappe af
         i 5 minutter uden TV eller anden elektronik</p>
       <p>- udvise opmærksomhed overfor glade oplevelser </p>
       <p>- sige tak for glade oplevelser</p>
@@ -49,7 +49,7 @@ export default {
       this.$refs.audio.volume = level;
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

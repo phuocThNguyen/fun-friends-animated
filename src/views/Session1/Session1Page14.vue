@@ -20,7 +20,7 @@ export default {
       anime({
         targets: ".text-box",
         opacity: 1,
-        delay: 600,
+        delay: 500,
         duration: 500,
         easing: 'linear',
       })
@@ -33,7 +33,7 @@ export default {
     }
   },
   mounted() {
-    this.setAudioVolumeLevel(0.6);
+    this.setAudioVolumeLevel(0.3);
     this.animateText();
     this.playVoiceOver();
   }
@@ -42,11 +42,11 @@ export default {
 
 <style scoped>
 .text-box {
-  width: 84%;
+  width: calc(0.8*133vh);
   background-color: #00ce7c;
   position: absolute;
   bottom: 6vh;
-  left: 8%;
+  left: calc(0.1*133vh);
   opacity: 0;
   text-align: center;
   padding: 1vh

@@ -38,7 +38,7 @@ export default {
   },
   mounted() {
     this.animateText();
-    this.setAudioVolumeLevel(0.02);
+    this.setAudioVolumeLevel(0.08);
     this.playVoiceOver();
   }
 }

@@ -70,8 +70,8 @@ export default {
   width: 65vh;
 }
 .text-box h1 {
-  font-size: 4vh;
-  margin-bottom: 2vh;
+  font-size: 5vh;
+  margin-bottom: 1vh;
 }
 .text-box p {
   font-size: 3vh;

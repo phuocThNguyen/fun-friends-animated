@@ -73,7 +73,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  padding: 1vh 0 0 1%;
+  padding: 0 1vh;
 }
 .para {
   background-color: #ffffff;

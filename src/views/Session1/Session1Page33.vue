@@ -458,7 +458,7 @@ export default {
         .add({targets: oranges[14], scale: 40})
         .add({targets: ".text-box", opacity: 0.8, duration: 500, easing: 'linear'}, 10000)
         .add({targets: "#para-1", color: '#000', duration: 500, easing: 'linear'}, 10500)
-        .add({targets: "#para-2", color: '#000', duration: 500, easing: 'linear'}, 14600)
+        .add({targets: "#para-2", color: '#000', duration: 500, easing: 'linear'}, 24600)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level

@@ -55,7 +55,7 @@ export default {
   background-color: rgba(255,255,255,1);
   z-index: 10;
   opacity: 0;
-  padding: 3vh 2vh;
+  padding: 2vh 1.5vh;
 }
 .left-bar h1 {
   font-size: 4vh;

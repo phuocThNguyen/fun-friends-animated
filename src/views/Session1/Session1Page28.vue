@@ -28,13 +28,13 @@ export default {
       anime({
         targets: ".text-box",
         opacity: 1,
-        delay: 500,
+        delay: 1500,
         duration: 500,
         easing: 'linear',
       })
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 1)
+      setTimeout(() => {this.$refs.voice.play()}, 1000)
     },
   },
   mounted() {

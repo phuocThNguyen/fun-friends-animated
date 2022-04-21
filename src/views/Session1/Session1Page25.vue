@@ -815,7 +815,7 @@
           </g>
         </g>
       </svg>
-      <div class="bubble-text">Del dine idéer med en ven!</div>
+      <div class="bubble-text">Del dine idéer <br>med en ven!</div>
     </div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
     <audio src="../../assets/sounds/session1/Page31.mp3" ref="voice"/>
@@ -885,8 +885,8 @@ export default {
         .add({targets: '#para-2', color: '#000'}, 7500)
         .add({targets: '#para-3', color: '#000'}, 18000)
         .add({targets: '#para-4', color: '#000'}, 20000)
-        .add({targets: '.canvas', opacity: 1}, 24000)
-        .add({targets: '.bubble-container', opacity: 0.9}, 31000)
+        .add({targets: '.bubble-container', opacity: 0.9}, 24000)
+        .add({targets: '.canvas', opacity: 1}, 31000)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
@@ -898,7 +898,7 @@ export default {
   mounted() {
     this.animateSvg();
     this.animateText();
-    this.setAudioVolumeLevel(0.5);
+    this.setAudioVolumeLevel(0.2);
     this.playVoiceOver();
   }
 }
@@ -945,11 +945,12 @@ export default {
 
 .bubble-container {
   position: absolute;
-  width: 30%;
-  height: 28vh;
-  bottom: 6vh;
+  width: calc(0.2*133vh);
+  height: 18vh;
+  bottom: 12vh;
   left: 1%;
   opacity: 0;
+
 }
 .bubble {
   position: absolute;
@@ -963,7 +964,7 @@ export default {
   position: absolute;
   left: 3%;
   top: 2%;
-  font-size: 5vh;
+  font-size: 3vh;
   text-align: center;
   width: 94%;
   height: 76%;

@@ -27,12 +27,12 @@ export default {
         targets: ".text-box",
         opacity: 0.98,
         duration: 500,
-        delay: 500,
+        delay: 1500,
         easing: 'linear',
       })
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 1)
+      setTimeout(() => {this.$refs.voice.play()}, 1000)
     },
   },
   mounted() {
