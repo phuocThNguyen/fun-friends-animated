@@ -314,14 +314,14 @@ export default {
 #line-2 {
   text-align: center;
   width: 90%;
-  top: 43vh;
+  top: 42vh;
   left: 5%;
   font-size: 2.8vh;
 }
 #line-3 {
   text-align: center;
   width: 90%;
-  top: 62vh;
+  top: 60vh;
   left: 5%;
   font-size: 2.8vh;
 }
