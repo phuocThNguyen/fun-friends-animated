@@ -3355,19 +3355,19 @@ export default {
           : console.log();
       });
     },
-    // animateElements() {
-    //   let clouds = document.querySelectorAll('.cloud-container');
-    //   let animation = anime.timeline({duration: 500,easing: 'linear'});
-    //   animation
-    //     .add({targets: '.title',opacity: 1}, 600)
-    //     .add({targets: clouds[0],opacity: 1}, 6900)
-    //     .add({targets: clouds[2],opacity: 1}, 9100)
-    //     .add({targets: clouds[1],opacity: 1}, 12500)
-    //     .add({targets: clouds[3],opacity: 1}, 15800)
-    //     .add({targets: '.star-container',opacity: 1}, 18400)
-    // },
+    animateElements() {
+      let clouds = document.querySelectorAll('.cloud-container');
+      let animation = anime.timeline({duration: 500,easing: 'linear'});
+      animation
+        .add({targets: '.title',opacity: 1}, 500)
+        .add({targets: clouds[0],opacity: 1}, 6600)
+        .add({targets: clouds[2],opacity: 1}, 8700)
+        .add({targets: clouds[1],opacity: 1}, 11700)
+        .add({targets: clouds[3],opacity: 1}, 15000)
+        .add({targets: '.star-container',opacity: 1}, 17700)
+    },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
@@ -3375,7 +3375,7 @@ export default {
   },
   mounted() {
     this.setAudioVolumeLevel(1);
-    // this.animateElements();
+    this.animateElements();
     this.playVoiceOver();
   }
 }
@@ -3395,7 +3395,7 @@ export default {
   text-align: center;
   top: 0;
   color: #ffffff;
-  opacity: 1;
+  opacity: 0;
 }
 .cloud-container {
   position: absolute;
@@ -3404,7 +3404,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 1;
+  opacity: 0;
 }
 .cloud {
   position: absolute;

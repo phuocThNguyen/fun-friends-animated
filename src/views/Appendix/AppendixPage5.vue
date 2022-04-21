@@ -11,7 +11,7 @@ export default {
   name: 'AppendixPage5',
   methods: {
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
   },
   mounted() {

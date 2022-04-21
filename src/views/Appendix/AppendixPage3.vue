@@ -30,7 +30,7 @@ export default {
       console.log(data)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 1)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
