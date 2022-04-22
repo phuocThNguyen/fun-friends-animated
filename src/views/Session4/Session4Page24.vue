@@ -2498,36 +2498,32 @@ import anime from "animejs";
 export default {
   name: 'Session4Page24',
   methods: {
+    animateSvg() {
+      let stars = document.getElementsByClassName('stars')[0].children;
+      stars.forEach(star => {
+        Math.random() < 0.2 ?
+          anime({
+            targets: star,
+            opacity: 0,
+            direction: 'alternate',
+            duration: Math.round(Math.random() * 500) + 200,
+            delay: Math.round(Math.random() * 500) + 200,
+            easing: 'linear',
+            loop: true
+          }) : console.log()
+      });
+    },
     animateElements() {
       let animation = anime.timeline({easing: 'linear', duration: 500, delay: 500});
       animation
         .add({targets: '.star-container', opacity: 1})
-        .add({
-          targets: ".star",
-          keyframes: [
-            {rotate: '-20deg'},
-            {rotate: '20deg'},
-            {rotate: '-20deg'},
-            {rotate: '0deg'},
-          ],
-          delay: 0,
-        })
-        .add({
-          targets: ".star-text",
-          keyframes: [
-            {rotate: '-20deg'},
-            {rotate: '20deg'},
-            {rotate: '-20deg'},
-            {rotate: '0deg'},
-          ],
-          delay: 0,
-        }, 1000)
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 1500)
+      setTimeout(() => {this.$refs.voice.play()}, 1000)
     },
   },
   mounted() {
+    this.animateSvg();
     this.animateElements();
     this.playVoiceOver();
   }

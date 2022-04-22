@@ -468,10 +468,10 @@
     </svg>
     <audio ref="heartBeat" src="../../assets/sounds/session4/heart-beat.mp3"/>
     <audio src="../../assets/sounds/session4/Page88.mp3" ref="voice1"/>
-    <audio src="../../assets/sounds/session4/Page88-TapHere.mp3" ref="voice2"/>
+    <audio src="../../assets/sounds/session4/Page88-TapHere.mp3" ref="voice2" @ended="showMask('#mask-1')"/>
     <audio src="../../assets/sounds/session4/Page88-HeartBeating.mp3" ref="voice3"/>
     <audio src="../../assets/sounds/session4/Page88-butterfly.mp3" ref="voice4"/>
-    <audio src="../../assets/sounds/session4/Page88-RedFace.mp3" ref="voice5"/>
+    <audio src="../../assets/sounds/session4/Page88-RedFace.mp3" ref="voice5" @ended="showBox"/>
     <audio src="../../assets/sounds/session4/Page88-MyBodyIsMyFriend.mp3" ref="voice6"/>
     <div class="page-number" id="page-dark">88</div>
   </div>
@@ -501,7 +501,7 @@ export default {
         .add({targets: text[2], opacity: 1}, 8060)
         .add({targets: text[3], opacity: 1}, 11000)
         .add({targets: textSpan[0], color: '#000'}, 11000)
-        .add({targets: '.instruction-container', opacity: 16000}, 1)
+        .add({targets: '.instruction-container', opacity: 16000}, 16000)
     },
     animateHeartBeat() {
       document.querySelector('.heart').style.opacity = '1';
@@ -612,9 +612,11 @@ export default {
       switch (id) {
         case '#mask-1':
           this.displayHeart(id);
+          this.showMask('#mask-2');
           break;
         case '#mask-2':
           this.displayButterfly(id);
+          this.showMask('#mask-3');
           break;
         case '#mask-3':
           this.displayDroplet(id);
@@ -650,6 +652,7 @@ export default {
     },
     displayDroplet(id) {
       document.querySelector(id).style.visibility = 'hidden';
+      document.querySelector('.instruction-container').style.visibility = 'hidden';
       this.animateDroplets();
       let text = document.querySelectorAll('.text')[3];
       anime({
@@ -661,8 +664,10 @@ export default {
       setTimeout(() => {this.$refs.voice5.play()}, 500)
       this.changeCoord(id)
     },
-    afterFinishFunctions() {
-      document.querySelector('.instruction-container').style.visibility = 'hidden';
+    showMask(maskId) {
+      document.querySelector(maskId).style.visibility = 'visible'
+    },
+    showBox() {
       setTimeout(() => {
         anime({
           targets: '#prompt',
@@ -677,13 +682,6 @@ export default {
       setTimeout(() => {this.$refs.voice1.play()}, 1)
       setTimeout(() => {this.$refs.voice2.play()}, 16000)
     },
-  },
-  watch: {
-    coordsArray: function () {
-      if (this.coordsArray.length === 0) {
-        this.afterFinishFunctions();
-      }
-    }
   },
   mounted() {
     this.animateText();
@@ -703,6 +701,7 @@ export default {
   justify-content: center;
   z-index: 20;
   opacity: 1;
+  visibility: hidden;
 }
 .question-mark {
   height: 100%;
