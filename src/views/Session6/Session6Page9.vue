@@ -1,3 +1,4 @@
+
 <template>
   <div class="interactive-container">
     <svg class="landscape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1693 1207" width="1693" height="1207">
@@ -708,7 +709,7 @@
       <p>&middot; Prøv at gøre dit bedste og give tingene et forsøg.</p>
       <p>&middot; Tro på dig selv.</p>
     </div>
-    <audio autoplay loop src="../../assets/sounds/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"></audio>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"></audio>
     <audio src="../../assets/sounds/session6/Page136.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">136</div>
   </div>
@@ -751,8 +752,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1)
     },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
+    }
   },
   mounted() {
+    this.setAudioVolumeLevel(0.5);
     this.animateSvg();
     this.animateText();
     this.playVoiceOver();

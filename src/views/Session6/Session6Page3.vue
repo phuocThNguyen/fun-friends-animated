@@ -187,7 +187,7 @@ export default {
 .text-box p:last-child {
   padding: 1vh 0;
   font-size: 3vh;
-  margin-top: 36%;
+  margin-top: 16%;
   font-weight: bold;
   display: block;
   background-color: #00ce7c;

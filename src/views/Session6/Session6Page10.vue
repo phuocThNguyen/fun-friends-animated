@@ -718,7 +718,7 @@
       <img class="action-image" src="../../assets/images/session1/2749-resized.jpg" alt="happy-things">
       <img class="action-image" src="../../assets/images/session1/thank-you.jpg" alt="thank-you">
     </div>
-    <audio autoplay loop src="../../assets/sounds/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"/>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"/>
     <audio src="../../assets/sounds/session6/Page137.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">137</div>
   </div>
@@ -768,8 +768,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1)
     },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
+    }
   },
   mounted() {
+    this.setAudioVolumeLevel(0.5);
     this.animateSvg();
     this.animateText();
     this.playVoiceOver();

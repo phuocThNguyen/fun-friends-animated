@@ -151,6 +151,7 @@ export default {
         .add({targets: '#top', opacity: 1}, 19000)
         .add({targets: text[4], opacity: 1}, 23000)
         .add({targets: '#bottom', opacity: 1}, 23800)
+        .add({targets: text[5], opacity: 1}, 29300)
         .add({targets: '.bubble-container', opacity: 0}, 29300)
     },
     playVoiceOver() {

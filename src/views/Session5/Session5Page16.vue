@@ -873,8 +873,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1)
     },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
+    }
   },
   mounted() {
+    this.setAudioVolumeLevel(0.5);
     this.animateSvg();
     this.animateText();
     this.playVoiceOver();
