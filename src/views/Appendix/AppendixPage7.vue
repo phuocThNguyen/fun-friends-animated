@@ -1,7 +1,7 @@
 <template>
   <div class="interactive-container">
     <img src="../../assets/images/appendix/FF_Bubble_Breathing_LANDSCAPE.jpg" class="session-background">
-    <audio src="../../assets/sounds/appendix/Session13_Appendix_Page6.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/appendix/Page228.mp3" ref="voice"/>
   </div>
 </template>
 

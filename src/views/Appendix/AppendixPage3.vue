@@ -4,7 +4,7 @@
     <div class="title">BILAG 3: IDÉER TIL GLÆDE</div>
     <div class="text">Skriv ”thumbs up”, omsorgsfulde og venlige, samt glade valg i stjernerne.</div>
     <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/twinkle-twinkle-little-star.mp3"/>
-    <audio src="../../assets/sounds/appendix/Session13_Appendix_Page3.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/appendix/Page224.mp3" ref="voice"/>
   </div>
 </template>
 

@@ -3329,7 +3329,7 @@
       <div class="cloud-text">I en bog eller en film.</div>
     </div>
     <audio src="../../assets/sounds/session4/night-time.mp3" autoplay loop ref="audio"/>
-    <audio src="../../assets/sounds/appendix/Session13_Appendix_Page2.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/appendix/Page223.mp3" ref="voice"/>
     <div class="page-number" id="page-light">223</div>
   </div>
 </template>
@@ -3445,7 +3445,7 @@ export default {
   align-items: center;
   justify-content: center;
   z-index: 10;
-  opacity: 1;
+  opacity: 0;
 }
 .star {
   position: absolute;

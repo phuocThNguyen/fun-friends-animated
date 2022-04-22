@@ -7,7 +7,7 @@
     <img src="../../assets/images/appendix/78621.png" alt="children" class="images">
     <img src="../../assets/images/appendix/Playing_Lambs_01.png" alt="lamb" class="images">
     <img src="../../assets/images/appendix/70160.png" alt="drawing" class="images">
-    <audio src="../../assets/sounds/appendix/Session13_Appendix_Page8.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/appendix/Page230.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -32,8 +32,9 @@ export default {
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-  font-size: 5.6vh;
+  font-size: 4.2vh;
   font-weight: bold;
+  margin-top: 1vh;
 }
 #alt-bg {
   background-color: #00CE7C;

@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <img src="../../assets/images/appendix/group-kids-friend-laughing-together.png" alt="last-page" class="session-background">
     <div class="text-box">SMIL</div>
-    <audio src="../../assets/sounds/appendix/Session13_Appendix_Page11.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/appendix/Page233Smile.mp3" ref="voice"/>
   </div>
 </template>
 

@@ -83,7 +83,7 @@ h1, p {
   position: absolute;
   text-transform: uppercase;
   width: 100%;
-  top: 0;
+  top: 1vh;
   text-align: center;
   font-size: 5vh;
 }

@@ -1,7 +1,7 @@
 <template>
   <div class="interactive-container">
     <img src="../../assets/images/appendix/FRIENDS_Bubble-Breathing_v2_LANDSCAPE.jpeg" class="session-background">
-    <audio src="../../assets/sounds/appendix/Session13_Appendix_Page4.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/appendix/Page226.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">226</div>
   </div>
 </template>
