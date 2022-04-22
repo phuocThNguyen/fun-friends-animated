@@ -808,7 +808,7 @@
       <p>&middot; Prøv på at gøre dit bedste og give tingene et forsøg.</p>
       <p>&middot; Tro på dig selv.</p>
     </div>
-    <audio autoplay loop src="../../assets/sounds/session1/Falling-Snow-Sound-Effect-Amplified.mp3"/>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Falling-Snow-Sound-Effect-Amplified.mp3"/>
     <audio src="../../assets/sounds/session5/Page125.mp3" ref="voice"/>
     <div class="page-number" id="page-light">125</div>
   </div>
@@ -858,8 +858,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1)
     },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
+    }
   },
   mounted() {
+    this.setAudioVolumeLevel(0.5);
     this.animateSvg();
     this.animateText();
     this.playVoiceOver();

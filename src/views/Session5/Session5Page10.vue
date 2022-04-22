@@ -70,6 +70,7 @@ export default {
 .text-box p {
   font-size: 2.5vh;
   margin-bottom: 1vh;
+  opacity: 0;
 }
 .text-box p:last-child {
   margin-bottom: 0 !important;
