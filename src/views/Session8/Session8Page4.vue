@@ -60,7 +60,7 @@ export default {
 }
 .images {
   position: absolute;
-  height: 72vh;
+  height: 80vh;
   width: 50%;
   bottom: -7vh;
 }

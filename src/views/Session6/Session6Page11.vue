@@ -737,33 +737,28 @@ export default {
         .add({
           targets: '.star-container',
           opacity: 1
+        });
+    },
+    animateSvg() {
+      let vw = document.querySelector('.interactive-container').clientWidth;
+      let clouds = document.getElementsByClassName('shp15');
+      clouds.forEach(cloud => {
+        anime({
+          targets: cloud,
+          translateX: (Math.round(Math.random() * 0.4 * vw) + 200) * (Math.random() < 0.5 ? 1: -1),
+          duration: Math.round(Math.random() * 1000) + 4000,
+          direction: 'alternate',
+          loop: true,
+          easing: 'linear',
         })
-        .add({
-          targets: ".star",
-          keyframes: [
-            {rotate: '-20deg'},
-            {rotate: '20deg'},
-            {rotate: '-20deg'},
-            {rotate: '0deg'},
-          ],
-          delay: 0,
-        })
-        .add({
-          targets: ".star-text",
-          keyframes: [
-            {rotate: '-20deg'},
-            {rotate: '20deg'},
-            {rotate: '-20deg'},
-            {rotate: '0deg'},
-          ],
-          delay: 0,
-        }, 1000);
+      })
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 1500)
+      setTimeout(() => {this.$refs.voice.play()}, 1000)
     },
   },
   mounted() {
+    this.animateSvg();
     this.animateElements();
     this.playVoiceOver();
   }

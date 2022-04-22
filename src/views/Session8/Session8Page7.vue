@@ -83,7 +83,7 @@ export default {
 }
 .star-text p {
   font-size: 3vh;
-  margin-top: 4.5vh;
+  margin-top: 3.5vh;
   margin-bottom: 0;
 }
 .text-box {

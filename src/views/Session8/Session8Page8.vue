@@ -74,7 +74,7 @@ export default {
 }
 .star-text p {
   font-size: 3vh;
-  margin-top: 5.5vh;
+  margin-top: 3vh;
   margin-bottom: 0;
 }
 tspan { white-space:pre }
