@@ -270,6 +270,7 @@ export default {
         opacity: 1,
         duration: 500
       })
+      this.$refs.goodTry.pause();
       this.$refs.correct.play();
     },
     hideElements(className) {
@@ -311,11 +312,13 @@ export default {
         case 'correct-1':
           this.animateGreenTick('#green-tick-left');
           this.hideElements('.incorrect');
+          this.hideElements('#correct-1');
           this.checkComplete(id);
           break;
         case 'correct-2':
           this.animateGreenTick('#green-tick-right');
           this.hideElements('.incorrect-2');
+          this.hideElements('#correct-2');
           this.checkComplete(id);
           break;
       }

@@ -131,6 +131,7 @@ export default {
         scale: 20,
         duration: 1000,
       });
+      this.$refs.goodTry.pause();
       setTimeout(() => {this.$refs.veryGood.play()}, 500)
     },
     handleWrongAnswer() {

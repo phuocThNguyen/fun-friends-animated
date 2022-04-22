@@ -93,6 +93,7 @@ export default {
         scale: 20,
         duration: 1000,
       });
+      this.$refs.goodTry.pause();
       setTimeout(() => {this.$refs.wellDone.play()}, 500)
     },
     handleWrongAnswer() {

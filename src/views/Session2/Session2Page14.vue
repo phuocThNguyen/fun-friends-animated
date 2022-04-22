@@ -121,6 +121,7 @@ export default {
         scale: 20,
         duration: 1000,
       });
+      this.$refs.goodTry.pause();
       setTimeout(() => {this.$refs.awesome.play()}, 500);
     },
     handleWrongAnswer() {

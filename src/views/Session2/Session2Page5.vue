@@ -206,6 +206,7 @@ export default {
         opacity: 1,
         duration: 500
       })
+      this.$refs.goodTry.pause();
       this.$refs.correct.play();
     },
     hideElements(className) {
@@ -234,30 +235,17 @@ export default {
         case 'incorrect-2':
           this.animateRedTick('#red-tick-2-left');
           break;
-        case 'incorrect-3':
-          this.animateRedTick('#red-tick-1-right');
-          break;
-        case 'incorrect-4':
-          this.animateRedTick('#red-tick-2-right');
-          break;
         case 'correct-1':
           this.animateGreenTick('#green-tick-left');
           this.hideElements('.incorrect');
-          this.checkComplete(id);
-          break;
-        case 'correct-2':
-          this.animateGreenTick('#green-tick-right');
-          this.hideElements('.incorrect-2');
+          this.hideElements('#correct-1');
           this.checkComplete(id);
           break;
       }
     },
     animateText() {
       let text = document.querySelector('.text-box').children;
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      });
+      let animation = anime.timeline({easing: 'linear', duration: 500,});
       animation
         .add({targets: '.text-box', opacity: 1}, 567)
         .add({targets: text[1], opacity: 1}, 1976)
