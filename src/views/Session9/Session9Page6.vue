@@ -2,9 +2,8 @@
   <div class="interactive-container">
     <div class="text-box">
       <h1>Jakobs belønninger</h1>
-      <p>Når Jakob er modig, belønner han sig selv ved at
-        hygge sig og lave sjove ting med sin familie og venner.</p>
-      <p>Nævn nogle aktiviteter du kan li’ at lave?<p/>
+      <p>Når Jakob er modig, belønner han sig selv ved at hygge sig og lave sjove ting med sin familie og venner.</p>
+      <p>Nævn nogle aktiviteter du kan li’ at lave?</p>
       <p>Hvordan kan du bruge disse aktiviteter til at belønne dig selv?</p>
     </div>
     <div class="image-container" id="left">

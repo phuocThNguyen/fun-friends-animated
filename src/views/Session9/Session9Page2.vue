@@ -640,7 +640,7 @@ export default {
       animation
         .add({targets: '.text-box', opacity: 0.9}, 500)
         .add({targets: text[0], color: '#000'}, 500)
-        .add({targets: text[1], color: '#000'}, 4800)
+        .add({targets: text[2], color: '#000'}, 4800)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1)
