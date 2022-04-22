@@ -52,7 +52,7 @@ export default {
   },
   mounted() {
     this.animateText();
-    this.setAudioVolumeLevel(0.4);
+    this.setAudioVolumeLevel(0.3);
     this.playVoiceOver();
   }
 }

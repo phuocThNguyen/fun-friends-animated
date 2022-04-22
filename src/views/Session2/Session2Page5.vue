@@ -114,7 +114,7 @@ export default {
         opacity: 1,
         duration: 500
       })
-      this.$refs.wrong.pause();
+      this.$refs.goodTry.pause();
       this.$refs.correct.play();
     },
     hideElements(className) {

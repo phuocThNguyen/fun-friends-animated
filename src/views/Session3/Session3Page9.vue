@@ -2,7 +2,6 @@
   <div class="interactive-container">
     <img src="../../assets/images/session3/12014-resized.jpg" alt="grandpa-and-grandma-and-annie" class="session-background">
     <div class="text-box">
-      <h1>Bedstefar og bedstemor går hjem</h1>
       <p>Bedstemor og Bedstefar har været afsted hele dagen.
         Nu er de trætte, og på vej hjem ovenpå en lang dag.</p>
       <p>&nbsp;&nbsp;-&nbsp;Hvordan tror du de har det? Hvilke(n) følelse(r) oplever de?</p>
@@ -23,7 +22,7 @@
           </g>
         </g>
       </svg>
-      <div class="bubble-text">Del dine ideer med en ven!</div>
+      <div class="bubble-text">Del dine ideer <br>med en ven!</div>
     </div>
     <div class="notice-box">At hjælpe andre er stort.</div>
     <audio src="../../assets/sounds/session3/Page79.mp3" ref="voice"/>
@@ -43,10 +42,9 @@ export default {
       animation
         .add({targets: ".text-box", opacity: 1}, 500)
         .add({targets: text[0], opacity: 1}, 500)
-        .add({targets: text[1], opacity: 1}, 500)
-        .add({targets: text[2], opacity: 1}, 7500)
-        .add({targets: text[3], opacity: 1}, 12800)
-        .add({targets: text[4], opacity: 1}, 15800)
+        .add({targets: text[1], opacity: 1}, 7500)
+        .add({targets: text[2], opacity: 1}, 12800)
+        .add({targets: text[3], opacity: 1}, 15800)
         .add({targets: '.bubble-container', opacity: 0.9,}, 21000)
         .add({targets: '.notice-box', opacity: 1}, 21000)
     },
@@ -96,8 +94,8 @@ export default {
 }
 .bubble-container {
   position: absolute;
-  width: 30%;
-  height: 28vh;
+  width: calc(0.2*133vh);
+  height: 18vh;
   bottom: 12vh;
   left: 1%;
   opacity: 0;
@@ -114,7 +112,7 @@ export default {
   position: absolute;
   left: 3%;
   top: 2%;
-  font-size: 5vh;
+  font-size: 3vh;
   text-align: center;
   width: 94%;
   height: 76%;

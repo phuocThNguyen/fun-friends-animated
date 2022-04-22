@@ -942,7 +942,6 @@ export default {
 .text-box p {
   margin-bottom: 0;
 }
-
 .bubble-container {
   position: absolute;
   width: calc(0.2*133vh);
@@ -950,7 +949,6 @@ export default {
   bottom: 12vh;
   left: 1%;
   opacity: 0;
-
 }
 .bubble {
   position: absolute;

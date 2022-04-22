@@ -23,7 +23,7 @@
           </g>
         </g>
       </svg>
-      <div class="bubble-text">Del dine ideer med en ven!</div>
+      <div class="bubble-text">Del dine ideer <br>med en ven!</div>
     </div>
     <audio src="../../assets/sounds/all/Good_Job.mp3" ref="goodJob"/>
     <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
@@ -80,6 +80,7 @@ export default {
   margin-bottom: 1.5vh;
   opacity: 0;
 }
+.text-box p:last-child {margin-bottom: 0}
 .notice-box {
   position: absolute;
   bottom: 6vh;
@@ -95,8 +96,8 @@ export default {
 }
 .bubble-container {
   position: absolute;
-  width: 30%;
-  height: 28vh;
+  width: calc(0.2*133vh);
+  height: 18vh;
   bottom: 12vh;
   right: 1%;
   opacity: 0;
@@ -112,7 +113,7 @@ export default {
   position: absolute;
   left: 3%;
   top: 2%;
-  font-size: 5vh;
+  font-size: 3vh;
   text-align: center;
   width: 94%;
   height: 76%;

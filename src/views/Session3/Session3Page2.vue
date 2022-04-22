@@ -20,7 +20,7 @@
           </g>
         </g>
       </svg>
-      <div class="bubble-text">Se på din vens ansigt!</div>
+      <div class="bubble-text">Se på din <br>vens ansigt!</div>
     </div>
     <audio src="../../assets/sounds/session3/Page72.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">72</div>
@@ -74,9 +74,9 @@ export default {
 }
 .bubble-container {
   position: absolute;
-  width: 30%;
-  height: 28vh;
-  bottom: 6vh;
+  width: calc(0.2*133vh);
+  height: 18vh;
+  bottom: 12vh;
   left: 1%;
   opacity: 0;
 }
@@ -92,7 +92,7 @@ export default {
   position: absolute;
   left: 3%;
   top: 2%;
-  font-size: 5vh;
+  font-size: 3vh;
   text-align: center;
   width: 94%;
   height: 76%;
