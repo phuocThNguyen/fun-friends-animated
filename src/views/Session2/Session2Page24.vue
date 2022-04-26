@@ -1353,7 +1353,6 @@
       <p>&nbsp;- kom ud og leg</p>
       <p>&nbsp;- få rigeligt med søvn</p>
       <p>&nbsp;- drikke og spise sunde madvarer</p>
-      <p>&nbsp;- spise sund mad</p>
       <p>&nbsp;- øve dig på at afspænde / slappe af uden skærme</p>
       <p>&nbsp;- udvise opmærksomhed overfor det der bringer glæde,
         og det du kan se, høre, lugte / dufte, smage og føle / mærke</p>
@@ -1363,7 +1362,6 @@
       <img class="action-image" src="../../assets/images/introduction/Koala_Child_Hugging.jpg" alt="kind-to-animals">
       <img class="action-image" src="../../assets/images/session1/811-resized.jpg" alt="play-outside">
       <img class="action-image" src="../../assets/images/session5/85693.jpg" alt="sleep-early">
-      <img class="action-image" src="../../assets/images/session2/glass-water-macro-shot.jpg" alt="drink-water">
       <img class="action-image" src="../../assets/images/session1/6796-resized.jpg" alt="eat-healthy">
       <img class="action-image" src="../../assets/images/session1/4082-resized.jpg" alt="relaxing">
       <img class="action-image" src="../../assets/images/session1/2749-resized.jpg" alt="happy-things">
@@ -1395,14 +1393,12 @@ export default {
         .add({targets: images[2], opacity: 1}, 8200)
         .add({targets: texts[4], opacity: 1}, 11100)
         .add({targets: images[3], opacity: 1}, 11100)
-        .add({targets: texts[5], opacity: 1}, 13000)
-        .add({targets: images[4], opacity: 1}, 13000)
-        .add({targets: texts[6], opacity: 1}, 15500)
-        .add({targets: images[5], opacity: 1}, 15500)
-        .add({targets: texts[7], opacity: 1}, 20200)
-        .add({targets: images[6], opacity: 1}, 20200)
-        .add({targets: texts[8], opacity: 1}, 31200)
-        .add({targets: images[7], opacity: 1}, 31200)
+        .add({targets: texts[5], opacity: 1}, 15500)
+        .add({targets: images[4], opacity: 1}, 15500)
+        .add({targets: texts[6], opacity: 1}, 20200)
+        .add({targets: images[5], opacity: 1}, 20200)
+        .add({targets: texts[7], opacity: 1}, 31200)
+        .add({targets: images[6], opacity: 1}, 31200)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;

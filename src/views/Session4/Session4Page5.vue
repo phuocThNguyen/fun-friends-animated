@@ -19,7 +19,7 @@
           </g>
         </g>
       </svg>
-      <div class="bubble-text">Del dine ideer <br>med en ven!</div>
+      <div class="bubble-text">Del dine tanker <br>med dine venner!</div>
     </div>
     <audio src="../../assets/sounds/session4/Page91.mp3" ref="voice"/>
     <div class="page-number" id="page-light">91</div>

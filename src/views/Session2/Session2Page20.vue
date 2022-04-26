@@ -11,7 +11,7 @@
         <emote-worried class="emotes incorrect"/>
       </div>
       <div class="tips-container">
-        <p class="incorrect" id="tip-1-left">Trist</p>
+        <p class="incorrect" id="tip-1-left">Ked af det</p>
         <p id="tip-2-left">Glad</p>
         <p class="incorrect" id="tip-3-left">Bekymret</p>
       </div>
@@ -70,7 +70,7 @@
         <emote-worried class="emotes"/>
       </div>
       <div class="tips-container">
-        <p class="incorrect-2" id="tip-1-right">Vred</p>
+        <p class="incorrect-2" id="tip-1-right">Sur</p>
         <p class="incorrect-2" id="tip-2-right">Glad</p>
         <p id="tip-3-right">Bekymret</p>
       </div>
@@ -270,7 +270,7 @@ export default {
   text-align: center;
 }
 .tips-container p {
-  font-size: 3vh;
+  font-size: 2.5vh;
   font-weight: bold;
   margin-bottom: 0;
   display: inline-block;

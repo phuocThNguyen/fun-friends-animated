@@ -11,7 +11,7 @@
         <emote-worried class="emotes incorrect"/>
       </div>
       <div class="tips-container">
-        <p id="tip-1-left">Vred</p>
+        <p id="tip-1-left">Sur</p>
         <p class="incorrect" id="tip-2-left">Glad</p>
         <p class="incorrect" id="tip-3-left">Bekymret</p>
       </div>
@@ -72,7 +72,7 @@
       <div class="tips-container">
         <p class="incorrect-2" id="tip-1-right">Bekymret</p>
         <p id="tip-2-right">Glad</p>
-        <p class="incorrect-2" id="tip-3-right">Trist</p>
+        <p class="incorrect-2" id="tip-3-right">Ked af det</p>
       </div>
       <div class="answer-container">
         <svg class="small-tick" id="red-tick-1-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.98 92.25">
@@ -272,7 +272,7 @@ export default {
   text-align: center;
 }
 .tips-container p {
-  font-size: 3vh;
+  font-size: 2.5vh;
   font-weight: bold;
   margin-bottom: 0;
   display: inline-block;

@@ -143,7 +143,7 @@ export default {
   flex-direction: row;
   justify-content: space-around;
   color: #ffffff;
-  font-size: 5vh;
+  font-size: 4vh;
   font-weight: bold;
   padding: 0 1.7vh;
   text-align: center;

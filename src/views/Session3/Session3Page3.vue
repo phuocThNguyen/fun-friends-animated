@@ -6,7 +6,7 @@
       class="question"
       question="Hvilke(n) følelse(r) oplever de?"
       :emotes="['sad','happy','worried']"
-      :tips="['Trist','Glad','Bekymret']"
+      :tips="['Ked af det','Glad','Bekymret']"
       :ans="['red-tick','green-tick','red-tick']"
       :isSmall="false"
       :delay="9600"

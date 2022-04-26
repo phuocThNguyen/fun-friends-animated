@@ -20,7 +20,7 @@
           </g>
         </g>
       </svg>
-      <div class="bubble-text">Se på din <br>vens ansigt!</div>
+      <div class="bubble-text">Kig på din <br>vens ansigt!</div>
     </div>
     <audio src="../../assets/sounds/session3/Page72.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">72</div>

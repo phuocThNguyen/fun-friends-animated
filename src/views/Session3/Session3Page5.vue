@@ -6,7 +6,7 @@
       class="question"
       question="Hvad tror du at de føler?"
       :emotes="['angry','sad','happy']"
-      :tips="['Vred','Trist','Glad']"
+      :tips="['Sur','Ked af det','Glad']"
       :ans="['red-tick','red-tick','green-tick']"
       :isSmall="false"
       :delay="500"
