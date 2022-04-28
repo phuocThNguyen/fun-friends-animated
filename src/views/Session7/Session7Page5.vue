@@ -1002,12 +1002,12 @@
       <p>Min ven(inde)</p>
       <p>Min pædagog / lærer</p>
       <p>Mine søskende</p>
-      <p style="font-size: 2.2vh">Min ven(inde)s forælder</p>
+      <p>Min forælder</p>
       <h1>Min Hjælper</h1>
     </div>
     <div class="wing-container" id="right-container">
-      <p>Leg med en dyreven</p>
-      <p>Sparke bold med nogle venner</p>
+      <p>Leg gemmeleg</p>
+      <p>Tage ud og svømme</p>
       <p>Sjippe</p>
       <p>Flyv med en drage</p>
       <p>Leg i naturen</p>

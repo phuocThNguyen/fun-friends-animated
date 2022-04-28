@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <img src="../../assets/images/session12/50044.jpg" alt="party" class="session-background">
     <div class="text-box">
-      <h1>Spil & Leg Fest: Lade os fejre</h1>
+      <h1>Spil & Leg Fest: Lad os fejre</h1>
       <p>Gå sammen med din familie og find på et spil eller en leg
         som man kan bruge til at øve sig på FRIENDS færdighederne.</p>
       <p>Del dit spil eller din leg med andre børn til FRIENDS festen.</p>

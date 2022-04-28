@@ -999,12 +999,12 @@
       <p>Min ven(inde)</p>
       <p>Min pædagog / lærer</p>
       <p>Mine søskende</p>
-      <p style="font-size: 2.2vh">Min ven(inde)s forælder</p>
+      <p>Min forælder</p>
       <h1>Min Hjælper</h1>
     </div>
     <div class="wing-container" id="right-container">
       <p>Leg gemmeleg</p>
-      <p>Tag ud og svømme</p>
+      <p style="font-size: 2.2vh">Tag ud og ha en picnic</p>
       <p>Sjippe</p>
       <p>Flyv med en drage</p>
       <p>Leg i naturen</p>

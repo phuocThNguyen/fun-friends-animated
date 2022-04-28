@@ -12,7 +12,7 @@
       <p>&bull;&nbsp;&nbsp;er hjælpsomme</p>
       <p>&bull;&nbsp;&nbsp;smiler</p>
       <p>&bull;&nbsp;&nbsp;deler</p>
-      <p>Kan du komme i tanke <br>om brflere ting?</p>
+      <p>Kan du komme i tanke <br>om flere ting?</p>
     </div>
     <div class="hand-container" id="hand-1">
       <svg class="hand" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 538 691" width="538" height="691">

@@ -1003,7 +1003,7 @@
       <p>Min ven(inde)</p>
       <p>Min pædagog / lærer</p>
       <p>Mine søskende</p>
-      <p style="font-size: 2.2vh">Min ven(inde)s forælder</p>
+      <p>Min forælder</p>
       <h1>Min Hjælper</h1>
     </div>
     <div class="wing-container" id="right-container">

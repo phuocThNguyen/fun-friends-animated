@@ -818,6 +818,7 @@
         </p>
       </div>
     </div>
+    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Falling-Snow-Sound-Effect-Amplified.mp3"/>
     <audio src="../../assets/sounds/session5/Page127.mp3" ref="voice"/>
     <div class="page-number" id="page-light">127</div>
   </div>

@@ -700,7 +700,7 @@
     </svg>
     <div class="text-box">
       <h1>Prøv dagligt</h1>
-      <p>&nbsp;&bull; Øv dig henover ugen på at forstå de ”røde” tanker og ”grønne” tanker som du og din familier har. </p>
+      <p>&nbsp;&bull; Øv dig henover ugen på at forstå de ”røde” tanker og ”grønne” tanker som du og din familie har. </p>
       <p>&nbsp;&bull; Øv dig mindst 10 minutter om dagen på afspænding og at slappe af, uden forstyrrelser!</p>
       <p>&nbsp;&bull; Fortsæt med at rose dit barn for at være MODIG.</p>
       <p>&nbsp;&bull; Bliv ved med at øve dig på at være MODIG. Øv dig dagligt på at:</p>
