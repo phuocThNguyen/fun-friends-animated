@@ -10,7 +10,7 @@
       </div>
       <div class="tips-container">
         <p class="incorrect">Sur, Bekymret</p>
-        <p>Glad, Afslappe</p>
+        <p>Glad, Afslappet</p>
       </div>
       <div class="answer-container">
         <svg class="big-tick" id="red-tick-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.98 92.25">
@@ -53,7 +53,7 @@
       </div>
       <div class="tips-container">
         <p class="incorrect-2">Sur, Bekymret</p>
-        <p>Glad, Afslappe</p>
+        <p>Glad, Afslappet</p>
       </div>
       <div class="answer-container">
         <svg class="big-tick" id="red-tick-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.98 92.25">

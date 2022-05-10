@@ -93,7 +93,7 @@
       </div>
     </div>
 
-    \<audio ref="wrong" src="../../assets/sounds/all/wrong-ans.mp3"/>
+    <audio ref="wrong" src="../../assets/sounds/all/wrong-ans.mp3"/>
     <audio ref="correct" src="../../assets/sounds/all/correct-ans.mp3"/>
     <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3"/>
     <audio src="../../assets/sounds/all/Correct.mp3" ref="correctVoice"/>
