@@ -1,13 +1,30 @@
 <template>
   <div>
-    <div class="hide">
-      <img class="image" src="./assets/images/others/portrait-to-landscape.png" alt="portrait-to-landscape">
-      <h1 class="content">Please use Landscape mode!</h1>
-    </div>
-    <div class="show">
-      <div class="center">
-        <Navigation v-on:setSession="setSession" :title="sessions[session][1]"/>
-        <component :is="sessions[session][0]" v-on:nextSession="setSession" :isNext="isNext" :appendixPage="appendixPage"/>
+    <div class="authentication">
+      <div v-if="authed" class="auth">
+        <div class="hide">
+          <img class="image" src="./assets/images/others/portrait-to-landscape.png" alt="portrait-to-landscape">
+          <h1 class="content">Please use Landscape mode!</h1>
+        </div>
+        <div class="show">
+          <div class="center">
+            <Navigation
+                v-on:setSession="setSession"
+                :title="sessions[session][1]"
+                :session="sessions[session][0]"
+            />
+            <component
+                :is="sessions[session][0]"
+                v-on:nextSession="setSession"
+                :isNext="isNext"
+                :appendixPage="appendixPage"
+            />
+          </div>
+        </div>
+      </div>
+      <div v-else class="unauth">
+        <p>No Access!</p>
+        <p>Please contact hub@friendsresilience.org for more information.</p>
       </div>
     </div>
   </div>
@@ -58,6 +75,7 @@ export default {
       session: 0,
       isNext: true,
       appendixPage: 0,
+      authed: false,
     }
   },
   methods: {
@@ -72,20 +90,19 @@ export default {
         this.$store.commit("setCurrentSession", this.session);
       }
     },
-    // pwa related
-    async accept() {
-      this.showUpdateUI = false;
-      await this.$workbox.messageSW({type : "SKIP_WAITING"})
-    }
   },
-  created() {
-    // pwa related
-    if (this.$workbox) {
-      this.$workbox.addEventListener('waiting', () => {
-        this.showUpdateUI = true;
-      })
-    }
-  }
+  beforeMount() {
+    const params = new Proxy(new URLSearchParams(window.location.search), {
+      get: (searchParams, prop) => searchParams.get(prop),
+    });
+    const utcTimestamp = new Date().getTime();
+    console.log(utcTimestamp)
+    console.log(params.tk)
+    // tk is url query
+    params.tk >= utcTimestamp - 30000 && params.tk <= utcTimestamp + 1800000
+        ? this.authed = true : this.authed = false;
+  },
+  created() {}
 };
 </script>
 
@@ -118,6 +135,16 @@ export default {
   height: 100vh;
   padding: 15vh 10vw 0 10vw;
 }
+.unauth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+.unauth p:first-child {font-size: 10vh;font-weight: bold;margin-bottom: 0;color: #f52100}
+.unauth p:last-child {font-size: 4vh; color: #000}
 .shp-background { fill: #00ce7c; opacity: 0.8 }
 .shp-arrow { fill: #ffffff; opacity: 0.8 }
 .session-container {
