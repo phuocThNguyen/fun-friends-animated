@@ -96,8 +96,7 @@ export default {
       get: (searchParams, prop) => searchParams.get(prop),
     });
     const utcTimestamp = new Date().getTime();
-    console.log(utcTimestamp)
-    console.log(params.tk)
+
     // tk is url query
     params.tk >= utcTimestamp - 30000 && params.tk <= utcTimestamp + 1800000
         ? this.authed = true : this.authed = false;
