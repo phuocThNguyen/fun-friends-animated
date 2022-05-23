@@ -46,6 +46,7 @@ import Session10 from "@/views/Session10/Session10";
 import Session11 from "@/views/Session11/Session11";
 import Session12 from "@/views/Session12/Session12";
 import Appendix from "@/views/Appendix/Appendix";
+import axios from "axios";
 
 export default {
   name: "App",
@@ -90,8 +91,17 @@ export default {
         this.$store.commit("setCurrentSession", this.session);
       }
     },
+    auth() {
+      const baseURL = 'http://friendsresilience.test/api/test'
+      // axios.get(baseURL).then((result) => console.log(result))
+      axios({
+        method: 'get',
+        url: baseURL,
+      }).then((result) => console.log(result))
+    }
   },
   beforeMount() {
+    // this.auth();
     const params = new Proxy(new URLSearchParams(window.location.search), {
       get: (searchParams, prop) => searchParams.get(prop),
     });
