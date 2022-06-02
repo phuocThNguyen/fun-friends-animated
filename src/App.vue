@@ -1,30 +1,35 @@
 <template>
   <div>
-    <div class="authentication">
-      <div v-if="authed" class="auth">
-        <div class="hide">
-          <img class="image" src="./assets/images/others/portrait-to-landscape.png" alt="portrait-to-landscape">
-          <h1 class="content">Please use Landscape mode!</h1>
-        </div>
-        <div class="show">
-          <div class="center">
-            <Navigation
-                v-on:setSession="setSession"
-                :title="sessions[session][1]"
-                :session="sessions[session][0]"
-            />
-            <component
-                :is="sessions[session][0]"
-                v-on:nextSession="setSession"
-                :isNext="isNext"
-                :appendixPage="appendixPage"
-            />
+    <div v-if="loading" class="loading">
+      <h1>Loading...</h1>
+    </div>
+    <div v-else>
+      <div class="authentication">
+        <div v-if="authed" class="auth">
+          <div class="hide">
+            <img class="image" src="./assets/images/others/portrait-to-landscape.png" alt="portrait-to-landscape">
+            <h1 class="content">Please use Landscape mode!</h1>
+          </div>
+          <div class="show">
+            <div class="center">
+              <Navigation
+                  v-on:setSession="setSession"
+                  :title="sessions[session][1]"
+                  :session="sessions[session][0]"
+              />
+              <component
+                  :is="sessions[session][0]"
+                  v-on:nextSession="setSession"
+                  :isNext="isNext"
+                  :appendixPage="appendixPage"
+              />
+            </div>
           </div>
         </div>
-      </div>
-      <div v-else class="unauth">
-        <p>No Access!</p>
-        <p>Please contact hub@friendsresilience.org for more information.</p>
+        <div v-else class="unauth">
+          <p>Sorry, you cannot access this resource at the moment!</p>
+          <p>Please contact <span style="font-style: italic; text-decoration: underline">hub@friendsresilience.org</span> for more information.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -77,6 +82,7 @@ export default {
       isNext: true,
       appendixPage: 0,
       authed: false,
+      loading: true,
     }
   },
   methods: {
@@ -91,25 +97,45 @@ export default {
         this.$store.commit("setCurrentSession", this.session);
       }
     },
-    auth() {
-      const baseURL = 'http://friendsresilience.test/api/test'
-      // axios.get(baseURL).then((result) => console.log(result))
-      axios({
-        method: 'get',
-        url: baseURL,
-      }).then((result) => console.log(result))
+    getParameter() {
+      const params = new Proxy(new URLSearchParams(window.location.search), {
+        get: (searchParams, prop) => searchParams.get(prop),
+      });
+      // username is the url parameter
+      return params.variable;
+    },
+    async getAccessToken(username) {
+      // Test server url
+      // const baseURL = 'http://friendsresilience.test/animated/validate/' + username;
+
+      // Main server url
+      const baseURL = 'https://friendsresilience.org/animated/validate/' + username;
+
+      await axios.get(baseURL)
+        .then(response => {
+          console.log()
+          if (response.data === 'verified') {
+            this.$store.commit("setAuthedStatus", true);
+            this.$store.commit("setLoadingStatus", false);
+            this.loading = false;
+            this.authed = true;
+          } else {
+            this.$store.commit("setLoadingStatus", false);
+            this.loading = false;
+          }
+        })
+    },
+    async checkAuthentication() {
+      if (this.loading) {
+        let parameter = this.getParameter();
+        await this.getAccessToken(parameter);
+      }
     }
   },
-  beforeMount() {
-    // this.auth();
-    const params = new Proxy(new URLSearchParams(window.location.search), {
-      get: (searchParams, prop) => searchParams.get(prop),
-    });
-    const utcTimestamp = new Date().getTime();
-
-    // tk is url query
-    params.tk >= utcTimestamp - 30000 && params.tk <= utcTimestamp + 1800000
-        ? this.authed = true : this.authed = false;
+   async beforeMount() {
+    this.authed = this.$store.getters.getAuthedStatus;
+    this.loading = this.$store.getters.getLoadingStatus;
+     await this.checkAuthentication();
   },
   created() {}
 };
@@ -149,11 +175,20 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
   width: 100vw;
   height: 100vh;
 }
-.unauth p:first-child {font-size: 10vh;font-weight: bold;margin-bottom: 0;color: #f52100}
-.unauth p:last-child {font-size: 4vh; color: #000}
+.unauth p:first-child {font-size: 5vh;font-weight: bold;margin-bottom: 0;color:#f52100}
+.unauth p:last-child {font-size: 4vh;}
+.loading {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .shp-background { fill: #00ce7c; opacity: 0.8 }
 .shp-arrow { fill: #ffffff; opacity: 0.8 }
 .session-container {
