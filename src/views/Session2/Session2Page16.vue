@@ -143,7 +143,7 @@ export default {
   top: 9vh;
   left: calc(0.4*133vh);
   z-index: 50;
-  opacity: 1;
+  opacity: 0;
 }
 .shp0-good-try { fill: #ffe46b }
 .shp1-good-try { fill: #656a92 }
