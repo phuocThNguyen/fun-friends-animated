@@ -26,6 +26,9 @@
             </div>
           </div>
         </div>
+        <div v-else-if="relogin" class="unauth">
+          <p style="color: #000">Please login again via our main website to open the app!</p>
+        </div>
         <div v-else class="unauth">
           <p>Sorry, you cannot access this resource at the moment!</p>
           <p>Please contact <span style="font-style: italic; text-decoration: underline">hub@friendsresilience.org</span> for more information.</p>
@@ -82,6 +85,7 @@ export default {
       isNext: true,
       appendixPage: 0,
       authed: false,
+      relogin: false,
       loading: true,
     }
   },
@@ -101,27 +105,26 @@ export default {
       const params = new Proxy(new URLSearchParams(window.location.search), {
         get: (searchParams, prop) => searchParams.get(prop),
       });
-      // username is the url parameter
-      return params.variable;
+      if (params.a === null) return params.t;
+      else return params.a;
     },
-    async getAccessToken(username) {
+    async getAccessToken(variable) {
       // Test server url
-      // const baseURL = 'http://friendsresilience.test/animated/validate/' + username;
+      // const baseURL = 'http://friendsresilience.test/animated/validate/' + variable;
 
       // Main server url
-      const baseURL = 'https://friendsresilience.org/animated/validate/' + username;
+      const baseURL = 'https://friendsresilience.org/animated/validate/' + variable;
 
       await axios.get(baseURL)
         .then(response => {
-          console.log()
+          this.loading = false;
+          this.$store.commit("setLoadingStatus", false);
           if (response.data === 'verified') {
             this.$store.commit("setAuthedStatus", true);
-            this.$store.commit("setLoadingStatus", false);
-            this.loading = false;
             this.authed = true;
-          } else {
-            this.$store.commit("setLoadingStatus", false);
-            this.loading = false;
+          }
+          else if (response.data === 'relogin') {
+            this.relogin = true;
           }
         })
     },
