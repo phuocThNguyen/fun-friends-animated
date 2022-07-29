@@ -135,10 +135,10 @@ export default {
       }
     }
   },
-   async beforeMount() {
+  async beforeMount() {
     this.authed = this.$store.getters.getAuthedStatus;
     this.loading = this.$store.getters.getLoadingStatus;
-     await this.checkAuthentication();
+    await this.checkAuthentication();
   },
   created() {}
 };
