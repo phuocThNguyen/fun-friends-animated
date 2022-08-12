@@ -1008,7 +1008,7 @@
       <img class="action-image" src="../../assets/images/session1/2749-resized.jpg" alt="happy-things">
       <img class="action-image" src="../../assets/images/session1/thank-you.jpg" alt="thank-you">
     </div>
-    <audio src="../../assets/sounds/session9/Page185.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/session3/Page85.mp3" ref="voice"/>
     <div class="page-number" id="page-light">185</div>
   </div>
 </template>
