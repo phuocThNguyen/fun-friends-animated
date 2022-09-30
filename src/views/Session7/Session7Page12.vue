@@ -243,19 +243,19 @@
       <textarea class="trophy-text" placeholder="Goal:"></textarea>
     </div>
     <div class="wing-container" id="left-container">
-      <input type="text">
-      <input type="text">
-      <input type="text">
-      <input type="text">
-      <input type="text">
+      <p>A family member</p>
+      <p>My friends</p>
+      <p>My teacher</p>
+      <p>My siblings</p>
+      <p>My parents</p>
       <h1>My Helper</h1>
     </div>
     <div class="wing-container" id="right-container">
-      <input type="text">
-      <input type="text">
-      <input type="text">
-      <input type="text">
-      <input type="text">
+      <p>Play hide and seek</p>
+      <p>Go for a swim</p>
+      <p>Play skipping</p>
+      <p>Fly a kite</p>
+      <p>Play in the park</p>
       <h1>Rewards</h1>
     </div>
     <Modal class="modal" text="Tap on the trophy, bubbles and
@@ -285,11 +285,11 @@ export default {
         easing: 'linear'
       })
       animation
-          .add({targets: helper, opacity: 1}, 6300)
-          .add({targets: plan, opacity: 1}, 10100)
-          .add({targets: trophy, opacity: 1}, 13300)
-          .add({targets: bubble, opacity: 1}, 16800)
-          .add({targets: reward, opacity: 1}, 21500)
+        .add({targets: helper, opacity: 1}, 6300)
+        .add({targets: plan, opacity: 1}, 10100)
+        .add({targets: trophy, opacity: 1}, 13300)
+        .add({targets: bubble, opacity: 1}, 16800)
+        .add({targets: reward, opacity: 1}, 21500)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
@@ -343,7 +343,7 @@ textarea:focus { outline: none; }
   font-size: 4.9vh;
   text-align: center;
 }
-.wing-container input {
+.wing-container p {
   position: absolute;
   width: 100%;
   text-align: center;
@@ -351,27 +351,24 @@ textarea:focus { outline: none; }
   padding: 1vh .7vh;
   color: #ffffff;
   border-radius: 5px;
-  border: none;
-  font-size: 2.8vh;
+  font-size: 3vh;
+  opacity: 1;
   margin-bottom: 0;
 }
-.wing-container input:focus {
-  outline: none;
+.wing-container p:nth-child(1) {
+  top: 52vh;
 }
-.wing-container input:nth-child(1) {
-  top: 53vh;
+.wing-container p:nth-child(2) {
+  top: 40vh;
 }
-.wing-container input:nth-child(2) {
-  top: 41vh;
+.wing-container p:nth-child(3) {
+  top: 28vh;
 }
-.wing-container input:nth-child(3) {
-  top: 29vh;
+.wing-container p:nth-child(4) {
+  top: 16vh;
 }
-.wing-container input:nth-child(4) {
-  top: 17vh;
-}
-.wing-container input:nth-child(5) {
-  top: 5.5vh;
+.wing-container p:nth-child(5) {
+  top: 4.5vh;
 }
 #left-container {
   left: 1%;

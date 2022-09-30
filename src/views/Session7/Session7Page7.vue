@@ -1161,26 +1161,26 @@ export default {
         duration: 500,
       })
       animation
-          .add({
-            targets: trophy,
-            opacity: 1
-          }, 2262)
-          .add({
-            targets: leftElements[5],
-            opacity: 1
-          }, 4000)
-          .add({
-            targets: rightElements[5],
-            opacity: 1
-          }, 4000)
-          .add({
-            targets: '.text-box',
-            opacity: 1
-          }, 4000)
-          .add({
-            targets: '.coordinate-container',
-            opacity: 1
-          }, 5170)
+        .add({
+          targets: trophy,
+          opacity: 1
+        }, 2262)
+        .add({
+          targets: leftElements[5],
+          opacity: 1
+        }, 4000)
+        .add({
+          targets: rightElements[5],
+          opacity: 1
+        }, 4000)
+        .add({
+          targets: '.text-box',
+          opacity: 1
+        }, 4000)
+        .add({
+          targets: '.coordinate-container',
+          opacity: 1
+        }, 5170)
 
       anime({
         targets: '.button',
