@@ -8,15 +8,15 @@
     <div class="items-container">
       <div class="images-container">
         <img class="images" id="image-2" src="../../assets/images/session1/18-resized.jpg" alt="bears">
-        <img class="images" id="image-1" src="../../assets/images/session1/monkey.jpeg" alt="monkey">
+        <img class="images" id="image-1" src="../../assets/images/session1/monkey.jpg" alt="monkey">
         <img class="images" id="image-4" src="../../assets/images/session1/215-resized.jpg" alt="elephants">
         <img class="images" id="image-3" src="../../assets/images/session1/chicken.jpg" alt="chicken">
       </div>
       <div class="images-container">
-        <green-tick class="tick" id="tick-1"></green-tick>
-        <green-tick class="tick" id="tick-2"></green-tick>
-        <green-tick class="tick" id="tick-3"></green-tick>
-        <green-tick class="tick" id="tick-4"></green-tick>
+        <green-tick class="tick" id="tick-1"/>
+        <green-tick class="tick" id="tick-2"/>
+        <green-tick class="tick" id="tick-3"/>
+        <green-tick class="tick" id="tick-4"/>
       </div>
       <div class="images-container">
         <div class="mask" @click="checkAns('monkey', $event)" id="mask-1"></div>
@@ -135,11 +135,12 @@
       <div class="button-label">Play Sound Again</div>
     </div>
 
-    <audio ref="bear" src="../../assets/sounds/session1/bear-cut.mp3"/>
-    <audio ref="monkey" src="../../assets/sounds/session1/monkey.mp3"/>
-    <audio ref="elephant" src="../../assets/sounds/session1/elephant.mp3"/>
-    <audio ref="chicken" src="../../assets/sounds/session1/chicken.mp3"/>
+    <audio ref="bear" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/bear-cut.mp3"/>
+    <audio ref="monkey" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/monkey.mp3"/>
+    <audio ref="elephant" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/elephant.mp3"/>
+    <audio ref="chicken" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/chicken.mp3"/>
     <audio ref="correct" src="../../assets/sounds/all/correct-ans.mp3"/>
+    <audio ref="correctVoice" src="../../assets/sounds/all/Correct_1.mp3"/>
     <audio ref="wrong" src="../../assets/sounds/all/wrong-ans.mp3"/>
     <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3"/>
 
@@ -168,8 +169,7 @@
               <path class="cls-12" d="M65,74.46c1.72,3.11,1.14,7.37-1.3,9.52s-5.8,1.36-7.52-1.76S55,74.85,57.45,72.7,63.25,71.34,65,74.46Z" />
               <path class="cls-9" d="M48.94,79.32c-.76,3.37-.17,4.37.89,4.39s6.68-4.21,5.64-5.55S49.65,76.19,48.94,79.32Z" />
             </g>
-            <path class="cls-7"
-                  d="M114.29,66.76a14.39,14.39,0,0,0-.16-12.23,18,18,0,0,0-4.31-5.87,18.56,18.56,0,0,0-6.75-3.81c-5-1.51-10.32-.44-13.62,2.28a14.58,14.58,0,0,0-3.92,4.76,13.93,13.93,0,0,0-1.26,5.85l.27.08a14.55,14.55,0,0,1,6.24-9.1,14.1,14.1,0,0,1,11.79-1.57,16.56,16.56,0,0,1,9.7,8A16.94,16.94,0,0,1,114,66.68Z" />
+            <path class="cls-7" d="M114.29,66.76a14.39,14.39,0,0,0-.16-12.23,18,18,0,0,0-4.31-5.87,18.56,18.56,0,0,0-6.75-3.81c-5-1.51-10.32-.44-13.62,2.28a14.58,14.58,0,0,0-3.92,4.76,13.93,13.93,0,0,0-1.26,5.85l.27.08a14.55,14.55,0,0,1,6.24-9.1,14.1,14.1,0,0,1,11.79-1.57,16.56,16.56,0,0,1,9.7,8A16.94,16.94,0,0,1,114,66.68Z" />
             <g class="cls-13">
               <ellipse class="cls-9" cx="99.28" cy="62.25" rx="14.99" ry="16.21" transform="translate(-17.43 51.78) rotate(-26.96)" />
               <path class="cls-10" d="M109,52.2c5.44,4.46,6.9,12.76,3.26,18.53s-11,6.85-16.44,2.39-6.9-12.77-3.26-18.54S103.57,47.73,109,52.2Z" />
@@ -283,10 +283,12 @@
         </g>
       </g>
     </svg>
-    <audio src="../../assets/sounds/session1/27Animated_Book_Page26_Part1.mp3" ref="voice1" @ended="hideMask"/>
-    <audio src="../../assets/sounds/session1/27Animated_Book_Page26_Part2.mp3" ref="voice2"/>
-    <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
-    <audio src="../../assets/sounds/all/Great_work.mp3" ref="greatWork"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/27Animated_Book_Page26_Part1.mp3" ref="voice1" @ended="hideMask"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/27Animated_Book_Page26_Part2.mp3" ref="voice2"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/Good_Try_Try_again.mp3" ref="goodTry"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/Great_work.mp3" ref="greatWork"/>
     <div class="page-number" id="page-light">26</div>
   </div>
 </template>
@@ -452,17 +454,20 @@ export default {
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice1.play()}, 500)
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateImages();
+      this.playSound();
     }
   },
-  mounted() {
-    this.animateImages();
-    this.playSound();
-    this.playVoiceOver();
-  },
+  mounted() {},
   watch: {
     correctAns: function () {
       if (this.correctAns === 4) {
         this.afterCorrectFunctions();
+      } else {
+        this.$refs.correctVoice.play();
       }
     }
   }

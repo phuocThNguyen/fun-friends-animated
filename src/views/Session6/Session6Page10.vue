@@ -717,8 +717,8 @@
       <img class="action-image" src="../../assets/images/session1/2749-resized.jpg" alt="happy-things">
       <img class="action-image" src="../../assets/images/session1/thank-you.jpg" alt="thank-you">
     </div>
-    <audio autoplay loop src="../../assets/sounds/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"/>
-    <audio src="../../assets/sounds/session6/Session6_Page10.mp3" ref="voice"/>
+    <audio autoplay loop ref="audio" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"/>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session6/Session6_Page10.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">137</div>
   </div>
 </template>
@@ -751,75 +751,77 @@ export default {
         easing: 'linear'
       });
       animation
-          .add({
-            targets: ".text-box",
-            opacity: 1,
-          }, 570)
-          .add({
-            targets: texts[1],
-            opacity: 1,
-          }, 3238)
-          .add({
-            targets: images[0],
-            opacity: 1,
-          }, 3238)
-          .add({
-            targets: texts[2],
-            opacity: 1,
-          }, 6128)
-          .add({
-            targets: images[1],
-            opacity: 1,
-          }, 6128)
-          .add({
-            targets: texts[3],
-            opacity: 1,
-          }, 7609)
-          .add({
-            targets: images[2],
-            opacity: 1,
-          }, 7609)
-          .add({
-            targets: texts[4],
-            opacity: 1,
-          }, 10307)
-          .add({
-            targets: images[3],
-            opacity: 1,
-          }, 10307)
-          .add({
-            targets: texts[5],
-            opacity: 1,
-          }, 14129)
-          .add({
-            targets: images[4],
-            opacity: 1,
-          }, 14129)
-          .add({
-            targets: texts[6],
-            opacity: 1,
-          }, 17570)
-          .add({
-            targets: images[5],
-            opacity: 1,
-          }, 17570)
-          .add({
-            targets: texts[7],
-            opacity: 1,
-          }, 26647)
-          .add({
-            targets: images[6],
-            opacity: 1,
-          }, 26647);
+        .add({
+        targets: ".text-box",
+        opacity: 1,
+        }, 570)
+        .add({
+          targets: texts[1],
+          opacity: 1,
+        }, 3238)
+        .add({
+          targets: images[0],
+          opacity: 1,
+        }, 3238)
+        .add({
+          targets: texts[2],
+          opacity: 1,
+        }, 6128)
+        .add({
+          targets: images[1],
+          opacity: 1,
+        }, 6128)
+        .add({
+          targets: texts[3],
+          opacity: 1,
+        }, 7609)
+        .add({
+          targets: images[2],
+          opacity: 1,
+        }, 7609)
+        .add({
+          targets: texts[4],
+          opacity: 1,
+        }, 10307)
+        .add({
+          targets: images[3],
+          opacity: 1,
+        }, 10307)
+        .add({
+          targets: texts[5],
+          opacity: 1,
+        }, 14129)
+        .add({
+          targets: images[4],
+          opacity: 1,
+        }, 14129)
+        .add({
+          targets: texts[6],
+          opacity: 1,
+        }, 17570)
+        .add({
+          targets: images[5],
+          opacity: 1,
+        }, 17570)
+        .add({
+          targets: texts[7],
+          opacity: 1,
+        }, 26647)
+        .add({
+          targets: images[6],
+          opacity: 1,
+        }, 26647);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
   mounted() {
     this.animateSvg();
-    this.animateText();
-    this.playVoiceOver();
   }
 }
 </script>

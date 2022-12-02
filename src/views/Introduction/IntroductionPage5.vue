@@ -4,7 +4,7 @@
     <a class="mask" id="mask-1" href="https://apps.apple.com/au/app/the-friends-programs-game/id1104845670" target="_blank"/>
     <a class="mask" id="mask-2" href="https://apps.apple.com/au/app/thumbs-down-or-thumbs-up/id1301090858" target="_blank"/>
     <a class="mask" id="mask-3" href="https://play.google.com/store/apps/details?id=org.friendsresilience.thumbsdownup" target="_blank"/>
-    <audio src="../../assets/sounds/introduction/5Animated_Book_Page4.mp3" ref="voice"></audio>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/introduction/5Animated_Book_Page4.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">4</div>
   </div>
 </template>

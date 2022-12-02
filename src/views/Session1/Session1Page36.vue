@@ -1774,8 +1774,10 @@
         <br>you Fun Friends
         <br>skills each week.</p>
     </div>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session4/night-time.mp3"/>
-    <audio src="../../assets/sounds/session1/43Animated_Book_Page42.mp3" ref="voice"/>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/night-time.mp3"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/43Animated_Book_Page42.mp3" ref="voice"/>
     <div class="page-number" id="page-light">42</div>
   </div>
 </template>
@@ -1838,12 +1840,14 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 2000)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
   mounted() {
     this.animateSvg();
-    this.animateText();
     this.setAudioVolumeLevel(0.4);
-    this.playVoiceOver();
   }
 }
 </script>

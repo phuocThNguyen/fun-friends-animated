@@ -991,8 +991,8 @@
         steps can you name together? Each step brings you
         closer to facing your fears!</p>
     </div>
-    <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"/>
-    <audio src="../../assets/sounds/session7/Session7_Page2.mp3" ref="voice"/>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Relaxing-Forest-Sound-Effect.mp3"/>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page2.mp3" ref="voice"/>
     <div class="page-number" id="page-light">140</div>
   </div>
 </template>
@@ -1026,11 +1026,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

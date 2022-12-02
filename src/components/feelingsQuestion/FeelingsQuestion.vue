@@ -109,15 +109,17 @@ export default {
         }
       }
     },
+    animateText() {
+      anime({
+        targets: '.content-container',
+        opacity: 1,
+        easing: 'linear',
+        delay: this.delay,
+        duration: 700
+      })
+    }
   },
   mounted() {
-    anime({
-      targets: '.content-container',
-      opacity: 1,
-      easing: 'linear',
-      delay: this.delay,
-      duration: 700
-    })
     this.setMasksClassName();
   },
 }

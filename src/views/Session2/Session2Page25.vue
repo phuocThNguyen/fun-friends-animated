@@ -1369,9 +1369,11 @@
           <br>makes you happy.</p>
       </div>
     </div>
-    <drawing-canvas class="canvas" :canvasStyle="canvasStyle"/>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
-    <audio src="../../assets/sounds/session2/Session2_Page23.mp3" ref="voice"/>
+    <drawing-canvas class="canvas" v-on:updateCanvas="updateCanvas" :data="canvasData" :canvasStyle="canvasStyle"/>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session2/Session2_Page23.mp3" ref="voice"/>
     <div class="page-number" id="page-light">70</div>
   </div>
 </template>
@@ -1389,7 +1391,8 @@ export default {
         width: 0.55,
         height: 0.7,
         isPicture: false
-      }
+      },
+      canvasData: null,
     }
   },
   methods: {
@@ -1400,34 +1403,8 @@ export default {
         delay: 1000,
       });
       animation
-        .add({
-          targets: '.star-container',
-          opacity: 1
-        })
-        .add({
-          targets: ".star",
-          keyframes: [
-            {rotate: '-20deg'},
-            {rotate: '20deg'},
-            {rotate: '-20deg'},
-            {rotate: '0deg'},
-          ],
-          delay: 0,
-        })
-        .add({
-          targets: ".star-text",
-          keyframes: [
-            {rotate: '-20deg'},
-            {rotate: '20deg'},
-            {rotate: '-20deg'},
-            {rotate: '0deg'},
-          ],
-          delay: 0,
-        }, 1500)
-        .add({
-          targets: ".canvas",
-          opacity: 1
-        })
+        .add({targets: '.star-container', opacity: 1})
+        .add({targets: ".canvas", opacity: 1})
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
@@ -1435,11 +1412,22 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 2000)
     },
+    init() {
+      this.canvasData = this.$store.getters.getPage70Data;
+    },
+    updateCanvas(canvasData) {
+      this.$store.commit('setPage70Data', canvasData);
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
+  },
+  created() {
+    this.init();
   },
   mounted() {
-    this.animateText();
     this.setAudioVolumeLevel(0.3);
-    this.playVoiceOver();
   }
 }
 </script>
@@ -1466,13 +1454,18 @@ export default {
 .star-text {
   position: absolute;
   text-align: center;
+  height: 100%;
   width: 100%;
-  margin-top: 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .star-text p {
   font-size: 3.5vh;
 }
 .star-text p:first-child {
+  margin-top: 10vh;
   margin-bottom: 0;
 }
 .star {

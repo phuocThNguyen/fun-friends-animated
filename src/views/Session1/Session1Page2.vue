@@ -10,7 +10,11 @@
       <p class="text-6"><span id="letter-d">D</span>on't forget</p>
       <p class="text-7"><span id="letter-s">S</span>tay brave</p>
     </div>
-    <audio src="../../assets/sounds/session1/9Animated_Book_Page8.mp3" autoplay></audio>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/9Animated_Book_Page8.mp3"
+      ref="audio"
+    />
     <div class="page-number" id="page-dark">8</div>
   </div>
 </template>
@@ -68,11 +72,16 @@ export default {
           color: '#fff',
           webkitTextStroke: '0.1vw black',
         });
+    },
+    playVoiceOver() {
+      setTimeout(() => {this.$refs.audio.play()}, 500)
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
     }
   },
-  mounted() {
-    this.animateText();
-  }
+  mounted() {}
 }
 </script>
 

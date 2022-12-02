@@ -811,13 +811,15 @@
       <div class="star-text">
         <p><strong>Bright Star Idea</strong></p>
         <p>Before you go to bed,
-          <br>listen to quiet, gentle
-          <br>music or do something
+          <br>listen to quiet, gentle music
+          <br>or do something
           <br>calm and relaxing.
         </p>
       </div>
     </div>
-    <audio src="../../assets/sounds/session5/Session5_Page18.mp3" ref="voice"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page18.mp3" ref="voice"/>
     <div class="page-number" id="page-light">127</div>
   </div>
 </template>
@@ -828,46 +830,23 @@ import anime from "animejs";
 export default {
   name: 'Session5Page17',
   methods: {
-    animateElements() {
+    animateText() {
       let animation = anime.timeline({
         duration: 500,
         delay: 500,
         easing: 'linear'
       });
-      animation
-        .add({
-          targets: '.star-container',
-          opacity: 1
-        })
-        .add({
-          targets: ".star",
-          keyframes: [
-            {rotate: '-20deg'},
-            {rotate: '20deg'},
-            {rotate: '-20deg'},
-            {rotate: '0deg'},
-          ],
-          delay: 0,
-        })
-        .add({
-          targets: ".star-text",
-          keyframes: [
-            {rotate: '-20deg'},
-            {rotate: '20deg'},
-            {rotate: '-20deg'},
-            {rotate: '0deg'},
-          ],
-          delay: 0,
-        }, 1000);
+      animation.add({targets: '.star-container', opacity: 1});
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateElements();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 
@@ -892,10 +871,15 @@ export default {
 .star-text {
   position: absolute;
   width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   z-index: 55;
-  margin-top: 6%;
 }
+.star-text p:first-child {margin-top: 6vh}
 .star-text p {
   font-size: 4.7vh;
   margin-bottom: 0;

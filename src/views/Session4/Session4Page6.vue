@@ -2,7 +2,9 @@
   <div class="interactive-container">
     <img src="../../assets/images/session4/1827-resized.jpg" alt="relaxing" class="session-background">
     <div class="text-box">What do you do to relax and calm down?</div>
-    <audio src="../../assets/sounds/session4/Session4_Page6.mp3" ref="voice"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page6.mp3" ref="voice"/>
     <div class="page-number" id="page-light">92</div>
   </div>
 </template>
@@ -13,7 +15,7 @@ import anime from "animejs";
 export default {
   name: "Session4Page6",
   methods: {
-    animateElements() {
+    animateText() {
       anime({
         targets: '.text-box',
         opacity: 1,
@@ -25,11 +27,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateElements();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

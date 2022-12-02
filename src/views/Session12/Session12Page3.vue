@@ -1009,9 +1009,9 @@
       FUN FRIENDS book, reward yourself with something you like
       to do!</span>
     </div>
-    <audio src="../../assets/sounds/session1/playground.mp3" ref="audio" autoplay loop/>
-    <audio src="../../assets/sounds/session12/Session12_Page3.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">216</div>
+    <audio ref="audio" autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/playground.mp3"/>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session12/Session12_Page3.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">217</div>
   </div>
 </template>
 
@@ -1036,12 +1036,14 @@ export default {
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
     }
   },
   mounted() {
     this.setAudioVolumeLevel(0.4);
-    this.animateText();
-    this.playVoiceOver()
   }
 }
 </script>

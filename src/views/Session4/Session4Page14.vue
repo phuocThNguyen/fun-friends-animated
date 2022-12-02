@@ -5,7 +5,9 @@
       <h1>2. Smelling</h1>
       <p>We smell with our nose. What can we smell?</p>
     </div>
-    <audio src="../../assets/sounds/session4/Session4_Page14.mp3" ref="voice"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page14.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">100</div>
   </div>
 </template>
@@ -16,7 +18,7 @@ import anime from "animejs";
 export default {
   name: 'Session4Page14',
   methods: {
-    animateElements() {
+    animateText() {
       anime({
         targets: '.text-box',
         opacity: 1,
@@ -28,11 +30,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateElements();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

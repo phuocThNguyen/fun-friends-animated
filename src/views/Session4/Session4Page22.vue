@@ -2469,8 +2469,10 @@
       <p>&middot; Try your best and give it a go. </p>
       <p>&middot; Believe in yourself.</p>
     </div>
-    <audio autoplay loop src="../../assets/sounds/session4/night-time.mp3"/>
-    <audio src="../../assets/sounds/session4/Session4_Page22.mp3" ref="voice"/>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/night-time.mp3"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page22.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">108</div>
   </div>
 </template>
@@ -2543,11 +2545,13 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
   mounted() {
     this.animateSvg();
-    this.animateText();
-    this.playVoiceOver();
   }
 }
 </script>

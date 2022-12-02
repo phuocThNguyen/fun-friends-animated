@@ -718,7 +718,7 @@
         </p>
       </div>
     </div>
-    <audio src="../../assets/sounds/session6/Session6_Page11.mp3" ref="voice"/>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session6/Session6_Page11.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">138</div>
   </div>
 </template>
@@ -729,46 +729,23 @@ import anime from "animejs";
 export default {
   name: 'Session6Page11',
   methods: {
-    animateElements() {
+    animateText() {
       let animation = anime.timeline({
         duration: 500,
         delay: 500,
         easing: 'linear'
       });
-      animation
-        .add({
-          targets: '.star-container',
-          opacity: 1
-        })
-        .add({
-          targets: ".star",
-          keyframes: [
-            {rotate: '-20deg'},
-            {rotate: '20deg'},
-            {rotate: '-20deg'},
-            {rotate: '0deg'},
-          ],
-          delay: 0,
-        })
-        .add({
-          targets: ".star-text",
-          keyframes: [
-            {rotate: '-20deg'},
-            {rotate: '20deg'},
-            {rotate: '-20deg'},
-            {rotate: '0deg'},
-          ],
-          delay: 0,
-        }, 1000);
+      animation.add({targets: '.star-container', opacity: 1});
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateElements();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 
@@ -794,8 +771,14 @@ export default {
   position: absolute;
   text-align: center;
   z-index: 55;
-  margin-top: 5%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+.star-text p:first-child {margin-top: 6vh}
 .star-text p {
   font-size: 5.5vh;
   margin-bottom: 0;

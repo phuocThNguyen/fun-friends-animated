@@ -10,7 +10,9 @@
       <p>Remember – It is normal to be worried, but you
         can choose thumbs down or thumbs up actions.</p>
     </div>
-    <audio src="../../assets/sounds/session4/Session4_Page3.mp3" ref="voice"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page3.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">89</div>
   </div>
 </template>
@@ -52,11 +54,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 0)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

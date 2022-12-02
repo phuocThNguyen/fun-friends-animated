@@ -720,7 +720,9 @@
         </p>
       </div>
     </div>
-    <audio src="../../assets/sounds/session3/Session3_Page17.mp3" ref="voice"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/Session3_Page17.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">86</div>
   </div>
 </template>
@@ -737,40 +739,17 @@ export default {
         duration: 500,
         delay: 500
       })
-      animation
-        .add({
-          targets: '.star-container',
-          opacity: 1
-        })
-        .add({
-          targets: ".star",
-          keyframes: [
-            {rotate: '-20deg'},
-            {rotate: '20deg'},
-            {rotate: '-20deg'},
-            {rotate: '0deg'},
-          ],
-          delay: 0,
-        })
-        .add({
-          targets: ".star-text",
-          keyframes: [
-            {rotate: '-20deg'},
-            {rotate: '20deg'},
-            {rotate: '-20deg'},
-            {rotate: '0deg'},
-          ],
-          delay: 0,
-        }, 1000)
+      animation.add({targets: '.star-container', opacity: 1})
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 
@@ -797,14 +776,16 @@ export default {
 .star-text {
   position: absolute;
   width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  margin-top: 14%;
   z-index: 55;
 }
-.star-text p {
-  font-size: 4.5vh;
-  margin-bottom: 0;
-}
+.star-text p {font-size: 4.5vh;margin-bottom: 0;}
+.star-text p:first-child {margin-top: 11vh}
 .landscape {
   position: absolute;
   width: 113%;

@@ -4,8 +4,10 @@
     <div class="text-box">
       <p class="mb-0">This family enjoys sharing picnics.</p>
     </div>
-    <audio src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3" ref="audio" autoplay loop/>
-    <audio src="../../assets/sounds/session1/20Animated_Book_Page19.mp3" ref="voice"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Relaxing-Forest-Sound-Effect.mp3" ref="audio" autoplay loop/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/20Animated_Book_Page19.mp3" ref="voice"/>
     <div class="page-number" id="page-light">19</div>
   </div>
 </template>
@@ -30,12 +32,14 @@ export default {
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
     }
   },
   mounted() {
     this.setAudioVolumeLevel(0.4);
-    this.animateText();
-    this.playVoiceOver();
   }
 }
 </script>

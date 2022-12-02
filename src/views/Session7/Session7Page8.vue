@@ -770,8 +770,8 @@
     <div class="plans" id="step-5">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">5) Speak in front of the class with a brave
-        voice, look people in the eye and smile.</div>
+      <div class="text">5) Speak in front of the class <br>with a brave
+        voice, look people <br>in the eye and smile.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -1000,17 +1000,17 @@
     </div>
 
     <div class="wing-container" id="left-container">
-      <p>A family member</p>
+      <p>My siblings</p>
+      <p>My grand parents</p>
+      <p>My parents</p>
       <p>My friends</p>
       <p>My teacher</p>
-      <p>My siblings</p>
-      <p>My parents</p>
       <h1>My Helper</h1>
     </div>
     <div class="wing-container" id="right-container">
       <p>Play hide and seek</p>
       <p>Go for a swim</p>
-      <p>Play skipping</p>
+      <p>Play ball</p>
       <p>Fly a kite</p>
       <p>Play in the park</p>
       <h1>Rewards</h1>
@@ -1124,12 +1124,12 @@
       <div class="button-label">Next Step</div>
     </div>
     <audio ref="sound" src="../../assets/sounds/session7/click-sound.mp3"/>
-    <audio src="../../assets/sounds/session7/Session7_Page8-region-1.mp3" ref="step1"/>
-    <audio src="../../assets/sounds/session7/Session7_Page8-region-2.mp3" ref="step2"/>
-    <audio src="../../assets/sounds/session7/Session7_Page8-region-3.mp3" ref="step3"/>
-    <audio src="../../assets/sounds/session7/Session7_Page8-region-4.mp3" ref="step4"/>
-    <audio src="../../assets/sounds/session7/Session7_Page8-region-5.mp3" ref="step5"/>
-    <audio src="../../assets/sounds/session7/Session7_Page8.mp3" ref="voice"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page8-region-1.mp3" ref="step1"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page8-region-2.mp3" ref="step2"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page8-region-3.mp3" ref="step3"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page8-region-4.mp3" ref="step4"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page8-region-5.mp3" ref="step5"/>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page8.mp3" ref="voice"/>
     <div class="page-number" id="page-dark" style="left: 25vh !important;">146</div>
   </div>
 </template>
@@ -1243,11 +1243,13 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.displayInit();
+    }
   },
   mounted() {
     this.assignAudio();
-    this.displayInit();
-    this.playVoiceOver();
   }
 }
 </script>

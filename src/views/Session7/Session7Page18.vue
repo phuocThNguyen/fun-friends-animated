@@ -418,29 +418,28 @@
         </g>
       </g>
     </svg>
-    <div class="star-container">
-      <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 1258" width="1320" height="1258">
-        <title>Star</title>
-        <g id="Object">
-          <g id="&lt;Group&gt;">
-            <path id="&lt;Path&gt;" class="shp0-star" d="M678.99 12.07L866.54 392.07C869.62 398.32 875.59 402.66 882.48 403.66L1301.84 464.6C1319.21 467.12 1326.15 488.47 1313.58 500.73L1010.13 796.52C1005.14 801.38 1002.86 808.39 1004.04 815.26L1075.67 1232.93C1078.64 1250.23 1060.48 1263.42 1044.94 1255.26L669.86 1058.06C663.69 1054.82 656.31 1054.82 650.14 1058.06L275.06 1255.26C259.52 1263.42 241.36 1250.23 244.33 1232.93L315.96 815.26C317.14 808.39 314.86 801.38 309.87 796.52L6.42 500.73C-6.15 488.47 0.79 467.12 18.16 464.6L437.51 403.66C444.41 402.66 450.38 398.32 453.46 392.07L641.01 12.07C648.77 -3.67 671.22 -3.67 678.99 12.07Z" />
-            <g id="&lt;Group&gt;">
-              <path id="&lt;Path&gt;" class="shp1-star" d="M660 99.85L492.87 423.56C484.11 440.54 467.28 451.87 448.25 453.61L85.38 486.73L468.76 504.66C493.11 505.8 515.39 491.04 523.85 468.17L660 99.85Z" />
-            </g>
-            <path id="&lt;Path&gt;" class="shp2-star" d="M252.57 1184.87L244.33 1232.93C241.36 1250.23 259.52 1263.43 275.06 1255.25L650.14 1058.06C656.31 1054.82 663.69 1054.82 669.86 1058.06L1044.94 1255.25C1060.48 1263.43 1078.64 1250.23 1075.67 1232.93L1004.04 815.26C1002.86 808.39 1005.14 801.38 1010.13 796.51L1313.58 500.73C1326.15 488.47 1319.21 467.12 1301.84 464.6L1161.38 444.19C934.2 851.89 586.33 1066.55 252.57 1184.87Z" />
-          </g>
-        </g>
-      </svg>
-      <div class="star-text">
-        <p><strong>Bright Star Idea</strong></p>
-        <p>Decorate your water
-          <br>bottle with stickers
-          <br>to remind you to
-          <br>drink lots of water.
-        </p>
-      </div>
+    <div class="text-box">
+      <h1>Every day remember to:</h1>
+      <p>&bull; Be kind to all living beings.</p>
+      <p>&bull; Play outside.</p>
+      <p>&bull; Have plenty of sleep.</p>
+      <p>&bull; Drink and eat foods that are healthy.</p>
+      <p>&bull; Practise relaxing without screens.</p>
+      <p>&bull; Pay attention to happy things and what you
+        can see, hear, smell, taste and feel.</p>
+      <p>&bull; Say thank you for happy times.</p>
     </div>
-    <audio src="../../assets/sounds/session7/Session7_Page17.mp3" ref="voice"/>
+    <div class="image-container">
+      <img class="action-image" src="../../assets/images/introduction/Koala_Child_Hugging.jpg" alt="kind-to-animals">
+      <img class="action-image" src="../../assets/images/session1/811-resized.jpg" alt="play-outside">
+      <img class="action-image" src="../../assets/images/session5/85693.jpg" alt="sleep-early">
+      <img class="action-image" src="../../assets/images/session1/6796-resized.jpg" alt="eat-healthy">
+      <img class="action-image" src="../../assets/images/session1/4082-resized.jpg" alt="relaxing">
+      <img class="action-image" src="../../assets/images/session1/2749-resized.jpg" alt="happy-things">
+      <img class="action-image" src="../../assets/images/session1/thank-you.jpg" alt="thank-you">
+    </div>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Relaxing-Forest-Sound-Effect.mp3"/>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page16.mp3" ref="voice"/>
     <div class="page-number" id="page-light">156</div>
   </div>
 </template>
@@ -451,77 +450,122 @@ import anime from "animejs";
 export default {
   name: 'Session7Page18',
   methods: {
-    animateElements() {
+    animateText() {
+      let texts = document.querySelector('.text-box').children;
+      let images = document.querySelector('.image-container').children;
       let animation = anime.timeline({
         duration: 500,
-        delay: 500,
         easing: 'linear'
       });
       animation
         .add({
-          targets: '.star-container',
-          opacity: 1
-        })
+          targets: ".text-box",
+          opacity: 1,
+        }, 570)
         .add({
-          targets: ".star",
-          keyframes: [
-            {rotate: '-20deg'},
-            {rotate: '20deg'},
-            {rotate: '-20deg'},
-            {rotate: '0deg'},
-          ],
-          delay: 0,
-        })
+          targets: texts[1],
+          opacity: 1,
+        }, 3238)
         .add({
-          targets: ".star-text",
-          keyframes: [
-            {rotate: '-20deg'},
-            {rotate: '20deg'},
-            {rotate: '-20deg'},
-            {rotate: '0deg'},
-          ],
-          delay: 0,
-        }, 1000)
+          targets: images[0],
+          opacity: 1,
+        }, 3238)
+        .add({
+          targets: texts[2],
+          opacity: 1,
+        }, 6128)
+        .add({
+          targets: images[1],
+          opacity: 1,
+        }, 6128)
+        .add({
+          targets: texts[3],
+          opacity: 1,
+        }, 7609)
+        .add({
+          targets: images[2],
+          opacity: 1,
+        }, 7609)
+        .add({
+          targets: texts[4],
+          opacity: 1,
+        }, 10307)
+        .add({
+          targets: images[3],
+          opacity: 1,
+        }, 10307)
+        .add({
+          targets: texts[5],
+          opacity: 1,
+        }, 14129)
+        .add({
+          targets: images[4],
+          opacity: 1,
+        }, 14129)
+        .add({
+          targets: texts[6],
+          opacity: 1,
+        }, 17570)
+        .add({
+          targets: images[5],
+          opacity: 1,
+        }, 17570)
+        .add({
+          targets: texts[7],
+          opacity: 1,
+        }, 26647)
+        .add({
+          targets: images[6],
+          opacity: 1,
+        }, 26647);
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 1500)
+      setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateElements();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 
 <style scoped>
-.star-container {
+.action-image {
   position: absolute;
-  bottom: 6vh;
-  right: 18%;
-  width: 64%;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  height: 100%;
   opacity: 0;
 }
-.star {
+.image-container {
   position: absolute;
-  width: auto;
-  height: 100%;
-  z-index: 50;
+  top: 7vh;
+  right: 2%;
+  width: 44%;
+  height: 40vh;
 }
-.star-text {
+.text-box {
   position: absolute;
-  margin-top: 10%;
-  text-align: center;
-  z-index: 55;
+  background-color: rgba(255,255,255,0.8);
+  opacity: 0;
+  padding: 1vh;
+  top: 1%;
+  left: 1%;
+  width: 50%;
 }
-.star-text p {
+.text-box h1 {
+  margin-bottom: 1vh;
   font-size: 5vh;
+}
+.text-box p {
+  font-size: 4vh;
+  padding-left: 0;
+  margin-bottom: 1vh;
+  opacity: 0;
+}
+.text-box p:last-child {
   margin-bottom: 0;
-  text-align: center;
 }
 .landscape {
   position: absolute;
@@ -530,9 +574,6 @@ export default {
   left: -8%;
 }
 tspan { white-space:pre }
-.shp0-star { fill: #f3cc30 }
-.shp1-star { fill: #f7db5e }
-.shp2-star { fill: #edbd31 }
 .shp0 { fill: url(#grd1) }
 .shp1 { fill: #ffffff }
 .shp2 { fill: #96b1d9 }

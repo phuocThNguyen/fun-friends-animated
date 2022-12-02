@@ -10,10 +10,13 @@
       <p id="para-6">Would you like to adopt a rescue animal for
         your birthday?</p>
     </div>
-    <audio ref="audio" autoplay src="../../assets/sounds/session1/dog.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <audio src="../../assets/sounds/session1/10Animated_Book_Page9.mp3" ref="voice"/>
+    <audio
+      ref="audio" autoplay
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/dog.mp3"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/10Animated_Book_Page9.mp3"
+      ref="voice"/>
     <div class="page-number" id="page-light">9</div>
   </div>
 </template>
@@ -64,12 +67,14 @@ export default {
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1500)
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
     }
   },
   mounted() {
-    this.animateText();
     this.setAudioVolumeLevel(0.2);
-    this.playVoiceOver();
   }
 }
 </script>

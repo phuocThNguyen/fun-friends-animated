@@ -1,14 +1,16 @@
 <template>
   <div class="interactive-container">
-    <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
+    <drawing-canvas class="canvas" v-on:updateCanvas="updateCanvas" :data="canvasData" :canvasStyle='canvasStyle'/>
     <div class="white-background">
       <div class="text-box">
         <p>As your bubbles pop, share what feelings
           <br>you are blowing away or draw your feelings below.</p>
       </div>
     </div>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3"/>
-    <audio src="../../assets/sounds/session3/Session3_Page14.mp3" ref="voice"/>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/Session3_Page14.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -27,7 +29,8 @@ export default {
         isPicture: true,
         pictureUrl: 'session3/bubbles-background2.jpg',
         backgroundSize: 'cover'
-      }
+      },
+      canvasData: null,
     }
   },
   methods: {
@@ -49,11 +52,22 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    init() {
+      this.canvasData = this.$store.getters.getPage83Data;
+    },
+    updateCanvas(canvasData) {
+      this.$store.commit('setPage83Data', canvasData);
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
+  },
+  created() {
+    this.init();
   },
   mounted() {
-    this.animateText();
     this.setAudioVolumeLevel(0.4);
-    this.playVoiceOver();
   }
 }
 </script>

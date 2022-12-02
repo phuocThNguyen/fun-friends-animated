@@ -216,11 +216,11 @@
         <p id="q5"> - Talk about a different family and how you can make friends.</p>
       </div>
     </div>
-    <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <audio src="../../assets/sounds/session1/22Animated_Book_Page21.mp3" ref="voice"/>
+    <drawing-canvas class="canvas" v-on:updateCanvas="updateCanvas" :data="canvasData" :canvasStyle='canvasStyle'/>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Relaxing-Forest-Sound-Effect.mp3"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/22Animated_Book_Page21.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">21</div>
   </div>
 </template>
@@ -238,12 +238,13 @@ export default {
         width: 0.68,
         height: 0.71,
         isPicture: false,
-      }
+      },
+      canvasData: null,
     }
   },
   methods: {
-    saveToDatabase(data) {
-      console.log(data)
+    init() {
+      this.canvasData = this.$store.getters.getPage21Data;
     },
     animateSvg() {
       let vw = document.querySelector('.interactive-container').clientWidth;
@@ -347,13 +348,21 @@ export default {
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 3000)
+    },
+    updateCanvas(canvasData) {
+      this.$store.commit('setPage21Data', canvasData);
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
     }
+  },
+  created() {
+    this.init();
   },
   mounted() {
     this.animateSvg();
-    this.animateText();
     this.setAudioVolumeLevel(0.4);
-    this.playVoiceOver();
   }
 }
 </script>

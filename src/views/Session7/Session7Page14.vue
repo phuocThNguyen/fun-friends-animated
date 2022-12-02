@@ -39,14 +39,13 @@
     </svg>
     <h1 class="title">Coping Step Plan</h1>
     <div class="trophy-container">
-      Goal: Sleeping in
-      your own room
+      Goal: Trying new foods
     </div>
     <div class="plans" id="step-1">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">1) Sleep while mum and dad are in your
-        room until you fall asleep.</div>
+      <div class="text">1) Read a picture book about yummy
+        foods from around the world.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -315,9 +314,8 @@
     <div class="plans" id="step-2">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">2) Mum and dad give you a kiss
-        goodnight after your bedtime story
-        and leave the room.</div>
+      <div class="text">2) Try two vegetables you think you don’t like
+        and put them together with food you like.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -468,8 +466,8 @@
     <div class="plans" id="step-3">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">3) Sleep in your room with
-        your sibling or friend.</div>
+      <div class="text">3) Cook different <br>foods with family
+        and <br>try a little bit.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -620,9 +618,9 @@
     <div class="plans" id="step-4">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">4) Keep your night light on in your
-        room and stay in the room with
-        your animal friend.</div>
+      <div class="text">4) Go to a restaurant from a different
+        country and try a new food you
+        haven’t eaten before.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -773,8 +771,7 @@
     <div class="plans" id="step-5">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">5) Sleep in your room by yourself with
-        your favourite toy or animal friend.</div>
+      <div class="text">5) Enjoy new type of food.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -1005,17 +1002,17 @@
     <div class="wing-container" id="left-container">
       <p>A family member</p>
       <p>My friends</p>
-      <p>My teacher</p>
-      <p>My siblings</p>
+      <p>My grandparents</p>
       <p>My parents</p>
+      <p>My siblings</p>
       <h1>My Helper</h1>
     </div>
     <div class="wing-container" id="right-container">
-      <p>Play hide and seek</p>
-      <p>Go for a swim</p>
-      <p>Play skipping</p>
-      <p>Fly a kite</p>
-      <p>Play in the park</p>
+      <p>Plant vegies in a pot with my family</p>
+      <p>Invite a friend <br>for a picnic</p>
+      <p>Cook a meal with my grandparents</p>
+      <p>Go out for a meal</p>
+      <p>Cook a meal with my siblings for the rest of the family</p>
       <h1>Rewards</h1>
     </div>
     <div class="text-box">Green Thoughts:</div>
@@ -1127,12 +1124,12 @@
       <div class="button-label">Next Step</div>
     </div>
     <audio ref="sound" src="../../assets/sounds/session7/click-sound.mp3"/>
-    <audio src="../../assets/sounds/session7/Session7_Page13-region-1.mp3" ref="step1"/>
-    <audio src="../../assets/sounds/session7/Session7_Page13-region-2.mp3" ref="step2"/>
-    <audio src="../../assets/sounds/session7/Session7_Page13-region-3.mp3" ref="step3"/>
-    <audio src="../../assets/sounds/session7/Session7_Page13-region-4.mp3" ref="step4"/>
-    <audio src="../../assets/sounds/session7/Session7_Page13-region-5.mp3" ref="step5"/>
-    <audio src="../../assets/sounds/session7/Session7_Page13.mp3" ref="voice"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page12-region-1.mp3" ref="step1"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page12-region-2.mp3" ref="step2"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page12-region-3.mp3" ref="step3"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page12-region-4.mp3" ref="step4"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page12-region-5.mp3" ref="step5"/>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page12.mp3" ref="voice"/>
     <div class="page-number" id="page-dark" style="left: 25vh !important;">152</div>
   </div>
 </template>
@@ -1141,17 +1138,17 @@
 import anime from "animejs";
 
 export default {
-  name: 'Session7Page13',
+  name: 'Session7Page14',
   data() {
     return {
       step: 0,
       stepVoiceArray: null,
       timingArray: [
-        [900, 6900, 9500, 12600],
-        [700, 9000, 11500, 14600],
-        [900, 5900, 8600, 11200],
-        [700, 7500, 10100, 12800],
-        [700, 7800, 10500, 14000]]
+        [1000, 7100, 9700, 17000],
+        [1000, 8500, 11700, 16500],
+        [1000, 6000, 8500, 14500],
+        [1000, 7500, 10500, 15500],
+        [1000, 4500, 7500, 13500]]
     }
   },
   methods: {
@@ -1165,26 +1162,26 @@ export default {
         duration: 500,
       })
       animation
-          .add({
-            targets: trophy,
-            opacity: 1
-          }, 2300)
-          .add({
-            targets: leftElements[5],
-            opacity: 1
-          }, 4000)
-          .add({
-            targets: rightElements[5],
-            opacity: 1
-          }, 4000)
-          .add({
-            targets: '.text-box',
-            opacity: 1
-          }, 4000)
-          .add({
-            targets: '.coordinate-container',
-            opacity: 1
-          }, 5300)
+        .add({
+          targets: trophy,
+          opacity: 1
+        }, 3000)
+        .add({
+          targets: leftElements[5],
+          opacity: 1
+        }, 4000)
+        .add({
+          targets: rightElements[5],
+          opacity: 1
+        }, 4000)
+        .add({
+          targets: '.text-box',
+          opacity: 1
+        }, 4000)
+        .add({
+          targets: '.coordinate-container',
+          opacity: 1
+        }, 4500)
 
       anime({
         targets: '.button',
@@ -1246,11 +1243,13 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.displayInit();
+    }
   },
   mounted() {
     this.assignAudio();
-    this.displayInit();
-    this.playVoiceOver();
   }
 }
 </script>
@@ -1330,7 +1329,7 @@ export default {
 }
 #koala-sitting {
   height: 15vh;
-  left: 25vh;
+  left: 26vh;
   top: -5.5vh;
   transform: scaleX(-1);
 }
@@ -1363,21 +1362,17 @@ export default {
   opacity: 0;
   margin-bottom: 0;
 }
-.wing-container p:nth-child(1) {
-  top: 52vh;
-}
-.wing-container p:nth-child(2) {
-  top: 40vh;
-}
-.wing-container p:nth-child(3) {
-  top: 28vh;
-}
-.wing-container p:nth-child(4) {
-  top: 16vh;
-}
-.wing-container p:nth-child(5) {
-  top: 4.5vh;
-}
+#right-container p {font-size: 2.3vh}
+#left-container p:nth-child(1) {top: 52vh;}
+#left-container p:nth-child(2) {top: 40vh;}
+#left-container p:nth-child(3) {top: 28vh;}
+#left-container p:nth-child(4) {top: 16vh;}
+#left-container p:nth-child(5) {top: 4.5vh;}
+#right-container p:nth-child(1) {top: 51.5vh;}
+#right-container p:nth-child(2) {top: 39vh;}
+#right-container p:nth-child(3) {top: 27vh;}
+#right-container p:nth-child(4) {top: 16vh;}
+#right-container p:nth-child(5) {top: 1.5vh;}
 #left-container {
   left: 1%;
 }
@@ -1389,13 +1384,12 @@ export default {
   left: 23%;
   top: 11vh;
   opacity: 0;
+  z-index: 10;
   padding: 1vh 1.4vh;
   font-size: 3.2vh;
   background-color: rgba(240, 115, 9, 1);
   color: #ffffff;
   border-radius: 5px;
-  max-width: 29%;
-  text-align: center;
 }
 .title {
   position: absolute;
@@ -1518,8 +1512,7 @@ export default {
   z-index: 1;
 }
 #step-2 .text,
-#step-4 .text,
-#step-5 .text {
+#step-4 .text {
   font-size: 2vh;
 }
 .tree {

@@ -201,8 +201,10 @@
       We will also talk about how to make happy feelings GROW!</p>
     <p class="text" id="line-2">All feelings are OK!</p>
 
-    <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3"/>
-    <audio src="../../assets/sounds/session2/Session2_Page2.mp3" ref="voice"/>
+    <audio autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/387978__dcpoke__birds-singing-03.mp3"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session2/Session2_Page2.mp3" ref="voice"/>
     <div class="page-number" id="page-light">47</div>
   </div>
 </template>
@@ -275,12 +277,14 @@ export default {
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
     }
   },
   mounted() {
     this.animateSvg();
-    this.animateText();
-    this.playVoiceOver();
   }
 }
 </script>

@@ -146,7 +146,7 @@
     </svg>
     <audio ref="wrong" src="../../assets/sounds/all/wrong-ans.mp3"/>
     <audio ref="correct" src="../../assets/sounds/all/correct-ans.mp3"/>
-    <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3"/>
+    <audio ref="celebrate" src="../../assets/sounds/all/crowd-cheer-applause.mp3"/>
     <audio src="../../assets/sounds/all/Well_Done.mp3" ref="wellDone"/>
     <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
     <audio src="../../assets/sounds/all/Correct_2.mp3" ref="correctVoice"/>
@@ -242,7 +242,7 @@ export default {
       } else {
         setTimeout(() => {this.$refs.correctVoice.play()}, 500)
       }
-    }
+    },
   }
 }
 </script>

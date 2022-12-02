@@ -795,10 +795,10 @@
          practise this everyday you will get better and better at it!</p>
       </div>
     </div>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/beach-sound.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <audio src="../../assets/sounds/session1/42Animated_Book_Page41.mp3" ref="voice"/>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/beach-sound.mp3"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/42Animated_Book_Page41.mp3" ref="voice"/>
     <div class="page-number" id="page-light">41</div>
   </div>
 </template>
@@ -916,12 +916,14 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
   mounted() {
     this.animateSvg();
-    this.animateText();
     this.setAudioVolumeLevel(0.5);
-    this.playVoiceOver();
   }
 }
 </script>

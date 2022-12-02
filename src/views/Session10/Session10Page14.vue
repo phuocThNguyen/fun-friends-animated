@@ -6,8 +6,8 @@
       <span> Who has helped you feel happy?</span>
       <span> Give them a big thank you!</span>
     </div>
-    <audio src="../../assets/sounds/session10/Session10_Page14.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">200</div>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page14.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">201</div>
   </div>
 </template>
 
@@ -29,11 +29,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

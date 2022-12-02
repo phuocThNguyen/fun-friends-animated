@@ -12,7 +12,9 @@
         <span> but inside we all feel happiness and sadness sometimes.</span>
       </p>
     </div>
-    <audio src="../../assets/sounds/session1/31Animated_Book_Page30.mp3" ref="voice"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/31Animated_Book_Page30.mp3" ref="voice"/>
     <div class="page-number" id="page-light">30</div>
   </div>
 </template>
@@ -35,11 +37,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

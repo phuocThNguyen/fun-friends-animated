@@ -770,7 +770,7 @@
     <div class="plans" id="step-5">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">5) Practise for 5 minutes everyday.</div>
+      <div class="text">5) Practise for <br>5 minutes everyday.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -1007,11 +1007,11 @@
       <h1>My Helper</h1>
     </div>
     <div class="wing-container" id="right-container">
-      <p>Play hide and seek</p>
-      <p>Go for a swim</p>
-      <p>Play skipping</p>
-      <p>Fly a kite</p>
       <p>Play in the park</p>
+      <p>Ride my scooter</p>
+      <p>Play ball</p>
+      <p>Fly a kite</p>
+      <p>Bake cookies</p>
       <h1>Rewards</h1>
     </div>
     <div class="text-box">Green Thoughts:</div>
@@ -1123,12 +1123,12 @@
       <div class="button-label">Next Step</div>
       <audio ref="sound" src="../../assets/sounds/session7/click-sound.mp3"></audio>
     </div>
-    <audio src="../../assets/sounds/session7/Session7_Page7-region-1.mp3" ref="step1"/>
-    <audio src="../../assets/sounds/session7/Session7_Page7-region-2.mp3" ref="step2"/>
-    <audio src="../../assets/sounds/session7/Session7_Page7-region-3.mp3" ref="step3"/>
-    <audio src="../../assets/sounds/session7/Session7_Page7-region-4.mp3" ref="step4"/>
-    <audio src="../../assets/sounds/session7/Session7_Page7-region-5.mp3" ref="step5"/>
-    <audio src="../../assets/sounds/session7/Session7_Page7.mp3" ref="voice"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page7-region-1.mp3" ref="step1"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page7-region-2.mp3" ref="step2"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page7-region-3.mp3" ref="step3"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page7-region-4.mp3" ref="step4"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page7-region-5.mp3" ref="step5"/>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page7.mp3" ref="voice"/>
     <div class="page-number" id="page-dark" style="left: 25vh !important;">145</div>
   </div>
 </template>
@@ -1143,11 +1143,11 @@ export default {
       step: 0,
       stepVoiceArray: null,
       timingArray: [
-        [863, 11723, 14294, 17500],
-        [962, 6148, 8859, 12751],
-        [759, 6813, 9471, 13500],
-        [900, 5300, 8100, 11000],
-        [900, 6235, 8878, 12300]]
+        [1000, 12500, 15000, 20500],
+        [1000, 5500, 11500, 16500],
+        [1000, 6500, 10500, 14000],
+        [1000, 4000, 7000, 12000],
+        [1000, 5000, 7500, 13000]]
     }
   },
   methods: {
@@ -1164,7 +1164,7 @@ export default {
         .add({
           targets: trophy,
           opacity: 1
-        }, 2262)
+        }, 3000)
         .add({
           targets: leftElements[5],
           opacity: 1
@@ -1242,11 +1242,13 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.displayInit();
+    }
   },
   mounted() {
     this.assignAudio();
-    this.displayInit();
-    this.playVoiceOver();
   }
 }
 </script>

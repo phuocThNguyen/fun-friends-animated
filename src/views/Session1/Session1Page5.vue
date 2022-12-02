@@ -4,9 +4,11 @@
     <div class="text-box">
       <p class="mb-0">Annie loves playing on the swing.</p>
       <p class="mb-0">What do you do when you play outside?</p>
-      <audio ref="audio" autoplay src="../../assets/sounds/session1/playground.mp3"></audio>
     </div>
-    <audio src="../../assets/sounds/session1/12Animated_Book_Page11.mp3" ref="voice"></audio>
+    <audio ref="audio" autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/playground.mp3"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/12Animated_Book_Page11.mp3" ref="voice"/>
     <div class="page-number" id="page-light">11</div>
   </div>
 </template>
@@ -43,12 +45,14 @@ export default {
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1000)
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
     }
   },
   mounted() {
-    this.animateText();
     this.setAudioVolumeLevel(0.4);
-    this.playVoiceOver();
   }
 }
 </script>

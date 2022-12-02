@@ -1008,11 +1008,11 @@
       <h1>My Helper</h1>
     </div>
     <div class="wing-container" id="right-container">
-      <p>Play hide and seek</p>
-      <p>Go for a swim</p>
-      <p>Play skipping</p>
-      <p>Fly a kite</p>
-      <p>Play in the park</p>
+      <p>Play ball</p>
+      <p>Invite friends over</p>
+      <p>Cook yummy food</p>
+      <p>Bike ride</p>
+      <p>Have a party</p>
       <h1>Rewards</h1>
     </div>
     <div class="text-box">Green Thoughts:</div>
@@ -1124,12 +1124,12 @@
       <div class="button-label">Next Step</div>
     </div>
     <audio ref="sound" src="../../assets/sounds/session7/click-sound.mp3"/>
-    <audio src="../../assets/sounds/session7/Session7_Page5-region-1.mp3" ref="step1"/>
-    <audio src="../../assets/sounds/session7/Session7_Page5-region-2.mp3" ref="step2"/>
-    <audio src="../../assets/sounds/session7/Session7_Page5-region-3.mp3" ref="step3"/>
-    <audio src="../../assets/sounds/session7/Session7_Page5-region-4.mp3" ref="step4"/>
-    <audio src="../../assets/sounds/session7/Session7_Page5-region-5.mp3" ref="step5"/>
-    <audio src="../../assets/sounds/session7/Session7_Page5.mp3" ref="voice"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page5-region-1.mp3" ref="step1"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page5-region-2.mp3" ref="step2"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page5-region-3.mp3" ref="step3"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page5-region-4.mp3" ref="step4"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page5-region-5.mp3" ref="step5"/>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page5.mp3" ref="voice"/>
     <div class="page-number" id="page-dark" style="left: 25vh !important;">143</div>
   </div>
 </template>
@@ -1144,11 +1144,11 @@ export default {
       step: 0,
       stepVoiceArray: null,
       timingArray: [
-        [838, 7445, 10606, 13656],
-        [958, 7617, 10732, 13855],
-        [1016, 6334, 8995, 11668],
-        [964, 7394, 10015, 12290],
-        [983, 10264, 13296, 15608]]
+        [838, 7445, 10606, 20000],
+        [958, 7617, 10732, 17500],
+        [1016, 6334, 8995, 15700],
+        [964, 7394, 10015, 16600],
+        [983, 10264, 13296, 23200]]
     }
   },
   methods: {
@@ -1243,11 +1243,13 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.displayInit();
+    }
   },
   mounted() {
     this.assignAudio();
-    this.displayInit();
-    this.playVoiceOver();
   }
 }
 </script>
@@ -1327,7 +1329,7 @@ export default {
 }
 #koala-sitting {
   height: 15vh;
-  left: 27vh;
+  left: 28vh;
   top: -5.5vh;
   transform: scaleX(-1);
 }
@@ -1381,6 +1383,7 @@ export default {
 #right-container {
   right: 1%;
 }
+#right-container p:nth-child(2) {font-size: 2.8vh}
 .trophy-container {
   position: absolute;
   left: 23%;

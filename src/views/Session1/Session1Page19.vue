@@ -11,7 +11,9 @@
         <span><strong> but we all love, smile, and cry in the same way.</strong></span>
       </p>
     </div>
-    <audio src="../../assets/sounds/session1/26Animated_Book_Page25.mp3" ref="voice"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/26Animated_Book_Page25.mp3" ref="voice"/>
     <div class="page-number" id="page-light">25</div>
   </div>
 </template>
@@ -69,12 +71,13 @@ export default {
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1000)
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
     }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

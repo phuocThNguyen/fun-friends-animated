@@ -8,8 +8,8 @@
       <img src="../../assets/images/session9/2338.jpg" alt="Annie">
       <p id="para-2">Annie's Reward <br>Special time with her mom</p>
     </div>
-    <audio src="../../assets/sounds/session9/Session9_Page4.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">176</div>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page4.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">177</div>
   </div>
 </template>
 
@@ -19,7 +19,7 @@ import anime from "animejs";
 export default {
   name: 'Session9Page4',
   methods: {
-    animateElements() {
+    animateText() {
       let images = document.querySelectorAll('.image-container');
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
@@ -29,11 +29,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateElements();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

@@ -11,7 +11,9 @@
 
       <p class="extra-box">All feelings are OK!</p>
     </div>
-    <audio src="../../assets/sounds/session2/Session2_Page3.mp3" ref="voice"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session2/Session2_Page3.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">48</div>
   </div>
 </template>
@@ -52,12 +54,13 @@ export default {
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
     }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

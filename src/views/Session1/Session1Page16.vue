@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container cloud-background">
-    <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
+    <drawing-canvas class="canvas" v-on:updateCanvas="updateCanvas" :data="canvasData" :canvasStyle='canvasStyle'/>
     <div class="text">
       <div class="para">
         <p> - Mark the country that you live in.</p>
@@ -9,8 +9,10 @@
           but we are all joined together by lines of belonging and love.</strong></p>
       </div>
     </div>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/sand-castle.mp3"/>
-    <audio src="../../assets/sounds/session1/23Animated_Book_Page22.mp3" ref="voice"/>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/sand-castle.mp3"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/23Animated_Book_Page22.mp3" ref="voice"/>
     <div class="page-number" id="page-light">22</div>
   </div>
 </template>
@@ -31,12 +33,10 @@ export default {
         pictureUrl: "session1/World-Map-ai.jpg",
         backgroundSize: 'contain'
       },
+      canvasData: null,
     }
   },
   methods: {
-    saveToDatabase(data) {
-      console.log(data)
-    },
     animateText() {
       let para = document.getElementsByClassName('para')[0].children;
       let animation = anime.timeline({
@@ -62,12 +62,23 @@ export default {
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1000)
+    },
+    init() {
+      this.canvasData = this.$store.getters.getPage22Data;
+    },
+    updateCanvas(canvasData) {
+      this.$store.commit('setPage22Data', canvasData);
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
     }
   },
+  created() {
+    this.init();
+  },
   mounted() {
-    this.animateText();
     this.setAudioVolumeLevel(0.2);
-    this.playVoiceOver();
   }
 }
 </script>

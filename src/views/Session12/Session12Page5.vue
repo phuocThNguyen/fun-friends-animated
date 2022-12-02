@@ -541,9 +541,9 @@
           and listening when others are talking.</p>
       </div>
     </div>
-    <audio src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3" autoplay loop ref="audio"/>
-    <audio src="../../assets/sounds/session12/Session12_Page5.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">218</div>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3"/>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session12/Session12_Page5.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">219</div>
   </div>
 </template>
 
@@ -553,7 +553,7 @@ import anime from "animejs";
 export default {
   name: 'Session12Page5',
   methods: {
-    animationText() {
+    animateText() {
       let text = document.querySelector('.text').children
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
@@ -567,12 +567,14 @@ export default {
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
     }
   },
   mounted() {
     this.setAudioVolumeLevel(0.4);
-    this.animationText();
-    this.playVoiceOver();
   }
 }
 </script>

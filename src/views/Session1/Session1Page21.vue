@@ -133,13 +133,14 @@
       <div class="button-label">Play Sound Again</div>
     </div>
 
-    <audio ref="duck" src="../../assets/sounds/session1/duck-cut.mp3"/>
-    <audio ref="cow" src="../../assets/sounds/session1/cow-cut.mp3"/>
-    <audio ref="pig" src="../../assets/sounds/session1/pig-cut.mp3"/>
-    <audio ref="sheep" src="../../assets/sounds/session1/sheep-cut.mp3"/>
+    <audio ref="duck" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/duck-cut.mp3"/>
+    <audio ref="cow" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/cow-cut.mp3"/>
+    <audio ref="pig" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/pig-cut.mp3"/>
+    <audio ref="sheep" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/sheep-cut.mp3"/>
     <audio ref="correct" src="../../assets/sounds/all/correct-ans.mp3"/>
+    <audio ref="correctVoice" src="../../assets/sounds/all/Correct_2.mp3"/>
     <audio ref="wrong" src="../../assets/sounds/all/wrong-ans.mp3"/>
-    <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3"/>
+    <audio ref="celebrate" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/crowd-cheer-applause.mp3"/>
 
     <!--  Great Work  -->
     <svg class="reward" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 208.31 204.79">
@@ -280,10 +281,12 @@
         </g>
       </g>
     </svg>
-    <audio src="../../assets/sounds/session1/28Animated_Book_Page27_Part1.mp3" ref="voice1" @ended="hideMask"/>
-    <audio src="../../assets/sounds/session1/28Animated_Book_Page27_Part2.mp3" ref="voice2"/>
-    <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
-    <audio src="../../assets/sounds/all/Great_work.mp3" ref="greatWork"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/28Animated_Book_Page27_Part1.mp3" ref="voice1" @ended="hideMask"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/28Animated_Book_Page27_Part2.mp3" ref="voice2"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/Good_Try_Try_again.mp3" ref="goodTry"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/Great_work.mp3" ref="greatWork"/>
     <div class="page-number" id="page-light">27</div>
   </div>
 </template>
@@ -449,17 +452,20 @@ export default {
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice1.play()}, 500)
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateImages();
+      this.playSound();
     }
   },
-  mounted() {
-    this.animateImages();
-    this.playSound();
-    this.playVoiceOver();
-  },
+  mounted() {},
   watch: {
     correctAns: function () {
       if (this.correctAns === 4) {
         this.afterCorrectFunctions();
+      } else {
+        this.$refs.correctVoice.play();
       }
     }
   }

@@ -120,7 +120,9 @@
     <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3"/>
     <audio src="../../assets/sounds/all/Correct_2.mp3" ref="correctVoice"/>
     <audio src="../../assets/sounds/all/Very_Good.mp3" ref="veryGood"/>
-    <audio src="../../assets/sounds/session4/Session4_Page18.mp3" ref="voice"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page18.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">104</div>
   </div>
 </template>
@@ -149,7 +151,7 @@ export default {
     }
   },
   methods: {
-    animateElements() {
+    animateText() {
       let animation = anime.timeline({
         easing: 'linear',
         duration: 500,
@@ -240,11 +242,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateElements();
-    this.playVoiceOver();
-  },
+  mounted() {},
   watch: {
     correctAns: function () {
       if (this.correctAns === 5) {
@@ -355,7 +358,7 @@ export default {
   padding: 1.4vh;
   margin-bottom: 1vh;
 }
-p { font-size: 3.6vh;margin-bottom: 0; }
+p { font-size: 3.5vh;margin-bottom: 0; }
 .text-box {
   position: absolute;
   width: 90%;

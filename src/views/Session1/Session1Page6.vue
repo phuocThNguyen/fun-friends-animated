@@ -5,7 +5,9 @@
       <p class="mb-0">Zoe's dad also plays with her on the swing.</p>
       <p class="mb-0">It is so much fun!</p>
     </div>
-    <audio src="../../assets/sounds/session1/13Animated_Book_Page12.mp3" ref="voice"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/13Animated_Book_Page12.mp3" ref="voice"/>
     <div class="page-number" id="page-light">12</div>
   </div>
 </template>
@@ -39,12 +41,13 @@ export default {
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1000)
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
     }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

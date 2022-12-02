@@ -1,9 +1,9 @@
 <template>
   <div class="interactive-container" id="alt-bg">
     <p class="text">Write or draw other rewards in the space below.</p>
-    <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle" />
-    <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3"/>
-    <audio src="../../assets/sounds/session9/Session9_Page11.mp3" ref="voice"/>
+    <drawing-canvas class="canvas" v-on:updateCanvas="updateCanvas" :data="canvasData" :canvasStyle="canvasStyle" />
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3"/>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page11.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -21,7 +21,8 @@ export default {
         isPicture: true,
         pictureUrl: "session9/drawing-canvas.png",
         backgroundSize: 'contain'
-      }
+      },
+      canvasData: null,
     }
   },
   methods: {
@@ -43,11 +44,22 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    init() {
+      this.canvasData = this.$store.getters.getPage184Data;
+    },
+    updateCanvas(canvasData) {
+      this.$store.commit('setPage184Data', canvasData);
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
+  },
+  created() {
+    this.init();
   },
    mounted() {
-    this.animateText();
     this.setAudioVolumeLevel(0.2);
-    this.playVoiceOver();
    }
 }
 </script>

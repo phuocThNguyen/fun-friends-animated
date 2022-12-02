@@ -28,7 +28,7 @@
     </div>
     <img src="../../assets/images/session5/50289.jpg" alt="red" class="images" id="image-top">
     <img src="../../assets/images/session5/103011.jpg" alt="green" class="images" id="image-bottom">
-    <audio src="../../assets/sounds/session6/Session6_Page5.mp3" ref="voice"/>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session6/Session6_Page5.mp3" ref="voice"/>
     <div class="page-number" id="page-light">132</div>
   </div>
 </template>
@@ -39,7 +39,7 @@ import anime from "animejs";
 export default {
   name: 'Session6Page5',
   methods: {
-    animateElements() {
+    animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;
       let animation = anime.timeline({
         easing: 'linear',
@@ -70,11 +70,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateElements();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

@@ -36,7 +36,8 @@ import AppendixPage10 from "@/views/Appendix/AppendixPage10";
 import AppendixPage11 from "@/views/Appendix/AppendixPage11";
 import AppendixPage12 from "@/views/Appendix/AppendixPage12";
 import AppendixPage13 from "@/views/Appendix/AppendixPage13";
-
+import AppendixPage14 from "@/views/Appendix/AppendixPage14";
+import AppendixPage15 from "@/views/Appendix/AppendixPage15";
 
 export default {
   name: "Appendix",
@@ -46,17 +47,17 @@ export default {
   components: {
     AppendixPage1, AppendixPage2, AppendixPage3, AppendixPage4, AppendixPage5,
     AppendixPage6, AppendixPage7, AppendixPage8, AppendixPage9, AppendixPage10,
-    AppendixPage11, AppendixPage12, AppendixPage13
+    AppendixPage11, AppendixPage12, AppendixPage13, AppendixPage14, AppendixPage15
   },
   data() {
     return {
       pages: {
         1: "AppendixPage1", 2: "AppendixPage2", 3: "AppendixPage3", 4: "AppendixPage4", 5: "AppendixPage5",
         6: "AppendixPage6", 7: "AppendixPage7", 8: "AppendixPage8", 9: "AppendixPage9", 10: "AppendixPage10",
-        11: "AppendixPage11", 12: "AppendixPage12", 13: "AppendixPage13"
+        11: "AppendixPage11", 12: "AppendixPage12", 13: "AppendixPage13", 14: "AppendixPage14", 15: "AppendixPage15"
       },
       page: 1,
-      lastPage: 13
+      lastPage: 15
     }
   },
   created() {

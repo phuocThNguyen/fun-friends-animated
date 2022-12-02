@@ -3270,7 +3270,7 @@
         </g>
       </g>
     </svg>
-    <div class="title">Appendix 2: Someone Special I Know Who is
+    <div class="title">Appendix 2: Someone Special <br>I Know Who is
     Brave and Kind!</div>
     <div class="star-container">
       <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 1258" width="1320" height="1258">
@@ -3307,7 +3307,7 @@
           </g>
         </g>
       </svg>
-      <div class="cloud-text">Someone who is <br>kind to everyone</div>
+      <div class="cloud-text">Someone <br>who is kind <br>to everyone</div>
     </div>
     <div class="cloud-container" id="cloud-3">
       <svg class="cloud" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93 62" width="93" height="62">
@@ -3329,9 +3329,9 @@
       </svg>
       <div class="cloud-text">In a book <br>or movie</div>
     </div>
-    <audio src="../../assets/sounds/session4/night-time.mp3" autoplay loop ref="audio"/>
-    <audio src="../../assets/sounds/appendix/Session13_Appendix_Page2.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">223</div>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/night-time.mp3"/>
+    <audio @loadeddata="playVoiceOver" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/appendix/Session13_Appendix_Page2.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">226</div>
   </div>
 </template>
 
@@ -3356,17 +3356,6 @@ export default {
           : console.log();
       });
     },
-    // animateElements() {
-    //   let clouds = document.querySelectorAll('.cloud-container');
-    //   let animation = anime.timeline({duration: 500,easing: 'linear'});
-    //   animation
-    //     .add({targets: '.title',opacity: 1}, 600)
-    //     .add({targets: clouds[0],opacity: 1}, 6900)
-    //     .add({targets: clouds[2],opacity: 1}, 9100)
-    //     .add({targets: clouds[1],opacity: 1}, 12500)
-    //     .add({targets: clouds[3],opacity: 1}, 15800)
-    //     .add({targets: '.star-container',opacity: 1}, 18400)
-    // },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
@@ -3376,8 +3365,6 @@ export default {
   },
   mounted() {
     this.setAudioVolumeLevel(1);
-    // this.animateElements();
-    this.playVoiceOver();
   }
 }
 </script>
@@ -3414,13 +3401,14 @@ export default {
 }
 .cloud-text {
   position: absolute;
+  text-align: center;
   font-size: 5.5vh;
-  line-height: 5vh;
+  line-height: 6.5vh;
   z-index: 10;
   margin-top: 3%;
 }
 #cloud-1 {
-  top: 8%;
+  top: 14%;
   left: 4%;
 }
 #cloud-2 {
@@ -3428,7 +3416,7 @@ export default {
   left: 4%;
 }
 #cloud-3 {
-  top: 8%;
+  top: 14%;
   right: 4%
 }
 #cloud-4 {

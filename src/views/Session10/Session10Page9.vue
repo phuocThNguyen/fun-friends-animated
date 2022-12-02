@@ -186,9 +186,9 @@
         </g>
       </g>
     </svg>
-    <audio ref="audio" autoplay src="../../assets/sounds/session10/super-hero-theme.mp3"/>
-    <audio src="../../assets/sounds/session10/Session10_Page9.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">195</div>
+    <audio ref="audio" autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/super-hero-theme.mp3"/>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page9.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">196</div>
   </div>
 </template>
 
@@ -272,12 +272,14 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 2500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
   mounted() {
     this.setAudioVolumeLevel(0.3);
     this.animateSvg();
-    this.animateText();
-    this.playVoiceOver();
   }
 }
 </script>

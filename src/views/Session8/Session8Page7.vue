@@ -27,8 +27,8 @@
         </p>
       </div>
     </div>
-    <audio src="../../assets/sounds/session8/Session8_Page7.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">163</div>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page7.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">164</div>
   </div>
 </template>
 
@@ -54,11 +54,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  },
+  mounted() {},
 }
 </script>
 
@@ -85,7 +86,7 @@ export default {
 }
 .star-text p {
   font-size: 4vh;
-  margin-top: 5.5vh;
+  margin-top: 4.5vh;
   margin-bottom: 0;
 }
 .text-box {

@@ -14,8 +14,8 @@
       <img src="../../assets/images/session11/Hugging_Lama_Girl.jpg" alt="hugging-lama" class="images">
       <div class="text" id="para-2">Matilda giving Alpaca a hug.</div>
     </div>
-    <audio src="../../assets/sounds/session11/Session11_Page5.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">208</div>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session11/Session11_Page5.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">209</div>
   </div>
 </template>
 
@@ -36,11 +36,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

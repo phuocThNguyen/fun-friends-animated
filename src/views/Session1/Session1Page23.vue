@@ -12,7 +12,9 @@
         <br><span> but inside we all have family, friends or animal friends.</span>
       </p>
     </div>
-    <audio src="../../assets/sounds/session1/30Animated_Book_Page29.mp3" ref="voice"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/30Animated_Book_Page29.mp3" ref="voice"/>
     <div class="page-number" id="page-light">29</div>
   </div>
 </template>
@@ -35,11 +37,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

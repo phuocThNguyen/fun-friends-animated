@@ -3,7 +3,9 @@
     <img src="../../assets/images/session4/1143-resized.jpg" alt="cool-water" class="session-background">
     <div class="text-box">The water feels cool and
      fresh on our skin.</div>
-    <audio src="../../assets/sounds/session4/Session4_Page21.mp3" ref="voice"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page21.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">107</div>
   </div>
 </template>
@@ -14,7 +16,7 @@ import anime from "animejs";
 export default {
   name: 'Session4Page21',
   methods: {
-    animateElements() {
+    animateText() {
       anime({
         targets: '.text-box',
         opacity: 1,
@@ -26,11 +28,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateElements();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

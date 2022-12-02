@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="sketchpad"></div>
+    <div id="sketchpad"/>
     <div class="button-container">
       <div class="color">
         <label for="color">Color</label>
@@ -32,39 +32,44 @@ export default {
   name: 'drawingCanvas',
   props: {
     canvasStyle: Object,
+    data: Object,
   },
   data() {
     return {
       sketchPad: null,
       instruction: false,
-      data: null,
+      pointerDown: false,
     }
   },
   methods: {
+    setPointerDown() {this.pointerDown = true},
+    commitChange() {
+      if (this.pointerDown) this.$emit('updateCanvas', this.sketchPad.toJSON());
+    },
     getImageUrl(image) {
       return require('../../assets/images/' + image);
     },
     undo() {
       if (this.sketchPad) {
-        this.sketchPad.undo()
+        this.sketchPad.undo();
+        this.$emit('updateCanvas', this.sketchPad.toJSON());
       }
     },
     redo() {
       if (this.sketchPad) {
-        this.sketchPad.redo()
+        this.sketchPad.redo();
+        this.$emit('updateCanvas', this.sketchPad.toJSON());
       }
     },
     clear() {
       if (this.sketchPad) {
-        this.sketchPad.clear()
+        this.sketchPad.clear();
+        this.$emit('updateCanvas', this.sketchPad.toJSON());
       }
-    },
-    save() {
-      this.$emit('saved', this.sketchPad.toJSON())
     },
     load() {
       if (this.data) {
-        this.sketchPad.loadJSON(this.data);
+        this.sketchPad.loadJSON(JSON.parse(JSON.stringify(this.data)));
       }
     },
     setColor(e) {
@@ -78,7 +83,6 @@ export default {
       }
     }
   },
-
   mounted() {
     let vw = document.querySelector('.interactive-container').clientWidth;
     let vh = window.innerHeight;
@@ -92,6 +96,9 @@ export default {
         }
       });
 
+      el.onpointerdown = this.setPointerDown;
+      el.onpointerup = this.commitChange;
+
       this.sketchPad.setCanvasSize(this.canvasStyle.width*vw, this.canvasStyle.height*vh);
       document.querySelector('.button-container').style.width = `${this.canvasStyle.width*vw}`;
 
@@ -102,6 +109,7 @@ export default {
         el.style.backgroundRepeat = 'no-repeat';
         el.style.backgroundSize = this.canvasStyle.backgroundSize;
       }
+      this.load();
     })
   }
 }

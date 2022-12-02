@@ -1359,8 +1359,10 @@
       <p>&nbsp;&nbsp;-&nbsp;Use a brave voice and stand up tall.</p>
       <p>&nbsp;&nbsp;-&nbsp;Try your best and give it a go.</p>
     </div>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
-    <audio src="../../assets/sounds/session2/Session2_Page21.mp3" ref="voice"/>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session2/Session2_Page21.mp3" ref="voice"/>
     <div class="page-number" id="page-light">68</div>
   </div>
 </template>
@@ -1413,11 +1415,13 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
   mounted() {
-    this.animateText();
     this.setAudioVolumeLevel(0.3);
-    this.playVoiceOver();
   }
 }
 </script>

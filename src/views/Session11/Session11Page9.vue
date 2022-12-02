@@ -1446,9 +1446,9 @@
       <img class="action-image" src="../../assets/images/session1/2749-resized.jpg" alt="happy-things">
       <img class="action-image" src="../../assets/images/session1/thank-you.jpg" alt="thank-you">
     </div>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"/>
-    <audio src="../../assets/sounds/session11/Session11_Page9.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">212</div>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Relaxing-Forest-Sound-Effect.mp3"/>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session11/Session11_Page9.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">213</div>
   </div>
 </template>
 
@@ -1484,12 +1484,14 @@ export default {
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
     }
   },
   mounted() {
     this.setAudioVolumeLevel(0.6);
-    this.animateText();
-    this.playVoiceOver();
   }
 }
 </script>

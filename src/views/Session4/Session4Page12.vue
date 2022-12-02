@@ -751,7 +751,7 @@
 
     <audio ref="correct" src="../../assets/sounds/all/correct-ans.mp3"/>
     <audio ref="wrong" src="../../assets/sounds/all/wrong-ans.mp3"/>
-    <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3"/>
+    <audio ref="celebrate" src="../../assets/sounds/all/crowd-cheer-applause-2.mp3"/>
 
     <!--  Very Good  -->
     <svg class="reward" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 178.71 248.07">
@@ -850,7 +850,7 @@
     <audio src="../../assets/sounds/all/Very_Good.mp3" ref="veryGood"/>
     <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
     <audio src="../../assets/sounds/all/Correct_1.mp3" ref="correctVoice"/>
-    <audio src="../../assets/sounds/session4/Session4_Page12.mp3" ref="voice"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page12.mp3" ref="voice"/>
     <div class="page-number" id="page-light">98</div>
   </div>
 </template>

@@ -7,8 +7,8 @@
       <p>What do people do to help you and how do you help them?</p>
       <p>Compare your ideas with friends.</p>
     </div>
-    <audio src="../../assets/sounds/session11/Session11_Page2.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">205</div>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session11/Session11_Page2.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">206</div>
   </div>
 </template>
 
@@ -31,11 +31,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

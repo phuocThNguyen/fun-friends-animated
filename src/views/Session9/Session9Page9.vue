@@ -13,8 +13,8 @@
       <img src="../../assets/images/session9/healthy_eating_child.jpg" alt="healthy-eating">
       <p id="para-2">Eating your <br>favourite healthy meal</p>
     </div>
-    <audio src="../../assets/sounds/session9/Session9_Page9.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">181</div>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page9.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">182</div>
   </div>
 </template>
 
@@ -24,7 +24,7 @@ import anime from "animejs";
 export default {
   name: 'Session9Page9',
   methods: {
-    animateElements() {
+    animateText() {
       let text = document.querySelector('.text-box').children;
       let images = document.querySelectorAll('.image-container');
       let animation = anime.timeline({easing: 'linear', duration: 500})
@@ -36,11 +36,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateElements();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

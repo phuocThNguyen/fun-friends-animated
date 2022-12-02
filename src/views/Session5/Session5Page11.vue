@@ -7,7 +7,6 @@
       <p>What are some feelings you would be having?</p>
       <p>What are some '<span class="green">green</span>'
         thoughts that can help them play happily together?</p>
-      <audio src="../../assets/sounds/session5/Session5_Page11.mp3" ref="voice"/>
     </div>
     <div class="bubble-container" id="bubble-1">
       <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 341.11 268.16">
@@ -23,7 +22,7 @@
         </g>
       </svg>
       <div class="bubble-text" id="bb-text-1">
-        <p>I will knock over <br>his block building.</p>
+        <p>I do not <br>want to play <br>with Tom.</p>
       </div>
     </div>
     <div class="bubble-container" id="bubble-2">
@@ -40,7 +39,7 @@
         </g>
       </svg>
       <div class="bubble-text" id="bb-text-2">
-        <p>We can rebuild the <br>building together.</p>
+        <p>We can <br>play together <br>and share.</p>
       </div>
     </div>
     <div class="masks-container">
@@ -48,7 +47,12 @@
       <div class="mask" id="mask-2" @click="selectedBubble(2)"/>
     </div>
 
-    <green-thought-instruction class="instruction"/>
+    <div class="instruction instruction-container">
+      <p>Instruction:</p>
+      <p>Next to Annie, there are two thought bubbles.
+        One thought bubble is the ‘green’ thought, and one
+        thought bubble is the ‘red‘ thought. Tap on the ‘green’ thought.</p>
+    </div>
 
     <!--  Good Job  -->
     <svg class="reward" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200.58 249.65">
@@ -144,16 +148,17 @@
     <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
     <audio src="../../assets/sounds/all/correct-ans.mp3" ref="correct"/>
     <audio src="../../assets/sounds/all/wrong-ans.mp3" ref="wrong"/>
+    <audio
+        @loadeddata="playSoundText"
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page11.mp3" ref="voice"/>
   </div>
 </template>
 
 <script>
 import anime from "animejs";
-import greenThoughtInstruction from "@/components/instructions/greenThoughtInstruction/GreenThoughtInstruction";
 
 export default {
   name: 'Session5Page11',
-  components: {greenThoughtInstruction},
   data() {return {correctAns: 2}},
   methods: {
     animateText() {
@@ -183,10 +188,18 @@ export default {
           targets: text[3],
           opacity: 1
         }, 12600)
-        .add({
-          targets: '.bubble-container',
-          opacity: 1
-        }, 14000)
+          .add({
+            targets: '#bubble-1',
+            opacity: 1
+          }, 17500)
+          .add({
+            targets: '#bubble-2',
+            opacity: 1
+          }, 21500)
+          .add({
+            targets: '.instruction-container',
+            opacity: 1
+          }, 25500)
       setTimeout(() => {
         document.querySelector('.masks-container').style.visibility = 'visible'}, 14000);
     },
@@ -238,17 +251,36 @@ export default {
     },
     hideMask() {
       document.querySelector('.masks-container').style.visibility = 'hidden';
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
     }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 
 <style scoped>
 .instruction {position: absolute;left:17vh;bottom:0}
+.instruction-container {
+  background-color: #00ce7c;
+  padding: 1vh;
+  width: 90vh;
+  opacity: 0;
+}
+.instruction-container p {
+  color: #ffffff;
+  margin-bottom: 0;
+  font-size: 2.5vh;
+}
+.instruction-container p:first-child {
+  font-size: 3vh;
+  font-weight: bold;
+}
+.instruction-container p:nth-child(2) {
+  padding-left: 1.8vh;
+}
 .masks-container {
   position: absolute;
   top: 0; left: 0;
@@ -294,14 +326,14 @@ export default {
 .text-box {
   position: absolute;
   width: 40%;
-  padding: 2vh;
-  bottom: 11%;
+  padding: 1vh 2vh;
+  bottom: 16%;
   right: 1%;
   background-color: rgba(255,255,255, 0.95);
   opacity: 0;
 }
 .text-box p {
-  font-size: 3vh;
+  font-size: 2.5vh;
   margin-bottom: .5vh;
   opacity: 0;
 }

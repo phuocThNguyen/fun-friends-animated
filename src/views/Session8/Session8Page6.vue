@@ -864,8 +864,8 @@
       you just have to find them. </span><span>Find a classmate and think
       about a <strong>STEP PLAN</strong> to make new friends together.</span>
     </div>
-    <audio src="../../assets/sounds/session8/Session8_Page6.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">162</div>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page6.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">163</div>
   </div>
 </template>
 
@@ -901,11 +901,13 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
   mounted() {
     this.animateSvg();
-    this.animateText();
-    this.playVoiceOver();
   }
 }
 </script>

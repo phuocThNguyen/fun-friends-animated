@@ -24,9 +24,9 @@
       </svg>
       <div class="bubble-text">Share your ideas with a friend!</div>
     </div>
-    <audio src="../../assets/sounds/all/Good_Job.mp3" ref="goodJob"/>
-    <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
-    <audio src="../../assets/sounds/session3/Session3_Page7.mp3" ref="voice"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/Session3_Page7.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">77</div>
   </div>
 </template>
@@ -76,11 +76,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  },
+  mounted() {},
 }
 </script>
 
@@ -146,5 +147,4 @@ export default {
 }
 .shp0-bubble { fill: #ffffff }
 .shp1-bubble { fill: #00CE7C }
-
 </style>

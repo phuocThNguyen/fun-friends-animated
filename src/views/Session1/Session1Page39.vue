@@ -17,8 +17,7 @@
       <div class="star-text big-text">
         <p><strong>Bright Star Idea</strong></p>
         <p>Share a kind
-          <br>thumbs up
-          <br>choice.</p>
+          <br>thumbs up <br>choice.</p>
       </div>
     </div>
     <div id="left" class="star-container small-star">
@@ -72,7 +71,9 @@
         <p>Share</p>
       </div>
     </div>
-    <audio src="../../assets/sounds/session1/46Animated_Book_Page45.mp3" ref="voice"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/46Animated_Book_Page45.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">45</div>
   </div>
 </template>
@@ -85,43 +86,20 @@ export default {
     animateText() {
       let animation = anime.timeline({easing: 'linear', duration: 500,});
       animation
-        .add({
-          targets: '.big-star',
-          opacity: 1,
-          delay: 500
-        })
-        .add({
-          targets: ".star",
-          keyframes: [
-            {rotate: '-20deg'},
-            {rotate: '20deg'},
-            {rotate: '-20deg'},
-            {rotate: '0deg'},
-          ],
-          delay: 0,
-        })
-        .add({
-          targets: ".star-text",
-          keyframes: [
-            {rotate: '-20deg'},
-            {rotate: '20deg'},
-            {rotate: '-20deg'},
-            {rotate: '0deg'},
-          ],
-          delay: 0,
-        }, 1000)
-      .add({targets: '#left',opacity: 1}, 8100)
-      .add({targets: '#bottom',opacity: 1}, 9300)
-      .add({targets: '#right',opacity: 1}, 10800)
+        .add({targets: '.big-star', opacity: 1, delay: 500})
+        .add({targets: '#left',opacity: 1}, 8100)
+        .add({targets: '#bottom',opacity: 1}, 9300)
+        .add({targets: '#right',opacity: 1}, 10800)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 
@@ -152,13 +130,17 @@ export default {
 }
 .star-text {
   position: absolute;
-  margin-top: 13%;
   width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 .star-text p { margin-bottom: 0;}
 .big-text {font-size: 4.3vh;}
-.big-text p:first-child {font-size: 4.5vh;}
+.big-text p:first-child {font-size: 4.5vh;padding-top: 9vh;}
 .small-text {font-size: 5vh;}
 #left {left:0;top:37.5vh}
 #bottom {left:47.5vh;bottom:5vh}

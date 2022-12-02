@@ -36,7 +36,9 @@
       </svg>
       <div class="bubble-text">Listen to your friend's opinion!</div>
     </div>
-    <audio src="../../assets/sounds/session3/Session3_Page10.mp3" ref="voice"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/Session3_Page10.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -76,11 +78,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

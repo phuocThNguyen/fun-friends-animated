@@ -196,8 +196,8 @@
       Annie being helped in the following pictures?</span>
       <span> How has somebody helped you?</span>
     </div>
-    <audio src="../../assets/sounds/session10/Session10_Page2.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">188</div>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page2.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">189</div>
   </div>
 </template>
 
@@ -220,11 +220,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1000)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

@@ -801,7 +801,7 @@
       <p id="para-3">What colours would it be?</p>
       <p id="para-4">What 5 things would you want in your house?</p>
     </div>
-    <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
+    <drawing-canvas class="canvas" v-on:updateCanvas="updateCanvas" :data="canvasData"  :canvasStyle="canvasStyle"/>
     <div class="bubble-container">
       <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
         <g id="Graphic Element">
@@ -817,10 +817,10 @@
       </svg>
       <div class="bubble-text">Share your ideas with a friend!</div>
     </div>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <audio src="../../assets/sounds/session1/32Animated_Book_Page31.mp3" ref="voice"/>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/32Animated_Book_Page31.mp3" ref="voice"/>
     <div class="page-number" id="page-light">31</div>
   </div>
 </template>
@@ -838,13 +838,11 @@ export default {
         width: 0.68,
         height: 0.7,
         isPicture: false,
-      }
+      },
+      canvasData: null,
     }
   },
   methods: {
-    saveToDatabase(data) {
-      console.log(data)
-    },
     animateSvg() {
       let vw = document.querySelector('.interactive-container').clientWidth;
       let vh = window.innerHeight;
@@ -923,12 +921,23 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 2000)
     },
+    init() {
+      this.canvasData = this.$store.getters.getPage31Data;
+    },
+    updateCanvas(canvasData) {
+      this.$store.commit('setPage31Data', canvasData);
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
+  },
+  created() {
+    this.init();
   },
   mounted() {
     this.animateSvg();
-    this.animateText();
     this.setAudioVolumeLevel(0.5);
-    this.playVoiceOver();
   }
 }
 </script>

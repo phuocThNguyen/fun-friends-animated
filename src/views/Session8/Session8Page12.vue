@@ -161,10 +161,10 @@
     <audio src="../../assets/sounds/all/Correct_3.mp3" ref="correctVoice"/>
     <audio src="../../assets/sounds/all/Well_Done.mp3" ref="wellDone"/>
     <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
-    <audio src="../../assets/sounds/session8/Session8_Page12.mp3" ref="voice"/>
-    <audio src="../../assets/sounds/session8/Session8_Page12_Exploring-the-creek-beds.mp3" ref="voice2"/>
-    <audio src="../../assets/sounds/session8/Session8_Page12_helping-each-other-cross-the-creek.mp3" ref="voice1"/>
-    <div class="page-number" id="page-light">168</div>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page12.mp3" ref="voice"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page12_Exploring-the-creek-beds.mp3" ref="voice2"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page12_helping-each-other-cross-the-creek.mp3" ref="voice1"/>
+    <div class="page-number" id="page-light">169</div>
   </div>
 </template>
 
@@ -181,7 +181,7 @@ export default {
   },
   components: {RedTick, GreenTick},
   methods: {
-    animateElements() {
+    animateText() {
       let questions = document.querySelectorAll('.text');
       let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
@@ -269,11 +269,12 @@ export default {
       setTimeout(() => {this.$refs.voice1.play()}, 8800);
       setTimeout(() => {this.$refs.voice2.play()}, 12000);
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateElements();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

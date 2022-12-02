@@ -818,9 +818,11 @@
     <div class="text-box">
       Draw a picture of your peaceful, quiet place.
     </div>
-    <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3"/>
-    <audio src="../../assets/sounds/session4/Session4_Page11.mp3" ref="voice"/>
+    <drawing-canvas class="canvas" v-on:updateCanvas="updateCanvas" :data="canvasData" :canvasStyle="canvasStyle"/>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page11.mp3" ref="voice"/>
     <div class="page-number" id="page-light">97</div>
   </div>
 </template>
@@ -838,13 +840,11 @@ export default {
         width: 0.98,
         height: 0.75,
         isPicture: false,
-      }
+      },
+      canvasData: null,
     }
   },
   methods: {
-    saveToDatabase(data) {
-      console.log(data)
-    },
     animateSvg() {
       let vw = window.innerWidth;
       const yellowFlowers = document.getElementsByClassName('yellow-flower');
@@ -865,7 +865,6 @@ export default {
         flower.style.bottom = Math.floor(Math.random() * 15).toString() + 'vh';
         flower.style.left = Math.floor(Math.random() * 100).toString() + 'vw';
       })
-
       anime({
         targets: this.$refs.cloud1,
         translateX: vw,
@@ -884,7 +883,7 @@ export default {
       })
       anime({
         targets: ".yellow-flower",
-        scale: 30,
+        scale: 13,
         duration: 2000,
         delay: 1000,
         easing: 'linear'
@@ -912,11 +911,23 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    init() {
+      this.canvasData = this.$store.getters.getPage97Data;
+    },
+    updateCanvas(canvasData) {
+      this.$store.commit('setPage97Data', canvasData);
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
+  },
+  created() {
+    this.init();
   },
   mounted() {
     this.animateSvg();
     this.setAudioVolumeLevel(0.4);
-    this.playVoiceOver();
   },
 }
 </script>
@@ -952,7 +963,7 @@ export default {
 }
 .yellow-flower {
   position: absolute;
-  width: 0.1%;
+  width: 0.3%;
   height: auto;
   z-index: 10;
 }

@@ -7,7 +7,7 @@
       the FRIENDS skills.</p>
       <p>Share your game with other children in the FRIENDS party.</p>
     </div>
-    <div class="js-container animation-container"></div>
+    <div class="js-container animation-container"/>
     <svg class="balloons" id="blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188 358" width="188" height="358">
       <g id="Layer 1">
         <g id="balloon-blue">
@@ -112,9 +112,9 @@
         </g>
       </g>
     </svg>
-    <audio ref="audio" autoplay src="../../assets/sounds/children-background-music/polka.mp3"/>
-    <audio src="../../assets/sounds/session12/Session12_Page2.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">215</div>
+    <audio autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/polka.mp3" ref="audio"/>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session12/Session12_Page2.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">216</div>
   </div>
 </template>
 
@@ -200,12 +200,14 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
   mounted() {
     this.setAudioVolumeLevel(0.3);
-    this.animateText();
     this.animateSvg();
-    this.playVoiceOver()
   }
 }
 </script>

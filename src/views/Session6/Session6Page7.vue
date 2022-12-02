@@ -190,7 +190,7 @@
     <audio src="../../assets/sounds/all/Very_Good.mp3" ref="veryGood"/>
     <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
     <audio src="../../assets/sounds/all/Correct_2.mp3" ref="correctVoice"/>
-    <audio src="../../assets/sounds/session6/Session6_Page7.mp3" ref="voice"/>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session6/Session6_Page7.mp3" ref="voice"/>
     <div class="page-number" id="page-light">134</div>
   </div>
 </template>
@@ -209,7 +209,7 @@ export default {
   },
   components: {GreenTick, RedTick},
   methods: {
-    animateElements() {
+    animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;
       let animation = anime.timeline({
         easing: 'linear',
@@ -312,11 +312,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateElements();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

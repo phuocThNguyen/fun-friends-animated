@@ -16,7 +16,9 @@
       <p>Breathing deeply and
         slowly calms us down.</p>
     </div>
-    <audio src="../../assets/sounds/session4/Session4_Page10.mp3" ref="voice"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page10.mp3" ref="voice"/>
     <div class="page-number" id="page-light">96</div>
   </div>
 </template>
@@ -27,7 +29,7 @@ import anime from "animejs";
 export default {
   name: "Session4Page10",
   methods: {
-    animateElements() {
+    animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;
       let animation = anime.timeline({
         easing: 'linear',
@@ -54,11 +56,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateElements();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

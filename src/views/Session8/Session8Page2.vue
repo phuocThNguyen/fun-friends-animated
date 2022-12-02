@@ -6,8 +6,8 @@
       what they do that you find kind.</p>
       <p>Maybe smiling, sharing, helping, listening or laughing?</p>
     </div>
-    <audio src="../../assets/sounds/session8/Session8_Page2.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">158</div>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page2.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">159</div>
   </div>
 </template>
 
@@ -31,11 +31,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

@@ -23,8 +23,10 @@
       </svg>
       <div class="bubble-text">Share your ideas with others!</div>
     </div>
-    <audio ref="audio" loop autoplay src="../../assets/sounds/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
-    <audio src="../../assets/sounds/session4/Session4_Page20.mp3" ref="voice"/>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page20.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">106</div>
   </div>
 </template>
@@ -35,7 +37,7 @@ import anime from "animejs";
 export default {
   name: 'Session4Page20',
   methods: {
-    animateElements() {
+    animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;
       let animation = anime.timeline({
         easing: 'linear',
@@ -61,11 +63,13 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
   mounted() {
-    this.animateElements();
     this.setAudioVolumeLevel(0.4);
-    this.playVoiceOver();
   }
 }
 </script>

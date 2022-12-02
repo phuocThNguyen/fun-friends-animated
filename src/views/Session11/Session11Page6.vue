@@ -8,8 +8,8 @@
       <img src="../../assets/images/session11/Swinging_Children.jpg" alt="swinging" class="images">
       <p class="text" id="para-2">Zoe and Daniel <br>helping Matilda swing.</p>
     </div>
-    <audio src="../../assets/sounds/session11/Session11_Page6.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">209</div>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session11/Session11_Page6.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">210</div>
   </div>
 </template>
 
@@ -29,11 +29,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

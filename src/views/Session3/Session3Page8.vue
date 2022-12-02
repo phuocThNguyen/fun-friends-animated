@@ -24,7 +24,9 @@
       </svg>
       <div class="bubble-text">Share your ideas with a friend!</div>
     </div>
-    <audio src="../../assets/sounds/session3/Session3_Page8.mp3" ref="voice"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/Session3_Page8.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">78</div>
   </div>
 </template>
@@ -74,11 +76,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateText()
-    this.playVoiceOver();
-  },
+  mounted() {},
 }
 </script>
 

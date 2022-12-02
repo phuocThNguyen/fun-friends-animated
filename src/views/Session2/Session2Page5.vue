@@ -157,10 +157,12 @@
 
     <audio ref="correct" src="../../assets/sounds/all/correct-ans.mp3"/>
     <audio ref="wrong" src="../../assets/sounds/all/wrong-ans.mp3"/>
-    <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3"/>
+    <audio ref="celebrate" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/kids-cheering.mp3"/>
     <audio src="../../assets/sounds/all/Awesome.mp3" ref="awesome"/>
     <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
-    <audio src="../../assets/sounds/session2/Session2_Page5.mp3" ref="voice"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session2/Session2_Page5.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">50</div>
   </div>
 </template>
@@ -258,11 +260,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

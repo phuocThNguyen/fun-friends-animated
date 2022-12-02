@@ -302,9 +302,9 @@
       <p>&middot; Try your best and give it a go. </p>
       <p>&middot; Believe in yourself.</p>
     </div>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"/>
-    <audio src="../../assets/sounds/session10/Session10_Page15.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">201</div>
+    <audio autoplay loop ref="audio" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"/>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page15.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">202</div>
   </div>
 </template>
 
@@ -360,12 +360,14 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
   mounted() {
     this.setAudioVolumeLevel(0.3);
     this.animateSvg();
-    this.animateText();
-    this.playVoiceOver();
   }
 }
 </script>

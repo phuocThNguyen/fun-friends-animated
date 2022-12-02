@@ -620,8 +620,8 @@
     <div class="plans" id="step-4">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">4) Invite your friend to come
-        and play in your house.</div>
+      <div class="text">4) Invite your friend <br>to come
+        and play <br>in your house.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -1009,11 +1009,11 @@
       <h1>My Helper</h1>
     </div>
     <div class="wing-container" id="right-container">
-      <p>Play hide and seek</p>
-      <p>Go for a swim</p>
-      <p>Play skipping</p>
-      <p>Fly a kite</p>
-      <p>Play in the park</p>
+      <p>Play in the park with my friends</p>
+      <p>Go for a swim with my friends</p>
+      <p>Play ball with my friends</p>
+      <p>Go to the movies with my friends</p>
+      <p>Party with my friends</p>
       <h1>Rewards</h1>
     </div>
     <div class="text-box">Green Thoughts:</div>
@@ -1126,12 +1126,12 @@
       <audio ref="sound" src="../../assets/sounds/session7/click-sound.mp3"></audio>
     </div>
     <audio ref="sound" src="../../assets/sounds/session7/click-sound.mp3"/>
-    <audio src="../../assets/sounds/session7/Session7_Page6-region-1.mp3" ref="step1"/>
-    <audio src="../../assets/sounds/session7/Session7_Page6-region-2.mp3" ref="step2"/>
-    <audio src="../../assets/sounds/session7/Session7_Page6-region-3.mp3" ref="step3"/>
-    <audio src="../../assets/sounds/session7/Session7_Page6-region-4.mp3" ref="step4"/>
-    <audio src="../../assets/sounds/session7/Session7_Page6-region-5.mp3" ref="step5"/>
-    <audio src="../../assets/sounds/session7/Session7_Page6.mp3" ref="voice"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page6-region-1.mp3" ref="step1"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page6-region-2.mp3" ref="step2"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page6-region-3.mp3" ref="step3"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page6-region-4.mp3" ref="step4"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page6-region-5.mp3" ref="step5"/>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page6.mp3" ref="voice"/>
     <div class="page-number" id="page-dark" style="left: 25vh !important;">144</div>
   </div>
 </template>
@@ -1146,11 +1146,11 @@ export default {
       step: 0,
       stepVoiceArray: null,
       timingArray: [
-        [915, 8194, 11212, 14392],
-        [1125, 14500, 17993, 21240],
-        [944, 11500, 14187, 18340],
-        [971, 6000, 9182, 12875],
-        [1060, 8689, 11500, 15000]]
+        [1000, 11500, 15000, 24300],
+        [1000, 15500, 19000, 31000],
+        [1000, 13000, 16000, 23000],
+        [1000, 7000, 10000, 16500],
+        [1000, 10000, 13000, 18500]]
     }
   },
   methods: {
@@ -1167,7 +1167,7 @@ export default {
         .add({
           targets: trophy,
           opacity: 1
-        }, 2917)
+        }, 3800)
         .add({
           targets: leftElements[5],
           opacity: 1
@@ -1245,11 +1245,13 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.displayInit();
+    }
   },
   mounted() {
     this.assignAudio();
-    this.displayInit();
-    this.playVoiceOver();
   }
 }
 </script>
@@ -1329,7 +1331,7 @@ export default {
 }
 #koala-sitting {
   height: 15vh;
-  left: 25vh;
+  left: 27vh;
   top: -5.5vh;
   transform: scaleX(-1);
 }
@@ -1362,27 +1364,18 @@ export default {
   opacity: 0;
   margin-bottom: 0;
 }
-.wing-container p:nth-child(1) {
-  top: 52vh;
-}
-.wing-container p:nth-child(2) {
-  top: 40vh;
-}
-.wing-container p:nth-child(3) {
-  top: 28vh;
-}
-.wing-container p:nth-child(4) {
-  top: 16vh;
-}
-.wing-container p:nth-child(5) {
-  top: 4.5vh;
-}
-#left-container {
-  left: 1%;
-}
-#right-container {
-  right: 1%;
-}
+#left-container p:nth-child(1) {top: 52vh;}
+#left-container p:nth-child(2) {top: 40vh;}
+#left-container p:nth-child(3) {top: 28vh;}
+#left-container p:nth-child(4) {top: 16vh;}
+#left-container p:nth-child(5) {top: 4.5vh;}
+#right-container p:nth-child(1) {top: 50vh;}
+#right-container p:nth-child(2) {top: 38vh;}
+#right-container p:nth-child(3) {top: 26vh;}
+#right-container p:nth-child(4) {top: 14vh;}
+#right-container p:nth-child(5) {top: 2vh;}
+#left-container {left: 1%;}
+#right-container {right: 1%;}
 .trophy-container {
   position: absolute;
   left: 23%;

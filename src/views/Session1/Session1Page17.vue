@@ -4,7 +4,9 @@
     <div class="text-box">
       <p class="mb-0">There are many countries and different languages.</p>
     </div>
-    <audio src="../../assets/sounds/session1/24Animated_Book_Page23.mp3" ref="voice"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/24Animated_Book_Page23.mp3" ref="voice"/>
     <div class="page-number" id="page-light">23</div>
   </div>
 </template>
@@ -26,12 +28,13 @@ export default {
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
     }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

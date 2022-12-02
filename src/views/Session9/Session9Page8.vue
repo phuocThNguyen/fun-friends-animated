@@ -701,9 +701,9 @@
       <p>Draw, write or act out your ideas for rewards with a friend!</p>
       <p>If it's a game, teach your friend how to play it!</p>
     </div>
-    <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/ukulele-beach-doug-maxwell-children-s-music-no-copyright-music.mp3"/>
-    <audio src="../../assets/sounds/session9/Session9_Page8.mp3" ref="voice"/>
+    <drawing-canvas class="canvas" v-on:updateCanvas="updateCanvas" :data="canvasData" :canvasStyle="canvasStyle"/>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/ukulele-beach-doug-maxwell-children-s-music-no-copyright-music.mp3"/>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page8.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -719,11 +719,12 @@ export default {
         width: 0.98,
         height: 0.8,
         isPicture: false,
-      }
+      },
+      canvasData: null,
     }
   },
   methods: {
-    animateElements() {
+    animateText() {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
@@ -740,11 +741,22 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1000)
     },
+    init() {
+      this.canvasData = this.$store.getters.getPage184Data;
+    },
+    updateCanvas(canvasData) {
+      this.$store.commit('setPage184Data', canvasData);
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
+  },
+  created() {
+    this.init();
   },
   mounted() {
     this.setAudioVolumeLevel(0.2);
-    this.animateElements();
-    this.playVoiceOver();
   }
 }
 </script>

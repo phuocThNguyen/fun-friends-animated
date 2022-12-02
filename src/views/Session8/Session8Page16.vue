@@ -194,8 +194,8 @@
         </p>
       </div>
     </div>
-    <audio src="../../assets/sounds/session8/Session8_Page16.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">172</div>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page16.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">173</div>
   </div>
 </template>
 
@@ -205,46 +205,23 @@ import anime from "animejs";
 export default {
   name: 'Session8Page16',
   methods: {
-    animateElements() {
+    animateText() {
       let animation = anime.timeline({
         easing: 'linear',
         delay: 500,
         duration: 500
       });
-      animation
-        .add({
-          targets: '.star-container',
-          opacity: 1
-        })
-        .add({
-          targets: ".star",
-          keyframes: [
-            {rotate: '-20deg'},
-            {rotate: '20deg'},
-            {rotate: '-20deg'},
-            {rotate: '0deg'},
-          ],
-          delay: 0,
-        })
-        .add({
-          targets: ".star-text",
-          keyframes: [
-            {rotate: '-20deg'},
-            {rotate: '20deg'},
-            {rotate: '-20deg'},
-            {rotate: '0deg'},
-          ],
-          delay: 0,
-        }, 1000)
+      animation.add({targets: '.star-container', opacity: 1})
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateElements();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 
@@ -269,9 +246,15 @@ export default {
 .star-text {
   position: absolute;
   text-align: center;
-  margin-top: 15%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   z-index: 55;
 }
+.star-text p:first-child {margin-top: 14vh}
 .star-text p {
   font-size: 4vh;
   margin-bottom: 0;

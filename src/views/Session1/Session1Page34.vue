@@ -212,10 +212,10 @@
       <p> - Show with your body what happens to trees during winter!</p>
       <p> - Show with your body a tree blossoming in spring!</p>
     </div>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <audio src="../../assets/sounds/session1/41Animated_Book_Page40.mp3" ref="voice"/>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Relaxing-Forest-Sound-Effect.mp3"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/41Animated_Book_Page40.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">40</div>
   </div>
 </template>
@@ -328,12 +328,14 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 3000)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
   mounted() {
     this.animateSvg();
-    this.animateText();
     this.setAudioVolumeLevel(0.3);
-    this.playVoiceOver();
   }
 }
 </script>

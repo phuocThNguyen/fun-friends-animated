@@ -13,15 +13,15 @@
           <div class="show">
             <div class="center">
               <Navigation
-                  v-on:setSession="setSession"
-                  :title="sessions[session][1]"
-                  :session="sessions[session][0]"
+                v-on:setSession="setSession"
+                :title="sessions[session][1]"
+                :session="sessions[session][0]"
               />
               <component
-                  :is="sessions[session][0]"
-                  v-on:nextSession="setSession"
-                  :isNext="isNext"
-                  :appendixPage="appendixPage"
+                :is="sessions[session][0]"
+                v-on:nextSession="setSession"
+                :isNext="isNext"
+                :appendixPage="appendixPage"
               />
             </div>
           </div>
@@ -84,9 +84,9 @@ export default {
       session: 0,
       isNext: true,
       appendixPage: 0,
-      authed: true,
+      authed: false,
       relogin: false,
-      loading: false,
+      loading: true,
     }
   },
   methods: {
@@ -136,9 +136,9 @@ export default {
     }
   },
   async beforeMount() {
-    // this.authed = this.$store.getters.getAuthedStatus;
-    // this.loading = this.$store.getters.getLoadingStatus;
-    // await this.checkAuthentication();
+    this.authed = this.$store.getters.getAuthedStatus;
+    this.loading = this.$store.getters.getLoadingStatus;
+    await this.checkAuthentication();
   },
   created() {}
 };
@@ -217,7 +217,7 @@ export default {
   position: absolute;
   left: 64vh;
   bottom: .5vh;
-  font-size: 2.5vh;
+  font-size: 2.2vh;
   font-weight: bold;
   width: 5vh;
   height: 5vh;

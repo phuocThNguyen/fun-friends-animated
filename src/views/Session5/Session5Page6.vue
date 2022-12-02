@@ -74,7 +74,10 @@
     </svg>
     <audio src="../../assets/sounds/all/Well_Done.mp3" ref="wellDone"/>
     <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
-    <audio src="../../assets/sounds/session5/Session5_Page6.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/all/crowd-cheer-applause.mp3" ref="celebrate"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page6.mp3" ref="voice"/>
     <div class="page-number" id="page-light">116</div>
   </div>
 </template>
@@ -105,6 +108,7 @@ export default {
         scale: 20,
         duration: 1000,
       });
+      this.$refs.celebrate.play();
       setTimeout(() => {this.$refs.wellDone.play()}, 500)
     },
     animateText() {
@@ -138,11 +142,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

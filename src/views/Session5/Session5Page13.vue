@@ -152,7 +152,10 @@
     <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
     <audio src="../../assets/sounds/all/correct-ans.mp3" ref="correct"/>
     <audio src="../../assets/sounds/all/wrong-ans.mp3" ref="wrong"/>
-    <audio src="../../assets/sounds/session5/Session5_Page14.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/all/crowd-cheer-applause.mp3" ref="celebrate"/><audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page14.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">123</div>
   </div>
 </template>
 
@@ -185,9 +188,17 @@ export default {
           opacity: 1
         }, 20569)
         .add({
-          targets: '.bubble-container',
+          targets: '#bubble-1',
           opacity: 1
-        }, 22000)
+        }, 34000)
+        .add({
+          targets: '#bubble-2',
+          opacity: 1
+        }, 36000)
+        .add({
+          targets: '.instruction',
+          opacity: 1
+        }, 38500)
       setTimeout(() => {
         document.querySelector('.masks-container').style.visibility = 'visible'}, 22000);
     },
@@ -212,6 +223,7 @@ export default {
       this.turnBubbleGreen();
       this.hideMask();
       setTimeout(() => {this.$refs.veryGood.play()}, 500);
+      setTimeout(() => {this.$refs.celebrate.play()}, 100);
     },
     handleWrongAnswer() {
       this.$refs.wrong.play();
@@ -239,17 +251,18 @@ export default {
     },
     hideMask() {
       document.querySelector('.masks-container').style.visibility = 'hidden';
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
     }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  },
+  mounted() {},
 }
 </script>
 
 <style scoped>
-.instruction {position: absolute;left:17vh;bottom:0}
+.instruction {position: absolute;left:17vh;bottom:0;opacity:0}
 .page-image {
   position: absolute;
   height: 72%;

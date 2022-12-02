@@ -15,8 +15,8 @@
       <img src="../../assets/images/session9/623020-PNWBO6-422.jpg" alt="Tom-reward">
       <p id="para-2">Tom's Reward <br>Special time with his dad</p>
     </div>
-    <audio src="../../assets/sounds/session9/Session9_Page6.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">178</div>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page6.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">179</div>
   </div>
 </template>
 
@@ -40,11 +40,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  },
+  mounted() {},
 }
 </script>
 

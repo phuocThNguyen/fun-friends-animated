@@ -202,8 +202,11 @@
       <p>When you feel scared, what can you do to be brave?</p>
       <p><strong>FUN FRIENDS can help you learn.</strong></p>
     </div>
-    <audio autoplay loop src="../../assets/sounds/all/387978__dcpoke__birds-singing-03.mp3"/>
-    <audio src="../../assets/sounds/session1/8Animated_Book_Page7.mp3" ref="audio"></audio>
+    <audio autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/387978__dcpoke__birds-singing-03.mp3"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/8Animated_Book_Page7.mp3"
+      ref="audio"/>
     <div class="page-number" id="page-light">7</div>
   </div>
 </template>
@@ -265,12 +268,14 @@ export default {
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.audio.play()}, 500)
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
     }
   },
   mounted() {
-    this.playVoiceOver();
     this.animateSvg();
-    this.animateText();
   }
 }
 </script>

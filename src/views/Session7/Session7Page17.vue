@@ -419,27 +419,24 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Every day remember to:</h1>
-      <p>&bull; Be kind to all living beings.</p>
-      <p>&bull; Play outside.</p>
-      <p>&bull; Have plenty of sleep.</p>
-      <p>&bull; Drink and eat foods that are healthy.</p>
-      <p>&bull; Practise relaxing without screens.</p>
-      <p>&bull; Pay attention to happy things and what you
-        can see, hear, smell, taste and feel.</p>
-      <p>&bull; Say thank you for happy times.</p>
+      <h1>Try Everyday</h1>
+      <p>&nbsp;&bull; Practise the steps in your step plan - one step at a time. It doesn’t matter how long
+        you need or how many steps it takes. Stay on each step until you
+        can do that step easily. Share your plan with your family or friends.</p>
+      <p>&nbsp;&bull; If a step seems too hard, maybe add a smaller step in between.
+        Remember to give yourself a reward for taking each step.</p>
+      <p>&nbsp;&bull; When you are being brave and moving up to a hard step,
+        try ‘bubble’ breathing and thinking ‘green’ thoughts.
+        How can you use these ‘green’ thoughts to reach your goal?</p>
+      <p>&nbsp;&bull; Practise relaxing for at least 10 minutes. Minimise TV and computer time.</p>
+      <p>&nbsp;&bull; Keep practising being BRAVE:</p>
+      <p>&middot; Look people in the eye and smile.</p>
+      <p>&middot; Use a brave voice and make yourself big.</p>
+      <p>&middot; Try your best and give it a go. </p>
+      <p>&middot; Believe in yourself.</p>
     </div>
-    <div class="image-container">
-      <img class="action-image" src="../../assets/images/introduction/Koala_Child_Hugging.jpg" alt="kind-to-animals">
-      <img class="action-image" src="../../assets/images/session1/811-resized.jpg" alt="play-outside">
-      <img class="action-image" src="../../assets/images/session5/85693.jpg" alt="sleep-early">
-      <img class="action-image" src="../../assets/images/session1/6796-resized.jpg" alt="eat-healthy">
-      <img class="action-image" src="../../assets/images/session1/4082-resized.jpg" alt="relaxing">
-      <img class="action-image" src="../../assets/images/session1/2749-resized.jpg" alt="happy-things">
-      <img class="action-image" src="../../assets/images/session1/thank-you.jpg" alt="thank-you">
-    </div>
-    <audio autoplay loop src="../../assets/sounds/session1/Relaxing-Forest-Sound-Effect.mp3"/>
-    <audio src="../../assets/sounds/session7/Session7_Page16.mp3" ref="voice"/>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Relaxing-Forest-Sound-Effect.mp3"/>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page15.mp3" ref="voice"/>
     <div class="page-number" id="page-light">155</div>
   </div>
 </template>
@@ -451,117 +448,92 @@ export default {
   name: 'Session7Page17',
   methods: {
     animateText() {
-      let texts = document.querySelector('.text-box').children;
-      let images = document.querySelector('.image-container').children;
+      let text = document.getElementsByClassName('text-box')[0].children;
       let animation = anime.timeline({
-        duration: 500,
-        easing: 'linear'
-      });
+        easing: 'linear',
+        duration: 500
+      })
       animation
         .add({
-          targets: ".text-box",
+          targets: '.text-box',
           opacity: 1,
-        }, 570)
+        }, 500)
         .add({
-          targets: texts[1],
+          targets: text[1],
           opacity: 1,
-        }, 3238)
+        }, 2600)
         .add({
-          targets: images[0],
+          targets: text[2],
           opacity: 1,
-        }, 3238)
+        }, 21200)
         .add({
-          targets: texts[2],
+          targets: text[3],
           opacity: 1,
-        }, 6128)
+        }, 31600)
         .add({
-          targets: images[1],
+          targets: text[4],
           opacity: 1,
-        }, 6128)
+        }, 44500)
         .add({
-          targets: texts[3],
-          opacity: 1,
-        }, 7609)
+          targets: text[5],
+          opacity: 1
+        }, 50800)
         .add({
-          targets: images[2],
-          opacity: 1,
-        }, 7609)
+          targets: text[6],
+          opacity: 1
+        }, 53300)
         .add({
-          targets: texts[4],
-          opacity: 1,
-        }, 10307)
+          targets: text[7],
+          opacity: 1
+        }, 56000)
         .add({
-          targets: images[3],
-          opacity: 1,
-        }, 10307)
+          targets: text[8],
+          opacity: 1
+        }, 58700)
         .add({
-          targets: texts[5],
-          opacity: 1,
-        }, 14129)
-        .add({
-          targets: images[4],
-          opacity: 1,
-        }, 14129)
-        .add({
-          targets: texts[6],
-          opacity: 1,
-        }, 17570)
-        .add({
-          targets: images[5],
-          opacity: 1,
-        }, 17570)
-        .add({
-          targets: texts[7],
-          opacity: 1,
-        }, 26647)
-        .add({
-          targets: images[6],
-          opacity: 1,
-        }, 26647);
+          targets: text[9],
+          opacity: 1
+        }, 61200)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 
 <style scoped>
-.action-image {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-}
-.image-container {
-  position: absolute;
-  top: 7vh;
-  right: 2%;
-  width: 44%;
-  height: 40vh;
-}
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.8);
+  width: 96%;
+  height: auto;
+  left: 2%;
+  top: 2vh;
+  padding: 2vh 2vh;
   opacity: 0;
-  padding: 1vh;
-  top: 1%;
-  left: 1%;
-  width: 50%;
 }
 .text-box h1 {
+  text-align: center;
   margin-bottom: 1vh;
-  font-size: 5vh;
+  font-size: 6vh;
+  font-weight: bold;
 }
 .text-box p {
-  font-size: 4vh;
-  padding-left: 0;
   margin-bottom: 1vh;
+  font-size: 3.3vh;
   opacity: 0;
+}
+.text-box p:nth-of-type(6),
+.text-box p:nth-of-type(7),
+.text-box p:nth-of-type(8),
+.text-box p:nth-of-type(9) {
+  padding-left: 7vh;
 }
 .text-box p:last-child {
   margin-bottom: 0;

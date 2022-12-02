@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
+    <drawing-canvas class="canvas" v-on:updateCanvas="updateCanvas" :data="canvasData" :canvasStyle="canvasStyle"/>
     <div class="text-box">
       <h1>A Tree With 'Feelings'</h1>
       <p>Make one tree with your friends. You can do this by drawing, creating, planting,
@@ -8,8 +8,10 @@
       <p>Draw or write down one feeling you have had and act it out in a group.</p>
       <p>When and why did you feel this way? <strong>All feelings are OK.</strong></p>
     </div>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/no-copyright-music-funny-children-kids-music-by-mokka-kids.mp3"/>
-    <audio src="../../assets/sounds/session2/Session2_Page17.mp3" ref="voice"/>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/no-copyright-music-funny-children-kids-music-by-mokka-kids.mp3"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session2/Session2_Page17.mp3" ref="voice"/>
     <div class="page-number" id="page-light">63</div>
   </div>
 </template>
@@ -29,7 +31,8 @@ export default {
         isPicture: true,
         pictureUrl: 'session2/feeling-tree.png',
         backgroundSize: 'cover'
-      }
+      },
+      canvasData: null,
     }
   },
   methods: {
@@ -67,11 +70,22 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    init() {
+      this.canvasData = this.$store.getters.getPage63Data;
+    },
+    updateCanvas(canvasData) {
+      this.$store.commit('setPage63Data', canvasData);
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
+  },
+  created() {
+    this.init();
   },
   mounted() {
-    this.animateText();
     this.setAudioVolumeLevel(0.4);
-    this.playVoiceOver();
   }
 }
 </script>

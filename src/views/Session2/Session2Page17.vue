@@ -2,7 +2,9 @@
   <div class="interactive-container">
     <img src="../../assets/images/session2/46933-resized.jpg" alt="background" class="session-background">
     <div class="text-box">We are kind when we pay attention to the teacher.</div>
-    <audio src="../../assets/sounds/session2/Session2_Page16.mp3" ref="voice"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session2/Session2_Page16.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">62</div>
   </div>
 </template>
@@ -25,11 +27,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

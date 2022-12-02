@@ -1143,11 +1143,11 @@
         <p id="q5"><strong>Being different is ok!</strong></p>
       </div>
     </div>
-    <drawing-canvas class="canvas" :canvasStyle="canvasStyle"/>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/Falling-Snow-Sound-Effect-Amplified.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <audio src="../../assets/sounds/session1/39Animated_Book_Page38.mp3" ref="voice"/>
+    <drawing-canvas class="canvas" v-on:updateCanvas="updateCanvas" :data="canvasData" :canvasStyle="canvasStyle"/>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Falling-Snow-Sound-Effect-Amplified.mp3"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/39Animated_Book_Page38.mp3" ref="voice"/>
     <div class="page-number" id="page-light">38</div>
   </div>
 </template>
@@ -1165,13 +1165,11 @@ export default {
         width: 0.555,
         height: 0.7,
         isPicture: false,
-      }
+      },
+      canvasData: null,
     }
   },
   methods: {
-    saveToDatabase(data) {
-      console.log(data)
-    },
     animateSvg() {
       let vh = window.innerHeight;
       let probability = 0.1;
@@ -1235,12 +1233,23 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    init() {
+      this.canvasData = this.$store.getters.getPage38Data;
+    },
+    updateCanvas(canvasData) {
+      this.$store.commit('setPage38Data', canvasData);
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
+  },
+  created() {
+    this.init();
   },
   mounted() {
     this.animateSvg();
-    this.animateText();
     this.setAudioVolumeLevel(0.6);
-    this.playVoiceOver();
   },
 };
 </script>

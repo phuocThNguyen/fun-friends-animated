@@ -218,7 +218,7 @@
       <p>Start on the bottom step, climbing slowly to the top.</p>
       <p>It can be easy when we break it into small steps.</p>
     </div>
-    <audio src="../../assets/sounds/session7/Session7_Page9.mp3" ref="voice"/>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page9.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">147</div>
   </div>
 </template>
@@ -229,7 +229,7 @@ import anime from "animejs";
 export default {
   name: 'Session7Page9',
   methods: {
-    animateElements() {
+    animateText() {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
@@ -242,11 +242,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateElements();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

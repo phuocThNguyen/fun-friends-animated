@@ -16,7 +16,7 @@
         </g>
       </svg>
       <div class="bubble-text" id="bb-text-1">
-        <p>It's too fast. <br>I'm scared.</p>
+        <p>It is too fast. <br>I'm scared.</p>
       </div>
     </div>
     <div class="bubble-container" id="bubble-2">
@@ -140,14 +140,16 @@
     </svg>
     <audio src="../../assets/sounds/all/Very_Good.mp3" ref="veryGood"/>
     <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
-    <audio src="../../assets/sounds/all/kids-cheering.mp3" ref="correct"/>
+    <audio src="../../assets/sounds/all/crowd-cheer-applause-2.mp3" ref="correct"/>
     <audio src="../../assets/sounds/all/wrong-ans.mp3" ref="wrong"/>
-    <audio src="../../assets/sounds/session5/Session5_Page15.mp3" ref="voice"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page15.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">124</div>
   </div>
 </template>
 
 <script>
-
 import anime from "animejs";
 import greenThoughtInstruction from "@/components/instructions/greenThoughtInstruction/GreenThoughtInstruction";
 
@@ -156,6 +158,27 @@ export default {
   components: {greenThoughtInstruction},
   data() {return {correctAns: 2}},
   methods: {
+    animateText() {
+      let animation = anime.timeline({
+        duration: 500,
+        easing: 'linear'
+      });
+      animation
+        .add({
+          targets: '#bubble-1',
+          opacity: 1
+        }, 600)
+        .add({
+          targets: '#bubble-2',
+          opacity: 1
+        }, 6500)
+        .add({
+          targets: '.instruction',
+          opacity: 1
+        }, 9500)
+      setTimeout(() => {
+        document.querySelector('.masks-container').style.visibility = 'visible'}, 6500);
+    },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
@@ -204,16 +227,18 @@ export default {
     },
     hideMask() {
       document.querySelector('.masks-container').style.visibility = 'hidden';
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
     }
   },
-  mounted() {
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 
 <style scoped>
-.instruction {position: absolute;left:17vh;bottom:0}
+.instruction {position: absolute;left:17vh;bottom:0;opacity: 0;}
 .page-image {
   position: absolute;
   width: 50%;
@@ -226,6 +251,7 @@ export default {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
+  visibility: hidden;
 }
 .mask {
   position: absolute;
@@ -238,6 +264,7 @@ export default {
   position: absolute;
   width: 30vh;
   height: 23vh;
+  opacity: 0;
 }
 #bubble-1 {top:1vh;left:1vh}
 #bubble-2 {top:1vh;right:30vh}

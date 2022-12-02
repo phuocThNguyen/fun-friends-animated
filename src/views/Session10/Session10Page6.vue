@@ -3,8 +3,8 @@
     <img src="../../assets/images/session10/1034.jpg" alt="Annie" class="session-background">
     <div class="text-box">Annie learns from <br>someone she looks up to.</div>
     <div class="text-box-green">My mum helps me learn to swim.</div>
-    <audio src="../../assets/sounds/session10/Session10_Page6.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">192</div>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page6.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">193</div>
   </div>
 </template>
 
@@ -23,11 +23,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

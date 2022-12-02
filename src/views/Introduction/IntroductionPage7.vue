@@ -2,8 +2,9 @@
   <div class="interactive-container">
     <img src="../../assets/images/introduction/page8.jpg" alt="background" class="session-background">
     <div class="text" id="text-1">My FUN FRIENDS Book</div>
-    <div class="text" id="text-2">A book to talk about, <br>with my friends and family</div>
-    <audio src="../../assets/sounds/introduction/7Animated_Book_Page6.mp3" ref="voice"></audio>
+    <div class="text" id="text-2">I can draw in the book and talk about it,
+      <br>with my friends and family.</div>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/introduction/7Animated_Book_Page6.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -42,6 +43,6 @@ export default {
 #text-2 {
   bottom: 5vh;
   font-size: 5vh;
-  line-height: 5vh;
+  line-height: 6vh;
 }
 </style>

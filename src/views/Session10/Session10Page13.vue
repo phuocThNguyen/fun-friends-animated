@@ -3,12 +3,12 @@
     <div class="text-box">
       <p>Who showed you how to do something
         before? Who has helped you feel happy?</p>
-      <p>Write their names in the space below or give them
+      <p>Draw their faces in the space below or give them
         a big thank you.</p>
     </div>
-    <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle" />
-    <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/no-copyright-music-funny-children-kids-music-by-mokka-kids.mp3"/>
-    <audio src="../../assets/sounds/session10/Session10_Page13.mp3" ref="voice"/>
+    <drawing-canvas class="canvas" v-on:updateCanvas="updateCanvas" :data="canvasData" :canvasStyle="canvasStyle" />
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/no-copyright-music-funny-children-kids-music-by-mokka-kids.mp3"/>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page13.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -23,16 +23,12 @@ export default {
       canvasStyle: {
         width: 0.98,
         height: 0.8,
-        isPicture: true,
-        pictureUrl: "session10/drawing-canvas.png",
-        backgroundSize: 'contain'
-      }
+        isPicture: false,
+      },
+      canvasData: null,
     }
   },
   methods: {
-    saveToDatabase(data) {
-      console.log(data)
-    },
     animateText() {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'})
@@ -47,11 +43,22 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1000)
     },
+    init() {
+      this.canvasData = this.$store.getters.getPage200Data;
+    },
+    updateCanvas(canvasData) {
+      this.$store.commit('setPage200Data', canvasData);
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
+  },
+  created() {
+    this.init();
   },
   mounted() {
     this.setAudioVolumeLevel(0.3);
-    this.animateText();
-    this.playVoiceOver();
   }
 }
 </script>

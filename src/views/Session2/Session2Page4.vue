@@ -274,10 +274,12 @@
 
     <audio ref="wrong" src="../../assets/sounds/all/wrong-ans.mp3"/>
     <audio ref="correct" src="../../assets/sounds/all/correct-ans.mp3"/>
-    <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3"/>
+    <audio ref="celebrate" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/crowd-cheer-applause.mp3"/>
     <audio src="../../assets/sounds/all/Great_work.mp3" ref="greatWork"/>
     <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
-    <audio src="../../assets/sounds/session2/Session2_Page4.mp3" ref="voice"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session2/Session2_Page4.mp3" ref="voice"/>
     <div class="page-number" id="page-light">49</div>
   </div>
 </template>
@@ -419,12 +421,13 @@ export default {
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
     }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  },
+  mounted() {},
   watch: {
     correctAns: function() {
       if (this.emotions.length === 0 && this.correctAns === 4) {
@@ -499,7 +502,7 @@ export default {
   position: absolute;
   width: 25%;
   height: 40vh;
-  top: 38vh;
+  top: 38.5vh;
   left: 0.5%;
   background-color: rgba(255,255,255,1);
   z-index: 10;

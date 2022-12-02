@@ -31,6 +31,8 @@ import Session12Page5 from "@/views/Session12/Session12Page5";
 import Session12Page6 from "@/views/Session12/Session12Page6";
 import Session12Page7 from "@/views/Session12/Session12Page7";
 import Session12Page8 from "@/views/Session12/Session12Page8";
+import Session12Page9 from "@/views/Session12/Session12Page9";
+import Session12Page10 from "@/views/Session12/Session12Page10";
 
 export default {
   name: "Session12",
@@ -39,16 +41,16 @@ export default {
   },
   components: {
     Session12Page1, Session12Page2, Session12Page3, Session12Page4, Session12Page5,
-    Session12Page6, Session12Page7, Session12Page8
+    Session12Page6, Session12Page7, Session12Page8, Session12Page9, Session12Page10,
   },
   data() {
     return {
       pages: {
         1: "Session12Page1", 2: "Session12Page2", 3: "Session12Page3", 4: "Session12Page4", 5: "Session12Page5",
-        6: "Session12Page6", 7: "Session12Page7", 8: "Session12Page8",
+        6: "Session12Page6", 7: "Session12Page7", 8: "Session12Page8", 9: "Session12Page9", 10: "Session12Page10",
       },
       page: 1,
-      lastPage: 8,
+      lastPage: 10,
     }
   },
   created() {

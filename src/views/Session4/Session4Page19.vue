@@ -67,10 +67,12 @@
     </svg>
 
     <audio ref="correct" src="../../assets/sounds/all/correct-ans.mp3"/>
-    <audio ref="celebrate" src="../../assets/sounds/all/kids-cheering.mp3"/>
+    <audio ref="celebrate" src="../../assets/sounds/all/crowd-cheer-applause.mp3"/>
     <audio src="../../assets/sounds/all/Correct_2.mp3" ref="correctVoice"/>
     <audio src="../../assets/sounds/all/Well_Done.mp3" ref="wellDone"/>
-    <audio src="../../assets/sounds/session4/Session4_Page19.mp3" ref="voice"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page19.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">105</div>
   </div>
 </template>
@@ -95,7 +97,7 @@ export default {
     }
   },
   methods: {
-    animateElements() {
+    animateText() {
       let animation = anime.timeline({
         easing: 'linear',
         duration: 500,
@@ -164,11 +166,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateElements();
-    this.playVoiceOver();
-  },
+  mounted() {},
   watch: {
     correctAns: function () {
       if (this.correctAns === 3) {
@@ -277,7 +280,6 @@ export default {
 }
 .text-box p {
   font-size: 3.8vh;
-  text-align: center;
   margin-bottom: 0;
 }
 .cls-1 {isolation: isolate;}

@@ -6,7 +6,9 @@
       <p class="mb-0">Some families are born in different countries.</p>
       <p class="mb-0">Where were you born?</p>
     </div>
-    <audio src="../../assets/sounds/session1/25Animated_Book_Page24.mp3" ref="voice"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/25Animated_Book_Page24.mp3" ref="voice"/>
     <div class="page-number" id="page-light">24</div>
   </div>
 </template>
@@ -28,12 +30,13 @@ export default {
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
     }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

@@ -832,11 +832,11 @@
         <p class="mb-0">Express yourself!</p>
       </div>
     </div>
-    <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle='canvasStyle'/>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <audio src="../../assets/sounds/session1/18Animated_Book_Page17.mp3" ref="voice"/>
+    <drawing-canvas class="canvas" v-on:updateCanvas="updateCanvas" :data="canvasData" :canvasStyle='canvasStyle'/>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/18Animated_Book_Page17.mp3" ref="voice"/>
     <div class="page-number" id="page-light">17</div>
   </div>
 </template>
@@ -859,8 +859,8 @@ export default {
     }
   },
   methods: {
-    saveToDatabase(data) {
-      console.log(data)
+    init() {
+      this.canvasData = this.$store.getters.getPage17Data;
     },
     setSvgCoord() {
       const yellowFlowers = document.getElementsByClassName('yellow-flower');
@@ -902,7 +902,7 @@ export default {
       })
       anime({
         targets: ".yellow-flower",
-        scale: 30,
+        scale: 13,
         duration: 2000,
         delay: 1000,
         easing: 'linear'
@@ -976,14 +976,22 @@ export default {
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1000)
+    },
+    updateCanvas(canvasData) {
+      this.$store.commit('setPage17Data', canvasData);
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
     }
+  },
+  created() {
+    this.init();
   },
   mounted() {
     this.setSvgCoord();
     this.animateSvg();
-    this.animateText();
     this.setAudioVolumeLevel(0.3);
-    this.playVoiceOver();
   },
 }
 </script>
@@ -1037,7 +1045,7 @@ export default {
 }
 .yellow-flower {
   position: absolute;
-  width: 0.1%;
+  width: 0.3%;
   height: auto;
   z-index: 10;
 }

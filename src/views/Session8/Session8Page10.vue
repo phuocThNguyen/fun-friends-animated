@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <drawing-canvas v-on:saved="saveToDatabase" class="canvas" :canvasStyle="canvasStyle"/>
+    <drawing-canvas class="canvas" v-on:updateCanvas="updateCanvas" :data="canvasData" :canvasStyle="canvasStyle"/>
     <div class="text-box">
       <p>Talk to your classmates about ideas on how to make
         new friends. <br>Together, draw or write your ideas in the balloons.
@@ -9,8 +9,8 @@
       <p>&bull;&nbsp;&nbsp;Be BRAVE and speak with a new person.</p>
       <p>&bull;&nbsp;&nbsp;Make a happy drawing to give to your new friend.</p>
     </div>
-    <audio src="../../assets/sounds/session8/Session8_Page10.mp3" ref="voice"/>
-    <audio ref="audio" autoplay loop src="../../assets/sounds/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3"></audio>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page10.mp3" ref="voice"/>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3"/>
   </div>
 </template>
 
@@ -29,14 +29,12 @@ export default {
         isPicture: true,
         pictureUrl: "session8/275676-P61H8M-305.png",
         backgroundSize: "cover"
-      }
+      },
+      canvasData: null,
     }
   },
   methods: {
-    saveToDatabase(data) {
-      console.log(data)
-    },
-    animateElements() {
+    animateText() {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
@@ -53,11 +51,22 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    init() {
+      this.canvasData = this.$store.getters.getPage167Data;
+    },
+    updateCanvas(canvasData) {
+      this.$store.commit('setPage167Data', canvasData);
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
+  },
+  created() {
+    this.init();
   },
   mounted() {
-    this.animateElements();
     this.setAudioVolumeLevel(0.2);
-    this.playVoiceOver();
   }
 }
 </script>

@@ -623,8 +623,8 @@
       like going to the park, playing ball, or just sharing
       a picnic with your family.</span>
     </div>
-    <audio src="../../assets/sounds/session9/Session9_Page2.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">174</div>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page2.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">175</div>
   </div>
 </template>
 
@@ -645,11 +645,12 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    this.animateText();
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

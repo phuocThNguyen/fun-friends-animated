@@ -8,8 +8,8 @@
       <img src="../../assets/images/session9/3100.jpg" alt="Annie">
       <p>Tom's Reward <br>Fun ride</p>
     </div>
-    <audio src="../../assets/sounds/session9/Session9_Page7.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">179</div>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page7.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">180</div>
   </div>
 </template>
 
@@ -19,19 +19,22 @@ import anime from "animejs";
 export default {
   name: 'Session9Page7',
   methods: {
-    animateText() {},
+    animateText() {
+      let images = document.querySelectorAll('.image-container');
+      let animation = anime.timeline({easing: 'linear', duration: 500})
+      animation
+        .add({targets: images[0], opacity: 1}, 800)
+        .add({targets: images[1], opacity: 1}, 4100)
+    },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
+    }
   },
-  mounted() {
-    let images = document.querySelectorAll('.image-container');
-    let animation = anime.timeline({easing: 'linear', duration: 500})
-    animation
-      .add({targets: images[0], opacity: 1}, 800)
-      .add({targets: images[1], opacity: 1}, 4100)
-    this.playVoiceOver();
-  }
+  mounted() {}
 }
 </script>
 

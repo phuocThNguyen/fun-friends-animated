@@ -4,8 +4,10 @@
     <div class="text-box">
       <p class="mb-0">This family has fun playing in the water.</p>
     </div>
-    <audio src="../../assets/sounds/session1/beach-sound.mp3" ref="audio" autoplay loop/>
-    <audio src="../../assets/sounds/session1/21Animated_Book_Page20.mp3" ref="voice"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/beach-sound.mp3" ref="audio" autoplay loop/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/21Animated_Book_Page20.mp3" ref="voice"/>
     <div class="page-number" id="page-light">20</div>
   </div>
 </template>
@@ -30,12 +32,14 @@ export default {
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
     }
   },
   mounted() {
     this.setAudioVolumeLevel(0.6);
-    this.animateText();
-    this.playVoiceOver();
   }
 }
 </script>

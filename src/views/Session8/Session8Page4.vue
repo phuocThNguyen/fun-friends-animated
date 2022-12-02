@@ -8,9 +8,9 @@
     </div>
     <img src="../../assets/images/session8/135407-OSAV2U-882.jpg" alt="Annie" class="images">
     <img src="../../assets/images/session8/135348-OSAU2M-875.jpg" alt="family" class="images">
-    <audio autoplay loop src="../../assets/sounds/session1/beach-sound.mp3" ref="audio"/>
-    <audio src="../../assets/sounds/session8/Session8_Page4.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">160</div>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/beach-sound.mp3" ref="audio" autoplay loop/>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page4.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">161</div>
   </div>
 </template>
 
@@ -33,13 +33,14 @@ export default {
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
     }
   },
   mounted() {
-    this.setAudioVolumeLevel(0.4);
-    this.animateText();
-    this.playVoiceOver();
-  },
+    this.setAudioVolumeLevel(0.4);},
 }
 </script>
 

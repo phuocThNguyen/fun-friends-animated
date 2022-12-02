@@ -4,20 +4,20 @@
     <div class="left-bar">
       <p id="para-1">Josh and Poppy the dog,
         <br>love playing ball in the park.</p>
-
       <p id="para-2">What games do you like
         <br>playing in the park?</p>
-
       <div class="text-box">
         <p id="para-3">It is fun playing with
           our animal friends.</p>
       </div>
-
     </div>
-    <audio ref="audio" autoplay src="../../assets/sounds/session1/dog.mp3">
-      Your browser does not support the
-      <code>audio</code> element.</audio>
-    <audio src="../../assets/sounds/session1/11Animated_Book_Page10.mp3" ref="voice"></audio>
+    <audio
+      ref="audio" autoplay
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/dog.mp3"/>
+    <audio
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/11Animated_Book_Page10.mp3"
+      ref="voice"/>
     <div class="page-number" id="page-light">10</div>
   </div>
 </template>
@@ -57,12 +57,14 @@ export default {
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1500)
+    },
+    playSoundText() {
+      this.playVoiceOver();
+      this.animateText();
     }
   },
   mounted() {
-    this.animateText();
     this.setAudioVolumeLevel(0.2);
-    this.playVoiceOver();
   }
 }
 </script>
