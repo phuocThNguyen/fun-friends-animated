@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img class="session-background" src="../../assets/images/session1/282-resized.jpg" alt="josh-and-poppy">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/282-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/282-resized.jpg"
+      class="session-background"
+    />
     <div class="left-bar">
       <p id="para-1">Josh and Poppy the dog,
         <br>love playing ball in the park.</p>
@@ -23,10 +27,12 @@
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: "Session1Page4",
+  components: {ImageComponent},
   methods: {
     animateText() {
       let animation = anime.timeline({

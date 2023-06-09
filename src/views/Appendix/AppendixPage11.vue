@@ -1,19 +1,45 @@
 <template>
   <div class="interactive-container" id="alt-bg">
     <h1 class="title">We all have fun!</h1>
-    <img src="../../assets/images/appendix/0000a8cd_medium.png" alt="dog-and-lamb" class="images">
-    <img src="../../assets/images/appendix/Beach_Children.png" alt="beach&children" class="images">
-    <img src="../../assets/images/appendix/Gingernut_ranger_perching_on_the_chicken_swing_in_garden.png" alt="chicken" class="images">
-    <img src="../../assets/images/appendix/78621.png" alt="children" class="images">
-    <img src="../../assets/images/appendix/Playing_Lambs_01.png" alt="lamb" class="images">
-    <img src="../../assets/images/appendix/70160.png" alt="drawing" class="images">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/appendix/0000a8cd_medium.png"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/appendix/0000a8cd_medium.jpg"
+      class="images" id="img-1"
+    />
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/appendix/Beach_Children.png"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/appendix/Beach_Children.jpg"
+      class="images" id="img-2"
+    />
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/appendix/Gingernut_ranger_perching_on_the_chicken_swing_in_garden.png"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/appendix/Gingernut_ranger_perching_on_the_chicken_swing_in_garden.png"
+      class="images" id="img-3"
+    />
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/appendix/78621.png"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/appendix/78621.png"
+      class="images" id="img-4"
+    />
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/appendix/Playing_Lambs_01.png"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/appendix/Playing_Lambs_01.png"
+      class="images" id="img-5"
+    />
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/appendix/70160.png"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/appendix/70160.png"
+      class="images" id="img-6"
+    />
     <audio @loadeddata="playVoiceOver" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/appendix/Session13_Appendix_Page8.mp3" ref="voice"/>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 export default {
   name: 'AppendixPage9',
+  components: {ImageComponent},
   methods: {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)

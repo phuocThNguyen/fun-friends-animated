@@ -1,7 +1,15 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session2/happy_kids.jpg" alt="happy" class="image" id="left">
-    <img src="../../assets/images/session2/Sad_Girl-resized.jpg" alt="sad" class="image" id="right">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/happy_kids.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/happy_kids.jpg"
+      alt="happy" class="image" id="left"
+    />
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/Sad_Girl-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/Sad_Girl-resized.jpg"
+      alt="sad" class="image" id="right"
+    />
 
     <div class="content-container" id="content-left">
       <h1>What could they be feeling?</h1>
@@ -222,11 +230,12 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session2/Session2_Page19.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">65</div>
+    <div class="page-number" id="page-light">79</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 import EmoteHappy from "@/components/feelingsQuestion/emotes/EmoteHappy";
 import EmoteWorried from "@/components/feelingsQuestion/emotes/EmoteWorried";
@@ -236,7 +245,7 @@ import EmoteCrying from "@/components/feelingsQuestion/emotes/EmoteCrying";
 
 export default {
   name: "Session2Page20",
-  components: {EmoteCrying, EmoteAngry, EmoteWorried, EmoteHappy},
+  components: {EmoteCrying, EmoteAngry, EmoteWorried, EmoteHappy, ImageComponent},
   data() {
     return {
       correctAns: []

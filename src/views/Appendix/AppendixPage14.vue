@@ -1,14 +1,20 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/appendix/group-kids-friend-laughing-together.png" alt="last-page" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/appendix/group-kids-friend-laughing-together.png"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/appendix/group-kids-friend-laughing-together.png"
+      class="session-background"
+    />
     <div class="text-box">SMILE</div>
     <audio @loadeddata="playVoiceOver" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/appendix/Session13_Appendix_Page11.mp3" ref="voice"/>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 export default {
   name: 'AppendixPage12',
+  components: {ImageComponent},
   methods: {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)

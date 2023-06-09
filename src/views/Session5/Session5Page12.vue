@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session5/1892.jpg" alt="" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session5/1892.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session5/1892.jpg"
+      class="session-background"
+    />
     <div class="text-box">
       <p>Talk about the feelings Annie and her brother are showing.</p>
       <p>What are some feelings you would be having?</p>
@@ -115,16 +119,18 @@
     <audio src="../../assets/sounds/all/kids-cheering.mp3" ref="correct"/>
     <audio src="../../assets/sounds/all/wrong-ans.mp3" ref="wrong"/>
     <audio
-        @loadeddata="playSoundText"
-        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page12.mp3" ref="voice"/>
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page12.mp3" ref="voice"/>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session5Page12',
+  components: {ImageComponent},
   data() {return {correctAns: 2}},
   methods: {
     animateText() {
@@ -224,11 +230,11 @@ export default {
 </script>
 
 <style scoped>
-.instruction {position: absolute;left:17vh;bottom:0}
+.instruction {position: absolute;left:24vh;bottom:0}
 .instruction-container {
   background-color: #00ce7c;
   padding: 1vh;
-  width: 90vh;
+  width: 85vh;
   opacity: 0;
 }
 .instruction-container p {

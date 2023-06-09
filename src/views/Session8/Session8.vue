@@ -24,11 +24,13 @@
 
 <script>
 import Session8Page1 from "@/views/Session8/Session8Page1";
+import Session8Page1_1 from "@/views/Session8/Session8Page1_1";
 import Session8Page2 from "@/views/Session8/Session8Page2";
 import Session8Page3 from "@/views/Session8/Session8Page3";
 import Session8Page4 from "@/views/Session8/Session8Page4";
 import Session8Page5 from "@/views/Session8/Session8Page5";
 import Session8Page6 from "@/views/Session8/Session8Page6";
+import Session8Page6_1 from "@/views/Session8/Session8Page6_1";
 import Session8Page7 from "@/views/Session8/Session8Page7";
 import Session8Page8 from "@/views/Session8/Session8Page8";
 import Session8Page9 from "@/views/Session8/Session8Page9";
@@ -46,21 +48,21 @@ export default {
     isNext: Boolean,
   },
   components: {
-    Session8Page1, Session8Page2, Session8Page3, Session8Page4, Session8Page5,
-    Session8Page6, Session8Page7, Session8Page8, Session8Page9, Session8Page10,
-    Session8Page11, Session8Page12, Session8Page13, Session8Page14, Session8Page15,
-    Session8Page16
+    Session8Page1, Session8Page1_1, Session8Page2, Session8Page3, Session8Page4,
+    Session8Page5, Session8Page6, Session8Page7, Session8Page8, Session8Page9,
+    Session8Page10, Session8Page11, Session8Page12, Session8Page13, Session8Page14,
+    Session8Page15, Session8Page16, Session8Page6_1,
   },
   data() {
     return {
       pages: {
-        1: "Session8Page1", 2: "Session8Page2", 3: "Session8Page3", 4: "Session8Page4", 5: "Session8Page5",
-        6: "Session8Page6", 7: "Session8Page7", 8: "Session8Page8", 9: "Session8Page9", 10: "Session8Page10",
-        11: "Session8Page11", 12: "Session8Page12", 13: "Session8Page13", 14: "Session8Page14", 15: "Session8Page15",
-        16: "Session8Page16",
+        1: "Session8Page1", 2: "Session8Page1_1", 3: "Session8Page2", 4: "Session8Page3", 5: "Session8Page4",
+        6: "Session8Page5", 7: "Session8Page6", 8: "Session8Page6_1", 9: "Session8Page7", 10: "Session8Page8",
+        11: "Session8Page9", 12: "Session8Page10", 13: "Session8Page11", 14: "Session8Page12", 15: "Session8Page13",
+        16: "Session8Page14", 17: "Session8Page15", 18: "Session8Page16",
       },
       page: 1,
-      lastPage: 16,
+      lastPage: 18,
     }
   },
   created() {

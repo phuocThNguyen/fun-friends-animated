@@ -1,23 +1,33 @@
 <template>
   <div class="interactive-container">
     <div class="image-container">
-      <img src="../../assets/images/session11/Climbing_Tree_Help.jpg" alt="climbing-tree" class="images">
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session11/Climbing_Tree_Help.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session11/Climbing_Tree_Help.jpg"
+        class="images"
+      />
       <p class="text" id="para-1">Mum helping <br>Daniel climb a tree.</p>
     </div>
     <div class="image-container" id="right">
-      <img src="../../assets/images/session11/Swinging_Children.jpg" alt="swinging" class="images">
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session11/Swinging_Children.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session11/Swinging_Children.jpg"
+        class="images"
+      />
       <p class="text" id="para-2">Zoe and Daniel <br>helping Matilda swing.</p>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session11/Session11_Page6.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">210</div>
+    <div class="page-number" id="page-light">239</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session11Page6',
+  components: {ImageComponent},
   methods: {
     animateText() {
       let text = document.getElementsByClassName('text');

@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img class="session-background" src="../../assets/images/session1/84428-resized.jpg" alt="family-enjoy-water">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/84428-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/84428-resized.jpg"
+      class="session-background"
+    />
     <div class="text-box">
       <p class="text">
         <span>Talk about your family and the places they come from.</span>
@@ -14,15 +18,17 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/26Animated_Book_Page25.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">25</div>
+    <div class="page-number" id="page-light">30</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: "Session1Page19",
+  components: {ImageComponent},
   methods: {
     animateText() {
       let paraArray = document.getElementsByClassName('text')[0];

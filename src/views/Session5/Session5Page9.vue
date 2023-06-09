@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session5/50289.jpg" alt="" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session5/50289.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session5/50289.jpg"
+      class="session-background"
+    />
     <div class="text-box">
       <p><strong>Sam is preparing for a 'Show and Tell'</strong></p>
       <p>Pretend that it is your turn to do 'show and tell'.</p>
@@ -149,16 +153,18 @@
     <audio src="../../assets/sounds/all/kids-cheering.mp3" ref="correct"/>
     <audio src="../../assets/sounds/all/wrong-ans.mp3" ref="wrong"/>
     <audio
-        @loadeddata="playSoundText"
-        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page9.mp3" ref="voice"/>
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page9.mp3" ref="voice"/>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session5Page9',
+  components: {ImageComponent},
   data() {return {correctAns: 2}},
   methods: {
     animateText() {

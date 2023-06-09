@@ -24,6 +24,7 @@
 
 <script>
 import Session1Page1 from "@/views/Session1/Session1Page1";
+import Session1Page1_1 from "@/views/Session1/Session1Page1_1";
 import Session1Page2 from "@/views/Session1/Session1Page2";
 import Session1Page3 from "@/views/Session1/Session1Page3";
 import Session1Page4 from "@/views/Session1/Session1Page4";
@@ -34,8 +35,13 @@ import Session1Page8 from "@/views/Session1/Session1Page8";
 import Session1Page9 from "@/views/Session1/Session1Page9";
 import Session1Page10 from "@/views/Session1/Session1Page10";
 import Session1Page11 from "@/views/Session1/Session1Page11";
+import Session1Page11_1 from "@/views/Session1/Session1Page11_1";
+import Session1Page11_2 from "@/views/Session1/Session1Page11_2";
+import Session1Page11_3 from "@/views/Session1/Session1Page11_3";
+import Session1Page11_4 from "@/views/Session1/Session1Page11_4";
 import Session1Page12 from "@/views/Session1/Session1Page12";
 import Session1Page13 from "@/views/Session1/Session1Page13";
+import Session1Page14_1 from "@/views/Session1/Session1Page14_1";
 import Session1Page14 from "@/views/Session1/Session1Page14";
 import Session1Page15 from "@/views/Session1/Session1Page15";
 import Session1Page16 from "@/views/Session1/Session1Page16";
@@ -51,13 +57,21 @@ import Session1Page25 from "@/views/Session1/Session1Page25";
 import Session1Page26 from "@/views/Session1/Session1Page26";
 import Session1Page27 from "@/views/Session1/Session1Page27";
 import Session1Page28 from "@/views/Session1/Session1Page28";
+import Session1Page28_1 from "@/views/Session1/Session1Page28_1";
+import Session1Page28_2 from "@/views/Session1/Session1Page28_2";
+import Session1Page28_3 from "@/views/Session1/Session1Page28_3";
 import Session1Page29 from "@/views/Session1/Session1Page29";
 import Session1Page30 from "@/views/Session1/Session1Page30";
 import Session1Page31 from "@/views/Session1/Session1Page31";
 import Session1Page32 from "@/views/Session1/Session1Page32";
 import Session1Page33 from "@/views/Session1/Session1Page33";
+import Session1Page33_1 from "@/views/Session1/Session1Page33_1";
+import Session1Page33_2 from "@/views/Session1/Session1Page33_2";
 import Session1Page34 from "@/views/Session1/Session1Page34";
 import Session1Page35 from "@/views/Session1/Session1Page35";
+import Session1Page35_1 from "@/views/Session1/Session1Page35_1";
+import Session1Page35_2 from "@/views/Session1/Session1Page35_2";
+import Session1Page35_3 from "@/views/Session1/Session1Page35_3";
 import Session1Page36 from "@/views/Session1/Session1Page36";
 import Session1Page37 from "@/views/Session1/Session1Page37";
 import Session1Page38 from "@/views/Session1/Session1Page38";
@@ -76,22 +90,28 @@ export default {
     Session1Page21, Session1Page22, Session1Page23, Session1Page24, Session1Page25,
     Session1Page26, Session1Page27, Session1Page28, Session1Page29, Session1Page30,
     Session1Page31, Session1Page32, Session1Page33, Session1Page34, Session1Page35,
-    Session1Page36, Session1Page37, Session1Page38, Session1Page39
+    Session1Page36, Session1Page37, Session1Page38, Session1Page39, Session1Page1_1,
+    Session1Page11_1, Session1Page11_2, Session1Page11_3, Session1Page11_4, Session1Page14_1,
+    Session1Page33_1, Session1Page35_1, Session1Page33_2, Session1Page28_1, Session1Page28_2,
+    Session1Page28_3, Session1Page35_2, Session1Page35_3,
   },
   data() {
     return {
       pages: {
-        1: "Session1Page1", 2: "Session1Page2", 3: "Session1Page3", 4: "Session1Page4", 5: "Session1Page5",
-        6: "Session1Page6", 7: "Session1Page7", 8: "Session1Page8", 9: "Session1Page9", 10: "Session1Page10",
-        11: "Session1Page11", 12: "Session1Page12", 13: "Session1Page13", 14: "Session1Page14", 15: "Session1Page15",
-        16: "Session1Page16", 17: "Session1Page17", 18: "Session1Page18", 19: "Session1Page19", 20: "Session1Page20",
-        21: "Session1Page21", 22: "Session1Page22", 23: "Session1Page23", 24: "Session1Page24", 25: "Session1Page25",
-        26: "Session1Page26", 27: "Session1Page27", 28: "Session1Page28", 29: "Session1Page29", 30: "Session1Page30",
-        31: "Session1Page31", 32: "Session1Page32", 33: "Session1Page33", 34: "Session1Page34", 35: "Session1Page35",
-        36: "Session1Page36", 37: "Session1Page37", 38: "Session1Page38", 39: "Session1Page39",
+        1: "Session1Page1", 2: "Session1Page1_1", 3: "Session1Page2", 4: "Session1Page3", 5: "Session1Page4",
+        6: "Session1Page5", 7: "Session1Page6", 8: "Session1Page7", 9: "Session1Page8", 10: "Session1Page9",
+        11: "Session1Page10", 12: "Session1Page11", 13: "Session1Page11_1", 14: "Session1Page11_2", 15: "Session1Page11_3",
+        16: "Session1Page11_4", 17: "Session1Page12", 18: "Session1Page13", 19: "Session1Page14", 20: "Session1Page14_1",
+        21: "Session1Page15", 22: "Session1Page16", 23: "Session1Page17", 24: "Session1Page18", 25: "Session1Page19",
+        26: "Session1Page20", 27: "Session1Page21", 28: "Session1Page22", 29: "Session1Page23", 30: "Session1Page24",
+        31: "Session1Page25", 32: "Session1Page26", 33: "Session1Page27", 34: "Session1Page28", 35: "Session1Page28_1",
+        36: "Session1Page28_2", 37: "Session1Page28_3", 38: "Session1Page29", 39: "Session1Page30", 40: "Session1Page31",
+        41: "Session1Page32", 42: "Session1Page33", 43: "Session1Page33_1", 44: "Session1Page33_2", 45: "Session1Page34",
+        46: "Session1Page35", 47: "Session1Page35_1", 48: "Session1Page35_2", 49: "Session1Page35_3", 50: "Session1Page36",
+        51: "Session1Page37", 52: "Session1Page38", 53: "Session1Page39",
       },
       page: 1,
-      lastPage: 39,
+      lastPage: 53,
     };
   },
   created() {

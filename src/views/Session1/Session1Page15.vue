@@ -204,16 +204,9 @@
 
     <!--  Main content  -->
     <div class="main-content">
-      <h1 class="requires">Draw a picture of your family
-        including the animals and plants you love too.</h1>
+      <h1 class="requires">Draw a picture of your friends.</h1>
       <div class="text-box">
-        <p>Talk with your friends about your picture.</p>
-
-        <p id="q1"> - Tell them about the people in your family
-        and what you like to do together.</p>
-        <p id="q2"> - Remember to talk about the happy times.</p>
-        <p id="q3"> - Be kind and listen carefully when it's their turn to talk.</p>
-        <p id="q5"> - Talk about a different family and how you can make friends.</p>
+        <p>Talk with your friends about your picture. Listen to others.</p>
       </div>
     </div>
     <drawing-canvas class="canvas" v-on:updateCanvas="updateCanvas" :data="canvasData" :canvasStyle='canvasStyle'/>
@@ -221,7 +214,6 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/22Animated_Book_Page21.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">21</div>
   </div>
 </template>
 
@@ -235,8 +227,8 @@ export default {
   data() {
     return {
       canvasStyle: {
-        width: 0.68,
-        height: 0.71,
+        width: 0.98,
+        height: 0.64,
         isPicture: false,
       },
       canvasData: null,
@@ -308,40 +300,10 @@ export default {
         duration: 500,
       });
       mainContentAnimation
-        .add({
-          targets: '.requires',
-          opacity: 1,
-          delay: 3000,
-        })
-        .add({
-          targets: '.text-box',
-          opacity: 0.90,
-          delay: 9000,
-        })
-        .add({
-          targets: text[0],
-          opacity: 1
-        }, 13708)
-        .add({
-          targets: text[1],
-          opacity: 1
-        }, 17319)
-        .add({
-          targets: text[2],
-          opacity: 1
-        }, 22915)
-        .add({
-          targets: text[3],
-          opacity: 1
-        }, 26332)
-        .add({
-          targets: text[4],
-          opacity: 1
-        }, 30651)
-        .add({
-          targets: '.canvas',
-          opacity: 1,
-        }, 32000)
+        .add({targets: '.requires', opacity: 1,}, 3000)
+        .add({targets: '.text-box', opacity: 0.90,}, 5000)
+        .add({targets: text[0], opacity: 1}, 5000)
+        .add({targets: '.canvas', opacity: 1,}, 7000)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
@@ -376,16 +338,16 @@ export default {
 }
 .canvas {
   position: absolute;
-  top: 1vh;
-  right: .5%;
+  top: 16.5vh;
+  left: 1.3vh;
   z-index: 100;
   opacity: 0;
 }
 .main-content {
   position: absolute;
-  left: .5%;
+  left: 1.3vh;
   top: 1vh;
-  width: 30%;
+  width: 130.4vh;
   z-index: 50;
 }
 .main-content h1 {
@@ -406,6 +368,7 @@ export default {
   height: auto;
   opacity: 0;
   font-size: 3vh;
+  text-align: center;
 }
 .text-box p {
   margin-bottom: 0;

@@ -719,7 +719,7 @@
       </div>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session6/Session6_Page11.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">138</div>
+    <div class="page-number" id="page-dark">158</div>
   </div>
 </template>
 

@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session10/1354.png" alt="background" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session10/1354.png"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session10/1354.jpg"
+      class="session-background"
+    />
     <drawing-canvas class="canvas" v-on:updateCanvas="updateCanvas" :data="canvasData" :canvasStyle="canvasStyle"/>
     <div class="text-box">
       <p>Give yourself a superhero name and draw a picture of your costume.</p>
@@ -12,11 +16,12 @@
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import DrawingCanvas from "@/components/drawingCanvas/DrawingCanvas";
 import anime from "animejs";
 export default {
   name: 'Session10Page10',
-  components: {DrawingCanvas},
+  components: {DrawingCanvas,ImageComponent},
   data() {
     return {
       canvasStyle: {

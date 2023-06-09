@@ -1,14 +1,18 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>'Feeling' faces</h1>
-      <p>Sit with a friend and look at the 'Feeling' faces.</p>
+      <h1>'Feelings' faces</h1>
+      <p>Sit with a friend and look at the 'Feeling's faces.</p>
       <p>What could they be feeling?</p>
       <p>Take turns and make sure to listen to your friend.
         <br>Remember, we all think differently.</p>
     </div>
     <div class="text">Nina has gifts for her family.</div>
-    <img src="../../assets/images/session2/5772.png" alt="Nina" class="image">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/5772.png"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/5772.png"
+      class="image"
+    />
     <emotion-pick-instruction class="instruction"/>
     <div class="content-container" id="content-left">
       <h1>What could she be feeling?</h1>
@@ -163,11 +167,12 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session2/Session2_Page5.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">50</div>
+    <div class="page-number" id="page-dark">64</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from 'animejs';
 import EmoteAngry from "@/components/feelingsQuestion/emotes/EmoteAngry";
 import EmoteHappy from "@/components/feelingsQuestion/emotes/EmoteHappy";
@@ -177,7 +182,7 @@ import EmotionPickInstruction from "@/components/instructions/emotionPickInstruc
 export default {
   name: "Session2Page5",
   data() {return {correctAns: []}},
-  components: {EmotionPickInstruction, EmoteSad, EmoteAngry, EmoteHappy},
+  components: {EmotionPickInstruction, EmoteSad, EmoteAngry, EmoteHappy, ImageComponent},
   methods: {
     animateRedTick(target) {
       anime({

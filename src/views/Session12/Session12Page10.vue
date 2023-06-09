@@ -1,19 +1,35 @@
 <template>
   <div class="interactive-container">
-    <div class="choice-container" id="choice-1">
-      <img src="../../assets/images/session12/rewards/playing-music.jpg" @click="toggleChoice(1)" alt="" class="image">
+    <div class="choice-container" id="choice-1" @click="toggleChoice(1)">
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session12/rewards/playing-music.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session12/rewards/playing-music.jpg"
+        alt="" class="image"
+      />
       <div class="text">Playing music</div>
     </div>
-    <div class="choice-container" id="choice-2">
-      <img src="../../assets/images/session12/rewards/swimming.jpg" @click="toggleChoice(2)" alt="" class="image">
+    <div class="choice-container" id="choice-2" @click="toggleChoice(2)">
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session12/rewards/swimming.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session12/rewards/swimming.jpg"
+        alt="" class="image"
+      />
       <div class="text">Swimming</div>
     </div>
-    <div class="choice-container" id="choice-3">
-      <img src="../../assets/images/session12/rewards/reading.jpg" @click="toggleChoice(3)" alt="" class="image">
+    <div class="choice-container" id="choice-3" @click="toggleChoice(3)">
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session12/rewards/reading.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session12/rewards/reading.jpg"
+        alt="" class="image"
+      />
       <div class="text">Reading books</div>
     </div>
-    <div class="choice-container" id="choice-4">
-      <img src="../../assets/images/session12/rewards/drawing.jpg" @click="toggleChoice(4)" alt="" class="image">
+    <div class="choice-container" id="choice-4" @click="toggleChoice(4)">
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session12/rewards/drawing.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session12/rewards/drawing.jpg"
+        alt="" class="image"
+      />
       <div class="text">Drawing</div>
     </div>
 
@@ -132,10 +148,12 @@
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session12Page10',
+  components: {ImageComponent},
   data() {return {choices: []}},
   methods: {
     animateSvg() {
@@ -233,7 +251,7 @@ export default {
   },
   mounted() {
     this.setChoiceBackground();
-    this.setAudioVolumeLevel(0.3);
+    this.setAudioVolumeLevel(0.5);
   }
 }
 </script>

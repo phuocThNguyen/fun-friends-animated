@@ -1,18 +1,24 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session10/1243.jpg" alt="Tom-reading-book" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session10/1243.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session10/1243.jpg"
+      class="session-background"
+    />
     <div class="text-box-green">My mum helps me to be brave
       <br>when I meet new people.</div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page7.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">194</div>
+    <div class="page-number" id="page-light">219</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session10Page7',
+  components: {ImageComponent},
   methods: {
     animateText() {
       anime({

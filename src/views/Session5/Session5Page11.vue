@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session5/1890.jpg" alt="" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session5/1890.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session5/1890.jpg"
+      class="session-background"
+    />
     <div class="text-box">
       <p><strong>Annie's brother, Tom, knocks over her block building</strong></p>
       <p>Talk about the feelings Annie and her brother are showing.</p>
@@ -149,16 +153,18 @@
     <audio src="../../assets/sounds/all/correct-ans.mp3" ref="correct"/>
     <audio src="../../assets/sounds/all/wrong-ans.mp3" ref="wrong"/>
     <audio
-        @loadeddata="playSoundText"
-        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page11.mp3" ref="voice"/>
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page11.mp3" ref="voice"/>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session5Page11',
+  components: {ImageComponent},
   data() {return {correctAns: 2}},
   methods: {
     animateText() {
@@ -262,11 +268,11 @@ export default {
 </script>
 
 <style scoped>
-.instruction {position: absolute;left:17vh;bottom:0}
+.instruction {position: absolute;left:24vh;bottom:0}
 .instruction-container {
   background-color: #00ce7c;
   padding: 1vh;
-  width: 90vh;
+  width: 85vh;
   opacity: 0;
 }
 .instruction-container p {
@@ -325,9 +331,9 @@ export default {
 }
 .text-box {
   position: absolute;
-  width: 40%;
+  width: 45vh;
   padding: 1vh 2vh;
-  bottom: 16%;
+  bottom: 20vh;
   right: 1%;
   background-color: rgba(255,255,255, 0.95);
   opacity: 0;

@@ -3,7 +3,7 @@
     <div id="sketchpad"/>
     <div class="button-container">
       <div class="color">
-        <label for="color">Color</label>
+        <label for="color">Colour</label>
         <input @change="setColor" type="color" id="color" name="color" value="#000000">
       </div>
       <div class="select-group">
@@ -135,10 +135,10 @@ export default {
   margin: .5% .5% 1% .5%;
   border: none;
   padding: 0 3% 0 3%;
-  height: 5vh;
+  height: 4vh;
   border-radius: 5px;
   color: #ffffff;
-  font-size: 3vh;
+  font-size: 2.5vh;
   font-weight: bold;
   box-shadow: 0 9px #999;
 }
@@ -174,7 +174,7 @@ label {
   height: 38px;
   line-height: 38px;
   text-align: center;
-  font-size: 2.5vh;
+  font-size: 2vh;
   text-transform: uppercase;
 }
 .color {

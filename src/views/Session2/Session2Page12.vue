@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session2/11382-resized.jpg" alt="alt-pos" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/11382-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/11382-resized.jpg"
+      class="session-background"
+    />
     <emotion-pick-instruction class="instruction"/>
     <feeling-question
       class="question"
@@ -114,13 +118,14 @@
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 import EmotionPickInstruction from "@/components/instructions/emotionPickInstruction/EmotionPickInstruction";
 import FeelingQuestion from "@/components/feelingsQuestion/FeelingsQuestion";
 
 export default {
   name: "Session2Page11",
-  components: {FeelingQuestion, EmotionPickInstruction},
+  components: {FeelingQuestion, EmotionPickInstruction, ImageComponent},
   methods: {
     handleCorrectAnswer() {
       document.querySelector('.reward').style.opacity = '1';

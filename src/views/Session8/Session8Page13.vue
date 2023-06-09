@@ -1,7 +1,15 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session8/creek_girl_alone.jpg" alt="girl-exploring-alone" class="images" id="left">
-    <img src="../../assets/images/session8/creek_together.jpg" alt="group-exploring" class="images" id="right">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session8/creek_girl_alone.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session8/creek_girl_alone.jpg"
+      class="images" id="left"
+    />
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session8/creek_together.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session8/creek_together.jpg"
+      class="images" id="right"
+    />
     <div class="question-container">
       <div class="text">
         Crossing the creek by themselves
@@ -200,11 +208,12 @@
     <audio src="../../assets/sounds/all/Very_Good.mp3" ref="wellDone"/>
     <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page13.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">170</div>
+    <div class="page-number" id="page-light">193</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import GreenTick from "@/components/feelingsQuestion/ticks/GreenTick";
 import RedTick from "@/components/feelingsQuestion/ticks/RedTick";
 import anime from "animejs";
@@ -215,7 +224,7 @@ export default {
       correctAns: 0
     }
   },
-  components: {RedTick, GreenTick},
+  components: {RedTick, GreenTick, ImageComponent},
   methods: {
     animateText() {
       let questions = document.querySelectorAll('.text');

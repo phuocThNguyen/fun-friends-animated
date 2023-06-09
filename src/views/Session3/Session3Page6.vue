@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session3/21944-resized.jpg" alt="friends" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session3/21944-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session3/21944-resized.jpg"
+      class="session-background"
+    />
     <emotion-pick-instruction class="instruction"/>
     <div class="content-container" id="girl">
       <h1>How is the girl feeling?</h1>
@@ -182,11 +186,12 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/Session3_Page6.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">76</div>
+    <div class="page-number" id="page-dark">91</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 import EmoteCalm from "@/components/feelingsQuestion/emotes/EmoteCalm";
 import EmoteAngry from "@/components/feelingsQuestion/emotes/EmoteAngry";
@@ -194,7 +199,7 @@ import EmotionPickInstruction from "@/components/instructions/emotionPickInstruc
 
 export default {
   name: "Session3Page6",
-  components: {EmotionPickInstruction, EmoteAngry, EmoteCalm},
+  components: {EmotionPickInstruction, EmoteAngry, EmoteCalm, ImageComponent},
   data() {return {correctAns: []}},
   methods: {
     animateRedTick(target) {

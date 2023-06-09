@@ -1,7 +1,15 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session5/2466.jpg" alt="" class="page-image" id="image-1">
-    <img src="../../assets/images/session5/Sleigh_Happy_Girls.jpg" alt="" class="page-image" id="image-2">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session5/2466.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session5/2466.jpg"
+      class="page-image" id="image-1"
+    />
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session5/Sleigh_Happy_Girls.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session5/Sleigh_Happy_Girls.jpg"
+      class="page-image" id="image-2"
+    />
     <div class="bubble-container" id="bubble-1">
       <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 341.11 268.16">
         <g id="Layer_2" data-name="Layer 2">
@@ -145,17 +153,18 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page15.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">124</div>
+    <div class="page-number" id="page-light">143</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 import greenThoughtInstruction from "@/components/instructions/greenThoughtInstruction/GreenThoughtInstruction";
 
 export default {
   name: 'Session5Page14',
-  components: {greenThoughtInstruction},
+  components: {greenThoughtInstruction, ImageComponent},
   data() {return {correctAns: 2}},
   methods: {
     animateText() {

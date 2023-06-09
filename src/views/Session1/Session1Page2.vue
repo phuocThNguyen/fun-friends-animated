@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img class="session-background" src="../../assets/images/session1/2350-resized.jpg" alt="children">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/2350-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/2350-resized.jpg"
+      class="session-background"
+    />
     <div class="left-bar">
       <p class="text-1"><span id="letter-f">F</span>eelings</p>
       <p class="text-2"><span id="letter-r">R</span>elax</p>
@@ -20,9 +24,11 @@
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 export default {
   name: "Session1Page2",
+  components: {ImageComponent},
   methods: {
     animateText() {
       let vw = document.querySelector('.interactive-container').clientWidth;

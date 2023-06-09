@@ -1,14 +1,21 @@
 <template>
   <div class="interactive-container" id="alt-bg">
-    <img src="../../assets/images/introduction/page2.jpg" alt="page-2" class="session-background" id="fixing-image">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/introduction/page2.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/introduction/page2.jpg"
+      class="session-background"
+      id="fixing-image"
+    />
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/introduction/2Animated_Book_Page1.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">1</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 export default {
   name: 'IntroductionPage2',
+  components: {ImageComponent},
   methods: {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)

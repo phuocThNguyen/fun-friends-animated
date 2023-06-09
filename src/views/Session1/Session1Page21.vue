@@ -5,10 +5,26 @@
     </div>
     <div class="items-container">
       <div class="images-container">
-        <img class="images" id="image-2" src="../../assets/images/session1/213-resized.jpg" alt="duck">
-        <img class="images" id="image-1" src="../../assets/images/session1/3877-resized.jpg" alt="cow">
-        <img class="images" id="image-4" src="../../assets/images/session1/15-resized.jpg" alt="pig">
-        <img class="images" id="image-3" src="../../assets/images/session1/336-resized.jpg" alt="sheep">
+        <ImageComponent
+          src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/213-resized.jpg"
+          srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/213-resized.jpg"
+          class="images" id="image-2" alt="duck"
+        />
+        <ImageComponent
+          src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/3877-resized.jpg"
+          srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/3877-resized.jpg"
+          class="images" id="image-1" alt="cow"
+        />
+        <ImageComponent
+          src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/15-resized.jpg"
+          srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/15-resized.jpg"
+          class="images" id="image-4" alt="pig"
+        />
+        <ImageComponent
+          src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/336-resized.jpg"
+          srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/336-resized.jpg"
+          class="images" id="image-3" alt="sheep"
+        />
       </div>
       <div class="images-container">
         <green-tick class="tick" id="tick-1"></green-tick>
@@ -287,17 +303,18 @@
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/28Animated_Book_Page27_Part2.mp3" ref="voice2"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/Good_Try_Try_again.mp3" ref="goodTry"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/Great_work.mp3" ref="greatWork"/>
-    <div class="page-number" id="page-light">27</div>
+    <div class="page-number" id="page-light">32</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 import GreenTick from "@/components/feelingsQuestion/ticks/GreenTick";
 
 export default {
   name: "Session1Page21",
-  components: {GreenTick},
+  components: {ImageComponent,GreenTick},
   data() {
     return {
       correctAns: 0,

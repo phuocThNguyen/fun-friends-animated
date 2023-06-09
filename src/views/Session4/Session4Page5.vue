@@ -1,22 +1,32 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session4/5183-resized.jpg" class="images" alt="riding-scooter">
-    <img src="../../assets/images/session4/2778146-resized.jpg" class="images" alt="riding-scooter2">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/5183-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/5183-resized.jpg"
+      class="images"
+    />
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/2778146-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/2778146-resized.jpg"
+      class="images"
+    />
     <div class="text-box">
       <h1>What are these children doing to relax and calm down?</h1>
     </div>
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page5.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">91</div>
+    <div class="page-number" id="page-light">109</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session4Page5',
+  components: {ImageComponent},
   methods: {
     animateText() {
       let images = document.getElementsByClassName('images');

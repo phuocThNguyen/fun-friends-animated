@@ -1,26 +1,36 @@
 <template>
   <div class="interactive-container">
     <div class="image-container">
-      <img src="../../assets/images/session9/770.jpg" alt="Annie">
-      <p id="para-1">2. Brave Annie <br>Trying to read a new book</p>
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session9/770.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session9/770.jpg"
+        class="image"
+      />
+      <p class="image-text" id="para-1">2. Brave Annie <br>Trying to read a new book</p>
     </div>
     <div class="image-container">
-      <img src="../../assets/images/session9/2338.jpg" alt="Annie">
-      <p id="para-2">Annie's Reward <br>Special time with her mom</p>
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session9/2338.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session9/2338.jpg"
+        class="image"
+      />
+      <p class="image-text" id="para-2">Annie's Reward <br>Special time with her mom</p>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page4.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">177</div>
+    <div class="page-number" id="page-light">201</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session9Page4',
+  components: {ImageComponent},
   methods: {
     animateText() {
-      let images = document.querySelectorAll('.image-container');
+      let images = document.querySelectorAll('.image-text');
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
         .add({targets: images[0], opacity: 1}, 690)
@@ -44,9 +54,9 @@ export default {
   bottom: 0;
   width: 49%;
   height: 100vh;
-  opacity: 0;
+  opacity: 1
 }
-.image-container img {
+.image-container .image {
   width: 100%;
   height: 100%;
 }
@@ -59,9 +69,10 @@ export default {
   color: #ffffff;
   padding: 1vh;
   text-align: center;
-  font-size: 4vh;
+  font-size: 3.8vh;
   font-weight: bold;
   margin-bottom: 0;
+  opacity: 0;
 }
 #para-1 {left: 18%;}
 #para-2 {right: 18%;}

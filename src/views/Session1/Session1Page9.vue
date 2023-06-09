@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img class="session-background" src="../../assets/images/session1/129493-ORFK4F-127-resized.jpg" alt="mia">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/129493-ORFK4F-127-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/129493-ORFK4F-127-resized.jpg"
+      class="session-background"
+    />
     <div class="text-box">
       <p class="mb-0">Mia enjoys climbing trees.</p>
     </div>
@@ -12,10 +16,12 @@
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: "Session1Page9",
+  components: {ImageComponent},
   methods: {
     animateText() {
       anime({

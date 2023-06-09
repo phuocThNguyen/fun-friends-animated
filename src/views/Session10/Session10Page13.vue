@@ -1,7 +1,7 @@
 <template>
   <div class="interactive-container" id="alt-bg">
     <div class="text-box">
-      <p>Who showed you how to do something
+      <p>Who has shown you how to do something
         before? Who has helped you feel happy?</p>
       <p>Draw their faces in the space below or give them
         a big thank you.</p>

@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session5/128.jpg" alt="green" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session5/128.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session5/128.jpg"
+      class="session-background"
+    />
     <div class="text-box">
       <p>In this picture, the children are walking
         to a new school with their dad. Look at their happy faces!</p>
@@ -110,17 +114,18 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page4.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">114</div>
+    <div class="page-number" id="page-dark">133</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 import TrafficLightVertical from "@/components/trafficLights/TrafficLightsVertical";
 
 export default {
   name: 'Session5Page4',
-  components: {TrafficLightVertical},
+  components: {TrafficLightVertical,ImageComponent},
   methods: {
     handleWrongAnswer() {
       anime({

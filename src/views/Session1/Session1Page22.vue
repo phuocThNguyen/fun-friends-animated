@@ -1,8 +1,23 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session1/112-resized.jpg" alt="house-1">
-    <img src="../../assets/images/session1/225-resized.jpg" alt="house-2">
-    <img src="../../assets/images/session1/773-resized.jpg" alt="house-3">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/112-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/112-resized.jpg"
+      alt="house-1"
+      class="page-image" id="image-1"
+    />
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/225-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/225-resized.jpg"
+      alt="house-2"
+      class="page-image" id="image-2"
+    />
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/beautiful-street-historical-town-pedraza-segovia-spain.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/beautiful-street-historical-town-pedraza-segovia-spain.jpg"
+      alt="house-3"
+      class="page-image" id="image-3"
+    />
     <div class="text-box">
       <h1>Our homes</h1>
       <p>Talk about your home.</p>
@@ -11,14 +26,16 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/29Animated_Book_Page28.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">28</div>
+    <div class="page-number" id="page-light">33</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 export default {
   name: "Session1Page22",
+  components: {ImageComponent},
   methods: {
     animateText() {
       let texts = document.getElementsByClassName('text-box')[0];
@@ -53,27 +70,12 @@ export default {
 </script>
 
 <style scoped>
-.interactive-container img {
+.page-image {
   position: absolute;
 }
-.interactive-container img:nth-child(1) {
-  left: 0;
-  bottom: 0;
-  width: 49%;
-  height: 70vh;
-}
-.interactive-container img:nth-child(2) {
-  top: 0;
-  right: 0;
-  width: 49%;
-  height: 44vh;
-}
-.interactive-container img:nth-child(3) {
-  bottom: 0;
-  right: 0;
-  width: 49%;
-  height: 45vh;;
-}
+#image-1 {left: 0;bottom: 0;width: 49%;height: 70vh;}
+#image-2 {top: 0;right: 0;width: 49%;height: 44vh;}
+#image-3 {bottom: 0;right: 0;width: 49%;height: 45vh;}
 .text-box {
   color: #ffffff;
   padding: 0 1vh;

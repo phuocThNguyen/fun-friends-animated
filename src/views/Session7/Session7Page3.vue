@@ -998,9 +998,9 @@
 
     <div class="wing-container" id="left-container">
       <p>A family member</p>
-      <p>My friends</p>
-      <p>My grand parents</p>
       <p>My siblings</p>
+      <p>My grand parents</p>
+      <p>My friends</p>
       <p>My parents</p>
       <h1>My Helper</h1>
     </div>
@@ -1127,7 +1127,7 @@
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page3-region-4.mp3" ref="step4"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page3-region-5.mp3" ref="step5"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page3.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark" style="left: 25vh !important;">141</div>
+    <div class="page-number" id="page-dark" style="left: 25vh !important;">164</div>
   </div>
 </template>
 

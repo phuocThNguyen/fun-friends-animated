@@ -2,26 +2,36 @@
   <div class="interactive-container">
     <h1 class="title">Annie is brave and rewards herself</h1>
     <div class="image-container">
-      <img src="../../assets/images/session9/1489.jpg" alt="Annie">
-      <p>1. Brave Annie <br>Trying to roller-blade</p>
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session9/1489.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session9/1489.jpg"
+        class="image"
+      />
+      <p class="image-text">1. Brave Annie <br>Trying to roller-blade</p>
     </div>
     <div class="image-container">
-      <img src="../../assets/images/session9/1551.jpg" alt="Annie">
-      <p>Annie's Reward <br>Cooking with mum</p>
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session9/1551.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session9/1551.jpg"
+        class="image"
+      />
+      <p class="image-text">Annie's Reward <br>Cooking with mum</p>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page3.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">176</div>
+    <div class="page-number" id="page-light">200</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session9Page3',
+  components: {ImageComponent},
   methods: {
     animateText() {
-      let images = document.querySelectorAll('.image-container');
+      let images = document.querySelectorAll('.image-text');
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
         .add({targets: images[0], opacity: 1}, 4000)
@@ -52,9 +62,9 @@ export default {
   bottom: 0;
   width: 49%;
   height: 80vh;
-  opacity: 0;
+  opacity: 1;
 }
-.image-container img {
+.image-container .image {
   width: 100%;
   height: 100%;
 }
@@ -71,6 +81,7 @@ export default {
   font-size: 4vh;
   font-weight: bold;
   margin-bottom: 0;
+  opacity: 0;
 }
 .image-container:nth-of-type(2) {
   right: 0;

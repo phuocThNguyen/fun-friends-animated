@@ -1,12 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session8/3360.jpg" alt="Annie-family" class="session-background">
-    <div class="text-box">
-      <p>Annie would like to play, but she doesn't have anyone to play with.</p>
-      <p>How do you think Annie is feeling?</p>
-      <p>If you were Annie, what could you do to play with
-        other children?</p>
-    </div>
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session8/3360.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session8/3360.jpg"
+      class="session-background"
+    />
     <div class="star-container">
       <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 1258" width="1320" height="1258">
         <title>Star</title>
@@ -28,28 +26,25 @@
       </div>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page7.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">164</div>
+    <div class="page-number" id="page-light">187</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session8Page7',
+  components: {ImageComponent},
   methods: {
     animateText() {
-      let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({
         easing: 'linear',
         duration: 500,
       });
       animation
-        .add({targets: '.text-box',opacity: 1}, 500)
-        .add({targets: text[0],opacity: 1}, 500)
-        .add({targets: text[1],opacity: 1}, 5700)
-        .add({targets: text[2],opacity: 1}, 8500)
-        .add({targets: '.star-container',opacity: 1}, 14300)
+        .add({targets: '.star-container',opacity: 1}, 500)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -66,8 +61,8 @@ export default {
 <style scoped>
 .star-container {
   position: absolute;
-  right: 7%;
-  bottom: 2vh;
+  left: 53vh;
+  top: 0;
   width: 40%;
   height: 50vh;
   display: flex;
@@ -77,7 +72,7 @@ export default {
 }
 .star {
   position: absolute;
-  height: 100%;
+  height: 95%;
   width: auto;
 }
 .star-text {
@@ -85,26 +80,9 @@ export default {
   text-align: center;
 }
 .star-text p {
-  font-size: 4vh;
+  font-size: 3.5vh;
   margin-top: 4.5vh;
   margin-bottom: 0;
-}
-.text-box {
-  position: absolute;
-  background-color: rgba(255,255,255,0.9);
-  width: 92%;
-  top: 1vh;
-  left: 4%;
-  padding: 1vh 2vh;
-  opacity: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.text-box p {
-  font-size: 4vh;
-  margin-bottom: 0;
-  opacity: 0;
 }
 tspan { white-space:pre }
 .shp0-star { fill: #f3cc30 }

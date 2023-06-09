@@ -26,18 +26,28 @@
       </svg>
       <div class="bubble-text">Share your ideas with others!</div>
     </div>
-    <img src="../../assets/images/session5/50289.jpg" alt="red" class="images" id="image-top">
-    <img src="../../assets/images/session5/103011.jpg" alt="green" class="images" id="image-bottom">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session5/50289.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session5/50289.jpg"
+      class="images" id="image-top"
+    />
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session5/103011.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session5/103011.jpg"
+      class="images" id="image-bottom"
+    />
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session6/Session6_Page5.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">132</div>
+    <div class="page-number" id="page-light">152</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session6Page5',
+  components: {ImageComponent},
   methods: {
     animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;

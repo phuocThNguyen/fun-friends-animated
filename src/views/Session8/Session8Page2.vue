@@ -1,21 +1,27 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session8/32050.png" alt="city" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session8/32050.png"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session8/32050.jpg"
+      class="session-background"
+    />
     <div class="text-box">
       <p>Find a friend in your class and show them or tell them
       what they do that you find kind.</p>
       <p>Maybe smiling, sharing, helping, listening or laughing?</p>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page2.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">159</div>
+    <div class="page-number" id="page-light">181</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session8Page2',
+  components: {ImageComponent},
   methods: {
     animateText() {
       let text = document.querySelector('.text-box').children;

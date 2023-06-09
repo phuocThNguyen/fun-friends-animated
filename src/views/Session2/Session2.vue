@@ -24,6 +24,7 @@
 
 <script>
 import Session2Page1 from "@/views/Session2/Session2Page1";
+import Session2Page1_1 from "@/views/Session2/Session2Page1_1";
 import Session2Page2 from "@/views/Session2/Session2Page2";
 import Session2Page3 from "@/views/Session2/Session2Page3";
 import Session2Page4 from "@/views/Session2/Session2Page4";
@@ -55,7 +56,7 @@ export default {
     isNext: Boolean,
   },
   components: {
-    Session2Page1, Session2Page2, Session2Page3, Session2Page4, Session2Page5,
+    Session2Page1, Session2Page1_1, Session2Page2, Session2Page3, Session2Page4, Session2Page5,
     Session2Page6, Session2Page7, Session2Page8, Session2Page9, Session2Page10,
     Session2Page11, Session2Page12, Session2Page13, Session2Page14, Session2Page15,
     Session2Page16, Session2Page17, Session2Page18, Session2Page19, Session2Page20,
@@ -64,14 +65,15 @@ export default {
   data() {
     return {
       pages: {
-        1: "Session2Page1", 2: "Session2Page2", 3: "Session2Page3", 4: "Session2Page4", 5: "Session2Page5",
-        6: "Session2Page6", 7: "Session2Page7", 8: "Session2Page8", 9: "Session2Page9", 10: "Session2Page10",
-        11: "Session2Page11", 12: "Session2Page12", 13: "Session2Page13", 14: "Session2Page14", 15: "Session2Page15",
-        16: "Session2Page16", 17: "Session2Page17", 18: "Session2Page18", 19: "Session2Page19", 20: "Session2Page20",
-        21: "Session2Page21", 22: "Session2Page22", 23: "Session2Page23", 24: "Session2Page24", 25: "Session2Page25",
+        1: "Session2Page1", 3: "Session2Page1_1", 2: "Session2Page2", 4: "Session2Page3", 5: "Session2Page4",
+        6: "Session2Page5", 7: "Session2Page6", 8: "Session2Page7", 9: "Session2Page8", 10: "Session2Page9",
+        11: "Session2Page10", 12: "Session2Page11", 13: "Session2Page12", 14: "Session2Page13", 15: "Session2Page14",
+        16: "Session2Page15", 17: "Session2Page16", 18: "Session2Page17", 19: "Session2Page18", 20: "Session2Page19",
+        21: "Session2Page20", 22: "Session2Page21", 23: "Session2Page22", 24: "Session2Page23", 25: "Session2Page24",
+        26: "Session2Page25",
       },
       page: 1,
-      lastPage: 25,
+      lastPage: 26,
     }
   },
   created() {

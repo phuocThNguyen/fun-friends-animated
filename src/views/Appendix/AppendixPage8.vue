@@ -3480,7 +3480,7 @@
       </g>
     </svg>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/appendix/Session13_Appendix_Page5.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">232</div>
+    <div class="page-number" id="page-dark">262</div>
   </div>
 </template>
 

@@ -1362,11 +1362,10 @@
       </svg>
       <div class="star-text">
         <p><strong>Bright Star Idea</strong></p>
-        <p>Draw a great big happy
-          <br>flower. Inside each
-          <br>petal, draw a picture
-          <br>of something that
-          <br>makes you happy.</p>
+        <p>Draw a great big
+          <br>happy flower. Colour in
+          <br>each petal with a
+          <br>different colour.</p>
       </div>
     </div>
     <drawing-canvas class="canvas" v-on:updateCanvas="updateCanvas" :data="canvasData" :canvasStyle="canvasStyle"/>
@@ -1374,7 +1373,7 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session2/Session2_Page23.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">70</div>
+    <div class="page-number" id="page-light">84</div>
   </div>
 </template>
 

@@ -24,6 +24,7 @@
 
 <script>
 import Session7Page1 from "@/views/Session7/Session7Page1";
+import Session7Page1_1 from "@/views/Session7/Session7Page1_1";
 import Session7Page2 from "@/views/Session7/Session7Page2";
 import Session7Page3 from "@/views/Session7/Session7Page3";
 import Session7Page4 from "@/views/Session7/Session7Page4";
@@ -49,21 +50,21 @@ export default {
     isNext: Boolean,
   },
   components: {
-    Session7Page1, Session7Page2, Session7Page3, Session7Page4, Session7Page5,
-    Session7Page6, Session7Page7, Session7Page8, Session7Page9, Session7Page10,
-    Session7Page11, Session7Page12, Session7Page13, Session7Page14, Session7Page15,
-    Session7Page16, Session7Page17, Session7Page18, Session7Page19
+    Session7Page1, Session7Page1_1, Session7Page2, Session7Page3, Session7Page4,
+    Session7Page5, Session7Page6, Session7Page7, Session7Page8, Session7Page9,
+    Session7Page10, Session7Page11, Session7Page12, Session7Page13, Session7Page14,
+    Session7Page15, Session7Page16, Session7Page17, Session7Page18, Session7Page19
   },
   data() {
     return {
       pages: {
-        1: "Session7Page1", 2: "Session7Page2", 3: "Session7Page3", 4: "Session7Page4", 5: "Session7Page5",
-        6: "Session7Page6", 7: "Session7Page7", 8: "Session7Page8", 9: "Session7Page9", 10: "Session7Page10",
-        11: "Session7Page11", 12: "Session7Page12", 13: "Session7Page13", 14: "Session7Page14", 15: "Session7Page15",
-        16: "Session7Page16", 17: "Session7Page17", 18: "Session7Page18", 19: "Session7Page19",
+        1: "Session7Page1", 2: "Session7Page1_1", 3: "Session7Page2", 6: "Session7Page3", 5: "Session7Page4",
+        4: "Session7Page5", 7: "Session7Page6", 8: "Session7Page7", 9: "Session7Page8", 10: "Session7Page9",
+        11: "Session7Page10", 12: "Session7Page11", 13: "Session7Page12", 14: "Session7Page13", 15: "Session7Page14",
+        16: "Session7Page15", 17: "Session7Page16", 18: "Session7Page17", 19: "Session7Page18", 20: "Session7Page19",
       },
       page: 1,
-      lastPage: 19,
+      lastPage: 20,
     }
   },
   created() {

@@ -1,23 +1,33 @@
 <template>
   <div class="interactive-container">
     <div class="image-container">
-      <img src="../../assets/images/session11/rock_climbing_nature.jpg" alt="climbing-tree" class="images">
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session11/rock_climbing_nature.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session11/rock_climbing_nature.jpg"
+        class="images"
+      />
       <p class="text" id="para-1">Mum helping Matilda rock climbing.</p>
     </div>
     <div class="image-container" id="right">
-      <img src="../../assets/images/session11/hugging_dog_child.jpg" alt="swinging" class="images">
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session11/hugging_dog_child.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session11/hugging_dog_child.jpg"
+        class="images"
+      />
       <p class="text" id="para-2">Zoe giving Pepper a hug.</p>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session11/Session11_Page7.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">211</div>
+    <div class="page-number" id="page-light">240</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session11Page7',
+  components: {ImageComponent},
   methods: {
     animateText() {
       let text = document.getElementsByClassName('text');

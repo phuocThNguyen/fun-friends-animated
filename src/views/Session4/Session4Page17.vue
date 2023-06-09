@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session4/4473-resized.jpg" alt="exploring" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/4473-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/4473-resized.jpg"
+      class="session-background"
+    />
     <div class="text-box">
       <h1>5. Touch</h1>
       <p>We feel with our skin. What can we feel?</p>
@@ -8,15 +12,17 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page17.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">103</div>
+    <div class="page-number" id="page-dark">121</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session4Page17',
+  components: {ImageComponent},
   methods: {
     animateText() {
       anime({

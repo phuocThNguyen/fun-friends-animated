@@ -331,7 +331,7 @@
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page151-step3.mp3" id="step-audio-3"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page151-step4.mp3" id="step-audio-4"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page151-step5.mp3" id="step-audio-5"/>
-    <div class="page-number" id="page-dark" style="left: 75vh">151</div>
+    <div class="page-number" id="page-dark" style="left: 75vh">172</div>
   </div>
 </template>
 
@@ -359,7 +359,7 @@ export default {
         {id: 1, ans: 'Drink lots of water,\neat fruit and vegetables.'},
         {id: 2, ans: 'Have a good nice sleep.'},
         {id: 3, ans: 'Go for a walk everyday\nwith my family.'},
-        {id: 4, ans: 'Practice running, playing\nball and swimming everyday.'},
+        {id: 4, ans: 'Practise running, playing\nball and swimming everyday.'},
         {id: 5, ans: 'Try your best on\nsports day and have fun.'},
       ],
     }

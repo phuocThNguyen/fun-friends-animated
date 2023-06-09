@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img class="session-background" src="../../assets/images/session1/4082-resized.jpg" alt="zoe-and-dad">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/4082-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/4082-resized.jpg"
+      class="session-background"
+    />
     <div class="text-box">
       <p class="mb-0">Zoe's dad also plays with her on the swing.</p>
       <p class="mb-0">It is so much fun!</p>
@@ -13,10 +17,12 @@
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: "Session1Page6",
+  components: {ImageComponent},
   methods: {
     animateText() {
       let text = document.querySelector('.text-box').children;

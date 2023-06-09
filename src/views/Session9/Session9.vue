@@ -24,6 +24,7 @@
 
 <script>
 import Session9Page1 from "@/views/Session9/Session9Page1";
+import Session9Page1_1 from "@/views/Session9/Session9Page1_1";
 import Session9Page2 from "@/views/Session9/Session9Page2";
 import Session9Page3 from "@/views/Session9/Session9Page3";
 import Session9Page4 from "@/views/Session9/Session9Page4";
@@ -44,19 +45,19 @@ export default {
     isNext: Boolean,
   },
   components: {
-    Session9Page1, Session9Page2, Session9Page3, Session9Page4, Session9Page5,
-    Session9Page6, Session9Page7, Session9Page8, Session9Page9, Session9Page10,
-    Session9Page11, Session9Page12, Session9Page13, Session9Page14
+    Session9Page1, Session9Page1_1, Session9Page2, Session9Page3, Session9Page4,
+    Session9Page5, Session9Page6, Session9Page7, Session9Page8, Session9Page9,
+    Session9Page10, Session9Page11, Session9Page12, Session9Page13, Session9Page14
   },
   data() {
     return {
       pages: {
-        1: "Session9Page1", 2: "Session9Page2", 3: "Session9Page3", 4: "Session9Page4", 5: "Session9Page5",
-        6: "Session9Page6", 7: "Session9Page7", 8: "Session9Page8", 9: "Session9Page9", 10: "Session9Page10",
-        11: "Session9Page11", 12: "Session9Page12", 13: "Session9Page13", 14: "Session9Page14",
+        1: "Session9Page1", 2: "Session9Page1_1", 3: "Session9Page2", 4: "Session9Page3", 5: "Session9Page4",
+        6: "Session9Page5", 7: "Session9Page6", 8: "Session9Page7", 9: "Session9Page8", 10: "Session9Page9",
+        11: "Session9Page10", 12: "Session9Page11", 13: "Session9Page12", 14: "Session9Page13", 15: "Session9Page14",
       },
       page: 1,
-      lastPage: 14,
+      lastPage: 15,
     }
   },
   created() {

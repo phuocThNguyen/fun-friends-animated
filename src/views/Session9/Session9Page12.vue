@@ -997,7 +997,7 @@
       <p>&middot; Believe in yourself.</p>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page12.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">185</div>
+    <div class="page-number" id="page-light">209</div>
   </div>
 </template>
 

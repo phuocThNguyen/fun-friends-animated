@@ -1,13 +1,15 @@
 <template>
   <div class="interactive-container">
-    <img class="session-background" id="page-11" src="../../assets/images/session1/18722-resized.jpg" alt="our-families">
-
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/18722-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/18722-resized.jpg"
+      class="session-background" id="page-11"
+    />
     <div class="left-bar">
       <h1>Our families</h1>
       <p id="para-1">Tell us about your family.</p>
       <p id="para-2">What games do you like to play together?</p>
       <p id="para-3">How do you have fun together?</p>
-
       <div class="text-box">
         <p>We love going to the park.</p>
       </div>
@@ -15,15 +17,17 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/19Animated_Book_Page18.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">18</div>
+    <div class="page-number" id="page-light">22</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: "Session1Page12",
+  components: {ImageComponent},
   methods: {
     animateText() {
       let text = document.querySelector('.left-bar').children;

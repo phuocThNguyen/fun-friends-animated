@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session4/126256-resized.jpg" alt="butterflies-in-the-tummy" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/126256-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/126256-resized.jpg"
+      class="session-background"
+    />
     <div class="text-box">
       <h1>Butterflies in the tummy</h1>
       <p>What happens to you when you feel nervous?</p>
@@ -13,15 +17,17 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page3.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">89</div>
+    <div class="page-number" id="page-dark">107</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: "Session4Page3",
+  components: {ImageComponent},
   methods: {
     animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;

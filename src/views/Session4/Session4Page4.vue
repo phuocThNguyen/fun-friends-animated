@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session4/background-monkey.jpg" alt="background" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/background-monkey.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/background-monkey.jpg"
+      class="session-background"
+    />
     <h1 class="position-absolute title">Body Clues</h1>
     <p class="position-absolute text">Worries grow</p>
     <p class="position-absolute text">Head hurts</p>
@@ -16,15 +20,17 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page4.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">90</div>
+    <div class="page-number" id="page-dark">108</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session4Page4',
+  components: {ImageComponent},
   methods: {
     animateText() {
       let text = document.getElementsByClassName('text');

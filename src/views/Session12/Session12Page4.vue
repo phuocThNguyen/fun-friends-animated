@@ -547,7 +547,7 @@
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session12/Session12_Page4.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">218</div>
+    <div class="page-number" id="page-light">248</div>
   </div>
 </template>
 

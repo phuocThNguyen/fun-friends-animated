@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/appendix/stars-background.jpg" alt="" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/appendix/stars-background.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/appendix/stars-background.jpg"
+      class="session-background"
+    />
     <div class="title">APPENDIX 3: HAPPINESS IDEA</div>
     <div class="text">Instruction: Read the golden star and click the 'green' thumb if
       it is a thumb up choice <br>and click the 'red' thumb if it is a thumb down choice.</div>
@@ -165,15 +169,17 @@
     <audio src="../../assets/sounds/all/wrong-ans.mp3" ref="wrong"/>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/twinkle-twinkle-little-star.mp3"/>
     <audio @loadeddata="playVoiceOver" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/appendix/Session13_Appendix_Page3.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">227</div>
+    <div class="page-number" id="page-dark">257</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'AppendixPage3',
+  components: {ImageComponent},
   data() {return{
     answerArray: [1,4,5,7],
     correctAns: 0,
@@ -187,6 +193,7 @@ export default {
   }},
   methods: {
     handleClick(maskId) {
+      this.$refs.voice.pause();
       if (this.answerArray.includes(maskId)) {
         let answerId = Math.ceil(maskId / 2);
         this.handleCorrectAnswer(answerId, maskId);

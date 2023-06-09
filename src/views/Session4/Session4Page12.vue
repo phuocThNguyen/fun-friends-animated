@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session4/five-senses-resized.jpg" alt="five-senses" class="images">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/five-senses-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/five-senses-resized.jpg"
+      class="images"
+    />
     <div class="activity-container">
       <div class="instruction-container"><strong>Activity - </strong>Choose the correct sense</div>
       <div class="choices-container">
@@ -851,15 +855,17 @@
     <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
     <audio src="../../assets/sounds/all/Correct_1.mp3" ref="correctVoice"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page12.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">98</div>
+    <div class="page-number" id="page-light">116</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session4Page12',
+  components: {ImageComponent},
   data() {
     return {
       options: ['Taste','Touch','Hearing','Smell','Sight'],

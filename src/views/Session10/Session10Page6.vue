@@ -1,18 +1,24 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session10/1034.jpg" alt="Annie" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session10/1034.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session10/1034.jpg"
+      class="session-background"
+    />
     <div class="text-box">Annie learns from <br>someone she looks up to.</div>
     <div class="text-box-green">My mum helps me learn to swim.</div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page6.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">193</div>
+    <div class="page-number" id="page-light">218</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session10Page6',
+  components: {ImageComponent},
   methods: {
     animateText() {
       let animation = anime.timeline({duration: 500, easing: 'linear'});

@@ -1,7 +1,15 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session6/Scooter_Boy_Angry.jpg" alt="angry-boy" class="images left">
-    <img src="../../assets/images/session6/Scooter_Boy_Happy.jpg" alt="happy-boy" class="images" id="right">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session6/Scooter_Boy_Angry.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session6/Scooter_Boy_Angry.jpg"
+      class="images left"
+    />
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session6/Scooter_Boy_Happy.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session6/Scooter_Boy_Happy.jpg"
+      class="images" id="right"
+    />
     <div class="question-container" id="question-1">
       <svg class="thumb thumb-up" id="thumb-up-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1960 1978" width="1960" height="1978">
         <g id="thumb-up">
@@ -150,11 +158,12 @@
     <audio src="../../assets/sounds/all/Well_Done.mp3" ref="wellDone"/>
     <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
     <audio src="../../assets/sounds/all/Correct_2.mp3" ref="correctVoice"/>
-    <div class="page-number" id="page-light">135</div>
+    <div class="page-number" id="page-light">155</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import GreenTick from "@/components/feelingsQuestion/ticks/GreenTick";
 import RedTick from "@/components/feelingsQuestion/ticks/RedTick";
 import anime from "animejs";
@@ -165,7 +174,7 @@ export default {
       correctAns: 0
     }
   },
-  components: {RedTick, GreenTick},
+  components: {RedTick, GreenTick, ImageComponent},
   methods: {
     handleClick(e) {
       let targetThumb = e.target.id;

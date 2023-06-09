@@ -1,6 +1,11 @@
 <template>
   <div class="interactive-container">
-    <img id="left-pad-img" src="../../assets/images/session4/27475-resized.jpg" alt="worried" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/27475-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/27475-resized.jpg"
+      class="session-background"
+      id="left-pad-img"
+    />
     <div class="text-box">
       <h1>Body Clues</h1>
       <p>How is she feeling?</p>
@@ -474,15 +479,17 @@
     <audio src="../../assets/sounds/session4/Session4_Page2_butterfly.mp3" ref="voice4"/>
     <audio src="../../assets/sounds/session4/Session4_Page2_redFace.mp3" ref="voice5"/>
     <audio src="../../assets/sounds/session4/Session4_Page2_MyBody.mp3" ref="voice6"/>
-    <div class="page-number" id="page-dark">88</div>
+    <div class="page-number" id="page-dark">106</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: "Session4Page2",
+  components: {ImageComponent},
   data() {
     return {
       coordsArray: [
@@ -748,8 +755,9 @@ export default {
   height: auto;
 }
 .instruction-text {
-  font-size: 4rem;
+  font-size: 5vh;
   font-family: 'Love Ya Like A Sister', cursive;
+  text-align: center;
 }
 .heart {
   position: absolute;

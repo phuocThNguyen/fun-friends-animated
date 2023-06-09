@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session12/50044.jpg" alt="party" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session12/50044.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session12/50044.jpg"
+      class="session-background"
+    />
     <div class="text-box">
       <h1>Games Party: A Celebration</h1>
       <p>Together with your family, make up a game to practise
@@ -114,15 +118,17 @@
     </svg>
     <audio autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/polka.mp3" ref="audio"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session12/Session12_Page2.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">216</div>
+    <div class="page-number" id="page-light">246</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session12Page2',
+  components: {ImageComponent},
   methods: {
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level

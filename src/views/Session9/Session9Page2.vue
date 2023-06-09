@@ -624,7 +624,7 @@
       a picnic with your family.</span>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page2.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">175</div>
+    <div class="page-number" id="page-dark">199</div>
   </div>
 </template>
 

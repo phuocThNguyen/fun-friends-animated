@@ -1,7 +1,15 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session2/Angry_Boy-resized.jpg" alt="angry" class="image" id="left">
-    <img src="../../assets/images/session2/smiley-little-girl-red-dress.jpg" alt="happy" class="image" id="right">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/Angry_Boy-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/Angry_Boy-resized.jpg"
+      alt="angry" class="image" id="left"
+    />
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/smiley-little-girl-red-dress.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/smiley-little-girl-red-dress.jpg"
+      alt="happy" class="image" id="right"
+    />
 
     <div class="content-container" id="content-left">
       <h1>What could he be feeling?</h1>
@@ -218,13 +226,14 @@
     <audio src="../../assets/sounds/all/Very_Good.mp3" ref="veryGood"/>
     <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
     <audio
-        @loadeddata="playSoundText"
-        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session2/Session2_Page19%2B5.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">66</div>
+      @loadeddata="playSoundText"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session2/Session2_Page19%2B5.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">80</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 import EmoteHappy from "@/components/feelingsQuestion/emotes/EmoteHappy";
 import EmoteWorried from "@/components/feelingsQuestion/emotes/EmoteWorried";
@@ -234,7 +243,7 @@ import EmoteCrying from "@/components/feelingsQuestion/emotes/EmoteCrying";
 
 export default {
   name: "Session2Page19",
-  components: {EmoteCrying, EmoteAngry, EmoteWorried, EmoteHappy},
+  components: {EmoteCrying, EmoteAngry, EmoteWorried, EmoteHappy, ImageComponent},
   data() {
     return {
       correctAns: []

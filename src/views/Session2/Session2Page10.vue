@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session2/4729-resized.jpg" alt="worried" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/4729-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/4729-resized.jpg"
+      class="session-background"
+    />
     <emotion-pick-instruction class="instruction"/>
     <feeling-question
       class="question"
@@ -104,18 +108,19 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session2/Session2_Page10.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">55</div>
+    <div class="page-number" id="page-dark">69</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 import EmotionPickInstruction from "@/components/instructions/emotionPickInstruction/EmotionPickInstruction";
 import FeelingQuestion from "@/components/feelingsQuestion/FeelingsQuestion";
 
 export default {
   name: "Session2Page10",
-  components: {FeelingQuestion, EmotionPickInstruction},
+  components: {FeelingQuestion, EmotionPickInstruction, ImageComponent},
   methods: {
     handleCorrectAnswer() {
       document.querySelector('.reward').style.opacity = '1';

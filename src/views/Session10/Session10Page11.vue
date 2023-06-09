@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session10/Blurred-BG.png" alt="background" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session10/Blurred-BG.png"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session10/Blurred-BG.png"
+      class="session-background"
+    />
     <div class="text-box">
       <h1>Helpful/Kind Hands</h1>
       <p>What are some of the positive things we look for in 'someone to look up to'?</p>
@@ -45,15 +49,17 @@
     </div>
 
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page11.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">198</div>
+    <div class="page-number" id="page-light">224</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session10Page11',
+  components: {ImageComponent},
   methods: {
     animateText() {
       let text = document.querySelector('.text-box').children;

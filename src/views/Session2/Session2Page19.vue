@@ -6,8 +6,16 @@
         All feelings are OK. What we choose to do with our feelings is important.
         What feelings may the children be experiencing? What makes you feel this way?</p>
     </div>
-    <img src="../../assets/images/session2/Happy_Boy-resized.jpg" alt="happy" class="image" id="left">
-    <img src="../../assets/images/session2/Worried_Girl-resized.jpg" alt="worried" class="image" id="right">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/Happy_Boy-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/Happy_Boy-resized.jpg"
+      alt="happy" class="image" id="left"
+    />
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/Worried_Girl-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/Worried_Girl-resized.jpg"
+      alt="worried" class="image" id="right"
+    />
 
     <div class="content-container" id="content-left">
       <h1>What could he be feeling?</h1>
@@ -227,11 +235,12 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session2/Session2_Page18.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">64</div>
+    <div class="page-number" id="page-light">78</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 import EmoteTear from "@/components/feelingsQuestion/emotes/EmoteTear";
 import EmoteHappy from "@/components/feelingsQuestion/emotes/EmoteHappy";
@@ -241,7 +250,7 @@ import EmoteCool from "@/components/feelingsQuestion/emotes/EmoteCool";
 
 export default {
   name: "Session2Page18",
-  components: {EmoteCool, EmoteAngry, EmoteWorried, EmoteHappy, EmoteTear},
+  components: {EmoteCool, EmoteAngry, EmoteWorried, EmoteHappy, EmoteTear, ImageComponent},
   data() {
     return {
       correctAns: []

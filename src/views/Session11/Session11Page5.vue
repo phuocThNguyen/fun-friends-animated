@@ -7,23 +7,33 @@
        in the pictures below?</p>
     </div>
     <div class="image-container">
-      <img src="../../assets/images/session11/surfing_child.jpg" alt="surfing" class="images">
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session11/surfing_child.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session11/surfing_child.jpg"
+        class="images"
+      />
       <div class="text" id="para-1">Mum helping Zoe surf.</div>
     </div>
     <div class="image-container" id="right">
-      <img src="../../assets/images/session11/Hugging_Lama_Girl.jpg" alt="hugging-lama" class="images">
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session11/Hugging_Lama_Girl.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session11/Hugging_Lama_Girl.jpg"
+        class="images"
+      />
       <div class="text" id="para-2">Matilda giving Alpaca a hug.</div>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session11/Session11_Page5.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">209</div>
+    <div class="page-number" id="page-light">238</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session11Page5',
+  components: {ImageComponent},
   methods: {
     animateText() {
       let text = document.getElementsByClassName('text');

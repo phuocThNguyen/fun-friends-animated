@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/introduction/page8.jpg" alt="background" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/introduction/page8.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/introduction/page8.jpg"
+      class="session-background"
+    />
     <div class="text" id="text-1">My FUN FRIENDS Book</div>
     <div class="text" id="text-2">I can draw in the book and talk about it,
       <br>with my friends and family.</div>
@@ -9,8 +13,10 @@
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 export default {
   name: 'IntroductionPage7',
+  components: {ImageComponent},
   methods: {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)

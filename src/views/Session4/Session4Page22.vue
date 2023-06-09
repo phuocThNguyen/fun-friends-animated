@@ -2462,7 +2462,7 @@
       <p>&nbsp;&bull; Try to understand feelings in yourself and others.</p>
       <p>&nbsp;&bull; Practise relaxing and taking deep breaths.</p>
       <p>&nbsp;&bull; Try to use relaxing strategies like ‘bubble’ breathing when
-        you feel upset, worried or angry.</p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;you feel upset, worried or angry.</p>
       <p>&nbsp;&bull; Practise being BRAVE:</p>
       <p>&middot; Look people in the eye and smile.</p>
       <p>&middot; Use a brave voice and make yourself big.</p>
@@ -2473,7 +2473,7 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page22.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">108</div>
+    <div class="page-number" id="page-dark">126</div>
   </div>
 </template>
 

@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session3/2906714-resized.jpg" alt="grandpa-and-Tom" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session3/2906714-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session3/2906714-resized.jpg"
+      class="session-background"
+    />
     <div class="text-box">
       <h1>Grandpa would like some company</h1>
       <p>Tom wants to help Grandpa feel happier.</p>
@@ -27,15 +31,17 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/Session3_Page7.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">77</div>
+    <div class="page-number" id="page-dark">92</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: "Session3Page7",
+  components: {ImageComponent},
   methods: {
     animateText() {
       let text = document.querySelector('.text-box').children;

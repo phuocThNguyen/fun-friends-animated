@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session4/Shaunti_Dog-resized.jpg" alt="body-clues" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/Shaunti_Dog-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/Shaunti_Dog-resized.jpg"
+      class="session-background"
+    />
     <div class="text-box">
       <p>Shaunti the dog is learning to swim in the
        new creek, she is a bit worried.</p>
@@ -73,18 +77,19 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page19.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">105</div>
+    <div class="page-number" id="page-dark">123</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import draggable from "vuedraggable";
 import anime from "animejs";
 import GreenTick from "@/components/feelingsQuestion/ticks/GreenTick";
 
 export default {
   name: 'Session4Page18',
-  components: {GreenTick, draggable},
+  components: {GreenTick, draggable, ImageComponent},
   data() {
     return {
       ear: ['Ears are standing up and alert'],

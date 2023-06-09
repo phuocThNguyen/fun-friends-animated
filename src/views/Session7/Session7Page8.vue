@@ -1130,7 +1130,7 @@
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page8-region-4.mp3" ref="step4"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page8-region-5.mp3" ref="step5"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page8.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark" style="left: 25vh !important;">146</div>
+    <div class="page-number" id="page-dark" style="left: 25vh !important;">167</div>
   </div>
 </template>
 

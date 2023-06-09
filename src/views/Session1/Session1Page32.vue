@@ -1134,21 +1134,13 @@
 
     <!--  Main content  -->
     <div class="main-content">
-      <h1 class="requires">Let's create a song or picture!</h1>
-      <div class="text-box">
-        <p id="q1"> - Write a song and sing it out loud or draw a picture.</p>
-        <p id="q2"> - Talk about your favourite food and what it tastes like.</p>
-        <p id="q3"> - Share a happy time, a sad time and what made you feel better!</p>
-        <p id="q4"> - What is special about each of your friends?</p>
-        <p id="q5"><strong>Being different is ok!</strong></p>
-      </div>
+      <h1 class="draw">Draw a picture of your favourite animal.</h1>
     </div>
     <drawing-canvas class="canvas" v-on:updateCanvas="updateCanvas" :data="canvasData" :canvasStyle="canvasStyle"/>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Falling-Snow-Sound-Effect-Amplified.mp3"/>
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/39Animated_Book_Page38.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">38</div>
   </div>
 </template>
 
@@ -1162,8 +1154,8 @@ export default {
   data() {
     return {
       canvasStyle: {
-        width: 0.555,
-        height: 0.7,
+        width: 0.98,
+        height: 0.74,
         isPicture: false,
       },
       canvasData: null,
@@ -1191,41 +1183,17 @@ export default {
     animateText() {
       let mainContentAnimation = anime.timeline({
         easing: 'linear',
-        duration: 500,
+        duration: 500
       });
       mainContentAnimation
         .add({
-          targets: '.requires',
-          opacity: 0.85,
-        }, 598)
-        .add({
-          targets: '.text-box',
-          opacity: 0.95,
-        }, 2800)
-        .add({
-          targets: '#q1',
-          color: '#d00000'
-        }, 3374)
-        .add({
-          targets: '#q2',
-          color: '#000'
-        }, 7902)
-        .add({
-          targets: '#q3',
-          color: '#000'
-        }, 11780)
-        .add({
-          targets: '#q4',
-          color: '#000'
-        }, 17903)
-        .add({
-          targets: '#q5',
-          color: '#000'
-        }, 22007)
+          targets: '.draw',
+          opacity: 1,
+        }, 1000)
         .add({
           targets: '.canvas',
-          opacity: 0.92,
-        }, 25000)
+          opacity: 1,
+        }, 3500)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
@@ -1257,9 +1225,9 @@ export default {
 <style scoped>
 .main-content {
   position: absolute;
-  left: .5%;
+  left: 1.3vh;
   top: 1vh;
-  width: 43%;
+  width: 130.4vh;
   z-index: 50;
 }
 .main-content h1 {
@@ -1268,25 +1236,9 @@ export default {
   font-size: 4vh;
   width: 100%;
   height: auto;
-  padding: 1.5vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: .2vh;
   opacity: 0;
-}
-.text-box {
-  background-color: #ffffff;
-  padding: 2.6vh;
-  height: auto;
-  opacity: 0;
-  font-size: 4vh;
-  color: #ffffff;
-}
-.text-box p {
-  margin-bottom: 1vh;
-}
-.text-box p:last-child {
-  font-weight: bold;
+  text-align: center;
 }
 .landscape {
   position: relative;
@@ -1295,10 +1247,10 @@ export default {
 }
 .canvas {
   position: absolute;
-  top: 1vh;
-  right: .5%;
-  opacity: 0;
+  top: 7vh;
+  left: 1.3vh;
   z-index: 100;
+  opacity: 0;
 }
 tspan { white-space:pre }
 .shp0 { fill: #b5d2e5 } 

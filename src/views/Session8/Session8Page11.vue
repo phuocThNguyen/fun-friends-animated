@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session8/67.png" alt="creek" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session8/67.png"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session8/67.png"
+      class="session-background"
+    />
     <div class="text-box">
       <h1>Additional Activity &ndash; Being kind friends</h1>
       <p class="text"><span>The creek is full of life when it rains. The birds
@@ -16,15 +20,17 @@
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page11.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">168</div>
+    <div class="page-number" id="page-light">191</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session8Page11',
+  components: {ImageComponent},
   methods: {
     animateText() {
       let text = document.querySelector('.text').children;

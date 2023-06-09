@@ -1,21 +1,27 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session4/25203-resized.jpg" alt="playing-sand" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/25203-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/25203-resized.jpg"
+      class="session-background"
+    />
     <div class="text-box">
       Water makes us feel calm.
     </div>
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page9.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">95</div>
+    <div class="page-number" id="page-light">113</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: "Session4Page9",
+  components: {ImageComponent},
   methods: {
     animateText() {
       anime({

@@ -24,6 +24,7 @@
 
 <script>
 import Session10Page1 from "@/views/Session10/Session10Page1";
+import Session10Page1_1 from "@/views/Session10/Session10Page1_1";
 import Session10Page2 from "@/views/Session10/Session10Page2";
 import Session10Page3 from "@/views/Session10/Session10Page3";
 import Session10Page4 from "@/views/Session10/Session10Page4";
@@ -32,6 +33,7 @@ import Session10Page6 from "@/views/Session10/Session10Page6";
 import Session10Page7 from "@/views/Session10/Session10Page7";
 import Session10Page8 from "@/views/Session10/Session10Page8";
 import Session10Page9 from "@/views/Session10/Session10Page9";
+import Session10Page9_1 from "@/views/Session10/Session10Page9_1";
 import Session10Page10 from "@/views/Session10/Session10Page10";
 import Session10Page11 from "@/views/Session10/Session10Page11";
 import Session10Page12 from "@/views/Session10/Session10Page12";
@@ -47,21 +49,21 @@ export default {
     isNext: Boolean,
   },
   components: {
-    Session10Page1, Session10Page2, Session10Page3, Session10Page4, Session10Page5,
-    Session10Page6, Session10Page7, Session10Page8, Session10Page9, Session10Page10,
-    Session10Page11, Session10Page12, Session10Page13, Session10Page14, Session10Page15,
-    Session10Page16, Session10Page17
+    Session10Page1, Session10Page1_1, Session10Page2, Session10Page3, Session10Page4,
+    Session10Page5, Session10Page6, Session10Page7, Session10Page8, Session10Page9,
+    Session10Page10, Session10Page11, Session10Page12, Session10Page13, Session10Page14,
+    Session10Page15, Session10Page16, Session10Page17, Session10Page9_1,
   },
   data() {
     return {
       pages: {
-        1: "Session10Page1", 2: "Session10Page2", 3: "Session10Page3", 4: "Session10Page4", 5: "Session10Page5",
-        6: "Session10Page6", 7: "Session10Page7", 8: "Session10Page8", 9: "Session10Page9", 10: "Session10Page10",
-        11: "Session10Page11", 12: "Session10Page12", 13: "Session10Page13", 14: "Session10Page14", 15: "Session10Page15",
-        16: "Session10Page16", 17: "Session10Page17"
+        1: "Session10Page1", 2: "Session10Page1_1", 3: "Session10Page2", 4: "Session10Page3", 5: "Session10Page4",
+        6: "Session10Page5", 7: "Session10Page6", 8: "Session10Page7", 9: "Session10Page8", 10: "Session10Page9",
+        11: "Session10Page9_1", 12: "Session10Page10", 13: "Session10Page11", 14: "Session10Page12", 15: "Session10Page13",
+        16: "Session10Page14", 17: "Session10Page15", 18: "Session10Page16", 19: "Session10Page17"
       },
       page: 1,
-      lastPage: 17,
+      lastPage: 19,
     }
   },
   created() {

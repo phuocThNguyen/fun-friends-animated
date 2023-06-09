@@ -3331,7 +3331,7 @@
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/night-time.mp3"/>
     <audio @loadeddata="playVoiceOver" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/appendix/Session13_Appendix_Page2.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">226</div>
+    <div class="page-number" id="page-dark">256</div>
   </div>
 </template>
 

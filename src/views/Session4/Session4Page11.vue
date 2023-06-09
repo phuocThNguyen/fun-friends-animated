@@ -823,7 +823,6 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page11.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">97</div>
   </div>
 </template>
 
@@ -838,7 +837,7 @@ export default {
     return {
       canvasStyle: {
         width: 0.98,
-        height: 0.75,
+        height: 0.8,
         isPicture: false,
       },
       canvasData: null,

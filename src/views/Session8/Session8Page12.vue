@@ -1,7 +1,15 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session8/creek_girl_and_boy.jpg" alt="boy-and-girl" class="images" id="left">
-    <img src="../../assets/images/session8/creek_exploring_group.jpg" alt="exploring-creek" class="images" id="right">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session8/creek_girl_and_boy.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session8/creek_girl_and_boy.jpg"
+      class="images" id="left"
+    />
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session8/creek_exploring_group.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session8/creek_exploring_group.jpg"
+      class="images" id="right"
+    />
     <div class="question-container">
       <div class="text">
         Helping each other cross the creek
@@ -164,11 +172,12 @@
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page12.mp3" ref="voice"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page12_Exploring-the-creek-beds.mp3" ref="voice2"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page12_helping-each-other-cross-the-creek.mp3" ref="voice1"/>
-    <div class="page-number" id="page-light">169</div>
+    <div class="page-number" id="page-light">192</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import GreenTick from "@/components/feelingsQuestion/ticks/GreenTick";
 import RedTick from "@/components/feelingsQuestion/ticks/RedTick";
 import anime from "animejs";
@@ -179,7 +188,7 @@ export default {
       correctAns: 0
     }
   },
-  components: {RedTick, GreenTick},
+  components: {RedTick, GreenTick, ImageComponent},
   methods: {
     animateText() {
       let questions = document.querySelectorAll('.text');

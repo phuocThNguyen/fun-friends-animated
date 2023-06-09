@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session3/3903-resized.jpg" alt="friends" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session3/3903-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session3/3903-resized.jpg"
+      class="session-background"
+    />
     <emotion-pick-instruction class="instruction"/>
     <feeling-question
       class="question"
@@ -166,13 +170,14 @@
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 import FeelingQuestion from "@/components/feelingsQuestion/FeelingsQuestion";
 import EmotionPickInstruction from "@/components/instructions/emotionPickInstruction/EmotionPickInstruction";
 
 export default {
   name: "Session3Page3",
-  components: {EmotionPickInstruction, FeelingQuestion},
+  components: {EmotionPickInstruction, FeelingQuestion, ImageComponent},
   methods: {
     animeText() {
       anime({

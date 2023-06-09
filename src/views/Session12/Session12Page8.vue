@@ -1,32 +1,49 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">Tap on the images below to choose your favourite rewards:</div>
-    <div class="choice-container" id="choice-1">
-      <img src="../../assets/images/session12/rewards/tree-house.jpg" @click="toggleChoice(1)" alt="" class="image">
+    <div class="choice-container" id="choice-1" @click="toggleChoice(1)">
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session12/rewards/tree-house.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session12/rewards/tree-house.jpg"
+        alt="" class="image"
+      />
       <div class="text">Climbing trees</div>
     </div>
-    <div class="choice-container" id="choice-2">
-      <img src="../../assets/images/session12/rewards/baking.jpg" @click="toggleChoice(2)" alt="" class="image">
+    <div class="choice-container" id="choice-2" @click="toggleChoice(2)">
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session12/rewards/baking.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session12/rewards/baking.jpg"
+        alt="" class="image"
+      />
       <div class="text">Cooking with your friends</div>
     </div>
-    <div class="choice-container" id="choice-3">
-      <img src="../../assets/images/session12/rewards/bike-riding.jpg" @click="toggleChoice(3)" alt="" class="image">
+    <div class="choice-container" id="choice-3" @click="toggleChoice(3)">
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session12/rewards/bike-riding.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session12/rewards/bike-riding.jpg"
+        alt="" class="image"
+      />
       <div class="text">Bike riding</div>
     </div>
-    <div class="choice-container" id="choice-4">
-      <img src="../../assets/images/session12/rewards/camping.jpg" @click="toggleChoice(4)" alt="" class="image">
+    <div class="choice-container" id="choice-4" @click="toggleChoice(4)">
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session12/rewards/camping.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session12/rewards/camping.jpg"
+        alt="" class="image"
+      />
       <div class="text">Camping</div>
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/sand-castle.mp3"/>
     <audio @loadeddata="playVoiceOver" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session12/Session12_Page9.mp3" ref="voice"/>
     <audio src="../../assets/sounds/session7/click-sound.mp3" ref="clickSound"/>
-    <div class="page-number" id="page-light">222</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 export default {
   name: 'Session12Page8',
+  components: {ImageComponent},
   data() {return {choices: []}},
   methods: {
     setAudioVolumeLevel(level) {

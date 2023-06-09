@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session3/1605-resized.jpg" alt="boy-with-bubbles" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session3/1605-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session3/1605-resized.jpg"
+      class="session-background"
+    />
     <div class="text-box">
       <h1><strong>2. Bubble blowing</strong></h1>
       <p>Another fun game to blow our worries away
@@ -37,10 +41,9 @@
       </svg>
       <div class="star-text">
         <p><strong>Bright Star Idea</strong></p>
-        <p>Say what you
-          <br>are blowing away
-          <br>as your
-          <br>bubbles pop.
+        <p>Say what
+          <br>feeling you are
+          <br>blowing away.
         </p>
       </div>
     </div>
@@ -48,15 +51,17 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/Session3_Page13.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">82</div>
+    <div class="page-number" id="page-light">98</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: "Session3Page12",
+  components: {ImageComponent},
   methods: {
     animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;

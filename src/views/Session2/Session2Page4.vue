@@ -1,10 +1,26 @@
 <template>
   <div class="interactive-container">
     <div class="images">
-      <img src="../../assets/images/session2/700-resized.jpg" alt="sad" />
-      <img src="../../assets/images/session2/12594-resized.jpg" alt="angry" />
-      <img src="../../assets/images/session2/27475-resized.jpg" alt="worried" />
-      <img src="../../assets/images/session2/607-resized.jpg" alt="happy" />
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/700-resized.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/700-resized.jpg"
+        class="image-component"
+      />
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/12594-resized.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/12594-resized.jpg"
+        class="image-component"
+      />
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/27475-resized.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/27475-resized.jpg"
+        class="image-component"
+      />
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/607-resized.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/607-resized.jpg"
+        class="image-component"
+      />
     </div>
     <div class="text-box">
       Drag each feeling onto the correct face.
@@ -280,19 +296,18 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session2/Session2_Page4.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">49</div>
+    <div class="page-number" id="page-light">63</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import draggable from "vuedraggable";
 import anime from "animejs";
 
 export default {
   name: "Session2Page4",
-  components: {
-    draggable,
-  },
+  components: {ImageComponent, draggable},
   data() {
     return {
       emotions: [ 'Happy', 'Worried', 'Sad', 'Angry' ],
@@ -597,7 +612,7 @@ export default {
   grid-template-columns: auto auto;
   column-gap: 1.8vh;
 }
-.images img {
+.image-component {
   width: 36vh;
   height: 30vh;
   opacity: 1;

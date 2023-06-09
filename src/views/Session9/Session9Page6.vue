@@ -8,27 +8,37 @@
       <p>How can you use these activities to reward yourself?</p>
     </div>
     <div class="image-container" id="left">
-      <img src="../../assets/images/session9/21368.jpg" alt="Tom">
-      <p id="para-1">1. Brave Tom <br>Sleeping in his own bed</p>
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session9/21368.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session9/21368.jpg"
+        class="image"
+      />
+      <p class="image-text" id="para-1">1. Brave Tom <br>Sleeping in his own bed</p>
     </div>
     <div class="image-container" id="right">
-      <img src="../../assets/images/session9/623020-PNWBO6-422.jpg" alt="Tom-reward">
-      <p id="para-2">Tom's Reward <br>Special time with his dad</p>
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session9/623020-PNWBO6-422.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session9/623020-PNWBO6-422.jpg"
+        class="image"
+      />
+      <p class="image-text" id="para-2">Tom's Reward <br>Special time with his dad</p>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page6.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">179</div>
+    <div class="page-number" id="page-light">203</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session9Page6',
+  components: {ImageComponent},
   methods: {
     animateText() {
       let text = document.querySelector('.text-box').children;
-      let images = document.querySelectorAll('.image-container');
+      let images = document.querySelectorAll('.image-text');
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
         .add({targets: text[1], opacity: 1}, 2300)
@@ -74,9 +84,9 @@ export default {
   bottom: 0;
   width: 50%;
   height: 74vh;
-  opacity: 0;
+  opacity: 1;
 }
-.image-container img {
+.image-container .image {
   width: 100%;
   height: 100%;
 }
@@ -92,6 +102,7 @@ export default {
   font-size: 4vh;
   font-weight: bold;
   margin-bottom: 0;
+  opacity: 0;
 }
 #para-1 {left: 18%;}
 #para-2 {right: 18%;}

@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/appendix/stars-background.jpg" alt="" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/appendix/stars-background.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/appendix/stars-background.jpg"
+      class="session-background"
+    />
     <div class="choice-container" v-for="star in stars" :id="'choice-'+star.id" :key="star.id">
       <div class="star-container">
         <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1321 1258" width="1321" height="1258">
@@ -162,16 +166,19 @@
     <audio src="../../assets/sounds/all/wrong-ans.mp3" ref="wrong"/>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/twinkle-twinkle-little-star.mp3"/>
     <audio @loadeddata="playVoiceOver" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/appendix/Session13_Appendix_Page3_3.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">230</div>
+    <div class="page-number" id="page-dark">260</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'AppendixPage6',
-  data() {return{
+  components: {ImageComponent},
+  data() {
+    return {
     answerArray: [2,3,6,7],
     correctAns: 0,
     totalCorrect: 4,

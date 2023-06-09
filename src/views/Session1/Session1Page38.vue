@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session1/grass-background.jpg" alt="background" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/grass-background.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/grass-background.jpg"
+      class="session-background"
+    />
     <div class="text-box">
       <h1>Everyday remember to:</h1>
       <p>- Play outside.</p>
@@ -10,24 +14,41 @@
       <p>- Say thank you for happy things.</p>
     </div>
     <div class="image-container">
-      <img class="action-image" src="../../assets/images/session1/811-resized.jpg" alt="play-outside">
-      <img class="action-image" src="../../assets/images/session5/85693.jpg" alt="sleep-early">
-      <img class="action-image" src="../../assets/images/session1/4082-resized.jpg" alt="relaxing">
-      <img class="action-image" src="../../assets/images/session1/2749-resized.jpg" alt="happy-things">
-      <img class="action-image" src="../../assets/images/session1/thank-you.jpg" alt="thank-you">
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session5/85693.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session5/85693.jpg"
+        class="action-image"
+      />
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/4082-resized.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/4082-resized.jpg"
+        class="action-image"
+      />
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/2749-resized.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/2749-resized.jpg"
+        class="action-image"
+      />
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/thank-you.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/thank-you.jpg"
+        class="action-image"
+      />
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3"/>
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/45Animated_Book_Page44.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">44</div>
+    <div class="page-number" id="page-dark">57</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from 'animejs'
 export default {
   name: "Session1Page38",
+  components: {ImageComponent},
   methods: {
     animateText() {
       let images = document.querySelectorAll('.action-image');

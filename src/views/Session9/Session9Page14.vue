@@ -1006,12 +1006,12 @@
           <br>a pot with your family. It is
           <br>so much fun to watch
           <br>your vegetable grow
-          <br>and then it them!
+          <br>and then eat them!
         </p>
       </div>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page14.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">187</div>
+    <div class="page-number" id="page-light">211</div>
   </div>
 </template>
 

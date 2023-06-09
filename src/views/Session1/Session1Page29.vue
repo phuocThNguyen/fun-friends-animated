@@ -1,8 +1,20 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session1/14643-resized.jpg" alt="house-1" />
-    <img src="../../assets/images/session1/stockvault-carefree115845-resized.jpg" alt="cloth"/>
-    <img src="../../assets/images/session1/13151-resized.jpg" alt="house-3" />
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/14643-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/14643-resized.jpg"
+      class="page-image" id="image-1"
+    />
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/stockvault-carefree115845-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/stockvault-carefree115845-resized.jpg"
+      class="page-image" id="image-1"
+    />
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/13151-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/13151-resized.jpg"
+      class="page-image" id="image-1"
+    />
     <div class="text-box">
       <h1>Our clothes</h1>
       <p>Talk about your clothes.</p>
@@ -15,14 +27,16 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/36Animated_Book_Page35.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">35</div>
+    <div class="page-number" id="page-light">43</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 export default {
   name: "Session1Page29",
+  components: {ImageComponent},
   methods: {
     animateText() {
       let texts = document.getElementsByClassName("text-box")[0];
@@ -85,7 +99,7 @@ export default {
   color: #fff;
   font-size: 3vh;
   bottom: 39vh;
-  width: auto;
+  width: 65.2vh;
   right: 0;
   padding: 1vh;
   font-weight: bold;

@@ -1,12 +1,19 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session10/1354.png" alt="background" class="session-background">
-    <img src="../../assets/images/session10/superhero-kids.png" alt="kids" class="kids">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session10/1354.png"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session10/1354.jpg"
+      class="session-background"
+    />
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session10/superhero-kids.png"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session10/superhero-kids.jpg"
+      class="kids"
+    />
     <div class="text-box">
       <p>Pretend you are a Superhero. Make yourself as big as you can
         <br>by stretching your neck, arms, legs, fingers or toes.</p>
       <p>What does a superhero do to help everybody?</p>
-      <p>What can you do to be a superhero?</p>
     </div>
     <svg id="female" class="superhero" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 319 238" width="319" height="238">
       <defs>
@@ -188,15 +195,17 @@
     </svg>
     <audio ref="audio" autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/super-hero-theme.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page9.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">196</div>
+    <div class="page-number" id="page-light">221</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session10Page9',
+  components: {ImageComponent},
   methods: {
     animateSvg() {
       let vw = document.querySelector('.interactive-container').clientWidth;

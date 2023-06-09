@@ -1,45 +1,54 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session3/2206-resized.jpg" alt="boy-with-bubbles" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session3/2206-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session3/2206-resized.jpg"
+      class="session-background"
+    />
     <div class="text-box">
       <h1><strong>Fun Bubble Activities</strong></h1>
       <p>We are now going to play two games.</p>
       <p><strong>1. Bubble breathing</strong></p>
-      <p>Take five deep slow breaths, in through
-       your nose and out through your mouth. We are
+      <p class="p_inline">Take five deep slow breaths, in through
+       your nose and out through your mouth.</p><p class="p_inline"> We are
        going to blow bubbles with a straw and a cup
-       of water. Blow out any angry, sad, and worried
-       feelings into the water. Notice how once we stop
+       of water.</p><p class="p_inline"> Blow out any angry, sad, and worried
+       feelings into the water.</p><p class="p_inline"> Notice how once we stop
        breathing out, the bubbles go away.</p>
-      <p>The same happens with our feelings. We can blow them
-       away by doing deep slow calm breathing. Feelings come
-       and go, remember all feelings are okay. It is what
-       we choose to do with our feelings that counts. Bubble
+      <br>
+      <p class="p_inline">The same happens with our feelings.</p><p class="p_inline"> We can blow feelings
+       away by doing deep slow calm breathing.</p><p class="p_inline"> Feelings come
+       and go, remember all feelings are okay.</p><p class="p_inline"> It is what
+       we choose to do with our feelings that counts.</p><p class="p_inline"> Bubble
        breathing is a 'thumbs up' choice.</p>
     </div>
-    <div class="bubble" id="bubble-1"/>
-    <div class="bubble" id="bubble-2"/>
-    <div class="bubble" id="bubble-3"/>
-    <div class="bubble" id="bubble-4"/>
-    <div class="bubble" id="bubble-5"/>
-    <div class="bubble" id="bubble-6"/>
-    <div class="bubble" id="bubble-7"/>
-    <div class="bubble" id="bubble-8"/>
-    <div class="bubble" id="bubble-9"/>
-    <div class="bubble" id="bubble-10"/>
+    <div class="bubble-containers">
+      <div class="bubble" id="bubble-1"/>
+      <div class="bubble" id="bubble-2"/>
+      <div class="bubble" id="bubble-3"/>
+      <div class="bubble" id="bubble-4"/>
+      <div class="bubble" id="bubble-5"/>
+      <div class="bubble" id="bubble-6"/>
+      <div class="bubble" id="bubble-7"/>
+      <div class="bubble" id="bubble-8"/>
+      <div class="bubble" id="bubble-9"/>
+      <div class="bubble" id="bubble-10"/>
+    </div>
     <audio ref="audio" autoplay src="../../assets/sounds/session3/bubbles.mp3"/>
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/Session3_Page11.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">81</div>
+    <div class="page-number" id="page-dark">96</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: "Session3Page11",
+  components: {ImageComponent},
   methods: {
     animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;
@@ -48,30 +57,19 @@ export default {
         easing: 'linear'
       });
       animation
-        .add({
-          targets: '.text-box',
-          opacity: 1
-        }, 500)
-        .add({
-          targets: text[0],
-          opacity: 1
-        }, 738)
-        .add({
-          targets: text[1],
-          opacity: 1
-        }, 3376)
-        .add({
-          targets: text[2],
-          opacity: 1
-        }, 7318)
-        .add({
-          targets: text[3],
-          opacity: 1,
-        }, 10538)
-        .add({
-          targets: text[4],
-          opacity: 1,
-        }, 41283)
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[0], opacity: 1}, 738)
+        .add({targets: text[1], opacity: 1}, 3376)
+        .add({targets: text[2], opacity: 1}, 7318)
+        .add({targets: text[3], opacity: 1}, 10538)
+        .add({targets: text[4], opacity: 1}, 23200)
+        .add({targets: text[5], opacity: 1}, 29000)
+        .add({targets: text[6], opacity: 1}, 35500)
+        .add({targets: text[7], opacity: 1}, 41283)
+        .add({targets: text[8], opacity: 1}, 44900)
+        .add({targets: text[9], opacity: 1}, 52400)
+        .add({targets: text[10], opacity: 1}, 58000)
+        .add({targets: text[11], opacity: 1}, 62900)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
@@ -111,11 +109,12 @@ export default {
   margin-bottom: 0;
   opacity: 0;
 }
+.p_inline {display: inline}
+.bubble-containers {position: absolute;width: 100%; height: 100%; top:0; left:0}
 .bubble {
   height: 1px;
   width: 1px;
   position: absolute;
-
   border-radius: 50%;
   transform: translateX(-50%);
 }

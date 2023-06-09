@@ -24,6 +24,7 @@
 
 <script>
 import Session6Page1 from "@/views/Session6/Session6Page1";
+import Session6Page1_1 from "@/views/Session6/Session6Page1_1";
 import Session6Page2 from "@/views/Session6/Session6Page2";
 import Session6Page3 from "@/views/Session6/Session6Page3";
 import Session6Page4 from "@/views/Session6/Session6Page4";
@@ -41,19 +42,19 @@ export default {
     isNext: Boolean,
   },
   components: {
-    Session6Page1, Session6Page2, Session6Page3, Session6Page4, Session6Page5,
-    Session6Page6, Session6Page7, Session6Page8, Session6Page9, Session6Page10,
-    Session6Page11
+    Session6Page1, Session6Page1_1, Session6Page2, Session6Page3, Session6Page4,
+    Session6Page5, Session6Page6, Session6Page7, Session6Page8, Session6Page9,
+    Session6Page10, Session6Page11
   },
   data() {
     return {
       pages: {
-        1: "Session6Page1", 2: "Session6Page2", 3: "Session6Page3", 4: "Session6Page4", 5: "Session6Page5",
-        6: "Session6Page6", 7: "Session6Page7", 8: "Session6Page8", 9: "Session6Page9", 10: "Session6Page10",
-        11: "Session6Page11",
+        1: "Session6Page1", 2: "Session6Page1_1", 3: "Session6Page2", 4: "Session6Page3", 5: "Session6Page4",
+        6: "Session6Page5", 7: "Session6Page6", 8: "Session6Page7", 9: "Session6Page8", 10: "Session6Page9",
+        11: "Session6Page10", 12: "Session6Page11",
       },
       page: 1,
-      lastPage: 11,
+      lastPage: 12,
     }
   },
   created() {

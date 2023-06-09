@@ -45,10 +45,10 @@ export default {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
     init() {
-      this.canvasData = this.$store.getters.getPage184Data;
+      this.canvasData = this.$store.getters.getPage192Data;
     },
     updateCanvas(canvasData) {
-      this.$store.commit('setPage184Data', canvasData);
+      this.$store.commit('setPage192Data', canvasData);
     },
     playSoundText() {
       this.playVoiceOver();

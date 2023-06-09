@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session5/traffic-light-poster.png" alt="traffic-light" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session5/traffic-light-poster.png"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session5/traffic-light-poster.png"
+      class="session-background"
+    />
     <div class="text-box">
       <p>We can <strong>choose</strong> our thoughts.</p>
       <p><span id="red-text">Red</span>, unhelpful thoughts make us feel sad and scared.</p>
@@ -11,15 +15,17 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page2.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">112</div>
+    <div class="page-number" id="page-dark">131</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session5Page2',
+  components: {ImageComponent},
   methods: {
     animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;

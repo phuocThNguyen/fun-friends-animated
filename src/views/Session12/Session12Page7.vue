@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session12/38541.jpg" alt="party" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session12/38541.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session12/38541.jpg"
+      class="session-background"
+    />
     <div class="text-box">
       <h1>Additional Activity &ndash; Party Time</h1>
       <p>Zoe, Daniel, and Matilda are teaching their teddy
@@ -117,15 +121,17 @@
     </svg>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/polka.mp3" autoplay loop ref="audio"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session12/Session12_Page7.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">221</div>
+    <div class="page-number" id="page-light">251</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session12Page7',
+  components: {ImageComponent},
   methods: {
     animateSvg() {
       let vw = document.querySelector('.interactive-container').clientWidth;

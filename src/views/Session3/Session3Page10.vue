@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session3/4829-resized.jpg" alt="little-plants" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session3/4829-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session3/4829-resized.jpg"
+      class="session-background"
+    />
     <div class="text-box">
       <h1>Friends and Families</h1>
       <p id="text-box-p">What makes kids helpful and kind?</p>
@@ -43,10 +47,12 @@
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: "Session3Page10",
+  components: {ImageComponent},
   methods: {
     animateText() {
       let animation = anime.timeline({

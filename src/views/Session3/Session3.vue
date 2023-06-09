@@ -24,6 +24,7 @@
 
 <script>
 import Session3Page1 from "@/views/Session3/Session3Page1";
+import Session3Page1_1 from "@/views/Session3/Session3Page1_1";
 import Session3Page2 from "@/views/Session3/Session3Page2";
 import Session3Page3 from "@/views/Session3/Session3Page3";
 import Session3Page4 from "@/views/Session3/Session3Page4";
@@ -34,9 +35,11 @@ import Session3Page8 from "@/views/Session3/Session3Page8";
 import Session3Page9 from "@/views/Session3/Session3Page9";
 import Session3Page10 from "@/views/Session3/Session3Page10";
 import Session3Page11 from "@/views/Session3/Session3Page11";
+import Session3Page11_1 from "@/views/Session3/Session3Page11_1";
 import Session3Page12 from "@/views/Session3/Session3Page12";
 import Session3Page13 from "@/views/Session3/Session3Page13";
 import Session3Page14 from "@/views/Session3/Session3Page14";
+import Session3Page14_1 from "@/views/Session3/Session3Page14_1";
 import Session3Page15 from "@/views/Session3/Session3Page15";
 import Session3Page16 from "@/views/Session3/Session3Page16";
 
@@ -46,21 +49,21 @@ export default {
     isNext: Boolean,
   },
   components: {
-    Session3Page1, Session3Page2, Session3Page3, Session3Page4, Session3Page5,
-    Session3Page6, Session3Page7, Session3Page8, Session3Page9, Session3Page10,
-    Session3Page11, Session3Page12, Session3Page13, Session3Page14, Session3Page15,
-    Session3Page16
+    Session3Page1, Session3Page1_1, Session3Page2, Session3Page3, Session3Page4,
+    Session3Page5, Session3Page6, Session3Page7, Session3Page8, Session3Page9,
+    Session3Page10, Session3Page11, Session3Page12, Session3Page13, Session3Page14,
+    Session3Page15, Session3Page16, Session3Page11_1, Session3Page14_1,
   },
   data() {
     return {
       pages: {
-        1: "Session3Page1", 2: "Session3Page2", 3: "Session3Page3", 4: "Session3Page4", 5: "Session3Page5",
-        6: "Session3Page6", 7: "Session3Page7", 8: "Session3Page8", 9: "Session3Page9", 10: "Session3Page10",
-        11: "Session3Page11", 12: "Session3Page12", 13: "Session3Page13", 14: "Session3Page14", 15: "Session3Page15",
-        16: "Session3Page16"
+        1: "Session3Page1", 2: "Session3Page1_1", 3: "Session3Page2", 4: "Session3Page3", 5: "Session3Page4",
+        6: "Session3Page5", 7: "Session3Page6", 8: "Session3Page7", 9: "Session3Page8", 10: "Session3Page9",
+        11: "Session3Page10", 12: "Session3Page11", 13: "Session3Page11_1", 14: "Session3Page12", 15: "Session3Page13",
+        16: "Session3Page14", 17: "Session3Page14_1", 18: "Session3Page15", 19: "Session3Page16"
       },
       page: 1,
-      lastPage: 16,
+      lastPage: 19,
     }
   },
   created() {

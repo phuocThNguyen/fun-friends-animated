@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img class="session-background" id="pic" src="../../assets/images/session1/4161-resized.jpg" alt="tom-and-mum">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/4161-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/4161-resized.jpg"
+      class="session-background" id="pic"
+    />
     <div class="left-bar">
       <h1>Meet Tom</h1>
       <p id="para-2">Today is Tom’s birthday.</p>
@@ -22,9 +26,11 @@
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 export default {
   name: "Session1Page3",
+  components: {ImageComponent},
   methods: {
     animateText() {
       let para = document.getElementsByClassName('left-bar')[0].children;

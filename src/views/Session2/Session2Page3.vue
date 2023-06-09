@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img class="image" src="../../assets/images/session2/11-resized.jpg" alt="sad">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/11-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/11-resized.jpg"
+      class="image"
+    />
     <div class="text-box">
       <h1>Feelings</h1>
       <p>What do you do when you feel angry, worried, happy or sad?</p>
@@ -14,15 +18,16 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session2/Session2_Page3.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">48</div>
+    <div class="page-number" id="page-dark">62</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from 'animejs';
-
 export default {
   name: "Session2Page3",
+  components: {ImageComponent},
   methods: {
     animateText() {
       let para = document.getElementsByClassName('text-box')[0].children;

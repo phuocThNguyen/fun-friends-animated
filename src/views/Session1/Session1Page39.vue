@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session1/grass-background.jpg" alt="background" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/grass-background.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/grass-background.jpg"
+      class="session-background"
+    />
     <div class="star-container big-star">
       <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 1258" width="1320" height="1258">
         <title>Star</title>
@@ -74,14 +78,16 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/46Animated_Book_Page45.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">45</div>
+    <div class="page-number" id="page-dark">58</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from 'animejs'
 export default {
   name: "Session1Page39",
+  components: {ImageComponent},
   methods: {
     animateText() {
       let animation = anime.timeline({easing: 'linear', duration: 500,});

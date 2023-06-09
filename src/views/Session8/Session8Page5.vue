@@ -3,18 +3,28 @@
     <div class="text-box">
       Share ideas for fun games you can play at the beach.
     </div>
-    <img src="../../assets/images/session8/135443-OSAV8P-846.jpg" alt="Annie" class="images">
-    <img src="../../assets/images/session8/135428-OSAV5N-454.jpg" alt="Annie" class="images">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session8/135443-OSAV8P-846.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session8/135443-OSAV8P-846.jpg"
+      class="images"
+    />
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session8/135428-OSAV5N-454.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session8/135428-OSAV5N-454.jpg"
+      class="images"
+    />
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page5.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">162</div>
+    <div class="page-number" id="page-light">184</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session8Page5',
+  components: {ImageComponent},
   methods: {
     animateText() {
       anime({

@@ -27,7 +27,6 @@ import IntroductionPage1 from "@/views/Introduction/IntroductionPage1";
 import IntroductionPage2 from "@/views/Introduction/IntroductionPage2";
 import IntroductionPage3 from "@/views/Introduction/IntroductionPage3";
 import IntroductionPage4 from "@/views/Introduction/IntroductionPage4";
-import IntroductionPage5 from "@/views/Introduction/IntroductionPage5";
 import IntroductionPage6 from "@/views/Introduction/IntroductionPage6";
 import IntroductionPage7 from "@/views/Introduction/IntroductionPage7";
 
@@ -37,17 +36,15 @@ export default {
     isNext: Boolean,
   },
   components: {
-    IntroductionPage1, IntroductionPage2, IntroductionPage3, IntroductionPage4, IntroductionPage5,
-    IntroductionPage6, IntroductionPage7
+    IntroductionPage1, IntroductionPage2, IntroductionPage3, IntroductionPage4, IntroductionPage6, IntroductionPage7
   },
   data() {
     return {
       pages: {
-        1: "IntroductionPage1", 2: "IntroductionPage2", 3: "IntroductionPage3", 4: "IntroductionPage4", 5: "IntroductionPage5",
-        6: "IntroductionPage6", 7: "IntroductionPage7",
+        1: "IntroductionPage1", 2: "IntroductionPage2", 3: "IntroductionPage3", 4: "IntroductionPage4", 5: "IntroductionPage6", 6: "IntroductionPage7",
       },
       page: 1,
-      lastPage: 7,
+      lastPage: 6,
     };
   },
   created() {

@@ -1,7 +1,15 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session2/OBCADV0-resized.jpg" alt="sad" class="image" id="left">
-    <img src="../../assets/images/session2/514-resized.jpg" alt="angry" class="image" id="right">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/OBCADV0-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/OBCADV0-resized.jpg"
+      alt="sad" class="image" id="left"
+    />
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/514-resized.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/514-resized.jpg"
+      alt="angry" class="image" id="right"
+    />
 
     <div class="content-container" id="content-left">
       <h1>What could he be feeling?</h1>
@@ -215,11 +223,12 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session2/Session2_Page20.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">67</div>
+    <div class="page-number" id="page-light">81</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 import EmoteCrying from "@/components/feelingsQuestion/emotes/EmoteCrying";
 import EmoteAngry from "@/components/feelingsQuestion/emotes/EmoteAngry";
@@ -228,7 +237,7 @@ import EmoteCool from "@/components/feelingsQuestion/emotes/EmoteCool";
 
 export default {
   name: "Session2Page20",
-  components: {EmoteCool, EmoteCrying, EmoteAngry, EmoteHappy},
+  components: {EmoteCool, EmoteCrying, EmoteAngry, EmoteHappy, ImageComponent},
   data() {return {correctAns: []}},
   methods: {
     animateRedTick(target) {

@@ -28,8 +28,16 @@
       </svg>
       <div class="bubble-text">Share your ideas with others!</div>
     </div>
-    <img src="../../assets/images/session5/804.jpg" alt="red" class="images" id="image-top">
-    <img src="../../assets/images/session5/92263.jpg" alt="green" class="images" id="image-bottom">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session5/804.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session5/804.jpg"
+      class="images" id="image-top"
+    />
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session5/92263.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session5/92263.jpg"
+      class="images" id="image-bottom"
+    />
     <svg class="traffic-light" id="top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1223 388" width="1223" height="388">
       <g id="Layer 1">
         <g id="&lt;Group&gt;">
@@ -135,15 +143,17 @@
       </g>
     </svg>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session6/Session6_Page4.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">131</div>
+    <div class="page-number" id="page-light">151</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session6Page4',
+  components: {ImageComponent},
   methods: {
     animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;

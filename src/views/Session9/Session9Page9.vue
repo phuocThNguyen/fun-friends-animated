@@ -6,27 +6,37 @@
        trying our best.</p>
     </div>
     <div class="image-container" id="left">
-      <img src="../../assets/images/session9/Beach_Children.jpg" alt="beach-children">
-      <p id="para-1">Spending the day <br>having fun at the beach</p>
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session9/Beach_Children.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session9/Beach_Children.jpg"
+        class="image"
+      />
+      <p class="image-text" id="para-1">Spending the day <br>having fun at the beach</p>
     </div>
     <div class="image-container" id="right">
-      <img src="../../assets/images/session9/healthy_eating_child.jpg" alt="healthy-eating">
-      <p id="para-2">Eating your <br>favourite healthy meal</p>
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session9/healthy_eating_child.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session9/healthy_eating_child.jpg"
+        class="image"
+      />
+      <p class="image-text" id="para-2">Eating your <br>favourite healthy meal</p>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page9.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">182</div>
+    <div class="page-number" id="page-light">206</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session9Page9',
+  components: {ImageComponent},
   methods: {
     animateText() {
       let text = document.querySelector('.text-box').children;
-      let images = document.querySelectorAll('.image-container');
+      let images = document.querySelectorAll('.image-text');
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
         .add({targets: text[1],opacity: 1}, 1900)
@@ -71,9 +81,9 @@ export default {
   bottom: 0;
   width: 49%;
   height: 78vh;
-  opacity: 0;
+  opacity: 1;
 }
-.image-container img {
+.image-container .image {
   width: 100%;
   height: 100%;
 }
@@ -89,6 +99,7 @@ export default {
   font-size: 4vh;
   font-weight: bold;
   margin-bottom: 0;
+  opacity: 0;
 }
 #para-1 {left: 18%;}
 #para-2 {right: 18%;}

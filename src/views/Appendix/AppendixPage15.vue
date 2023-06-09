@@ -9,7 +9,7 @@
         <p class="item">3. Water Stream - Sonny Fascia (BurghRecords)</p>
         <p class="item">4. Birds In Sun And Snow - Sonny Fascia (BurghRecords)</p>
         <p class="item">5. Forest Summer Roond 020 200619_0186.wav - klankbeeld (Freesound)
-          <br>licensed under CCBY 3.0</p>
+          licensed under CCBY 3.0</p>
         <p class="item">6. Wrong.mp3 - AbdrTar (Freesound)</p>
         <p class="item">7. Training Program, Correct2.aif - timgormly (Freesound)</p>
         <p class="item">8. Bubbles 004.wav - ristooooo1 (Freesound)</p>
@@ -55,6 +55,7 @@ export default {
 <style scoped>
 h1, p {
   color: #ffffff;
+  margin-bottom: .5vh;
 }
 .items {
   margin-bottom: 3vh;
@@ -64,12 +65,14 @@ h1, p {
   left: 0;
   top: 8vh;
   padding: 0 0 0 2vh;
+  width: 62vh;
 }
 .right-container {
   position: absolute;
-  left: 50%;
+  left: 62vh;
   top: 8vh;
   padding: 0 0 0 2vh;
+  width: 64vh;
 }
 .left-container h1,
 .right-container h1 {

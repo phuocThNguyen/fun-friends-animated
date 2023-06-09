@@ -192,12 +192,12 @@
     <div class="text-box">
       <span>Someone you look up to will help you, care for you
       and encourage you to try new things.</span>
-      <span> They give things ago.</span><span> How are Tom and
+      <span> They give things a go.</span><span> How are Tom and
       Annie being helped in the following pictures?</span>
       <span> How has somebody helped you?</span>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page2.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">189</div>
+    <div class="page-number" id="page-light">214</div>
   </div>
 </template>
 

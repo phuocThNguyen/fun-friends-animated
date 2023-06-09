@@ -1,7 +1,15 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session5/Sleigh_Worried_Boy.jpg" alt="" class="page-image" id="image-1">
-    <img src="../../assets/images/session5/1550.jpg" alt="" class="page-image" id="image-2">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session5/Sleigh_Worried_Boy.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session5/Sleigh_Worried_Boy.jpg"
+      class="page-image" id="image-1"
+    />
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session5/1550.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session5/1550.jpg"
+      class="page-image" id="image-2"
+    />
     <div class="text-box">
       <h1>Additional Activity &ndash; <span class="red">Red</span>
         and <span class="green">Green</span> Thoughts</h1>
@@ -155,17 +163,18 @@
     <audio src="../../assets/sounds/all/crowd-cheer-applause.mp3" ref="celebrate"/><audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page14.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">123</div>
+    <div class="page-number" id="page-light">142</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 import greenThoughtInstruction from "@/components/instructions/greenThoughtInstruction/GreenThoughtInstruction";
 
 export default {
   name: 'Session5Page13',
-  components: {greenThoughtInstruction},
+  components: {greenThoughtInstruction, ImageComponent},
   data() {return {correctAns: 2}},
   methods: {
     animateText() {

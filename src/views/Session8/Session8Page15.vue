@@ -181,25 +181,55 @@
       <p>&bull; Say thank you for happy times.</p>
     </div>
     <div class="image-container">
-      <img class="action-image" src="../../assets/images/introduction/Koala_Child_Hugging.jpg" alt="kind-to-animals">
-      <img class="action-image" src="../../assets/images/session1/811-resized.jpg" alt="play-outside">
-      <img class="action-image" src="../../assets/images/session5/85693.jpg" alt="sleep-early">
-      <img class="action-image" src="../../assets/images/session1/6796-resized.jpg" alt="eat-healthy">
-      <img class="action-image" src="../../assets/images/session1/4082-resized.jpg" alt="relaxing">
-      <img class="action-image" src="../../assets/images/session1/2749-resized.jpg" alt="happy-things">
-      <img class="action-image" src="../../assets/images/session1/thank-you.jpg" alt="thank-you">
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/closeup-cute-asian-kid-milking-calf-by-bottle-milk-farm-background.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/closeup-cute-asian-kid-milking-calf-by-bottle-milk-farm-background.jpg"
+        class="action-image"
+      />
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/811-resized.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/811-resized.jpg"
+        class="action-image"
+      />
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session5/85693.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session5/85693.jpg"
+        class="action-image"
+      />
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/6796-resized.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/6796-resized.jpg"
+        class="action-image"
+      />
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/4082-resized.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/4082-resized.jpg"
+        class="action-image"
+      />
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/2749-resized.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/2749-resized.jpg"
+        class="action-image"
+      />
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/thank-you.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/thank-you.jpg"
+        class="action-image"
+      />
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Relaxing-Forest-Sound-Effect.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page15.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">172</div>
+    <div class="page-number" id="page-light">195</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session8Page15',
+  components: {ImageComponent},
   methods: {
     animateText() {
       let texts = document.querySelector('.text-box').children;

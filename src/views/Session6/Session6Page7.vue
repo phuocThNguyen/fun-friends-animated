@@ -7,8 +7,16 @@
       <p>Do you think that they are making '<span class="red">red</span>'
         choices or '<span class="green">green</span>' choices?</p>
     </div>
-    <img src="../../assets/images/session6/Scooter_Girl.jpg" alt="scooter-girl" class="images">
-    <img src="../../assets/images/session6/Best-Kick-Scooter-for-Kids.jpg" alt="scooters-and-kids" class="images">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session6/Scooter_Girl.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session6/Scooter_Girl.jpg"
+      class="images"
+    />
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session6/Best-Kick-Scooter-for-Kids.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session6/Best-Kick-Scooter-for-Kids.jpg"
+      class="images"
+    />
     <div class="question-container" id="question-1">
       <svg class="thumb thumb-down" id="thumb-down-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1959 1978" width="1959" height="1978">
         <g id="thumb-down">
@@ -191,11 +199,12 @@
     <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
     <audio src="../../assets/sounds/all/Correct_2.mp3" ref="correctVoice"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session6/Session6_Page7.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">134</div>
+    <div class="page-number" id="page-light">154</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 import RedTick from "@/components/feelingsQuestion/ticks/RedTick";
 import GreenTick from "@/components/feelingsQuestion/ticks/GreenTick";
@@ -207,7 +216,7 @@ export default {
       correctAns: 0
     }
   },
-  components: {GreenTick, RedTick},
+  components: {GreenTick, RedTick, ImageComponent},
   methods: {
     animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;

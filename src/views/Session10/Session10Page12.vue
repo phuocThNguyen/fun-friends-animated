@@ -1,6 +1,10 @@
 <template>
   <div class="interactive-container">
-    <img src="../../assets/images/session10/Dogs&People-swimming.jpg" alt="kids-and-dogs" class="session-background">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session10/Dogs&People-swimming.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session10/Dogs&People-swimming.jpg"
+      class="session-background"
+    />
     <div class="text-box">
       <h1>Additional Activity &ndash; Someone to look up to who can help</h1>
       <p class="text"><span>Eliza, Josh and Lucy are learning to jump the waves
@@ -13,15 +17,17 @@
       <strong>We love having fun <br>in the ocean.</strong>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page12.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">199</div>
+    <div class="page-number" id="page-light">225</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session10Page12',
+  components: {ImageComponent},
   methods: {
     animateText() {
       let text = document.querySelector('.text').children;

@@ -701,11 +701,11 @@
       <h1>Try Everyday</h1>
       <p>&nbsp;&bull; Practise understanding the
         '<span class="red">red</span>' thoughts and
-        '<span class="green">green</span>' thoughts you
+        '<span class="green">green</span>' &nbsp;&nbsp;&nbsp;&nbsp;thoughts you
         and your family have had this week.</p>
       <p>&nbsp;&bull; Practise changing red thoughts to green thoughts.</p>
       <p>&nbsp;&bull; Practise relaxing every day for at least 10 minutes.
-        No distractions such as TV!</p>
+        No &nbsp;&nbsp;&nbsp;&nbsp;distractions such as TV!</p>
       <p>&nbsp;&bull; Practise being BRAVE:</p>
       <p>&middot; Look people in the eye and smile.</p>
       <p>&middot; Use a brave voice and make yourself big.</p>
@@ -714,7 +714,7 @@
     </div>
     <audio autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session6/Session6_Page9.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">136</div>
+    <div class="page-number" id="page-dark">156</div>
   </div>
 </template>
 
