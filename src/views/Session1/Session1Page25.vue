@@ -787,7 +787,7 @@
     </svg>
     <!--  Main content  -->
     <div class="main-content">
-      <h1 class="requires">Draw a picture of your friends.</h1>
+      <h1 class="requires">Draw a picture of your dream house.</h1>
       <div class="text-box">
         Talk with your friends about your picture. Listen to others.
       </div>
@@ -796,7 +796,7 @@
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
     <audio
       @loadeddata="playSoundText"
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/32Animated_Book_Page31.mp3" ref="voice"/>
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Session1_Page36.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -858,20 +858,9 @@ export default {
         duration: 1,
       });
       mainContentAnimation
-        .add({
-          targets: '.requires',
-          opacity: 1,
-          delay: 1,
-        })
-        .add({
-          targets: '.text-box',
-          opacity: 0.90,
-          delay: 1,
-        })
-        .add({
-          targets: '.canvas',
-          opacity: 1,
-        }, 1)
+        .add({targets: '.requires', opacity: 1}, 2000)
+        .add({targets: '.text-box', opacity: 0.90}, 4000)
+        .add({targets: '.canvas', opacity: 1}, 4500)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
@@ -916,16 +905,16 @@ export default {
   z-index: 50;
 }
 .main-content h1 {
- background-color: #000000;
- color: #ffffff;
- font-size: 3.5vh;
- width: 100%;
- height: auto;
- padding: 1.5vh;
- display: flex;
- align-items: center;
- justify-content: center;
- opacity: 0;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 3.5vh;
+  width: 100%;
+  height: auto;
+  padding: 1.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
 }
 .landscape {
   position: absolute;

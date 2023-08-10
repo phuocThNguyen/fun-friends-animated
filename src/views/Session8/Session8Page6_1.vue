@@ -218,7 +218,7 @@
 
     <div class="instruction instruction-container">
       <p>Instruction:</p>
-      <p>- Tap and drag from the easiest step one to the most difficult step five.</p>
+      <p>- Tap and drag from the easiest step 1 to the most difficult step 5.</p>
     </div>
     <div class="question-mask"/>
 
@@ -325,13 +325,13 @@
     <audio src="../../assets/sounds/all/correct-ans.mp3" ref="correct"/>
     <audio src="../../assets/sounds/all/wrong-ans.mp3" ref="wrong"/>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/ukulele-beach-doug-maxwell-children-s-music-no-copyright-music.mp3"/>
-    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page151.mp3" ref="voice"/>
-    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page151-step1.mp3" id="step-audio-1"/>
-    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page151-step2.mp3" id="step-audio-2"/>
-    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page151-step3.mp3" id="step-audio-3"/>
-    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page151-step4.mp3" id="step-audio-4"/>
-    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page151-step5.mp3" id="step-audio-5"/>
-    <div class="page-number" id="page-dark" style="left: 75vh">186</div>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page186.mp3" ref="voice"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page186-step1.mp3" id="step-audio-1"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page186-step2.mp3" id="step-audio-2"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page186-step3.mp3" id="step-audio-3"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page186-step4.mp3" id="step-audio-4"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page186-step5.mp3" id="step-audio-5"/>
+    <div class="page-number" id="page-dark" style="left: 75vh">200</div>
   </div>
 </template>
 
@@ -354,12 +354,12 @@ export default {
       choice5: [],
       orders: [],
       timeVariable: [],
-      timeout: [6200, 3700, 4900, 5700, 5500],
+      timeout: [4700,4800,4600,4900,2800],
       ansArray: [
         {id: 1, ans: 'Find a child you do not know.'},
         {id: 2, ans: 'Introduce yourself and\nask for their name.'},
         {id: 3, ans: 'Smile and speak with\na brave voice.'},
-        {id: 4, ans: 'Ask them nicely\nif they want to join.'},
+        {id: 4, ans: 'Ask them nicely if they\nwant to play together.'},
         {id: 5, ans: 'Play together.'},
       ],
     }
@@ -373,22 +373,22 @@ export default {
       let choices = document.querySelectorAll('.choices-container');
       let animation = anime.timeline({duration: 1, easing: 'linear'})
       animation
-          .add({targets: '.trophy-container', opacity: 1}, 1000)
-          .add({targets: plan, opacity: 1}, 1000)
-          .add({targets: '.instruction-container', opacity: 1}, 5500)
-          .add({targets: choices, opacity: 1}, 11500)
+        .add({targets: '.trophy-container', opacity: 1}, 500)
+        .add({targets: plan, opacity: 1}, 500)
+        .add({targets: '.instruction-container', opacity: 1}, 4300)
+        .add({targets: choices, opacity: 1}, 12000)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500);
-      this.timeVariable[0] = setTimeout(() => document.querySelector('#step-audio-'+this.orders[0]).play(),11500);
-      this.timeVariable[1] = setTimeout(() => document.querySelector('#step-audio-'+this.orders[1]).play(),11500 + this.timeout[this.orders[0] - 1]);
-      this.timeVariable[2] = setTimeout(() => document.querySelector('#step-audio-'+this.orders[2]).play(),11500 + this.timeout[this.orders[0] - 1] + this.timeout[this.orders[1] - 1]);
-      this.timeVariable[3] = setTimeout(() => document.querySelector('#step-audio-'+this.orders[3]).play(),11500 + this.timeout[this.orders[0] - 1] + this.timeout[this.orders[1] - 1] +this.timeout[this.orders[2] - 1]);
-      this.timeVariable[4] = setTimeout(() => document.querySelector('#step-audio-'+this.orders[4]).play(),11500 + this.timeout[this.orders[0] - 1] + this.timeout[this.orders[1] - 1] +this.timeout[this.orders[2] - 1] + this.timeout[this.orders[3] - 1]);
-      this.timeVariable[5] = setTimeout(() => document.querySelector('.question-mask').style.visibility = 'hidden',11500 + this.timeout[this.orders[0] - 1] + this.timeout[this.orders[1] - 1] +this.timeout[this.orders[2] - 1] + this.timeout[this.orders[3] - 1] + this.timeout[this.orders[4] - 1]);
+      this.timeVariable[0] = setTimeout(() => document.querySelector('#step-audio-'+this.orders[0]).play(),12500);
+      this.timeVariable[1] = setTimeout(() => document.querySelector('#step-audio-'+this.orders[1]).play(),12500 + this.timeout[this.orders[0] - 1]);
+      this.timeVariable[2] = setTimeout(() => document.querySelector('#step-audio-'+this.orders[2]).play(),12500 + this.timeout[this.orders[0] - 1] + this.timeout[this.orders[1] - 1]);
+      this.timeVariable[3] = setTimeout(() => document.querySelector('#step-audio-'+this.orders[3]).play(),12500 + this.timeout[this.orders[0] - 1] + this.timeout[this.orders[1] - 1] +this.timeout[this.orders[2] - 1]);
+      this.timeVariable[4] = setTimeout(() => document.querySelector('#step-audio-'+this.orders[4]).play(),12500 + this.timeout[this.orders[0] - 1] + this.timeout[this.orders[1] - 1] +this.timeout[this.orders[2] - 1] + this.timeout[this.orders[3] - 1]);
+      this.timeVariable[5] = setTimeout(() => document.querySelector('.question-mask').style.visibility = 'hidden',12500 + this.timeout[this.orders[0] - 1] + this.timeout[this.orders[1] - 1] +this.timeout[this.orders[2] - 1] + this.timeout[this.orders[3] - 1] + this.timeout[this.orders[4] - 1]);
     },
     handleChoice1(args) {
       if (args.added) {

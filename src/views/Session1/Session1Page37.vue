@@ -8,20 +8,16 @@
     <div class="text-box">
       <h1>Try Everyday</h1>
       <p>- If you were a grown up for a day, what would you do?</p>
-      <p>- Share your answer with a grown up and ask them about
-        when they were children - what they liked to do, eat and play.</p>
+      <p>- Share your answer with a grown up and ask them what they liked to do,
+        eat and play when they were children.</p>
       <p>- Ask them to draw the home they lived in as a child.</p>
       <p>- Each night, share a happy memory from your day with your family or friends.</p>
-      <p>- Practise being BRAVE:</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Look people in the eye and smile.</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Use a brave and strong voice.</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Try your best and give it a go.</p>
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3"/>
     <audio
       @loadeddata="playSoundText"
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/44Animated_Book_Page43.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">56</div>
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Session1_Page56.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">57</div>
   </div>
 </template>
 
@@ -34,47 +30,13 @@ export default {
   methods: {
     animateText() {
       let text = document.querySelector('.text-box').children;
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500
-      })
+      let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({
-          targets: ".text-box",
-          opacity: 0.9,
-        }, 300)
-        .add({
-          targets: text[1],
-          opacity: 1,
-        }, 2394)
-        .add({
-          targets: text[2],
-          opacity: 1
-        }, 6489)
-        .add({
-          targets: text[3],
-          opacity: 1
-        }, 16351)
-        .add({
-          targets: text[4],
-          opacity: 1
-        }, 20770)
-        .add({
-          targets: text[5],
-          opacity: 1
-        }, 27000)
-        .add({
-          targets: text[6],
-          opacity: 1
-        }, 29500)
-        .add({
-          targets: text[7],
-          opacity: 1
-        }, 32200)
-        .add({
-          targets: text[8],
-          opacity: 1
-        }, 35500)
+        .add({targets: ".text-box", opacity: 0.9}, 500)
+        .add({targets: text[1], opacity: 1}, 3500)
+        .add({targets: text[2], opacity: 1}, 8500)
+        .add({targets: text[3], opacity: 1}, 18200)
+        .add({targets: text[4], opacity: 1}, 23700)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
@@ -98,13 +60,14 @@ export default {
   position: absolute;
   width: 90%;
   left: 5%;
-  top: 1vh;
+  top: 15vh;
   background-color: #ffffff;
   opacity: 0;
   padding: 2vh 3vh;
 }
 .text-box h1 {
   text-align: center;
+  font-weight: bold;
   margin-bottom: 1vh;
   font-size: 6vh;
 }

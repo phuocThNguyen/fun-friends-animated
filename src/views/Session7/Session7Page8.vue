@@ -1001,8 +1001,8 @@
 
     <div class="wing-container" id="left-container">
       <p>My siblings</p>
-      <p>My grand parents</p>
       <p>My parents</p>
+      <p>My grand parents</p>
       <p>My friends</p>
       <p>My teacher</p>
       <h1>My Helper</h1>
@@ -1010,7 +1010,7 @@
     <div class="wing-container" id="right-container">
       <p>Play hide and seek</p>
       <p>Go for a swim</p>
-      <p>Play ball</p>
+      <p>Play skipping</p>
       <p>Fly a kite</p>
       <p>Play in the park</p>
       <h1>Rewards</h1>
@@ -1130,7 +1130,7 @@
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page8-region-4.mp3" ref="step4"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page8-region-5.mp3" ref="step5"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page8.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark" style="left: 25vh !important;">167</div>
+    <div class="page-number" id="page-dark" style="left: 25vh !important;">181</div>
   </div>
 </template>
 
@@ -1491,6 +1491,7 @@ export default {
   align-items: center;
   color: #ffffff;
   font-size: 2.36vh;
+  line-height: 3vh;
 }
 #step-1 {
   top: 71vh;
@@ -1518,7 +1519,8 @@ export default {
   z-index: 1;
 }
 #step-5 .text {
-  font-size: 1.8vh;
+  font-size: 2vh;
+  line-height: 2.5vh;
 }
 .tree {
   position: absolute;

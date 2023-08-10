@@ -6,11 +6,11 @@
       class="session-background"
     />
     <div class="text-box">
-      <p>Pretend you are meeting a new teacher.</p>
+      <p>You are meeting a new friend.</p>
       <p>What could you be feeling?
         <br>What could you be thinking?</p>
       <p>What are some '<span class="green">green</span>' thoughts
-        <br>that make you feel happy and brave?</p>
+        that make you feel happy and brave?</p>
     </div>
     <div class="bubble-container" id="bubble-1">
       <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 341.11 268.16">
@@ -26,7 +26,7 @@
         </g>
       </svg>
       <div class="bubble-text" id="bb-text-1">
-        <p>I'm scared <br>to meet the <br>new teacher.</p>
+        <p>I'm scared <br>to meet the <br>new friend.</p>
       </div>
     </div>
     <div class="bubble-container" id="bubble-2">
@@ -51,10 +51,7 @@
       <div class="mask" id="mask-2" @click="selectedBubble(2)"/>
     </div>
     <div class="instruction instruction-container">
-      <p>Instruction:</p>
-      <p>Next to Eliza, there are two thought bubbles.
-        One thought bubble is the ‘green’ thought, and one
-        thought bubble is the ‘red‘ thought. Tap on the ‘green’ thought.</p>
+      <p><strong>Instruction:</strong> Tap on the ‘green’ thought.</p>
     </div>
     <!--  Well done  -->
     <svg class="reward" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 234.7 198.83">
@@ -118,7 +115,7 @@
     <audio src="../../assets/sounds/all/wrong-ans.mp3" ref="wrong"/>
     <audio
       @loadeddata="playSoundText"
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page8.mp3" ref="voice"/>
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page137.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -133,41 +130,17 @@ export default {
   methods: {
     animateText() {
       let text = document.querySelector('.text-box').children;
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      });
+      let animation = anime.timeline({easing: 'linear', duration: 500});
       animation
-        .add({
-          targets: '.text-box',
-          opacity: 1
-        }, 500)
-        .add({
-          targets: text[0],
-          opacity: 1
-        }, 653)
-        .add({
-          targets: text[1],
-          opacity: 1
-        }, 4219)
-        .add({
-          targets: text[2],
-          opacity: 1
-        }, 9000)
-        .add({
-          targets: '#bubble-1',
-          opacity: 1
-        }, 14500)
-        .add({
-          targets: '#bubble-2',
-          opacity: 1
-        }, 18500)
-        .add({
-          targets: '.instruction-container',
-          opacity: 1
-        }, 21300)
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[0], opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 3500)
+        .add({targets: text[2], opacity: 1}, 8000)
+        .add({targets: '#bubble-1', opacity: 1}, 14500)
+        .add({targets: '#bubble-2', opacity: 1}, 17700)
+        .add({targets: '.instruction-container', opacity: 1}, 21500)
       setTimeout(() => {
-        document.querySelector('.masks-container').style.visibility = 'visible'}, 12000);
+        document.querySelector('.masks-container').style.visibility = 'visible'}, 14500);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -228,24 +201,17 @@ export default {
 </script>
 
 <style scoped>
-.instruction {position: absolute;left:17vh;bottom:0}
+.instruction {position: absolute;left:39vh;bottom:1vh}
 .instruction-container {
   background-color: #00ce7c;
-  padding: 1vh;
-  width: 90vh;
+  padding: 2vh;
+  width: 55vh;
   opacity: 0;
 }
 .instruction-container p {
   color: #ffffff;
   margin-bottom: 0;
-  font-size: 2.5vh;
-}
-.instruction-container p:first-child {
   font-size: 3vh;
-  font-weight: bold;
-}
-.instruction-container p:nth-child(2) {
-  padding-left: 1.8vh;
 }
 .masks-container {
   position: absolute;
@@ -291,7 +257,7 @@ export default {
 }
 .text-box {
   position: absolute;
-  width: 42%;
+  width: 51vh;
   padding: 1vh 2vh;
   top: 1%;
   left: 1%;

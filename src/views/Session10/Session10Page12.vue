@@ -6,7 +6,7 @@
       class="session-background"
     />
     <div class="text-box">
-      <h1>Additional Activity &ndash; Someone to look up to who can help</h1>
+      <h1>Someone to look up to who can help</h1>
       <p class="text"><span>Eliza, Josh and Lucy are learning to jump the waves
         and body surf at Straddie Island.</span><span> Chilli and Pepper
         also really love playing in the water.</span><span> Chilli and
@@ -16,8 +16,9 @@
     <div class="green-box">
       <strong>We love having fun <br>in the ocean.</strong>
     </div>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/beach-sound.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page12.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">225</div>
+    <div class="page-number" id="page-light">243</div>
   </div>
 </template>
 
@@ -33,10 +34,10 @@ export default {
       let text = document.querySelector('.text').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
-        .add({targets: text[0],color: '#000'}, 8000)
-        .add({targets: text[1],color: '#000'}, 15900)
-        .add({targets: text[2],color: '#000'}, 21200)
-        .add({targets: '.green-box',opacity: 1}, 28500)
+        .add({targets: text[0],color: '#000'}, 5200)
+        .add({targets: text[1],color: '#000'}, 13300)
+        .add({targets: text[2],color: '#000'}, 18500)
+        .add({targets: '.green-box',opacity: 1}, 26000)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)

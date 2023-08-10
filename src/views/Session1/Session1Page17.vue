@@ -10,7 +10,7 @@
     </div>
     <audio
       @loadeddata="playSoundText"
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/24Animated_Book_Page23.mp3" ref="voice"/>
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Session1_Page28.mp3" ref="voice"/>
     <div class="page-number" id="page-light">28</div>
   </div>
 </template>

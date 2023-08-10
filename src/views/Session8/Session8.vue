@@ -36,9 +36,12 @@ import Session8Page8 from "@/views/Session8/Session8Page8";
 import Session8Page9 from "@/views/Session8/Session8Page9";
 import Session8Page10 from "@/views/Session8/Session8Page10";
 import Session8Page11 from "@/views/Session8/Session8Page11";
+import Session8Page11_1 from "@/views/Session8/Session8Page11_1";
+import Session8Page11_2 from "@/views/Session8/Session8Page11_2";
 import Session8Page12 from "@/views/Session8/Session8Page12";
 import Session8Page13 from "@/views/Session8/Session8Page13";
 import Session8Page14 from "@/views/Session8/Session8Page14";
+import Session8Page14_1 from "@/views/Session8/Session8Page14_1";
 import Session8Page15 from "@/views/Session8/Session8Page15";
 import Session8Page16 from "@/views/Session8/Session8Page16";
 
@@ -51,18 +54,20 @@ export default {
     Session8Page1, Session8Page1_1, Session8Page2, Session8Page3, Session8Page4,
     Session8Page5, Session8Page6, Session8Page7, Session8Page8, Session8Page9,
     Session8Page10, Session8Page11, Session8Page12, Session8Page13, Session8Page14,
-    Session8Page15, Session8Page16, Session8Page6_1,
+    Session8Page15, Session8Page16, Session8Page6_1, Session8Page11_1, Session8Page11_2,
+    Session8Page14_1,
   },
   data() {
     return {
       pages: {
         1: "Session8Page1", 2: "Session8Page1_1", 3: "Session8Page2", 4: "Session8Page3", 5: "Session8Page4",
         6: "Session8Page5", 7: "Session8Page6", 8: "Session8Page6_1", 9: "Session8Page7", 10: "Session8Page8",
-        11: "Session8Page9", 12: "Session8Page10", 13: "Session8Page11", 14: "Session8Page12", 15: "Session8Page13",
-        16: "Session8Page14", 17: "Session8Page15", 18: "Session8Page16",
+        11: "Session8Page9", 12: "Session8Page10", 13: "Session8Page11", 14: "Session8Page11_1", 15: "Session8Page11_2",
+        16: "Session8Page12", 17: "Session8Page13", 18: "Session8Page14", 19: "Session8Page14_1", 20: "Session8Page15",
+        21: "Session8Page16",
       },
       page: 1,
-      lastPage: 18,
+      lastPage: 21,
     }
   },
   created() {

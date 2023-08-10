@@ -118,7 +118,7 @@
     </svg>
     <audio autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/polka.mp3" ref="audio"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session12/Session12_Page2.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">246</div>
+    <div class="page-number" id="page-light">266</div>
   </div>
 </template>
 

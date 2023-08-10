@@ -37,7 +37,7 @@
       class="images" id="image-bottom"
     />
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session6/Session6_Page5.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">152</div>
+    <div class="page-number" id="page-light">165</div>
   </div>
 </template>
 

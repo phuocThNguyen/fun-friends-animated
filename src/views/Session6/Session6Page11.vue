@@ -1,5 +1,10 @@
 <template>
   <div class="interactive-container">
+    <ImageComponent
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session3/background-3.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session3/background-3.jpg"
+      class="session-background"
+    />
     <svg class="landscape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1693 1207" width="1693" height="1207">
       <defs>
         <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
@@ -718,16 +723,19 @@
         </p>
       </div>
     </div>
+    <audio autoplay loop ref="audio" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session6/Session6_Page11.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">158</div>
+    <div class="page-number" id="page-dark">172</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
 
 export default {
   name: 'Session6Page11',
+  components: {ImageComponent},
   methods: {
     animateText() {
       let animation = anime.timeline({

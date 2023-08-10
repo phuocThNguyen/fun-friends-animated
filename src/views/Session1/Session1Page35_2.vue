@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <div class="title">
       <h1>What activities do you like?</h1>
-      <p>Tick your choices:</p>
+      <p>Tap your choices:</p>
     </div>
     <div class="choice-container" id="choice-1">
       <div class="image" @click="toggleChoice(1)">
@@ -64,11 +64,11 @@
       </div>
       <div class="text">Cleaning up the river</div>
     </div>
-    <audio src="" ref="voice"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Session1_Page53.mp3" ref="voice"/>
     <audio src="../../assets/sounds/all/crowd-cheer-applause.mp3" id="cheer1"/>
     <audio src="../../assets/sounds/all/crowd-cheer-applause-2.mp3" id="cheer2"/>
     <audio src="../../assets/sounds/all/kids-cheering.mp3" id="cheer3"/>
-    <div class="page-number" id="page-light">53</div>
+    <div class="page-number" id="page-light">54</div>
   </div>
 </template>
 
@@ -87,7 +87,7 @@ export default {
   },
   methods: {
     playVoiceOver() {
-      setTimeout(() => {this.$ref.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 500)
     },
     playCheerVoice() {
       if (this.currentVoice !== null) {
@@ -100,6 +100,7 @@ export default {
       this.currentVoice = voice;
     },
     toggleChoice(id) {
+      this.$refs.voice.pause();
       let choiceContainer = document.querySelector('#choice-'+id);
       if (!this.choices[id-1]) {
         choiceContainer.classList.add('green-container');
@@ -123,6 +124,7 @@ export default {
     this.init();
   },
   mounted() {
+    this.playVoiceOver();
     this.setChoiceBackground();
   },
 }

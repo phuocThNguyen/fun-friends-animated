@@ -6,10 +6,9 @@
       class="session-background"
     />
     <div class="text-box">
-      <p><strong>Tom meets his new teacher</strong></p>
-      <p>Pretend you are Tom.</p>
-      <p>What could you be feeling?
-        <br>What could you be thinking?</p>
+      <p><strong>You meet a new teacher</strong></p>
+      <p>What could you be feeling?</p>
+      <p>What could you be thinking?</p>
       <p>What are some '<span class="green">green</span>' thoughts
         <br>that make you feel happy and brave?</p>
     </div>
@@ -160,7 +159,7 @@
     <audio src="../../assets/sounds/all/wrong-ans.mp3" ref="wrong"/>
     <audio
       @loadeddata="playSoundText"
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page7.mp3" ref="voice"/>
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page136.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -175,45 +174,18 @@ export default {
   methods: {
     animateText() {
       let text = document.querySelector('.text-box').children;
-      let animation = anime.timeline({
-        duration: 500,
-        easing: 'linear'
-      })
+      let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-        .add({
-          targets: '.text-box',
-          opacity: 1
-        }, 500)
-        .add({
-          targets: text[0],
-          opacity: 1
-        }, 736)
-        .add({
-          targets: text[1],
-          opacity: 1
-        }, 3265)
-        .add({
-          targets: text[2],
-          opacity: 1
-        }, 5318)
-        .add({
-          targets: text[3],
-          opacity: 1
-        }, 12020)
-        .add({
-          targets: '#bubble-1',
-          opacity: 1
-        }, 17500)
-        .add({
-          targets: '#bubble-2',
-          opacity: 1
-        }, 21000)
-        .add({
-          targets: '.instruction-container',
-          opacity: 1
-        }, 23200)
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[0], opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 3000)
+        .add({targets: text[2], opacity: 1}, 5200)
+        .add({targets: text[3], opacity: 1}, 7500)
+        .add({targets: '#bubble-1', opacity: 1}, 12600)
+        .add({targets: '#bubble-2', opacity: 1}, 15600)
+        .add({targets: '.instruction-container', opacity: 1}, 18200)
       setTimeout(() => {
-        document.querySelector('.masks-container').style.visibility = 'visible'}, 16000);
+        document.querySelector('.masks-container').style.visibility = 'visible'}, 12600);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)

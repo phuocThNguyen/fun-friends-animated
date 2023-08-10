@@ -1,104 +1,190 @@
 <template>
   <div class="interactive-container">
     <ImageComponent
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/11-resized.jpg"
-      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/11-resized.jpg"
-      class="image"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/11.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/11.jpg"
+      class="session-background"
+      style="transform: scaleX(-1)"
     />
-    <div class="text-box">
-      <h1>Feelings</h1>
-      <p>What do you do when you feel angry, worried, happy or sad?</p>
-      <p>Get into a group and act out one feeling.</p>
-      <p>Don't say what feeling you are doing, let your classmates
-      guess and then guess what feeling they are acting out!</p>
-      <p>Try using a role-play mask!</p>
-
-      <p class="extra-box">All feelings are OK!</p>
+    <div class="content-container">
+      <h1>Click on the feelings <br>you have today.</h1>
+      <div class="content-row">
+        <div class="emotes-container">
+          <emote-happy class="emotes"/>
+          <emote-sad class="emotes"/>
+        </div>
+        <div class="tips-container">
+          <p class="answer-1">Happy</p>
+          <p class="answer-2">Sad</p>
+        </div>
+        <div class="masks-container">
+          <div class="answer-1" @click="toggleEmote(1)"/>
+          <div class="answer-2" @click="toggleEmote(2)"/>
+        </div>
+      </div>
+      <div class="content-row">
+        <div class="emotes-container">
+          <emote-worried class="emotes"/>
+          <emote-angry class="emotes"/>
+        </div>
+        <div class="tips-container">
+          <p class="answer-3">Worried</p>
+          <p class="answer-4">Angry</p>
+        </div>
+        <div class="masks-container">
+          <div class="answer-3" @click="toggleEmote(3)"/>
+          <div class="answer-4" @click="toggleEmote(4)"/>
+        </div>
+      </div>
     </div>
-    <audio
-      @loadeddata="playSoundText"
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session2/Session2_Page3.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">62</div>
+    <div class="text-box">
+      <p class="text">
+        <span>Talk about it with your parents.</span>
+        <br><span>You can have many feelings in one day.</span>
+      </p>
+    </div>
+    <audio src="../../assets/sounds/session7/click-sound.mp3" ref="click"/>
   </div>
 </template>
 
 <script>
 import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
-import anime from 'animejs';
+import EmoteWorried from "@/components/feelingsQuestion/emotes/EmoteWorried.vue";
+import EmoteSad from "@/components/feelingsQuestion/emotes/EmoteSad.vue";
+import EmoteAngry from "@/components/feelingsQuestion/emotes/EmoteAngry.vue";
+import EmoteHappy from "@/components/feelingsQuestion/emotes/EmoteHappy.vue";
+
 export default {
-  name: "Session2Page3",
-  components: {ImageComponent},
-  methods: {
-    animateText() {
-      let para = document.getElementsByClassName('text-box')[0].children;
-      let animation = anime.timeline({
-        duration: 500,
-        easing: 'linear'
-      });
-      animation
-        .add({
-          targets: para[1],
-          color: "#000",
-        }, 1697)
-        .add({
-          targets: para[2],
-          color: "#000"
-        }, 8180)
-        .add({
-          targets: para[3],
-          color: "#000"
-        }, 11800)
-        .add({
-          targets: para[4],
-          color: "#000"
-        },19600)
-        .add({
-          targets: para[5],
-          opacity: 1
-        }, 21700)
-    },
-    playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 500)
-    },
-    playSoundText() {
-      this.playVoiceOver();
-      this.animateText();
+  name: "Session3Page11_1.vue",
+  components: {EmoteWorried, EmoteSad, EmoteAngry, EmoteHappy, ImageComponent},
+  data() {
+    return {
+      answerClasses: ['.answer-1','.answer-2','.answer-3','.answer-4'],
     }
   },
-  mounted() {}
+  methods: {
+    init() {
+      // this.answers = this.$store.getters.getPage85Data;
+    },
+    unhighlightEmote(name) {
+      let chosenEmote = document.querySelectorAll(name);
+      chosenEmote[1].style.opacity = '1';
+      chosenEmote[0].style.color = '#c7c7c7';
+    },
+    highlightEmote(name) {
+      let chosenEmote = document.querySelectorAll(name);
+      chosenEmote[1].style.opacity = '0';
+      chosenEmote[0].style.color = '#ffffff';
+    },
+    toggleEmote(id) {
+      this.$refs.click.pause();
+      this.$refs.click.currentTime = 0;
+      let answerClass = '.answer-'+id;
+      this.highlightEmote(answerClass)
+      let otherAnswers = this.answerClasses.filter(ele => ele !== answerClass);
+      otherAnswers.forEach(answer => {
+        this.unhighlightEmote(answer);
+      })
+      this.$refs.click.play();
+    },
+  },
+  created() {
+    this.init();
+  },
+  watch: {
+    answers: function () {
+      // this.$store.commit('setPage85Data', this.answers);
+    }
+  }
 }
 </script>
 
 <style scoped>
-.image {
+@media screen and (max-width: 930px) {
+  .content-container {
+    border-radius: 8px !important;
+    bottom: 10vh !important;
+  }
+}
+.content-container {
   position: absolute;
-  width: 60%;
-  height: 100%;
-  left: 40%;
+  background-color: rgba(0, 206, 124, 0.9);
+  border-radius: 30px;
+  padding: 1vh 0;
+  width: 45vh;
+  top: 3vh;
+  left: 2vh;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+}
+.content-container h1 {
+  text-align: center;
+  font-size: 4vh;
+  color: #ffffff;
+  margin: 1vh 0;
+}
+.content-row {
+  width: 100%;
+}
+.emotes-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 2vh 0;
+}
+.emotes {
+  height: auto;
+  width: 12vh;
+}
+.tips-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 1vh;
+}
+.tips-container p {
+  font-size: 3.5vh;
+  font-weight: bold;
+  margin-bottom: 0;
+  display: inline-block;
+  width: 12vh;
+}
+.masks-container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  top: 9.75vh;
+}
+.masks-container div {
+  width: 12vh;
+  height: 12vh;
+  background: rgba(0,0,0,0.3);
+  opacity: 0;
+  border-radius: 50%;
 }
 .text-box {
   position: absolute;
-  padding: .5vh 1vh;
-  width: 40%;
-}
-.text-box h1 {
-  font-weight: bold;
-  font-size: 8vh;
-  margin-bottom: .5vh;
-}
-.text-box p {
-  font-size: 4vh;
-  margin-bottom: 1vh;
-  color: #ffffff;
-}
-.extra-box {
-  display: block;
-  background-color: #00ce7c;
-  opacity: 0;
-  font-weight: bold;
-  font-size: 4vh !important;
-  padding: 2vh;
+  left: 25vh;
+  bottom: 1vh;
+  z-index: 20;
+  background-color: #00CE7C;
+  width: auto;
+  height: auto;
+  padding: 1vh 4vh;
+  opacity: 1;
   text-align: center;
-  margin-top: 2vh;
+}
+.text-box .text {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 4vh;
+  margin-bottom: 0;
 }
 </style>

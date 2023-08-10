@@ -768,7 +768,7 @@
     <div class="plans" id="step-5">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">5) Ride all by myself.</div>
+      <div class="text">5) Ride all by yourself.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -1127,7 +1127,7 @@
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page3-region-4.mp3" ref="step4"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page3-region-5.mp3" ref="step5"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page3.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark" style="left: 25vh !important;">164</div>
+    <div class="page-number" id="page-dark" style="left: 25vh !important;">178</div>
   </div>
 </template>
 
@@ -1485,6 +1485,7 @@ export default {
   align-items: center;
   color: #ffffff;
   font-size: 2.36vh;
+  line-height: 3vh;
 }
 #step-1 {
   top: 71vh;

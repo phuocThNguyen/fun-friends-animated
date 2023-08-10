@@ -855,7 +855,7 @@
     <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
     <audio src="../../assets/sounds/all/Correct_1.mp3" ref="correctVoice"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page12.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">116</div>
+    <div class="page-number" id="page-light">123</div>
   </div>
 </template>
 
@@ -1016,6 +1016,7 @@ export default {
   width: 51%;
   height: 100%;
   right: 0;
+  background: #ccf8ff;
 }
 .images {
   position: absolute;
@@ -1049,7 +1050,7 @@ export default {
   opacity: 0;
 }
 tspan { white-space:pre }
-.shp0-tongue { fill: #ffffff }
+.shp0-tongue { fill: #000 }
 .shp1-tongue { fill: #300000 }
 .shp2-tongue { fill: #ef6962 }
 .shp3-tongue { fill: #ea5b57 }
@@ -1057,7 +1058,7 @@ tspan { white-space:pre }
 .shp5-tongue { fill: #fc6e6b }
 .shp6-tongue { fill: #e8c61f }
 .shp7-tongue { fill: #348400 }
-.shp0-nose { fill: #ffffff }
+.shp0-nose { fill: #000 }
 .shp1-nose { fill: #f4b276 }
 .shp2-nose { fill: #300000 }
 .shp3-nose { fill: #f7be86 }

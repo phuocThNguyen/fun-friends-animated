@@ -20,7 +20,7 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page4.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">108</div>
+    <div class="page-number" id="page-dark">115</div>
   </div>
 </template>
 
@@ -98,11 +98,10 @@ export default {
     playSoundText() {
       this.playVoiceOver();
       this.animateText();
+      this.playSoundEffect();
     }
   },
-  mounted() {
-    this.playSoundEffect();
-  }
+  mounted() {}
 }
 </script>
 

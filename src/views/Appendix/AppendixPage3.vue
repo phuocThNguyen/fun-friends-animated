@@ -7,7 +7,7 @@
     />
     <div class="title">APPENDIX 3: HAPPINESS IDEA</div>
     <div class="text">Instruction: Read the golden star and click the 'green' thumb if
-      it is a thumb up choice <br>and click the 'red' thumb if it is a thumb down choice.</div>
+      it is a thumbs up choice. <br>Click the 'red' thumb if it is a thumbs down choice.</div>
     <div class="choice-container" v-for="star in stars" :id="'choice-'+star.id" :key="star.id">
       <div class="star-container">
         <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1321 1258" width="1321" height="1258">
@@ -168,8 +168,8 @@
     <audio src="../../assets/sounds/all/correct-ans.mp3" ref="correct"/>
     <audio src="../../assets/sounds/all/wrong-ans.mp3" ref="wrong"/>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/twinkle-twinkle-little-star.mp3"/>
-    <audio @loadeddata="playVoiceOver" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/appendix/Session13_Appendix_Page3.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">257</div>
+    <audio @loadeddata="playVoiceOver" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/appendix/Session12_Page257.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">275</div>
   </div>
 </template>
 

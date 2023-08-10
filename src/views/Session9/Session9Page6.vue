@@ -4,8 +4,6 @@
       <h1>Tom's reward</h1>
       <p>When Tom is brave, he rewards himself by doing fun
       activities with his family and friends.</p>
-      <p>What are some activities that you think are fun?<p/>
-      <p>How can you use these activities to reward yourself?</p>
     </div>
     <div class="image-container" id="left">
       <ImageComponent
@@ -24,7 +22,7 @@
       <p class="image-text" id="para-2">Tom's Reward <br>Special time with his dad</p>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page6.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">203</div>
+    <div class="page-number" id="page-light">220</div>
   </div>
 </template>
 
@@ -43,7 +41,6 @@ export default {
       animation
         .add({targets: text[1], opacity: 1}, 2300)
         .add({targets: text[2], opacity: 1}, 10500)
-        .add({targets: text[3], opacity: 1}, 14700)
         .add({targets: images[0], opacity: 1}, 19500)
         .add({targets: images[1], opacity: 1}, 23000)
     },
@@ -71,11 +68,11 @@ export default {
 }
 .text-box h1 {
   font-size: 5vh;
-  margin-bottom: 0;
+  margin-bottom: 1vh;
   font-weight: bold;
 }
 .text-box p {
-  font-size: 3vh;
+  font-size: 3.5vh;
   margin-bottom: 0;
   opacity: 0;
 }
@@ -83,7 +80,7 @@ export default {
   position: absolute;
   bottom: 0;
   width: 50%;
-  height: 74vh;
+  height: 76vh;
   opacity: 1;
 }
 .image-container .image {

@@ -10,7 +10,11 @@
       srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session8/creek_exploring_group.jpg"
       class="images" id="right"
     />
-    <div class="question-container">
+    <div class="text-box">
+      Use the buttons below to show us if you <br>think that
+      these are red or green actions.
+    </div>
+    <div class="question-container" id="container-1">
       <div class="text">
         Helping each other cross the creek
       </div>
@@ -57,7 +61,7 @@
         <green-tick class="tick" id="green-tick-1"/>
       </div>
     </div>
-    <div class="question-container">
+    <div class="question-container" id="container-2">
       <div class="text">
         Exploring the creek beds
       </div>
@@ -172,7 +176,7 @@
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page12.mp3" ref="voice"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page12_Exploring-the-creek-beds.mp3" ref="voice2"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page12_helping-each-other-cross-the-creek.mp3" ref="voice1"/>
-    <div class="page-number" id="page-light">192</div>
+    <div class="page-number" id="page-light">208</div>
   </div>
 </template>
 
@@ -288,6 +292,17 @@ export default {
 </script>
 
 <style scoped>
+.text-box {
+  position: absolute;
+  top: 2vh;
+  width: 65.2vh;
+  padding: 1vh;
+  font-size: 3vh;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  background: #00CE7C;
+}
 .tick {
   position: absolute;
   bottom: 1vh;
@@ -318,12 +333,8 @@ export default {
   width: 41%;
   height: 18vh;
 }
-.question-container:nth-of-type(1) {
-  left: 4%;
-}
-.question-container:nth-of-type(2) {
-  left: 55%;
-}
+#container-1 {left: 4%;}
+#container-2 {left: 55%;}
 .text {
   position: absolute;
   right: 0;

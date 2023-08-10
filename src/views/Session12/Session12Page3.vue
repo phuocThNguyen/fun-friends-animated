@@ -1006,12 +1006,12 @@
       <span>Why did you have them? What do you like to do at a party?</span>
       <span> Try doing your favourite dance or singing your favourite
       song for a friend!</span><span> If you are at the end of your
-      FUN FRIENDS book, reward yourself with something you like
+      Fun FRIENDS book, reward yourself with something you like
       to do!</span>
     </div>
     <audio ref="audio" autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/playground.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session12/Session12_Page3.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">247</div>
+    <div class="page-number" id="page-light">267</div>
   </div>
 </template>
 

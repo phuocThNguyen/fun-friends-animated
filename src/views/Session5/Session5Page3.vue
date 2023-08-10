@@ -6,7 +6,7 @@
       class="session-background"
     />
     <div class="text-box">
-      <p>Lucy is starting a new school and she looks upset.</p>
+      <p>Lucy is starting at a new school and she looks upset.</p>
       <p>Why do you think she feels sad and scared?
         How do you think her mum feels?</p>
       <p>Is Lucy having '<span id="red-text">red</span>' or
@@ -166,8 +166,8 @@
     <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
     <audio
       @loadeddata="playSoundText"
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page3.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">132</div>
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page132.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">144</div>
   </div>
 </template>
 
@@ -202,31 +202,13 @@ export default {
     },
     animateText() {
       let text = document.querySelector('.text-box').children;
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      })
+      let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({
-          targets: '.text-box',
-          opacity: 1
-        }, 500)
-        .add({
-          targets: text[0],
-          opacity: 1
-        }, 667)
-        .add({
-          targets: text[1],
-          opacity: 1
-        }, 6300)
-        .add({
-          targets: text[2],
-          opacity: 1
-        }, 13000)
-        .add({
-          targets: '.traffic-light',
-          opacity: 1
-        }, 21000);
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[0], opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 5700)
+        .add({targets: text[2], opacity: 1}, 11700)
+        .add({targets: '.traffic-light', opacity: 1}, 15500);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)

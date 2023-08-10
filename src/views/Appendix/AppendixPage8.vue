@@ -3480,7 +3480,7 @@
       </g>
     </svg>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/appendix/Session13_Appendix_Page5.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">262</div>
+    <div class="page-number" id="page-dark">280</div>
   </div>
 </template>
 
@@ -3494,13 +3494,13 @@ export default {
       let thumbs = document.querySelectorAll('.thumb');
       let animation = anime.timeline({easing: 'linear', duration: 200,})
       animation
-        .add({targets: thumbs[0], opacity: 1}, 1000)
-        .add({targets: thumbs[1], opacity: 1})
-        .add({targets: thumbs[2], opacity: 1})
-        .add({targets: thumbs[3], opacity: 1})
-        .add({targets: thumbs[4], opacity: 1})
-        .add({targets: thumbs[5], opacity: 1})
-        .add({targets: thumbs[6], opacity: 1})
+        .add({targets: thumbs[0], opacity: 1}, 2100)
+        .add({targets: thumbs[1], opacity: 1}, 6100)
+        .add({targets: thumbs[2], opacity: 1}, 8500)
+        .add({targets: thumbs[3], opacity: 1}, 11400)
+        .add({targets: thumbs[4], opacity: 1}, 14600)
+        .add({targets: thumbs[5], opacity: 1}, 16300)
+        .add({targets: thumbs[6], opacity: 1}, 18300)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)

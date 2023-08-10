@@ -9,11 +9,10 @@
       <h1>Helpful/Kind Hands</h1>
       <p>What are some of the positive things we look for in 'someone to look up to'?</p>
       <p>Some examples could be:</p>
-      <p>&bull;&nbsp;&nbsp;Cares about animals, trees <br>and living beings</p>
+      <p>&bull;&nbsp;&nbsp;Caring about animals, trees <br>and living beings</p>
       <p>&bull;&nbsp;&nbsp;Choosing 'green' thoughts</p>
-      <p>&bull;&nbsp;&nbsp;Caring</p>
-      <p>&bull;&nbsp;&nbsp;Helpful</p>
-      <p>&bull;&nbsp;&nbsp;Smiles</p>
+      <p>&bull;&nbsp;&nbsp;Being helpful</p>
+      <p>&bull;&nbsp;&nbsp;Smiling</p>
       <p>&bull;&nbsp;&nbsp;Sharing</p>
       <p>Can you think of more?</p>
     </div>
@@ -33,13 +32,13 @@
       <svg class="hand" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 538 691" width="538" height="691">
         <path id="&lt;Path&gt;" class="shp0-red" d="M497.35 172.88C465.98 172.88 452.19 202.82 442.94 228.49C430.88 261.99 420.32 296 407.94 329.41C417.42 270.59 429.28 212.19 440.38 153.67C447.47 116.26 466 36.09 400.19 44.04C356.33 49.34 357.62 110 351.21 142.5C339.73 200.74 327.38 259.01 317.28 317.51C321.02 234.47 317.35 150.49 317.35 67.37C317.35 55.76 317.35 44.16 317.35 32.56C317.35 -3.77 259.21 -8.36 239.72 12.45C227.04 26 227.83 47.44 227.94 64.7C228.1 89.93 228.53 115.17 228.75 140.4C229.26 196.76 230.5 253.13 229.22 309.48C216.92 245.89 202.38 182.51 191.49 118.66C185.25 82.06 168.63 20.31 116.72 49.9C94.72 62.44 95.17 91.83 97.81 113.7C102 148.45 109.28 182.96 113.96 217.71C123.54 288.88 133.76 359.97 142.44 431.26C128.02 403.15 116.36 373.61 102.6 345.15C92.85 324.97 83.74 294.83 59.33 288.16C38.18 282.38 6.79 294.47 1.51 317.61C-4.36 343.32 15.66 377.98 24.52 401.32C64.66 507.07 97.1 660.45 226.89 686.55C348.98 711.1 478.94 624.44 476.25 493.88C475.67 465.76 470.62 437.4 477.93 409.71C486.77 376.25 501.62 344.34 512.37 311.46C523.46 277.51 569.53 172.88 497.35 172.88Z" />
       </svg>
-      <p>Helpful</p>
+      <p>Being Helpful</p>
     </div>
     <div class="hand-container" id="hand-4">
       <svg class="hand" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 538 691" width="538" height="691">
         <path id="&lt;Path&gt;" class="shp0-yellow" d="M497.35 172.88C465.98 172.88 452.19 202.82 442.94 228.49C430.88 261.99 420.32 296 407.94 329.41C417.42 270.59 429.28 212.19 440.38 153.67C447.47 116.26 466 36.09 400.19 44.04C356.33 49.34 357.62 110 351.21 142.5C339.73 200.74 327.38 259.01 317.28 317.51C321.02 234.47 317.35 150.49 317.35 67.37C317.35 55.76 317.35 44.16 317.35 32.56C317.35 -3.77 259.21 -8.36 239.72 12.45C227.04 26 227.83 47.44 227.94 64.7C228.1 89.93 228.53 115.17 228.75 140.4C229.26 196.76 230.5 253.13 229.22 309.48C216.92 245.89 202.38 182.51 191.49 118.66C185.25 82.06 168.63 20.31 116.72 49.9C94.72 62.44 95.17 91.83 97.81 113.7C102 148.45 109.28 182.96 113.96 217.71C123.54 288.88 133.76 359.97 142.44 431.26C128.02 403.15 116.36 373.61 102.6 345.15C92.85 324.97 83.74 294.83 59.33 288.16C38.18 282.38 6.79 294.47 1.51 317.61C-4.36 343.32 15.66 377.98 24.52 401.32C64.66 507.07 97.1 660.45 226.89 686.55C348.98 711.1 478.94 624.44 476.25 493.88C475.67 465.76 470.62 437.4 477.93 409.71C486.77 376.25 501.62 344.34 512.37 311.46C523.46 277.51 569.53 172.88 497.35 172.88Z" />
       </svg>
-      <p>Smile</p>
+      <p>Smiling</p>
     </div>
     <div class="hand-container" id="hand-5">
       <svg class="hand" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 538 691" width="538" height="691">
@@ -47,9 +46,8 @@
       </svg>
       <p>Sharing</p>
     </div>
-
-    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page11.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">224</div>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page224.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">242</div>
   </div>
 </template>
 
@@ -66,20 +64,19 @@ export default {
       let hands = document.querySelectorAll('.hand-container');
       let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({targets: text[1], opacity: 1}, 3200)
-        .add({targets: text[2], opacity: 1}, 9600)
-        .add({targets: text[3], opacity: 1}, 11800)
-        .add({targets: text[4], opacity: 1}, 16400)
-        .add({targets: hands[0], opacity: 1}, 16400)
-        .add({targets: text[5], opacity: 1}, 18600)
-        .add({targets: hands[1], opacity: 1}, 18600)
-        .add({targets: text[6], opacity: 1}, 20200)
-        .add({targets: hands[2], opacity: 1}, 20200)
-        .add({targets: text[7], opacity: 1}, 21600)
-        .add({targets: hands[3], opacity: 1}, 21600)
-        .add({targets: text[8], opacity: 1}, 23500)
-        .add({targets: hands[4], opacity: 1}, 23500)
-        .add({targets: text[9], opacity: 1}, 25000)
+        .add({targets: text[1], opacity: 1}, 3500)
+        .add({targets: text[2], opacity: 1}, 9700)
+        .add({targets: text[3], opacity: 1}, 12700)
+        .add({targets: hands[1], opacity: 1}, 12700)
+        .add({targets: text[4], opacity: 1}, 17000)
+        .add({targets: hands[0], opacity: 1}, 17000)
+        .add({targets: text[5], opacity: 1}, 21300)
+        .add({targets: hands[2], opacity: 1}, 21300)
+        .add({targets: text[6], opacity: 1}, 23700)
+        .add({targets: hands[3], opacity: 1}, 23700)
+        .add({targets: text[7], opacity: 1}, 25700)
+        .add({targets: hands[4], opacity: 1}, 25700)
+        .add({targets: text[8], opacity: 1}, 27600)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -103,7 +100,7 @@ export default {
   top: 10vh;
 }
 #hand-3 {
-  left: 25%;
+  left: 28%;
   bottom: 10vh;
 }
 #hand-4 {
@@ -114,9 +111,6 @@ export default {
   right: 6%;
   bottom: 10vh;
 }
-#hand-5 p{
-  font-size: 3.2vh !important;
-}
 .hand-container {
   position: absolute;
   width: 20%;
@@ -126,7 +120,7 @@ export default {
 .hand-container p {
   color: #ffffff;
   width: 100%;
-  font-size: 4vh;
+  font-size: 3.7vh;
   font-weight: bold;
   position: absolute;
   left: 1vh;

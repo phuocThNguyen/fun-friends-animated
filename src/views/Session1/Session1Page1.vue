@@ -132,8 +132,7 @@
         <circle style="fill: rgb(236, 216, 0);" cx="339.879" cy="150.606" r="35.067"/>
         <circle style="fill: rgba(0, 0, 0, 0.76);" cx="339.879" cy="152.742" r="20.887"/>
       </g>
-
-</svg>
+    </svg>
     <svg class="twitter-bird bird-2" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
          viewBox="-450 250 520 500" xml:space="preserve">
       <g transform="scale(-1,1) rotate(30, -250, 250)">
@@ -199,8 +198,7 @@
     <div class="question">
       <p>Talk about your family and home.</p>
       <p>Talk about your friends.</p>
-      <p>When you feel scared, what can you do to be brave?</p>
-      <p><strong>FUN FRIENDS can help you learn.</strong></p>
+      <p class="mb-4"><strong>FUN FRIENDS can helps you learn to be brave.</strong></p>
     </div>
     <audio autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/387978__dcpoke__birds-singing-03.mp3"/>
     <audio
@@ -263,8 +261,7 @@ export default {
       animation
         .add({targets: text[0], opacity: 1}, 6600)
         .add({targets: text[1], opacity: 1}, 10000)
-        .add({targets: text[2], opacity: 1}, 12800)
-        .add({targets: text[3], opacity: 1}, 17200)
+        .add({targets: text[2], opacity: 1}, 12500)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.audio.play()}, 500)

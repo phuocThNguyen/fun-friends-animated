@@ -1,15 +1,11 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <p><strong>Annie loves the beach</strong></p>
-      <br>
-      <p>Annie is just back from holiday at the beach.</p>
-      <br>
+      <p style="opacity: 1;"><strong>Annie loves the beach</strong></p>
+      <p>Annie is just back from a holiday at the beach.</p>
       <p>What fun activities did she do?</p>
-      <br>
       <p>What can you say to Annie?</p>
-      <br>
-      <p class="instruction-p">Tick your choices:</p>
+      <p>Tick your choices:</p>
       <div class="question-container">
         <div class="checkbox-containers" id="long-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
@@ -27,8 +23,8 @@
       id="alt-pos"
     />
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/beach-sound.mp3" ref="audio" autoplay loop/>
-    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page4.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">183</div>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page183.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">197</div>
   </div>
 </template>
 
@@ -57,9 +53,11 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({easing: 'linear', duration: 500});
       animation
-        .add({targets: text[1], opacity: 1}, 2700)
-        .add({targets: text[2], opacity: 1}, 6500)
-        .add({targets: text[3], opacity: 1}, 9800)
+        .add({targets: text[1], opacity: 1}, 3300)
+        .add({targets: text[2], opacity: 1}, 6800)
+        .add({targets: text[3], opacity: 1}, 9600)
+        .add({targets: text[4], opacity: 1}, 11900)
+        .add({targets: '.question-container', opacity: 1}, 13900)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -79,7 +77,7 @@ export default {
     this.init();
   },
   mounted() {
-    this.setAudioVolumeLevel(0.4);
+    this.setAudioVolumeLevel(1);
   },
   watch: {
     answers: function() {
@@ -110,7 +108,7 @@ export default {
 }
 .text-box p {
   font-size: 3vh;
-  opacity: 1;
+  opacity: 0;
   margin-bottom: 0;
 }
 #alt-pos {
@@ -121,6 +119,7 @@ export default {
    width: 100%;
    padding-left: 2vh;
    margin-top: 3vh;
+  opacity: 0;
  }
 #long-checkbox label {width: 100%;}
 #short-checkbox label {width: 33%;}

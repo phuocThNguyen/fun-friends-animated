@@ -8,7 +8,7 @@
     <div class="text-box">
       <p>How can you and your friends look after natural places like the bush, rivers,
         parks, beaches and rainforests?</p>
-      <p class="instruction-p">Tick your choices:</p>
+      <p>Tick your choices:</p>
       <div class="question-container">
         <div class="checkbox-containers" id="long-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
@@ -18,8 +18,8 @@
         </div>
       </div>
     </div>
-    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session11/Session11_Page3.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">236</div>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session11/Session11_Page236.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">255</div>
   </div>
 </template>
 
@@ -32,8 +32,9 @@ export default {
   data() {
     return {
       data: ['Be kind to people', 'Be kind to animals',
-        'Water plants', 'Pick up rubbish and put it in the bin',
-        'Plant trees',
+        'Be quite and calm', 'Stay on the trail',
+        'Pay attention with your 5 senses',
+        'Pick up rubbish and put it in the bin',
       ],
       answers: [],
     }
@@ -46,7 +47,8 @@ export default {
       animation
         .add({targets: '.text-box',opacity: 1}, 500)
         .add({targets: text[0],opacity: 1}, 500)
-        .add({targets: text[1],opacity: 1}, 500)
+        .add({targets: text[1],opacity: 1}, 13000)
+        .add({targets: '.question-container',opacity: 1}, 15700)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -76,7 +78,7 @@ export default {
   position: absolute;
   background-color: rgba(255,255,255,0.9);
   padding: 2vh;
-  top: 20vh;
+  top: 12vh;
   width: 96%;
   left: 2%;
   opacity: 0;
@@ -90,6 +92,7 @@ export default {
   width: 100%;
   padding-left: 2vh;
   margin-top: 1vh;
+  opacity: 0;
 }
 #long-checkbox label {width: 100%;}
 #short-checkbox label {width: 33%;}

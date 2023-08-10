@@ -7,7 +7,7 @@
     />
     <div class="text-box">
       <p>What can you do to be a superhero?</p>
-      <p class="instruction-p">Tick your choices:</p>
+      <p>Tick your choices:</p>
       <div class="question-container">
         <div class="checkbox-containers" id="long-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
@@ -195,8 +195,8 @@
         </g>
       </g>
     </svg>
-    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page9_1.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">222</div>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page222.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">240</div>
   </div>
 </template>
 
@@ -264,24 +264,12 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500});
       animation
-        .add({
-          targets: '.kids',
-          opacity: 1,
-          duration: 1,
-          delay: 1000
-        })
-        .add({
-          targets: '.kids',
-          scale: 100,
-          duration: 1000,
-        }, 1000)
-        .add({
-          targets: '.text-box',
-          opacity: 1,
-          easing: 'linear',
-        }, 500)
+        .add({targets: '.kids', opacity: 1, duration: 1, delay: 1000})
+        .add({targets: '.kids', scale: 100, duration: 1000,}, 1000)
+        .add({targets: '.text-box', opacity: 1, easing: 'linear',}, 500)
         .add({targets: text[0],opacity: 1, easing: 'linear'}, 500)
-        .add({targets: text[1],opacity: 1, easing: 'linear'}, 700)
+        .add({targets: text[1],opacity: 1, easing: 'linear'}, 3300)
+        .add({targets: '.question-container',opacity: 1, easing: 'linear'}, 6300)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -313,6 +301,7 @@ export default {
   width: 100%;
   padding-left: 2vh;
   margin-top: 1vh;
+  opacity: 0;
 }
 #long-checkbox label {width: 100%;}
 #short-checkbox label {width: 33%;}
@@ -391,7 +380,7 @@ export default {
 }
 .text-box p {
   margin-bottom: 0;
-  opacity: 1;
+  opacity: 0;
   font-size: 4vh;
 }
 .superhero {

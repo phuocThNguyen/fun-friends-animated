@@ -48,7 +48,7 @@
     <audio src="../../assets/sounds/all/kids-cheering.mp3" id="cheer3"/>
     <audio
       @loadeddata="playSoundText"
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/34Animated_Book_Page33.mp3" ref="voice"/>
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Session1_Page38.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -81,6 +81,7 @@ export default {
       this.currentVoice = voice;
     },
     toggleChoice(id) {
+      this.$refs.voice.pause();
       let choiceContainer = document.querySelector('#choice-'+id);
       if (!this.choices[id-1]) {
         choiceContainer.classList.add('green-container');
@@ -104,7 +105,7 @@ export default {
         targets: ".text-box",
         opacity: 0.98,
         duration: 500,
-        delay: 500,
+        delay: 5300,
         easing: 'linear',
       })
     },

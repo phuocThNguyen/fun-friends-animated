@@ -45,8 +45,7 @@
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
       <div class="text">1) Politely ask the teacher to please explain
-        again if you didn’t understand “Excuse me
-        could you please help me”.</div>
+        again if you didn’t understand.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -315,8 +314,8 @@
     <div class="plans" id="step-2">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">2) Ask your family to
-        please explain it to you.</div>
+      <div class="text">2) Ask your friend to
+        <br>explain it to you.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -467,8 +466,8 @@
     <div class="plans" id="step-3">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">3) Ask a sibling or friend to
-        explain it to you again.</div>
+      <div class="text">3) Ask your parents <br>to
+        please explain it <br>to you again.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -999,11 +998,11 @@
     </div>
 
     <div class="wing-container" id="left-container">
-      <p>A family member</p>
-      <p>My friends</p>
       <p>My teacher</p>
-      <p>My siblings</p>
+      <p>A friend</p>
       <p>My parents</p>
+      <p>My siblings</p>
+      <p>A family member</p>
       <h1>My Helper</h1>
     </div>
     <div class="wing-container" id="right-container">
@@ -1129,7 +1128,7 @@
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page7-region-4.mp3" ref="step4"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page7-region-5.mp3" ref="step5"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page7.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark" style="left: 25vh !important;">166</div>
+    <div class="page-number" id="page-dark" style="left: 25vh !important;">180</div>
   </div>
 </template>
 
@@ -1143,11 +1142,11 @@ export default {
       step: 0,
       stepVoiceArray: null,
       timingArray: [
-        [1000, 12500, 15000, 20500],
-        [1000, 5500, 11500, 16500],
-        [1000, 6500, 10500, 14000],
+        [1000, 8700, 11300, 14200],
+        [1000, 5100, 8200, 13200],
+        [1000, 5500, 8300, 11200],
         [1000, 4000, 7000, 12000],
-        [1000, 5000, 7500, 13000]]
+        [1000, 5500, 8100, 11300]]
     }
   },
   methods: {
@@ -1488,6 +1487,7 @@ export default {
   align-items: center;
   color: #ffffff;
   font-size: 2.36vh;
+  line-height: 3vh;
 }
 #step-1 {
   top: 71vh;
@@ -1513,9 +1513,6 @@ export default {
   top: 23vh;
   left: 26%;
   z-index: 1;
-}
-#step-1 .text {
-  font-size: 1.6vh;
 }
 .tree {
   position: absolute;

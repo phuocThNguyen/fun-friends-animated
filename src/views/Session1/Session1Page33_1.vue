@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <div class="title">
       <h1>What does a tree need to grow?</h1>
-      <p>Tick your choices:</p>
+      <p>Tap your choices:</p>
     </div>
     <svg class="tree" id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.34 97">
       <defs>
@@ -324,8 +324,8 @@
       </div>
       <div class="text">Love</div>
     </button>
-
-    <audio src="" ref="voice"/>
+    <div class="page-number" id="page-light">49</div>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Session1_Page48.mp3" ref="voice"/>
     <audio ref="sound" src="../../assets/sounds/session7/click-sound.mp3"/>
     <audio src="../../assets/sounds/all/Well_Done.mp3" ref="wellDone"/>
     <audio ref="celebrate" src="../../assets/sounds/all/crowd-cheer-applause.mp3"/>
@@ -348,7 +348,7 @@ export default {
   },
   methods: {
     playVoiceOver() {
-      setTimeout(() => {this.$ref.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 500)
     },
     growTree() {
       this.$refs.sound.play();
@@ -368,7 +368,7 @@ export default {
     }
   },
   created() {},
-  mounted() {},
+  mounted() {this.playVoiceOver();},
 }
 </script>
 

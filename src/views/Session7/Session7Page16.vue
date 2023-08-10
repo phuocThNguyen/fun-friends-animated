@@ -314,8 +314,7 @@
     <div class="plans" id="step-2">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">2) Put your feet in the water
-        to kick in the water to have fun.</div>
+      <div class="text">2) Put your feet <br>in the water to kick <br>in the water to have fun.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -618,8 +617,8 @@
     <div class="plans" id="step-4">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">4) Hold a kick board and splash
-        around with your feet.</div>
+      <div class="text">4) Hold a kick board <br>and splash
+        around <br>with your feet.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -770,7 +769,7 @@
     <div class="plans" id="step-5">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">5) Join swimming classes
+      <div class="text">5) Join swimming <br>classes
         with your friend.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
@@ -1130,7 +1129,7 @@
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page14-region-4.mp3" ref="step4"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page14-region-5.mp3" ref="step5"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page14.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark" style="left: 25vh !important;">175</div>
+    <div class="page-number" id="page-dark" style="left: 25vh !important;">188</div>
   </div>
 </template>
 
@@ -1480,6 +1479,7 @@ export default {
   align-items: center;
   color: #ffffff;
   font-size: 2.36vh;
+  line-height: 3vh;
 }
 #step-1 {
   top: 71vh;

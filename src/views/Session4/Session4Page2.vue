@@ -479,7 +479,7 @@
     <audio src="../../assets/sounds/session4/Session4_Page2_butterfly.mp3" ref="voice4"/>
     <audio src="../../assets/sounds/session4/Session4_Page2_redFace.mp3" ref="voice5"/>
     <audio src="../../assets/sounds/session4/Session4_Page2_MyBody.mp3" ref="voice6"/>
-    <div class="page-number" id="page-dark">106</div>
+    <div class="page-number" id="page-dark">113</div>
   </div>
 </template>
 

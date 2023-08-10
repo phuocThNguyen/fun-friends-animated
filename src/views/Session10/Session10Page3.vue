@@ -8,7 +8,7 @@
     <div class="text-box">Tom learns from <br>someone he looks up to.</div>
     <div class="text-box-green">My dad helps me learn to cook.</div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page3.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">215</div>
+    <div class="page-number" id="page-light">233</div>
   </div>
 </template>
 

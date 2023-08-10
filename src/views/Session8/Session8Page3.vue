@@ -8,15 +8,11 @@
     />
     <div class="mask"/>
     <div class="text-box">
-      <p><strong>Tom has fallen off his bike</strong></p>
-      <br>
+      <p style="opacity: 1"><strong>Tom has fallen off his bike</strong></p>
       <p>He has only just learnt to ride without training wheels.</p>
-      <br>
       <p>How do you think he is feeling?</p>
-      <br>
       <p>What can you do to be a kind friend to Tom?</p>
-      <br>
-      <p class="instruction-p">Tick your choices:</p>
+      <p>Tick your choices:</p>
       <div class="question-container">
         <div class="checkbox-containers" id="long-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
@@ -26,8 +22,8 @@
         </div>
       </div>
     </div>
-    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page3.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">182</div>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page182.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">196</div>
   </div>
 </template>
 
@@ -50,16 +46,14 @@ export default {
   methods: {
     animateText() {
       let text = document.querySelector('.text-box').children;
-      let animation = anime.timeline({
-        duration: 500,
-        easing: 'linear'
-      })
+      let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
         .add({targets: '.text-box', opacity: 1}, 500)
-        .add({targets: text[0], opacity: 1}, 750)
-        .add({targets: text[1], opacity: 1}, 3300)
+        .add({targets: text[1], opacity: 1}, 3500)
         .add({targets: text[2], opacity: 1}, 7500)
-        .add({targets: text[4], opacity: 1}, 9800)
+        .add({targets: text[3], opacity: 1}, 10000)
+        .add({targets: text[4], opacity: 1}, 13500)
+        .add({targets: '.question-container', opacity: 1}, 15700)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -90,7 +84,7 @@ export default {
   top: 0;
   left: 0;
   height: 100%;
-  width: 70vh;
+  width: 61vh;
   background: #fff;
   z-index: 5;
 }
@@ -98,16 +92,15 @@ export default {
   position: absolute;
   top: 0;
   left: 1vh;
-  width: 66vh;
-  background-color: rgba(255,255,255,0.9);
+  width: 60vh;
   padding: 1vh;
   opacity: 0;
   z-index: 10;
 }
 .text-box p {
   font-size: 3vh;
-  margin-bottom: 0;
-  opacity: 1;
+  margin-bottom: 1vh;
+  opacity: 0;
 }
 #alt-pos {
   left: 55vh;
@@ -117,6 +110,7 @@ export default {
   width: 100%;
   padding-left: 2vh;
   margin-top: 3vh;
+  opacity: 0;
 }
 #long-checkbox label {width: 100%;}
 #short-checkbox label {width: 33%;}

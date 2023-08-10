@@ -1130,7 +1130,7 @@
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page5-region-4.mp3" ref="step4"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page5-region-5.mp3" ref="step5"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page5.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark" style="left: 25vh !important;">162</div>
+    <div class="page-number" id="page-dark" style="left: 25vh !important;">176</div>
   </div>
 </template>
 
@@ -1144,7 +1144,7 @@ export default {
       step: 0,
       stepVoiceArray: null,
       timingArray: [
-        [838, 7445, 10606, 20000],
+        [838, 7445, 10606, 15000],
         [958, 7617, 10732, 17500],
         [1016, 6334, 8995, 15700],
         [964, 7394, 10015, 16600],
@@ -1490,6 +1490,7 @@ export default {
   align-items: center;
   color: #ffffff;
   font-size: 2.36vh;
+  line-height: 3vh;
 }
 #step-1 {
   top: 71vh;

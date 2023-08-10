@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <ImageComponent
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session8/67.png"
-      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session8/67.png"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session8/67.jpg"
       class="session-background"
     />
     <div class="text-box">
@@ -16,11 +16,12 @@
        Play "I spy with my little eye" by paying attention
        with your five senses. </span><span>Do you think Zoe, Matilda and
        Daniel are kind friends? Do you think that these are
-       'red' or 'green' actions?</span></p>
+       '<span class="red">red</span>' or '<span class="green">green</span>' actions?
+      </span></p>
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page11.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">191</div>
+    <div class="page-number" id="page-light">205</div>
   </div>
 </template>
 
@@ -36,11 +37,11 @@ export default {
       let text = document.querySelector('.text').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-        .add({targets: '.text-box', opacity: 0.9}, 1000)
-        .add({targets: text[0], color: '#000'}, 5100)
-        .add({targets: text[1], color: '#000'}, 16700)
-        .add({targets: text[2], color: '#000'}, 27500)
-        .add({targets: text[3], color: '#000'}, 38400)
+        .add({targets: '.text-box', opacity: 0.9}, 1)
+        .add({targets: text[0], color: '#000'}, 1)
+        .add({targets: text[1], color: '#000'}, 1)
+        .add({targets: text[2], color: '#000'}, 1)
+        .add({targets: text[3], color: '#000'}, 1)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
@@ -73,7 +74,7 @@ export default {
   text-align: center;
   font-size: 5vh;
   font-weight: bold;
-  margin-bottom: 1vh;
+  margin-bottom: 2vh;
 }
 .text-box p {
   font-size: 4vh;
@@ -81,5 +82,5 @@ export default {
   color: #ffffff;
 }
 .green {color: #00CE7C}
-.red {color: #ff0000}
+.red {color: red}
 </style>

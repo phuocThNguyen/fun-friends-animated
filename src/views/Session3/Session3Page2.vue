@@ -27,8 +27,8 @@
     </div>
     <audio
       @loadeddata="playSoundText"
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/Session3_Page2.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">87</div>
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/Session3_Page87.mp3" ref="voice"/>
+    <div class="page-number" id="page-dark">89</div>
   </div>
 </template>
 
@@ -42,27 +42,12 @@ export default {
   methods: {
     animateText() {
       let text = document.querySelector('.text-box').children
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      })
+      let animation = anime.timeline({easing: 'linear', duration: 500})
       animation
-        .add({
-          targets: ".text-box",
-          opacity: 1,
-        }, 717)
-        .add({
-          targets: text[1],
-          opacity: 1,
-        }, 3033)
-        .add({
-          targets: text[2],
-          opacity: 1,
-        }, 5798)
-        .add({
-          targets: '.bubble-container',
-          opacity: 0.9
-        }, 8293)
+        .add({targets: ".text-box", opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 4300)
+        .add({targets: text[2], opacity: 1}, 7500)
+        .add({targets: '.bubble-container', opacity: 1}, 10000)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)

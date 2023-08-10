@@ -39,6 +39,7 @@ import Session5Page12 from "@/views/Session5/Session5Page12";
 import Session5Page13 from "@/views/Session5/Session5Page13";
 import Session5Page14 from "@/views/Session5/Session5Page14";
 import Session5Page15 from "@/views/Session5/Session5Page15";
+import Session5Page15_1 from "@/views/Session5/Session5Page15_1";
 import Session5Page16 from "@/views/Session5/Session5Page16";
 import Session5Page17 from "@/views/Session5/Session5Page17";
 
@@ -51,7 +52,7 @@ export default {
     Session5Page1, Session5Page1_1, Session5Page2, Session5Page3, Session5Page4,
     Session5Page5, Session5Page6, Session5Page7, Session5Page8, Session5Page9,
     Session5Page10, Session5Page11, Session5Page12, Session5Page13, Session5Page14,
-    Session5Page15, Session5Page16, Session5Page17
+    Session5Page15, Session5Page15_1, Session5Page16, Session5Page17
   },
   data() {
     return {
@@ -59,10 +60,10 @@ export default {
         1: "Session5Page1", 2: "Session5Page1_1", 3: "Session5Page2", 4: "Session5Page3", 5: "Session5Page4",
         6: "Session5Page5", 7: "Session5Page6", 8: "Session5Page7", 9: "Session5Page8", 10: "Session5Page9",
         11: "Session5Page10", 12: "Session5Page11", 13: "Session5Page12", 14: "Session5Page13", 15: "Session5Page14",
-        16: "Session5Page15", 17: "Session5Page16", 18: "Session5Page17"
+        16: "Session5Page15", 17: "Session5Page15_1", 18: "Session5Page16", 19: "Session5Page17",
       },
       page: 1,
-      lastPage: 18,
+      lastPage: 19,
     }
   },
   created() {

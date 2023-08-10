@@ -11,7 +11,7 @@
       <p>Talk to your friends about how to help each other.</p>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session11/Session11_Page3.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">234</div>
+    <div class="page-number" id="page-light">253</div>
   </div>
 </template>
 
@@ -48,7 +48,7 @@ export default {
   position: absolute;
   background-color: rgba(255,255,255,0.9);
   padding: 2vh;
-  top: 20vh;
+  top: 40vh;
   width: 96%;
   left: 2%;
   opacity: 0;

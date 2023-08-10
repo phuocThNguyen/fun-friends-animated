@@ -288,23 +288,17 @@
     </svg>
     <div class="text-box">
       <h1>Try Everyday</h1>
-      <p>&nbsp;&bull; Practise the steps on your <strong>STEP PLAN</strong>.
+      <p>- Practise the steps on your <strong>STEP PLAN</strong>.
         If you've done all the steps,
         make a new <strong>STEP PLAN</strong>.</p>
-      <p>&nbsp;&bull; Notice when others are listening, helping and
+      <p>- Notice when others are listening, helping and
       smiling and let them know you like it.</p>
-      <p>&nbsp;&bull; Practise turning '<span class="red">red</span>' thoughts into
+      <p>- Practise turning '<span class="red">red</span>' thoughts into
         '<span class="green">green</span>' thoughts.</p>
-      <p>&nbsp;&bull; Reward yourself for being BRAVE.</p>
-      <p>&nbsp;&bull; Practise being BRAVE:</p>
-      <p>&middot; Look people in the eye and smile.</p>
-      <p>&middot; Use a brave voice and make yourself big.</p>
-      <p>&middot; Try your best and give it a go. </p>
-      <p>&middot; Believe in yourself.</p>
     </div>
     <audio autoplay loop ref="audio" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page15.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">228</div>
+    <div class="page-number" id="page-light">246</div>
   </div>
 </template>
 
@@ -338,21 +332,12 @@ export default {
     },
     animateText() {
       let text = document.querySelector('.text-box').children;
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      })
+      let animation = anime.timeline({easing: 'linear', duration: 500,})
       animation
         .add({targets: ".text-box", opacity: 1}, 200)
         .add({targets: text[1], opacity: 1}, 2700)
         .add({targets: text[2], opacity: 1}, 10100)
         .add({targets: text[3], opacity: 1}, 16600)
-        .add({targets: text[4], opacity: 1}, 20600)
-        .add({targets: text[5], opacity: 1}, 23600)
-        .add({targets: text[6], opacity: 1}, 25700)
-        .add({targets: text[7], opacity: 1}, 28900)
-        .add({targets: text[8], opacity: 1}, 32900)
-        .add({targets: text[9], opacity: 1}, 35700)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
@@ -379,7 +364,7 @@ export default {
   width: 90%;
   height: auto;
   left: 5%;
-  top: 2vh;
+  top: 20vh;
   padding: 2vh;
   opacity: 0;
 }
@@ -396,12 +381,6 @@ export default {
 }
 .text-box p:last-child {
   margin-bottom: 0;
-}
-.text-box p:nth-of-type(6),
-.text-box p:nth-of-type(7),
-.text-box p:nth-of-type(8),
-.text-box p:nth-of-type(9) {
-  padding-left: 7vh;
 }
 .landscape {
   position: absolute;

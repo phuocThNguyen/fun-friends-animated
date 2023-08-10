@@ -41,12 +41,15 @@
       </div>
       <div class="text">Cuddling animal friends</div>
     </div>
+    <audio src="../../assets/sounds/all/crowd-cheer-applause.mp3" id="cheer1"/>
+    <audio src="../../assets/sounds/all/crowd-cheer-applause-2.mp3" id="cheer2"/>
+    <audio src="../../assets/sounds/all/kids-cheering.mp3" id="cheer3"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/Session3_Page101.mp3" ref="voice"/>
   </div>
 </template>
 
 <script>
 import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
-import anime from "animejs";
 export default {
   name: 'Session3Page14_1',
   components: {ImageComponent},
@@ -54,19 +57,33 @@ export default {
     return {
       page: 0,
       choices: [],
+      cheers: ['#cheer1','#cheer2','#cheer3'],
+      currentVoice: null,
     }
   },
   methods: {
     playVoiceOver() {
-      // setTimeout(() => {this.$refs.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 500)
+    },
+    playCheerVoice() {
+      if (this.currentVoice !== null) {
+        this.currentVoice.pause();
+        this.currentVoice.currentTime = 0;
+      }
+      let cheerVoiceId = this.cheers[Math.floor(Math.random() * this.cheers.length)];
+      let voice = document.querySelector(cheerVoiceId);
+      voice.play();
+      this.currentVoice = voice;
     },
     toggleChoice(id) {
-      // this.$refs.clickSound.play();
       let choiceContainer = document.querySelector('#choice-'+id);
-      if (!this.choices[id-1]) choiceContainer.classList.add('green-container')
+      if (!this.choices[id-1]) {
+        choiceContainer.classList.add('green-container');
+        this.playCheerVoice();
+      }
       else choiceContainer.classList.remove('green-container')
       this.choices[id-1] = !this.choices[id-1];
-      this.$store.commit('setPage88Data', this.choices);
+      this.$store.commit('setPage19_1Data', this.choices);
     },
     setChoiceBackground() {
       for (let i = 1; i < this.choices.length+1; i++) {
@@ -77,24 +94,12 @@ export default {
     init() {
       this.choices = this.$store.getters.getPage88Data;
     },
-    animateText() {
-      anime({
-        targets: ".text-box",
-        opacity: 0.98,
-        duration: 500,
-        delay: 500,
-        easing: 'linear',
-      })
-    },
-    playSoundText() {
-      this.playVoiceOver();
-      this.animateText();
-    }
   },
   created() {
     this.init();
   },
   mounted() {
+    this.playVoiceOver();
     this.setChoiceBackground();
   },
 }

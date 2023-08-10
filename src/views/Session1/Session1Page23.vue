@@ -39,8 +39,8 @@
     </div>
     <div class="text-box">
       <p class="text">
-        <span>We may live in different homes,</span>
-        <br><span> but inside we all have family, friends or animal friends.</span>
+        <span>We may live in different homes,</span> but inside
+        <br><span> we all have family, friends or animal friends.</span>
       </p>
     </div>
     <audio src="../../assets/sounds/all/crowd-cheer-applause.mp3" id="cheer1"/>
@@ -48,7 +48,7 @@
     <audio src="../../assets/sounds/all/kids-cheering.mp3" id="cheer3"/>
     <audio
       @loadeddata="playSoundText"
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/30Animated_Book_Page29.mp3" ref="voice"/>
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Session1_Page34.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -102,9 +102,9 @@ export default {
     animateText() {
       anime({
         targets: ".text-box",
-        opacity: 0.98,
+        opacity: 1,
         duration: 500,
-        delay: 500,
+        delay: 4900,
         easing: 'linear',
       })
     },
@@ -163,7 +163,7 @@ export default {
 }
 .text-box {
   position: absolute;
-  left: 13vh;
+  left: 23vh;
   bottom: 1vh;
   z-index: 20;
   background-color: #00CE7C;

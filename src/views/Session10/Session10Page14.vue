@@ -4,14 +4,14 @@
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session10/1408.jpg"
       srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session10/1408.jpg"
       class="session-background"
+      style="transform: scaleX(-1)"
     />
     <div class="text-box">
-      <span>Who showed you how to do something before?</span>
-      <span> Who has helped you feel happy?</span>
-      <span> Give them a big thank you by clicking on the button below.</span>
+      <span>Who has shown you how to do something before?</span>
+      <br><span> Who has helped you feel happy?</span>
     </div>
     <div class="text-box-2">
-      <p class="instruction-p">Instructions: Choose from the options below:</p>
+      <p>Tick your choices:</p>
       <div class="question-container">
         <div class="checkbox-containers" id="long-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
@@ -21,8 +21,8 @@
         </div>
       </div>
     </div>
-    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page14.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">227</div>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page227.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">245</div>
   </div>
 </template>
 
@@ -45,11 +45,10 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
-        .add({targets: '.text-box',opacity: 1}, 200)
-        .add({targets: text[0],color: '#fff'}, 600)
-        .add({targets: text[1],color: '#fff'}, 4400)
-        .add({targets: text[2],color: '#fff'}, 7300)
-        .add({targets: '.text-box-2',opacity: 1}, 10000)
+        .add({targets: '.text-box',opacity: 1}, 500)
+        .add({targets: text[0],color: '#fff'}, 500)
+        .add({targets: text[2],color: '#fff'}, 4700)
+        .add({targets: '.text-box-2',opacity: 1}, 7500)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -79,9 +78,8 @@ export default {
   position: absolute;
   top: 1vh;
   left: 2vh;
-  width: 129vh;
   background-color: #000000;
-  padding: 1vh;
+  padding: 1.5vh;
   font-size: 3.9vh;
   color: #000000;
   font-weight: bold;
@@ -89,7 +87,7 @@ export default {
 }
 .text-box-2 {
   position: absolute;
-  top: 22vh;
+  top: 20vh;
   width: 68vh;
   left: 2vh;
   background-color: rgba(255,255,255,0.9);
@@ -100,7 +98,7 @@ export default {
 .text-box-2 p {
   margin-bottom: 0;
   opacity: 1;
-  font-size: 3vh;
+  font-size: 4vh;
 }
 .question-container {
   width: 100%;

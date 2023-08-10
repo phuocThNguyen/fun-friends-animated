@@ -8,8 +8,8 @@
     <div class="text-box">
       <p>Shaunti the dog is learning to swim in the
        new creek, she is a bit worried.</p>
-      <p>What might be her body clues? Connect the
-       clues to her body.</p>
+      <p>What might be her body clues? Drag the
+        clues to her body.</p>
     </div>
     <div class="clues-sources">
       <draggable class="clues" v-model="ear" group="ear">
@@ -77,7 +77,7 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page19.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">123</div>
+    <div class="page-number" id="page-dark">130</div>
   </div>
 </template>
 
@@ -92,7 +92,7 @@ export default {
   components: {GreenTick, draggable, ImageComponent},
   data() {
     return {
-      ear: ['Ears are standing up and alert'],
+      ear: ['Ears are standing\nup and alert'],
       earAns: [],
       tail: ['Tail between the legs'],
       tailAns: [],
@@ -273,6 +273,7 @@ export default {
   text-align: center;
   padding: 1.4vh;
   margin-bottom: 1vh;
+  white-space: pre;
 }
 .text-box {
   position: absolute;

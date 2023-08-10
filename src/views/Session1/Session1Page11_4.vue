@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <div class="title">
       <h1>What makes you scared?</h1>
-      <p>Tick your choices:</p>
+      <p>Tap your choices:</p>
     </div>
     <div class="choice-container" id="choice-1">
       <div class="image" @click="toggleChoice(1)">
@@ -37,17 +37,18 @@
     <div class="choice-container" id="choice-4">
       <div class="image" @click="toggleChoice(4)">
         <ImageComponent
-          src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/group-happy-kids-with-rucksacks-walking-school-yard.jpg"
-          srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/group-happy-kids-with-rucksacks-walking-school-yard.jpg"
+          src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/teachers-day-parent-pupil-primary-school-go-hand-hand-teacher-tshirt-cute-schoolboy-with-backpack-near-school-park.jpg"
+          srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/teachers-day-parent-pupil-primary-school-go-hand-hand-teacher-tshirt-cute-schoolboy-with-backpack-near-school-park.jpg"
           class="image-component"
         />
       </div>
       <div class="text">Going to a new school</div>
     </div>
-    <audio src="" ref="voice"/>
+    <div class="page-number" id="page-light">21</div>
     <audio src="../../assets/sounds/all/crowd-cheer-applause.mp3" id="cheer1"/>
     <audio src="../../assets/sounds/all/crowd-cheer-applause-2.mp3" id="cheer2"/>
     <audio src="../../assets/sounds/all/kids-cheering.mp3" id="cheer3"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Session1_Page21.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -66,7 +67,7 @@ export default {
   },
   methods: {
     playVoiceOver() {
-      setTimeout(() => {this.$ref.voice.play()}, 500)
+      setTimeout(() => {this.$refs.voice.play()}, 500)
     },
     playCheerVoice() {
       if (this.currentVoice !== null) {
@@ -79,6 +80,7 @@ export default {
       this.currentVoice = voice;
     },
     toggleChoice(id) {
+      this.$refs.voice.pause();
       let choiceContainer = document.querySelector('#choice-'+id);
       if (!this.choices[id-1]) {
         choiceContainer.classList.add('green-container');
@@ -103,6 +105,7 @@ export default {
   },
   mounted() {
     this.setChoiceBackground();
+    this.playVoiceOver();
   },
 }
 </script>

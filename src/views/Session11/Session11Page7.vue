@@ -6,7 +6,7 @@
         srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session11/rock_climbing_nature.jpg"
         class="images"
       />
-      <p class="text" id="para-1">Mum helping Matilda rock climbing.</p>
+      <p class="text" id="para-1">Mum helping Matilda rock climbing</p>
     </div>
     <div class="image-container" id="right">
       <ImageComponent
@@ -14,10 +14,10 @@
         srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session11/hugging_dog_child.jpg"
         class="images"
       />
-      <p class="text" id="para-2">Zoe giving Pepper a hug.</p>
+      <p class="text" id="para-2">Zoe giving Pepper a hug</p>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session11/Session11_Page7.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">240</div>
+    <div class="page-number" id="page-light">259</div>
   </div>
 </template>
 

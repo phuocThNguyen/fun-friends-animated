@@ -218,7 +218,7 @@
 
     <div class="instruction instruction-container">
       <p>Instruction:</p>
-      <p>- Tap and drag from the easiest step one to the most difficult step five.</p>
+      <p>- Tap and drag from the easiest step 1 to the most difficult step 5.</p>
     </div>
     <div class="question-mask"/>
 
@@ -293,7 +293,7 @@
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page150-step3.mp3" id="step-audio-3"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page150-step4.mp3" id="step-audio-4"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page150-step5.mp3" id="step-audio-5"/>
-    <div class="page-number" id="page-dark" style="left: 75vh">171</div>
+    <div class="page-number" id="page-dark" style="left: 75vh">184</div>
   </div>
 </template>
 
@@ -316,13 +316,13 @@ export default {
       choice5: [],
       orders: [],
       timeVariable: [],
-      timeout: [4200, 4500, 6000, 5300, 4100],
+      timeout: [4200, 6000, 4500, 5300, 4100],
       ansArray: [
         {id: 1, ans: 'Riding your scooter slowly.'},
-        {id: 2, ans: 'Try keeping your balance.'},
-        {id: 3, ans: 'Ride your scooter while\nan adult holding you.'},
+        {id: 2, ans: 'Ride your scooter while\nan adult is holding you.'},
+        {id: 3, ans: 'Try keeping your balance.'},
         {id: 4, ans: 'Ride your scooter with\na friend to help you.'},
-        {id: 5, ans: 'Ride all by myself.'},
+        {id: 5, ans: 'Ride all by yourself.'},
       ],
     }
   },
@@ -345,12 +345,12 @@ export default {
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500);
-      this.timeVariable[0] = setTimeout(() => document.querySelector('#step-audio-'+this.orders[0]).play(),10000);
-      this.timeVariable[1] = setTimeout(() => document.querySelector('#step-audio-'+this.orders[1]).play(),10000 + this.timeout[this.orders[0] - 1]);
-      this.timeVariable[2] = setTimeout(() => document.querySelector('#step-audio-'+this.orders[2]).play(),10000 + this.timeout[this.orders[0] - 1] + this.timeout[this.orders[1] - 1]);
-      this.timeVariable[3] = setTimeout(() => document.querySelector('#step-audio-'+this.orders[3]).play(),10000 + this.timeout[this.orders[0] - 1] + this.timeout[this.orders[1] - 1] +this.timeout[this.orders[2] - 1]);
-      this.timeVariable[4] = setTimeout(() => document.querySelector('#step-audio-'+this.orders[4]).play(),10000 + this.timeout[this.orders[0] - 1] + this.timeout[this.orders[1] - 1] +this.timeout[this.orders[2] - 1] + this.timeout[this.orders[3] - 1]);
-      this.timeVariable[5] = setTimeout(() => document.querySelector('.question-mask').style.visibility = 'hidden',10000 + this.timeout[this.orders[0] - 1] + this.timeout[this.orders[1] - 1] +this.timeout[this.orders[2] - 1] + this.timeout[this.orders[3] - 1] + this.timeout[this.orders[4] - 1]);
+      this.timeVariable[0] = setTimeout(() => document.querySelector('#step-audio-'+this.orders[0]).play(),10500);
+      this.timeVariable[1] = setTimeout(() => document.querySelector('#step-audio-'+this.orders[1]).play(),10500 + this.timeout[this.orders[0] - 1]);
+      this.timeVariable[2] = setTimeout(() => document.querySelector('#step-audio-'+this.orders[2]).play(),10500 + this.timeout[this.orders[0] - 1] + this.timeout[this.orders[1] - 1]);
+      this.timeVariable[3] = setTimeout(() => document.querySelector('#step-audio-'+this.orders[3]).play(),10500 + this.timeout[this.orders[0] - 1] + this.timeout[this.orders[1] - 1] +this.timeout[this.orders[2] - 1]);
+      this.timeVariable[4] = setTimeout(() => document.querySelector('#step-audio-'+this.orders[4]).play(),10500 + this.timeout[this.orders[0] - 1] + this.timeout[this.orders[1] - 1] +this.timeout[this.orders[2] - 1] + this.timeout[this.orders[3] - 1]);
+      this.timeVariable[5] = setTimeout(() => document.querySelector('.question-mask').style.visibility = 'hidden',10500 + this.timeout[this.orders[0] - 1] + this.timeout[this.orders[1] - 1] +this.timeout[this.orders[2] - 1] + this.timeout[this.orders[3] - 1] + this.timeout[this.orders[4] - 1]);
     },
     handleChoice1(args) {
       if (args.added) {

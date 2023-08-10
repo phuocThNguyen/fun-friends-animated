@@ -213,7 +213,7 @@
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Relaxing-Forest-Sound-Effect.mp3"/>
     <audio
       @loadeddata="playSoundText"
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/22Animated_Book_Page21.mp3" ref="voice"/>
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Session1_Page26.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -294,16 +294,14 @@ export default {
         })
     },
     animateText() {
-      let text = document.querySelector('.text-box').children;
       let mainContentAnimation = anime.timeline({
         easing: 'linear',
         duration: 500,
       });
       mainContentAnimation
-        .add({targets: '.requires', opacity: 1,}, 3000)
-        .add({targets: '.text-box', opacity: 0.90,}, 5000)
-        .add({targets: text[0], opacity: 1}, 5000)
-        .add({targets: '.canvas', opacity: 1,}, 7000)
+        .add({targets: '.requires', opacity: 1}, 3000)
+        .add({targets: '.text-box', opacity: 0.90}, 6000)
+        .add({targets: '.canvas', opacity: 1}, 6500)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
@@ -370,13 +368,8 @@ export default {
   font-size: 3vh;
   text-align: center;
 }
-.text-box p {
-  margin-bottom: 0;
-  opacity: 0;
-}
-.text-box p:first-child {
-  font-weight: bold;
-}
+.text-box p {margin-bottom: 0;}
+.text-box p:first-child {font-weight: bold;}
 tspan { white-space:pre }
 .shp-bush-top { fill: url(#grd-bush-top) }
 .shp-bush-bottom { fill: #488742 }

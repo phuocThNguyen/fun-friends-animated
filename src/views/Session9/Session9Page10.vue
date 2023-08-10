@@ -17,7 +17,7 @@
       <p class="image-text" id="para-2">Swimming in the river</p>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page10.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">207</div>
+    <div class="page-number" id="page-light">224</div>
   </div>
 </template>
 

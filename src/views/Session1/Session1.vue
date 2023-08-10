@@ -53,6 +53,7 @@ import Session1Page21 from "@/views/Session1/Session1Page21";
 import Session1Page22 from "@/views/Session1/Session1Page22";
 import Session1Page23 from "@/views/Session1/Session1Page23";
 import Session1Page24 from "@/views/Session1/Session1Page24";
+import Session1Page24_1 from "@/views/Session1/Session1Page24_1";
 import Session1Page25 from "@/views/Session1/Session1Page25";
 import Session1Page26 from "@/views/Session1/Session1Page26";
 import Session1Page27 from "@/views/Session1/Session1Page27";
@@ -74,6 +75,7 @@ import Session1Page35_2 from "@/views/Session1/Session1Page35_2";
 import Session1Page35_3 from "@/views/Session1/Session1Page35_3";
 import Session1Page36 from "@/views/Session1/Session1Page36";
 import Session1Page37 from "@/views/Session1/Session1Page37";
+import Session1Page37_1 from "@/views/Session1/Session1Page37_1";
 import Session1Page38 from "@/views/Session1/Session1Page38";
 import Session1Page39 from "@/views/Session1/Session1Page39";
 
@@ -93,7 +95,7 @@ export default {
     Session1Page36, Session1Page37, Session1Page38, Session1Page39, Session1Page1_1,
     Session1Page11_1, Session1Page11_2, Session1Page11_3, Session1Page11_4, Session1Page14_1,
     Session1Page33_1, Session1Page35_1, Session1Page33_2, Session1Page28_1, Session1Page28_2,
-    Session1Page28_3, Session1Page35_2, Session1Page35_3,
+    Session1Page28_3, Session1Page35_2, Session1Page35_3, Session1Page37_1, Session1Page24_1,
   },
   data() {
     return {
@@ -104,14 +106,14 @@ export default {
         16: "Session1Page11_4", 17: "Session1Page12", 18: "Session1Page13", 19: "Session1Page14", 20: "Session1Page14_1",
         21: "Session1Page15", 22: "Session1Page16", 23: "Session1Page17", 24: "Session1Page18", 25: "Session1Page19",
         26: "Session1Page20", 27: "Session1Page21", 28: "Session1Page22", 29: "Session1Page23", 30: "Session1Page24",
-        31: "Session1Page25", 32: "Session1Page26", 33: "Session1Page27", 34: "Session1Page28", 35: "Session1Page28_1",
-        36: "Session1Page28_2", 37: "Session1Page28_3", 38: "Session1Page29", 39: "Session1Page30", 40: "Session1Page31",
-        41: "Session1Page32", 42: "Session1Page33", 43: "Session1Page33_1", 44: "Session1Page33_2", 45: "Session1Page34",
-        46: "Session1Page35", 47: "Session1Page35_1", 48: "Session1Page35_2", 49: "Session1Page35_3", 50: "Session1Page36",
-        51: "Session1Page37", 52: "Session1Page38", 53: "Session1Page39",
+        31: "Session1Page24_1", 32: "Session1Page25", 33: "Session1Page26", 34: "Session1Page27", 35: "Session1Page28",
+        36: "Session1Page28_1", 37: "Session1Page28_2", 38: "Session1Page28_3", 39: "Session1Page29", 40: "Session1Page30",
+        41: "Session1Page31", 42: "Session1Page32", 43: "Session1Page33", 44: "Session1Page33_1", 45: "Session1Page33_2",
+        46: "Session1Page34", 47: "Session1Page35", 48: "Session1Page35_1", 49: "Session1Page35_2", 50: "Session1Page35_3",
+        51: "Session1Page36", 52: "Session1Page37", 53: "Session1Page37_1", 54: "Session1Page38", 55: "Session1Page39",
       },
       page: 1,
-      lastPage: 53,
+      lastPage: 55,
     };
   },
   created() {

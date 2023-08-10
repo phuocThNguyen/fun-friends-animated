@@ -163,7 +163,7 @@
     <audio src="../../assets/sounds/all/crowd-cheer-applause.mp3" ref="celebrate"/><audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page14.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">142</div>
+    <div class="page-number" id="page-light">154</div>
   </div>
 </template>
 

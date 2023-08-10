@@ -210,7 +210,7 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page1.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">129</div>
+    <div class="page-number" id="page-light">141</div>
   </div>
 </template>
 

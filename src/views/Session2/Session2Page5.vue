@@ -2,7 +2,7 @@
   <div class="interactive-container">
     <div class="text-box">
       <h1>'Feelings' faces</h1>
-      <p>Sit with a friend and look at the 'Feeling's faces.</p>
+      <p>Sit with a friend and look at the 'Feelings' faces.</p>
       <p>What could they be feeling?</p>
       <p>Take turns and make sure to listen to your friend.
         <br>Remember, we all think differently.</p>
@@ -167,7 +167,7 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session2/Session2_Page5.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">64</div>
+    <div class="page-number" id="page-dark">65</div>
   </div>
 </template>
 

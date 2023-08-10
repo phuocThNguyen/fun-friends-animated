@@ -18,6 +18,7 @@ export default new Vuex.Store({
         page26data: [],
         page29data: [],
         page30data: [],
+        page30_1data: [],
         page31data: null,
         page34data: [],
         page35data: [],
@@ -33,12 +34,29 @@ export default new Vuex.Store({
         page43data: [],
         page44data: [],
         page45data: [],
+        page51data: [],
         page63data: null,
         page70data: null,
         page83data: null,
         page85data: [],
         page88data: [],
+        page92data: [],
+        page93data: [],
+        page94data: [],
+        page95data: [],
+        page96data: [],
         page97data: null,
+        page98data: [],
+        page99data: [],
+        page100data: [],
+        page101data: [],
+        page107data: [],
+        page110data: [],
+        page124data: [],
+        page125data: [],
+        page126data: [],
+        page127data: [],
+        page128data: [],
         page167data: null,
         page168data: [],
         page169data: [],
@@ -56,6 +74,7 @@ export default new Vuex.Store({
         page221array: [false,false,false,false],
         page222array: [false,false,false,false],
         page223array: [false,false,false,false],
+        page233data: [],
     },
     getters: {
         getCurrentSession: state => state.currentSession,
@@ -71,6 +90,7 @@ export default new Vuex.Store({
         getPage26Data: state => state.page26data,
         getPage29Data: state => state.page29data,
         getPage30Data: state => state.page30data,
+        getPage30_1Data: state => state.page30_1data,
         getPage31Data: state => state.page31data,
         getPage34Data: state => state.page34data,
         getPage35Data: state => state.page35data,
@@ -86,12 +106,29 @@ export default new Vuex.Store({
         getPage43Data: state => state.page43data,
         getPage44Data: state => state.page44data,
         getPage45Data: state => state.page45data,
+        getPage51Data: state => state.page51data,
         getPage63Data: state => state.page63data,
         getPage70Data: state => state.page70data,
         getPage83Data: state => state.page83data,
         getPage85Data: state => state.page85data,
         getPage88Data: state => state.page88data,
+        getPage92Data: state => state.page92data,
+        getPage93Data: state => state.page93data,
+        getPage94Data: state => state.page94data,
+        getPage95Data: state => state.page95data,
+        getPage96Data: state => state.page96data,
         getPage97Data: state => state.page97data,
+        getPage98Data: state => state.page98data,
+        getPage99Data: state => state.page99data,
+        getPage100Data: state => state.page100data,
+        getPage101Data: state => state.page101data,
+        getPage107Data: state => state.page107data,
+        getPage110Data: state => state.page110data,
+        getPage124Data: state => state.page124data,
+        getPage125Data: state => state.page125data,
+        getPage126Data: state => state.page126data,
+        getPage127Data: state => state.page127data,
+        getPage128Data: state => state.page128data,
         getPage167Data: state => state.page167data,
         getPage168Data: state => state.page168data,
         getPage169Data: state => state.page169data,
@@ -109,6 +146,7 @@ export default new Vuex.Store({
         getPage222Array: state => state.page222array,
         getPage223Array: state => state.page223array,
         getPage224Data: state => state.page224data,
+        getPage233Data: state => state.page233data,
     },
     mutations: {
         setCurrentSession(state, payload) {
@@ -149,6 +187,9 @@ export default new Vuex.Store({
         },
         setPage30Data(state, payload) {
             state.page30data = payload;
+        },
+        setPage30_1Data(state, payload) {
+            state.page30_1data = payload;
         },
         setPage31Data(state, payload) {
             state.page31data = payload;
@@ -195,6 +236,9 @@ export default new Vuex.Store({
         setPage45Data(state, payload) {
             state.page45data = payload;
         },
+        setPage51Data(state, payload) {
+            state.page51data = payload;
+        },
         setPage63Data(state, payload) {
             state.page63data = payload;
         },
@@ -210,8 +254,56 @@ export default new Vuex.Store({
         setPage88Data(state, payload) {
             state.page88data = payload;
         },
+        setPage92Data(state, payload) {
+            state.page92data = payload;
+        },
+        setPage93Data(state, payload) {
+            state.page93data = payload;
+        },
+        setPage94Data(state, payload) {
+            state.page94data = payload;
+        },
+        setPage95Data(state, payload) {
+            state.page95data = payload;
+        },
+        setPage96Data(state, payload) {
+            state.page96data = payload;
+        },
         setPage97Data(state, payload) {
             state.page97data = payload;
+        },
+        setPage98Data(state, payload) {
+            state.page98data = payload;
+        },
+        setPage99Data(state, payload) {
+            state.page99data = payload;
+        },
+        setPage100Data(state, payload) {
+            state.page100data = payload;
+        },
+        setPage101Data(state, payload) {
+            state.page101data = payload;
+        },
+        setPage107Data(state, payload) {
+            state.page107data = payload;
+        },
+        setPage110Data(state, payload) {
+            state.page110data = payload;
+        },
+        setPage124Data(state, payload) {
+            state.page124data = payload;
+        },
+        setPage125Data(state, payload) {
+            state.page125data = payload;
+        },
+        setPage126Data(state, payload) {
+            state.page126data = payload;
+        },
+        setPage127Data(state, payload) {
+            state.page127data = payload;
+        },
+        setPage128Data(state, payload) {
+            state.page128data = payload;
         },
         setPage167Data(state, payload) {
             state.page167data = payload;
@@ -263,6 +355,9 @@ export default new Vuex.Store({
         },
         setPage224Data(state, payload) {
             state.page224data = payload
+        },
+        setPage233Data(state, payload) {
+            state.page233data = payload;
         },
     },
     actions: {},

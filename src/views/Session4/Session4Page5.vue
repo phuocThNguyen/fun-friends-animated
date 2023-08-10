@@ -12,11 +12,12 @@
     />
     <div class="text-box">
       <h1>What are these children doing to relax and calm down?</h1>
+      <p>Discuss with your friends</p>
     </div>
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page5.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">109</div>
+    <div class="page-number" id="page-light">116</div>
   </div>
 </template>
 
@@ -63,11 +64,14 @@ export default {
   padding: 1.5vh;
 }
 .text-box h1 {
-  font-size: 4.9vh;
+  font-size: 4vh;
   font-weight: bold;
-  margin-bottom: 1vh;
+  margin-bottom: 0;
 }
+.text-box p {
+  font-size: 3vh;
 
+}
 .images {
   position: absolute;
   width: 49.5%;

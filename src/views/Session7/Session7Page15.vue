@@ -44,7 +44,7 @@
     <div class="plans" id="step-1">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">1) Go to bed while parents are in your room until you fall asleep.</div>
+      <div class="text">1) Go to bed while your parents are in your room until you fall asleep.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -313,7 +313,7 @@
     <div class="plans" id="step-2">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">2) Parents give you a kiss
+      <div class="text">2) Your parents give you a kiss
         goodnight after your bedtime story
         and leave the room.</div>
       <div class="bubble-container">
@@ -618,8 +618,7 @@
     <div class="plans" id="step-4">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">4) Keep your night light on in your
-        room and stay in the room with
+      <div class="text">4) Keep your night light on and stay in the room with
         your animal friend.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
@@ -1130,7 +1129,7 @@
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page13-region-4.mp3" ref="step4"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page13-region-5.mp3" ref="step5"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page13.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark" style="left: 25vh !important;">174</div>
+    <div class="page-number" id="page-dark" style="left: 25vh !important;">187</div>
   </div>
 </template>
 
@@ -1476,6 +1475,7 @@ export default {
   align-items: center;
   color: #ffffff;
   font-size: 2.36vh;
+  line-height: 3vh;
 }
 #step-1 {
   top: 71vh;
@@ -1502,9 +1502,7 @@ export default {
   left: 26%;
   z-index: 1;
 }
-#step-2 .text,
-#step-4 .text,
-#step-5 .text {
+#step-2 .text {
   font-size: 2vh;
 }
 .tree {

@@ -80,7 +80,8 @@ export default {
   opacity: 0;
 }
 .text-box p {
-  font-size: 3vh;
+  font-size: 3.5vh;
+  line-height: 4vh;
   text-align: center;
   color: #ffffff;
   opacity: 0;

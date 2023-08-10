@@ -7,7 +7,7 @@
     />
     <div class="text-box">
       <p>How can you help animals?</p>
-      <p class="instruction-p">Tick your choices:</p>
+      <p>Tick your choices:</p>
       <div class="question-container">
         <div class="checkbox-containers" id="long-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
@@ -17,8 +17,8 @@
         </div>
       </div>
     </div>
-    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session11/Session11_Page3.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">235</div>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session11/Session11_Page235.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">254</div>
   </div>
 </template>
 
@@ -45,7 +45,8 @@ export default {
       animation
         .add({targets: '.text-box',opacity: 1}, 500)
         .add({targets: text[0],opacity: 1}, 500)
-        .add({targets: text[1],opacity: 1}, 500)
+        .add({targets: text[1],opacity: 1}, 3100)
+        .add({targets: '.question-container',opacity: 1}, 5800)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -89,6 +90,7 @@ export default {
   width: 100%;
   padding-left: 2vh;
   margin-top: 1vh;
+  opacity: 0;
 }
 #long-checkbox label {width: 100%;}
 #short-checkbox label {width: 33%;}

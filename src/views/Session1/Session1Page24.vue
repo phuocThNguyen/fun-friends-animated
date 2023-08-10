@@ -39,8 +39,8 @@
     </div>
     <div class="text-box">
       <p class="text">
-        <span>Houses may be different,</span>
-        <br><span>but inside we all feel happiness and sadness sometimes.</span>
+        <span>Houses may be different,</span> but inside
+        <br><span>we all feel happiness and sadness sometimes.</span>
       </p>
     </div>
     <audio src="../../assets/sounds/all/crowd-cheer-applause.mp3" id="cheer1"/>
@@ -48,7 +48,7 @@
     <audio src="../../assets/sounds/all/kids-cheering.mp3" id="cheer3"/>
     <audio
       @loadeddata="playSoundText"
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/31Animated_Book_Page30.mp3" ref="voice"/>
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Session1_Page34%2B1.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -104,7 +104,7 @@ export default {
         targets: ".text-box",
         opacity: 0.98,
         duration: 500,
-        delay: 500,
+        delay: 4300,
         easing: 'linear',
       })
     },
@@ -163,7 +163,7 @@ export default {
 }
 .text-box {
   position: absolute;
-  left: 12.5vh;
+  left: 23vh;
   bottom: 1vh;
   z-index: 20;
   background-color: #00CE7C;

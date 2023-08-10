@@ -10,7 +10,11 @@
       srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session8/creek_together.jpg"
       class="images" id="right"
     />
-    <div class="question-container">
+    <div class="text-box">
+      Use the buttons below to show us if you <br>think that
+      these are red or green actions.
+    </div>
+    <div class="question-container" id="container-1">
       <div class="text">
         Crossing the creek by themselves
       </div>
@@ -57,7 +61,7 @@
         <green-tick class="tick" id="green-tick-1"/>
       </div>
     </div>
-    <div class="question-container">
+    <div class="question-container" id="container-2">
       <div class="text">
         Staying together in the creek
       </div>
@@ -208,7 +212,7 @@
     <audio src="../../assets/sounds/all/Very_Good.mp3" ref="wellDone"/>
     <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page13.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">193</div>
+    <div class="page-number" id="page-light">209</div>
   </div>
 </template>
 
@@ -322,6 +326,17 @@ export default {
 </script>
 
 <style scoped>
+.text-box {
+  position: absolute;
+  top: 2vh;
+  width: 65.2vh;
+  padding: 1vh;
+  font-size: 3vh;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  background: #00CE7C;
+}
 .tick {
   position: absolute;
   bottom: 1vh;
@@ -352,12 +367,8 @@ export default {
   width: 41%;
   height: 18vh;
 }
-.question-container:nth-of-type(1) {
-  left: 4%;
-}
-.question-container:nth-of-type(2) {
-  left: 55%;
-}
+#container-1 {left: 4%;}
+#container-2 {left: 55%;}
 .text {
   position: absolute;
   right: 0;

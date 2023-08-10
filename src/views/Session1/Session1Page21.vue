@@ -41,6 +41,7 @@
     </div>
     <div class="items-container-mask"/>
     <div class="title">What is this animal?</div>
+    <div class="activity-instruction">Tap on the animal making that sound</div>
     <div class="coordinate-container" @click="playSoundButton">
       <svg class="button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 517 517" width="517" height="517">
         <defs>
@@ -299,7 +300,7 @@
     </svg>
     <audio
       @loadeddata="playSoundText"
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/28Animated_Book_Page27_Part1.mp3" ref="voice1" @ended="hideMask"/>
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Session1_Page31.mp3" ref="voice1" @ended="hideMask"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/28Animated_Book_Page27_Part2.mp3" ref="voice2"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/Good_Try_Try_again.mp3" ref="goodTry"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/Great_work.mp3" ref="greatWork"/>
@@ -491,12 +492,20 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+.activity-instruction {
+  position: absolute;
+  top: 6vh;
+  width: 100%;
+  font-size: 4vh;
+  text-align: center;
+  font-family: 'Love Ya Like A Sister', cursive;
+}
 .coordinate-container {
   position: absolute;
-  top: 8vh;
-  left: 32%;
-  width: 36%;
-  height: 9vh;
+  top: 11vh;
+  left: 38%;
+  width: 23%;
+  height: 7vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -509,14 +518,14 @@ export default {
   transform: scale(0.8);
 }
 .button-label {
-  font-size: 5vh;
+  font-size: 3vh;
   font-family: 'Love Ya Like A Sister', cursive;
   color: #000000;
 }
 .title {
   position: absolute;
   width: 100%;
-  font-size: 8vh;
+  font-size: 6vh;
   top: -1%;
   left: 0;
   text-align: center;

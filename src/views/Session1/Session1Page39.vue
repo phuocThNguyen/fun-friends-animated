@@ -38,7 +38,7 @@
         </g>
       </svg>
       <div class="star-text small-text">
-        <p>Help</p>
+        <p>Help 👍🏾</p>
       </div>
     </div>
     <div id="bottom" class="star-container small-star">
@@ -55,7 +55,7 @@
         </g>
       </svg>
       <div class="star-text small-text">
-        <p>Smile</p>
+        <p>Smile 👍🏾</p>
       </div>
     </div>
     <div id="right" class="star-container small-star">
@@ -72,13 +72,13 @@
         </g>
       </svg>
       <div class="star-text small-text">
-        <p>Share</p>
+        <p>Share 👍🏾</p>
       </div>
     </div>
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/46Animated_Book_Page45.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">58</div>
+    <div class="page-number" id="page-dark">60</div>
   </div>
 </template>
 

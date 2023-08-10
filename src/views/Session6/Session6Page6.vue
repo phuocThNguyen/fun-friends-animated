@@ -10,9 +10,8 @@
         What could Annie be feeling?</p>
       <p>What are some '<span class="red">red</span>' thoughts?</p>
       <p>What can Annie do if she is having '<span class="red">red</span>'
-        thoughts? As a group, can you think of some
-        '<span class="green">green</span>' thoughts
-        that could help her calm down?</p>
+        thoughts? Can you think of some '<span class="green">green</span>'
+        thoughts that could help her calm down?</p>
 
       <p>Green thoughts help us be kind.</p>
     </div>
@@ -131,7 +130,7 @@
       </g>
     </svg>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session6/Session6_Page6.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">153</div>
+    <div class="page-number" id="page-light">166</div>
   </div>
 </template>
 

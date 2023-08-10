@@ -15,6 +15,11 @@
     </div>
     <div class="image-container">
       <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/cute-little-boy-with-soccer-ball-park-sunny-day.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/cute-little-boy-with-soccer-ball-park-sunny-day.jpg"
+        class="action-image"
+      />
+      <ImageComponent
         src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session5/85693.jpg"
         srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session5/85693.jpg"
         class="action-image"
@@ -39,7 +44,7 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/45Animated_Book_Page44.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">57</div>
+    <div class="page-number" id="page-dark">59</div>
   </div>
 </template>
 
@@ -53,55 +58,19 @@ export default {
     animateText() {
       let images = document.querySelectorAll('.action-image');
       let texts = document.querySelector('.text-box').children;
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      });
+      let animation = anime.timeline({easing: 'linear', duration: 500});
       animation
-        .add({
-          targets: ".text-box",
-          opacity: 0.95,
-        }, 500)
-        .add({
-          targets: texts[1],
-          opacity: 1,
-        }, 2567)
-        .add({
-          targets: images[0],
-          opacity: 1,
-        }, 2567)
-        .add({
-          targets: texts[2],
-          opacity: 1,
-        }, 4711)
-        .add({
-          targets: images[1],
-          opacity: 1,
-        }, 4711)
-        .add({
-          targets: texts[3],
-          opacity: 1,
-        }, 6885)
-        .add({
-          targets: images[2],
-          opacity: 1,
-        }, 6885)
-        .add({
-          targets: texts[4],
-          opacity: 1,
-        }, 12900)
-        .add({
-          targets: images[3],
-          opacity: 1,
-        }, 12900)
-        .add({
-          targets: texts[5],
-          opacity: 1,
-        }, 15300)
-        .add({
-          targets: images[4],
-          opacity: 1,
-        }, 15300)
+        .add({targets: ".text-box", opacity: 0.95}, 500)
+        .add({targets: texts[1], opacity: 1}, 2567)
+        .add({targets: images[0], opacity: 1}, 2567)
+        .add({targets: texts[2], opacity: 1}, 4711)
+        .add({targets: images[1], opacity: 1}, 4711)
+        .add({targets: texts[3], opacity: 1}, 6885)
+        .add({targets: images[2], opacity: 1}, 6885)
+        .add({targets: texts[4], opacity: 1}, 12900)
+        .add({targets: images[3], opacity: 1}, 12900)
+        .add({targets: texts[5], opacity: 1}, 15300)
+        .add({targets: images[4], opacity: 1}, 15300)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;

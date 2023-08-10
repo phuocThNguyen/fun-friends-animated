@@ -37,18 +37,18 @@
         />
       </div>
     </div>
+    <div class="page-number" id="page-light">41</div>
     <audio src="../../assets/sounds/all/crowd-cheer-applause.mp3" id="cheer1"/>
     <audio src="../../assets/sounds/all/crowd-cheer-applause-2.mp3" id="cheer2"/>
     <audio src="../../assets/sounds/all/kids-cheering.mp3" id="cheer3"/>
     <audio
       @loadeddata="playSoundText"
-      src="" ref="voice"/>
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Session1_Page40-42.mp3" ref="voice"/>
   </div>
 </template>
 
 <script>
 import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
-import anime from "animejs";
 export default {
   name: 'Session1Page28_1',
   components: {ImageComponent},
@@ -75,6 +75,7 @@ export default {
       this.currentVoice = voice;
     },
     toggleChoice(id) {
+      this.$refs.voice.pause();
       let choiceContainer = document.querySelector('#choice-'+id);
       if (!this.choices[id-1]) {
         choiceContainer.classList.add('green-container');
@@ -93,18 +94,8 @@ export default {
     init() {
       this.choices = this.$store.getters.getPage35_1Data;
     },
-    animateText() {
-      anime({
-        targets: ".text-box",
-        opacity: 0.98,
-        duration: 500,
-        delay: 500,
-        easing: 'linear',
-      })
-    },
     playSoundText() {
       this.playVoiceOver();
-      this.animateText();
     }
   },
   created() {

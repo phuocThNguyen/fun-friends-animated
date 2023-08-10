@@ -35,7 +35,7 @@
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/sand-castle.mp3"/>
     <audio @loadeddata="playVoiceOver" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session12/Session12_Page10.mp3" ref="voice"/>
     <audio src="../../assets/sounds/session7/click-sound.mp3" ref="clickSound"/>
-    <div class="page-number" id="page-light">253</div>
+    <div class="page-number" id="page-light">271</div>
   </div>
 </template>
 

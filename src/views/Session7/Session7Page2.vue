@@ -983,17 +983,14 @@
     </svg>
     <div class="text-box">
       <p>When we break hard things down into many easier steps,
-        it is called a <strong>STEP PLAN</strong>.
-        <strong>STEP PLANS</strong> help us to be brave
+        it is called a <strong>STEP PLAN</strong>.</p>
+      <p><strong>STEP PLANS</strong> help us to be brave
         when doing something we are scared of.</p>
-      <p>Create a <strong>STEP PLAN</strong>
-        with your friends. What steps would you take? How many
-        steps can you name together? Each step brings you
-        closer to facing your fears!</p>
+      <p>Each step brings you closer to facing your fears!</p>
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Relaxing-Forest-Sound-Effect.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page2.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">161</div>
+    <div class="page-number" id="page-light">175</div>
   </div>
 </template>
 
@@ -1005,23 +1002,12 @@ export default {
   methods: {
     animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      })
+      let animation = anime.timeline({easing: 'linear', duration: 500,})
       animation
-        .add({
-          targets: '.text-box',
-          opacity: 1
-        }, 500)
-        .add({
-          targets: text[0],
-          opacity: 1
-        }, 779)
-        .add({
-          targets: text[1],
-          opacity: 1
-        }, 14898);
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[0], opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 8000)
+        .add({targets: text[2], opacity: 1}, 14900);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -1038,7 +1024,7 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  top: 15vh;
+  top: 25vh;
   left: 10%;
   width: 80%;
   background-color: rgba(255,255,255,0.9);

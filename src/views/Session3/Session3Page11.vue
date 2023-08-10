@@ -38,7 +38,7 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/Session3_Page11.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">96</div>
+    <div class="page-number" id="page-dark">103</div>
   </div>
 </template>
 
@@ -65,11 +65,11 @@ export default {
         .add({targets: text[4], opacity: 1}, 23200)
         .add({targets: text[5], opacity: 1}, 29000)
         .add({targets: text[6], opacity: 1}, 35500)
-        .add({targets: text[7], opacity: 1}, 41283)
-        .add({targets: text[8], opacity: 1}, 44900)
-        .add({targets: text[9], opacity: 1}, 52400)
-        .add({targets: text[10], opacity: 1}, 58000)
-        .add({targets: text[11], opacity: 1}, 62900)
+        .add({targets: text[8], opacity: 1}, 41283)
+        .add({targets: text[9], opacity: 1}, 44900)
+        .add({targets: text[10], opacity: 1}, 52400)
+        .add({targets: text[11], opacity: 1}, 58000)
+        .add({targets: text[12], opacity: 1}, 62900)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;

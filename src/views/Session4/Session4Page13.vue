@@ -15,7 +15,8 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page13.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">117</div>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/beach-sound.mp3"/>
+    <div class="page-number" id="page-light">124</div>
   </div>
 </template>
 

@@ -1,4 +1,4 @@
-23<template>
+<template>
   <div class="interactive-container">
     <ImageComponent
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session11/311.jpg"
@@ -18,8 +18,8 @@
         </div>
       </div>
     </div>
-    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session11/Session11_Page4.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">237</div>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session11/Session11_Page237.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">256</div>
   </div>
 </template>
 
@@ -43,11 +43,11 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-        .add({targets: '.text-box', opacity: 1}, 1)
-        .add({targets: text[0], opacity: 1}, 800)
-        .add({targets: text[1], opacity: 1}, 500)
-        .add({targets: text[2], opacity: 1}, 6500)
-        .add({targets: '.question-container', opacity: 1}, 6500)
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[0], opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 3300)
+        .add({targets: text[2], opacity: 1}, 5500)
+        .add({targets: '.question-container', opacity: 1}, 7600)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)

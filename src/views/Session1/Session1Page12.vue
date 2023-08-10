@@ -8,15 +8,14 @@
     <div class="left-bar">
       <h1>Our families</h1>
       <p id="para-1">Tell us about your family.</p>
-      <p id="para-2">What games do you like to play together?</p>
-      <p id="para-3">How do you have fun together?</p>
+      <p id="para-2">What fun activities do you like to do together?</p>
       <div class="text-box">
         <p>We love going to the park.</p>
       </div>
     </div>
     <audio
       @loadeddata="playSoundText"
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/19Animated_Book_Page18.mp3" ref="voice"/>
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Session1_Page22.mp3" ref="voice"/>
     <div class="page-number" id="page-light">22</div>
   </div>
 </template>
@@ -36,31 +35,10 @@ export default {
         easing: 'linear'
       });
       animation
-        .add({
-          targets: ".left-bar",
-          opacity: 1,
-          delay: 500
-        })
-        .add({
-          targets: text[0],
-          opacity: 1
-        }, 1102)
-        .add({
-          targets: text[1],
-          opacity: 1,
-        }, 2400)
-        .add({
-          targets: text[2],
-          opacity: 1,
-        }, 5500)
-        .add({
-          targets: text[3],
-          opacity: 1,
-        }, 8600)
-        .add({
-          targets: ".text-box",
-          opacity: 1,
-        }, 11000)
+        .add({targets: ".left-bar", opacity: 1,}, 500)
+        .add({targets: text[1], opacity: 1}, 2500)
+        .add({targets: text[2], opacity: 1,}, 5000)
+        .add({targets: ".text-box", opacity: 1,}, 9000)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 1000)
@@ -89,7 +67,7 @@ export default {
 .left-bar h1 {
   font-size: 7vh;
   margin-bottom: 3vh;
-  opacity: 0;
+  opacity: 1;
 }
 .left-bar p {
   opacity: 0;

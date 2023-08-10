@@ -314,9 +314,7 @@
     <div class="plans" id="step-2">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">2) Ask your new friend, with a brave voice, with
-        a smile on your face, if they would like to play
-        with you e.g. hide & seek or board games.</div>
+      <div class="text">2) Ask if they would like to play with you.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -467,9 +465,8 @@
     <div class="plans" id="step-3">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">3) Write an invitation card at home for
-        a play date at the park over the
-        weekend. Give it to him/her at school.</div>
+      <div class="text">3) Write an invitation card for
+        a play date and give it to him/her at school.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -772,8 +769,7 @@
     <div class="plans" id="step-5">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">5) Invite your new friend for a sleepover and
-        play lots of games before going to sleep.</div>
+      <div class="text">5) Invite your new friend for a sleepover.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -1132,7 +1128,7 @@
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page6-region-4.mp3" ref="step4"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page6-region-5.mp3" ref="step5"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page6.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark" style="left: 25vh !important;">165</div>
+    <div class="page-number" id="page-dark" style="left: 25vh !important;">179</div>
   </div>
 </template>
 
@@ -1147,10 +1143,10 @@ export default {
       stepVoiceArray: null,
       timingArray: [
         [1000, 11500, 15000, 24300],
-        [1000, 15500, 19000, 31000],
-        [1000, 13000, 16000, 23000],
+        [1000, 6700, 13600, 17600],
+        [1000, 9500, 12200, 16700],
         [1000, 7000, 10000, 16500],
-        [1000, 10000, 13000, 18500]]
+        [1000, 6700, 9400, 13300]]
     }
   },
   methods: {
@@ -1482,6 +1478,7 @@ export default {
   align-items: center;
   color: #ffffff;
   font-size: 2.36vh;
+  line-height: 3vh;
 }
 #step-1 {
   top: 71vh;
@@ -1507,13 +1504,6 @@ export default {
   top: 23vh;
   left: 26%;
   z-index: 1;
-}
-#step-2 .text,
-#step-3 .text {
-  font-size: 1.6vh;
-}
-#step-5 .text {
-  font-size: 2vh;
 }
 .tree {
   position: absolute;

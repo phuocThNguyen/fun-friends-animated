@@ -768,45 +768,82 @@
     <!--  Main content  -->
     <div class="main-content">
       <div class="text-box">
-        <p>Playing on the sand and in the ocean is so much fun!</p>
+        <p>Playing in the sand and in the ocean is so much fun!</p>
       </div>
       <div class="para-box">
-        <h1>To be healthy and happy every day, you can:</h1>
-
-        <h2>Play outside</h2>
-        <p>Play outside, run, ride your scooter, ride your bike, climb trees, swim, play ball,
-          play jump rope, play hide and seek or any other fun and active games that you
-         and your family can invent. These things will keep your body feeling healthy and strong.</p>
-
-        <h2>Have plenty of sleep</h2>
-        <p>Sleep is healthy for your body and mind. When you go to sleep at your bedtime
-         and rest well, your body grows, heals itself and helps you feel calm, happy and strong.</p>
-
-        <h2>Drink and eat healthy food</h2>
-        <p>When you drink plenty of water each day and eat many different healthy foods
-         like fruit and vegetables, it helps your body feel stronger and happier.</p>
-
-        <h2>Practise relaxing every day for 5 minutes without TV, phones, tablets or computers</h2>
-        <p>Relaxing without TV, phones, tablets or computers, gives your eyes and brain a break.
-          Relaxing is healthy for your body and mind and helps you feel calm and peaceful.</p>
-
-        <h2>Pay attention to happy things and what you can see, hear, smell, taste and feel</h2>
-        <p>Noticing things around you makes you great at finding beautiful things, and if you
-         practise this everyday you will get better and better at it!</p>
+        <div class="title">
+          <h1>To be healthy and happy every day, you can:</h1>
+          <p>Tap your choices:</p>
+        </div>
+        <div class="choices-container">
+          <div class="choice-container" id="choice-1">
+            <div class="image" @click="toggleChoice(1)">
+              <ImageComponent
+                src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/they-learned-important-lesson-about-strength-shot-group-kids-playing-game-tug-war-summer-camp.jpg"
+                srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/they-learned-important-lesson-about-strength-shot-group-kids-playing-game-tug-war-summer-camp.jpg"
+                class="image-component"
+              />
+            </div>
+            <div class="text">Play outside</div>
+          </div>
+          <div class="choice-container" id="choice-2">
+            <div class="image" @click="toggleChoice(2)">
+              <ImageComponent
+                src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/kid-sleeping-bed-happy-bedtime-white-bedroom.jpg"
+                srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/kid-sleeping-bed-happy-bedtime-white-bedroom.jpg"
+                class="image-component"
+              />
+            </div>
+            <div class="text">Get plenty of sleep</div>
+          </div>
+          <div class="choice-container" id="choice-3">
+            <div class="image" @click="toggleChoice(3)">
+              <ImageComponent
+                src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/cute-girl-eats-salad-from-fresh-vegetables-concept-healthy-food-childhood.jpg"
+                srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/cute-girl-eats-salad-from-fresh-vegetables-concept-healthy-food-childhood.jpg"
+                class="image-component"
+              />
+            </div>
+            <div class="text">Eat healthy food</div>
+          </div>
+          <div class="choice-container" id="choice-4">
+            <div class="image" @click="toggleChoice(4)">
+              <ImageComponent
+                src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/little-girl-playing-with-tire-that-says-i-m-girl.jpg"
+                srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/little-girl-playing-with-tire-that-says-i-m-girl.jpg"
+                class="image-component"
+              />
+            </div>
+            <div class="text" style="font-size: 2.8vh">Pay attention to happy things</div>
+          </div>
+        </div>
       </div>
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/beach-sound.mp3"/>
     <audio
       @loadeddata="playSoundText"
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/42Animated_Book_Page41.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">51</div>
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Session1_Page51.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/all/crowd-cheer-applause.mp3" id="cheer1"/>
+    <audio src="../../assets/sounds/all/crowd-cheer-applause-2.mp3" id="cheer2"/>
+    <audio src="../../assets/sounds/all/kids-cheering.mp3" id="cheer3"/>
+    <div class="page-number" id="page-light">52</div>
   </div>
 </template>
 
 <script>
+import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from 'animejs';
 export default {
   name: "Session1Page35",
+  components: {ImageComponent},
+  data() {
+    return {
+      page: 0,
+      choices: [],
+      cheers: ['#cheer1','#cheer2','#cheer3'],
+      currentVoice: null,
+    }
+  },
   methods: {
     animateSvg() {
       let vw = document.querySelector('.interactive-container').clientWidth;
@@ -855,60 +892,12 @@ export default {
       })
     },
     animateText() {
-      let text = document.querySelector('.para-box').children;
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      })
+      let animation = anime.timeline({easing: 'linear', duration: 500,})
       animation
-        .add({
-          targets: '.text-box',
-          opacity: 0.95,
-        }, 657)
-        .add({
-          targets: '.para-box',
-          opacity: 0.95,
-        }, 5501)
-        .add({
-          targets: text[1],
-          opacity: 1,
-        }, 9267)
-        .add({
-          targets: text[2],
-          opacity: 1,
-        }, 10841)
-        .add({
-          targets: text[3],
-          opacity: 1,
-        }, 33067)
-        .add({
-          targets: text[4],
-          opacity: 1,
-        }, 35640)
-        .add({
-          targets: text[5],
-          opacity: 1,
-        }, 50476)
-        .add({
-          targets: text[6],
-          opacity: 1,
-        }, 54059)
-        .add({
-          targets: text[7],
-          opacity: 1,
-        }, 65779)
-        .add({
-          targets: text[8],
-          opacity: 1,
-        }, 76200)
-        .add({
-          targets: text[9],
-          opacity: 1,
-        }, 93700)
-        .add({
-          targets: text[10],
-          opacity: 1,
-        }, 101800)
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: '.para-box', opacity: 0.95}, 5300)
+        .add({targets: '.title', opacity: 1}, 5300)
+        .add({targets: '.choices-container', opacity: 1}, 12300)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
@@ -919,16 +908,85 @@ export default {
     playSoundText() {
       this.playVoiceOver();
       this.animateText();
+    },
+    playCheerVoice() {
+      if (this.currentVoice !== null) {
+        this.currentVoice.pause();
+        this.currentVoice.currentTime = 0;
+      }
+      let cheerVoiceId = this.cheers[Math.floor(Math.random() * this.cheers.length)];
+      let voice = document.querySelector(cheerVoiceId);
+      voice.play();
+      this.currentVoice = voice;
+    },
+    toggleChoice(id) {
+      let choiceContainer = document.querySelector('#choice-'+id);
+      if (!this.choices[id-1]) {
+        choiceContainer.classList.add('green-container');
+        this.playCheerVoice();
+      }
+      else choiceContainer.classList.remove('green-container')
+      this.choices[id-1] = !this.choices[id-1];
+      this.$store.commit('setPage51Data', this.choices);
+    },
+    setChoiceBackground() {
+      for (let i = 1; i < this.choices.length+1; i++) {
+        let choiceContainer = document.querySelector('#choice-'+i);
+        if (this.choices[i-1]) choiceContainer.classList.add('green-container')
+      }
+    },
+    init() {
+      this.choices = this.$store.getters.getPage51Data;
     }
   },
   mounted() {
     this.animateSvg();
     this.setAudioVolumeLevel(0.5);
-  }
+    this.setChoiceBackground();
+  },
+  created() {
+    this.init();
+  },
 }
 </script>
 
 <style scoped>
+.choices-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  opacity: 0;
+  padding: 0 10vh;
+}
+.choice-container {
+  margin: 0 5vh;
+  width: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.green-container {
+  background: #00CE7C;
+  border-radius: 3vh;
+  color: #fff;
+  box-shadow: 0 9px #999;
+}
+.green-container img {}
+.choice-container .image {
+  width: 94%;
+  padding: 1vh 0 .5vh 0;
+  border-radius: 3vh
+}
+.image-component {width: 100%; height: 25vh; border-radius: 3vh}
+.choice-container .text {
+  text-align: center;
+  line-height: 4.5vh;
+  font-size: 3.7vh;
+  font-weight: 600;
+  margin-bottom: .5vh;
+}
 .landscape {
   position: absolute;
   width: 141%;
@@ -975,19 +1033,9 @@ export default {
   padding: 1.5vh;
   opacity: 0;
 }
-.para-box h1 {
-  font-size: 5vh;
-  margin-bottom: 1vh;
-}
-.para-box h2 {
-  font-size: 3.5vh;
-  opacity: 0;
-}
-.para-box p {
-  font-size: 2.3vh;
-  margin-bottom: 1vh;
-  opacity: 0;
-}
+.title {opacity: 0}
+.title h1 {font-size: 4vh;margin-bottom: 1vh;}
+.title p {font-size: 3vh;margin-bottom: 3vh;opacity: 1;}
 tspan { white-space:pre }
 .shp0-crab { fill: #f37422 }
 .shp1-crab { fill: #e34f25 }

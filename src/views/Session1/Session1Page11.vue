@@ -463,7 +463,6 @@
         </g>
       </g>
     </svg>
-
     <!--  Flowers' Kingdom  -->
     <!--  Yellow Flowers  -->
     <svg class="yellow-flower" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 47" width="47" height="47">
@@ -822,7 +821,7 @@
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3"/>
     <audio
       @loadeddata="playSoundText"
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/18Animated_Book_Page17.mp3" ref="voice"/>
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Session1_Page17.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -917,17 +916,17 @@ export default {
         .add({
           targets: '.draw',
           opacity: 1,
-        }, 1000)
+        }, 500)
         .add({
           targets: '.canvas',
-          opacity: 1,
-        }, 3500)
+          opacity: 0,
+        }, 1000)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
     },
     playVoiceOver() {
-      setTimeout(() => {this.$refs.voice.play()}, 1000)
+      setTimeout(() => {this.$refs.voice.play()}, 500)
     },
     updateCanvas(canvasData) {
       this.$store.commit('setPage17Data', canvasData);

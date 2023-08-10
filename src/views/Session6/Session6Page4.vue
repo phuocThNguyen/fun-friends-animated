@@ -5,8 +5,7 @@
         '<span class="green">Green</span>' thoughts:
         <br>Meeting a new teacher
       </h1>
-      <p>Tom is going to meet his new teacher. Pretend
-        that you are Tom.</p>
+      <p>You are going to meet his new teacher.</p>
       <p>What are some '<span class="red">red</span>' thoughts
         that make you feel worried and scared?</p>
       <p>What are some '<span class="green">green</span>' thoughts
@@ -143,7 +142,7 @@
       </g>
     </svg>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session6/Session6_Page4.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">151</div>
+    <div class="page-number" id="page-light">164</div>
   </div>
 </template>
 
@@ -236,7 +235,7 @@ export default {
 .text-box p:last-child {
   padding: 1vh 0;
   font-size: 3.6vh;
-  margin-top: 45%;
+  margin-top: 52%;
   font-weight: bold;
   display: block;
   background-color: #00ce7c;
@@ -262,7 +261,7 @@ export default {
   position: absolute;
   width: 30%;
   height: 28vh;
-  bottom: 19vh;
+  bottom: 22vh;
   left: 1%;
   opacity: 0;
 }

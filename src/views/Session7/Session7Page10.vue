@@ -218,7 +218,7 @@
 
     <div class="instruction instruction-container">
       <p>Instruction:</p>
-      <p>- Tap and drag from the easiest step one to the most difficult step five.</p>
+      <p>- Tap and drag from the easiest step 1 to the most difficult step 5.</p>
     </div>
     <div class="question-mask"/>
 
@@ -331,7 +331,7 @@
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page148-step3.mp3" id="step-audio-3"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page148-step4.mp3" id="step-audio-4"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page148-step5.mp3" id="step-audio-5"/>
-    <div class="page-number" id="page-dark" style="left: 75vh">169</div>
+    <div class="page-number" id="page-dark" style="left: 75vh">183</div>
   </div>
 </template>
 
@@ -358,7 +358,7 @@ export default {
       ansArray: [
         {id: 1, ans: 'Visit my new school.'},
         {id: 2, ans: 'Walk to school a few times.'},
-        {id: 3, ans: 'Ride my bike to school\na few times.'},
+        {id: 3, ans: 'Ride my bike to\nschool a few times.'},
         {id: 4, ans: 'Meet children who\ngo to the same school.'},
         {id: 5, ans: 'Start school with a big\nsmile and a brave voice.'},
       ],

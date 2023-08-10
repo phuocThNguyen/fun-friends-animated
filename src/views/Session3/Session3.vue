@@ -31,14 +31,20 @@ import Session3Page4 from "@/views/Session3/Session3Page4";
 import Session3Page5 from "@/views/Session3/Session3Page5";
 import Session3Page6 from "@/views/Session3/Session3Page6";
 import Session3Page7 from "@/views/Session3/Session3Page7";
+import Session3Page7_1 from "@/views/Session3/Session3Page7_1";
+import Session3Page7_2 from "@/views/Session3/Session3Page7_2";
+import Session3Page8_1 from "@/views/Session3/Session3Page8_1";
+import Session3Page8_2 from "@/views/Session3/Session3Page8_2";
 import Session3Page8 from "@/views/Session3/Session3Page8";
 import Session3Page9 from "@/views/Session3/Session3Page9";
+import Session3Page9_1 from "@/views/Session3/Session3Page9_1";
 import Session3Page10 from "@/views/Session3/Session3Page10";
 import Session3Page11 from "@/views/Session3/Session3Page11";
 import Session3Page11_1 from "@/views/Session3/Session3Page11_1";
 import Session3Page12 from "@/views/Session3/Session3Page12";
 import Session3Page13 from "@/views/Session3/Session3Page13";
 import Session3Page14 from "@/views/Session3/Session3Page14";
+import Session3Page14_0 from "@/views/Session3/Session3Page14_0";
 import Session3Page14_1 from "@/views/Session3/Session3Page14_1";
 import Session3Page15 from "@/views/Session3/Session3Page15";
 import Session3Page16 from "@/views/Session3/Session3Page16";
@@ -52,18 +58,20 @@ export default {
     Session3Page1, Session3Page1_1, Session3Page2, Session3Page3, Session3Page4,
     Session3Page5, Session3Page6, Session3Page7, Session3Page8, Session3Page9,
     Session3Page10, Session3Page11, Session3Page12, Session3Page13, Session3Page14,
-    Session3Page15, Session3Page16, Session3Page11_1, Session3Page14_1,
+    Session3Page15, Session3Page16, Session3Page11_1, Session3Page14_1, Session3Page7_1,
+    Session3Page7_2, Session3Page8_1, Session3Page8_2, Session3Page9_1, Session3Page14_0,
   },
   data() {
     return {
       pages: {
         1: "Session3Page1", 2: "Session3Page1_1", 3: "Session3Page2", 4: "Session3Page3", 5: "Session3Page4",
-        6: "Session3Page5", 7: "Session3Page6", 8: "Session3Page7", 9: "Session3Page8", 10: "Session3Page9",
-        11: "Session3Page10", 12: "Session3Page11", 13: "Session3Page11_1", 14: "Session3Page12", 15: "Session3Page13",
-        16: "Session3Page14", 17: "Session3Page14_1", 18: "Session3Page15", 19: "Session3Page16"
+        6: "Session3Page5", 7: "Session3Page6", 8: "Session3Page7", 9: "Session3Page7_1", 10: "Session3Page7_2",
+        11: "Session3Page8", 12: "Session3Page8_1", 13: "Session3Page8_2", 14: "Session3Page9", 15: "Session3Page9_1",
+        16: "Session3Page10", 17: "Session3Page11", 18: "Session3Page12", 19: "Session3Page13", 20: "Session3Page14",
+        21: "Session3Page14_0", 22: "Session3Page14_1", 23: "Session3Page15", 24: "Session3Page16"
       },
       page: 1,
-      lastPage: 19,
+      lastPage: 24,
     }
   },
   created() {

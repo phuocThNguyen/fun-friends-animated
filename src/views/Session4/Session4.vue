@@ -44,8 +44,13 @@ import Session4Page17 from "@/views/Session4/Session4Page17";
 import Session4Page18 from "@/views/Session4/Session4Page18";
 import Session4Page19 from "@/views/Session4/Session4Page19";
 import Session4Page20 from "@/views/Session4/Session4Page20";
+import Session4Page20_1 from "@/views/Session4/Session4Page20_1";
+import Session4Page20_2 from "@/views/Session4/Session4Page20_2";
+import Session4Page20_3 from "@/views/Session4/Session4Page20_3";
+import Session4Page20_4 from "@/views/Session4/Session4Page20_4";
 import Session4Page21 from "@/views/Session4/Session4Page21";
 import Session4Page22 from "@/views/Session4/Session4Page22";
+import Session4Page22_1 from "@/views/Session4/Session4Page22_1";
 import Session4Page23 from "@/views/Session4/Session4Page23";
 import Session4Page24 from "@/views/Session4/Session4Page24";
 
@@ -59,7 +64,8 @@ export default {
     Session4Page5, Session4Page6, Session4Page7, Session4Page8, Session4Page9,
     Session4Page10, Session4Page11, Session4Page12, Session4Page13, Session4Page14,
     Session4Page15, Session4Page16, Session4Page17, Session4Page18, Session4Page19,
-    Session4Page20, Session4Page21, Session4Page22, Session4Page23, Session4Page24
+    Session4Page20, Session4Page20_1, Session4Page20_2, Session4Page20_3, Session4Page20_4,
+    Session4Page21, Session4Page22, Session4Page23, Session4Page24, Session4Page22_1,
   },
   data() {
     return {
@@ -68,10 +74,11 @@ export default {
         6: "Session4Page5", 7: "Session4Page6", 8: "Session4Page7", 9: "Session4Page8", 10: "Session4Page9",
         11: "Session4Page10", 12: "Session4Page11", 13: "Session4Page12", 14: "Session4Page13", 15: "Session4Page14",
         16: "Session4Page15", 17: "Session4Page16", 18: "Session4Page17", 19: "Session4Page18", 20: "Session4Page19",
-        21: "Session4Page20", 22: "Session4Page21", 23: "Session4Page22", 24: "Session4Page23", 25: "Session4Page24"
+        21: "Session4Page20", 22: "Session4Page20_1", 23: "Session4Page20_2", 24: "Session4Page20_3", 25: "Session4Page20_4",
+        26: "Session4Page21", 27: "Session4Page22", 28: "Session4Page22_1", 29: "Session4Page23", 30: "Session4Page24"
       },
       page: 1,
-      lastPage: 25,
+      lastPage: 30,
     }
   },
   created() {

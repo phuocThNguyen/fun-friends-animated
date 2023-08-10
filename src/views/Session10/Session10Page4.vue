@@ -7,7 +7,7 @@
     />
     <div class="text-box-green">My dad helps me read a book.</div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page4.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">216</div>
+    <div class="page-number" id="page-light">234</div>
   </div>
 </template>
 

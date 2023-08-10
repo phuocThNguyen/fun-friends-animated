@@ -51,7 +51,7 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/Session3_Page13.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">98</div>
+    <div class="page-number" id="page-light">104</div>
   </div>
 </template>
 
@@ -65,38 +65,13 @@ export default {
   methods: {
     animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;
-      let animation = anime.timeline({
-        duration: 500,
-        easing: 'linear'
-      });
+      let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
-        .add({
-          targets: '.text-box',
-          opacity: 1,
-        }, 500)
-        .add({
-          targets: text[0],
-          opacity: 1,
-        }, 927)
-        .add({
-          targets: text[1],
-          opacity: 1,
-        }, 4131)
-        .add({
-          targets: text[3],
-          opacity: 1,
-        }, 21096)
-        .add({
-          targets: '.star-container',
-          opacity: 1,
-          duration: 1
-        }, 40300)
-        .add({
-          targets: '.star-container',
-          scale: 14,
-          delay: 0,
-          duration: 1000,
-        }, 40326)
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[0], opacity: 1}, 927)
+        .add({targets: text[1], opacity: 1}, 4131)
+        .add({targets: text[3], opacity: 1}, 21096)
+        .add({targets: '.star-container', opacity: 1}, 40000)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
@@ -118,10 +93,10 @@ export default {
 <style scoped>
 .star-container {
   position: absolute;
-  height: 4vh;
-  width: 4%;
-  right: 20%;
-  top: 30%;
+  width: 40%;
+  height: 17vh;
+  right: 1vh;
+  top: 18vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,19 +106,18 @@ export default {
 }
 .star {
   position: absolute;
-  width: auto;
-  height: 100%;
+  width: 100%;
   z-index: 50;
 }
 .star-text {
   position: absolute;
   width: 100%;
   text-align: center;
-  margin-top: 10%;
+  top: 0;
   z-index: 55;
 }
 .star-text p {
-  font-size: .25vh;
+  font-size: 4vh;
   margin-bottom: 0;
 }
 .text-box {

@@ -40,6 +40,7 @@ import Session10Page12 from "@/views/Session10/Session10Page12";
 import Session10Page13 from "@/views/Session10/Session10Page13";
 import Session10Page14 from "@/views/Session10/Session10Page14";
 import Session10Page15 from "@/views/Session10/Session10Page15";
+import Session10Page15_1 from "@/views/Session10/Session10Page15_1";
 import Session10Page16 from "@/views/Session10/Session10Page16";
 import Session10Page17 from "@/views/Session10/Session10Page17";
 
@@ -52,7 +53,7 @@ export default {
     Session10Page1, Session10Page1_1, Session10Page2, Session10Page3, Session10Page4,
     Session10Page5, Session10Page6, Session10Page7, Session10Page8, Session10Page9,
     Session10Page10, Session10Page11, Session10Page12, Session10Page13, Session10Page14,
-    Session10Page15, Session10Page16, Session10Page17, Session10Page9_1,
+    Session10Page15, Session10Page16, Session10Page17, Session10Page9_1, Session10Page15_1,
   },
   data() {
     return {
@@ -60,10 +61,10 @@ export default {
         1: "Session10Page1", 2: "Session10Page1_1", 3: "Session10Page2", 4: "Session10Page3", 5: "Session10Page4",
         6: "Session10Page5", 7: "Session10Page6", 8: "Session10Page7", 9: "Session10Page8", 10: "Session10Page9",
         11: "Session10Page9_1", 12: "Session10Page10", 13: "Session10Page11", 14: "Session10Page12", 15: "Session10Page13",
-        16: "Session10Page14", 17: "Session10Page15", 18: "Session10Page16", 19: "Session10Page17"
+        16: "Session10Page14", 17: "Session10Page15", 18: "Session10Page15_1", 19: "Session10Page16", 20: "Session10Page17"
       },
       page: 1,
-      lastPage: 19,
+      lastPage: 20,
     }
   },
   created() {

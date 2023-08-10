@@ -25,7 +25,7 @@
       </div>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page8.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">188</div>
+    <div class="page-number" id="page-light">202</div>
   </div>
 </template>
 

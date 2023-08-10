@@ -99,10 +99,10 @@ export default {
   position: absolute;
   background-color: rgba(0, 206, 124, 0.9);
   border-radius: 30px;
-  padding-top: 1vh;
-  width: 64vh;
+  padding: 1vh 0;
+  width: 72vh;
   top: 3vh;
-  left: 3vh;
+  left: 2vh;
   display: flex;
   flex-direction: column;
   opacity: 1;

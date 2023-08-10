@@ -48,12 +48,11 @@ export default {
   data() {
     return {
       pages: {
-        1: "Session12Page1", 2: "Session12Page1_1", 3: "Session12Page2", 4: "Session12Page3", 5: "Session12Page4",
-        6: "Session12Page5", 7: "Session12Page6", 8: "Session12Page7", 9: "Session12Page8", 10: "Session12Page9",
-        11: "Session12Page10",
+        1: "Session12Page1", 2: "Session12Page1_1", 3: "Session12Page2", 4: "Session12Page3", 5: "Session12Page6",
+        6: "Session12Page7", 7: "Session12Page8", 8: "Session12Page9", 9: "Session12Page10",
       },
       page: 1,
-      lastPage: 11,
+      lastPage: 9,
     }
   },
   created() {

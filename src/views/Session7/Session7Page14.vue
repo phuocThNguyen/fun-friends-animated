@@ -44,8 +44,8 @@
     <div class="plans" id="step-1">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">1) Read a picture book about yummy
-        foods from around the world.</div>
+      <div class="text">1) Read a book about yummy
+        foods from <br>around the world.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -619,8 +619,7 @@
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
       <div class="text">4) Go to a restaurant from a different
-        country and try a new food you
-        haven’t eaten before.</div>
+        country and try food you haven’t eaten before.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -1008,7 +1007,7 @@
       <h1>My Helper</h1>
     </div>
     <div class="wing-container" id="right-container">
-      <p>Plant vegies in a pot with my family</p>
+      <p>Plant veggies in a pot with my family</p>
       <p>Invite a friend <br>for a picnic</p>
       <p>Cook a meal with my grandparents</p>
       <p>Go out for a meal</p>
@@ -1130,7 +1129,7 @@
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page12-region-4.mp3" ref="step4"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page12-region-5.mp3" ref="step5"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page12.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark" style="left: 25vh !important;">173</div>
+    <div class="page-number" id="page-dark" style="left: 25vh !important;">186</div>
   </div>
 </template>
 
@@ -1485,6 +1484,7 @@ export default {
   align-items: center;
   color: #ffffff;
   font-size: 2.36vh;
+  line-height: 3vh;
 }
 #step-1 {
   top: 71vh;
