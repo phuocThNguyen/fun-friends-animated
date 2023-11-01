@@ -140,7 +140,7 @@ export default {
         .add({targets: '#bubble-2', opacity: 1}, 17700)
         .add({targets: '.instruction-container', opacity: 1}, 21500)
       setTimeout(() => {
-        document.querySelector('.masks-container').style.visibility = 'visible'}, 14500);
+        document.querySelector('.masks-container').style.visibility = 'visible'}, 22500);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)

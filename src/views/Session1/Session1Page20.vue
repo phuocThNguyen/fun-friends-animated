@@ -375,7 +375,7 @@ export default {
         case 'bear':
           setTimeout(() => {
             this.$refs.bear.play();
-          }, 8000)
+          }, 7000)
           break;
         case 'monkey':
           setTimeout(() => {

@@ -173,41 +173,17 @@ export default {
   methods: {
     animateText() {
       let text = document.querySelector('.text-box').children;
-      let animation = anime.timeline({
-        duration: 500,
-        easing: 'linear'
-      });
+      let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
-        .add({
-          targets: '.text-box',
-          opacity: 1
-        }, 500)
-        .add({
-          targets: text[0],
-          opacity: 1
-        }, 828)
-        .add({
-          targets: text[1],
-          opacity: 1
-        }, 4871)
-        .add({
-          targets: text[2],
-          opacity: 1
-        }, 7294)
-          .add({
-            targets: '#bubble-1',
-            opacity: 1
-          }, 12500)
-          .add({
-            targets: '#bubble-2',
-            opacity: 1
-          }, 15500)
-          .add({
-            targets: '.instruction-container',
-            opacity: 1
-          }, 21000)
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[0], opacity: 1}, 828)
+        .add({targets: text[1], opacity: 1}, 4871)
+        .add({targets: text[2], opacity: 1}, 7294)
+        .add({targets: '#bubble-1', opacity: 1}, 12500)
+        .add({targets: '#bubble-2', opacity: 1}, 15500)
+        .add({targets: '.instruction-container', opacity: 1}, 21000)
       setTimeout(() => {
-        document.querySelector('.masks-container').style.visibility = 'visible'}, 12000);
+        document.querySelector('.masks-container').style.visibility = 'visible'}, 22000);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)

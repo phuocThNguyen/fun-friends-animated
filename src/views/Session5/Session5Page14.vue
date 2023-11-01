@@ -168,25 +168,13 @@ export default {
   data() {return {correctAns: 2}},
   methods: {
     animateText() {
-      let animation = anime.timeline({
-        duration: 500,
-        easing: 'linear'
-      });
+      let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
-        .add({
-          targets: '#bubble-1',
-          opacity: 1
-        }, 600)
-        .add({
-          targets: '#bubble-2',
-          opacity: 1
-        }, 6500)
-        .add({
-          targets: '.instruction',
-          opacity: 1
-        }, 9500)
+        .add({targets: '#bubble-1', opacity: 1}, 600)
+        .add({targets: '#bubble-2', opacity: 1}, 6500)
+        .add({targets: '.instruction', opacity: 1}, 9500)
       setTimeout(() => {
-        document.querySelector('.masks-container').style.visibility = 'visible'}, 6500);
+        document.querySelector('.masks-container').style.visibility = 'visible'}, 10000);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)

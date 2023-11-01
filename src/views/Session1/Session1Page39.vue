@@ -75,6 +75,7 @@
         <p>Share 👍🏾</p>
       </div>
     </div>
+    <audio autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/387978__dcpoke__birds-singing-03.mp3" ref="audio"/>
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/46Animated_Book_Page45.mp3" ref="voice"/>
@@ -103,9 +104,14 @@ export default {
     playSoundText() {
       this.playVoiceOver();
       this.animateText();
-    }
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
+    },
   },
-  mounted() {}
+  mounted() {
+    this.setAudioVolumeLevel(0.6);
+  }
 }
 </script>
 

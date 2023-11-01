@@ -1,7 +1,7 @@
 <template>
   <div class="interactive-container">
     <div class="title">
-      <h1>What makes you scared?</h1>
+      <h1>When do you need to be brave?</h1>
       <p>Tap your choices:</p>
     </div>
     <div class="choice-container" id="choice-1">

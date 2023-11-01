@@ -373,7 +373,7 @@ export default {
         case 'duck':
           setTimeout(() => {
             this.$refs.duck.play()
-          }, 4000)
+          }, 7000)
           break;
         case 'cow':
           setTimeout(() => {

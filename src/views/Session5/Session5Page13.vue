@@ -179,37 +179,16 @@ export default {
   methods: {
     animateText() {
       let text = document.querySelector('.text-box').children;
-      let animation = anime.timeline({
-        duration: 500,
-        easing: 'linear'
-      });
+      let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation
-        .add({
-          targets: text[0],
-          opacity: 1
-        }, 715)
-        .add({
-          targets: text[1],
-          opacity: 1
-        }, 4967)
-        .add({
-          targets: text[2],
-          opacity: 1
-        }, 20569)
-        .add({
-          targets: '#bubble-1',
-          opacity: 1
-        }, 34000)
-        .add({
-          targets: '#bubble-2',
-          opacity: 1
-        }, 36000)
-        .add({
-          targets: '.instruction',
-          opacity: 1
-        }, 38500)
+        .add({targets: text[0], opacity: 1}, 715)
+        .add({targets: text[1], opacity: 1}, 4967)
+        .add({targets: text[2], opacity: 1}, 20569)
+        .add({targets: '#bubble-1', opacity: 1}, 34000)
+        .add({targets: '#bubble-2', opacity: 1}, 36000)
+        .add({targets: '.instruction', opacity: 1}, 38500)
       setTimeout(() => {
-        document.querySelector('.masks-container').style.visibility = 'visible'}, 22000);
+        document.querySelector('.masks-container').style.visibility = 'visible'}, 39000);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)

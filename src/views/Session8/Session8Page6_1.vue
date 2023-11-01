@@ -356,7 +356,7 @@ export default {
       timeVariable: [],
       timeout: [4700,4800,4600,4900,2800],
       ansArray: [
-        {id: 1, ans: 'Find a child you do not know.'},
+        {id: 1, ans: 'Find a child\nyou do not know.'},
         {id: 2, ans: 'Introduce yourself and\nask for their name.'},
         {id: 3, ans: 'Smile and speak with\na brave voice.'},
         {id: 4, ans: 'Ask them nicely if they\nwant to play together.'},

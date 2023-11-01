@@ -919,7 +919,7 @@ export default {
         }, 500)
         .add({
           targets: '.canvas',
-          opacity: 0,
+          opacity: 1,
         }, 1000)
     },
     setAudioVolumeLevel(level) {

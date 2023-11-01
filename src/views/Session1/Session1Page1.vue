@@ -198,7 +198,7 @@
     <div class="question">
       <p>Talk about your family and home.</p>
       <p>Talk about your friends.</p>
-      <p class="mb-4"><strong>FUN FRIENDS can helps you learn to be brave.</strong></p>
+      <p class="mb-4"><strong>FUN FRIENDS can help you learn to be brave.</strong></p>
     </div>
     <audio autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/387978__dcpoke__birds-singing-03.mp3"/>
     <audio
@@ -273,7 +273,7 @@ export default {
   },
   mounted() {
     this.animateSvg();
-  }
+  },
 }
 </script>
 
