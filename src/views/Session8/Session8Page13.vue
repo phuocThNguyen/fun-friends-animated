@@ -205,6 +205,7 @@
       </g>
     </svg>
 
+    <audio autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/ambient/creek.mp3" ref="audio"/>
     <audio ref="wrong" src="../../assets/sounds/all/wrong-ans.mp3"/>
     <audio ref="correct" src="../../assets/sounds/all/correct-ans.mp3"/>
     <audio ref="celebrate" src="../../assets/sounds/all/crowd-cheer-applause-2.mp3"/>
@@ -319,9 +320,14 @@ export default {
     playSoundText() {
       this.playVoiceOver();
       this.animateText();
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level;
     }
   },
-  mounted() {}
+  mounted() {
+    this.setAudioVolumeLevel(0.8);
+  }
 }
 </script>
 

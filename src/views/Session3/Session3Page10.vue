@@ -20,6 +20,7 @@
       </div>
     </div>
     <div class="notice-box">We plant trees to be kind to planet earth.</div>
+    <audio src="../../assets/sounds/session7/click-sound.mp3" ref="clickSound" />
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/Session3_Page95.mp3" ref="voice"/>
@@ -66,6 +67,7 @@ export default {
   mounted() {},
   watch: {
     answers: function() {
+      this.$refs.clickSound.play();
       this.$store.commit('setPage101Data', this.answers)
     }
   }

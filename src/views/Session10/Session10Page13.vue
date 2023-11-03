@@ -58,7 +58,7 @@ export default {
     this.init();
   },
   mounted() {
-    this.setAudioVolumeLevel(0.3);
+    this.setAudioVolumeLevel(0.2);
   }
 }
 </script>

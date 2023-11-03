@@ -8,6 +8,7 @@
     <div class="text-box">
       Water makes us feel calm.
     </div>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/ambient/water-fountain.mp3"/>
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page9.mp3" ref="voice"/>
@@ -35,12 +36,17 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
+    },
     playSoundText() {
       this.playVoiceOver();
       this.animateText();
     }
   },
-  mounted() {}
+  mounted() {
+    this.setAudioVolumeLevel(0.2);
+  }
 }
 </script>
 

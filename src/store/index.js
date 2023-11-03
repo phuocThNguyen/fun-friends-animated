@@ -8,6 +8,7 @@ export default new Vuex.Store({
         currentSession: 0,
         loading: true,
         authed: false,
+        page11data: [],
         page17data: null,
         page19_1data: [],
         page19_2data: [],
@@ -80,6 +81,7 @@ export default new Vuex.Store({
         getCurrentSession: state => state.currentSession,
         getLoadingStatus: state => state.loading,
         getAuthedStatus: state => state.authed,
+        getPage11Data: state => state.page11data,
         getPage17Data: state => state.page17data,
         getPage19_1Data: state => state.page19_1data,
         getPage19_2Data: state => state.page19_2data,
@@ -157,6 +159,9 @@ export default new Vuex.Store({
         },
         setAuthedStatus(state, payload) {
             state.authed = payload;
+        },
+        setPage11Data(state, payload) {
+            state.page11data = payload;
         },
         setPage17Data(state, payload) {
             state.page17data = payload;

@@ -50,12 +50,8 @@
       <div class="mask" id="mask-1" @click="selectedBubble(1)"/>
       <div class="mask" id="mask-2" @click="selectedBubble(2)"/>
     </div>
-
     <div class="instruction instruction-container">
-      <p>Instruction:</p>
-      <p>Next to Sam, there are two thought bubbles.
-        One thought bubble is the ‘green’ thought, and one
-        thought bubble is the ‘red‘ thought. Tap on the ‘green’ thought.</p>
+      <p><strong>Instruction:</strong> Tap on the ‘green’ thought.</p>
     </div>
 
     <!--  Good Job  -->
@@ -241,24 +237,17 @@ export default {
 </script>
 
 <style scoped>
-.instruction {position: absolute;left:17vh;bottom:0}
+.instruction {position: absolute;left:39vh;bottom:1vh}
 .instruction-container {
   background-color: #00ce7c;
-  padding: 1vh;
-  width: 90vh;
+  padding: 2vh;
+  width: 55vh;
   opacity: 0;
 }
 .instruction-container p {
   color: #ffffff;
   margin-bottom: 0;
-  font-size: 2.5vh;
-}
-.instruction-container p:first-child {
   font-size: 3vh;
-  font-weight: bold;
-}
-.instruction-container p:nth-child(2) {
-  padding-left: 1.8vh;
 }
 .masks-container {
   position: absolute;

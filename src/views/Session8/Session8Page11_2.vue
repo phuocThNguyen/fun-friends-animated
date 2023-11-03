@@ -6,7 +6,7 @@
       class="session-background"
     />
     <div class="text-box">
-      <p>Click on each paper plan to find helpful choices you can make</p>
+      <p>Click on each paper plane to find helpful choices you can make</p>
     </div>
     <div class="plans-container">
       <div class="plan-container" @click="revealText(1)" id="plan-1">
@@ -27,7 +27,7 @@
           <polygon class="cls-red-3" points="166.44 327.49 961.73 421.95 57.9 486.61 166.44 327.49" />
           <polygon class="cls-red-1" points="166.44 327.49 961.73 421.95 332.52 652.13 166.44 327.49" />
         </svg>
-        <div class="plan-text" id="text-2">Take turn <br>share any games</div>
+        <div class="plan-text" id="text-2">Take turn <br>sharing any games</div>
       </div>
       <div class="plan-container" @click="revealText(3)" id="plan-3">
         <div class="paper" id="paper-3"/>
@@ -57,7 +57,7 @@
           <polygon class="cls-yellow-3" points="166.44 327.49 961.73 421.95 57.9 486.61 166.44 327.49" />
           <polygon class="cls-yellow-1" points="166.44 327.49 961.73 421.95 332.52 652.13 166.44 327.49" />
         </svg>
-        <div class="plan-text" id="text-5">Join in the fun</div>
+        <div class="plan-text" id="text-5">Join in on the fun</div>
       </div>
       <div class="plan-container" @click="revealText(6)" id="plan-6">
         <div class="paper" id="paper-6"/>

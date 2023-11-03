@@ -17,6 +17,15 @@
         <p class="item">10. Click (CUTE + AESTHETIC SOUND EFFECTS PACK) - oopsieaniee (Youtube)</p>
         <p class="item">11. Kids Cheering - Gaming Sound FX (Youtube)</p>
         <p class="item">12. Calm Seashore - Audio Library PH (Youtube)</p>
+        <p class="item">13. Rolling Skateboard Sound Effect - Freesoundstock</p>
+        <p class="item">14. Flick through the pages of a book - Pixabay</p>
+        <p class="item">15. Pencil - Pixabay</p>
+        <p class="item">16. Pool swimming - Pixabay</p>
+        <p class="item">17. Quiet park - Pixabay</p>
+        <p class="item">18. Playground - Pixabay</p>
+        <p class="item">19. Near Park w/ Children - Pixabay</p>
+        <p class="item">20. Bird in the morning - Pixabay</p>
+        <p class="item">21. Playground 2 - Pixabay</p>
       </div>
     </div>
     <div class="right-container">
@@ -41,6 +50,11 @@
         <p class="item">5. Smoked Kielbasa Polka - Doug MaxWell / Jimmy F. (Youtube)</p>
         <p class="item">6. Barroom Ballet - Kevin MacLeod (Youtube)</p>
         <p class="item">7. Twinkle Twinkle Little Star - The Green Orbs (Youtube)</p>
+        <p class="item">8. Purpose - Jonny Easton (Youtube)</p>
+        <p class="item">9. Blue Island - matthewmikecolemusic (Pixabay)</p>
+        <p class="item">10. Sunset - SergeQuadrado (Pixabay)</p>
+        <p class="item">11. Fun Kids Playful Comic Carefree Game Happy Positive Music - REDproductions (Pixabay)</p>
+        <p class="item">12. A Jazz Piano - Music_For_Videos (Pixabay)</p>
       </div>
     </div>
   </div>

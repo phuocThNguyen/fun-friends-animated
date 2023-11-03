@@ -6,13 +6,13 @@
       class="session-background"
     />
     <div class="text-box">
-      <h1>Try Everyday</h1>
+      <h1>Try Every Day</h1>
       <p>- Keep practising being BRAVE:</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Look people in the eye and smile.</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Use a brave and strong voice.</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Try your best and give it a go.</p>
       <p>- When you are being brave and moving up to a hard step,
-        try ‘bubble’ breathing and &nbsp;&nbsp;&nbsp;&nbsp;thinking ‘<span id="green">green</span>’
+        try ‘bubble’ breathing and &nbsp;&nbsp;&nbsp;thinking ‘<span id="green">green</span>’
         thoughts.</p>
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Relaxing-Forest-Sound-Effect.mp3"/>

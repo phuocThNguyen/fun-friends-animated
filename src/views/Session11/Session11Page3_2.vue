@@ -18,6 +18,8 @@
         </div>
       </div>
     </div>
+    <audio src="../../assets/sounds/session7/click-sound.mp3" ref="clickSound"/>
+    <audio autoplay ref="audio" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/blue-island.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session11/Session11_Page236.mp3" ref="voice"/>
     <div class="page-number" id="page-light">255</div>
   </div>
@@ -64,9 +66,12 @@ export default {
   created() {
     this.init();
   },
-  mounted() {},
+  mounted() {
+    this.$refs.audio.volume = 0.2;
+  },
   watch: {
     answers: function() {
+      this.$refs.clickSound.play();
       this.$store.commit('setPage220Data', this.answers)
     }
   }

@@ -6,12 +6,11 @@
       class="session-background"
     />
     <div class="text-box">
-      <h1>Try Everyday</h1>
+      <h1>Try Every Day</h1>
       <p>- Practise the steps on your <strong>STEP PLAN</strong>.
-        If you've done all the steps,
-        make a new <strong>STEP PLAN</strong>.</p>
+        If you've done all the steps, make &nbsp;&nbsp;&nbsp;a new <strong>STEP PLAN</strong>.</p>
       <p>- Notice when others are listening, helping and smiling
-        and let them know you like it.</p>
+        and let them know &nbsp;&nbsp;&nbsp;you like it.</p>
       <p>- Practise turning '<span class="red">red</span>' thoughts
         into '<span class="green">green</span>' thoughts.</p>
       <p>- Play with friends and spend time outside.</p>

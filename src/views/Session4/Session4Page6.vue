@@ -17,6 +17,7 @@
         </div>
       </div>
     </div>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/ukulele-beach-doug-maxwell-children-s-music-no-copyright-music.mp3"/>
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page110.mp3" ref="voice"/>
@@ -52,6 +53,9 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
+    },
     init() {
       this.answers = this.$store.getters.getPage110Data;
     },
@@ -61,7 +65,9 @@ export default {
     }
   },
   created() {this.init();},
-  mounted() {},
+  mounted() {
+    this.setAudioVolumeLevel(0.2);
+    },
   watch: {
     answers: function() {
       this.$store.commit('setPage110Data', this.answers)

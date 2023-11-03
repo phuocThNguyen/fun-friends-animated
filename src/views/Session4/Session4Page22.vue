@@ -6,11 +6,11 @@
       class="session-background"
     />
     <div class="text-box">
-      <h1>Try Everyday</h1>
+      <h1>Try Every Day</h1>
       <p>- Try to understand feelings in yourself and others.</p>
       <p>- Practise relaxing and taking deep breaths.</p>
       <p>- Try to use relaxing strategies like ‘bubble’ breathing when
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;you feel upset, worried or angry.</p>
+        &nbsp;&nbsp;&nbsp;&nbsp;you feel upset, worried or angry.</p>
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/night-time.mp3"/>
     <audio

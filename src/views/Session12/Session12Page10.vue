@@ -140,7 +140,8 @@
     </svg>
 
     <button class="btn-style" @click="revealBalloons">Complete</button>
-    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/polka.mp3" loop ref="audio"/>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/sand-castle.mp3"/>
+    <audio ref="music" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/polka.mp3" loop />
     <audio src="../../assets/sounds/all/crowd-cheer-applause-2.mp3" ref="cheer"/>
     <audio @loadeddata="playVoiceOver" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session12/Session12_Page11.mp3" ref="voice"/>
     <audio src="../../assets/sounds/session7/click-sound.mp3" ref="clickSound" />
@@ -242,7 +243,9 @@ export default {
     revealBalloons() {
       document.querySelector('.btn-style').style.visibility = 'hidden';
       this.animateSvg();
-      this.$refs.audio.play();
+      this.$refs.voice.pause();
+      this.$refs.audio.pause();
+      this.$refs.music.play();
       this.$refs.cheer.play();
     }
   },
@@ -251,7 +254,7 @@ export default {
   },
   mounted() {
     this.setChoiceBackground();
-    this.setAudioVolumeLevel(0.5);
+    this.setAudioVolumeLevel(0.3);
   }
 }
 </script>

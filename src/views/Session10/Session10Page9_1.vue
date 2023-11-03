@@ -195,6 +195,8 @@
         </g>
       </g>
     </svg>
+    <audio ref="audio" autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/super-hero-theme.mp3"/>
+    <audio src="../../assets/sounds/session7/click-sound.mp3" ref="clickSound"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page222.mp3" ref="voice"/>
     <div class="page-number" id="page-light">240</div>
   </div>
@@ -281,15 +283,20 @@ export default {
     init() {
       this.answers = this.$store.getters.getPage207Data;
     },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
+    },
   },
   created() {
     this.init();
   },
   mounted() {
     this.animateSvg();
+    this.setAudioVolumeLevel(0.3);
   },
   watch: {
     answers: function() {
+      this.$refs.clickSound.play();
       this.$store.commit('setPage207Data', this.answers)
     }
   }

@@ -287,7 +287,7 @@
       </g>
     </svg>
     <div class="text-box">
-      <h1>Try Everyday</h1>
+      <h1>Try Every Day</h1>
       <p>- Practise being BRAVE:</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Look people in the eye and smile.</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Use a brave and strong voice.</p>

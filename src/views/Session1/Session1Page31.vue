@@ -1,6 +1,7 @@
 <template>
   <div class="interactive-container">
     <div class="title">Tap on the clothes that are similar to yours:</div>
+<!--    <div class="title">Tap what you like:</div>-->
     <div class="choice-container" id="choice-1">
       <div class="image" @click="toggleChoice(1)">
         <ImageComponent

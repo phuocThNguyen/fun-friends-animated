@@ -75,7 +75,7 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page124%2B1.mp3" ref="voice"/>
-    <audio src="../../assets/sounds/all/Correct_2.mp3" ref="correctVoice"/>
+    <audio src="../../assets/sounds/session7/click-sound.mp3" ref="clickSound"/>
   </div>
 </template>
 
@@ -113,7 +113,7 @@ export default {
       let choiceContainer = document.querySelector('#choice-'+id);
       if (!this.choices[id-1]) {
         choiceContainer.classList.add('green-container');
-        this.$refs.correctVoice.play();
+        this.$refs.clickSound.play();
       }
       else {
         choiceContainer.classList.remove('green-container');

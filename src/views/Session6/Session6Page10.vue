@@ -709,8 +709,8 @@
       <p>&bull; Have plenty of sleep.</p>
       <p>&bull; Drink and eat foods that are healthy.</p>
       <p>&bull; Practise relaxing without screens.</p>
-      <p>&bull; Pay attention to happy things and what you
-        can see, hear, smell, taste and feel.</p>
+      <p>&bull; Pay attention to happy things and &nbsp;&nbsp;&nbsp;what you
+        can see, hear, smell, taste &nbsp;&nbsp;&nbsp;and feel.</p>
       <p>&bull; Say thank you for happy times.</p>
     </div>
     <div class="image-container">

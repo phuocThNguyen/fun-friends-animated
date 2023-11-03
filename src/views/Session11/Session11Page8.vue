@@ -8,7 +8,7 @@
     <div class="text-box">
       <h1>Try Every Day</h1>
       <p>- Draw or take a picture of your family's support
-        team. Alternatively, share a story about how your family
+        team. &nbsp;&nbsp;&nbsp;Alternatively, share a story about how your family
         gets support.</p>
       <p>- Carry on with your <strong>STEP PLAN</strong>.</p>
       <p>- Practise '<span id="green">green</span>' thoughts.</p>
@@ -59,9 +59,9 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.8);
-  width: 90%;
+  width: 92%;
   height: auto;
-  left: 5%;
+  left: 4%;
   top: 20vh;
   padding: 2vh;
   opacity: 0;

@@ -50,7 +50,7 @@
     <audio ref="water" id="sound-1" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/water.mp3"/>
     <audio ref="bird" id="sound-2" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/bird.mp3"/>
     <audio ref="wind" id="sound-3" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/wind.mp3"/>
-    <audio src="../../assets/sounds/all/Correct_3.mp3" ref="correctVoice"/>
+    <audio src="../../assets/sounds/session7/click-sound.mp3" ref="clickSound"/>
     <div class="page-number" id="page-light">131</div>
   </div>
 </template>
@@ -102,7 +102,7 @@ export default {
         choiceContainer.classList.add('green-container');
         this.voicePlaying = document.querySelector('#sound-'+id);
         this.voicePlaying.play();
-        this.$refs.correctVoice.play();
+        this.$refs.clickSound.play();
       }
       else {
         choiceContainer.classList.remove('green-container');

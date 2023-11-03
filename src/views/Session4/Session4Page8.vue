@@ -8,6 +8,7 @@
     <div class="text-box">
       Art is relaxing.
     </div>
+    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/no-copyright-music-funny-children-kids-music-by-mokka-kids.mp3"/>
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page8.mp3" ref="voice"/>
@@ -32,6 +33,9 @@ export default {
         opacity: 1
       });
     },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
+    },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
@@ -40,7 +44,8 @@ export default {
       this.animateText();
     }
   },
-  mounted() {}
+  mounted() {
+    this.setAudioVolumeLevel(0.6);}
 }
 </script>
 

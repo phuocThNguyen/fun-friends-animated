@@ -21,10 +21,10 @@
       <div class="star-text">
         <p><strong>Bright Star Idea</strong></p>
         <p>Make a 'recipe for happiness'. Write
-          <br>down all the things that makes you happy.
+          <br>down all the things that make you happy.
           <br>Remember to include
           <br>everything you learned
-          <br>from Fun Friends. You
+          <br>from Fun FRIENDS. You
           <br>could ask someone in
           <br>your family to help you!
         </p>

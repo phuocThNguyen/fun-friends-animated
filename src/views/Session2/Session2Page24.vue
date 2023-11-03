@@ -13,8 +13,8 @@
       <p>&nbsp;- Drink plenty of water.</p>
       <p>&nbsp;- Eat healthy foods.</p>
       <p>&nbsp;- Practise relaxing without screens.</p>
-      <p>&nbsp;- Pay attention to happy things and what you
-      can see, hear, smell, taste and feel.</p>
+      <p>&nbsp;- Pay attention to happy things and &nbsp;&nbsp;&nbsp;what you
+      can see, hear, smell, taste &nbsp;&nbsp;&nbsp;and feel.</p>
       <p>&nbsp;- Say thank you for happy times.</p>
     </div>
     <div class="image-container">

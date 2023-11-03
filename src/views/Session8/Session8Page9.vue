@@ -26,6 +26,7 @@
         </p>
       </div>
     </div>
+    <audio autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/RollingSkateboard.mp3" ref="audio"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page9.mp3" ref="voice"/>
     <div class="page-number" id="page-light">203</div>
   </div>
@@ -54,9 +55,14 @@ export default {
     playSoundText() {
       this.playVoiceOver();
       this.animateText();
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level;
     }
   },
-  mounted() {}
+  mounted() {
+    this.setAudioVolumeLevel(0.4);
+  }
 }
 </script>
 

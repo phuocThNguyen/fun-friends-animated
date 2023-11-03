@@ -7,6 +7,7 @@
     />
     <div class="text-box">Annie learns from <br>someone she looks up to.</div>
     <div class="text-box-green">My mum helps me learn to swim.</div>
+    <audio autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/ambient/pool-swimming.mp3" ref="audio"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page6.mp3" ref="voice"/>
     <div class="page-number" id="page-light">236</div>
   </div>
@@ -34,7 +35,9 @@ export default {
       this.animateText();
     }
   },
-  mounted() {}
+  mounted() {
+    this.$refs.audio.volume = 0.2;
+  }
 }
 </script>
 

@@ -6,6 +6,7 @@
       class="session-background"
     />
     <div class="text-box-green">My dad helps me write a story.</div>
+    <audio autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/ambient/pencil.mp3" ref="audio"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page5.mp3" ref="voice"/>
     <div class="page-number" id="page-light">235</div>
   </div>
@@ -36,7 +37,9 @@ export default {
       this.animateText();
     }
   },
-  mounted() {}
+  mounted() {
+    this.$refs.audio.volume = 0.6;
+  }
 }
 </script>
 

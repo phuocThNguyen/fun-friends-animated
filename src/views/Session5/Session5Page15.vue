@@ -6,7 +6,7 @@
       class="session-background"
     />
     <div class="text-box">
-      <h1>Try Everyday</h1>
+      <h1>Try Every Day</h1>
       <p>- Talk about '<span class="red">red</span>' and
         '<span class="green">green</span>' thoughts.</p>
       <p>- Do 10 minutes of relaxation every day.</p>

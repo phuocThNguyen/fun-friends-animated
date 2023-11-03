@@ -5,8 +5,9 @@
       srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session10/1243.jpg"
       class="session-background"
     />
-    <div class="text-box-green">My mum helps me be brave
+    <div class="text-box-green">My mum helps me to be brave
       <br>when I meet new people.</div>
+    <audio autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/ambient/quiet-park.mp3" ref="audio"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page7.mp3" ref="voice"/>
     <div class="page-number" id="page-light">237</div>
   </div>
@@ -37,7 +38,9 @@ export default {
       this.animateText();
     }
   },
-  mounted() {}
+  mounted() {
+    this.$refs.audio.volume = 0.6;
+  }
 }
 </script>
 

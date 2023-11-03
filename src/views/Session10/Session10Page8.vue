@@ -7,6 +7,7 @@
     />
     <div class="text-box-green">My mum helps me be brave
       <br>when I learn to ride my bike.</div>
+    <audio autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/Bike-bell.mp3" ref="audio"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page8.mp3" ref="voice"/>
     <div class="page-number" id="page-light">238</div>
   </div>
@@ -37,7 +38,9 @@ export default {
       this.animateText();
     }
   },
-  mounted() {}
+  mounted() {
+    this.$refs.audio.volume = 0.6;
+  }
 }
 </script>
 

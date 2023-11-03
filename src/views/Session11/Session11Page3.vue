@@ -10,6 +10,7 @@
       to each other.</p>
       <p>Talk to your friends about how to help each other.</p>
     </div>
+    <audio autoplay ref="audio" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/blue-island.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session11/Session11_Page3.mp3" ref="voice"/>
     <div class="page-number" id="page-light">253</div>
   </div>
@@ -39,7 +40,9 @@ export default {
       this.animateText();
     }
   },
-  mounted() {}
+  mounted() {
+    this.$refs.audio.volume = 0.2;
+  }
 }
 </script>
 

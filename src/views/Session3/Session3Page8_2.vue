@@ -20,6 +20,7 @@
       </div>
     </div>
     <div class="notice-box">Be kind and helpful!</div>
+    <audio src="../../assets/sounds/session7/click-sound.mp3" ref="clickSound" />
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/Session3_Page93%2B2.mp3" ref="voice"/>
@@ -67,6 +68,7 @@ export default {
   mounted() {},
   watch: {
     answers: function() {
+      this.$refs.clickSound.play();
       this.$store.commit('setPage98Data', this.answers)
     }
   }

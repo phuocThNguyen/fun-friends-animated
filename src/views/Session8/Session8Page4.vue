@@ -22,6 +22,7 @@
       class="session-background"
       id="alt-pos"
     />
+    <audio src="../../assets/sounds/session7/click-sound.mp3" ref="clickSound"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/beach-sound.mp3" ref="audio" autoplay loop/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page183.mp3" ref="voice"/>
     <div class="page-number" id="page-light">197</div>
@@ -81,6 +82,7 @@ export default {
   },
   watch: {
     answers: function() {
+      this.$refs.clickSound.play();
       this.$store.commit('setPage169Data', this.answers)
     }
   }

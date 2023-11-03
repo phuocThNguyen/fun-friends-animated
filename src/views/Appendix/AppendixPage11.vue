@@ -31,6 +31,7 @@
       srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/appendix/70160.png"
       class="images" id="img-6"
     />
+    <audio ref="audio" autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/fun-kids-playful-comic-carefree-game-happy-positive-music.mp3"/>
     <audio @loadeddata="playVoiceOver" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/appendix/Session13_Appendix_Page8.mp3" ref="voice"/>
   </div>
 </template>
@@ -45,7 +46,9 @@ export default {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
   },
-  mounted() {}
+  mounted() {
+    this.$refs.audio.volume = 0.05;
+  }
 }
 </script>
 

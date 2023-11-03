@@ -22,6 +22,7 @@
       />
       <div class="text" id="para-2">Matilda giving Alpaca a hug</div>
     </div>
+    <audio autoplay ref="audio" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/sunset.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session11/Session11_Page5.mp3" ref="voice"/>
     <div class="page-number" id="page-light">257</div>
   </div>
@@ -51,7 +52,9 @@ export default {
       this.animateText();
     }
   },
-  mounted() {}
+  mounted() {
+    this.$refs.audio.volume = 0.1;
+  }
 }
 </script>
 

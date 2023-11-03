@@ -16,6 +16,7 @@
       />
       <p class="text" id="para-2">Zoe and Daniel <br>helping Matilda swing</p>
     </div>
+    <audio autoplay ref="audio" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/ambient/fieldrecording-nearparkwchildren.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session11/Session11_Page6.mp3" ref="voice"/>
     <div class="page-number" id="page-light">258</div>
   </div>
@@ -44,7 +45,9 @@ export default {
       this.animateText();
     }
   },
-  mounted() {}
+  mounted() {
+    this.$refs.audio.volume = 0.8;
+  }
 }
 </script>
 

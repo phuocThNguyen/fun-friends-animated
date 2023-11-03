@@ -12,7 +12,7 @@
         <p class="cloud-text pt-3" id="text-1">I'm going to <br>have a great day.</p>
       </div>
       <div class="cloud-text-container" @click="revealText(2)" id="cloud-2">
-        <p class="cloud-text pt-4" id="text-2">I can have fun when <br>I run and swim and <br>bike ride.</p>
+        <p class="cloud-text pt-4" id="text-2">I can have fun when <br>I run, swim and <br>bike ride.</p>
       </div>
       <div class="cloud-text-container" @click="revealText(3)" id="cloud-3">
         <p class="cloud-text pt-4" id="text-3">I'll try my best.</p>
@@ -81,7 +81,7 @@ export default {
       this.$refs.clickSound.play();
     }
   },
-  mounted() {this.$refs.music.volume = 0.6}
+  mounted() {this.$refs.music.volume = 0.2}
 }
 </script>
 

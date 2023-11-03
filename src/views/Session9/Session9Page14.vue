@@ -23,7 +23,7 @@
         <p>Plant some vegetables in
           <br>a pot with your family. It is
           <br>so much fun to watch
-          <br>your vegetable grow
+          <br>your vegetables grow
           <br>and then eat them!
         </p>
       </div>

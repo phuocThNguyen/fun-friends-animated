@@ -6,12 +6,13 @@
       class="session-background"
     />
     <div class="text-box">
-      <h1>Try Everyday</h1>
+      <h1>Try Every Day</h1>
       <p>- If you were a grown up for a day, what would you do?</p>
-      <p>- Share your answer with a grown up and ask them what they liked to do,
-        eat and play when they were children.</p>
+      <p>- Share your answer with a grown up and ask them what they liked
+        &nbsp;&nbsp;&nbsp;to do, eat and play when they were children.</p>
       <p>- Ask them to draw the home they lived in as a child.</p>
-      <p>- Each night, share a happy memory from your day with your family or friends.</p>
+      <p>- Each night, share a happy memory from your day with your family
+        &nbsp;&nbsp;&nbsp;or friends.</p>
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3"/>
     <audio

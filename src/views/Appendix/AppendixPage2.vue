@@ -101,7 +101,7 @@ export default {
     return {
       options1: ['My mum','My dad','My aunt','My uncle','My sibling'],
       options2: ['My teacher','My principal','My classmate','My sport coach'],
-      options3: ['A family member','A teacher','A friend','A neighbor'],
+      options3: ['A family member','A teacher','A friend','A neighbour'],
       options4: ['A musician','A singer','A writer','An artist'],
       answer1: '',
       answer2: '',

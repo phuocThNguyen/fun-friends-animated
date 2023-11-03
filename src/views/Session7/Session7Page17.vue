@@ -6,13 +6,13 @@
       class="session-background"
     />
     <div class="text-box">
-      <h1>Try Everyday</h1>
+      <h1>Try Every Day</h1>
       <p>- Practise your step plan one step at a time. It doesn’t matter how long
-        you need or how &nbsp;&nbsp;&nbsp;&nbsp;many steps it takes. Stay on each step until you
-        can do that step easily. Share your &nbsp;&nbsp;&nbsp;&nbsp;plan with your family or friends.</p>
+        you need or how &nbsp;&nbsp;&nbsp;many steps it takes. Stay on each step until you
+        can do that step easily. Share your &nbsp;&nbsp;&nbsp;plan with your family or friends.</p>
       <p>- If a step seems too hard, maybe add a smaller step in between.
-        Remember to give &nbsp;&nbsp;&nbsp;&nbsp;yourself a reward for taking each step.</p>
-      <p>- Practise relaxing for at least 10 minutes. Minimize TV and computer time.</p>
+        Remember to give &nbsp;&nbsp;&nbsp;yourself a reward for taking each step.</p>
+      <p>- Practise relaxing for at least 10 minutes. Minimise TV and computer time.</p>
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Relaxing-Forest-Sound-Effect.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page15.mp3" ref="voice"/>

@@ -9,7 +9,7 @@
       <h1>Everyday remember to:</h1>
       <p>- Play outside.</p>
       <p>- Go to bed early.</p>
-      <p>- Practise relaxing for 5 minutes in a quiet place.</p>
+      <p>- Practise relaxing for 5 minutes in a &nbsp;&nbsp;&nbsp;quiet place.</p>
       <p>- Pay attention to happy things.</p>
       <p>- Say thank you for happy things.</p>
     </div>

@@ -23,7 +23,7 @@
         <p>Eat your favourite healthy food
           <br>really slowly and think about
           <br>how yummy it tastes. Talk
-          <br>to somebody what it
+          <br>to somebody about what it
           <br>smells like, what it looks
           <br>like and how it tastes.
         </p>

@@ -16,6 +16,7 @@
       />
       <p class="image-text" id="para-2">Swimming in the river</p>
     </div>
+    <audio autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/ambient/creek.mp3" ref="audio"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page10.mp3" ref="voice"/>
     <div class="page-number" id="page-light">224</div>
   </div>
@@ -42,9 +43,14 @@ export default {
     playSoundText() {
       this.playVoiceOver();
       this.animateText();
+    },
+    setAudioVolumeLevel(level) {
+      this.$refs.audio.volume = level
     }
   },
-  mounted() {}
+  mounted() {
+    this.setAudioVolumeLevel(0.8)
+  }
 }
 </script>
 
