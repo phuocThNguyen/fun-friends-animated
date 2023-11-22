@@ -1,6 +1,6 @@
 <template>
   <div class="session-container">
-    <svg class="arrow" @click="next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 123" width="124" height="123">
+    <svg class="arrow" v-show="arrowVisible" @click="next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 123" width="124" height="123">
       <title>Right Arrow</title>
       <g id="object">
         <g id="&lt;Group&gt;">
@@ -10,7 +10,7 @@
       </g>
     </svg>
     <component :is="pages[page]" />
-    <svg class="arrow" @click="previous" id="left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 123" width="124" height="123">
+    <svg class="arrow" v-show="arrowVisible" @click="previous" id="left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 123" width="124" height="123">
       <title>Right Arrow</title>
       <g id="object">
         <g id="&lt;Group&gt;">
@@ -113,6 +113,9 @@ export default {
       }
       setTimeout(() => this.hiddenTimeExpired = true, 5000);
     },
+    hiddenTimeExpired() {
+      if (this.hiddenTimeExpired) this.arrowVisible = true;
+    }
   }
 }
 </script>

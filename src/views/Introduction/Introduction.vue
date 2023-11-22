@@ -102,6 +102,9 @@ export default {
       }
       setTimeout(() => this.hiddenTimeExpired = true, 5000);
     },
+    hiddenTimeExpired() {
+      if (this.hiddenTimeExpired) this.arrowVisible = true;
+    }
   }
 };
 </script>
