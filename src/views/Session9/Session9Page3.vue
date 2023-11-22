@@ -18,7 +18,7 @@
       <p class="image-text">Annie's Reward <br>Cooking with mum</p>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page3.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">217</div>
+    <div class="page-number" id="page-light">218</div>
   </div>
 </template>
 

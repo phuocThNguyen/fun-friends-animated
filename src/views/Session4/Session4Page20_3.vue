@@ -51,7 +51,7 @@
         <div class="text">The rain</div>
       </div>
     </div>
-    <div class="page-number" id="page-light">134</div>
+    <div class="page-number" id="page-light">135</div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
     <audio
       @loadeddata="playSoundText"

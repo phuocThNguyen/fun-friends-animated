@@ -199,7 +199,7 @@
     <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
     <audio src="../../assets/sounds/all/Correct_2.mp3" ref="correctVoice"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session6/Session6_Page7.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">167</div>
+    <div class="page-number" id="page-light">168</div>
   </div>
 </template>
 

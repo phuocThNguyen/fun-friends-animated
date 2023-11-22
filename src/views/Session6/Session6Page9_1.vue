@@ -16,7 +16,7 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Session1_Page56%2B1.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">170</div>
+    <div class="page-number" id="page-dark">171</div>
   </div>
 </template>
 

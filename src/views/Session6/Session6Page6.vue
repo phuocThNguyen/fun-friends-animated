@@ -130,7 +130,7 @@
       </g>
     </svg>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session6/Session6_Page6.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">166</div>
+    <div class="page-number" id="page-light">167</div>
   </div>
 </template>
 

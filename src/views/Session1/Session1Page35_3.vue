@@ -48,7 +48,7 @@
     <audio src="../../assets/sounds/all/crowd-cheer-applause.mp3" id="cheer1"/>
     <audio src="../../assets/sounds/all/crowd-cheer-applause-2.mp3" id="cheer2"/>
     <audio src="../../assets/sounds/all/kids-cheering.mp3" id="cheer3"/>
-    <div class="page-number" id="page-light">55</div>
+    <div class="page-number" id="page-light">54</div>
   </div>
 </template>
 

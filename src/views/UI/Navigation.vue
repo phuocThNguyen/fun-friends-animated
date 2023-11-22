@@ -38,8 +38,12 @@
         <img src="../../assets/images/others/menu-white.png" alt="menu" class="nav-icon">
       </button>
       <h1 class="session-title">{{title}}</h1>
-      <div></div>
+      <label class="switch" >
+        <input type="checkbox" checked>
+        <span class="slider round" @click="toggleMode"/>
+      </label>
     </nav>
+    <audio ref="clickSound" src="../../assets/sounds/session7/click-sound.mp3"/>
   </div>
 </template>
 
@@ -79,13 +83,17 @@ export default {
     changeActiveStyle(btn) {
       btn.style.color = '#fff';
       btn.style.backgroundColor = '#00ce7c';
+    },
+    toggleMode() {
+      this.$store.commit('setArrowVisible', !this.$store.getters.getArrowVisible);
+      this.$refs.clickSound.play();
     }
   },
   mounted() {
     let buttons = document.getElementsByClassName('btn')
     this.changeActiveStyle(buttons[this.selectedSession]);
   },
-  }
+}
 </script>
 
 <style scoped>
@@ -155,5 +163,71 @@ export default {
 }
 .btn-session:focus {
   box-shadow: none;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 8vh;
+  height: 4.4vh;
+  margin-bottom: 0;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  width: 3vh;
+  height: 3vh;
+  top: .4vh;
+  left: .5vh;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #00ce7c;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #00ce7c;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(3.5vh);
+  -ms-transform: translateX(3.5vh);
+  transform: translateX(3.5vh);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 3vh;
+  border: .3vh solid #fff;
+  box-sizing: border-box;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 </style>

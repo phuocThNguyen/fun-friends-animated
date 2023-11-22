@@ -17,7 +17,7 @@
       <p class="image-text">Tom's Reward <br>Fun ride</p>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page7.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">221</div>
+    <div class="page-number" id="page-light">222</div>
   </div>
 </template>
 

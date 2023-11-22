@@ -17,7 +17,7 @@
       <p class="image-text" id="para-2">Annie's Reward <br>Special time with her mom</p>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page4.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">218</div>
+    <div class="page-number" id="page-light">219</div>
   </div>
 </template>
 

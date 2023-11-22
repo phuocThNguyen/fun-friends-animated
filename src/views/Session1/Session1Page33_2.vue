@@ -44,7 +44,7 @@
       </div>
       <div class="text">Water</div>
     </div>
-    <div class="page-number" id="page-light">50</div>
+    <div class="page-number" id="page-light">49</div>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Session1_Page49.mp3" ref="voice"/>
     <audio src="../../assets/sounds/all/crowd-cheer-applause.mp3" id="cheer1"/>
     <audio src="../../assets/sounds/all/crowd-cheer-applause-2.mp3" id="cheer2"/>

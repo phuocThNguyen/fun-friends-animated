@@ -213,7 +213,7 @@
     <audio src="../../assets/sounds/all/Very_Good.mp3" ref="wellDone"/>
     <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page13.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">209</div>
+    <div class="page-number" id="page-light">210</div>
   </div>
 </template>
 

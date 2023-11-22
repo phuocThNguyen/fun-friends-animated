@@ -13,7 +13,7 @@
       <p>It can be easy when we break it into small steps.</p>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page9.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">182</div>
+    <div class="page-number" id="page-dark">183</div>
   </div>
 </template>
 

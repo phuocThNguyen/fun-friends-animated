@@ -21,7 +21,7 @@
     <audio src="../../assets/sounds/session7/click-sound.mp3" ref="clickSound"/>
     <audio autoplay ref="audio" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/blue-island.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session11/Session11_Page236.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">255</div>
+    <div class="page-number" id="page-light">256</div>
   </div>
 </template>
 

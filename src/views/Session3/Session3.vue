@@ -48,6 +48,7 @@ import Session3Page14_0 from "@/views/Session3/Session3Page14_0";
 import Session3Page14_1 from "@/views/Session3/Session3Page14_1";
 import Session3Page15 from "@/views/Session3/Session3Page15";
 import Session3Page16 from "@/views/Session3/Session3Page16";
+import {mapState} from "vuex";
 
 export default {
   name: "Session3",
@@ -70,13 +71,18 @@ export default {
         16: "Session3Page10", 17: "Session3Page11", 18: "Session3Page12", 19: "Session3Page13", 20: "Session3Page14",
         21: "Session3Page14_0", 22: "Session3Page14_1", 23: "Session3Page15", 24: "Session3Page16"
       },
-      page: 1,
       lastPage: 24,
+      page: 0,
+      arrowVisible: true,
+      hiddenTimeExpired: false,
     }
   },
   created() {
     if (!this.isNext) {
       this.page = this.lastPage;
+      this.arrowVisible = this.$store.getters.getArrowVisible;
+    } else {
+      this.page = 1;
     }
   },
   methods: {
@@ -104,6 +110,25 @@ export default {
       }
     });
   },
+  computed: mapState(['arrows_visible']),
+  watch: {
+    arrows_visible() {
+      let currentArrowVisible = this.$store.getters.getArrowVisible;
+      if (currentArrowVisible) this.arrowVisible = currentArrowVisible
+      else if (!this.hiddenTimeExpired) this.arrowVisible = currentArrowVisible
+      else this.arrowVisible = true;
+      // this.arrowVisible = this.$store.getters.getArrowVisible;
+    },
+    page() {
+      // clearTimeout();
+      this.hiddenTimeExpired = false;
+      if (!this.$store.getters.getArrowVisible) {
+        this.arrowVisible = false;
+        setTimeout(() => this.arrowVisible = true, 5000);
+      }
+      setTimeout(() => this.hiddenTimeExpired = true, 5000);
+    },
+  }
 }
 </script>
 

@@ -324,7 +324,7 @@
       </div>
       <div class="text">Love</div>
     </button>
-    <div class="page-number" id="page-light">49</div>
+    <div class="page-number" id="page-light">48</div>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Session1_Page48.mp3" ref="voice"/>
     <audio ref="sound" src="../../assets/sounds/session7/click-sound.mp3"/>
     <audio src="../../assets/sounds/all/Well_Done.mp3" ref="wellDone"/>
@@ -350,6 +350,11 @@ export default {
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
+    playCheerVoice() {
+      this.$refs.celebrate.pause();
+      this.$refs.celebrate.currentTime = 0;
+      this.$refs.celebrate.play();
+    },
     growTree() {
       this.$refs.sound.play();
       anime({
@@ -362,8 +367,11 @@ export default {
       })
       this.index++;
       if (this.index === this.scaleArray.length) {
-        this.$refs.celebrate.play()
+        this.playCheerVoice();
         setTimeout(() => {this.$refs.wellDone.play()}, 500)
+      }
+      else if (this.index < this.scaleArray.length) {
+        this.playCheerVoice();
       }
     }
   },

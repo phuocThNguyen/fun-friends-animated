@@ -331,7 +331,7 @@
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page151-step3.mp3" id="step-audio-3"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page151-step4.mp3" id="step-audio-4"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page151-step5.mp3" id="step-audio-5"/>
-    <div class="page-number" id="page-dark" style="left: 75vh">185</div>
+    <div class="page-number" id="page-dark" style="left: 75vh">186</div>
   </div>
 </template>
 

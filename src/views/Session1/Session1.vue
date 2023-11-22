@@ -78,6 +78,7 @@ import Session1Page37 from "@/views/Session1/Session1Page37";
 import Session1Page37_1 from "@/views/Session1/Session1Page37_1";
 import Session1Page38 from "@/views/Session1/Session1Page38";
 import Session1Page39 from "@/views/Session1/Session1Page39";
+import {mapState} from "vuex";
 
 export default {
   name: "Session1",
@@ -104,21 +105,26 @@ export default {
         6: "Session1Page5", 7: "Session1Page6", 8: "Session1Page7", 9: "Session1Page8", 10: "Session1Page9",
         11: "Session1Page10", 12: "Session1Page11", 13: "Session1Page11_1", 14: "Session1Page11_2", 15: "Session1Page11_3",
         16: "Session1Page11_4", 17: "Session1Page12", 18: "Session1Page13", 19: "Session1Page14", 20: "Session1Page14_1",
-        21: "Session1Page15", 22: "Session1Page16", 23: "Session1Page17", 24: "Session1Page18", 25: "Session1Page19",
-        26: "Session1Page20", 27: "Session1Page21", 28: "Session1Page22", 29: "Session1Page23", 30: "Session1Page24",
-        31: "Session1Page24_1", 32: "Session1Page25", 33: "Session1Page26", 34: "Session1Page27", 35: "Session1Page28",
-        36: "Session1Page28_1", 37: "Session1Page28_2", 38: "Session1Page28_3", 39: "Session1Page29", 40: "Session1Page30",
-        41: "Session1Page31", 42: "Session1Page32", 43: "Session1Page33", 44: "Session1Page33_1", 45: "Session1Page33_2",
-        46: "Session1Page34", 47: "Session1Page35", 48: "Session1Page35_1", 49: "Session1Page35_2", 50: "Session1Page35_3",
-        51: "Session1Page36", 52: "Session1Page37", 53: "Session1Page37_1", 54: "Session1Page38", 55: "Session1Page39",
+        21: "Session1Page15", 22: "Session1Page17", 23: "Session1Page18", 24: "Session1Page19", 25: "Session1Page20",
+        26: "Session1Page21", 27: "Session1Page22", 28: "Session1Page23", 29: "Session1Page24", 30: "Session1Page24_1",
+        31: "Session1Page25", 32: "Session1Page26", 33: "Session1Page27", 34: "Session1Page28", 35: "Session1Page28_1",
+        36: "Session1Page28_2", 37: "Session1Page28_3", 38: "Session1Page29", 39: "Session1Page30", 40: "Session1Page31",
+        41: "Session1Page32", 42: "Session1Page33", 43: "Session1Page33_1", 44: "Session1Page33_2", 45: "Session1Page34",
+        46: "Session1Page35", 47: "Session1Page35_1", 48: "Session1Page35_2", 49: "Session1Page35_3", 50: "Session1Page36",
+        51: "Session1Page37", 52: "Session1Page37_1", 53: "Session1Page38", 54: "Session1Page39",
       },
-      page: 1,
-      lastPage: 55,
+      lastPage: 54,
+      page: 0,
+      arrowVisible: true,
+      hiddenTimeExpired: false,
     };
   },
   created() {
     if (!this.isNext) {
       this.page = this.lastPage;
+      this.arrowVisible = this.$store.getters.getArrowVisible;
+    } else {
+      this.page = 1;
     }
   },
   methods: {
@@ -146,6 +152,25 @@ export default {
       }
     });
   },
+  computed: mapState(['arrows_visible']),
+  watch: {
+    arrows_visible() {
+      let currentArrowVisible = this.$store.getters.getArrowVisible;
+      if (currentArrowVisible) this.arrowVisible = currentArrowVisible
+      else if (!this.hiddenTimeExpired) this.arrowVisible = currentArrowVisible
+      else this.arrowVisible = true;
+      // this.arrowVisible = this.$store.getters.getArrowVisible;
+    },
+    page() {
+      // clearTimeout();
+      this.hiddenTimeExpired = false;
+      if (!this.$store.getters.getArrowVisible) {
+        this.arrowVisible = false;
+        setTimeout(() => this.arrowVisible = true, 5000);
+      }
+      setTimeout(() => this.hiddenTimeExpired = true, 5000);
+    },
+  }
 };
 </script>
 

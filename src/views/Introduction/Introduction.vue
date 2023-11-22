@@ -1,6 +1,6 @@
 <template>
   <div class="session-container">
-    <svg class="arrow" @click="next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 123" width="124" height="123">
+    <svg class="arrow" v-show="arrowVisible" @click="next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 123" width="124" height="123">
       <title>Right Arrow</title>
       <g id="object">
         <g id="&lt;Group&gt;">
@@ -10,7 +10,7 @@
       </g>
     </svg>
     <component :is="pages[page]" v-on:setSession="setSession" />
-    <svg class="arrow" @click="previous" id="left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 123" width="124" height="123">
+    <svg class="arrow" v-show="arrowVisible" @click="previous" id="left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 123" width="124" height="123">
       <title>Right Arrow</title>
       <g id="object">
         <g id="&lt;Group&gt;">
@@ -29,6 +29,7 @@ import IntroductionPage3 from "@/views/Introduction/IntroductionPage3";
 import IntroductionPage4 from "@/views/Introduction/IntroductionPage4";
 import IntroductionPage6 from "@/views/Introduction/IntroductionPage6";
 import IntroductionPage7 from "@/views/Introduction/IntroductionPage7";
+import {mapState} from "vuex";
 
 export default {
   name: "Introduction",
@@ -43,13 +44,18 @@ export default {
       pages: {
         1: "IntroductionPage1", 2: "IntroductionPage2", 3: "IntroductionPage3", 4: "IntroductionPage4", 5: "IntroductionPage6", 6: "IntroductionPage7",
       },
-      page: 1,
+      page: 0,
       lastPage: 6,
+      arrowVisible: true,
+      hiddenTimeExpired: false,
     };
   },
   created() {
     if (!this.isNext) {
       this.page = this.lastPage;
+      this.arrowVisible = this.$store.getters.getArrowVisible;
+    } else {
+      this.page = 1;
     }
   },
   methods: {
@@ -69,6 +75,7 @@ export default {
       this.$emit('nextSession', number, true);
     }
   },
+  computed: mapState(['arrows_visible']),
   mounted() {
     window.addEventListener("keydown", (event) => {
       if (event.key === "ArrowRight") {
@@ -78,6 +85,24 @@ export default {
       }
     });
   },
+  watch: {
+    arrows_visible() {
+      let currentArrowVisible = this.$store.getters.getArrowVisible;
+      if (currentArrowVisible) this.arrowVisible = currentArrowVisible
+      else if (!this.hiddenTimeExpired) this.arrowVisible = currentArrowVisible
+      else this.arrowVisible = true;
+      // this.arrowVisible = this.$store.getters.getArrowVisible;
+    },
+    page() {
+      // clearTimeout();
+      this.hiddenTimeExpired = false;
+      if (!this.$store.getters.getArrowVisible) {
+        this.arrowVisible = false;
+        setTimeout(() => this.arrowVisible = true, 5000);
+      }
+      setTimeout(() => this.hiddenTimeExpired = true, 5000);
+    },
+  }
 };
 </script>
 

@@ -51,7 +51,7 @@
     <audio ref="bird" id="sound-2" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/bird.mp3"/>
     <audio ref="wind" id="sound-3" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/wind.mp3"/>
     <audio src="../../assets/sounds/session7/click-sound.mp3" ref="clickSound"/>
-    <div class="page-number" id="page-light">131</div>
+    <div class="page-number" id="page-light">132</div>
   </div>
 </template>
 

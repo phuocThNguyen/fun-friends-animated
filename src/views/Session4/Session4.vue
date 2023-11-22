@@ -53,6 +53,7 @@ import Session4Page22 from "@/views/Session4/Session4Page22";
 import Session4Page22_1 from "@/views/Session4/Session4Page22_1";
 import Session4Page23 from "@/views/Session4/Session4Page23";
 import Session4Page24 from "@/views/Session4/Session4Page24";
+import {mapState} from "vuex";
 
 export default {
   name: "Session4",
@@ -77,13 +78,18 @@ export default {
         21: "Session4Page20", 22: "Session4Page20_1", 23: "Session4Page20_2", 24: "Session4Page20_3", 25: "Session4Page20_4",
         26: "Session4Page21", 27: "Session4Page22", 28: "Session4Page22_1", 29: "Session4Page23", 30: "Session4Page24"
       },
-      page: 1,
       lastPage: 30,
+      page: 0,
+      arrowVisible: true,
+      hiddenTimeExpired: false,
     }
   },
   created() {
     if (!this.isNext) {
       this.page = this.lastPage;
+      this.arrowVisible = this.$store.getters.getArrowVisible;
+    } else {
+      this.page = 1;
     }
   },
   methods: {
@@ -111,6 +117,25 @@ export default {
       }
     });
   },
+  computed: mapState(['arrows_visible']),
+  watch: {
+    arrows_visible() {
+      let currentArrowVisible = this.$store.getters.getArrowVisible;
+      if (currentArrowVisible) this.arrowVisible = currentArrowVisible
+      else if (!this.hiddenTimeExpired) this.arrowVisible = currentArrowVisible
+      else this.arrowVisible = true;
+      // this.arrowVisible = this.$store.getters.getArrowVisible;
+    },
+    page() {
+      // clearTimeout();
+      this.hiddenTimeExpired = false;
+      if (!this.$store.getters.getArrowVisible) {
+        this.arrowVisible = false;
+        setTimeout(() => this.arrowVisible = true, 5000);
+      }
+      setTimeout(() => this.hiddenTimeExpired = true, 5000);
+    },
+  }
 }
 </script>
 

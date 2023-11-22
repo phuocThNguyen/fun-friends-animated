@@ -158,7 +158,7 @@
     <audio src="../../assets/sounds/all/Well_Done.mp3" ref="wellDone"/>
     <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
     <audio src="../../assets/sounds/all/Correct_2.mp3" ref="correctVoice"/>
-    <div class="page-number" id="page-light">168</div>
+    <div class="page-number" id="page-light">169</div>
   </div>
 </template>
 

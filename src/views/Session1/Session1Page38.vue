@@ -44,7 +44,7 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/45Animated_Book_Page44.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">59</div>
+    <div class="page-number" id="page-dark">58</div>
   </div>
 </template>
 

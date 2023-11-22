@@ -38,6 +38,7 @@ import AppendixPage12 from "@/views/Appendix/AppendixPage12";
 import AppendixPage13 from "@/views/Appendix/AppendixPage13";
 import AppendixPage14 from "@/views/Appendix/AppendixPage14";
 import AppendixPage15 from "@/views/Appendix/AppendixPage15";
+import {mapState} from "vuex";
 
 export default {
   name: "Appendix",
@@ -56,13 +57,16 @@ export default {
         6: "AppendixPage6", 7: "AppendixPage7", 8: "AppendixPage8", 9: "AppendixPage9", 10: "AppendixPage10",
         11: "AppendixPage11", 12: "AppendixPage12", 13: "AppendixPage13", 14: "AppendixPage14", 15: "AppendixPage15"
       },
-      page: 1,
+      page: 0,
+      arrowVisible: true,
+      hiddenTimeExpired: false,
       lastPage: 15
     }
   },
   created() {
     if (this.appendixPage) {
       this.page = this.appendixPage + 1;
+      this.arrowVisible = this.$store.getters.getArrowVisible;
     } else {
       this.page = 1;
     }
@@ -90,6 +94,25 @@ export default {
       }
     });
   },
+  computed: mapState(['arrows_visible']),
+  watch: {
+    arrows_visible() {
+      let currentArrowVisible = this.$store.getters.getArrowVisible;
+      if (currentArrowVisible) this.arrowVisible = currentArrowVisible
+      else if (!this.hiddenTimeExpired) this.arrowVisible = currentArrowVisible
+      else this.arrowVisible = true;
+      // this.arrowVisible = this.$store.getters.getArrowVisible;
+    },
+    page() {
+      // clearTimeout();
+      this.hiddenTimeExpired = false;
+      if (!this.$store.getters.getArrowVisible) {
+        this.arrowVisible = false;
+        setTimeout(() => this.arrowVisible = true, 5000);
+      }
+      setTimeout(() => this.hiddenTimeExpired = true, 5000);
+    },
+  }
 }
 </script>
 

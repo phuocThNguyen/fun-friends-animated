@@ -15,7 +15,7 @@
     </div>
     <audio autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session6/Session6_Page9.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">169</div>
+    <div class="page-number" id="page-dark">170</div>
   </div>
 </template>
 
