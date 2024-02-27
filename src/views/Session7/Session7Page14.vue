@@ -770,7 +770,7 @@
     <div class="plans" id="step-5">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">5) Enjoy new type of food.</div>
+      <div class="text">5) Enjoy a new type of food..</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">
           <g id="Graphic Element">
@@ -1123,12 +1123,12 @@
       <div class="button-label">Next Step</div>
     </div>
     <audio ref="sound" src="../../assets/sounds/session7/click-sound.mp3"/>
-    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page12-region-1.mp3" ref="step1"/>
-    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page12-region-2.mp3" ref="step2"/>
-    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page12-region-3.mp3" ref="step3"/>
-    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page12-region-4.mp3" ref="step4"/>
-    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page12-region-5.mp3" ref="step5"/>
-    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page12.mp3" ref="voice"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/187-step1.mp3" ref="step1"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/187-step2.mp3" ref="step2"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/187-step3.mp3" ref="step3"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/187-step4.mp3" ref="step4"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/187-step5.mp3" ref="step5"/>
+    <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page187.mp3" ref="voice"/>
     <div class="page-number" id="page-dark" style="left: 25vh !important;">187</div>
   </div>
 </template>
@@ -1143,11 +1143,11 @@ export default {
       step: 0,
       stepVoiceArray: null,
       timingArray: [
-        [1000, 7100, 9700, 17000],
-        [1000, 8500, 11700, 16500],
-        [1000, 6000, 8500, 14500],
-        [1000, 7500, 10500, 15500],
-        [1000, 4500, 7500, 13500]]
+        [1000, 6500, 9700, 14200],
+        [1000, 10100, 13600, 17500],
+        [1000, 8000, 10500, 14500],
+        [1000, 12700, 15300, 18000],
+        [1000, 6100, 8800, 13300]]
     }
   },
   methods: {
@@ -1156,31 +1156,13 @@ export default {
       let rightElements = document.getElementById('right-container').children;
       let trophy = document.querySelector('.trophy-container');
 
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      })
+      let animation = anime.timeline({easing: 'linear', duration: 500,})
       animation
-        .add({
-          targets: trophy,
-          opacity: 1
-        }, 3000)
-        .add({
-          targets: leftElements[5],
-          opacity: 1
-        }, 4000)
-        .add({
-          targets: rightElements[5],
-          opacity: 1
-        }, 4000)
-        .add({
-          targets: '.text-box',
-          opacity: 1
-        }, 4000)
-        .add({
-          targets: '.coordinate-container',
-          opacity: 1
-        }, 4500)
+        .add({targets: trophy, opacity: 1}, 2600)
+        .add({targets: leftElements[5], opacity: 1}, 4000)
+        .add({targets: rightElements[5], opacity: 1}, 4000)
+        .add({targets: '.text-box', opacity: 1}, 4000)
+        .add({targets: '.coordinate-container', opacity: 1}, 7100)
 
       anime({
         targets: '.button',

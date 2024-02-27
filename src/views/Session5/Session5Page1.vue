@@ -202,10 +202,6 @@
       help us feel strong inside, keep us going, and
       let us have fun, and '<span class="red">red</span>'
       <strong>thoughts</strong> that stop us all from trying to be brave.</p>
-    <p class="text" id="line-2">How can thoughts be turned
-      '<span class="red">red</span>' or
-      '<span class="green">green</span>'? Share your ideas!</p>
-
     <audio autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/387978__dcpoke__birds-singing-03.mp3"/>
     <audio
       @loadeddata="playSoundText"
@@ -306,7 +302,7 @@ export default {
   -webkit-text-stroke: 0.1vw black;
   text-align: center;
   width: 100%;
-  top: 22vh;
+  top: 26vh;
   opacity: 0;
 }
 #letter-f {
@@ -321,12 +317,7 @@ export default {
 #line-1 {
   text-align: center;
   width: 100%;
-  top: 36vh;
-}
-#line-2 {
-  text-align: center;
-  width: 100%;
-  top: 57vh;
+  top: 42vh;
 }
 span {
   display: inline-block;

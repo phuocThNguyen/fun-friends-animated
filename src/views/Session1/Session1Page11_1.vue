@@ -2,6 +2,7 @@
   <div class="interactive-container">
     <div class="title">
       <h1>Your favourite fruit:</h1>
+      <p>Wait for all pictures before clicking</p>
       <p>Tap your choices:</p>
     </div>
     <div class="choice-container" id="choice-1">
@@ -147,9 +148,9 @@ export default {
   position: absolute;
   width: 100%;
   text-align: center;
-  top: .5vh;
+  top: 0vh;
   font-weight: 600;
 }
-.title h1 {font-size: 5vh;margin-bottom: 0}
-.title p {font-size: 3vh;}
+.title h1 {font-size: 4vh;margin-bottom: 0}
+.title p {font-size: 3vh;margin-bottom: 0; line-height: 4vh}
 </style>

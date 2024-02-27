@@ -16,8 +16,7 @@
       <p>Daniel and Matilda are playing in the snow for the first time.
         What are some '<span class="red">red</span>' and
         '<span class="green">green</span>' thoughts Daniel
-        and Matilda might be having? Share what you felt like,
-        when you tried something new for the first time.</p>
+        and Matilda might be having? </p>
       <p>Everybody has '<span class="red">red</span>'
         thoughts when trying something new. We can all
         try to replace our '<span class="red">red</span>'
@@ -160,7 +159,8 @@
     <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
     <audio src="../../assets/sounds/all/correct-ans.mp3" ref="correct"/>
     <audio src="../../assets/sounds/all/wrong-ans.mp3" ref="wrong"/>
-    <audio src="../../assets/sounds/all/crowd-cheer-applause.mp3" ref="celebrate"/><audio
+    <audio src="../../assets/sounds/all/crowd-cheer-applause.mp3" ref="celebrate"/>
+    <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page14.mp3" ref="voice"/>
     <div class="page-number" id="page-light">155</div>
@@ -183,12 +183,12 @@ export default {
       animation
         .add({targets: text[0], opacity: 1}, 715)
         .add({targets: text[1], opacity: 1}, 4967)
-        .add({targets: text[2], opacity: 1}, 20569)
-        .add({targets: '#bubble-1', opacity: 1}, 34000)
-        .add({targets: '#bubble-2', opacity: 1}, 36000)
-        .add({targets: '.instruction', opacity: 1}, 38500)
+        .add({targets: text[2], opacity: 1}, 15500)
+        .add({targets: '#bubble-1', opacity: 1}, 29000)
+        .add({targets: '#bubble-2', opacity: 1}, 31000)
+        .add({targets: '.instruction', opacity: 1}, 33500)
       setTimeout(() => {
-        document.querySelector('.masks-container').style.visibility = 'visible'}, 39000);
+        document.querySelector('.masks-container').style.visibility = 'visible'}, 34000);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)

@@ -37,7 +37,7 @@ export default {
   data() {
     return {
       data: ['Visit Grandpa','Read a book with Grandpa',
-        'Play board games with Grandpa','Have a picnic with Grandpa'],
+        'Play Lego with Grandpa','Have a picnic with Grandpa'],
       answers: [],
     }
   },
@@ -47,10 +47,10 @@ export default {
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
         .add({targets: ".text-box", opacity: 1}, 500)
-        .add({targets: text[1], opacity: 1}, 3600)
-        .add({targets: text[2], opacity: 1}, 6800)
-        .add({targets: text[3], opacity: 1}, 9700)
-        .add({targets: ".question-container", opacity: 1}, 11700)
+        .add({targets: text[1], opacity: 1}, 6100)
+        .add({targets: text[2], opacity: 1}, 12200)
+        .add({targets: text[3], opacity: 1}, 15800)
+        .add({targets: ".question-container", opacity: 1}, 18100)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)

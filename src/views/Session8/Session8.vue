@@ -63,8 +63,8 @@ export default {
       pages: {
         1: "Session8Page1", 2: "Session8Page1_1", 3: "Session8Page2", 4: "Session8Page3", 5: "Session8Page4",
         6: "Session8Page5", 7: "Session8Page6", 8: "Session8Page6_1", 9: "Session8Page7", 10: "Session8Page8",
-        11: "Session8Page9", 12: "Session8Page10", 13: "Session8Page11", 14: "Session8Page11_1", 15: "Session8Page11_2",
-        16: "Session8Page12", 17: "Session8Page13", 18: "Session8Page14", 19: "Session8Page14_1", 20: "Session8Page15",
+        11: "Session8Page9", 12: "Session8Page10", 13: "Session8Page11", 14: "Session8Page12", 15: "Session8Page13",
+        16: "Session8Page11_1", 17: "Session8Page11_2", 18: "Session8Page14", 19: "Session8Page14_1", 20: "Session8Page15",
         21: "Session8Page16",
       },
       page: 0,

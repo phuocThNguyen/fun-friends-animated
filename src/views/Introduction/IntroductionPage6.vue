@@ -1,7 +1,6 @@
 <template>
   <div class="interactive-container" id="alt-bg">
-    <h1 class="title">"I dedicate this book to all children
-      and their animal friends"</h1>
+    <h1 class="title">"This book is dedicated to all children and their animal friends"</h1>
     <ImageComponent
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/introduction/Koala_Child_Hugging.jpg"
       srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/introduction/Koala_Child_Hugging.jpg"

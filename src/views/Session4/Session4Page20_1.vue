@@ -10,8 +10,8 @@
       <p>Tap your choices:</p>
     </div>
     <div class="choices-container">
-      <div class="choice-container" id="choice-1">
-        <div class="image" @click="toggleChoice(1)">
+      <div class="choice-container" id="choice-1" @click="toggleChoice(1)">
+        <div class="image">
           <ImageComponent
             src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/beautiful-scenery-river-surrounded-by-greenery-during-daytime.jpg"
             srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/beautiful-scenery-river-surrounded-by-greenery-during-daytime.jpg"
@@ -20,8 +20,8 @@
         </div>
         <div class="text">Water</div>
       </div>
-      <div class="choice-container" id="choice-2">
-        <div class="image" @click="toggleChoice(2)">
+      <div class="choice-container" id="choice-2" @click="toggleChoice(2)">
+        <div class="image">
           <ImageComponent
             src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/grove-summer.jpg"
             srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/grove-summer.jpg"
@@ -30,8 +30,8 @@
         </div>
         <div class="text">Trees</div>
       </div>
-      <div class="choice-container" id="choice-3">
-        <div class="image" @click="toggleChoice(3)">
+      <div class="choice-container" id="choice-3" @click="toggleChoice(3)">
+        <div class="image">
           <ImageComponent
             src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/pebble-rocks-texture-pattern-wallpaper.jpg"
             srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/pebble-rocks-texture-pattern-wallpaper.jpg"
@@ -40,8 +40,8 @@
         </div>
         <div class="text">Rocks</div>
       </div>
-      <div class="choice-container" id="choice-4">
-        <div class="image" @click="toggleChoice(4)">
+      <div class="choice-container" id="choice-4" @click="toggleChoice(4)">
+        <div class="image">
           <ImageComponent
             src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/colorful-exotic-fish-swimming-deep-blue-water-aquarium-with-green-tropical-plants.jpg"
             srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/colorful-exotic-fish-swimming-deep-blue-water-aquarium-with-green-tropical-plants.jpg"
@@ -50,8 +50,8 @@
         </div>
         <div class="text">Fishes</div>
       </div>
-      <div class="choice-container" id="choice-5">
-        <div class="image" @click="toggleChoice(5)">
+      <div class="choice-container" id="choice-5" @click="toggleChoice(5)">
+        <div class="image">
           <ImageComponent
             src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/spotted-ladybug-crawling-green-leaf-outdoors-generated-by-ai.jpg"
             srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/spotted-ladybug-crawling-green-leaf-outdoors-generated-by-ai.jpg"
@@ -60,21 +60,22 @@
         </div>
         <div class="text">Insects</div>
       </div>
-      <div class="choice-container" id="choice-6">
-        <div class="image" @click="toggleChoice(6)">
+      <div class="choice-container" id="choice-6" @click="toggleChoice(6)">
+        <div class="image">
           <ImageComponent
             src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/joyful-children-different-ethnicities-playing-together-happily-generated-by-ai.jpg"
             srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/joyful-children-different-ethnicities-playing-together-happily-generated-by-ai.jpg"
             class="image-component"
           />
         </div>
-        <div class="text">Your friends</div>
+        <div class="text">Their friends</div>
       </div>
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
     <audio
       @loadeddata="playSoundText"
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page124%2B1.mp3" ref="voice"/>
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page133.mp3" ref="voice"/>
+    <audio src="../../assets/sounds/all/Correct_1.mp3" ref="correctVoice"/>
     <audio src="../../assets/sounds/session7/click-sound.mp3" ref="clickSound"/>
   </div>
 </template>
@@ -98,8 +99,8 @@ export default {
       animation
         .add({targets: '.text-box', opacity: 1}, 500)
         .add({targets: text[0], opacity: 1}, 500)
-        .add({targets: text[1], opacity: 1}, 3500)
-        .add({targets: '.choices-container', opacity: 1}, 6000)
+        .add({targets: text[1], opacity: 1}, 6000)
+        .add({targets: '.choices-container', opacity: 1}, 10000)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -109,11 +110,11 @@ export default {
       this.animateText();
     },
     toggleChoice(id) {
-      this.$refs.voice.pause();
       let choiceContainer = document.querySelector('#choice-'+id);
       if (!this.choices[id-1]) {
         choiceContainer.classList.add('green-container');
         this.$refs.clickSound.play();
+        this.$refs.correctVoice.play();
       }
       else {
         choiceContainer.classList.remove('green-container');

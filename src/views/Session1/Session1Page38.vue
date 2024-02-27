@@ -6,7 +6,7 @@
       class="session-background"
     />
     <div class="text-box">
-      <h1>Everyday remember to:</h1>
+      <h1>Every day remember to:</h1>
       <p>- Play outside.</p>
       <p>- Go to bed early.</p>
       <p>- Practise relaxing for 5 minutes in a &nbsp;&nbsp;&nbsp;quiet place.</p>

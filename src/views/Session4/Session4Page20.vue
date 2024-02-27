@@ -13,8 +13,8 @@
       <p>Tap your choices:</p>
     </div>
     <div class="choices-container">
-      <div class="choice-container" id="choice-1">
-        <div class="image" @click="toggleChoice(1)">
+      <div class="choice-container" id="choice-1" @click="toggleChoice(1)">
+        <div class="image">
           <ImageComponent
             src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/river-near-forest-norway.jpg"
             srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/river-near-forest-norway.jpg"
@@ -23,18 +23,18 @@
         </div>
         <div class="text">Water flowing</div>
       </div>
-      <div class="choice-container" id="choice-2">
-        <div class="image" @click="toggleChoice(2)">
+      <div class="choice-container" id="choice-2" @click="toggleChoice(2)">
+        <div class="image">
           <ImageComponent
             src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/olivebacked-sunbirds-feeding-child-cinnyris-jugularis.jpg"
             srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/olivebacked-sunbirds-feeding-child-cinnyris-jugularis.jpg"
             class="image-component"
           />
         </div>
-        <div class="text">Bird chirping</div>
+        <div class="text">Birds chirping</div>
       </div>
-      <div class="choice-container" id="choice-3">
-        <div class="image" @click="toggleChoice(3)">
+      <div class="choice-container" id="choice-3" @click="toggleChoice(3)">
+        <div class="image">
           <ImageComponent
             src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/pexels-tung-vu-4506528.jpg"
             srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/pexels-tung-vu-4506528.jpg"
@@ -50,6 +50,7 @@
     <audio ref="water" id="sound-1" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/water.mp3"/>
     <audio ref="bird" id="sound-2" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/bird.mp3"/>
     <audio ref="wind" id="sound-3" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/wind.mp3"/>
+    <audio src="../../assets/sounds/all/Correct_2.mp3" ref="correctVoice"/>
     <audio src="../../assets/sounds/session7/click-sound.mp3" ref="clickSound"/>
     <div class="page-number" id="page-light">132</div>
   </div>
@@ -103,6 +104,7 @@ export default {
         this.voicePlaying = document.querySelector('#sound-'+id);
         this.voicePlaying.play();
         this.$refs.clickSound.play();
+        this.$refs.correctVoice.play();
       }
       else {
         choiceContainer.classList.remove('green-container');

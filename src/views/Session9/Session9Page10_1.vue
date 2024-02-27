@@ -4,8 +4,8 @@
       <h1>What activities would you choose to reward yourself?</h1>
       <p>Tap your choices:</p>
     </div>
-    <div class="choice-container" id="choice-1">
-      <div class="image" @click="toggleChoice(1)">
+    <div class="choice-container" id="choice-1"  @click="toggleChoice(1)">
+      <div class="image">
         <ImageComponent
           src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session9/two-multiracional-brothers-playing-basketball-court-near-park.jpg"
           srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session9/two-multiracional-brothers-playing-basketball-court-near-park.jpg"
@@ -14,8 +14,8 @@
       </div>
       <div class="text">Playing ball</div>
     </div>
-    <div class="choice-container" id="choice-2">
-      <div class="image" @click="toggleChoice(2)">
+    <div class="choice-container" id="choice-2"  @click="toggleChoice(2)">
+      <div class="image">
         <ImageComponent
           src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session9/happy-family-having-fun.jpg"
           srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session9/happy-family-having-fun.jpg"
@@ -24,8 +24,8 @@
       </div>
       <div class="text">Having a picnic</div>
     </div>
-    <div class="choice-container" id="choice-3">
-      <div class="image" @click="toggleChoice(3)">
+    <div class="choice-container" id="choice-3"  @click="toggleChoice(3)">
+      <div class="image">
         <ImageComponent
           src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session9/little-kid-riding-balance-bike-with-his-mother-bicycle-city-park.jpg"
           srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session9/little-kid-riding-balance-bike-with-his-mother-bicycle-city-park.jpg"
@@ -34,8 +34,8 @@
       </div>
       <div class="text">Riding your bike</div>
     </div>
-    <div class="choice-container" id="choice-4">
-      <div class="image" @click="toggleChoice(4)">
+    <div class="choice-container" id="choice-4"  @click="toggleChoice(4)">
+      <div class="image">
         <ImageComponent
           src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session9/little-girl-having-fun-with-swing-park-children-playground.jpg"
           srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session9/little-girl-having-fun-with-swing-park-children-playground.jpg"
@@ -44,8 +44,8 @@
       </div>
       <div class="text">Playing in the park</div>
     </div>
-    <div class="choice-container" id="choice-5">
-      <div class="image" @click="toggleChoice(5)">
+    <div class="choice-container" id="choice-5"  @click="toggleChoice(5)">
+      <div class="image">
         <ImageComponent
           src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session9/joyful-kids-watching-movie-3d-glasses-cinema.jpg"
           srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session9/joyful-kids-watching-movie-3d-glasses-cinema.jpg"
@@ -54,8 +54,8 @@
       </div>
       <div class="text">Going to the movies</div>
     </div>
-    <div class="choice-container" id="choice-6">
-      <div class="image" @click="toggleChoice(6)">
+    <div class="choice-container" id="choice-6"  @click="toggleChoice(6)">
+      <div class="image">
         <ImageComponent
           src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session9/asian-happy-kid-playing-slider-swimming-pool.jpg"
           srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session9/asian-happy-kid-playing-slider-swimming-pool.jpg"

@@ -26,7 +26,7 @@
         </g>
       </svg>
       <div class="bubble-text" id="bb-text-1">
-        <p>I do not <br>want to play <br>with Tom.</p>
+        <p>It is not fun <br>to play with Tom!</p>
       </div>
     </div>
     <div class="bubble-container" id="bubble-2">
@@ -43,7 +43,7 @@
         </g>
       </svg>
       <div class="bubble-text" id="bb-text-2">
-        <p>We can <br>play together <br>and share.</p>
+        <p>It is more fun <br>when we play <br>together and <br>share</p>
       </div>
     </div>
     <div class="masks-container">
@@ -150,7 +150,7 @@
     <audio src="../../assets/sounds/all/wrong-ans.mp3" ref="wrong"/>
     <audio
       @loadeddata="playSoundText"
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page11.mp3" ref="voice"/>
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page153.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -167,16 +167,16 @@ export default {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
-        .add({targets: '.text-box', opacity: 1}, 600)
-        .add({targets: text[0], opacity: 1}, 600)
-        .add({targets: text[1], opacity: 1}, 4810)
-        .add({targets: text[2], opacity: 1}, 9243)
-        .add({targets: text[3], opacity: 1}, 12600)
-        .add({targets: '#bubble-1', opacity: 1}, 17500)
-        .add({targets: '#bubble-2', opacity: 1}, 21500)
-        .add({targets: '.instruction-container', opacity: 1}, 25500)
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[0], opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 6500)
+        .add({targets: text[2], opacity: 1}, 13900)
+        .add({targets: text[3], opacity: 1}, 19900)
+        .add({targets: '#bubble-1', opacity: 1}, 27200)
+        .add({targets: '#bubble-2', opacity: 1}, 32300)
+        .add({targets: '.instruction-container', opacity: 1}, 38000)
       setTimeout(() => {
-        document.querySelector('.masks-container').style.visibility = 'visible'}, 26000);
+        document.querySelector('.masks-container').style.visibility = 'visible'}, 38000);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)

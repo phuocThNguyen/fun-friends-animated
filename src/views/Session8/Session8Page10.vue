@@ -82,7 +82,7 @@
             </g>
           </g>
         </svg>
-        <div class="balloon-text" id="text-7">Play with an <br>animal friend <br>together</div>
+        <div class="balloon-text" id="text-7">Play with <br>animal friends <br>together</div>
       </div>
       <div class="balloon-container" @click="revealBalloon(4)" id="balloon-4">
         <svg class="balloon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111.35 208.89">
@@ -236,17 +236,17 @@
       </div>
     </div>
     <div class="audios">
-      <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page190.mp3" ref="voice"/>
+      <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page205.mp3" ref="voice"/>
       <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3"/>
-      <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/balloon_1.mp3" id="balloon-audio-5"/>
-      <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/balloon_2.mp3" id="balloon-audio-2"/>
-      <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/balloon_3.mp3" id="balloon-audio-7"/>
-      <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/balloon_4.mp3" id="balloon-audio-4"/>
-      <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/balloon_5.mp3" id="balloon-audio-1"/>
-      <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/balloon_6.mp3" id="balloon-audio-6"/>
-      <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/balloon_7.mp3" id="balloon-audio-3"/>
-      <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/balloon_8.mp3" id="balloon-audio-8"/>
-      <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/balloon_9.mp3" id="balloon-audio-9"/>
+      <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/balloona-1.mp3" id="balloon-audio-1"/>
+      <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/balloona-2.mp3" id="balloon-audio-2"/>
+      <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/balloona-3.mp3" id="balloon-audio-3"/>
+      <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/balloona-4.mp3" id="balloon-audio-4"/>
+      <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/balloona-5.mp3" id="balloon-audio-5"/>
+      <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/balloona-6.mp3" id="balloon-audio-6"/>
+      <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/balloona-7.mp3" id="balloon-audio-7"/>
+      <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/balloona-8.mp3" id="balloon-audio-8"/>
+      <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/balloona-9.mp3" id="balloon-audio-9"/>
       <audio src="../../assets/sounds/session7/click-sound.mp3" ref="clickSound"/>
       <audio src="../../assets/sounds/all/crowd-cheer-applause-2.mp3" ref="cheer"/>
     </div>
@@ -273,8 +273,8 @@ export default {
       animation
         .add({targets: '.text-box',opacity: 1}, 500)
         .add({targets: text[0],opacity: 1}, 500)
-        .add({targets: text[1],opacity: 1}, 5700)
-        .add({targets: '.balloons-container',opacity: 1}, 6500)
+        .add({targets: text[1],opacity: 1}, 8800)
+        .add({targets: '.balloons-container',opacity: 1}, 13800)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
@@ -303,19 +303,10 @@ export default {
     playRewardSound() {
       if (this.balloonArray.length === 9) this.$refs.cheer.play();
     },
-    init() {
-      this.canvasData = this.$store.getters.getPage167Data;
-    },
-    updateCanvas(canvasData) {
-      this.$store.commit('setPage167Data', canvasData);
-    },
     playSoundText() {
       this.playVoiceOver();
       this.animateText();
     }
-  },
-  created() {
-    this.init();
   },
   mounted() {
     this.setAudioVolumeLevel(0.2);

@@ -84,12 +84,12 @@ export default {
       session: 0,
       isNext: true,
       appendixPage: 0,
-      // authed: true,
-      // relogin: false,
-      // loading: false,
-      authed: false,
+      authed: true,
       relogin: false,
-      loading: true,
+      loading: false,
+      // authed: false,
+      // relogin: false,
+      // loading: true,
     }
   },
   methods: {
@@ -139,9 +139,9 @@ export default {
     }
   },
   async beforeMount() {
-    this.authed = this.$store.getters.getAuthedStatus;
-    this.loading = this.$store.getters.getLoadingStatus;
-    await this.checkAuthentication();
+    // this.authed = this.$store.getters.getAuthedStatus;
+    // this.loading = this.$store.getters.getLoadingStatus;
+    // await this.checkAuthentication();
   },
   created() {}
 };

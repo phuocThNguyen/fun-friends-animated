@@ -1,31 +1,33 @@
 <template>
   <div class="interactive-container">
-    <ImageComponent
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session3/1605-resized.jpg"
-      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session3/1605-resized.jpg"
-      class="session-background"
-    />
-    <div class="text-box">
-      <h1><strong>2. Bubble blowing</strong></h1>
-      <p>Another fun game to blow our worries away
-      is getting a Magic Bubble Wand. Breathe in calm, happy feelings
-      and blow away your angry, sad and worried feelings.</p>
-      <br>
-      <p>Notice how the bubbles float away and fade,
-      the same with our feelings. Feelings don't stay
-      forever, feelings change. Using a Magic Bubble Wand
-      to calm down is a 'thumbs up' choice.</p>
+    <div class="images-container">
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session3/1605-resized.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session3/1605-resized.jpg"
+        class="page-image" id="image-step-1"
+      />
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session3/ImageStep2BubbleBlowing.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session3/ImageStep2BubbleBlowing.jpg"
+        class="page-image" id="image-step-2"
+      />
+      <div class="mask"/>
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session3/ImageStep3BubbleBlowing.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session3/ImageStep3BubbleBlowing.jpg"
+        class="page-image" id="image-step-3"
+      />
     </div>
-    <div class="bubble" id="bubble-1"/>
-    <div class="bubble" id="bubble-2"/>
-    <div class="bubble" id="bubble-3"/>
-    <div class="bubble" id="bubble-4"/>
-    <div class="bubble" id="bubble-5"/>
-    <div class="bubble" id="bubble-6"/>
-    <div class="bubble" id="bubble-7"/>
-    <div class="bubble" id="bubble-8"/>
-    <div class="bubble" id="bubble-9"/>
-    <div class="bubble" id="bubble-10"/>
+    <div class="text-box">
+      <h1 id="title"><strong>2. Bubble blowing</strong></h1>
+      <p class="mb-2" id="step-1"><strong>Step 1:</strong> Breathe in calm,
+        happy feelings and blow away your angry, sad, and worried feelings.</p>
+      <p class="mb-2" id="step-2"><strong>Step 2:</strong> Notice how the
+        bubbles float away and fade, the same with our feelings.</p>
+      <p class="mb-2" id="step-3"><strong>Step 3:</strong> Feelings don’t
+        stay forever, feelings change. Using a Magic Bubble Wand to calm
+        down is a ‘thumbs up’ choice.</p>
+    </div>
     <div class="star-container">
       <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 1258" width="1320" height="1258">
         <title>Star</title>
@@ -47,11 +49,16 @@
         </p>
       </div>
     </div>
-    <audio ref="audio" autoplay src="../../assets/sounds/session3/bubbles.mp3"/>
-    <audio
-      @loadeddata="playSoundText"
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/Session3_Page13.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">105</div>
+    <button class="btn-style" @click="displayStep">Click here for the next step</button>
+    <div class="audios">
+      <audio ref="click" src="../../assets/sounds/session7/click-sound.mp3"/>
+      <audio @loadeddata="playSoundText"
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/Session3_Page104.mp3" ref="voice"/>
+      <audio id="audio-step-1" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/104-step-1.mp3"></audio>
+      <audio id="audio-step-2" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/104-step-2.mp3"></audio>
+      <audio id="audio-step-3" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/104-step-3.mp3"></audio>
+    </div>
+    <div class="page-number" id="page-light">104</div>
   </div>
 </template>
 
@@ -62,35 +69,70 @@ import anime from "animejs";
 export default {
   name: "Session3Page12",
   components: {ImageComponent},
+  data() {
+    return {
+      currentStep: 0,
+      currentAudio: null,
+      video: null
+    }
+  },
   methods: {
-    animateText() {
-      let text = document.getElementsByClassName('text-box')[0].children;
-      let animation = anime.timeline({duration: 500, easing: 'linear'});
-      animation
-        .add({targets: '.text-box', opacity: 1}, 500)
-        .add({targets: text[0], opacity: 1}, 927)
-        .add({targets: text[1], opacity: 1}, 4131)
-        .add({targets: text[3], opacity: 1}, 21096)
-        .add({targets: '.star-container', opacity: 1}, 40000)
-    },
-    setAudioVolumeLevel(level) {
-      this.$refs.audio.volume = level
-    },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
+      this.currentAudio = this.$refs.voice;
     },
     playSoundText() {
       this.playVoiceOver();
-      this.animateText();
-    }
+    },
+    displayStep() {
+      this.$refs.click.play();
+      if (this.currentStep < 3) {
+        this.currentAudio.pause();
+        this.currentStep++;
+        if (this.currentStep === 2) {anime({targets: '.mask', opacity: 1, duration: 500, easing: 'linear'})}
+        let animation = anime.timeline({duration: 500, easing: 'linear'});
+        animation
+          .add({targets: "#step-"+this.currentStep, opacity: 1}, 0)
+          .add({targets: "#image-step-"+this.currentStep, opacity: 1}, 0);
+        this.currentAudio = document.querySelector('#audio-step-'+this.currentStep);
+        this.currentAudio.play();
+      }
+    },
   },
-  mounted() {
-    this.setAudioVolumeLevel(0.4);
-  }
+  mounted() {}
 }
 </script>
 
 <style scoped>
+.page-image {position: absolute;height: 100%;opacity: 0}
+.mask {position: absolute;height: 100%; background: #fff; width: 50vh;right: 60.5vh;opacity: 0;}
+#image-step-1 {left: 28vh}
+#image-step-2 {right: 0}
+#image-step-3 {left: 25vh}
+.btn-style {
+  position: absolute;
+  bottom: 3.5vh;
+  left: 14vh;
+  background-color: #00ce7c;
+  border: none;
+  width: 41vh;
+  text-align: center;
+  height: 6vh;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 2.5vh;
+  font-weight: bold;
+  box-shadow: 0 9px #999;
+}
+.btn-style:focus,
+.btn-style:active {
+  outline: 0 !important;
+}
+.btn-style:active {
+  background-color: #009c5d;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 .star-container {
   position: absolute;
   width: 40%;
@@ -124,134 +166,21 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  width: 35%;
+  width: 59vh;
   height: 100%;
-  background-color: rgba(255,255,255, 0.7);
+  background-color: #fff;
   padding: 1vh;
-  opacity: 0;
+  opacity: 1;
 }
 .text-box h1 {
   font-size: 4vh;
   margin-bottom: 1vh;
-  opacity: 0;
+  opacity: 1;
 }
 .text-box p {
   font-size: 3.3vh;
   margin-bottom: 0;
   opacity: 0;
-}
-.bubble {
-  height: 1px;
-  width: 1px;
-  position: absolute;
-
-  border-radius: 50%;
-  transform: translateX(-50%);
-}
-.bubble:after {
-  content: "";
-  position: absolute;
-  height: 85%;
-  width: 85%;
-  border-top: 1px solid rgba(255,255,255,0.63);
-  border-radius: 50%;
-  left: 50%;
-  top: 50%;
-  transform: translate3d(-50%, -50%, 0) rotateZ(-45deg);
-}
-#bubble-1 {
-  background-color: rgba(255, 89, 94,0.9);
-  bottom: -11vh;
-  left: 57%;
-  animation: bubble-movement 8s infinite ease-in -0.76s;
-  -webkit-animation: bubble-movement 8s infinite ease-in -0.76s;
-}
-#bubble-2 {
-  background-color: rgba(25, 130, 196,0.9);
-  bottom: -10vh;
-  left: 37%;
-  animation: bubble-movement 9s infinite ease-in -0.96s;
-  -webkit-animation: bubble-movement 9s infinite ease-in -0.96s;
-}
-#bubble-3 {
-  background-color: rgba(255, 202, 58,0.9);
-  bottom: -12vh;
-  left: 77%;
-  animation: bubble-movement 12s infinite ease-in -1.76s;
-  -webkit-animation: bubble-movement 12s infinite ease-in -1.76s;
-}
-#bubble-4 {
-  background-color: rgba(255, 89, 94,0.9);
-  bottom: -13vh;
-  left: 67%;
-  animation: bubble-movement 6s infinite ease-in -3.76s;
-  -webkit-animation: bubble-movement 6s infinite ease-in -3.76s;
-}
-#bubble-5 {
-  background-color: rgba(138, 201, 38,0.9);
-  bottom: -12vh;
-  left: 97%;
-  animation: bubble-movement 7s infinite ease-in -5.5s;
-  -webkit-animation: bubble-movement 7s infinite ease-in -5.5s;
-}
-#bubble-6 {
-  background-color: rgba(255, 89, 94,0.9);
-  bottom: -11vh;
-  left: 43%;
-  animation: bubble-movement 7.5s infinite ease-in -6s;
-  -webkit-animation: bubble-movement 7.5s infinite ease-in -6s;
-}
-#bubble-7 {
-  background-color: rgba(25, 130, 196,0.9);
-  bottom: -14vh;
-  left: 50%;
-  animation: bubble-movement 8.5s infinite ease-in -3.3s;
-  -webkit-animation: bubble-movement 8.5s infinite ease-in -3.3s;
-}
-#bubble-8 {
-  background-color: rgba(255, 202, 58,0.9);
-  bottom: -10vh;
-  left: 88%;
-  animation: bubble-movement 5s infinite ease-in -14.2s;
-  -webkit-animation: bubble-movement 5s infinite ease-in -14.2s;
-}
-#bubble-9 {
-  background-color: rgba(138, 201, 38,0.9);
-  bottom: -18vh;
-  left: 75%;
-  animation: bubble-movement 10s infinite ease-in -6s;
-  -webkit-animation: bubble-movement 10s infinite ease-in -6s;
-}
-#bubble-10 {
-  background-color: rgba(255, 202, 58,0.9);
-  bottom: -16vh;
-  left: 47%;
-  animation: bubble-movement 5.5s infinite ease-in -17.76s;
-  -webkit-animation: bubble-movement 5.5s infinite ease-in -17.76s;
-}
-@keyframes bubble-movement {
-  0% {
-    transform: translate3d(-50%, 0, 0);
-    height: 1px;
-    width: 1px;
-  }
-  100% {
-    transform: translate3d(-50%, -110vh, 0);
-    height: 10vh;
-    width: 10vh;
-  }
-}
-@-webkit-keyframes bubble-movement {
-  0% {
-    transform: translate3d(-50%, 0, 0);
-    height: 1px;
-    width: 1px;
-  }
-  100% {
-    transform: translate3d(-50%, -110vh, 0);
-    height: 10vh;
-    width: 10vh;
-  }
 }
 .shp0-star { fill: #f3cc30 }
 .shp1-star { fill: #f7db5e }

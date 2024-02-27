@@ -3,10 +3,8 @@
     <drawing-canvas class="canvas" v-on:updateCanvas="updateCanvas" :data="canvasData" :canvasStyle="canvasStyle"/>
     <div class="text-box">
       <h1>A Tree With 'Feelings'</h1>
-      <p>Make one tree with your friends. You can do this by drawing, creating, planting,
-       or finding one outside, or using your bodies to build one!</p>
-      <p>Draw or write down one feeling you have had and act it out in a group.</p>
-      <p>When and why did you feel this way? <strong>All feelings are OK.</strong></p>
+      <p>Make a tree with your friends.</p>
+      <p>Draw feeling faces in the yellow circles.</p>
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/no-copyright-music-funny-children-kids-music-by-mokka-kids.mp3"/>
     <audio
@@ -41,28 +39,11 @@ export default {
     },
     animateText() {
       let text = document.querySelector('.text-box').children;
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      })
+      let animation = anime.timeline({easing: 'linear', duration: 500,})
       animation
-        .add({
-          targets: '.text-box',
-          opacity: 1
-        }, 737)
-        .add({
-          targets: text[1],
-          opacity: 1,
-          delay: 500
-        }, 2647)
-        .add({
-          targets: text[2],
-          opacity: 1,
-        }, 14868)
-        .add({
-          targets: text[3],
-          opacity: 1,
-        }, 21204)
+        .add({targets: '.text-box', opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 5200)
+        .add({targets: text[2], opacity: 1}, 10000)
     },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level
@@ -114,9 +95,6 @@ export default {
   font-size: 3.3vh;
   margin-bottom: 0;
   opacity: 0;
-}
-.text-box p:nth-child(3) {
-  color: #d00000;
 }
 .text-box p:last-child {
   margin-bottom: 0;

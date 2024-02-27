@@ -6,7 +6,7 @@
       class="session-background"
     />
     <div class="text-box">
-      <h1>Everyday remember to:</h1>
+      <h1>Every day remember to:</h1>
       <p>&nbsp;- Be kind to all living beings.</p>
       <p>&nbsp;- Play outside.</p>
       <p>&nbsp;- Have plenty of sleep.</p>
@@ -14,7 +14,7 @@
       <p>&nbsp;- Eat healthy foods.</p>
       <p>&nbsp;- Practise relaxing without screens.</p>
       <p>&nbsp;- Pay attention to happy things and &nbsp;&nbsp;&nbsp;what you
-      can see, hear, smell, taste &nbsp;&nbsp;&nbsp;and feel.</p>
+      can see, hear, smell, &nbsp;&nbsp;&nbsp;taste and feel.</p>
       <p>&nbsp;- Say thank you for happy times.</p>
     </div>
     <div class="image-container">

@@ -12,7 +12,7 @@
         thoughts that can help them play happily together?</p>
     </div>
     <div class="bubble-container" id="bubble-1">
-      <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 341.11 268.16">
+      <svg class="bubble" style="transform:scaleY(-1) scaleX(-1)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 341.11 268.16">
         <g id="Layer_2" data-name="Layer 2">
           <g id="Graphic_Element" data-name="Graphic Element">
             <path class="cls-bb-1 incorrect" d="M260.81,200.64c6.72.93,13.64,1.93,19.46,5.43s10.26,10.19,9,16.86c-1,5.45-5.47,9.59-10.1,12.65-13.7,9-30.61,12.07-47,12.14-12.47.05-25.37-1.6-36.07-8a17.19,17.19,0,0,1-6.45-5.92c-2.47-4.35-1.52-10,1.09-14.29s6.62-7.47,10.56-10.58c-52.8,18.53-154,13.2-179.25-48.34-12.22-29.77-2.65-66.13,17.8-90.45s49.94-38.17,79.74-46a262.55,262.55,0,0,1,67.67-8.69c39.15.11,80,10.08,109.08,37.69C306.44,62.71,315,74.45,319.65,88c7.31,21.37,4,46.05-6.9,65.71S280.76,192.12,260.81,200.64Z" />
@@ -25,11 +25,11 @@
         </g>
       </svg>
       <div class="bubble-text" id="bb-text-1">
-        <p>I do not <br>want to share.</p>
+        <p>It is not <br>fun to play <br>with Tom!</p>
       </div>
     </div>
     <div class="bubble-container" id="bubble-2">
-      <svg class="bubble" style="transform:scaleY(-1)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 341.11 268.16">
+      <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 341.11 268.16">
         <g id="Layer_2" data-name="Layer 2">
           <g id="Graphic_Element" data-name="Graphic Element">
             <path class="cls-bb-1 correct" d="M260.81,200.64c6.72.93,13.64,1.93,19.46,5.43s10.26,10.19,9,16.86c-1,5.45-5.47,9.59-10.1,12.65-13.7,9-30.61,12.07-47,12.14-12.47.05-25.37-1.6-36.07-8a17.19,17.19,0,0,1-6.45-5.92c-2.47-4.35-1.52-10,1.09-14.29s6.62-7.47,10.56-10.58c-52.8,18.53-154,13.2-179.25-48.34-12.22-29.77-2.65-66.13,17.8-90.45s49.94-38.17,79.74-46a262.55,262.55,0,0,1,67.67-8.69c39.15.11,80,10.08,109.08,37.69C306.44,62.71,315,74.45,319.65,88c7.31,21.37,4,46.05-6.9,65.71S280.76,192.12,260.81,200.64Z" />
@@ -42,7 +42,7 @@
         </g>
       </svg>
       <div class="bubble-text" id="bb-text-2">
-        <p>I can give <br>Annie some of <br>my blocks.</p>
+        <p>It is fun when <br>we play together <br>and share.</p>
       </div>
     </div>
     <div class="masks-container">
@@ -116,7 +116,7 @@
     <audio src="../../assets/sounds/all/wrong-ans.mp3" ref="wrong"/>
     <audio
       @loadeddata="playSoundText"
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page12.mp3" ref="voice"/>
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page154.mp3" ref="voice"/>
   </div>
 </template>
 
@@ -134,14 +134,14 @@ export default {
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
         .add({targets: '.text-box', opacity: 1}, 500)
-        .add({targets: text[0], opacity: 1}, 719)
-        .add({targets: text[1], opacity: 1}, 5107)
-        .add({targets: text[2], opacity: 1}, 8600)
-        .add({targets: '#bubble-1', opacity: 1}, 14000)
-        .add({targets: '#bubble-2', opacity: 1}, 17500)
-        .add({targets: '.instruction-container', opacity: 1}, 21000)
+        .add({targets: text[0], opacity: 1}, 500)
+        .add({targets: text[1], opacity: 1}, 5600)
+        .add({targets: text[2], opacity: 1}, 10100)
+        .add({targets: '#bubble-1', opacity: 1}, 15600)
+        .add({targets: '#bubble-2', opacity: 1}, 20500)
+        .add({targets: '.instruction-container', opacity: 1}, 25400)
       setTimeout(() => {
-        document.querySelector('.masks-container').style.visibility = 'visible'}, 22000);
+        document.querySelector('.masks-container').style.visibility = 'visible'}, 25400);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -225,16 +225,16 @@ export default {
   width: 35vh;
   height: 26vh;
 }
-#mask-1 {top:2vh;left:11vh}
-#mask-2 {top:30vh;left:10vh}
+#mask-1 {top:23.5vh;right:4vh}
+#mask-2 {top:1.5vh;left:9vh}
 .bubble-container {
   position: absolute;
   width: 32vh;
   height: 23vh;
   opacity: 0;
 }
-#bubble-1 {top:2vh;left:11vh}
-#bubble-2 {top:30vh;left:10vh}
+#bubble-1 {top:24vh;right:5vh}
+#bubble-2 {top:2vh;left:10vh}
 .bubble {width:100%;position:absolute}
 .bubble-text {
   position: absolute;
@@ -246,8 +246,8 @@ export default {
   text-align: center;
   padding-bottom: 4vh;
 }
-#bb-text-1 {padding-right: 3vh}
-#bb-text-2 {padding-right: 2vh;padding-top: 12vh}
+#bb-text-1 {padding-left: 3vh;padding-top: 12vh}
+#bb-text-2 {padding-right: 2vh}
 .bubble-text p {font-size: 3vh; margin-bottom: 0; font-weight: 600}
 .cls-bb-1 {fill: #272525;}
 .cls-bb-green-1 {fill: #00CE7C;}
