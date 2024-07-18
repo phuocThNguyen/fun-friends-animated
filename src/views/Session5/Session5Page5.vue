@@ -6,9 +6,17 @@
       class="session-background"
     />
     <div class="text-box">
-      <p>Matilda is spending her first night sleeping by herself.</p>
-      <p>Pay attention to her worried face!</p>
-      <p>How is she feeling? Is Matilda having '<span id="red-text">red</span>'
+      <p>Matilda is spending her first night sleeping by herself. Pay attention to her face!</p>
+      <p>How is she feeling?</p>
+      <div class="question-container">
+        <div class="checkbox-containers" id="short-checkbox">
+          <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
+            <input type="checkbox" @click="clickSound" v-model="answers" :value="name">
+            <span class="checkmark"/>
+          </label>
+        </div>
+      </div>
+      <p>Is Matilda having '<span id="red-text">red</span>'
         or '<span id="green-text">green</span>' thoughts?</p>
     </div>
     <traffic-lights-vertical
@@ -118,7 +126,7 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page5.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">147</div>
+    <audio src="../../assets/sounds/all/click-sound.mp3" ref="clickSound"/>
   </div>
 </template>
 
@@ -129,6 +137,12 @@ import anime from "animejs";
 export default {
   name: 'Session5Page5',
   components: {TrafficLightsVertical,ImageComponent},
+  data() {
+    return {
+      data: ['Angry','Worried','Sad','Happy'],
+      answers: [],
+    }
+  },
   methods: {
     handleWrongAnswer() {
       anime({
@@ -152,31 +166,14 @@ export default {
     },
     animateText() {
       let text = document.querySelector('.text-box').children;
-      let animation = anime.timeline({
-        easing: 'linear',
-        duration: 500,
-      })
+      let animation = anime.timeline({easing: 'linear', duration: 500,})
       animation
-        .add({
-          targets: '.text-box',
-          opacity: 1
-        }, 300)
-        .add({
-          targets: text[0],
-          opacity: 1
-        }, 588)
-        .add({
-          targets: text[1],
-          opacity: 1
-        }, 5588)
-        .add({
-          targets: text[2],
-          opacity: 1
-        }, 8600)
-        .add({
-          targets: '.traffic-light',
-          opacity: 1
-        }, 14500)
+        .add({targets: '.text-box', opacity: 1}, 300)
+        .add({targets: text[0], opacity: 1}, 600)
+        .add({targets: text[1], opacity: 1}, 8200)
+        .add({targets: text[2], opacity: 1}, 10600)
+        .add({targets: text[3], opacity: 1}, 15100)
+        .add({targets: '.traffic-light', opacity: 1}, 18800)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -184,25 +181,30 @@ export default {
     playSoundText() {
       this.playVoiceOver();
       this.animateText();
-    }
+    },
+    clickSound() {this.$refs.clickSound.play()},
+    init() {this.answers = this.$store.getters.getPage147Data;},
   },
-  mounted() {}
+  mounted() {},
+  watch: {
+    answers: function() {this.$store.commit('setPage147Data', this.answers)}
+  }
 }
 </script>
 
 <style scoped>
 .traffic-light {
   position: absolute;
-  right: 38.5vh;
-  top: 35vh;
+  right: 32vh;
+  top: 5vh;
   opacity: 0;
 }
 .text-box {
   position: absolute;
-  width: 80%;
+  width: 90vh;
   padding: 1.5vh;
-  top: 1vh;
-  left: 10%;
+  bottom: 1vh;
+  left: 21.5vh;
   background-color: rgba(255,255,255, 0.9);
   opacity: 0;
 }
@@ -260,4 +262,76 @@ export default {
 .cls-20 {fill: #affc41;}
 .cls-21 {fill: #1dd3b0;}
 .cls-22 {font-size: 30.16px;fill: #4a0f00;font-family: AntipastoPro-DemiBold, AntipastoPro DemiBold,serif;font-weight: 300;}
+.question-container {
+  width: 100%;
+  margin-top: 1vh;
+  opacity: 0;
+}
+.checkbox-containers {padding: 0}
+#long-checkbox label {width: 100%;}
+#short-checkbox label {width: 25%;}
+/* The container */
+.checkbox-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 6vh;
+  margin-bottom: 2vh;
+  cursor: pointer;
+  font-size: 3.8vh;
+  line-height: 4.5vh;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4.8vh;
+  width: 4.8vh;
+  border: .2vh solid #000;
+  background-color: #eee;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+  left: 1.2vh;
+  top: 0.1vh;
+  width: 2vh;
+  height: 3.5vh;
+  border: solid white;
+  border-width: 0 0.7vh 0.7vh 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 </style>
