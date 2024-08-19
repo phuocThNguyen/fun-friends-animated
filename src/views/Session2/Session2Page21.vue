@@ -14,29 +14,18 @@
     <div class="content-container" id="content-left">
       <h1>What could he be feeling?</h1>
       <div class="emotes-container">
-        <emote-angry class="emotes"/>
-        <emote-happy class="emotes incorrect"/>
-        <emote-worried class="emotes incorrect"/>
+        <emote-happy class="incorrect"/>
+        <emote-sad class="incorrect"/>
+        <emote-worried class="incorrect"/>
+        <emote-angry class=""/>
       </div>
       <div class="tips-container">
-        <p id="tip-1-left">Angry</p>
-        <p class="incorrect" id="tip-2-left">Happy</p>
+        <p class="incorrect" id="tip-1-left">Happy</p>
+        <p class="incorrect" id="tip-2-left">Sad</p>
         <p class="incorrect" id="tip-3-left">Worried</p>
+        <p id="tip-4-left">Angry</p>
       </div>
       <div class="answer-container">
-        <svg class="small-tick" id="green-tick-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.98 92.25">
-          <g class="cls-1-green-mark">
-            <g id="Layer_2" data-name="Layer 2">
-              <g id="Layer_1-2" data-name="Layer 1">
-                <rect class="cls-2-green-mark" x="2.48" y="2.48" width="89.01" height="87.28" rx="43.64" />
-                <rect class="cls-2-green-mark" x="2.48" y="2.48" width="89.01" height="87.28" rx="43.64" />
-                <path class="cls-2-green-mark" d="M47.86,92.25H46.12A46.13,46.13,0,0,1,46.12,0h1.74a46.13,46.13,0,0,1,0,92.25ZM46.12,5a41.16,41.16,0,0,0,0,82.31h1.74A41.16,41.16,0,0,0,47.86,5Z" />
-                <path class="cls-4-green-mark" d="M47.86,13a33.17,33.17,0,0,1,0,66.34H46.12a33.17,33.17,0,0,1,0-66.34h1.74m0-1.54H46.12a34.72,34.72,0,1,0,0,69.43h1.74a34.72,34.72,0,1,0,0-69.43Z" />
-                <polygon class="cls-5-green-mark" points="65.83 28.23 41.58 52.48 31.98 42.88 25.31 49.55 41.58 65.82 72.5 34.9 65.83 28.23" />
-              </g>
-            </g>
-          </g>
-        </svg>
         <svg class="small-tick" id="red-tick-1-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.98 92.25">
           <g class="cls-1-red-mark">
             <g id="Layer_2" data-name="Layer 2">
@@ -63,27 +52,7 @@
             </g>
           </g>
         </svg>
-      </div>
-      <div class="masks-container">
-        <div id="correct-1" @click="answerHandler"/>
-        <div id="incorrect-1" class="incorrect" @click="answerHandler"/>
-        <div id="incorrect-2" class="incorrect" @click="answerHandler"/>
-      </div>
-    </div>
-    <div class="content-container" id="content-right">
-      <h1>What could she be feeling?</h1>
-      <div class="emotes-container">
-        <emote-worried class="emotes incorrect-2"/>
-        <emote-happy class="emotes"/>
-        <emote-crying class="emotes incorrect-2"/>
-      </div>
-      <div class="tips-container">
-        <p class="incorrect-2" id="tip-1-right">Worried</p>
-        <p id="tip-2-right">Happy</p>
-        <p class="incorrect-2" id="tip-3-right">Sad</p>
-      </div>
-      <div class="answer-container">
-        <svg class="small-tick" id="red-tick-1-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.98 92.25">
+        <svg class="small-tick" id="red-tick-3-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.98 92.25">
           <g class="cls-1-red-mark">
             <g id="Layer_2" data-name="Layer 2">
               <g id="Layer_1-2" data-name="Layer 1">
@@ -96,6 +65,42 @@
             </g>
           </g>
         </svg>
+        <svg class="small-tick" id="green-tick-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.98 92.25">
+          <g class="cls-1-green-mark">
+            <g id="Layer_2" data-name="Layer 2">
+              <g id="Layer_1-2" data-name="Layer 1">
+                <rect class="cls-2-green-mark" x="2.48" y="2.48" width="89.01" height="87.28" rx="43.64" />
+                <rect class="cls-2-green-mark" x="2.48" y="2.48" width="89.01" height="87.28" rx="43.64" />
+                <path class="cls-2-green-mark" d="M47.86,92.25H46.12A46.13,46.13,0,0,1,46.12,0h1.74a46.13,46.13,0,0,1,0,92.25ZM46.12,5a41.16,41.16,0,0,0,0,82.31h1.74A41.16,41.16,0,0,0,47.86,5Z" />
+                <path class="cls-4-green-mark" d="M47.86,13a33.17,33.17,0,0,1,0,66.34H46.12a33.17,33.17,0,0,1,0-66.34h1.74m0-1.54H46.12a34.72,34.72,0,1,0,0,69.43h1.74a34.72,34.72,0,1,0,0-69.43Z" />
+                <polygon class="cls-5-green-mark" points="65.83 28.23 41.58 52.48 31.98 42.88 25.31 49.55 41.58 65.82 72.5 34.9 65.83 28.23" />
+              </g>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div class="masks-container">
+        <div id="incorrect-1" class="incorrect" @click="answerHandler"/>
+        <div id="incorrect-2" class="incorrect" @click="answerHandler"/>
+        <div id="incorrect-3" class="incorrect" @click="answerHandler"/>
+        <div id="correct-1" @click="answerHandler"/>
+      </div>
+    </div>
+    <div class="content-container" id="content-right">
+      <h1>What could she be feeling?</h1>
+      <div class="emotes-container">
+        <emote-happy class=""/>
+        <emote-sad class="incorrect-2"/>
+        <emote-worried class="incorrect-2"/>
+        <emote-angry class="incorrect-2"/>
+      </div>
+      <div class="tips-container">
+        <p id="tip-1-right">Happy</p>
+        <p class="incorrect-2" id="tip-2-right">Sad</p>
+        <p class="incorrect-2" id="tip-3-right">Worried</p>
+        <p class="incorrect-2" id="tip-4-right">Angry</p>
+      </div>
+      <div class="answer-container">
         <svg class="small-tick" id="green-tick-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.98 92.25">
           <g class="cls-1-green-mark">
             <g id="Layer_2" data-name="Layer 2">
@@ -105,6 +110,19 @@
                 <path class="cls-2-green-mark" d="M47.86,92.25H46.12A46.13,46.13,0,0,1,46.12,0h1.74a46.13,46.13,0,0,1,0,92.25ZM46.12,5a41.16,41.16,0,0,0,0,82.31h1.74A41.16,41.16,0,0,0,47.86,5Z" />
                 <path class="cls-4-green-mark" d="M47.86,13a33.17,33.17,0,0,1,0,66.34H46.12a33.17,33.17,0,0,1,0-66.34h1.74m0-1.54H46.12a34.72,34.72,0,1,0,0,69.43h1.74a34.72,34.72,0,1,0,0-69.43Z" />
                 <polygon class="cls-5-green-mark" points="65.83 28.23 41.58 52.48 31.98 42.88 25.31 49.55 41.58 65.82 72.5 34.9 65.83 28.23" />
+              </g>
+            </g>
+          </g>
+        </svg>
+        <svg class="small-tick" id="red-tick-1-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.98 92.25">
+          <g class="cls-1-red-mark">
+            <g id="Layer_2" data-name="Layer 2">
+              <g id="Layer_1-2" data-name="Layer 1">
+                <path class="cls-2-red-mark" d="M47.86,89.76H46.12A43.64,43.64,0,0,1,2.48,46.12h0A43.64,43.64,0,0,1,46.12,2.48h1.74A43.64,43.64,0,0,1,91.5,46.12h0A43.64,43.64,0,0,1,47.86,89.76Z" />
+                <path class="cls-2-red-mark" d="M47.86,89.76H46.12A43.64,43.64,0,0,1,2.48,46.12h0A43.64,43.64,0,0,1,46.12,2.48h1.74A43.64,43.64,0,0,1,91.5,46.12h0A43.64,43.64,0,0,1,47.86,89.76Z" />
+                <path class="cls-2-red-mark" d="M47.86,92.25H46.12A46.13,46.13,0,0,1,46.12,0h1.74a46.13,46.13,0,0,1,0,92.25ZM46.12,5a41.16,41.16,0,0,0,0,82.31h1.74A41.16,41.16,0,0,0,47.86,5Z" />
+                <path class="cls-3-red-mark" d="M47.86,13a33.17,33.17,0,0,1,0,66.34H46.12a33.17,33.17,0,0,1,0-66.34h1.74m0-1.54H46.12a34.72,34.72,0,1,0,0,69.43h1.74a34.72,34.72,0,1,0,0-69.43Z" />
+                <polygon class="cls-4-red-mark" points="53.74 47.31 65.46 35.58 58.8 28.91 47.07 40.64 35.35 28.91 28.68 35.58 40.4 47.31 28.68 59.03 35.35 65.7 47.07 53.98 58.8 65.7 65.47 59.03 53.74 47.31" />
               </g>
             </g>
           </g>
@@ -122,11 +140,25 @@
             </g>
           </g>
         </svg>
+        <svg class="small-tick" id="red-tick-3-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.98 92.25">
+          <g class="cls-1-red-mark">
+            <g id="Layer_2" data-name="Layer 2">
+              <g id="Layer_1-2" data-name="Layer 1">
+                <path class="cls-2-red-mark" d="M47.86,89.76H46.12A43.64,43.64,0,0,1,2.48,46.12h0A43.64,43.64,0,0,1,46.12,2.48h1.74A43.64,43.64,0,0,1,91.5,46.12h0A43.64,43.64,0,0,1,47.86,89.76Z" />
+                <path class="cls-2-red-mark" d="M47.86,89.76H46.12A43.64,43.64,0,0,1,2.48,46.12h0A43.64,43.64,0,0,1,46.12,2.48h1.74A43.64,43.64,0,0,1,91.5,46.12h0A43.64,43.64,0,0,1,47.86,89.76Z" />
+                <path class="cls-2-red-mark" d="M47.86,92.25H46.12A46.13,46.13,0,0,1,46.12,0h1.74a46.13,46.13,0,0,1,0,92.25ZM46.12,5a41.16,41.16,0,0,0,0,82.31h1.74A41.16,41.16,0,0,0,47.86,5Z" />
+                <path class="cls-3-red-mark" d="M47.86,13a33.17,33.17,0,0,1,0,66.34H46.12a33.17,33.17,0,0,1,0-66.34h1.74m0-1.54H46.12a34.72,34.72,0,1,0,0,69.43h1.74a34.72,34.72,0,1,0,0-69.43Z" />
+                <polygon class="cls-4-red-mark" points="53.74 47.31 65.46 35.58 58.8 28.91 47.07 40.64 35.35 28.91 28.68 35.58 40.4 47.31 28.68 59.03 35.35 65.7 47.07 53.98 58.8 65.7 65.47 59.03 53.74 47.31" />
+              </g>
+            </g>
+          </g>
+        </svg>
       </div>
       <div class="masks-container">
-        <div id="incorrect-3" class="incorrect-2" @click="answerHandler"/>
         <div id="correct-2" @click="answerHandler"/>
         <div id="incorrect-4" class="incorrect-2" @click="answerHandler"/>
+        <div id="incorrect-5" class="incorrect-2" @click="answerHandler"/>
+        <div id="incorrect-6" class="incorrect-2" @click="answerHandler"/>
       </div>
     </div>
 
@@ -235,15 +267,14 @@
 <script>
 import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 import anime from "animejs";
+import EmoteSad from "@/components/feelingsQuestion/emotes/EmoteSad.vue";
 import EmoteHappy from "@/components/feelingsQuestion/emotes/EmoteHappy";
 import EmoteWorried from "@/components/feelingsQuestion/emotes/EmoteWorried";
 import EmoteAngry from "@/components/feelingsQuestion/emotes/EmoteAngry";
 
-import EmoteCrying from "@/components/feelingsQuestion/emotes/EmoteCrying";
-
 export default {
-  name: "Session2Page19",
-  components: {EmoteCrying, EmoteAngry, EmoteWorried, EmoteHappy, ImageComponent},
+  name: "Session2Page21",
+  components: {EmoteAngry, EmoteWorried, EmoteHappy, EmoteSad, ImageComponent},
   data() {
     return {
       correctAns: []
@@ -313,10 +344,16 @@ export default {
           this.animateRedTick('#red-tick-2-left');
           break;
         case 'incorrect-3':
-          this.animateRedTick('#red-tick-1-right');
+          this.animateRedTick('#red-tick-3-left');
           break;
         case 'incorrect-4':
+          this.animateRedTick('#red-tick-1-right');
+          break;
+        case 'incorrect-5':
           this.animateRedTick('#red-tick-2-right');
+          break;
+        case 'incorrect-6':
+          this.animateRedTick('#red-tick-3-right');
           break;
         case 'correct-1':
           this.animateGreenTick('#green-tick-left');
@@ -345,7 +382,7 @@ export default {
         .add({
           targets: '#content-right',
           opacity: 1
-        }, 6000)
+        }, 7400)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 0)
@@ -408,8 +445,8 @@ export default {
   font-size: 3vh;
   font-weight: bold;
   margin-bottom: 0;
-  display: inline-block;
-  width: 9.8vh;
+  width: 9.8vh;  display: flex;
+  justify-content: center;
 }
 .content-container {
   position: absolute;

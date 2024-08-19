@@ -6,7 +6,7 @@
       class="session-background"
     />
     <div class="text-box">
-      <p class="mb-1">Lucy is starting at a new school. How is she feeling?</p>
+      <p class="mb-1">Lucy is starting at a new school. How is she feeling? Tick your choices:</p>
       <div class="question-container">
         <div class="checkbox-containers" id="short-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
@@ -219,9 +219,9 @@ export default {
       animation
         .add({targets: '.text-box', opacity: 1}, 500)
         .add({targets: text[0], opacity: 1}, 500)
-        .add({targets: text[1], opacity: 1}, 6300)
-        .add({targets: text[2], opacity: 1}, 11100)
-        .add({targets: '.traffic-light', opacity: 1}, 14900);
+        .add({targets: text[1], opacity: 1}, 8300)
+        .add({targets: text[2], opacity: 1}, 13100)
+        .add({targets: '.traffic-light', opacity: 1}, 16900);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)

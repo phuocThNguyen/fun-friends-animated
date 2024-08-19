@@ -7,7 +7,7 @@
     />
     <div class="text-box">
       <p>Nala is spending her first night sleeping by herself. Pay attention to her face!</p>
-      <p>How is she feeling?</p>
+      <p>How is she feeling? Tick your choices:</p>
       <div class="question-container">
         <div class="checkbox-containers" id="short-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
@@ -136,9 +136,9 @@ export default {
         .add({targets: '.text-box', opacity: 1}, 800)
         .add({targets: text[0], opacity: 1}, 1100)
         .add({targets: text[1], opacity: 1}, 9300)
-        .add({targets: text[2], opacity: 1}, 11600)
-        .add({targets: text[3], opacity: 1}, 16000)
-        .add({targets: '.traffic-light', opacity: 1}, 19300);
+        .add({targets: text[2], opacity: 1}, 13600)
+        .add({targets: text[3], opacity: 1}, 18000)
+        .add({targets: '.traffic-light', opacity: 1}, 21300);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)

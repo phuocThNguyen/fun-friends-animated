@@ -81,17 +81,20 @@ export default {
       let maskId = e.target.id;
       switch (maskId) {
         case 'incorrect-1':
-          this.animateRedTick(document.querySelectorAll('.red-tick')[4]);
+          this.animateRedTick(document.querySelectorAll('.red-tick')[6]);
           this.$emit('wrongAnswer');
           break;
         case 'incorrect-2':
-          this.animateRedTick(document.querySelectorAll('.red-tick')[5]);
+          this.animateRedTick(document.querySelectorAll('.red-tick')[7]);
+          this.$emit('wrongAnswer');
+          break;
+        case 'incorrect-3':
+          this.animateRedTick(document.querySelectorAll('.red-tick')[8]);
           this.$emit('wrongAnswer');
           break;
         case 'correct':
           this.animateGreenTick(document.querySelectorAll('.green-tick')[2]);
           this.hideElements('.red-tick');
-
           this.$emit('correctAnsChosen');
           break;
       }
@@ -100,7 +103,7 @@ export default {
       this.correctAnsId = this.ans.indexOf('green-tick');
       let masks = document.getElementsByClassName('masks-container')[0].children;
       let counter = 1;
-      for (let i = 0;i < 3;i++) {
+      for (let i = 0;i < 4;i++) {
         if (i !== this.correctAnsId) {
           masks[i].setAttribute('class','incorrect');
           masks[i].setAttribute('id','incorrect-' + counter++);
@@ -152,8 +155,9 @@ export default {
 }
 .tips-container p {
   margin-bottom: 0;
-  display: inline-block;
   width: 20vh;
+  display: flex;
+  justify-content: center;
 }
 .content-container {
   background-color: rgba(0, 206, 124, 0.9);

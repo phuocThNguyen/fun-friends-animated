@@ -9,9 +9,9 @@
     <feeling-question
       class="question"
       question="How is each friend feeling?"
-      :emotes="['sad','happy','worried']"
-      :tips="['Sad','Happy','Worried']"
-      :ans="['red-tick','green-tick','red-tick']"
+      :emotes="['happy','sad','worried','angry']"
+      :tips="['Happy','Sad','Worried','Angry']"
+      :ans="['green-tick','red-tick','red-tick','red-tick']"
       :isSmall="false"
       :delay="10134"
       v-on:correctAnsChosen="handleCorrectAnswer"

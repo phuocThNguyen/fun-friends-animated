@@ -8,7 +8,7 @@
     <div class="text-box">
       <p>In this picture, the children are walking to a
         new school with their dad. Look at their faces!</p>
-      <p>What could they be feeling?</p>
+      <p>What could they be feeling? Tick your choices:</p>
       <div class="question-container">
         <div class="checkbox-containers" id="short-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
@@ -169,9 +169,9 @@ export default {
         .add({targets: '.text-box', opacity: 1}, 500)
         .add({targets: text[0], opacity: 1}, 700)
         .add({targets: text[1], opacity: 1}, 8700)
-        .add({targets: text[2], opacity: 1}, 11000)
-        .add({targets: text[3], opacity: 1}, 15700)
-        .add({targets: '.traffic-light', opacity: 1}, 19000);
+        .add({targets: text[2], opacity: 1}, 13000)
+        .add({targets: text[3], opacity: 1}, 17700)
+        .add({targets: '.traffic-light', opacity: 1}, 21000);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500);
@@ -207,7 +207,7 @@ export default {
   opacity: 0;
 }
 .text-box p {
-  font-size: 3.3vh;
+  font-size: 3.2vh;
   margin-bottom: 0;
   opacity: 0;
 }
@@ -272,7 +272,7 @@ export default {
   padding-left: 5.5vh;
   margin-bottom: 2vh;
   cursor: pointer;
-  font-size: 3.3vh;
+  font-size: 3.2vh;
   line-height: 4.5vh;
   -webkit-user-select: none;
   -moz-user-select: none;
