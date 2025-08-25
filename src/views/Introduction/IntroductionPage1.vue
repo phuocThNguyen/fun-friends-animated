@@ -5,7 +5,7 @@
       srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/introduction/FF_Front_Cover_ANIMATED_ACTIVITY_EBOOK_full.jpg"
       class="session-background"
     />
-    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/introduction/0_Cover.mp3" autoplay ref="voice"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/general/IntroPage1.mp3" autoplay ref="voice"/>
   </div>
 </template>
 

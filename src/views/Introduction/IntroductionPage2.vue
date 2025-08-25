@@ -6,7 +6,7 @@
       class="session-background"
       id="fixing-image"
     />
-    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/introduction/2Animated_Book_Page1.mp3" ref="voice"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/general/IntroPage2.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">1</div>
   </div>
 </template>

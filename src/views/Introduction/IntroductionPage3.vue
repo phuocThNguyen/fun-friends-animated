@@ -186,7 +186,7 @@
         </svg>
       </div>
     </div>
-    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/introduction/3Animated_Book_Page2.mp3" ref="voice"/>
+    <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/general/IntroPage3.mp3" ref="voice"/>
     <div class="page-number" id="page-light">2</div>
   </div>
 </template>
