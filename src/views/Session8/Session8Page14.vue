@@ -7,13 +7,12 @@
     />
     <div class="text-box">
       <h1>Try Every Day</h1>
-      <p>- Practise the steps on your <strong>STEP PLAN</strong>.
-        If you've done all the steps, make &nbsp;&nbsp;&nbsp;a new <strong>STEP PLAN</strong>.</p>
-      <p>- Notice when others are listening, helping and smiling
-        and let them know &nbsp;&nbsp;&nbsp;you like it.</p>
+      <p>- Listen carefully.</p>
+      <p>- Help others.</p>
+      <p>- Smile.</p>
       <p>- Practise turning '<span class="red">red</span>' thoughts
         into '<span class="green">green</span>' thoughts.</p>
-      <p>- Play with friends and spend time outside.</p>
+      <p>- Make a <strong>STEP PLAN</strong> with your family.</p>
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Relaxing-Forest-Sound-Effect.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page14.mp3" ref="voice"/>
@@ -77,7 +76,7 @@ export default {
 .text-box p {
   margin-bottom: 1vh;
   font-size: 3.6vh;
-  opacity: 0;
+  opacity: 1 !important;
 }
 .text-box p:nth-of-type(7),
 .text-box p:nth-of-type(8),

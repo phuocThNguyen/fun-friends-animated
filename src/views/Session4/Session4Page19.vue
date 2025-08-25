@@ -6,10 +6,10 @@
       class="session-background"
     />
     <div class="text-box">
-      <p>Shaunti the dog is learning to swim in the
-       new creek, she is a bit worried.</p>
-      <p>What might be her body clues? Drag the
-        clues to her body.</p>
+      <p><strong>Shaunti the dog is learning to swim in the creek.</strong></p>
+      <p>She is worried.</p>
+      <p>What might be her body clues? </p>
+      <p><strong>Drag the clues to her body.</strong></p>
     </div>
     <div class="clues-sources">
       <draggable class="clues" v-model="ear" group="ear">
@@ -209,7 +209,7 @@ export default {
   position: absolute;
   height: auto;
   width: 1%;
-  top: 36vh;
+  top: 46vh;
   left: 20%;
   opacity: 0;
 }
@@ -219,28 +219,28 @@ export default {
   z-index: 50;
 }
 #green-tick-1 {
-  right: 30%;
+  right: 27%;
   top: 31vh;
 }
 #green-tick-2 {
   left: 48%;
-  top: 61vh;
+  top: 63vh;
 }
 #green-tick-3 {
   right: 16%;
   top: 45vh;
 }
 #ear {
-  right: 32%;
+  right: 28%;
   top: 23vh;
   height: 10.3vh;
 }
 #tail {
   left: 27%;
-  top: 57vh;
+  top: 59vh;
 }
 #head {
-  right: 18%;
+  right: 17%;
   top: 41vh;
 }
 .answers {
@@ -256,7 +256,7 @@ export default {
 }
 .clues-sources {
   position: absolute;
-  top: 30vh;
+  top: 35vh;
   left: 2%;
   display: flex;
   flex-direction: column;
@@ -277,10 +277,10 @@ export default {
 }
 .text-box {
   position: absolute;
-  width: 90%;
+  width: 60vh;
   padding: 1.5vh;
   top: 2vh;
-  left: 5%;
+  left: 2vh;
   background-color: rgba(255,255,255,0.9);
   opacity: 0;
 }

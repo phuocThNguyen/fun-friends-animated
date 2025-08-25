@@ -147,7 +147,7 @@ export default {
     stars: [
       {id: 1, eleIds: [1,2], text: 'Kicking'},
       {id: 2, eleIds: [3,4], text: 'Spitting'},
-      {id: 3, eleIds: [5,6], text: 'Going for\na walk'},
+      {id: 3, eleIds: [5,6], text: 'Bike riding'},
       {id: 4, eleIds: [7,8], text: 'Breaking things'},
     ],
   }},

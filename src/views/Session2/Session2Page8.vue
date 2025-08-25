@@ -76,6 +76,7 @@
         </g>
       </g>
     </svg>
+    <div class="page-number" id="page-light">68</div>
     <audio src="../../assets/sounds/all/Well_Done.mp3" ref="wellDone"/>
     <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
     <audio
@@ -131,27 +132,27 @@ export default {
 .instruction {
   position: absolute;
   top: 2vh;
-  right: 2%;
+  right: 2vh;
 }
 .reward {
   position: absolute;
   height: auto;
   width: 1%;
-  left: 20%;
-  top: 20vh;
+  right: 20%;
+  top: 35vh;
   opacity: 0;
 }
 .question {
   position: absolute;
-  bottom: .5vh;
-  left: calc(0.2*133vh);
+  top: 2vh;
+  left: 2vh;
 }
 .sticker {
   position: absolute;
   width: auto;
   height: 25vh;
-  top: 5vh;
-  left: calc(0.09*133vh);
+  top: 30vh;
+  left: 9vh;
   z-index: 50;
   opacity: 0;
 }

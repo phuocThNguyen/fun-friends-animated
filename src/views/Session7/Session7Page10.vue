@@ -31,7 +31,7 @@
       </g>
     </svg>
     <div class="trophy-container">
-      Goal: Start a new school
+      Goal: Start school
     </div>
     <div class="plans" id="step-1">
       <div class="mask" id="mask-1"/>
@@ -217,9 +217,8 @@
     </draggable>
 
     <div class="instruction instruction-container">
-      <p>Instruction:</p>
-      <p>- Tap and drag from the easiest step 1 to the most difficult step 5.</p>
-      <p>- Wait until all steps have been read out loud.</p>
+      <p><strong>Drag and drop from the easiest Step 1 to the most difficult Step 5.</strong></p>
+      <p>Wait until all steps have been read out loud.</p>
     </div>
     <div class="question-mask"/>
 
@@ -565,11 +564,6 @@ export default {
   margin-bottom: 0;
   font-size: 2.5vh;
   padding-left: 1.8vh;
-}
-.instruction-container p:first-child {
-  font-size: 3vh;
-  font-weight: bold;
-  padding-left: 0;
 }
 .choices-container {
   position: absolute;

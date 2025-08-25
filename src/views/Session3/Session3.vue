@@ -38,6 +38,7 @@ import Session3Page8_2 from "@/views/Session3/Session3Page8_2";
 import Session3Page8 from "@/views/Session3/Session3Page8";
 import Session3Page9 from "@/views/Session3/Session3Page9";
 import Session3Page9_1 from "@/views/Session3/Session3Page9_1";
+import Session3Page9_2 from "@/views/Session3/Session3Page9_2";
 import Session3Page10 from "@/views/Session3/Session3Page10";
 import Session3Page11 from "@/views/Session3/Session3Page11";
 import Session3Page11_1 from "@/views/Session3/Session3Page11_1";
@@ -48,6 +49,10 @@ import Session3Page14_0 from "@/views/Session3/Session3Page14_0";
 import Session3Page14_1 from "@/views/Session3/Session3Page14_1";
 import Session3Page15 from "@/views/Session3/Session3Page15";
 import Session3Page16 from "@/views/Session3/Session3Page16";
+import Session3Page17 from "@/views/Session3/Session3Page17";
+import Session3Page18 from "@/views/Session3/Session3Page18";
+import Session3Page19 from "@/views/Session3/Session3Page19";
+import Session3Page20 from "@/views/Session3/Session3Page20";
 import {mapState} from "vuex";
 
 export default {
@@ -61,6 +66,7 @@ export default {
     Session3Page10, Session3Page11, Session3Page12, Session3Page13, Session3Page14,
     Session3Page15, Session3Page16, Session3Page11_1, Session3Page14_1, Session3Page7_1,
     Session3Page7_2, Session3Page8_1, Session3Page8_2, Session3Page9_1, Session3Page14_0,
+    Session3Page17, Session3Page18, Session3Page19, Session3Page20, Session3Page9_2,
   },
   data() {
     return {
@@ -68,10 +74,11 @@ export default {
         1: "Session3Page1", 2: "Session3Page1_1", 3: "Session3Page2", 4: "Session3Page3", 5: "Session3Page4",
         6: "Session3Page5", 7: "Session3Page6", 8: "Session3Page7", 9: "Session3Page7_1", 10: "Session3Page7_2",
         11: "Session3Page8", 12: "Session3Page8_1", 13: "Session3Page8_2", 14: "Session3Page9", 15: "Session3Page9_1",
-        16: "Session3Page10", 17: "Session3Page11", 18: "Session3Page12", 19: "Session3Page13", 20: "Session3Page14",
-        21: "Session3Page14_0", 22: "Session3Page14_1", 23: "Session3Page15", 24: "Session3Page16"
+        16: "Session3Page9_2", 17: "Session3Page10", 18: "Session3Page11", 19: "Session3Page12", 20: "Session3Page13",
+        21: "Session3Page14", 22: "Session3Page14_0", 23: "Session3Page14_1", 24: "Session3Page15", 25: "Session3Page16",
+        26: "Session3Page17", 27: "Session3Page18", 28: "Session3Page19", 29: "Session3Page20",
       },
-      lastPage: 24,
+      lastPage: 29,
       page: 0,
       arrowVisible: true,
       hiddenTimeExpired: false,

@@ -5,8 +5,9 @@
       srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session10/1243.jpg"
       class="session-background"
     />
-    <div class="text-box-green">My mum helps me to be brave
-      <br>when I meet new people.</div>
+    <div class="text-box-green" id="box-1">Billie looks up to her mum.</div>
+    <div class="text-box-green" id="box-2">My mum helps me to be <br>brave
+      when I go school.</div>
     <audio autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/ambient/quiet-park.mp3" ref="audio"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page7.mp3" ref="voice"/>
     <div class="page-number" id="page-light">238</div>
@@ -47,14 +48,15 @@ export default {
 <style scoped>
 .text-box-green {
   position: absolute;
-  bottom: 6vh;
-  left: 10%;
-  padding: 1vh 2vh;
+  left: 2vh;
+  padding: 1vh 1.5vh;
   background-color: #00CE7C;
   color: #ffffff;
-  font-size: 4vh;
+  font-size: 3.8vh;
   font-weight: bold;
-  text-align: center;
-  opacity: 0;
+  opacity: 1;
+  width: 49vh;
 }
+#box-1 {top: 3vh;}
+#box-2 {top: 15vh;}
 </style>

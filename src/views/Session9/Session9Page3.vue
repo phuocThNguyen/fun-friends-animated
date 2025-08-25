@@ -1,13 +1,13 @@
 <template>
   <div class="interactive-container">
-    <h1 class="title">Annie is brave and rewards herself</h1>
+    <h1 class="title">Lily is brave and she is getting a reward</h1>
     <div class="image-container">
       <ImageComponent
         src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session9/1489.jpg"
         srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session9/1489.jpg"
         class="image"
       />
-      <p class="image-text">1. Brave Annie <br>Trying to roller-blade</p>
+      <p class="image-text">1. Brave Lily -<br>Trying to roller-blade</p>
     </div>
     <div class="image-container">
       <ImageComponent
@@ -15,7 +15,7 @@
         srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session9/1551.jpg"
         class="image"
       />
-      <p class="image-text">Annie's Reward <br>Cooking with mum</p>
+      <p class="image-text">Lily's Reward: <br>Cooking with mum</p>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page3.mp3" ref="voice"/>
     <div class="page-number" id="page-light">218</div>

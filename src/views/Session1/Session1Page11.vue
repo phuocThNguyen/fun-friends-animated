@@ -815,8 +815,9 @@
 
     <!--  Main content  -->
     <div class="main-content">
-      <h1 class="draw">Draw a picture of your family!</h1>
+      <h1 class="draw">Draw a picture of your family.</h1>
     </div>
+    <!--  choose a color on the bottom of the page  -->
     <drawing-canvas class="canvas" v-on:updateCanvas="updateCanvas" :data="canvasData" :canvasStyle='canvasStyle'/>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3"/>
     <audio

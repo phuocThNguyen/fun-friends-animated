@@ -197,14 +197,13 @@
     </svg>
 
     <p class="title"><span id="letter-f">I</span> can try</p>
-    <p class="text" id="line-1">Today, we are going to learn that we are
-      the boss of our thinking <br>and that we can choose
-      between '<span class="red">red</span>'
-      and '<span class="green">green</span>' thoughts.</p>
-    <p class="text" id="line-2">Remember, all thoughts are OK,
-      <br>but choosing '<span class="green">green</span>' thoughts
-      will make the day feel better.</p>
-
+    <div class="text">
+      <p>Today, we will learn how to <br>change '<span class="red">red</span>'
+        <strong>thoughts</strong> to
+        '<span class="green">green</span>' <strong>thoughts</strong>. </p>
+      <p>'<span class="red">Red</span>' <strong>thoughts</strong> make us feel worried and sad.</p>
+      <p>'<span class="green">Green</span>' <strong>thoughts</strong> help us feel brave and calm.</p>
+    </div>
     <audio autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/387978__dcpoke__birds-singing-03.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session6/Session6_Page1.mp3" ref="voice"/>
     <div class="page-number" id="page-light">161</div>
@@ -304,7 +303,7 @@ export default {
   text-align: center;
   width: 100%;
   top: 24vh;
-  opacity: 0;
+  opacity: 1;
 }
 #letter-f {
   color: #e59535;
@@ -312,19 +311,13 @@ export default {
 .text {
   position: absolute;
   margin-bottom: 0;
-  font-size: 4.5vh;
-  opacity: 0;
-}
-#line-1 {
+  font-size: 4.8vh;
+  opacity: 1;
   text-align: center;
   width: 100%;
-  top: 38vh;
+  top: 39vh;
 }
-#line-2 {
-  text-align: center;
-  width: 100%;
-  top: 51vh;
-}
+.text p {margin-bottom: .3vh}
 span {
   display: inline-block;
 }
@@ -341,7 +334,7 @@ tspan { white-space:pre }
   height: auto;
 }
 .bird-1 {
-  top: 20vh;
+  top: 12vh;
   left: -5%;
   z-index: 20;
 }

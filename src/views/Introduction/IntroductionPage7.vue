@@ -6,8 +6,7 @@
       class="session-background"
     />
     <div class="text" id="text-1">My FUN FRIENDS Book</div>
-    <div class="text" id="text-2">I can draw in the book and talk about it,
-      <br>with my friends and family.</div>
+    <div class="text" id="text-2">I can have fun with my Fun Friends book.</div>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/introduction/7Animated_Book_Page6.mp3" ref="voice"/>
   </div>
 </template>
@@ -34,21 +33,20 @@ export default {
   color: #ffffff;
   font-weight: bold;
   background-color: #00CE7C;
-  width: 120vh;
-  height: 14%;
-  left: 6.5vh;
+  width: 103vh;
+  left: 15vh;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: .5vh;
 }
 #text-1 {
   top: 5vh;
   font-size: 6.5vh;
 }
 #text-2 {
-  bottom: 5vh;
+  bottom: 2vh;
   font-size: 5vh;
-  line-height: 6vh;
 }
 </style>

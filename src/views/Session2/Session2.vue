@@ -49,6 +49,10 @@ import Session2Page23 from "@/views/Session2/Session2Page23";
 import Session2Page23_1 from "@/views/Session2/Session2Page23_1";
 import Session2Page24 from "@/views/Session2/Session2Page24";
 import Session2Page25 from "@/views/Session2/Session2Page25";
+import Session2Page26 from "@/views/Session2/Session2Page26";
+import Session2Page27 from "@/views/Session2/Session2Page27";
+import Session2Page28 from "@/views/Session2/Session2Page28";
+import Session2Page29 from "@/views/Session2/Session2Page29";
 import {mapState} from "vuex";
 
 export default {
@@ -62,7 +66,7 @@ export default {
     Session2Page11, Session2Page12, Session2Page13, Session2Page14, Session2Page15,
     Session2Page16, Session2Page17, Session2Page18, Session2Page19, Session2Page20,
     Session2Page21, Session2Page22, Session2Page23, Session2Page24, Session2Page25,
-    Session2Page23_1
+    Session2Page23_1, Session2Page26, Session2Page27, Session2Page28, Session2Page29,
   },
   data() {
     return {
@@ -70,11 +74,11 @@ export default {
         1: "Session2Page1", 3: "Session2Page1_1", 2: "Session2Page2", 4: "Session2Page4", 5: "Session2Page5",
         6: "Session2Page6", 7: "Session2Page7", 8: "Session2Page8", 9: "Session2Page9", 10: "Session2Page10",
         11: "Session2Page11", 12: "Session2Page12", 13: "Session2Page13", 14: "Session2Page14", 15: "Session2Page15",
-        16: "Session2Page16", 17: "Session2Page17", 18: "Session2Page18", 19: "Session2Page19", 20: "Session2Page20",
-        21: "Session2Page21", 22: "Session2Page22", 23: "Session2Page23", 24: "Session2Page23_1", 25: "Session2Page24",
-        26: "Session2Page25",
+        16: "Session2Page16", 17: "Session2Page17", 18: "Session2Page19", 19: "Session2Page20", 20: "Session2Page21",
+        21: "Session2Page22", 22: "Session2Page23", 23: "Session2Page23_1", 24: "Session2Page24", 25: "Session2Page25",
+        26: "Session2Page26", 27: "Session2Page27", 28: "Session2Page28", 29: "Session2Page29",
       },
-      lastPage: 26,
+      lastPage: 29,
       page: 0,
       arrowVisible: true,
       hiddenTimeExpired: false,

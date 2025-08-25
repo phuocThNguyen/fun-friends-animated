@@ -6,7 +6,7 @@
       class="session-background"
     />
     <div class="text-box">
-      <p class="mb-0">Lucy loves playing with the</p>
+      <p class="mb-0">Zara loves playing with the</p>
       <p class="mb-0">old wheelbarrow in the garden.</p>
     </div>
     <audio

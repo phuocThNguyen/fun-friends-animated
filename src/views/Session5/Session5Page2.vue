@@ -1,9 +1,9 @@
 <template>
   <div class="interactive-container">
     <ImageComponent
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session5/traffic-light-poster.png"
-      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session5/traffic-light-poster.jpg"
-      class="session-background"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session5/trafficlight.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session5/trafficlight.jpg"
+      class="page-image"
     />
     <div class="text-box">
       <p>We can <strong>choose</strong> our thoughts.</p>
@@ -49,6 +49,12 @@ export default {
 </script>
 
 <style scoped>
+.page-image {
+  position: absolute;
+  height: 100%;
+  left:-8vh;
+  top: 0;
+}
 .text-box {
   position: absolute;
   width: 28%;
@@ -82,11 +88,11 @@ export default {
 }
 #red {
   background-color: #ff0000;
-  top: 22vh;
+  top: 13vh;
 }
 #green {
   background-color: #00ce7c;
-  bottom: 2vh;
+  bottom: 10vh;
 }
 #red-text {
   color: #ff0000;

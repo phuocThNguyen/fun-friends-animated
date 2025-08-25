@@ -1,26 +1,34 @@
 <template>
   <div class="interactive-container">
     <div class="images">
-      <ImageComponent
-        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/700-resized.jpg"
-        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/700-resized.jpg"
-        class="image-component"
-      />
-      <ImageComponent
-        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/12594-resized.jpg"
-        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/12594-resized.jpg"
-        class="image-component"
-      />
-      <ImageComponent
-        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/27475-resized.jpg"
-        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/27475-resized.jpg"
-        class="image-component"
-      />
-      <ImageComponent
-        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/607-resized.jpg"
-        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/607-resized.jpg"
-        class="image-component"
-      />
+      <div class="image-component">
+        <ImageComponent
+          src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/700-resized.jpg"
+          srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/700-resized.jpg"
+          class="inner-image"
+        />
+      </div>
+      <div class="image-component">
+        <ImageComponent
+          src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/12594-resized.jpg"
+          srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/12594-resized.jpg"
+          class="inner-image"
+        />
+      </div>
+      <div class="image-component">
+        <ImageComponent
+          src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/27475-resized.jpg"
+          srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/27475-resized.jpg"
+          class="inner-image"
+        />
+      </div>
+      <div class="image-component">
+        <ImageComponent
+          src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/pexels-jairo-david-arboleda-621072-1425883.jpg"
+          srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/pexels-jairo-david-arboleda-621072-1425883.jpg"
+          class="inner-image"
+        />
+      </div>
     </div>
     <div class="text-box">
       Drag each feeling onto the correct face.
@@ -613,11 +621,17 @@ export default {
   column-gap: 1.8vh;
 }
 .image-component {
+  position: relative;
   width: 36vh;
   height: 30vh;
   opacity: 1;
   align-self: center;
   justify-self: center;
+  overflow: hidden;
+}
+.inner-image {
+  position: absolute;
+  width: 100%;
 }
 .sticker {
   position: absolute;

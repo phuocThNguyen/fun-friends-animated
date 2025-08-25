@@ -197,9 +197,8 @@
     </svg>
 
     <p class="title"><span id="letter-f">F</span>eelings</p>
-    <p class="text" id="line-1">Today, we will talk more about paying attention to others' feelings.</p>
-    <p class="text" id="line-2">One person acts out a feeling while everyone else tries to guess the feeling.
-      Take turns making up stories to go with the feelings.</p>
+    <p class="text" id="line-1">We can pay attention to how other people feel.</p>
+    <p class="text" id="line-2">Look at what their faces and bodies tell you about their feelings.</p>
 
     <audio autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/387978__dcpoke__birds-singing-03.mp3"/>
     <audio
@@ -273,7 +272,7 @@ export default {
         .add({
           targets: "#line-2",
           color: '#000'
-        }, 13382)
+        }, 8000)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -299,8 +298,8 @@ export default {
   -webkit-text-stroke: 0.1vw black;
   width: 100%;
   text-align: center;
-  top: 26vh;
-  opacity: 0;
+  top: 30vh;
+  opacity: 1;
 }
 #letter-f {
   color: #A3C042;
@@ -310,17 +309,14 @@ export default {
   margin-bottom: 0;
   font-size: 4vh;
   color: #ffffff;
-}
-#line-1 {
   text-align: center;
   width: 100%;
-  top: 42vh;
+}
+#line-1 {
+  top: 48vh;
 }
 #line-2 {
-  text-align: center;
-  width: 90%;
-  top: 49vh;
-  left: 5%;
+  top: 58vh;
 }
 span {
   display: inline-block;

@@ -1002,12 +1002,7 @@
       </g>
     </svg>
     <div class="text-box">
-      <span>What kind of parties have you had at school or home?</span>
-      <span>Why did you have them? What do you like to do at a party?</span>
-      <span> Try doing your favourite dance or singing your favourite
-      song for a friend!</span><span> If you are at the end of your
-      Fun FRIENDS book, reward yourself with something you like
-      to do!</span>
+      <span>Go to the park with your friends.</span>
     </div>
     <audio ref="audio" autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/ambient/playground-02.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session12/Session12_Page3.mp3" ref="voice"/>
@@ -1058,9 +1053,9 @@ export default {
   width: 90%;
   left: 5%;
   top: 15vh;
-  opacity: 0;
+  opacity: 1;
 }
-.text-box span {color: #fff}
+.text-box span {color: black}
 .landscape {
   position: absolute;
   height: 100vh;

@@ -6,9 +6,8 @@
       class="session-background"
     />
     <div class="text-box">
-      <p>How can you and your friends look after natural places like the bush, rivers,
-        parks, beaches and rainforests?</p>
-      <p>Tick your choices:</p>
+      <p><strong>How can you help the forests, rivers, lakes or parks?</strong></p>
+      <p><strong>Tick your choices:</strong></p>
       <div class="question-container">
         <div class="checkbox-containers" id="long-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
@@ -33,10 +32,13 @@ export default {
   name: 'Session11Page3_2',
   data() {
     return {
-      data: ['Be kind to people', 'Be kind to animals',
-        'Be quite and calm', 'Stay on the trail',
+      data: ['Be kind to the plants and the trees',
+        'Be kind to all animals',
+        'Be quiet and calm',
         'Pay attention with your 5 senses',
-        'Pick up rubbish and put it in the bin',
+        'Leave nature clean',
+        'Put all rubbish in the bin',
+        'Stay on the trail',
       ],
       answers: [],
     }
@@ -83,21 +85,21 @@ export default {
   position: absolute;
   background-color: rgba(255,255,255,0.9);
   padding: 2vh;
-  top: 12vh;
-  width: 96%;
+  top: 7vh;
+  width: 79%;
   left: 2%;
-  opacity: 0;
+  opacity: 1;
 }
 .text-box p {
   font-size: 4vh;
   margin-bottom: 0;
-  opacity: 0;
+  opacity: 1;
 }
 .question-container {
   width: 100%;
   padding-left: 2vh;
   margin-top: 1vh;
-  opacity: 0;
+  opacity: 1;
 }
 #long-checkbox label {width: 100%;}
 #short-checkbox label {width: 33%;}

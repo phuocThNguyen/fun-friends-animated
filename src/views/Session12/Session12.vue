@@ -34,6 +34,22 @@ import Session12Page7 from "@/views/Session12/Session12Page7";
 import Session12Page8 from "@/views/Session12/Session12Page8";
 import Session12Page9 from "@/views/Session12/Session12Page9";
 import Session12Page10 from "@/views/Session12/Session12Page10";
+import Session12Page11 from "@/views/Session12/Session12Page11";
+import Session12Page12 from "@/views/Session12/Session12Page12";
+import Session12Page13 from "@/views/Session12/Session12Page13";
+import Session12Page14 from "@/views/Session12/Session12Page14";
+import Session12Page15 from "@/views/Session12/Session12Page15";
+import Session12Page16 from "@/views/Session12/Session12Page16";
+import Session12Page17 from "@/views/Session12/Session12Page17";
+import Session12Page18 from "@/views/Session12/Session12Page18";
+import Session12Page19 from "@/views/Session12/Session12Page19";
+import Session12Page20 from "@/views/Session12/Session12Page20";
+import Session12Page20_1 from "@/views/Session12/Session12Page20_1";
+import Session12Page21 from "@/views/Session12/Session12Page21";
+import Session12Page22 from "@/views/Session12/Session12Page22";
+import Session12Page23 from "@/views/Session12/Session12Page23";
+import Session12Page24 from "@/views/Session12/Session12Page24";
+import Session12Page25 from "@/views/Session12/Session12Page25";
 import {mapState} from "vuex";
 
 export default {
@@ -44,18 +60,24 @@ export default {
   components: {
     Session12Page1, Session12Page1_1, Session12Page2, Session12Page3, Session12Page4,
     Session12Page5, Session12Page6, Session12Page7, Session12Page8, Session12Page9,
-    Session12Page10,
+    Session12Page10, Session12Page11, Session12Page12, Session12Page13, Session12Page14,
+    Session12Page15, Session12Page16, Session12Page17, Session12Page18, Session12Page19,
+    Session12Page20, Session12Page21, Session12Page22, Session12Page23, Session12Page24,
+    Session12Page25, Session12Page20_1,
   },
   data() {
     return {
       pages: {
         1: "Session12Page1", 2: "Session12Page1_1", 3: "Session12Page2", 4: "Session12Page3", 5: "Session12Page6",
-        6: "Session12Page7", 7: "Session12Page8", 8: "Session12Page9", 9: "Session12Page10",
+        6: "Session12Page7", 7: "Session12Page8", 8: "Session12Page9", 9: "Session12Page10",  10: "Session12Page11",
+        11: "Session12Page12", 12: "Session12Page13", 13: "Session12Page14", 14: "Session12Page15", 15: "Session12Page16",
+        16: "Session12Page17", 17: "Session12Page18", 18: "Session12Page19", 19: "Session12Page20", 20: "Session12Page20_1",
+        21: "Session12Page21", 22: "Session12Page22", 23: "Session12Page23", 24: "Session12Page24", 25: "Session12Page25",
       },
       page: 0,
       arrowVisible: true,
       hiddenTimeExpired: false,
-      lastPage: 9,
+      lastPage: 25,
     }
   },
   created() {

@@ -76,17 +76,16 @@ export default {
         6: ['Session6', 'Session 6: Talking more about \'Red\' (unhelpful) and \'Green\' (helpful) thoughts'],
         7: ['Session7', 'Session 7: Talking about setting goals and trying to do new things'],
         8: ['Session8', 'Session 8: Talking about how to be a kind friend'],
-        9: ['Session9', 'Session 9: Talking about rewarding ourselves'],
-        10: ['Session10', 'Session 10: Talking about someone to look up to in our lives'],
+        9: ['Session9', 'Session 9: Getting rewards for trying'],
+        10: ['Session10', 'Session 10: Someone to look up to'],
         11: ['Session11', 'Session 11: Talking about support teams'],
-        12: ['Session12', 'Session 12: Talking about being happy with our efforts!'],
-        13: ['Appendix', 'Appendix']},
+        12: ['Session12', 'Session 12: Talking about being happy with our efforts!']},
       session: 0,
       isNext: true,
       appendixPage: 0,
       relogin: false,
-      authed: false,
-      loading: true,
+      authed: true,
+      loading: false,
     }
   },
   methods: {
@@ -136,9 +135,9 @@ export default {
     }
   },
   async beforeMount() {
-    this.authed = this.$store.getters.getAuthedStatus;
-    this.loading = this.$store.getters.getLoadingStatus;
-    await this.checkAuthentication();
+    // this.authed = this.$store.getters.getAuthedStatus;
+    // this.loading = this.$store.getters.getLoadingStatus;
+    // await this.checkAuthentication();
   },
   created() {}
 };
@@ -185,6 +184,8 @@ export default {
 }
 .unauth p:first-child {font-size: 5vh;font-weight: bold;margin-bottom: 0;color:#f52100}
 .unauth p:last-child {font-size: 4vh;}
+.red-color {color: red}
+.green-color {color: #00CE7C}
 .loading {
   width: 100vw;
   height: 100vh;

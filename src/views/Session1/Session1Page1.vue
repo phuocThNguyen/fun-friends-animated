@@ -196,9 +196,10 @@
     </svg>
 
     <div class="question">
-      <p>Talk about your family and home.</p>
+      <p>Talk about your family.</p>
       <p>Talk about your friends.</p>
-      <p class="mb-4"><strong>FUN FRIENDS can help you learn to be brave.</strong></p>
+      <p>Talk about what makes you happy.</p>
+      <p class="mb-4"><strong>FUN FRIENDS helps you learn to be brave.</strong></p>
     </div>
     <audio autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/387978__dcpoke__birds-singing-03.mp3"/>
     <audio
@@ -368,8 +369,8 @@ tspan { white-space:pre }
   top: 30vh;
   left: 0;
 }
-.question p {opacity: 0;}
-.question p:nth-child(3) {font-size: calc(0.042 * 133vh);}
+.question p {opacity: 1;}
+.question p:nth-child(4) {font-size: calc(0.042 * 133vh);}
 /*.question-1 {*/
 /*  top: 30vh;*/
 /*  left: 8%;*/

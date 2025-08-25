@@ -7,12 +7,12 @@
     />
     <div class="text-box">
       <h1>Try Every Day</h1>
-      <p>- Draw or take a picture of your family's support
-        team. &nbsp;&nbsp;&nbsp;Alternatively, share a story about how your family
-        gets support.</p>
-      <p>- Carry on with your <strong>STEP PLAN</strong>.</p>
-      <p>- Practise '<span id="green">green</span>' thoughts.</p>
-      <p>- Relax.</p>
+      <p>- Help other people.</p>
+      <p>- Make '<span class='green-color'>thumbs up</span>' choices.</p>
+      <p>- Pay attention with 5 senses.</p>
+      <p>- Change <span class="red-color">red</span> thoughts to <span class="green-color">green</span> thoughts.</p>
+      <p>- Have quiet time to calm down.</p>
+      <p>- Take slow breaths.</p>
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Relaxing-Forest-Sound-Effect.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session11/Session11_Page8.mp3" ref="voice"/>
@@ -64,7 +64,7 @@ export default {
   left: 4%;
   top: 20vh;
   padding: 2vh;
-  opacity: 0;
+  opacity: 1;
 }
 .text-box h1 {
   text-align: center;
@@ -75,7 +75,7 @@ export default {
 .text-box p {
   margin-bottom: 0;
   font-size: 4.3vh;
-  opacity: 0;
+  opacity: 1;
 }
 #green {color: #00CE7C;}
 </style>

@@ -8,11 +8,10 @@
     />
     <div class="mask"/>
     <div class="text-box">
-      <p style="opacity: 1"><strong>Tom has fallen off his bike</strong></p>
-      <p>He has only just learnt to ride without training wheels.</p>
-      <p>How do you think he is feeling?</p>
-      <p>What can you do to be a kind friend to Tom?</p>
-      <p>Tick your choices:</p>
+      <p style="opacity: 1"><strong>Zen is learning to ride his bike.</strong></p>
+      <p>Zen has fallen off his bike.</p>
+      <p>How can you be kind to Zen?</p>
+      <p><strong>Tick your choices:</strong></p>
       <div class="question-container">
         <div class="checkbox-containers" id="long-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
@@ -37,10 +36,10 @@ export default {
   name: 'Session8Page3',
   data() {
     return {
-      data: ['Helping him get up','Asking if he is ok',
-          'Giving him some water',
-        'Looking for help','Helping him get home',
-        'Asking his family to help'],
+      data: ['Help him get up','Ask if he is ok',
+          'Give him water',
+        'Look for help','Help him get home',
+        'Ask his family to help'],
       answers: [],
     }
   },
@@ -148,6 +147,7 @@ export default {
   height: 3.5vh;
   width: 3.5vh;
   background-color: #eee;
+  border: .1vh solid black;
 }
 
 /* When the checkbox is checked, add a blue background */

@@ -6,7 +6,7 @@
       class="session-background"
     />
     <div class="title">
-      <p>Practise exploring with your five senses, everywhere you go.</p>
+      <p>Pay attention with your 5 senses.</p>
     </div>
     <div class="text-box">
       <h1>1. Hearing</h1>

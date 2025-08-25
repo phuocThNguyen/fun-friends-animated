@@ -7,22 +7,22 @@
     <div class="choice-container" id="choice-1">
       <div class="image" @click="toggleChoice(1)">
         <ImageComponent
-          src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/medium-shot-smiley-kids-sitting-bench.jpg"
-          srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/medium-shot-smiley-kids-sitting-bench.jpg"
+          src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/pexels-yankrukov-8613057.jpg"
+          srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/pexels-yankrukov-8613057.jpg"
           class="image-component"
         />
       </div>
-      <div class="text">Meeting new people</div>
+      <div class="text">Making new friends</div>
     </div>
     <div class="choice-container" id="choice-2">
       <div class="image" @click="toggleChoice(2)">
         <ImageComponent
-          src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/little-girl-reading-homework-classroom.jpg"
-          srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/little-girl-reading-homework-classroom.jpg"
+          src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/pexels-artempodrez-6941442.jpg"
+          srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/pexels-artempodrez-6941442.jpg"
           class="image-component"
         />
       </div>
-      <div class="text">Speaking in front of the class</div>
+      <div class="text">Show and tell</div>
     </div>
     <div class="choice-container" id="choice-3">
       <div class="image" @click="toggleChoice(3)">
@@ -125,7 +125,6 @@ export default {
   color: #fff;
   box-shadow: 0 9px #999;
 }
-.green-container img {}
 #choice-1 {top: 12vh;left: 16vh}
 #choice-2 {top: 12vh;right: 16vh}
 #choice-3 {bottom: 2vh;left: 16vh}

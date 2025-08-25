@@ -2,10 +2,7 @@
   <div class="interactive-container">
     <div class="text-box">
       <h1>'Feelings' faces</h1>
-      <p>Sit with a friend and look at the 'Feelings' faces.</p>
-      <p>What could they be feeling?</p>
-      <p>Take turns and make sure to listen to your friend.
-        <br>Remember, we all think differently.</p>
+      <p>Look at the 'Feelings' faces.</p>
     </div>
     <div class="text">Nina has gifts for her family.</div>
     <ImageComponent
@@ -304,8 +301,8 @@ export default {
 }
 .instruction {
   position: absolute;
-  top: 1vh;
-  right: 1%;
+  top: 15vh;
+  left: 2vh;
   opacity: 0;
 }
 .reward {
@@ -333,7 +330,7 @@ export default {
 }
 .text-box h1 {
   font-size: 6vh;
-  margin-bottom: 1vh;
+  margin-bottom: 0;
 }
 .text-box p {
   font-size: 4vh;
@@ -396,7 +393,7 @@ export default {
   border-radius: 30px;
   padding-top: 1vh;
   width: 34%;
-  top: 35vh;
+  top: 37vh;
   left: 10vh;
   display: flex;
   flex-direction: column;

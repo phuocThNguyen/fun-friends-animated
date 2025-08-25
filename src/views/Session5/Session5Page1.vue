@@ -197,11 +197,14 @@
     </svg>
 
     <p class="title"><span id="letter-f">I</span> can try</p>
-    <p class="text" id="line-1">Today, we will think about:
-      '<span class="green">green</span>' <strong>thoughts</strong> that
-      help us feel strong inside, keep us going, and
-      let us have fun, and '<span class="red">red</span>'
-      <strong>thoughts</strong> that stop us all from trying to be brave.</p>
+    <div class="text">
+      <p>Today, we will learn how to <br>change '<span class="red">red</span>'
+        <strong>thoughts</strong> to
+        '<span class="green">green</span>' <strong>thoughts</strong>. </p>
+      <p>'<span class="red">Red</span>' <strong>thoughts</strong> make us feel worried and sad.</p>
+      <p>'<span class="green">Green</span>' <strong>thoughts</strong> help us feel brave and calm.</p>
+    </div>
+
     <audio autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/387978__dcpoke__birds-singing-03.mp3"/>
     <audio
       @loadeddata="playSoundText"
@@ -302,8 +305,8 @@ export default {
   -webkit-text-stroke: 0.1vw black;
   text-align: center;
   width: 100%;
-  top: 26vh;
-  opacity: 0;
+  top: 24vh;
+  opacity: 1;
 }
 #letter-f {
   color: #e59535;
@@ -312,13 +315,12 @@ export default {
   position: absolute;
   margin-bottom: 0;
   font-size: 4.8vh;
-  opacity: 0;
-}
-#line-1 {
+  opacity: 1;
   text-align: center;
   width: 100%;
-  top: 42vh;
+  top: 39vh;
 }
+.text p {margin-bottom: .3vh}
 span {
   display: inline-block;
 }
@@ -335,7 +337,7 @@ tspan { white-space:pre }
   height: auto;
 }
 .bird-1 {
-  top: 20vh;
+  top: 15vh;
   left: -5%;
   z-index: 20;
 }

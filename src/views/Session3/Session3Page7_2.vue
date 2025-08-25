@@ -6,9 +6,8 @@
       class="session-background"
     />
     <div class="text-box">
-      <h1>Grandpa would like some company</h1>
-      <p>How do you think Tom is feeling?</p>
-      <p>Tick your choices:</p>
+      <p><strong>How do you think Tom is feeling?</strong></p>
+      <p><strong>Tick your choices:</strong></p>
       <div class="question-container">
         <div class="checkbox-containers" id="long-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
@@ -18,12 +17,12 @@
         </div>
       </div>
     </div>
-    <div class="notice-box">Be kind and helpful!</div>
+    <div class="notice-box">Be kind!</div>
     <audio src="../../assets/sounds/session7/click-sound.mp3" ref="clickSound" />
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/Session3_Page92%2B2.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">96</div>
+<!--    <div class="page-number" id="page-dark">96</div>-->
   </div>
 </template>
 
@@ -46,8 +45,8 @@ export default {
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
         .add({targets: ".text-box", opacity: 1}, 500)
-        .add({targets: text[1], opacity: 1}, 3700)
-        .add({targets: text[2], opacity: 1}, 6600)
+        .add({targets: text[0], opacity: 1}, 3700)
+        .add({targets: text[1], opacity: 1}, 6600)
         .add({targets: '.question-container', opacity: 1}, 8600)
         .add({targets: '.notice-box', opacity: 1}, 13500)
     },
@@ -76,7 +75,7 @@ export default {
 <style scoped>
 .notice-box {
   position: absolute;
-  bottom: 6vh;
+  bottom: 2vh;
   width: 70%;
   left: 15%;
   text-align: center;
@@ -90,13 +89,14 @@ export default {
 .text-box {
   position: absolute;
   top: 1vh;
-  left: 1%;
-  padding: 1.4vh;
+  left: 2vh;
+  width: 48vh;
+  padding: 1vh;
   background-color: rgba(255,255,255,0.9);
   opacity: 0;
 }
 .text-box h1 {
-  font-size: 4vh;
+  font-size: 3.3vh;
   margin-bottom: 1vh;
 }
 .text-box p {

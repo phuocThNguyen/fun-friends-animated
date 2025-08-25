@@ -19,9 +19,7 @@
         </g>
       </svg>
       <div class="star-text">
-        <p>Tom is playing with
-          <br>his friend at
-          <br>the beach.</p>
+        <p>Chilli and Pepper are playing on the beach.</p>
       </div>
     </div>
     <audio autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/ambient/ocean.mp3" ref=""/>
@@ -62,8 +60,8 @@ export default {
 <style scoped>
 .star-container {
   position: absolute;
-  right: 0;
-  top: 1vh;
+  left: 0;
+  top: -3vh;
   width: 40%;
   height: 50vh;
   display: flex;

@@ -1,5 +1,6 @@
 <template>
   <div class="interactive-container" id="alt-bg">
+    <!--  Click your favourites/ thumb up comes up  -->
     <h1 class="title">We all have fun!</h1>
     <ImageComponent
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/appendix/0000a8cd_medium.png"

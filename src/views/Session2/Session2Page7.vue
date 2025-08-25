@@ -1,9 +1,9 @@
 <template>
   <div class="interactive-container">
     <ImageComponent
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/13705-resized.jpg"
-      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/13705-resized.jpg"
-      class="session-background" id="bg-alt"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/father-spending-time-with-his-child.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/father-spending-time-with-his-child.jpg"
+      class="session-background"
     />
     <emotion-pick-instruction class="instruction"/>
     <feeling-question
@@ -11,7 +11,7 @@
       question="What could he be feeling?"
       :emotes="['happy','sad','worried','angry']"
       :tips="['Happy','Sad','Worried','Angry']"
-      :ans="['red-tick','red-tick','green-tick','red-tick']"
+      :ans="['green-tick','red-tick','red-tick','red-tick']"
       :isSmall="false"
       :delay="500"
       v-on:correctAnsChosen="handleCorrectAnswer"
@@ -194,32 +194,31 @@ export default {
 </script>
 
 <style scoped>
-#bg-alt {left:-28vh}
 .instruction {
   position: absolute;
   top: 2vh;
-  right: .5vh;
+  left: 2vh;
   opacity: 1;
 }
 .reward {
   position: absolute;
   height: auto;
   width: 1%;
-  top: 17vh;
-  left: 70vh;
+  bottom: 25vh;
+  left: 15vh;
   opacity: 0;
 }
 .question {
   position: absolute;
-  top: 35vh;
-  right: .5vh;
+  top: 25vh;
+  left: 2vh;
 }
 .sticker {
   position: absolute;
   width: auto;
   height: 25vh;
-  top: 4vh;
-  left: calc(0.43*133vh);
+  bottom: 10vh;
+  left: 6vh;
   z-index: 50;
   opacity: 0;
 }

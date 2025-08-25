@@ -1,6 +1,8 @@
 <template>
   <div class="interactive-container" id="alt-bg">
     <p class="text">Write or draw other rewards in the space below.</p>
+<!--    drag reward picture on to colorful balloons-->
+<!--    swijmming, watermelon, playgroud, lego. indoor climbing-->
     <drawing-canvas class="canvas" v-on:updateCanvas="updateCanvas" :data="canvasData" :canvasStyle="canvasStyle" />
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page11.mp3" ref="voice"/>

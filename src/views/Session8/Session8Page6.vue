@@ -859,10 +859,7 @@
       </g>
     </svg>
     <div class="text-box">
-      <span>Sometimes others don't feel like playing and that is OK.
-      </span><span>There are other children who will feel like it,
-      you just have to find them. </span><span>Find a classmate and think
-      about a <strong>STEP PLAN</strong> to make new friends together.</span>
+      <span>You can make a <strong>STEP PLAN</strong> to make new friends.</span>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page6.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">200</div>
@@ -916,9 +913,9 @@ export default {
 .text-box {
   background-color: rgba(255,255,255,1);
   position: absolute;
-  left: 9%;
-  top: 20vh;
-  width: 82%;
+  left: 7.5%;
+  top: 10vh;
+  width: 85%;
   padding: 2vh 4vh;
   font-size: 5vh;
   opacity: 0;

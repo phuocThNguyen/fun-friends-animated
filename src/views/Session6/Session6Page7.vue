@@ -1,11 +1,10 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>Additional Activity &ndash; Changing '<span class="red">Red</span>' to
+      <h1>Changing '<span class="red">Red</span>' to
         '<span class="green">Green</span>' Choices</h1>
-      <p>Daniel and Matilda are playing on their scooters.</p>
-      <p>Do you think that they are making '<span class="red">red</span>'
-        choices or '<span class="green">green</span>' choices?</p>
+      <p>Shaunti, Zen, Noa and Kiki are playing on their scooters. Look at their faces.</p>
+      <p><strong>Click the right answer.</strong></p>
     </div>
     <ImageComponent
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session6/Scooter_Girl.jpg"
@@ -344,9 +343,9 @@ export default {
   margin-bottom: 0;
 }
 .text-box p {
-  font-size: 3.8vh;
+  font-size: 3.7vh;
   margin-bottom: 0;
-  opacity: 0;
+  opacity: 1;
 }
 .images {
   position: absolute;

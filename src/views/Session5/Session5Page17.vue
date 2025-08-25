@@ -20,10 +20,7 @@
       </svg>
       <div class="star-text">
         <p><strong>Bright Star Idea</strong></p>
-        <p>Before you go to bed,
-          <br>listen to quiet, gentle music
-          <br>or do something
-          <br>calm and relaxing.
+        <p>Talk to your family about happy times during the day
         </p>
       </div>
     </div>

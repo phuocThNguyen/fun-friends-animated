@@ -6,7 +6,7 @@
         srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session9/92230.jpg"
         class="image"
       />
-      <p class="image-text">2. Brave Tom <br>Learning to garden</p>
+      <p class="image-text">2. Brave Zac -<br>Learning to garden</p>
     </div>
     <div class="image-container">
       <ImageComponent
@@ -14,7 +14,7 @@
         srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session9/3100.jpg"
         class="image"
       />
-      <p class="image-text">Tom's Reward <br>Fun ride</p>
+      <p class="image-text">Zac's Reward: <br>A fun ride</p>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page7.mp3" ref="voice"/>
     <div class="page-number" id="page-light">222</div>

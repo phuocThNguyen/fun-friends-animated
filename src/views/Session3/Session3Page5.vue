@@ -173,21 +173,21 @@ export default {
   position: absolute;
   height: auto;
   width: 1%;
-  top: 20vh;
-  right: 40%;
+  bottom: 20vh;
+  right: 30vh;
   opacity: 0;
 }
 .question {
   position: absolute;
-  bottom: 1vh;
-  left: 20%;
+  top: 25vh;
+  right: 10vh;
 }
 .sticker {
   position: absolute;
   width: auto;
   height: 25vh;
-  top: 7vh;
-  left: 5%;
+  bottom: 7vh;
+  right: 17vh;
   z-index: 50;
   opacity: 0;
 }

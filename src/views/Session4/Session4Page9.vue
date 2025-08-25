@@ -6,9 +6,9 @@
       class="session-background"
     />
     <div class="text-box">
-      Water makes us feel calm.
+      A shower calms me down.
     </div>
-    <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/ambient/water-fountain.mp3"/>
+    <audio ref="audio" autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/shower-in-bathroom-62910.mp3"/>
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page9.mp3" ref="voice"/>

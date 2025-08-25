@@ -6,10 +6,10 @@
       class="session-background"
     />
     <div class="text-box">
-      <p>What can you do to be a superhero?</p>
-      <p>Tick your choices:</p>
+      <p><strong>What can you do to be like a superhero?</strong></p>
+      <p><strong>Tick your choices:</strong></p>
       <div class="question-container">
-        <div class="checkbox-containers" id="long-checkbox">
+        <div class="checkbox-containers" id="short-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
             <input type="checkbox" v-model="answers" :value="name">
             <span class="checkmark"/>
@@ -212,7 +212,8 @@ export default {
     return {
       data: ['Being kind to all living beings','Helping your parents',
         'Eating healthy food','Playing outside',
-        'Having enough sleep','Helping your friends'],
+        'Having enough sleep','Helping your friends','Saying please','Saying thank you',
+        'Smiling','Sharing','Making thumbs up choices','Choosing green thoughts'],
       answers: [],
     }
   },
@@ -308,10 +309,10 @@ export default {
   width: 100%;
   padding-left: 2vh;
   margin-top: 1vh;
-  opacity: 0;
+  opacity: 1;
 }
 #long-checkbox label {width: 100%;}
-#short-checkbox label {width: 33%;}
+#short-checkbox label {width: 48%;}
 /* The container */
 .checkbox-container {
   display: inline-block;

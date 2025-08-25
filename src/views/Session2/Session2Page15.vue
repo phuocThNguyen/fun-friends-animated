@@ -114,6 +114,7 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session2/Session2_Page14.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">75</div>
   </div>
 </template>
 
@@ -171,21 +172,21 @@ export default {
   position: absolute;
   height: auto;
   width: 1%;
-  left: calc(0.1*133vh);
-  top: 30vh;
+  left: 15vh;
+  top: 65vh;
   opacity: 0;
 }
 .question {
   position: absolute;
-  bottom: 1vh;
-  left: calc(0.085*133vh);
+  top: 25vh;
+  left: 2vh;
 }
 .sticker {
   position: absolute;
   width: auto;
   height: 25vh;
-  top: 14vh;
-  left: 2%;
+  top: 54vh;
+  left: 2vh;
   z-index: 50;
   opacity: 0;
 }

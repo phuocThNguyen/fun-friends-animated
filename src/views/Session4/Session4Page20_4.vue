@@ -1,14 +1,14 @@
 <template>
   <div class="interactive-container">
     <ImageComponent
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/creek_girl_and_boy.jpg"
-      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/creek_girl_and_boy.jpg"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/little-boy-girl-are-sitting-wooden-steps-eating-fresh-raspberries.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/little-boy-girl-are-sitting-wooden-steps-eating-fresh-raspberries.jpg"
       class="page-image"
     />
     <div class="text-box">
-      <p>What do you think they can taste?</p>
-      <p>For example, things you bring to a picnic:</p>
-      <p>Tap your choices:</p>
+      <p><strong>Ned is eating healthy food.</strong></p>
+      <p>What can he taste?</p>
+      <p><strong>Tap your choices:</strong></p>
     </div>
     <div class="choices-container">
       <div class="choice-container" id="choice-1">
@@ -19,7 +19,7 @@
             class="image-component"
           />
         </div>
-        <div class="text">Fruits</div>
+        <div class="text">Fruit</div>
       </div>
       <div class="choice-container" id="choice-2">
         <div class="image" @click="toggleChoice(2)">

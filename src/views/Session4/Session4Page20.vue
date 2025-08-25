@@ -1,16 +1,14 @@
 <template>
   <div class="interactive-container">
     <ImageComponent
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/creek_girl_and_boy.jpg"
-      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/creek_girl_and_boy.jpg"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/portrait-kid-climbing-wooden-fame-park-child-enjoying-activity-climbing-adventure-park-summer-sunny-day-little-boy-having-fun-playground.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/portrait-kid-climbing-wooden-fame-park-child-enjoying-activity-climbing-adventure-park-summer-sunny-day-little-boy-having-fun-playground.jpg"
       class="page-image"
     />
     <div class="text-box">
-      <h1>Paying attention with five senses</h1>
-      <p>The children are paying careful attention with
-       their five senses while playing in the creek. What
-       do you think they can hear?</p>
-      <p>Tap your choices:</p>
+      <p><strong>Zen is playing in the park.</strong></p>
+      <p>What can he listen to?</p>
+      <p><strong>Tap your choices:</strong></p>
     </div>
     <div class="choices-container">
       <div class="choice-container" id="choice-1" @click="toggleChoice(1)">
@@ -78,8 +76,8 @@ export default {
       });
       animation
         .add({targets: '.text-box', opacity: 1}, 500)
-        .add({targets: text[1], opacity: 1}, 4600)
-        .add({targets: text[2], opacity: 1}, 13500)
+        .add({targets: text[0], opacity: 1}, 4600)
+        .add({targets: text[1], opacity: 1}, 13500)
         .add({targets: '.choices-container', opacity: 1}, 15600)
     },
     playVoiceOver() {
@@ -138,8 +136,8 @@ export default {
   position: absolute;
   width: 56.5%;
   height: 77%;
-  top: 21vh;
-  opacity: 0;
+  top: 17vh;
+  opacity: 1;
 }
 .choice-container {
   position: absolute;
@@ -176,7 +174,7 @@ export default {
 .page-image {
   position: absolute;
   height: 100%;
-  right: -45vh;
+  right: -55vh;
 }
 .text-box {
   position: absolute;
@@ -192,10 +190,9 @@ export default {
   margin-bottom: .5vh;
 }
 .text-box p {
-  font-size: 3vh;
-  line-height: 3.8vh;
-  margin-bottom: 0vh;
-  opacity: 0;
+  font-size: 3.5vh;
+  margin-bottom: 0;
+  opacity: 1;
 }
 .text-box p:last-child {
   margin-bottom: 0;

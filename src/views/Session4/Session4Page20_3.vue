@@ -1,13 +1,14 @@
 <template>
   <div class="interactive-container">
     <ImageComponent
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/creek_girl_and_boy.jpg"
-      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/creek_girl_and_boy.jpg"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/kids-spending-time-together-nature.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/kids-spending-time-together-nature.jpg"
       class="page-image"
     />
     <div class="text-box">
-      <p>What do you think they can smell?</p>
-      <p>Tap your choices:</p>
+      <p><strong>The children are enjoying the park.</strong></p>
+      <p>What can they smell?</p>
+      <p><strong>Tap your choices:</strong></p>
     </div>
     <div class="choices-container">
       <div class="choice-container" id="choice-1" @click="toggleChoice(1)">
@@ -28,7 +29,7 @@
             class="image-component"
           />
         </div>
-        <div class="text">The forest</div>
+        <div class="text">The trees</div>
       </div>
       <div class="choice-container" id="choice-3" @click="toggleChoice(3)">
         <div class="image">
@@ -131,7 +132,7 @@ export default {
   position: absolute;
   width: 56.5%;
   height: 70%;
-  top: 12vh;
+  top: 14vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

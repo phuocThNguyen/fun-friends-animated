@@ -982,11 +982,11 @@
       </g>
     </svg>
     <div class="text-box">
-      <p>When we break hard things down into many easier steps,
+      <p>When we break hard things down into easy steps,
         it is called a <strong>STEP PLAN</strong>.</p>
       <p><strong>STEP PLANS</strong> help us to be brave
-        when doing something we are scared of.</p>
-      <p>Each step brings you closer to facing your fears!</p>
+        when we try something new.</p>
+      <p>Each time you try a step, you feel brave.</p>
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Relaxing-Forest-Sound-Effect.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page2.mp3" ref="voice"/>

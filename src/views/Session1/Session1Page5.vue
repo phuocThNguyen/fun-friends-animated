@@ -6,7 +6,7 @@
       class="session-background"
     />
     <div class="text-box">
-      <p class="mb-0">Annie loves playing on the swing.</p>
+      <p class="mb-0">Charlie loves playing on the swing.</p>
       <p class="mb-0">What do you do when you play outside?</p>
     </div>
     <div class="question-text-box">

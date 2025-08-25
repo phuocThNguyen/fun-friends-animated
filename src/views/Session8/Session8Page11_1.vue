@@ -6,8 +6,8 @@
       class="session-background"
     />
     <div class="text-box">
-      <p>Click on each thought bubble to find '<span class="green">green</span>'
-        thoughts you can have</p>
+      <p><strong>Click on each thought bubble to find '<span class="green">green</span>'
+        thoughts you can have.</strong></p>
     </div>
     <div class="thought-bubbles-container">
       <div class="thought-bubble-container" @click="revealText(1)" id="bubble-1">
@@ -22,7 +22,7 @@
             </g>
           </g>
         </svg>
-        <div class="bubble-text" id="text-1">This is fun</div>
+        <div class="bubble-text" id="text-1">This is fun.</div>
       </div>
       <div class="thought-bubble-container" @click="revealText(2)" id="bubble-2">
         <svg class="thought-bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 341.11 268.16">
@@ -37,7 +37,7 @@
             </g>
           </g>
         </svg>
-        <div class="bubble-text" id="text-2">I love adventure</div>
+        <div class="bubble-text" id="text-2">I love adventure.</div>
       </div>
       <div class="thought-bubble-container" @click="revealText(3)" id="bubble-3">
         <svg class="thought-bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 341.11 268.16">
@@ -52,7 +52,7 @@
             </g>
           </g>
         </svg>
-        <div class="bubble-text" id="text-3">I love playing <br>outside</div>
+        <div class="bubble-text" id="text-3">I love playing <br>outside.</div>
       </div>
       <div class="thought-bubble-container" @click="revealText(4)" id="bubble-4">
         <svg class="thought-bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328.19 281.21">
@@ -71,7 +71,7 @@
             </g>
           </g>
         </svg>
-        <div class="bubble-text" id="text-4">It is great <br>to try new <br>things</div>
+        <div class="bubble-text" id="text-4">It is great <br>to try new <br>things.</div>
       </div>
       <div class="thought-bubble-container" @click="revealText(5)" id="bubble-5">
         <svg class="thought-bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 364.76 250.82">
@@ -85,7 +85,7 @@
             </g>
           </g>
         </svg>
-        <div class="bubble-text" id="text-5">I love playing <br>in the water</div>
+        <div class="bubble-text" id="text-5">I love playing <br>in the water.</div>
       </div>
       <div class="thought-bubble-container" @click="revealText(6)" id="bubble-6">
         <svg class="thought-bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 364.76 250.82">
@@ -99,7 +99,7 @@
             </g>
           </g>
         </svg>
-        <div class="bubble-text" id="text-6">Other friends <br>can join in</div>
+        <div class="bubble-text" id="text-6">Other friends <br>can join in.</div>
       </div>
       <div class="thought-bubble-container" @click="revealText(7)" id="bubble-7">
         <svg class="thought-bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328.19 281.21">
@@ -118,7 +118,7 @@
             </g>
           </g>
         </svg>
-        <div class="bubble-text" id="text-7">The trees are so <br>beautiful around <br>the creek</div>
+        <div class="bubble-text" id="text-7">The trees are so <br>beautiful around <br>the creek.</div>
       </div>
     </div>
     <div class="page-number" id="page-light">209</div>

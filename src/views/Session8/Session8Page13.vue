@@ -16,7 +16,7 @@
     </div>
     <div class="question-container" id="container-1">
       <div class="text">
-        Crossing the creek by themselves
+        Crossing the creek
       </div>
       <div class="choices-container">
         <svg class="thumb thumb-up" id="thumb-up-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1960 1978" width="1960" height="1978">
@@ -63,7 +63,7 @@
     </div>
     <div class="question-container" id="container-2">
       <div class="text">
-        Staying together in the creek
+        Helping each other
       </div>
       <div class="choices-container">
         <svg class="thumb thumb-up" id="thumb-up-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1960 1978" width="1960" height="1978">
@@ -242,12 +242,12 @@ export default {
       let targetThumb = e.target.id;
       switch (targetThumb) {
         case 'mask-left-1':
+          this.animateRedTick('#red-tick-1');
+          break;
+        case 'mask-right-1':
           this.hideElements(1);
           this.checkComplete();
           this.animateGreenTick('#green-tick-1');
-          break;
-        case 'mask-right-1':
-          this.animateRedTick('#red-tick-1');
           break;
         case 'mask-left-2':
           this.animateRedTick('#red-tick-2');
@@ -293,7 +293,7 @@ export default {
     hideElements(id) {
       if (id === 1) {
         document.querySelector('#mask-container-1').style.visibility = 'hidden';
-        document.querySelector('#thumb-up-1').style.visibility = 'hidden';
+        document.querySelector('#thumb-down-1').style.visibility = 'hidden';
       } else {
         document.querySelector('#mask-container-2').style.visibility = 'hidden';
         document.querySelector('#thumb-down-2').style.visibility = 'hidden';

@@ -1,48 +1,47 @@
 <template>
   <div class="interactive-container">
     <ImageComponent
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/22061-resized.jpg"
-      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/22061-resized.jpg"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session3/adorable-african-black-little-boy.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session3/adorable-african-black-little-boy.jpg"
       class="session-background"
     />
     <div class="text-box">
-      <p>Zoe is playing on the new playground,
-       she is feeling excited but also scared.</p>
-      <p>What might be her body clues? Drag the
-       clues to her body.</p>
+      <p><strong>Noa loves being in the garden.</strong></p>
+      <p>What is Noa enjoying in the park?</p>
+      <p><strong>Drag the clues to his body.</strong></p>
     </div>
     <div class="clues-sources">
-      <draggable class="clues" v-model="dizzy" group="dizzy">
-        <div class="clue" v-for="(clue, index) in dizzy" :key="index">{{clue}}</div>
+      <draggable class="clues" v-model="smiling" group="smiling">
+        <div class="clue" v-for="(clue, index) in smiling" :key="index">{{clue}}</div>
       </draggable>
-      <draggable class="clues" v-model="stomach" group="stomach">
-        <div class="clue" v-for="(clue, index) in stomach" :key="index">{{clue}}</div>
+      <draggable class="clues" v-model="feeling" group="feeling">
+        <div class="clue" v-for="(clue, index) in feeling" :key="index">{{clue}}</div>
       </draggable>
-      <draggable class="clues" v-model="skin" group="skin">
-        <div class="clue" v-for="(clue, index) in skin" :key="index">{{clue}}</div>
+      <draggable class="clues" v-model="seeing" group="seeing">
+        <div class="clue" v-for="(clue, index) in seeing" :key="index">{{clue}}</div>
       </draggable>
-      <draggable class="clues" v-model="heart" group="heart">
-        <div class="clue" v-for="(clue, index) in heart" :key="index">{{clue}}</div>
+      <draggable class="clues" v-model="feeling2" group="feeling2">
+        <div class="clue" v-for="(clue, index) in feeling2" :key="index">{{clue}}</div>
       </draggable>
-      <draggable class="clues" v-model="knees" group="knees">
-        <div class="clue" v-for="(clue, index) in knees" :key="index">{{clue}}</div>
+      <draggable class="clues" v-model="listening" group="listening">
+        <div class="clue" v-for="(clue, index) in listening" :key="index">{{clue}}</div>
       </draggable>
     </div>
 
-    <draggable class="answers" @change="handleChange('dizzy')" id="dizzy" v-model="dizzyAns" group="dizzy">
-      <div class="clue" v-for="(clue, index) in dizzyAns" v-bind:id="clue" :key="index">{{clue}}</div>
+    <draggable class="answers" @change="handleChange('smiling')" id="smiling" v-model="smilingAns" group="smiling">
+      <div class="clue" v-for="(clue, index) in smilingAns" v-bind:id="clue" :key="index">{{clue}}</div>
     </draggable>
-    <draggable class="answers" @change="handleChange('stomach')" id="stomach" v-model="stomachAns" group="stomach">
-      <div class="clue" v-for="(clue, index) in stomachAns" :key="index">{{clue}}</div>
+    <draggable class="answers" @change="handleChange('feeling')" id="feeling" v-model="feelingAns" group="feeling">
+      <div class="clue" v-for="(clue, index) in feelingAns" :key="index">{{clue}}</div>
     </draggable>
-    <draggable class="answers" @change="handleChange('skin')" id="skin" v-model="skinAns" group="skin">
-      <div class="clue" v-for="(clue, index) in skinAns" :key="index">{{clue}}</div>
+    <draggable class="answers" @change="handleChange('seeing')" id="seeing" v-model="seeingAns" group="seeing">
+      <div class="clue" v-for="(clue, index) in seeingAns" :key="index">{{clue}}</div>
     </draggable>
-    <draggable class="answers" @change="handleChange('heart')" id="heart" v-model="heartAns" group="heart">
-      <div class="clue" v-for="(clue, index) in heartAns" :key="index">{{clue}}</div>
+    <draggable class="answers" @change="handleChange('feeling2')" id="feeling2" v-model="feeling2Ans" group="feeling2">
+      <div class="clue" v-for="(clue, index) in feeling2Ans" :key="index">{{clue}}</div>
     </draggable>
-    <draggable class="answers" @change="handleChange('knees')" id="knees" v-model="kneesAns" group="knees">
-      <div class="clue" v-for="(clue, index) in kneesAns" :key="index">{{clue}}</div>
+    <draggable class="answers" @change="handleChange('listening')" id="listening" v-model="listeningAns" group="listening">
+      <div class="clue" v-for="(clue, index) in listeningAns" :key="index">{{clue}}</div>
     </draggable>
 
     <green-tick class="small-tick" id="green-tick-1"/>
@@ -142,16 +141,16 @@ export default {
   components: {GreenTick, draggable, ImageComponent},
   data() {
     return {
-      dizzy: ['Dizziness'],
-      dizzyAns: [],
-      stomach: ['Butterflies in the stomach'],
-      stomachAns: [],
-      skin: ['Cold tingly skin'],
-      skinAns: [],
-      heart: ['Racing heart'],
-      heartAns: [],
-      knees: ['Shaky knees'],
-      kneesAns: [],
+      smiling: ['Smelling the\nsweet flowers'],
+      smilingAns: [],
+      feeling: ['Feeling a\nsoft feather'],
+      feelingAns: [],
+      seeing: ['Seeing the\ncolorful flowers'],
+      seeingAns: [],
+      feeling2: ['Feeling the warm\nsun on the skin'],
+      feeling2Ans: [],
+      listening: ['Listening to the\nbirds in the trees'],
+      listeningAns: [],
       correctAns: 0
     }
   },
@@ -177,7 +176,7 @@ export default {
     },
     handleChange(id) {
       switch (id) {
-        case 'dizzy':
+        case 'smiling':
           anime({
             targets: '#green-tick-1',
             opacity: 1,
@@ -188,7 +187,7 @@ export default {
           this.$refs.correct.play();
           this.correctAns++;
           break;
-        case 'stomach':
+        case 'feeling':
           anime({
             targets: '#green-tick-2',
             opacity: 1,
@@ -199,7 +198,7 @@ export default {
           this.$refs.correct.play();
           this.correctAns++;
           break;
-        case 'skin':
+        case 'seeing':
           anime({
             targets: '#green-tick-3',
             opacity: 1,
@@ -210,7 +209,7 @@ export default {
           this.$refs.correct.play();
           this.correctAns++;
           break;
-        case 'heart':
+        case 'feeling2':
           anime({
             targets: '#green-tick-4',
             opacity: 1,
@@ -221,7 +220,7 @@ export default {
           this.$refs.correct.play();
           this.correctAns++;
           break;
-        case 'knees':
+        case 'listening':
           anime({
             targets: '#green-tick-5',
             opacity: 1,
@@ -255,7 +254,7 @@ export default {
   mounted() {},
   watch: {
     correctAns: function () {
-      if (this.correctAns === 5) {
+      if (this.correctAns === 6) {
         this.afterFinishFunctions();
       } else {
         setTimeout(() => {this.$refs.correctVoice.play()}, 500)
@@ -292,85 +291,85 @@ export default {
   z-index: 50;
 }
 #green-tick-1 {
-  right: 29%;
-  top: 30vh;
+  left: 31%;
+  top: 28vh;
 }
 #green-tick-2 {
-  right: 26%;
+  right: 35.5%;
   top: 57vh;
 }
 #green-tick-3 {
-  right: 28%;
-  top: 44vh;
+  right: 33%;
+  top: 46vh;
 }
 #green-tick-4 {
-  right: 6%;
-  top: 45vh;
+  right: 16%;
+  top: 47vh;
 }
 #green-tick-5 {
   right: 1%;
   top: 71vh;
 }
-#dizzy {
-  right: 30%;
-  top: 27vh;
+#smiling {
+  left: 32%;
+  top: 30vh;
 }
-#stomach {
-  right: 27%;
-  top: 50vh;
-  height: 10.49vh;
+#feeling {
+  left: 27%;
+  top: 57vh;
 }
-#skin {
-  right: 30%;
-  top: 41vh;
+#seeing {
+  left: 30%;
+  top: 19vh;
 }
-#heart {
-  right: 7%;
+#feeling2 {
+  right: .5%;
   top: 42vh;
 }
-#knees {
-  right: 2%;
-  top: 68vh;
+#listening {
+  right: 4%;
+  top: 20vh;
 }
 .answers {
   position: absolute;
-  width: 23.8vh;
-  height: 6.55vh;
+  width: 27vh;
+  height: 10.49vh;
   background-color: rgba(255,255,255,0.6);
   border-radius: 10px;
-  opacity: 0;
+  opacity: 1;
 }
 .clues {
-  width: 23.8vh;
+  width: 27vh;
 }
 .clues-sources {
   position: absolute;
-  top: 30vh;
-  left: 17%;
+  top: 20vh;
+  left: 1vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  opacity: 0;
+  opacity: 1;
 }
 .clue {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
   width: 100%;
   font-size: 3.2vh;
   border-radius: 10px;
   text-align: center;
-  padding: 1.4vh;
+  padding: .85vh;
   margin-bottom: 1vh;
+  white-space: pre;
 }
 p { font-size: 3.5vh;margin-bottom: 0; }
 .text-box {
   position: absolute;
-  width: 90%;
-  padding: 2.1vh;
+  width: 54vh;
+  padding: .5vh 2vh;
   top: 1vh;
-  left: 5%;
-  background-color: rgba(255,255,255,0.8);
+  left: 1vh;
+  background-color: rgba(255,255,255,0.9);
   opacity: 0;
 }
 .cls-1 {fill: none;}

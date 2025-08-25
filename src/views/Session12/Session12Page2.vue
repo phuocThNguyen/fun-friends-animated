@@ -3,13 +3,15 @@
     <ImageComponent
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session12/50044.jpg"
       srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session12/50044.jpg"
-      class="session-background"
+      class="page-image"
     />
     <div class="text-box">
       <h1>Games Party: A Celebration</h1>
       <p>Together with your family, make up a game to practise
       the FRIENDS skills.</p>
-      <p>Share your game with other children in the FRIENDS party.</p>
+    </div>
+    <div class="bottom-text">
+      <p>Share your game with your friends.</p>
     </div>
     <div class="js-container animation-container"/>
     <svg class="balloons" id="blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188 358" width="188" height="358">
@@ -118,7 +120,6 @@
     </svg>
     <audio autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/polka.mp3" ref="audio"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session12/Session12_Page2.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">267</div>
   </div>
 </template>
 
@@ -219,6 +220,26 @@ export default {
 </script>
 
 <style scoped>
+.page-image {
+  position: absolute;
+  width: 100%;
+  top: -17vh
+}
+.bottom-text {
+  position: absolute;
+  background: #00CE7C;
+  color: #fff;
+  padding: 1vh;
+  width: 73vh;
+  bottom: 2vh;
+  left: 30vh;
+  text-align: center;
+}
+.bottom-text p {
+  font-size: 3.5vh;
+  font-weight: bold;
+  margin-bottom: 0;
+}
 .balloons {
   position: absolute;
   width: auto;
@@ -248,12 +269,12 @@ export default {
   background-color: rgba(255,255,255,0.9);
 }
 .text-box h1 {
-  font-size: 6vh;
+  font-size: 4vh;
   font-weight: bold;
   margin-bottom: 0
 }
 .text-box p {
-  font-size: 4vh;
+  font-size: 3vh;
   margin-bottom: 0;
   opacity: 0;
 }

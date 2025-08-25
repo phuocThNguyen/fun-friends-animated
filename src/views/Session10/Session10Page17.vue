@@ -301,12 +301,7 @@
       </svg>
       <div class="star-text">
         <p><strong>Bright Star Idea</strong></p>
-        <p>Do a drawing or make a card to
-          <br>thank somebody for the things
-          <br>that you like about them.
-          <br>You could ask someone
-          <br>in your family to help
-          <br>you write it.
+        <p>Make a card with a <br>drawing for someone <br>who is kind to you.
         </p>
       </div>
     </div>
@@ -376,7 +371,7 @@ export default {
 .star {
   position: absolute;
   width: auto;
-  height: 100%;
+  height: 75%;
   z-index: 50;
 }
 .star-text {
@@ -390,7 +385,7 @@ export default {
   align-items: center;
   z-index: 55;
 }
-.star-text p:first-child {margin-top: 12vh}
+.star-text p:first-child {margin-top: 2vh}
 .star-text p {
   font-size: 4vh;
   margin-bottom: 0;

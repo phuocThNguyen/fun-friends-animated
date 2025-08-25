@@ -5,29 +5,29 @@
       srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/appendix/appendix1.jpg"
       class="session-background"
     />
-    <div class="title">Appendix 1: 'Green' thoughts to Enjoy</div>
-    <p class="text">Instruction: Click on each cloud to see a green thought</p>
+    <div class="title">'<span class='green-color'>Green</span>' thoughts to remember</div>
+    <p class="text"><strong>Click on each cloud to see a green thought.</strong></p>
     <div class="cloud-text-containers">
       <div class="cloud-text-container" @click="revealText(1)" id="cloud-1">
-        <p class="cloud-text pt-3" id="text-1">I'm going to <br>have a great day.</p>
+        <p class="cloud-text pt-3" id="text-1" style="margin-top: 3vh">I am going to <br>have a great day.</p>
       </div>
       <div class="cloud-text-container" @click="revealText(2)" id="cloud-2">
-        <p class="cloud-text pt-4" id="text-2">I can have fun when <br>I run, swim and <br>bike ride.</p>
+        <p class="cloud-text pt-4" id="text-2">I love bike riding.</p>
       </div>
       <div class="cloud-text-container" @click="revealText(3)" id="cloud-3">
-        <p class="cloud-text pt-4" id="text-3">I'll try my best.</p>
+        <p class="cloud-text pt-4" id="text-3">I will try <br>my best.</p>
       </div>
       <div class="cloud-text-container" @click="revealText(4)" id="cloud-4">
         <p class="cloud-text pt-3" id="text-4">I can ask <br>someone <br>to help me.</p>
       </div>
       <div class="cloud-text-container" @click="revealText(5)" id="cloud-5">
-        <p class="cloud-text pt-3" id="text-5">I'm going <br>to be brave.</p>
+        <p class="cloud-text pt-3" id="text-5">I can be brave.</p>
       </div>
       <div class="cloud-text-container" @click="revealText(6)" id="cloud-6">
         <p class="cloud-text pt-3" id="text-6">I can be kind <br>to everyone.</p>
       </div>
       <div class="cloud-text-container" @click="revealText(7)" id="cloud-7">
-        <p class="cloud-text pt-4" id="text-7">I'll give it a go.</p>
+        <p class="cloud-text pt-4" id="text-7">I will give it a go.</p>
       </div>
       <div class="cloud-text-container" @click="revealText(8)" id="cloud-8">
         <p class="cloud-text pt-3" id="text-8">I like playing <br>with my friends.</p>
@@ -117,7 +117,7 @@ export default {
   color: #00CE7C;
   font-size: 3.5vh;
   line-height: 4vh;
-  opacity: 0;
+  opacity: 1;
 }
 #cloud-1 {width: 33.5vh;height: 24vh;left: 4.4vh;top: 8.7vh;}
 #cloud-2 {width: 37vh;height: 30.5vh;left: 48.1vh;top: 12.7vh;}

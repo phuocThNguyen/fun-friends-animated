@@ -198,8 +198,7 @@
 
     <p class="title"><span id="letter-f">D</span>on't forget</p>
     <p class="text" id="line-1">
-      Today, we will think about the people
-      <br>who help us to be brave and also the people we help too.
+      Who helps you be brave? <br>Who helps you calm down? <br>How can you help other people?
     </p>
 
     <audio autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/387978__dcpoke__birds-singing-03.mp3"/>
@@ -285,7 +284,7 @@ export default {
   text-align: center;
   width: 100%;
   top: 26vh;
-  opacity: 0;
+  opacity: 1;
 }
 #letter-f {
   color: #9AC131;
@@ -294,7 +293,7 @@ export default {
   position: absolute;
   margin-bottom: 0;
   font-size: 5vh;
-  color: #ffffff;
+  color: black;
 }
 #line-1 {
   text-align: center;

@@ -3,9 +3,10 @@
     <ImageComponent
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session10/370.jpg"
       srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session10/370.jpg"
-      class="session-background"
+      class="page-image"
     />
-    <div class="text-box-green">My mum helps me be brave
+    <div class="text-box-green" id="box-1">Zoe looks up to her mum.</div>
+    <div class="text-box-green" id="box-2">My mum helps me to be brave
       <br>when I learn to ride my bike.</div>
     <audio autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/Bike-bell.mp3" ref="audio"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page8.mp3" ref="voice"/>
@@ -45,16 +46,18 @@ export default {
 </script>
 
 <style scoped>
+.page-image {position: absolute;
+  height: 105%;transform: scaleX(-1)}
 .text-box-green {
   position: absolute;
-  top: 3vh;
-  right: 3%;
-  padding: 1vh 2vh;
+  left: 2vh;
+  padding: 1vh 1.5vh;
   background-color: #00CE7C;
   color: #ffffff;
-  font-size: 4vh;
+  font-size: 3.8vh;
   font-weight: bold;
-  text-align: center;
-  opacity: 0;
+  opacity: 1;
 }
+#box-1 {top: 3vh;}
+#box-2 {top: 15vh;}
 </style>

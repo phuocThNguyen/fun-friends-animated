@@ -1041,8 +1041,8 @@
     </svg>
     <div class="text-box">
       <p>Here are some examples of <strong>STEP PLANS</strong> that other kids
-        have used to be brave!</p>
-      <p>What is something you want to do or create?</p>
+        have used to be brave.</p>
+      <p>What is something you want to try?</p>
       <p>Can you break this down into small easy steps?</p>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page4.mp3" ref="voice"/>

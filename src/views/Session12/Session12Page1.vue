@@ -198,10 +198,9 @@
 
     <p class="title"><span id="letter-f">S</span>tay Brave</p>
     <div class="text-box">
-      <p><strong>Two things for you
-        to talk about and enjoy today:</strong></p>
-      <p>1. Being happy when we try something</p>
-      <p>2. Having fun with the friends we have made</p>
+      <p>
+        You can stay brave.<br>You can smile.<br>You can try new things.
+      </p>
     </div>
 
     <audio autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/387978__dcpoke__birds-singing-03.mp3"/>
@@ -291,7 +290,7 @@ export default {
   text-align: center;
   width: 100%;
   top: 26vh;
-  opacity: 0;
+  opacity: 1;
 }
 #letter-f {
   color: #E8528C;
@@ -305,7 +304,7 @@ export default {
 .text-box p {
   margin-bottom: 1vh;
   font-size: 5vh;
-  color: #ffffff;
+  color: black;
 }
 .text-box p:first-child {
   margin-left: 1.4vh;

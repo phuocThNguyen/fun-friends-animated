@@ -6,9 +6,8 @@
       class="session-background"
     />
     <div class="text-box">
-      <p>In this picture, the children are walking to a
-        new school with their dad. Look at their faces!</p>
-      <p>What could they be feeling? Tick your choices:</p>
+      <p><strong>Zac and Lily are walking to a new school with their dad.</strong> Look at their faces.</p>
+      <p>What could they be feeling? <strong>Tick your choices:</strong></p>
       <div class="question-container">
         <div class="checkbox-containers" id="short-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
@@ -17,8 +16,8 @@
           </label>
         </div>
       </div>
-      <p>Are they having '<span id="red-text">red</span>' or
-        '<span id="green-text">green</span>' thoughts?</p>
+      <p><strong>Are they having '<span id="red-text">red</span>' or
+        '<span id="green-text">green</span>' thoughts?</strong></p>
     </div>
     <traffic-light-vertical
       correctAns="green"

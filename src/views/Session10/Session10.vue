@@ -43,6 +43,10 @@ import Session10Page15 from "@/views/Session10/Session10Page15";
 import Session10Page15_1 from "@/views/Session10/Session10Page15_1";
 import Session10Page16 from "@/views/Session10/Session10Page16";
 import Session10Page17 from "@/views/Session10/Session10Page17";
+import Session10Page18 from "@/views/Session10/Session10Page18";
+import Session10Page19 from "@/views/Session10/Session10Page19";
+import Session10Page20 from "@/views/Session10/Session10Page20";
+import Session10Page21 from "@/views/Session10/Session10Page21";
 import {mapState} from "vuex";
 
 export default {
@@ -55,19 +59,21 @@ export default {
     Session10Page5, Session10Page6, Session10Page7, Session10Page8, Session10Page9,
     Session10Page10, Session10Page11, Session10Page12, Session10Page13, Session10Page14,
     Session10Page15, Session10Page16, Session10Page17, Session10Page9_1, Session10Page15_1,
+    Session10Page18, Session10Page19, Session10Page20, Session10Page21,
   },
   data() {
     return {
       pages: {
         1: "Session10Page1", 2: "Session10Page1_1", 3: "Session10Page2", 4: "Session10Page3", 5: "Session10Page4",
         6: "Session10Page5", 7: "Session10Page6", 8: "Session10Page7", 9: "Session10Page8", 10: "Session10Page9",
-        11: "Session10Page9_1", 12: "Session10Page10", 13: "Session10Page11", 14: "Session10Page12", 15: "Session10Page13",
-        16: "Session10Page14", 17: "Session10Page15", 18: "Session10Page15_1", 19: "Session10Page16", 20: "Session10Page17"
+        11: "Session10Page9_1", 12: "Session10Page10", 13: "Session10Page11", 14: "Session10Page12", 15: "Session10Page14",
+        16: "Session10Page15", 17: "Session10Page15_1", 18: "Session10Page16", 19: "Session10Page17", 20: "Session10Page18",
+        21: "Session10Page19", 22: "Session10Page20", 23: "Session10Page21",
       },
       page: 0,
       arrowVisible: true,
       hiddenTimeExpired: false,
-      lastPage: 20,
+      lastPage: 23,
     }
   },
   created() {

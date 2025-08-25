@@ -6,7 +6,7 @@
       class="session-background"
     />
     <div class="text-box">
-      <p>Click on each paper plane to find helpful choices you can make</p>
+      <p><strong>Click on each paper plane to find ''<span class='green-color'>Thumbs up</span>'' choices.</strong></p>
     </div>
     <div class="plans-container">
       <div class="plan-container" @click="revealText(1)" id="plan-1">
@@ -17,7 +17,7 @@
           <polygon class="cls-pink-3" points="409.73 604.67 1112.87 0 460.55 821.84 409.73 604.67" />
           <polygon class="cls-pink-1" points="409.73 604.67 1112.87 0 816.74 717.08 409.73 604.67" />
         </svg>
-        <div class="plan-text" id="text-1">Clean the creek</div>
+        <div class="plan-text" id="text-1">Play hide and seek</div>
       </div>
       <div class="plan-container" @click="revealText(2)" id="plan-2">
         <div class="paper" id="paper-2"/>
@@ -27,7 +27,7 @@
           <polygon class="cls-red-3" points="166.44 327.49 961.73 421.95 57.9 486.61 166.44 327.49" />
           <polygon class="cls-red-1" points="166.44 327.49 961.73 421.95 332.52 652.13 166.44 327.49" />
         </svg>
-        <div class="plan-text" id="text-2">Take turn <br>sharing any games</div>
+        <div class="plan-text" id="text-2">Play with toy boats <br>on the creek</div>
       </div>
       <div class="plan-container" @click="revealText(3)" id="plan-3">
         <div class="paper" id="paper-3"/>
@@ -37,7 +37,7 @@
           <polygon class="cls-blue-1" points="166.44 327.49 961.73 421.95 57.9 486.61 166.44 327.49" />
           <polygon class="cls-blue-3" points="166.44 327.49 961.73 421.95 332.52 652.13 166.44 327.49" />
         </svg>
-        <div class="plan-text" id="text-3">Help my friend <br>cross the creek</div>
+        <div class="plan-text" id="text-3">Swim in the creek</div>
       </div>
       <div class="plan-container" @click="revealText(4)" id="plan-4">
         <div class="paper" id="paper-4"/>
@@ -47,7 +47,7 @@
           <polygon class="cls-purple-1" points="409.73 604.67 1112.87 0 460.55 821.84 409.73 604.67" />
           <polygon class="cls-purple-3" points="409.73 604.67 1112.87 0 816.74 717.08 409.73 604.67" />
         </svg>
-        <div class="plan-text" id="text-4">Pick up any <br>rubbish and put <br>it in the bin</div>
+        <div class="plan-text" id="text-4">Pick up rubbish <br>and put it <br>in the bin</div>
       </div>
       <div class="plan-container" @click="revealText(5)" id="plan-5">
         <div class="paper" id="paper-5"/>
@@ -57,7 +57,7 @@
           <polygon class="cls-yellow-3" points="166.44 327.49 961.73 421.95 57.9 486.61 166.44 327.49" />
           <polygon class="cls-yellow-1" points="166.44 327.49 961.73 421.95 332.52 652.13 166.44 327.49" />
         </svg>
-        <div class="plan-text" id="text-5">Join in on the fun</div>
+        <div class="plan-text" id="text-5">Play ball in <br>the creek</div>
       </div>
       <div class="plan-container" @click="revealText(6)" id="plan-6">
         <div class="paper" id="paper-6"/>
@@ -67,7 +67,7 @@
           <polygon class="cls-white-3" points="166.44 327.49 961.73 421.95 57.9 486.61 166.44 327.49" />
           <polygon class="cls-white-1" points="166.44 327.49 961.73 421.95 332.52 652.13 166.44 327.49" />
         </svg>
-        <div class="plan-text" id="text-6">Invent games <br>in the creek</div>
+        <div class="plan-text" id="text-6">Find shiny rocks <br>in the creek</div>
       </div>
       <div class="plan-container" @click="revealText(7)" id="plan-7">
         <div class="paper" id="paper-7"/>
@@ -77,7 +77,7 @@
           <polygon class="cls-green-3" points="408.35 596.34 1118.57 0 456.61 814.09 408.35 596.34" />
           <polygon class="cls-green-1" points="408.35 596.34 1118.57 0 814.01 713.54 408.35 596.34" />
         </svg>
-        <div class="plan-text" id="text-7">Share the picnic</div>
+        <div class="plan-text" id="text-7">Share a picnic</div>
       </div>
     </div>
     <div class="audios">
@@ -169,7 +169,7 @@ export default {
   font-size: 3vh;
   font-weight: 600;
   color: #000;
-  opacity: 0;
+  opacity: 1;
   display: flex;
   justify-content: center;
   align-items: center;

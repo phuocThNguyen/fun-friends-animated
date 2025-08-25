@@ -5,7 +5,7 @@
       srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session10/623178-PNWC48-947.jpg"
       class="session-background"
     />
-    <div class="text-box-green">My dad helps me write a story.</div>
+    <div class="text-box-green">My dad helps me draw.</div>
     <audio autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/ambient/pencil.mp3" ref="audio"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page5.mp3" ref="voice"/>
     <div class="page-number" id="page-light">236</div>

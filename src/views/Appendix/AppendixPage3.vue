@@ -5,9 +5,9 @@
       srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/appendix/stars-background.jpg"
       class="session-background"
     />
-    <div class="title">APPENDIX 3: HAPPINESS IDEA</div>
-    <div class="text">Instruction: Read the golden star and click the 'green' thumb if
-      it is a thumbs up choice. <br>Click the 'red' thumb if it is a thumbs down choice.</div>
+    <div class="title">HAPPINESS IDEAS</div>
+    <div class="text">Read the stars. <br>Click the '<span class='red-color'>red</span>' thumb if it is a '<span class='red-color'>thumbs down</span>' choice.
+      <br>Click the '<span class='green-color'>green</span>' thumb if it is a '<span class='green-color'>thumbs up</span>' choice. </div>
     <div class="choice-container" v-for="star in stars" :id="'choice-'+star.id" :key="star.id">
       <div class="star-container">
         <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1321 1258" width="1321" height="1258">
@@ -345,6 +345,8 @@ export default {
   top: 8vh;
   font-size: 3vh;
   color: #ffffff;
+  font-weight: 800;
+  z-index: 10;
 }
 .question-container {
   position: absolute;

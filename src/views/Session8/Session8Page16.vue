@@ -20,13 +20,12 @@
       </svg>
       <div class="star-text">
         <p><strong>Bright Star Idea</strong></p>
-        <p>Eat your favourite healthy food
-          <br>really slowly and think about
-          <br>how yummy it tastes. Talk
-          <br>to somebody about what it
-          <br>smells like, what it looks
-          <br>like and how it tastes.
-        </p>
+        <p>Eat your favourite fruit slowly.</p>
+          <p>How does it taste?</p>
+          <p>How does it smell?</p>
+          <p>How does it feel?</p>
+          <p>How does it look?</p>
+          <p>How does it sound?</p>
       </div>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page16.mp3" ref="voice"/>

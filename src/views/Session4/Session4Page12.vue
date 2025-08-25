@@ -6,7 +6,7 @@
       class="images"
     />
     <div class="activity-container">
-      <div class="instruction-container"><strong>Activity - </strong>Choose the correct sense</div>
+      <div class="instruction-container"><strong>Activity - </strong>Tap the right answer</div>
       <div class="choices-container">
         <div class="choice">
           <svg class="sense" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1023 1200" width="1023" height="1200">

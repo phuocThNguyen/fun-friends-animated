@@ -102,7 +102,7 @@
       </div>
       <div @click="setSession(9)" class="content-line">
         <p><strong>Session 9:</strong>
-          Talking about rewarding ourselves</p>
+          Getting rewards for trying</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
           <g id="object">
             <g id="&lt;Group&gt;">
@@ -114,8 +114,7 @@
       </div>
       <div @click="setSession(10)" class="content-line">
         <p><strong>Session 10</strong>:
-          Talking about someone to look up to in
-          our lives</p>
+          Someone to look up to</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
           <g id="object">
             <g id="&lt;Group&gt;">
@@ -140,42 +139,6 @@
       <div @click="setSession(12)" class="content-line">
         <p><strong>Session 12</strong>:
           Talking about being happy with our efforts!</p>
-        <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
-          <g id="object">
-            <g id="&lt;Group&gt;">
-              <path id="&lt;Path&gt;" class="shp0" d="M182.24 91.35C182.24 141.49 141.59 182.14 91.45 182.14C41.31 182.14 0.66 141.49 0.66 91.35C0.66 41.21 41.31 0.56 91.45 0.56C141.59 0.56 182.24 41.21 182.24 91.35Z" />
-              <path id="&lt;Path&gt;" class="shp1" d="M144.99 78.62L118.88 52.51C113.73 47.36 105.99 45.82 99.26 48.61C92.53 51.39 88.15 57.96 88.15 65.24L88.15 73.35L50.64 73.35C40.7 73.35 32.64 81.41 32.64 91.35C32.64 101.29 40.7 109.35 50.64 109.35L88.15 109.35L88.15 117.46C88.15 124.74 92.53 131.31 99.26 134.09C101.49 135.02 103.83 135.47 106.15 135.47C110.83 135.47 115.43 133.64 118.88 130.19L144.99 104.08C152.02 97.05 152.02 85.65 144.99 78.62Z" />
-            </g>
-          </g>
-        </svg>
-      </div>
-      <div @click="setSession(13)" class="content-line">
-        <p><strong>Appendix 1</strong>:
-          'Green' thoughts to Enjoy</p>
-        <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
-          <g id="object">
-            <g id="&lt;Group&gt;">
-              <path id="&lt;Path&gt;" class="shp0" d="M182.24 91.35C182.24 141.49 141.59 182.14 91.45 182.14C41.31 182.14 0.66 141.49 0.66 91.35C0.66 41.21 41.31 0.56 91.45 0.56C141.59 0.56 182.24 41.21 182.24 91.35Z" />
-              <path id="&lt;Path&gt;" class="shp1" d="M144.99 78.62L118.88 52.51C113.73 47.36 105.99 45.82 99.26 48.61C92.53 51.39 88.15 57.96 88.15 65.24L88.15 73.35L50.64 73.35C40.7 73.35 32.64 81.41 32.64 91.35C32.64 101.29 40.7 109.35 50.64 109.35L88.15 109.35L88.15 117.46C88.15 124.74 92.53 131.31 99.26 134.09C101.49 135.02 103.83 135.47 106.15 135.47C110.83 135.47 115.43 133.64 118.88 130.19L144.99 104.08C152.02 97.05 152.02 85.65 144.99 78.62Z" />
-            </g>
-          </g>
-        </svg>
-      </div>
-      <div @click="setSession(14)" class="content-line">
-        <p><strong>Appendix 2</strong>:
-          Someone Special I Know Who is Brave and Kind!!!</p>
-        <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
-          <g id="object">
-            <g id="&lt;Group&gt;">
-              <path id="&lt;Path&gt;" class="shp0" d="M182.24 91.35C182.24 141.49 141.59 182.14 91.45 182.14C41.31 182.14 0.66 141.49 0.66 91.35C0.66 41.21 41.31 0.56 91.45 0.56C141.59 0.56 182.24 41.21 182.24 91.35Z" />
-              <path id="&lt;Path&gt;" class="shp1" d="M144.99 78.62L118.88 52.51C113.73 47.36 105.99 45.82 99.26 48.61C92.53 51.39 88.15 57.96 88.15 65.24L88.15 73.35L50.64 73.35C40.7 73.35 32.64 81.41 32.64 91.35C32.64 101.29 40.7 109.35 50.64 109.35L88.15 109.35L88.15 117.46C88.15 124.74 92.53 131.31 99.26 134.09C101.49 135.02 103.83 135.47 106.15 135.47C110.83 135.47 115.43 133.64 118.88 130.19L144.99 104.08C152.02 97.05 152.02 85.65 144.99 78.62Z" />
-            </g>
-          </g>
-        </svg>
-      </div>
-      <div @click="setSession(15)" class="content-line">
-        <p><strong>Appendix 3</strong>:
-          Happiness Ideas</p>
         <svg class="content-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183 183" width="183" height="183">
           <g id="object">
             <g id="&lt;Group&gt;">
@@ -213,7 +176,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.5vh;
+  margin-bottom: 2.9vh;
   border-bottom: 1px solid #000;
 }
 .content-line p {

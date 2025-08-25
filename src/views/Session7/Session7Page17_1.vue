@@ -7,13 +7,11 @@
     />
     <div class="text-box">
       <h1>Try Every Day</h1>
-      <p>- Keep practising being BRAVE:</p>
+      <p>- Try to be BRAVE:</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Look people in the eye and smile.</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Use a brave and strong voice.</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Try new things.</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Try your best and give it a go.</p>
-      <p>- When you are being brave and moving up to a hard step,
-        try ‘bubble’ breathing and &nbsp;&nbsp;&nbsp;thinking ‘<span id="green">green</span>’
-        thoughts.</p>
+      <p>- Change your '<span class='red-color'>red</span>' thoughts to '<span class='green-color'>green</span>' thoughts.</p>
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Relaxing-Forest-Sound-Effect.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page15%2B1.mp3" ref="voice"/>
@@ -72,7 +70,7 @@ export default {
 .text-box p {
   margin-bottom: 1vh;
   font-size: 3.3vh;
-  opacity: 0;
+  opacity: 1;
 }
 .text-box p:last-child {
   margin-bottom: 0;

@@ -3,13 +3,11 @@
     <ImageComponent
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session3/12014-resized.jpg"
       srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session3/12014-resized.jpg"
-      class="session-background"
+      class="page-image"
     />
     <div class="text-box">
-      <p>Grandma is coming home after
-        a day out and she is tired.</p>
-      <p>How do you think she is feeling?</p>
-      <p>Tick your choices:</p>
+      <p><strong>How is grandma feeling?</strong></p>
+      <p><strong>Tick your choices:</strong></p>
       <div class="question-container">
         <div class="checkbox-containers" id="long-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
@@ -19,12 +17,11 @@
         </div>
       </div>
     </div>
-    <div class="notice-box">Helping others is great.</div>
     <audio src="../../assets/sounds/session7/click-sound.mp3" ref="clickSound" />
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/Session3_Page94%2B1.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">101</div>
+<!--    <div class="page-number" id="page-dark">101</div>-->
   </div>
 </template>
 
@@ -76,9 +73,15 @@ export default {
 </script>
 
 <style scoped>
+.page-image {
+  position: absolute;
+  width: 110%;
+}
 .text-box {
   position: absolute;
-  width: 33%;
+  top: 1vh;
+  left: 2vh;
+  width: 37vh;
   background-color: rgba(255,255,255,0.9);
   padding: 1vh;
   opacity: 0;
@@ -86,20 +89,7 @@ export default {
 .text-box p {
   font-size: 3vh;
   margin-bottom: 1vh;
-  opacity: 0;
-}
-.notice-box {
-  position: absolute;
-  bottom: 6vh;
-  width: 70%;
-  left: 15%;
-  text-align: center;
-  color: #ffffff;
-  background-color: rgba(0, 206, 124, 1);
-  font-size: 4vh;
-  font-weight: bold;
-  padding: .7vh;
-  opacity: 0;
+  opacity: 1;
 }
 .question-container {
   width: 100%;

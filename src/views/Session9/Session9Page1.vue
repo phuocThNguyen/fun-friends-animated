@@ -198,8 +198,7 @@
 
     <p class="title"><span id="letter-f">E</span>xplore</p>
     <p class="text" id="line-1">
-      Today, we will think about how to be kind to ourselves
-      <br>and reward ourselves for doing our best.
+      When you try your best, you can have rewards.
     </p>
 
     <audio autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/387978__dcpoke__birds-singing-03.mp3"/>
@@ -288,7 +287,7 @@ export default {
   text-align: center;
   width: 100%;
   top: 26vh;
-  opacity: 0;
+  opacity: 1;
 }
 #letter-f {
   color: #FFE802;
@@ -297,7 +296,7 @@ export default {
   position: absolute;
   margin-bottom: 0;
   font-size: 5.5vh;
-  color: #ffffff;
+  color: black;
 }
 #line-1 {
   text-align: center;

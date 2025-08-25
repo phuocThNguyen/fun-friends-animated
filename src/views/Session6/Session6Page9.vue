@@ -7,11 +7,10 @@
     />
     <div class="text-box">
       <h1>Try Every Day</h1>
-      <p>- Practise changing
-        '<span class="red">red</span>' thoughts to
+      <p>- Try to change '<span class="red">red</span>' thoughts to
         '<span class="green">green</span>' thoughts.</p>
-      <p>- Practise relaxing every day for at least 10 minutes.
-        No &nbsp;&nbsp;&nbsp;distractions such as TV!</p>
+      <p>- <span class="red">I can not do it</span> → <span class="green">I can try my best</span></p>
+      <p>- Try to take slow breaths to calm down.</p>
     </div>
     <audio autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session6/Session6_Page9.mp3" ref="voice"/>
@@ -53,7 +52,7 @@ export default {
   width: 80%;
   height: auto;
   left: 10%;
-  top: 20vh;
+  top: 25vh;
   padding: 2vh;
   opacity: 0;
 }
@@ -66,7 +65,7 @@ export default {
 .text-box p {
   margin-bottom: 1.5vh;
   font-size: 4vh;
-  opacity: 0;
+  opacity: 1 !important;
 }
 .text-box p:last-child {
   margin-bottom: 0;

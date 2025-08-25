@@ -1,9 +1,8 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>Tom's reward</h1>
-      <p>When Tom is brave, he rewards himself by doing fun
-      activities with his family and friends.</p>
+      <h1>Kelly's reward</h1>
+      <p>When Kelly tries to be brave, he gets a reward: playing with his dad.</p>
     </div>
     <div class="image-container" id="left">
       <ImageComponent
@@ -11,7 +10,7 @@
         srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session9/21368.jpg"
         class="image"
       />
-      <p class="image-text" id="para-1">1. Brave Tom <br>Sleeping in his own bed</p>
+      <p class="image-text" id="para-1">1. Brave Kelly -<br>Sleeping in his own bed</p>
     </div>
     <div class="image-container" id="right">
       <ImageComponent
@@ -19,7 +18,7 @@
         srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session9/623020-PNWBO6-422.jpg"
         class="image"
       />
-      <p class="image-text" id="para-2">Tom's Reward <br>Special time with his dad</p>
+      <p class="image-text" id="para-2">Kelly's Reward: <br>Playing with his dad</p>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page6.mp3" ref="voice"/>
     <div class="page-number" id="page-light">221</div>

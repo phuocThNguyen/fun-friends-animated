@@ -6,7 +6,7 @@
       class="session-background"
     />
     <div class="text-box">
-      Art is relaxing.
+      Painting calms me down.
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/no-copyright-music-funny-children-kids-music-by-mokka-kids.mp3"/>
     <audio
@@ -52,8 +52,8 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  top: 2vh;
-  left: 2%;
+  top: 25vh;
+  right: 2%;
   width: 25%;
   font-size: 4.5vh;
   font-weight: bold;

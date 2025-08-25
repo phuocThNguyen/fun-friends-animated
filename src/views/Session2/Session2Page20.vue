@@ -1,18 +1,21 @@
 <template>
   <div class="interactive-container">
-    <ImageComponent
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/happy_kids.jpg"
-      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/happy_kids.jpg"
-      alt="happy" class="image" id="left"
-    />
-    <ImageComponent
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/Sad_Girl-resized.jpg"
-      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/Sad_Girl-resized.jpg"
-      alt="sad" class="image" id="right"
-    />
-
+    <div class="image-container" id="left">
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/little-boy-playing-with-camera.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/little-boy-playing-with-camera.jpg"
+        alt="happy" class="image" style="width: 200%;left: -15vh"
+      />
+    </div>
+    <div class="image-container" id="right">
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/Sad_Girl-resized.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/Sad_Girl-resized.jpg"
+        alt="sad" class="image"
+      />
+    </div>
     <div class="content-container" id="content-left">
-      <h1>What could they be feeling?</h1>
+      <h1>What could he be feeling?</h1>
       <div class="emotes-container">
         <emote-happy class=""/>
         <emote-sad class="incorrect"/>
@@ -405,11 +408,17 @@ export default {
     bottom: 10vh !important;
   }
 }
-.image {
+.image-container {
   position: absolute;
   top: 2vh;
   width: 53vh;
-  height: 63vh;
+  height: 64vh;
+  overflow: hidden;
+}
+.image {
+  position: absolute;
+  width: 100%;
+  height: auto;
 }
 #left { left: 5%;}
 #right { right: 5%;}

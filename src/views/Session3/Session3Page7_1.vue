@@ -6,9 +6,8 @@
       class="session-background"
     />
     <div class="text-box">
-      <h1>Grandpa would like some company</h1>
-      <p>How do you think Grandpa is feeling?</p>
-      <p>Tick your choices:</p>
+      <p><strong>How do you think Grandpa is feeling?</strong></p>
+      <p><strong>Tick your choices:</strong></p>
       <div class="question-container">
         <div class="checkbox-containers" id="long-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
@@ -45,8 +44,8 @@ export default {
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
         .add({targets: ".text-box", opacity: 1}, 500)
-        .add({targets: text[1], opacity: 1}, 3700)
-        .add({targets: text[2], opacity: 1}, 6900)
+        .add({targets: text[0], opacity: 1}, 3700)
+        .add({targets: text[1], opacity: 1}, 6900)
         .add({targets: '.question-container', opacity: 1}, 8900)
     },
     playVoiceOver() {
@@ -75,20 +74,20 @@ export default {
 .text-box {
   position: absolute;
   top: 1vh;
-  left: 1%;
-  width: 43%;
+  left: 2vh;
+  width: 53.5vh;
   padding: 1vh;
   background-color: rgba(255,255,255,0.9);
   opacity: 0;
 }
 .text-box h1 {
-  font-size: 3.5vh;
+  font-size: 3.3vh;
   margin-bottom: 1vh;
 }
 .text-box p {
   font-size: 3vh;
   margin-bottom: 1.5vh;
-  opacity: 0;
+  opacity: 1;
 }
 .question-container {
   width: 100%;

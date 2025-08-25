@@ -11,7 +11,7 @@
       class="kids"
     />
     <div class="text-box">
-      <p>Pretend you are a Superhero. Make yourself as big as you can
+      <p>Pretend you are a Superhero. Make yourself as tall as you can
         <br>by stretching your neck, arms, legs, fingers or toes.</p>
       <p>What does a superhero do to help everybody?</p>
     </div>

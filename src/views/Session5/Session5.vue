@@ -42,6 +42,10 @@ import Session5Page15 from "@/views/Session5/Session5Page15";
 import Session5Page15_1 from "@/views/Session5/Session5Page15_1";
 import Session5Page16 from "@/views/Session5/Session5Page16";
 import Session5Page17 from "@/views/Session5/Session5Page17";
+import Session5Page18 from "@/views/Session5/Session5Page18";
+import Session5Page19 from "@/views/Session5/Session5Page19";
+import Session5Page20 from "@/views/Session5/Session5Page20";
+import Session5Page21 from "@/views/Session5/Session5Page21";
 import {mapState} from "vuex";
 
 export default {
@@ -53,20 +57,22 @@ export default {
     Session5Page1, Session5Page1_1, Session5Page2, Session5Page3, Session5Page4,
     Session5Page5, Session5Page6, Session5Page7, Session5Page8, Session5Page9,
     Session5Page10, Session5Page11, Session5Page12, Session5Page13, Session5Page14,
-    Session5Page15, Session5Page15_1, Session5Page16, Session5Page17
+    Session5Page15, Session5Page15_1, Session5Page16, Session5Page17, Session5Page18,
+    Session5Page19, Session5Page20, Session5Page21,
   },
   data() {
     return {
       pages: {
         1: "Session5Page1", 2: "Session5Page1_1", 3: "Session5Page2", 4: "Session5Page3", 5: "Session5Page4",
         6: "Session5Page5", 7: "Session5Page6", 8: "Session5Page7", 9: "Session5Page8", 10: "Session5Page9",
-        11: "Session5Page10", 12: "Session5Page11", 13: "Session5Page12", 14: "Session5Page13", 15: "Session5Page14",
-        16: "Session5Page15", 17: "Session5Page15_1", 18: "Session5Page16", 19: "Session5Page17",
+        11: "Session5Page10", 12: "Session5Page11", 13: "Session5Page13", 14: "Session5Page14",
+        15: "Session5Page15", 16: "Session5Page15_1", 17: "Session5Page16", 18: "Session5Page17", 19: "Session5Page18",
+        20: "Session5Page19", 21: "Session5Page20", 22: "Session5Page21",
       },
       page: 0,
       arrowVisible: true,
       hiddenTimeExpired: false,
-      lastPage: 19,
+      lastPage: 22,
     }
   },
   created() {

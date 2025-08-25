@@ -6,13 +6,10 @@
       class="session-background"
     />
     <div class="text-box">
-      <h1>Additional Activity &ndash; Being kind friends</h1>
-      <p class="text"><span>The creek is full of life when it rains. The birds
-        start singing, water trickles down the stream and the trees glow bright
-        green. </span><span>Zoe, Matilda and Daniel want to cross the creek by
-        themselves. Poppy explained it is more fun to do it as a team and help
-        each other. </span><span>If one of them slips in the water everyone can
-        help.</span>
+      <h1>Being kind friends</h1>
+      <p class="text"><span>The creek is happy when it rains. The birds
+        sing, the creek water moves fast, and the trees are shining green. </span>
+        <span>Zoe, Zara, Ziggy and Zac help each other cross the creek.</span>
       </p>
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
@@ -63,7 +60,7 @@ export default {
   top: 15vh;
   padding: 3.5vh;
   background-color: #ffffff;
-  opacity: 0;
+  opacity: 1;
 }
 .text-box h1 {
   text-align: center;
@@ -74,6 +71,6 @@ export default {
 .text-box p {
   font-size: 4vh;
   margin-bottom: 0;
-  color: #ffffff;
+  color: black;
 }
 </style>

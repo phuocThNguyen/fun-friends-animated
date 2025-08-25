@@ -20,10 +20,7 @@
       </svg>
       <div class="star-text">
         <p><strong>Bright Star Idea</strong></p>
-        <p>New family game:
-          <br>take turns to call out
-          <br>things that make
-          <br>you happy.
+        <p>Talk about <br>what makes <br>you happy.
         </p>
       </div>
     </div>
@@ -65,10 +62,10 @@ export default {
 <style scoped>
 .star-container {
   position: absolute;
-  height: 80vh;
+  height: 60vh;
   width: 64%;
   right: 18%;
-  bottom: 7vh;
+  top: 7vh;
   display: flex;
   justify-content: center;
   align-items: center;

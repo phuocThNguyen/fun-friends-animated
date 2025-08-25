@@ -43,6 +43,10 @@ import Session7Page17 from "@/views/Session7/Session7Page17";
 import Session7Page17_1 from "@/views/Session7/Session7Page17_1";
 import Session7Page18 from "@/views/Session7/Session7Page18";
 import Session7Page19 from "@/views/Session7/Session7Page19";
+import Session7Page20 from "@/views/Session7/Session7Page20";
+import Session7Page21 from "@/views/Session7/Session7Page21";
+import Session7Page22 from "@/views/Session7/Session7Page22";
+import Session7Page23 from "@/views/Session7/Session7Page23";
 import {mapState} from "vuex";
 
 export default {
@@ -55,6 +59,7 @@ export default {
     Session7Page5, Session7Page6, Session7Page7, Session7Page8, Session7Page9,
     Session7Page10, Session7Page12, Session7Page13, Session7Page14, Session7Page15,
     Session7Page16, Session7Page17, Session7Page18, Session7Page19, Session7Page17_1,
+    Session7Page20, Session7Page21, Session7Page22, Session7Page23,
   },
   data() {
     return {
@@ -63,11 +68,12 @@ export default {
         4: "Session7Page5", 7: "Session7Page6", 8: "Session7Page7", 9: "Session7Page8", 10: "Session7Page9",
         11: "Session7Page10", 12: "Session7Page12", 13: "Session7Page13", 14: "Session7Page14", 15: "Session7Page15",
         16: "Session7Page16", 17: "Session7Page17", 18: "Session7Page17_1", 19: "Session7Page18", 20: "Session7Page19",
+        21: "Session7Page21", 22: "Session7Page22", 23: "Session7Page23",
       },
       page: 0,
       arrowVisible: true,
       hiddenTimeExpired: false,
-      lastPage: 20,
+      lastPage: 23,
     }
   },
   created() {

@@ -6,8 +6,7 @@
       class="session-background"
     />
     <div class="text-box">
-      <p>Talk to your classmates about ideas on how to make new friends.</p>
-      <p>Click on each balloon to find ideas to make new friends:</p>
+      <p>Click on each balloon about how to make new friends.</p>
     </div>
     <div class="balloons-container">
       <div class="balloon-container" @click="revealBalloon(5)" id="balloon-5">
@@ -362,7 +361,7 @@ export default {
   opacity: 0;
 }
 .text-box p {
-  font-size: 3vh;
+  font-size: 4vh;
   margin-bottom: .5vh;
   opacity: 0;
 }

@@ -6,7 +6,7 @@
       class="session-background"
     />
     <div class="text-box">
-      <p class="mb-0">Mia enjoys climbing trees.</p>
+      <p class="mb-0">Nina enjoys climbing trees.</p>
     </div>
     <audio
       @loadeddata="playSoundText"

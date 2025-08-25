@@ -1,17 +1,17 @@
 <template>
   <div class="interactive-container">
     <ImageComponent
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/103718-resized.jpg"
-      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/103718-resized.jpg"
-      class="session-background"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/close-up-happy-face-boy.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/close-up-happy-face-boy.jpg"
+      class="page-image"
     />
     <emotion-pick-instruction class="instruction"/>
     <feeling-question
       class="question"
-      question="What could she be feeling?"
+      question="What could he be feeling?"
       :emotes="['happy','sad','worried','angry']"
       :tips="['Happy','Sad','Worried','Angry']"
-      :ans="['red-tick','green-tick','red-tick','red-tick']"
+      :ans="['green-tick','red-tick','red-tick','red-tick']"
       :isSmall="false"
       :delay="500"
       v-on:correctAnsChosen="handleCorrectAnswer"
@@ -161,30 +161,37 @@ export default {
 </script>
 
 <style scoped>
+.page-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 115%;
+  height: auto;
+}
 .instruction {
   position: absolute;
   top: 2vh;
-  right: 2%;
+  left: 1vh;
 }
 .reward {
   position: absolute;
   height: auto;
   width: 1%;
   top: 20vh;
-  left: 50%;
+  right: 15vh;
   opacity: 0;
 }
 .question {
   position: absolute;
-  top: 40vh;
-  left: 20%;
+  top: 57vh;
+  left: 1vh;
 }
 .sticker {
   position: absolute;
   width: auto;
-  height: 25vh;
-  top: 3vh;
-  left: calc(0.45*133vh);
+  height: 20vh;
+  top: 22vh;
+  left: 10vh;
   z-index: 50;
   opacity: 0;
 }

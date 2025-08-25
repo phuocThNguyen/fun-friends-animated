@@ -3,8 +3,7 @@
     <drawing-canvas class="canvas" v-on:updateCanvas="updateCanvas" :data="canvasData" :canvasStyle="canvasStyle"/>
     <div class="text-box">
       <h1>A Tree With 'Feelings'</h1>
-      <p>Make a tree with your friends.</p>
-      <p>Draw feeling faces in the yellow circles.</p>
+      <p>Happy, sad, angry or worried, draw feeling faces in the yellow circles.</p>
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/no-copyright-music-funny-children-kids-music-by-mokka-kids.mp3"/>
     <audio
@@ -81,14 +80,14 @@ export default {
   position: absolute;
   z-index: 100;
   background-color: #ffffff;
-  width: 33%;
+  width: 34%;
   padding: 1vh 2vh;
   top: 1vh;
   left: 1%;
   opacity: 0;
 }
 .text-box h1 {
-  font-size: 5vh;
+  font-size: 4.2vh;
   margin-bottom: 1vh;
 }
 .text-box p {

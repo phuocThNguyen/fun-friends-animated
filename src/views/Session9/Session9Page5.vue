@@ -6,8 +6,8 @@
       class="page-image"
     />
     <div class="text-box">
-      <p>What brave things are you trying to do?</p>
-      <p>Tick your choices:</p>
+      <p><strong>What brave things are you trying to do?</strong></p>
+      <p><strong>Tick your choices:</strong></p>
       <div class="question-container">
         <div class="checkbox-containers" id="long-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
@@ -34,7 +34,7 @@ export default {
     return {
       data: ['Sleeping by yourself','Making new friends',
         'Talking in front of the class','Going to a new school',
-        'Joining a new sports team','Learning to swim',
+        'Joining a sports team','Learning to swim',
         'Learning to bike ride'],
       answers: [],
     }
@@ -98,7 +98,7 @@ export default {
   width: 100%;
   padding-left: 2vh;
   margin-top: 1vh;
-  opacity: 0;
+  opacity: 1;
 }
 #long-checkbox label {width: 100%;}
 #short-checkbox label {width: 33%;}

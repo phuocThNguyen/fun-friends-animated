@@ -6,8 +6,8 @@
       class="session-background"
     />
     <div class="text-box">
-      <p class="mb-0">Josh is climbing on the rainbow tyres.</p>
-      <p class="mb-0"> He loves walking barefoot on the grass.</p>
+      <p class="mb-0">Ziggy is walking on the rainbow tyres.</p>
+      <p class="mb-0">Ziggy also loves running on the grass.</p>
     </div>
     <audio
       @loadeddata="playSoundText"

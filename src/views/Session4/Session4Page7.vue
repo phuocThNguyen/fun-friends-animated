@@ -6,13 +6,13 @@
       class="session-background"
     />
     <div class="text-box">
-      Does playing in the sand make you feel calm?
+      Playing in the sand calms me down.
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/ambient/ocean.mp3"/>
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page7.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">119</div>
+<!--    <div class="page-number" id="page-light">119</div>-->
   </div>
 </template>
 
@@ -53,7 +53,7 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  bottom: 6vh;
+  bottom: 2vh;
   left: 13%;
   width: 74%;
   font-size: 4.5vh;

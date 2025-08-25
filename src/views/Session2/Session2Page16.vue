@@ -1,14 +1,14 @@
 <template>
   <div class="interactive-container">
     <ImageComponent
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/237-resized.jpg"
-      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/237-resized.jpg"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/portrait-boy-standing-smile-beach.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session2/portrait-boy-standing-smile-beach.jpg"
       class="session-background"
     />
     <emotion-pick-instruction class="instruction"/>
     <feeling-question
       class="question"
-      question="What could she be feeling?"
+      question="What could he be feeling?"
       :emotes="['happy','sad','worried','angry']"
       :tips="['Happy','Sad','Worried','Angry']"
       :ans="['green-tick','red-tick','red-tick','red-tick']"
@@ -82,6 +82,7 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session2/Session2_Page15.mp3" ref="voice"/>
+    <div class="page-number" id="page-light">76</div>
   </div>
 </template>
 
@@ -139,21 +140,21 @@ export default {
   position: absolute;
   height: auto;
   width: 1%;
-  left: calc(0.5*133vh);
-  top: 20vh;
+  left: 30vh;
+  bottom: 20vh;
   opacity: 0;
 }
 .question {
   position: absolute;
-  bottom: 1vh;
-  left: 20%;
+  top: 25vh;
+  left: 2vh;
 }
 .sticker {
   position: absolute;
   width: auto;
   height: 25vh;
-  top: 9vh;
-  left: calc(0.4*133vh);
+  bottom: 6vh;
+  left: 20vh;
   z-index: 50;
   opacity: 0;
 }

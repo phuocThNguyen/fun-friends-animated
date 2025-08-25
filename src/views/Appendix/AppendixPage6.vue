@@ -183,7 +183,7 @@ export default {
     correctAns: 0,
     totalCorrect: 4,
     stars: [
-      {id: 1, eleIds: [1,2], text: 'Whinging'},
+      {id: 1, eleIds: [1,2], text: 'Lying'},
       {id: 2, eleIds: [3,4], text: 'Drawing\nand colouring'},
       {id: 3, eleIds: [5,6], text: 'Throwing things'},
       {id: 4, eleIds: [7,8], text: 'Playing ball'},

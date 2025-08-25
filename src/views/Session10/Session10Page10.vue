@@ -8,7 +8,6 @@
     <drawing-canvas class="canvas" v-on:updateCanvas="updateCanvas" :data="canvasData" :canvasStyle="canvasStyle"/>
     <div class="text-box">
       <p>Give yourself a superhero name and draw a picture of your costume.</p>
-      <p>Share it with your classmates</p>
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/children-s-music-no-copyright-royalty-free-happy-upbeat-kids-barroom-ballet.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page10.mp3" ref="voice"/>
@@ -89,5 +88,6 @@ export default {
   font-size: 4vh;
   color: #ffffff;
   opacity: 0;
+  margin-bottom: 0;
 }
 </style>

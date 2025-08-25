@@ -6,9 +6,9 @@
       class="session-background"
     />
     <div class="text-box">
-      <p>We help each other by saying kind words and by listening
-      to each other.</p>
-      <p>Talk to your friends about how to help each other.</p>
+      <p>We help each other when we pay attention.</p>
+      <p>We help each other when we listen carefully.</p>
+      <p class="mb-0">We help each other when we are kind.</p>
     </div>
     <audio autoplay ref="audio" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/blue-island.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session11/Session11_Page3.mp3" ref="voice"/>
@@ -52,13 +52,14 @@ export default {
   background-color: rgba(255,255,255,0.9);
   padding: 2vh;
   top: 40vh;
-  width: 96%;
-  left: 2%;
+  width: 70%;
+  left: 15%;
   opacity: 0;
+  text-align: center;
 }
 .text-box p {
   font-size: 4vh;
-  margin-bottom: 0;
-  opacity: 0;
+  margin-bottom: 3vh;
+  opacity: 1;
 }
 </style>

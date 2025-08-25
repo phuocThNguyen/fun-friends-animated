@@ -20,10 +20,7 @@
       </svg>
       <div class="star-text">
         <p><strong>Bright Star Idea</strong></p>
-        <p>Decorate your water
-          <br>bottle with stickers
-          <br>to remind you to
-          <br>drink lots of water.
+        <p>Put happy stickers on your <br>water bottle to remind <br>you to drink water .
         </p>
       </div>
     </div>

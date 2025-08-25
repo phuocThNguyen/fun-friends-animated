@@ -6,7 +6,7 @@
         srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session9/770.jpg"
         class="image"
       />
-      <p class="image-text" id="para-1">2. Brave Annie <br>Trying to read a new book</p>
+      <p class="image-text" id="para-1">2. Brave Poppy -<br>Trying to read a new book</p>
     </div>
     <div class="image-container">
       <ImageComponent
@@ -14,7 +14,7 @@
         srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session9/2338.jpg"
         class="image"
       />
-      <p class="image-text" id="para-2">Annie's Reward <br>Special time with her mom</p>
+      <p class="image-text" id="para-2">Poppy's Reward: <br>Special time with her mum</p>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page4.mp3" ref="voice"/>
     <div class="page-number" id="page-light">219</div>
