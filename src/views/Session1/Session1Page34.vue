@@ -44,7 +44,7 @@
       </div>
       <div class="text">Having fun</div>
     </div>
-    <div class="page-number" id="page-light">50</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Session1_Page50.mp3" ref="voice"/>
     <audio src="../../assets/sounds/all/crowd-cheer-applause.mp3" id="cheer1"/>
     <audio src="../../assets/sounds/all/crowd-cheer-applause-2.mp3" id="cheer2"/>
@@ -65,7 +65,14 @@ export default {
       currentVoice: null,
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
@@ -102,6 +109,7 @@ export default {
   },
   created() {
     this.init();
+    this.setPageNumber();
   },
   mounted() {
     this.playVoiceOver();

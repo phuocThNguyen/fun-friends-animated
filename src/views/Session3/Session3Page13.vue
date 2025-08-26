@@ -42,7 +42,14 @@ export default {
       emotionImages: []
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     getImageUrl(emotion) {
       return require(`@/assets/images/session3/${emotion}_bubble.png`);
     },
@@ -78,6 +85,7 @@ export default {
     }
   },
   created() {
+    this.setPageNumber();
   },
   mounted() {
     this.setAudioVolumeLevel(0.4);

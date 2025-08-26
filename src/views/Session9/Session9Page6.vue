@@ -21,7 +21,7 @@
       <p class="image-text" id="para-2">Kelly's Reward: <br>Playing with his dad</p>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page6.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">221</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 
@@ -32,7 +32,17 @@ import anime from "animejs";
 export default {
   name: 'Session9Page6',
   components: {ImageComponent},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       let text = document.querySelector('.text-box').children;
       let images = document.querySelectorAll('.image-text');

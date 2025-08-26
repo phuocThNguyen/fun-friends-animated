@@ -206,7 +206,7 @@
 
     <audio autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/387978__dcpoke__birds-singing-03.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page1.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">231</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 
@@ -215,7 +215,17 @@ import anime from "animejs";
 
 export default {
   name: "Session10Page1",
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateSvg() {
       let vw = document.querySelector('.interactive-container').clientWidth;
 

@@ -9,7 +9,10 @@
         </g>
       </g>
     </svg>
-    <component :is="pages[page]" />
+    <component 
+      :is="pages[currentPage]" 
+      :pageNum="currentPage"
+      :startPage="startPage"/>
     <svg class="arrow" v-show="arrowVisible" @click="previous" id="left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 123" width="124" height="123">
       <title>Right Arrow</title>
       <g id="object">
@@ -121,6 +124,8 @@ export default {
         51: "Session1Page36", 52: "Session1Page37", 53: "Session1Page37_1", 54: "Session1Page38", 55: "Session1Page39",
         56: "Session1Page40", 57: "Session1Page41", 58: "Session1Page42", 59: "Session1Page43",
       },
+      startPage: 6,
+      currentPage: 1,
       lastPage: 59,
       page: 0,
       arrowVisible: true,
@@ -128,24 +133,28 @@ export default {
     };
   },
   created() {
+    let page = 0;
+
     if (!this.isNext) {
-      this.page = this.lastPage;
+      page = this.lastPage;
       this.arrowVisible = this.$store.getters.getArrowVisible;
     } else {
-      this.page = 1;
+      page = 1;
     }
+
+    this.currentPage = page;
   },
   methods: {
     previous() {
-      if (this.page > 1) {
-        this.page--;
+      if (this.currentPage > 1) {
+        this.currentPage--;
       } else {
         this.$emit("nextSession", 0, false);
       }
     },
     next() {
-      if (this.page < this.lastPage) {
-        this.page++;
+      if (this.currentPage < this.lastPage) {
+        this.currentPage++;
       } else {
         this.$emit("nextSession", 2, true);
       }

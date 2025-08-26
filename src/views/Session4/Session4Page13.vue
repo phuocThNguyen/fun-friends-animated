@@ -16,7 +16,7 @@
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page13.mp3" ref="voice"/>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/beach-sound.mp3"/>
-    <div class="page-number" id="page-light">125</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 
@@ -27,7 +27,17 @@ import anime from "animejs";
 export default {
   name: 'Session4Page13',
   components: {ImageComponent},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       anime({
         targets: '.text-box',

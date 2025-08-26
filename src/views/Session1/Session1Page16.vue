@@ -96,7 +96,17 @@ export default {
       selectedCountry: null,
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       let para = document.getElementsByClassName('para')[0].children;
       let animation = anime.timeline({

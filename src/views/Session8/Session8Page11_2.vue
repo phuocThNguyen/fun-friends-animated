@@ -93,7 +93,7 @@
       <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/plan_6.mp3" id="plan-audio-6"/>
       <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/plan_7.mp3" id="plan-audio-7"/>
     </div>
-    <div class="page-number" id="page-light">210</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 
@@ -110,7 +110,17 @@ export default {
     }
   },
   components: {ImageComponent},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation

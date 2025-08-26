@@ -116,7 +116,7 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/Session3_Page87.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">89</div>
+    <div class="page-number" id="page-dark">{{ page }}</div>
   </div>
 </template>
 
@@ -128,7 +128,17 @@ import FeelingQuestion from "@/components/feelingsQuestion/FeelingsQuestion";
 export default {
   name: "Session3Page2",
   components: {FeelingQuestion, ImageComponent},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     handleCorrectAnswer() {
       document.querySelector('.reward').style.opacity = '1';
       anime({

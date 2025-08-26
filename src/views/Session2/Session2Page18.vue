@@ -9,7 +9,7 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session2/Session2_Page17.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">78</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 
@@ -32,7 +32,14 @@ export default {
       canvasData: null,
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     saveToDatabase(data) {
       console.log(data)
     },
@@ -63,6 +70,7 @@ export default {
   },
   created() {
     this.init();
+    this.setPageNumber();
   },
   mounted() {
     this.setAudioVolumeLevel(0.4);

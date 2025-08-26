@@ -198,7 +198,7 @@
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/super-hero-theme.mp3"/>
     <audio src="../../assets/sounds/session7/click-sound.mp3" ref="clickSound"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page222.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">241</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 
@@ -218,7 +218,14 @@ export default {
     }
   },
   components: {ImageComponent},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateSvg() {
       let vw = document.querySelector('.interactive-container').clientWidth;
       let vh = window.innerHeight;
@@ -290,6 +297,7 @@ export default {
   },
   created() {
     this.init();
+    this.setPageNumber();
   },
   mounted() {
     this.animateSvg();

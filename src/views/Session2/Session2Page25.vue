@@ -201,7 +201,7 @@
     <audio src="../../assets/sounds/all/crowd-cheer-applause.mp3" ref="celebrate"/>
     <audio src="../../assets/sounds/all/correct-ans.mp3" ref="correct"/>
     <audio src="../../assets/sounds/all/Awesome.mp3" ref="celebrateVoice"/>
-    <div class="page-number" id="page-light">86</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 
@@ -226,7 +226,14 @@ export default {
       answer1: [], answer2: [], answer3: [], answer4: [], answer5: [], answer6: [], answer7: [],
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       let animation = anime.timeline({
         easing: 'linear',
@@ -269,6 +276,7 @@ export default {
   },
   created() {
     this.init();
+    this.setPageNumber();
   },
   mounted() {
     this.setAudioVolumeLevel(0.3);

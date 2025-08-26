@@ -18,14 +18,24 @@
         responsibility or liability for direct or consequential damages resulting from any use of the material that is contained in this book.</p>
     </div>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/introduction/2Animated_Book_Page1.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">1</div>
+    <div class="page-number" id="page-dark">{{ page }}</div>
   </div>
 </template>
 
 <script>
 export default {
   name: 'IntroductionPage2',
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     }

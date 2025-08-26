@@ -174,7 +174,7 @@
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session5/Session5_Page132.mp3" ref="voice"/>
     <audio src="../../assets/sounds/all/click-sound.mp3" ref="clickSound"/>
-    <div class="page-number" id="page-dark">145</div>
+    <div class="page-number" id="page-dark">{{ page }}</div>
   </div>
 </template>
 
@@ -192,7 +192,17 @@ export default {
       answers: [],
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     handleWrongAnswer() {
       anime({
         targets: '.sticker',

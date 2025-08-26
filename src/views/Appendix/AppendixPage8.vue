@@ -3491,7 +3491,7 @@
     <div class="text-box">Click your favourite skills</div>
     <audio ref="audio" autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/fun-kids-playful-comic-carefree-game-happy-positive-music.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/appendix/Session13_Appendix_Page5.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">283</div>
+    <div class="page-number" id="page-dark">{{ page }}</div>
   </div>
 </template>
 
@@ -3500,7 +3500,17 @@ import anime from "animejs";
 
 export default {
   name: 'AppendixPage6',
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       let thumbs = document.querySelectorAll('.thumb');
       let animation = anime.timeline({easing: 'linear', duration: 200,})

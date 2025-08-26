@@ -17,7 +17,7 @@
       <p class="image-text" id="para-2">Poppy's Reward: <br>Special time with her mum</p>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page4.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">219</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 
@@ -28,7 +28,17 @@ import anime from "animejs";
 export default {
   name: 'Session9Page4',
   components: {ImageComponent},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       let images = document.querySelectorAll('.image-text');
       let animation = anime.timeline({easing: 'linear', duration: 500})

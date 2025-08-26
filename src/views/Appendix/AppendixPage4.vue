@@ -128,7 +128,7 @@
     <audio src="../../assets/sounds/all/wrong-ans.mp3" ref="wrong"/>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/twinkle-twinkle-little-star.mp3"/>
     <audio @loadeddata="playVoiceOver" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/appendix/Session13_Appendix_Page3_1.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">279</div>
+    <div class="page-number" id="page-dark">{{ page }}</div>
   </div>
 </template>
 
@@ -151,7 +151,17 @@ export default {
       {id: 4, eleIds: [7,8], text: 'Breaking things'},
     ],
   }},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     handleClick(maskId) {
       this.$refs.voice.pause();
       if (this.answerArray.includes(maskId)) {

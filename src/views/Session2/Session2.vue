@@ -9,7 +9,10 @@
         </g>
       </g>
     </svg>
-    <component :is="pages[page]" />
+    <component 
+      :is="pages[currentPage]" 
+      :pageNum="currentPage"
+      :startPage="startPage"/>
     <svg class="arrow" v-show="arrowVisible" @click="previous" id="left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 123" width="124" height="123">
       <title>Right Arrow</title>
       <g id="object">
@@ -71,38 +74,43 @@ export default {
   data() {
     return {
       pages: {
-        1: "Session2Page1", 3: "Session2Page1_1", 2: "Session2Page2", 4: "Session2Page4", 5: "Session2Page5",
+        1: "Session2Page1", 2: "Session2Page1_1", 3: "Session2Page2", 4: "Session2Page4", 5: "Session2Page5",
         6: "Session2Page6", 7: "Session2Page7", 8: "Session2Page8", 9: "Session2Page9", 10: "Session2Page10",
         11: "Session2Page11", 12: "Session2Page12", 13: "Session2Page13", 14: "Session2Page14", 15: "Session2Page15",
         16: "Session2Page16", 17: "Session2Page17", 18: "Session2Page19", 19: "Session2Page20", 20: "Session2Page21",
         21: "Session2Page22", 22: "Session2Page23", 23: "Session2Page23_1", 24: "Session2Page24", 25: "Session2Page25",
         26: "Session2Page26", 27: "Session2Page27", 28: "Session2Page28", 29: "Session2Page29",
       },
+      startPage: 65,
+      currentPage: 1,
       lastPage: 29,
-      page: 0,
       arrowVisible: true,
       hiddenTimeExpired: false,
     }
   },
   created() {
+    let page = 0;
+
     if (!this.isNext) {
-      this.page = this.lastPage;
+      page = this.lastPage;
       this.arrowVisible = this.$store.getters.getArrowVisible;
     } else {
-      this.page = 1;
+      page = 1;
     }
+
+    this.currentPage = page;
   },
   methods: {
     previous() {
-      if (this.page > 1) {
-        this.page--;
+      if (this.currentPage > 1) {
+        this.currentPage--;
       } else {
         this.$emit("nextSession", 1, false);
       }
     },
-    next() {
-      if (this.page < this.lastPage) {
-        this.page++;
+    next() {      
+      if (this.currentPage < this.lastPage) {
+        this.currentPage++;
       } else {
         this.$emit("nextSession", 3, true);
       }

@@ -87,7 +87,7 @@
       <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/appendix/cloud-4.mp3" id="voice-4"/>
       <audio src="../../assets/sounds/all/kids-cheering.mp3" ref="celebrate"/>
     </div>
-    <div class="page-number" id="page-dark">277</div>
+    <div class="page-number" id="page-dark">{{ page }}</div>
   </div>
 </template>
 
@@ -111,7 +111,17 @@ export default {
       ids: [1,2,3,4],
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500);
       this.animateText();

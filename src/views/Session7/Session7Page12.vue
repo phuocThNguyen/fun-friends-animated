@@ -295,7 +295,7 @@
       <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/185-step4.mp3" id="step-audio-4"/>
       <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/185-step5.mp3" id="step-audio-5"/>
     </div>
-    <div class="page-number" id="page-dark" style="left: 75vh">185</div>
+    <div class="page-number" id="page-dark" style="left: 75vh">{{ page }}</div>
   </div>
 </template>
 
@@ -328,7 +328,14 @@ export default {
       ],
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     shuffle() {
       this.ansArray.sort(() => Math.random() - 0.5);
     },
@@ -472,6 +479,7 @@ export default {
   },
   created() {
     this.shuffle();
+    this.setPageNumber();
     this.orders = [this.ansArray[0].id,this.ansArray[1].id,this.ansArray[2].id,this.ansArray[3].id,this.ansArray[4].id];
   },
   mounted() {

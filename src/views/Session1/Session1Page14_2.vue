@@ -130,7 +130,7 @@
         <div class="text">Cats</div>
       </div>
     </div>
-    <div class="page-number" id="page-light">25</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
     <div class="audios">
       <audio src="../../assets/sounds/session7/click-sound.mp3" ref="clickSound"/>
       <audio id="audio-1" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/animals/kangaroo.mp3" ref="kangaroo"/>
@@ -162,7 +162,14 @@ export default {
       currentVoice: null,
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     playVoiceOver() {
       // setTimeout(() => {this.$refs.voice.play()}, 500)
     },
@@ -198,6 +205,7 @@ export default {
   },
   created() {
     this.init();
+    this.setPageNumber();
   },
   mounted() {
     this.playVoiceOver();

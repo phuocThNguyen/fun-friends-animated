@@ -479,7 +479,7 @@
     <audio src="../../assets/sounds/session4/Session4_Page2_butterfly.mp3" ref="voice4"/>
     <audio src="../../assets/sounds/session4/Session4_Page2_redFace.mp3" ref="voice5"/>
     <audio src="../../assets/sounds/session4/Session4_Page2_MyBody.mp3" ref="voice6"/>
-    <div class="page-number" id="page-dark">114</div>
+    <div class="page-number" id="page-dark">{{ page }}</div>
   </div>
 </template>
 
@@ -499,7 +499,17 @@ export default {
       ],
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;
       let textSpan = document.querySelectorAll('.text');

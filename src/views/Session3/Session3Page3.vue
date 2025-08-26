@@ -178,7 +178,17 @@ import EmotionPickInstruction from "@/components/instructions/emotionPickInstruc
 export default {
   name: "Session3Page3",
   components: {EmotionPickInstruction, FeelingQuestion, ImageComponent},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animeText() {
       anime({
         targets: '.instruction',

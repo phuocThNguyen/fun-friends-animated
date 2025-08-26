@@ -17,7 +17,7 @@
       their interactions with peers, teachers and family.</p>
     </div>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/introduction/4Animated_Book_Page3.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">3</div>
+    <div class="page-number" id="page-dark">{{ page }}</div>
   </div>
 </template>
 
@@ -25,8 +25,18 @@
 
 export default {
   name: 'IntroductionPage4',
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
 
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     }

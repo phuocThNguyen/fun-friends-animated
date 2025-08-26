@@ -177,7 +177,7 @@
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page12.mp3" ref="voice"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page12_Exploring-the-creek-beds.mp3" ref="voice2"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page12_helping-each-other-cross-the-creek.mp3" ref="voice1"/>
-    <div class="page-number" id="page-light">207</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 
@@ -194,7 +194,17 @@ export default {
     }
   },
   components: {RedTick, GreenTick, ImageComponent},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       let questions = document.querySelectorAll('.text');
       let animation = anime.timeline({duration: 500, easing: 'linear'});

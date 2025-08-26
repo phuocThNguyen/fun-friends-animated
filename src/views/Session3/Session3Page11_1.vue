@@ -51,7 +51,14 @@ export default {
       answerClasses: ['.answer-1','.answer-2','.answer-3','.answer-4'],
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     init() {
       // this.answers = this.$store.getters.getPage85Data;
     },
@@ -79,6 +86,7 @@ export default {
   },
   created() {
     this.init();
+    this.setPageNumber();
   },
   watch: {
     answers: function () {

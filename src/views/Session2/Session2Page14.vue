@@ -103,13 +103,13 @@
         </g>
       </g>
     </svg>
-    <div class="page-number" id="page-dark">65</div>
+    <div class="page-number" id="page-dark">{{ page }}</div>
     <audio src="../../assets/sounds/all/Awesome.mp3" ref="awesome"/>
     <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session2/Session2_Page13.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">74</div>
+    <div class="page-number" id="page-dark">{{ page }}</div>
   </div>
 </template>
 
@@ -122,7 +122,17 @@ import FeelingQuestion from "@/components/feelingsQuestion/FeelingsQuestion";
 export default {
   name: "Session2Page13",
   components: {FeelingQuestion, EmotionPickInstruction, ImageComponent},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     handleCorrectAnswer() {
       document.querySelector('.reward').style.opacity = '1';
       anime({

@@ -21,7 +21,7 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page110.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">118</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 
@@ -40,7 +40,18 @@ export default {
       answers: [],
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.init()
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({easing:'linear',duration: 500});
@@ -64,7 +75,6 @@ export default {
       this.animateText();
     }
   },
-  created() {this.init();},
   mounted() {
     this.setAudioVolumeLevel(0.2);
     },

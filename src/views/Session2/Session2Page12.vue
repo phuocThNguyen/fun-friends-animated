@@ -109,7 +109,7 @@
         </g>
       </g>
     </svg>
-    <div class="page-number" id="page-dark">72</div>
+    <div class="page-number" id="page-dark">{{ page }}</div>
     <audio src="../../assets/sounds/all/Good_Job.mp3" ref="goodJob"/>
     <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
     <audio
@@ -127,7 +127,17 @@ import FeelingQuestion from "@/components/feelingsQuestion/FeelingsQuestion";
 export default {
   name: "Session2Page11",
   components: {FeelingQuestion, EmotionPickInstruction, ImageComponent},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     handleCorrectAnswer() {
       document.querySelector('.reward').style.opacity = '1';
       anime({

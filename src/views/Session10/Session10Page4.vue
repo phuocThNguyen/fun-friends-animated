@@ -9,7 +9,7 @@
     <div class="text-box-green" id="box-2">My dad helps me read a book.</div>
     <audio autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/ambient/flick-book-pages.mp3" ref="audio"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page4.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">235</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 
@@ -20,7 +20,17 @@ import anime from "animejs";
 export default {
   name: 'Session10Page4',
   components: {ImageComponent},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       anime({
         targets: '.text-box-green',

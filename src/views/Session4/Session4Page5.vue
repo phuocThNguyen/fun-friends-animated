@@ -99,7 +99,7 @@
     <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="wrongVoice"/>
     <audio src="../../assets/sounds/all/kids-cheering.mp3" ref="celebrate"/>
     <audio src="../../assets/sounds/all/Awesome.mp3" ref="celebrateVoice"/>
-    <div class="page-number" id="page-light">117</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 
@@ -125,7 +125,17 @@ export default {
       toRemoved: [1,2],
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },

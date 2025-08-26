@@ -36,7 +36,14 @@ export default {
       canvasData: null,
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       let mainContentAnimation = anime.timeline({easing: 'linear', duration: 500});
       mainContentAnimation
@@ -62,6 +69,7 @@ export default {
   },
   created() {
     this.init();
+    this.setPageNumber();
   },
   mounted() {
     this.setAudioVolumeLevel(0.6);

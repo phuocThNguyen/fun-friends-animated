@@ -24,7 +24,7 @@
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page124%2B2.mp3" ref="voice"/>
     <audio src="../../assets/sounds/all/Correct_2.mp3" ref="correctVoice"/>
-    <div class="page-number" id="page-dark">134</div>
+    <div class="page-number" id="page-dark">{{ page }}</div>
   </div>
 </template>
 
@@ -42,7 +42,18 @@ export default {
       answers: [],
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.init();
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;
       let animation = anime.timeline({
@@ -69,7 +80,6 @@ export default {
       this.answers = this.$store.getters.getPage126Data;
     },
   },
-  created() {this.init();},
   mounted() {
     this.setAudioVolumeLevel(0.6);
   },

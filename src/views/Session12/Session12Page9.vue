@@ -35,7 +35,7 @@
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/sand-castle.mp3"/>
     <audio @loadeddata="playVoiceOver" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session12/Session12_Page10.mp3" ref="voice"/>
     <audio src="../../assets/sounds/session7/click-sound.mp3" ref="clickSound"/>
-    <div class="page-number" id="page-light">274</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 
@@ -45,7 +45,14 @@ export default {
   name: 'Session12Page9',
   components: {ImageComponent},
   data() {return {choices: []}},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
     },
@@ -69,6 +76,7 @@ export default {
   },
   created() {
     this.choices = this.$store.getters.getPage222Array;
+    this.setPageNumber();
   },
   mounted() {
     this.setChoiceBackground();

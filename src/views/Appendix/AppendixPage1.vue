@@ -46,7 +46,7 @@
       <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/appendix/green-8.mp3" id="voice-8"/>
       <audio src="../../assets/sounds/session7/click-sound.mp3" ref="clickSound"/>
     </div>
-    <div class="page-number" id="page-light">276</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 
@@ -62,7 +62,17 @@ export default {
       ids: [1,2,3,4,5,6,7,8],
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },

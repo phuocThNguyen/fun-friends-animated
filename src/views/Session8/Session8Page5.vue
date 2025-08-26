@@ -23,7 +23,7 @@
     </div>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/beach-sound.mp3" ref="audio" autoplay loop/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page5.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">199</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 
@@ -34,6 +34,10 @@ import anime from "animejs";
 export default {
   name: 'Session8Page5',
   components: {ImageComponent},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
   data() {
     return {
       data: ['Jump the waves with Shaunti',
@@ -46,8 +50,11 @@ export default {
       ],
       answers: [],
     }
-  } ,
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       anime({
         targets: '.text-box',
@@ -70,6 +77,7 @@ export default {
   },
   created() {
     this.init();
+    this.setPageNumber();
   },
   mounted() {}
 }

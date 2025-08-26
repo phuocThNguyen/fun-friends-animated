@@ -272,7 +272,7 @@
       <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session6/164-option5.mp3" id="voice-option-5"/>
       <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session6/164-option6.mp3" id="voice-option-6"/>
     </div>
-    <div class="page-number number-alignment" id="page-light">163</div>
+    <div class="page-number number-alignment" id="page-light">{{ page }}</div>
   </div>
 </template>
 
@@ -296,7 +296,17 @@ export default {
       currentVoice: null
     }
   },
+    props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animatePart1() {
       let text = document.getElementsByClassName('text-box')[0].children;
       let animation = anime.timeline({easing: 'linear', duration: 500})

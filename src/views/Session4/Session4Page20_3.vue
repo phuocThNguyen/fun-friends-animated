@@ -52,7 +52,7 @@
         <div class="text">The rain</div>
       </div>
     </div>
-    <div class="page-number" id="page-light">135</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
     <audio
       @loadeddata="playSoundText"
@@ -74,7 +74,14 @@ export default {
       choices: [],
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;
       let animation = anime.timeline({
@@ -119,6 +126,7 @@ export default {
   },
   created() {
     this.init();
+    this.setPageNumber();
   },
   mounted() {
     this.setChoiceBackground();
