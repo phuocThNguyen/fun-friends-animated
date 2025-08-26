@@ -41,7 +41,14 @@ export default {
     }
   },
   components: {ImageComponent},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'});
@@ -65,6 +72,7 @@ export default {
   },
   created() {
     this.init();
+    this.setPageNumber();
   },
   watch: {
     answers: function() {
