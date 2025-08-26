@@ -85,10 +85,8 @@ export default {
       isNext: true,
       appendixPage: 0,
       relogin: false,
-      // authed: false,
-      // loading: true,
-      authed: true,
-      loading: false,
+      authed: false,
+      loading: true,
     }
   },
   methods: {
@@ -138,9 +136,9 @@ export default {
     }
   },
   async beforeMount() {
-    // this.authed = this.$store.getters.getAuthedStatus;
-    // this.loading = this.$store.getters.getLoadingStatus;
-    // await this.checkAuthentication();
+    this.authed = this.$store.getters.getAuthedStatus;
+    this.loading = this.$store.getters.getLoadingStatus;
+    await this.checkAuthentication();
   },
   created() {}
 };
