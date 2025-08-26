@@ -95,7 +95,6 @@ export default {
       }
     },
     next() {
-      console.log({currentPage: this.currentPage, lastPage: this.lastPage})
       if (this.currentPage < this.lastPage) {
         this.currentPage++;
       } else {

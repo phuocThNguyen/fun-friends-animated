@@ -101,8 +101,7 @@ export default {
         this.$emit("nextSession", 2, false);
       }
     },
-    next() {
-      console.log({currentPage: this.currentPage, lastPage: this.lastPage})
+    next() {      
       if (this.currentPage < this.lastPage) {
         this.currentPage++;
       } else {
