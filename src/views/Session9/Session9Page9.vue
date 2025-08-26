@@ -33,7 +33,17 @@ import anime from "animejs";
 export default {
   name: 'Session9Page9',
   components: {ImageComponent},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       let text = document.querySelector('.text-box').children;
       let images = document.querySelectorAll('.image-text');
