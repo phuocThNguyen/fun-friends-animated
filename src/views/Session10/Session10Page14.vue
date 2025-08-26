@@ -3,15 +3,11 @@
     <ImageComponent
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session10/1408.jpg"
       srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session10/1408.jpg"
-      class="session-background"
-      style="transform: scaleX(-1)"
+      class="page-image"
     />
-    <div class="text-box">
-      <span>Who has shown you how to do something before?</span>
-      <br><span> Who has helped you feel happy?</span>
-    </div>
+    <div class="text-box">Who helps you?</div>
     <div class="text-box-2">
-      <p>Tick your choices:</p>
+      <p><strong>Tick your choices:</strong></p>
       <div class="question-container">
         <div class="checkbox-containers" id="long-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
@@ -35,8 +31,9 @@ export default {
   name: 'Session10Page14',
   data() {
     return {
-      data: ['Your mum/dad','Your grandma/grandpa','Your sister/brother',
-      'Your aunt/uncle','Your teacher','Your sports coach/music teacher'],
+      data: ['Your mum','Your dad','Your grandma','Your grandpa','Your sister',
+        'Your brother','Your animal friend','Your aunt','Your uncle','Your teacher','Your sports coach',
+        'Your music teacher'],
       answers: [],
     }
   },
@@ -84,31 +81,34 @@ export default {
 </script>
 
 <style scoped>
+.page-image {
+  position: absolute;
+  height: 110%;
+}
 .text-box {
   position: absolute;
   top: 1vh;
   left: 2vh;
   background-color: #000000;
   padding: 1.5vh;
-  font-size: 3.9vh;
-  color: #000000;
+  font-size: 3.5vh;
+  color: white;
   font-weight: bold;
   opacity: 0;
 }
 .text-box-2 {
   position: absolute;
-  top: 20vh;
-  width: 68vh;
+  top: 10vh;
   left: 2vh;
   background-color: rgba(255,255,255,0.9);
-  padding: 2vh;
-  font-size: 5.5vh;
-  opacity: 0;
+  padding: 0 2vh;
+  opacity: 1;
+  width: 27%;
 }
 .text-box-2 p {
   margin-bottom: 0;
   opacity: 1;
-  font-size: 4vh;
+  font-size: 3.5vh;
 }
 .question-container {
   width: 100%;
@@ -122,11 +122,10 @@ export default {
 .checkbox-container {
   display: inline-block;
   position: relative;
-  padding-left: 6vh;
+  padding-left: 5vh;
   margin-bottom: 1vh;
   cursor: pointer;
-  font-size: 4vh;
-  line-height: 4.5vh;
+  font-size: 2.9vh;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -146,7 +145,7 @@ export default {
 .checkmark {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -1vh;
   height: 4.8vh;
   width: 4.8vh;
   border: .2vh solid #000;

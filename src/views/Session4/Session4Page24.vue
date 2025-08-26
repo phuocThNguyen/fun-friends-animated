@@ -19,15 +19,13 @@
         </g>
       </svg>
       <div class="star-text">
-        <p><strong>Bright<br>Star Idea</strong></p>
-        <p>Get some dry spaghetti &ndash;
-          <br>see how hard and stiff it is. Now cook the
-          <br>spaghetti and see how floppy it is.
-          <br>To relax, practise making each
-          <br>part of your body
-          <br>tight like dry spaghetti
-          <br>and floppy like
-          <br>cooked spaghetti.</p>
+        <p><strong>Bright Star Idea</strong></p>
+        <p>Eat an apple very slowly
+          <br>pay attention to the colour, taste,
+          <br>scent, how it feels in your hand,
+          <br>the crunchy sound when
+          <br>you bite into it.
+        </p>
       </div>
     </div>
     <audio
@@ -86,7 +84,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0;
+  opacity: 1;
 }
 .star {
   position: absolute;

@@ -7,12 +7,10 @@
     />
     <div class="text-box">
       <h1>Try Every Day</h1>
-      <p>- If you were a grown up for a day, what would you do?</p>
-      <p>- Share your answer with a grown up and ask them what they liked
-        &nbsp;&nbsp;&nbsp;to do, eat and play when they were children.</p>
-      <p>- Ask them to draw the home they lived in as a child.</p>
-      <p>- Each night, share a happy memory from your day with your family
-        &nbsp;&nbsp;&nbsp;or friends.</p>
+      <p>- Talk about happy things that happened in your day.</p>
+      <p>- Ask your family about happy things that happened to them today.</p>
+      <p>- Talk about kind things that you did today.</p>
+      <p>- Ask your family about kind things they did today.</p>
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/530415__klankbeeld__forest-summer-roond-020-200619-0186.mp3"/>
     <audio
@@ -73,7 +71,7 @@ export default {
   left: 5%;
   top: 15vh;
   background-color: #ffffff;
-  opacity: 0;
+  opacity: 1;
   padding: 2vh 3vh;
 }
 .text-box h1 {
@@ -85,7 +83,7 @@ export default {
 .text-box p {
   font-size: 4vh;
   margin-bottom: 2vh;
-  opacity: 0;
+  opacity: 1;
 }
 .text-box p:last-child {
   margin-bottom: 0;

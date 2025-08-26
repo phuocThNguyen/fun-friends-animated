@@ -1,13 +1,12 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>Choosing '<span class="red">Red</span>' and
+      <h1 class="mb-4">Changing '<span class="red">Red</span>' to
         '<span class="green">Green</span>' thoughts:
-        <br>Meeting a new teacher
       </h1>
+      <h1>Meeting your new teacher</h1>
       <p>You are going to meet your new teacher.</p>
-      <p class="instruction-p">Instructions: Click on the correct traffic light
-        for each thought.</p>
+      <p class="instruction-p">Click on the right traffic light.</p>
       <div class="content-container">
         <div class="content-row" v-for="content in data" :key="content.id" v-show="content.show">
           <svg class="content-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 361.86 361.86">
@@ -244,11 +243,11 @@ export default {
   data() {
     return {
       data: [{id: 1, complete: false, show: true, type: "red", text: "The teacher might not like me."},
-        {id: 2, complete: false, show: false, type: "green", text: "I am sure they will be nice."},
+        {id: 2, complete: false, show: false, type: "green", text: "My new friends are kind."},
         {id: 3, complete: false, show: false, type: "green", text: "I can smile and be nice."},
-        {id: 4, complete: false, show: false, type: "green", text: "My friends and I are all in this together."},
-        {id: 5, complete: false, show: false, type: "red", text: "The teacher might be very strict."},
-        {id: 6, complete: false, show: false, type: "green", text: "I can do bubble breathing to calm down."},
+        {id: 4, complete: false, show: false, type: "green", text: "We can all play together."},
+        {id: 5, complete: false, show: false, type: "red", text: "The kids do not like me."},
+        {id: 6, complete: false, show: false, type: "green", text: "I can breathe slowly to calm down."},
       ],
       currentQuestionProgress: 1,
       currentAnswerProgress: 0,
@@ -349,7 +348,7 @@ export default {
 </script>
 
 <style scoped>
-.content-container {opacity: 0}
+.content-container {opacity: 1}
 .content-row {
   display: flex;
   flex-direction: row;
@@ -380,8 +379,8 @@ export default {
 }
 .text-box p {
   font-size: 3vh;
-  margin-bottom: 1vh;
-  opacity: 0;
+  margin-bottom: 4vh;
+  opacity: 1 !important;
 }
 .images {
   position: absolute;

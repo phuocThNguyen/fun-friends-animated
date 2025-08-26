@@ -169,27 +169,27 @@ export default {
 .instruction {
   position: absolute;
   top: 2vh;
-  left: 2%;
+  left: 2vh;
 }
 .reward {
   position: absolute;
   height: auto;
   width: 1%;
-  left: calc(0.43*133vh);
-  top: 20vh;
+  left: 35vh;
+  top: 70vh;
   opacity: 0;
 }
 .question {
   position: absolute;
-  top: 35vh;
-  left: 1%;
+  top: 25vh;
+  left: 15vh;
 }
 .sticker {
   position: absolute;
   width: auto;
   height: 25vh;
-  top: 5vh;
-  left: calc(0.35*133vh);
+  top: 54vh;
+  left: 25vh;
   z-index: 50;
   opacity: 0;
 }

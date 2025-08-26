@@ -7,11 +7,10 @@
     />
     <div class="text-box">
       <h1>Try Every Day</h1>
-      <p>- Talk about '<span class="red">red</span>' and
+      <p>- Take slow breaths to calm down.</p>
+      <p>- Try to change your '<span class="red">red</span>' to
         '<span class="green">green</span>' thoughts.</p>
-      <p>- Do 10 minutes of relaxation every day.</p>
-      <p>- Think more '<span class="green">green</span>'
-        thoughts to feel confident and try new things.</p>
+      <p>- <span class="red">I can not do it</span> → <span class="green">I can try my best</span></p>
     </div>
     <audio
       @loadeddata="playSoundText"

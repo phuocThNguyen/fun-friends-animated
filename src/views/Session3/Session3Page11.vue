@@ -34,7 +34,7 @@
     </div>
     <div class="text-box">
       <h1><strong>Fun Bubble Activities</strong></h1>
-      <p>We are now going to play two games.</p>
+      <p>We are going to learn how to breathe slowly.</p>
       <p><strong>1. Bubble breathing</strong></p>
       <p class="mb-2" id="step-1"><strong>Step 1:</strong> Take five deep, slow breaths, in through
         your nose and out through your mouth.</p>
@@ -47,7 +47,7 @@
       <p class="mb-2" id="step-4"><strong>Step 4:</strong> Feelings come and go. Remember: All feelings
         are OK.</p>
       <p class="mb-2" id="step-5"><strong>Step 5:</strong> It is what we CHOOSE to do with our feelings
-        that counts. Bubble breathing is a ‘thumbs up’ choice.</p>
+        that counts. Bubble breathing is a ‘'<span class='green-color'>thumbs up</span>'’ choice.</p>
     </div>
     <button class="btn-style" @click="displayStep">Click here for the next step</button>
     <div class="audios">
@@ -163,6 +163,7 @@ export default {
   font-size: 2.5vh;
   font-weight: bold;
   box-shadow: 0 9px #999;
+  z-index: 100;
 }
 .btn-style:focus,
 .btn-style:active {

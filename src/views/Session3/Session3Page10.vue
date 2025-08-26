@@ -8,8 +8,8 @@
     />
     <div class="text-box">
       <h1>Friends and Families</h1>
-      <p>What makes kids helpful and kind?</p>
-      <p style="font-size: 3vh">Tick your choices:</p>
+      <p>How can you be kind?</p>
+      <p><strong>Tick your choices:</strong></p>
       <div class="question-container">
         <div class="checkbox-containers" id="long-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
@@ -19,7 +19,7 @@
         </div>
       </div>
     </div>
-    <div class="notice-box">We plant trees to be kind to planet earth.</div>
+    <div class="notice-box">We like planting trees.</div>
     <audio src="../../assets/sounds/session7/click-sound.mp3" ref="clickSound" />
     <audio
       @loadeddata="playSoundText"
@@ -36,8 +36,8 @@ export default {
   components: {ImageComponent},
   data() {
     return {
-      data: ['Planting trees','Helping your parents', 'Saying thank you',
-        'Smiling at others','Listening to others','Feeding your animal friends'],
+      data: ['Plant trees','Help your parents', 'Say thank you',
+        'Smile at others','Listen to others','Feed your animal friends'],
       answers: [],
     }
   },
@@ -89,25 +89,25 @@ export default {
   position: absolute;
   top: 1%;
   left: 1%;
-  width: 48%;
+  width: 34%;
   background-color: rgba(255,255,255, 0.9);
   padding: 2vh;
   opacity: 0;
 }
 .text-box h1 {
-  font-size: 6vh;
+  font-size: 3.5vh;
   font-weight: bold;
   margin-bottom: 0;
   opacity: 1;
 }
 .text-box p {
-  font-size: 4vh;
+  font-size: 3vh;
   margin-bottom: .5vh;
-  opacity: 0;
+  opacity: 1;
 }
 .notice-box {
   position: absolute;
-  bottom: 1vh;
+  bottom: 2vh;
   width: 70%;
   left: 15%;
   text-align: center;

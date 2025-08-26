@@ -356,6 +356,7 @@
       strong because it has bright green leaves and grows beautiful fruit.</p>
 
       <p id="para-2">What are some things that this tree needs to stay healthy?</p>
+      <!--   Click on the arrow on the bottom right of the page   -->
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Relaxing-Forest-Sound-Effect.mp3"/>
     <audio

@@ -3,12 +3,12 @@
     <ImageComponent
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session10/72896.jpg"
       srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session10/72896.jpg"
-      class="session-background"
+      class="page-image"
     />
-    <div class="text-box">Tom learns from <br>someone he looks up to.</div>
-    <div class="text-box-green">My dad helps me learn to cook.</div>
+    <div class="text-box">Karmie and Charlie learn <br>to cook with their parents.</div>
+    <div class="text-box-green">We look up to our parents to learn new things.</div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page3.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">{{ page }}</div>
+<!--    <div class="page-number" id="page-light">{{ page }}</div>-->
   </div>
 </template>
 
@@ -49,20 +49,22 @@ export default {
 </script>
 
 <style scoped>
+.page-image {position: absolute;width: 106%}
 .text-box {
   position: absolute;
   top: 1vh;
   left: 1%;
   background-color: rgba(255,255,255,0.95);
   font-weight: bold;
-  font-size: 4vh;
+  font-size: 3.5vh;
   padding: 2vh;
   opacity: 0;
 }
 .text-box-green {
   position: absolute;
-  bottom: 6vh;
-  left: 10%;
+  bottom: 2vh;
+  left: 22vh;
+  width: 89vh;
   padding: 1vh 2.4vh;
   background-color: #00CE7C;
   color: #ffffff;

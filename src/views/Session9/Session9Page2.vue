@@ -6,10 +6,9 @@
       class="session-background"
     />
     <div class="text-box">
-      <span>Talk to your friends about your <strong>STEP PLAN</strong>.</span>
-      <span> Think of ways you can reward yourself for doing your best,
-      like going to the park, playing ball, or just sharing
-      a picnic with your family.</span>
+      <span>When you try your best with your <strong>STEP PLAN</strong>,</span>
+      <span> you can get a reward like going to the park, playing ball, going on a bike ride,
+        or sharing a picnic with your family.</span>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page2.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">{{ page }}</div>
@@ -65,5 +64,5 @@ export default {
   font-size: 5.5vh;
   opacity: 0;
 }
-.text-box span {color: #ffffff}
+.text-box span {color: black}
 </style>

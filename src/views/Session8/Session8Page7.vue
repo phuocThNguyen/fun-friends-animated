@@ -19,7 +19,7 @@
         </g>
       </svg>
       <div class="star-text">
-        <p>Annie and Tom love
+        <p>Zoe and Zac love
           <br>riding their bikes
           <br>with their family.
         </p>

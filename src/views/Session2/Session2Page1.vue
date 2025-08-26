@@ -62,7 +62,7 @@ export default {
   text-align: center;
   padding: 1vh;
   left: 15%;
-  opacity: 0;
+  opacity: 1;
 }
 .text-box p {
   color: white;

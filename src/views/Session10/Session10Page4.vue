@@ -5,7 +5,8 @@
       srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session10/623039-PNWBPK-723.jpg"
       class="session-background"
     />
-    <div class="text-box-green">My dad helps me read a book.</div>
+    <div class="text-box-green" id="box-1">I look up to my dad.</div>
+    <div class="text-box-green" id="box-2">My dad helps me read a book.</div>
     <audio autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/ambient/flick-book-pages.mp3" ref="audio"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page4.mp3" ref="voice"/>
     <div class="page-number" id="page-light">{{ page }}</div>
@@ -56,13 +57,14 @@ export default {
 <style scoped>
 .text-box-green {
   position: absolute;
-  top: 3vh;
   left: 3%;
   padding: 1vh 2.8vh;
   background-color: #00CE7C;
   color: #ffffff;
   font-size: 4vh;
   font-weight: bold;
-  opacity: 0;
+  opacity: 1;
 }
+#box-1 {top: 3vh;}
+#box-2 {top: 15vh;}
 </style>

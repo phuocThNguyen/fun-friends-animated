@@ -4,29 +4,33 @@
       <ImageComponent
         src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session3/1605-resized.jpg"
         srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session3/1605-resized.jpg"
-        class="page-image" id="image-step-1"
+        class="page-image image-step-1" style="opacity: 1;"
       />
       <ImageComponent
         src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session3/ImageStep2BubbleBlowing.jpg"
         srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session3/ImageStep2BubbleBlowing.jpg"
-        class="page-image" id="image-step-2"
+        class="page-image image-step-2" style="height: 124%"
       />
-      <div class="mask"/>
       <ImageComponent
-        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session3/ImageStep3BubbleBlowing.jpg"
-        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session3/ImageStep3BubbleBlowing.jpg"
-        class="page-image" id="image-step-3"
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session3/young-girl-making-soap-bubbles-countryside.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session3/young-girl-making-soap-bubbles-countryside.jpg"
+        class="page-image image-step-3" style="right: -16vh;top:-8vh;height: 70%;"
+      />
+      <ImageComponent
+        src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session3/child-boy-blowing-bubbles-outdoor-park-playing-development-activity-summer-freedom-young-kid-with-soap-toy-entertainment-having-fun-enjoyment-weekend-backyard.jpg"
+        srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session3/child-boy-blowing-bubbles-outdoor-park-playing-development-activity-summer-freedom-young-kid-with-soap-toy-entertainment-having-fun-enjoyment-weekend-backyard.jpg"
+        class="page-image image-step-3" style="right: 0;top:50%;height: 72%;"
       />
     </div>
     <div class="text-box">
       <h1 id="title"><strong>2. Bubble blowing</strong></h1>
-      <p class="mb-2" id="step-1"><strong>Step 1:</strong> Breathe in calm,
+      <p class="mb-2" id="step-1" style="opacity: 1;"><strong>Step 1:</strong> Breathe in calm,
         happy feelings and blow away your angry, sad, and worried feelings.</p>
       <p class="mb-2" id="step-2"><strong>Step 2:</strong> Notice how the
         bubbles float away and fade, the same with our feelings.</p>
-      <p class="mb-2" id="step-3"><strong>Step 3:</strong> Feelings don’t
-        stay forever, feelings change. Using a Magic Bubble Wand to calm
-        down is a ‘thumbs up’ choice.</p>
+      <p class="mb-2" id="step-3"><strong>Step 3:</strong> Feelings do not
+        stay forever, feelings change. Blow your worries away, with a bubble wand,
+        to calm down.</p>
     </div>
     <div class="star-container">
       <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 1258" width="1320" height="1258">
@@ -43,9 +47,7 @@
       </svg>
       <div class="star-text">
         <p><strong>Bright Star Idea</strong></p>
-        <p>Say what
-          <br>feeling you are
-          <br>blowing away.
+        <p>Blow your <br>sad feelings <br>away.
         </p>
       </div>
     </div>
@@ -58,7 +60,6 @@
       <audio id="audio-step-2" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/104-step-2.mp3"></audio>
       <audio id="audio-step-3" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/104-step-3.mp3"></audio>
     </div>
-    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 
@@ -71,7 +72,7 @@ export default {
   components: {ImageComponent},
   data() {
     return {
-      currentStep: 0,
+      currentStep: 1,
       currentAudio: null,
       video: null
     }
@@ -103,9 +104,12 @@ export default {
         let animation = anime.timeline({duration: 500, easing: 'linear'});
         animation
           .add({targets: "#step-"+this.currentStep, opacity: 1}, 0)
-          .add({targets: "#image-step-"+this.currentStep, opacity: 1}, 0);
+          .add({targets: ".image-step-"+this.currentStep, opacity: 1}, 0);
         this.currentAudio = document.querySelector('#audio-step-'+this.currentStep);
         this.currentAudio.play();
+      } else {
+        anime({targets: '.star-container', opacity: 1, duration: 200, easing: 'linear'});
+        document.querySelector('.btn-style').style.display = "none";
       }
     },
   },
@@ -116,9 +120,9 @@ export default {
 <style scoped>
 .page-image {position: absolute;height: 100%;opacity: 0}
 .mask {position: absolute;height: 100%; background: #fff; width: 50vh;right: 60.5vh;opacity: 0;}
-#image-step-1 {left: 28vh}
-#image-step-2 {right: 0}
-#image-step-3 {left: 25vh}
+.image-step-1 {left: 28vh}
+.image-step-2 {right: 0;top:-10vh}
+.image-step-3 {height: 50%}
 .btn-style {
   position: absolute;
   bottom: 3.5vh;
@@ -133,6 +137,7 @@ export default {
   font-size: 2.5vh;
   font-weight: bold;
   box-shadow: 0 9px #999;
+  z-index: 100;
 }
 .btn-style:focus,
 .btn-style:active {
@@ -145,10 +150,10 @@ export default {
 }
 .star-container {
   position: absolute;
-  width: 40%;
+  width: 33%;
   height: 17vh;
-  right: 1vh;
-  top: 18vh;
+  left: 9vh;
+  top: 65vh;
   display: flex;
   justify-content: center;
   align-items: center;

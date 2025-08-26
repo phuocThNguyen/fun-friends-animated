@@ -198,10 +198,10 @@
 
     <p class="title"><span id="letter-f">E</span>xplore</p>
     <p class="text" id="line-1">
-      Today we are going to keep exploring ways to be BRAVE.
+      Today we are exploring ways to be BRAVE.
     </p>
     <p class="text" id="line-2">
-      We can break hard things down into many easier steps.
+      We can break hard things down into easy steps.
     </p>
 
     <audio autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/387978__dcpoke__birds-singing-03.mp3"/>
@@ -313,7 +313,7 @@ export default {
   text-align: center;
   width: 100%;
   top: 26vh;
-  opacity: 0;
+  opacity: 1;
 }
 #letter-f {
   color: #FFE802;

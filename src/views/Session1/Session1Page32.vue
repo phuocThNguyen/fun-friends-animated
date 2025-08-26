@@ -5,7 +5,7 @@
       srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/grass-background.jpg"
       class="session-background"
     />
-
+    <!--  Tap on your favourite animal  -->
     <!--  Main content  -->
     <div class="main-content">
       <h1 class="draw">Draw a picture of your favourite animal.</h1>

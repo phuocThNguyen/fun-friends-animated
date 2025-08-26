@@ -14,6 +14,7 @@
       <p class="text-6"><span id="letter-d">D</span>o it</p>
       <p class="text-7"><span id="letter-s">S</span>tay brave</p>
     </div>
+    <!--  Put song after animation finish  -->
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/9Animated_Book_Page8.mp3"

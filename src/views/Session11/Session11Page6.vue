@@ -6,7 +6,7 @@
         srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session11/Climbing_Tree_Help.jpg"
         class="images"
       />
-      <p class="text" id="para-1">Mum helping <br>Daniel climb a tree</p>
+      <p class="text" id="para-1">Mum is helping <br>Chilli climb a tree.</p>
     </div>
     <div class="image-container" id="right">
       <ImageComponent
@@ -14,7 +14,7 @@
         srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session11/Swinging_Children.jpg"
         class="images"
       />
-      <p class="text" id="para-2">Zoe and Daniel <br>helping Matilda swing</p>
+      <p class="text" id="para-2">We help each other have fun.</p>
     </div>
     <audio autoplay ref="audio" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/ambient/fieldrecording-nearparkwchildren.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session11/Session11_Page6.mp3" ref="voice"/>
@@ -84,7 +84,7 @@ export default {
   text-align: center;
   position: absolute;
   padding: 1vh;
-  opacity: 0;
+  opacity: 1;
 }
 #para-1 {left: 18%}
 #para-2 {right: 18%}

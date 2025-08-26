@@ -6,9 +6,9 @@
       class="session-background" id="page-11"
     />
     <div class="left-bar">
-      <h1>Our families</h1>
-      <p id="para-1">Tell us about your family.</p>
-      <p id="para-2">What fun activities do you like to do together?</p>
+      <h1 class="mt-4">Our families</h1>
+      <p class="mt-5" id="para-1">Tell us about your family.</p>
+      <p class="mt-5" id="para-2">What fun activities do you like to do together?</p>
       <div class="text-box">
         <p>We love going to the park.</p>
       </div>
@@ -67,7 +67,7 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50%;
+  width: 58%;
   height: 100%;
   background-color: rgba(255,255,255,0.9);
   z-index: 10;

@@ -1,9 +1,8 @@
 <template>
   <div class="instruction-container">
-    <p>Instruction:</p>
-    <p>- Tap on the correct feeling face.</p>
-    <p>- The green tick will appear when</p>
-    <p>you choose the correct answer
+    <p><strong>Tap on the right feeling face.</strong></p>
+    <p>The green tick will appear when</p>
+    <p>you choose the right answer
     <span>
       <svg class="tiny-tick" id="green-tick-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.98 92.25">
       <g class="cls-1-green-mark">
@@ -38,14 +37,6 @@ export default {
   color: #ffffff;
   margin-bottom: 0;
   font-size: 2.5vh;
-}
-.instruction-container p:first-child {
-  font-size: 3vh;
-  font-weight: bold;
-}
-.instruction-container p:nth-child(2),
-.instruction-container p:nth-child(3) {
-  padding-left: 1.8vh;
 }
 .tiny-tick {
   display: inline-block;

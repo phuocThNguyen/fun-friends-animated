@@ -6,8 +6,9 @@
       class="page-image"
     />
     <div class="text-box">
+      <p><strong>Noa and Poppy are playing in the creek.</strong></p>
       <p>What do you think they can feel?</p>
-      <p>Tick your choices:</p>
+      <p class="mb-4"><strong>Tick your choices:</strong></p>
       <div class="question-container">
         <div class="checkbox-containers" id="long-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
@@ -16,6 +17,7 @@
           </label>
         </div>
       </div>
+      <p id="green-box">It is fun to play outside in the creek.</p>
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Water-Stream-Sound-Effect-Amplified.mp3"/>
     <audio
@@ -36,7 +38,7 @@ export default {
   data() {
     return {
       data: ['Cold water on their feet', 'Wind on their skin',
-        'Sunshine on their face','Rocks in their hands'],
+        'Sunshine on their faces','Rocks under their feet',],
       answers: [],
     }
   },
@@ -114,16 +116,23 @@ export default {
   font-size: 3vh;
   line-height: 4vh;
   margin-bottom: 1.5vh;
-  opacity: 0;
+  opacity: 1;
 }
-.text-box p:last-child {
-  margin-bottom: 0;
+.text-box #green-box {
+  width: 100%;
+  padding: 2vh;
+  background: #00CE7C;
+  color: #fff;
+  text-align: center;
+  font-weight: 800;
+  font-style: italic;
+  margin-top: 10vh
 }
 .question-container {
   width: 100%;
   padding-left: 2vh;
   margin-top: 0;
-  opacity: 0;
+  opacity: 1;
 }
 .checkbox-containers {padding: 0}
 #long-checkbox label {width: 100%;}
@@ -133,7 +142,7 @@ export default {
   display: inline-block;
   position: relative;
   padding-left: 6vh;
-  margin-bottom: 2vh;
+  margin-bottom: 3vh;
   cursor: pointer;
   font-size: 3vh;
   line-height: 4.5vh;

@@ -288,11 +288,11 @@
     </svg>
     <div class="text-box">
       <h1>Try Every Day</h1>
-      <p>- Practise the steps on your <strong>STEP PLAN</strong>.
-        If you've done all the steps, &nbsp;&nbsp;&nbsp;make a new <strong>STEP PLAN</strong>.</p>
-      <p>- Notice when others are listening, helping and smiling and let them
-        &nbsp;&nbsp;&nbsp;know you like it.</p>
-      <p>- Practise turning '<span class="red">red</span>' thoughts into
+      <p>- Take slow breaths.</p>
+      <p>- Have quiet time to calm down.</p>
+      <p>- Pay attention to what you can see, hear, touch, taste, smell.</p>
+      <p>- Make '<span class='green-color'>thumbs up</span>' choices.</p>
+      <p>- Change '<span class="red">red</span>' thoughts into
         '<span class="green">green</span>' thoughts.</p>
     </div>
     <audio autoplay loop ref="audio" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"/>
@@ -370,12 +370,12 @@ export default {
 .text-box {
   position: absolute;
   background-color: rgba(255,255,255,0.8);
-  width: 90%;
+  width: 105vh;
   height: auto;
-  left: 5%;
+  left: 13vh;
   top: 20vh;
   padding: 2vh;
-  opacity: 0;
+  opacity: 1;
 }
 .text-box h1 {
   text-align: center;
@@ -386,7 +386,7 @@ export default {
 .text-box p {
   margin-bottom: 1vh;
   font-size: 4vh;
-  opacity: 0;
+  opacity: 1;
 }
 .text-box p:last-child {
   margin-bottom: 0;

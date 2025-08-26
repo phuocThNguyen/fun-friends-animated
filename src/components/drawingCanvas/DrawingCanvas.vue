@@ -37,7 +37,7 @@ export default {
   data() {
     return {
       sketchPad: null,
-      instruction: false,
+      Instructions: false,
       pointerDown: false,
     }
   },

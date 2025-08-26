@@ -20,13 +20,7 @@
       </svg>
       <div class="star-text">
         <p><strong>Bright Star Idea</strong></p>
-        <p>Make a 'recipe for happiness'. Write
-          <br>down all the things that make you happy.
-          <br>Remember to include
-          <br>everything you learned
-          <br>from Fun FRIENDS. You
-          <br>could ask someone in
-          <br>your family to help you!
+        <p>Talk about what you can <br>do to make other people HAPPY.
         </p>
       </div>
     </div>
@@ -83,7 +77,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;
+  opacity: 1;
 }
 .star {
   position: absolute;

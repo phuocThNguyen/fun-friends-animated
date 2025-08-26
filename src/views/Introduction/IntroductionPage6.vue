@@ -1,5 +1,6 @@
 <template>
-  <div class="interactive-container">
+  <div class="interactive-container" id="alt-bg">
+    <h1 class="title">This book is dedicated to all living beings.</h1>
     <ImageComponent
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/introduction/page8.jpg"
       srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/introduction/page8.jpg"

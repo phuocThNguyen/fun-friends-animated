@@ -1,17 +1,13 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>Choosing '<span class="red">Red</span>' and
+      <h1 class="mb-4">Changing '<span class="red">Red</span>' to
         '<span class="green">Green</span>' thoughts:
-        <br>Getting along
       </h1>
-      <p>Tom, has knocked over Annie’s block building that took her
-        a long time to build. What could Annie be feeling?</p>
-      <p>What are some '<span class="red">red</span>' thoughts and
-        '<span class="green">green</span>' thoughts Annie might be
-        thinking?</p>
-      <p class="instruction-p">Instructions: Click on the correct traffic
-        light for each thought.</p>
+      <h1>Playing together</h1>
+      <p>Chilli and Coco are playing together.</p>
+      <p class="instruction-p">Click on the right traffic
+        light.</p>
       <div class="content-container">
         <div class="content-row" v-for="content in data" :key="content.id" v-show="content.show">
           <svg class="content-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 361.86 361.86">
@@ -236,12 +232,12 @@ export default {
   components: {ImageComponent},
   data() {
     return {
-      data: [{id: 1, complete: false, show: true, type: "red", text: "I will knock over his building."},
-        {id: 2, complete: false, show: false, type: "green", text: "It was an accident, he did not do it on purpose."},
-        {id: 3, complete: false, show: false, type: "green", text: "We can play together and share."},
-        {id: 4, complete: false, show: false, type: "green", text: "I can stay calm and tell him nicely to be careful."},
-        {id: 5, complete: false, show: false, type: "red", text: "This makes me angry! I want to yell at him."},
-        {id: 6, complete: false, show: false, type: "green", text: "I can do deep, slow breathing to calm down."},
+      data: [{id: 1, complete: false, show: true, type: "green", text: "We can share."},
+        {id: 2, complete: false, show: true, type: "green", text: "We can learn together."},
+        {id: 3, complete: false, show: true, type: "red", text: "We will fight."},
+        {id: 4, complete: false, show: true, type: "red", text: "It is hard, we cannot do it."},
+        {id: 5, complete: false, show: true, type: "green", text: "It is more fun doing it together."},
+        {id: 6, complete: false, show: true, type: "green", text: "We can ask for help."},
       ],
       currentQuestionProgress: 1,
       currentAnswerProgress: 0,
@@ -343,7 +339,7 @@ export default {
 </script>
 
 <style scoped>
-.content-container {opacity: 0}
+.content-container {opacity: 1 !important}
 .content-row {
   display: flex;
   flex-direction: row;
@@ -374,8 +370,8 @@ export default {
 }
 .text-box p {
   font-size: 3vh;
-  margin-bottom: 1vh;
-  opacity: 0;
+  margin-bottom: 4vh;
+  opacity: 1 !important;
 }
 .images {
   position: absolute;

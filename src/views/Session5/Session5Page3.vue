@@ -6,7 +6,7 @@
       class="session-background"
     />
     <div class="text-box">
-      <p class="mb-1">Lucy is starting at a new school. How is she feeling? Tick your choices:</p>
+      <p class="mb-1"><strong>Nina is starting at a new school.</strong> How is she feeling? <strong>Tick your choices:</strong></p>
       <div class="question-container">
         <div class="checkbox-containers" id="short-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
@@ -15,10 +15,10 @@
           </label>
         </div>
       </div>
-      <p>Is Lucy having '<span id="red-text">red</span>' or
-        '<span id="green-text">green</span>' thoughts?</p>
+      <p><strong>Is Nina having '<span id="red-text">red</span>' or
+        '<span id="green-text">green</span>' thoughts?</strong></p>
     </div>
-
+    <!--  READ: Tick your choices  -->
     <traffic-lights-vertical
       correctAns="red"
       class="traffic-light"
@@ -188,7 +188,7 @@ export default {
   components: {TrafficLightsVertical,ImageComponent},
   data() {
     return {
-      data: ['Angry','Worried','Sad','Happy'],
+      data: ['Angry','Worried','Sad'],
       answers: [],
     }
   },
@@ -230,8 +230,8 @@ export default {
         .add({targets: '.text-box', opacity: 1}, 500)
         .add({targets: text[0], opacity: 1}, 500)
         .add({targets: text[1], opacity: 1}, 8300)
-        .add({targets: text[2], opacity: 1}, 13100)
-        .add({targets: '.traffic-light', opacity: 1}, 16900);
+        .add({targets: text[2], opacity: 1}, 13000)
+        .add({targets: '.traffic-light', opacity: 1}, 16800);
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -269,7 +269,7 @@ export default {
 .text-box p {
   font-size: 3.8vh;
   margin-bottom: 0;
-  opacity: 0;
+  opacity: 1;
 }
 #red-text {color: red;}
 #green-text {color: #00CE7C;}

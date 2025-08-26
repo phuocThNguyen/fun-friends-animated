@@ -3,7 +3,7 @@
     <ImageComponent
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/84428-resized.jpg"
       srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/84428-resized.jpg"
-      class="session-background"
+      class="page-image"
     />
     <div class="text-box">
       <p class="text">
@@ -69,14 +69,19 @@ export default {
 </script>
 
 <style scoped>
+.page-image {
+  position: absolute;
+  height: 125%;
+  top: -20vh;
+}
 .text-box {
   height: auto;
-  width: 81%;
+  width: 98%;
   padding: 2vh;
   background-color: #ffffff;
   position: absolute;
-  top: 4vh;
-  left: 10%;
+  top: 48vh;
+  left: 1%;
   opacity: 0;
   display: flex;
   align-items: center;
@@ -84,7 +89,7 @@ export default {
 }
 .text-box p {
   color: #ffffff;
-  font-size: 6vh;
+  font-size: 4.5vh;
   margin-bottom: 0;
 }
 </style>

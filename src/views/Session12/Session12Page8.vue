@@ -1,6 +1,6 @@
 <template>
   <div class="interactive-container">
-    <div class="text-box">Tap on the images below to choose your favourite rewards:</div>
+    <div class="text-box"><strong>Tap on the images below to choose your favourite rewards:</strong></div>
     <div class="choice-container" id="choice-1" @click="toggleChoice(1)">
       <ImageComponent
         src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session12/rewards/tree-house.jpg"

@@ -6,15 +6,7 @@
       class="session-background"
     />
     <div class="text-box">
-      <h1>Someone to look up to who can help</h1>
-      <p class="text"><span>Eliza, Josh and Lucy are learning to jump the waves
-        and body surf at Straddie Island.</span><span> Chilli and Pepper
-        also really love playing in the water.</span><span> Chilli and
-        Pepper are showing them how to have a fun and safe time, enjoying
-        the waves.</span></p>
-    </div>
-    <div class="green-box">
-      <strong>We love having fun <br>in the ocean.</strong>
+      <p class="text"><strong>Chilli and Pepper are brave playing in the ocean.</strong></p>
     </div>
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/beach-sound.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page12.mp3" ref="voice"/>
@@ -64,7 +56,7 @@ export default {
 <style scoped>
 .green-box {
   position: absolute;
-  bottom: 1vh;
+  top: 13vh;
   left: 9%;
   background-color: #00CE7C;
   color: #ffffff;
@@ -88,9 +80,9 @@ export default {
 .text-box p {
   font-size: 3.5vh;
   margin-bottom: 0;
-  color: #ffffff;
+  color: black;
 }
 .session-background {
-  top: 10vh;
+  top: 8vh;
 }
 </style>

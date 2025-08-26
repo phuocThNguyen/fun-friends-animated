@@ -809,9 +809,9 @@
           <div class="choice-container" id="choice-4">
             <div class="image" @click="toggleChoice(4)">
               <ImageComponent
-                src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/little-girl-playing-with-tire-that-says-i-m-girl.jpg"
-                srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/little-girl-playing-with-tire-that-says-i-m-girl.jpg"
-                class="image-component"
+                src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/pexels-rdne-8083814.jpg"
+                srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/pexels-rdne-8083814.jpg"
+                class="image-component" style="top:-18vh"
               />
             </div>
             <div class="text" style="font-size: 2.8vh">Pay attention to happy things</div>
@@ -983,11 +983,19 @@ export default {
 }
 .green-container img {}
 .choice-container .image {
+  position: relative;
   width: 94%;
   padding: 1vh 0 .5vh 0;
-  border-radius: 3vh
+  border-radius: 3vh;
+  overflow: hidden;
+  height: 25vh;
 }
-.image-component {width: 100%; height: 25vh; border-radius: 3vh}
+.image-component {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  border-radius: 3vh;
+}
 .choice-container .text {
   text-align: center;
   line-height: 4.5vh;

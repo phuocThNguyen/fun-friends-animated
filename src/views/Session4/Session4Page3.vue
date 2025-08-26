@@ -7,10 +7,10 @@
       style="left: 10vh"
     />
     <div class="text-box">
-      <h1>Butterflies in the tummy</h1>
-      <p>What happens to you when you feel nervous?</p>
-      <p class="mb-3">Tick your choices:</p>
-      <div class="question-container">
+      <h1 class="mb-4">Butterflies in the tummy</h1>
+      <p class="mb-3">What happens to you when you feel worried?</p>
+      <p class="mb-3"><strong>Tick your choices:</strong></p>
+      <div class="question-container mb-5">
         <div class="checkbox-containers" id="long-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
             <input type="checkbox" v-model="answers" :value="name">
@@ -18,9 +18,9 @@
           </label>
         </div>
       </div>
-      <p>Ask your friends what helps them to calm down.</p>
-      <p>Remember – It is normal to be worried, but you
-        can choose thumbs down or thumbs up actions.</p>
+      <p class="mb-5">What helps you calm down?</p>
+      <p>It is okay to feel worried, but you
+        can <span style="font-weight: 800">choose</span> '<span class='red-color'>thumbs down</span>' or '<span class='green-color'>thumbs up</span>' actions.</p>
     </div>
     <audio
       @loadeddata="playSoundText"
@@ -38,8 +38,8 @@ export default {
   components: {ImageComponent},
   data() {
     return {
-      data: ['Sweat','Butterflies in the tummy',
-        'Need to go to toilet','Shaky knees'],
+      data: ['I get sweaty','I get butterflies in the tummy',
+        'I need to go to the toilet','I get shaky knees'],
       answers: [],
     }
   },
@@ -104,13 +104,13 @@ export default {
 .text-box p {
   font-size: 3vh;
   margin-bottom: 0;
-  opacity: 0;
+  opacity: 1;
 }
 .question-container {
   width: 100%;
   padding-left: 2vh;
   margin-top: 0;
-  opacity: 0;
+  opacity: 1;
 }
 .checkbox-containers {padding: 0}
 #long-checkbox label {width: 100%;}

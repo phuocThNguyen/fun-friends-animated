@@ -1,13 +1,14 @@
 <template>
   <div class="interactive-container">
     <ImageComponent
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/creek_girl_and_boy.jpg"
-      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/creek_girl_and_boy.jpg"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/best-friends-participating-treasure-hunt-outdoors.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/best-friends-participating-treasure-hunt-outdoors.jpg"
       class="page-image"
     />
     <div class="text-box">
-      <p>What do you think they can see?</p>
-      <p>Tap your choices:</p>
+      <p><strong>Lily and her friends are playing “I Spy With My Little Eye”.</strong></p>
+      <p>What could they see?</p>
+      <p><strong>Tap your choices:</strong></p>
     </div>
     <div class="choices-container">
       <div class="choice-container" id="choice-1" @click="toggleChoice(1)">
@@ -48,7 +49,7 @@
             class="image-component"
           />
         </div>
-        <div class="text">Fishes</div>
+        <div class="text">Fish</div>
       </div>
       <div class="choice-container" id="choice-5" @click="toggleChoice(5)">
         <div class="image">
@@ -196,19 +197,19 @@ export default {
 .page-image {
   position: absolute;
   height: 100%;
-  right: -45vh;
+  right: -50vh;
 }
 .text-box {
   position: absolute;
   width: 75vh;
   background-color: #fff;
-  padding: 2vh;
+  padding: 1vh 2vh;
   height: 100%;
 }
 .text-box p {
-  font-size: 3vh;
+  font-size: 2.5vh;
   line-height: 4vh;
-  margin-bottom: 1vh;
+  margin-bottom: 0;
   opacity: 0;
 }
 .text-box p:last-child {

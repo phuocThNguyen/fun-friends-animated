@@ -3,13 +3,11 @@
     <ImageComponent
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session3/27622-resized.jpg"
       srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session3/27622-resized.jpg"
-      class="session-background"
+      class="page-image"
     />
     <div class="text-box">
-      <p>Grandma and Annie enjoy spending time together
-        gardening and laughing.</p>
-      <p>How do you think Annie is feeling?</p>
-      <p>Tick your choices:</p>
+      <p><strong>How is Lily feeling?</strong></p>
+      <p><strong>Tick your choices:</strong></p>
       <div class="question-container">
         <div class="checkbox-containers" id="long-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
@@ -19,12 +17,12 @@
         </div>
       </div>
     </div>
-    <div class="notice-box">Be kind and helpful!</div>
+    <div class="notice-box">You can learn to do gardening.</div>
     <audio src="../../assets/sounds/session7/click-sound.mp3" ref="clickSound" />
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/Session3_Page93%2B2.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">{{ page }}</div>
+<!--    <div class="page-number" id="page-dark">{{ page }}</div>-->
   </div>
 </template>
 
@@ -54,9 +52,8 @@ export default {
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       animation
         .add({targets: ".text-box", opacity: 1}, 500)
-        .add({targets: text[0], opacity: 1}, 500)
-        .add({targets: text[1], opacity: 1}, 6300)
-        .add({targets: text[2], opacity: 1}, 9500)
+        .add({targets: text[0], opacity: 1}, 6300)
+        .add({targets: text[1], opacity: 1}, 9500)
         .add({targets: '.question-container', opacity: 1}, 11500)
         .add({targets: '.notice-box', opacity: 1}, 14500)
     },
@@ -88,22 +85,27 @@ export default {
 <style scoped>
 .notice-box {
   position: absolute;
-  bottom: 6vh;
-  width: 70%;
-  left: 15%;
+  top: 60vh;
+  width: 55vh;
+  left: 2vh;
   text-align: center;
   color: #ffffff;
   background-color: rgba(0, 206, 124, 1);
-  font-size: 4vh;
+  font-size: 3.5vh;
   font-weight: bold;
   padding: .7vh;
   opacity: 0;
 }
+.page-image {
+  position: absolute;
+  width: 120%;
+  height: auto;
+}
 .text-box {
   position: absolute;
   top: 1vh;
-  left: 1%;
-  width: 54%;
+  left: 2vh;
+  width: 30vh;
   padding: 1.4vh;
   background-color: rgba(255,255,255,0.9);
   opacity: 0;

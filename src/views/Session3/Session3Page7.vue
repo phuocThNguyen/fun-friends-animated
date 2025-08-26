@@ -6,10 +6,10 @@
       class="session-background"
     />
     <div class="text-box">
-      <h1>Grandpa would like some company</h1>
-      <p>Tom wants to help Grandpa feel happier.</p>
+      <h1><strong>Grandpa would like some company</strong></h1>
+      <p>Tom wants to help Grandpa feel happy.</p>
       <p>How can Tom help his Grandpa?</p>
-      <p>Tick your choices:</p>
+      <p><strong>Tick your choices:</strong></p>
       <div class="question-container">
         <div class="checkbox-containers" id="long-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
@@ -89,13 +89,13 @@ export default {
   position: absolute;
   top: 1vh;
   left: 1%;
-  width: 43%;
+  width: 40%;
   padding: 1vh;
   background-color: rgba(255,255,255,0.9);
   opacity: 0;
 }
 .text-box h1 {
-  font-size: 3.5vh;
+  font-size: 3.1vh;
   margin-bottom: 1vh;
 }
 .text-box p {

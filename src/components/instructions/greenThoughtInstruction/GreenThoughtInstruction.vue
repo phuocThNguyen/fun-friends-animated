@@ -1,7 +1,6 @@
 <template>
   <div class="instruction-container">
-    <p>Instruction:</p>
-    <p>- Tap on the 'green' thought bubble.</p>
+    <p><strong>Tap on the 'green' thought bubble.</strong></p>
   </div>
 </template>
 

@@ -5,6 +5,7 @@
       srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/appendix/paying-attention-poster.jpg"
       class="session-background"
     />
+    <!--  1 sentence at a time  -->
     <audio ref="audio" autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/a-jazz-piano.mp3"/>
     <audio @loadeddata="playVoiceOver" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/appendix/Session13_Appendix_Page7.mp3" ref="voice"/>
     <div class="page-number" id="page-dark">{{ page }}</div>

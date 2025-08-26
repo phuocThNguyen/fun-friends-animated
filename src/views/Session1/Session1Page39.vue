@@ -21,7 +21,7 @@
       <div class="star-text big-text">
         <p><strong>Bright Star Idea</strong></p>
         <p>Share a kind
-          <br>thumbs up <br>choice.</p>
+          <br>'<span class='green-color'>thumbs up</span>' <br>choice.</p>
       </div>
     </div>
     <div id="left" class="star-container small-star">

@@ -32,7 +32,7 @@
           class="image-component"
         />
       </div>
-      <div class="text">Picking up flowers</div>
+      <div class="text">Picking flowers</div>
     </div>
     <div class="choice-container" id="choice-4">
       <div class="image" @click="toggleChoice(4)">

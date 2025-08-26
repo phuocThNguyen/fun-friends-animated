@@ -6,8 +6,8 @@
       class="session-background" id="alt-pos"
     />
     <div class="text-box">
-      <p>Who is in your support team?</p>
-      <p>They could be people from:</p>
+      <p><strong>Who is in your support team?</strong></p>
+      <p><strong>They could be people from:</strong></p>
       <p class="instruction-p">Tick your choices:</p>
       <div class="question-container">
         <div class="checkbox-containers" id="long-checkbox">
@@ -33,9 +33,8 @@ export default {
   name: 'Session11Page4',
   data() {
     return {
-      data: ['School/kindergarten/playgroup','Neighbourhood',
-        'Religious/spiritual group','Sporting clubs',
-        'Family','Friends'],
+      data: ['Family','Friends','School','Neighbourhood',
+        'Church','Sport clubs'],
       answers: [],
     }
   },
@@ -99,14 +98,14 @@ export default {
 .text-box p {
   font-size: 4vh;
   margin-bottom: 0;
-  opacity: 0;
+  opacity: 1;
 }
 #alt-pos {left: 35vh}
 .question-container {
   width: 100%;
   padding-left: 2vh;
   margin-top: 1vh;
-  opacity: 0;
+  opacity: 1;
 }
 #long-checkbox label {width: 100%;}
 #short-checkbox label {width: 33%;}

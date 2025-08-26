@@ -28,8 +28,8 @@
                 data-toggle="collapse" data-target="#navbarToggleExternalContent">Session 11</button>
         <button @click="setSession(12)" type="button" class="btn btn-session"
                 data-toggle="collapse" data-target="#navbarToggleExternalContent">Session 12</button>
-        <button @click="setSession(13)" type="button" class="btn btn-session"
-                data-toggle="collapse" data-target="#navbarToggleExternalContent">Appendixes</button>
+<!--        <button @click="setSession(13)" type="button" class="btn btn-session"-->
+<!--                data-toggle="collapse" data-target="#navbarToggleExternalContent">Appendixes</button>-->
       </div>
     </div>
     <nav class="navbar-style">

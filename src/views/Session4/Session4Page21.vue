@@ -5,12 +5,11 @@
       srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/1143-resized.jpg"
       class="session-background"
     />
-    <div class="text-box">The water feels cool and
-     fresh on our skin.</div>
+    <div class="text-box">The water feels cool and fresh on our skin.</div>
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page21.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">{{ page }}</div>
+<!--    <div class="page-number" id="page-dark">{{ page }}</div>-->
   </div>
 </template>
 
@@ -56,7 +55,7 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  bottom: 6vh;
+  bottom: 1vh;
   width: 70%;
   left: 15%;
   padding: 1.4vh;

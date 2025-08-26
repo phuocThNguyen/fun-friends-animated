@@ -6,8 +6,8 @@
       class="session-background"
     />
     <div class="text-box">
-      <p>How can you help animals?</p>
-      <p>Tick your choices:</p>
+      <p class="mb-4"><strong>How can you help animals?</strong></p>
+      <p><strong>Tick your choices:</strong></p>
       <div class="question-container">
         <div class="checkbox-containers" id="long-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
@@ -33,7 +33,7 @@ export default {
   data() {
     return {
       data: ['Be kind to all animals','Be gentle',
-        'Cuddle your animal friends',
+        'Cuddle your animal friends','Help in animal sanctuaries',
         'Play with your animal friends','Give your animal friends fresh water',
         'Give your animal friends healthy food'],
       answers: [],
@@ -89,21 +89,21 @@ export default {
   position: absolute;
   background-color: rgba(255,255,255,0.9);
   padding: 2vh;
-  top: 20vh;
-  width: 96%;
+  top: 10vh;
+  width: 60%;
   left: 2%;
   opacity: 0;
 }
 .text-box p {
   font-size: 4vh;
   margin-bottom: 0;
-  opacity: 0;
+  opacity: 1;
 }
 .question-container {
   width: 100%;
   padding-left: 2vh;
   margin-top: 1vh;
-  opacity: 0;
+  opacity: 1;
 }
 #long-checkbox label {width: 100%;}
 #short-checkbox label {width: 33%;}

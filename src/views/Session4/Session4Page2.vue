@@ -8,13 +8,13 @@
     />
     <div class="text-box">
       <h1>Body Clues</h1>
+      <p>Pay attention to her face and her body.</p>
       <p>How is she feeling?</p>
-      <p>How can you tell?</p>
-      <p><span class="text">Sometimes when we feel nervous, our bodies
-        give us clues or signs to tell us what we feel.</span>
-        <span class="text"> Our heart starts beating fast,</span>
-        <span class="text"> there are butterflies in our tummy,</span>
-        <span class="text"> and we get red in the face or get sweaty.</span></p>
+      <p><span class="text">When we feel worried, our bodies
+        give us clues to take slow breaths, calm down, and relax.</span>
+        <br><span class="text"> Our heart starts beating fast,</span>
+        <span class="text"> we feel butterflies in our tummy,</span>
+        <span class="text"> we get red in the face and sweaty.</span></p>
       <p id="prompt">My body is my friend.
         <br>It tells me when I need to relax.</p>
     </div>
@@ -824,7 +824,7 @@ export default {
 .text-box p {
   font-size: 4vh;
   margin-bottom: 1vh;
-  opacity: 0;
+  opacity: 1;
 }
 .text-box p:nth-child(2) { margin-bottom: 0; }
 .text-box p:nth-child(4) { color: #ffffff; }
@@ -836,7 +836,7 @@ export default {
   font-weight: bold;
   padding: 1vh;
   text-align: center;
-  margin-top: 5%;
+  margin-top: 1%;
 }
 .shp0-pointer { fill: #000000 }
 .shp1-pointer { fill: #00CE7C }

@@ -8,7 +8,7 @@
     <div class="text-box">
       <h1>Try Every Day</h1>
       <p>- Try to understand feelings in yourself and other people.</p>
-      <p>- Think about what 'thumbs up' activities you can do to
+      <p>- Think about what ''<span class='green-color'>thumbs up</span>'' activities you can do to
         &nbsp;&nbsp;&nbsp;make yourself feel calm.</p>
     </div>
     <audio autoplay loop ref="audio" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"/>

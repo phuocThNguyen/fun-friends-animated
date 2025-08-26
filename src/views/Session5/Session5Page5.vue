@@ -6,8 +6,8 @@
       class="session-background"
     />
     <div class="text-box">
-      <p>Matilda is spending her first night sleeping by herself. Pay attention to her face!</p>
-      <p>How is she feeling? Tick your choices:</p>
+      <p><strong>Kiki is spending her first night sleeping by herself.</strong> <br>Pay attention to her face!</p>
+      <p>How is she feeling? <strong>Tick your choices:</strong></p>
       <div class="question-container">
         <div class="checkbox-containers" id="short-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
@@ -16,8 +16,8 @@
           </label>
         </div>
       </div>
-      <p>Is Matilda having '<span id="red-text">red</span>'
-        or '<span id="green-text">green</span>' thoughts?</p>
+      <p><strong>Is Kiki having '<span id="red-text">red</span>'
+        or '<span id="green-text">green</span>' thoughts?</strong></p>
     </div>
     <traffic-lights-vertical
       correctAns="red"

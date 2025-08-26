@@ -198,7 +198,10 @@
 
     <p class="title"><span id="letter-f">E</span>xplore</p>
     <p class="text" id="line-1">
-      Today, we will think about <br>how to be kind and make new friends.
+      Today we are exploring ways to be KIND.
+    </p>
+    <p class="text" id="line-2">
+      We can make easy steps to be kind every day.
     </p>
 
     <audio autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/387978__dcpoke__birds-singing-03.mp3"/>
@@ -306,7 +309,7 @@ export default {
   text-align: center;
   width: 100%;
   top: 26vh;
-  opacity: 0;
+  opacity: 1;
 }
 #letter-f {
   color: #FFE802;
@@ -315,12 +318,17 @@ export default {
   position: absolute;
   margin-bottom: 0;
   font-size: 6vh;
-  color: #ffffff;
+  color: black;
 }
 #line-1 {
   text-align: center;
   width: 100%;
   top: 44vh;
+}
+#line-2 {
+  text-align: center;
+  width: 100%;
+  top: 52vh;
 }
 span {
   display: inline-block;

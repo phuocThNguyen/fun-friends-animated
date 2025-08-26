@@ -21,10 +21,7 @@
       <div class="star-text">
         <p><strong>Bright Star Idea</strong></p>
         <p>Plant some vegetables in
-          <br>a pot with your family. It is
-          <br>so much fun to watch
-          <br>your vegetables grow
-          <br>and then eat them!
+          <br>a pot with your family. It <br>is great to eat <br>your own vegetables!
         </p>
       </div>
     </div>

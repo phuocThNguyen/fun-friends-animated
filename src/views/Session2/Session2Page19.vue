@@ -1,10 +1,10 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>Additional Activity - Guess The Feelings</h1>
-      <p>Zoe, Daniel and Matilda feel different feelings in different situations.
-        All feelings are OK. What we choose to do with our feelings is important.
-        What feelings may the children be experiencing? What makes you feel this way?</p>
+      <h1><strong>Guess The Feelings</strong></h1>
+      <p>Ziggy and Kikki can have different feelings.
+        <br>All feelings are OK. <br>Pay attention to their faces and click on
+      the right feeling.</p>
     </div>
     <ImageComponent
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session2/Happy_Boy-resized.jpg"
@@ -400,20 +400,20 @@ export default {
         .add({
           targets: text[1],
           opacity: 1
-        }, 4391)
+        }, 4291)
         .add({
           targets: text[1],
           opacity: 0,
           duration: 1
-        }, 25260)
+        }, 24260)
         .add({
           targets: '#content-left',
           opacity: 1
-        }, 25265)
+        }, 24265)
         .add({
           targets: '#content-right',
           opacity: 1
-        }, 32570)
+        }, 31570)
     },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
@@ -451,9 +451,9 @@ export default {
 }
 .text-box {
   position: absolute;
-  width: 86%;
-  bottom: 8%;
-  left: 7%;
+  width: 100%;
+  text-align: center;
+  top: 60vh;
   padding: 0 1vh;
 }
 .text-box h1 {

@@ -1,9 +1,8 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>Reward Yourself</h1>
-      <p>There are many ways to reward ourselves for
-       trying our best.</p>
+      <h1>Rewards for trying</h1>
+      <p>Rewards are fun things you can do together with your friends or family.</p>
     </div>
     <div class="image-container" id="left">
       <ImageComponent
@@ -11,7 +10,7 @@
         srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session9/Beach_Children.jpg"
         class="image"
       />
-      <p class="image-text" id="para-1">Spending the day <br>having fun at the beach</p>
+      <p class="image-text" id="para-1">Fun at the beach</p>
     </div>
     <div class="image-container" id="right">
       <ImageComponent
@@ -19,7 +18,7 @@
         srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session9/healthy_eating_child.jpg"
         class="image"
       />
-      <p class="image-text" id="para-2">Eating your <br>favourite healthy meal</p>
+      <p class="image-text" id="para-2">Healthy yummy food</p>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page9.mp3" ref="voice"/>
     <div class="page-number" id="page-light">{{ page }}</div>
@@ -109,7 +108,7 @@ export default {
   font-size: 4vh;
   font-weight: bold;
   margin-bottom: 0;
-  opacity: 0;
+  opacity: 1;
 }
 #para-1 {left: 18%;}
 #para-2 {right: 18%;}

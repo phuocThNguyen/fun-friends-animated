@@ -109,6 +109,7 @@
         </g>
       </g>
     </svg>
+    <div class="page-number" id="page-dark">{{ page }}</div>
     <audio src="../../assets/sounds/all/Good_Job.mp3" ref="goodJob"/>
     <audio src="../../assets/sounds/all/Good_Try_Try_again.mp3" ref="goodTry"/>
     <audio
@@ -180,21 +181,21 @@ export default {
   position: absolute;
   height: auto;
   width: 1%;
-  top: 16vh;
-  left: calc(0.13*133vh);
+  left: 25vh;
+  top: 70vh;
   opacity: 0;
 }
 .question {
   position: absolute;
-  bottom: .5vh;
-  left: 20%;
+  top: 2vh;
+  left: 2vh;
 }
 .sticker {
   position: absolute;
   width: auto;
   height: 25vh;
-  top: 3vh;
-  left: calc(0.04*133vh);
+  bottom: 14vh;
+  left: 5vh;
   z-index: 50;
   opacity: 0;
 }

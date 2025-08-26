@@ -40,6 +40,10 @@ import Session11Page8 from "@/views/Session11/Session11Page8";
 import Session11Page8_1 from "@/views/Session11/Session11Page8_1";
 import Session11Page9 from "@/views/Session11/Session11Page9";
 import Session11Page10 from "@/views/Session11/Session11Page10";
+import Session11Page11 from "@/views/Session11/Session11Page11";
+import Session11Page12 from "@/views/Session11/Session11Page12";
+import Session11Page13 from "@/views/Session11/Session11Page13";
+import Session11Page14 from "@/views/Session11/Session11Page14";
 import {mapState} from "vuex";
 
 export default {
@@ -50,20 +54,22 @@ export default {
   components: {
     Session11Page1, Session11Page2, Session11Page3, Session11Page4, Session11Page5,
     Session11Page6, Session11Page7, Session11Page8, Session11Page9, Session11Page10,
-    Session11Page1_1, Session11Page3_1, Session11Page3_2, Session11Page8_1,
+    Session11Page1_1, Session11Page3_1, Session11Page3_2, Session11Page8_1, Session11Page11,
+    Session11Page12, Session11Page13, Session11Page14,
   },
   data() {
     return {
       pages: {
         1: "Session11Page1", 2: "Session11Page1_1", 3: "Session11Page2", 4: "Session11Page3", 5: "Session11Page3_1",
         6: "Session11Page3_2", 7: "Session11Page4", 8: "Session11Page5", 9: "Session11Page6", 10: "Session11Page7",
-        11: "Session11Page8", 12: "Session11Page8_1", 13: "Session11Page9", 14: "Session11Page10",
+        11: "Session11Page8", 12: "Session11Page8_1", 13: "Session11Page9", 14: "Session11Page10", 15: "Session11Page11",
+        16: "Session11Page12", 17: "Session11Page13", 18: "Session11Page14",
       },
-      startPage: 249,
+      startPage: 288,
       currentPage: 1,
       arrowVisible: true,
       hiddenTimeExpired: false,
-      lastPage: 14,
+      lastPage: 18,
     }
   },
   created() {

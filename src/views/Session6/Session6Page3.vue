@@ -1,16 +1,12 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>Choosing '<span class="red">Red</span>' and
+      <h1 class="mb-4">Changing '<span class="red">Red</span>' to
         '<span class="green">Green</span>' thoughts:
-        <br>Sleeping in your own bed
       </h1>
-      <p>Matilda is going to sleep in her own bed for the first time.</p>
-      <p>Close your eyes and pretend that you
-        are Matilda. What are some '<span class="red">red</span>'
-        thoughts and '<span class="green">green</span>' thoughts?</p>
-      <p class="instruction-p">Instructions: Click on the correct traffic light
-        for each thought.</p>
+      <h1>Sleeping in your room</h1>
+      <p>Kiki is sleeping in her own room.</p>
+      <p class="instruction-p">Click on the right traffic light.</p>
       <div class="content-container">
         <div class="content-row" v-for="content in data" :key="content.id" v-show="content.show">
           <svg class="content-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 361.86 361.86">
@@ -288,12 +284,12 @@ export default {
   components: {ImageComponent},
   data() {
     return {
-      data: [{id: 1, complete: false, show: true, type: "red", text: "I cannot sleep, this is scary."},
-        {id: 2, complete: false, show: false, type: "red", text: "I am alone. That makes me worried."},
-        {id: 3, complete: false, show: false, type: "green", text: "My animal friend will keep me company."},
-        {id: 4, complete: false, show: false, type: "red", text: "There are monsters under my bed."},
-        {id: 5, complete: false, show: false, type: "green", text: "I can be brave like my friends."},
-        {id: 6, complete: false, show: false, type: "green", text: "I can do my relaxation to fall asleep."},
+      data: [{id: 1, complete: false, show: true, type: "red", text: "I will be lonely."},
+        {id: 2, complete: false, show: false, type: "red", text: "I am scared."},
+        {id: 3, complete: false, show: false, type: "green", text: "I can hug my Teddy."},
+        {id: 4, complete: false, show: false, type: "red", text: "I can not sleep by myself."},
+        {id: 5, complete: false, show: false, type: "green", text: "I can think about happy places."},
+        {id: 6, complete: false, show: false, type: "green", text: "I can take slow breaths to calm down."},
       ],
       currentQuestionProgress: 1,
       currentAnswerProgress: 0,
@@ -395,7 +391,7 @@ export default {
 </script>
 
 <style scoped>
-.content-container {opacity: 0}
+.content-container {opacity: 1}
 .content-row {
   display: flex;
   flex-direction: row;
@@ -426,8 +422,8 @@ export default {
 }
 .text-box p {
   font-size: 3vh;
-  margin-bottom: 1vh;
-  opacity: 0;
+  margin-bottom: 4vh;
+  opacity: 1 !important;
 }
 .images {
   position: absolute;

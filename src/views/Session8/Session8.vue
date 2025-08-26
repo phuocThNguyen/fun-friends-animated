@@ -47,6 +47,10 @@ import Session8Page14 from "@/views/Session8/Session8Page14";
 import Session8Page14_1 from "@/views/Session8/Session8Page14_1";
 import Session8Page15 from "@/views/Session8/Session8Page15";
 import Session8Page16 from "@/views/Session8/Session8Page16";
+import Session8Page17 from "@/views/Session8/Session8Page17";
+import Session8Page18 from "@/views/Session8/Session8Page18";
+import Session8Page19 from "@/views/Session8/Session8Page19";
+import Session8Page20 from "@/views/Session8/Session8Page20";
 import {mapState} from "vuex";
 
 export default {
@@ -59,7 +63,7 @@ export default {
     Session8Page5, Session8Page6, Session8Page7, Session8Page8, Session8Page9,
     Session8Page10, Session8Page11, Session8Page12, Session8Page13, Session8Page14,
     Session8Page15, Session8Page16, Session8Page6_1, Session8Page11_1, Session8Page11_2,
-    Session8Page14_1,
+    Session8Page14_1, Session8Page17, Session8Page18, Session8Page19, Session8Page20,
   },
   data() {
     return {
@@ -68,13 +72,13 @@ export default {
         6: "Session8Page5", 7: "Session8Page6", 8: "Session8Page6_1", 9: "Session8Page7", 10: "Session8Page8",
         11: "Session8Page9", 12: "Session8Page10", 13: "Session8Page11", 14: "Session8Page12", 15: "Session8Page13",
         16: "Session8Page11_1", 17: "Session8Page11_2", 18: "Session8Page14", 19: "Session8Page14_1", 20: "Session8Page15",
-        21: "Session8Page16",
+        21: "Session8Page16", 22: "Session8Page17", 23: "Session8Page18", 24: "Session8Page19", 25: "Session8Page20",
       },
-      startPage: 192,
+      startPage: 221,
       currentPage: 1,
       arrowVisible: true,
       hiddenTimeExpired: false,
-      lastPage: 21,
+      lastPage: 25,
     }
   },
   created() {

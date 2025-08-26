@@ -1,13 +1,13 @@
 <template>
   <div class="interactive-container">
     <ImageComponent
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/1827-resized.jpg"
-      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/1827-resized.jpg"
-      class="session-background"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session3/five-year-old-little-boy-lies-green-grass-summer-park.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session3/five-year-old-little-boy-lies-green-grass-summer-park.jpg"
+      class="page-image"
     />
     <div class="text-box">
-      <p>What do you do to relax and calm down?</p>
-      <p>Tick your choices:</p>
+      <p><strong>What do you do to relax and calm down?</strong></p>
+      <p><strong>Tick your choices:</strong></p>
       <div class="question-container">
         <div class="checkbox-containers" id="long-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
@@ -34,9 +34,9 @@ export default {
   components: {ImageComponent},
   data() {
     return {
-      data: ['Riding a bike or a scooter','Going for a walk',
-        'Drawing a picture','Bubble breathing',
-        'Bubble blowing','Talking to a friend'],
+      data: ['Riding a bike','Riding a scooter','Playing outside',
+        'Drawing a picture','Breathing slowly', 'Playing lego',
+        'Talking to a friend','Drinking water','Going to the park'],
       answers: [],
     }
   },
@@ -87,21 +87,26 @@ export default {
 </script>
 
 <style scoped>
+.page-image {
+  position: absolute;
+  height: 124%;
+  transform: scaleX(-1);
+}
 .text-box {
   position: absolute;
-  top: 5vh;
-  left: 5%;
+  top: 2vh;
+  left: 2vh;
   padding: 1.5vh;
   background-color: rgba(255,255,255,0.95);
   opacity: 0;
   width: 52vh;
 }
-.text-box p {font-size: 4vh;opacity: 0; margin-bottom: 2vh; line-height: 5vh}
+.text-box p {font-size: 4vh;opacity: 1; margin-bottom: 2vh; line-height: 5vh}
 .question-container {
   width: 100%;
   padding-left: 2vh;
   margin-top: 0;
-  opacity: 0;
+  opacity: 1;
 }
 .checkbox-containers {padding: 0}
 #long-checkbox label {width: 100%;}

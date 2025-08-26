@@ -43,7 +43,6 @@ export default {
 <style scoped>
 .emotes {
   height: auto;
-  width: 14vh;
 }
 tspan { white-space:pre }
 .shp0-angry { fill: #f16d24 }

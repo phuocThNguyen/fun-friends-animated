@@ -9,8 +9,8 @@
     <div class="content-container" id="girl">
       <h1>How is the girl feeling?</h1>
       <div class="emotes-container">
-        <emote-angry class="incorrect"/>
-        <emote-calm/>
+        <emote-angry class="incorrect emote"/>
+        <emote-calm class="emote"/>
       </div>
       <div class="tips-container">
         <p class="incorrect">Angry, Worried</p>
@@ -52,8 +52,8 @@
     <div class="content-container" id="dog">
       <h1>How is the dog feeling?</h1>
       <div class="emotes-container">
-        <emote-angry class="incorrect-2"/>
-        <emote-calm/>
+        <emote-angry class="incorrect-2 emote"/>
+        <emote-calm class="emote"/>
       </div>
       <div class="tips-container">
         <p class="incorrect-2">Angry, Worried</p>
@@ -327,18 +327,19 @@ export default {
   position: absolute;
   height: auto;
   width: 1%;
-  right: 38%;
-  top: 12vh;
+  left: 30vh;
+  bottom: 15vh;
   opacity: 0;
 }
 #girl {
-  top: 5vh;
+  top: 2vh;
   left: 2%;
 }
 #dog {
-  top: 45vh;
+  top: 36vh;
   left: 2%;
 }
+.emote {width: 12vh}
 .masks-container {
   position: absolute;
   display: flex;
@@ -372,7 +373,7 @@ export default {
   background-color: rgba(0, 206, 124, 0.75);
   border-radius: 30px;
   padding-top: 1vh;
-  width: 50%;
+  width: 60vh;
   display: flex;
   flex-direction: column;
   opacity: 0;
@@ -387,14 +388,13 @@ export default {
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
-  margin: 1.4vh;
 }
 .answer-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-end;
-  margin: 1.4vh;
+  margin-bottom: .5vh;
 }
 .big-tick {
   width: 7vh;
@@ -405,8 +405,8 @@ export default {
   position: absolute;
   width: auto;
   height: 20vh;
-  top: 45vh;
-  right: 22%;
+  bottom: 2vh;
+  left: 25vh;
   z-index: 50;
   opacity: 0;
 }

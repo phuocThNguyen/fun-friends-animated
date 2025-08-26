@@ -1,14 +1,12 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>Choosing '<span class="red">Red</span>' and
+      <h1 class="mb-4">Changing '<span class="red">Red</span>' to
         '<span class="green">Green</span>' thoughts:
-        <br>'Show and Tell'
       </h1>
-      <p>What are '<span class="red">red</span>' thoughts and
-        '<span class="green">green</span>' thoughts Sam might be thinking?</p>
-      <p class="instruction-p">Instructions: Click on the correct traffic light for
-        each thought.</p>
+      <h1>'Show and Tell'</h1>
+      <p>Poppy is doing 'Show and Tell'.</p>
+      <p class="instruction-p">Click on the right traffic light.</p>
       <div class="content-container">
         <div class="content-row" v-for="content in data" :key="content.id" v-show="content.show">
           <svg class="content-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 361.86 361.86">
@@ -272,12 +270,13 @@ export default {
   components: {ImageComponent},
   data() {
     return {
-      data: [{id: 1, complete: false, show: true, type: "red", text: "My classmates will make fun of me."},
-        {id: 2, complete: false, show: false, type: "green", text: "My teacher can help me."},
-        {id: 3, complete: false, show: false, type: "red", text: "I do not like standing here alone, I am worried."},
-        {id: 4, complete: false, show: false, type: "green", text: "I can be brave, smile, and look people in the eye."},
-        {id: 5, complete: false, show: false, type: "red", text: "I might stutter."},
-        {id: 6, complete: false, show: false, type: "green", text: "I can do deep, slow breathing to calm down."},
+      data: [{id: 1, complete: false, show: true, type: "green", text: "My teacher can help me."},
+        {id: 2, complete: false, show: true, type: "green", text: "I can be brave and smile."},
+        {id: 3, complete: false, show: true, type: "red", text: "The other kids will make fun of me."},
+        {id: 4, complete: false, show: true, type: "green", text: "I can look people in the eye."},
+        {id: 5, complete: false, show: true, type: "red", text: "I am shy."},
+        {id: 6, complete: false, show: true, type: "red", text: "I will forget what to say."},
+        {id: 7, complete: false, show: true, type: "green", text: "I will take slow breaths to calm down."},
       ],
       currentQuestionProgress: 1,
       currentAnswerProgress: 0,
@@ -328,7 +327,7 @@ export default {
       this.animateLight(lightName);
       if (lightName === this.data[this.currentQuestionProgress - 1].type) {
         this.data[this.currentQuestionProgress - 1].complete = true;
-        if (this.currentQuestionProgress === 6) {
+        if (this.currentQuestionProgress === 7) {
           this.playCelebrateSounds();
           this.currentAnswerProgress++;
           this.disableInteraction();
@@ -378,7 +377,7 @@ export default {
 </script>
 
 <style scoped>
-.content-container {opacity: 0}
+.content-container {opacity: 1 !important}
 .content-row {
   display: flex;
   flex-direction: row;
@@ -409,8 +408,8 @@ export default {
 }
 .text-box p {
   font-size: 3vh;
-  margin-bottom: 1vh;
-  opacity: 0;
+  margin-bottom: 3vh;
+  opacity: 1 !important;
 }
 .images {
   position: absolute;

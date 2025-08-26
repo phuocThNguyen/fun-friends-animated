@@ -3,12 +3,12 @@
     <ImageComponent
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session3/12014-resized.jpg"
       srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session3/12014-resized.jpg"
-      class="session-background"
+      class="page-image"
     />
     <div class="text-box">
-      <p>Grandma is coming home after a day out and she is tired.</p>
-      <p>How can Annie help?</p>
-      <p>Tick your choices:</p>
+      <p><strong>Grandma is tired.</strong></p>
+      <p>How can Poppy help?</p>
+      <p><strong>Tick your choices:</strong></p>
       <div class="question-container">
         <div class="checkbox-containers" id="long-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
@@ -84,9 +84,15 @@ export default {
 </script>
 
 <style scoped>
+.page-image {
+  position: absolute;
+  width: 110%;
+}
 .text-box {
   position: absolute;
-  width: 33%;
+  top: 1vh;
+  left: 2vh;
+  width: 50vh;
   background-color: rgba(255,255,255,0.9);
   padding: 1vh;
   opacity: 0;
@@ -94,7 +100,7 @@ export default {
 .text-box p {
   font-size: 3vh;
   margin-bottom: 1vh;
-  opacity: 0;
+  opacity: 1;
 }
 .question-container {
   width: 100%;

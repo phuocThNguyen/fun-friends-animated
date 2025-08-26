@@ -7,11 +7,10 @@
     />
     <div class="text-box">
       <h1>Try Every Day</h1>
-      <p>- Keep practising your <strong>STEP PLAN</strong> with your family
-        &nbsp;&nbsp;&nbsp;and friends.</p>
-      <p>- Practise being BRAVE:</p>
+      <p>- Try a new <strong>STEP PLAN</strong> with your family.</p>
+      <p>- Try to be BRAVE:</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Look people in the eye and smile.</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Use a brave and strong voice.</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Try new things.</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Try your best and give it a go.</p>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session9/Session9_Page12.mp3" ref="voice"/>

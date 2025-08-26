@@ -4,8 +4,8 @@
     <div class="choice-container" id="choice-1">
       <div class="image" @click="toggleChoice(1)">
         <ImageComponent
-          src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/street-view-row-modern-residential-house-complex.jpg"
-          srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/street-view-row-modern-residential-house-complex.jpg"
+          src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/trees-near-white-houses.jpg"
+          srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/trees-near-white-houses.jpg"
           class="image-component"
         />
       </div>
@@ -13,8 +13,8 @@
     <div class="choice-container" id="choice-2">
       <div class="image" @click="toggleChoice(2)">
         <ImageComponent
-          src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/hoi-ancient-town.jpg"
-          srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/hoi-ancient-town.jpg"
+          src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/old-white-house-garden.jpg"
+          srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/old-white-house-garden.jpg"
           class="image-component"
         />
       </div>
@@ -22,8 +22,8 @@
     <div class="choice-container" id="choice-3">
       <div class="image" @click="toggleChoice(3)">
         <ImageComponent
-          src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/destruction-irpin.jpg"
-          srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/destruction-irpin.jpg"
+          src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/makara-beach-new-zealand-taken-2015.jpg"
+          srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/makara-beach-new-zealand-taken-2015.jpg"
           class="image-component"
         />
       </div>
@@ -31,8 +31,8 @@
     <div class="choice-container" id="choice-4">
       <div class="image" @click="toggleChoice(4)">
         <ImageComponent
-          src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/charming-yellow-house-with-wooden-windows-green-grassy-garden.jpg"
-          srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/charming-yellow-house-with-wooden-windows-green-grassy-garden.jpg"
+          src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session1/lightkeeper-s-cottages-1858-s-head-heritage-trail-sydney-23-august-2019.jpg"
+          srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session1/lightkeeper-s-cottages-1858-s-head-heritage-trail-sydney-23-august-2019.jpg"
           class="image-component"
         />
       </div>
@@ -128,7 +128,6 @@ export default {
   border-radius: 3vh;
   color: #fff;
 }
-.green-container img {}
 #choice-1 {top: 6.5vh;left: 17vh}
 #choice-2 {top: 6.5vh;right: 17vh}
 #choice-3 {bottom: 15.5vh;left: 17vh}

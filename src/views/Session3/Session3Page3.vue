@@ -247,9 +247,9 @@ export default {
   opacity: 0;
 }
 .question {
-   position: absolute;
-   bottom: 1vh;
-   left: 20%;
+  position: absolute;
+  bottom: 1vh;
+  left: 20%;
   opacity: 0;
 }
 .sticker {

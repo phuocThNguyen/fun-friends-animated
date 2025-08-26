@@ -7,10 +7,9 @@
       style="left:33vh"
     />
     <div class="text-box">
-      <p>These children are helping each other to be strong.</p>
-      <p>Look around or think about your family.</p>
+      <p><strong>These children are helping each other feel brave and calm.</strong></p>
       <p>What do you do to help your family?</p>
-      <p>Tick your choices:</p>
+      <p><strong>Tick your choices:</strong></p>
       <div class="question-container">
         <div class="checkbox-containers" id="long-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
@@ -34,9 +33,9 @@ export default {
   name: 'Session11Page2',
   data() {
     return {
-      data: ['Washing the dishes','Buying groceries',
-        'Helping in the garden','Cleaning up your room',
-        'Taking out rubbish'],
+      data: ['Help cleaning my room','Help cooking','Help in the garden','Help with the shopping',
+        'Help feeding my animal friends','Help my grandparents','Help washing the dishes','Help walking my animal friends',
+        ],
       answers: [],
     }
   },
@@ -86,19 +85,17 @@ export default {
 <style scoped>
 .text-box {
   position: absolute;
-  width: 66.5vh;
+  width: 70vh;
   padding: 1.5vh 2vh;
-  font-size: 4vh;
   height: 100%;
   background: #fff;
 }
-.text-box p {margin-bottom: .5vh;opacity: 0;}
-.text-box p:last-child {margin-bottom: 0;}
+.text-box p {font-size:4vh;margin-bottom: 1vh;opacity: 1;}
 .question-container {
   width: 100%;
   padding-left: 2vh;
   margin-top: 0;
-  opacity: 0;
+  opacity: 1;
 }
 .checkbox-containers {padding: 0}
 #long-checkbox label {width: 100%;}
@@ -108,7 +105,7 @@ export default {
   display: inline-block;
   position: relative;
   padding-left: 6vh;
-  margin-bottom: 1.5vh;
+  margin-bottom: 1vh;
   cursor: pointer;
   font-size: 4vh;
   line-height: 5.5vh;

@@ -58,13 +58,13 @@ export default {
       pages: {
         1: "AppendixPage1", 2: "AppendixPage2", 3: "AppendixPage3", 4: "AppendixPage4", 5: "AppendixPage5",
         6: "AppendixPage6", 7: "AppendixPage7", 8: "AppendixPage8", 9: "AppendixPage9", 10: "AppendixPage10",
-        11: "AppendixPage11", 12: "AppendixPage12", 13: "AppendixPage13", 14: "AppendixPage14", 15: "AppendixPage15"
+        11: "AppendixPage11", 12: "AppendixPage12", 13: "AppendixPage14", 14: "AppendixPage15"
       },
       startPage: 272,
       currentPage: 1,
       arrowVisible: true,
       hiddenTimeExpired: false,
-      lastPage: 15
+      lastPage: 14
     }
   },
   created() {

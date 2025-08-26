@@ -314,7 +314,7 @@
     <div class="plans" id="step-2">
       <div class="nail first-nail"></div>
       <div class="nail second-nail"></div>
-      <div class="text">2) Try two vegetables you think you don’t like
+      <div class="text">2) Try two vegetables you think you do not like
         and put them together with food you like.</div>
       <div class="bubble-container">
         <svg class="bubble" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312 220" width="312" height="220">

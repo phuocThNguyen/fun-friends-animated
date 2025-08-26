@@ -5,9 +5,9 @@
       srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/appendix/appendix-bg-page-2.jpg"
       class="session-background"
     />
-    <div class="title">Appendix 2: Someone Special <br>I Know Who is
-    Brave and Kind!</div>
-    <div class="text">Click on each cloud and choose someone who is brave and kind</div>
+    <div class="title">Someone who is
+    brave and kind!</div>
+    <div class="text"><strong>Click on each cloud and choose someone who is brave and kind.</strong></div>
     <div class="star-container">
       <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 1258" width="1320" height="1258">
         <title>Star</title>
@@ -22,7 +22,7 @@
         </g>
       </svg>
       <div class="star-text">
-        <p><strong>I'm BRAVE <br>and KIND too!</strong></p>
+        <p><strong>I try to be BRAVE <br>and KIND!</strong></p>
       </div>
     </div>
     <div class="cloud-container" id="cloud-1">
@@ -59,7 +59,7 @@
           </g>
         </g>
       </svg>
-      <div class="cloud-text">At my school <br> / preschool</div>
+      <div class="cloud-text">At school</div>
       <select v-model="answer2" @click="readText(2)">
         <option v-for="option in options2" v-bind:key="option">{{ option }}</option>
       </select>
@@ -100,7 +100,7 @@ export default {
   data() {
     return {
       options1: ['My mum','My dad','My aunt','My uncle','My sibling'],
-      options2: ['My teacher','My principal','My classmate','My sport coach'],
+      options2: ['My teacher','My principal','My classmate','My sports coach'],
       options3: ['A family member','A teacher','A friend','A neighbour'],
       options4: ['A musician','A singer','A writer','An artist'],
       answer1: '',
@@ -179,8 +179,8 @@ export default {
 .text {
   position: absolute;
   width: 100%;
-  top: 10vh;
-  font-size: 3vh;
+  top: 6vh;
+  font-size: 4vh;
   text-align: center;
   color: #fff;
 }

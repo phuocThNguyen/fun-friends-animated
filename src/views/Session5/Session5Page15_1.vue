@@ -7,9 +7,9 @@
     />
     <div class="text-box">
       <h1>Try Every Day</h1>
-      <p> - Practise being BRAVE:</p>
+      <p> - Try to be BRAVE:</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Look people in the eye and smile.</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Use a brave and strong voice.</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Try new things.</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; &nbsp;Try your best and give it a go.</p>
     </div>
     <audio
@@ -76,9 +76,9 @@ export default {
   font-weight: bold;
 }
 .text-box p {
-  margin-bottom: 1vh;
+  margin-bottom: 3vh;
   font-size: 4vh;
-  opacity: 0;
+  opacity: 1;
 }
 .text-box p:last-child {
   margin-bottom: 0;

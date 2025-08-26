@@ -2,13 +2,13 @@
   <div class="content-container">
     <h1>{{question}}</h1>
     <div class="emotes-container">
-      <component v-for="(emote, index) in emotes" :key="index" :is="emote" :class="ans[`${index}`]"/>
+      <component v-for="(emote, index) in emotes" :key="index" :is="emote" :class="ans[`${index}`]" class="emote"/>
     </div>
     <div class="tips-container">
       <p v-for="(answer, index) in ans" :key="index" :class="answer">{{tips[index]}}</p>
     </div>
     <div class="answers-container">
-      <component v-for="(answer, index) in ans" :key="index" :is="answer"/>
+      <component v-for="(answer, index) in ans" :key="index" :is="answer" class="emote-tick"/>
     </div>
     <div class="masks-container">
       <div v-for="emote in emotes" :key="emote" @click="answerHandler"/>
@@ -137,11 +137,11 @@ export default {
   justify-content: space-around;
   width: 100%;
   padding: 0 1.7vh;
-  top: 9vh;
+  top: 5.5vh;
 }
 .masks-container div {
-  width: 14vh;
-  height: 14vh;
+  width: 8vh;
+  height: 8vh;
 }
 .tips-container {
   display: flex;
@@ -156,6 +156,7 @@ export default {
 .tips-container p {
   margin-bottom: 0;
   width: 20vh;
+  font-size: 3vh;
   display: flex;
   justify-content: center;
 }
@@ -163,14 +164,14 @@ export default {
   background-color: rgba(0, 206, 124, 0.9);
   border-radius: 30px;
   padding-top: 1vh;
-  width: 60%;
+  width: 33%;
   display: flex;
   flex-direction: column;
   opacity: 0;
 }
 .content-container h1 {
   text-align: center;
-  font-size: 5.5vh;
+  font-size: 3.5vh;
   color: #ffffff;
 }
 .emotes-container {
@@ -178,13 +179,17 @@ export default {
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
-  margin: 1.4vh;
+  margin: 0 1.4vh;
 }
+.emote {width: 7vh}
 .answers-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-end;
-  margin: 1.4vh;
+  margin: .5vh 1.4vh 1vh 1.4vh;
+}
+.emote-tick {
+  width: 4vh !important;
 }
 </style>

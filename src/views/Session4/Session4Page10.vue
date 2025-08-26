@@ -1,18 +1,19 @@
 <template>
   <div class="interactive-container">
     <ImageComponent
-      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session4/324483-P9A8QQ-419-resized.jpg"
-      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session4/324483-P9A8QQ-419-resized.jpg"
-      class="session-background" id="adjust"
+      src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/max/session3/grass-portrait-black-child-with-smile-summer-fashion-happiness-nature-young-boy-relax-rest-backyard-play-school-break-fun-day-park-field-nigeria.jpg"
+      srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session3/grass-portrait-black-child-with-smile-summer-fashion-happiness-nature-young-boy-relax-rest-backyard-play-school-break-fun-day-park-field-nigeria.jpg"
+      class="page-image"
     />
     <div class="text-box">
       <h1>'Bubble' Breathing</h1>
-      <p>Practise 'bubble' breathing with a straw. Blow slowly out of
-        the straw for a long time. Slow and deep breathing calms you down.</p>
-      <p>After, practise ‘bubble’ breathing by lying down without the straw.
-        Imagine yourself in a special place.</p>
-      <p>If you want to, you can draw a picture of your peaceful, quiet place
-        on the next page</p>
+      <p>Practise 'bubble' breathing with a straw.</p>
+      <p>Breathe in slowly through your nose.</p>
+      <p>Breathe out slowly through your mouth.</p>
+      <p>Get a straw.</p>
+      <p>Blow slowly out of the straw for a long time. </p>
+      <p>Slow breathing calms you down.</p>
+      <p>Imagine you are in a calm place in nature.</p>
     </div>
     <audio
       @loadeddata="playSoundText"
@@ -66,21 +67,24 @@ export default {
   left: 0;
   z-index: 10;
   background-color: #ffffff;
-  width: 48%;
+  width: 60vh;
   height: 100%;
   padding: 1.5vh;
 }
 .text-box h1 {
-  font-size: 5vh;
+  font-size: 4vh;
   font-weight: bold;
-  margin-bottom: 1vh;
+  margin-bottom: 5vh;
 }
 .text-box p {
-  font-size: 4vh;
-  margin-bottom: 1vh;
-  opacity: 0;
+  font-size: 3vh;
+  margin-bottom: 5vh;
+  opacity: 1;
 }
-#adjust {
-  left: 12%;
+.page-image {
+  position: absolute;
+  height: 120%;
+  top: -5vh;
+  right: 0;
 }
 </style>

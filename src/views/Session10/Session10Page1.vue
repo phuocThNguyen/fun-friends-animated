@@ -198,9 +198,10 @@
 
     <p class="title"><span id="letter-f">N</span>ice work</p>
     <p class="text" id="line-1">
-      <span>Today, we will think about someone to look up to - the people we
-      <br>want to be like.</span><span> We will also talk about how our family, friends and
-      <br>teachers help us and how we can help them.</span>
+      <span>Who is someone kind in your family?
+        <br>Who is someone brave in your family?
+        <br>Who is someone to look up to in your family?
+      </span><br>
     </p>
 
     <audio autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/387978__dcpoke__birds-singing-03.mp3"/>
@@ -301,7 +302,7 @@ export default {
   text-align: center;
   width: 100%;
   top: 26vh;
-  opacity: 0;
+  opacity: 1;
 }
 #letter-f {
   color: #95D5EE;
@@ -310,7 +311,7 @@ export default {
   position: absolute;
   margin-bottom: 0;
   font-size: 4.5vh;
-  color: #ffffff;
+  color: black;
 }
 #line-1 {
   text-align: center;

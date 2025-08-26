@@ -1,11 +1,10 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <p style="opacity: 1;"><strong>Annie loves the beach</strong></p>
-      <p>Annie is just back from a holiday at the beach.</p>
-      <p>What fun activities did she do?</p>
-      <p>What can you say to Annie?</p>
-      <p>Tick your choices:</p>
+      <p style="opacity: 1;"><strong>Shaunti loves the beach</strong></p>
+      <p>Shaunti is having fun on the beach.</p>
+      <p>What fun activities can she do?</p>
+      <p><strong>Tick your choices:</strong></p>
       <div class="question-container">
         <div class="checkbox-containers" id="long-checkbox">
           <label class="checkbox-container" v-for="(name, index) in data" :key="index">{{name}}
@@ -38,14 +37,7 @@ export default {
   components: {ImageComponent},
   data() {
     return {
-      data: ['Invite Annie for a play date',
-        'Ask Annie to share holiday photos',
-        'Make a welcome back card or drawing',
-        'Ask Annie about her favourite activity',
-        'Tell Annie you miss playing fun games with her',
-        'Play in the park with Annie',
-        'Bake a cake with Annie'
-      ],
+      data: ['Swim','Make a sand castle','Fly kite','Play ball','Surf'],
       answers: [],
     }
   } ,
@@ -118,7 +110,7 @@ export default {
 }
 .text-box p {
   font-size: 3vh;
-  opacity: 0;
+  opacity: 1;
   margin-bottom: 0;
 }
 #alt-pos {
@@ -129,7 +121,7 @@ export default {
    width: 100%;
    padding-left: 2vh;
    margin-top: 3vh;
-  opacity: 0;
+  opacity: 1 !important;
  }
 #long-checkbox label {width: 100%;}
 #short-checkbox label {width: 33%;}
@@ -164,6 +156,7 @@ export default {
   height: 3.5vh;
   width: 3.5vh;
   background-color: #eee;
+  border: .1vh solid black;
 }
 
 /* When the checkbox is checked, add a blue background */

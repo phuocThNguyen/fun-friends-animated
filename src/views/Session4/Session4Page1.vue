@@ -311,7 +311,7 @@ export default {
   font-size: 12vh;
   -webkit-text-stroke: 0.1vw black;
   top: 21vh;
-  opacity: 0;
+  opacity: 1;
   width: 100%;
   text-align: center;
 }

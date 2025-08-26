@@ -1,10 +1,8 @@
 <template>
   <div class="interactive-container">
     <div class="text-box">
-      <h1>Additional Activity &ndash; Your Support Teams</h1>
-      <p id="para">Support teams are always there to help you. How can
-       Zoe, Daniel and Matilda get help from their support teams
-       in the pictures below?</p>
+      <h1>Your Support Teams</h1>
+      <p id="para">Support teams try to help you. </p>
     </div>
     <div class="image-container">
       <ImageComponent
@@ -12,7 +10,7 @@
         srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session11/surfing_child.jpg"
         class="images"
       />
-      <div class="text" id="para-1">Mum helping Zoe surf</div>
+      <div class="text" id="para-1">Mum is helping Zoe surf.</div>
     </div>
     <div class="image-container" id="right">
       <ImageComponent
@@ -20,7 +18,7 @@
         srcPlaceholder="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/images/min/session11/Hugging_Lama_Girl.jpg"
         class="images"
       />
-      <div class="text" id="para-2">Matilda giving Alpaca a hug</div>
+      <div class="text" id="para-2" >They give each other love.</div>
     </div>
     <audio autoplay ref="audio" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/children-background-music/sunset.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session11/Session11_Page5.mp3" ref="voice"/>
@@ -79,12 +77,12 @@ export default {
   position: absolute;
   bottom: 2vh;
   background-color: #00CE7C;
-  padding: .5vh;
+  padding: 1vh;
   color: #ffffff;
   font-size: 4vh;
   font-weight: bold;
   text-align: center;
-  opacity: 0;
+  opacity: 1;
 }
 #para-1 {left: 18%;font-size: 4vh;width: 79%;}
 #para-2 {right: 18%;font-size: 4vh;}
