@@ -3490,7 +3490,17 @@ import anime from "animejs";
 
 export default {
   name: 'AppendixPage6',
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       let thumbs = document.querySelectorAll('.thumb');
       let animation = anime.timeline({easing: 'linear', duration: 200,})

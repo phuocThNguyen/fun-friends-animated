@@ -62,7 +62,19 @@
 
 <script>
 export default {
-  name: 'AppendixPage13'
+  name: 'AppendixPage13',
+    props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
+  methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
+  }
 }
 </script>
 

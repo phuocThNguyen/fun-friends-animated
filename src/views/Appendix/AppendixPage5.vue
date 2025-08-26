@@ -236,7 +236,17 @@ export default {
       {id: 4, eleIds: [7,8], text: 'Being kind'},
     ],
   }},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     handleClick(maskId) {
       this.$refs.voice.pause();
       if (this.answerArray.includes(maskId)) {

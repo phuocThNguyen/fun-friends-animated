@@ -189,7 +189,17 @@ export default {
       {id: 4, eleIds: [7,8], text: 'Playing ball'},
     ],
   }},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     handleClick(maskId) {
       if (this.answerArray.includes(maskId)) {
         let answerId = Math.ceil(maskId / 2);

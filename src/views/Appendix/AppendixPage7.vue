@@ -2407,7 +2407,17 @@ import anime from "animejs";
 
 export default {
   name: 'AppendixPage5',
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       let text = document.querySelectorAll('.text');
       let animation = anime.timeline({duration: 200, easing: 'linear'})
