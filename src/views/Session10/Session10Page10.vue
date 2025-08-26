@@ -32,7 +32,14 @@ export default {
       canvasData: null,
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
     },
@@ -61,6 +68,7 @@ export default {
   },
   created() {
     this.init();
+    this.setPageNumber();
   },
   mounted() {
     this.setAudioVolumeLevel(0.3);
