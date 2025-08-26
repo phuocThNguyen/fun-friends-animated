@@ -76,7 +76,17 @@ export default {
       video: null
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
       this.currentAudio = this.$refs.voice;

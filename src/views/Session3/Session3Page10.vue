@@ -41,7 +41,14 @@ export default {
       answers: [],
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       let animation = anime.timeline({duration: 500, easing: 'linear'})
       let text = document.querySelector('.text-box').children;
@@ -63,7 +70,10 @@ export default {
       this.answers = this.$store.getters.getPage101Data;
     },
   },
-  created() {this.init();},
+  created() {
+    this.init();
+    this.setPageNumber();
+  },
   mounted() {},
   watch: {
     answers: function() {

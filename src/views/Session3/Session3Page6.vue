@@ -201,7 +201,17 @@ export default {
   name: "Session3Page6",
   components: {EmotionPickInstruction, EmoteAngry, EmoteCalm, ImageComponent},
   data() {return {correctAns: []}},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateRedTick(target) {
       anime({
         targets: target,

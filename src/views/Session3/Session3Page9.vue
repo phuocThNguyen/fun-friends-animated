@@ -40,7 +40,14 @@ export default {
       answers: [],
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({duration: 500, easing: 'linear'})
@@ -62,7 +69,10 @@ export default {
       this.answers = this.$store.getters.getPage99Data;
     },
   },
-  created() {this.init();},
+  created() {
+    this.init();
+    this.setPageNumber();
+  },
   mounted() {},
   watch: {
     answers: function() {
