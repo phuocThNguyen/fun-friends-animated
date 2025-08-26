@@ -14,6 +14,18 @@
 <script>
 export default {
   name: "Session2Page1_1.vue",
+    props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
+  methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
+  }
 }
 </script>
 

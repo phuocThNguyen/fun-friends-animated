@@ -271,7 +271,17 @@ export default {
   name: "Session2Page22",
   components: {EmoteAngry, EmoteWorried, EmoteHappy, EmoteSad, ImageComponent},
   data() {return {correctAns: []}},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateRedTick(target) {
       anime({
         targets: target,

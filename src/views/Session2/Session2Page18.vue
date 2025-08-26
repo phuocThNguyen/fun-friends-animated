@@ -33,7 +33,14 @@ export default {
       canvasData: null,
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     saveToDatabase(data) {
       console.log(data)
     },
@@ -64,6 +71,7 @@ export default {
   },
   created() {
     this.init();
+    this.setPageNumber();
   },
   mounted() {
     this.setAudioVolumeLevel(0.4);

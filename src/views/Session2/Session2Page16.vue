@@ -94,7 +94,17 @@ import FeelingQuestion from "@/components/feelingsQuestion/FeelingsQuestion";
 export default {
   name: "Session2Page15",
   components: {FeelingQuestion, EmotionPickInstruction, ImageComponent},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     handleCorrectAnswer() {
       document.querySelector('.reward').style.opacity = '1';
       anime({

@@ -318,7 +318,17 @@ export default {
       correctAns: 0
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateWrongAnswer(target) {
       anime({
         targets: target,
