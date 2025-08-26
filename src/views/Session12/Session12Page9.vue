@@ -45,7 +45,14 @@ export default {
   name: 'Session12Page9',
   components: {ImageComponent},
   data() {return {choices: []}},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     setAudioVolumeLevel(level) {
       this.$refs.audio.volume = level;
     },
@@ -69,6 +76,7 @@ export default {
   },
   created() {
     this.choices = this.$store.getters.getPage222Array;
+    this.setPageNumber();
   },
   mounted() {
     this.setChoiceBackground();

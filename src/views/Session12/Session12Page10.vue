@@ -156,7 +156,14 @@ export default {
   name: 'Session12Page10',
   components: {ImageComponent},
   data() {return {choices: []}},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateSvg() {
       let vw = document.querySelector('.interactive-container').clientWidth;
       let vh = window.innerHeight;
@@ -251,6 +258,7 @@ export default {
   },
   created() {
     this.choices = this.$store.getters.getPage223Array;
+    this.setPageNumber();
   },
   mounted() {
     this.setChoiceBackground();

@@ -556,7 +556,17 @@ import anime from "animejs";
 
 export default {
   name: 'Session12Page4',
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       let text = document.querySelector('.text').children
       let animation = anime.timeline({easing: 'linear', duration: 500})
