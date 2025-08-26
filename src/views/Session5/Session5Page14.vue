@@ -166,7 +166,17 @@ export default {
   name: 'Session5Page14',
   components: {greenThoughtInstruction, ImageComponent},
   data() {return {correctAns: 2}},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       let animation = anime.timeline({duration: 500, easing: 'linear'});
       animation

@@ -143,7 +143,17 @@ export default {
       answers: [],
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     handleWrongAnswer() {
       anime({
         targets: '.sticker',

@@ -66,7 +66,17 @@ import anime from "animejs";
 export default {
   name: 'Session5Page16',
   components: {ImageComponent},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateSvg() {
       let snowArray = [];
       let vh = window.innerHeight;
