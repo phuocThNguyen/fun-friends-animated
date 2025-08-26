@@ -1149,7 +1149,17 @@ export default {
         [1000, 6700, 9400, 13300]]
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     displayInit() {
       let leftElements = document.getElementById('left-container').children;
       let rightElements = document.getElementById('right-container').children;

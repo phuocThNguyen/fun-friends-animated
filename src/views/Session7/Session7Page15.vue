@@ -1129,7 +1129,7 @@
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page13-region-4.mp3" ref="step4"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page13-region-5.mp3" ref="step5"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session7/Session7_Page13.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark" style="left: 25vh !important;">188</div>
+    <div class="page-number" id="page-dark" style="left: 25vh !important;">{{ page }}</div>
   </div>
 </template>
 
@@ -1150,7 +1150,17 @@ export default {
         [1000, 4500, 8000, 10500]]
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     displayInit() {
       let leftElements = document.getElementById('left-container').children;
       let rightElements = document.getElementById('right-container').children;

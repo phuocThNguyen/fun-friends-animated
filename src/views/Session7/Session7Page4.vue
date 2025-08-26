@@ -1055,7 +1055,17 @@ import anime from "animejs";
 
 export default {
   name: 'Session7Page4',
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateSvg() {
       let vw = document.querySelector('.interactive-container').clientWidth;
       let clouds = document.getElementById('cloud').children;

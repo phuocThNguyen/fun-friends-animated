@@ -1148,7 +1148,17 @@ export default {
         [974, 5341, 8380, 11410]]
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     displayInit() {
       let leftElements = document.getElementById('left-container').children;
       let rightElements = document.getElementById('right-container').children;
