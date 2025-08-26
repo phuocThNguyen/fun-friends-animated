@@ -736,7 +736,17 @@ import anime from "animejs";
 export default {
   name: 'Session6Page11',
   components: {ImageComponent},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       let animation = anime.timeline({
         duration: 500,

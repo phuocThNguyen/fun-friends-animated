@@ -175,7 +175,17 @@ export default {
     }
   },
   components: {RedTick, GreenTick, ImageComponent},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     handleClick(e) {
       let targetThumb = e.target.id;
       switch (targetThumb) {
