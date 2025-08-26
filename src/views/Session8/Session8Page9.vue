@@ -39,7 +39,17 @@ import anime from "animejs";
 export default {
   name: 'Session8Page9',
   components: {ImageComponent},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       anime({
         targets: '.star-container',

@@ -49,7 +49,14 @@ export default {
       answers: [],
     }
   } ,
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       let text = document.querySelector('.text-box').children;
       let animation = anime.timeline({easing: 'linear', duration: 500});
@@ -76,6 +83,7 @@ export default {
   },
   created() {
     this.init();
+    this.setPageNumber();
   },
   mounted() {
     this.setAudioVolumeLevel(1);
