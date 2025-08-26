@@ -40,7 +40,18 @@ export default {
       answers: [],
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.init();
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;
       let animation = anime.timeline({
@@ -67,7 +78,6 @@ export default {
       this.answers = this.$store.getters.getPage126Data;
     },
   },
-  created() {this.init();},
   mounted() {
     this.setAudioVolumeLevel(0.6);
   },

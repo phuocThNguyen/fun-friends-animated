@@ -28,7 +28,17 @@ import anime from "animejs";
 export default {
   name: 'Session4Page5',
   components: {ImageComponent},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       let images = document.getElementsByClassName('images');
       let animation = anime.timeline({

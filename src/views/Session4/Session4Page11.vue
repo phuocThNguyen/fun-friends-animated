@@ -843,7 +843,18 @@ export default {
       canvasData: null,
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.init();
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateSvg() {
       let vw = window.innerWidth;
       const yellowFlowers = document.getElementsByClassName('yellow-flower');
@@ -920,9 +931,6 @@ export default {
       this.playVoiceOver();
       this.animateText();
     }
-  },
-  created() {
-    this.init();
   },
   mounted() {
     this.animateSvg();

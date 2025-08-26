@@ -27,7 +27,17 @@ import anime from "animejs";
 export default {
   name: 'Session4Page13',
   components: {ImageComponent},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       anime({
         targets: '.text-box',

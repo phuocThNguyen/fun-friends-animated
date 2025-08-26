@@ -73,7 +73,14 @@ export default {
       choices: [],
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       let text = document.getElementsByClassName('text-box')[0].children;
       let animation = anime.timeline({
@@ -118,6 +125,7 @@ export default {
   },
   created() {
     this.init();
+    this.setPageNumber();
   },
   mounted() {
     this.setChoiceBackground();
