@@ -52,7 +52,7 @@
     <audio ref="wind" id="sound-3" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/wind.mp3"/>
     <audio src="../../assets/sounds/all/Correct_2.mp3" ref="correctVoice"/>
     <audio src="../../assets/sounds/session7/click-sound.mp3" ref="clickSound"/>
-    <div class="page-number" id="page-light">132</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 

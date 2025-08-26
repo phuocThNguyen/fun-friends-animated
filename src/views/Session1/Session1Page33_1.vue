@@ -324,7 +324,7 @@
       </div>
       <div class="text">Love</div>
     </button>
-    <div class="page-number" id="page-light">48</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/Session1_Page48.mp3" ref="voice"/>
     <audio ref="sound" src="../../assets/sounds/session7/click-sound.mp3"/>
     <audio src="../../assets/sounds/all/Well_Done.mp3" ref="wellDone"/>
@@ -346,7 +346,17 @@ export default {
       index: 0
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     playVoiceOver() {
       setTimeout(() => {this.$refs.voice.play()}, 500)
     },
@@ -375,7 +385,6 @@ export default {
       }
     }
   },
-  created() {},
   mounted() {this.playVoiceOver();},
 }
 </script>

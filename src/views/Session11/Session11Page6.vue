@@ -18,7 +18,7 @@
     </div>
     <audio autoplay ref="audio" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/ambient/fieldrecording-nearparkwchildren.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session11/Session11_Page6.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">259</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 

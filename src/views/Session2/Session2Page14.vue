@@ -108,7 +108,7 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session2/Session2_Page13.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">74</div>
+    <div class="page-number" id="page-dark">{{ page }}</div>
   </div>
 </template>
 

@@ -59,7 +59,7 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/43Animated_Book_Page42.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">55</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 
@@ -69,7 +69,17 @@ import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 export default {
   name: "Session1Page36",
   components: {ImageComponent},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateSvg() {
       let vh = window.innerHeight;
       let vw = document.querySelector('.interactive-container').clientWidth;

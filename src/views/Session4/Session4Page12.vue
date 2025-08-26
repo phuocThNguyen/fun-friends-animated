@@ -855,7 +855,7 @@
     <audio src="../../assets/sounds/all/Good_Try.mp3" ref="goodTry"/>
     <audio src="../../assets/sounds/all/Correct_1.mp3" ref="correctVoice"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page12.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">124</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 

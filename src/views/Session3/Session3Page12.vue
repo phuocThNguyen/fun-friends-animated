@@ -58,7 +58,7 @@
       <audio id="audio-step-2" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/104-step-2.mp3"></audio>
       <audio id="audio-step-3" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/104-step-3.mp3"></audio>
     </div>
-    <div class="page-number" id="page-light">104</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 

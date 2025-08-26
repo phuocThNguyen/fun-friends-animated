@@ -46,7 +46,7 @@
       <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/appendix/green-8.mp3" id="voice-8"/>
       <audio src="../../assets/sounds/session7/click-sound.mp3" ref="clickSound"/>
     </div>
-    <div class="page-number" id="page-light">276</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 

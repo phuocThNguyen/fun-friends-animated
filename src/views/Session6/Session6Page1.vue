@@ -207,7 +207,7 @@
 
     <audio autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/387978__dcpoke__birds-singing-03.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session6/Session6_Page1.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">161</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 

@@ -14,6 +14,18 @@ import ImageComponent from "@/components/imageComponent/ImageComponent.vue";
 export default {
   name: 'IntroductionPage1',
   components: {ImageComponent},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
+  methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
+  }
 }
 </script>
 

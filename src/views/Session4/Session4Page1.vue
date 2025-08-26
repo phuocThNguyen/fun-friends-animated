@@ -206,7 +206,7 @@
     <audio
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page1.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">112</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 

@@ -56,7 +56,7 @@
       <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/smiling.mp3" id="item-4"/>
       <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/sharing.mp3" id="item-5"/>
     </div>
-    <div class="page-number" id="page-light">243</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 

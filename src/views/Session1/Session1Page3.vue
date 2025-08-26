@@ -21,7 +21,7 @@
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/10Animated_Book_Page9.mp3"
       ref="voice"/>
-    <div class="page-number" id="page-light">9</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 
@@ -31,7 +31,17 @@ import anime from "animejs";
 export default {
   name: "Session1Page3",
   components: {ImageComponent},
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
+  created (){
+    this.setPageNumber()
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateText() {
       let para = document.getElementsByClassName('left-bar')[0].children;
       let initAnimation = anime.timeline({duration: 300, easing: 'linear'});

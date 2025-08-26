@@ -230,7 +230,7 @@
       <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session6/165-option5.mp3" id="voice-option-5"/>
       <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session6/165-option6.mp3" id="voice-option-6"/>
     </div>
-    <div class="page-number" id="page-light">165</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 

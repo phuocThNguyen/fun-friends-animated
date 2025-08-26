@@ -23,7 +23,7 @@
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session3/Session3_Page92.mp3" ref="voice"/>
     <audio src="../../assets/sounds/session7/click-sound.mp3" ref="clickSound" />
-    <div class="page-number" id="page-dark">94</div>
+    <div class="page-number" id="page-dark">{{ page }}</div>
   </div>
 </template>
 

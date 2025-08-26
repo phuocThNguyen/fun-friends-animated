@@ -22,7 +22,7 @@
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page124%2B2.mp3" ref="voice"/>
     <audio src="../../assets/sounds/all/Correct_2.mp3" ref="correctVoice"/>
-    <div class="page-number" id="page-dark">134</div>
+    <div class="page-number" id="page-dark">{{ page }}</div>
   </div>
 </template>
 

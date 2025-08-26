@@ -9,7 +9,8 @@
         </g>
       </g>
     </svg>
-    <component :is="pages[page]" v-on:setSession="setSession" />
+    <component :is="pages[currentPage]" v-on:setSession="setSession" :pageNum="currentPage"
+      :startPage="startPage"/>
     <svg class="arrow" v-show="arrowVisible" @click="previous" id="left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 123" width="124" height="123">
       <title>Right Arrow</title>
       <g id="object">
@@ -44,29 +45,33 @@ export default {
       pages: {
         1: "IntroductionPage1", 2: "IntroductionPage2", 3: "IntroductionPage3", 4: "IntroductionPage4", 5: "IntroductionPage5", 6: "IntroductionPage6",
       },
-      page: 0,
+      startPage: 0,
       lastPage: 6,
+      currentPage: 1,
       arrowVisible: true,
       hiddenTimeExpired: false,
     };
   },
   created() {
+    let page = 0;
     if (!this.isNext) {
-      this.page = this.lastPage;
+      page = this.lastPage;
       this.arrowVisible = this.$store.getters.getArrowVisible;
     } else {
-      this.page = 1;
+      page = 1;
     }
+
+    this.currentPage = page;
   },
   methods: {
     previous() {
-      if (this.page > 1) {
-        this.page--;
+      if (this.currentPage > 1) {
+        this.currentPage--;
       }
     },
     next() {
-      if (this.page < this.lastPage) {
-        this.page++;
+      if (this.currentPage < this.lastPage) {
+        this.currentPage++;
       } else {
         this.$emit("nextSession", 1, true);
       }

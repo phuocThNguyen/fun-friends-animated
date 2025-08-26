@@ -311,7 +311,7 @@
       </div>
     </div>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page17.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">250</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 

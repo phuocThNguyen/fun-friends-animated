@@ -198,7 +198,7 @@
     <audio ref="audio" autoplay loop src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/super-hero-theme.mp3"/>
     <audio src="../../assets/sounds/session7/click-sound.mp3" ref="clickSound"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session10/Session10_Page222.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">241</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 

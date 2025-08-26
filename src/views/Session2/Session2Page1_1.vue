@@ -6,7 +6,7 @@
         frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"
         title="Oscar Session 5"/>
     </div>
-    <div class="page-number" id="page-light">61</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/Watch_video.mp3" autoplay/>
   </div>
 </template>

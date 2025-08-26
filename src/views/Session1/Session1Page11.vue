@@ -842,7 +842,14 @@ export default {
       canvasData: null,
     }
   },
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     init() {
       this.canvasData = this.$store.getters.getPage17Data;
     },

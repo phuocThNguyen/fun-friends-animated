@@ -93,7 +93,7 @@
       <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/plan_6.mp3" id="plan-audio-6"/>
       <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/plan_7.mp3" id="plan-audio-7"/>
     </div>
-    <div class="page-number" id="page-light">210</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 

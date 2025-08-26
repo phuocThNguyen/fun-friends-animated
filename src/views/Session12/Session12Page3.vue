@@ -1011,7 +1011,7 @@
     </div>
     <audio ref="audio" autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/ambient/playground-02.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session12/Session12_Page3.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">268</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 

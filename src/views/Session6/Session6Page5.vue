@@ -259,7 +259,7 @@
       <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session6/166-option6.mp3" id="voice-option-6"/>
     </div>
 
-    <div class="page-number" id="page-light">166</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 

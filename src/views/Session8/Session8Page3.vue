@@ -25,7 +25,7 @@
     <audio autoplay src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/all/BodyFallOnDirt.mp3" ref="audio"/>
     <audio src="../../assets/sounds/session7/click-sound.mp3" ref="clickSound"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Session8_Page182.mp3" ref="voice"/>
-    <div class="page-number" id="page-light">197</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 

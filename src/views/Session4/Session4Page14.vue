@@ -13,7 +13,7 @@
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Session4_Page14.mp3" ref="voice"/>
     <audio src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session4/Smelling-SoundEffect.mp3" ref="soundFx"/>
-    <div class="page-number" id="page-dark">126</div>
+    <div class="page-number" id="page-dark">{{ page }}</div>
   </div>
 </template>
 

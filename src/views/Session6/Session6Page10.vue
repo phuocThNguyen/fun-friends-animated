@@ -752,7 +752,7 @@
     </div>
     <audio autoplay loop ref="audio" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session8/Birds-In-Sun-And-Snow-Sound-Effect.mp3"/>
     <audio @loadeddata="playSoundText" src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session6/Session6_Page10.mp3" ref="voice"/>
-    <div class="page-number" id="page-dark">172</div>
+    <div class="page-number" id="page-dark">{{ page }}</div>
   </div>
 </template>
 

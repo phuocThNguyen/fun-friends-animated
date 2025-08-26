@@ -205,7 +205,7 @@
       @loadeddata="playSoundText"
       src="https://s3.ap-southeast-2.amazonaws.com/uploads.friendsresilience.org/animatedbook-resources/FF/audio/session1/8Animated_Book_Page7.mp3"
       ref="audio"/>
-    <div class="page-number" id="page-light">6</div>
+    <div class="page-number" id="page-light">{{ page }}</div>
   </div>
 </template>
 
@@ -214,7 +214,14 @@ import anime from 'animejs';
 
 export default {
   name: "Session1Page1",
+  props: {
+    startPage: Number,
+    pageNum: Number,
+  },
   methods: {
+    setPageNumber() {
+      this.page = this.pageNum + this.startPage - 1;
+    },
     animateSvg() {
       let vw = document.querySelector('.interactive-container').clientWidth;
       anime({
@@ -270,6 +277,9 @@ export default {
       this.playVoiceOver();
       this.animateText();
     }
+  },
+  created(){
+    this.setPageNumber();
   },
   mounted() {
     this.animateSvg();
